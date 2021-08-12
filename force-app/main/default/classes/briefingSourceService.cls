@@ -24,7 +24,9 @@
  * Changes:
    02/07/2019 - @Manideep - Changed the maximum field length of 'Name' from '255' to '80' as it was set to '80' by default. 
    02/07/2019 - @Manideep - Store the JSON response from the EBC in the custom object 'Briefing sent by EBC', so that if any record doesn't insert/update in Salesforce due to some error then we can verify the call in this object.
-          
+
+ * 08/11/2021 - @Manideep - test Changes AutoRabit
+       
 */        
 @RestResource(urlMapping='/invokeServiceBriefingSourcetoSFDC/*')
 global class briefingSourceService {
@@ -32,7 +34,6 @@ global class briefingSourceService {
   //Briefing Source webhook is sending briefingId Successfully  
   @HttpGet
   global static void getBriefingintoSF() {  
-    system.debug('Came Here 1---->');
     RestRequest req = RestContext.request;
     RestResponse res = RestContext.response;
     res.addHeader('Content-Type', 'applicationjson');
@@ -53,7 +54,6 @@ global class briefingSourceService {
     reqt.setMethod('GET'); 
     reqt.setHeader('Content-Type', 'application/json');
     reqt.setHeader('Accept', 'application/json');  
-    system.debug('Came Here 2---->');  
     Http http = new Http();
     HTTPResponse resp = http.send(reqt);  
     string jsonFullBody = resp.getBody();
