@@ -5359,6 +5359,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Autorabit_Test__c.Salesforce__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Briefing_sent_by_EBC__c.Briefing_ID__c</field>
         <readable>true</readable>
     </fieldPermissions>
