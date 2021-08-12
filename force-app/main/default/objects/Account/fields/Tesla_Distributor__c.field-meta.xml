@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tesla_Distributor__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Please select the distributors you currently buy from today?</inlineHelpText>
+    <label>What distributors do you buy from today?</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Synnex</fullName>
+                <default>false</default>
+                <label>Synnex</label>
+            </value>
+            <value>
+                <fullName>Bell Micro</fullName>
+                <default>false</default>
+                <label>Bell Micro</label>
+            </value>
+            <value>
+                <fullName>PNY</fullName>
+                <default>false</default>
+                <label>PNY</label>
+            </value>
+            <value>
+                <fullName>Elsa</fullName>
+                <default>false</default>
+                <label>Elsa</label>
+            </value>
+            <value>
+                <fullName>Leadtek</fullName>
+                <default>false</default>
+                <label>Leadtek</label>
+            </value>
+            <value>
+                <fullName>Ingram Micro</fullName>
+                <default>false</default>
+                <label>Ingram Micro</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

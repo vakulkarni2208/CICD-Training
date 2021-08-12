@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Populate this field when you would like to downgrade your NV Forecast Category. You are required to complete this field first before downgrading. --></help>
+    <label><!-- Risks/Help Needed --></label>
+    <name>Risks_Help_Needed__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,80 @@
+<apex:page showHeader="true" sidebar="true" title="GPU Genius">
+    <html>
+    <head>
+    </head>
+    <body>
+    <font face="verdana">
+    <center>
+    <table width="75%">
+    <tr><td>
+    <table width="800">
+    
+    <tr>
+    <td colspan="2">
+        <div style="text-align: right;">
+        <a href="http://www.nvidia.com/gpugenius" target="_blank"><img src="{!$Resource.GPUGenius}/GPUGenius.png" width="300"></img></a>
+    </div>
+    </td></tr>
+    <tr><td colspan="2" align="left" valign="bottom">
+    <font style="font-weight: bold;" size="5"><br></br>Welcome to the NVIDIA TPP Training Portal</font></td>
+    </tr>
+        <tr><td align="left"><br></br><br></br><font size="3">NVIDIA GPU Genius offers you a variety of tools, such as training and customer presentations, demos, customer leave behinds, datasheets, and much more.</font><br></br><br></br></td></tr>
+   <tr><td align="left"><br></br><font size="3">Please select an option below to direct you to the relevant required and recommended training.  Remember you can always access the total GPU Genius site by selecting the GPU Genius logo above.</font><br></br><br></br></td></tr>
+   </table>
+   
+    <table width="800" border="0" bgcolor="#dddddd">
+    <col width="200"></col>
+    <col width="200"></col>
+    <col width="200"></col>
+    <col width="200"></col>
+    <tr><th colspan="4"><font size="4">Required Sales Training</font></th></tr>
+    <tr><td valign="top" align="left"><a href="http://www.brainshark.com/nvidia/view-intro-gpu-computing" target="_blank"><img src="https://na2.salesforce.com/servlet/servlet.ImageServer?id=01540000000YIni&oid=00D400000009E3I&lastMod=1361902518000" width="161" height="90"></img></a><br></br><b>Sales Training:</b> Intro to GPU Computing with Tesla GPUs</td>
+    <td valign="top" align="left"><a href="http://www.brainshark.com/nvidia/view-sales-training-higher-ed" target="_blank"><img src="https://na2.salesforce.com/servlet/servlet.ImageServer?id=01540000000yNU2&oid=00D400000009E3I&lastMod=1347312420000" width="161" height="90"></img></a><br></br><b>Sales Training:</b> Higher Ed</td>
+    <td valign="top" align="left"><a href="http://www.brainshark.com/nvidia/view-training-gpu-test-drive" target="_blank"><img src="https://na2.salesforce.com/servlet/servlet.ImageServer?id=01540000000yNTs&oid=00D400000009E3I&lastMod=1347312284000" width="161" height="90"></img></a><br></br><b>Sales Training:</b><br></br>GPU Test Drive</td>
+    <td valign="top" align="left"><a href="http://www.brainshark.com/nvidia/view-applications-catalog" target="_blank"><img src="https://na2.salesforce.com/servlet/servlet.ImageServer?id=01540000000YInY&oid=00D400000009E3I&lastMod=1361902445000" width="161" height="90"></img></a><br></br><b>Applications Catalog:</b><br></br><em>Review this Key Sales Tool</em></td></tr>
+    </table>
+    
+    <table width="800">
+    <tr><th colspan="4"><font color="#777777" size="3"><br></br>Recommended Sales Training</font></th></tr>
+    <tr><td valign="top" align="left"><a href="http://www.brainshark.com/nvidia/view-customer-preso-higher-ed" target="_blank"><img src="https://na2.salesforce.com/servlet/servlet.ImageServer?id=01540000000yNU7&oid=00D400000009E3I&lastMod=1347312479000" width="161" height="90"></img></a><br></br><b>Customer Preso:</b> Higher Ed</td>
+    <td valign="top" align="left"><a href="http://www.brainshark.com/nvidia/view-higher-ed-playbook" target="_blank"><img src="https://na2.salesforce.com/servlet/servlet.ImageServer?id=01540000000yNUC&oid=00D400000009E3I&lastMod=1347312541000" width="161" height="90"></img></a><br></br><b>Sales Playbook:</b> Higher Ed</td>
+    <td valign="top" align="left"><a href="http://www.brainshark.com/nvidia/view-approaches-to-gpu-comp" target="_blank"><img src="https://na2.salesforce.com/servlet/servlet.ImageServer?id=01540000000yNTn&oid=00D400000009E3I&lastMod=1347312211000" width="161" height="90"></img></a><br></br><b>Customer Preso:</b><br></br>Approaches to GPU Computing</td></tr>
+    <tr><td colspan="4"><br /></td></tr>
+    </table>
+    
+    <table width="800" border="0" bgcolor="#dddddd">
+    <tr><th colspan="4"><font size="4">Required Technical Training</font></th></tr>
+             <tr><td align="left" colspan="4"><b>Tesla Technical Training: Introduction to GPU Computing and Tesla GPUs</b></td></tr>
+             <tr><td> <a href="http://www.brainshark.com/nvidia/introTeslaGPUComputingLesson1/zGUzdZvM8z34dFz0" target="_blank"><img src="https://na2.salesforce.com/servlet/servlet.ImageServer?id=01540000000TrXD&oid=00D400000009E3I&lastMod=1316207478000" width="125"></img><br></br>Lesson 1</a></td>
+                <td> <a href="http://www.brainshark.com/nvidia/required-product-training-K20X" target="_blank"><img src="https://na2.salesforce.com/servlet/servlet.ImageServer?id=01540000000YFxZ&oid=00D400000009E3I&lastMod=1360947773000" width="125"></img><br></br>Lesson 2</a></td>
+                <td><a href="http://www.brainshark.com/nvidia/required-product-training-K10" target="_blank"><img src="https://na2.salesforce.com/servlet/servlet.ImageServer?id=01540000000YFxy&oid=00D400000009E3I&lastMod=1360947991000" width="125"></img><br></br>Lesson 3</a></td>
+   
+    <td><a href="http://www.brainshark.com/nvidia/required-approaches-to-gpucomp" target="_blank"><img src="https://na2.salesforce.com/servlet/servlet.ImageServer?id=01540000000YFy8&oid=00D400000009E3I&lastMod=1360948122000" width="125"></img><br></br>Lesson 4</a></td>
+    </tr>
+     </table>
+    
+      <table width="800">
+    <tr><td></td></tr>
+    <tr><td></td></tr>
+    <tr><td></td></tr>
+    <tr><td></td></tr>
+    </table>
+         
+     <table width="800" border="0" bgcolor="#ddecc2">
+    <tr><th colspan="2"><font size="3">Marketing Training</font></th></tr>
+    <tr><td valign="top" align="left" width="200"><a href="http://www.brainshark.com/nvidia/lead-nurturing-automation" target="_blank"><img src="https://na2.salesforce.com/servlet/servlet.ImageServer?id=01540000000Y2Yl&oid=00D400000009E3I&lastMod=1356047115000" width="161"></img></a><br></br>Lead Nurturing Marketing Automation Tools</td>
+    <td valign="top" align="left"><a href="http://www.brainshark.com/nvidia/seo-best-practices" target="_blank"><img src="https://na2.salesforce.com/servlet/servlet.ImageServer?id=01540000000Y2Yv&oid=00D400000009E3I&lastMod=1356047287000" width="161"></img></a><br></br>SEO Best Practices</td>
+    </tr>
+    <tr><td colspan="2"><br></br></td></tr>
+    </table>
+    
+         <table height="1000" width="800"><tr><td><br></br><hr color="#92d050" size="5"></hr></td></tr>
+         </table>
+     
+     </td></tr></table>
+
+     </center>
+          </font>
+</body>
+</html>
+</apex:page>

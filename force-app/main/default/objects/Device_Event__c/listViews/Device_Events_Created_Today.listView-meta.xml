@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Device_Events_Created_Today</fullName>
+    <columns>NAME</columns>
+    <columns>Message__c</columns>
+    <columns>Asset__c</columns>
+    <columns>Case__c</columns>
+    <columns>Severity__c</columns>
+    <columns>Case_Flow_Outcome__c</columns>
+    <columns>CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CREATED_DATE</field>
+        <operation>equals</operation>
+        <value>TODAY</value>
+    </filters>
+    <label>Device Events Created Today</label>
+</ListView>

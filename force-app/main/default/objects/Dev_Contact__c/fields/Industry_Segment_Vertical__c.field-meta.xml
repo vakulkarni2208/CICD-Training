@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Industry_Segment_Vertical__c</fullName>
+    <externalId>false</externalId>
+    <label>Industry Segment/Vertical</label>
+    <required>true</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Aerospace</fullName>
+                <default>false</default>
+                <label>Aerospace</label>
+            </value>
+            <value>
+                <fullName>Architecture / Engineering / Construction</fullName>
+                <default>false</default>
+                <label>Architecture / Engineering / Construction</label>
+            </value>
+            <value>
+                <fullName>Automotive</fullName>
+                <default>false</default>
+                <label>Automotive</label>
+            </value>
+            <value>
+                <fullName>Cloud Services</fullName>
+                <default>false</default>
+                <label>Cloud Services</label>
+            </value>
+            <value>
+                <fullName>Consulting Services</fullName>
+                <default>false</default>
+                <label>Consulting Services</label>
+            </value>
+            <value>
+                <fullName>Defense</fullName>
+                <default>false</default>
+                <label>Defense</label>
+            </value>
+            <value>
+                <fullName>Energy / Oil &amp; Gas</fullName>
+                <default>false</default>
+                <label>Energy / Oil &amp; Gas</label>
+            </value>
+            <value>
+                <fullName>Financial Services</fullName>
+                <default>false</default>
+                <label>Financial Services</label>
+            </value>
+            <value>
+                <fullName>Game Development</fullName>
+                <default>false</default>
+                <label>Game Development</label>
+            </value>
+            <value>
+                <fullName>Government / National Labs</fullName>
+                <default>false</default>
+                <label>Government / National Labs</label>
+            </value>
+            <value>
+                <fullName>Hardware / Semiconductor</fullName>
+                <default>false</default>
+                <label>Hardware / Semiconductor</label>
+            </value>
+            <value>
+                <fullName>Healthcare &amp; Life Sciences</fullName>
+                <default>false</default>
+                <label>Healthcare &amp; Life Sciences</label>
+            </value>
+            <value>
+                <fullName>Higher Education / Research</fullName>
+                <default>false</default>
+                <label>Higher Education / Research</label>
+            </value>
+            <value>
+                <fullName>Internet / Telecommunications</fullName>
+                <default>false</default>
+                <label>Internet / Telecommunications</label>
+            </value>
+            <value>
+                <fullName>IT Services</fullName>
+                <default>false</default>
+                <label>IT Services</label>
+            </value>
+            <value>
+                <fullName>Manufacturing</fullName>
+                <default>false</default>
+                <label>Manufacturing</label>
+            </value>
+            <value>
+                <fullName>Media &amp; Entertainment</fullName>
+                <default>false</default>
+                <label>Media &amp; Entertainment</label>
+            </value>
+            <value>
+                <fullName>Retail / Etail</fullName>
+                <default>false</default>
+                <label>Retail / Etail</label>
+            </value>
+            <value>
+                <fullName>Software</fullName>
+                <default>false</default>
+                <label>Software</label>
+            </value>
+            <value>
+                <fullName>Other (please specify)</fullName>
+                <default>false</default>
+                <label>Other (please specify)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

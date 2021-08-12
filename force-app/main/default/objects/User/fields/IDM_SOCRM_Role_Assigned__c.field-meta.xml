@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IDM_SOCRM_Role_Assigned__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>SOCRMAccessRole has been assigned for this IDM User (manual or automated)</description>
+    <externalId>false</externalId>
+    <inlineHelpText>SOCRMAccessRole has been assigned for this IDM User (manual or automated)</inlineHelpText>
+    <label>IDM - SOCRM Role - Assigned</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Checkbox</type>
+</CustomField>

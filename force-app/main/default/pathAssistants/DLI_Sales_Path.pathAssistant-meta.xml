@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Opportunity</entityName>
+    <fieldName>StageName</fieldName>
+    <masterLabel>DLI Sales Path</masterLabel>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;At this stage customer has cancelled this request&lt;/p&gt;</info>
+        <picklistValueName>Cancelled</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Full order has been fulfilled and it is complete&lt;/p&gt;</info>
+        <picklistValueName>Completed</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;At this stage customer&amp;#39;s request has been defined and confirmed&lt;/p&gt;</info>
+        <picklistValueName>Defined</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;At this stage the order is being fulfilled but is not yet complete&lt;/p&gt;</info>
+        <picklistValueName>Fulfillment</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Name</fieldNames>
+        <fieldNames>NextStep</fieldNames>
+        <info>&lt;p&gt;At this stage you should be discussing with your customer what they&amp;#39;re looking for&lt;/p&gt;</info>
+        <picklistValueName>Undefined</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>DLI_Opportunity</recordTypeName>
+</PathAssistant>

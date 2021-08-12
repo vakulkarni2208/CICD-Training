@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Risks_Help_Needed_if_NV_FC_diff</fullName>
+    <active>true</active>
+    <description>SDS-2077
+If NV Forecast Category field and Stage are misaligned require Risks/Help Needed field to be completed</description>
+    <errorConditionFormula>AND (
+	
+	OR (
+		RecordType.DeveloperName = &quot;Enterprise_Sales_Opportunity&quot;,
+		RecordType.DeveloperName = &quot;Repeat_Business_Opportunity&quot;
+	),
+	
+	ISBLANK(Risks_Help_Needed__c),
+
+	OR (
+		AND (
+		ISPICKVAL( StageName , &quot;Qualification&quot;),
+		ISPICKVAL ( NV_Forecast_Category__c , &quot;5-Other&quot;),
+		ISCHANGED ( NV_Forecast_Category__c)
+	),
+
+	AND (
+		OR(
+			ISPICKVAL ( StageName , &quot;Initial Forecast Provided&quot;),
+			ISPICKVAL ( StageName , &quot;Needs Analysis&quot;)),
+			ISCHANGED ( NV_Forecast_Category__c),
+			OR (
+				ISPICKVAL ( NV_Forecast_Category__c , &quot;5-Other&quot;),
+				ISPICKVAL ( NV_Forecast_Category__c , &quot;4-Pipeline&quot;)
+			)
+		),
+
+		AND (
+			ISCHANGED ( NV_Forecast_Category__c),
+			OR (
+				ISPICKVAL (StageName , &quot;Proposal/Price Quote&quot;),
+				ISPICKVAL (StageName , &quot;Negotiation/Review&quot;),
+				ISPICKVAL (StageName , &quot;Forecast Committed&quot;),
+				ISPICKVAL (StageName , &quot;Paperwork Finalization&quot;) 
+			),
+			OR (
+				ISPICKVAL (NV_Forecast_Category__c , &quot;5-Other&quot;),
+				ISPICKVAL (NV_Forecast_Category__c , &quot;4-Pipeline&quot;),
+				ISPICKVAL (NV_Forecast_Category__c , &quot;3-Best Case&quot;)
+			)
+		)
+	)
+	
+	
+)</errorConditionFormula>
+    <errorDisplayField>Risks_Help_Needed__c</errorDisplayField>
+    <errorMessage>If NV Forecast Cateogry is lower than suggested category please detail the Risks or Help Needed</errorMessage>
+</ValidationRule>

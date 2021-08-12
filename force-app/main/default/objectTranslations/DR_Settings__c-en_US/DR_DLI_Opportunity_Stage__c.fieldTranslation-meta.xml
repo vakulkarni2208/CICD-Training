@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- DLI Opportunity Stage set during DLI Opp Reg Lead conversion --></help>
+    <label><!-- DR : DLI Opportunity : Stage --></label>
+    <name>DR_DLI_Opportunity_Stage__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,588 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sub_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Sub-Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Type</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Account Approval Request</fullName>
+                <default>false</default>
+                <label>Account Approval Request</label>
+            </value>
+            <value>
+                <fullName>Account Teams</fullName>
+                <default>false</default>
+                <label>Account Teams</label>
+            </value>
+            <value>
+                <fullName>Account Updates</fullName>
+                <default>false</default>
+                <label>Account Updates</label>
+            </value>
+            <value>
+                <fullName>Cloud Consumption Oppty (CCO)</fullName>
+                <default>false</default>
+                <label>Cloud Consumption Oppty (CCO)</label>
+            </value>
+            <value>
+                <fullName>Conga (Mail Merge) Issue</fullName>
+                <default>false</default>
+                <label>Conga (Mail Merge) Issue</label>
+            </value>
+            <value>
+                <fullName>Contact Conversion issues</fullName>
+                <default>false</default>
+                <label>Contact Conversion issues</label>
+            </value>
+            <value>
+                <fullName>Contracts Packet</fullName>
+                <default>false</default>
+                <label>Contracts Packet</label>
+            </value>
+            <value>
+                <fullName>Dashboard Assistance</fullName>
+                <default>false</default>
+                <label>Dashboard Assistance</label>
+            </value>
+            <value>
+                <fullName>Deal Registration Lead</fullName>
+                <default>false</default>
+                <label>Deal Registration Lead</label>
+            </value>
+            <value>
+                <fullName>Docusign</fullName>
+                <default>false</default>
+                <label>Docusign</label>
+            </value>
+            <value>
+                <fullName>EBC Assistance</fullName>
+                <default>false</default>
+                <label>EBC Assistance</label>
+            </value>
+            <value>
+                <fullName>Existing Opp Merge</fullName>
+                <default>false</default>
+                <label>Existing Opp Merge</label>
+            </value>
+            <value>
+                <fullName>Existing Report / Dashboard update</fullName>
+                <default>false</default>
+                <label>Existing Report / Dashboard update</label>
+            </value>
+            <value>
+                <fullName>General User Request</fullName>
+                <default>false</default>
+                <label>General User Request</label>
+            </value>
+            <value>
+                <fullName>GPU Genius Training</fullName>
+                <default>false</default>
+                <label>GPU Genius Training</label>
+            </value>
+            <value>
+                <fullName>Help with Contacts</fullName>
+                <default>false</default>
+                <label>Help with Contacts</label>
+            </value>
+            <value>
+                <fullName>Lead routing</fullName>
+                <default>false</default>
+                <label>Lead routing</label>
+            </value>
+            <value>
+                <fullName>Locator</fullName>
+                <default>false</default>
+                <label>Locator</label>
+            </value>
+            <value>
+                <fullName>Mass Email Assistance</fullName>
+                <default>false</default>
+                <label>Mass Email Assistance</label>
+            </value>
+            <value>
+                <fullName>MDF/ Rebates</fullName>
+                <default>false</default>
+                <label>MDF/ Rebates</label>
+            </value>
+            <value>
+                <fullName>New Email Template Request</fullName>
+                <default>false</default>
+                <label>New Email Template Request</label>
+            </value>
+            <value>
+                <fullName>New Report Request</fullName>
+                <default>false</default>
+                <label>New Report Request</label>
+            </value>
+            <value>
+                <fullName>NFR SW Licence Request</fullName>
+                <default>false</default>
+                <label>NFR SW Licence Request</label>
+            </value>
+            <value>
+                <fullName>NPN Compliance</fullName>
+                <default>false</default>
+                <label>NPN Compliance</label>
+            </value>
+            <value>
+                <fullName>Online App Form</fullName>
+                <default>false</default>
+                <label>Online App Form</label>
+            </value>
+            <value>
+                <fullName>Opportunity Update</fullName>
+                <default>false</default>
+                <label>Opportunity Update</label>
+            </value>
+            <value>
+                <fullName>Opp Reg Extension</fullName>
+                <default>false</default>
+                <label>Opp Reg Extension</label>
+            </value>
+            <value>
+                <fullName>Partner Contacts</fullName>
+                <default>false</default>
+                <label>Partner Contacts</label>
+            </value>
+            <value>
+                <fullName>Portal Issues</fullName>
+                <default>false</default>
+                <label>Portal Issues</label>
+            </value>
+            <value>
+                <fullName>POS</fullName>
+                <default>false</default>
+                <label>POS</label>
+            </value>
+            <value>
+                <fullName>Pre MQL</fullName>
+                <default>false</default>
+                <label>Pre MQL</label>
+            </value>
+            <value>
+                <fullName>Pricebook Change Request</fullName>
+                <default>false</default>
+                <label>Pricebook Change Request</label>
+            </value>
+            <value>
+                <fullName>Program Related Questions</fullName>
+                <default>false</default>
+                <label>Program Related Questions</label>
+            </value>
+            <value>
+                <fullName>Reporting/Dashboard</fullName>
+                <default>false</default>
+                <label>Reporting/Dashboard</label>
+            </value>
+            <value>
+                <fullName>Sharing Question</fullName>
+                <default>false</default>
+                <label>Sharing Question</label>
+            </value>
+            <value>
+                <fullName>Special Pricing Request</fullName>
+                <default>false</default>
+                <label>Special Pricing Request</label>
+            </value>
+            <value>
+                <fullName>SuRF Assistance</fullName>
+                <default>false</default>
+                <label>SuRF Assistance</label>
+            </value>
+            <value>
+                <fullName>System Assistance</fullName>
+                <default>false</default>
+                <label>System Assistance</label>
+            </value>
+            <value>
+                <fullName>Training Request</fullName>
+                <default>false</default>
+                <label>Training Request</label>
+            </value>
+            <value>
+                <fullName>User Assistance</fullName>
+                <default>false</default>
+                <label>User Assistance</label>
+            </value>
+            <value>
+                <fullName>Weekly Commit</fullName>
+                <default>false</default>
+                <label>Weekly Commit</label>
+            </value>
+            <value>
+                <fullName>Jetson Embedded Opportunities</fullName>
+                <default>false</default>
+                <label>Jetson Embedded Opportunities</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>New</fullName>
+                <default>false</default>
+                <label>New</label>
+            </value>
+            <value>
+                <fullName>Modify</fullName>
+                <default>false</default>
+                <label>Modify</label>
+            </value>
+            <value>
+                <fullName>Reinstate</fullName>
+                <default>false</default>
+                <label>Reinstate</label>
+            </value>
+            <value>
+                <fullName>MLNX Data</fullName>
+                <default>false</default>
+                <label>MLNX Data</label>
+            </value>
+            <value>
+                <fullName>NVDA Data</fullName>
+                <default>false</default>
+                <label>NVDA Data</label>
+            </value>
+            <value>
+                <fullName>Quote</fullName>
+                <default>false</default>
+                <label>Quote</label>
+            </value>
+            <value>
+                <fullName>Quote Document</fullName>
+                <default>false</default>
+                <label>Quote Document</label>
+            </value>
+            <value>
+                <fullName>Price Configuration</fullName>
+                <default>false</default>
+                <label>Price Configuration</label>
+            </value>
+            <value>
+                <fullName>Discount Approval</fullName>
+                <default>false</default>
+                <label>Discount Approval</label>
+            </value>
+            <value>
+                <fullName>Salesforce to SAP Sync</fullName>
+                <default>false</default>
+                <label>Salesforce to SAP Sync</label>
+            </value>
+            <value>
+                <fullName>Orders</fullName>
+                <default>false</default>
+                <label>Orders</label>
+            </value>
+            <value>
+                <fullName>ECC</fullName>
+                <default>false</default>
+                <label>ECC</label>
+            </value>
+            <value>
+                <fullName>RCC</fullName>
+                <default>false</default>
+                <label>RCC</label>
+            </value>
+            <value>
+                <fullName>EC</fullName>
+                <default>false</default>
+                <label>EC</label>
+            </value>
+            <value>
+                <fullName>RC</fullName>
+                <default>false</default>
+                <label>RC</label>
+            </value>
+            <value>
+                <fullName>Announcement Issue</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Announcement Issue</label>
+            </value>
+            <value>
+                <fullName>Asset Issue</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Asset Issue</label>
+            </value>
+            <value>
+                <fullName>Data Issue/Updates</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Data Issue/Updates</label>
+            </value>
+            <value>
+                <fullName>Email Template</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Email Template</label>
+            </value>
+            <value>
+                <fullName>Entitlement Issue</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Entitlement Issue</label>
+            </value>
+            <value>
+                <fullName>Pricing Assistance</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Pricing Assistance</label>
+            </value>
+            <value>
+                <fullName>RMA Issue</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>RMA Issue</label>
+            </value>
+            <value>
+                <fullName>Salesforce SAP Sync</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Salesforce SAP Sync</label>
+            </value>
+            <value>
+                <fullName>Search before Create (D&amp;B)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Search before Create (D&amp;B)</label>
+            </value>
+            <value>
+                <fullName>Survey Issue</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Survey Issue</label>
+            </value>
+            <value>
+                <fullName>User Permissions</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>User Permissions</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>End Customer</controllingFieldValue>
+            <valueName>ECC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>End Customer</controllingFieldValue>
+            <valueName>EC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Quoting Assistance</controllingFieldValue>
+            <controllingFieldValue>Service Cloud</controllingFieldValue>
+            <valueName>General User Request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Quoting Assistance</controllingFieldValue>
+            <valueName>Quote</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Quoting Assistance</controllingFieldValue>
+            <valueName>Quote Document</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Quoting Assistance</controllingFieldValue>
+            <valueName>Price Configuration</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Quoting Assistance</controllingFieldValue>
+            <valueName>Discount Approval</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Quoting Assistance</controllingFieldValue>
+            <valueName>Salesforce to SAP Sync</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Quoting Assistance</controllingFieldValue>
+            <valueName>Orders</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Service Cloud</controllingFieldValue>
+            <controllingFieldValue>Opportunity Assistance</controllingFieldValue>
+            <valueName>Sharing Question</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Service Cloud</controllingFieldValue>
+            <valueName>System Assistance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Service Cloud</controllingFieldValue>
+            <valueName>Training Request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Email Assistance</controllingFieldValue>
+            <valueName>Mass Email Assistance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Email Assistance</controllingFieldValue>
+            <valueName>New Email Template Request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NPN Assistance</controllingFieldValue>
+            <valueName>Contracts Packet</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NPN Assistance</controllingFieldValue>
+            <valueName>GPU Genius Training</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NPN Assistance</controllingFieldValue>
+            <valueName>Locator</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NPN Assistance</controllingFieldValue>
+            <valueName>MDF/ Rebates</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NPN Assistance</controllingFieldValue>
+            <valueName>NFR SW Licence Request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NPN Assistance</controllingFieldValue>
+            <valueName>NPN Compliance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NPN Assistance</controllingFieldValue>
+            <valueName>Online App Form</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NPN Assistance</controllingFieldValue>
+            <valueName>Partner Contacts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NPN Assistance</controllingFieldValue>
+            <valueName>Portal Issues</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NPN Assistance</controllingFieldValue>
+            <valueName>POS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NPN Assistance</controllingFieldValue>
+            <valueName>Program Related Questions</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NPN Assistance</controllingFieldValue>
+            <controllingFieldValue>Report/Dashboard Assistance</controllingFieldValue>
+            <valueName>SuRF Assistance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <valueName>Conga (Mail Merge) Issue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <valueName>Docusign</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <valueName>EBC Assistance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <valueName>User Assistance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <valueName>Weekly Commit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>Opportunity Assistance</controllingFieldValue>
+            <controllingFieldValue>OppReg Assistance</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Lead Assistance</controllingFieldValue>
+            <valueName>Deal Registration Lead</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Account Assistance</controllingFieldValue>
+            <controllingFieldValue>Opportunity Assistance</controllingFieldValue>
+            <valueName>Account Approval Request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Account Assistance</controllingFieldValue>
+            <valueName>Account Teams</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Account Assistance</controllingFieldValue>
+            <valueName>Account Updates</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Account Assistance</controllingFieldValue>
+            <valueName>Help with Contacts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Opportunity Assistance</controllingFieldValue>
+            <valueName>Cloud Consumption Oppty (CCO)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Opportunity Assistance</controllingFieldValue>
+            <valueName>Opportunity Update</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Opportunity Assistance</controllingFieldValue>
+            <controllingFieldValue>OppReg Assistance</controllingFieldValue>
+            <valueName>Opp Reg Extension</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Opportunity Assistance</controllingFieldValue>
+            <valueName>Jetson Embedded Opportunities</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OppReg Assistance</controllingFieldValue>
+            <valueName>Existing Opp Merge</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Report/Dashboard Assistance</controllingFieldValue>
+            <valueName>Dashboard Assistance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Report/Dashboard Assistance</controllingFieldValue>
+            <valueName>Existing Report / Dashboard update</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Report/Dashboard Assistance</controllingFieldValue>
+            <valueName>New Report Request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>WWFO Systems Access</controllingFieldValue>
+            <valueName>New</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>WWFO Systems Access</controllingFieldValue>
+            <valueName>Modify</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>WWFO Systems Access</controllingFieldValue>
+            <valueName>Reinstate</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Data Request</controllingFieldValue>
+            <valueName>MLNX Data</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Data Request</controllingFieldValue>
+            <valueName>NVDA Data</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Reseller</controllingFieldValue>
+            <valueName>RCC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Reseller</controllingFieldValue>
+            <valueName>RC</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

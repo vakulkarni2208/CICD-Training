@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- COMM_AssignPSPG_To_CommunityUsers_Batch: If set to false, the batch job will terminated, but you need to run it manually to start again. See the fields description how to start the batch job that assigns the PS PG in batch mode. --></help>
+    <label><!-- BATCHJOB_U2CSync_ENABLE_SCHDULED_JOB --></label>
+    <name>BATCHJOB_U2CSync_ENABLE_SCHDULED_JOB__c</name>
+</CustomFieldTranslation>

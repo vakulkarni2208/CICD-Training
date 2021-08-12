@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SL_Tesla_Amount__c</fullName>
+    <description>Sales Leader view of opportunity value.
+SDS-2737: Updated the field name from &apos;SL Tesla Amount&apos; to &apos;SL DC GPU Amount&apos;</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Sales Leaders, this is a view of the total opportunity amount. Used to either communicate potential upside or downside. This is not required if you are aligned with the opportunity dollar value.</inlineHelpText>
+    <label>SL DC GPU Amount</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Currency</type>
+</CustomField>

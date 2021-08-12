@@ -1,0 +1,53 @@
+<apex:page showHeader="true" sidebar="true">
+    <html>
+    <body>
+        <font face="verdana">
+            <table width="75%">
+                <tr>
+                    <td>
+                        <table width="700" border="0">
+                            <tr>
+                                <td colspan="2">
+                                    <div style="text-align: right;"><a href="http://www.nvidia.com/gpugenius" target="_blank"><img src="https://na2.salesforce.com/servlet/servlet.ImageServer?id=01540000000yWgR&oid=00D400000009E3I" width="300"></img></a></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="left" valign="bottom" colspan="2">
+                                    <font style="font-weight: bold;" size="4"><br></br>Welcome to the NVIDIA Partnerforce ISV Alliance Training Portal</font>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="left" colspan="2">
+                                    <br></br><br></br>
+                                    <font size="3">NVIDIA GPU Genius offers you a variety of tools, such as training and customer presentations, demos, customer leave behinds, datasheets, and much more.</font><br></br><br></br>
+                                </td>
+                            </tr>
+                           <tr>
+                               <td align="left" colspan="2">
+                                   <br></br><font size="3">Please select an option below to direct you to the relevant recommended training.  Remember you can always access the total GPU Genius site by selecting the GPU Genius logo above.</font><br></br><br></br>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><font style="font-weight: bold;" size="4">Recommended ISV Training</font></td>
+                            </tr>
+                            <tr>
+                                
+                                <td valign="top" align="left"><br></br><br></br><a href="http://www.brainshark.com/nvidia/isv-simulia-abaqus" target="_blank"><img src="https://na2.salesforce.com/servlet/servlet.ImageServer?id=01540000000yWgW&oid=00D400000009E3I" width="161" height="90"></img></a><br></br>GPU Computing with SIMULIA Abaqus</td>
+                                <td valign="top" align="left"><br></br><br></br><a href="http://www.brainshark.com/nvidia/isv-iray-3dsmax-video" target="_blank"><img src="https://na2.salesforce.com/servlet/servlet.ImageServer?id=01540000000yWgb&oid=00D400000009E3I" width="161" height="90"></img></a><br></br>Maximus for iray and 3ds Max</td>
+                            </tr>
+                            <tr>
+                                <td valign="top" align="left"><br></br><br></br><a href="http://www.brainshark.com/nvidia/isv-cust-preso-cs6" target="_blank"><img src="https://na2.salesforce.com/servlet/servlet.ImageServer?id=01540000000yWgg&oid=00D400000009E3I" width="161" height="90"></img></a><br></br>NVIDIA GPUs for Adobe Creative Suite 6</td>
+                                <td valign="top" align="left"><br></br><br></br><a href="http://www.brainshark.com/nvidia/isv-cust-preso-maximus" target="_blank"><img src="https://na2.salesforce.com/servlet/servlet.ImageServer?id=01540000000yWgq&oid=00D400000009E3I" width="161" height="90"></img></a><br></br>Maximus Customer Presentation</td>
+                            </tr>
+                            <tr>
+                                <td valign="top" align="left"><br></br><br></br><a href="http://www.brainshark.com/nvidia/isv-solidworks-2013" target="_blank"><img src="https://na2.salesforce.com/servlet/servlet.ImageServer?id=01540000000yWgv&oid=00D400000009E3I" width="161" height="90"></img></a><br></br>Solidworks - 2013</td>
+                            </tr>
+                            <tr><td colspan="2"><br></br><hr color="#92d050" size="5"></hr></td></tr>
+                        </table>
+                     </td>
+                </tr>
+            </table>
+        </font>
+    </body>
+    </html>
+</apex:page>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Okay_to_be_contacted_by_NVIDIA_o__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>I would like to be contacte(By checking this box, you expressly consent to NVIDIA providing the information you provided above to select third parties for follow up inquires regarding your product interests.)d by NVIDIA or an NVIDIA Tesla Preferred Provider - Yes or No.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select Yes if you are okay to be contacted by NVIDIA or an NVIDIA Tesla Preferred Provider. Otherwise select No.</inlineHelpText>
+    <label>Okay to be contacted by NVIDIA Partner?</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

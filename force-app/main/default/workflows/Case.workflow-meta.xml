@@ -1,0 +1,1442 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>APAC_Pricing_Update_Queue</fullName>
+        <description>APAC Pricing Update Queue</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>anishd@nvidia.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>jmattern@nvidia.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>linw@nvidia.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>mickeyc@nvidia.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Service_Cloud_Templates/Pricing_Update_Requested</template>
+    </alerts>
+    <alerts>
+        <fullName>Alert_to_Case_Owner_that_New_User_Request_was_approved</fullName>
+        <description>Alert to Case Owner that New User Request was approved</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/NVIDIA_CRM_New_User_Request_Approved</template>
+    </alerts>
+    <alerts>
+        <fullName>Case_Closed_Notification</fullName>
+        <description>Service Cloud : Case Closed Notification to Customers with Survey link</description>
+        <protected>false</protected>
+        <recipients>
+            <field>ContactEmail</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>no_reply@nvidia.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Case_Management/ESP_Closed_Case_Notification</template>
+    </alerts>
+    <alerts>
+        <fullName>Case_Closed_Notification_Japan</fullName>
+        <description>Service Cloud : Case Closed Notification to Customers with Survey link_Japan</description>
+        <protected>false</protected>
+        <recipients>
+            <field>ContactEmail</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>no_reply@nvidia.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Case_Management/ESP_Closed_Case_Notification_Japan</template>
+    </alerts>
+    <alerts>
+        <fullName>Case_Re_open_Notification</fullName>
+        <description>Case Re-open Notification</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>nvsupport@nvidia.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Service_Cloud_Templates/Case_Reopen_Template</template>
+    </alerts>
+    <alerts>
+        <fullName>Case_assigned_email_alert</fullName>
+        <description>Case assigned email alert Internal SalesOps</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>NVIDIA_Internal_Support_Templates/New_Internal_Case_Created</template>
+    </alerts>
+    <alerts>
+        <fullName>Case_assignment_email_notification</fullName>
+        <description>Case assignment email notification</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>Account Manager (TAM/AM)</recipient>
+            <type>caseTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>Customer Program Manager (CPM)</recipient>
+            <type>caseTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>Designated Engineer</recipient>
+            <type>caseTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>Solution Architect (SA)</recipient>
+            <type>caseTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>Support Team Member</recipient>
+            <type>caseTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>Technical Account Manager</recipient>
+            <type>caseTeam</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <field>Account_Manager__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <recipients>
+            <field>Regional_TAM__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderAddress>nvsupport@nvidia.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Service_Cloud_Templates/New_Case_Notification_Internal</template>
+    </alerts>
+    <alerts>
+        <fullName>Case_assignment_email_to_TAM_RTAM</fullName>
+        <description>Case assignment email to TAM &amp; RTAM</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Account_Manager__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <recipients>
+            <field>Regional_TAM__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderAddress>nvsupport@nvidia.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Service_Cloud_Templates/Case_Notification_for_TAM_RTAM</template>
+    </alerts>
+    <alerts>
+        <fullName>Customer_Satisfaction_Surveyil</fullName>
+        <description>Customer Satisfaction Survey Email</description>
+        <protected>false</protected>
+        <recipients>
+            <field>ContactEmail</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>nvsupport@nvidia.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Case_Management/Customer_Satisfaction_Survey_Email</template>
+    </alerts>
+    <alerts>
+        <fullName>EMEA_Pricing_Update_Queue</fullName>
+        <description>EMEA Pricing Update Queue</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>anishd@nvidia.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>jmattern@nvidia.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>mczerny@nvidia.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>tplienmolee@nvidia.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Service_Cloud_Templates/Pricing_Update_Requested</template>
+    </alerts>
+    <alerts>
+        <fullName>Internal_Case_Confirmation_to_Submitter</fullName>
+        <description>Internal Case Confirmation to Submitter</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderAddress>wwsalesops@nvidia.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Service_Cloud_Templates/NVIDIA_Internal_Case_Submitted</template>
+    </alerts>
+    <alerts>
+        <fullName>JAPAN_Pricing_Update_Queue</fullName>
+        <description>JAPAN Pricing Update Queue</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>anishd@nvidia.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>jmattern@nvidia.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>ssomei@nvidia.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Service_Cloud_Templates/Pricing_Update_Requested</template>
+    </alerts>
+    <alerts>
+        <fullName>MKTO_GDPR_Case_Assigned_Email_Alert</fullName>
+        <description>MKTO GDPR Case Assigned Email Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/New_Case_in_MKTO_GDPR_Contact_Deletion_Queue</template>
+    </alerts>
+    <alerts>
+        <fullName>NALA_Pricing_Update_Queue</fullName>
+        <description>NALA Pricing Update Queue</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>aeckes@nvidia.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>anishd@nvidia.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>arazdan@nvidia.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>jmattern@nvidia.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Service_Cloud_Templates/Pricing_Update_Requested</template>
+    </alerts>
+    <alerts>
+        <fullName>New_Case_Created</fullName>
+        <description>Service Cloud: New Case created : Notification to Customer</description>
+        <protected>false</protected>
+        <recipients>
+            <field>ContactEmail</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>enterprisesupport@nvidia.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Case_Management/ESP_New_Case_Notification</template>
+    </alerts>
+    <alerts>
+        <fullName>New_Case_Created_Service_mgr</fullName>
+        <ccEmails>ecabaluna@nvidia.com</ccEmails>
+        <description>Service Cloud: Business Critical New Case Notifications: Service Managers</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>JTP_Manager</recipient>
+            <type>role</type>
+        </recipients>
+        <recipients>
+            <recipient>NCR_Manager</recipient>
+            <type>role</type>
+        </recipients>
+        <senderAddress>nvsupport@nvidia.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Service_Cloud_Templates/New_Case_Notification_Service_Manager</template>
+    </alerts>
+    <alerts>
+        <fullName>Onsite_RMA_Install_JTP</fullName>
+        <ccEmails>ayodagiri@nvidia.com</ccEmails>
+        <ccEmails>NVSupport-JTP@jtp.co.jp</ccEmails>
+        <description>Onsite RMA Install - JTP</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>nvsupport@nvidia.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Case_Management/Onsite_RMA_Install</template>
+    </alerts>
+    <alerts>
+        <fullName>Onsite_RMA_Install_NCR</fullName>
+        <ccEmails>nvidia.support@ncr.com</ccEmails>
+        <description>Onsite RMA Install - NCR</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>nvsupport@nvidia.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Case_Management/Onsite_RMA_Install</template>
+    </alerts>
+    <alerts>
+        <fullName>Pricing_Update_Confirmation_to_Record_Creator</fullName>
+        <description>Pricing Update Confirmation to Record Creator</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Service_Cloud_Templates/Pricing_Update_Submitted_Confirmation</template>
+    </alerts>
+    <alerts>
+        <fullName>Service_Cloud_Agent_Comment_Notification</fullName>
+        <description>Service Cloud : Case Comment from NVIDIA Agents to Customer</description>
+        <protected>false</protected>
+        <recipients>
+            <field>ContactId</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderAddress>enterprisesupport@nvidia.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Case_Management/ESP_Service_Cloud_Case_Comment_Notification</template>
+    </alerts>
+    <alerts>
+        <fullName>Service_Cloud_Alert_for_Email_to_Closed_Invalid_Case</fullName>
+        <description>Service Cloud: Alert for Email to Closed/Invalid Case</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Last_Activity_User_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>no_reply@nvidia.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Service_Cloud_ESP_Community_User_Email/Service_Cloud_Template_for_Email_to_Closed_Invalid_Case</template>
+    </alerts>
+    <alerts>
+        <fullName>Service_Cloud_Alert_to_Case_Owner_for_New_Attachment</fullName>
+        <ccEmails>akhileshgupta82@mailinator.com</ccEmails>
+        <description>Service Cloud: Alert to Case Owner for New Attachment</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>Account Manager (TAM/AM)</recipient>
+            <type>caseTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>Customer Program Manager (CPM)</recipient>
+            <type>caseTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>Designated Engineer</recipient>
+            <type>caseTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>Solution Architect (SA)</recipient>
+            <type>caseTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>Support Team Member</recipient>
+            <type>caseTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>Technical Account Manager</recipient>
+            <type>caseTeam</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>no_reply@nvidia.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Service_Cloud_ESP_Community_User_Email/Service_Cloud_Template_for_Email_to_Case_Owner_for_New_Attachment</template>
+    </alerts>
+    <alerts>
+        <fullName>Service_Cloud_Alert_to_Customer_Case_Team_Member_for_New_Attachment</fullName>
+        <description>Service Cloud: Alert to Customer Case Team Member for New Attachment</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>Customer</recipient>
+            <type>caseTeam</type>
+        </recipients>
+        <senderAddress>enterprisesupport@nvidia.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Service_Cloud_ESP_Community_User_Email/Service_Cloud_Email_to_Customer_Case_Team_Member_for_New_Attachment</template>
+    </alerts>
+    <alerts>
+        <fullName>Service_Cloud_Alert_to_Customer_for_New_Attachment</fullName>
+        <description>Service Cloud: Alert to Customer for New Attachment</description>
+        <protected>false</protected>
+        <recipients>
+            <field>ContactEmail</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>enterprisesupport@nvidia.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Service_Cloud_ESP_Community_User_Email/Service_Cloud_Template_for_Email_to_Customer_for_New_Attachment</template>
+    </alerts>
+    <alerts>
+        <fullName>Service_Cloud_Approved_Site_Survey_notification</fullName>
+        <description>Service Cloud : Approved Site Survey notification</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>DGX_Installation_Group</recipient>
+            <type>group</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Service_Cloud_Templates/Service_Cloud_Site_Survey_Approved_for_DGX_2_Installation</template>
+    </alerts>
+    <alerts>
+        <fullName>Service_Cloud_Case_Closed_Notification_to_Customers_with_Survey_link_Japan_to_E2</fullName>
+        <ccEmails>akhileshg@nvidia.com</ccEmails>
+        <description>Service Cloud : Case Closed Notification to Customers with Survey link_Japan to E2C</description>
+        <protected>false</protected>
+        <senderAddress>no_reply@nvidia.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Case_Management/ESP_Closed_Case_Notification_Japan</template>
+    </alerts>
+    <alerts>
+        <fullName>Service_Cloud_Case_Closed_Notification_to_Customers_with_Survey_link_to_E2C</fullName>
+        <ccEmails>akhileshg@nvidia.com</ccEmails>
+        <description>Service Cloud : Case Closed Notification to Customers with Survey link to E2C</description>
+        <protected>false</protected>
+        <senderAddress>no_reply@nvidia.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Case_Management/ESP_Closed_Case_Notification</template>
+    </alerts>
+    <alerts>
+        <fullName>Service_Cloud_Case_Closed_Notification_to_WebEmail_with_Survey_link</fullName>
+        <description>Service Cloud : Case Closed Notification to WebEmail with Survey link</description>
+        <protected>false</protected>
+        <recipients>
+            <field>SuppliedEmail</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>no_reply@nvidia.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Case_Management/ESP_Closed_Case_Notification</template>
+    </alerts>
+    <alerts>
+        <fullName>Service_Cloud_Case_Closed_Notification_to_WebEmail_with_Survey_link_Japan</fullName>
+        <description>Service Cloud : Case Closed Notification to WebEmail with Survey link_Japan</description>
+        <protected>false</protected>
+        <recipients>
+            <field>SuppliedEmail</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>no_reply@nvidia.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Case_Management/ESP_Closed_Case_Notification_Japan</template>
+    </alerts>
+    <alerts>
+        <fullName>Service_Cloud_Case_Closed_Notification_to_WebEmail_with_Survey_link_Japan_to_E2C</fullName>
+        <ccEmails>akhileshg@nvidia.com</ccEmails>
+        <description>Service Cloud : Case Closed Notification to WebEmail with Survey link_Japan_to_E2C</description>
+        <protected>false</protected>
+        <senderAddress>no_reply@nvidia.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Case_Management/ESP_Closed_Case_Notification_Japan</template>
+    </alerts>
+    <alerts>
+        <fullName>Service_Cloud_Case_Closed_Notification_to_WebEmail_with_Survey_link_to_E2C</fullName>
+        <ccEmails>akhileshg@nvidia.com</ccEmails>
+        <description>Service Cloud : Case Closed Notification to WebEmail with Survey link to E2C</description>
+        <protected>false</protected>
+        <senderAddress>no_reply@nvidia.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Case_Management/ESP_Closed_Case_Notification</template>
+    </alerts>
+    <alerts>
+        <fullName>Service_Cloud_Case_Comment_Notification</fullName>
+        <description>Service Cloud: Case Comment from Customer to NVIDIA Agents</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>enterprisesupport@nvidia.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Case_Management/ESP_Agent_Case_Comment_Notification</template>
+    </alerts>
+    <alerts>
+        <fullName>Service_Cloud_Case_Comment_from_NVIDIA_Agents_to_Customer_Case_Team_Member</fullName>
+        <description>Service Cloud : Case Comment from NVIDIA Agents to Customer Case Team Member</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>Customer</recipient>
+            <type>caseTeam</type>
+        </recipients>
+        <senderAddress>enterprisesupport@nvidia.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Service_Cloud_ESP_Community_User_Email/Service_Cloud_Case_Comment_from_NVIDIA_Agents_to_Customer_Case_Team_Member</template>
+    </alerts>
+    <alerts>
+        <fullName>Service_Cloud_Case_assignment_email_notification_for_JTP</fullName>
+        <ccEmails>nvsupport-jtp@jtp.co.jp</ccEmails>
+        <ccEmails>off-biz-nv@jtp.co.jp</ccEmails>
+        <description>Service Cloud: Case assignment email notification for JTP</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <field>Account_Manager__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <recipients>
+            <field>Regional_TAM__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderAddress>nvsupport@nvidia.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Service_Cloud_Templates/New_Case_Notification_Internal</template>
+    </alerts>
+    <alerts>
+        <fullName>Service_Cloud_Closed_Case_Internal_Email_Alert</fullName>
+        <description>Service Cloud: Closed Case Internal Email Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Requestor_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <recipients>
+            <field>Submitted_By__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderAddress>wwsalesops@nvidia.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Service_Cloud_Templates/Service_Cloud_Case_Closed_Notification_Internal</template>
+    </alerts>
+    <alerts>
+        <fullName>Service_Cloud_Closed_Case_Internal_Email_Alert_CM_Team</fullName>
+        <description>Service Cloud: Closed Case Internal Email Alert_CM_Team</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Requestor_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <field>Submitted_By__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderAddress>salesforce_cmt@nvidia.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>All_Templates/Service_Cloud_Case_Closed_Notification_Internal_CM_Team</template>
+    </alerts>
+    <alerts>
+        <fullName>Service_Cloud_Closed_Case_Internal_Email_Alert_To_Creator</fullName>
+        <ccEmails>akhileshg@nvidia.com</ccEmails>
+        <description>Service Cloud: Closed Case Internal Email Alert - To Creator</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderAddress>wwsalesops@nvidia.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Service_Cloud_Templates/Service_Cloud_Case_Closed_Notification_Internal</template>
+    </alerts>
+    <alerts>
+        <fullName>Service_Cloud_Email_Notify_to_JTP_L1_L2_Owner_on_Attachment_on_case</fullName>
+        <ccEmails>akhileshgupta82@gmail.com</ccEmails>
+        <description>Service Cloud: Email  Notify to JTP L1/L2 Owner on Attachment on case</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>akhileshg@nvidia.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <field>L1_L2_Owner__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderAddress>no_reply@nvidia.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Service_Cloud_ESP_Community_User_Email/Service_Cloud_Template_for_Email_to_Case_Owner_for_New_Attachment</template>
+    </alerts>
+    <alerts>
+        <fullName>Service_Cloud_Email_Notify_to_JTP_L1_L2_Owner_on_case_comments_on_case</fullName>
+        <description>Service Cloud: Email  Notify to JTP L1/L2 Owner on case comments on case</description>
+        <protected>false</protected>
+        <recipients>
+            <field>L1_L2_Owner__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderAddress>no_reply@nvidia.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Case_Management/ESP_Agent_Case_Comment_Notification</template>
+    </alerts>
+    <alerts>
+        <fullName>Service_Cloud_Internal_Case_Confirmation_to_Submitter</fullName>
+        <description>Service Cloud: Internal Case Confirmation to Submitter and Manager</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Requestor_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <recipients>
+            <field>Submitted_By__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderAddress>wwsalesops@nvidia.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Service_Cloud_Templates/NVIDIA_Internal_Case_Submitted</template>
+    </alerts>
+    <alerts>
+        <fullName>Service_Cloud_Invalid_Queue_Case_Notification</fullName>
+        <description>Service Cloud Invalid Queue Case Notification</description>
+        <protected>false</protected>
+        <recipients>
+            <field>ContactId</field>
+            <type>contactLookup</type>
+        </recipients>
+        <recipients>
+            <field>SuppliedEmail</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>no_reply@nvidia.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Service_Cloud_ESP_Community_User_Email/Service_Cloud_Invalid_Queue_Case</template>
+    </alerts>
+    <alerts>
+        <fullName>Service_Cloud_New_Case_Notification_for_GFNA</fullName>
+        <ccEmails>nvcc@nvidia.com</ccEmails>
+        <ccEmails>NVEX-GFNA@nvidia.com</ccEmails>
+        <description>Service Cloud: New Case Notification for GFNA</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>ecabaluna@nvidia.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderAddress>no_reply@nvidia.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Service_Cloud_Templates/New_Case_Notification_Internal</template>
+    </alerts>
+    <alerts>
+        <fullName>Service_Cloud_Notify_Case_Owner_Customer_Closed_Case</fullName>
+        <description>Service Cloud - Notify Case Owner Customer Closed Case</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>no_reply@nvidia.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Service_Cloud_Templates/Service_Cloud_Case_Closed_by_Customer_Notification_Internal</template>
+    </alerts>
+    <alerts>
+        <fullName>Service_Cloud_Notify_Case_Team_Closed_Case</fullName>
+        <description>Service Cloud - Notify Case Team Closed Case</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>Account Manager (TAM/AM)</recipient>
+            <type>caseTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>Customer Program Manager (CPM)</recipient>
+            <type>caseTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>Designated Engineer</recipient>
+            <type>caseTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>Solution Architect (SA)</recipient>
+            <type>caseTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>Support Team Member</recipient>
+            <type>caseTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>Technical Account Manager</recipient>
+            <type>caseTeam</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>no_reply@nvidia.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Service_Cloud_Templates/Service_Cloud_Case_Closed_by_Customer_Notification_To_Case_Team</template>
+    </alerts>
+    <alerts>
+        <fullName>Service_Cloud_Notify_Case_Team_NV_Ticket_Created</fullName>
+        <description>Service Cloud Notify Case Team NV Ticket Created</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>Account Manager (TAM/AM)</recipient>
+            <type>caseTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>Customer Program Manager (CPM)</recipient>
+            <type>caseTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>Designated Engineer</recipient>
+            <type>caseTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>Solution Architect (SA)</recipient>
+            <type>caseTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>Support Team Member</recipient>
+            <type>caseTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>Technical Account Manager</recipient>
+            <type>caseTeam</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>no_reply@nvidia.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Service_Cloud_Templates/Service_Cloud_NV_Ticket_Notification</template>
+    </alerts>
+    <alerts>
+        <fullName>Service_Cloud_Notify_Case_Team_New_Email_Received</fullName>
+        <description>Service Cloud Notify Case Team New Email Received</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>Account Manager (TAM/AM)</recipient>
+            <type>caseTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>Customer Program Manager (CPM)</recipient>
+            <type>caseTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>Designated Engineer</recipient>
+            <type>caseTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>Solution Architect (SA)</recipient>
+            <type>caseTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>Support Team Member</recipient>
+            <type>caseTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>Technical Account Manager</recipient>
+            <type>caseTeam</type>
+        </recipients>
+        <senderAddress>no_reply@nvidia.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Service_Cloud_ESP_Community_User_Email/Service_Cloud_Template_for_Email_to_Case_Owner_for_Email_Message</template>
+    </alerts>
+    <alerts>
+        <fullName>Service_Cloud_Notify_JTP_L1_L2_Owner_on_New_Email_Message</fullName>
+        <description>Service Cloud:Notify JTP L1/L2 Owner on New Email Message</description>
+        <protected>false</protected>
+        <recipients>
+            <field>L1_L2_Owner__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderAddress>no_reply@nvidia.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Service_Cloud_ESP_Community_User_Email/Service_Cloud_Template_for_Email_to_Case_Owner_for_Email_Message</template>
+    </alerts>
+    <alerts>
+        <fullName>Service_Cloud_Notify_Manager_for_no_response_to_customer_in_2_day</fullName>
+        <description>Service Cloud: Notify Manager for no response to customer in 2 day</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Case_Manager_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>no_reply@nvidia.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Service_Cloud_ESP_Community_User_Email/Service_Cloud_Email_to_Case_Owner_and_Owners_mngr_if_no_response_prov_in_2_days</template>
+    </alerts>
+    <alerts>
+        <fullName>Service_Cloud_SLA_Process_Notifications_DE_BCQ</fullName>
+        <ccEmails>akhileshg@nvidia.com</ccEmails>
+        <ccEmails>ecabaluna@nvidia.com</ccEmails>
+        <ccEmails>gbrar@nvidia.com</ccEmails>
+        <description>Service Cloud: SLA Process Notifications: DE&amp;BCQ</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>abergholz@nvidia.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderAddress>nvsupport@nvidia.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Service_Cloud_Templates/Business_Critical_Case_Notifications_Internal</template>
+    </alerts>
+    <alerts>
+        <fullName>Service_Cloud_SLA_Process_Notifications_Owner_NCR_JTPMgr</fullName>
+        <ccEmails>akhileshg@nvidia.com</ccEmails>
+        <ccEmails>ecabaluna@nvidia.com</ccEmails>
+        <description>Service Cloud: SLA Process Notifications: Owner&amp;NCR/JTPMgr</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <recipient>JTP_Manager</recipient>
+            <type>role</type>
+        </recipients>
+        <recipients>
+            <recipient>NCR_Manager</recipient>
+            <type>role</type>
+        </recipients>
+        <senderAddress>nvsupport@nvidia.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Service_Cloud_Templates/Business_Critical_Case_Notifications_Internal</template>
+    </alerts>
+    <alerts>
+        <fullName>Service_Cloud_SLA_Process_Notifications_Owner_SupportMgr</fullName>
+        <ccEmails>akhileshg@nvidia.com</ccEmails>
+        <ccEmails>ecabaluna@nvidia.com</ccEmails>
+        <ccEmails>gbrar@nvidia.com</ccEmails>
+        <description>Service Cloud: SLA Process Notifications: Owner&amp;SupportMgr</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <recipient>Support_Manager</recipient>
+            <type>role</type>
+        </recipients>
+        <senderAddress>nvsupport@nvidia.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Service_Cloud_Templates/Business_Critical_Case_Notifications_Internal</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>CM_AssignToBusinessCriticalSupportQueue</fullName>
+        <description>This field update is responsible to update Case Owner to Business Critical Support Queue when a response is not provided by Designated Engineer within the specific time period.</description>
+        <field>OwnerId</field>
+        <lookupValue>Business_Critical_Support_Queue</lookupValue>
+        <lookupValueType>Queue</lookupValueType>
+        <name>CM_AssignToBusinessCriticalSupportQueue</name>
+        <notifyAssignee>true</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>CM_CaseResolutionViolationReminder_1</fullName>
+        <description>This field update is responsible to send First Email Notification for Case Resolution not provided within the specific time.</description>
+        <field>Milestone_Status__c</field>
+        <formula>&quot;Escalation Notification&quot;</formula>
+        <name>CM_CaseResolutionViolationReminder-1</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>CM_CaseResolutionViolationReminder_2</fullName>
+        <description>This field update is responsible to send Second Email Notification for Case Resolution not provided within the specific time.</description>
+        <field>Milestone_Status__c</field>
+        <formula>&quot;Follow up escalation notification&quot;</formula>
+        <name>CM_CaseResolutionViolationReminder-2</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>CM_NoAgentAssignmentNotification</fullName>
+        <description>This field update is responsible to send Email Notification when &quot;No Assignment from NCR/JTP Queue&quot; to an agent within the specific time.</description>
+        <field>Milestone_Status__c</field>
+        <formula>&quot;No Assignment from NCR-JTP Queue&quot;</formula>
+        <name>CM_NoAgentAssignmentNotification</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>CM_NoAssignmentfromBusinessCriticalQueue</fullName>
+        <description>This field update is responsible to send Email Notification when &quot;First response is not received from the Business Critical Support Queue&quot; within the specific time.</description>
+        <field>Milestone_Status__c</field>
+        <formula>&quot;No Assignment from BusinessCriticalQueue&quot;</formula>
+        <name>CM_NoAssignmentfromBusinessCriticalQueue</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>CM_NoResponseFromAgentReminder</fullName>
+        <description>This field update is responsible to send Email Notification when &quot;First response is not received from NCR/JTP Agent&quot; within the specific time.</description>
+        <field>Milestone_Status__c</field>
+        <formula>&quot;No First response&quot;</formula>
+        <name>CM_NoResponseFromAgentReminder</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>CM_NoResponseFromDEReminder_1</fullName>
+        <description>This field update is responsible to send First Email Notification when &quot;No response received from Designated Engineer&quot; within the specific time.</description>
+        <field>Milestone_Status__c</field>
+        <formula>&quot;No response form Designated Engineer&quot;</formula>
+        <name>CM_NoResponseFromDEReminder-1</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>CM_NoResponseFromDEReminder_2</fullName>
+        <description>This field update is responsible to send Second Email Notification when &quot;No response received from Designated Engineer&quot; within the specific time.</description>
+        <field>Milestone_Status__c</field>
+        <formula>&quot;Reassign to BusinessCriticalSupportQueue&quot;</formula>
+        <name>CM_NoResponseFromDEReminder-2</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Service_Cloud_Inc_Status_Closed</fullName>
+        <description>SDS-1402 : 3. When a case is closed by the Customer Set Incident Status value to &quot;Closed&quot; and Status value to &quot;Closed&quot;</description>
+        <field>Incident_Status__c</field>
+        <literalValue>Closed</literalValue>
+        <name>Service Cloud Inc Status Closed</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Service_Cloud_Inc_SubStatus_Cust_Closure</fullName>
+        <description>SDS-1402 : 4. Set Incident Substatus value to &quot;Customer Closer&quot;</description>
+        <field>Incident_Substatus__c</field>
+        <literalValue>Customer Closure</literalValue>
+        <name>Service Cloud Inc SubStatus Cust Closure</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Service_Cloud_Set_Trigger_Action</fullName>
+        <description>This field update sets Trigger Action field value to &quot;Escalate Case&quot;.</description>
+        <field>Trigger_Action__c</field>
+        <formula>&apos;Escalate Case&apos;</formula>
+        <name>Service Cloud: Set Trigger Action</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Service_Cloud_SiteSurvey_Complete_Date</fullName>
+        <description>Set Site Survey Complete Date to current date, when Site Survey Status is set to Approved</description>
+        <field>Site_Survey_Complete_Date__c</field>
+        <formula>IF( ISBLANK(Site_Survey_Complete_Date__c), TODAY(), Site_Survey_Complete_Date__c)</formula>
+        <name>Service Cloud : SiteSurvey Complete Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Service_Cloud_Site_Survey_Start_Date</fullName>
+        <description>Set Site Survey Start Date when Site Survey Status is set to Awaiting Customers</description>
+        <field>Site_Survey_Sent_Date__c</field>
+        <formula>IF( ISBLANK(Site_Survey_Sent_Date__c),  TODAY(), Site_Survey_Sent_Date__c)</formula>
+        <name>Service Cloud : Site Survey Start Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Service_Cloud_Update_Last_Status_Date_DT</fullName>
+        <description>Update &quot;Last Status Date/Time&quot; whenever Case Status is changed.</description>
+        <field>Last_Status_Date_Time__c</field>
+        <formula>Now()</formula>
+        <name>Service Cloud: Update Last Status DT</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Service_Set_Submitted_By_Role_Field</fullName>
+        <description>Populate Submitted by User Role field value from the user to an Internal case</description>
+        <field>Submitted_By_User_Role__c</field>
+        <formula>Submitted_By__r.UserRole.Name</formula>
+        <name>Service: Set Submitted By Role Field</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_Case_Manager_Email</fullName>
+        <field>Case_Manager_Email__c</field>
+        <formula>Account_Manager__r.Email</formula>
+        <name>Set Case Manager Email</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_Other_Support_Program_to_Tesla</fullName>
+        <description>Set Other Support Program field value to Tesla</description>
+        <field>Other_Support_Programs__c</field>
+        <literalValue>Tesla</literalValue>
+        <name>Set Other Support Program to Tesla</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_Product_Family_for_Tesla_Cases</fullName>
+        <description>Set Product Family for Tesla Cases</description>
+        <field>Product_Family__c</field>
+        <literalValue>Tesla HW Family</literalValue>
+        <name>Set Product Family for Tesla Cases</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_Time_Assigned_to_L3</fullName>
+        <field>Time_Assigned_to_L3__c</field>
+        <formula>NOW()</formula>
+        <name>Set Time Assigned to L3</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Trigger_Escalation</fullName>
+        <description>This field update sets Trigger Action field value to &quot;Escalate Case&quot;.</description>
+        <field>Trigger_Action__c</field>
+        <formula>&apos;Escalate Case&apos;</formula>
+        <name>Trigger Escalation</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Generic_Queue_Reason_for_Invalid</fullName>
+        <description>SDS-1844 Service: Block Email-to-Case for EAR Restricted Accounts</description>
+        <field>Generic_Queue_Reason__c</field>
+        <formula>&apos;Case belongs to account/domain related to EAR Restricted Account.&apos;</formula>
+        <name>Update Generic Queue Reason for Invalid</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <rules>
+        <fullName>Service Cloud %3A Case Closed Notification to Customer</fullName>
+        <active>false</active>
+        <description>Service Cloud : Case Closed Notification to Customers with Survey link</description>
+        <formula>ISPICKVAL(Status,&quot;Closed&quot;) &amp;&amp; $RecordType.DeveloperName = &apos;Community_User_Record_Type&apos;  &amp;&amp; if(Account.Billing_Region_Text__c = &quot;JAPAN&quot;, False, True)  &amp;&amp;  NOT( ISPICKVAL(Product_Family__c,&quot;Tesla HW Family&quot;) ||       ISPICKVAL(Product_Family__c,&quot;Tesla SW Family&quot;))  &amp;&amp; NOT(Owner:Queue.DeveloperName=&apos;ESP_Invalid_Case_Queue&apos;) &amp;&amp; NOT(ISBLANK(Contact.Email))</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Case_Closed_Notification</name>
+                <type>Alert</type>
+            </actions>
+            <actions>
+                <name>Service_Cloud_Case_Closed_Notification_to_Customers_with_Survey_link_to_E2C</name>
+                <type>Alert</type>
+            </actions>
+            <timeLength>1</timeLength>
+            <workflowTimeTriggerUnit>Hours</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Service Cloud %3A Case Closed Notification to Customer_Japan</fullName>
+        <active>false</active>
+        <description>Service Cloud : Case Closed Notification to Customers with Survey link</description>
+        <formula>ISPICKVAL(Status,&quot;Closed&quot;)  &amp;&amp; $RecordType.DeveloperName = &apos;Community_User_Record_Type&apos;  &amp;&amp; if(Account.Billing_Region_Text__c = &quot;JAPAN&quot;, True, False) &amp;&amp; NOT(ISBLANK(Contact.Email))</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Case_Closed_Notification_Japan</name>
+                <type>Alert</type>
+            </actions>
+            <actions>
+                <name>Service_Cloud_Case_Closed_Notification_to_Customers_with_Survey_link_Japan_to_E2</name>
+                <type>Alert</type>
+            </actions>
+            <timeLength>1</timeLength>
+            <workflowTimeTriggerUnit>Hours</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Service Cloud %3A Case Closed Notification to WebEmail</fullName>
+        <active>false</active>
+        <description>Service Cloud : Case Closed Notification to Customers with Survey link</description>
+        <formula>ISPICKVAL(Status,&quot;Closed&quot;)  &amp;&amp; $RecordType.DeveloperName = &apos;Community_User_Record_Type&apos;  &amp;&amp; if(Account.Billing_Region_Text__c = &quot;JAPAN&quot;, False, True)  &amp;&amp; NOT(      ISPICKVAL(Product_Family__c,&quot;Tesla HW Family&quot;) ||       ISPICKVAL(Product_Family__c,&quot;Tesla SW Family&quot;)   )  &amp;&amp; NOT(Owner:Queue.DeveloperName=&apos;ESP_Invalid_Case_Queue&apos;) &amp;&amp; (     ISBLANK(ContactId) ||      ISBLANK(Contact.Email)    ) &amp;&amp; NOT(ISBLANK(SuppliedEmail))</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Service_Cloud_Case_Closed_Notification_to_WebEmail_with_Survey_link</name>
+                <type>Alert</type>
+            </actions>
+            <actions>
+                <name>Service_Cloud_Case_Closed_Notification_to_WebEmail_with_Survey_link_to_E2C</name>
+                <type>Alert</type>
+            </actions>
+            <timeLength>1</timeLength>
+            <workflowTimeTriggerUnit>Hours</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Service Cloud %3A Case Closed Notification to WebEmail_Japan</fullName>
+        <active>false</active>
+        <description>Service Cloud : Case Closed Notification to Customers with Survey link</description>
+        <formula>ISPICKVAL(Status,&quot;Closed&quot;)  &amp;&amp; $RecordType.DeveloperName = &apos;Community_User_Record_Type&apos;  &amp;&amp; if(Account.Billing_Region_Text__c = &quot;JAPAN&quot;, True, False) &amp;&amp; (      ISBLANK(ContactId) ||      ISBLANK(Contact.Email)  ) &amp;&amp; NOT(ISBLANK(SuppliedEmail))</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Service_Cloud_Case_Closed_Notification_to_WebEmail_with_Survey_link_Japan</name>
+                <type>Alert</type>
+            </actions>
+            <actions>
+                <name>Service_Cloud_Case_Closed_Notification_to_WebEmail_with_Survey_link_Japan_to_E2C</name>
+                <type>Alert</type>
+            </actions>
+            <timeLength>1</timeLength>
+            <workflowTimeTriggerUnit>Hours</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Service Cloud %3A Case Comment from NVIDIA Agents to Customer</fullName>
+        <actions>
+            <name>Service_Cloud_Agent_Comment_Notification</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <description>Service Cloud :  Case Comment from NVIDIA Agents to Customer</description>
+        <formula>( NOT(ISBLANK(Case_Comment__c)) &amp;&amp; NOT(ISNULL(Case_Comment__c)) &amp;&amp; ISCHANGED(Case_Comment__c) ) &amp;&amp;   
+( Case_Comment_Owner__c &lt;&gt; &quot;NPN Partner Community(LOGIN)&quot; &amp;&amp; Case_Comment_Owner__c &lt;&gt; &quot;NPN Partner Community(NAMED)&quot; &amp;&amp; Case_Comment_Owner__c &lt;&gt; &quot;Community Lite Profile&quot; )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Service Cloud %3A New Case created %3A Notification to Customer</fullName>
+        <actions>
+            <name>New_Case_Created</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <description>Service Cloud : New Case created : Notification to Customer</description>
+        <formula>AND(RecordType.DeveloperName =&apos;Community_User_Record_Type&apos;,  ISPICKVAL(Status,&apos;New&apos;), Account.EAR_Restricted__c  = false)</formula>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Service Cloud %3A Notification for No Activity from DE</fullName>
+        <active>false</active>
+        <description>This is a time based workflow rule to send Email when there is no Activity on Case by Designated Engineer.</description>
+        <formula>(Account.Designated_Engineer__c  =  OwnerId ) &amp;&amp;  (ISBLANK(Last_Activity_Date__c) || Last_Activity_Date__c &lt; Last_Current_Owner_Date_Time__c )</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Trigger_Escalation</name>
+                <type>FieldUpdate</type>
+            </actions>
+            <offsetFromField>Case.Last_Current_Owner_Date_Time__c</offsetFromField>
+            <timeLength>12</timeLength>
+            <workflowTimeTriggerUnit>Hours</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Service Cloud %3A Populate Site Survey Start Date</fullName>
+        <actions>
+            <name>Service_Cloud_Site_Survey_Start_Date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.Site_Survey_Status__c</field>
+            <operation>equals</operation>
+            <value>In-Progress</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Service Cloud %3A Set Time Assigned to L3</fullName>
+        <actions>
+            <name>Set_Time_Assigned_to_L3</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>ISPICKVAL(  Incident_Status__c  , &quot;Enterprise Support&quot;) &amp;&amp; ISBLANK ( Time_Assigned_to_L3__c ) &amp;&amp; RecordType.DeveloperName = &quot;Community_User_Record_Type&quot;</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Service Cloud %3A Site Survey Approved</fullName>
+        <actions>
+            <name>Service_Cloud_SiteSurvey_Complete_Date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.Site_Survey_Status__c</field>
+            <operation>equals</operation>
+            <value>Approved</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Service Cloud - Notify Case Owner Customer Closed Case</fullName>
+        <actions>
+            <name>Service_Cloud_Notify_Case_Owner_Customer_Closed_Case</name>
+            <type>Alert</type>
+        </actions>
+        <actions>
+            <name>Service_Cloud_Inc_Status_Closed</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Service_Cloud_Inc_SubStatus_Cust_Closure</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>AND( BEGINS(TEXT($User.UserType), &apos;Power&apos;),ISCHANGED(Status) ,TEXT(Status) = &apos;Closed&apos;)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Service Cloud Invalid Case Queue Actions</fullName>
+        <actions>
+            <name>Service_Cloud_Invalid_Queue_Case_Notification</name>
+            <type>Alert</type>
+        </actions>
+        <actions>
+            <name>Update_Generic_Queue_Reason_for_Invalid</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Account.EAR_Restricted__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Origin</field>
+            <operation>equals</operation>
+            <value>Email</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.OwnerId</field>
+            <operation>equals</operation>
+            <value>ESP : Invalid Case Queue</value>
+        </criteriaItems>
+        <description>SDS-1844 Service: Block Email-to-Case for EAR Restricted Accounts</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Service Cloud Notify Case Team Case Closed</fullName>
+        <actions>
+            <name>Service_Cloud_Notify_Case_Team_Closed_Case</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <description>SDS-2868 : Service: Case Teams for Enterprise Support Cases</description>
+        <formula>AND( TEXT($User.UserType)=&apos;Standard&apos;,RecordType.DeveloperName=&apos;Community_User_Record_Type&apos;,TEXT(Status) = &apos;Closed&apos;)</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Service Cloud Notify Case Team NV Ticket Created</fullName>
+        <actions>
+            <name>Service_Cloud_Notify_Case_Team_NV_Ticket_Created</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <description>SDS-2868 Service: Case Teams for Enterprise Support Cases</description>
+        <formula>AND(ISCHANGED(NVBug_ID__c), NOT(ISBLANK(NVBug_ID__c)))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Service Cloud Notify Case Team New Email Received</fullName>
+        <actions>
+            <name>Service_Cloud_Notify_Case_Team_New_Email_Received</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <description>SDS-2868 Service: Case Teams for Enterprise Support Cases</description>
+        <formula>AND(ISPICKVAL(Last_Activity_Type__c,&apos;Email Message&apos;), ISCHANGED(Last_Activity_Date__c) , NOT( ISNEW() ) )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Service Cloud%3A Case Comment from Customer to NVIDIA Agents</fullName>
+        <actions>
+            <name>Service_Cloud_Case_Comment_Notification</name>
+            <type>Alert</type>
+        </actions>
+        <actions>
+            <name>Service_Cloud_Case_Comment_from_NVIDIA_Agents_to_Customer_Case_Team_Member</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <description>Service Cloud: Case Comment from Customer to NVIDIA Agents</description>
+        <formula>NOT(ISBLANK(Case_Comment__c)) &amp;&amp;  ISCHANGED(Case_Comment__c)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Service Cloud%3A Escalate DE Case to ESP L3</fullName>
+        <active>true</active>
+        <description>This is a time based workflow rule to escalate the Case to ESP L3 when there is no Activity on Case by Designated Engineer for 3 hours.</description>
+        <formula>(Account.Designated_Engineer__c  =  OwnerId ) &amp;&amp;   IsClosed  &lt;&gt; true &amp;&amp; (ISBLANK(Last_Activity_Date__c) || Last_Activity_Date__c &lt; Last_Current_Owner_Date_Time__c )</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Service_Cloud_Set_Trigger_Action</name>
+                <type>FieldUpdate</type>
+            </actions>
+            <offsetFromField>Case.Last_Current_Owner_Date_Time__c</offsetFromField>
+            <timeLength>3</timeLength>
+            <workflowTimeTriggerUnit>Hours</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Service Cloud%3A New Case Notification for GFNA</fullName>
+        <actions>
+            <name>Service_Cloud_New_Case_Notification_for_GFNA</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <formula>ISPICKVAL(Product_Category__c, &apos;GFN Services&apos;) &amp;&amp; ISCHANGED(Product_Category__c)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Service Cloud%3A Notification for Email to Closed%2FInvalid Case</fullName>
+        <actions>
+            <name>Service_Cloud_Alert_for_Email_to_Closed_Invalid_Case</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <description>This Workflow is responsible to send Email when a Email is received for Closed/Invalid Case.</description>
+        <formula>AND(    OR(     (IsClosed = True &amp;&amp; Days_Closed__c &gt; 30),      Owner:Queue.DeveloperName = &quot;ESP_Invalid_Case_Queue&quot;   ),    ISPICKVAL(Last_Activity_Type__c, &quot;Email Message&quot;),    ISPICKVAL(Last_Activity_User_Type__c, &quot;Customer&quot;),    TEXT(Last_Activity_Date__c) &lt;&gt; TEXT(PRIORVALUE(Last_Activity_Date__c)),    RecordType.Name = &quot;Community User Record Type&quot;  )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Service Cloud%3A Notification to Case Owner for New Attachment</fullName>
+        <actions>
+            <name>Service_Cloud_Alert_to_Case_Owner_for_New_Attachment</name>
+            <type>Alert</type>
+        </actions>
+        <actions>
+            <name>Service_Cloud_Alert_to_Customer_for_New_Attachment</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <description>Service Cloud: Notification to Case Owner for New Attachment from Customer.</description>
+        <formula>AND(    ISPICKVAL(Last_Activity_Type__c, &apos;Attachment&apos;), TEXT(Last_Activity_Date__c) &lt;&gt; TEXT(PRIORVALUE(Last_Activity_Date__c)),    RecordType.Name = &quot;Community User Record Type&quot; )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Service Cloud%3A Notifications to Customer for New Attachment</fullName>
+        <actions>
+            <name>Service_Cloud_Alert_to_Case_Owner_for_New_Attachment</name>
+            <type>Alert</type>
+        </actions>
+        <actions>
+            <name>Service_Cloud_Alert_to_Customer_Case_Team_Member_for_New_Attachment</name>
+            <type>Alert</type>
+        </actions>
+        <actions>
+            <name>Service_Cloud_Alert_to_Customer_for_New_Attachment</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <description>Service Cloud: Notifications to Customer for New Attachment from Internal user.</description>
+        <formula>AND( ISPICKVAL(Last_Activity_Type__c, &apos;Attachment&apos;), ISCHANGED(Last_Activity_Date__c), RecordType.Name = &quot;Community User Record Type&quot; )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Service Cloud%3A Notify Case Owner and Owner Manager</fullName>
+        <active>true</active>
+        <description>This workflow is responsible to send Email to Case Owner when there is no response to Customer in two days.</description>
+        <formula>TEXT(Last_Activity_User_Type__c) = &apos;Customer&apos; &amp;&amp; Owner:User.Id  &lt;&gt; null &amp;&amp;  NOT(IsClosed) &amp;&amp; $RecordType.DeveloperName = &apos;Community_User_Record_Type&apos;</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Service_Cloud_Notify_Manager_for_no_response_to_customer_in_2_day</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Case.Last_Activity_Date__c</offsetFromField>
+            <timeLength>48</timeLength>
+            <workflowTimeTriggerUnit>Hours</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Service Cloud%3A SLA Notifications - For DE%26BCQ</fullName>
+        <actions>
+            <name>Service_Cloud_SLA_Process_Notifications_DE_BCQ</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <description>Service Cloud: Send Email Alerts to Andrew for updates from SLA (Entitlement) Process.</description>
+        <formula>$RecordType.DeveloperName = &apos;Community_User_Record_Type&apos; &amp;&amp; PRIORVALUE(SLA_Text__c) &lt;&gt; SLA_Text__c &amp;&amp; (  Milestone_Status__c  = &quot;No response form Designated Engineer&quot;  || Milestone_Status__c  = &quot;No Assignment from BusinessCriticalQueue&quot;  )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Service Cloud%3A SLA Notifications - Owner%26SupportMgr</fullName>
+        <actions>
+            <name>Service_Cloud_SLA_Process_Notifications_Owner_SupportMgr</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <description>Service Cloud: Send Email Alerts to CaseOwner and Support Managers for updates from SLA (Entitlement) Process.</description>
+        <formula>$RecordType.DeveloperName = &apos;Community_User_Record_Type&apos; &amp;&amp; PRIORVALUE(SLA_Text__c) &lt;&gt; SLA_Text__c &amp;&amp; (  Milestone_Status__c  = &quot;No response form Designated Engineer&quot; || Milestone_Status__c  = &quot;Reassign to BusinessCriticalSupportQueue&quot; || Milestone_Status__c  = &quot;No Assignment from BusinessCriticalQueue&quot;  )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Service Cloud%3A SLA Notifications%3A Owner%26NCR%2FJTPMgr</fullName>
+        <actions>
+            <name>Service_Cloud_SLA_Process_Notifications_Owner_NCR_JTPMgr</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <description>Service Cloud: Send Email Alerts to CaseOwner and NCR/JTP Managers for updates from SLA (Entitlement) Process.</description>
+        <formula>$RecordType.DeveloperName = &apos;Community_User_Record_Type&apos; &amp;&amp; PRIORVALUE(SLA_Text__c) &lt;&gt; SLA_Text__c &amp;&amp;  (  Milestone_Status__c = &quot;No Assignment from NCR-JTP Queue&quot; ||  Milestone_Status__c = &quot;No First response&quot; || Milestone_Status__c = &quot;Escalation Notification&quot; || Milestone_Status__c = &quot;Follow up escalation notification&quot; )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Service Cloud%3A Tesla Case Automation Rules</fullName>
+        <actions>
+            <name>Set_Other_Support_Program_to_Tesla</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Set_Product_Family_for_Tesla_Cases</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.OwnerId</field>
+            <operation>equals</operation>
+            <value>Tesla Support Queue</value>
+        </criteriaItems>
+        <description>Automation rules for Tesla support cases</description>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Service Cloud%3A Update Last Status Date%2FTime</fullName>
+        <actions>
+            <name>Service_Cloud_Update_Last_Status_Date_DT</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>This WF is responsible to update current date/time whenever Case Status changes.</description>
+        <formula>ISCHANGED( Status )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Service%3A Update Submitted by Role on Internal Case</fullName>
+        <actions>
+            <name>Service_Set_Submitted_By_Role_Field</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>(RecordType.Name = &apos;NVIDIA Internal Case&apos;) &amp;&amp;
+(ISCHANGED(Submitted_By__c) || ISNEW())</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

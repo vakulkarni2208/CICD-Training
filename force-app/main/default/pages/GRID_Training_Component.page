@@ -1,0 +1,96 @@
+<apex:page showHeader="true" sidebar="true" title="GPU Genius">
+    <html>
+    <head>
+    </head>
+    <body>
+    <font face="verdana">
+    <table width="75%">
+    <tr><td>
+    <table width="800">
+    
+    <tr>
+    <td colspan="2">
+        <div style="text-align: right;">
+        <a href="http://www.nvidia.com/gpugenius" target="_blank"><img src="{!
+
+$Resource.GPUGenius}/GPUGenius.png" width="300"></img></a>
+    </div>
+    </td></tr>
+    <tr><td colspan="2" align="left" valign="bottom">
+    <font style="font-weight: bold;" size="5"><br></br>NVIDIA GRID Training Portal</font></td>
+    </tr>
+        <tr><td align="left"><br></br><font size="3">NVIDIA GPU Genius offers you a variety of tools, such as training and customer presentations, demos, customer leave behinds, datasheets, and much more. Click on the GPU Genius logo to access this content.</font><br></br></td></tr>
+   <tr><td align="left"><br></br><font size="3"><b>Required Technical Training</b></font><br></br><br></br>
+        <a href="http://www.brainshark.com/nvidia/vu?pi=zGFzQWNdPz34dFz0" target="_blank"><img src="https://na2.salesforce.com/servlet/servlet.ImageServer?id=01540000001Azjs&oid=00D400000009E3I&lastMod=1374012464000" width="250" height="136"></img></a>
+        </td></tr>
+   <tr><td align="left"><br></br><br></br><font size="3"><em>Sales Training Coming Soon</em></font><br></br></td></tr>
+   </table>
+   
+<!--    <table width="800" border="0" bgcolor="#dddddd">
+    <col width="200"></col>
+    <col width="200"></col>
+    <col width="200"></col>
+    <col width="200"></col>
+    <tr><th colspan="4"><font size="4">Sales Certification Curriculum</font></th></tr>
+    <tr><td valign="top" align="left"><a href="http://www.brainshark.com/nvidia/view-intro-gpu-
+
+computing" target="_blank"><img src="https://cs12.salesforce.com/servlet/servlet.ImageServer?id=015V00000005DxU&oid=00DV000000054qp&lastMod=1362695831000" width="161" 
+
+height="90"></img></a><br></br><b>Sales Training:</b> Intro to GPU Computing with Tesla 
+
+GPUs</td>
+    <td valign="top" align="left"><a href="http://www.brainshark.com/nvidia/view-sales-
+
+training-higher-ed" target="_blank"><img 
+
+src="https://cs12.salesforce.com/servlet/servlet.ImageServer?id=015V00000005DxU&oid=00DV000000054qp&lastMod=1362695831000" width="161" 
+
+height="90"></img></a><br></br><b>Sales Training:</b> Higher Ed</td>
+    <td valign="top" align="left"><a href="http://www.brainshark.com/nvidia/view-training-gpu-
+
+test-drive" target="_blank"><img src="https://cs12.salesforce.com/servlet/servlet.ImageServer?id=015V00000005DxU&oid=00DV000000054qp&lastMod=1362695831000" width="161" 
+
+height="90"></img></a><br></br><b>Sales Training:</b><br></br>GPU Test Drive</td>
+    <td valign="top" align="left"><a href="http://www.brainshark.com/nvidia/view-applications-
+
+catalog" target="_blank"><img src="https://cs12.salesforce.com/servlet/servlet.ImageServer?id=015V00000005DxU&oid=00DV000000054qp&lastMod=1362695831000" width="161" 
+
+height="90"></img></a><br></br><b>Applications Catalog:</b><br></br>Review this Key Sales Tool</td>
+</tr>
+<tr>  <td> <a href="http://www.brainshark.com/nvidia/required-product-training-K20X" 
+
+target="_blank"><img src="https://cs12.salesforce.com/servlet/servlet.ImageServer?id=015V00000005DxU&oid=00DV000000054qp&lastMod=1362695831000" 
+
+width="161" 
+
+height="90"></img></a><br></br>K20x</td>
+                <td><a href="http://www.brainshark.com/nvidia/required-product-training-K10" 
+
+target="_blank"><img src="https://cs12.salesforce.com/servlet/servlet.ImageServer?id=015V00000005DxU&oid=00DV000000054qp&lastMod=1362695831000" width="161" 
+
+height="90"></img></a><br></br>K10</td>
+   
+    <td><a href="http://www.brainshark.com/nvidia/required-approaches-to-gpucomp" 
+
+target="_blank"><img src="https://cs12.salesforce.com/servlet/servlet.ImageServer?id=015V00000005DxU&oid=00DV000000054qp&lastMod=1362695831000" 
+
+width="161" 
+
+height="90"></img></a><br></br>Approaches to GPU Computing</td>
+<td></td></tr>
+    </table>
+-->    
+    
+    
+    
+         <table height="1000" width="800"><tr><td><br></br><hr color="#92d050" 
+
+size="5"></hr></td></tr>
+         </table>
+     
+     </td></tr></table>
+
+          </font>
+</body>
+</html>
+</apex:page>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ORG_URL__c</fullName>
+    <defaultValue>&quot;https://na2.salesforce.com&quot;</defaultValue>
+    <description>NVIDIA ORG URL e.g., https://na2.salesforce.com&quot;</description>
+    <externalId>false</externalId>
+    <inlineHelpText>NVIDIA ORG URL e.g., https://na2.salesforce.com&quot;</inlineHelpText>
+    <label>ORG URL</label>
+    <length>255</length>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

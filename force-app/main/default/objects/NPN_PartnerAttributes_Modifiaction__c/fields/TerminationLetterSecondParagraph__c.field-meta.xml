@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TerminationLetterSecondParagraph__c</fullName>
+    <externalId>false</externalId>
+    <formula>&quot;We know that business strategies can change and evolve over time. Should you like your organization to be reconsidered for membership in the NPN Partner program, please reach back out to us.&quot;</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>TerminationLetterSecondParagraph</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

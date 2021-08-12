@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Jetson_Github_repository__c</fullName>
+    <description>As per Jira #SDS-3046 - Jetson AI info</description>
+    <externalId>false</externalId>
+    <label>Jetson-Github repository</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Url</type>
+</CustomField>

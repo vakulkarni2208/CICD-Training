@@ -1,0 +1,15 @@
+<apex:page standardController="Lead" extensions="NV_DocuSign_LeadExtension" >
+   <script>
+        <apex:includeScript value="{!$Resource.Docusign_Custom}"/>
+
+        //********* Page Callout (Do not modify) *********//
+        window.location.href = "/apex/dsfs__DocuSign_CreateEnvelope?"+
+                                "SourceID={!Lead.Id}"+
+                                "&DST={!strDocumentIds}"+
+                                "&CES={!strEmailSubject}"+
+                                "&CEM={!strEmailBody}"+
+                                "&CCRM=PBM~PBM;Partner User~Partner User;Key Contact~Key Contact;VP~VP;Legal~Legal;NPNTeam~NPNTeam;"+
+                                "&CCTM=PBM~Signer;Partner User~Signer;Key Contact~Signer;VP~Signer;Legal~Carbon Copy;NPNTeam~Carbon Copy;"+
+                                "&CRL=Email~{!Lead.Owner.Email};Role~PBM;FirstName~{!Lead.Owner.FirstName};LastName~{!Lead.Owner.LastName};RoutingOrder~1;,Email~{!Lead.Email};FirstName~{!Lead.FirstName};LastName~{!Lead.LastName};Role~Partner User;RoutingOrder~2;,Email~{!Lead.Email};FirstName~{!Lead.FirstName};LastName~{!Lead.LastName};Role~Key Contact;RoutingOrder~3;,Email~{!strVPEmail};Role~VP;FirstName~{!strVPFirstName};LastName~{!strVPLastName};RoutingOrder~4;,Email~cswithenbank@nvidia.com;Role~Legal;FirstName~Legal;LastName~Legal;RoutingOrder~5;,Email~npnonboarding@nvidia.com;Role~NPNTeam;FirstName~NPN;LastName~Onboarding;RoutingOrder~5;";
+    </script>
+</apex:page>

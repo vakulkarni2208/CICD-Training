@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DR_Customer_Contact__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>SDS-1740-Remove field filter from Primary Customer Contact field on the Opportunity such that someone can pick any contact from the db</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This field must contain the Primary Contact involved with this opportunity</inlineHelpText>
+    <label>Primary Customer Contact</label>
+    <lookupFilter>
+        <active>false</active>
+        <filterItems>
+            <field>$Source.AccountId</field>
+            <operation>equals</operation>
+            <valueField>Contact.AccountId</valueField>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Contact</referenceTo>
+    <relationshipLabel>Opportunities (Customer Contact)</relationshipLabel>
+    <relationshipName>Opportunities1</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

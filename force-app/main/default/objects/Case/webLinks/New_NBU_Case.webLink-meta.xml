@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>New_NBU_Case</fullName>
+    <availability>online</availability>
+    <displayType>massActionButton</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>New NBU Case</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <requireRowSelection>true</requireRowSelection>
+    <url>/lightning/o/Case/new?backgroundContext=/lightning/r/Case/{!Case.Id}/view&amp;recordTypeId=0121W000000QQ8h&amp;defaultFieldValues=ParentId={!Case.Id},Subject={!Case.Subject},Origin={!Case.Origin},OwnerId={!Case.OwnerId},SuppliedEmail={!Case.SuppliedEmail},AccountId={!Case.AccountId},Case_Owner__c={!Case.Case_Owner__c},Product_Family__c={!Case.Product_Family__c},Product_Category__c={!Case.Product_Category__c}{!IF(ISBLANK(Case.ContactId), &apos;&apos;, &apos;,ContactId=&apos;)}{!IF(ISBLANK(Case.ContactId), &apos;&apos;, Case.ContactId)}{!IF(ISBLANK(Case.AssetId), &apos;&apos;, &apos;,AssetId=&apos;)}{!IF(ISBLANK(Case.AssetId), &apos;&apos;, Case.AssetId)}{!IF(ISBLANK(Case.EntitlementId), &apos;&apos;, &apos;,EntitlementId=&apos;)}{!IF(ISBLANK(Case.EntitlementId), &apos;&apos;, Case.EntitlementId)},Description={!URLENCODE(LEFT(Case.Description, 200))}</url>
+</WebLink>

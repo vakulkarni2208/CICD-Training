@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>NGC_Fleetcommand_Registry_Alert</fullName>
+        <description>NGC Fleetcommand Registry Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>chasu@nvidia.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>mveerappan@nvidia.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>mytrang@nvidia.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>vgattamaneni@nvidia.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderAddress>no_reply@nvidia.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/NGC_Fleetcommand_Registry_Notifications</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Service_Cloud_NGC_Status_New_on_create</fullName>
+        <description>SDS-1415 Service: Managing NGC Registry Information (NVCR.io org/team names) 24/5 : when a new NGC Registry record is created the value is set to new</description>
+        <field>Status__c</field>
+        <literalValue>New</literalValue>
+        <name>Service Cloud NGC Status New on create</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_NGC_Type</fullName>
+        <field>Type__c</field>
+        <literalValue>Fleet Command</literalValue>
+        <name>Set NGC Type</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <rules>
+        <fullName>NGC Registry Notifications</fullName>
+        <actions>
+            <name>NGC_Fleetcommand_Registry_Alert</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>1 AND 2</booleanFilter>
+        <criteriaItems>
+            <field>DGX_Registry_Container__c.Status__c</field>
+            <operation>equals</operation>
+            <value>New</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>DGX_Registry_Container__c.Product_Family__c</field>
+            <operation>equals</operation>
+            <value>FleetCommand</value>
+        </criteriaItems>
+        <description>NGC Registry Notifications</description>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>NGC%3A Set Type from Product Family for the NFR%2FEvals</fullName>
+        <actions>
+            <name>Set_NGC_Type</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>1 AND 2</booleanFilter>
+        <criteriaItems>
+            <field>DGX_Registry_Container__c.Product_Family__c</field>
+            <operation>equals</operation>
+            <value>FleetCommand</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>DGX_Registry_Container__c.Type__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <description>NGC: Set Type from Product Family for the NFR/Evals</description>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Service Cloud NGC Status New on create</fullName>
+        <actions>
+            <name>Service_Cloud_NGC_Status_New_on_create</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>DGX_Registry_Container__c.Name</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <description>SDS-1415 :</description>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+</Workflow>

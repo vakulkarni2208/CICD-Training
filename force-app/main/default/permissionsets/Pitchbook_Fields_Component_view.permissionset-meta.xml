@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customPermissions>
+        <enabled>true</enabled>
+        <name>Pitchbook_Fields_Component_view</name>
+    </customPermissions>
+    <description>SDS-2822, SDS-2818 - Show pitchbook fields lightning component with filter</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Pitchbook Fields Component - view</label>
+</PermissionSet>

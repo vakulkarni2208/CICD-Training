@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- What application for use on Test Drive? --></label>
+    <name>What_application_for_use_on_Simcluster__c</name>
+</CustomFieldTranslation>

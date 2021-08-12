@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IDM_FederationIdentifier__c</fullName>
+    <description>Copy of FederationIdentifier value</description>
+    <externalId>false</externalId>
+    <formula>FederationIdentifier</formula>
+    <inlineHelpText>Copy of FederationIdentifier value</inlineHelpText>
+    <label>IDM - FederationIdentifier</label>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

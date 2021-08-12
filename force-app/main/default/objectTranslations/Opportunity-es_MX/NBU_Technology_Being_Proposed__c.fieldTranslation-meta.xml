@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- NBU Technology Being Proposed --></label>
+    <name>NBU_Technology_Being_Proposed__c</name>
+    <picklistValues>
+        <masterLabel>DPU or NPU</masterLabel>
+        <translation><!-- DPU or NPU --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ethernet</masterLabel>
+        <translation><!-- Ethernet --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Infiniband</masterLabel>
+        <translation><!-- Infiniband --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Interconnect</masterLabel>
+        <translation><!-- Interconnect --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Software</masterLabel>
+        <translation><!-- Software --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

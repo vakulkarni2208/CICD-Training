@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- PO = AI/App is Helm ready for Pilot, IT has EGX systems ready for Pilot
+P1 = AI/App is NOT Helm ready, can get EGX systems
+P2 = AI/App choice selection not started and no EGX systems available
+P3 = IT Due Diligence only --></help>
+    <label><!-- EGX Priority Level --></label>
+    <name>EGX_Priority_Level__c</name>
+    <picklistValues>
+        <masterLabel>P0</masterLabel>
+        <translation><!-- P0 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>P1</masterLabel>
+        <translation><!-- P1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>P2</masterLabel>
+        <translation><!-- P2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>P3</masterLabel>
+        <translation><!-- P3 --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

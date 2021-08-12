@@ -1,0 +1,14 @@
+<apex:page >
+<!-- 
+   ----- 
+   /* @Manideep: 5/8/2018 - This code is commented by Manideep as its not being used and part of Opportunity RecordType clean up. This is an old code
+      and is not used anymore. Confirmed by Margaret and Gregg, so they are ready to delete.
+   */ -----
+<apex:page standardController="Opportunity" extensions="OpportunityReport_Controller" recordSetvar="opps" 
+           tabStyle="Opportunity_Report__tab" sidebar="false"
+           cache="true" 
+           showHeader="false"
+           contentType="text/csv#OpportunityReportCSV.csv"
+           >{!strResults}
+-->           
+</apex:page>

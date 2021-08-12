@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Enter the ISV Software App that applies to this lead --></help>
+    <label><!-- ISV Software Apps --></label>
+    <name>ISV_Software_Apps__c</name>
+</CustomFieldTranslation>

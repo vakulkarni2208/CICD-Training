@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Type of Users --></label>
+    <name>TCO_Type_of_Users__c</name>
+    <picklistValues>
+        <masterLabel>PC Users</masterLabel>
+        <translation><!-- PC Users --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Workstation Users</masterLabel>
+        <translation><!-- Workstation Users --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

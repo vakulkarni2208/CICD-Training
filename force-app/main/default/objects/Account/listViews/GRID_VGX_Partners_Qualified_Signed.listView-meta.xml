@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GRID_VGX_Partners_Qualified_Signed</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>DBA_Doing_Business_As__c</columns>
+    <columns>ACCOUNT.ADDRESS1_CITY</columns>
+    <columns>ACCOUNT.ADDRESS1_STATE</columns>
+    <columns>ACCOUNT.ADDRESS1_COUNTRY</columns>
+    <columns>ACCOUNT.PHONE1</columns>
+    <columns>ACCOUNT.CREATED_DATE</columns>
+    <columns>CORE.USERS.FIRST_NAME</columns>
+    <columns>CORE.USERS.LAST_NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>012400000009eZt</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.IS_PARNTER</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>Legacy_Program_Termination_Date__c</field>
+        <operation>equals</operation>
+    </filters>
+    <label>GRID VGX Partners - Qualified / Signed</label>
+    <language>en_US</language>
+    <sharedTo/>
+</ListView>

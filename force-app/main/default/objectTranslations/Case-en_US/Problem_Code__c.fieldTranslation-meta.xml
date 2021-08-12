@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Problem Code --></label>
+    <name>Problem_Code__c</name>
+    <picklistValues>
+        <masterLabel>Configuration Assistance</masterLabel>
+        <translation><!-- Configuration Assistance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DCS HW</masterLabel>
+        <translation><!-- DCS HW --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DCS SW</masterLabel>
+        <translation><!-- DCS SW --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DCV HW</masterLabel>
+        <translation><!-- DCV HW --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Deep Learning</masterLabel>
+        <translation><!-- Deep Learning --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Drive AV/OS SW</masterLabel>
+        <translation><!-- Drive AV/OS SW --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DriveSim SW</masterLabel>
+        <translation><!-- DriveSim SW --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Error Message, Logs, Debugs</masterLabel>
+        <translation><!-- Error Message, Logs, Debugs --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hardware Failure</masterLabel>
+        <translation><!-- Hardware Failure --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Inference</masterLabel>
+        <translation><!-- Inference --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Install, Uninstall or Upgrade</masterLabel>
+        <translation><!-- Install, Uninstall or Upgrade --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Licensing</masterLabel>
+        <translation><!-- Licensing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Machine Learning</masterLabel>
+        <translation><!-- Machine Learning --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pegasus HW</masterLabel>
+        <translation><!-- Pegasus HW --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Product Feature/Function Question</masterLabel>
+        <translation><!-- Product Feature/Function Question --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SW Download Assistance</masterLabel>
+        <translation><!-- SW Download Assistance --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

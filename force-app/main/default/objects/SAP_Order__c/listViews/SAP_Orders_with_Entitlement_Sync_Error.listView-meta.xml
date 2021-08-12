@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SAP_Orders_with_Entitlement_Sync_Error</fullName>
+    <columns>NAME</columns>
+    <columns>SAP_PAK_ID__c</columns>
+    <columns>Product_SKU__c</columns>
+    <columns>SAP_Account__c</columns>
+    <columns>Sold_To_Partner__c</columns>
+    <columns>VAR__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>SAP_Sales_Order_Number__c</columns>
+    <columns>Error_Log__c</columns>
+    <columns>Hardware_Serial_Number__c</columns>
+    <columns>LAST_UPDATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Created_Date__c</field>
+        <operation>greaterThan</operation>
+        <value>2/13/2020</value>
+    </filters>
+    <filters>
+        <field>Synced_with_Entitlement__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>Entitlement_Type__c</field>
+        <operation>notEqual</operation>
+        <value>PL</value>
+    </filters>
+    <label>SAP Orders with Entitlement Sync Error</label>
+</ListView>

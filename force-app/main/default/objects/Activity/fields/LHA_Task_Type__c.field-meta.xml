@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LHA_Task_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>LHA Task Type</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>EGX Company Lead (No contact yet)</fullName>
+                <default>false</default>
+                <label>EGX Company Lead (No contact yet)</label>
+            </value>
+            <value>
+                <fullName>EGX Meeting/Call</fullName>
+                <default>false</default>
+                <label>EGX Meeting/Call</label>
+            </value>
+            <value>
+                <fullName>Email</fullName>
+                <default>false</default>
+                <label>Email</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

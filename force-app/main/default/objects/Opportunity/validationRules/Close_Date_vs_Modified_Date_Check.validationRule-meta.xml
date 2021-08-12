@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Close_Date_vs_Modified_Date_Check</fullName>
+    <active>true</active>
+    <description>Error message when user edits existing opportunity that has a past due close date.  Require user to update close date. Tegra &amp; Notebook Opportunities.</description>
+    <errorConditionFormula>AND (
+OR (
+ISPICKVAL( StageName, &quot;Prospecting&quot;),
+ISPICKVAL(StageName, &quot;Qualification&quot;),
+ISPICKVAL(StageName, &quot;Needs Analysis&quot;),
+ISPICKVAL(StageName, &quot;Proposal/Price Quote&quot;),
+ISPICKVAL(StageName, &quot;Negotiation/Review&quot;)
+),
+DATEVALUE(LastModifiedDate) &gt;  CloseDate,
+($RecordType.Name  = &quot;Tegra Opportunity&quot;
+ || 
+ $RecordType.Name = &quot;Notebook Opportunity&quot;)
+)</errorConditionFormula>
+    <errorDisplayField>CloseDate</errorDisplayField>
+    <errorMessage>You are modifying an open opportunity with a past due Close Date.
+Please update the Close Date before saving.</errorMessage>
+</ValidationRule>

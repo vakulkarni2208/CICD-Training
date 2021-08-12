@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Claiming Period End Date --></help>
+    <label><!-- Claiming Period End Date --></label>
+    <name>Claiming_Period_End_Date__c</name>
+</CustomFieldTranslation>

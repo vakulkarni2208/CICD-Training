@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- SFDC Public Group --></label>
+    <name>Portal_Public_Group__c</name>
+    <picklistValues>
+        <masterLabel>Arrow Embedded Edge</masterLabel>
+        <translation><!-- Arrow Embedded Edge --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CSP Compute DGX Elite</masterLabel>
+        <translation><!-- CSP Compute DGX Elite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CSP Compute DGX Preferred</masterLabel>
+        <translation><!-- CSP Compute DGX Preferred --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CSP Compute Elite</masterLabel>
+        <translation><!-- CSP Compute Elite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CSP Compute Preferred</masterLabel>
+        <translation><!-- CSP Compute Preferred --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CSP Virtualization Elite</masterLabel>
+        <translation><!-- CSP Virtualization Elite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CSP Virtualization Preferred</masterLabel>
+        <translation><!-- CSP Virtualization Preferred --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CSP Visualization Elite</masterLabel>
+        <translation><!-- CSP Visualization Elite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CSP Visualization Preferred</masterLabel>
+        <translation><!-- CSP Visualization Preferred --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Community Content</masterLabel>
+        <translation><!-- Community Content --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DISTI Compute DGX Preferred</masterLabel>
+        <translation><!-- DISTI Compute DGX Preferred --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DISTI Compute Preferred</masterLabel>
+        <translation><!-- DISTI Compute Preferred --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DISTI Virtualization Preferred</masterLabel>
+        <translation><!-- DISTI Virtualization Preferred --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DISTI Visualization Preferred</masterLabel>
+        <translation><!-- DISTI Visualization Preferred --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EMEAI Training Users</masterLabel>
+        <translation><!-- EMEAI Training Users --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Embedded Edge Elite</masterLabel>
+        <translation><!-- Embedded Edge Elite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Embedded Edge Preferred</masterLabel>
+        <translation><!-- Embedded Edge Preferred --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fed SI Compute Elite</masterLabel>
+        <translation><!-- Fed SI Compute Elite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fed SI Compute Preferred</masterLabel>
+        <translation><!-- Fed SI Compute Preferred --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fed SI Embedded Edge Elite</masterLabel>
+        <translation><!-- Fed SI Embedded Edge Elite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fed SI Embedded Edge Preferred</masterLabel>
+        <translation><!-- Fed SI Embedded Edge Preferred --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fed SI Virtualization Elite</masterLabel>
+        <translation><!-- Fed SI Virtualization Elite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fed SI Virtualization Preferred</masterLabel>
+        <translation><!-- Fed SI Virtualization Preferred --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fed SI Visualization Elite</masterLabel>
+        <translation><!-- Fed SI Visualization Elite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fed SI Visualization Preferred</masterLabel>
+        <translation><!-- Fed SI Visualization Preferred --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GRID VCA Partner Users</masterLabel>
+        <translation><!-- GRID VCA Partner Users --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GRID VGX Partner Users</masterLabel>
+        <translation><!-- GRID VGX Partner Users --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IP Community</masterLabel>
+        <translation><!-- IP Community --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IP Compute Elite</masterLabel>
+        <translation><!-- IP Compute Elite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IP Compute Preferred</masterLabel>
+        <translation><!-- IP Compute Preferred --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Industry Focus AEC</masterLabel>
+        <translation><!-- Industry Focus AEC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Industry Focus Automotive</masterLabel>
+        <translation><!-- Industry Focus Automotive --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Industry Focus Financial Services</masterLabel>
+        <translation><!-- Industry Focus Financial Services --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Industry Focus HER</masterLabel>
+        <translation><!-- Industry Focus HER --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Industry Focus Healthcare</masterLabel>
+        <translation><!-- Industry Focus Healthcare --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Industry Focus Industrial Manufacturing</masterLabel>
+        <translation><!-- Industry Focus Industrial Manufacturing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Industry Focus Media &amp; Entertainment</masterLabel>
+        <translation><!-- Industry Focus Media &amp; Entertainment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Industry Focus Oil &amp; Gas/Energy</masterLabel>
+        <translation><!-- Industry Focus Oil &amp; Gas/Energy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Marketing Partners: GeForce Content(R)</masterLabel>
+        <translation><!-- Marketing Partners: GeForce Content(R) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NFR SW License Request</masterLabel>
+        <translation><!-- NFR SW License Request --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OEM Compute DGX Elite</masterLabel>
+        <translation><!-- OEM Compute DGX Elite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OEM Compute DGX Preferred</masterLabel>
+        <translation><!-- OEM Compute DGX Preferred --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OEM Compute Elite</masterLabel>
+        <translation><!-- OEM Compute Elite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OEM Compute Preferred</masterLabel>
+        <translation><!-- OEM Compute Preferred --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OEM Virtualization Elite</masterLabel>
+        <translation><!-- OEM Virtualization Elite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OEM Virtualization Preferred</masterLabel>
+        <translation><!-- OEM Virtualization Preferred --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OEM Visualization Elite</masterLabel>
+        <translation><!-- OEM Visualization Elite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OEM Visualization Preferred</masterLabel>
+        <translation><!-- OEM Visualization Preferred --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SA Consultant Compute DGX Preferred</masterLabel>
+        <translation><!-- SA Consultant Compute DGX Preferred --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SA Consultant Compute Preferred</masterLabel>
+        <translation><!-- SA Consultant Compute Preferred --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SA Consultant Virtualization Preferred</masterLabel>
+        <translation><!-- SA Consultant Virtualization Preferred --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SA Consultant Visualization Preferred</masterLabel>
+        <translation><!-- SA Consultant Visualization Preferred --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SA Storage Compute DGX Elite</masterLabel>
+        <translation><!-- SA Storage Compute DGX Elite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SA Storage Compute DGX Preferred</masterLabel>
+        <translation><!-- SA Storage Compute DGX Preferred --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SA Storage Compute Elite</masterLabel>
+        <translation><!-- SA Storage Compute Elite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SA Storage Compute Preferred</masterLabel>
+        <translation><!-- SA Storage Compute Preferred --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SDP Edu Compute DGX Preferred</masterLabel>
+        <translation><!-- SDP Edu Compute DGX Preferred --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SDP PS Compute DGX Elite</masterLabel>
+        <translation><!-- SDP PS Compute DGX Elite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SDP PS Compute DGX Preferred</masterLabel>
+        <translation><!-- SDP PS Compute DGX Preferred --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SDP PS Embedded Edge Preferred</masterLabel>
+        <translation><!-- SDP PS Embedded Edge Preferred --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SIP Compute Elite</masterLabel>
+        <translation><!-- SIP Compute Elite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SIP Compute Preferred</masterLabel>
+        <translation><!-- SIP Compute Preferred --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SIP Embedded Edge Elite</masterLabel>
+        <translation><!-- SIP Embedded Edge Elite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SIP Embedded Edge Preferred</masterLabel>
+        <translation><!-- SIP Embedded Edge Preferred --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SIP Visualization Elite</masterLabel>
+        <translation><!-- SIP Visualization Elite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SIP Visualization Preferred</masterLabel>
+        <translation><!-- SIP Visualization Preferred --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SOEM Cisco Elite</masterLabel>
+        <translation><!-- SOEM Cisco Elite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SOEM Dell Datacenter Elite</masterLabel>
+        <translation><!-- SOEM Dell Datacenter Elite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SOEM Dell Workstation Elite</masterLabel>
+        <translation><!-- SOEM Dell Workstation Elite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SOEM HP Enterprise Elite</masterLabel>
+        <translation><!-- SOEM HP Enterprise Elite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SOEM HP Inc Elite</masterLabel>
+        <translation><!-- SOEM HP Inc Elite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SOEM IBM Cloud Elite</masterLabel>
+        <translation><!-- SOEM IBM Cloud Elite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SOEM IBM Power Elite</masterLabel>
+        <translation><!-- SOEM IBM Power Elite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SOEM Lenovo DCG Elite</masterLabel>
+        <translation><!-- SOEM Lenovo DCG Elite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SOEM Lenovo Workstation Elite</masterLabel>
+        <translation><!-- SOEM Lenovo Workstation Elite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SP Compute DGX Elite</masterLabel>
+        <translation><!-- SP Compute DGX Elite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SP Compute DGX Preferred</masterLabel>
+        <translation><!-- SP Compute DGX Preferred --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SP Compute Elite</masterLabel>
+        <translation><!-- SP Compute Elite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SP Compute Preferred</masterLabel>
+        <translation><!-- SP Compute Preferred --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SP Virtualization Elite</masterLabel>
+        <translation><!-- SP Virtualization Elite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SP Virtualization Preferred</masterLabel>
+        <translation><!-- SP Virtualization Preferred --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SP Visualization Elite</masterLabel>
+        <translation><!-- SP Visualization Elite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SP Visualization Preferred</masterLabel>
+        <translation><!-- SP Visualization Preferred --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TPP Portal Users</masterLabel>
+        <translation><!-- TPP Portal Users --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tesla Content Group</masterLabel>
+        <translation><!-- Tesla Content Group --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Titan RTX</masterLabel>
+        <translation><!-- Titan RTX --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

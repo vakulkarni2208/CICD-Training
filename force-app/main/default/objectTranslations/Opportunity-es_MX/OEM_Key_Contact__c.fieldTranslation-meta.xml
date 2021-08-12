@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Person at OEM who is the person in charge for the deal --></help>
+    <label><!-- OEM Key Contact --></label>
+    <name>OEM_Key_Contact__c</name>
+    <relationshipLabel><!-- Opportunities (OEM Key Contact) --></relationshipLabel>
+</CustomFieldTranslation>

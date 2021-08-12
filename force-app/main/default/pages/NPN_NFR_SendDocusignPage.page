@@ -1,0 +1,19 @@
+<apex:page standardController="NPN_NFR_Software_Request__c" extensions="NPN_NFR_SendDocusignCtrl">
+    <script>
+        <apex:includeScript value="{!$Resource.Docusign_Custom}" />
+        //********* Page Callout (Do not modify) *********//
+        window.location.href = "/apex/dsfs__DocuSign_CreateEnvelope?" +
+            "SourceID={!NPN_NFR_Software_Request__c.Id}" +
+            "&DST={!strDocumentIds}" +
+            "&CES={!strEmailSubject}" +
+            "&CEM={!strEmailBody}" +
+            "&CCRM=Partner User~Partner User;VP~VP;Legal~Legal;NPNTeam~NPNTeam;PricingOps~PricingOps;PBM~PBM" +
+            "&CCTM=Partner User~Signer;VP~Signer;Legal~Carbon Copy;NPNTeam~Carbon Copy;PBM~Carbon Copy;PricingOps~Carbon Copy;" +
+            "&CRL=" + "Email~{!rqstrEmail};Role~Partner User;FirstName~{!reqstrFName};LastName~{!reqstrLName};RoutingOrder~1;," +
+            "Email~{!strVPEmail};Role~VP;FirstName~{!strVPFirstName};LastName~{!strVPLastName};RoutingOrder~2;,"+
+            "Email~{!legalEmail};Role~Legal;FirstName~Legal;LastName~Legal;RoutingOrder~3;,"+
+            "Email~{!pricingOpsEmail};Role~PricingOps;FirstName~WWFO Pricing;LastName~Operations;RoutingOrder~3;,"+
+            "Email~{!pbmEmail};Role~PBM;FirstName~{!pbmFName};LastName~{!pbmLName};RoutingOrder~3;,"+
+            "Email~talicaya@nvidia.com;Role~NPNTeam;FirstName~Tracy;LastName~Alicaya;RoutingOrder~3;";
+    </script>
+</apex:page>

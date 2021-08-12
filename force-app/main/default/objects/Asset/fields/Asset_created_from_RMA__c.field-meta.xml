@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Asset_created_from_RMA__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>RMA number from which this Asset was created as part of Full System RMA.SDS-2456</description>
+    <externalId>false</externalId>
+    <inlineHelpText>RMA number from which this Asset was created as part of Full System RMA.</inlineHelpText>
+    <label>Asset created from RMA</label>
+    <referenceTo>RMA__c</referenceTo>
+    <relationshipLabel>Assets</relationshipLabel>
+    <relationshipName>Assets</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

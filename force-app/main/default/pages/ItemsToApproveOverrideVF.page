@@ -1,0 +1,59 @@
+<apex:page >
+
+<!-- 
+   ----- 
+   /* @Manideep: 5/8/2019 - This code is commented out as part of Opportunity RecordType clean up. This is an old code
+      and is not being used. 
+   */ 
+   ----- 
+   
+<apex:page controller="ItemsToApproveOverrideVF_Controller" showHeader="false" sidebar="false">
+  <script language="javascript">
+      function init() {
+         var actionColumnCells = document.getElementsByTagName('td'); 
+         for(var j = 0; j < actionColumnCells.length; ++j) {  
+            if(actionColumnCells[j].className == "actionColumn") {  
+                actionColumnCells[j].style.display = "none";  
+            }   
+         } 
+         var columnHeaders = document.getElementsByTagName('th'); 
+         for(var i = 0; i < columnHeaders.length; ++i) {    
+            if(columnHeaders[i].className == "actionColumn") {        
+                columnHeaders[i].style.display = "none";                       
+            }   
+            if(columnHeaders[i].className == "noRowsHeader" || columnHeaders[i].className == " zen-deemphasize") {        
+                columnHeaders[i].firstChild.removeAttribute('href');                      
+            }
+         }  
+         var btnList1 = document.getElementsByName("reassign");    
+         if(btnList1.length > 0) {   
+            btnList1[0].style.visibility = "hidden";            
+         }  
+         var btnList2 = document.getElementsByName("approve");    
+         if(btnList2.length > 0) {   
+            btnList2[0].style.visibility = "hidden"; 
+         }  
+         //Hiding alphabet paging links line, printable view link and View dropdown box selection row
+         var divList = document.getElementsByTagName('div'); 
+         for(var k = 0; k < divList.length; ++k) {  
+            if(divList[k].className == "bFilterView" || 
+               divList[k].className == "rolodex" || 
+               divList[k].className == "links" ||
+               divList[k].className == "next" ||
+               divList[k].className == "fewerMore") {  
+                divList[k].style.display = "none";                  
+            }   
+         }            
+         document.body.style.display="";  //Unhide the form body as we are done with our DOM manipulations
+      }    
+  </script>
+<apex:pageBlock >
+    <apex:form >
+        <body onload= "init()" style = 'display:none'>
+          <apex:outputText value="{!ItemsToApprovePageMarkup}" escape="false" />
+        </body> 
+    </apex:form>
+</apex:pageBlock>
+
+-->     
+</apex:page>

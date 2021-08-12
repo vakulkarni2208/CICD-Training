@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Need__c</fullName>
+    <externalId>false</externalId>
+    <label>Need</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Yes, customer has a declared need</fullName>
+                <default>false</default>
+                <label>Yes, customer has a declared need</label>
+            </value>
+            <value>
+                <fullName>Customer has not declared need, however NV solution could make significant impact</fullName>
+                <default>false</default>
+                <label>Customer has not declared need, however NV solution could make significant impact</label>
+            </value>
+            <value>
+                <fullName>Customer has need, however NV solution is not a fit</fullName>
+                <default>false</default>
+                <label>Customer has need, however NV solution is not a fit</label>
+            </value>
+            <value>
+                <fullName>No need</fullName>
+                <default>false</default>
+                <label>No need</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

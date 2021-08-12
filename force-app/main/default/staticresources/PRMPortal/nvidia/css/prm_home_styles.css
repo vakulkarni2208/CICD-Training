@@ -1,0 +1,54 @@
+body {
+    margin:0px;
+    padding:0px;
+}
+
+div.main {
+    width:780px;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size:95%;
+}
+
+div.section {
+    margin-top:15px;
+    padding-bottom:10px;
+}
+
+div.small {
+    width:400px;
+}
+
+div.right
+{
+    float:right;
+}
+
+div.right div.small
+{
+    margin-left:20px;
+}
+
+div.left
+{
+    float:left;
+}
+
+.sidebarModuleHeader, div.boxed .sidebarModuleHeader
+{
+    background-image:url(../img/background_silver.png);
+    margin-bottom:10px;
+}
+
+h2 {
+    color:#111111;
+}
+
+.task_header
+{
+    border-bottom:2px solid #77B900;
+}
+
+.task_row
+{
+    border-bottom:1px solid #77B900;
+}

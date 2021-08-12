@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>NPN EAR Restricted List</label>
+    <protected>false</protected>
+    <values>
+        <field>Restricted_Permission_Sets__c</field>
+        <value xsi:type="xsd:string">PP_Service_Cloud_For_NPN_Users;
+PP_DEAL_REGISTRATION;</value>
+    </values>
+    <values>
+        <field>Restricted_Public_Groups__c</field>
+        <value xsi:type="xsd:string">CSP Compute DGX Elite; CSP Compute DGX Preferred; CSP Compute Elite; CSP Compute Preferred; CSP Virtualization Elite;
+CSP Virtualization Preferred;
+DISTI Compute DGX Elite;
+DISTI Compute DGX Preferred;
+DISTI Visualization Preferr;
+DISTI Compute Preferred;
+DISTI Virtualization Preferred;
+Embedded Edge Preferred;
+OEM Compute DGX Elite;
+OEM Compute DGX Preferred;
+OEM Visualization Elite;
+OEM Visualization Preferred;
+OEM Compute Elite;
+OEM Compute Preferred;
+OEM Virtualization Elite;
+OEM Virtualization Preferred;
+SA Consultant Compute DGX Preferred;
+SA Consulant Visualization Preferred;
+SA Consultant Compute Preferred;
+SA Consultant Virtualization Preferred;
+SDP Edu Compute DGX Preferred;
+SDP PS Compute DGX Elite;
+SDP PS Compute DGX Preferred;
+SIP Visualization Elite;
+SIP Visualization Preferred;
+SIP Compute Elite;
+SIP Compute Preferred;
+SP Compute DGX Elite;
+SP Compute DGX Preferred;
+SP Visualization Elite;
+SP Visualization Preferred;
+SP Compute Elite;
+SP Compute Preferred;
+SP Virtualization Elite;
+SP Virtualization Preferred;
+SA Storage Compute DGX Preferred;
+SA Storage Compute Preferred;
+SA Storage Compute DGX Registered
+SA Storage Compute Registered
+SA Storage Compute DGX Elite;
+SA Storage Compute Elite;
+CSP Visualization Preferred;
+CSP Visualization Elite;</value>
+    </values>
+</CustomMetadata>

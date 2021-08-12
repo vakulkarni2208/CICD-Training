@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product_Group__c</fullName>
+    <description>Product Group Classification</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Classification of a Product within a Product Line</inlineHelpText>
+    <label>Product Group</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Product_Line__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Virtual Work Station</fullName>
+                <default>false</default>
+                <label>Virtual Work Station</label>
+            </value>
+            <value>
+                <fullName>Virtual Personal Computer</fullName>
+                <default>false</default>
+                <label>Virtual Personal Computer</label>
+            </value>
+            <value>
+                <fullName>Virtual Applications</fullName>
+                <default>false</default>
+                <label>Virtual Applications</label>
+            </value>
+            <value>
+                <fullName>Virtual Compute Server</fullName>
+                <default>false</default>
+                <label>Virtual Compute Server</label>
+            </value>
+            <value>
+                <fullName>A100</fullName>
+                <default>false</default>
+                <label>A100</label>
+            </value>
+            <value>
+                <fullName>Workstation</fullName>
+                <default>false</default>
+                <label>Workstation</label>
+            </value>
+            <value>
+                <fullName>V100</fullName>
+                <default>false</default>
+                <label>V100</label>
+            </value>
+            <value>
+                <fullName>Quadro</fullName>
+                <default>false</default>
+                <label>Quadro</label>
+            </value>
+            <value>
+                <fullName>T4</fullName>
+                <default>false</default>
+                <label>T4</label>
+            </value>
+            <value>
+                <fullName>VCS</fullName>
+                <default>false</default>
+                <label>VCS</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>NGC-Ready Services</controllingFieldValue>
+            <controllingFieldValue>DGX</controllingFieldValue>
+            <valueName>V100</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NGC-Ready Services</controllingFieldValue>
+            <valueName>Quadro</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NGC-Ready Services</controllingFieldValue>
+            <valueName>T4</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NGC-Ready Services</controllingFieldValue>
+            <valueName>VCS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DGX</controllingFieldValue>
+            <valueName>A100</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DGX</controllingFieldValue>
+            <valueName>Workstation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Grid</controllingFieldValue>
+            <valueName>Virtual Work Station</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Grid</controllingFieldValue>
+            <valueName>Virtual Personal Computer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Grid</controllingFieldValue>
+            <valueName>Virtual Applications</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Grid</controllingFieldValue>
+            <valueName>Virtual Compute Server</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

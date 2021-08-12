@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApexPage xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>42.0</apiVersion>
+    <availableInTouch>true</availableInTouch>
+    <confirmationTokenRequired>false</confirmationTokenRequired>
+    <description>This Visualforce page invokes the flow &quot;Deal Registration: FL: Convert DR Products&quot;</description>
+    <label>VF Convert DR Products</label>
+</ApexPage>

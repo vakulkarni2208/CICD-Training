@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Proposed_Instructor_Name__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Customer, NV Requestor, or Lead Owner may propose a DLI Certified Instructor. DLI will confirm whether the instructor is available, in good standing, and certified to deliver the specific training services requested, or assign an alternate instructor.</inlineHelpText>
+    <label>Proposed Instructor Name</label>
+    <length>80</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

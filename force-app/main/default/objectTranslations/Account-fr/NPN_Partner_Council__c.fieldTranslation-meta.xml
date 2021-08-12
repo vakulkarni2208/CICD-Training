@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Confirm if Partner has opted in for Council Membership. --></help>
+    <label><!-- NPN Partner Council --></label>
+    <name>NPN_Partner_Council__c</name>
+</CustomFieldTranslation>

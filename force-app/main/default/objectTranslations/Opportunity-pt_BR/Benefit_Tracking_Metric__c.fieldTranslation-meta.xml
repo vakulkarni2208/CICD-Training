@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- How will the event, program or benefits be tracked and measured (POS, MQL/SQL, QBR etc.)? --></help>
+    <label><!-- Benefit Tracking Metric --></label>
+    <name>Benefit_Tracking_Metric__c</name>
+    <picklistValues>
+        <masterLabel>MQL/SQL</masterLabel>
+        <translation><!-- MQL/SQL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>POS</masterLabel>
+        <translation><!-- POS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>QBR</masterLabel>
+        <translation><!-- QBR --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

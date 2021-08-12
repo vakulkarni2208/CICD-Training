@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>APAC_NPN_Onboarding</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>LEAD.COMPANY</columns>
+    <columns>LEAD.EMAIL</columns>
+    <columns>LEAD.STATUS</columns>
+    <columns>What_Program_Type_apply_for_Preferred__c</columns>
+    <columns>LEAD.CREATED_DATE</columns>
+    <columns>CORE.USERS.FIRST_NAME</columns>
+    <columns>CORE.USERS.LAST_NAME</columns>
+    <columns>LEAD.UNREAD</columns>
+    <columns>NPN_Web_Form_NV_Contact__c</columns>
+    <columns>LEAD.COUNTRY</columns>
+    <columns>Competency_to_apply_for_Preferred_Status__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>LEAD.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Lead.NPN_Web_Onboard_Form</value>
+    </filters>
+    <filters>
+        <field>LEAD.LEAD_SOURCE</field>
+        <operation>equals</operation>
+        <value>Web Form</value>
+    </filters>
+    <filters>
+        <field>Lead_Orgin__c</field>
+        <operation>notEqual</operation>
+        <value>NPN Inception Start-Up Program</value>
+    </filters>
+    <filters>
+        <field>Region__c</field>
+        <operation>equals</operation>
+        <value>APAC</value>
+    </filters>
+    <filters>
+        <field>What_Program_Type_apply_for_Preferred__c</field>
+        <operation>notEqual</operation>
+        <value>Inception Partner (Startup)</value>
+    </filters>
+    <label>NPN Onboarding Leads - APAC</label>
+    <language>en_US</language>
+    <sharedTo>
+        <group>NPN_Onboarding_Leads_List_View</group>
+        <group>Sales_Ops_Admins_All</group>
+    </sharedTo>
+</ListView>

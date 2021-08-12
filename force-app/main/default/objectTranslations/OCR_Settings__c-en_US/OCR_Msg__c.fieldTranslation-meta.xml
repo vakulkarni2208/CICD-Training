@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Message to be shown when there is no Primary Contact and Role set with the Opportunity --></help>
+    <label><!-- OCR_Msg --></label>
+    <name>OCR_Msg__c</name>
+</CustomFieldTranslation>

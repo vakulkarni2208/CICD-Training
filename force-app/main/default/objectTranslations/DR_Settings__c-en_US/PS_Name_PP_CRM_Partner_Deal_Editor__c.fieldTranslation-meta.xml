@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- PS Name : PP CRM Partner Deal Editor --></label>
+    <name>PS_Name_PP_CRM_Partner_Deal_Editor__c</name>
+</CustomFieldTranslation>

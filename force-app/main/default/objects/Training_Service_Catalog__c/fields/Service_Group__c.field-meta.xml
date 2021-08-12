@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Service_Group__c</fullName>
+    <externalId>false</externalId>
+    <label>Service Group</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Accelerating Data Science Workflows for Cybersecurity</fullName>
+                <default>false</default>
+                <label>Accelerating Data Science Workflows for Cybersecurity</label>
+            </value>
+            <value>
+                <fullName>Building Autonomous Vehicles with NVIDIA DRIVE</fullName>
+                <default>false</default>
+                <label>Building Autonomous Vehicles with NVIDIA DRIVE</label>
+            </value>
+            <value>
+                <fullName>Deep Learning for Anomaly Detection</fullName>
+                <default>false</default>
+                <label>Deep Learning for Anomaly Detection</label>
+            </value>
+            <value>
+                <fullName>Deep Learning for Autonomous Vehicles - Perception</fullName>
+                <default>false</default>
+                <label>Deep Learning for Autonomous Vehicles - Perception</label>
+            </value>
+            <value>
+                <fullName>Deep Learning for Digital Content Creation using AutoEncoders</fullName>
+                <default>false</default>
+                <label>Deep Learning for Digital Content Creation using AutoEncoders</label>
+            </value>
+            <value>
+                <fullName>Deep Learning for Digital Content Creation Using GANs</fullName>
+                <default>false</default>
+                <label>Deep Learning for Digital Content Creation Using GANs</label>
+            </value>
+            <value>
+                <fullName>Deep Learning for Finance Trading Strategy</fullName>
+                <default>false</default>
+                <label>Deep Learning for Finance Trading Strategy</label>
+            </value>
+            <value>
+                <fullName>Deep Learning for Full-Motion Video Analytics</fullName>
+                <default>false</default>
+                <label>Deep Learning for Full-Motion Video Analytics</label>
+            </value>
+            <value>
+                <fullName>Deep Learning for Game Development</fullName>
+                <default>false</default>
+                <label>Deep Learning for Game Development</label>
+            </value>
+            <value>
+                <fullName>Deep Learning for Healthcare Genomics</fullName>
+                <default>false</default>
+                <label>Deep Learning for Healthcare Genomics</label>
+            </value>
+            <value>
+                <fullName>Deep Learning for Healthcare Image Analysis</fullName>
+                <default>false</default>
+                <label>Deep Learning for Healthcare Image Analysis</label>
+            </value>
+            <value>
+                <fullName>Deep Learning for Industrial Inspection</fullName>
+                <default>false</default>
+                <label>Deep Learning for Industrial Inspection</label>
+            </value>
+            <value>
+                <fullName>Deep Learning for Intelligent Video Analytics</fullName>
+                <default>false</default>
+                <label>Deep Learning for Intelligent Video Analytics</label>
+            </value>
+            <value>
+                <fullName>Deep Learning for Predictive Maintenance</fullName>
+                <default>false</default>
+                <label>Deep Learning for Predictive Maintenance</label>
+            </value>
+            <value>
+                <fullName>Deep Learning for Robotics</fullName>
+                <default>false</default>
+                <label>Deep Learning for Robotics</label>
+            </value>
+            <value>
+                <fullName>Fundamentals of Accelerated Computing using OpenACC</fullName>
+                <default>false</default>
+                <label>Fundamentals of Accelerated Computing using OpenACC</label>
+            </value>
+            <value>
+                <fullName>Fundamentals of Accelerated Computing with CUDA C/C++</fullName>
+                <default>false</default>
+                <label>Fundamentals of Accelerated Computing with CUDA C/C++</label>
+            </value>
+            <value>
+                <fullName>Fundamentals of Accelerated Computing with CUDA Python</fullName>
+                <default>false</default>
+                <label>Fundamentals of Accelerated Computing with CUDA Python</label>
+            </value>
+            <value>
+                <fullName>Fundamentals of Accelerating Data Science with RAPIDS</fullName>
+                <default>false</default>
+                <label>Fundamentals of Accelerating Data Science with RAPIDS</label>
+            </value>
+            <value>
+                <fullName>Fundamentals of Deep Learning for Computer Vision</fullName>
+                <default>false</default>
+                <label>Fundamentals of Deep Learning for Computer Vision</label>
+            </value>
+            <value>
+                <fullName>Fundamentals of Deep Learning for Multi-GPUs</fullName>
+                <default>false</default>
+                <label>Fundamentals of Deep Learning for Multi-GPUs</label>
+            </value>
+            <value>
+                <fullName>Fundamentals of Deep Learning for Multiple Data Types</fullName>
+                <default>false</default>
+                <label>Fundamentals of Deep Learning for Multiple Data Types</label>
+            </value>
+            <value>
+                <fullName>Fundamentals of Deep Learning for Natural Language Processing</fullName>
+                <default>false</default>
+                <label>Fundamentals of Deep Learning for Natural Language Processing</label>
+            </value>
+            <value>
+                <fullName>Healthcare &quot;Flex&quot;</fullName>
+                <default>false</default>
+                <label>Healthcare &quot;Flex&quot;</label>
+            </value>
+            <value>
+                <fullName>N/A</fullName>
+                <default>false</default>
+                <label>N/A</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Req_OtherDetails_if_MLDataAnalytics_Othr</fullName>
+    <active>false</active>
+    <description>JIRA #SDS-2639
+Required to fill in value in &apos;Other Details&apos; if the selection on &apos;ML/Data Analytics Details&apos; is &apos;Other&apos;</description>
+    <errorConditionFormula>AND(
+ $UserRole.Name &lt;&gt; &quot;Administrator&quot;,
+ RecordType.DeveloperName = &quot;Enterprise_Sales_Opportunity&quot;,
+ ISPICKVAL(RAPIDS__c, &quot;Other&quot;),
+ ISBLANK(ML_Data_Analytics_Other_Details__c)
+)</errorConditionFormula>
+    <errorMessage>Require &apos;Other Details&apos; if the selection on &apos;ML/Data Analytics Details&apos; is &apos;Other&apos;</errorMessage>
+</ValidationRule>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Customer, NV Requestor, or Lead Owner may propose a DLI Certified Instructor. DLI will confirm whether the instructor is available, in good standing, and certified to deliver the specific training services requested, or assign an alternate instructor. --></help>
+    <label><!-- Proposed Instructor Organization --></label>
+    <name>Proposed_Instructor_Organization__c</name>
+</CustomFieldTranslation>

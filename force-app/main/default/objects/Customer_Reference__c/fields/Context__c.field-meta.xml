@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Context__c</fullName>
+    <description>What hindered you/your team from being able to solve this problem before?</description>
+    <externalId>false</externalId>
+    <inlineHelpText>What hindered you/your team from being able to solve this problem before?</inlineHelpText>
+    <label>Context</label>
+    <length>100000</length>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>2</visibleLines>
+</CustomField>

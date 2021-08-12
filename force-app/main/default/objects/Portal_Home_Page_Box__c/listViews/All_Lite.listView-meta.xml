@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Lite</fullName>
+    <columns>Portal_Type__c</columns>
+    <columns>Language__c</columns>
+    <columns>NAME</columns>
+    <columns>Presentation_Type__c</columns>
+    <columns>Portal_Permission_Set__c</columns>
+    <columns>Box_Serial_Number__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Portal_Type__c</field>
+        <operation>equals</operation>
+        <value>Lite</value>
+    </filters>
+    <label>All - Lite</label>
+    <language>en_US</language>
+</ListView>

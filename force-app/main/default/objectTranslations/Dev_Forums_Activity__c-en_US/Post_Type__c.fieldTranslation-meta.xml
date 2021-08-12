@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Post Type --></label>
+    <name>Post_Type__c</name>
+    <picklistValues>
+        <masterLabel>First Response</masterLabel>
+        <translation><!-- First Response --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reply</masterLabel>
+        <translation><!-- Reply --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Start</masterLabel>
+        <translation><!-- Start --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

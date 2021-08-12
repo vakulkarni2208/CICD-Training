@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- STOP: Please DO NOT check this checkbox if you do not understand the impact of it.
+ 
+It Disables,
+1. Triggers: which inherits &quot;NV_TriggerHandler&quot; class
+2. Any other processes: If they have used this flag in criteria. --></help>
+    <label><!-- Disable Trigger Actions --></label>
+    <name>Disable_Trigger_Actions__c</name>
+</CustomFieldTranslation>

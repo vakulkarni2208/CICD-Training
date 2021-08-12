@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Comma separated email address --></help>
+    <label><!-- Log A Support Request Recipients --></label>
+    <name>Log_A_Support_Request_Recipients__c</name>
+</CustomFieldTranslation>

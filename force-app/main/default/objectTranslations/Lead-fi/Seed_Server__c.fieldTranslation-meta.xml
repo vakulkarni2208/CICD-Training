@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Seed Server --></label>
+    <name>Seed_Server__c</name>
+    <picklistValues>
+        <masterLabel>R730 + 1 K2 (10gb)</masterLabel>
+        <translation><!-- R730 + 1 K2 (10gb) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>R730 + 1 K2 (1gb)</masterLabel>
+        <translation><!-- R730 + 1 K2 (1gb) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>R730 + 2 K1 (10gb)</masterLabel>
+        <translation><!-- R730 + 2 K1 (10gb) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>R730 + 2 K1 (1gb)</masterLabel>
+        <translation><!-- R730 + 2 K1 (1gb) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RZ-1240i-NVK1</masterLabel>
+        <translation><!-- RZ-1240i-NVK1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RZ-1240i-NVK2</masterLabel>
+        <translation><!-- RZ-1240i-NVK2 --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

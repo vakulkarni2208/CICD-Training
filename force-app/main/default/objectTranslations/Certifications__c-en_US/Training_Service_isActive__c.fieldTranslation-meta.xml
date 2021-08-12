@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Training Service isActive --></label>
+    <name>Training_Service_isActive__c</name>
+    <relationshipLabel><!-- Certifications (Training Service isActive) --></relationshipLabel>
+</CustomFieldTranslation>

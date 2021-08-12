@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Who is the manager who will approve this new user being setup? --></help>
+    <label><!-- Manager to Approve New user Setup --></label>
+    <name>Manager_to_Approve_New_user_Setup__c</name>
+    <relationshipLabel><!-- Cases (Manager to Approve New user Setup) --></relationshipLabel>
+</CustomFieldTranslation>

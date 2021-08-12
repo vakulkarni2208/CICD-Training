@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>NV Ticket</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>NV Tickets</value>
+    </caseValues>
+    <recordTypes>
+        <label><!-- NVBug --></label>
+        <name>NVBug</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Other --></label>
+        <name>Other</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- Link_Existing_NVBug --></label>
+        <name>Link_Existing_NVBug</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Link_Files_to_NVBug --></label>
+        <name>Link_Files_to_NVBug</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- New_NVBug --></label>
+        <name>New_NVBug</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- New_NV_Ticket --></label>
+        <name>New_NV_Ticket</name>
+    </webLinks>
+</CustomObjectTranslation>

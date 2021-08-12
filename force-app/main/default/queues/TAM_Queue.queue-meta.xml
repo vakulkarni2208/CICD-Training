@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>TAM Queue</name>
+    <queueMembers>
+        <publicGroups>
+            <publicGroup>Technical_Account_Managers_TAM</publicGroup>
+        </publicGroups>
+        <users>
+            <user>jiew@nvidia.com</user>
+            <user>nyamamoto@nvidia.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

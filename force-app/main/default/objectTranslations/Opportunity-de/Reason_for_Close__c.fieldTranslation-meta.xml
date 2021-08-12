@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Select best reason for not winning deal --></help>
+    <label><!-- Reason for Close/Lost? --></label>
+    <name>Reason_for_Close__c</name>
+    <picklistValues>
+        <masterLabel>Bad Experience w/Support</masterLabel>
+        <translation><!-- Bad Experience w/Support --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Budget</masterLabel>
+        <translation><!-- Budget --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Channel Issue</masterLabel>
+        <translation><!-- Channel Issue --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Did Not Deploy Solution</masterLabel>
+        <translation><!-- Did Not Deploy Solution --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EC Responded/Reason Unknown</masterLabel>
+        <translation><!-- EC Responded/Reason Unknown --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lost Contact with EC/VAR</masterLabel>
+        <translation><!-- Lost Contact with EC/VAR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Longer Using Solution</masterLabel>
+        <translation><!-- No Longer Using Solution --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Response</masterLabel>
+        <translation><!-- No Response --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Response - EC never responded</masterLabel>
+        <translation><!-- No Response - EC never responded --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Response - VAR never got a response from the EC</masterLabel>
+        <translation><!-- No Response - VAR never got a response from the EC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Response - VAR never responded</masterLabel>
+        <translation><!-- No Response - VAR never responded --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Partial Renewal</masterLabel>
+        <translation><!-- Partial Renewal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Purchased New/Not Renewal</masterLabel>
+        <translation><!-- Purchased New/Not Renewal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Upgraded</masterLabel>
+        <translation><!-- Upgraded --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Used in Dev/Research/EDU Enviro</masterLabel>
+        <translation><!-- Used in Dev/Research/EDU Enviro --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Value/Price Perception</masterLabel>
+        <translation><!-- Value/Price Perception --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

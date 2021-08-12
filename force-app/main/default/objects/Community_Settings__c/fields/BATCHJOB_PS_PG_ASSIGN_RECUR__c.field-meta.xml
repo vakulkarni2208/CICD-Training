@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BATCHJOB_PS_PG_ASSIGN_RECUR__c</fullName>
+    <defaultValue>60</defaultValue>
+    <description>Batch Job: Recurring time - the next time the job will run (Now + Recurring Time) in minutes</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Batch Job: Recurring time - the next time the job will run (Now + Recurring Time) in minutes</inlineHelpText>
+    <label>BATCHJOB_PS_PG_ASSIGN_RECUR</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

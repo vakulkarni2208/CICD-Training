@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <recordTypes>
+        <label><!-- NPN Account Registry --></label>
+        <name>NPN_Account_Registry</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- NPN Community Account --></label>
+        <name>NPN_Community_Account</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- New Customer Account --></label>
+        <name>New_Customer_Account</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Partner Account --></label>
+        <name>PartnerAccount</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Sold-To Partner Account --></label>
+        <name>Sold_To_Partner_Account</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Only Admins can edit Name, Website, Industry, Billing Address and Owner, once Account is Approved. For assistance, click the &quot;Get Help&quot; button located on the top right of the page. --></errorMessage>
+        <name>Account_Admin_to_Edit_after_Approved</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Startup field should not be empty on the Account. For assistance, click the &quot;Get Help&quot; button located on the top right of the page. --></errorMessage>
+        <name>Account_Auto_Startup_Req_for_AutoTeam</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You cannot have more than one Primary Program for POS for a Competency --></errorMessage>
+        <name>BlockDuplicatePrimaryPtnrProgForPOS</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Classification Change Justification is required for Industry &apos;Higher Ed/Research&apos; --></errorMessage>
+        <name>Classification_Justification_is_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Both &quot;Approved&quot; and &quot;Rejected&quot; cannot be true simultaneously. --></errorMessage>
+        <name>Customer_Account_Approval_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Address information is now required for Customer Accounts. Please fill in the City for this Account (e.g.  Santa Clara). --></errorMessage>
+        <name>Customer_Account_Billing_City_Reqd</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Address information is now required for Customer Accounts. Please fill in the Country for this Account (e.g.  United States, United Kingdom). --></errorMessage>
+        <name>Customer_Account_Billing_Country_Reqd</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Address information is now required for Customer Accounts. Please fill in the State for this Account (e.g.  CA). --></errorMessage>
+        <name>Customer_Account_Billing_State_Reqd</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Address information is now required for Customer Accounts. Please fill in the Street address  for this Account (e.g. 123 Wall Street). --></errorMessage>
+        <name>Customer_Account_Billing_Street_Reqd</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Address information is now required for Customer Accounts. Please fill in the Zip Code for this Account (e.g.  95050). --></errorMessage>
+        <name>Customer_Account_Billing_ZipCode_Reqd</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Account URL Required --></errorMessage>
+        <name>Duplicate_account_required_Acccount_URL</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- CompanyId should be a numeric value --></errorMessage>
+        <name>LID__Check_CompanyId_Value</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Cannot Create Account with Partner Account as Recordtype --></errorMessage>
+        <name>Partner_Account_RecordType_Disabled</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If you are setting the ‘Rejected’ checkbox to true then this is a required field --></errorMessage>
+        <name>Reason_for_Rejection_If_Rejected</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Reason for Rejection pick list only applies when you select the ‘Rejected’ checkbox --></errorMessage>
+        <name>Rejected_checked_should_be_true</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- For GRID ELA customers please make sure to provide a GRID ELA Start and End Date --></errorMessage>
+        <name>Require_GRID_ELA_Dates_if_ELA_customer</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Inactive account cannot be modified. For assistance, click the &quot;Get Help&quot; button located on the top right of the page. --></errorMessage>
+        <name>Restrict_Edit_to_Inactive_Accounts</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You cannot edit any Account related information except Service Account Type. --></errorMessage>
+        <name>Service_Agents_cannot_edit_Account_field</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Conga_Composer_OAuth --></label>
+        <name>APXTConga4__Conga_Composer_OAuth</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Conga_Mail_Merge --></label>
+        <name>APXTConga4__Conga_Mail_Merge</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- AltavistaNews --></label>
+        <name>AltavistaNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- CSP_Pricing_Lookup_Information --></label>
+        <name>CSP_Pricing_Lookup_Information</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Conga_Composer_Account_Brief --></label>
+        <name>Conga_Composer_Account_Brief</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Conga_Composer_Account_IBD_Brief --></label>
+        <name>Conga_Composer_Account_IBD_Brief</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Conga_Composer_Account_IBD_Brief2 --></label>
+        <name>Conga_Composer_Account_IBD_Brief2</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Conga_Composer_Composer_SP_Account_Brief --></label>
+        <name>Conga_Composer_Composer_SP_Account_Brief</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Conga_Composer_Partner_Annual_Business_Plan --></label>
+        <name>Conga_Composer_Partner_Annual_Business_Plan</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Contact_Data_Share --></label>
+        <name>Contact_Data_Share</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleNews --></label>
+        <name>GoogleNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- HooversProfile --></label>
+        <name>HooversProfile</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- LS_Related_Accounts --></label>
+        <name>LS_Related_Accounts</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- LS_Related_Leads --></label>
+        <name>LS_Related_Leads</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Reassign_Account --></label>
+        <name>LeanData__Reassign_Account</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Log_a_Case --></label>
+        <name>Log_a_Case</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Pipeline_Won_Data_Share --></label>
+        <name>Pipeline_Won_Data_Share</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Request_Account_Owner_Update --></label>
+        <name>Request_Account_Owner_Update</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Amend_Assets --></label>
+        <name>SBQQ__Amend_Assets</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Renew_Assets --></label>
+        <name>SBQQ__Renew_Assets</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_Via_DocuSign --></label>
+        <name>Send_Via_DocuSign</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- YahooMaps --></label>
+        <name>YahooMaps</name>
+    </webLinks>
+    <webLinks>
+        <label>EBC Request</label>
+        <name>bsource__BriefingSource</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_with_DocuSign --></label>
+        <name>dsfs__Send_with_DocuSign</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Verify_with_DNB --></label>
+        <name>dsfs__Verify_with_DNB</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Jifflenow_Meetings --></label>
+        <name>jiffle__Jifflenow_Meetings</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- LeadspaceFindNewProspectsAccount --></label>
+        <name>leadspace__LeadspaceFindNewProspectsAccount</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Leadspace_Account_DUNS_enrich --></label>
+        <name>leadspacesync__Leadspace_Account_DUNS_enrich</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Leadspace_Enrich_Account --></label>
+        <name>leadspacesync__Leadspace_Enrich_Account</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Account_Matched_Accounts --></label>
+        <name>lsgirikonIndia__Account_Matched_Accounts</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Account_Matched_Lead --></label>
+        <name>lsgirikonIndia__Account_Matched_Lead</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>lsgirikonIndia__GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleNews --></label>
+        <name>lsgirikonIndia__GoogleNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>lsgirikonIndia__GoogleSearch</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- HooversProfile --></label>
+        <name>lsgirikonIndia__HooversProfile</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Add_to_Watch_List --></label>
+        <name>mkto_si__Add_to_Watch_List</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Add_to_Watch_List_Detail --></label>
+        <name>mkto_si__Add_to_Watch_List_Detail</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Link_to_Pitchbook --></label>
+        <name>pbk__Link_to_Pitchbook</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Pitchbook_Sync --></label>
+        <name>pbk__Pitchbook_Sync</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_to_Slack --></label>
+        <name>slackv2__Send_to_Slack</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Slack_Alerts --></label>
+        <name>slackv2__Slack_Alerts</name>
+    </webLinks>
+</CustomObjectTranslation>

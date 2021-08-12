@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NBU_Technology_Being_Proposed__c</fullName>
+    <description>* SDS-2595-Oppty fields to track Mellanox engagement
+* SDS-2892 - (Renamed or recreated this field as part of this ticket)</description>
+    <externalId>false</externalId>
+    <label>NBU Technology Being Proposed</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>NBU_Involved__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>DPU or NPU</fullName>
+                <default>false</default>
+                <label>DPU or NPU</label>
+            </value>
+            <value>
+                <fullName>Interconnect</fullName>
+                <default>false</default>
+                <label>Interconnect</label>
+            </value>
+            <value>
+                <fullName>Software</fullName>
+                <default>false</default>
+                <label>Software</label>
+            </value>
+            <value>
+                <fullName>Ethernet</fullName>
+                <default>false</default>
+                <label>Ethernet</label>
+            </value>
+            <value>
+                <fullName>Infiniband</fullName>
+                <default>false</default>
+                <label>Infiniband</label>
+            </value>
+            <value>
+                <fullName>ConnectX SmartNIC</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>ConnectX SmartNIC</label>
+            </value>
+            <value>
+                <fullName>Security</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Security</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Yes</controllingFieldValue>
+            <valueName>DPU or NPU</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Yes</controllingFieldValue>
+            <valueName>Interconnect</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Yes</controllingFieldValue>
+            <valueName>Software</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Yes</controllingFieldValue>
+            <valueName>Ethernet</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Yes</controllingFieldValue>
+            <valueName>Infiniband</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

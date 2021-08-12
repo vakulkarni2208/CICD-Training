@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Solution_Provider_VAR_Requirement</fullName>
+    <active>true</active>
+    <description>Require a Solution Provider/VAR if one answered Yes to Solution Provider/VAR question</description>
+    <errorConditionFormula>AND( 
+ $RecordType.Name = &quot;Enterprise Sales Opportunity&quot;, 
+ $Profile.Name &lt;&gt; &apos;System Administrator&apos;, 
+ ISPICKVAL(Do_you_have_a_NPN_Solution_Provider_VAR__c , &quot;Yes&quot;), 
+ NPN_Solution_Provider_VAR__r.Id = &quot;&quot;
+)</errorConditionFormula>
+    <errorDisplayField>NPN_Solution_Provider_VAR__c</errorDisplayField>
+    <errorMessage>Please detail the NPN Solution Provider/VAR if one is engaged with Opportunity</errorMessage>
+</ValidationRule>

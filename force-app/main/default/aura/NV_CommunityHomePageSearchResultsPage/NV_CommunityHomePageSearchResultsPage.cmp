@@ -1,0 +1,309 @@
+<aura:component controller="NV_LtgCommunitySearchController" implements="flexipage:availableForAllPageTypes" access="global">
+	<aura:attribute name="isSearchResultPopUpOpen" type="boolean" default="false"/>
+    <aura:attribute name="searchText" type="String" />
+    <aura:attribute name="searchResults" type="NV_LtgCommunitySearchController.CommunitySearchWrapper" />
+    <aura:handler name="init" action="{!c.doInit}" value="{!this}"/>
+    <aura:registerEvent name="cmpEvent" type="c:CloseContactUsPopUp"/>
+    <aura:if isTrue="{!v.isSearchResultPopUpOpen}">
+        <!--###### MODAL BOX Start######--> 
+        <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+            <div style="width:90%;max-width:2000px;" class="slds-modal__container">
+                <!-- ###### MODAL BOX HEADER Start ######-->
+                <header class="slds-modal__header">
+                    <lightning:buttonIcon iconName="utility:close"
+                                          onclick="{! c.closeModal }"
+                                          alternativeText="close"
+                                          variant="bare-inverse"
+                                          class="slds-modal__close"/>
+                    <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate"><b>{!$Label.c.NPNHomePage_Search_Results}</b></h2>
+                </header>
+                <!-- ###### MODAL BOX HEADER End ######-->
+                <div class="slds-modal__content slds-p-around_medium">
+                    <aura:if isTrue="{!not(empty(v.searchResults.accounts))}">
+                        <p class="searchHeader">Accounts</p>
+                        <table class="slds-table slds-table_cell-buffer slds-table_bordered">
+                          <thead>
+                            <tr class="slds-line-height_reset">
+                              <th class="" scope="col">
+                                <div class="slds-truncate" title="Account Name">{!$Label.c.NPNHomePage_Account_Name}</div>
+                              </th>
+                              <th class="" scope="col">
+                                <div class="slds-truncate" title="Phone">{!$Label.c.NPNHomePage_Phone}</div>
+                              </th>
+                              <th class="" scope="col">
+                                <div class="slds-truncate" title="Account Number">{!$Label.c.NPNHomePage_Account_Number}</div>
+                              </th>
+                              <th class="" scope="col">
+                                <div class="slds-truncate" title="Owner">{!$Label.c.NPNHOmePage_Owner}</div>
+                              </th>                              
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <aura:iteration items="{!v.searchResults.accounts}" var="objAcc">
+                                <tr class="slds-hint-parent">
+                                  <td data-label="Account Name">
+                                      <div class="slds-truncate" title="{!objAcc.Name}"><a href="{!'/'+objAcc.Id}">{!objAcc.Name}</a></div>
+                                  </td>
+                                  <td data-label="Phone">
+                                    <div class="slds-truncate" title="{!objAcc.Phone}">{!objAcc.Phone}</div>
+                                  </td>
+                                  <td data-label="Account Number">
+                                    <div class="slds-truncate" title="{!objAcc.AccountNumber}">{!objAcc.AccountNumber}</div>
+                                  </td>
+                                  <td data-label="Owner">
+                                    <div class="slds-truncate" title="{!objAcc.Owner.Alias}">{!objAcc.Owner.Alias}</div>
+                                  </td>                                  
+                                </tr>      
+                              </aura:iteration>
+                          </tbody>
+                        </table>
+                    </aura:if>
+                    <aura:if isTrue="{!not(empty(v.searchResults.opportunities))}">
+                        <br /><br />
+                        <p class="searchHeader">Opportunities</p>
+                        <table class="slds-table slds-table_cell-buffer slds-table_bordered">
+                          <thead>
+                            <tr class="slds-line-height_reset">
+                              <th class="" scope="col">
+                                <div class="slds-truncate" title="Name">{!$Label.c.NPNHomePage_Name}</div>
+                              </th>
+                                <th class="" scope="col">
+                                <div class="slds-truncate" title="Account Name">{!$Label.c.NPNHomePage_Account_Name}</div>
+                              </th>
+                              <th class="" scope="col">
+                                <div class="slds-truncate" title="Stage">{!$Label.c.NPNHomePage_Stage}</div>
+                              </th>
+                              <th class="" scope="col">
+                                <div class="slds-truncate" title="Close Date">{!$Label.c.NPNHomePage_Close_Date}</div>
+                              </th>
+                              <th class="" scope="col">
+                                <div class="slds-truncate" title="Owner">{!$Label.c.NPNHOmePage_Owner}</div>
+                              </th>                              
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <aura:iteration items="{!v.searchResults.opportunities}" var="objOpp">
+                                <tr class="slds-hint-parent">
+                                  <td data-label="Name">
+                                      <div class="slds-truncate" title="{!objOpp.Name}"><a href="{!'/'+objOpp.Id}">{!objOpp.Name}</a></div>
+                                  </td>
+                                  <td data-label="Account Name">
+                                    <div class="slds-truncate" title="{!objOpp.Account.Name}">{!objOpp.Account.Name}</div>
+                                  </td>
+                                  <td data-label="Stage">
+                                    <div class="slds-truncate" title="{!objOpp.StageName}">{!objOpp.StageName}</div>
+                                  </td>
+                                  <td data-label="Close Date">
+                                    <div class="slds-truncate" title="{!objOpp.CloseDate}">{!objOpp.CloseDate}</div>
+                                  </td>
+                                  <td data-label="Owner">
+                                    <div class="slds-truncate" title="{!objOpp.Owner.Alias}">{!objOpp.Owner.Alias}</div>
+                                  </td>                                  
+                                </tr>      
+                              </aura:iteration>
+                          </tbody>
+                        </table>
+                    </aura:if>                    
+                    <!-- By Akash 
+                     <aura:if isTrue="{!not(empty(v.searchResults.MDFProjects))}">		
+                    	<br /><br />
+                         <p class="searchHeader">MDF</p>		
+                        <table class="slds-table slds-table_cell-buffer slds-table_bordered">		
+                          <thead>		
+                            <tr class="slds-line-height_reset">		
+                              <th class="" scope="col">		
+                                <div class="slds-truncate" title="Name">{!$Label.c.NPNHomePage_Name}</div>		
+                              </th>		
+                                <th class="" scope="col">		
+                                <div class="slds-truncate" title="Project Name">{!$Label.c.NPNHomePage_Project_Name}</div>		
+                              </th>		
+                              <th class="" scope="col">		
+                                <div class="slds-truncate" title="Partner Name">{!$Label.c.NPNHomePage_Partner_Name}</div>		
+                              </th>		
+                              <th class="" scope="col">		
+                                <div class="slds-truncate" title="Activity Name">{!$Label.c.NPNHomePage_Activity_Name}</div>		
+                              </th>		
+                              <th class="" scope="col">		
+                                <div class="slds-truncate" title="Project Description">{!$Label.c.NPNHomePage_Project_Description}</div>		
+                              </th> 		
+                              <th class="" scope="col">		
+                                <div class="slds-truncate" title="Invoice Number">{!$Label.c.NPNHomePage_Invoice_Number}</div>		
+                              </th> 		
+                              <th class="" scope="col">		
+                                <div class="slds-truncate" title="Amount">{!$Label.c.NPNHomePage_Amount}</div>		
+                              </th>		
+                              <th class="" scope="col">		
+                                <div class="slds-truncate" title="Cost To Reimbursed">{!$Label.c.NPNHomePage_Cost_To_Reimbursed}</div>		
+                              </th> 		
+                              <th class="" scope="col">		
+                                <div class="slds-truncate" title="Record Type Name">{!$Label.c.NPNHomePage_Record_Type_Name}</div>		
+                              </th>                               		
+                            </tr>		
+                          </thead>		
+                          <tbody>		
+                            <aura:iteration items="{!v.searchResults.MDFProjects}" var="objMdf">		
+                                <tr class="slds-hint-parent">		
+                                  <td data-label="Title">		
+                                    <div class="slds-truncate" title="{!objMdf.Name}"><a href="{!'/'+objMdf.Id}">{!objMdf.Name}</a></div>		
+                                  </td>		
+                                  <td data-label="Region">		
+                                    <div class="slds-truncate" title="{!objMdf.Project_Name__c}">{!objMdf.Project_Name__c}</div>		
+                                  </td>		
+                                  <td data-label="Competency">		
+                                    <div class="slds-truncate" title="{!objMdf.MDF_Partner__r.Name}">{!objMdf.MDF_Partner__r.Name}</div>		
+                                  </td>		
+                                  <td data-label="Description">		
+                                    <div class="slds-truncate" title="{!objMdf.MDF_Activity__r.Name}">{!objMdf.MDF_Activity__r.Name}</div>		
+                                  </td>		
+                                  <td data-label="Language">		
+                                    <div class="slds-truncate" title="{!objMdf.Project_Description__c}">{!objMdf.Project_Description__c}</div>		
+                                  </td>  		
+                                  <td data-label="Region">		
+                                    <div class="slds-truncate" title="{!objMdf.Partner_Claim_Invoice_Number__c}">{!objMdf.Partner_Claim_Invoice_Number__c}</div>		
+                                  </td>		
+                                  <td data-label="Competency">		
+                                    <div class="slds-truncate" title="{!objMdf.Partner_Claim_Amount__c}">{!objMdf.Partner_Claim_Amount__c}</div>		
+                                  </td>		
+                                  <td data-label="Description">		
+                                    <div class="slds-truncate" title="{!objMdf.Maximum_Project_Cost_to_be_Reimbursed__c}">{!objMdf.Maximum_Project_Cost_to_be_Reimbursed__c}</div>		
+                                  </td>		
+                                  <td data-label="Language">		
+                                    <div class="slds-truncate" title="{!objMdf.RecordType.Name}">{!objMdf.RecordType.Name}</div>		
+                                  </td>        		
+                                  		
+                                </tr>      		
+                              </aura:iteration>		
+                          </tbody>		
+                        </table>		
+                    </aura:if>		
+                     -->
+                     <aura:if isTrue="{!not(empty(v.searchResults.leads))}">
+                        <br /><br />
+                        <p class="searchHeader">Leads</p>
+                        <table class="slds-table slds-table_cell-buffer slds-table_bordered">
+                          <thead>
+                            <tr class="slds-line-height_reset">
+                              <th class="" scope="col">
+                                <div class="slds-truncate" title="Lead Number">{!$Label.c.NPNHomePage_Lead_LeadNumber}</div>
+                              </th>
+                              <th class="" scope="col">
+                                <div class="slds-truncate" title="Company">{!$Label.c.	NPNHomePage_Lead_Company}</div>
+                              </th>
+                              <th class="" scope="col">
+                                <div class="slds-truncate" title="Name">{!$Label.c.NPNHomePage_Lead_Name}</div>
+                              </th>
+                              <th class="" scope="col">
+                                <div class="slds-truncate" title="Email">{!$Label.c.NPNHomePage_Lead_Email}</div>
+                              </th>
+                              <th class="" scope="col">
+                                <div class="slds-truncate" title="Partner Sales Rep Name">{!$Label.c.NPNHomePage_Lead_PartnerSalesRepName}</div>
+                              </th> 
+                              <th class="" scope="col">
+                                <div class="slds-truncate" title="Partner Sales Rep Company">{!$Label.c.NPNHomePage_Lead_PartnerSalesRepCompany}</div>
+                              </th>   
+                               <th class="" scope="col">
+                                <div class="slds-truncate" title="Address">{!$Label.c.NPNHomePage_Lead_Address}</div>
+                              </th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <aura:iteration items="{!v.searchResults.leads}" var="objLead">
+                                <tr class="slds-hint-parent">
+                                  <td data-label="Lead Number">
+                                      <div class="slds-truncate" title="{!objLead.Lead_Number__c}"><a href="{!'/'+objLead.Id}">{!objLead.Lead_Number__c}</a></div>
+                                  </td>
+                                  <td data-label="Company">
+                                    <div class="slds-truncate" title="{!objLead.Company}">{!objLead.Company}</div>
+                                  </td>
+                                  <td data-label="Name">
+                                    <div class="slds-truncate" title="{!objLead.Name}">{!objLead.Name}</div>
+                                  </td>
+                                  <td data-label="Email">
+                                    <div class="slds-truncate" title="{!objLead.Email}">{!objLead.Email}</div>
+                                  </td> 
+                                  <td data-label="Partner Sales Rep Name">
+                                      <div class="slds-truncate" title="{!objLead.DR_Partner_Sales_Rep_Name__c}">{!objLead.DR_Partner_Sales_Rep_Name__r.Name}</div>
+                                  </td>
+                                  <td data-label="Partner Sales Rep Company">
+                                    <div class="slds-truncate" title="{!objLead.DR_Partner_Sales_Rep_Company__c}">{!objLead.DR_Partner_Sales_Rep_Company__r.Name}</div>
+                                  </td>
+                                  <td data-label="Address">
+                                    <div class="slds-truncate" title="{!objLead.Address}">{!objLead.Street},{!objLead.City},{!objLead.PostalCode},{!objLead.State},{!objLead.Country},{!objLead.Region__c},{!objLead.Sub_Region__c}
+                                     </div>
+                                  </td>
+                                                                   
+                                </tr>      
+                              </aura:iteration>
+                          </tbody>
+                        </table>
+                    </aura:if>
+                    
+                    <!-- ENd Akash -->
+                    
+                    <!--
+                    <aura:if isTrue="{!not(empty(v.searchResults.lstContentVersion))}">
+                    	<br /><br />
+                        <p class="searchHeader">Content</p>
+                        <table class="slds-table slds-table_cell-buffer slds-table_bordered">
+                          <thead>
+                            <tr class="slds-line-height_reset">
+                              <th class="" scope="col">
+                                <div class="slds-truncate" title="Title">{!$Label.c.NPNHomePage_Title}</div>
+                              </th>
+                                <th class="" scope="col">
+                                <div class="slds-truncate" title="Region">{!$Label.c.NPNHomePage_Region}</div>
+                              </th>
+                              <th class="" scope="col">
+                                <div class="slds-truncate" title="Competency">{!$Label.c.NPNHomePage_Competency} </div>
+                              </th>
+                              <th class="" scope="col">
+                                <div class="slds-truncate" title="Description">{!$Label.c.NPNHomePage_Description} </div>
+                              </th>
+                              <th class="" scope="col">
+                                <div class="slds-truncate" title="Language">{!$Label.c.NPNHomePage_Language} </div>
+                              </th>                              
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <aura:iteration items="{!v.searchResults.lstContentVersion}" var="objContent">
+                                <tr class="slds-hint-parent">
+                                  <td data-label="Title">
+                                      <div class="slds-truncate" title="{!objContent.Title}"><a href="{!'/'+objContent.Id}">{!objContent.Title}</a></div>
+                                  </td>
+                                  <td data-label="Region">
+                                    <div class="slds-truncate" title="{!objContent.Region__c}">{!objContent.Region__c}</div>
+                                  </td>
+                                  <td data-label="Competency">
+                                    <div class="slds-truncate" title="{!objContent.Competency__c}">{!objContent.Competency__c}</div>
+                                  </td>
+                                  <td data-label="Description">
+                                    <div class="slds-truncate" title="{!objContent.Description}">{!objContent.Description}</div>
+                                  </td>
+                                  <td data-label="Language">
+                                    <div class="slds-truncate" title="{!objContent.Language_Region__c}">{!objContent.Language_Region__c}</div>
+                                  </td>                                  
+                                </tr>      
+                              </aura:iteration>
+                          </tbody>
+                        </table>
+                    </aura:if>
+					-->
+                </div>
+                <!--###### MODAL BOX FOOTER Part Start ######-->
+                <footer class="slds-modal__footer">
+                    <lightning:button variant="neutral" 
+                                      label="Cancel"
+                                      title="Cancel"
+                                      onclick="{! c.closeModal }"/>
+                    <!--<lightning:button variant="brand" 
+                                          label="Like and Close"
+                                          title="Like and Close"
+                                          onclick="{! c.likenClose }"/>-->
+                </footer>
+                <!--###### MODAL BOX FOOTER Part End ######-->
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+        <!--###### MODAL BOX Part END Here ######-->            
+    </aura:if> 
+</aura:component>

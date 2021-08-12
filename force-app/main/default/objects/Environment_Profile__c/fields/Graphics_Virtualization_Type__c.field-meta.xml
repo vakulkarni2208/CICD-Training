@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Graphics_Virtualization_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Graphics Virtualization Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>vSGA</fullName>
+                <default>false</default>
+                <label>vSGA</label>
+            </value>
+            <value>
+                <fullName>vGPU</fullName>
+                <default>false</default>
+                <label>vGPU</label>
+            </value>
+            <value>
+                <fullName>VDA</fullName>
+                <default>false</default>
+                <label>VDA</label>
+            </value>
+            <value>
+                <fullName>DDA</fullName>
+                <default>false</default>
+                <label>DDA</label>
+            </value>
+            <value>
+                <fullName>HDX 3D Pro</fullName>
+                <default>false</default>
+                <label>HDX 3D Pro</label>
+            </value>
+            <value>
+                <fullName>RemoteFX</fullName>
+                <default>false</default>
+                <label>RemoteFX</label>
+            </value>
+            <value>
+                <fullName>Bare Metal or Pass-through</fullName>
+                <default>false</default>
+                <label>Bare Metal or Pass-through</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

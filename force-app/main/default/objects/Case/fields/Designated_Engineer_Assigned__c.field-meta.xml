@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Designated_Engineer_Assigned__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>This flag is set when a Case is assigned to Designated Engineer.</description>
+    <externalId>false</externalId>
+    <label>Designated Engineer Assigned</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

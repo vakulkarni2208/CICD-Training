@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Allow_OppReg_PriceBooks_For_DealReg_Opp</fullName>
+    <active>false</active>
+    <description>For Enterprise Sales Opportunity if the Lead source is Deal Registration and Probability &gt;.19 and Legacy RecordtypID is null then the users need to select OppReg Price Book or OppReg EDU Price book.</description>
+    <errorConditionFormula>AND(
+ OR( 
+  RecordType.Name = &apos;Enterprise Sales Opportunity&apos;, 
+  RecordType.Name = &apos;Repeat Business Opportunity&apos;
+ ), 
+ ISPICKVAL(LeadSource, &apos;Deal Registration&apos;),
+ ISBLANK(Legacy_RecordTypeID__c), 
+ NOT( Pricebook2.Name = &apos;OppReg EDU Price Book&apos;), 
+ NOT( Pricebook2.Name = &apos;OppReg Price Book&apos;),
+ NOT( ISBLANK(Pricebook2.Name)),
+ NOT(IsClosed)
+)</errorConditionFormula>
+    <errorMessage>For approved opportunity registrations, please choose the Opp Reg or Opp Reg EDU Price book. For assistance, click the &quot;Get Help&quot; button located on the top right of the page.</errorMessage>
+</ValidationRule>

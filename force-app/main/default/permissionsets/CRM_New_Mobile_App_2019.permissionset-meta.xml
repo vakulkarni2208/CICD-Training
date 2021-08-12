@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>SDS-1840-Sales: Enable new SFDC mobile app
+Access to New Salesforce Mobile App -  Users will have access to their favorite Lightning apps, improved navigation, and deeper functionality on every page.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>CRM : New Mobile App 2019</label>
+</PermissionSet>

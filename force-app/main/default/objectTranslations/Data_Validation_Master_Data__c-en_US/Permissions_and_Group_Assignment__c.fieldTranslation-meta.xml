@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Permissions and Group Assignment --></label>
+    <name>Permissions_and_Group_Assignment__c</name>
+    <picklistValues>
+        <masterLabel>Community</masterLabel>
+        <translation><!-- Community --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DGX Full Portal</masterLabel>
+        <translation><!-- DGX Full Portal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DISTI DGX Elite</masterLabel>
+        <translation><!-- DISTI DGX Elite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DISTI DGX Preferred</masterLabel>
+        <translation><!-- DISTI DGX Preferred --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DISTI Quadro Elite</masterLabel>
+        <translation><!-- DISTI Quadro Elite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DISTI Quadro Preferred</masterLabel>
+        <translation><!-- DISTI Quadro Preferred --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DISTI Tesla Elite</masterLabel>
+        <translation><!-- DISTI Tesla Elite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DISTI Tesla Preferred</masterLabel>
+        <translation><!-- DISTI Tesla Preferred --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DISTI vGPU Elite</masterLabel>
+        <translation><!-- DISTI vGPU Elite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DISTI vGPU Preferred</masterLabel>
+        <translation><!-- DISTI vGPU Preferred --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Deal Registration</masterLabel>
+        <translation><!-- Deal Registration --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Elite</masterLabel>
+        <translation><!-- Elite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GRID VCA Legacy</masterLabel>
+        <translation><!-- GRID VCA Legacy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GRID VGX Legacy</masterLabel>
+        <translation><!-- GRID VGX Legacy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IP Portal Lite</masterLabel>
+        <translation><!-- IP Portal Lite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IP Tesla Elite</masterLabel>
+        <translation><!-- IP Tesla Elite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IP Tesla Preferred</masterLabel>
+        <translation><!-- IP Tesla Preferred --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Leads &amp; Opportunities</masterLabel>
+        <translation><!-- Leads &amp; Opportunities --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MDF</masterLabel>
+        <translation><!-- MDF --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MDFV3</masterLabel>
+        <translation><!-- MDFV3 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Manager</masterLabel>
+        <translation><!-- Manager --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NVEP</masterLabel>
+        <translation><!-- NVEP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OEM DGX Elite</masterLabel>
+        <translation><!-- OEM DGX Elite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OEM DGX Preferred</masterLabel>
+        <translation><!-- OEM DGX Preferred --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OEM Quadro Elite</masterLabel>
+        <translation><!-- OEM Quadro Elite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OEM Quadro Preferred</masterLabel>
+        <translation><!-- OEM Quadro Preferred --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OEM Tesla Elite</masterLabel>
+        <translation><!-- OEM Tesla Elite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OEM Tesla Preferred</masterLabel>
+        <translation><!-- OEM Tesla Preferred --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OEM vGPU Elite</masterLabel>
+        <translation><!-- OEM vGPU Elite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OEM vGPU Preferred</masterLabel>
+        <translation><!-- OEM vGPU Preferred --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Portal</masterLabel>
+        <translation><!-- Portal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Portal Lite</masterLabel>
+        <translation><!-- Portal Lite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Quadro Portal Full</masterLabel>
+        <translation><!-- Quadro Portal Full --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SP DGX Elite</masterLabel>
+        <translation><!-- SP DGX Elite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SP DGX Preferred</masterLabel>
+        <translation><!-- SP DGX Preferred --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SP Quadro Elite</masterLabel>
+        <translation><!-- SP Quadro Elite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SP Quadro Preferred</masterLabel>
+        <translation><!-- SP Quadro Preferred --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SP Tesla Elite</masterLabel>
+        <translation><!-- SP Tesla Elite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SP Tesla Preferred</masterLabel>
+        <translation><!-- SP Tesla Preferred --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SP vGPU Elite</masterLabel>
+        <translation><!-- SP vGPU Elite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SP vGPU Preferred</masterLabel>
+        <translation><!-- SP vGPU Preferred --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TPP Legacy</masterLabel>
+        <translation><!-- TPP Legacy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tesla Full Portal</masterLabel>
+        <translation><!-- Tesla Full Portal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>vGPU Portal Full</masterLabel>
+        <translation><!-- vGPU Portal Full --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

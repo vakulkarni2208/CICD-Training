@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Topics of Interest --></label>
+    <name>Topics_of_Interest__c</name>
+    <picklistValues>
+        <masterLabel>Accelerated Computing - C/C++</masterLabel>
+        <translation><!-- Accelerated Computing - C/C++ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Accelerated Computing - Python</masterLabel>
+        <translation><!-- Accelerated Computing - Python --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Data Science</masterLabel>
+        <translation><!-- Data Science --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Deep Learning</masterLabel>
+        <translation><!-- Deep Learning --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Industry Segment - Automotive</masterLabel>
+        <translation><!-- Industry Segment - Automotive --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Industry Segment - Healthcare</masterLabel>
+        <translation><!-- Industry Segment - Healthcare --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

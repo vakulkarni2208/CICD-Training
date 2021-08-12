@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Opp_EP_CLR_CloseComments</fullName>
+    <active>true</active>
+    <description>If Closed Lost Reason is Other, Closed Comment is required (SDS-1213)
+
+1/29/2020 GB Update: cleaned up Rule Name as it was spelled incorrectly
+6/25/2020 SP: Updated for ENT Design WIns</description>
+    <errorConditionFormula>AND ( 
+ OR( 
+  RecordType.Name = &apos;Enterprise Sales Opportunity&apos;, 
+  RecordType.Name = &apos;Repeat Business Opportunity&apos;,
+  RecordType.Name = &apos;Enterprise Design Wins&apos;
+ ),  
+ NOT(ISPICKVAL(Type, &apos;Deal Registration&apos;)), 
+ ISPICKVAL(Closed_Lost_Reason__c, &apos;Other&apos;), 
+ ISPICKVAL(StageName , &quot;Closed Lost&quot;), 
+ ISBLANK(Closed_Comments__c) 
+)</errorConditionFormula>
+    <errorDisplayField>Closed_Comments__c</errorDisplayField>
+    <errorMessage>Please enter Closed Comments if Closed Lost Reason is Other</errorMessage>
+</ValidationRule>

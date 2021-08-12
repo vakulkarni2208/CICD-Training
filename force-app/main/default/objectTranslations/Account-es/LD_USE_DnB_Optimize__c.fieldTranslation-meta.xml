@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- When checked match and enrich from D&amp;B Optimizer will process --></help>
+    <label><!-- Allow D&amp;B Optimizer --></label>
+    <name>LD_USE_DnB_Optimize__c</name>
+</CustomFieldTranslation>

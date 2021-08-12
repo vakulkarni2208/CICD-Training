@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Operating_System_AutomotiveOpportunity__c</fullName>
+    <externalId>false</externalId>
+    <label>Operating System</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Linux</fullName>
+                <default>false</default>
+                <label>Linux</label>
+            </value>
+            <value>
+                <fullName>RT-Linux</fullName>
+                <default>false</default>
+                <label>RT-Linux</label>
+            </value>
+            <value>
+                <fullName>QNX</fullName>
+                <default>false</default>
+                <label>QNX</label>
+            </value>
+            <value>
+                <fullName>Integrity</fullName>
+                <default>false</default>
+                <label>Integrity</label>
+            </value>
+            <value>
+                <fullName>AutoSAR</fullName>
+                <default>false</default>
+                <label>AutoSAR</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

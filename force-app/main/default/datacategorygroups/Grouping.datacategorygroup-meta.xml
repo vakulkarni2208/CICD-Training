@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCategoryGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <dataCategory>
+        <dataCategory>
+            <label>Error Message, Logs, Debugs</label>
+            <name>Error_Message_Logs_Debugs</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Hardware Failure</label>
+            <name>Hardware_Failure</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Licensing</label>
+            <name>Licensing</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Install, Uninstall OR Upgrade</label>
+            <name>Install_Uninstall_OR_Upgrade</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Product Failure/Function Question</label>
+            <name>Product_Failure_Function_Question</name>
+        </dataCategory>
+        <dataCategory>
+            <label>SW Download Assistance</label>
+            <name>SW_Download_Assistance</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Configuration Assistance</label>
+            <name>Configuration_Assistance</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Other</label>
+            <name>Other</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Third Party Issue</label>
+            <name>Third_Party_Issue</name>
+        </dataCategory>
+        <label>All</label>
+        <name>All</name>
+    </dataCategory>
+    <label>Grouping</label>
+    <objectUsage>
+        <object>KnowledgeArticleVersion</object>
+    </objectUsage>
+</DataCategoryGroup>

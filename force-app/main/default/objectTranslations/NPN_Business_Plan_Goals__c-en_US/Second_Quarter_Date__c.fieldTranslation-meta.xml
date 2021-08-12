@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Select a date within the fiscal quarter to which this goal is applicable --></help>
+    <label><!-- Second Quarter Date --></label>
+    <name>Second_Quarter_Date__c</name>
+</CustomFieldTranslation>

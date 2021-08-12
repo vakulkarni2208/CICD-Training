@@ -1,0 +1,20 @@
+<apex:page sidebar="false" showHeader="false" cache="false">
+    <html>
+        <head>
+           <meta http-equiv="refresh" content="5;URL=https://www.nvidia.com/npnportal"/>
+        </head>
+        
+        <div style="clear:both; margin-left:35%; margin-top:20%; width:145px;height:33px;background-image:url('{!URLFOR($Resource.NV_New_Logo)}');" />
+        <div style="margin-left:35%;margin-top:1%;">
+            We have updated our portal technology and this webpage is no longer in use. 
+            <br />
+            <br />
+            You will be taken there automatically in 5 seconds.
+            <br/> 
+            Otherwise, please access the NVIDIA Partner Portal via this link: <a href="https://www.nvidia.com/npnportal">https://www.nvidia.com/npnportal</a>.
+            <br />
+            <br />
+            Be sure to bookmark the new link!
+        </div>
+    </html>
+</apex:page>

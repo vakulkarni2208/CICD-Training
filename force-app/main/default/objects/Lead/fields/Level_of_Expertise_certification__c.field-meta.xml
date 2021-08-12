@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Level_of_Expertise_certification__c</fullName>
+    <description>SDS-2586</description>
+    <externalId>false</externalId>
+    <label>Level of Expertise - certification</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Beginner (1-2 years of research or development)</fullName>
+                <default>false</default>
+                <label>Beginner (1-2 years of research or development)</label>
+            </value>
+            <value>
+                <fullName>Intermediate (2-3 years of research or development)</fullName>
+                <default>false</default>
+                <label>Intermediate (2-3 years of research or development)</label>
+            </value>
+            <value>
+                <fullName>Advanced (3+ years of research or development)</fullName>
+                <default>false</default>
+                <label>Advanced (3+ years of research or development)</label>
+            </value>
+            <value>
+                <fullName>Advanced</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Advanced</label>
+            </value>
+            <value>
+                <fullName>Beginner</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Beginner</label>
+            </value>
+            <value>
+                <fullName>Intermediate</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Intermediate</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

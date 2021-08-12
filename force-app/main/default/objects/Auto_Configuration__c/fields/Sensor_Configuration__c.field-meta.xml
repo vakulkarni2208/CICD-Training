@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sensor_Configuration__c</fullName>
+    <externalId>false</externalId>
+    <label>Sensor Configuration</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <controllingField>Vehicle_or_Bench_Configuration__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Camera</fullName>
+                <default>false</default>
+                <label>Camera</label>
+            </value>
+            <value>
+                <fullName>GPS &amp; IMU</fullName>
+                <default>false</default>
+                <label>GPS &amp; IMU</label>
+            </value>
+            <value>
+                <fullName>Hyperion 7.1</fullName>
+                <default>false</default>
+                <label>Hyperion 7.1</label>
+            </value>
+            <value>
+                <fullName>Hyperion 8.0</fullName>
+                <default>false</default>
+                <label>Hyperion 8.0</label>
+            </value>
+            <value>
+                <fullName>Lidar</fullName>
+                <default>false</default>
+                <label>LiDAR</label>
+            </value>
+            <value>
+                <fullName>Radar</fullName>
+                <default>false</default>
+                <label>Radar</label>
+            </value>
+            <value>
+                <fullName>Thermal Camera</fullName>
+                <default>false</default>
+                <label>Thermal Camera</label>
+            </value>
+            <value>
+                <fullName>TOF Camera</fullName>
+                <default>false</default>
+                <label>TOF Camera</label>
+            </value>
+            <value>
+                <fullName>Ultrasound</fullName>
+                <default>false</default>
+                <label>Ultrasound</label>
+            </value>
+            <value>
+                <fullName>V2X</fullName>
+                <default>false</default>
+                <label>V2X</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>None</fullName>
+                <default>false</default>
+                <label>None</label>
+            </value>
+            <value>
+                <fullName>DM – camera</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>DM – camera</label>
+            </value>
+            <value>
+                <fullName>DM – other</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>DM – other</label>
+            </value>
+            <value>
+                <fullName>Ethernet Camera</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Ethernet Camera</label>
+            </value>
+            <value>
+                <fullName>Ethernet Thermal Camera</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Ethernet Thermal Camera</label>
+            </value>
+            <value>
+                <fullName>GMSL Camera</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>GMSL Camera</label>
+            </value>
+            <value>
+                <fullName>GNSS</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>GNSS</label>
+            </value>
+            <value>
+                <fullName>GNSS/IMU</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>GNSS/IMU</label>
+            </value>
+            <value>
+                <fullName>Hyperion Kit</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Hyperion Kit</label>
+            </value>
+            <value>
+                <fullName>IMU</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>IMU</label>
+            </value>
+            <value>
+                <fullName>SERDES Camera</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>SERDES Camera</label>
+            </value>
+            <value>
+                <fullName>SERDES Thermal Camera</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>SERDES Thermal Camera</label>
+            </value>
+            <value>
+                <fullName>Thermal Cameras</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Thermal Cameras</label>
+            </value>
+            <value>
+                <fullName>USB Camera</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>USB Camera</label>
+            </value>
+            <value>
+                <fullName>USB Thermal Camera</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>USB Thermal Camera</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Vehicle Configuration</controllingFieldValue>
+            <controllingFieldValue>Bench Configuration</controllingFieldValue>
+            <valueName>Camera</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Vehicle Configuration</controllingFieldValue>
+            <controllingFieldValue>Bench Configuration</controllingFieldValue>
+            <valueName>GPS &amp; IMU</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Vehicle Configuration</controllingFieldValue>
+            <controllingFieldValue>Bench Configuration</controllingFieldValue>
+            <valueName>Hyperion 7.1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Vehicle Configuration</controllingFieldValue>
+            <controllingFieldValue>Bench Configuration</controllingFieldValue>
+            <valueName>Hyperion 8.0</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Vehicle Configuration</controllingFieldValue>
+            <controllingFieldValue>Bench Configuration</controllingFieldValue>
+            <valueName>Lidar</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Vehicle Configuration</controllingFieldValue>
+            <controllingFieldValue>Bench Configuration</controllingFieldValue>
+            <valueName>Radar</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Vehicle Configuration</controllingFieldValue>
+            <controllingFieldValue>Bench Configuration</controllingFieldValue>
+            <valueName>Thermal Camera</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Vehicle Configuration</controllingFieldValue>
+            <controllingFieldValue>Bench Configuration</controllingFieldValue>
+            <valueName>TOF Camera</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Vehicle Configuration</controllingFieldValue>
+            <controllingFieldValue>Bench Configuration</controllingFieldValue>
+            <valueName>Ultrasound</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Vehicle Configuration</controllingFieldValue>
+            <controllingFieldValue>Bench Configuration</controllingFieldValue>
+            <valueName>V2X</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Vehicle Configuration</controllingFieldValue>
+            <controllingFieldValue>Bench Configuration</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Vehicle Configuration</controllingFieldValue>
+            <controllingFieldValue>Bench Configuration</controllingFieldValue>
+            <valueName>None</valueName>
+        </valueSettings>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

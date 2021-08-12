@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>Service_Cloud_Rename_NVTicket_to_NVBug</fullName>
+        <field>Name</field>
+        <formula>NVBug__r.Name</formula>
+        <name>Service Cloud Rename NVTicket to NVBug</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Service_Cloud_Set_NV_Ticket_URL</fullName>
+        <field>Link__c</field>
+        <formula>IF(
+   ISPICKVAL( Type__c ,&quot;JIRA&quot;), &quot;https://jirasw.nvidia.com/browse/&quot;+Name
+, IF(
+     ISPICKVAL( Type__c ,&quot;PagerDuty&quot;), 
+     &quot;https://nvidia-gridops.pagerduty.com/incidents/&quot;+Name
+     , IF(
+        ISPICKVAL( Type__c ,&quot;ServiceNow&quot;), 
+        &quot;https://nvidiaprod.service-now.com/sp/?id=search&amp;spa=1&amp;q=&quot;+Name
+     , IF(OR (ISPICKVAL( Type__c ,&quot;NVBug&quot;),ISPICKVAL( Type__c ,&quot;Failure Analysis NVBug&quot;)), 
+        &quot;http://nvbugs/&quot;+ NVBug_Number_Formula__c ,&quot;&quot;
+	 )
+	 )
+    )
+)</formula>
+        <name>Service Cloud : Set NV Ticket URL</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <rules>
+        <fullName>Service Cloud %3A Populate NV Ticket URL</fullName>
+        <actions>
+            <name>Service_Cloud_Set_NV_Ticket_URL</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>This WF updates Link on NV Ticket object based on Type.</description>
+        <formula>ISCHANGED(Name) || ISNEW() || ISCHANGED( Type__c) || ISBLANK( Link__c )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Service Cloud Rename NVTicket to NVBug</fullName>
+        <actions>
+            <name>Service_Cloud_Rename_NVTicket_to_NVBug</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>NVBug__c  &lt;&gt; null</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

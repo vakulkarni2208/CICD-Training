@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Additional Customer Workload --></label>
+    <name>Additional_Customer_Use_Cases__c</name>
+    <picklistValues>
+        <masterLabel>Autonomous vehicle</masterLabel>
+        <translation><!-- Autonomous vehicle --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Data Analytics (Not ML or DL)</masterLabel>
+        <translation><!-- Data Analytics (Not ML or DL) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Deep Learning – Inferencing</masterLabel>
+        <translation><!-- Deep Learning – Inferencing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Deep Learning – Training</masterLabel>
+        <translation><!-- Deep Learning – Training --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Design and Content Creation</masterLabel>
+        <translation><!-- Design and Content Creation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Graphics Virtualization (vGPU)</masterLabel>
+        <translation><!-- Graphics Virtualization (vGPU) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>High Performance Computing (HPC)</masterLabel>
+        <translation><!-- High Performance Computing (HPC) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Industrial Inspection</masterLabel>
+        <translation><!-- Industrial Inspection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Infrastructure as a Service</masterLabel>
+        <translation><!-- Infrastructure as a Service --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Intelligent Video Analytics (IVA)</masterLabel>
+        <translation><!-- Intelligent Video Analytics (IVA) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Machine Learning (Not DL)</masterLabel>
+        <translation><!-- Machine Learning (Not DL) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Medical Imaging</masterLabel>
+        <translation><!-- Medical Imaging --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Predictive Maintenance</masterLabel>
+        <translation><!-- Predictive Maintenance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rendering </masterLabel>
+        <translation><!-- Rendering  --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Scalable Visualization Solutions (SVS)</masterLabel>
+        <translation><!-- Scalable Visualization Solutions (SVS) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Virtual &amp; Augmented Reality (VR/AR)</masterLabel>
+        <translation><!-- Virtual &amp; Augmented Reality (VR/AR) --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

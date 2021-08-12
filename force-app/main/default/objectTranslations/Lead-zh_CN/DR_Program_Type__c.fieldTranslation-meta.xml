@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Program Type --></label>
+    <name>DR_Program_Type__c</name>
+    <picklistValues>
+        <masterLabel>DGX Opp Reg</masterLabel>
+        <translation><!-- DGX Opp Reg --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DGX Opp Reg EDU</masterLabel>
+        <translation><!-- DGX Opp Reg EDU --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DGX Opp Reg Inception</masterLabel>
+        <translation><!-- DGX Opp Reg Inception --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DGX Opp Reg New Logo</masterLabel>
+        <translation><!-- DGX Opp Reg New Logo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DLI Opp Reg</masterLabel>
+        <translation><!-- DLI Opp Reg --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Evaluation Testing</masterLabel>
+        <translation><!-- Evaluation Testing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>POC Development</masterLabel>
+        <translation><!-- POC Development --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Parabricks Opp Reg</masterLabel>
+        <translation><!-- Parabricks Opp Reg --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Parabricks Opp Reg EDU</masterLabel>
+        <translation><!-- Parabricks Opp Reg EDU --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Product Development</masterLabel>
+        <translation><!-- Product Development --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>vGPU SW Opp Reg</masterLabel>
+        <translation><!-- vGPU SW Opp Reg --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>vGPU SW Opp Reg EDU</masterLabel>
+        <translation><!-- vGPU SW Opp Reg EDU --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Reason For Revision --></label>
+    <name>Reason_For_Revision__c</name>
+    <picklistValues>
+        <masterLabel>Additional POS Data</masterLabel>
+        <translation><!-- Additional POS Data --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>File Rejected</masterLabel>
+        <translation><!-- File Rejected --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other (Enter details in the Notes field)</masterLabel>
+        <translation><!-- Other (Enter details in the Notes field) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Revising previously submitted POS Data</masterLabel>
+        <translation><!-- Revising previously submitted POS Data --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

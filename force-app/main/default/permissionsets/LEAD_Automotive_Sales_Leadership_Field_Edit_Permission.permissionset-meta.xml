@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This Permission set provide &apos;Edit&apos; access to certain fields on &apos;Account&apos; and &apos;Opportunity&apos; for users in the &apos;Sales Lead Manager - Auto&apos; Role by adding them to this Permission Set.
+
+Allows editing of Inception Account field.</description>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.Automotive_Agreements__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.Automotive_Inception__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Lead.Auto_BU_Priority__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.Auto_BU_Priority__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>LEAD: Automotive Sales Leadership Field Edit Permission</label>
+    <license>Salesforce</license>
+</PermissionSet>

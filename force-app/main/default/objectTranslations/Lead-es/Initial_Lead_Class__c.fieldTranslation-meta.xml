@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- This is the value of the &apos;Lead Class&apos; first populated i.e. one time stamp when Account Strength gets A/B/C/D) --></help>
+    <label><!-- Initial Lead Class --></label>
+    <name>Initial_Lead_Class__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Customer Industry --></label>
+    <name>Customer_Industry__c</name>
+    <picklistValues>
+        <masterLabel>AEC</masterLabel>
+        <translation><!-- AEC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FSI</masterLabel>
+        <translation><!-- FSI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>M&amp;E</masterLabel>
+        <translation><!-- M&amp;E --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MFG</masterLabel>
+        <translation><!-- MFG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Others</masterLabel>
+        <translation><!-- Others --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Opp_Account_Industry_Match</fullName>
+    <active>true</active>
+    <description>If Account industry is CIC or Strategic Hyperscale, then Opportunity Industry should be CRISP or Strategic Hyperscale and vice versa (SDS-1093)</description>
+    <errorConditionFormula>AND( 
+	$RecordType.Name = &quot;Enterprise Sales Opportunity&quot;, 
+AND($Profile.Name &lt;&gt; &apos;System Administrator&apos;,$Profile.Name &lt;&gt; &apos;SVC SAP Integration&apos;),
+  	Probability &gt; 0.19,
+	OR(
+    		AND( 
+	    		ISPICKVAL( Account.Industry , &quot;CRISP (Consumer Internet Service Providers)&quot;), 
+		  	NOT( ISPICKVAL( Industry__c , &quot;CRISP (Consumer Internet Service Providers)&quot;))
+	  	),
+
+		AND ( 
+			ISPICKVAL( Account.Industry , &quot;Strategic Hyperscale&quot;),
+			NOT(ISPICKVAL( Industry__c , &quot;Strategic Hyperscale&quot;))
+		),
+
+		AND(
+			ISPICKVAL( Industry__c , &quot;CRISP (Consumer Internet Service Providers)&quot;), 
+			NOT(ISPICKVAL( Account.Industry , &quot;CRISP (Consumer Internet Service Providers)&quot;))
+		),
+
+		AND(
+			ISPICKVAL( Industry__c , &quot;Strategic Hyperscale&quot;),
+			NOT(ISPICKVAL( Account.Industry , &quot;Strategic Hyperscale&quot;))
+		)
+	)
+)</errorConditionFormula>
+    <errorDisplayField>Industry__c</errorDisplayField>
+    <errorMessage>Please ensure your Opportunity Industry is appropriate. Strategic Hyperscale and CRISP are considered Named Industries and can only be selected if the Account matches</errorMessage>
+</ValidationRule>

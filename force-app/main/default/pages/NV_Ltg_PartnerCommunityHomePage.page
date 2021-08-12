@@ -1,0 +1,15 @@
+<apex:page showHeader="false" sidebar="false">
+    <apex:includeLightning />
+    <div id="lightning" />
+    <script>
+         $Lightning.use("c:NV_CommunityHomePageApp", function() {
+          $Lightning.createComponent("c:NV_CommunityHomePageHeader",
+          { label : "" },
+          "lightning",
+          function(cmp) {
+            // do some stuff
+          });
+        });
+    </script>
+    
+</apex:page>

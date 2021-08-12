@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Boxes_Korean</fullName>
+    <columns>Language__c</columns>
+    <columns>NAME</columns>
+    <columns>Portal_Tab__c</columns>
+    <columns>Portal_Content_Type__c</columns>
+    <columns>Permission_Set__c</columns>
+    <columns>Label_Serial_Number__c</columns>
+    <columns>UPDATEDBY_USER</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Language__c</field>
+        <operation>equals</operation>
+        <value>Korean</value>
+    </filters>
+    <label>All Boxes - Korean</label>
+    <language>en_US</language>
+</ListView>

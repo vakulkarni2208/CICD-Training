@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_products_at_20_probability</fullName>
+    <active>true</active>
+    <description>Require at least one product at 20% probability</description>
+    <errorConditionFormula>AND (
+$RecordType.Name = &quot;Enterprise Sales Opportunity&quot;,
+$UserRole.Name &lt;&gt; &quot;Administrator&quot;,
+Probability &gt; 0.19,
+Number_of_Products__c = 0
+)</errorConditionFormula>
+    <errorMessage>Before moving past Prospecting Stage please make sure a Quote is created and products are added to a Quote.</errorMessage>
+</ValidationRule>

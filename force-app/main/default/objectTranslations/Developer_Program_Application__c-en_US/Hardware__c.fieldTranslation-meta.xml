@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Hardware --></label>
+    <name>Hardware__c</name>
+    <picklistValues>
+        <masterLabel>Desktop and Notebook</masterLabel>
+        <translation><!-- Desktop and Notebook --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Embedded/Handheld</masterLabel>
+        <translation><!-- Embedded/Handheld --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Server/Cluster</masterLabel>
+        <translation><!-- Server/Cluster --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Workstation</masterLabel>
+        <translation><!-- Workstation --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

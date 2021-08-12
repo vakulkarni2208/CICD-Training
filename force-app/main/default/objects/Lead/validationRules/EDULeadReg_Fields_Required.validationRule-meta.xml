@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EDULeadReg_Fields_Required</fullName>
+    <active>true</active>
+    <description>SDS-1856 - Sales: Update the Required fields on the EDU Leads
+Company, Name, Email, Address, Deal Type, Primary Product, Primary Product Quantity</description>
+    <errorConditionFormula>AND( 
+	RecordType.Name = &quot;EDU Lead Registration&quot;,
+    	OR (
+         	ISBLANK(Country), 
+         	ISBLANK(City), 
+         	ISBLANK(PostalCode), 
+         	ISBLANK(Street),
+         	ISBLANK(FirstName),
+		ISBLANK(LastName),
+		ISBLANK(Company),
+		ISBLANK(Email),
+		ISBLANK(TEXT(DR_Deal_Type__c)),
+         	ISBLANK(TEXT(DR_Product__c)),
+         	ISBLANK(DR_SKU_Quantity__c),
+         	
+         	OR (
+		         AND(
+				ISBLANK(State),
+				OR(
+					UPPER(Country)=&apos;AUSTRALIA&apos;,
+					UPPER(Country)=&apos;BRAZIL&apos;,
+					UPPER(Country)=&apos;CANADA&apos;,
+					UPPER(Country)=&apos;CHINA&apos;,
+					UPPER(Country)=&apos;INDIA&apos;,
+					UPPER(Country)=&apos;IRELAND&apos;,
+					UPPER(Country)=&apos;ITALY&apos;,
+					UPPER(Country)=&apos;JAPAN&apos;,
+					UPPER(Country)=&apos;MEXICO&apos;,
+					UPPER(Country)=&apos;SWITZERLAND&apos;,
+					UPPER(Country)=&apos;UNITED STATES&apos;
+				)
+			)
+		
+         	)
+         	
+    	)
+    	
+)</errorConditionFormula>
+    <errorMessage>Please fill-in Company, First Name, Last Name, Email, Address, Deal Type, Primary Product, Primary Product Quantity fields.</errorMessage>
+</ValidationRule>

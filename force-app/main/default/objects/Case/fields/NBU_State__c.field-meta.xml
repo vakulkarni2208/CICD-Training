@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NBU_State__c</fullName>
+    <externalId>false</externalId>
+    <label>NBU State</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Open</fullName>
+                <default>false</default>
+                <label>Open</label>
+            </value>
+            <value>
+                <fullName>Assigned AE</fullName>
+                <default>false</default>
+                <label>Assigned AE</label>
+            </value>
+            <value>
+                <fullName>Closed</fullName>
+                <default>false</default>
+                <label>Closed</label>
+            </value>
+            <value>
+                <fullName>RMA Assigned</fullName>
+                <default>false</default>
+                <label>RMA Assigned</label>
+            </value>
+            <value>
+                <fullName>Wait for Release</fullName>
+                <default>false</default>
+                <label>Wait for Release</label>
+            </value>
+            <value>
+                <fullName>Waiting for Customer Approval</fullName>
+                <default>false</default>
+                <label>Waiting for Customer Approval</label>
+            </value>
+            <value>
+                <fullName>Waiting for Customer Info</fullName>
+                <default>false</default>
+                <label>Waiting for Customer Info</label>
+            </value>
+            <value>
+                <fullName>Assigned</fullName>
+                <default>false</default>
+                <label>Assigned</label>
+            </value>
+            <value>
+                <fullName>Pending PM approval</fullName>
+                <default>false</default>
+                <label>Pending PM approval</label>
+            </value>
+            <value>
+                <fullName>On Hold</fullName>
+                <default>false</default>
+                <label>On Hold</label>
+            </value>
+            <value>
+                <fullName>RMA Approved</fullName>
+                <default>false</default>
+                <label>RMA Approved</label>
+            </value>
+            <value>
+                <fullName>RMA Canceled</fullName>
+                <default>false</default>
+                <label>RMA Canceled</label>
+            </value>
+            <value>
+                <fullName>Move to OEM RMA</fullName>
+                <default>false</default>
+                <label>Move to OEM RMA</label>
+            </value>
+            <value>
+                <fullName>Waiting for Customer to apply Patch</fullName>
+                <default>false</default>
+                <label>Waiting for Customer to apply Patch</label>
+            </value>
+            <value>
+                <fullName>Soft Close - Pending Approval</fullName>
+                <default>false</default>
+                <label>Soft Close - Pending Approval</label>
+            </value>
+            <value>
+                <fullName>Wait for Implementation</fullName>
+                <default>false</default>
+                <label>Wait for Implementation</label>
+            </value>
+            <value>
+                <fullName>Delivered</fullName>
+                <default>false</default>
+                <label>Delivered</label>
+            </value>
+            <value>
+                <fullName>Pending Vendor RMA</fullName>
+                <default>false</default>
+                <label>Pending Vendor RMA</label>
+            </value>
+            <value>
+                <fullName>Pending Vendor Shipment</fullName>
+                <default>false</default>
+                <label>Pending Vendor Shipment</label>
+            </value>
+            <value>
+                <fullName>Pending Vendor 8D</fullName>
+                <default>false</default>
+                <label>Pending Vendor 8D</label>
+            </value>
+            <value>
+                <fullName>Vendor Approved</fullName>
+                <default>false</default>
+                <label>Vendor Approved</label>
+            </value>
+            <value>
+                <fullName>PR Issued</fullName>
+                <default>false</default>
+                <label>PR Issued</label>
+            </value>
+            <value>
+                <fullName>PO Submitted</fullName>
+                <default>false</default>
+                <label>PO Submitted</label>
+            </value>
+            <value>
+                <fullName>Pending Vendor Delivery</fullName>
+                <default>false</default>
+                <label>Pending Vendor Delivery</label>
+            </value>
+            <value>
+                <fullName>Need More Information</fullName>
+                <default>false</default>
+                <label>Need More Information</label>
+            </value>
+            <value>
+                <fullName>Quote Provided</fullName>
+                <default>false</default>
+                <label>Quote Provided</label>
+            </value>
+            <value>
+                <fullName>Confirmed Vendor Delivery</fullName>
+                <default>false</default>
+                <label>Confirmed Vendor Delivery</label>
+            </value>
+            <value>
+                <fullName>Updated Request Arrived</fullName>
+                <default>false</default>
+                <label>Updated Request Arrived</label>
+            </value>
+            <value>
+                <fullName>Golden Setup Delivered</fullName>
+                <default>false</default>
+                <label>Golden Setup Delivered</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>No_Special_Character_in_File_Name</fullName>
+    <active>true</active>
+    <description>SDS-2945 Service: NVBug File Integration Failure Due to Special Char</description>
+    <errorConditionFormula>OR(CONTAINS(PathOnClient,&apos;&lt;&apos;),CONTAINS(PathOnClient,&apos;&gt;&apos;),CONTAINS(PathOnClient,&apos;:&apos;),CONTAINS(PathOnClient,&apos;&quot;&apos;),CONTAINS(PathOnClient,&apos;\\&apos;),CONTAINS(PathOnClient,&apos;/&apos;), CONTAINS(PathOnClient,&apos;|&apos;),CONTAINS(PathOnClient,&apos;?&apos;),CONTAINS(PathOnClient,&apos;*&apos;))</errorConditionFormula>
+    <errorMessage>Please remove any of the special characters (&lt;&gt;:&quot;/|?*.) from file name of selected file and then upload</errorMessage>
+</ValidationRule>

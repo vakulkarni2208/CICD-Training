@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Data_Types__c</fullName>
+    <externalId>false</externalId>
+    <label>Data Types</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Image</fullName>
+                <default>false</default>
+                <label>Image</label>
+            </value>
+            <value>
+                <fullName>Video</fullName>
+                <default>false</default>
+                <label>Video</label>
+            </value>
+            <value>
+                <fullName>Volumetric</fullName>
+                <default>false</default>
+                <label>Volumetric</label>
+            </value>
+            <value>
+                <fullName>Speech/Audio</fullName>
+                <default>false</default>
+                <label>Speech/Audio</label>
+            </value>
+            <value>
+                <fullName>Language/Text</fullName>
+                <default>false</default>
+                <label>Language/Text</label>
+            </value>
+            <value>
+                <fullName>Time Series</fullName>
+                <default>false</default>
+                <label>Time Series</label>
+            </value>
+            <value>
+                <fullName>Genomic</fullName>
+                <default>false</default>
+                <label>Genomic</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

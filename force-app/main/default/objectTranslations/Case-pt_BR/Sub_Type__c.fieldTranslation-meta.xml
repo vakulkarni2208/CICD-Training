@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Sub-Type --></label>
+    <name>Sub_Type__c</name>
+    <picklistValues>
+        <masterLabel>Account Approval Request</masterLabel>
+        <translation><!-- Account Approval Request --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Account Teams</masterLabel>
+        <translation><!-- Account Teams --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Account Updates</masterLabel>
+        <translation><!-- Account Updates --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cloud Consumption Oppty (CCO)</masterLabel>
+        <translation><!-- Cloud Consumption Oppty (CCO) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Conga (Mail Merge) Issue</masterLabel>
+        <translation><!-- Conga (Mail Merge) Issue --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Contact Conversion issues</masterLabel>
+        <translation><!-- Contact Conversion issues --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Contracts Packet</masterLabel>
+        <translation><!-- Contracts Packet --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dashboard Assistance</masterLabel>
+        <translation><!-- Dashboard Assistance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Deal Registration Lead</masterLabel>
+        <translation><!-- Deal Registration Lead --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Discount Approval</masterLabel>
+        <translation><!-- Discount Approval --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Docusign</masterLabel>
+        <translation><!-- Docusign --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EBC Assistance</masterLabel>
+        <translation><!-- EBC Assistance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EC</masterLabel>
+        <translation><!-- EC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ECC</masterLabel>
+        <translation><!-- ECC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Existing Opp Merge</masterLabel>
+        <translation><!-- Existing Opp Merge --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Existing Report / Dashboard update</masterLabel>
+        <translation><!-- Existing Report / Dashboard update --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GPU Genius Training</masterLabel>
+        <translation><!-- GPU Genius Training --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>General User Request</masterLabel>
+        <translation><!-- General User Request --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Help with Contacts</masterLabel>
+        <translation><!-- Help with Contacts --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Jetson Embedded Opportunities</masterLabel>
+        <translation><!-- Jetson Embedded Opportunities --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lead routing</masterLabel>
+        <translation><!-- Lead routing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Locator</masterLabel>
+        <translation><!-- Locator --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MDF/ Rebates</masterLabel>
+        <translation><!-- MDF/ Rebates --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MLNX Data</masterLabel>
+        <translation><!-- MLNX Data --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mass Email Assistance</masterLabel>
+        <translation><!-- Mass Email Assistance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Modify</masterLabel>
+        <translation><!-- Modify --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NFR SW Licence Request</masterLabel>
+        <translation><!-- NFR SW Licence Request --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN Compliance</masterLabel>
+        <translation><!-- NPN Compliance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NVDA Data</masterLabel>
+        <translation><!-- NVDA Data --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New</masterLabel>
+        <translation><!-- New --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New Email Template Request</masterLabel>
+        <translation><!-- New Email Template Request --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New Report Request</masterLabel>
+        <translation><!-- New Report Request --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Online App Form</masterLabel>
+        <translation><!-- Online App Form --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Opp Reg Extension</masterLabel>
+        <translation><!-- Opp Reg Extension --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Opportunity Update</masterLabel>
+        <translation><!-- Opportunity Update --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Orders</masterLabel>
+        <translation><!-- Orders --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>POS</masterLabel>
+        <translation><!-- POS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Partner Contacts</masterLabel>
+        <translation><!-- Partner Contacts --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Portal Issues</masterLabel>
+        <translation><!-- Portal Issues --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pre MQL</masterLabel>
+        <translation><!-- Pre MQL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Price Configuration</masterLabel>
+        <translation><!-- Price Configuration --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pricebook Change Request</masterLabel>
+        <translation><!-- Pricebook Change Request --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Program Related Questions</masterLabel>
+        <translation><!-- Program Related Questions --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Quote</masterLabel>
+        <translation><!-- Quote --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Quote Document</masterLabel>
+        <translation><!-- Quote Document --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RC</masterLabel>
+        <translation><!-- RC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RCC</masterLabel>
+        <translation><!-- RCC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reinstate</masterLabel>
+        <translation><!-- Reinstate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reporting/Dashboard</masterLabel>
+        <translation><!-- Reporting/Dashboard --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Salesforce to SAP Sync</masterLabel>
+        <translation><!-- Salesforce to SAP Sync --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sharing Question</masterLabel>
+        <translation><!-- Sharing Question --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Special Pricing Request</masterLabel>
+        <translation><!-- Special Pricing Request --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SuRF Assistance</masterLabel>
+        <translation><!-- SuRF Assistance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>System Assistance</masterLabel>
+        <translation><!-- System Assistance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Training Request</masterLabel>
+        <translation><!-- Training Request --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>User Assistance</masterLabel>
+        <translation><!-- User Assistance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Weekly Commit</masterLabel>
+        <translation><!-- Weekly Commit --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

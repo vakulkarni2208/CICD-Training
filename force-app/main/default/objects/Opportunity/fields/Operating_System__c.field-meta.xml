@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Operating_System__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Select one or more Operating System from the &quot;Available&quot; field.
+Highlight appropriate value(s), then click on the top arrow button to move to the &quot;Chosen&quot; field.</inlineHelpText>
+    <label>Operating System</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Vibrante Linux</fullName>
+                <default>false</default>
+                <label>Vibrante Linux</label>
+            </value>
+            <value>
+                <fullName>Vibrante QNX</fullName>
+                <default>false</default>
+                <label>Vibrante QNX</label>
+            </value>
+            <value>
+                <fullName>Vibrante Windows 8 Auto</fullName>
+                <default>false</default>
+                <label>Vibrante Windows 8 Auto</label>
+            </value>
+            <value>
+                <fullName>Android Package</fullName>
+                <default>false</default>
+                <label>Android Package</label>
+            </value>
+            <value>
+                <fullName>UIComposer Package</fullName>
+                <default>false</default>
+                <label>UIComposer Package</label>
+            </value>
+            <value>
+                <fullName>Vision Toolkit Package</fullName>
+                <default>false</default>
+                <label>Vision Toolkit Package</label>
+            </value>
+            <value>
+                <fullName>CE 6 (Legacy)</fullName>
+                <default>false</default>
+                <label>CE 6 (Legacy)</label>
+            </value>
+            <value>
+                <fullName>Android</fullName>
+                <default>false</default>
+                <label>Android</label>
+            </value>
+            <value>
+                <fullName>Linux L4T</fullName>
+                <default>false</default>
+                <label>Linux L4T</label>
+            </value>
+            <value>
+                <fullName>Windows</fullName>
+                <default>false</default>
+                <label>Windows</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

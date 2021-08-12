@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MDF_All_Partners</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ACCOUNT.ADDRESS1_COUNTRY</columns>
+    <columns>MDF_Program_Active__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.NAME</field>
+        <operation>contains</operation>
+        <value>MDF</value>
+    </filters>
+    <label>MDF All Partners</label>
+    <language>en_US</language>
+    <sharedTo>
+        <group>MDFUsers</group>
+    </sharedTo>
+</ListView>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GPU_Quantities__c</fullName>
+    <description>This field is a multiplication of Quantity and No. of GPUs field on Product. It is used in Rollup summary field &quot;Total GPU Quantities&quot; at Opportunity.</description>
+    <externalId>false</externalId>
+    <label>GPU Quantities</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

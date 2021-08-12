@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>ServiceCloud_Notification_to_New_DGX_Member</fullName>
+        <description>ServiceCloud: Notification to New DGX Member</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>no_reply@nvidia.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Service_Cloud_ESP_Community_User_Email/ESP_Service_Cloud_New_DGX_Member</template>
+    </alerts>
+    <rules>
+        <fullName>Service Clould%3A Notification to New Member</fullName>
+        <actions>
+            <name>ServiceCloud_Notification_to_New_DGX_Member</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Service_Cloud_New_Member_Notification__c.Email__c</field>
+            <operation>notEqual</operation>
+            <value>null</value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+</Workflow>

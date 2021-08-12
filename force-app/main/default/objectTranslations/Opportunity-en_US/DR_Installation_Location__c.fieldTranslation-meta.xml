@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- This is a required field.  Enter the country the customer plans to install the product (e.g. United States).  Begin typing the country name and click the search icon to invoke the lookup window. --></help>
+    <label><!-- Installation Location --></label>
+    <name>DR_Installation_Location__c</name>
+    <relationshipLabel><!-- Opportunities (Installation Location) --></relationshipLabel>
+</CustomFieldTranslation>

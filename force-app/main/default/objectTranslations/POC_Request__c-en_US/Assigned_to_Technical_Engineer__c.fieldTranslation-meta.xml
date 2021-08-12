@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Assigned to Technical Engineer --></label>
+    <name>Assigned_to_Technical_Engineer__c</name>
+    <picklistValues>
+        <masterLabel>David Sun</masterLabel>
+        <translation><!-- David Sun --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sunny Sehmi</masterLabel>
+        <translation><!-- Sunny Sehmi --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

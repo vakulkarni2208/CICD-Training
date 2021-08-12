@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Set this flag to true if you don&apos;t want to kick-in DR : Deal Termination wf which sends termination notices to partners --></help>
+    <label><!-- Suppress Termination Notice (Opp Reg) --></label>
+    <name>Suppress_Termination_Notice_Opp_Reg__c</name>
+</CustomFieldTranslation>

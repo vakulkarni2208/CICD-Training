@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This is for Users who have permissions to update pricing and need access to create Special Pricing Opportunities</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Sales: Opportunity Record Type Special Pricing</label>
+    <license>Salesforce</license>
+    <recordTypeVisibilities>
+        <recordType>Opportunity.Special_Pricing_Request</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+</PermissionSet>

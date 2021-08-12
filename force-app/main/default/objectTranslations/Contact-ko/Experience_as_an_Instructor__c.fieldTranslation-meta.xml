@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Experience as an Instructor --></label>
+    <name>Experience_as_an_Instructor__c</name>
+    <picklistValues>
+        <masterLabel>1 to 2 years of instructing</masterLabel>
+        <translation><!-- 1 to 2 years of instructing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>3 to 5 years of instructing</masterLabel>
+        <translation><!-- 3 to 5 years of instructing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>5 or more years of instructing</masterLabel>
+        <translation><!-- 5 or more years of instructing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>None or very little</masterLabel>
+        <translation><!-- None or very little --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

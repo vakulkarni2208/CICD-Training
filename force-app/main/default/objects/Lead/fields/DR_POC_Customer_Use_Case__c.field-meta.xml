@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DR_POC_Customer_Use_Case__c</fullName>
+    <description>Primarily being used for Opp Reg/Jetson and other Lead Registrations.
+2020.11.30 - Edit access given to MKTO User for Taiwan DGX Form leads</description>
+    <externalId>false</externalId>
+    <label>Customer Use Case</label>
+    <length>500</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>LongTextArea</type>
+    <visibleLines>5</visibleLines>
+</CustomField>

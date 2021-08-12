@@ -1,0 +1,91 @@
+<!--  
+    2018.08.17 - PJENA - Brainshark New UI - Increase iframe height
+
+-->
+<apex:page controller="NV_PartnerCommunityHeader" showHeader="false" sidebar="false">
+    <style>
+        .menu a, .menu a:visited{
+            font-size:13px;text-decoration:none;color:Black;font-weight:bold;padding: 7px 15px;
+        }
+        .menu a:hover{
+            font-size:13px;text-decoration:underline;color:Black;font-weight:bold;padding: 7px 15px;
+        }
+        .menu a.selected{
+            color:#000000;background:Black;
+        }
+    </style>
+
+    <body style="overflow: hidden">
+        <apex:form id="formId">
+            <table cellspacing="0" border="0" cellpadding="0" height="100%" width="100%" style="background-color:black;border-color:red;overflow:hidden;min-width: 250px">
+                <tr style="height:110px;" >
+                    <td style="vertical-align:top;background: url({!$Resource.NPN_Portal_Banner}) no-repeat left top; background-size: 2380px 125px">
+    
+                        <table id="table" width="100%" border="0" class="menu">
+                            <tr style="height:40px;">
+                                <apex:repeat value="{!lstPPTabWrapper}" var="tab">
+                                    <!--<td style="{!IF(len(tab.tabLocalName) <= 17, 'width:150px;padding-top:77px;', 'width:230px;padding-top:77px;')}" align="center">-->
+                                    <td style="{!IF(len(tab.tabLocalName) <= 10, 'width:70px;padding-top:77px;', IF(len(tab.tabLocalName) <= 20,'width:180px;padding-top:77px;', 'width:230px;padding-top:77px;'))}" align="center">
+                                        <apex:commandLink value="{!if(tab.tabName != 'Home', tab.tabLocalName, null)}" onclick="if('{!tab.tabName}' != 'Home'){window.open('{!tab.tabURL}','_target');} else {window.open('{!tab.tabURL}','_parent');}" rendered="{!if(CurrentTab !=tab.tabName, true, false)}" >
+                                            <apex:image url="{!$Resource.homeIcon1}" height="25" width="25" rendered="{!if(tab.tabName == 'Home', true, false)}"/>                                           
+                                        </apex:commandLink>
+
+                                        <!-- Below is rendered when a specific link is selected-->
+                                        <apex:outputText style="padding:5px;background-color:white;font-weight:bold" value="{!if(tab.tabName != 'Home', tab.tabLocalName, null)}" rendered="{!if(CurrentTab == tab.tabName && CurrentTab != 'Home', true, false)}"   />
+                                        <apex:image url="{!$Resource.homeIcon1}" height="25" width="25" rendered="{!if(CurrentTab == 'Home' && tab.tabName == 'Home', true, false)}"/>
+                                    </td>
+                                </apex:repeat>
+
+                                    <td>
+                                        <table width="100%" border="0">
+                                            <tr height="18px;">
+                                                <td align="right" nowrap="nowrap" colspan="2"> 
+                                                    <apex:outputText style="padding-right:8px;font-size:13px;text-decoration:none;color:Black;font-weight:bold" value="{!$Label.COMM_CP_VF_Welcome} {!$User.FirstName} {!$User.LastName}"/>
+                                                </td>
+                                            </tr>
+                                            
+                                            <tr height="18px;">
+                                                <td align="right" nowrap="nowrap" colspan="2"> 
+                                                    <apex:outputLink style="padding-right:8px;font-size:13px;text-decoration:none;color:Black;font-weight:bold" onclick="IDMLogin();">{!$Label.COMM_IDM_LandingPage_DisplayText}</apex:outputLink>
+                                                </td>
+                                            </tr>
+                                            
+                                            <tr height="25px;">
+                                                <td valign="top" align="right" nowrap="nowrap" colspan="2">
+                                                    <apex:commandLink style="padding-right:8px;font-size:13px;text-decoration:none;color:Black;font-weight:bold" value="{!$Label.site.logout}" oncomplete="logout();" action="{!deleteCustomSettingBeforeLogOut}"/>
+                                                </td>
+                                            </tr>
+                                            
+                                            <tr height="20px;"/>
+                                               
+                                            <tr height="20px;">
+                                                 <td width="100%" align="right" border="0">
+                                                    <c:NV_CommunityGlobalSearch ></c:NV_CommunityGlobalSearch>
+                                                 </td>
+                                            </tr>
+                                                        
+                                            <tr height="5px">
+                                                    <td colspan="2">
+                                                        <span style="font-size:13px;text-decoration:none;color:#FFFFFF;font-weight:bold" target="_blank"></span>
+                                                    </td>
+                                            </tr> 
+                                        </table>
+                                    </td>
+                            </tr>
+                        </table>
+                        
+                    </td>
+                </tr>
+            </table>
+        </apex:form>
+    </body>
+    <script>
+        function logout() {
+            window.top.location.href= "{!$Site.Prefix}/secur/logout.jsp";
+        }
+        
+        function IDMLogin() {
+            window.top.location.href="{!$Label.COMM_IDM_LandingPage_URL}";
+        }
+    </script>
+</apex:page>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Where_is_Vehicle_Driven__c</fullName>
+    <externalId>false</externalId>
+    <label>Where is Vehicle Driven</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Driven on public roads</fullName>
+                <default>false</default>
+                <label>Driven on public roads</label>
+            </value>
+            <value>
+                <fullName>Driven on private roads</fullName>
+                <default>false</default>
+                <label>Driven on private roads</label>
+            </value>
+            <value>
+                <fullName>Driven on both private and public roads</fullName>
+                <default>false</default>
+                <label>Driven on both private and public roads</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Industries_tied_with_Parabricks_dealtype</fullName>
+    <active>true</active>
+    <description>For &apos;Parabricks&apos; deal type, only these industries (Healthcare, Higher Ed/Research, Public Sector, and Other) could be selected</description>
+    <errorConditionFormula>AND( 
+ISPICKVAL( DR_Deal_Type__c , &apos;Parabricks&apos;),
+NOT(ISPICKVAL( Industry , &quot;Healthcare&quot;)),
+NOT(ISPICKVAL( Industry , &quot;Higher Ed/Research&quot;)),
+NOT(ISPICKVAL( Industry , &quot;Public Sector&quot;)),
+NOT(ISPICKVAL( Industry , &quot;Other&quot;))
+)</errorConditionFormula>
+    <errorDisplayField>Industry</errorDisplayField>
+    <errorMessage>For Parabricks deal type, please select Industry from this list:
+Healthcare, Higher Ed/Research, Public Sector, or Other</errorMessage>
+</ValidationRule>

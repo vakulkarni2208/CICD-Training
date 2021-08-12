@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Service Delivery</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Service Deliveries</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- Conga_Composer_DLI_PreAuthorization_Email --></label>
+        <name>Conga_Composer_DLI_PreAuthorization_Email</name>
+    </webLinks>
+</CustomObjectTranslation>

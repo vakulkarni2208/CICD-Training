@@ -1,0 +1,62 @@
+.THIS {
+}
+
+.THIS .compliance {
+    margin-top:10px;
+    min-height:200px;
+    overflow:auto;
+}
+.THIS .dashboard {
+    margin-top:10px;
+    max-height:200px;
+    min-height:200px;
+    overflow:auto;
+}
+
+.THIS a.dashboardLink {
+    color: black;
+    padding: 5%;
+}
+.THIS a.contactUsLink {
+    color: #76b900;
+    padding: 5%;
+}
+
+.THIS a.competencyLink {
+    color: #76b900;
+    padding: 5%;
+}
+.THIS .competencyDiv b {
+    z-index:1;
+}
+.THIS .imgCompetencyBG {
+    z-index:0;
+    height:200px;
+}
+
+.THIS .competencyNameText {
+    color:#76B900; font-size:20px;
+}
+.THIS .contactUs {
+    color:#76B900; font-size:20px;
+}
+.THIS .check {
+    text-align: center;
+    color: green !important;
+    font-weight: bold;
+    font-size: 40px;
+    text-shadow: #000 0px 0px 1px;
+    -webkit-font-smoothing: antialiased;
+}
+.THIS .x {
+    text-align: center;
+    color: red !important;
+    font-size: 40px;
+    text-shadow: #000 0px 0px 1px;
+    -webkit-font-smoothing: antialiased;
+}
+.THIS .blackSquare {
+    text-align: center;            
+    text-shadow: #000 0px 0px 1px;
+    -webkit-font-smoothing: antialiased;
+}

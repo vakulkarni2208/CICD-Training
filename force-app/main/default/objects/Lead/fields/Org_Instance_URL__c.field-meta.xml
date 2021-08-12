@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Org_Instance_URL__c</fullName>
+    <description>If owner is partner, it gives community URL(http://npncommunity.force.com), if internal user, it gives org instance (http://na2.salesforce.com)</description>
+    <externalId>false</externalId>
+    <formula>IF(ISPICKVAL(Owner:User.UserType, &apos;PowerPartner&apos;),  $Setup.CRM_Settings__c.Community_URL__c, $Setup.CRM_Settings__c.ORG_URL__c)</formula>
+    <inlineHelpText>If owner is partner, it gives community URL(http://npncommunity.force.com), if internal user, it gives org instance (http://na2.salesforce.com)</inlineHelpText>
+    <label>Org Instance URL</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

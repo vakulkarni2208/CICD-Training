@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Opportunity_Registrations_Appvl_in_Proc</fullName>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>OPPORTUNITY.AMOUNT</columns>
+    <columns>OPPORTUNITY.CLOSE_DATE</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>OPPORTUNITY.CREATED_DATE</columns>
+    <columns>Opportunity_Owner_Full_Name__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>OPPORTUNITY.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>012400000009n30,012400000009n13,012400000009n2z</value>
+    </filters>
+    <filters>
+        <field>DR_Deal_Status__c</field>
+        <operation>equals</operation>
+        <value>Approval In-Progress</value>
+    </filters>
+    <label>Opportunity Registrations-Appvl in Proc</label>
+    <language>en_US</language>
+</ListView>

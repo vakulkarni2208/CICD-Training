@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Alert__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE( Approved_for_use__c ,
+                                &quot;Yes&quot;, IMAGE(&quot;https://nvcrm--sfdcstage1--c.visualforce.com/resource/1614666550000/GraphicsPackNew/fatcow/farmfresh/16/accept.png&quot;,&quot;Yes&quot;,16,16),
+&quot;No&quot;, IMAGE(&quot;https://nvcrm--sfdcstage1--c.visualforce.com/resource/1614666550000/GraphicsPackNew/fatcow/farmfresh/16/cancel.png&quot;,&quot;No&quot;,16,16),
+&quot;pending&quot;, IMAGE(&quot;https://nvcrm--sfdcstage1--c.visualforce.com/resource/1614666550000/GraphicsPackNew/fatcow/farmfresh/16/help.png&quot;,&quot;Pending&quot;,16,16),
+&quot;&quot;)
++
+CASE( Approved_for_use__c ,
+&quot;Yes with restrictions&quot;, IMAGE(&quot;https://nvcrm--sfdcstage1--c.visualforce.com/resource/1614666550000/GraphicsPackNew/fatcow/farmfresh/16/accept.png&quot;,&quot;Y w/ restrictions&quot;,16,16),
+&quot;&quot;)
++
+CASE( Approved_for_use__c ,
+&quot;Yes with restrictions&quot;, IMAGE(&quot;https://nvcrm--sfdcstage1--c.visualforce.com/resource/1614666550000/GraphicsPackNew/fatcow/farmfresh/16/roadworks.png&quot;,&quot;Y w/restrictions&quot;,16,16),
+&quot;&quot;)
++
+CASE( Approved_for_use__c ,
+&quot;Yes under NDA&quot;, IMAGE(&quot;https://nvcrm--sfdcstage1--c.visualforce.com/resource/1614666550000/GraphicsPackNew/fatcow/farmfresh/16/accept.png&quot;,&quot;Y w/NDA&quot;,16,16),
+&quot;&quot;)
++
+CASE( Approved_for_use__c ,
+&quot;Yes under NDA&quot;, IMAGE(&quot;https://nvcrm--sfdcstage1--c.visualforce.com/resource/1614666550000/GraphicsPackNew/fatcow/farmfresh/16/application_cascade.png&quot;,&quot;Y w/NDA&quot;,16,16),
+&quot;&quot;)
++
+CASE( Approved_for_use__c ,
+&quot;No with exception&quot;, IMAGE(&quot;https://nvcrm--sfdcstage1--c.visualforce.com/resource/1614666550000/GraphicsPackNew/fatcow/farmfresh/16/cancel.png&quot;,&quot;N w/restrictions&quot;,16,16),
+&quot;&quot;)
++
+CASE( Approved_for_use__c ,
+&quot;No with exception&quot;, IMAGE(&quot;https://nvcrm--sfdcstage1--c.visualforce.com/resource/1614666550000/GraphicsPackNew/fatcow/farmfresh/16/asterisk_yellow.png&quot;,&quot;N w/restrictions&quot;,16,16),
+&quot;&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Alert</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

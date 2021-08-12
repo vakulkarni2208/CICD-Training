@@ -1,0 +1,11 @@
+<apex:page >
+<!-- Begin Default Content REMOVE THIS -->
+<h1><font size="4"><b>RECENT NEWS</b></font></h1>
+<!--This is your new RSS Feed custom component demo page-->
+
+<!--<c:cmpPartnerPortalRssFeedSummary title="Current Feed Content" 
+    debug="false" feedURL="http://feeds.feedburner.com/nvidiablog" entriesCount="4" />-->
+
+<c:cmpPartnerPortalRssFeedSummary title="" debug="false" feedURL="http://feeds.feedburner.com/nvidiablog" entriesCount="4" />
+
+</apex:page>

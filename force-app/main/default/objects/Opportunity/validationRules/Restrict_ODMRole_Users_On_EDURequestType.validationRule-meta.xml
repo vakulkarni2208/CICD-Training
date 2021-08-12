@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Restrict_ODMRole_Users_On_EDURequestType</fullName>
+    <active>true</active>
+    <description>SDS-2828
+Restrict the users in the Role &apos;OEM Sales - ODM role&apos; from creating/updating the Opportunities with the Special Pricing Request Type as &apos;EDU&apos;.</description>
+    <errorConditionFormula>AND(
+ $Profile.Name &lt;&gt; &apos;System Administrator&apos;,
+ RecordType.DeveloperName = &quot;Special_Pricing_Request&quot;,
+ ISPICKVAL(Special_Pricing_Request_Type__c, &quot;EDU&quot;),
+ $UserRole.DeveloperName = &quot;OEM_Sales_ODM&quot;
+)</errorConditionFormula>
+    <errorDisplayField>Special_Pricing_Request_Type__c</errorDisplayField>
+    <errorMessage>Your current ODM role does not allow for EDU Request Types - please select TOP EDU for EDU request type</errorMessage>
+</ValidationRule>

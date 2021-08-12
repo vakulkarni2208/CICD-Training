@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Existing Business</fullName>
+        <default>false</default>
+        <label>Existing Business</label>
+    </standardValue>
+    <standardValue>
+        <fullName>New Business</fullName>
+        <default>false</default>
+        <label>New Business</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Tesla Named Account</fullName>
+        <default>false</default>
+        <label>Tesla Named Account</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Quadro Business</fullName>
+        <default>false</default>
+        <label>Quadro Business</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Tegra Business</fullName>
+        <default>false</default>
+        <label>Tegra Business</label>
+    </standardValue>
+    <standardValue>
+        <fullName>NVIDIA Led</fullName>
+        <default>false</default>
+        <label>NVIDIA Led</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Partner Led</fullName>
+        <default>false</default>
+        <label>Partner Led</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Deal Registration</fullName>
+        <default>false</default>
+        <label>Deal Registration</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Jetson Deal Registration</fullName>
+        <default>false</default>
+        <label>Jetson Deal Registration</label>
+    </standardValue>
+    <standardValue>
+        <fullName>EDU Lead Registration</fullName>
+        <default>false</default>
+        <label>EDU Lead Registration</label>
+    </standardValue>
+</StandardValueSet>

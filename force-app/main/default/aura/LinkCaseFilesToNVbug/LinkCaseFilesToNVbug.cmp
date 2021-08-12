@@ -1,0 +1,89 @@
+<aura:component controller="NVBugOperations" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickActionWithoutHeader,lightning:isUrlAddressable" access="global" >
+	<!--Style-->
+    <aura:html tag="style">
+        .slds-modal__container{
+        height : auto;
+        width: 70%;
+        max-width: 70rem;
+        }
+        .modal-body{
+        height : 500px !important;
+        max-height: 500px !important;
+        }
+        
+        .customFooter{
+        display: inline !important;
+        }
+        .screenHeading{
+        font-weight : bold;
+        font-size: 15px;
+        }
+    </aura:html> 
+  <!-- create 2 aura handler with waiting and donewaiting events--> 
+    <aura:handler event="aura:waiting" action="{!c.showSpinner}"/>
+    <aura:handler event="aura:doneWaiting" action="{!c.hideSpinner}"/>
+  <!--create a component attributs -->
+    <aura:attribute name="Spinner" type="boolean" default="false"/>
+
+    <lightning:workspaceAPI aura:id="workspace"/>
+    <aura:attribute name="selectedRowsCount" type="Integer" default="0"/>
+    <aura:attribute name="caseId" type="Id" />
+    <aura:attribute name="NVBugId" type="Id" />
+    <!-- File table attributes -->
+    <aura:attribute name="fileData" type="Object"/>
+    <aura:attribute name="filecolumns" type="List"/>
+	<aura:attribute name="selectedFileList" type="List" />
+    <aura:attribute name="selectedFileRows" type="List" />
+    <aura:attribute name="draftValues" type="Object" default="[]"/>
+    <!-- Bug table attributes -->
+    <aura:attribute name="bugData" type="Object"/>
+    <aura:attribute name="bugcolumns" type="List"/>
+	<aura:attribute name="selectedBugList" type="List" />
+    <aura:attribute name="selectedBugRows" type="List" />    
+    <!-- handlers-->
+    <aura:handler name="init" value="{! this }" action="{! c.init }"/>
+
+        <!-- the container element determine the height of the datatable -->
+    <div class="slds-box slds-theme_default">
+        <ui:outputText value="Select Case Files to Link with NVBugs" class="screenHeading"/><p></p>
+    <div style="height:200px;max-height : 350px; overflow-y:scroll;" > 
+        <lightning:datatable 
+            aura:id="FileTable"                 
+            columns="{! v.filecolumns }"
+            data="{! v.fileData }"
+            onrowselection="{! c.addFileRows }"
+            onrowaction="{!c.viewRecord}"
+            selectedRows="{! v.selectedFileRows }"                 
+            onsave="{!c.handleFileSave}"
+            draftValues="{!v.draftValues }"
+            keyField="Id"/>
+    </div>
+        <br/>    
+        <ui:outputText value="Select Related NvBugs to Upload Files" class="screenHeading"/><p></p>
+    <div style="height:200px;max-height : 350px; overflow-y:scroll;" > 
+        <lightning:datatable 
+            aura:id="BugTable"                 
+            columns="{! v.bugcolumns }"
+            data="{! v.bugData }"
+            onrowselection="{! c.addBugRows }"
+            selectedRows="{! v.selectedBugRows }"                 
+            keyField="id"/>
+    </div>
+    <br/><br/>
+    <lightning:button variant="brand" label="Link" title="Link" onclick="{! c.Link }" />
+    <lightning:button variant="brand-outline" label="Cancel" title="Cancel" onclick="{! c.handleCancel }" />
+    </div>
+    
+    <!--loading spinner start... style=Brand Medium (blue dots)-->
+     <aura:if isTrue="{!v.Spinner}">
+        <div aura:id="spinnerId" class="slds-spinner_container">
+           <div class="slds-spinner--brand  slds-spinner slds-spinner--large slds-is-relative" role="alert">
+             <div class="slds-spinner__dot-a"></div>
+             <div class="slds-spinner__dot-b"></div>
+           </div>
+        </div>
+     </aura:if>
+      <!-- Loading spinner end-->    
+
+	<lightning:icon iconName="doctype:image" alternativeText="Image file" title="Image" />    
+</aura:component>

@@ -1,0 +1,33 @@
+<aura:component controller="NVBugOperations"  implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickActionWithoutHeader,lightning:isUrlAddressable" access="global" >
+    <aura:attribute name="Spinner" type="boolean" default="false"/>
+
+    <lightning:workspaceAPI aura:id="workspace"/>
+    <aura:attribute name="recordId" type="Id" />
+    <aura:attribute name="oppId" type="string" />
+    <aura:attribute name="caseId" type="string" />
+    <aura:attribute name="message" type="string" />
+	<aura:attribute name="newNVTicket" type="NV_Ticket__c"/>
+    <aura:handler name="init" value="{! this }" action="{! c.init }"/>
+    
+    <div class="slds-box slds-theme_default">
+        <ui:outputText value="Create Design Win Support Request with NvBug" class="screenHeading"/>
+        
+		<div class="slds-col slds-size_1-of-2">
+            <lightning:recordEditForm objectApiName="NV_Ticket__c"  aura:id="recordEditForm" onsubmit="{!c.createCase}" >
+                <lightning:inputField label="NVBug Number" fieldName="Bug_no_in_NVBug_Not_in_SFDC__c"  value="{!v.newNVTicket.Bug_no_in_NVBug_Not_in_SFDC__c}"/>
+                <lightning:button variant="brand" type="submit" name="save" label="Save"/>
+			    <lightning:button variant="brand-outline" label="Cancel" title="Cancel" onclick="{! c.handleCancel }" />
+            </lightning:recordEditForm>
+		</div>
+    </div> 
+          <!--loading spinner start... style=Brand Medium (blue dots)-->
+    <aura:if isTrue="{!v.Spinner}">
+        <div aura:id="spinnerId" class="slds-spinner_container">
+            <div class="slds-spinner--brand  slds-spinner slds-spinner--large slds-is-relative" role="alert">
+                <div class="slds-spinner__dot-a"></div>
+                <div class="slds-spinner__dot-b"></div>
+            </div>
+        </div>
+    </aura:if>
+      <!-- Loading spinner end -->    	
+</aura:component>

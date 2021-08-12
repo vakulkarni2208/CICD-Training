@@ -1,0 +1,3 @@
+<apex:page showHeader="false">
+    <apex:iframe src="https://www.brainshark.com/portal/psapis/api/psSession.aspx?username={!$User.Email}&fn={!$User.FirstName}&ln={!$User.LastName}&login_dir=nvidia&cid=32450&gids=4997879&dest=%2Fbrainshark%2Flearning%2FmyLearning.asp%3Fui%3D507905" frameborder="false" height="800px" scrolling="true"/>
+</apex:page>

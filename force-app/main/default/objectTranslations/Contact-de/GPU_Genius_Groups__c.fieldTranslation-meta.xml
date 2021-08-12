@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Select all GPU Genius groups this user needs to be added to --></help>
+    <label><!-- GPU Genius Groups --></label>
+    <name>GPU_Genius_Groups__c</name>
+    <picklistValues>
+        <masterLabel>Learning ATP Partner:5874323</masterLabel>
+        <translation><!-- Learning ATP Partner:5874323 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Learning CSP:5769933</masterLabel>
+        <translation><!-- Learning CSP:5769933 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Learning Cisco:5501047</masterLabel>
+        <translation><!-- Learning Cisco:5501047 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Learning Compute DGX:5753092</masterLabel>
+        <translation><!-- Learning Compute DGX:5753092 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Learning Compute:3200491</masterLabel>
+        <translation><!-- Learning Compute:3200491 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Learning Dell Data Center:5843833</masterLabel>
+        <translation><!-- Learning Dell Data Center:5843833 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Learning Dell Workstation:4657800</masterLabel>
+        <translation><!-- Learning Dell Workstation:4657800 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Learning Dell:4657800</masterLabel>
+        <translation><!-- Learning Dell:4657800 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Learning Embedded Edge:5879418</masterLabel>
+        <translation><!-- Learning Embedded Edge:5879418 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Learning GSI:5942052</masterLabel>
+        <translation><!-- Learning GSI:5942052 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Learning HPE: 5414314</masterLabel>
+        <translation><!-- Learning HPE: 5414314 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Learning HPI:5844095</masterLabel>
+        <translation><!-- Learning HPI:5844095 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Learning Healthcare:5877534</masterLabel>
+        <translation><!-- Learning Healthcare:5877534 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Learning IBM Cloud:5191859</masterLabel>
+        <translation><!-- Learning IBM Cloud:5191859 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Learning IBM Power:5844092</masterLabel>
+        <translation><!-- Learning IBM Power:5844092 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Learning Industry:5877534</masterLabel>
+        <translation><!-- Learning Industry:5877534 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Learning Lenovo DCG:5550970</masterLabel>
+        <translation><!-- Learning Lenovo DCG:5550970 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Learning Lenovo Workstation:5845271</masterLabel>
+        <translation><!-- Learning Lenovo Workstation:5845271 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Learning NPN Community:4997879</masterLabel>
+        <translation><!-- Learning NPN Community:4997879 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Learning SA DCP:5942050</masterLabel>
+        <translation><!-- Learning SA DCP:5942050 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Learning SDP PS:5937339</masterLabel>
+        <translation><!-- Learning SDP PS:5937339 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Learning Services Subcontractors:5674835</masterLabel>
+        <translation><!-- Learning Services Subcontractors:5674835 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Learning Virtualization:2965513</masterLabel>
+        <translation><!-- Learning Virtualization:2965513 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Learning Visualization:4320588</masterLabel>
+        <translation><!-- Learning Visualization:4320588 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN CSP Virtualization Sales:5749415</masterLabel>
+        <translation><!-- NPN CSP Virtualization Sales:5749415 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN CSP Virtualization Technical:5749418</masterLabel>
+        <translation><!-- NPN CSP Virtualization Technical:5749418 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN Compute DGX Sales:5765886</masterLabel>
+        <translation><!-- NPN Compute DGX Sales:5765886 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN Compute DGX Technical:5765889</masterLabel>
+        <translation><!-- NPN Compute DGX Technical:5765889 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN Compute Sales CHINESE:5754894</masterLabel>
+        <translation><!-- NPN Compute Sales CHINESE:5754894 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN Compute Sales:5642753</masterLabel>
+        <translation><!-- NPN Compute Sales:5642753 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN Compute Technical:5642754</masterLabel>
+        <translation><!-- NPN Compute Technical:5642754 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN Disti Compute DGX Sales:5874555</masterLabel>
+        <translation><!-- NPN Disti Compute DGX Sales:5874555 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN Disti Compute DGX Technical:5874554</masterLabel>
+        <translation><!-- NPN Disti Compute DGX Technical:5874554 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN Disti Compute Learning Sales:5874551</masterLabel>
+        <translation><!-- NPN Disti Compute Learning Sales:5874551 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN Disti Compute Learning Technical:5874550</masterLabel>
+        <translation><!-- NPN Disti Compute Learning Technical:5874550 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN Disti Virtualization Learning Technical:5874552</masterLabel>
+        <translation><!-- NPN Disti Virtualization Learning Technical:5874552 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN Disti Virtualization Sales:5874553</masterLabel>
+        <translation><!-- NPN Disti Virtualization Sales:5874553 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN Disti Visualization Learning Sales:5874549</masterLabel>
+        <translation><!-- NPN Disti Visualization Learning Sales:5874549 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN Disti Visualization Learning Technical:5874548</masterLabel>
+        <translation><!-- NPN Disti Visualization Learning Technical:5874548 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN Embedded Edge Sales:5874123</masterLabel>
+        <translation><!-- NPN Embedded Edge Sales:5874123 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN Embedded Edge Technical:5874122</masterLabel>
+        <translation><!-- NPN Embedded Edge Technical:5874122 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN Healthcare Training:5877154</masterLabel>
+        <translation><!-- NPN Healthcare Training:5877154 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN Virtualization Sales:5642755</masterLabel>
+        <translation><!-- NPN Virtualization Sales:5642755 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN Virtualization Technical:5642756</masterLabel>
+        <translation><!-- NPN Virtualization Technical:5642756 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN Visualization Sales:5642757</masterLabel>
+        <translation><!-- NPN Visualization Sales:5642757 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN Visualization Technical:5642758</masterLabel>
+        <translation><!-- NPN Visualization Technical:5642758 --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

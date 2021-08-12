@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OEM_Bid_Approved_Date__c</fullName>
+    <description>Auto-populated field based on date request was approved.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Auto-populated field based on date request was approved.</inlineHelpText>
+    <label>OEM Bid Approved Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

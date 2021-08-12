@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>None</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>Safeguarding the Child Adolescent and Adult in Yvelines (SEAY Customer User</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>Safeguarding the Child Adolescent and Adult in Yvelines (SEAY Customer User</name>
+    <opportunityAccessLevel>None</opportunityAccessLevel>
+    <parentRole>EMEA_Inside_Sales</parentRole>
+</Role>

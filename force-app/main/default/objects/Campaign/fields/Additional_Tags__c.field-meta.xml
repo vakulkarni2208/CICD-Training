@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Additional_Tags__c</fullName>
+    <description>SDS-2797:Campaign MGMT: Phase2 Enhancement Request</description>
+    <externalId>false</externalId>
+    <label>Additional Tags</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>TextArea</type>
+</CustomField>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Used for NVContacts wherein NVContacts still use the Inactive user but shows the User&apos;s Name, Email in Sales Manager Name, Email field. --></help>
+    <label><!-- DO NOT USE --></label>
+    <name>DO_NOT_USE__c</name>
+</CustomFieldTranslation>

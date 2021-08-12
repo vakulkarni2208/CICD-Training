@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Restricted_Permission_Sets__c</fullName>
+    <description>List of Semicolon separated Permission Set Labels that should not be assigned to NPN Users</description>
+    <externalId>false</externalId>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <inlineHelpText>List of Semicolon separated Permission Set Labels that should not be assigned to NPN Users</inlineHelpText>
+    <label>Restricted Permission Sets</label>
+    <length>32768</length>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NVIDIA_Financing_Solution_Status</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND (
+RecordType.Name = &quot;Enterprise Sales Opportunity&quot;,
+Total_DGX_Product_Amount__c &gt; 299999 , Probability &gt;= 0.40,
+DATEVALUE(CreatedDate) &gt;= DATE(2021,05,01),
+ISPICKVAL (  NVIDIA_Financing_Solutions_Status__c  , &quot;&quot; ))</errorConditionFormula>
+    <errorDisplayField>NVIDIA_Financing_Solutions_Status__c</errorDisplayField>
+    <errorMessage>For larger DGX Opportunities please update the NVIDIA Financing Solutions Status field</errorMessage>
+</ValidationRule>

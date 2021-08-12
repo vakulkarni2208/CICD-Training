@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Primary vGPU SUMS/DGX Support --></label>
+    <name>DR_SKU__c</name>
+    <picklistValues>
+        <masterLabel>DGX A100 40GB CMR 3yr</masterLabel>
+        <translation><!-- DGX A100 40GB CMR 3yr --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DGX A100 40GB CMR 4yr</masterLabel>
+        <translation><!-- DGX A100 40GB CMR 4yr --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DGX A100 40GB CMR 5yr</masterLabel>
+        <translation><!-- DGX A100 40GB CMR 5yr --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DGX A100 40GB SDMR 3yr</masterLabel>
+        <translation><!-- DGX A100 40GB SDMR 3yr --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DGX A100 40GB SDMR 4yr</masterLabel>
+        <translation><!-- DGX A100 40GB SDMR 4yr --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DGX A100 40GB SDMR 5yr</masterLabel>
+        <translation><!-- DGX A100 40GB SDMR 5yr --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DGX A100 40GB Supt 3yr</masterLabel>
+        <translation><!-- DGX A100 40GB Supt 3yr --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DGX A100 40GB Supt 4yr</masterLabel>
+        <translation><!-- DGX A100 40GB Supt 4yr --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DGX A100 40GB Supt 5yr</masterLabel>
+        <translation><!-- DGX A100 40GB Supt 5yr --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DGX A100 80G Full Support-3yrs</masterLabel>
+        <translation><!-- DGX A100 80G Full Support-3yrs --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DGX A100 80G Full Support-4yrs</masterLabel>
+        <translation><!-- DGX A100 80G Full Support-4yrs --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DGX A100 80G Full Support-5yrs</masterLabel>
+        <translation><!-- DGX A100 80G Full Support-5yrs --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DGX A100 System 8X 40GB GPUs Support</masterLabel>
+        <translation><!-- DGX A100 System 8X 40GB GPUs Support --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DGX Station A100 40G Support-3yrs</masterLabel>
+        <translation><!-- DGX Station A100 40G Support-3yrs --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DGX Station A100 40G Support-4yrs</masterLabel>
+        <translation><!-- DGX Station A100 40G Support-4yrs --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DGX Station A100 40G Support-5yrs</masterLabel>
+        <translation><!-- DGX Station A100 40G Support-5yrs --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DGX Station A100 80G Support-3yrs</masterLabel>
+        <translation><!-- DGX Station A100 80G Support-3yrs --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DGX Station A100 80G Support-4yrs</masterLabel>
+        <translation><!-- DGX Station A100 80G Support-4yrs --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DGX Station A100 80G Support-5yrs</masterLabel>
+        <translation><!-- DGX Station A100 80G Support-5yrs --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DGX Station Supt 3yr</masterLabel>
+        <translation><!-- DGX Station Supt 3yr --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DGX-1 V100 CMR 1yr</masterLabel>
+        <translation><!-- DGX-1 V100 CMR 1yr --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DGX-1 V100 CMR 2yr</masterLabel>
+        <translation><!-- DGX-1 V100 CMR 2yr --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DGX-1 V100 CMR 3yr</masterLabel>
+        <translation><!-- DGX-1 V100 CMR 3yr --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DGX-1 V100 CMR 4yr</masterLabel>
+        <translation><!-- DGX-1 V100 CMR 4yr --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DGX-1 V100 CMR 5yr</masterLabel>
+        <translation><!-- DGX-1 V100 CMR 5yr --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DGX-1 V100 SDMR 1yr</masterLabel>
+        <translation><!-- DGX-1 V100 SDMR 1yr --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DGX-1 V100 SDMR 2yr</masterLabel>
+        <translation><!-- DGX-1 V100 SDMR 2yr --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DGX-1 V100 SDMR 3yr</masterLabel>
+        <translation><!-- DGX-1 V100 SDMR 3yr --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DGX-1 V100 SDMR 4yr</masterLabel>
+        <translation><!-- DGX-1 V100 SDMR 4yr --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DGX-1 V100 SDMR 5yr</masterLabel>
+        <translation><!-- DGX-1 V100 SDMR 5yr --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DGX-1 V100 Supt 1yr</masterLabel>
+        <translation><!-- DGX-1 V100 Supt 1yr --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DGX-1 V100 Supt 2yr</masterLabel>
+        <translation><!-- DGX-1 V100 Supt 2yr --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DGX-1 V100 Supt 3yr</masterLabel>
+        <translation><!-- DGX-1 V100 Supt 3yr --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DGX-1 V100 Supt 4yr</masterLabel>
+        <translation><!-- DGX-1 V100 Supt 4yr --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DGX-1 V100 Supt 5yr</masterLabel>
+        <translation><!-- DGX-1 V100 Supt 5yr --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DGX-2 V100 CMR 1yr</masterLabel>
+        <translation><!-- DGX-2 V100 CMR 1yr --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DGX-2 V100 CMR 3yr</masterLabel>
+        <translation><!-- DGX-2 V100 CMR 3yr --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DGX-2 V100 CMR 5yr</masterLabel>
+        <translation><!-- DGX-2 V100 CMR 5yr --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DGX-2 V100 SDMR 1yr</masterLabel>
+        <translation><!-- DGX-2 V100 SDMR 1yr --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DGX-2 V100 SDMR 2yr</masterLabel>
+        <translation><!-- DGX-2 V100 SDMR 2yr --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DGX-2 V100 SDMR 3yr</masterLabel>
+        <translation><!-- DGX-2 V100 SDMR 3yr --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DGX-2 V100 SDMR 4yr</masterLabel>
+        <translation><!-- DGX-2 V100 SDMR 4yr --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DGX-2 V100 SDMR 5yr</masterLabel>
+        <translation><!-- DGX-2 V100 SDMR 5yr --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DGX-2 V100 Supt 1yr</masterLabel>
+        <translation><!-- DGX-2 V100 Supt 1yr --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DGX-2 V100 Supt 2yr</masterLabel>
+        <translation><!-- DGX-2 V100 Supt 2yr --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DGX-2 V100 Supt 3yr</masterLabel>
+        <translation><!-- DGX-2 V100 Supt 3yr --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DGX-2 V100 Supt 4yr</masterLabel>
+        <translation><!-- DGX-2 V100 Supt 4yr --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DGX-2 V100 Supt 5yr</masterLabel>
+        <translation><!-- DGX-2 V100 Supt 5yr --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DGX-2H V100 Supt 1yr</masterLabel>
+        <translation><!-- DGX-2H V100 Supt 1yr --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DGX-2H V100 Supt 3yr</masterLabel>
+        <translation><!-- DGX-2H V100 Supt 3yr --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DGX-2H V100 Supt 5yr</masterLabel>
+        <translation><!-- DGX-2H V100 Supt 5yr --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>N/A</masterLabel>
+        <translation><!-- N/A --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>vGPU vApps SUMS 3yr - GRID</masterLabel>
+        <translation><!-- vGPU vApps SUMS 3yr - GRID --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>vGPU vApps SUMS 4yr - GRID</masterLabel>
+        <translation><!-- vGPU vApps SUMS 4yr - GRID --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>vGPU vApps SUMS 5yr - GRID</masterLabel>
+        <translation><!-- vGPU vApps SUMS 5yr - GRID --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>vGPU vPC SUMS 3yr - GRID</masterLabel>
+        <translation><!-- vGPU vPC SUMS 3yr - GRID --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>vGPU vPC SUMS 4yr - GRID</masterLabel>
+        <translation><!-- vGPU vPC SUMS 4yr - GRID --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>vGPU vPC SUMS 5yr - GRID</masterLabel>
+        <translation><!-- vGPU vPC SUMS 5yr - GRID --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>vGPU vWS SUMS 3yr - GRID</masterLabel>
+        <translation><!-- vGPU vWS SUMS 3yr - GRID --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>vGPU vWS SUMS 4yr - GRID</masterLabel>
+        <translation><!-- vGPU vWS SUMS 4yr - GRID --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>vGPU vWS SUMS 5yr - GRID</masterLabel>
+        <translation><!-- vGPU vWS SUMS 5yr - GRID --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

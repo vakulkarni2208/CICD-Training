@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Parent_Oppty_on_Pricing_Requests</fullName>
+    <active>true</active>
+    <description>Used to ensure a Parent Opportunity exists on appropriate Special Pricing Request Opportunities
++ SDS-2699
++ SDS-2828
++ SDS-2823</description>
+    <errorConditionFormula>AND(
+ RecordType.DeveloperName = &quot;Special_Pricing_Request&quot;,
+ ISBLANK(Parent_Enterprise_Opportunity__c),
+ OR(
+  OR(
+    ISPICKVAL(Special_Pricing_Request_Type__c, &quot;Back-end Rebate&quot;),
+    ISPICKVAL(Special_Pricing_Request_Type__c, &quot;Upfront Discount&quot;)
+  ),
+  AND(
+    NOT(ISPICKVAL(Special_Pricing_Request_Type__c, &quot;Not for Resale (NFR)&quot;)),
+    NOT(ISPICKVAL(Special_Pricing_Request_Type__c, &quot;Engineering Qual&quot;)),
+    NOT(ISPICKVAL(Special_Pricing_Request_Type__c, &quot;Samples&quot;)),
+    NOT(ISPICKVAL(Special_Pricing_Request_Type__c, &quot;EDU&quot;)),
+    NOT(ISPICKVAL(Special_Pricing_Request_Type__c, &quot;TOP EDU Back-end Rebate&quot;))
+  )
+ )
+)</errorConditionFormula>
+    <errorDisplayField>Parent_Enterprise_Opportunity__c</errorDisplayField>
+    <errorMessage>Parent Enterprise Opportunity cannot be blank</errorMessage>
+</ValidationRule>

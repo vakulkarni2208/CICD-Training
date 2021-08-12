@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Team_Role__c</fullName>
+    <defaultValue>&quot;Channel Manager (PBM)&quot;</defaultValue>
+    <description>TeamMemberRole for the Opportunity Team Member e.g., Channel Manager (PBM)</description>
+    <externalId>false</externalId>
+    <inlineHelpText>TeamMemberRole for the Opportunity Team Member e.g., Channel Manager (PBM)</inlineHelpText>
+    <label>Team Role</label>
+    <length>50</length>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

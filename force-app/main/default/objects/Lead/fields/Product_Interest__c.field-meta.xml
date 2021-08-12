@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product_Interest__c</fullName>
+    <externalId>false</externalId>
+    <label>Product Interest</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>NVIDIA DGX-1</fullName>
+                <default>false</default>
+                <label>NVIDIA DGX-1</label>
+            </value>
+            <value>
+                <fullName>NVIDIA DRIVE PX 2</fullName>
+                <default>false</default>
+                <label>NVIDIA DRIVE PX 2</label>
+            </value>
+            <value>
+                <fullName>DriveWorks</fullName>
+                <default>false</default>
+                <label>DriveWorks</label>
+            </value>
+            <value>
+                <fullName>Mapping</fullName>
+                <default>false</default>
+                <label>Mapping</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

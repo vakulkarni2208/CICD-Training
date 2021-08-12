@@ -1,0 +1,12 @@
+<apex:page >
+<!-- 
+  -- @Manideep - 5/8/2019
+  -- This page is not being used and commented out as part of Opportunity RecordType Cleanup.
+<apex:page standardController="Schedule_Entry__c" extensions="EditScheduleEntry_Extension" action="{!redirect}">
+  ---- This is the VF page that overrides the [Edit] link and button on Opportunity Line Items.  	----
+  	<apex:form >
+  		<apex:inputHidden value="{!Schedule_Entry__c.Opportunity__c}" />
+  		</apex:form>	
+</apex:page>
+-->
+</apex:page>

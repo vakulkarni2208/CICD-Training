@@ -1,0 +1,55 @@
+<apex:component controller="ComponentGridPortalSearchPage">
+
+ <script>
+   function onenter(cont,evt) {       
+     if (evt && evt.keyCode == 13){        
+        var ele=document.getElementById('{!$Component.formId.btnId}');                
+        ele.click();                
+        return false;
+     }
+     else{
+        return true;
+     }
+   }
+   
+   function openNewVfpage(){   
+       //alert(document.getElementById('inputFieldId').value);
+       //var searchText = document.getElementById('inputFieldId').value;       
+       window.open('/apex/GRID_portalSearch?searchText='+document.getElementById('inputFieldId').value,target="_blank");       
+       return false;
+   }
+   function OpenPopupCenter(pageURL, title, w, h) {
+        var left = (screen.width - w) / 2;
+        var top = (screen.height - h) / 4;  // for 25% - devide by 4  |  for 33% - devide by 3
+        var targetWin = window.open(pageURL, title, 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=no, copyhistory=no, width=' + w + ', height=' + h + ', top=' + top + ', left=' + left);
+    } 
+    
+   </script>
+   <apex:form id="formId"> 
+       <!--<apex:actionFunction name="ShowSearchResult" reRender="formId"/>-->
+       <apex:inputHidden value="{!hiddenValue}" id="hiddenFieldVal"/>      
+       <table width="100%" border="0" style="background-color:#FFFFFF;white-space:nowrap;color:#393939"> 
+       <tr>
+           <td style="font-size:15px;padding-right:20px;" width="58%" align="center" valign="middle">
+            <marquee SCROLLAMOUNT="3" behavior="slide" direction="left" loop="50000"><b><font color="#393939">{!instanceMessage}</font></b></marquee>
+           </td>         
+           <td align="right" width="42%">
+                      <a href="" onclick="OpenPopupCenter('http://www.nvidia.com/object/newsletter.html','',1000,700);" style="cursor:pointer;">
+                          <apex:image value="{!$Resource.SubscribeImage}"/>
+                      </a>
+           </td></tr>
+           <tr>
+           <td style="font-size:15px;padding-right:20px;" width="58%" align="center" valign="middle">&nbsp;</td>
+           <td align="right" width="42%">
+                                           
+              <!--<apex:inputText value="{!searchText}" onkeypress="return onenter(this,event);" id="searhVal"/>-->
+              <!--<b><font size="2">Search:</font></b>-->
+              &nbsp;&nbsp;<input type="text" placeholder="Search:" id="inputFieldId" style="height:15px;vertical-align:text-bottom;" onClick="this.placeholder = ''"  onblur="this.placeholder = 'Search:'" value="{!searchText}" onkeypress="return onenter(this,event);"/>  
+              <apex:commandLink value="." onclick="return openNewVfpage();" id="btnId" target="_blank" style="color:white;">                       
+              </apex:commandLink>
+              <apex:image value="{!$Resource.SearchIcon}" onclick="return openNewVfpage();" style="cursor:pointer;vertical-align:text-bottom"/>
+          </td>
+       </tr>           
+       </table>
+   </apex:form>
+</apex:component>

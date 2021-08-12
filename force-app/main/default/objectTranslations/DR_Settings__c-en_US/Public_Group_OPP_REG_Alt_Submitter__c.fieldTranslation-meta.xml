@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- API name of the Public Group &quot;OPPORTUNITY REG : ALT SUBMITTER&quot; --></help>
+    <label><!-- Public Group : OPP REG Alt Submitter --></label>
+    <name>Public_Group_OPP_REG_Alt_Submitter__c</name>
+</CustomFieldTranslation>

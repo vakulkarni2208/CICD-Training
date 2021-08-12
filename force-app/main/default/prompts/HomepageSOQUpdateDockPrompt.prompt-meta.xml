@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Prompt xmlns="http://soap.sforce.com/2006/04/metadata">
+    <masterLabel>Home page SOQ Update Dock Prompt</masterLabel>
+    <promptVersions>
+        <actionButtonLabel>Learn More!</actionButtonLabel>
+        <actionButtonLink>https://nvidia.sharepoint.com/sites/WWFONVIDIACRMInstructionalMaterials/WWFO%20NVIDIA%20CRM%20Training%20Materials/Forms/AllItems.aspx?sortField=Modified&amp;isAscending=false&amp;id=%2Fsites%2FWWFONVIDIACRMInstructionalMaterials%2FWWFO%20NVIDIA%20CRM%20Training%20Materials%2FIMPORTANT%5F%20Quoting%20for%20NVIDIA%20Branded%20Products%5F%20Mar%2022%20%E2%80%93%20Training%20Info%20and%20CRM%20Downtime%2Emsg&amp;parent=%2Fsites%2FWWFONVIDIACRMInstructionalMaterials%2FWWFO%20NVIDIA%20CRM%20Training%20Materials</actionButtonLink>
+        <body>&lt;p&gt;&lt;span style=&quot;color: black; font-family: &amp;quot;Trebuchet MS&amp;quot;, sans-serif; font-size: 10pt;&quot;&gt;Please ensure you are ready:&lt;/span&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;https://nvidia.sharepoint.com/sites/WWFONVIDIACRMInstructionalMaterials/WWFO%20NVIDIA%20CRM%20Training%20Materials/Forms/AllItems.aspx?id=%2Fsites%2FWWFONVIDIACRMInstructionalMaterials%2FWWFO%20NVIDIA%20CRM%20Training%20Materials%2FNew%20Quoting%2C%20Discounting%2C%20and%20Ordering%20Process%20for%20Sales%20Managers%20and%20PBMs%20%28Pick%201%20of%202%20sessions%29%2D20210308%5F170250%2DMeeting%20Recording%20%281%29%2Emp4&amp;amp;parent=%2Fsites%2FWWFONVIDIACRMInstructionalMaterials%2FWWFO%20NVIDIA%20CRM%20Training%20Materials&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot; style=&quot;color: rgb(112, 173, 21); font-family: &amp;quot;Trebuchet MS&amp;quot;, sans-serif; font-size: 10pt;&quot;&gt;Recording&lt;/a&gt;&lt;span style=&quot;color: black; font-family: &amp;quot;Trebuchet MS&amp;quot;, sans-serif; font-size: 10pt;&quot;&gt; – If you missed the live sessions&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://nvidia.sharepoint.com/:w:/r/sites/WWFONVIDIACRMInstructionalMaterials/_layouts/15/Doc.aspx?sourcedoc=%7BED29B26A-4EA9-4E51-8EB3-B84050324551%7D&amp;amp;file=SalesTrainingQuestionsAndAnswers.docx&amp;amp;action=default&amp;amp;mobileredirect=true&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot; style=&quot;color: rgb(112, 173, 21); font-family: &amp;quot;Trebuchet MS&amp;quot;, sans-serif; font-size: 10pt;&quot;&gt;FAQ&lt;/a&gt;&lt;span style=&quot;color: black; font-family: &amp;quot;Trebuchet MS&amp;quot;, sans-serif; font-size: 10pt;&quot;&gt; – Detailed Questions and Answers&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://nvidia.sharepoint.com/:p:/r/sites/WWFONVIDIACRMInstructionalMaterials/_layouts/15/Doc.aspx?sourcedoc=%7BC1476314-32A6-451E-8A19-2FD51D937885%7D&amp;amp;file=Quoting%2C%20Discounting%2C%20and%20Ordering%20Process%20for%20Sales%20Managers%20and%20PBMs-Training.pptx&amp;amp;action=edit&amp;amp;mobileredirect=true&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot; style=&quot;color: rgb(112, 173, 21); font-family: &amp;quot;Trebuchet MS&amp;quot;, sans-serif; font-size: 10pt;&quot;&gt;Preso&lt;/a&gt;&lt;span style=&quot;color: black; font-family: &amp;quot;Trebuchet MS&amp;quot;, sans-serif; font-size: 10pt;&quot;&gt; - From the training sessions&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;b style=&quot;color: rgb(112, 173, 21); font-family: &amp;quot;Trebuchet MS&amp;quot;, sans-serif; font-size: 10pt;&quot;&gt;Questions?&lt;/b&gt;&lt;span style=&quot;color: black; font-family: &amp;quot;Trebuchet MS&amp;quot;, sans-serif; font-size: 10pt;&quot;&gt; – Reach us &lt;/span&gt;&lt;a href=&quot;mailto:WW%20Sales%20Operations%20%3cwwsalesops@nvidia.com%3e?subject=Sales%20Automation%20Project%20-%20Question&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot; style=&quot;color: rgb(0, 32, 96); font-family: &amp;quot;Trebuchet MS&amp;quot;, sans-serif; font-size: 10pt;&quot;&gt;Here&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</body>
+        <customApplication>NVIDIA_Sales_Lightning2</customApplication>
+        <delayDays>1</delayDays>
+        <displayType>DockedComposer</displayType>
+        <endDate>2021-03-17</endDate>
+        <header>Important! March 22 - Training Info</header>
+        <isPublished>false</isPublished>
+        <masterLabel>Home page SOQ Update Dock Prompt</masterLabel>
+        <shouldDisplayActionButton>true</shouldDisplayActionButton>
+        <shouldIgnoreGlobalDelay>true</shouldIgnoreGlobalDelay>
+        <startDate>2021-03-11</startDate>
+        <targetPageKey1>home</targetPageKey1>
+        <targetPageType>standard__namedPage</targetPageType>
+        <timesToDisplay>10</timesToDisplay>
+        <title>Quoting for NVIDIA Branded Products</title>
+        <userAccess>Everyone</userAccess>
+        <userProfileAccess>Everyone</userProfileAccess>
+        <versionNumber>1</versionNumber>
+    </promptVersions>
+</Prompt>

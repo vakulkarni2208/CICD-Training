@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Scope --></label>
+    <name>Scope__c</name>
+    <picklistValues>
+        <masterLabel>Cluster</masterLabel>
+        <translation><!-- Cluster --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Datacenter</masterLabel>
+        <translation><!-- Datacenter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Site</masterLabel>
+        <translation><!-- Site --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Solution</masterLabel>
+        <translation><!-- Solution --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

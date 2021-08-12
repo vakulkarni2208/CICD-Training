@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Identify the most important current application to speed up or new application to accelerate to increase our win probability and/or increase the number of GPUs in this opportunity. --></help>
+    <label><!-- 1 App to Accelerate for Biggest Impact --></label>
+    <name>App_to_Accelerate_for_Biggest_Impact_del__c</name>
+</CustomFieldTranslation>

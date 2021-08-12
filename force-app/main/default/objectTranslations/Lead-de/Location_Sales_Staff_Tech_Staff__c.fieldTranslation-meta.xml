@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Enter location - number of sales staff at location - number of technical staff at location.
+Enter 1 line per location in the following format (Location-#Sales-#Technical) --></help>
+    <label><!-- Location - Sales Staff - Tech Staff --></label>
+    <name>Location_Sales_Staff_Tech_Staff__c</name>
+</CustomFieldTranslation>

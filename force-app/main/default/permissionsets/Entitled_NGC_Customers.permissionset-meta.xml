@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Service Cloud : Customers with NGC Entitlements get Knowledge articles based on the Data Category (Currently it is same as DGX)</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Entitled NGC Customers</label>
+</PermissionSet>

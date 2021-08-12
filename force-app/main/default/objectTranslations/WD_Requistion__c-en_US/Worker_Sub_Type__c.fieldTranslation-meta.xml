@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- eg: Regular Employee, Management, New College Graduate, Intern etc. --></help>
+    <label><!-- Worker Sub-Type --></label>
+    <name>Worker_Sub_Type__c</name>
+</CustomFieldTranslation>

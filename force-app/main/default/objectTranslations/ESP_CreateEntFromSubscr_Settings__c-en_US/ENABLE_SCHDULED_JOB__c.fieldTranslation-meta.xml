@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- If set to false, the batch job will terminated, but you need to run it manually to start again. See the fields description field how to start the batch job. --></help>
+    <label><!-- ENABLE_SCHDULED_JOB --></label>
+    <name>ENABLE_SCHDULED_JOB__c</name>
+</CustomFieldTranslation>

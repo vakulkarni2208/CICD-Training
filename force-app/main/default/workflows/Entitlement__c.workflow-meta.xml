@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>Service_Cloud_Set_MAC_Address_Field</fullName>
+        <field>MAC_Address__c</field>
+        <formula>MAC_Address__c</formula>
+        <name>Service Cloud : Set MAC Address Field</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <targetObject>Entitlement__c</targetObject>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Service_Cloud_Update_Hostname</fullName>
+        <field>Hostname__c</field>
+        <formula>Hostname__c</formula>
+        <name>Service Cloud: Update Hostname</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <targetObject>Entitlement__c</targetObject>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_City_on_Master_Entitlement</fullName>
+        <field>City__c</field>
+        <formula>City__c</formula>
+        <name>Update City on Master Entitlement</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <targetObject>Entitlement__c</targetObject>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Country_on_Master_Entitlement</fullName>
+        <field>Country__c</field>
+        <formula>Country__c</formula>
+        <name>Update Country on Master Entitlement</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <targetObject>Entitlement__c</targetObject>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_State_on_Master_Entitlement</fullName>
+        <field>State__c</field>
+        <formula>State__c</formula>
+        <name>Update State on Master Entitlement</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <targetObject>Entitlement__c</targetObject>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Street_1_on_Entitlement</fullName>
+        <field>Street_1__c</field>
+        <formula>Street_1__c</formula>
+        <name>Update Street 1 on Entitlement</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <targetObject>Entitlement__c</targetObject>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Street_2_on_Entitlement</fullName>
+        <field>Street_2__c</field>
+        <formula>Street_2__c</formula>
+        <name>Update Street 2 on Entitlement</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <targetObject>Entitlement__c</targetObject>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Zip_Code_on_Master_Entitlement</fullName>
+        <field>Zip_Postal_Code__c</field>
+        <formula>Zip_Postal_Code__c</formula>
+        <name>Update Zip Code on Master Entitlement</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <targetObject>Entitlement__c</targetObject>
+    </fieldUpdates>
+    <rules>
+        <fullName>Service Cloud %3A Set MAC Address and Hostname on Master Entitlement</fullName>
+        <actions>
+            <name>Service_Cloud_Set_MAC_Address_Field</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Service_Cloud_Update_Hostname</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>ISCHANGED(  MAC_Address__c  ) ||  ISCHANGED( Hostname__c )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Service Cloud %3A Set SN Address on Master Entitlement</fullName>
+        <actions>
+            <name>Update_City_on_Master_Entitlement</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Update_Country_on_Master_Entitlement</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Update_State_on_Master_Entitlement</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Update_Street_1_on_Entitlement</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Update_Street_2_on_Entitlement</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Update_Zip_Code_on_Master_Entitlement</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>ISCHANGED(  Street_1__c ) || ISCHANGED (Street_2__c) || ISCHANGED (City__c) || ISCHANGED (State__c) || ISCHANGED (Country__c) || ISCHANGED ( Zip_Postal_Code__c )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

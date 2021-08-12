@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Target_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Target Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Dev Contact</fullName>
+                <default>false</default>
+                <label>Dev Contact</label>
+            </value>
+            <value>
+                <fullName>Dev Event</fullName>
+                <default>false</default>
+                <label>Dev Event</label>
+            </value>
+            <value>
+                <fullName>Dev Program</fullName>
+                <default>false</default>
+                <label>Dev Program</label>
+            </value>
+            <value>
+                <fullName>Dev File</fullName>
+                <default>false</default>
+                <label>Dev File</label>
+            </value>
+            <value>
+                <fullName>Dev Form</fullName>
+                <default>false</default>
+                <label>Dev Form</label>
+            </value>
+            <value>
+                <fullName>Dev Form Question</fullName>
+                <default>false</default>
+                <label>Dev Form Question</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

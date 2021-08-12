@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Company_Affiliation__c</fullName>
+    <description>For DLI Instructor Lead process (SDS-2586)</description>
+    <externalId>false</externalId>
+    <label>Company Affiliation</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>AI Lab</fullName>
+                <default>false</default>
+                <label>AI Lab</label>
+            </value>
+            <value>
+                <fullName>APY</fullName>
+                <default>false</default>
+                <label>APY</label>
+            </value>
+            <value>
+                <fullName>ATOS</fullName>
+                <default>false</default>
+                <label>ATOS</label>
+            </value>
+            <value>
+                <fullName>BIT ( Beijing Institute of Technology )</fullName>
+                <default>false</default>
+                <label>BIT ( Beijing Institute of Technology )</label>
+            </value>
+            <value>
+                <fullName>Booze Allen ( BAH )</fullName>
+                <default>false</default>
+                <label>Booze Allen ( BAH )</label>
+            </value>
+            <value>
+                <fullName>Boston</fullName>
+                <default>false</default>
+                <label>Boston</label>
+            </value>
+            <value>
+                <fullName>CTC Technology</fullName>
+                <default>false</default>
+                <label>CTC Technology</label>
+            </value>
+            <value>
+                <fullName>Dell</fullName>
+                <default>false</default>
+                <label>Dell</label>
+            </value>
+            <value>
+                <fullName>Hancom</fullName>
+                <default>false</default>
+                <label>Hancom</label>
+            </value>
+            <value>
+                <fullName>Hitachi Information Academy</fullName>
+                <default>false</default>
+                <label>Hitachi Information Academy</label>
+            </value>
+            <value>
+                <fullName>III Education</fullName>
+                <default>false</default>
+                <label>III Education</label>
+            </value>
+            <value>
+                <fullName>Inspur</fullName>
+                <default>false</default>
+                <label>Inspur</label>
+            </value>
+            <value>
+                <fullName>iTrain</fullName>
+                <default>false</default>
+                <label>iTrain</label>
+            </value>
+            <value>
+                <fullName>ITRI</fullName>
+                <default>false</default>
+                <label>ITRI</label>
+            </value>
+            <value>
+                <fullName>Japan Third Party, Co. (JTP)</fullName>
+                <default>false</default>
+                <label>Japan Third Party, Co. (JTP)</label>
+            </value>
+            <value>
+                <fullName>Leaders Systems</fullName>
+                <default>false</default>
+                <label>Leaders Systems</label>
+            </value>
+            <value>
+                <fullName>Leadtek Shanghai</fullName>
+                <default>false</default>
+                <label>Leadtek Shanghai</label>
+            </value>
+            <value>
+                <fullName>Leadtek Taiwan</fullName>
+                <default>false</default>
+                <label>Leadtek Taiwan</label>
+            </value>
+            <value>
+                <fullName>Mark III Systems</fullName>
+                <default>false</default>
+                <label>Mark III Systems</label>
+            </value>
+            <value>
+                <fullName>ML Reply</fullName>
+                <default>false</default>
+                <label>ML Reply</label>
+            </value>
+            <value>
+                <fullName>Monterrey CIAA</fullName>
+                <default>false</default>
+                <label>Monterrey CIAA</label>
+            </value>
+            <value>
+                <fullName>OpenZeka</fullName>
+                <default>false</default>
+                <label>OpenZeka</label>
+            </value>
+            <value>
+                <fullName>Opteamizer</fullName>
+                <default>false</default>
+                <label>Opteamizer</label>
+            </value>
+            <value>
+                <fullName>QA</fullName>
+                <default>false</default>
+                <label>QA</label>
+            </value>
+            <value>
+                <fullName>Rabbit &amp; Tortoise</fullName>
+                <default>false</default>
+                <label>Rabbit &amp; Tortoise</label>
+            </value>
+            <value>
+                <fullName>SCAN</fullName>
+                <default>false</default>
+                <label>SCAN</label>
+            </value>
+            <value>
+                <fullName>Skyline</fullName>
+                <default>false</default>
+                <label>Skyline</label>
+            </value>
+            <value>
+                <fullName>Sugon</fullName>
+                <default>false</default>
+                <label>Sugon</label>
+            </value>
+            <value>
+                <fullName>Suzhou No. 9 Education Technology Co., Ltd</fullName>
+                <default>false</default>
+                <label>Suzhou No. 9 Education Technology Co., Ltd</label>
+            </value>
+            <value>
+                <fullName>SVA</fullName>
+                <default>false</default>
+                <label>SVA</label>
+            </value>
+            <value>
+                <fullName>Times Professional Learning</fullName>
+                <default>false</default>
+                <label>Times Professional Learning</label>
+            </value>
+            <value>
+                <fullName>Trace3</fullName>
+                <default>false</default>
+                <label>Trace3</label>
+            </value>
+            <value>
+                <fullName>Xenon</fullName>
+                <default>false</default>
+                <label>Xenon</label>
+            </value>
+            <value>
+                <fullName>None</fullName>
+                <default>false</default>
+                <label>None</label>
+            </value>
+            <value>
+                <fullName>Alexandra Institute</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Alexandra Institute</label>
+            </value>
+            <value>
+                <fullName>Azken Muga</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Azken Muga</label>
+            </value>
+            <value>
+                <fullName>Cofindustria</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Cofindustria</label>
+            </value>
+            <value>
+                <fullName>Conundrum.ai</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Conundrum.ai</label>
+            </value>
+            <value>
+                <fullName>Cray</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Cray</label>
+            </value>
+            <value>
+                <fullName>LeadTek</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>LeadTek</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

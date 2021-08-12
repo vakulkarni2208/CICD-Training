@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Partner Attribute --></label>
+    <name>Partner_Attribute__c</name>
+    <relationshipLabel><!-- Not for Resale --></relationshipLabel>
+</CustomFieldTranslation>

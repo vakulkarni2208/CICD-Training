@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Brainshark_Profile_Name__c</fullName>
+    <description>This field is being used in the report and in the mapping for the User Sync between Salesforce to Brianshark.</description>
+    <externalId>false</externalId>
+    <formula>IF(Profile.Name == &apos;Community Lite Profile&apos;, &apos;Community Lite Profile&apos;, &apos;Sales Profile&apos;)</formula>
+    <label>Brainshark Profile Name</label>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

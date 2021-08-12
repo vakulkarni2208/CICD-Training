@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomPermission xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Service Cloud : Allow setting User FederationIdentifier by ESP Team during onboarding Service Cloud contacts</description>
+    <label>Service Cloud : Allow Set FederationId</label>
+</CustomPermission>

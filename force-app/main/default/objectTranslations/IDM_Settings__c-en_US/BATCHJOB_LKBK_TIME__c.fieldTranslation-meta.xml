@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Batch Job: Lookback time used in LastModifiedDate &gt; Now - LookbackTime --></help>
+    <label><!-- BATCHJOB_LKBK_TIME --></label>
+    <name>BATCHJOB_LKBK_TIME__c</name>
+</CustomFieldTranslation>

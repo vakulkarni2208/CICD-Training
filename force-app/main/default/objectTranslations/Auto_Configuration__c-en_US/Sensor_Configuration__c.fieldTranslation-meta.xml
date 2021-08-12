@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Sensor Configuration --></label>
+    <name>Sensor_Configuration__c</name>
+    <picklistValues>
+        <masterLabel>Camera</masterLabel>
+        <translation><!-- Camera --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GPS &amp; IMU</masterLabel>
+        <translation><!-- GPS &amp; IMU --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hyperion 7.1</masterLabel>
+        <translation><!-- Hyperion 7.1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hyperion 8.0</masterLabel>
+        <translation><!-- Hyperion 8.0 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LiDAR</masterLabel>
+        <translation><!-- LiDAR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>None</masterLabel>
+        <translation><!-- None --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Radar</masterLabel>
+        <translation><!-- Radar --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TOF Camera</masterLabel>
+        <translation><!-- TOF Camera --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Thermal Camera</masterLabel>
+        <translation><!-- Thermal Camera --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ultrasound</masterLabel>
+        <translation><!-- Ultrasound --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V2X</masterLabel>
+        <translation><!-- V2X --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- User id to be used for the Deal Reg Lead ownerId field for NALA regions --></help>
+    <label><!-- DR : NALA : TAM User Id --></label>
+    <name>DR_NALA_TAM_User_Id__c</name>
+</CustomFieldTranslation>

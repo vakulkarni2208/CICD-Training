@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_vGPU_details_if_vGPU_Workload</fullName>
+    <active>true</active>
+    <description>If workload is vGPU then require details about license count</description>
+    <errorConditionFormula>AND (
+ ISPICKVAL ( Workload__c , &apos;Graphics Virtualization (vGPU)&apos; ), 
+ISNULL (  Number_of_vGPU_Licenses__c ) )</errorConditionFormula>
+    <errorDisplayField>Number_of_vGPU_Licenses__c</errorDisplayField>
+    <errorMessage>If Workload is vGPU please enter number of licenses</errorMessage>
+</ValidationRule>

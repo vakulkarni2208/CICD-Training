@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DLI_SAP_Sales_Order_Number_Required</fullName>
+    <active>true</active>
+    <description>SDS-2017-SAP Sales Order Number Required for Payment Method = Channel</description>
+    <errorConditionFormula>AND(
+ RecordType.DeveloperName = &quot;DLI_Opportunity&quot;,
+ ISPICKVAL(DLI_Payment_Method__c, &quot;Channel&quot;),
+ ISPICKVAL(DLI_Payment_Status__c, &quot;Order Accepted&quot;),
+ ISBLANK(SAP_Sales_Order_Number__c)
+)</errorConditionFormula>
+    <errorDisplayField>SAP_Sales_Order_Number__c</errorDisplayField>
+    <errorMessage>If the Payment Method is Channel then please fill the SAP Sales Order Number.</errorMessage>
+</ValidationRule>

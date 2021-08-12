@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- EmailConnect Status --></label>
+    <name>EmailConnect_Status__c</name>
+    <picklistValues>
+        <masterLabel>Accept_All</masterLabel>
+        <translation><!-- Accept_All --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Invalid</masterLabel>
+        <translation><!-- Invalid --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unknown</masterLabel>
+        <translation><!-- Unknown --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Valid</masterLabel>
+        <translation><!-- Valid --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

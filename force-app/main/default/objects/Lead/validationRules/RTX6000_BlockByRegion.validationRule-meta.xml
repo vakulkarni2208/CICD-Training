@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RTX6000_BlockByRegion</fullName>
+    <active>true</active>
+    <description>SDS-2727-RTX6k Active Upsell Program
+Block records from regions other than NALA, EMEA</description>
+    <errorConditionFormula>AND( 
+	RecordType.DeveloperName = &quot;RTX6000_Refresh_Promotion&quot;,
+	NOT(ISPICKVAL(Region__c, &quot;NALA&quot;)),
+	NOT(ISPICKVAL(Region__c, &quot;EMEA&quot;)) 
+)</errorConditionFormula>
+    <errorMessage>RTX6000 Refresh Promotion is not allowed for this region.</errorMessage>
+</ValidationRule>

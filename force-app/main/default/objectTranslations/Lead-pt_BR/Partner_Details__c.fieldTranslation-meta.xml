@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Please include Partner Details (Partner Name, Account Manager Name, Account Manager Email Address, and Phone Number) --></help>
+    <label><!-- Partner Details --></label>
+    <name>Partner_Details__c</name>
+</CustomFieldTranslation>

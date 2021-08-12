@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Message_to_Select_Quarter__c</fullName>
+    <description>This field is used to show message on a vf page to select quarter.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This field is used to show message on a vf page to select quarter.</inlineHelpText>
+    <label>Message to Select Quarter</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

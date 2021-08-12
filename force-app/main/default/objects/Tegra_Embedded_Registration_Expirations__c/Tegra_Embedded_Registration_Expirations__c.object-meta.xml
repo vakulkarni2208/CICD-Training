@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <description>This will have the Threshold limit in days for the Registration Expiration and the Threshold limit in days for the Email Notification Reminders for the first, second and third.</description>
+    <enableFeeds>false</enableFeeds>
+    <label>Tegra Embedded Registration Expirations</label>
+    <visibility>Public</visibility>
+</CustomObject>

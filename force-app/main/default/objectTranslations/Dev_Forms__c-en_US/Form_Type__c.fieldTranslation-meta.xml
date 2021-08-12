@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Form Type --></label>
+    <name>Form_Type__c</name>
+    <picklistValues>
+        <masterLabel>Event Registration</masterLabel>
+        <translation><!-- Event Registration --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Feedback Survey</masterLabel>
+        <translation><!-- Feedback Survey --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Registered Developer Application</masterLabel>
+        <translation><!-- Registered Developer Application --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

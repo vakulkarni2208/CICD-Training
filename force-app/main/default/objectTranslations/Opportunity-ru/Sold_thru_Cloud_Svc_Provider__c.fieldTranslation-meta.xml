@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Field no longer in use. NPN CSP Cloud tracking mechanism has been updated. For any help in updating this field or any questions please use Get Help at the top of the page. --></help>
+    <label><!-- Sold thru Cloud Svc Provider? (LEGACY) --></label>
+    <name>Sold_thru_Cloud_Svc_Provider__c</name>
+    <picklistValues>
+        <masterLabel>No</masterLabel>
+        <translation><!-- No --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Yes</masterLabel>
+        <translation><!-- Yes --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

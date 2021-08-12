@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product_NOT_Blank_For_CustomerSpecific</fullName>
+    <active>true</active>
+    <errorConditionFormula>TEXT(Access_Level__c)  = &apos;Customer Specific&apos;  
+&amp;&amp;     
+NOT( ISBLANK(Product__c) )</errorConditionFormula>
+    <errorDisplayField>Product__c</errorDisplayField>
+    <errorMessage>For Customer Specific Announcement, please remove the Products assignment on the Announcement or Change the Access level value to Product Specific</errorMessage>
+</ValidationRule>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reseller_VAR__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( ISBLANK (SBQQ__RenewalOpportunity__c ), 
+  HYPERLINK(&quot;/&quot; +  SBQQ__Opportunity__r.NPN_Solution_Provider_VAR__c , SBQQ__Opportunity__r.NPN_Solution_Provider_VAR__r.Name),
+  HYPERLINK(&quot;/&quot; + SBQQ__RenewalOpportunity__r.NPN_Solution_Provider_VAR__c, SBQQ__RenewalOpportunity__r.NPN_Solution_Provider_VAR__r.Name)
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Reseller (VAR)</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

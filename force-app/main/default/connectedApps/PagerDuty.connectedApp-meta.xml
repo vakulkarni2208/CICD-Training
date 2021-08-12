@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>nadkar@nvidia.com</contactEmail>
+    <label>PagerDuty</label>
+    <oauthConfig>
+        <callbackUrl>https://nvcrm.lightning.force.com</callbackUrl>
+        <certificate>MIIDdTCCAl2gAwIBAgIUflm8FhVs8a0PHKS/Dwfm3DuoLdowDQYJKoZIhvcNAQELBQAwSjELMAkGA1UEBhMCVVMxCzAJBgNVBAgMAkNBMRYwFAYDVQQHDA1TYW4gRnJhbmNpc2NvMRYwFAYDVQQDDA1wYWdlcmR1dHkuY29tMB4XDTIxMDMyNTE2MTEzNVoXDTMxMDMyMzE2MTEzNVowSjELMAkGA1UEBhMCVVMxCzAJBgNVBAgMAkNBMRYwFAYDVQQHDA1TYW4gRnJhbmNpc2NvMRYwFAYDVQQDDA1wYWdlcmR1dHkuY29tMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAyT0aAWuOEzv+2Fte6sN2JhvY3kBqGlKojk26LnPWdZwt7DGW3Z/hkue0aUSFsSUv5NW+qTXIu0SH9aRyekOkzTmMnNiZQvc8HQhW1nsQR0gMo5eA7oTwhiMBpnzd1Ib1uZYWZdRb/rm/2SycufvXOkNoHPm47arvkgb4+oP4wCuf/ZwM+0O6HlhhB6JV74bO2OiTu39OvLogWoPf/jnKqzAUeWEyP6zHFSEnXpp64AggORTByO63yrafoTATFRZA/nh9TrOo6ZS9SttnVTD9N6Osizo9hNeZizEscW6m7R7f9a7+GQwMZ8ynQV+KIaHqXcWP4Ms3LlRLOETeAddomQIDAQABo1MwUTAdBgNVHQ4EFgQUWnSB3XyY7Yl6mOew13MhGqJUhJswHwYDVR0jBBgwFoAUWnSB3XyY7Yl6mOew13MhGqJUhJswDwYDVR0TAQH/BAUwAwEB/zANBgkqhkiG9w0BAQsFAAOCAQEAbpoF04Aqu5JSvUQWldf3Ry2K2rKHF9lMMRPdqoWpWwLRI4eQKzSsfOVpqjpygo8X9ErTeLTiCpoKv1DZ0PMNQhZtRRYjWfDaZopAVcpeATX2yCOglNX6xwUt+DHA7BpYGiGQ4uJTu6i/S+XaNlCBXzR/mI5Dst+se15id2eO6Ma9DsIHaD+l+90ql+kuXBEqzwlM7qShN/cvkhsOyOBT1yYRgDi28wSBC0w9KGOa4Gm8d+1fJ3VKfFbKRWqO7pyuEoszAue4L3DTaCKumzBY3olfakkvXeiNpUC3qR9hEUY3SCMEVxFVB6xKlEWtCrYLOV6XmvfrzejakDkq0HGI6A==</certificate>
+        <consumerKey>3MVG9c1ghSpUbLl8ac5dB8XuSM5chc42OdFwr_f4E_sfdAZJAYev5eobAr3eK2fisaK33fXB9DFZkGVrCEwv3</consumerKey>
+        <isAdminApproved>true</isAdminApproved>
+        <isConsumerSecretOptional>false</isConsumerSecretOptional>
+        <isIntrospectAllTokens>false</isIntrospectAllTokens>
+        <scopes>Api</scopes>
+        <scopes>RefreshToken</scopes>
+    </oauthConfig>
+    <oauthPolicy>
+        <ipRelaxation>ENFORCE</ipRelaxation>
+        <refreshTokenPolicy>infinite</refreshTokenPolicy>
+    </oauthPolicy>
+    <permissionSetName>Service Cloud : Enterprise Support</permissionSetName>
+    <profileName>System Administrator</profileName>
+    <profileName>Service Cloud Generic User</profileName>
+</ConnectedApp>

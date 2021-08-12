@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Please select which area applies --></help>
+    <label><!-- NSC Processed Lead --></label>
+    <name>NSC_Processed_Lead__c</name>
+    <picklistValues>
+        <masterLabel>APAC NSC Processed Lead</masterLabel>
+        <translation><!-- APAC NSC Processed Lead --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EMEA NSC Processed Lead</masterLabel>
+        <translation><!-- EMEA NSC Processed Lead --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NALA NSC Processed Lead</masterLabel>
+        <translation><!-- NALA NSC Processed Lead --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

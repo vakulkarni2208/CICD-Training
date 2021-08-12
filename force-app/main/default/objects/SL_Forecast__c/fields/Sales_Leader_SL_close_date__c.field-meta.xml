@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sales_Leader_SL_close_date__c</fullName>
+    <description>Sales Leader Close Date</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Pick a date in the FQ for which this sales leader forecast pertains</inlineHelpText>
+    <label>Sales Leader (SL) close date</label>
+    <required>true</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

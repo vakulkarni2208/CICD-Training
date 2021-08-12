@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Anticipated_Production_Date_FQ__c</fullName>
+    <externalId>false</externalId>
+    <formula>if(Anticipated_Production_Date__c&gt;= date(2023, 10, 30), &quot;2024-Q4&quot;,
+if(Anticipated_Production_Date__c&gt;= date(2023, 7, 31), &quot;2024-Q3&quot;,
+if(Anticipated_Production_Date__c&gt;= date(2023, 5, 1), &quot;2024-Q2&quot;,
+if(Anticipated_Production_Date__c&gt;= date(2023, 1, 30), &quot;2024-Q1&quot;,
+if(Anticipated_Production_Date__c&gt;= date(2022, 10, 31), &quot;2023-Q4&quot;,
+if(Anticipated_Production_Date__c&gt;= date(2022, 8, 1), &quot;2023-Q3&quot;,
+if(Anticipated_Production_Date__c&gt;= date(2022, 5, 2), &quot;2023-Q2&quot;,
+if(Anticipated_Production_Date__c&gt;= date(2022, 1, 31), &quot;2023-Q1&quot;,
+if(Anticipated_Production_Date__c &gt;= date(2021, 11, 1), &quot;2022-Q4&quot;,
+if(Anticipated_Production_Date__c&gt;= date(2021, 8, 2), &quot;2022-Q3&quot;,
+if(Anticipated_Production_Date__c&gt;= date(2021, 5, 3), &quot;2022-Q2&quot;,
+if(Anticipated_Production_Date__c&gt;= date(2021, 2, 1), &quot;2022-Q1&quot;,
+if(Anticipated_Production_Date__c &gt;= date(2020, 10, 26), &quot;2021-Q4&quot;,
+if(Anticipated_Production_Date__c&gt;= date(2020, 7, 27), &quot;2021-Q3&quot;,
+if(Anticipated_Production_Date__c&gt;= date(2020, 4, 27), &quot;2021-Q2&quot;,
+if(Anticipated_Production_Date__c&gt;= date(2020, 1, 27), &quot;2021-Q1&quot;,
+if(Anticipated_Production_Date__c &gt;= date(2019, 10, 28), &quot;2020-Q4&quot;,
+if(Anticipated_Production_Date__c&gt;= date(2019, 7, 29), &quot;2020-Q3&quot;,
+if(Anticipated_Production_Date__c&gt;= date(2019, 4, 29), &quot;2020-Q2&quot;,
+if(Anticipated_Production_Date__c&gt;= date(2019, 1, 28), &quot;2020-Q1&quot;,
+if(Anticipated_Production_Date__c &gt;= date(2018, 10, 29), &quot;2019-Q4&quot;,
+if(Anticipated_Production_Date__c&gt;= date(2018, 7, 30), &quot;2019-Q3&quot;,
+if(Anticipated_Production_Date__c&gt;= date(2018, 4, 30), &quot;2019-Q2&quot;,
+if(Anticipated_Production_Date__c&gt;= date(2018, 1, 29), &quot;2019-Q1&quot;,
+if(Anticipated_Production_Date__c &gt;= date(2017, 10, 30), &quot;2018-Q4&quot;,
+if(Anticipated_Production_Date__c&gt;= date(2017, 7, 31), &quot;2018-Q3&quot;,
+if(Anticipated_Production_Date__c&gt;= date(2017, 5, 1), &quot;2018-Q2&quot;,
+if(Anticipated_Production_Date__c&gt;= date(2017, 1, 30), &quot;2018-Q1&quot;,
+if(Anticipated_Production_Date__c &gt;= date(2016, 10, 31), &quot;2017-Q4&quot;,
+if(Anticipated_Production_Date__c&gt;= date(2016, 8, 1), &quot;2017-Q3&quot;,
+if(Anticipated_Production_Date__c&gt;= date(2016, 5, 2), &quot;2017-Q2&quot;,
+if(Anticipated_Production_Date__c&gt;= date(2016, 2, 1), &quot;2017-Q1&quot;,
+if(Anticipated_Production_Date__c &gt;= date(2015, 10, 26), &quot;2016-Q4&quot;,
+if(Anticipated_Production_Date__c&gt;= date(2015, 7, 27), &quot;2016-Q3&quot;,
+if(Anticipated_Production_Date__c&gt;= date(2015, 4, 27), &quot;2016-Q2&quot;,
+if(Anticipated_Production_Date__c&gt;= date(2015, 1, 26), &quot;2016-Q1&quot;,
+if(Anticipated_Production_Date__c &gt;= date(2014, 10, 27), &quot;2015-Q4&quot;,
+if(Anticipated_Production_Date__c&gt;= date(2014, 7, 28), &quot;2015-Q3&quot;,
+if(Anticipated_Production_Date__c&gt;= date(2014, 4, 28), &quot;2015-Q2&quot;,
+if(Anticipated_Production_Date__c&gt;= date(2014, 1, 27), &quot;2015-Q1&quot;,
+if(Anticipated_Production_Date__c &gt;= date(2013, 10, 28), &quot;2014-Q4&quot;,
+if(Anticipated_Production_Date__c &gt;= date(2013, 7, 29), &quot;2014-Q3&quot;,
+if(Anticipated_Production_Date__c&gt;= date(2013, 4, 29),&quot;2014-Q2&quot;,
+if(Anticipated_Production_Date__c&gt;= date(2013, 1, 28), &quot;2014-Q1&quot;, null))))))))))))))))))))))))))))))))))))))))))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Anticipated Production Date FQ</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

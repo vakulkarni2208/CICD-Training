@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Training_Service_Catalog__c</fullName>
+    <description>SDS-2793: 5/28/2021: Updated Lookup filter to &apos;Optional&apos; from &apos;Required&apos;.</description>
+    <externalId>false</externalId>
+    <label>Training Service Catalog</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>Training_Service_Catalog__c.Active__c</field>
+            <operation>equals</operation>
+            <value>Active</value>
+        </filterItems>
+        <isOptional>true</isOptional>
+    </lookupFilter>
+    <referenceTo>Training_Service_Catalog__c</referenceTo>
+    <relationshipLabel>Certifications</relationshipLabel>
+    <relationshipName>Certifications</relationshipName>
+    <relationshipOrder>1</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

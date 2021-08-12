@@ -1,0 +1,4 @@
+<apex:page id="thePage" standardStylesheets="true"  showHeader="false" sidebar="true">
+   <apex:iframe src="https://www.brainshark.com/portal/psapis/api/psSession.aspx?username={!$User.Email}&fn={!$User.FirstName}&ln={!$User.LastName}&login_dir=nvidia&cid=32450&gids=4997879&dest=%2Fbrainshark%2Flearning%2FmyLearning.asp%3Fui%3D507905" height="1000px;" frameborder="false" width="100%" scrolling="true"/>
+  <!-- End Default Content REMOVE THIS -->
+</apex:page>

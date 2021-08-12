@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Count_Not_Exempted_from_POS_Submission__c</fullName>
+    <description>The count indicates the number of active Partner Attributes which are NOT exempted from POS Submission.
+This field is referred in the formula for POS_Portal_Submission__c on the Account object.
+Not to be shown on the UI
+Created for SDS-1873</description>
+    <externalId>false</externalId>
+    <label>Count Not Exempted from POS Submission</label>
+    <summaryFilterItems>
+        <field>Partner_Attribute__c.Exempted_from_POS_Submission__c</field>
+        <operation>equals</operation>
+        <value>False</value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>Partner_Attribute__c.Date_Competency_Terminated__c</field>
+        <operation>equals</operation>
+        <value/>
+    </summaryFilterItems>
+    <summaryForeignKey>Partner_Attribute__c.Account_Name__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

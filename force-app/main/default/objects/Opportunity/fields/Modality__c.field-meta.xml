@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Modality__c</fullName>
+    <description>For Enterprise Design Wins sales process</description>
+    <externalId>false</externalId>
+    <label>Modality</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Segment__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>3D Printing</fullName>
+                <default>false</default>
+                <label>3D Printing</label>
+            </value>
+            <value>
+                <fullName>Advanced Vis</fullName>
+                <default>false</default>
+                <label>Advanced Vis</label>
+            </value>
+            <value>
+                <fullName>Blood Testing</fullName>
+                <default>false</default>
+                <label>Blood Testing</label>
+            </value>
+            <value>
+                <fullName>CAD</fullName>
+                <default>false</default>
+                <label>CAD</label>
+            </value>
+            <value>
+                <fullName>Cryo-EM</fullName>
+                <default>false</default>
+                <label>Cryo-EM</label>
+            </value>
+            <value>
+                <fullName>CT</fullName>
+                <default>false</default>
+                <label>CT</label>
+            </value>
+            <value>
+                <fullName>Dental</fullName>
+                <default>false</default>
+                <label>Dental</label>
+            </value>
+            <value>
+                <fullName>Diagnostic_Surgical_Displays</fullName>
+                <default>false</default>
+                <label>Diagnostic, Surgical Displays</label>
+            </value>
+            <value>
+                <fullName>Digital Pathology</fullName>
+                <default>false</default>
+                <label>Digital Pathology</label>
+            </value>
+            <value>
+                <fullName>Edge AI Platforms</fullName>
+                <default>false</default>
+                <label>Edge AI Platforms</label>
+            </value>
+            <value>
+                <fullName>EHR</fullName>
+                <default>false</default>
+                <label>EHR</label>
+            </value>
+            <value>
+                <fullName>Endoscopy</fullName>
+                <default>false</default>
+                <label>Endoscopy</label>
+            </value>
+            <value>
+                <fullName>ICAR</fullName>
+                <default>false</default>
+                <label>ICAR</label>
+            </value>
+            <value>
+                <fullName>IGT</fullName>
+                <default>false</default>
+                <label>IGT</label>
+            </value>
+            <value>
+                <fullName>Intravascular Ultrasound</fullName>
+                <default>false</default>
+                <label>Intravascular Ultrasound</label>
+            </value>
+            <value>
+                <fullName>Mammo</fullName>
+                <default>false</default>
+                <label>Mammo</label>
+            </value>
+            <value>
+                <fullName>Microscopy</fullName>
+                <default>false</default>
+                <label>Microscopy</label>
+            </value>
+            <value>
+                <fullName>MRI</fullName>
+                <default>false</default>
+                <label>MRI</label>
+            </value>
+            <value>
+                <fullName>NGS</fullName>
+                <default>false</default>
+                <label>NGS</label>
+            </value>
+            <value>
+                <fullName>NLP_Reporting</fullName>
+                <default>false</default>
+                <label>NLP, Reporting</label>
+            </value>
+            <value>
+                <fullName>Ophthalmic</fullName>
+                <default>false</default>
+                <label>Ophthalmic</label>
+            </value>
+            <value>
+                <fullName>OR Integration</fullName>
+                <default>false</default>
+                <label>OR Integration</label>
+            </value>
+            <value>
+                <fullName>PACS</fullName>
+                <default>false</default>
+                <label>PACS</label>
+            </value>
+            <value>
+                <fullName>Patient Monitoring</fullName>
+                <default>false</default>
+                <label>Patient Monitoring</label>
+            </value>
+            <value>
+                <fullName>PET_Molecular</fullName>
+                <default>false</default>
+                <label>PET, Molecular</label>
+            </value>
+            <value>
+                <fullName>Radiotherapy</fullName>
+                <default>false</default>
+                <label>Radiotherapy</label>
+            </value>
+            <value>
+                <fullName>Robotic Surgery</fullName>
+                <default>false</default>
+                <label>Robotic Surgery</label>
+            </value>
+            <value>
+                <fullName>Smart Cameras</fullName>
+                <default>false</default>
+                <label>Smart Cameras</label>
+            </value>
+            <value>
+                <fullName>Surgical Navigation_AR_VR</fullName>
+                <default>false</default>
+                <label>Surgical Navigation, AR/VR</label>
+            </value>
+            <value>
+                <fullName>Ultrasound</fullName>
+                <default>false</default>
+                <label>Ultrasound</label>
+            </value>
+            <value>
+                <fullName>X-Ray</fullName>
+                <default>false</default>
+                <label>X-Ray</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>AR//VR</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>AR//VR</label>
+            </value>
+            <value>
+                <fullName>Molecular</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Molecular</label>
+            </value>
+            <value>
+                <fullName>PET</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>PET</label>
+            </value>
+            <value>
+                <fullName>Reporting</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Reporting</label>
+            </value>
+            <value>
+                <fullName>Surgical Displays</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Surgical Displays</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Diagnostic Imaging</controllingFieldValue>
+            <valueName>CT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Diagnostic Imaging</controllingFieldValue>
+            <valueName>Dental</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Diagnostic Imaging</controllingFieldValue>
+            <valueName>Mammo</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Diagnostic Imaging</controllingFieldValue>
+            <valueName>MRI</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Diagnostic Imaging</controllingFieldValue>
+            <valueName>Ophthalmic</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Diagnostic Imaging</controllingFieldValue>
+            <valueName>PET_Molecular</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Diagnostic Imaging</controllingFieldValue>
+            <valueName>Ultrasound</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Diagnostic Imaging</controllingFieldValue>
+            <valueName>X-Ray</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Diagnostic Imaging</controllingFieldValue>
+            <controllingFieldValue>HIT</controllingFieldValue>
+            <controllingFieldValue>In Vitro Diagnostics</controllingFieldValue>
+            <controllingFieldValue>Point of Care</controllingFieldValue>
+            <controllingFieldValue>Therapeutic Devices</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HIT</controllingFieldValue>
+            <valueName>Advanced Vis</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HIT</controllingFieldValue>
+            <valueName>CAD</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HIT</controllingFieldValue>
+            <valueName>Edge AI Platforms</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HIT</controllingFieldValue>
+            <valueName>EHR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HIT</controllingFieldValue>
+            <valueName>NLP_Reporting</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HIT</controllingFieldValue>
+            <valueName>PACS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>In Vitro Diagnostics</controllingFieldValue>
+            <valueName>Blood Testing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>In Vitro Diagnostics</controllingFieldValue>
+            <valueName>Cryo-EM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>In Vitro Diagnostics</controllingFieldValue>
+            <valueName>Digital Pathology</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>In Vitro Diagnostics</controllingFieldValue>
+            <valueName>Microscopy</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>In Vitro Diagnostics</controllingFieldValue>
+            <valueName>NGS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Point of Care</controllingFieldValue>
+            <valueName>3D Printing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Point of Care</controllingFieldValue>
+            <valueName>Diagnostic_Surgical_Displays</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Point of Care</controllingFieldValue>
+            <valueName>Patient Monitoring</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Point of Care</controllingFieldValue>
+            <valueName>Smart Cameras</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Therapeutic Devices</controllingFieldValue>
+            <valueName>Endoscopy</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Therapeutic Devices</controllingFieldValue>
+            <valueName>IGT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Therapeutic Devices</controllingFieldValue>
+            <valueName>Intravascular Ultrasound</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Therapeutic Devices</controllingFieldValue>
+            <valueName>OR Integration</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Therapeutic Devices</controllingFieldValue>
+            <valueName>Radiotherapy</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Therapeutic Devices</controllingFieldValue>
+            <valueName>Robotic Surgery</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Therapeutic Devices</controllingFieldValue>
+            <valueName>Surgical Navigation_AR_VR</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

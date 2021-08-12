@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Select the type of Opportunity Class.   &quot;Strategic&quot; means an Opportunity where you spend much of your focus to drive this opportunity to Closed Won. OEM/VAR Enablement means an opportunity that you hand off to the OEM to drive to closure. --></help>
+    <label><!-- Opportunity Class --></label>
+    <name>Opportunity_Class__c</name>
+    <picklistValues>
+        <masterLabel>Deep Learning Opportunity</masterLabel>
+        <translation><!-- Deep Learning Opportunity --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>North America GRID Incentive Program</masterLabel>
+        <translation><!-- North America GRID Incentive Program --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OEM/VAR Enablement Opportunity</masterLabel>
+        <translation><!-- OEM/VAR Enablement Opportunity --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other Opportunity</masterLabel>
+        <translation><!-- Other Opportunity --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Proof of Concept Opportunity (PoC) / Trial</masterLabel>
+        <translation><!-- Proof of Concept Opportunity (PoC) / Trial --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Strategic Opportunity</masterLabel>
+        <translation><!-- Strategic Opportunity --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

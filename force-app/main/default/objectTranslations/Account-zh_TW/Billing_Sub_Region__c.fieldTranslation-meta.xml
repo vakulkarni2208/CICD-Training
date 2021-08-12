@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Billing Sub-Region --></label>
+    <name>Billing_Sub_Region__c</name>
+    <picklistValues>
+        <masterLabel>ANZ</masterLabel>
+        <translation><!-- ANZ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>APAC</masterLabel>
+        <translation><!-- APAC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CE</masterLabel>
+        <translation><!-- CE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CHINA</masterLabel>
+        <translation><!-- CHINA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EE</masterLabel>
+        <translation><!-- EE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>JAPAN</masterLabel>
+        <translation><!-- JAPAN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>KOREA</masterLabel>
+        <translation><!-- KOREA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LA</masterLabel>
+        <translation><!-- LA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ME</masterLabel>
+        <translation><!-- ME --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NA</masterLabel>
+        <translation><!-- NA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NE</masterLabel>
+        <translation><!-- NE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SASIA</masterLabel>
+        <translation><!-- SASIA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SE</masterLabel>
+        <translation><!-- SE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SEA</masterLabel>
+        <translation><!-- SEA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TW</masterLabel>
+        <translation><!-- TW --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

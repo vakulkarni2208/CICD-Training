@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- L1/L2 Owner User --></label>
+    <name>L1_L2_Owner__c</name>
+    <relationshipLabel><!-- Cases (L1/L2 Owner User) --></relationshipLabel>
+</CustomFieldTranslation>

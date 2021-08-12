@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Industry__c</fullName>
+    <externalId>false</externalId>
+    <label>Industry</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Supercomputing</fullName>
+                <default>false</default>
+                <label>Supercomputing</label>
+            </value>
+            <value>
+                <fullName>Higher Ed/Research</fullName>
+                <default>false</default>
+                <label>Higher Ed/Research</label>
+            </value>
+            <value>
+                <fullName>Healthcare</fullName>
+                <default>false</default>
+                <label>Healthcare</label>
+            </value>
+            <value>
+                <fullName>Telecommunications</fullName>
+                <default>false</default>
+                <label>Telecommunications</label>
+            </value>
+            <value>
+                <fullName>Retail and CPG</fullName>
+                <default>false</default>
+                <label>Retail and CPG</label>
+            </value>
+            <value>
+                <fullName>Public Sector-US</fullName>
+                <default>false</default>
+                <label>Public Sector-US</label>
+            </value>
+            <value>
+                <fullName>Automotive</fullName>
+                <default>false</default>
+                <label>Automotive</label>
+            </value>
+            <value>
+                <fullName>Architecture, Eng and Construction</fullName>
+                <default>false</default>
+                <label>Architecture, Eng and Construction</label>
+            </value>
+            <value>
+                <fullName>Aerospace</fullName>
+                <default>false</default>
+                <label>Aerospace</label>
+            </value>
+            <value>
+                <fullName>Oil &amp; Gas/Energy</fullName>
+                <default>false</default>
+                <label>Oil &amp; Gas/Energy</label>
+            </value>
+            <value>
+                <fullName>Unassigned</fullName>
+                <default>false</default>
+                <label>Unassigned</label>
+            </value>
+            <value>
+                <fullName>Media/Entertainment</fullName>
+                <default>false</default>
+                <label>Media/Entertainment</label>
+            </value>
+            <value>
+                <fullName>AI City-China</fullName>
+                <default>false</default>
+                <label>AI City-China</label>
+            </value>
+            <value>
+                <fullName>Financial Services Industry (FSI)</fullName>
+                <default>false</default>
+                <label>Financial Services Industry (FSI)</label>
+            </value>
+            <value>
+                <fullName>CRISP</fullName>
+                <default>false</default>
+                <label>CRISP</label>
+            </value>
+            <value>
+                <fullName>IT Services</fullName>
+                <default>false</default>
+                <label>IT Services</label>
+            </value>
+            <value>
+                <fullName>Data Analytics</fullName>
+                <default>false</default>
+                <label>Data Analytics</label>
+            </value>
+            <value>
+                <fullName>Strategic Hyperscale</fullName>
+                <default>false</default>
+                <label>Strategic Hyperscale</label>
+            </value>
+            <value>
+                <fullName>Public Sector-ROW</fullName>
+                <default>false</default>
+                <label>Public Sector-ROW</label>
+            </value>
+            <value>
+                <fullName>AI City-ROW</fullName>
+                <default>false</default>
+                <label>AI City-ROW</label>
+            </value>
+            <value>
+                <fullName>Manufacturing</fullName>
+                <default>false</default>
+                <label>Manufacturing</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Manufacturing - Design</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Manufacturing - Design</label>
+            </value>
+            <value>
+                <fullName>Manufacturing - Industrial</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Manufacturing - Industrial</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

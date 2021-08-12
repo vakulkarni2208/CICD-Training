@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Metropolis_Opportunities</fullName>
+    <columns>Region__c</columns>
+    <columns>Country__c</columns>
+    <columns>Industry__c</columns>
+    <columns>Primary_Industry_Application_Area__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>OEM_ODM_Disti_Status__c</columns>
+    <columns>OPPORTUNITY.NEXT_STEP</columns>
+    <columns>Risks_Help_Needed__c</columns>
+    <columns>OPPORTUNITY.AMOUNT</columns>
+    <columns>OPPORTUNITY.CLOSE_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Primary_Customer_Use_Case__c</field>
+        <operation>equals</operation>
+        <value>Intelligent Video Analytics (IVA)</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>contains</operation>
+        <value>Prospecting,Qualification,Needs Analysis,Proposal/Price Quote,Negotiation/Review,Paperwork Finalization</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Opportunity.Enterprise_Sales_Opportunity</value>
+    </filters>
+    <filters>
+        <field>Region__c</field>
+        <operation>contains</operation>
+        <value>NALA</value>
+    </filters>
+    <label>Metropolis Opportunities</label>
+</ListView>

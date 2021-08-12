@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Opp_CLR_Duplicate_Opportunity</fullName>
+    <active>true</active>
+    <description>If Closed Lost Reason is Duplicate Opportunity, Duplicate Opportunity number is required (SDS-1213)</description>
+    <errorConditionFormula>AND ( 
+OR( 
+RecordType.Name = &apos;Enterprise Sales Opportunity&apos;, 
+RecordType.Name = &apos;Repeat Business Opportunity&apos;), 
+NOT( $Permission.DEPLOYMENT_USER_SKIP_VALIDATIONS ), 
+ISPICKVAL( Closed_Lost_Reason__c, &apos;Duplicate Opportunity&apos;), 
+ISPICKVAL ( StageName , &quot;Closed Lost&quot;), 
+ISBLANK(Duplicate_Opportunity_Number__c) 
+)</errorConditionFormula>
+    <errorDisplayField>Duplicate_Opportunity_Number__c</errorDisplayField>
+    <errorMessage>Please provide the opportunity number if the Close Lost Reason is Duplicate Opportunity</errorMessage>
+</ValidationRule>

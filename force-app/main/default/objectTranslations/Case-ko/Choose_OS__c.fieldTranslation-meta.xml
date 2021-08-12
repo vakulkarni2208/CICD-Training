@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Choose OS --></label>
+    <name>Choose_OS__c</name>
+    <picklistValues>
+        <masterLabel>Android</masterLabel>
+        <translation><!-- Android --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Apple Mac OS</masterLabel>
+        <translation><!-- Apple Mac OS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Linux/Other Unix</masterLabel>
+        <translation><!-- Linux/Other Unix --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Microsoft Vista 32-bit</masterLabel>
+        <translation><!-- Microsoft Vista 32-bit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Microsoft Vista 64-bit</masterLabel>
+        <translation><!-- Microsoft Vista 64-bit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Microsoft Windows 10 32-bit</masterLabel>
+        <translation><!-- Microsoft Windows 10 32-bit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Microsoft Windows 10 64-bit</masterLabel>
+        <translation><!-- Microsoft Windows 10 64-bit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Microsoft Windows 7 32-bit</masterLabel>
+        <translation><!-- Microsoft Windows 7 32-bit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Microsoft Windows 7 64-bit</masterLabel>
+        <translation><!-- Microsoft Windows 7 64-bit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Microsoft Windows 8 32-bit</masterLabel>
+        <translation><!-- Microsoft Windows 8 32-bit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Microsoft Windows 8 64-bit</masterLabel>
+        <translation><!-- Microsoft Windows 8 64-bit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Microsoft XP 32-bit</masterLabel>
+        <translation><!-- Microsoft XP 32-bit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Microsoft XP 64-bit</masterLabel>
+        <translation><!-- Microsoft XP 64-bit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other Microsoft</masterLabel>
+        <translation><!-- Other Microsoft --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

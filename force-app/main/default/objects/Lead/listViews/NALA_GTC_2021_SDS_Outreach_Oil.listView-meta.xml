@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NALA_GTC_2021_SDS_Outreach_Oil</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>LEAD.EMAIL</columns>
+    <columns>LEAD.COMPANY</columns>
+    <columns>LEAD.STATE_CODE</columns>
+    <columns>LEAD.STATUS</columns>
+    <columns>LEAD.UNREAD</columns>
+    <columns>LEAD.CREATED_DATE</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>MKTO_Industry__c</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>MKTO_Industry__c</field>
+        <operation>contains</operation>
+        <value>oil</value>
+    </filters>
+    <label>NALA GTC 2021 SDS Outreach (Oil)</label>
+    <sharedTo>
+        <group>NALA_SDS</group>
+    </sharedTo>
+</ListView>

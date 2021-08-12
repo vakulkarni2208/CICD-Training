@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- DGX-1 Customer? --></label>
+    <name>DGX_1_Customer__c</name>
+    <picklistValues>
+        <masterLabel>Already Ordered</masterLabel>
+        <translation><!-- Already Ordered --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Budget</masterLabel>
+        <translation><!-- No Budget --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not Interested</masterLabel>
+        <translation><!-- Not Interested --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wants to learn more</masterLabel>
+        <translation><!-- Wants to learn more --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

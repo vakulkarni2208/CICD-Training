@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>License_Type__c</fullName>
+    <description>What type of vGPU license did you subscribe for?</description>
+    <externalId>false</externalId>
+    <label>License Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Workload__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>GRID vApps</fullName>
+                <default>false</default>
+                <label>GRID vApps</label>
+            </value>
+            <value>
+                <fullName>GRID vPC</fullName>
+                <default>false</default>
+                <label>GRID vPC</label>
+            </value>
+            <value>
+                <fullName>Quadro vDWS</fullName>
+                <default>false</default>
+                <label>Quadro vDWS</label>
+            </value>
+            <value>
+                <fullName>vCompute Server</fullName>
+                <default>false</default>
+                <label>vCompute Server</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Graphics Virtualization (vGPU)</controllingFieldValue>
+            <valueName>GRID vApps</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Graphics Virtualization (vGPU)</controllingFieldValue>
+            <valueName>GRID vPC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Graphics Virtualization (vGPU)</controllingFieldValue>
+            <valueName>Quadro vDWS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Graphics Virtualization (vGPU)</controllingFieldValue>
+            <valueName>vCompute Server</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

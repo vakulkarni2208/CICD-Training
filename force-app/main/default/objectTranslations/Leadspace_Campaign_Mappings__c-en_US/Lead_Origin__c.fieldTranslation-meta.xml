@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Lead Origin is set based on the Leadspace profile from which the Lead is selected.
+eg., For all leads coming from DGX Profile, their Lead_Origin__c field is set to &quot;Tesla_LS_Deep Learning Profile_Prospecting_NALA_2016_July&quot; --></help>
+    <label><!-- Lead Origin --></label>
+    <name>Lead_Origin__c</name>
+</CustomFieldTranslation>

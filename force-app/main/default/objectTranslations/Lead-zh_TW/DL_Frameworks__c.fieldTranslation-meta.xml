@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- DL Frameworks --></label>
+    <name>DL_Frameworks__c</name>
+    <picklistValues>
+        <masterLabel>CNTK</masterLabel>
+        <translation><!-- CNTK --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Caffe</masterLabel>
+        <translation><!-- Caffe --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chainer</masterLabel>
+        <translation><!-- Chainer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>KALDI</masterLabel>
+        <translation><!-- KALDI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MXNet</masterLabel>
+        <translation><!-- MXNet --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TensorFlow</masterLabel>
+        <translation><!-- TensorFlow --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Theano</masterLabel>
+        <translation><!-- Theano --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Torch</masterLabel>
+        <translation><!-- Torch --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

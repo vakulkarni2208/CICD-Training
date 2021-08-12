@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Events approved --></label>
+    <name>Events_approved__c</name>
+    <picklistValues>
+        <masterLabel>Computex 2021</masterLabel>
+        <translation><!-- Computex 2021 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GTC China 2020</masterLabel>
+        <translation><!-- GTC China 2020 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GTC Fall 2020</masterLabel>
+        <translation><!-- GTC Fall 2020 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GTC San Jose 2020</masterLabel>
+        <translation><!-- GTC San Jose 2020 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GTC Spring 2021</masterLabel>
+        <translation><!-- GTC Spring 2021 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MLPerf May 2020</masterLabel>
+        <translation><!-- MLPerf May 2020 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MWC 2021</masterLabel>
+        <translation><!-- MWC 2021 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Supercomputing 2020</masterLabel>
+        <translation><!-- Supercomputing 2020 --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

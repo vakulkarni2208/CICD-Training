@@ -1,0 +1,74 @@
+<!-- 
+ * Author: @Manideep
+ * Date : 12/4/2018
+ * Description: This is a Visualforce Page which enables "DocuSign for Automotive". 
+                - This Page is invoked as a result of redirect from a Controller Class 'NV_Account_DocuSignCtrl' that
+                  which is invoked by a VF page which was used in a button 'Send via DocuSign' on the Account.
+-->
+<apex:page controller="DocSignforAutoAccountsCtrl" sidebar="false" showHeader="false">
+<apex:form >
+  
+  <!-- ActionFunction for the Contacts-->
+  <apex:actionFunction name="AF1" action="{!disableSelectedCheckboxforContact}" rerender="actFct1">
+    <apex:param name="selectItemId" value="" assignTo="{!idCtcSelected}" />       
+  </apex:actionFunction>
+  
+  <!-- ActionFunction for the Signers -->
+  <apex:actionFunction name="AF2" action="{!disableSelectedCheckboxforSigner}" rerender="actFct2">
+    <apex:param name="selectItemId" value="" assignTo="{!idSignerSelected}" />       
+  </apex:actionFunction>
+
+  <apex:pageBlock title="Contacts List">
+     <apex:outputLabel value="Choose a Contact from the list below for DocuSign" style="font-weight:bold;"/> 
+     <br/><br/>          
+     <apex:outputPanel layout="block" id="actFct1">
+       <apex:pageBlockTable value="{!lstCtcWrapper}" var="ctcWrapper">  
+         <apex:column >
+           <apex:inputCheckbox value="{!ctcWrapper.isContSelected}" id="inputCtcId" onclick="AF1('{!ctcWrapper.cont.Id}')" disabled="{!IF((ctcWrapper.isContSelected == true || ctcWrapper.isContSelected == false) && showSigners == true, true, false)}" />
+         </apex:column>
+         <apex:column headerValue="Contact">
+           <apex:outputLink value="/{!ctcWrapper.cont.Id}">{!ctcWrapper.cont.Name}</apex:outputLink>
+         </apex:column>
+         <apex:column value="{!ctcWrapper.cont.Primary_Contact__c}"/>
+         <apex:column value="{!ctcWrapper.cont.Role__c}"/>
+         <apex:column value="{!ctcWrapper.cont.Email}"/>
+         <apex:column value="{!ctcWrapper.cont.Phone}"/>
+         <apex:column value="{!ctcWrapper.cont.AccountId}"/>
+       </apex:pageBlockTable>
+     </apex:outputPanel>
+     
+     <apex:pageBlockButtons location="bottom" rendered="{!NOT(hideSubmitTheContact)}">
+       <apex:commandButton value="Submit the Contact" action="{!SubmitTheContact}"/> 
+       <apex:commandButton value="Cancel" action="{!Cancel}" onclick="return confirm('Do you want to proceed?');" />
+     </apex:pageBlockButtons>    
+  </apex:pageBlock>
+ 
+  <apex:pageBlock rendered="{!showSigners}" title="Signers">
+    <apex:outputLabel value="Choose a Signer from the list below for DocuSign" style="font-weight:bold;"/> 
+    <br/><br/>    
+    <apex:outputPanel layout="block" id="actFct2">
+      <apex:pageBlockTable value="{!lstSignersTemplate}" var="signTemp">  
+        <apex:column >
+          <apex:inputCheckbox value="{!signTemp.isSignerSelected}" id="inputSignerId" onclick="AF2('{!signTemp.usr.Id}')" disabled="{!IF((signTemp.isSignerSelected == true || signTemp.isSignerSelected == false) && showDocSignButton == true, true, false)}" />
+        </apex:column>
+        <apex:column value="{!signTemp.usr.FirstName}"/>
+        <apex:column value="{!signTemp.usr.LastName}"/>
+        <apex:column value="{!signTemp.usr.Email}"/>
+      </apex:pageBlockTable>
+    </apex:outputPanel>
+     
+    <apex:pageBlockButtons location="bottom" rendered="{!NOT(hideSubmitTheSigner)}">
+      <apex:commandButton value="Submit the Signer" action="{!SubmitTheSigner}"/>
+      <apex:commandButton value="Cancel" action="{!Cancel}" onclick="return confirm('Do you want to proceed?');" />
+    </apex:pageBlockButtons>   
+  </apex:pageBlock> 
+  
+  <apex:pageBlock rendered="{!showDocSignButton}">
+    <apex:pageBlockButtons location="bottom" >
+      <apex:commandButton value="Send with DocuSign" action="{!SendwithDocuSign}" style="Background:LightBlue;Width:200px;font-size:12px;"/>
+      <apex:commandButton value="Cancel" action="{!Cancel}" style="Width:200px;font-size:12px;" onclick="return confirm('Do you want to proceed?');" />
+    </apex:pageBlockButtons>
+  </apex:pageBlock> 
+  
+</apex:form>  
+</apex:page>

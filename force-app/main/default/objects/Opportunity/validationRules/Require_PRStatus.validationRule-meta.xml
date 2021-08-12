@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_PRStatus</fullName>
+    <active>true</active>
+    <description>SDS-2150-Encourage Press Release (PR) with customers using Task</description>
+    <errorConditionFormula>AND(
+	$RecordType.Name = &quot;Enterprise Sales Opportunity&quot;,
+
+	OR(
+
+		AND(
+			Probability &gt; 0.79,
+			ISPICKVAL(Primary_Customer_Use_Case__c, &quot;High Performance Computing (HPC)&quot;),
+			Amount &gt;= 500000,
+			ISBLANK(TEXT(Customer_Press_Release_Status__c))
+		),
+
+
+		AND(
+			OR(
+				ISPICKVAL(Customer_Press_Release_Status__c, &quot;Customer Releasing PR&quot;),
+				ISPICKVAL(Customer_Press_Release_Status__c, &quot;Customer &amp; OEM Releasing PR&quot;)
+			),
+			ISBLANK(Customer_Press_Release_PR_Issuing_Date__c)
+		),
+
+		AND(
+			OR(
+				ISPICKVAL(Customer_Press_Release_Status__c, &quot;OEM Releasing PR&quot;),
+				ISPICKVAL(Customer_Press_Release_Status__c, &quot;Customer &amp; OEM Releasing PR&quot;)
+			),
+			ISBLANK(OEM_Press_Release_PR_Issuing_Date__c)
+		),
+
+		AND(
+			ISPICKVAL(Customer_Press_Release_Status__c, &quot;No PR&quot;),
+			ISBLANK(Press_Release_PR_Comments__c)
+		)
+
+	)
+)</errorConditionFormula>
+    <errorDisplayField>Customer_Press_Release_Status__c</errorDisplayField>
+    <errorMessage>For HPC deals &gt;= $500K please enter Customer Press Release Status. Customer Releasing PR, fill in Customer Press Release (PR) Issuing Date. OEM Releasing PR, fill OEM Press Release (PR) Issuing Date. If No PR please enter additional detail in the comments</errorMessage>
+</ValidationRule>

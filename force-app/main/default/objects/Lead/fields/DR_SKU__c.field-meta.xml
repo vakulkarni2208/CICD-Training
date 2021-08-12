@@ -1,0 +1,643 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DR_SKU__c</fullName>
+    <externalId>false</externalId>
+    <label>Primary vGPU SUMS/DGX Support</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>DR_Product__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>DGX-1 V100 CMR 1yr</fullName>
+                <default>false</default>
+                <label>DGX-1 V100 CMR 1yr</label>
+            </value>
+            <value>
+                <fullName>DGX-1 V100 CMR 2yr</fullName>
+                <default>false</default>
+                <label>DGX-1 V100 CMR 2yr</label>
+            </value>
+            <value>
+                <fullName>DGX-1 V100 CMR 3yr</fullName>
+                <default>false</default>
+                <label>DGX-1 V100 CMR 3yr</label>
+            </value>
+            <value>
+                <fullName>DGX-1 V100 CMR 4yr</fullName>
+                <default>false</default>
+                <label>DGX-1 V100 CMR 4yr</label>
+            </value>
+            <value>
+                <fullName>DGX-1 V100 CMR 5yr</fullName>
+                <default>false</default>
+                <label>DGX-1 V100 CMR 5yr</label>
+            </value>
+            <value>
+                <fullName>DGX-1 V100 Supt 1yr</fullName>
+                <default>false</default>
+                <label>DGX-1 V100 Supt 1yr</label>
+            </value>
+            <value>
+                <fullName>DGX-1 V100 Supt 2yr</fullName>
+                <default>false</default>
+                <label>DGX-1 V100 Supt 2yr</label>
+            </value>
+            <value>
+                <fullName>DGX-1 V100 Supt 3yr</fullName>
+                <default>false</default>
+                <label>DGX-1 V100 Supt 3yr</label>
+            </value>
+            <value>
+                <fullName>DGX-1 V100 Supt 4yr</fullName>
+                <default>false</default>
+                <label>DGX-1 V100 Supt 4yr</label>
+            </value>
+            <value>
+                <fullName>DGX-1 V100 Supt 5yr</fullName>
+                <default>false</default>
+                <label>DGX-1 V100 Supt 5yr</label>
+            </value>
+            <value>
+                <fullName>DGX-1 V100 SDMR 1yr</fullName>
+                <default>false</default>
+                <label>DGX-1 V100 SDMR 1yr</label>
+            </value>
+            <value>
+                <fullName>DGX-1 V100 SDMR 2yr</fullName>
+                <default>false</default>
+                <label>DGX-1 V100 SDMR 2yr</label>
+            </value>
+            <value>
+                <fullName>DGX-1 V100 SDMR 3yr</fullName>
+                <default>false</default>
+                <label>DGX-1 V100 SDMR 3yr</label>
+            </value>
+            <value>
+                <fullName>DGX-1 V100 SDMR 4yr</fullName>
+                <default>false</default>
+                <label>DGX-1 V100 SDMR 4yr</label>
+            </value>
+            <value>
+                <fullName>DGX-1 V100 SDMR 5yr</fullName>
+                <default>false</default>
+                <label>DGX-1 V100 SDMR 5yr</label>
+            </value>
+            <value>
+                <fullName>DGX-2 V100 Supt 1yr</fullName>
+                <default>false</default>
+                <label>DGX-2 V100 Supt 1yr</label>
+            </value>
+            <value>
+                <fullName>DGX-2 V100 Supt 2yr</fullName>
+                <default>false</default>
+                <label>DGX-2 V100 Supt 2yr</label>
+            </value>
+            <value>
+                <fullName>DGX-2 V100 Supt 3yr</fullName>
+                <default>false</default>
+                <label>DGX-2 V100 Supt 3yr</label>
+            </value>
+            <value>
+                <fullName>DGX-2 V100 Supt 4yr</fullName>
+                <default>false</default>
+                <label>DGX-2 V100 Supt 4yr</label>
+            </value>
+            <value>
+                <fullName>DGX-2 V100 Supt 5yr</fullName>
+                <default>false</default>
+                <label>DGX-2 V100 Supt 5yr</label>
+            </value>
+            <value>
+                <fullName>DGX-2 V100 SDMR 1y</fullName>
+                <default>false</default>
+                <label>DGX-2 V100 SDMR 1yr</label>
+            </value>
+            <value>
+                <fullName>DGX-2 V100 SDMR 2y</fullName>
+                <default>false</default>
+                <label>DGX-2 V100 SDMR 2yr</label>
+            </value>
+            <value>
+                <fullName>DGX-2 V100 SDMR 3y</fullName>
+                <default>false</default>
+                <label>DGX-2 V100 SDMR 3yr</label>
+            </value>
+            <value>
+                <fullName>DGX-2 V100 SDMR 4yr</fullName>
+                <default>false</default>
+                <label>DGX-2 V100 SDMR 4yr</label>
+            </value>
+            <value>
+                <fullName>DGX-2 V100 SDMR 5yr</fullName>
+                <default>false</default>
+                <label>DGX-2 V100 SDMR 5yr</label>
+            </value>
+            <value>
+                <fullName>DGX-2H V100 Supt 1yr</fullName>
+                <default>false</default>
+                <label>DGX-2H V100 Supt 1yr</label>
+            </value>
+            <value>
+                <fullName>DGX-2H V100 Supt 3yr</fullName>
+                <default>false</default>
+                <label>DGX-2H V100 Supt 3yr</label>
+            </value>
+            <value>
+                <fullName>DGX-2H V100 Supt 5yr</fullName>
+                <default>false</default>
+                <label>DGX-2H V100 Supt 5yr</label>
+            </value>
+            <value>
+                <fullName>DGX-2 V100 CMR 1yr</fullName>
+                <default>false</default>
+                <label>DGX-2 V100 CMR 1yr</label>
+            </value>
+            <value>
+                <fullName>DGX-2 V100 CMR 3yr</fullName>
+                <default>false</default>
+                <label>DGX-2 V100 CMR 3yr</label>
+            </value>
+            <value>
+                <fullName>DGX-2 V100 CMR 5yr</fullName>
+                <default>false</default>
+                <label>DGX-2 V100 CMR 5yr</label>
+            </value>
+            <value>
+                <fullName>DGX A100 40GB Supt 3yr</fullName>
+                <default>false</default>
+                <label>DGX A100 40GB Supt 3yr</label>
+            </value>
+            <value>
+                <fullName>DGX A100 40GB Supt 5yr</fullName>
+                <default>false</default>
+                <label>DGX A100 40GB Supt 5yr</label>
+            </value>
+            <value>
+                <fullName>DGX A100 40GB Supt 4yr</fullName>
+                <default>false</default>
+                <label>DGX A100 40GB Supt 4yr</label>
+            </value>
+            <value>
+                <fullName>DGX A100 40GB CMR 4yr</fullName>
+                <default>false</default>
+                <label>DGX A100 40GB CMR 4yr</label>
+            </value>
+            <value>
+                <fullName>DGX A100 40GB SDMR 4yr</fullName>
+                <default>false</default>
+                <label>DGX A100 40GB SDMR 4yr</label>
+            </value>
+            <value>
+                <fullName>DGX A100 40GB CMR 3yr</fullName>
+                <default>false</default>
+                <label>DGX A100 40GB CMR 3yr</label>
+            </value>
+            <value>
+                <fullName>DGX A100 40GB CMR 5yr</fullName>
+                <default>false</default>
+                <label>DGX A100 40GB CMR 5yr</label>
+            </value>
+            <value>
+                <fullName>DGX A100 40GB SDMR 5yr</fullName>
+                <default>false</default>
+                <label>DGX A100 40GB SDMR 5yr</label>
+            </value>
+            <value>
+                <fullName>DGX A100 40GB SDMR 3yr</fullName>
+                <default>false</default>
+                <label>DGX A100 40GB SDMR 3yr</label>
+            </value>
+            <value>
+                <fullName>vGPU vWS SUMS 3yr - GRID</fullName>
+                <default>false</default>
+                <label>vGPU vWS SUMS 3yr - GRID</label>
+            </value>
+            <value>
+                <fullName>vGPU vWS SUMS 4yr - GRID</fullName>
+                <default>false</default>
+                <label>vGPU vWS SUMS 4yr - GRID</label>
+            </value>
+            <value>
+                <fullName>vGPU vWS SUMS 5yr - GRID</fullName>
+                <default>false</default>
+                <label>vGPU vWS SUMS 5yr - GRID</label>
+            </value>
+            <value>
+                <fullName>vGPU vApps SUMS 3yr - GRID</fullName>
+                <default>false</default>
+                <label>vGPU vApps SUMS 3yr - GRID</label>
+            </value>
+            <value>
+                <fullName>vGPU vApps SUMS 4yr - GRID</fullName>
+                <default>false</default>
+                <label>vGPU vApps SUMS 4yr - GRID</label>
+            </value>
+            <value>
+                <fullName>vGPU vApps SUMS 5yr - GRID</fullName>
+                <default>false</default>
+                <label>vGPU vApps SUMS 5yr - GRID</label>
+            </value>
+            <value>
+                <fullName>vGPU vPC SUMS 3yr - GRID</fullName>
+                <default>false</default>
+                <label>vGPU vPC SUMS 3yr - GRID</label>
+            </value>
+            <value>
+                <fullName>vGPU vPC SUMS 4yr - GRID</fullName>
+                <default>false</default>
+                <label>vGPU vPC SUMS 4yr - GRID</label>
+            </value>
+            <value>
+                <fullName>vGPU vPC SUMS 5yr - GRID</fullName>
+                <default>false</default>
+                <label>vGPU vPC SUMS 5yr - GRID</label>
+            </value>
+            <value>
+                <fullName>N/A</fullName>
+                <default>false</default>
+                <label>N/A</label>
+            </value>
+            <value>
+                <fullName>DGX Station A100 40G Support-3yrs</fullName>
+                <default>false</default>
+                <label>DGX Station A100 40G Support-3yrs</label>
+            </value>
+            <value>
+                <fullName>DGX Station A100 40G Support-4yrs</fullName>
+                <default>false</default>
+                <label>DGX Station A100 40G Support-4yrs</label>
+            </value>
+            <value>
+                <fullName>DGX Station A100 40G Support-5yrs</fullName>
+                <default>false</default>
+                <label>DGX Station A100 40G Support-5yrs</label>
+            </value>
+            <value>
+                <fullName>DGX Station A100 80G Support-3yrs</fullName>
+                <default>false</default>
+                <label>DGX Station A100 80G Support-3yrs</label>
+            </value>
+            <value>
+                <fullName>DGX Station A100 80G Support-4yrs</fullName>
+                <default>false</default>
+                <label>DGX Station A100 80G Support-4yrs</label>
+            </value>
+            <value>
+                <fullName>DGX Station A100 80G Support-5yrs</fullName>
+                <default>false</default>
+                <label>DGX Station A100 80G Support-5yrs</label>
+            </value>
+            <value>
+                <fullName>DGX A100 80G Full Support-3yrs</fullName>
+                <default>false</default>
+                <label>DGX A100 80G Full Support-3yrs</label>
+            </value>
+            <value>
+                <fullName>DGX A100 80G Full Support-4yrs</fullName>
+                <default>false</default>
+                <label>DGX A100 80G Full Support-4yrs</label>
+            </value>
+            <value>
+                <fullName>DGX A100 80G Full Support-5yrs</fullName>
+                <default>false</default>
+                <label>DGX A100 80G Full Support-5yrs</label>
+            </value>
+            <value>
+                <fullName>DGX Station Supt 3yr</fullName>
+                <default>false</default>
+                <label>DGX Station Supt 3yr</label>
+            </value>
+            <value>
+                <fullName>DGX A100 Comprehensive Media Retention Services (CMR), 3 Years</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>DGX A100 Comprehensive Media Retention Services (CMR), 3 Years</label>
+            </value>
+            <value>
+                <fullName>DGX A100 Comprehensive Media Retention Services (CMR), 5 Years</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>DGX A100 Comprehensive Media Retention Services (CMR), 5 Years</label>
+            </value>
+            <value>
+                <fullName>DGX A100 SSD Media Retention Services (SDMR), 3 Years</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>DGX A100 SSD Media Retention Services (SDMR), 3 Years</label>
+            </value>
+            <value>
+                <fullName>DGX A100 SSD Media Retention Services (SDMR), 5 Years</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>DGX A100 SSD Media Retention Services (SDMR), 5 Years</label>
+            </value>
+            <value>
+                <fullName>DGX A100 System 8X 40GB GPUs Support</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>DGX A100 System 8X 40GB GPUs Support</label>
+            </value>
+            <value>
+                <fullName>DGX A100 System 8X 40GB GPUs Support, 3 Years</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>DGX A100 System 8X 40GB GPUs Support, 3 Years</label>
+            </value>
+            <value>
+                <fullName>DGX A100 System 8X 40GB GPUs Support, 5 Years</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>DGX A100 System 8X 40GB GPUs Support, 5 Years</label>
+            </value>
+            <value>
+                <fullName>DGX P100 CMR Support 1yr</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>DGX P100 CMR Support 1yr</label>
+            </value>
+            <value>
+                <fullName>DGX P100 CMR Support 3yr</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>DGX P100 CMR Support 3yr</label>
+            </value>
+            <value>
+                <fullName>DGX P100 Support 1yr</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>DGX P100 Support 1yr</label>
+            </value>
+            <value>
+                <fullName>DGX P100 Support 1yr EDU</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>DGX P100 Support 1yr EDU</label>
+            </value>
+            <value>
+                <fullName>DGX P100 Support 3yr</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>DGX P100 Support 3yr</label>
+            </value>
+            <value>
+                <fullName>DGX P100 Support 3yr EDU</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>DGX P100 Support 3yr EDU</label>
+            </value>
+            <value>
+                <fullName>DGX Station SDMR 3yr</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>DGX Station SDMR 3yr</label>
+            </value>
+            <value>
+                <fullName>DGX Station Supt 1yr</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>DGX Station Supt 1yr</label>
+            </value>
+            <value>
+                <fullName>DGX Station Supt 1yr EDU</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>DGX Station Supt 1yr EDU</label>
+            </value>
+            <value>
+                <fullName>DGX Station Supt 2yr</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>DGX Station Supt 2yr</label>
+            </value>
+            <value>
+                <fullName>DGX Station Supt 3yr EDU</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>DGX Station Supt 3yr EDU</label>
+            </value>
+            <value>
+                <fullName>DGX Station Supt 4yr</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>DGX Station Supt 4yr</label>
+            </value>
+            <value>
+                <fullName>DGX Station Supt 5yr</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>DGX Station Supt 5yr</label>
+            </value>
+            <value>
+                <fullName>DGX V100 Support 1yr EDU</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>DGX V100 Support 1yr EDU</label>
+            </value>
+            <value>
+                <fullName>DGX V100 Support 3yr EDU</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>DGX V100 Support 3yr EDU</label>
+            </value>
+            <value>
+                <fullName>DGX-1 Pascal</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>DGX-1 Pascal</label>
+            </value>
+            <value>
+                <fullName>DGX-1 Volta</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>DGX-1 Volta</label>
+            </value>
+            <value>
+                <fullName>GRID Hardware</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>GRID Hardware</label>
+            </value>
+            <value>
+                <fullName>GRID Quadro vDWS SUMS 1yr</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>GRID Quadro vDWS SUMS 1yr</label>
+            </value>
+            <value>
+                <fullName>GRID vApps SUMS 1yr</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>GRID vApps SUMS 1yr</label>
+            </value>
+            <value>
+                <fullName>GRID vPC SUMS 1yr</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>GRID vPC SUMS 1yr</label>
+            </value>
+            <value>
+                <fullName>SUMS EDU 1 yr 1CCU</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>SUMS EDU 1 yr 1CCU</label>
+            </value>
+            <value>
+                <fullName>SUMS EDU 3 yr 1CCU</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>SUMS EDU 3 yr 1CCU</label>
+            </value>
+            <value>
+                <fullName>SUMS EDU 5 yr 1CCU</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>SUMS EDU 5 yr 1CCU</label>
+            </value>
+            <value>
+                <fullName>SUMS vWS 1yr</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>SUMS vWS 1yr</label>
+            </value>
+            <value>
+                <fullName>SUMS vWS 3yr</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>SUMS vWS 3yr</label>
+            </value>
+            <value>
+                <fullName>SUMS vWS 5yr</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>SUMS vWS 5yr</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>vGPU vWS Subs 4yr - GRID</controllingFieldValue>
+            <controllingFieldValue>vGPU vApps SUMS 4yr - GRID</controllingFieldValue>
+            <controllingFieldValue>vGPU vApps SUMS 5yr - GRID</controllingFieldValue>
+            <controllingFieldValue>vGPU vApps Subs 4yr - GRID</controllingFieldValue>
+            <controllingFieldValue>vGPU vApps Subs 5yr - GRID</controllingFieldValue>
+            <controllingFieldValue>Titan RTX</controllingFieldValue>
+            <controllingFieldValue>vGPU vWS Subs 1yr - GRID</controllingFieldValue>
+            <controllingFieldValue>vGPU vWS Subs 3yr - GRID</controllingFieldValue>
+            <controllingFieldValue>Jetson TX2 (module)</controllingFieldValue>
+            <controllingFieldValue>vGPU vWS Subs 5yr - GRID</controllingFieldValue>
+            <controllingFieldValue>Jetson AGX Xavier (module)</controllingFieldValue>
+            <controllingFieldValue>Jetson AGX Xavier Devkit</controllingFieldValue>
+            <controllingFieldValue>Jetson TX2 4GB (module)</controllingFieldValue>
+            <controllingFieldValue>Jetson TX2i (module)</controllingFieldValue>
+            <controllingFieldValue>vGPU vApps Subs 1yr - GRID</controllingFieldValue>
+            <controllingFieldValue>Jetson Nano (Module)</controllingFieldValue>
+            <controllingFieldValue>vGPU vApps Subs 3yr - GRID</controllingFieldValue>
+            <controllingFieldValue>vGPU Virtual Compute Server Subs 1yr - GRID</controllingFieldValue>
+            <controllingFieldValue>vGPU vPC Subs 1yr - GRID</controllingFieldValue>
+            <controllingFieldValue>AI Starter Kit</controllingFieldValue>
+            <controllingFieldValue>Titan V</controllingFieldValue>
+            <controllingFieldValue>vGPU vPC Subs 3yr - GRID</controllingFieldValue>
+            <controllingFieldValue>Titan XP</controllingFieldValue>
+            <valueName>N/A</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>vGPU vWS Perp - GRID</controllingFieldValue>
+            <valueName>vGPU vWS SUMS 4yr - GRID</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>vGPU vWS Perp - GRID</controllingFieldValue>
+            <valueName>vGPU vWS SUMS 5yr - GRID</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DGX A100 40GB HW</controllingFieldValue>
+            <valueName>DGX A100 40GB Supt 3yr</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DGX A100 40GB HW</controllingFieldValue>
+            <valueName>DGX A100 40GB Supt 5yr</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DGX A100 40GB HW</controllingFieldValue>
+            <valueName>DGX A100 40GB Supt 4yr</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DGX A100 40GB HW</controllingFieldValue>
+            <valueName>DGX A100 40GB CMR 4yr</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DGX A100 40GB HW</controllingFieldValue>
+            <valueName>DGX A100 40GB SDMR 4yr</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DGX A100 40GB HW</controllingFieldValue>
+            <valueName>DGX A100 40GB CMR 3yr</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DGX A100 40GB HW</controllingFieldValue>
+            <valueName>DGX A100 40GB CMR 5yr</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DGX A100 40GB HW</controllingFieldValue>
+            <valueName>DGX A100 40GB SDMR 5yr</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DGX A100 40GB HW</controllingFieldValue>
+            <valueName>DGX A100 40GB SDMR 3yr</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DGX Station A100-80G</controllingFieldValue>
+            <valueName>DGX Station A100 80G Support-3yrs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DGX Station A100-80G</controllingFieldValue>
+            <valueName>DGX Station A100 80G Support-4yrs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DGX Station A100-80G</controllingFieldValue>
+            <valueName>DGX Station A100 80G Support-5yrs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>vGPU vApps Perp - GRID</controllingFieldValue>
+            <valueName>vGPU vApps SUMS 4yr - GRID</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>vGPU vApps Perp - GRID</controllingFieldValue>
+            <valueName>vGPU vApps SUMS 5yr - GRID</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DGX Station A100-40G</controllingFieldValue>
+            <valueName>DGX Station A100 40G Support-3yrs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DGX Station A100-40G</controllingFieldValue>
+            <valueName>DGX Station A100 40G Support-4yrs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DGX Station A100-40G</controllingFieldValue>
+            <valueName>DGX Station A100 40G Support-5yrs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DGX A100 80G Full</controllingFieldValue>
+            <valueName>DGX A100 80G Full Support-3yrs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DGX A100 80G Full</controllingFieldValue>
+            <valueName>DGX A100 80G Full Support-4yrs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DGX A100 80G Full</controllingFieldValue>
+            <valueName>DGX A100 80G Full Support-5yrs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>vGPU vPC Perpetual - GRID</controllingFieldValue>
+            <valueName>vGPU vPC SUMS 4yr - GRID</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>vGPU vPC Perpetual - GRID</controllingFieldValue>
+            <valueName>vGPU vPC SUMS 5yr - GRID</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

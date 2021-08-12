@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Technology_Solutions_Offered__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Select the Technology Solutions that apply.</inlineHelpText>
+    <label>Technology Solutions Offered</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Client Software (Application / OS)</fullName>
+                <default>false</default>
+                <label>Client Software (Application / OS)</label>
+            </value>
+            <value>
+                <fullName>Components</fullName>
+                <default>false</default>
+                <label>Components</label>
+            </value>
+            <value>
+                <fullName>Datacenter Infrastructure</fullName>
+                <default>false</default>
+                <label>Datacenter Infrastructure</label>
+            </value>
+            <value>
+                <fullName>Desktop &amp; Application Virtualization</fullName>
+                <default>false</default>
+                <label>Desktop &amp; Application Virtualization</label>
+            </value>
+            <value>
+                <fullName>Enterprise Software</fullName>
+                <default>false</default>
+                <label>Enterprise Software</label>
+            </value>
+            <value>
+                <fullName>Managed Services</fullName>
+                <default>false</default>
+                <label>Managed Services</label>
+            </value>
+            <value>
+                <fullName>Mobile Solutions</fullName>
+                <default>false</default>
+                <label>Mobile Solutions</label>
+            </value>
+            <value>
+                <fullName>Networking</fullName>
+                <default>false</default>
+                <label>Networking</label>
+            </value>
+            <value>
+                <fullName>Peripherals</fullName>
+                <default>false</default>
+                <label>Peripherals</label>
+            </value>
+            <value>
+                <fullName>Retail / POS</fullName>
+                <default>false</default>
+                <label>Retail / POS</label>
+            </value>
+            <value>
+                <fullName>Security</fullName>
+                <default>false</default>
+                <label>Security</label>
+            </value>
+            <value>
+                <fullName>Server Virtualization</fullName>
+                <default>false</default>
+                <label>Server Virtualization</label>
+            </value>
+            <value>
+                <fullName>Storage</fullName>
+                <default>false</default>
+                <label>Storage</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

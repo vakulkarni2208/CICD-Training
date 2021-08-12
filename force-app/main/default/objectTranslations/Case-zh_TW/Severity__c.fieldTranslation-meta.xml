@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- 1 Important functions unusable/no workarounds
+2 Failures occur/workarounds exist/minor features not working
+3 Failures occur/system recovers w/o installed workaround/impact tolerable
+4 Cosmetic Defects
+ 5 Enhancement Requests --></help>
+    <label><!-- Severity --></label>
+    <name>Severity__c</name>
+    <picklistValues>
+        <masterLabel>S1: Catastrophic</masterLabel>
+        <translation><!-- S1: Catastrophic --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>S2: Severe</masterLabel>
+        <translation><!-- S2: Severe --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>S3: Moderate</masterLabel>
+        <translation><!-- S3: Moderate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>S4: Minor/Cosmetic Defects</masterLabel>
+        <translation><!-- S4: Minor/Cosmetic Defects --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>S5: Enhancement Request</masterLabel>
+        <translation><!-- S5: Enhancement Request --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

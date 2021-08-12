@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Anonymized__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Indicates if a field is anonymized or not. This is part of the solution to stay compliant with General Data Protection Regulation (GDPR) and NVIDIA Privacy Policy of not retaining user information of those who we have not engaged with beyond the last 5 years.</description>
+    <externalId>false</externalId>
+    <label>Anonymized</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Presentation_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Presentation Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>NVIDIA CONTACTS</fullName>
+                <default>false</default>
+                <label>NVIDIA CONTACTS</label>
+            </value>
+            <value>
+                <fullName>SALES TOOLS</fullName>
+                <default>false</default>
+                <label>SALES TOOLS</label>
+            </value>
+            <value>
+                <fullName>MARKETING ASSETS</fullName>
+                <default>false</default>
+                <label>MARKETING ASSETS</label>
+            </value>
+            <value>
+                <fullName>LOG A SUPPORT REQUEST</fullName>
+                <default>false</default>
+                <label>LOG A SUPPORT REQUEST</label>
+            </value>
+            <value>
+                <fullName>GETTING STARTED</fullName>
+                <default>false</default>
+                <label>GETTING STARTED</label>
+            </value>
+            <value>
+                <fullName>FEATURED CONTENT</fullName>
+                <default>false</default>
+                <label>FEATURED CONTENT</label>
+            </value>
+            <value>
+                <fullName>NPN RESOURCE-RMA</fullName>
+                <default>false</default>
+                <label>NPN RESOURCE-RMA</label>
+            </value>
+            <value>
+                <fullName>NPN RESOURCE-LOGASUPPORTREQUEST</fullName>
+                <default>false</default>
+                <label>NPN RESOURCE-LOGASUPPORTREQUEST</label>
+            </value>
+            <value>
+                <fullName>NPN RESOURCE-GSNH</fullName>
+                <default>false</default>
+                <label>NPN RESOURCE-GSNH</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

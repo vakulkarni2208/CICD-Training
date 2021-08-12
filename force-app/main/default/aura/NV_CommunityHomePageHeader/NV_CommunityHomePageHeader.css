@@ -1,0 +1,289 @@
+.THIS {
+}
+
+.THIS .slds-card {
+    /*box-shadow: 0px 0.5px 0.5px 0px;*/
+}
+
+.THIS div {
+    font-family: Arial;
+}
+
+.THIS H1 {
+    font-family: Arial;
+}
+
+.THIS .slds-scope span {
+  font-family: Arial;
+}
+
+.THIS .mainOuterDiv {
+    background-color: #333333;
+}
+
+.THIS .button {
+    text-decoration: none;
+    background-color:#76B900;
+    border-radius: 0px;
+    border-color:#76B900;
+    color:white;
+}
+
+.THIS .customButton:hover {
+    text-decoration: none;
+    background-color:#76B900;
+    border-radius: 0px;
+    border-color:#76B900;
+    color:white;
+}
+
+.THIS .customButton {
+    text-decoration: none;
+    background-color:#76B900;
+    border-radius: 0px;
+    border-color:#76B900;
+    color:white;
+    margin-left: 5px;
+    line-height: 0.5rem;
+    padding:0.5rem;
+}
+
+.THIS .button:hover {
+    text-decoration: none;
+    background-color:#76B900;
+    border-radius: 0px;
+    border-color:#76B900;
+    color:white;
+}
+
+.THIS .left {
+    float:left;
+}
+
+.THIS .right {
+    float:right;
+}
+
+.THIS .logoImage {
+    background-image: url(/resource/NPN_Community_HomePage_Footer_Image/NPN_Community_HomePage_Footer_Image/FooterImages/NVLogo_2D_H_small.jpeg);
+    height:25px;
+    width:145px;
+    background-size: cover;
+    background-position: center;
+    margin-top:8px;
+}
+.THIS .headerLargeText {
+    /*color:#76B900; font-size:30px;*/
+    color:black; font-size:30px;
+}
+
+@media (min-width:600px) {
+  .THIS .headerLargeText {
+    font-size: 30px;
+  }
+}
+
+@media (min-width:1000px) {
+  .THIS .headerLargeText {
+    /* Never get larger than this */
+    font-size: 35px;
+  }
+}
+
+.THIS .headerSmallText {
+    color:black; font-size:14px;
+}
+
+.THIS .headerRow {
+    height:50px;
+    background-color:white;
+}
+
+@media (min-width:1000px) {
+    .THIS .headerRow {
+        width: 80%;
+        margin-left:10%;
+        height:43px;
+        background-color:white;
+    }
+}
+
+
+@media (min-width:1000px) {
+    .THIS .headerImage {
+        width: 80%;
+        margin-left:10%;    
+    }
+}
+
+.THIS .headerImage {
+    background-image: url(/resource/NV_PartnerHomePageHeader);
+    /*background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(59%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.65))), url(/resource/NV_PartnerHomePageHeader) no-repeat;*/
+    background-size:cover;   
+}
+
+
+@media (min-width:1000px) {
+    .THIS .bodyDiv {   
+        width: 80%;
+        min-width: 80%;
+        margin-left:10%; 
+        background-color: #F1F1F1;
+        border-top:0px;
+    }
+}
+
+.THIS .competencyHeader {
+    color:#76B900; font-size:30px; text-align:center;
+}
+
+.THIS .NPNText {
+    color: White;
+    font-size: 30px;
+    margin-left:1%;
+    margin-right:1%;
+    margin-top:0.9%;
+}
+
+.THIS .headerLink {
+    color: White;
+    font-size: 16px;
+    margin-left:2%;
+    margin-right:1%;        
+}
+
+.THIS a.headerLinks {
+    color: White;
+}
+
+@media (min-width:1000px) {
+    .THIS .footer {    
+        width: 80%;    
+        margin-left:10%;
+    }
+}
+
+.THIS a:hover.headerLinks {
+	color:White;
+}
+
+.THIS .compliance {
+    margin-top:10px;
+    min-height:200px;
+    overflow:auto;
+    background-color:#F1F1F1;
+}
+.THIS .dashboard {
+    margin-top:30px;
+   /* max-height:200px;*/
+    min-height:200px;
+    overflow:auto;
+}
+
+.THIS a.dashboardLink {
+    color: white;
+    line-height:30px;
+    /*padding: 5%;*/
+}
+.THIS a.contactUsLink {
+    color: #76b900;
+    padding: 5%;
+}
+
+.THIS  a:hover.hover{
+    background-color: #008564;
+   }
+
+.THIS a.competencyLink {
+    color: gray;
+}
+.THIS .competencyDiv b {
+    z-index:1;
+}
+.THIS .imgCompetencyBG {
+    z-index:0;
+    height:200px;
+}
+
+.THIS .competencyNameText {
+    color:#76B900; font-size:20px;
+}
+.THIS .contactUs {
+    color:#76B900; font-size:20px; margin-top:30px;
+}
+/* Demo 2 */
+.THIS #headerRightCorner input[type=search] {
+	width: 15px;
+	padding-left: 10px;
+	color: transparent;
+	cursor: pointer;
+}
+
+.THIS #headerRightCorner input[type=search]:hover {
+	background-color: #fff;
+}
+
+.THIS #headerRightCorner input[type=search]:focus {
+	width: 130px;
+	padding-left: 32px;
+	color: #000;
+	background-color: #fff;
+	cursor: auto;
+}
+
+.THIS #headerRightCorner input:-moz-placeholder {
+	color: transparent;
+}
+
+.THIS #headerRightCorner input::-webkit-input-placeholder {
+	color: transparent;
+}
+
+.THIS input[type=search] {
+	-webkit-appearance: textfield;
+	-webkit-box-sizing: content-box;
+	font-family: inherit;
+	font-size: 100%;
+}
+
+.THIS input::-webkit-search-decoration,
+.THIS input::-webkit-search-cancel-button {
+	display: none; 
+}
+
+.THIS input[type=search] {
+	/*background: url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;*/
+	border: solid 0px #ccc;
+	padding: 0px 10px 6px 32px;
+	width: 105px;
+	
+	-webkit-border-radius: 10em;
+	-moz-border-radius: 10em;
+	border-radius: 10em;
+	
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	transition: all .5s;
+ 
+}
+
+.THIS input[type=search]:focus {
+	width: 130px;
+	background-color: #fff;
+	border-color: #FFFFFF;
+    -webkit-box-shadow: 0 0 0 rgba(109,207,246,.5);
+	-moz-box-shadow: 0 0 0 rgba(109,207,246,.5);
+	box-shadow: 0 0 0 rgba(109,207,246,.5);
+    
+    /*border-color: #66CC75;
+	
+    
+	-webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);
+	-moz-box-shadow: 0 0 5px rgba(109,207,246,.5);
+	box-shadow: 0 0 5px rgba(109,207,246,.5);
+    */
+}
+
+.THIS label[for="input-2"] {
+    display:none;
+}

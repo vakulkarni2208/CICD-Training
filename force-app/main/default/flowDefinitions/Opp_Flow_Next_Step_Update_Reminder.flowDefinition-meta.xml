@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <activeVersionNumber>1</activeVersionNumber>
+    <description>SDS-2354-Send Notification to Opp Owner when the Close Date is 185 Days out, Opportunity is Open and Enterprise, and Next Step Last Modified (Days) &gt; 14 days</description>
+    <masterLabel>Opp : Flow : Next Step Update Reminder</masterLabel>
+</FlowDefinition>

@@ -1,0 +1,291 @@
+<apex:page showHeader="false" sidebar="false" tabStyle="Opportunity" standardStylesheets="true">
+<head>
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+    {font-family:Calibri;
+    panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+    {font-family:Tahoma;
+    panose-1:2 11 6 4 3 5 4 4 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+    {margin-top:0in;
+    margin-right:0in;
+    margin-bottom:10.0pt;
+    margin-left:0in;
+    line-height:115%;
+    font-size:11.0pt;
+    font-family:"Calibri","sans-serif";}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+    {mso-style-link:"Balloon Text Char";
+    margin:0in;
+    margin-bottom:.0001pt;
+    font-size:8.0pt;
+    font-family:"Tahoma","sans-serif";}
+span.BalloonTextChar
+    {mso-style-name:"Balloon Text Char";
+    mso-style-link:"Balloon Text";
+    font-family:"Tahoma","sans-serif";}
+.MsoChpDefault
+    {font-family:"Calibri","sans-serif";}
+.MsoPapDefault
+    {margin-bottom:10.0pt;
+    line-height:115%;}
+@page WordSection1
+    {size:8.5in 11.0in;
+    margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+    {page:WordSection1;}
+-->
+</style>
+
+</head>
+<center>
+
+<body>
+
+<div class='WordSection1'>
+
+<p class='MsoNormal' align='center' style='text-align:center'><b><span
+style='font-size:18.0pt;line-height:115%;color:#73B900'>OPPORTUNITY INFORMATION</span></b></p>
+
+
+<table class='MsoTableGrid' border='1' cellspacing='0' cellpadding='0'
+ style='border-collapse:collapse;border:none'>
+ <tr>
+  <td width='151' valign='top' style='width:113.4pt;border:solid windowtext 1.0pt;
+  background:#9BBB59;padding:0in 5.4pt 0in 5.4pt'>
+  <p class='MsoNormal' style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><b>Field Name</b></p>
+  </td>
+  <td width='487' valign='top' style='width:365.4pt;border:solid windowtext 1.0pt;
+  border-left:none;background:#9BBB59;padding:0in 5.4pt 0in 5.4pt'>
+  <p class='MsoNormal' style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><b>Description</b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width='151' valign='top' style='width:113.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class='MsoNormal' style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>Opportunity Owner</p>
+  </td>
+  <td width='487' valign='top' style='width:365.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class='MsoNormal' style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>Auto-populates user name who creates the record</p>
+  </td>
+ </tr>
+ <tr>
+  <td width='151' valign='top' style='width:113.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class='MsoNormal' style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>Opportunity Name</p>
+  </td>
+  <td width='487' valign='top' style='width:365.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class='MsoNormal' style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>Project Name</p>
+  </td>
+ </tr>
+ <tr>
+  <td width='151' valign='top' style='width:113.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class='MsoNormal' style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>Account Name</p>
+  </td>
+  <td width='487' valign='top' style='width:365.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class='MsoNormal' style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>OEM or Tier 1 Customer Name.  Select by clicking on magnifying glass
+  to search.</p>
+  </td>
+ </tr>
+ <tr>
+  <td width='151' valign='top' style='width:113.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class='MsoNormal' style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>Opportunity Type</p>
+  </td>
+  <td width='487' valign='top' style='width:365.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class='MsoNormal' style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>Select from the pick list menu</p>
+  </td>
+ </tr>
+ <tr>
+  <td width='151' valign='top' style='width:113.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class='MsoNormal' style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>FAE/SA Support Name</p>
+  </td>
+  <td width='487' valign='top' style='width:365.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class='MsoNormal' style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>FAE and/or SA supporting this project (select from list)</p>
+  </td>
+ </tr>
+ <tr>
+  <td width='151' valign='top' style='width:113.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class='MsoNormal' style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>Additional Info</p>
+  </td>
+  <td width='487' valign='top' style='width:365.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class='MsoNormal' style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>Provide any additional detail regarding the Opportunity Type or FAE/SA
+  Support</p>
+  </td>
+ </tr>
+ <tr>
+  <td width='151' valign='top' style='width:113.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class='MsoNormal' style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>At Risk Level</p>
+  </td>
+  <td width='487' valign='top' style='width:365.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class='MsoNormal' style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>Risk of losing deal (select from pick list); “Medium” or “High” will
+  trigger email to management</p>
+  </td>
+ </tr>
+ <tr>
+  <td width='151' valign='top' style='width:113.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class='MsoNormal' style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>At Risk Indicator</p>
+  </td>
+  <td width='487' valign='top' style='width:365.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class='MsoNormal' style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>Not an entry field.  Once record is saved, a street light image (red,
+  yellow, green) will appear based on the “At Risk Level” selected (<apex:image url="{!$Resource.AtRiskIndicator}" width="44" height="19"/>)</p>
+  </td>
+ </tr>
+ <tr>
+  <td width='151' valign='top' style='width:113.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class='MsoNormal' style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>SOP</p>
+  </td>
+  <td width='487' valign='top' style='width:365.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class='MsoNormal' style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>Start of Production date</p>
+  </td>
+ </tr>
+ <tr>
+  <td width='151' valign='top' style='width:113.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class='MsoNormal' style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>Award Date</p>
+  </td>
+  <td width='487' valign='top' style='width:365.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class='MsoNormal' style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>Estimated date design is to be awarded</p>
+  </td>
+ </tr>
+ <tr>
+  <td width='151' valign='top' style='width:113.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class='MsoNormal' style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>Stage</p>
+  </td>
+  <td width='487' valign='top' style='width:365.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class='MsoNormal' style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>Using the pick list menu, select the current selling stage.  If Closed Lost or Closed Other, additional fields will appear to provide further detail.</p>
+  </td>
+ </tr>
+ <tr>
+  <td width='151' valign='top' style='width:113.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class='MsoNormal' style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>Probability of Winning</p>
+  </td>
+  <td width='487' valign='top' style='width:365.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class='MsoNormal' style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>Using the pick list menu, select the probability of winning this
+  design.<i><font color="red">  Sales Management approval is required for all opportunities with Probability > 10% (See Approvals section).</font></i></p>
+  </td>
+ </tr>
+ <tr>
+  <td width='151' valign='top' style='width:113.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class='MsoNormal' style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>Reason for Closed Lost/Other</p>
+  </td>
+  <td width='487' valign='top' style='width:365.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class='MsoNormal' style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>This field will only appear if Closed Lost or Closed Other selected in the “Stage” field.  Using the pick list menu, select the appropriate reason the design was Lost.</p>
+  </td>
+ </tr>
+ <tr>
+  <td width='151' valign='top' style='width:113.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class='MsoNormal' style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>Closed Lost/Other Comments</p>
+  </td>
+  <td width='487' valign='top' style='width:365.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class='MsoNormal' style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>This field will only appear if Closed Lost or Closed Other selected in the “Stage” field.  Enter additional detail for loss.</p>
+  </td>
+ </tr>
+ <tr>
+  <td width='151' valign='top' style='width:113.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class='MsoNormal' style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>Amount</p>
+  </td>
+  <td width='487' valign='top' style='width:365.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class='MsoNormal' style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>Not an entry field.  Total revenue for design will be auto-populated once the record is saved (based on quarterly detail entered in Product Revenue section).</p>
+  </td>
+ </tr>
+ <tr>
+  <td width='151' valign='top' style='width:113.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class='MsoNormal' style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>Lifetime Volume</p>
+  </td>
+  <td width='487' valign='top' style='width:365.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class='MsoNormal' style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>Not an entry field.  Total volume for design will be auto-populated once the record is saved (based on quarterly detail entered in Product Revenue section).</p>
+  </td>
+ </tr>
+</table>
+
+<p class='MsoNormal'>&nbsp;</p>
+
+</div>
+
+</body>
+</center>
+
+</apex:page>

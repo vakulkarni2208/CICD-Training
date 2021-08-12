@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomPermission xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>used this custom setting for Automotive team permission set</description>
+    <label>CRM : Automotive Team Validation</label>
+</CustomPermission>

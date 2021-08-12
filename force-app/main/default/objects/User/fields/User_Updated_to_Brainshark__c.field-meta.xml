@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>User_Updated_to_Brainshark__c</fullName>
+    <description>This field is being used in the report for the User Sync between Salesforce to Brianshark.</description>
+    <externalId>false</externalId>
+    <formula>/* User is updated &apos;Today&apos;
+IF((ActivatedDate__c = TODAY() || DeactivatedDate__c = TODAY()), TRUE, FALSE)
+*/
+ 
+/* User is updated &apos;Yesterday&apos;
+IF(((ActivatedDate__c = TODAY() - 1) || (DeactivatedDate__c = TODAY() - 1)), TRUE, FALSE)
+*/
+
+/* User is updated Today or Yesterday 
+IF(((ActivatedDate__c = TODAY() || (ActivatedDate__c = TODAY() - 1)) || (DeactivatedDate__c = TODAY() || (DeactivatedDate__c = TODAY() - 1))), TRUE, FALSE)
+*/
+
+/* Internal User is Activated/Deactivated AND External User is Deactivated Either Today or Yesterday 
+IF((ISPICKVAL(UserType, &apos;Standard&apos;) 
+    &amp;&amp; (ActivatedDate__c = TODAY() || (ActivatedDate__c = TODAY() - 1) || DeactivatedDate__c = TODAY() || (DeactivatedDate__c = TODAY() - 1)))
+    || 
+   (NOT(ISPICKVAL(UserType, &apos;Standard&apos;)) 
+    &amp;&amp; (DeactivatedDate__c = TODAY() || (DeactivatedDate__c = TODAY() - 1)))
+, TRUE, FALSE)
+*/
+
+/* Internal User is Activated/Deactivated AND External User is Deactivated Either Today or Yesterday */
+/*
+IF((ISPICKVAL(UserType, &apos;Standard&apos;) 
+    &amp;&amp; ((ActivatedDate__c = TODAY() || (ActivatedDate__c = TODAY() - 1) || DeactivatedDate__c = TODAY() || (DeactivatedDate__c = TODAY() - 1))
+         || (DATEVALUE(Brainshark_HR_Activation_Date__c) = TODAY() || (DATEVALUE(Brainshark_HR_Activation_Date__c) = TODAY() - 1) 
+            || DATEVALUE(Brainshark_HR_Deactivation_Date__c) = TODAY() || (DATEVALUE(Brainshark_HR_Deactivation_Date__c) = TODAY() - 1))))          
+    || 
+   (NOT(ISPICKVAL(UserType, &apos;Standard&apos;)) 
+    &amp;&amp; (DeactivatedDate__c = TODAY() || (DeactivatedDate__c = TODAY() - 1)))
+, TRUE, FALSE)
+*/
+
+/*SDS-1992 */
+IF((ISPICKVAL(UserType, &apos;Standard&apos;)
+&amp;&amp; ((ActivatedDate__c = TODAY() || (ActivatedDate__c = TODAY() - 1) || (ActivatedDate__c = TODAY() - 2) || DeactivatedDate__c = TODAY() || (DeactivatedDate__c = TODAY() - 1) || (DeactivatedDate__c = TODAY() - 2))
+|| (DATEVALUE(Brainshark_HR_Activation_Date__c) = TODAY() || (DATEVALUE(Brainshark_HR_Activation_Date__c) = TODAY() - 1) || (DATEVALUE(Brainshark_HR_Activation_Date__c) = TODAY() - 2)
+|| DATEVALUE(Brainshark_HR_Deactivation_Date__c) = TODAY() || (DATEVALUE(Brainshark_HR_Deactivation_Date__c) = TODAY() - 1) || (DATEVALUE(Brainshark_HR_Deactivation_Date__c) = TODAY() - 2))))
+||
+(NOT(ISPICKVAL(UserType, &apos;Standard&apos;))
+&amp;&amp; (DeactivatedDate__c = TODAY() || (DeactivatedDate__c = TODAY() - 1) || (DeactivatedDate__c = TODAY() - 2)))
+, TRUE, FALSE)
+
+/* Temporarily Allow all Internal and External Users to Sync to Brianshark */
+/*
+IF(((ISPICKVAL(UserType, &apos;Standard&apos;) || NOT(ISPICKVAL(UserType, &apos;Standard&apos;)))
+&amp;&amp; ((ActivatedDate__c = TODAY() || (ActivatedDate__c = TODAY() - 1) || (ActivatedDate__c = TODAY() - 2) || DeactivatedDate__c = TODAY() || (DeactivatedDate__c = TODAY() - 1) || (DeactivatedDate__c = TODAY() - 2))
+|| (DATEVALUE(Brainshark_HR_Activation_Date__c) = TODAY() || (DATEVALUE(Brainshark_HR_Activation_Date__c) = TODAY() - 1) || (DATEVALUE(Brainshark_HR_Activation_Date__c) = TODAY() - 2)
+|| DATEVALUE(Brainshark_HR_Deactivation_Date__c) = TODAY() || (DATEVALUE(Brainshark_HR_Deactivation_Date__c) = TODAY() - 1) || (DATEVALUE(Brainshark_HR_Deactivation_Date__c) = TODAY() - 2))))
+||
+(NOT(ISPICKVAL(UserType, &apos;Standard&apos;))
+&amp;&amp; (DeactivatedDate__c = TODAY() || (DeactivatedDate__c = TODAY() - 1) || (DeactivatedDate__c = TODAY() - 2)))
+, TRUE, FALSE)
+*/</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>User Updated to Brainshark</label>
+    <type>Checkbox</type>
+</CustomField>

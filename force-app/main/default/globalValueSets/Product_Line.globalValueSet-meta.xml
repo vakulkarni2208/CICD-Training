@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Automotive</fullName>
+        <default>false</default>
+        <label>Automotive</label>
+    </customValue>
+    <customValue>
+        <fullName>Automotive Datacenter</fullName>
+        <default>false</default>
+        <label>Automotive Datacenter</label>
+    </customValue>
+    <customValue>
+        <fullName>DGX</fullName>
+        <default>false</default>
+        <label>DGX</label>
+    </customValue>
+    <customValue>
+        <fullName>DRIVE Constellation</fullName>
+        <default>false</default>
+        <label>DRIVE Constellation</label>
+    </customValue>
+    <customValue>
+        <fullName>Educational Services</fullName>
+        <default>false</default>
+        <label>Educational Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Embedded</fullName>
+        <default>false</default>
+        <label>Embedded</label>
+    </customValue>
+    <customValue>
+        <fullName>GeForce</fullName>
+        <default>false</default>
+        <label>GeForce</label>
+    </customValue>
+    <customValue>
+        <fullName>Grid</fullName>
+        <default>false</default>
+        <label>Grid</label>
+    </customValue>
+    <customValue>
+        <fullName>HPC SDK</fullName>
+        <default>false</default>
+        <label>HPC SDK</label>
+    </customValue>
+    <customValue>
+        <fullName>NGC-Ready Systems</fullName>
+        <default>false</default>
+        <label>NGC-Ready Systems</label>
+    </customValue>
+    <customValue>
+        <fullName>Parabricks</fullName>
+        <default>false</default>
+        <label>Parabricks</label>
+    </customValue>
+    <customValue>
+        <fullName>Premium Support Services</fullName>
+        <default>false</default>
+        <label>Premium Support Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Quadro</fullName>
+        <default>false</default>
+        <label>Quadro</label>
+    </customValue>
+    <customValue>
+        <fullName>RTX Blade Server</fullName>
+        <default>false</default>
+        <label>RTX Blade Server</label>
+    </customValue>
+    <customValue>
+        <fullName>Tesla</fullName>
+        <default>false</default>
+        <label>Tesla</label>
+    </customValue>
+    <customValue>
+        <fullName>vGaming</fullName>
+        <default>false</default>
+        <label>vGaming</label>
+    </customValue>
+    <description>This picklist is created to host various Product Lines which can be used at Account, Entitlement, Product and Case level.</description>
+    <masterLabel>Product Line</masterLabel>
+    <sorted>true</sorted>
+</GlobalValueSet>

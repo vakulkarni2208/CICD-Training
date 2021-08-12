@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>New_Opportunity_Close_Date</fullName>
+    <active>true</active>
+    <description>Require user to enter future close date on new (open) opportunities (Tegra and Notebook opportunities)</description>
+    <errorConditionFormula>AND(
+OR(
+ISPICKVAL( StageName, &quot;Prospecting&quot;),
+ISPICKVAL(StageName, &quot;Qualification&quot;),
+ISPICKVAL(StageName, &quot;Needs Analysis&quot;),
+ISPICKVAL(StageName, &quot;Proposal/Price Quote&quot;),
+ISPICKVAL(StageName, &quot;Negotiation/Review&quot;)
+), 
+OR(
+$RecordType.Name = &quot;Tegra Opportunity&quot;,
+$RecordType.Name = &quot;Notebook Opportunity&quot;
+),
+TODAY() &gt;  CloseDate 
+)</errorConditionFormula>
+    <errorDisplayField>CloseDate</errorDisplayField>
+    <errorMessage>Please adjust the Close Date.  You cannot save a NEW opportunity with a past due Close Date.</errorMessage>
+</ValidationRule>

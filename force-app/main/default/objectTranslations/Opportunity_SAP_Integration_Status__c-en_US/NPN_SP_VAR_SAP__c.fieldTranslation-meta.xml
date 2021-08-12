@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- NPN (Reseller/VAR) - SAP Customer Number --></help>
+    <label><!-- NPN-SP/VAR SAP# --></label>
+    <name>NPN_SP_VAR_SAP__c</name>
+</CustomFieldTranslation>

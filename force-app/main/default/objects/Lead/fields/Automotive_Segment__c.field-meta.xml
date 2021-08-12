@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Automotive_Segment__c</fullName>
+    <externalId>false</externalId>
+    <label>Automotive Segment</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Aftermarket Solutions</fullName>
+                <default>false</default>
+                <label>Aftermarket Solutions</label>
+            </value>
+            <value>
+                <fullName>Autonomous Driving</fullName>
+                <default>false</default>
+                <label>Autonomous Driving</label>
+            </value>
+            <value>
+                <fullName>Backend Services</fullName>
+                <default>false</default>
+                <label>Backend Services</label>
+            </value>
+            <value>
+                <fullName>In-vehicle Services</fullName>
+                <default>false</default>
+                <label>In-vehicle Services</label>
+            </value>
+            <value>
+                <fullName>Perception Infrastructure</fullName>
+                <default>false</default>
+                <label>Perception Infrastructure</label>
+            </value>
+            <value>
+                <fullName>Simulation</fullName>
+                <default>false</default>
+                <label>Simulation</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Cockpit</fullName>
+                <default>false</default>
+                <label>Cockpit</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

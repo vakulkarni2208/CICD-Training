@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>North America Startups Queue</name>
+    <queueMembers>
+        <users>
+            <user>bmoghadam@nvidia.com</user>
+            <user>carlosg@nvidia.com</user>
+            <user>emukbil@nvidia.com</user>
+            <user>gaurava@nvidia.com</user>
+            <user>gschuster@nvidia.com</user>
+            <user>justynaz@nvidia.com.crp</user>
+            <user>khuynh@nvidia.com</user>
+            <user>rdhall@nvidia.com</user>
+            <user>thuynh@nvidia.com</user>
+            <user>testes@nvidia.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Lead</sobjectType>
+    </queueSobject>
+</Queue>

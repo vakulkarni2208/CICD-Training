@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>Contact__c</columns>
+    <columns>Training_Service_Catalog__c</columns>
+    <columns>Certification_Date__c</columns>
+    <columns>Certification_Status__c</columns>
+    <columns>Certified_By__c</columns>
+    <columns>isCertification_Active__c</columns>
+    <columns>isMasterInstructor__c</columns>
+    <columns>Language__c</columns>
+    <columns>Application_Submission_Date__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Certification_Date__c</field>
+        <operation>notEqual</operation>
+        <value>12/31/2099</value>
+    </filters>
+    <label>All</label>
+    <sharedTo>
+        <roleAndSubordinatesInternal>DLI_Sales</roleAndSubordinatesInternal>
+    </sharedTo>
+</ListView>

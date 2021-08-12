@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- FOR REFERENCE ONLY. To update or enter products onto your opportunity go to the top right of the opportunity screen. This shows the original products entered by the partner when registering the opportunity. --></help>
+    <label><!-- Primary Product Quantity --></label>
+    <name>DR_SKU_Quantity__c</name>
+</CustomFieldTranslation>

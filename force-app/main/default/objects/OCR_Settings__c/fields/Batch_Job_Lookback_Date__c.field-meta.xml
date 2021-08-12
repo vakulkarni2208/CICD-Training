@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Batch_Job_Lookback_Date__c</fullName>
+    <description>Used in Batch Job CRM_OCR_Sync_Batch.cls to process OCR records whose Last Modified Date &gt;= Batch Job : Lookback Date e.g., all OCR records that got modified since 1/1/2010 00.00.00</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Used in Batch Job CRM_OCR_Sync_Batch.cls to process OCR records whose Last Modified Date &gt;= Batch Job : Lookback Date e.g., all OCR records that got modified since 1/1/2010 00.00.00</inlineHelpText>
+    <label>Batch Job : Lookback Date</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>DateTime</type>
+</CustomField>

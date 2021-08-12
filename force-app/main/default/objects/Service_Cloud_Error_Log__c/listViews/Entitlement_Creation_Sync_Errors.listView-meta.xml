@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Entitlement_Creation_Sync_Errors</fullName>
+    <columns>NAME</columns>
+    <columns>Error_Type__c</columns>
+    <columns>Error_Description__c</columns>
+    <columns>CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Functionality_Name__c</field>
+        <operation>contains</operation>
+        <value>ESP_CreateEntFromSubscr_Sch</value>
+    </filters>
+    <label>Entitlement Creation Sync Errors</label>
+    <language>en_US</language>
+    <sharedTo>
+        <allInternalUsers/>
+    </sharedTo>
+</ListView>

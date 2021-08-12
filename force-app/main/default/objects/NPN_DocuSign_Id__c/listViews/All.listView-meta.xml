@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>NPN_Docusign_Comptency__c</columns>
+    <columns>NPN_DocusiNPN_Docusign_Progn_ProgramType__c</columns>
+    <columns>NPN_Docusign_Region__c</columns>
+    <columns>NPN_Docusign_SubProgramType__c</columns>
+    <columns>Docusign_Template_ID__c</columns>
+    <columns>Contracts_Packet__c</columns>
+    <columns>CSP_Yes_No__c</columns>
+    <columns>TemplateName__c</columns>
+    <columns>Order__c</columns>
+    <columns>CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>NPN_DocusiNPN_Docusign_Progn_ProgramType__c</field>
+        <operation>equals</operation>
+        <value>Cloud Service Provider</value>
+    </filters>
+    <label>All</label>
+    <language>en_US</language>
+</ListView>

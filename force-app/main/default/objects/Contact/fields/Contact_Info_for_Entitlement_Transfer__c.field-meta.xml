@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contact_Info_for_Entitlement_Transfer__c</fullName>
+    <externalId>false</externalId>
+    <formula>FirstName &amp; &quot; &quot; &amp; LastName &amp; &quot;&lt;&quot; &amp; Email  &amp; &quot;&gt;&quot;</formula>
+    <label>Contact Info for Entitlement Transfer</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

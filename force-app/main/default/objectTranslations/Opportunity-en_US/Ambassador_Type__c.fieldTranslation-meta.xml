@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Ambassador Type --></label>
+    <name>Ambassador_Type__c</name>
+    <picklistValues>
+        <masterLabel>Industry Ambassador</masterLabel>
+        <translation><!-- Industry Ambassador --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SA Ambassador</masterLabel>
+        <translation><!-- SA Ambassador --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>University Ambassador</masterLabel>
+        <translation><!-- University Ambassador --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

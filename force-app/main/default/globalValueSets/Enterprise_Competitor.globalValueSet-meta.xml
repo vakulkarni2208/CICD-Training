@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Intel</fullName>
+        <default>false</default>
+        <label>Intel</label>
+    </customValue>
+    <customValue>
+        <fullName>AMD</fullName>
+        <default>false</default>
+        <label>AMD</label>
+    </customValue>
+    <customValue>
+        <fullName>Google TPU</fullName>
+        <default>false</default>
+        <label>Google TPU</label>
+    </customValue>
+    <customValue>
+        <fullName>Start-Up</fullName>
+        <default>false</default>
+        <label>Start-Up</label>
+    </customValue>
+    <customValue>
+        <fullName>Field Programmable Gate Array (FPGA)</fullName>
+        <default>false</default>
+        <label>Field Programmable Gate Array (FPGA)</label>
+    </customValue>
+    <customValue>
+        <fullName>GraphCore</fullName>
+        <default>false</default>
+        <label>GraphCore</label>
+    </customValue>
+    <customValue>
+        <fullName>None</fullName>
+        <default>false</default>
+        <label>None</label>
+    </customValue>
+    <customValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <description>SDS-1585 - Sales: Implement a Enterprise Competitor field on Opportunity required at 40%</description>
+    <masterLabel>Enterprise Competitor</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

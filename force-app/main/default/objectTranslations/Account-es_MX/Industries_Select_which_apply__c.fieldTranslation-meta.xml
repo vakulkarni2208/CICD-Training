@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Select all industries that apply --></help>
+    <label><!-- Industries --></label>
+    <name>Industries_Select_which_apply__c</name>
+    <picklistValues>
+        <masterLabel>Aerospace</masterLabel>
+        <translation><!-- Aerospace --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Architecture, Eng and Construction</masterLabel>
+        <translation><!-- Architecture, Eng and Construction --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Automotive</masterLabel>
+        <translation><!-- Automotive --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Communications</masterLabel>
+        <translation><!-- Communications --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Defense/Government</masterLabel>
+        <translation><!-- Defense/Government --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Drones</masterLabel>
+        <translation><!-- Drones --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Financial Services Industry (FSI)</masterLabel>
+        <translation><!-- Financial Services Industry (FSI) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GIS (Geographic Info Systems)</masterLabel>
+        <translation><!-- GIS (Geographic Info Systems) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gaming</masterLabel>
+        <translation><!-- Gaming --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Higher Ed/Research</masterLabel>
+        <translation><!-- Higher Ed/Research --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IT Services</masterLabel>
+        <translation><!-- IT Services --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IVA (Security &amp; Safety)</masterLabel>
+        <translation><!-- IVA (Security &amp; Safety) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Manufacturing</masterLabel>
+        <translation><!-- Manufacturing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Media/Entertainment</masterLabel>
+        <translation><!-- Media/Entertainment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Medical Imaging/Life Sci Instruments</masterLabel>
+        <translation><!-- Medical Imaging/Life Sci Instruments --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Oil &amp; Gas/Energy</masterLabel>
+        <translation><!-- Oil &amp; Gas/Energy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Retail/Etail</masterLabel>
+        <translation><!-- Retail/Etail --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Supercomputing</masterLabel>
+        <translation><!-- Supercomputing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Telecommunications</masterLabel>
+        <translation><!-- Telecommunications --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

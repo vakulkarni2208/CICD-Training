@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Html__c</fullName>
+    <description>Data entered in this field will be added verbatim to the PRM homepage training section.  No html escaping is done.  Use this option with caution, as style changes or invalid HTML may affect other page elements.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Data entered in this field will be added verbatim to the PRM homepage training section.  No html escaping is done.  Use this option with caution, as style changes or invalid HTML may affect other page elements.</inlineHelpText>
+    <label>Html</label>
+    <length>32000</length>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

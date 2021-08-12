@@ -1,0 +1,245 @@
+<apex:page controller="GridPortalSearchPage" sidebar="false">
+<apex:pageMessages />
+   <script>
+   
+   function onenter(cont,evt) {              
+     if (evt && evt.keyCode == 13){         
+        var ele=document.getElementById('{!$Component.formId.btnId}');                        
+        ele.click();               
+        return false;
+     }
+     else{
+        return true;
+     }
+   }
+   function openNewVfpage(){
+       var v = '/apex/GRID_portalSearch?searchText='+document.getElementById('{!$Component.formId.SearchKeyWord}').value;
+       alert(v);
+       window.open('/apex/GRID_portalSearch?searchText='+document.getElementById('{!$Component.formId.SearchKeyWord}').value,'_parent');
+       //window.parent.location.href = v;              
+       return true;
+   }
+   
+   </script>
+   <apex:form id="formId">
+       <apex:actionFunction action="{!showResults}" name="showResults" reRender="formId"/>
+       <table width="100%">
+       <tr>
+           <!--<td style="font-size:18px;" align="center" valign="bottom"><b>{!instanceMessage}</b></td>-->         
+           <!--
+           <td align="right"><a href="" onclick="window.open('http://www.nvidia.com/object/newsletter.html', null, 'width=600,height=500,scrollbars=yes,resizable=yes');return false;">
+                          <apex:image value="{!$Resource.SubscribeImage}"/>
+                      </a>
+                      <input type="text" placeholder="Search:" id="inputFieldId" onClick="this.placeholder = ''" value="{!searchKeyword}" onblur="this.placeholder = 'Search:'"/>
+                      <apex:inputText value="{!searchKeyword}" onkeypress="return onenter(event);"/>
+                      <apex:commandLink value="." action="{!ShowSearchResult}" id="btnId">                       
+                      </apex:commandLink>                  
+                       
+           </td>
+           -->
+            <td colspan="2">
+            <apex:inputText value="{!searchKeyword}"  id="SearchKeyWord" onkeypress="return onenter(this,event);" style="height:15px;vertical-align:text-bottom"/>
+                <apex:commandLink value="." action="{!ShowSearchResult}" id="btnId" style="color:white;">
+                    <apex:image value="{!$Resource.SearchIcon}" style="cursor:pointer;vertical-align:text-bottom"/>
+                </apex:commandLink>
+                <!--<apex:commandLink value="." onclick="return openNewVfpage();" id="btnId"/>-->
+                <!--<apex:commandLink value="Click me" action="{!ShowSearchResult}"/>-->
+                
+            </td>
+       </tr>    
+       <tr>
+       <td colspan="2">
+       <!-- Input text field a make a fresh keyword to search -->       
+       <!--<apex:inputText value="{!searchKeyword}"/> &nbsp; <apex:commandLink value="Search" action="{!showResults}"/>-->     
+       <apex:pageBlock rendered="{!isShow}">          
+        
+           <apex:pageBlockSection title="Accounts" columns="1" rendered="{!if(accounts.size>0 && $ObjectType.Account.accessible,true,false)}">
+               <apex:pageBlockTable value="{!accounts}" var="x">
+                   <apex:column headerValue="Name">
+                       <apex:outputLink value="/{!x.Id}" target="_blank">{!x.Name}</apex:outputLink>
+                   </apex:column>
+                   <apex:column headerValue="Phone">{!x.Phone}</apex:column>
+                   <apex:column headerValue="AccountNumber">{!x.AccountNumber}</apex:column>  
+                   <apex:column headerValue="Account Owner Alias">{!x.Owner.Alias}</apex:column>                       
+               </apex:pageBlockTable>
+           </apex:pageBlockSection>
+           
+           <!--
+           <apex:pageBlockSection title="Contacts" columns="1" rendered="{!if(contacts.size>0 && $ObjectType.Contact.accessible,true,false)}">
+               <apex:pageBlockTable value="{!contacts}" var="x">
+                   <apex:column headerValue="Name">
+                       <apex:outputLink value="/{!x.Id}" target="_blank">{!x.Name}</apex:outputLink>
+                   </apex:column>
+                   <apex:column headerValue="Account Name">
+                       <apex:outputLink value="/{!x.AccountId}" target="_blank">{!x.Account.Name}</apex:outputLink>
+                   </apex:column>
+                   <apex:column headerValue="NV Partner Portal User">{!x.NV_Partner_Portal_User__c}</apex:column>
+                   <apex:column headerValue="Manages Leads">{!x.Contact_receives_and_manages_leads__c}</apex:column> 
+                   <apex:column headerValue="Partner Primary Contact">{!x.Primary_Contact__c}</apex:column> 
+                   <apex:column headerValue="MDF Primary">{!x.MDF_Primary__c}</apex:column> 
+                   <apex:column headerValue="Phone">{!x.Phone}</apex:column> 
+                   <apex:column headerValue="Email">{!x.Email}</apex:column> 
+                    
+               </apex:pageBlockTable>
+           </apex:pageBlockSection>
+           -->
+           <apex:pageBlockSection title="Opportunities" columns="1" rendered="{!if(opportunities.size>0 && $ObjectType.Opportunity.accessible,true,false)}">
+               <apex:pageBlockTable value="{!opportunities}" var="x">
+                   <apex:column headerValue="Name">
+                       <apex:outputLink value="/{!x.Id}" target="_blank">{!x.Name}</apex:outputLink>                       
+                   </apex:column>
+                   
+                   <apex:column headerValue="Account Name">
+                       <apex:outputLink value="/{!x.AccountId}" target="_blank">{!x.Account.Name}</apex:outputLink>                       
+                   </apex:column>
+                   
+                   <apex:column headerValue="Stage">{!x.StageName}</apex:column> 
+                   <apex:column headerValue="Close Date">{!x.CloseDate}</apex:column> 
+                   <apex:column headerValue="Opportunity Owner Alias">{!x.Owner.Alias}</apex:column> 
+               </apex:pageBlockTable>
+           </apex:pageBlockSection>
+           
+           <apex:pageBlockSection title="Leads" columns="1" rendered="{!if(leads.size>0 && $ObjectType.Lead.accessible,true,false)}">
+               <apex:pageBlockTable value="{!leads}" var="x">
+                   <apex:column headerValue="Name">
+                       <apex:outputLink value="/{!x.Id}" target="_blank">{!x.Name}</apex:outputLink>
+                   </apex:column>
+                   <apex:column headerValue="Title">{!x.Title}</apex:column>
+                   <apex:column headerValue="Lead Source">{!x.LeadSource}</apex:column>  
+                   <apex:column headerValue="Phone">{!x.Phone}</apex:column>
+                   <apex:column headerValue="Company">{!x.Company}</apex:column>
+                   <apex:column headerValue="Email">{!x.Email}</apex:column>    
+                   <apex:column headerValue="Lead Status">{!x.Status}</apex:column>
+                   <apex:column headerValue="Owner Alias">{!x.Owner.Alias}</apex:column>    
+               </apex:pageBlockTable>
+           </apex:pageBlockSection>
+          
+           
+           <apex:pageBlockSection title="Cases" columns="1" rendered="{!if(cases.size>0 && $ObjectType.case.accessible,true,false)}">
+               <apex:pageBlockTable value="{!cases}" var="x">
+                   <apex:column headerValue="Case Number">
+                       <apex:outputLink value="/{!x.Id}" target="_blank">{!x.CaseNumber}</apex:outputLink>
+                   </apex:column>
+                   <apex:column headerValue="Contact Name">
+                       <apex:outputLink value="/{!x.ContactId}" target="_blank">{!x.Contact.Name}</apex:outputLink>
+                   </apex:column>
+                   <apex:column headerValue="Subject">{!x.subject}</apex:column>
+                   <apex:column headerValue="Status">{!x.Status}</apex:column> 
+                   <apex:column headerValue="Priority">{!x.Priority}</apex:column>                                        
+               </apex:pageBlockTable>
+           </apex:pageBlockSection>
+           
+           <apex:pageBlockSection title="Contracts" columns="1" rendered="{!if(Contracts.size>0 && $ObjectType.Contract.accessible,true,false)}">
+               <apex:pageBlockTable value="{!Contracts}" var="x">
+                   <apex:column headerValue="Contract Number">
+                       <apex:outputLink value="/{!x.Id}" target="_blank">{!x.ContractNumber}</apex:outputLink>
+                   </apex:column>
+                   <apex:column headerValue="Account Name">
+                       <apex:outputLink value="/{!x.AccountId}" target="_blank">{!x.Account.Name}</apex:outputLink>
+                   </apex:column>
+                   <apex:column headerValue="Start Date">{!x.StartDate}</apex:column>
+                   <apex:column headerValue="End Date">{!x.EndDate}</apex:column> 
+                   <apex:column headerValue="Status">{!x.Status}</apex:column>                                        
+               </apex:pageBlockTable>
+           </apex:pageBlockSection>
+           
+            <apex:pageBlockSection title="Documents" columns="1" rendered="{!if(documents.size>0 && $ObjectType.Document.accessible,true,false)}">
+               <apex:pageBlockTable value="{!documents}" var="x">
+                   <apex:column headerValue="Name">
+                       <apex:outputLink value="/{!x.Id}" target="_blank">{!x.Name}</apex:outputLink>
+                   </apex:column>                   
+                   <apex:column headerValue="Description">{!x.Description}</apex:column>
+                   <apex:column headerValue="Type">{!x.Type}</apex:column>                                                   
+               </apex:pageBlockTable>
+           </apex:pageBlockSection>
+           
+           <apex:pageBlockSection title="Products" columns="1" rendered="{!if(Products.size>0 && $ObjectType.Product2.accessible,true,false)}">
+               <apex:pageBlockTable value="{!Products}" var="x">
+                   <apex:column headerValue="Name">
+                       <apex:outputLink value="/{!x.Id}" target="_blank">{!x.Name}</apex:outputLink>
+                   </apex:column>                   
+                   <apex:column headerValue="Description">{!x.Description}</apex:column>
+                   <apex:column headerValue="Family">{!x.Family}</apex:column>
+                   <apex:column headerValue="isActive">{!x.isActive}</apex:column>                                                    
+               </apex:pageBlockTable>
+           </apex:pageBlockSection>
+           
+           <apex:pageBlockSection title="Campaigns" columns="1" rendered="{!if(Campaigns.size>0 && $ObjectType.Campaign.accessible,true,false)}">
+               <apex:pageBlockTable value="{!Campaigns}" var="x">
+                   <apex:column headerValue="Name">
+                       <apex:outputLink value="/{!x.Id}" target="_blank">{!x.Name}</apex:outputLink>
+                   </apex:column>                   
+                   <apex:column headerValue="Type">{!x.Type}</apex:column>
+                   <apex:column headerValue="Parent Campaign">
+                       <apex:outputLink value="/{!x.ParentId}" target="_blank">{!x.Parent.Name}</apex:outputLink>
+                   </apex:column>                   
+                   <apex:column headerValue="Start Date">{!x.StartDate}</apex:column>
+                   <apex:column headerValue="End Date">{!x.EndDate}</apex:column>                                                    
+               </apex:pageBlockTable>
+           </apex:pageBlockSection>
+          
+          
+           <!--
+            <apex:pageBlockSection title="Contents" columns="1" rendered="{!if(GRID_VCA_Links.size>0,true,false)}">
+               <apex:pageBlockTable value="{!lstContentVersion}" var="x">
+                    
+                    <apex:column headerValue="Label__c">
+                    <apex:outputLink value="/{!x.id}">{!x.Title}</apex:outputLink>                                        
+                    </apex:column>                                        
+                    
+               </apex:pageBlockTable>
+           </apex:pageBlockSection>
+           -->                
+                   
+       </apex:pageBlock>
+       </td>
+       </tr>       
+       </table>
+      <style type="text/css">
+    input.watermark { color: #999; }
+    input {
+        padding:4px;
+        text-indent: 5px;
+        width:200px;
+        font-size:14px;
+    }
+</style>
+
+ 
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>   
+<script type="text/javascript">
+$(document).ready(function() {
+ 
+    var watermark = 'Puts your email address';
+ 
+    //init, set watermark text and class
+    $('#email').val(watermark).addClass('watermark');
+ 
+    //if blur and no value inside, set watermark text and class again.
+    $('#email').blur(function(){
+        if ($(this).val().length == 0){
+            $(this).val(watermark).addClass('watermark');
+        }
+    });
+ 
+    //if focus and text is watermrk, set it to empty and remove the watermark class
+    $('#email').focus(function(){
+        if ($(this).val() == watermark){
+            $(this).val('').removeClass('watermark');
+        }
+    });
+});
+ 
+</script>
+       
+       
+     <script>
+       
+      
+     
+     
+     </script>
+   </apex:form>
+   
+</apex:page>

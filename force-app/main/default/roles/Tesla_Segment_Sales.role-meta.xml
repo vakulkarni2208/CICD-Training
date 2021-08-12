@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>Read</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>Tesla Segment Sales</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>Tesla Segment Sales</name>
+    <opportunityAccessLevel>None</opportunityAccessLevel>
+    <parentRole>Tesla_Segment_Sales_Manager_SC_IBD</parentRole>
+</Role>

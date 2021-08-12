@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Channel_Program_Attribute_2__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Select the program attribute that applies.</inlineHelpText>
+    <label>Channel Program Attribute 2</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Channel_Program_2__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Premier</fullName>
+                <default>false</default>
+                <label>Premier</label>
+            </value>
+            <value>
+                <fullName>Business Plus</fullName>
+                <default>false</default>
+                <label>Business Plus</label>
+            </value>
+            <value>
+                <fullName>Business Partner</fullName>
+                <default>false</default>
+                <label>Business Partner</label>
+            </value>
+            <value>
+                <fullName>Community Partner</fullName>
+                <default>false</default>
+                <label>Community Partner</label>
+            </value>
+            <value>
+                <fullName>Platinum</fullName>
+                <default>false</default>
+                <label>Platinum</label>
+            </value>
+            <value>
+                <fullName>Gold</fullName>
+                <default>false</default>
+                <label>Gold</label>
+            </value>
+            <value>
+                <fullName>Silver</fullName>
+                <default>false</default>
+                <label>Silver</label>
+            </value>
+            <value>
+                <fullName>Solution Partner</fullName>
+                <default>false</default>
+                <label>Solution Partner</label>
+            </value>
+            <value>
+                <fullName>Preferred Solution Partner</fullName>
+                <default>false</default>
+                <label>Preferred Solution Partner</label>
+            </value>
+            <value>
+                <fullName>Strategic Solution Partner</fullName>
+                <default>false</default>
+                <label>Strategic Solution Partner</label>
+            </value>
+            <value>
+                <fullName>Technology Partner</fullName>
+                <default>false</default>
+                <label>Technology Partner</label>
+            </value>
+            <value>
+                <fullName>Services Partner</fullName>
+                <default>false</default>
+                <label>Services Partner</label>
+            </value>
+            <value>
+                <fullName>Software Partner</fullName>
+                <default>false</default>
+                <label>Software Partner</label>
+            </value>
+            <value>
+                <fullName>Education Partner</fullName>
+                <default>false</default>
+                <label>Education Partner</label>
+            </value>
+            <value>
+                <fullName>Member</fullName>
+                <default>false</default>
+                <label>Member</label>
+            </value>
+            <value>
+                <fullName>Advanced</fullName>
+                <default>false</default>
+                <label>Advanced</label>
+            </value>
+            <value>
+                <fullName>Premium</fullName>
+                <default>false</default>
+                <label>Premium</label>
+            </value>
+            <value>
+                <fullName>Professional</fullName>
+                <default>false</default>
+                <label>Professional</label>
+            </value>
+            <value>
+                <fullName>Enterprise</fullName>
+                <default>false</default>
+                <label>Enterprise</label>
+            </value>
+            <value>
+                <fullName>Registered</fullName>
+                <default>false</default>
+                <label>Registered</label>
+            </value>
+            <value>
+                <fullName>Verified</fullName>
+                <default>false</default>
+                <label>Verified</label>
+            </value>
+            <value>
+                <fullName>Certified</fullName>
+                <default>false</default>
+                <label>Certified</label>
+            </value>
+            <value>
+                <fullName>Reseller</fullName>
+                <default>false</default>
+                <label>Reseller</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>VMware Solution Provider</controllingFieldValue>
+            <controllingFieldValue>Adobe Solution Provider</controllingFieldValue>
+            <controllingFieldValue>IBM PartnerWorld</controllingFieldValue>
+            <controllingFieldValue>Microsoft</controllingFieldValue>
+            <valueName>Premier</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>VMware Solution Provider</controllingFieldValue>
+            <controllingFieldValue>Microsoft</controllingFieldValue>
+            <valueName>Professional</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>VMware Solution Provider</controllingFieldValue>
+            <controllingFieldValue>Microsoft</controllingFieldValue>
+            <valueName>Enterprise</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Adobe Solution Provider</controllingFieldValue>
+            <valueName>Business Plus</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Adobe Solution Provider</controllingFieldValue>
+            <controllingFieldValue>Dassault Systemes</controllingFieldValue>
+            <controllingFieldValue>HP Partner One Program</controllingFieldValue>
+            <valueName>Business Partner</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Adobe Solution Provider</controllingFieldValue>
+            <valueName>Community Partner</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Autodesk Solution Provider</controllingFieldValue>
+            <controllingFieldValue>Citrix Solution Provider</controllingFieldValue>
+            <controllingFieldValue>HP Partner One Program</controllingFieldValue>
+            <valueName>Platinum</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Autodesk Solution Provider</controllingFieldValue>
+            <controllingFieldValue>Citrix Solution Provider</controllingFieldValue>
+            <controllingFieldValue>HP Partner One Program</controllingFieldValue>
+            <controllingFieldValue>Lenovo</controllingFieldValue>
+            <valueName>Gold</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Autodesk Solution Provider</controllingFieldValue>
+            <controllingFieldValue>Citrix Solution Provider</controllingFieldValue>
+            <controllingFieldValue>HP Partner One Program</controllingFieldValue>
+            <valueName>Silver</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Autodesk Solution Provider</controllingFieldValue>
+            <valueName>Reseller</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cisco Solution Provider</controllingFieldValue>
+            <valueName>Solution Partner</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cisco Solution Provider</controllingFieldValue>
+            <valueName>Preferred Solution Partner</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cisco Solution Provider</controllingFieldValue>
+            <valueName>Strategic Solution Partner</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dassault Systemes</controllingFieldValue>
+            <valueName>Technology Partner</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dassault Systemes</controllingFieldValue>
+            <valueName>Services Partner</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dassault Systemes</controllingFieldValue>
+            <valueName>Software Partner</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dassault Systemes</controllingFieldValue>
+            <valueName>Education Partner</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dell Technology Partner Program</controllingFieldValue>
+            <valueName>Registered</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dell Technology Partner Program</controllingFieldValue>
+            <valueName>Verified</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dell Technology Partner Program</controllingFieldValue>
+            <valueName>Certified</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>IBM PartnerWorld</controllingFieldValue>
+            <controllingFieldValue>Lenovo</controllingFieldValue>
+            <valueName>Member</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>IBM PartnerWorld</controllingFieldValue>
+            <valueName>Advanced</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Lenovo</controllingFieldValue>
+            <valueName>Premium</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

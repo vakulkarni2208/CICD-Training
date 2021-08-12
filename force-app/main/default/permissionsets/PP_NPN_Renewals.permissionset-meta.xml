@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customPermissions>
+        <enabled>true</enabled>
+        <name>NPN_Renewals</name>
+    </customPermissions>
+    <description>Assign to users to whom we send Renewal Notices and follow up requests for each respective NPN partner</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>PP : NPN Renewals</label>
+</PermissionSet>

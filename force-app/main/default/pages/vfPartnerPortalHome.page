@@ -1,0 +1,723 @@
+<apex:page id="thePage" controller="clsPartnerPortalHome" standardStylesheets="false"  showHeader="true" sidebar="false">
+    <head>
+        <style>
+            html,body {
+              height:100%;
+              margin-top: 0px;
+            }
+            .myFormStyle{
+                background-color: white;
+            }
+            #container{
+               position: absolute;
+               //top: 50%;
+               //margin-top: -200px;/* half of #content height*/
+               left: 0;
+               width: 100%;
+               background-color: white;
+               height: 2000px;
+               
+            }
+            #content {
+               //width: 624px;
+               max-width: 1175px;
+               min-width: 1175px;
+               margin-top:3px;
+               margin-left: auto;
+               margin-right: auto;
+               text-align:center;
+               position: relative;
+               zoom: 1;
+               padding:8px;
+               height: 1900px;
+               //border: 1px solid #000000;
+               border-left: 1px solid #76B900;
+               border-top: 1px solid #76B900;
+                -moz-box-shadow:    6px 6px 5px #ccc;
+                -webkit-box-shadow: 6px 6px 5px #ccc;
+                box-shadow:         6px 6px 5px #ccc;
+            }
+            .mainBlock{
+                //border:1px solid #000000;
+                //margin: 30px;
+                margin-top:3px;
+                margin-left:75px;
+                margin-right:100px;
+                //width: 80%;
+                max-width: 1175px;
+                min-width: 1175px;
+                text-align:center;
+                position: relative;
+                display: inline-block;
+                *display: inline;
+                zoom: 1;
+                padding:8px;
+                border-left: 1px solid #76B900;
+                border-top: 1px solid #76B900;
+                -moz-box-shadow:    6px 6px 5px #ccc;
+                -webkit-box-shadow: 6px 6px 5px #ccc;
+                box-shadow:         6px 6px 5px #ccc;
+            }
+            
+            .subBlock{
+                //border:1px solid #000000;
+                margin: 3px;
+                margin-top:3px;
+                // margin-left:100px;
+                // margin-right:100px;
+                // width: 85%;
+                // text-align:center;
+                position: relative;
+                display: inline-block;
+                *display: inline;
+                zoom: 1;
+                // padding:8px;
+                // border-left: 1px solid #76B900;
+                // border-top: 1px solid #76B900;
+                // -moz-box-shadow:    6px 6px 5px #ccc;
+                // -webkit-box-shadow: 6px 6px 5px #ccc;
+                // box-shadow:         6px 6px 5px #ccc;
+            
+            }
+        </style>
+    </head>
+
+    <script>   
+        var previousOnload = window.onload;        
+        window.onload = function() { 
+            if (previousOnload) { 
+                previousOnload();
+            }
+        }
+    </script>
+    
+    
+    <apex:includeScript value="https://code.jquery.com/jquery-1.7.2.js"  />
+    
+    
+    <script>                     
+        function OpenPopupCenter(pageURL, title, w, h) {
+            var left = (screen.width - w) / 2;
+            var top = (screen.height - h) / 4;  // for 25% - devide by 4  |  for 33% - devide by 3
+            var targetWin = window.open(pageURL, title, 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width=' + w + ', height=' + h + ', top=' + top + ', left=' + left);                
+        } 
+    
+    </script>   
+   
+    <body>
+        <apex:form id="formId" styleClass="myFormStyle">
+            <div id="container">
+                <div id="content">
+                    <table border="0" align="left" width="100%" style="background-color:#FFFFFF;color: #393939" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td align="left" width="1000px;" style="max-width:795px;min-width:795px;" valign="top">
+                                
+                                <apex:inputHidden Id="hiddenId"/> 
+                                
+                                <!-- LOG A SUPPORT REQUEST POP UP -->
+                                <apex:outputPanel id="displayEmailPopup_LogASupportReq">
+                                     <!--Using these output panel to display popup using css classes popupBackground & custPopup1-->         
+                                        <apex:outputPanel styleClass="popupBackground" layout="block" rendered="{!DisplayPopup_LogASupportRequest}"/>
+                                        <apex:outputPanel styleClass="custPopup1" layout="block" rendered="{!DisplayPopup_LogASupportRequest}">
+                                            <apex:pageMessages />
+                                            <table width="80%" style="padding:8px;" border="0">                   
+                                                <tr>
+                                                    <td colspan="3" align="center">
+                                                        <h3><b> <font color="#393939">{!$Label.COMM_CP_VF_EMAIL_Log_a_Support_Request}</font> </b> </h3>
+                                                    </td>
+                                                </tr> 
+                                                <tr>
+                                                    <td colspan="3" ></td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="3" ></td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="right">
+                                                        <b>{!$Label.COMM_CP_VF_EMAIL_Competency}&nbsp;<span style="color:red;">*</span></b>
+                                                    </td>
+                                                    <td>
+                                                        <apex:selectList size="1" style="width:180px;" value="{!selectedContentType}">
+                                                            <apex:selectOptions value="{!lstPortalContentTypes}"></apex:selectOptions>
+                                                        </apex:selectList>
+                                                    </td>
+                                                    <td>&nbsp;</td>
+                                                </tr> 
+                                                <tr>
+                                                    <td align="right"><b>{!$Label.COMM_CP_VF_EMAIL_Company_Name}</b></td>
+                                                    <td>
+                                                        <apex:outputText value="{!contactDetail.Account.name}" id="cname"/>
+                                                    </td>
+                                                    <td>&nbsp;</td>
+                                                </tr>                             
+                                               <tr>
+                                                    <td align="right"><b>{!$Label.COMM_CP_VF_EMAIL_Contact_Name}</b></td>
+                                                    <td>
+                                                        <apex:outputText value="{!contactfirstlastname}" id="conname"/>
+                                                    </td>
+                                                    <td>&nbsp;</td>
+                                                </tr>   
+                                                <tr>
+                                                    <td align="right"><b>{!$Label.COMM_CP_VF_EMAIL_Contact_Email_Address}</b></td>
+                                                    <td>
+                                                        <apex:outputText value="{!contactEmail}" id="emailid"/>
+                                                    </td>
+                                                    <td>&nbsp;</td>    
+                                                </tr>
+                                                <tr>   
+                                                    <td align="right"><b>{!$Label.COMM_CP_VF_EMAIL_Contact_Phone_Number}&nbsp;<span style="color:red;">*</span></b></td>
+                                                    <td>
+                                                        <apex:inputText value="{!phoneNumber}" id="phoneId1" rendered="{!if(contactMobilePhone == '',true,false)}"/>
+                                                        <apex:outputText value="{!contactMobilePhone}" id="phoneId2" rendered="{!!if(contactMobilePhone == '',true,false)}"/>
+                                                    </td>
+                                                    <td>&nbsp;</td>
+                                                </tr>
+                                                
+                                                <tr>
+                                                    <td align="right"><b>{!$Label.COMM_CP_VF_EMAIL_Short_Desc}&nbsp;<span style="color:red;">*</span></b></td>
+                                                    <td>
+                                                        <apex:inputText style="height:25px;width:500px;" value="{!problemType}" maxlength="45" id="protype"/>
+                                                    </td>
+                                                    <td>&nbsp;</td>
+                                                </tr> 
+                                                
+                                                <tr>
+                                                    <td align="right" valign="top"><b>{!$Label.COMM_CP_VF_EMAIL_Problem_Desc}&nbsp;<span style="color:red;">*</span></b></td>
+                                                    <td>
+                                                        <apex:inputTextArea style="height:100px;width:500px;" value="{!problemDescription}" id="descId"/>
+                                                    </td>
+                                                    <td>&nbsp;</td>
+                                                </tr>
+                                                 <tr>
+                                                    <td align="right" valign="top"><b>{!$Label.COMM_CP_VF_EMAIL_Steps_to_Reproduce}&nbsp;<span style="color:red;">*</span></b></td>
+                                                    <td>
+                                                        <apex:inputTextArea style="height:100px;width:500px;" value="{!steptoReproduceProblem}" id="stpesId"/>
+                                                    </td>
+                                                    <td>&nbsp;</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td align="right">
+                                                        <b>{!$Label.COMM_CP_VF_EMAIL_Attach_Support_Docs}</b>
+                                                    </td>
+                                                    <td>
+                                                        <apex:inputFile value="{!Attach}" fileName="{!FileName_Upload}"></apex:inputFile> <br />
+                                                                  {!$Label.COMM_CP_VF_EMAIL_Attach_Support_Docs_Example}
+                                                    </td>
+                                                    
+                                                </tr>
+
+                                                <tr>
+                                                    <td colspan="2" align="center">
+                                                        <apex:commandButton value="{!$Label.COMM_CP_VF_EMAIL_Send}" action="{!sendEmail_LogASupportRequest}"/>&nbsp;&nbsp;
+                                                        <apex:commandButton value="{!$Label.COMM_CP_VF_EMAIL_Cancel}" action="{!closePopup_LogASupportRequest}"/>
+                                                    </td>
+                                                    <td>&nbsp;</td>
+                                                </tr>
+
+                                            </table>
+                                    </apex:outputPanel>
+                                </apex:outputPanel>   
+                                
+                                <!-- ASK A QUESTION POP UP -->
+                                <apex:outputPanel id="displayEmailPopup_AskAQuestion">        
+                                    <apex:outputPanel styleClass="popupBackground" layout="block" rendered="{!DisplayPopup_AskAQuestion}"/>
+                                    <apex:outputPanel styleClass="custPopup" layout="block" rendered="{!DisplayPopup_AskAQuestion}">
+                                        <apex:pageMessages />
+                                        <table width="100%" style="padding:8px;" border="0">
+                                            <tr>
+                                                <td colspan="3" align="center">
+                                                    <h3><b> <font color="#393939">{!$Label.COMM_CP_VF_EMAIL_Ask_a_Question}</font> </b> </h3>
+                                                </td>
+                                            </tr>
+                                                                     
+                                            <tr>
+                                                <td colspan="3"> </td> 
+                                            </tr>
+                                            
+                                            <tr>
+                                                <td colspan="3"> </td> 
+                                            </tr>
+                                            
+                                            <tr>
+                                                <td align="right" width="15%">
+                                                    <b>{!$Label.COMM_CP_VF_EMAIL_Competency}&nbsp;<span style="color:red;">*</span></b>
+                                                </td>
+                                                <td colspan="2">
+                                                    <apex:selectList style="height:20px;width:200px;"  size="1" value="{!selectedContentType}">
+                                                        <apex:selectOptions value="{!lstPortalContentTypes}"></apex:selectOptions>
+                                                    </apex:selectList>
+                                                </td>
+                                            </tr>
+                                                          
+                                            <tr>
+                                                <td valign="top"  align="right" width="15%">
+                                                    <b>{!$Label.COMM_CP_VF_EMAIL_Subject}</b>
+                                                </td>
+                                                <td colspan="2">
+                                                    <apex:inputText style="height:20px;width:600px;" value="{!subject}"/>
+                                                </td>
+                                            </tr>
+                                        
+                                            <tr>
+                                                <td valign="top" align="right" width="15%">
+                                                    <b>{!$Label.COMM_CP_VF_EMAIL_Body}</b>
+                                                </td>
+                                                <td colspan="2">
+                                                    <apex:inputTextArea style="height:200px;width:600px;" value="{!body}"/>
+                                                </td>
+                                            </tr>
+                                            
+                                            <tr>
+                                                <td colspan="3" align="center">
+                                                    <apex:commandButton value="{!$Label.COMM_CP_VF_EMAIL_Send}" action="{!sendEmail_AskAQuestion}"/>&nbsp;&nbsp;
+                                                    <apex:commandButton value="{!$Label.COMM_CP_VF_EMAIL_Cancel}" action="{!closePopup_AskAQuestion}"/>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </apex:outputPanel>
+                               </apex:outputPanel> 
+
+                                <!-- Main Content -->
+                                <table width="100%" border="0" style="background-color:#FFFFFF;">
+                                
+                                    <tr height="180px;">
+
+                                        <!-- Wide Column: That shows Latest News, Dashboards, Latest NVIDIA News -->
+                                        <td width="80%" valign="top">
+                                            
+                                            <!-- LATEST MESSAGES --> 
+                                            <c:cmpPartnerPortalMessage />
+                                            
+                                            <table width="100%" border="0" style="background-color:#FFFFFF;">
+                                             
+                                                <apex:outputPanel rendered="{! if (isOwnerCharts || isAccountCharts, true, false)}">                    
+                                                    <tr height="180px;">
+                                                        <td align="left" width="795px;" style="max-width:795px;min-width:795px;" valign="top">
+                                                            <div class="subBlock">
+                                                                <apex:iframe src="/apex/vfPartnerPortalOwnerChartsGoogle" height="350px;" width="795px;" scrolling="false" rendered="{!isOwnerCharts}"/> 
+                                                                <br />
+                                                                <apex:iframe src="/apex/vfPartnerPortalAccountChartsGoogle" height="330px;" width="795px;" scrolling="false" rendered="{!isAccountCharts}"/>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </apex:outputPanel>  
+
+                                                 <tr>
+                                                     <td align="left" width="795px;" style="max-width:795px;min-width:795px;" valign="top">
+                                                        <div class="subBlock">
+                                                          <c:cmpPartnerPortalRssFeedSummary title="" debug="false" feedURL="http://feeds.feedburner.com/nvidiablog" entriesCount="4" />
+                                                        </div>
+                                                     </td>    
+                                                </tr>
+                                           </table>
+                                        
+                                        </td>
+
+                                        <!-- Narrow Column: That shows Log a support request btn, GETTING STARTED, NVIDIA CONTACTS, FEATURED CONTENT -->
+                                        <td width="20%" align="left" style="vertical-align:top;padding-right:10px;">
+                                            
+                                            <!-- lstMainWrapper contains all grid data Like Getting Started and NVIDIA CONTACT -->                               
+                                            <apex:repeat value="{!lstMainWrapper}" var="x">                              
+                                                
+                                                <!-- LOG A SUPPORT REQUEST -->
+                                                <apex:outputPanel rendered="{!if(x.srno == 1, true, false)}"> 
+                                                    <table border="0" width="100%" cellpadding="0" cellspacing="0">
+                                                        <apex:outputPanel rendered="{!x.displayTitle}">
+                                                            <tr>
+                                                                <td valign="top" align="{!if(x.displayboxtitle=='','Left',x.displayboxtitle)}">
+                                                                    <div class="boxTitle">{!x.presentation_Label}</div>
+                                                                </td>
+                                                            </tr>               
+                                                        </apex:outputPanel>
+                                                        <tr>
+                                                            <td style="vertical-align:top">                                       
+                                                                <div class="{!if(x.displayborder==true,'boxContentShort','')}" style="font-size:18px;">
+                                                                    <table width="100%" border="0" cellspacing="0" cellpadding="0">                     
+                                                                        <apex:repeat value="{!x.lstW}" var="y">
+                                                                            <tr>
+                                                                                <td valign="top">                                                                        
+                                                                                    <table width="100%" border="0">
+                                                                                        <tr>
+                                                                                            <td width="100%" valign="top">
+                                                                                                <apex:commandLink action="{!showPopup_LogASupportRequest}" >
+                                                                                                    <div class="roundCornerButton">{!$Label.COMM_PP_VF_BTN_Log_a_Support_Request}</div>
+                                                                                                </apex:commandLink>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                     </table>                                             
+                                                                                </td>
+                                                                            </tr>                       
+                                                                        </apex:repeat>                                                                                                 
+                                                                    </table>
+                                                                </div>
+                                                                <br/><br />
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </apex:outputPanel> 
+
+                                                <!-- GETTING STARTED -->
+                                                <apex:outputPanel rendered="{!If(x.presentation_Type == 'GETTING STARTED',true,false)}"> 
+                                                    <table border="0" width="100%" cellpadding="0" cellspacing="0">
+                                                        <tr>
+                                                            <td style="vertical-align:top">
+                                                                <div class="boxTitle">{!x.presentation_Label}</div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="vertical-align:top">
+                                                                <div class="boxContentShort" style="font-size:18px;">
+                                                                    <br/>
+                                                                    <table width="100%" border="0" cellpadding="0" cellspacing="0">                     
+                                                                        <apex:repeat value="{!x.lstW}" var="y">
+                                                                            <tr>
+                                                                                <td style="vertical-align:top">
+                                                                                    <apex:outPutPanel rendered="{! If(y.presentation_Type != 'Ask a Question',true,false)}">
+                                                                                        <a id="home" href="#" onclick="OpenPopupCenter('{!y.Presentation_URL}','',1000,700);"><font color="#393939">{!y.presentation_Name}</font></a>
+                                                                                    </apex:outPutPanel>
+                                                                
+                                                                                    <apex:outPutPanel rendered="{! If(y.presentation_Type == 'Ask a Question',true,false)}">
+                                                                                        <br/>
+                                                                                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                                                            <tr>
+                                                                                                <td width="8%">
+                                                                                                    <apex:image value="{!$Resource.Green_Ask_Question}"/>
+                                                                                                </td>
+                                                                                                <td width="92%">
+                                                                                                    &nbsp;<b><apex:commandLink value="{!$Label.COMM_PP_VF_Ask_a_Question}" action="{!showPopup_AskAQuestion}" rerender="displayEmailPopup_AskAQuestion"/></b>
+                                                                                                </td>
+                                                                                            </tr>                   
+                                                                                         </table>               
+                                                                                    </apex:outPutPanel>
+                                                                 
+                                                                                </td>
+                                                                            </tr>                       
+                                                                        </apex:repeat>                                                                                                 
+                                                                    </table>
+                                                                </div>
+                                                                <br/><br />
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </apex:outputPanel> 
+                                                
+                                                <!-- NVIDIA CONTACTS -->
+                                                <apex:outputPanel rendered="{!If(x.presentation_Type == 'NVIDIA CONTACTS',true,false)}">
+                                                    <table border="0" width="100%" cellpadding="0" cellspacing="0">
+                                                        <tr>
+                                                            <td>
+                                                                <!--<div class="boxTitle">{!x.presentation_Label}</div>-->
+                                                                <div class="boxTitle">{!$Label.COMM_CP_VF_NVIDIA_CONTACTS}</div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td> 
+                                                                <div class="boxContentShort" style="font-size:12px;">
+                                                                    <apex:variable var="count" value="{!0}" /> 
+                                                                    <apex:repeat value="{!lstNVIDIAContactsProductWiseWrapper}" var="nvConProdwise">
+                                                                        <b><div align="left"><font color="#76b900">{!nvConProdwise.productType}</font></div></b>
+                                                                        <table width="100%" border="0"> 
+                                                                            <apex:variable var="count" value="{!count+1}"/>                                
+                                                                            <apex:repeat value="{!nvConProdwise.lstNVIDIAContactsWrapper}" var="nvCon" >
+                                                                                                             
+                                                                                <tr>
+                                                                                    <td> 
+                                                                                        <b><i><div align="left">{!nvCon.contentType}</div></i></b>
+                                                                                        <font color="#393939">{!nvCon.Sales_Manager_Name} {!IF(AND(nvCon.SalesManager_Title1 != null, nvCon.Sales_Manager_Name != null),'-','')}</font> <b><font color="#76b900">{!nvCon.SalesManager_Title1}</font></b><br/>
+                                                                                        <a href="mailto:{!nvCon.Sales_Manager_Email}"><font color="#393939">{!nvCon.Sales_Manager_Email}</font></a>&nbsp;{!IF(AND(nvCon.Sales_Manager_Contact_Number != null,nvCon.Sales_Manager_Email!= null),'|','')}&nbsp;{!nvCon.Sales_Manager_Contact_Number}
+                                                                                        <br/>
+                                                                                            
+                                                                                        <apex:outputText rendered="{!if(nvCon.Marketing_Manager_Name!=null,true,false)}">
+                                                                                            <font color="#393939">{!nvCon.Marketing_Manager_Name} {!IF(AND(nvCon.MarketingManager_Title2!= null,nvCon.Marketing_Manager_Name != null),'-','')}</font> <b><font color="#76b900">{!nvCon.MarketingManager_Title2}</font></b><br/>
+                                                                                            <a href="mailto:{!nvCon.Marketing_Manager_Email}"><font color="#393939">{!nvCon.Marketing_Manager_Email}</font></a>&nbsp;{!IF(AND(nvCon.Marketing_Manager_Contact_Number!= null, nvCon.Marketing_Manager_Email != null),'|','')}&nbsp;{!nvCon.Marketing_Manager_Contact_Number}
+                                                                                            <br/>                      
+                                                                                        </apex:outputText>
+                                                                                            
+                                                                                        <apex:outputText rendered="{!if(nvCon.Support_Manager_Name!=null,true,false)}">
+                                                                                            <font color="#393939">{!nvCon.Support_Manager_Name} {!IF(AND(nvCon.SupportManager_Title3 != null,nvCon.Support_Manager_Name != null),'-','')}</font> <b><font color="#76b900">{!nvCon.SupportManager_Title3}</font></b><br/>
+                                                                                            <a href="mailto:{!nvCon.Support_Manager_Email}"><font color="#393939">{!nvCon.Support_Manager_Email}</font></a>&nbsp;{!IF(AND(nvCon.Support_Manager_Contact_Number!= null,nvCon.Support_Manager_Email != null),'|','')} &nbsp;{!nvCon.Support_Manager_Contact_Number}
+                                                                                            <br/>                                                             
+                                                                                        </apex:outputText>
+                                                                                            
+                                                                                                                                                       
+                                                                                    </td>
+                                                                                </tr>                                                     
+                                                                            </apex:repeat> 
+                                                                        </table>     
+                                                                        <apex:outputPanel rendered="{!if(lstNVIDIAContactsProductWiseWrapper.size!=count,true,false)}">
+                                                                            <br />
+                                                                            <hr/> 
+                                                                        </apex:outputPanel>  
+                                                                    </apex:repeat>              
+                                                                </div>
+                                                                <br /><br /> 
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </apex:outputPanel>
+
+                                                <!-- All others like FEATURED CONTENT -->
+                                                <apex:outputPanel rendered="{! NOT If(x.presentation_Type == 'NVIDIA CONTACTS' || x.presentation_Type == 'GETTING STARTED' || x.srno == 1,true,false)}">
+                                                    <table border="0" width="100%" cellpadding="0" cellspacing="0">
+                                                        <apex:outputPanel rendered="{!x.displayTitle}">
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="boxTitle">{!x.presentation_Label}</div>
+                                                                </td>
+                                                            </tr>
+                                                        </apex:outputPanel>
+                                                        
+                                                        <tr>
+                                                            <td>                                 
+                                                                <div class="{!if(x.displayborder==true,'boxContentShort','')}" style="font-size:14px;">                            
+                                                                    
+                                                                    <apex:repeat value="{!x.lstW}" var="y">
+                                                                        <apex:outputText value="{!y.presentation_Name}" style="color:#393939; " rendered="{!!y.isLink}"/>
+                                                                        <apex:outputLink value="{!y.presentation_URL}" id="theLink" style="color:#393939;" rendered="{!y.isLink}" target="_blank">{!y.presentation_Name}</apex:outputLink>                                  
+                                                                        <br/><br/>
+                                                                    
+                                                                        <table border="0" width="100%">
+                                                                            <tr>
+                                                                                <td align="center">
+                                                                                    <apex:outputLink value="{!y.presentation_URL}" target="_blank">
+                                                                                        <apex:image url="{!y.image_URL}" height="90" width="160"/>
+                                                                                    </apex:outputLink>
+                                                                                </td> 
+                                                                            </tr>
+                                                                        </table>
+                                                                      
+                                                                        <br/><br/>
+                                                                    </apex:repeat>
+                                                                </div>
+                                                                <br/><br/>
+                                                            </td>
+                                                        </tr>
+                                                    </table>                         
+                                                </apex:outputPanel>
+
+                                             </apex:repeat>
+                                                                                                              
+                                         </td>
+                                                                                         
+                                    </tr> 
+                                  
+                                </table>
+
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </apex:form>
+    </body>
+
+    <style type="text/css">
+        .custPopup{   
+            background-color: white;
+            border-width: 2px;
+            border-style: solid;
+            z-index: 9999;       
+            left: 35%;       
+            padding:10px;   
+            position: absolute;
+            /* These are the 3 css properties you will need to change so the popup 
+            displays in the center of the screen. First set the width. Then set 
+            margin-left to negative half of what the width is. You can add 
+            the height property for a fixed size pop up if you want.*/
+            width: 800px;
+            margin-left: -250px;
+            top:100px;
+        }
+        /* This CSS is for Report A Problem Button  */
+        .custPopup1{   
+            background-color: white;
+            border-width: 2px;
+            border-style: solid;
+            z-index: 9999;       
+            left: 35%;       
+            padding:10px; 
+              
+            position: absolute;
+            /* These are the 3 css properties you will need to change so the popup 
+            displays in the center of the screen. First set the width. Then set 
+            margin-left to negative half of what the width is. You can add 
+            the height property for a fixed size pop up if you want.*/
+            width: 900px;   
+            margin-left: -250px;
+            top:100px;
+        }
+        
+        .popupBackground{   
+             background-color:black;
+             opacity: 0.20;
+             filter: alpha(opacity = 20);
+             position: absolute;
+             width: 100%;
+             height: 100%;   
+             top: 0;
+             left: 0;
+             z-index: 9998;
+         }
+               
+        .boxTitle1 {
+             border: 1px solid #76B900;
+             background-color:#76B900;
+              /%width: 349px;%/
+              width: 100%;
+              height: 100%;
+              color:white;
+              font-size:13.5px;
+              font-weight:bold;
+              padding:8px;
+              border-left: 2px solid #76B900;
+              border-top: 2px solid #76B900;
+               -moz-box-shadow:    6px 6px 5px #ccc;
+               -webkit-box-shadow: 6px 6px 5px #ccc;
+               box-shadow:         6px 6px 5px #ccc;
+               overflow:hidden;
+        }
+        
+        .boxContent1 {
+             border: 1px solid #76B900;
+             background-color:white;
+              /*width: 350px;*/
+              height: 160px;
+              width: 100%;
+              font-weight:none;
+              padding-top:15px;
+              padding-left:15px;
+              overflow:auto;
+               -moz-box-shadow:    3px 3px 5px 6px #ccc;
+              -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+              box-shadow:         6px 6px 5px #ccc;
+        }
+          
+          
+        .boxContentNewP {
+             border: 1px solid #76B900;
+             background-color:white;
+              width: 90%;
+              height: 250px;
+              padding-top:15px;
+              padding-left:15px;
+              overflow:auto;
+              align:center;
+        }
+                
+        .boxContentShort1 {
+             border: 1px solid #76B900;
+             background-color:white;
+              /%width: 350px;*/
+              width: 100%;
+              height: 130px;
+              padding-top:15px;
+              padding-left:15px;
+              overflow:auto;
+              -moz-box-shadow:    3px 3px 5px 6px #ccc;
+             -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+             box-shadow:         6px 6px 5px #ccc;
+        }
+              
+        .button {
+             width:100%;
+             height: 100%;          
+        /*   float:left;
+             padding:8px;
+             overflow: hidden;
+             white-space: nowrap;*/
+          }
+              
+        .boxTitle {
+             border: 1px solid #76B900;
+             background-color:#76B900;
+             /*width:349px;*/
+             width:95%;
+             height: 8%;          
+             float:left;
+              color:white;
+              font-size:14px;
+              font-weight:bold;
+              padding:8px;
+              border-left: 2px solid #76B900;
+              border-top: 2px solid #76B900;
+              overflow: hidden;
+              display: inline-block;
+              white-space: nowrap;
+              max-width:275px;
+              min-width:275px;
+              margin-right:6px; /* Set to 0 if you don't want shadow at the right side */
+             margin-left:0px; /* Set to 20px if you want shadow at the left side */
+             margin-top:0px; /* Set to 20px if you want shadow at the top side */
+             margin-bottom:0px; /* Set to 20px if you want shadow at the bottom side */
+            
+               -moz-box-shadow:    6px 6px 5px #ccc;
+               -webkit-box-shadow: 6px 6px 5px #ccc;
+               box-shadow:         6px 0px 5px #ccc;
+        
+        }
+        
+        .boxContent {
+            border: 1px solid #F3F3F3;
+            background-color: #FFFFFF;
+            /*width: 350px;*/
+            width:95%;
+            height: 160px;
+            padding-top:15px;
+            padding-left:15px;
+            max-width:277px;
+            min-width:275px;
+            overflow:auto;
+            -moz-box-shadow:    6px 6px 5px #ccc;
+            -webkit-box-shadow: 6px 6px 5px #ccc;
+            box-shadow:         6px 6px 5px #ccc;
+        }
+        
+        .boxContentShort {
+            border: 1px solid #F3F3F3;
+            background-color: #FFFFFF;
+            width: 95%;
+            height: 135px;   
+            padding-top:5px;
+            padding-left:15px;
+            max-width:275px;
+            min-width:275px;
+            overflow:auto;
+            -moz-box-shadow:    6px 6px 5px  #ccc;
+            -webkit-box-shadow: 6px 6px 5px #ccc;
+            box-shadow:         6px 6px 5px #ccc;
+        }
+        
+        .roundCornerButton {
+            width: 100%;
+            height: 40px;
+            background-color: #76B900;
+            color: white;
+            font-size: 14px;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-align: center;
+            line-height:40px;
+            moz-border-radius: 5px;
+            -webkit-border-radius: 5px; /* Safari 5.1+, Chrome 10+ */
+            border-radius: 5px; /* IE */
+        }
+        
+        .roundCornerButton:hover {
+            width: 100%;
+            height: 40px;
+            background-color: #277220;
+            color: white;
+            font-size: 14px;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-align: center;
+            line-height:40px;
+            moz-border-radius: 5px;
+            -webkit-border-radius: 5px; /* Safari 5.1+, Chrome 10+ */
+            border-radius: 5px; /* IE */
+        }
+        
+        
+    </style>
+</apex:page>

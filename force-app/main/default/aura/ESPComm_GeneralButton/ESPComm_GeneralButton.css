@@ -1,0 +1,10 @@
+.THIS.sfdc {
+    background: #76b900;
+    max-width: 150px;
+    padding: 10px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.THIS.sfdc a {
+    color: white;
+}

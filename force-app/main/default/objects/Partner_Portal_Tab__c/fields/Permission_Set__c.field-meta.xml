@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Permission_Set__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <label>Permission Set</label>
+    <referenceTo>Portal_Permission_Sets__c</referenceTo>
+    <relationshipLabel>Partner Portal Tabs</relationshipLabel>
+    <relationshipName>Partner_Portal_Tabs</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

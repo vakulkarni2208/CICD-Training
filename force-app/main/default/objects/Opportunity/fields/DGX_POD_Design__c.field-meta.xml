@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DGX_POD_Design__c</fullName>
+    <description>Type of DGX POD</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select if a NVIDIA SuperPod Design or a Custom DGX POD Design</inlineHelpText>
+    <label>DGX POD Design</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>NVIDIA DGX SuperPOD</fullName>
+                <default>false</default>
+                <label>NVIDIA DGX SuperPOD</label>
+            </value>
+            <value>
+                <fullName>Custom_DGX_POD_Design</fullName>
+                <default>false</default>
+                <label>Custom DGX POD Design</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

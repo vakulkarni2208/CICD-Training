@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>true</doesSendEmailToMembers>
+    <name>APAC Internal Case Queue</name>
+    <queueMembers>
+        <users>
+            <user>linw@nvidia.com</user>
+            <user>sallyy@nvidia.com</user>
+            <user>yapingl@nvidia.com</user>
+            <user>mickeyc@nvidia.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

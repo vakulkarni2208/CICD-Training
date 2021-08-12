@@ -1,0 +1,11 @@
+<apex:page standardController="Opportunity" standardStylesheets="false"><Body style="Background:#76b900;">
+    <h1 style="Color:#fff !important;font-size:20px;">
+        <center>
+            
+        Software and Service Renewal Opportunity 
+        </center>
+    </h1>
+
+    </Body>
+    
+</apex:page>

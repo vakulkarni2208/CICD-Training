@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- 3rd Party Cases --></label>
+    <name>X3rd_Party_Cases__c</name>
+    <picklistValues>
+        <masterLabel>Atos</masterLabel>
+        <translation><!-- Atos --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Canonical</masterLabel>
+        <translation><!-- Canonical --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cisco</masterLabel>
+        <translation><!-- Cisco --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Citrix</masterLabel>
+        <translation><!-- Citrix --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DDN</masterLabel>
+        <translation><!-- DDN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Flexera</masterLabel>
+        <translation><!-- Flexera --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HPE</masterLabel>
+        <translation><!-- HPE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HPI</masterLabel>
+        <translation><!-- HPI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lenovo</masterLabel>
+        <translation><!-- Lenovo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Linux reference Architecture Partner</masterLabel>
+        <translation><!-- Linux reference Architecture Partner --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Nutanix</masterLabel>
+        <translation><!-- Nutanix --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pure</masterLabel>
+        <translation><!-- Pure --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RHEL</masterLabel>
+        <translation><!-- RHEL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Teradici</masterLabel>
+        <translation><!-- Teradici --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VMware</masterLabel>
+        <translation><!-- VMware --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Windows</masterLabel>
+        <translation><!-- Windows --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

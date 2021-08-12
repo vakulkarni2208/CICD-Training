@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- OEM --></label>
+    <name>OEM__c</name>
+    <picklistValues>
+        <masterLabel>Cisco</masterLabel>
+        <translation><!-- Cisco --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dell</masterLabel>
+        <translation><!-- Dell --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HPE</masterLabel>
+        <translation><!-- HPE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lenovo</masterLabel>
+        <translation><!-- Lenovo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Supermicro</masterLabel>
+        <translation><!-- Supermicro --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

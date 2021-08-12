@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Preferred_Reseller__c</fullName>
+    <externalId>false</externalId>
+    <label>Preferred Reseller</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Advania</fullName>
+                <default>false</default>
+                <label>Advania</label>
+            </value>
+            <value>
+                <fullName>AI Lab</fullName>
+                <default>false</default>
+                <label>AI Lab</label>
+            </value>
+            <value>
+                <fullName>Alexandra Institute</fullName>
+                <default>false</default>
+                <label>Alexandra Institute</label>
+            </value>
+            <value>
+                <fullName>Altair (Fluidyna)</fullName>
+                <default>false</default>
+                <label>Altair (Fluidyna)</label>
+            </value>
+            <value>
+                <fullName>AMAX</fullName>
+                <default>false</default>
+                <label>AMAX</label>
+            </value>
+            <value>
+                <fullName>APY</fullName>
+                <default>false</default>
+                <label>APY</label>
+            </value>
+            <value>
+                <fullName>BIT</fullName>
+                <default>false</default>
+                <label>BIT</label>
+            </value>
+            <value>
+                <fullName>Booz Allen</fullName>
+                <default>false</default>
+                <label>Booz Allen</label>
+            </value>
+            <value>
+                <fullName>Boston</fullName>
+                <default>false</default>
+                <label>Boston</label>
+            </value>
+            <value>
+                <fullName>CGit AB</fullName>
+                <default>false</default>
+                <label>CGit AB</label>
+            </value>
+            <value>
+                <fullName>Compugen</fullName>
+                <default>false</default>
+                <label>Compugen</label>
+            </value>
+            <value>
+                <fullName>Computacenter</fullName>
+                <default>false</default>
+                <label>Computacenter</label>
+            </value>
+            <value>
+                <fullName>Conoa</fullName>
+                <default>false</default>
+                <label>Conoa</label>
+            </value>
+            <value>
+                <fullName>CTC Technology</fullName>
+                <default>false</default>
+                <label>CTC Technology</label>
+            </value>
+            <value>
+                <fullName>Dalco</fullName>
+                <default>false</default>
+                <label>Dalco</label>
+            </value>
+            <value>
+                <fullName>DellEMC (incl Dell Fed)</fullName>
+                <default>false</default>
+                <label>DellEMC (incl Dell Fed)</label>
+            </value>
+            <value>
+                <fullName>Delta</fullName>
+                <default>false</default>
+                <label>Delta</label>
+            </value>
+            <value>
+                <fullName>DH Tech</fullName>
+                <default>false</default>
+                <label>DH Tech</label>
+            </value>
+            <value>
+                <fullName>E4</fullName>
+                <default>false</default>
+                <label>E4</label>
+            </value>
+            <value>
+                <fullName>ePlus</fullName>
+                <default>false</default>
+                <label>ePlus</label>
+            </value>
+            <value>
+                <fullName>GPLTech</fullName>
+                <default>false</default>
+                <label>GPLTech</label>
+            </value>
+            <value>
+                <fullName>Groupware</fullName>
+                <default>false</default>
+                <label>Groupware</label>
+            </value>
+            <value>
+                <fullName>Gulf Business Machines</fullName>
+                <default>false</default>
+                <label>Gulf Business Machines</label>
+            </value>
+            <value>
+                <fullName>Hancom</fullName>
+                <default>false</default>
+                <label>Hancom</label>
+            </value>
+            <value>
+                <fullName>Hitachi Information Academy</fullName>
+                <default>false</default>
+                <label>Hitachi Information Academy</label>
+            </value>
+            <value>
+                <fullName>III Education</fullName>
+                <default>false</default>
+                <label>III Education</label>
+            </value>
+            <value>
+                <fullName>Insight</fullName>
+                <default>false</default>
+                <label>Insight</label>
+            </value>
+            <value>
+                <fullName>Inspur</fullName>
+                <default>false</default>
+                <label>Inspur</label>
+            </value>
+            <value>
+                <fullName>iTrain</fullName>
+                <default>false</default>
+                <label>iTrain</label>
+            </value>
+            <value>
+                <fullName>ITRI</fullName>
+                <default>false</default>
+                <label>ITRI</label>
+            </value>
+            <value>
+                <fullName>IT RSC</fullName>
+                <default>false</default>
+                <label>IT RSC</label>
+            </value>
+            <value>
+                <fullName>Japan Third Party, Co. (JTP)</fullName>
+                <default>false</default>
+                <label>Japan Third Party, Co. (JTP)</label>
+            </value>
+            <value>
+                <fullName>LeadTek</fullName>
+                <default>false</default>
+                <label>LeadTek</label>
+            </value>
+            <value>
+                <fullName>Mark III</fullName>
+                <default>false</default>
+                <label>Mark III</label>
+            </value>
+            <value>
+                <fullName>M Computer</fullName>
+                <default>false</default>
+                <label>M Computer</label>
+            </value>
+            <value>
+                <fullName>Mediasys FZ-LLC</fullName>
+                <default>false</default>
+                <label>Mediasys FZ-LLC</label>
+            </value>
+            <value>
+                <fullName>Megware Computer</fullName>
+                <default>false</default>
+                <label>Megware Computer</label>
+            </value>
+            <value>
+                <fullName>Microstaxx</fullName>
+                <default>false</default>
+                <label>Microstaxx</label>
+            </value>
+            <value>
+                <fullName>Microway</fullName>
+                <default>false</default>
+                <label>Microway</label>
+            </value>
+            <value>
+                <fullName>ML Reply</fullName>
+                <default>false</default>
+                <label>ML Reply</label>
+            </value>
+            <value>
+                <fullName>Monterrey CIIA</fullName>
+                <default>false</default>
+                <label>Monterrey CIIA</label>
+            </value>
+            <value>
+                <fullName>Nextron</fullName>
+                <default>false</default>
+                <label>Nextron</label>
+            </value>
+            <value>
+                <fullName>Nor-Tech</fullName>
+                <default>false</default>
+                <label>Nor-Tech</label>
+            </value>
+            <value>
+                <fullName>OCF</fullName>
+                <default>false</default>
+                <label>OCF</label>
+            </value>
+            <value>
+                <fullName>OpenZeka</fullName>
+                <default>false</default>
+                <label>OpenZeka</label>
+            </value>
+            <value>
+                <fullName>Opteamizer</fullName>
+                <default>false</default>
+                <label>Opteamizer</label>
+            </value>
+            <value>
+                <fullName>PCPC</fullName>
+                <default>false</default>
+                <label>PCPC</label>
+            </value>
+            <value>
+                <fullName>QA</fullName>
+                <default>false</default>
+                <label>QA</label>
+            </value>
+            <value>
+                <fullName>Rabbit &amp; Tortoise</fullName>
+                <default>false</default>
+                <label>Rabbit &amp; Tortoise</label>
+            </value>
+            <value>
+                <fullName>Rave</fullName>
+                <default>false</default>
+                <label>Rave</label>
+            </value>
+            <value>
+                <fullName>RCH</fullName>
+                <default>false</default>
+                <label>RCH</label>
+            </value>
+            <value>
+                <fullName>SCAN</fullName>
+                <default>false</default>
+                <label>SCAN</label>
+            </value>
+            <value>
+                <fullName>Skyline</fullName>
+                <default>false</default>
+                <label>Skyline</label>
+            </value>
+            <value>
+                <fullName>Sugon</fullName>
+                <default>false</default>
+                <label>Sugon</label>
+            </value>
+            <value>
+                <fullName>Suzhou No. 9 Education Technology Co., Ltd</fullName>
+                <default>false</default>
+                <label>Suzhou No. 9 Education Technology Co., Ltd</label>
+            </value>
+            <value>
+                <fullName>SVA</fullName>
+                <default>false</default>
+                <label>SVA</label>
+            </value>
+            <value>
+                <fullName>sysGen</fullName>
+                <default>false</default>
+                <label>sysGen</label>
+            </value>
+            <value>
+                <fullName>ThinkSIS</fullName>
+                <default>false</default>
+                <label>ThinkSIS</label>
+            </value>
+            <value>
+                <fullName>Times Professional Learning</fullName>
+                <default>false</default>
+                <label>Times Professional Learning</label>
+            </value>
+            <value>
+                <fullName>Trace3</fullName>
+                <default>false</default>
+                <label>Trace3</label>
+            </value>
+            <value>
+                <fullName>WWT</fullName>
+                <default>false</default>
+                <label>WWT</label>
+            </value>
+            <value>
+                <fullName>Xenon</fullName>
+                <default>false</default>
+                <label>Xenon</label>
+            </value>
+            <value>
+                <fullName>Zenith Arabia</fullName>
+                <default>false</default>
+                <label>Zenith Arabia</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

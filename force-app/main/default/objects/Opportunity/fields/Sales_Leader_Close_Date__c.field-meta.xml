@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sales_Leader_Close_Date__c</fullName>
+    <description>Sales leader view of the close date.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Sales leaders, use this field to provide your insight into when the opportunity is closed. This is not required if you are aligned with the opportunity close date.</inlineHelpText>
+    <label>SL Close Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Date</type>
+</CustomField>

@@ -1,0 +1,19 @@
+<apex:page standardController="Account" extensions="NV_AddOnPromoDemoTerminationController">
+    <apex:form >
+        
+        <apex:pageBlock >
+            <apex:pageMessages id="showmsg"></apex:pageMessages>
+            <apex:pageBlockSection >
+                <apex:inputField value="{!objPAM.PartnerAttributes_Modification__c}" required="true" />
+                <apex:inputField value="{!objPAM.Program_Type__c}" required="true" />
+                <apex:inputField value="{!objPAM.SubProgram_Type__c}" required="true" />
+                <apex:inputField value="{!objPAM.Competency__c}" required="true" />
+                <apex:inputField value="{!objPAM.Competency_Level__c}" required="true" />
+                <apex:inputField value="{!objPAM.CSP_Yes_No__c}" />             
+                <apex:inputField value="{!objPAM.Account__c}" required="true"/>
+                <apex:inputField value="{!objPAM.Contact__c}" required="true" />                   
+            </apex:pageBlockSection>
+            <center><apex:commandButton value="Submit" reRender="showmsg" action="{!save}"/></center>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OEM_Req_If_Prob_80_40_20</fullName>
+    <active>false</active>
+    <description>SDS-2149: Require NPN OEM/ODM/Disti Status selection:
+-Preliminary/Known is available for Probability 20% to 60%</description>
+    <errorConditionFormula>AND(
+ $RecordType.Name = &quot;Enterprise Sales Opportunity&quot;,
+ $Profile.Name &lt;&gt; &apos;System Administrator&apos;,
+ DATEVALUE(CreatedDate) &gt; DATEVALUE(&quot;2020-04-13&quot;),
+ Probability &gt;= 0.20,
+ Probability &lt;= 0.60,
+ ISNULL(Primary_NPN_OEM_ODM_Disti__c)
+)</errorConditionFormula>
+    <errorDisplayField>Primary_NPN_OEM_ODM_Disti__c</errorDisplayField>
+    <errorMessage>All Opportunities that are between 20 - 60% must have a Primary Disti/OEM selected.</errorMessage>
+</ValidationRule>

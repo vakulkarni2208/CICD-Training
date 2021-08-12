@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Required_if_DGX_COLO_Partner_is_Other</fullName>
+    <active>true</active>
+    <description>JIRA #SDS-2649
+Required to fill value in &apos;Other DGX COLO Partner&apos; if the selection on &apos;Co-Location (COLO) Partner&apos; is &apos;Other&apos;</description>
+    <errorConditionFormula>AND(
+ $RecordType.Name = &quot;Enterprise Sales Opportunity&quot;,
+AND($Profile.Name &lt;&gt; &apos;System Administrator&apos;,$Profile.Name &lt;&gt; &apos;SVC SAP Integration&apos;),
+ ISPICKVAL(Co_Location_COLO_Partner__c, &quot;Other&quot;),
+ ISBLANK(Other_DGX_COLO_Partner__c)
+)</errorConditionFormula>
+    <errorDisplayField>Other_DGX_COLO_Partner__c</errorDisplayField>
+    <errorMessage>Please detail the &apos;Other DGX COLO Partner&apos; if the selection on &apos;Co-Location (COLO) Partner&apos; is &apos;Other&apos;</errorMessage>
+</ValidationRule>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Inbound_Inquiry_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Inbound Inquiry Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Phone</fullName>
+                <default>false</default>
+                <label>Phone</label>
+            </value>
+            <value>
+                <fullName>Tesla Inbox</fullName>
+                <default>false</default>
+                <label>Tesla Inbox</label>
+            </value>
+            <value>
+                <fullName>Quadro Inbox</fullName>
+                <default>false</default>
+                <label>Quadro Inbox</label>
+            </value>
+            <value>
+                <fullName>Info@NVIDIA.com</fullName>
+                <default>false</default>
+                <label>Info@NVIDIA.com</label>
+            </value>
+            <value>
+                <fullName>Channel Partner</fullName>
+                <default>false</default>
+                <label>Channel Partner</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

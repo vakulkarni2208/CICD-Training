@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Call</fullName>
+        <default>false</default>
+        <label>Call</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Meeting</fullName>
+        <default>false</default>
+        <label>Meeting</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Meeting (Face to Face)</fullName>
+        <default>false</default>
+        <label>Meeting (Face to Face)</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Follow up Reminder</fullName>
+        <default>false</default>
+        <label>Follow up Reminder</label>
+    </standardValue>
+    <standardValue>
+        <fullName>E-Mail</fullName>
+        <default>false</default>
+        <label>E-Mail</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Send Letter</fullName>
+        <default>false</default>
+        <label>Send Letter</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Send Quote</fullName>
+        <default>false</default>
+        <label>Send Quote</label>
+    </standardValue>
+    <standardValue>
+        <fullName>LinkedIn</fullName>
+        <default>false</default>
+        <label>LinkedIn</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Discover Org</fullName>
+        <default>false</default>
+        <label>Discover Org</label>
+    </standardValue>
+    <standardValue>
+        <fullName>LinkedIn SalesNav</fullName>
+        <default>false</default>
+        <label>LinkedIn SalesNav</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Left a Voicemail</fullName>
+        <default>false</default>
+        <label>Left a Voicemail</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Campaign</fullName>
+        <default>false</default>
+        <label>Campaign</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Auto Status Update</fullName>
+        <default>false</default>
+        <label>Auto Status Update</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Solutions Architect (SA)</fullName>
+        <default>false</default>
+        <label>Solutions Architect (SA)</label>
+    </standardValue>
+    <standardValue>
+        <fullName>What do they do?</fullName>
+        <default>false</default>
+        <label>What do they do?</label>
+    </standardValue>
+    <standardValue>
+        <fullName>OEM Partnership</fullName>
+        <default>false</default>
+        <label>OEM Partnership</label>
+    </standardValue>
+    <standardValue>
+        <fullName>AI Partner</fullName>
+        <default>false</default>
+        <label>AI Partner</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Milestones</fullName>
+        <default>false</default>
+        <label>Milestones</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Marketing PIC</fullName>
+        <default>false</default>
+        <label>Marketing PIC</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Distribution Pricing Sent</fullName>
+        <default>false</default>
+        <label>Distribution Pricing Sent</label>
+    </standardValue>
+</StandardValueSet>

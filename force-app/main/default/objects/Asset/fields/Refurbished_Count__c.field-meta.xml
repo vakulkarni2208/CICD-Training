@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Refurbished_Count__c</fullName>
+    <description>This field shows the count of how many times this Full System RMA performed on this.</description>
+    <externalId>false</externalId>
+    <label>Refurbished Count</label>
+    <summaryForeignKey>AssetRelationship.AssetId</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

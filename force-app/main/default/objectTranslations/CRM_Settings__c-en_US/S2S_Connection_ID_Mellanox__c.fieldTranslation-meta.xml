@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- This field stores Salesforce to Salesforce connection ID with Mellanox org. It is currently used in a service cloud flow. --></help>
+    <label><!-- S2S Connection ID: Mellanox --></label>
+    <name>S2S_Connection_ID_Mellanox__c</name>
+</CustomFieldTranslation>

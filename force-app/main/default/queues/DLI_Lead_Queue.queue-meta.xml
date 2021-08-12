@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>true</doesSendEmailToMembers>
+    <name>DLI Lead Queue</name>
+    <queueMembers>
+        <users>
+            <user>acook@nvidia.com</user>
+            <user>ckillam@nvidia.com</user>
+            <user>cclawson@nvidia.com</user>
+            <user>jiyangw@nvidia.com</user>
+            <user>jbungo@nvidia.com.crp</user>
+            <user>nzheng@nvidia.com</user>
+            <user>pjena@nvidia.com</user>
+            <user>rnevin@nvidia.com</user>
+            <user>swagner@nvidia.com</user>
+            <user>smoon@nvidia.com</user>
+            <user>slee22@nvidia.com</user>
+            <user>wramey@nvidia.com.prod</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Lead</sobjectType>
+    </queueSobject>
+</Queue>

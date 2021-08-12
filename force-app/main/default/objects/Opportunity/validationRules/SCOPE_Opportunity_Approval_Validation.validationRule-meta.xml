@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SCOPE_Opportunity_Approval_Validation</fullName>
+    <active>true</active>
+    <description>Validates that a SCOPE Opportunity has been approved prior to allowing stage changes</description>
+    <errorConditionFormula>AND (
+RecordType.DeveloperName = &quot;OEM_Bid_Opportunity&quot;,
+ISBLANK ( OEM_Bid_Approved_Date__c ),
+OR (
+ISPICKVAL ( StageName, &quot;Submitted - Pending Approval&quot;),
+ISPICKVAL ( StageName , &quot;Approved - In Progress&quot; ),
+ISPICKVAL ( StageName , &quot;Closed Won&quot; ))
+)</errorConditionFormula>
+    <errorMessage>Only approved SCOPE Opportunities can be moved from Submitted - Pending Approval. Please obtain approval by using &apos;Submit for Approval&apos; button on this SCOPE deal otherwise move to Closed Lost.</errorMessage>
+</ValidationRule>

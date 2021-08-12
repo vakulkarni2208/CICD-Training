@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>JTP_L1_GRID_Cases</fullName>
+    <booleanFilter>1 AND (2 OR 3)</booleanFilter>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>CASES.SUBJECT</columns>
+    <columns>Severity__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>NAME</columns>
+    <columns>Product_Category__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Case_Owner__c</field>
+        <operation>contains</operation>
+        <value>JTP L1</value>
+    </filters>
+    <filters>
+        <field>Product_Category__c</field>
+        <operation>equals</operation>
+        <value>GRID</value>
+    </filters>
+    <filters>
+        <field>ENTITLEMENT.NAME</field>
+        <operation>contains</operation>
+        <value>GRID</value>
+    </filters>
+    <label>JTP L1 - GRID Cases</label>
+</ListView>

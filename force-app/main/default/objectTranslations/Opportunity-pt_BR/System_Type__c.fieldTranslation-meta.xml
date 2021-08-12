@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Select the system type (workstation or server) that applies for this opportunity. --></help>
+    <label><!-- System Type --></label>
+    <name>System_Type__c</name>
+    <picklistValues>
+        <masterLabel>Server</masterLabel>
+        <translation><!-- Server --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Workstation</masterLabel>
+        <translation><!-- Workstation --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Synopsis_Activity__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Required when Incident Status is With Engineering</inlineHelpText>
+    <label>Synopsis Activity</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>TextArea</type>
+</CustomField>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IDM_API_Call_Failure_Exception__c</fullName>
+    <description>Exception details from API Call through batch or adhoc calls?</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Exception details from API Call through batch or adhoc calls?</inlineHelpText>
+    <label>IDM - API Call Failure Exception</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>TextArea</type>
+</CustomField>

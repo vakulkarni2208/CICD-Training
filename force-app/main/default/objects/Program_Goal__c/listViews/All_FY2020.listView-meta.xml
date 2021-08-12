@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_FY2020</fullName>
+    <columns>Fiscal_Quarter__c</columns>
+    <columns>Type__c</columns>
+    <columns>NAME</columns>
+    <columns>Region__c</columns>
+    <columns>Segment__c</columns>
+    <columns>Target__c</columns>
+    <columns>BFMJ_Commit__c</columns>
+    <columns>Tesla_MCO_Commit__c</columns>
+    <columns>Tesla_SMO_Commit__c</columns>
+    <columns>GRID_HW_Commit__c</columns>
+    <columns>NRE_Commit__c</columns>
+    <columns>DGX_Commit__c</columns>
+    <columns>GRID_SW_Commit__c</columns>
+    <columns>GRID_SW_Bookings__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Fiscal_Quarter__c</field>
+        <operation>contains</operation>
+        <value>2020Q1,2020Q2,2020Q3,2020Q4</value>
+    </filters>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Program_Goal__c.Focus_Deal_Tracker</value>
+    </filters>
+    <label>All-FY2020</label>
+    <language>en_US</language>
+</ListView>

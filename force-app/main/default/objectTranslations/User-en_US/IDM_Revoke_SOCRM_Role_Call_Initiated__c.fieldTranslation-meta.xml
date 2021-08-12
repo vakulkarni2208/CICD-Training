@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- IDM - Revoke SOCRM Role - API Call Initiated? --></help>
+    <label><!-- IDM - Revoke SOCRM Role - Call Initiated --></label>
+    <name>IDM_Revoke_SOCRM_Role_Call_Initiated__c</name>
+</CustomFieldTranslation>

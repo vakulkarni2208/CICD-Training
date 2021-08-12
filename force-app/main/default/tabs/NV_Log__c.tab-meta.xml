@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomTab xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customObject>true</customObject>
+    <description>NV Logs is centralized logs analysis tool for data, unstructured/structured and complex multi-line data which provides the following features such as Easy Search/Navigate, API Logs, system logs, Historical Analytics, Reports, Alerts, Dashboards and Visualization.</description>
+    <motif>Custom39: Telescope</motif>
+</CustomTab>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Severity__c</fullName>
+    <externalId>false</externalId>
+    <label>Severity</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>1-System Crash</fullName>
+                <default>false</default>
+                <label>1-System Crash</label>
+            </value>
+            <value>
+                <fullName>2-Application Crash</fullName>
+                <default>false</default>
+                <label>2-Application Crash</label>
+            </value>
+            <value>
+                <fullName>3-Functionality</fullName>
+                <default>true</default>
+                <label>3-Functionality</label>
+            </value>
+            <value>
+                <fullName>4-Corruption</fullName>
+                <default>false</default>
+                <label>4-Corruption</label>
+            </value>
+            <value>
+                <fullName>5-Performance</fullName>
+                <default>false</default>
+                <label>5-Performance</label>
+            </value>
+            <value>
+                <fullName>6-Enhancement</fullName>
+                <default>false</default>
+                <label>6-Enhancement</label>
+            </value>
+            <value>
+                <fullName>7-Task Tracking</fullName>
+                <default>false</default>
+                <label>7-Task Tracking</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

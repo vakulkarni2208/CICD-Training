@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Choose_OS__c</fullName>
+    <externalId>false</externalId>
+    <label>Choose OS</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Microsoft Windows 10 64-bit</fullName>
+                <default>false</default>
+                <label>Microsoft Windows 10 64-bit</label>
+            </value>
+            <value>
+                <fullName>Microsoft Windows 10 32-bit</fullName>
+                <default>false</default>
+                <label>Microsoft Windows 10 32-bit</label>
+            </value>
+            <value>
+                <fullName>Microsoft Windows 8 64-bit</fullName>
+                <default>false</default>
+                <label>Microsoft Windows 8 64-bit</label>
+            </value>
+            <value>
+                <fullName>Microsoft Windows 8 32-bit</fullName>
+                <default>false</default>
+                <label>Microsoft Windows 8 32-bit</label>
+            </value>
+            <value>
+                <fullName>Microsoft Windows 7 64-bit</fullName>
+                <default>false</default>
+                <label>Microsoft Windows 7 64-bit</label>
+            </value>
+            <value>
+                <fullName>Microsoft Windows 7 32-bit</fullName>
+                <default>false</default>
+                <label>Microsoft Windows 7 32-bit</label>
+            </value>
+            <value>
+                <fullName>Microsoft Vista 64-bit</fullName>
+                <default>false</default>
+                <label>Microsoft Vista 64-bit</label>
+            </value>
+            <value>
+                <fullName>Microsoft Vista 32-bit</fullName>
+                <default>false</default>
+                <label>Microsoft Vista 32-bit</label>
+            </value>
+            <value>
+                <fullName>Microsoft XP 64-bit</fullName>
+                <default>false</default>
+                <label>Microsoft XP 64-bit</label>
+            </value>
+            <value>
+                <fullName>Microsoft XP 32-bit</fullName>
+                <default>false</default>
+                <label>Microsoft XP 32-bit</label>
+            </value>
+            <value>
+                <fullName>Other Microsoft</fullName>
+                <default>false</default>
+                <label>Other Microsoft</label>
+            </value>
+            <value>
+                <fullName>Android</fullName>
+                <default>false</default>
+                <label>Android</label>
+            </value>
+            <value>
+                <fullName>Linux/Other Unix</fullName>
+                <default>false</default>
+                <label>Linux/Other Unix</label>
+            </value>
+            <value>
+                <fullName>Apple Mac OS</fullName>
+                <default>false</default>
+                <label>Apple Mac OS</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

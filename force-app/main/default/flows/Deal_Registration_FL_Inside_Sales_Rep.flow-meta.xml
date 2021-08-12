@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <decisions>
+        <name>Check_if_DefaultTeamMember_is_Null</name>
+        <label>Check if DefaultTeamMember is Null</label>
+        <locationX>176</locationX>
+        <locationY>327</locationY>
+        <defaultConnector>
+            <targetReference>Update_Registration_Inside_Sales_Rep_of_Lead_with_Null</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>DefaultTeamMember is Null</defaultConnectorLabel>
+        <rules>
+            <name>DefaultTeamMember_is_Not_Null</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>DefaultTeamMemberwithNSCRole</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Lead_with_DefaultTeamMember</targetReference>
+            </connector>
+            <label>DefaultTeamMember is Not Null</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>If Lead&apos;s Registration Inside Sales Rep and Default Team Member are Same, do nothing</description>
+        <name>Check_If_Lead_s_Registration_Inside_Sales_Rep_and_Default_Team_Member_are_Same</name>
+        <label>Check If Lead&apos;s Registration Inside Sales Rep and Default Team Member are Same</label>
+        <locationX>177</locationX>
+        <locationY>170</locationY>
+        <defaultConnector>
+            <targetReference>Check_if_DefaultTeamMember_is_Null</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Lead&apos;s Registration Inside Sales Rep and Default Team Member are  NOT Same</defaultConnectorLabel>
+        <rules>
+            <name>Lead_s_Registration_Inside_Sales_Rep_and_Default_Team_Member_are_Same</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Lead_Existing_RegistrationInsideSalesRep</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>DefaultTeamMemberwithNSCRole</elementReference>
+                </rightValue>
+            </conditions>
+            <label>Lead&apos;s Registration Inside Sales Rep and Default Team Member are Same</label>
+        </rules>
+    </decisions>
+    <interviewLabel>Deal Registration {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Deal Registration: FL: Inside Sales Rep</label>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>TeamMemberRoleLookup</name>
+        <label>TeamMemberRoleLookup</label>
+        <locationX>177</locationX>
+        <locationY>41</locationY>
+        <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Check_If_Lead_s_Registration_Inside_Sales_Rep_and_Default_Team_Member_are_Same</targetReference>
+        </connector>
+        <filters>
+            <field>OwnerId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>LeadOwnerId</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>TeamMemberRole</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>National Sales Center (NSC)</stringValue>
+            </value>
+        </filters>
+        <object>UserTeamMember</object>
+        <outputAssignments>
+            <assignToReference>DefaultTeamMemberwithNSCRole</assignToReference>
+            <field>UserId</field>
+        </outputAssignments>
+    </recordLookups>
+    <recordUpdates>
+        <name>Update_Lead_with_DefaultTeamMember</name>
+        <label>Update Lead with DefaultTeamMember</label>
+        <locationX>533</locationX>
+        <locationY>327</locationY>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>LeadId</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>DR_Registration_Inside_Sales_Rep__c</field>
+            <value>
+                <elementReference>DefaultTeamMemberwithNSCRole</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Lead</object>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Registration_Inside_Sales_Rep_of_Lead_with_Null</name>
+        <label>Update Registration Inside Sales Rep of Lead with Null</label>
+        <locationX>176</locationX>
+        <locationY>476</locationY>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>LeadId</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>DR_Registration_Inside_Sales_Rep__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>DR_Registration_Inside_Sales_Rep__c</field>
+        </inputAssignments>
+        <object>Lead</object>
+    </recordUpdates>
+    <startElementReference>TeamMemberRoleLookup</startElementReference>
+    <status>Active</status>
+    <variables>
+        <description>This variable will have the UserId who is Default Opportunity Member on the Lead Owner&apos;s user record with Role &apos;National Security Center (NSC)&apos;</description>
+        <name>DefaultTeamMemberwithNSCRole</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <description>Existing value of  Lead&apos;s Registration Inside Sales Rep
+Input variable 
+Set from Process Builder</description>
+        <name>Lead_Existing_RegistrationInsideSalesRep</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>This field has exising value of &quot;Registration Inside Sales Rep&quot;</description>
+        <name>LeadexistingRegistrationInsideSalesRepVar</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <description>This Variable has the Id of the Lead</description>
+        <name>LeadId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <description>This variable will be populated from a Process Builder.</description>
+        <name>LeadOwnerId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+</Flow>

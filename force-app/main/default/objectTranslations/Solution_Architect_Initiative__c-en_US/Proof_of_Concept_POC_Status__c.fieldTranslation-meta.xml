@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Proof-of-Concept (POC) Status --></label>
+    <name>Proof_of_Concept_POC_Status__c</name>
+    <picklistValues>
+        <masterLabel>Canceled</masterLabel>
+        <translation><!-- Canceled --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Delayed</masterLabel>
+        <translation><!-- Delayed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Initial Setup</masterLabel>
+        <translation><!-- Initial Setup --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Planning</masterLabel>
+        <translation><!-- Planning --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Review</masterLabel>
+        <translation><!-- Review --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Technical Loss</masterLabel>
+        <translation><!-- Technical Loss --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Technical Win</masterLabel>
+        <translation><!-- Technical Win --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Testing</masterLabel>
+        <translation><!-- Testing --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GPU_Genius__c</fullName>
+    <externalId>false</externalId>
+    <label>GPU Genius</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Close</fullName>
+                <default>false</default>
+                <label>Close</label>
+            </value>
+            <value>
+                <fullName>ELITE_CZ:5118534</fullName>
+                <default>false</default>
+                <label>ELITE_CZ:5118534</label>
+            </value>
+            <value>
+                <fullName>ELITE_DE:4565552</fullName>
+                <default>false</default>
+                <label>ELITE_DE:4565552</label>
+            </value>
+            <value>
+                <fullName>ELITE_ES:4565563</fullName>
+                <default>false</default>
+                <label>ELITE_ES:4565563</label>
+            </value>
+            <value>
+                <fullName>ELITE_FR:4565545</fullName>
+                <default>false</default>
+                <label>ELITE_FR:4565545</label>
+            </value>
+            <value>
+                <fullName>ELITE_IT:4565568</fullName>
+                <default>false</default>
+                <label>ELITE_IT:4565568</label>
+            </value>
+            <value>
+                <fullName>ELITE_PL:4565571</fullName>
+                <default>false</default>
+                <label>ELITE_PL:4565571</label>
+            </value>
+            <value>
+                <fullName>ELITE_TR:5118539</fullName>
+                <default>false</default>
+                <label>ELITE_TR:5118539</label>
+            </value>
+            <value>
+                <fullName>ELITE_UK:4565542</fullName>
+                <default>false</default>
+                <label>ELITE_UK:4565542</label>
+            </value>
+            <value>
+                <fullName>HP:105395</fullName>
+                <default>false</default>
+                <label>HP:105395</label>
+            </value>
+            <value>
+                <fullName>IBM:105791</fullName>
+                <default>false</default>
+                <label>IBM:105791</label>
+            </value>
+            <value>
+                <fullName>Learning Dell:4657800</fullName>
+                <default>false</default>
+                <label>Learning Dell:4657800</label>
+            </value>
+            <value>
+                <fullName>Learning EMEAI NVEP:4995860</fullName>
+                <default>false</default>
+                <label>Learning EMEAI NVEP:4995860</label>
+            </value>
+            <value>
+                <fullName>Learning GRID:2965513</fullName>
+                <default>false</default>
+                <label>Learning GRID:2965513</label>
+            </value>
+            <value>
+                <fullName>Learning GRID Restricted:4980382</fullName>
+                <default>false</default>
+                <label>Learning GRID Restricted:4980382</label>
+            </value>
+            <value>
+                <fullName>Learning GRID VCA:2970917</fullName>
+                <default>false</default>
+                <label>Learning GRID VCA:2970917</label>
+            </value>
+            <value>
+                <fullName>Learning NPN Community:4997879</fullName>
+                <default>false</default>
+                <label>Learning NPN Community:4997879</label>
+            </value>
+            <value>
+                <fullName>Learning Quadro:4320588</fullName>
+                <default>false</default>
+                <label>Learning Quadro:4320588</label>
+            </value>
+            <value>
+                <fullName>Learning TPP:3200491</fullName>
+                <default>false</default>
+                <label>Learning TPP:3200491</label>
+            </value>
+            <value>
+                <fullName>Lenovo:520995</fullName>
+                <default>false</default>
+                <label>Lenovo:520995</label>
+            </value>
+            <value>
+                <fullName>NPN DGX Sales:5642759</fullName>
+                <default>false</default>
+                <label>NPN DGX Sales:5642759</label>
+            </value>
+            <value>
+                <fullName>NPN DGX Technical:5642760</fullName>
+                <default>false</default>
+                <label>NPN DGX Technical:5642760</label>
+            </value>
+            <value>
+                <fullName>NPN Quadro Sales:5642757</fullName>
+                <default>false</default>
+                <label>NPN Quadro Sales:5642757</label>
+            </value>
+            <value>
+                <fullName>NPN Quadro Technical:5642758</fullName>
+                <default>false</default>
+                <label>NPN Quadro Technical:5642758</label>
+            </value>
+            <value>
+                <fullName>NPN Tesla Sales:5642753</fullName>
+                <default>false</default>
+                <label>NPN Tesla Sales:5642753</label>
+            </value>
+            <value>
+                <fullName>NPN Tesla Technical:5642754</fullName>
+                <default>false</default>
+                <label>NPN Tesla Technical:5642754</label>
+            </value>
+            <value>
+                <fullName>NPN vGPU Sales:5642755</fullName>
+                <default>false</default>
+                <label>NPN vGPU Sales:5642755</label>
+            </value>
+            <value>
+                <fullName>NPN vGPU Technical:5642756</fullName>
+                <default>false</default>
+                <label>NPN vGPU Technical:5642756</label>
+            </value>
+            <value>
+                <fullName>NSC:234133</fullName>
+                <default>false</default>
+                <label>NSC:234133</label>
+            </value>
+            <value>
+                <fullName>PNY:2531912</fullName>
+                <default>false</default>
+                <label>PNY:2531912</label>
+            </value>
+            <value>
+                <fullName>Public Users:809653</fullName>
+                <default>false</default>
+                <label>Public Users:809653</label>
+            </value>
+            <value>
+                <fullName>Rapid Learning Testing:3098611</fullName>
+                <default>false</default>
+                <label>Rapid Learning Testing:3098611</label>
+            </value>
+            <value>
+                <fullName>Test Group RL:3423723</fullName>
+                <default>false</default>
+                <label>Test Group RL:3423723</label>
+            </value>
+            <value>
+                <fullName>TPP Technical:105792</fullName>
+                <default>false</default>
+                <label>TPP Technical:105792</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

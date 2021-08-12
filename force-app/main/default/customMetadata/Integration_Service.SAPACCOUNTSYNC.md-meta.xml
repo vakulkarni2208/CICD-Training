@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>SAPACCOUNTSYNC</label>
+    <protected>false</protected>
+    <values>
+        <field>Authentication_Type__c</field>
+        <value xsi:type="xsd:string">Basic</value>
+    </values>
+    <values>
+        <field>Client_Id__c</field>
+        <value xsi:type="xsd:string">2ff4ef94-0563-4e47-8e51-f4ac531927e4</value>
+    </values>
+    <values>
+        <field>Client_Secret__c</field>
+        <value xsi:type="xsd:string">Basic U3ZjcGVjc2ZkY3ByZDpkUiF2I1kyMEM=</value>
+    </values>
+    <values>
+        <field>Content_Type__c</field>
+        <value xsi:type="xsd:string">application/xml</value>
+    </values>
+    <values>
+        <field>EndPoint__c</field>
+        <value xsi:type="xsd:string">https://prdb2b.nvidia.com/XISOAPAdapter/MessageServlet?senderParty=SFDC&amp;senderService=SALESOPS_ORG&amp;receiverParty=&amp;receiverService=&amp;interface=SFDCCreateAccount_Out&amp;interfaceNamespace=urn:nvidia.com:pec</value>
+    </values>
+    <values>
+        <field>Environment__c</field>
+        <value xsi:type="xsd:string">Prod</value>
+    </values>
+    <values>
+        <field>IntegrationType__c</field>
+        <value xsi:type="xsd:string">SOAP</value>
+    </values>
+    <values>
+        <field>MethodType__c</field>
+        <value xsi:type="xsd:string">POST</value>
+    </values>
+    <values>
+        <field>Password__c</field>
+        <value xsi:type="xsd:string">dR!v#Y20C</value>
+    </values>
+    <values>
+        <field>RequestType__c</field>
+        <value xsi:type="xsd:string">Outbound</value>
+    </values>
+    <values>
+        <field>SourceSystem__c</field>
+        <value xsi:type="xsd:string">Salesforce</value>
+    </values>
+    <values>
+        <field>Targetsystem__c</field>
+        <value xsi:type="xsd:string">SAP</value>
+    </values>
+    <values>
+        <field>UserName__c</field>
+        <value xsi:type="xsd:string">Svcpecsfdcprd</value>
+    </values>
+    <values>
+        <field>WebServiceName__c</field>
+        <value xsi:type="xsd:string">sapaccountsync</value>
+    </values>
+</CustomMetadata>

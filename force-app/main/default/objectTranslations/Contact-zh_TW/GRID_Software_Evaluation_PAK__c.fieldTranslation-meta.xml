@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- GRID EVAL Registration Id --></help>
+    <label><!-- GRID Software Evaluation PAK --></label>
+    <name>GRID_Software_Evaluation_PAK__c</name>
+</CustomFieldTranslation>

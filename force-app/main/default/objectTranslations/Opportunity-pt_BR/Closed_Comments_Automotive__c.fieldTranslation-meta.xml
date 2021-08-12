@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- For Closed Lost, include specific reason for loss.For Closed Won, include specific commentary that the end goal of the engagement is achieved. Signing agreements, shipping DRIVE Platform, or completing a Demo are not reasons to move the opportunity to Won --></help>
+    <label><!-- Closed Comments --></label>
+    <name>Closed_Comments_Automotive__c</name>
+</CustomFieldTranslation>

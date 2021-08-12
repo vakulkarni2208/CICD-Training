@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customPermissions>
+        <enabled>true</enabled>
+        <name>DEPLOYMENT_USER_SKIP_VALIDATIONS</name>
+    </customPermissions>
+    <customPermissions>
+        <enabled>true</enabled>
+        <name>SKIP_PriceBookCheck</name>
+    </customPermissions>
+    <description>Includes the Custom Permission (named DEPLOYMENT USER : SKIP : VALIDATIONS)
+- To skip validations; each validation rules that needs to be relaxed for the test classes should include the custom permission and the deployment user needs to have this ps</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>DEPLOYMENT USER : SKIP : VALIDATIONS</label>
+</PermissionSet>

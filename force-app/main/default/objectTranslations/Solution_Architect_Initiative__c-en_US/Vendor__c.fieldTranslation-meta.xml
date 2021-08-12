@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Vendor --></label>
+    <name>Vendor__c</name>
+    <picklistValues>
+        <masterLabel>Citrix</masterLabel>
+        <translation><!-- Citrix --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>KVM</masterLabel>
+        <translation><!-- KVM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Nutanix</masterLabel>
+        <translation><!-- Nutanix --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Red Hat</masterLabel>
+        <translation><!-- Red Hat --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VMware</masterLabel>
+        <translation><!-- VMware --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

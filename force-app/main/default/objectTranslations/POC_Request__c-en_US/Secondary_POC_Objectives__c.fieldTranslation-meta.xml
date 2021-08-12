@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Secondary POC Objectives --></label>
+    <name>Secondary_POC_Objectives__c</name>
+    <picklistValues>
+        <masterLabel>Increase Customer Value</masterLabel>
+        <translation><!-- Increase Customer Value --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Increase Opportunity Value</masterLabel>
+        <translation><!-- Increase Opportunity Value --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Increasing Key Learnings</masterLabel>
+        <translation><!-- Increasing Key Learnings --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Increasing Purchase Commitment</masterLabel>
+        <translation><!-- Increasing Purchase Commitment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Referenceability</masterLabel>
+        <translation><!-- Referenceability --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

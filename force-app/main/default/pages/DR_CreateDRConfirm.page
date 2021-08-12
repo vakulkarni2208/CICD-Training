@@ -1,0 +1,9 @@
+<apex:page showHeader="false" sidebar="false">
+	<br/>
+	<h1>Thank you for registering your opportunity! This is currently under review by the NVIDIA team.<br/>
+	</h1>
+	<br/><br/>
+	<h3>You will be notified within three (3) business days on next steps.<br/>
+	For any questions, please contact the NVIDIA Opportunity registration team at NPNOpportunityRegistration@nvidia.com
+	</h3>
+</apex:page>

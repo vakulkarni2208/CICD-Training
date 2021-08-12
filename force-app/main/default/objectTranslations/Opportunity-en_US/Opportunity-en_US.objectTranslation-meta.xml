@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Account Information On DSR --></label>
+        <name>bsource__Account_Information</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Opportunity Information on DSR --></label>
+        <name>bsource__Opportunity_Information</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Deal Desk --></label>
+        <name>sbaa__DealDesk</name>
+    </fieldSets>
+    <recordTypes>
+        <description><!-- Use this for all Automotive (Embedded) engagements; one Opportunity per end goal --></description>
+        <label><!-- Automotive Opportunity --></label>
+        <name>Automotive_Opportunity</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Used by DLI team to manage Opportunities --></description>
+        <label><!-- DLI Opportunity --></label>
+        <name>DLI_Opportunity</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- For Enterprise Design Wins process --></description>
+        <label><!-- Enterprise Design Wins --></label>
+        <name>Enterprise_Design_Wins</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Use this for large enterprise sales deals that will take 30 days or longer to close --></description>
+        <label><!-- Enterprise Sales Opportunity --></label>
+        <name>Enterprise_Sales_Opportunity</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Use this Opportunity type to detail an OEM bid related to an Enterprise Opportunity and secure pricing approvals --></description>
+        <label><!-- OEM Bid Opportunity --></label>
+        <name>OEM_Bid_Opportunity</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Use this opportunity type for repeat business records. Only to be used from a Won Enterprise Opportunity. --></description>
+        <label><!-- Repeat Business Opportunity --></label>
+        <name>Repeat_Business_Opportunity</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- SW &amp; Service Renewals --></label>
+        <name>SW_Service_Renewals</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Used to request special pricing --></description>
+        <label><!-- Special Pricing Request --></label>
+        <name>Special_Pricing_Request</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Using Tegra Embedded Opportunity Layout --></description>
+        <label><!-- Tegra Embedded Opportunity --></label>
+        <name>Tegra_Auto_and_Emb_Opportunity</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Tegra Embedded Partner Opportunity for Partners and uses Tegra Embedded Partner Opportunity Layout --></description>
+        <label><!-- Tegra Embedded Partner Opportunity --></label>
+        <name>Tegra_Embedded_Partner_Opportunity</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- For approved opportunity registrations, please choose the Opp Reg or Opp Reg EDU Price book. For assistance, click the &quot;Get Help&quot; button located on the top right of the page. --></errorMessage>
+        <name>Allow_OppReg_PriceBooks_For_DealReg_Opp</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only the Standard or EDU Price book can be utilized for non-Opportunity Registration opportunities. For assistance or a pricing update, click the &quot;Get Help&quot; button located on the top right of the page. --></errorMessage>
+        <name>Allow_Standard_PriceBook_For_NonDealReg</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Strategic Hyperscale or CRISP (Consumer Internet Service Providers)  Industry can only be selected if the Account Industry matches. Please select another Industry or log a Get Help request to update Account Industry. --></errorMessage>
+        <name>BATFANG_CICN_Preferred_Industry</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Deal Registration Opportunities cannot use the &apos;Clone&apos; feature. For assistance, click the &quot;Get Help&quot; button located on the top right of the page. --></errorMessage>
+        <name>Block_Deal_Reg_Opportunity_from_Clone</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- MKTO User cannot own any Opportunity. --></errorMessage>
+        <name>Block_MKTOUser_OwnershipOfOpportunity</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Opportunity Owner not valid, please select an internal user. --></errorMessage>
+        <name>Block_Partner_From_Being_The_Opp_Owner</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- To avoid pricing issues, a Primary OEM/ODM/Disti of an OEM type is not allowed on Opportunity registrations. --></errorMessage>
+        <name>Block_Primary_OEM_on_OppReg</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Sales Leaders, before highlighting risk only the opportunity, please add your commentary stating why there is risk. --></errorMessage>
+        <name>CQ_Opportunity_Risk_Sales_Leader</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You are modifying an open opportunity with a past due Close Date.
+Please update the Close Date before saving. --></errorMessage>
+        <name>Close_Date_vs_Modified_Date_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- For a Closed deal please enter comments --></errorMessage>
+        <name>Closed_Comments_for_SCOPE_Opp</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Additional comments are required for Closed Lost opportunities before saving --></errorMessage>
+        <name>Closed_Lost_Comments_Quadro</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- For larger DGX Opportunities please detail if a Co-Location (COLO) Partner is engaged and, if so, the Partner name --></errorMessage>
+        <name>DGX_COLO_Details_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If you believe NVIDIA has the PO, move this deal to Paperwork Finalization. Sales Ops will work close out this deal when booked in SAP. Contact your regional Sales Operations team if you require any further assistance. --></errorMessage>
+        <name>DGX_OM_wo_SAP_SO</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please fill-in Other Confirmed Distributor --></errorMessage>
+        <name>DLI_Other_Confirmed_Distributor_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please fill-in Other Confirmed Reseller --></errorMessage>
+        <name>DLI_Other_Confirmed_Reseller_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If the Payment Method is MDF or RSMP or Manual Invoice then please detail the Other Payment Reference ID. --></errorMessage>
+        <name>DLI_Other_Payment_Reference_ID_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter the Reason for Cancellation if deal is Cancelled --></errorMessage>
+        <name>DLI_Require_reason_for_cancellation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If the Payment Method is Channel then please fill the SAP Sales Order Number. --></errorMessage>
+        <name>DLI_SAP_Sales_Order_Number_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only the Google, Facebook , Amazon, Waymo or Elemental Technologies Inc accounts are allowed to select &apos;Direct from NVIDIA&apos; sales methods.  Please select another option. --></errorMessage>
+        <name>Direct_from_NVIDIA_only_for_Google_FB</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Clone with Products is not available for Opportunities using OppReg Edu Pricebook. Please use standard clone then add the pricebook and products --></errorMessage>
+        <name>DoNotUse_OppReg_Edu_Pricebook_for_Clone</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please fill-in Other Modality. --></errorMessage>
+        <name>EDW_Other_Modality_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please use the ‘SCOPE Request’ button by navigating to the parent opportunity to create this request. --></errorMessage>
+        <name>Ensure_use_of_button_for_new_scope_oppty</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- At 40% or greater you need to select the &apos;Enterprise Competitor&apos; --></errorMessage>
+        <name>EnterpriseCompetitor_RequireAt40pc</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please fill Other Competitor if Enterprise Competitor is Other --></errorMessage>
+        <name>EnterpriseCompetitor_RequireOtherFilled</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- For Opportunities at 80% and 90% please select who the known Disti/OEM is --></errorMessage>
+        <name>If_ClosedWon_or_60prob_require_FinalOEM</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If Primary workload is Other please describe here --></errorMessage>
+        <name>If_other_use_case_require_details</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The In Progress stage will be automatically selected after approval is completed --></errorMessage>
+        <name>In_Progress_Stage_for_SCOPE_Approved_Opp</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Customer Accounts need to be approved before any Opportunity with 40% or greater probability can be added to it --></errorMessage>
+        <name>Is_Approved_Account</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- CompanyId should be a numeric value --></errorMessage>
+        <name>LID__Check_CompanyId_Value</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- For larger DGX Opportunities please update the NVIDIA Financing Solutions Status field --></errorMessage>
+        <name>NVIDIA_Financing_Solution_Status</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please adjust the Close Date.  You cannot save a NEW opportunity with a past due Close Date. --></errorMessage>
+        <name>New_Opportunity_Close_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Opportunity Products cannot be deleted when the Stage is Closed Won --></errorMessage>
+        <name>No_deleting_products_after_Closed_Won</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- All Opportunities that are between 20 - 60% must have a Primary Disti/OEM selected. --></errorMessage>
+        <name>OEM_Req_If_Prob_80_40_20</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please ensure your Opportunity Industry is appropriate. Strategic Hyperscale and CRISP are considered Named Industries and can only be selected if the Account matches --></errorMessage>
+        <name>Opp_Account_Industry_Match</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please choose Renewal Product as DGX for DGX Automated Outreach and vGPU for vGPU Automated Outreach --></errorMessage>
+        <name>Opp_Auto_OutReach_CPQ</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please provide the opportunity number if the Close Lost Reason is Duplicate Opportunity --></errorMessage>
+        <name>Opp_CLR_Duplicate_Opportunity</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter Closed Comments if Closed Lost Reason is Other --></errorMessage>
+        <name>Opp_EP_CLR_CloseComments</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please note the Industry Update Reason as to why the Opportunity Industry is different from the Account Industry. If Account Industry should be changed please use the Get Help button. --></errorMessage>
+        <name>Opp_Industry_Change</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- NV forecast category cannot be 1-Closed when the opportunity stage is not closed won --></errorMessage>
+        <name>Opp_NV_Forecast_Close_Won</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Opportunities may not be updated after they have been moved to closed won and validated. If you have any questions, please click the &quot;Get Help&quot; button on the opportunity. --></errorMessage>
+        <name>Opp_No_Changes_Closed_Won</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Closed Lost Auto Terminated deals cannot be edited. For assistance, click the &quot;Get Help&quot; button located on the top right of the page. --></errorMessage>
+        <name>Opp_No_change_Closed_Auto_Terminated</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You may only extend this registration once. For assistance, click the &quot;Get Help&quot; button located on the top right of the page. --></errorMessage>
+        <name>Opp_Reg_Only_1_Extn_Allowed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- To move your deal to Paperwork Finalization, Primary Quote should be in approved Status --></errorMessage>
+        <name>Paperwork_Finalization_Approved_Quote</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- For DGX or Tesla &gt;$450K deals moving to Needs Analysis Stage please answer if a POD Partner is engaged and if so the additional details --></errorMessage>
+        <name>Pod_Partner_details_required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If Decision Date is not in the same FQ as the Opportunity Close Date please input the Decision Date --></errorMessage>
+        <name>Populate_Decision_Date_if_not_Close_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Requests that are approved cannot be edited. Please enter a new pricing request for re-approval --></errorMessage>
+        <name>Prevent_Updating_inProgress_Opptys</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- At 20% or greater Probability please detail the Primary OEM/ODM/etc. --></errorMessage>
+        <name>PrimaryOEM_RequireAt20pc</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please leave “If Other Workload Please Describe” field blank unless you selected “Other” in the “Primary Customer Workload&quot; field --></errorMessage>
+        <name>PrimaryWorkLoadOther_BlankOtherWorkLoad</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- At 40% Probability or greater (Needs Analysis), a Primary Customer Contact and Primary Contact Role will be required on all Sales Opportunities --></errorMessage>
+        <name>Primary_Contact_Role_Is_Required_NewRec</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- At 40% Probability or greater (Needs Analysis), a Primary Customer Contact and Primary Contact Role will be required on all Sales Opportunities --></errorMessage>
+        <name>Primary_Contact_Role_Is_Required_existin</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Production EOL Date must be AFTER Start Date.  Please correct. --></errorMessage>
+        <name>Prod_EOL_Date_NB</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- For Data Analytics or Machine Learning Primary/Additional Workload please update ML/Data Analytics Details --></errorMessage>
+        <name>RAPIDS_Required_for_DA_and_ML</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- &apos;Industry&apos; cannot be Blank if the Probability is equal or greater than 20%. --></errorMessage>
+        <name>Req_Industry_if_Probability_20_or_more</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The fields &apos;Customer Program Name&apos;, &apos;Program Description&apos;, &apos;Scheduled Milestones&apos;, &apos;Benefit Tracking Metric&apos; and &apos;Customer Segment&apos; cannot be blank --></errorMessage>
+        <name>Req_NFR_Fields_on_Oppty_Pricing_Requests</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Require &apos;Other Details&apos; if the selection on &apos;ML/Data Analytics Details&apos; is &apos;Other&apos; --></errorMessage>
+        <name>Req_OtherDetails_if_MLDataAnalytics_Othr</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please log a case to request approval on your Account prior to moving to Needs Analysis Stage --></errorMessage>
+        <name>Require_Approved_Account_40_Prob</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Add/Update Closed Comments if Closed (Won or Lost) --></errorMessage>
+        <name>Require_Closed_Comments_on_Auto_Oppty</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Before moving to Closed Lost stage please detail the Closed Lost Reason --></errorMessage>
+        <name>Require_Closed_Lost_Reason_when_lost</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- For DGX &gt;$3M deals moving to Needs Analysis Stage, please update the DGX Pod Design field(s) --></errorMessage>
+        <name>Require_DGX_POD_Design</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- To help with Enterprise reporting please enter the Industry Application Area for this Healthcare Opportunity --></errorMessage>
+        <name>Require_Industry_app_area_for_Healthcare</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- For Opportunities where NBU is not engaged please detail why in the &apos;NBU Engagement Justification&apos; field --></errorMessage>
+        <name>Require_NBU_Engagement_Justification</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- For Best Case or Commit Opptys &gt;$1M the &apos;NBU Involved&apos; Yes/No selection cannot be blank --></errorMessage>
+        <name>Require_NBU_Involved</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please help provide the applicable &apos;NBU Opportunity Number&apos; here --></errorMessage>
+        <name>Require_NBU_Opportunity_Number</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- For DC GPU Opportunities please note whether the customer is using an NVIDIA Certified Server or not --></errorMessage>
+        <name>Require_NVIDIA_Certified_Server</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- For HPC deals &gt;= $500K please enter Customer Press Release Status. Customer Releasing PR, fill in Customer Press Release (PR) Issuing Date. OEM Releasing PR, fill OEM Press Release (PR) Issuing Date. If No PR please enter additional detail in the comments --></errorMessage>
+        <name>Require_PRStatus</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Parent Enterprise Opportunity cannot be blank --></errorMessage>
+        <name>Require_Parent_Oppty_on_Pricing_Requests</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please fill-in the Parent Enterprise Opportunity if the Special Pricing Request Type is EDU and the quantity of GPUs is greater than 64 --></errorMessage>
+        <name>Require_Parent_oppty_on_Pricing_Req_EDU</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If NV Forecast Cateogry is lower than suggested category please detail the Risks or Help Needed --></errorMessage>
+        <name>Require_Risks_Help_Needed_if_NV_FC_diff</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- To move the stage forward please ensure Products have been added and the Opportunity Special Pricing has been approved. --></errorMessage>
+        <name>Require_pricing_approval_to_move_stage</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Before moving past Prospecting Stage please make sure a Quote is created and products are added to a Quote. --></errorMessage>
+        <name>Require_products_at_20_probability</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please detail the &apos;Other DGX COLO Partner&apos; if the selection on &apos;Co-Location (COLO) Partner&apos; is &apos;Other&apos; --></errorMessage>
+        <name>Required_if_DGX_COLO_Partner_is_Other</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- DGX and vGPU Products are not currently allowed on Special Pricing request Opportunities --></errorMessage>
+        <name>Restrict_DGX_GRID_on_SpecialPricingOppty</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This account is inactive. Opportunities cannot be created/edited. For assistance, click the &quot;Get Help&quot; button located on the top right of the page. --></errorMessage>
+        <name>Restrict_EditOpportunity_ForInactiveAcc</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Your current ODM role does not allow for EDU Request Types - please select TOP EDU for EDU request type --></errorMessage>
+        <name>Restrict_ODMRole_Users_On_EDURequestType</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only approved SCOPE Opportunities can be moved from Submitted - Pending Approval. Please obtain approval by using &apos;Submit for Approval&apos; button on this SCOPE deal otherwise move to Closed Lost. --></errorMessage>
+        <name>SCOPE_Opportunity_Approval_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please detail the NPN Solution Provider/VAR if one is engaged with Opportunity --></errorMessage>
+        <name>Solution_Provider_VAR_Requirement</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please leave “If Other Workload Please Describe” field blank unless you selected “Other” in the “Workload Detail” field --></errorMessage>
+        <name>WorkloadDetailOther_BlankOtherWorkLoad</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Conga_Composer_OAuth --></label>
+        <name>APXTConga4__Conga_Composer_OAuth</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Conga_Mail_Merge --></label>
+        <name>APXTConga4__Conga_Mail_Merge</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Conga_Composer_Auto_Product_Order_Form --></label>
+        <name>Conga_Composer_Auto_Product_Order_Form</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Conga_Composer_Special_Pricing_Request_Template --></label>
+        <name>Conga_Composer_Special_Pricing_Request_Template</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Custom_Clone --></label>
+        <name>Custom_Clone</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Custom_Edit --></label>
+        <name>Custom_Edit</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- DR_Terminate_Deal --></label>
+        <name>DR_Terminate_Deal</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Design_Win_Support_Request --></label>
+        <name>Design_Win_Support_Request</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GRID_Value_Calculator --></label>
+        <name>GRID_Value_Calculator</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Get_Help --></label>
+        <name>Get_Help</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Amend_Assets --></label>
+        <name>SBQQ__Amend_Assets</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Amend_Contract --></label>
+        <name>SBQQ__Amend_Contract</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- CreateOrder --></label>
+        <name>SBQQ__CreateOrder</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Include_Document --></label>
+        <name>SBQQ__Include_Document</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- SCOPE_CRM_Training_Deck --></label>
+        <name>SCOPE_CRM_Training_Deck</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- SCOPE_Milestone_Templates --></label>
+        <name>SCOPE_Milestone_Templates</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- SCOPE_Program_Guide --></label>
+        <name>SCOPE_Program_Guide</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Tesla_Throughput_Calculator --></label>
+        <name>Tesla_Throughput_Calculator</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- AssociateDSR --></label>
+        <name>bsource__AssociateDSR</name>
+    </webLinks>
+    <webLinks>
+        <label>EBC Request</label>
+        <name>bsource__Schedule_Executive_Briefing_Center_Visit</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_with_DocuSign --></label>
+        <name>dsfs__Send_with_DocuSign</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Verify_with_DNB --></label>
+        <name>dsfs__Verify_with_DNB</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Jifflenow_Meetings --></label>
+        <name>jiffle__Jifflenow_Meetings</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- LeadspaceFindNewProspectsOpportunity --></label>
+        <name>leadspace__LeadspaceFindNewProspectsOpportunity</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- PreviewApprovals --></label>
+        <name>sbaa__PreviewApprovals</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- RecallApprovals --></label>
+        <name>sbaa__RecallApprovals</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- ResendRequestEmail --></label>
+        <name>sbaa__ResendRequestEmail</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- SubmitForApproval --></label>
+        <name>sbaa__SubmitForApproval</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_to_Slack --></label>
+        <name>slackv2__Send_to_Slack</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Slack_Alerts --></label>
+        <name>slackv2__Slack_Alerts</name>
+    </webLinks>
+</CustomObjectTranslation>

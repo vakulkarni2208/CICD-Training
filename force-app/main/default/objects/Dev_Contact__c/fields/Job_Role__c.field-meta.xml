@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Job_Role__c</fullName>
+    <externalId>false</externalId>
+    <label>Job Role</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Channel/Partners</fullName>
+                <default>false</default>
+                <label>Channel/Partners</label>
+            </value>
+            <value>
+                <fullName>Chief Executive Officer (CEO)</fullName>
+                <default>false</default>
+                <label>Chief Executive Officer (CEO)</label>
+            </value>
+            <value>
+                <fullName>Chief Information Officer (CIO)</fullName>
+                <default>false</default>
+                <label>Chief Information Officer (CIO)</label>
+            </value>
+            <value>
+                <fullName>Chief Technology Officer (CTO)</fullName>
+                <default>false</default>
+                <label>Chief Technology Officer (CTO)</label>
+            </value>
+            <value>
+                <fullName>Consultant</fullName>
+                <default>false</default>
+                <label>Consultant</label>
+            </value>
+            <value>
+                <fullName>Data Scientist</fullName>
+                <default>false</default>
+                <label>Data Scientist</label>
+            </value>
+            <value>
+                <fullName>Developer/Programmer</fullName>
+                <default>false</default>
+                <label>Developer/Programmer</label>
+            </value>
+            <value>
+                <fullName>Engineer</fullName>
+                <default>false</default>
+                <label>Engineer</label>
+            </value>
+            <value>
+                <fullName>Executive/Management</fullName>
+                <default>false</default>
+                <label>Executive/Management</label>
+            </value>
+            <value>
+                <fullName>Film/Video Editor</fullName>
+                <default>false</default>
+                <label>Film/Video Editor</label>
+            </value>
+            <value>
+                <fullName>Graphic Designer/Animator</fullName>
+                <default>false</default>
+                <label>Graphic Designer/Animator</label>
+            </value>
+            <value>
+                <fullName>Industrial Designer/Product Designer</fullName>
+                <default>false</default>
+                <label>Industrial Designer/Product Designer</label>
+            </value>
+            <value>
+                <fullName>IT Administrator/Systems Administrator</fullName>
+                <default>false</default>
+                <label>IT Administrator/Systems Administrator</label>
+            </value>
+            <value>
+                <fullName>IT Manager/Director of IT/VP of IT</fullName>
+                <default>false</default>
+                <label>IT Manager/Director of IT/VP of IT</label>
+            </value>
+            <value>
+                <fullName>Marketing/Communications</fullName>
+                <default>false</default>
+                <label>Marketing/Communications</label>
+            </value>
+            <value>
+                <fullName>Marketing Manager</fullName>
+                <default>false</default>
+                <label>Marketing Manager</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Product Design/Engineering</fullName>
+                <default>false</default>
+                <label>Product Design/Engineering</label>
+            </value>
+            <value>
+                <fullName>Product Management/Technical Marketing</fullName>
+                <default>false</default>
+                <label>Product Management/Technical Marketing</label>
+            </value>
+            <value>
+                <fullName>Professor/Department Advisor</fullName>
+                <default>false</default>
+                <label>Professor/Department Advisor</label>
+            </value>
+            <value>
+                <fullName>Purchasing Manager</fullName>
+                <default>false</default>
+                <label>Purchasing Manager</label>
+            </value>
+            <value>
+                <fullName>Research Scientist</fullName>
+                <default>false</default>
+                <label>Research Scientist</label>
+            </value>
+            <value>
+                <fullName>Sales/Business Development</fullName>
+                <default>false</default>
+                <label>Sales/Business Development</label>
+            </value>
+            <value>
+                <fullName>Sales Engineer</fullName>
+                <default>false</default>
+                <label>Sales Engineer</label>
+            </value>
+            <value>
+                <fullName>Sales Rep/Sales Manager</fullName>
+                <default>false</default>
+                <label>Sales Rep/Sales Manager</label>
+            </value>
+            <value>
+                <fullName>Student/Post Grad</fullName>
+                <default>false</default>
+                <label>Student/Post Grad</label>
+            </value>
+            <value>
+                <fullName>Support/Services</fullName>
+                <default>false</default>
+                <label>Support/Services</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

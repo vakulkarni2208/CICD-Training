@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pod_Partner_details_required</fullName>
+    <active>true</active>
+    <description>For DGX or Tesla &gt;$450K deals moving to Needs Analysis POD Partner details are required.</description>
+    <errorConditionFormula>AND ( 
+Probability &gt; 0.39,
+$Profile.Name &lt;&gt; &apos;SVC SAP Integration&apos;,
+RecordType.DeveloperName = &apos;Enterprise_Sales_Opportunity&apos;, 
+OR(DGX_Product_Amount_non_station__c &gt;0 , 
+Tesla_Product_Amount__c&gt;450000), 
+ISBLANK ( TEXT (POD_Partner_Engaged__c)), 
+NOT( $Permission.DEPLOYMENT_USER_SKIP_VALIDATIONS ))</errorConditionFormula>
+    <errorDisplayField>POD_Partner_Engaged__c</errorDisplayField>
+    <errorMessage>For DGX or Tesla &gt;$450K deals moving to Needs Analysis Stage please answer if a POD Partner is engaged and if so the additional details</errorMessage>
+</ValidationRule>

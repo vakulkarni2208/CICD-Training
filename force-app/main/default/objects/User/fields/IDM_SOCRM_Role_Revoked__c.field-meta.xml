@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IDM_SOCRM_Role_Revoked__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>IDM - SOCRM Role - Revoked(manual or automated)?</description>
+    <externalId>false</externalId>
+    <inlineHelpText>IDM - SOCRM Role - Revoked(manual or automated)?</inlineHelpText>
+    <label>IDM - SOCRM Role - Revoked</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Checkbox</type>
+</CustomField>

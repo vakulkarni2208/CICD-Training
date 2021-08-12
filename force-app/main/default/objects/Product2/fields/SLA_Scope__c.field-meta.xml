@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SLA_Scope__c</fullName>
+    <externalId>false</externalId>
+    <label>SLA Scope</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>All with same Product Line</fullName>
+                <default>false</default>
+                <label>All with same Product Line</label>
+            </value>
+            <value>
+                <fullName>All with same Serial Number</fullName>
+                <default>false</default>
+                <label>All with same Serial Number</label>
+            </value>
+            <value>
+                <fullName>Only self</fullName>
+                <default>false</default>
+                <label>Only self</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

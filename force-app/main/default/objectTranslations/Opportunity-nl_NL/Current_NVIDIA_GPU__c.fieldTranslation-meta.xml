@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Current NVIDIA GPU --></label>
+    <name>Current_NVIDIA_GPU__c</name>
+    <picklistValues>
+        <masterLabel>DGX</masterLabel>
+        <translation><!-- DGX --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GeForce</masterLabel>
+        <translation><!-- GeForce --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Jetson</masterLabel>
+        <translation><!-- Jetson --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Quadro</masterLabel>
+        <translation><!-- Quadro --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tegra</masterLabel>
+        <translation><!-- Tegra --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tesla</masterLabel>
+        <translation><!-- Tesla --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>vGPU</masterLabel>
+        <translation><!-- vGPU --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>Service_Cloud_Populate_NVBug_URL</fullName>
+        <field>NVBug_URL__c</field>
+        <formula>&quot;http://nvbugs/&quot;+ Name</formula>
+        <name>Service Cloud : Populate NVBug URL</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <rules>
+        <fullName>Service Cloud %3A Set NVBug URL</fullName>
+        <actions>
+            <name>Service_Cloud_Populate_NVBug_URL</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>ISNUMBER(Name)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>A40_Product_on_Opportunity__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>SDS-3020</description>
+    <externalId>false</externalId>
+    <label>A40 Product on Opportunity</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

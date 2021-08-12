@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Customer_Survey_Sent__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>This field is checked when a customer survey is sent. It is used in WF Rules responsible to send Survey Emails.</description>
+    <externalId>false</externalId>
+    <label>Customer Survey Sent</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

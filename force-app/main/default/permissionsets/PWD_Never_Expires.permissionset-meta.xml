@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Contains the system permission : Password Never Expires.
+Some of the test portal users needed to have this feature so that during the demo it does not fail to login.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>PWD : Never Expires</label>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>PasswordNeverExpires</name>
+    </userPermissions>
+</PermissionSet>

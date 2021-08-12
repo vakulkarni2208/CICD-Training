@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>bsource__Opportunity_Information</fullName>
+    <description>Opportunity field that will show up on the final Summary page of a DSR record so that user can send additional information to BS system.</description>
+    <label>Opportunity Information on DSR</label>
+</FieldSet>

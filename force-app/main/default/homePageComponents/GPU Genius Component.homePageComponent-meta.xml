@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<HomePageComponent xmlns="http://soap.sforce.com/2006/04/metadata">
+    <body>&lt;table width=&quot;800&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td colspan=&quot;2&quot;&gt;&lt;div style=&quot;text-align: right;&quot;&gt;
+        &lt;img src=&quot;https://c.na2.visual.force.com/resource/1316193965000/GPUGenius/GPUGenius.png&quot; width=&quot;300&quot;&gt;
+    &lt;/div&gt;
+    &lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td colspan=&quot;2&quot; align=&quot;left&quot; valign=&quot;bottom&quot;&gt;
+    &lt;font style=&quot;font-weight: bold;&quot; size=&quot;5&quot;&gt;&lt;br&gt;Welcome to NVIDIA GPU Genius&lt;/font&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+        &lt;tr&gt;&lt;td align=&quot;left&quot;&gt;&lt;br&gt;&lt;font size=&quot;3&quot;&gt;NVIDIA GPU Genius 
+offers you a variety of tools, such as training and customer 
+presentations, demos, customer leave behinds and much more.&lt;/font&gt;&lt;br&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;
+   &lt;/tbody&gt;&lt;/table&gt;&lt;br&gt;</body>
+    <pageComponentType>htmlArea</pageComponentType>
+    <width>wide</width>
+</HomePageComponent>

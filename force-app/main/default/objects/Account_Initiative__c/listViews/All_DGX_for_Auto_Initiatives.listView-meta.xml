@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_DGX_for_Auto_Initiatives</fullName>
+    <columns>NAME</columns>
+    <columns>X1_Year_Potential__c</columns>
+    <columns>X4_Year_Potential__c</columns>
+    <columns>Account__c</columns>
+    <columns>Owner__c</columns>
+    <columns>Automotive_AM_PIC__c</columns>
+    <columns>Priority__c</columns>
+    <columns>Verified_Opportunity__c</columns>
+    <columns>Initiative__c</columns>
+    <columns>Active__c</columns>
+    <columns>Account_Billing_Region__c</columns>
+    <columns>Account_Country__c</columns>
+    <columns>Account_Owner__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Account_Initiative__c.DGX_for_Auto_Initiative</value>
+    </filters>
+    <label>All DGX for Auto Initiatives</label>
+</ListView>

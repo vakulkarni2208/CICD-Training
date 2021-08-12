@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Contact Status --></label>
+    <name>Contact_Status__c</name>
+    <picklistValues>
+        <masterLabel>Contact Only (No Portal Access)</masterLabel>
+        <translation><!-- Contact Only (No Portal Access) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Email Updated</masterLabel>
+        <translation><!-- Email Updated --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Inactive Portal User</masterLabel>
+        <translation><!-- Inactive Portal User --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not Valid Contact (Please remove)</masterLabel>
+        <translation><!-- Not Valid Contact (Please remove) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

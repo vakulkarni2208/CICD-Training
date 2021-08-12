@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NVIDIA_Software_Used__c</fullName>
+    <externalId>false</externalId>
+    <label>NVIDIA Software Used</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <controllingField>Vehicle_or_Bench_Configuration__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>DRIVE OS QNX</fullName>
+                <default>false</default>
+                <label>DRIVE OS QNX</label>
+            </value>
+            <value>
+                <fullName>DRIVE OS Linux</fullName>
+                <default>false</default>
+                <label>DRIVE OS Linux</label>
+            </value>
+            <value>
+                <fullName>DRIVE AV (Perception Stack)</fullName>
+                <default>false</default>
+                <label>DRIVE AV (Perception Stack)</label>
+            </value>
+            <value>
+                <fullName>DRIVE IX</fullName>
+                <default>false</default>
+                <label>DRIVE IX</label>
+            </value>
+            <value>
+                <fullName>DriveWorks</fullName>
+                <default>false</default>
+                <label>DriveWorks</label>
+            </value>
+            <value>
+                <fullName>CUDA</fullName>
+                <default>false</default>
+                <label>CUDA</label>
+            </value>
+            <value>
+                <fullName>TensorRT</fullName>
+                <default>false</default>
+                <label>TensorRT</label>
+            </value>
+            <value>
+                <fullName>None</fullName>
+                <default>false</default>
+                <label>None</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Vehicle Configuration</controllingFieldValue>
+            <controllingFieldValue>Bench Configuration</controllingFieldValue>
+            <valueName>DRIVE OS QNX</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Vehicle Configuration</controllingFieldValue>
+            <controllingFieldValue>Bench Configuration</controllingFieldValue>
+            <valueName>DRIVE OS Linux</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Vehicle Configuration</controllingFieldValue>
+            <controllingFieldValue>Bench Configuration</controllingFieldValue>
+            <valueName>DRIVE AV (Perception Stack)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Vehicle Configuration</controllingFieldValue>
+            <controllingFieldValue>Bench Configuration</controllingFieldValue>
+            <valueName>DRIVE IX</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Vehicle Configuration</controllingFieldValue>
+            <controllingFieldValue>Bench Configuration</controllingFieldValue>
+            <valueName>DriveWorks</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Vehicle Configuration</controllingFieldValue>
+            <controllingFieldValue>Bench Configuration</controllingFieldValue>
+            <valueName>CUDA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Vehicle Configuration</controllingFieldValue>
+            <controllingFieldValue>Bench Configuration</controllingFieldValue>
+            <valueName>TensorRT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Vehicle Configuration</controllingFieldValue>
+            <controllingFieldValue>Bench Configuration</controllingFieldValue>
+            <valueName>None</valueName>
+        </valueSettings>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

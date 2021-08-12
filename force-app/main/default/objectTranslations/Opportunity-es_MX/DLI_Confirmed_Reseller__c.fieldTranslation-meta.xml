@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- DLI Confirmed Reseller --></label>
+    <name>DLI_Confirmed_Reseller__c</name>
+    <picklistValues>
+        <masterLabel>AI Lab</masterLabel>
+        <translation><!-- AI Lab --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AMAX</masterLabel>
+        <translation><!-- AMAX --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>APY</masterLabel>
+        <translation><!-- APY --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Advania</masterLabel>
+        <translation><!-- Advania --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Alexandra Institute</masterLabel>
+        <translation><!-- Alexandra Institute --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Altair (Fluidyna)</masterLabel>
+        <translation><!-- Altair (Fluidyna) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BIT</masterLabel>
+        <translation><!-- BIT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Booz Allen</masterLabel>
+        <translation><!-- Booz Allen --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Boston</masterLabel>
+        <translation><!-- Boston --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CGit AB</masterLabel>
+        <translation><!-- CGit AB --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CTC Technology</masterLabel>
+        <translation><!-- CTC Technology --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Compugen</masterLabel>
+        <translation><!-- Compugen --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Computacenter</masterLabel>
+        <translation><!-- Computacenter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Conoa</masterLabel>
+        <translation><!-- Conoa --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DH Tech</masterLabel>
+        <translation><!-- DH Tech --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dalco</masterLabel>
+        <translation><!-- Dalco --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DellEMC (incl Dell Fed)</masterLabel>
+        <translation><!-- DellEMC (incl Dell Fed) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Delta</masterLabel>
+        <translation><!-- Delta --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E4</masterLabel>
+        <translation><!-- E4 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GPLTech</masterLabel>
+        <translation><!-- GPLTech --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Groupware</masterLabel>
+        <translation><!-- Groupware --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gulf Business Machines</masterLabel>
+        <translation><!-- Gulf Business Machines --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hancom</masterLabel>
+        <translation><!-- Hancom --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hitachi Information Academy</masterLabel>
+        <translation><!-- Hitachi Information Academy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>III Education</masterLabel>
+        <translation><!-- III Education --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IT RSC</masterLabel>
+        <translation><!-- IT RSC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ITRI</masterLabel>
+        <translation><!-- ITRI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Insight</masterLabel>
+        <translation><!-- Insight --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Inspur</masterLabel>
+        <translation><!-- Inspur --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Japan Third Party, Co (JTP)</masterLabel>
+        <translation><!-- Japan Third Party, Co (JTP) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LeadTek</masterLabel>
+        <translation><!-- LeadTek --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>M Computer</masterLabel>
+        <translation><!-- M Computer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mark III</masterLabel>
+        <translation><!-- Mark III --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mediasys FZ-LLC</masterLabel>
+        <translation><!-- Mediasys FZ-LLC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Megware Computer</masterLabel>
+        <translation><!-- Megware Computer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Microstaxx</masterLabel>
+        <translation><!-- Microstaxx --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Microway</masterLabel>
+        <translation><!-- Microway --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Monterrey CIIA</masterLabel>
+        <translation><!-- Monterrey CIIA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Nextron</masterLabel>
+        <translation><!-- Nextron --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Nor-Tech</masterLabel>
+        <translation><!-- Nor-Tech --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OCF</masterLabel>
+        <translation><!-- OCF --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OpenZeka</masterLabel>
+        <translation><!-- OpenZeka --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Opteamizer</masterLabel>
+        <translation><!-- Opteamizer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PCPC</masterLabel>
+        <translation><!-- PCPC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>QA</masterLabel>
+        <translation><!-- QA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RCH</masterLabel>
+        <translation><!-- RCH --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rabbit &amp; Tortoise</masterLabel>
+        <translation><!-- Rabbit &amp; Tortoise --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rave</masterLabel>
+        <translation><!-- Rave --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SCAN</masterLabel>
+        <translation><!-- SCAN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SVA</masterLabel>
+        <translation><!-- SVA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Skyline</masterLabel>
+        <translation><!-- Skyline --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sugon</masterLabel>
+        <translation><!-- Sugon --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Suzhou No. 9 Education Technology Co,. Ltd</masterLabel>
+        <translation><!-- Suzhou No. 9 Education Technology Co,. Ltd --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ThinkSIS</masterLabel>
+        <translation><!-- ThinkSIS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Times Professional Learning</masterLabel>
+        <translation><!-- Times Professional Learning --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Trace3</masterLabel>
+        <translation><!-- Trace3 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WWT</masterLabel>
+        <translation><!-- WWT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Xenon</masterLabel>
+        <translation><!-- Xenon --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Zenith Arabia</masterLabel>
+        <translation><!-- Zenith Arabia --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ePlus</masterLabel>
+        <translation><!-- ePlus --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>iTrain</masterLabel>
+        <translation><!-- iTrain --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>sysGen</masterLabel>
+        <translation><!-- sysGen --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Hybrid Cloud Solution --></label>
+    <name>Hybrid_Cloud_Solution__c</name>
+    <picklistValues>
+        <masterLabel>AWS Outposts</masterLabel>
+        <translation><!-- AWS Outposts --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AWS Panorama</masterLabel>
+        <translation><!-- AWS Panorama --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AWS Snowball</masterLabel>
+        <translation><!-- AWS Snowball --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AWS Wavelength</masterLabel>
+        <translation><!-- AWS Wavelength --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Google Anthos</masterLabel>
+        <translation><!-- Google Anthos --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Microsoft Azure Stack Edge</masterLabel>
+        <translation><!-- Microsoft Azure Stack Edge --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Microsoft Azure Stack HCI</masterLabel>
+        <translation><!-- Microsoft Azure Stack HCI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Microsoft Azure Stack Hub</masterLabel>
+        <translation><!-- Microsoft Azure Stack Hub --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

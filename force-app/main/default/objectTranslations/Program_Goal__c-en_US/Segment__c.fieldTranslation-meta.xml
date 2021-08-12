@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Segment --></label>
+    <name>Segment__c</name>
+    <picklistValues>
+        <masterLabel>DGX</masterLabel>
+        <translation><!-- DGX --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Datacenter</masterLabel>
+        <translation><!-- Datacenter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GRID</masterLabel>
+        <translation><!-- GRID --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HPC</masterLabel>
+        <translation><!-- HPC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RTX</masterLabel>
+        <translation><!-- RTX --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tesla Unverified</masterLabel>
+        <translation><!-- Tesla Unverified --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

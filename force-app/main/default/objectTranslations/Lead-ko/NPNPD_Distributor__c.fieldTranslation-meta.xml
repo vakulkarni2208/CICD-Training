@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Distributor --></label>
+    <name>NPNPD_Distributor__c</name>
+    <picklistValues>
+        <masterLabel>Ingram Micro</masterLabel>
+        <translation><!-- Ingram Micro --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Synnex</masterLabel>
+        <translation><!-- Synnex --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Opp_Reg_Only_1_Extn_Allowed</fullName>
+    <active>true</active>
+    <description>Opp Reg: Allow setting Extn Duration one time only</description>
+    <errorConditionFormula>(!DR_Is_Approved__c &amp;&amp; !ISBLANK(TEXT(DR_Extn_Duration__c)) ) || (
+DR_Is_Approved__c &amp;&amp;
+ISCHANGED(DR_Extn_Duration__c) &amp;&amp;   !ISBLANK(PRIORVALUE(DR_Extn_Duration__c))
+)</errorConditionFormula>
+    <errorDisplayField>DR_Extn_Duration__c</errorDisplayField>
+    <errorMessage>You may only extend this registration once. For assistance, click the &quot;Get Help&quot; button located on the top right of the page.</errorMessage>
+</ValidationRule>

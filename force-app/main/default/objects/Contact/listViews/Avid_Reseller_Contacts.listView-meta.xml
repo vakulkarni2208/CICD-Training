@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Avid_Reseller_Contacts</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>CONTACT.TITLE</columns>
+    <columns>CONTACT.EMAIL</columns>
+    <columns>CONTACT.CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CONTACT.CREATED_DATE</field>
+        <operation>equals</operation>
+        <value>4/21/2011 12:00 AM</value>
+    </filters>
+    <label>Reseller Contacts</label>
+    <sharedTo>
+        <role>Administrator</role>
+        <role>SaleRepQuadro</role>
+        <role>Sales</role>
+        <role>SalesTeamLeadQuadro</role>
+    </sharedTo>
+</ListView>

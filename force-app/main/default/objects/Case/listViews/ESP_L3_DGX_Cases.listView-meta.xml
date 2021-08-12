@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ESP_L3_DGX_Cases</fullName>
+    <booleanFilter>(1 OR 2) AND 3 AND 4</booleanFilter>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Account_Region__c</columns>
+    <columns>Severity__c</columns>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>CASES.SUBJECT</columns>
+    <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
+    <columns>Time_Assigned_to_L3__c</columns>
+    <columns>Duration_in_Customer_Status_Hrs__c</columns>
+    <columns>Days_in_ESP_L3_Queue__c</columns>
+    <columns>CASES.LAST_UPDATE_DATE_ONLY</columns>
+    <columns>CASES.ORIGIN</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Product_Category__c</field>
+        <operation>equals</operation>
+        <value>DGX</value>
+    </filters>
+    <filters>
+        <field>ENTITLEMENT.NAME</field>
+        <operation>contains</operation>
+        <value>DGX</value>
+    </filters>
+    <filters>
+        <field>CASES.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Case.Community_User_Record_Type</value>
+    </filters>
+    <filters>
+        <field>OWNER_NAME</field>
+        <operation>equals</operation>
+        <value>ESP L3,Business Critical Support Queue</value>
+    </filters>
+    <label>ESP L3 - DGX Cases</label>
+    <sharedTo>
+        <group>Enterprise_Service_Team_NVES</group>
+        <roleAndSubordinatesInternal>Enterprise_Support</roleAndSubordinatesInternal>
+        <roleAndSubordinatesInternal>JTP_Agent</roleAndSubordinatesInternal>
+        <roleAndSubordinatesInternal>NCR_Agent</roleAndSubordinatesInternal>
+        <roleAndSubordinatesInternal>NV_Agent</roleAndSubordinatesInternal>
+    </sharedTo>
+</ListView>

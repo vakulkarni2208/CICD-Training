@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <description>Send Opp Reg Extension Email to Partner (Partner Sales Rep Name) and TAB/PBM</description>
+        <name>Deal_Auto_Extended_Email_Alert_To_Partner</name>
+        <label>Deal Auto Extended : Email Alert To Partner</label>
+        <locationX>171</locationX>
+        <locationY>721</locationY>
+        <actionName>Opportunity.DR_Deal_Extn_Approved_Email_Alert_To_Partner</actionName>
+        <actionType>emailAlert</actionType>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <description>Send T-7|6|5|4|3|2|1 Expiry Notification to NVIDIA TAM/PBM/ChannelAdmin</description>
+        <name>Send_T_7_6_5_4_3_2_1_Expiry_Notification_to_NVIDIA_TAM</name>
+        <label>Send T-7|6|5|4|3|2|1 Expiry Notification to NVIDIA TAM</label>
+        <locationX>567</locationX>
+        <locationY>354</locationY>
+        <actionName>Opportunity.DR_Deal_Expiry_Reminder_Email_To_TAM_PBM</actionName>
+        <actionType>emailAlert</actionType>
+        <connector>
+            <targetReference>Is_it_T_7th_day</targetReference>
+        </connector>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <description>Send T-7th day expiration reminder to Partner.</description>
+        <name>Send_T_7th_day_deal_expiry_reminder_to_Partner</name>
+        <label>Send T-7th day deal expiry reminder to Partner</label>
+        <locationX>1029</locationX>
+        <locationY>354</locationY>
+        <actionName>Opportunity.DR_Deal_Expiry_Reminder_Email_Alert_To_Partner</actionName>
+        <actionType>emailAlert</actionType>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <decisions>
+        <description>Approved AND Not Extn Approved AND status updated within last 10 days</description>
+        <name>Is_it_eligible_for_Auto_Extension</name>
+        <label>Is it eligible for Auto Extension</label>
+        <locationX>166</locationX>
+        <locationY>356</locationY>
+        <defaultConnector>
+            <targetReference>Send_T_7_6_5_4_3_2_1_Expiry_Notification_to_NVIDIA_TAM</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Eligile_for_Auto_Extn</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.DR_Deal_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Approved</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.DR_LastStatusModifiedDateWithinRangeN__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.IsClosed</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Auto_Extend_Opp_Reg</targetReference>
+            </connector>
+            <label>Eligile for Auto Extn</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Is it T-7th Day? Send T-7 Expiration Notification to Partner</description>
+        <name>Is_it_T_7th_day</name>
+        <label>Is it T-7th day?</label>
+        <locationX>768</locationX>
+        <locationY>356</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Today_is_T_7th_Day</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.DR_Days_to_Expire__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <numberValue>7.0</numberValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Send_T_7th_day_deal_expiry_reminder_to_Partner</targetReference>
+            </connector>
+            <label>Today is T-7th Day</label>
+        </rules>
+    </decisions>
+    <description>Opp Reg : Auto Extend or Send T-7 notification to Partner (T-7|6|5|4|3|2|1 to internal TAM/PBM)</description>
+    <interviewLabel>T-7 - {!$Record.Id} - {!$Record.DR_Deal_Status__c} - {!$Record.DR_Days_to_Expire__c} - {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Opp Reg : FL : Auto Extension or T-7 Expiration of Notification</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <description>Auto Extend Opp Reg by 90 days</description>
+        <name>Auto_Extend_Opp_Reg</name>
+        <label>Auto Extend Opp Reg</label>
+        <locationX>174</locationX>
+        <locationY>573</locationY>
+        <connector>
+            <targetReference>Deal_Auto_Extended_Email_Alert_To_Partner</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>DR_Extension_Approved_By__c</field>
+            <value>
+                <elementReference>$Record.LastModifiedById</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>DR_Extension_Approved_Date__c</field>
+            <value>
+                <elementReference>$Flow.CurrentDateTime</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>DR_Extn_Duration__c</field>
+            <value>
+                <stringValue>90</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>DR_Is_Extension_Approved__c</field>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>50</locationY>
+        <connector>
+            <targetReference>Is_it_eligible_for_Auto_Extension</targetReference>
+        </connector>
+        <filters>
+            <field>RecordTypeId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>0121W000000DybgQAC</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>RecordTypeId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>0121W000000lCKMQA2</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Type</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Deal Registration</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>IsClosed</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>DR_Deal_Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Approved</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>DR_Days_to_Expire__c</field>
+            <operator>LessThanOrEqualTo</operator>
+            <value>
+                <numberValue>7.0</numberValue>
+            </value>
+        </filters>
+        <filters>
+            <field>DLI_Payment_Status__c</field>
+            <operator>NotEqualTo</operator>
+            <value>
+                <stringValue>Payment Collected</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>SAP_Sales_Order_Number__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <object>Opportunity</object>
+        <schedule>
+            <frequency>Once</frequency>
+            <startDate>2021-06-29</startDate>
+            <startTime>16:30:00.000Z</startTime>
+        </schedule>
+        <triggerType>Scheduled</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

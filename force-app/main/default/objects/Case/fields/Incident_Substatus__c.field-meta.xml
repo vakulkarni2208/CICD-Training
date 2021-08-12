@@ -1,0 +1,547 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Incident_Substatus__c</fullName>
+    <externalId>false</externalId>
+    <label>Incident Substatus</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Incident_Status__c</controllingField>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>3rd party software issue</fullName>
+                <default>false</default>
+                <label>3rd party software issue</label>
+            </value>
+            <value>
+                <fullName>At Customer Site</fullName>
+                <default>false</default>
+                <label>At Customer Site</label>
+            </value>
+            <value>
+                <fullName>Change</fullName>
+                <default>false</default>
+                <label>Change</label>
+            </value>
+            <value>
+                <fullName>Complete</fullName>
+                <default>false</default>
+                <label>Complete</label>
+            </value>
+            <value>
+                <fullName>Configuration Issue</fullName>
+                <default>false</default>
+                <label>Configuration Issue</label>
+            </value>
+            <value>
+                <fullName>Contained</fullName>
+                <default>false</default>
+                <label>Contained</label>
+            </value>
+            <value>
+                <fullName>Customer Closure</fullName>
+                <default>false</default>
+                <label>Customer Closure</label>
+            </value>
+            <value>
+                <fullName>Customer Custom Configuration</fullName>
+                <default>false</default>
+                <label>Customer Custom Configuration</label>
+            </value>
+            <value>
+                <fullName>Customer Education</fullName>
+                <default>false</default>
+                <label>Customer Education</label>
+            </value>
+            <value>
+                <fullName>Customer Question</fullName>
+                <default>false</default>
+                <label>Customer Question</label>
+            </value>
+            <value>
+                <fullName>Customer request to escalate</fullName>
+                <default>false</default>
+                <label>Customer request to escalate</label>
+            </value>
+            <value>
+                <fullName>Deep Learning SW Defect</fullName>
+                <default>false</default>
+                <label>Deep Learning SW Defect</label>
+            </value>
+            <value>
+                <fullName>Design Flaw</fullName>
+                <default>false</default>
+                <label>Design Flaw</label>
+            </value>
+            <value>
+                <fullName>Docker/Container Software or DL</fullName>
+                <default>false</default>
+                <label>Docker/Container Software or DL</label>
+            </value>
+            <value>
+                <fullName>Documentation</fullName>
+                <default>false</default>
+                <label>Documentation</label>
+            </value>
+            <value>
+                <fullName>Documentation Provided</fullName>
+                <default>false</default>
+                <label>Documentation Provided</label>
+            </value>
+            <value>
+                <fullName>DriveAV SW Defect</fullName>
+                <default>false</default>
+                <label>DriveAV SW Defect</label>
+            </value>
+            <value>
+                <fullName>DriveSIM SW Defect</fullName>
+                <default>false</default>
+                <label>DriveSIM SW Defect</label>
+            </value>
+            <value>
+                <fullName>Enhancement Request</fullName>
+                <default>false</default>
+                <label>Enhancement Request</label>
+            </value>
+            <value>
+                <fullName>Entitlement Issue</fullName>
+                <default>false</default>
+                <label>Entitlement Issue</label>
+            </value>
+            <value>
+                <fullName>Environment</fullName>
+                <default>false</default>
+                <label>Environment</label>
+            </value>
+            <value>
+                <fullName>Escalated Account</fullName>
+                <default>false</default>
+                <label>Escalated Account</label>
+            </value>
+            <value>
+                <fullName>Firmware</fullName>
+                <default>false</default>
+                <label>Firmware</label>
+            </value>
+            <value>
+                <fullName>Fully Operational</fullName>
+                <default>false</default>
+                <label>Fully Operational</label>
+            </value>
+            <value>
+                <fullName>GFNA Escalation to Incident Managers</fullName>
+                <default>false</default>
+                <label>GFNA Escalation to Incident Managers</label>
+            </value>
+            <value>
+                <fullName>Hardware</fullName>
+                <default>false</default>
+                <label>Hardware</label>
+            </value>
+            <value>
+                <fullName>HW Replacement (RMA)</fullName>
+                <default>false</default>
+                <label>HW Replacement (RMA)</label>
+            </value>
+            <value>
+                <fullName>Installation</fullName>
+                <default>false</default>
+                <label>Installation</label>
+            </value>
+            <value>
+                <fullName>Known Issue</fullName>
+                <default>false</default>
+                <label>Known Issue</label>
+            </value>
+            <value>
+                <fullName>License Server Issue</fullName>
+                <default>false</default>
+                <label>License Server Issue</label>
+            </value>
+            <value>
+                <fullName>License validation</fullName>
+                <default>false</default>
+                <label>License validation</label>
+            </value>
+            <value>
+                <fullName>Network</fullName>
+                <default>false</default>
+                <label>Network</label>
+            </value>
+            <value>
+                <fullName>NGC</fullName>
+                <default>false</default>
+                <label>NGC</label>
+            </value>
+            <value>
+                <fullName>NGC Account Agreements</fullName>
+                <default>false</default>
+                <label>NGC Account Agreements</label>
+            </value>
+            <value>
+                <fullName>No Problem Found</fullName>
+                <default>false</default>
+                <label>No Problem Found</label>
+            </value>
+            <value>
+                <fullName>No Response from Customer</fullName>
+                <default>false</default>
+                <label>No Response from Customer</label>
+            </value>
+            <value>
+                <fullName>Not Operational</fullName>
+                <default>false</default>
+                <label>Not Operational</label>
+            </value>
+            <value>
+                <fullName>NVES Agent Direct Support</fullName>
+                <default>false</default>
+                <label>NVES Agent Direct Support</label>
+            </value>
+            <value>
+                <fullName>On Route</fullName>
+                <default>false</default>
+                <label>On Route</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Out of scope</fullName>
+                <default>false</default>
+                <label>Out of scope</label>
+            </value>
+            <value>
+                <fullName>Partially Operational</fullName>
+                <default>false</default>
+                <label>Partially Operational</label>
+            </value>
+            <value>
+                <fullName>Performance</fullName>
+                <default>false</default>
+                <label>Performance</label>
+            </value>
+            <value>
+                <fullName>Platform SW Defect</fullName>
+                <default>false</default>
+                <label>Platform SW Defect</label>
+            </value>
+            <value>
+                <fullName>Portal/Login Issue</fullName>
+                <default>false</default>
+                <label>Portal/Login Issue</label>
+            </value>
+            <value>
+                <fullName>Process</fullName>
+                <default>false</default>
+                <label>Process</label>
+            </value>
+            <value>
+                <fullName>Redirected to 3rd Party Support</fullName>
+                <default>false</default>
+                <label>Redirected to 3rd Party Support</label>
+            </value>
+            <value>
+                <fullName>Resolved by Customer</fullName>
+                <default>false</default>
+                <label>Resolved by Customer</label>
+            </value>
+            <value>
+                <fullName>Resolved w/o Action</fullName>
+                <default>false</default>
+                <label>Resolved w/o Action</label>
+            </value>
+            <value>
+                <fullName>Restart Service</fullName>
+                <default>false</default>
+                <label>Restart Service</label>
+            </value>
+            <value>
+                <fullName>Restart System</fullName>
+                <default>false</default>
+                <label>Restart System</label>
+            </value>
+            <value>
+                <fullName>RMA needs NVES approval</fullName>
+                <default>false</default>
+                <label>RMA needs NVES approval</label>
+            </value>
+            <value>
+                <fullName>Scheduled</fullName>
+                <default>false</default>
+                <label>Scheduled</label>
+            </value>
+            <value>
+                <fullName>Software</fullName>
+                <default>false</default>
+                <label>Software</label>
+            </value>
+            <value>
+                <fullName>Software Issue</fullName>
+                <default>false</default>
+                <label>Software Issue</label>
+            </value>
+            <value>
+                <fullName>Submitted</fullName>
+                <default>false</default>
+                <label>Submitted</label>
+            </value>
+            <value>
+                <fullName>Unable to Solve the Issue</fullName>
+                <default>false</default>
+                <label>Unable to Solve the Issue</label>
+            </value>
+            <value>
+                <fullName>User Error</fullName>
+                <default>false</default>
+                <label>User Error</label>
+            </value>
+            <value>
+                <fullName>User Requested</fullName>
+                <default>false</default>
+                <label>User Requested</label>
+            </value>
+            <value>
+                <fullName>Vendor/Partner/3rd Party Issue</fullName>
+                <default>false</default>
+                <label>Vendor/Partner/3rd Party Issue</label>
+            </value>
+            <value>
+                <fullName>Waiting for Stock</fullName>
+                <default>false</default>
+                <label>Waiting for Stock</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Resolved (Temp Workaround)</controllingFieldValue>
+            <controllingFieldValue>Resolved (Permanently)</controllingFieldValue>
+            <controllingFieldValue>Resolved (No Customer Response)</controllingFieldValue>
+            <controllingFieldValue>Closed</controllingFieldValue>
+            <valueName>Configuration Issue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Resolved (Temp Workaround)</controllingFieldValue>
+            <controllingFieldValue>Resolved (Permanently)</controllingFieldValue>
+            <controllingFieldValue>Resolved (No Customer Response)</controllingFieldValue>
+            <controllingFieldValue>Closed</controllingFieldValue>
+            <valueName>Customer Question</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Resolved (Temp Workaround)</controllingFieldValue>
+            <controllingFieldValue>Resolved (Permanently)</controllingFieldValue>
+            <controllingFieldValue>Resolved (No Customer Response)</controllingFieldValue>
+            <controllingFieldValue>Closed</controllingFieldValue>
+            <valueName>Deep Learning SW Defect</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Resolved (Temp Workaround)</controllingFieldValue>
+            <controllingFieldValue>Resolved (Permanently)</controllingFieldValue>
+            <controllingFieldValue>Resolved (No Customer Response)</controllingFieldValue>
+            <controllingFieldValue>Closed</controllingFieldValue>
+            <valueName>Documentation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Resolved (Temp Workaround)</controllingFieldValue>
+            <controllingFieldValue>Resolved (Permanently)</controllingFieldValue>
+            <controllingFieldValue>Resolved (No Customer Response)</controllingFieldValue>
+            <controllingFieldValue>Closed</controllingFieldValue>
+            <valueName>DriveAV SW Defect</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Resolved (Temp Workaround)</controllingFieldValue>
+            <controllingFieldValue>Resolved (Permanently)</controllingFieldValue>
+            <controllingFieldValue>Resolved (No Customer Response)</controllingFieldValue>
+            <controllingFieldValue>Closed</controllingFieldValue>
+            <valueName>DriveSIM SW Defect</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Resolved (Temp Workaround)</controllingFieldValue>
+            <controllingFieldValue>Resolved (Permanently)</controllingFieldValue>
+            <controllingFieldValue>Resolved (No Customer Response)</controllingFieldValue>
+            <controllingFieldValue>Closed</controllingFieldValue>
+            <valueName>Enhancement Request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Resolved (Temp Workaround)</controllingFieldValue>
+            <controllingFieldValue>Resolved (Permanently)</controllingFieldValue>
+            <controllingFieldValue>Resolved (No Customer Response)</controllingFieldValue>
+            <controllingFieldValue>Closed</controllingFieldValue>
+            <controllingFieldValue>Enterprise Support</controllingFieldValue>
+            <valueName>Entitlement Issue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Resolved (Temp Workaround)</controllingFieldValue>
+            <controllingFieldValue>Resolved (Permanently)</controllingFieldValue>
+            <controllingFieldValue>Resolved (No Customer Response)</controllingFieldValue>
+            <controllingFieldValue>Closed</controllingFieldValue>
+            <valueName>Firmware</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Resolved (Temp Workaround)</controllingFieldValue>
+            <controllingFieldValue>Resolved (Permanently)</controllingFieldValue>
+            <controllingFieldValue>Resolved (No Customer Response)</controllingFieldValue>
+            <controllingFieldValue>Closed</controllingFieldValue>
+            <valueName>Hardware</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Resolved (Temp Workaround)</controllingFieldValue>
+            <controllingFieldValue>Resolved (Permanently)</controllingFieldValue>
+            <controllingFieldValue>Resolved (No Customer Response)</controllingFieldValue>
+            <controllingFieldValue>Closed</controllingFieldValue>
+            <controllingFieldValue>Enterprise Support</controllingFieldValue>
+            <valueName>License Server Issue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Resolved (Temp Workaround)</controllingFieldValue>
+            <controllingFieldValue>Resolved (Permanently)</controllingFieldValue>
+            <controllingFieldValue>Resolved (No Customer Response)</controllingFieldValue>
+            <controllingFieldValue>Closed</controllingFieldValue>
+            <valueName>NGC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Resolved (Temp Workaround)</controllingFieldValue>
+            <controllingFieldValue>Resolved (Permanently)</controllingFieldValue>
+            <controllingFieldValue>Resolved (No Customer Response)</controllingFieldValue>
+            <controllingFieldValue>Closed</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Resolved (Temp Workaround)</controllingFieldValue>
+            <controllingFieldValue>Resolved (Permanently)</controllingFieldValue>
+            <controllingFieldValue>Resolved (No Customer Response)</controllingFieldValue>
+            <controllingFieldValue>Closed</controllingFieldValue>
+            <valueName>Performance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Resolved (Temp Workaround)</controllingFieldValue>
+            <controllingFieldValue>Resolved (Permanently)</controllingFieldValue>
+            <controllingFieldValue>Resolved (No Customer Response)</controllingFieldValue>
+            <controllingFieldValue>Closed</controllingFieldValue>
+            <valueName>Platform SW Defect</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Resolved (Temp Workaround)</controllingFieldValue>
+            <controllingFieldValue>Resolved (Permanently)</controllingFieldValue>
+            <controllingFieldValue>Resolved (No Customer Response)</controllingFieldValue>
+            <controllingFieldValue>Closed</controllingFieldValue>
+            <valueName>User Error</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Resolved (Temp Workaround)</controllingFieldValue>
+            <controllingFieldValue>Resolved (Permanently)</controllingFieldValue>
+            <controllingFieldValue>Resolved (No Customer Response)</controllingFieldValue>
+            <controllingFieldValue>Closed</controllingFieldValue>
+            <controllingFieldValue>Enterprise Support</controllingFieldValue>
+            <valueName>Vendor/Partner/3rd Party Issue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed</controllingFieldValue>
+            <valueName>Customer Closure</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Enterprise Support</controllingFieldValue>
+            <valueName>3rd party software issue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Enterprise Support</controllingFieldValue>
+            <valueName>Customer request to escalate</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Enterprise Support</controllingFieldValue>
+            <valueName>Docker/Container Software or DL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Enterprise Support</controllingFieldValue>
+            <valueName>Escalated Account</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Enterprise Support</controllingFieldValue>
+            <valueName>GFNA Escalation to Incident Managers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Enterprise Support</controllingFieldValue>
+            <valueName>Known Issue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Enterprise Support</controllingFieldValue>
+            <valueName>License validation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Enterprise Support</controllingFieldValue>
+            <valueName>NGC Account Agreements</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Enterprise Support</controllingFieldValue>
+            <valueName>NVES Agent Direct Support</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Enterprise Support</controllingFieldValue>
+            <valueName>Out of scope</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Enterprise Support</controllingFieldValue>
+            <valueName>Portal/Login Issue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Enterprise Support</controllingFieldValue>
+            <valueName>RMA needs NVES approval</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Enterprise Support</controllingFieldValue>
+            <valueName>Unable to Solve the Issue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>With Engineering</controllingFieldValue>
+            <controllingFieldValue>With Engineering + RMA</controllingFieldValue>
+            <valueName>Contained</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>With Engineering</controllingFieldValue>
+            <controllingFieldValue>With Engineering + RMA</controllingFieldValue>
+            <valueName>Fully Operational</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>With Engineering</controllingFieldValue>
+            <controllingFieldValue>With Engineering + RMA</controllingFieldValue>
+            <valueName>Not Operational</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>With Engineering</controllingFieldValue>
+            <controllingFieldValue>With Engineering + RMA</controllingFieldValue>
+            <valueName>Partially Operational</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>With RMA</controllingFieldValue>
+            <valueName>At Customer Site</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>With RMA</controllingFieldValue>
+            <valueName>On Route</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>With RMA</controllingFieldValue>
+            <valueName>Submitted</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>With RMA</controllingFieldValue>
+            <valueName>Waiting for Stock</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>On-Site RMA Install</controllingFieldValue>
+            <valueName>Complete</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>On-Site RMA Install</controllingFieldValue>
+            <valueName>Installation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>On-Site RMA Install</controllingFieldValue>
+            <valueName>Scheduled</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

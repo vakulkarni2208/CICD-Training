@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NSC_Processed_Lead__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Please select which area applies</inlineHelpText>
+    <label>NSC Processed Lead</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>EMEA NSC Processed Lead</fullName>
+                <default>false</default>
+                <label>EMEA NSC Processed Lead</label>
+            </value>
+            <value>
+                <fullName>NALA NSC Processed Lead</fullName>
+                <default>false</default>
+                <label>NALA NSC Processed Lead</label>
+            </value>
+            <value>
+                <fullName>APAC NSC Processed Lead</fullName>
+                <default>false</default>
+                <label>APAC NSC Processed Lead</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

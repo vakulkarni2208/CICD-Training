@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DR_OppReg2_5Open__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Temp flag to recreate the Flow queue for existing open deals.
+Can be removed later</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Temp flag to recreate the Flow queue for existing open deals.
+Can be removed later</inlineHelpText>
+    <label>OppReg2.5Open</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

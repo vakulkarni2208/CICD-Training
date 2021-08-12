@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Product_List_Price__c</fullName>
+    <description>Used in Special Pricing Opportunities to detail the full discounted amount</description>
+    <externalId>false</externalId>
+    <label>Total Product List Price</label>
+    <summarizedField>OpportunityLineItem.Total_List_Price__c</summarizedField>
+    <summaryForeignKey>OpportunityLineItem.OpportunityId</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

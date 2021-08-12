@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignments>
+        <description>Set Primary_NPN_OEM_ODM_Disti_Text from Primary_NPN_OEM_ODM_Disti lookup</description>
+        <name>Set_Primary_NPN_OEM_ODM_Disti_Text</name>
+        <label>Set Primary_NPN_OEM_ODM_Disti_Text</label>
+        <locationX>1042</locationX>
+        <locationY>112</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Primary_NPN_OEM_ODM_Disti_Text__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Primary_NPN_OEM_ODM_Disti__r.Name</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <decisions>
+        <description>Check if Primary_NPN_OEM_ODM_Disti_Text is different than Primary_NPN_OEM_ODM_Disti.Name</description>
+        <name>Check_Primary_NPN_OEM_ODM_Disti_Text_is_different</name>
+        <label>Check Primary_NPN_OEM_ODM_Disti_Text is different</label>
+        <locationX>529</locationX>
+        <locationY>117</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Primary_NPN_OEM_ODM_Disti_Text_is_different</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Primary_NPN_OEM_ODM_Disti_Text__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <elementReference>$Record.Primary_NPN_OEM_ODM_Disti__r.Name</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_Primary_NPN_OEM_ODM_Disti_Text</targetReference>
+            </connector>
+            <label>Primary_NPN_OEM_ODM_Disti_Text is different</label>
+        </rules>
+    </decisions>
+    <description>OPP - Autoset Primary_NPN_OEM_ODM_Disti_Text from Primary_NPN_OEM_ODM_Disti lookup</description>
+    <interviewLabel>OPP - AutoSet Primary_NPN_OEM_ODM_Disti_Text {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>OPP - AutoSet Primary_NPN_OEM_ODM_Disti_Text</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>50</locationX>
+        <locationY>50</locationY>
+        <connector>
+            <targetReference>Check_Primary_NPN_OEM_ODM_Disti_Text_is_different</targetReference>
+        </connector>
+        <object>Opportunity</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Obsolete</status>
+</Flow>

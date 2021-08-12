@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Potential Sales: Product/Service is deployed and scaling out or Target Customers in Fortune 500: (e.g. Walmart, Ebay, Bloomberg)
+Technical Credibility: Thought leader CEO or Strong Investors --></help>
+    <label><!-- Why Strategic? --></label>
+    <name>Why_Strategic__c</name>
+    <picklistValues>
+        <masterLabel>Potential Sales</masterLabel>
+        <translation><!-- Potential Sales --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Technical Credibility</masterLabel>
+        <translation><!-- Technical Credibility --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- This amount will reflect the full replacement amount of standard accrual. This does not represent incremental accrual. --></help>
+    <label><!-- Deal MDF --></label>
+    <name>Deal_MDF__c</name>
+</CustomFieldTranslation>

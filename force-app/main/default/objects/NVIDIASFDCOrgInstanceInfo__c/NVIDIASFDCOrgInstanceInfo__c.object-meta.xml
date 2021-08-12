@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <description>This contains SFDC Instance Information (IsSandbox, Sandbox name, Sandbox Id). This will be auto set during Sandbox Refresh or by running NVIDIASFDCOrgInstanceInitializer class method</description>
+    <enableFeeds>false</enableFeeds>
+    <label>NVIDIASFDCOrgInstanceInfo</label>
+    <visibility>Public</visibility>
+</CustomObject>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- MDF Program NVIDIA Owner --></label>
+    <name>MDF_Program_NVIDIA_Owner__c</name>
+    <relationshipLabel><!-- Accounts (MDF Program NVIDIA Owner) --></relationshipLabel>
+</CustomFieldTranslation>

@@ -1,0 +1,448 @@
+<apex:page controller="clsPartnerPortalTabs" showHeader="true" sidebar="false" action="{!insertCustomSettings}">
+    <head>
+        <style>  
+            .tabpanal { 
+                font-family: verdana,sans-serif; 
+                font-size: 14px;
+                width: 100%;
+                white-space: nowrap;
+                text-align: center;   
+                border-style: solid;
+                border-color: white;
+                border-left-width: 1px;
+                border-right-width: 1px;
+                border-top-width: 1px;
+                border-bottom-width: 0px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                cursor: pointer;
+            }
+            .tabpanalWithoutCursorPointer { 
+                font-family: verdana,sans-serif; 
+                font-size: 14px;
+                width: 100%;
+                white-space: nowrap;
+                text-align: center;
+                border-style: solid;
+                border-color: white;
+                border-left-width: 1px;
+                border-right-width: 1px;
+                border-top-width: 1px;
+                border-bottom-width: 0px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                //cursor: pointer;
+            }    
+            .tabfocus { 
+                background-color: #505050;
+                color: white;
+            }
+            .tabfocus123 { 
+                background-color: white;
+                color: white;
+            }
+              
+            ul {   
+                list-style-image:url();      
+            }
+        
+            .wrapper{
+                position: relative;
+            }
+        
+            #container{
+               position: absolute;
+               left: 0;
+               width: 100%;
+               background-color: white;  
+            }
+            #content {
+               max-width: 1265px;
+               min-width: 1265px;
+               margin-top:0px;
+               margin-left: auto;
+               margin-right: auto;
+               //text-align:center;
+               position: relative;
+               zoom: 1;
+               padding:8px;
+            }
+            .mainBlock{
+                //border:1px solid #000000;
+                //margin: 30px;
+                margin-top:3px;
+                margin-left:100px;
+                margin-right:0px;
+                //width: 80%;
+                max-width: 1265px;
+                min-width: 1265px;
+                //text-align:center;
+                position: relative;
+                display: inline-block;
+                *display: inline;
+                zoom: 1;   
+                padding:8px;
+                //border-left: 1px solid #76B900;
+                //border-top: 1px solid #76B900;
+                //-moz-box-shadow:    6px 6px 5px #ccc;
+                //-webkit-box-shadow: 6px 6px 5px #ccc;
+                //box-shadow:         6px 6px 5px #ccc;
+            }
+
+            .custPopup{     
+                background-color: white;
+                border-width: 2px;
+                border-style: solid;   
+                z-index: 9999;       
+                left: 35%;         
+                padding:10px;   
+                position: absolute;
+                /* These are the 3 css properties you will need to change so the popup 
+                displays in the center of the screen. First set the width. Then set 
+                margin-left to negative half of what the width is. You can add 
+                the height property for a fixed size pop up if you want.*/
+                width: 1000px;
+                margin-left: -250px;
+                top:100px;
+            }
+             .popupBackground{      
+                 background-color:black;  
+                 opacity: 0.20;
+                 filter: alpha(opacity = 20);
+                 position: absolute;   
+                 width: 100%;      
+                 height: 100%;   
+                 top: 0;       
+                 left: 0;  
+                 z-index: 9998;
+             }
+             
+        </style>    
+    </head>
+    
+    <script>
+       function openinNewTab(url) {       
+             window.open(url,target="_blank");
+       }         
+    </script>
+
+    <apex:form id="formId">
+        
+        <table border="0" width="100%" id="toggleTable">
+            <tr id="toggleRow">
+                <apex:repeat value="{!lstPortalContentTypes}" var="varTD" rendered="{!if(lstPortalContentTypes.size>1,true,false)}">
+                    <td width="2%" style="padding-left:40px;">
+                        
+                        <apex:outputPanel rendered="{!if(selectedContentType != varTD.strToggleName && lstPortalContentTypes.size!=1, TRUE, FALSE)}">
+                            <div id="tab1focus" class="tabpanal tabfocus123" style="display:block;">
+                                <apex:commandLink style="padding:8px;font-weight:bold" id="btnIdA" action="{!selectContentType}" reRender="formId" title="{!varTD.strToggleDetail}">{!varTD.strToggleName}
+                                    <apex:param assignTo="{!selectedContentType}" value="{!varTD.strToggleName}" name="selectedContentType"/>
+                                </apex:commandLink>
+                            </div>
+                        </apex:outputPanel>
+                        
+                        <!-- Setting white background for the selected content type or only single content type exist for the logged in user. -->  
+                        <apex:outputText rendered="{!if(selectedContentType == varTD.strToggleName || lstPortalContentTypes.size==1, TRUE, FALSE)}">
+                             <div id="tab1focus" class="tabpanalWithoutCursorPointer tabfocus" style="display:block;">
+                                <span style="padding:8px;color:white;font-weight:bold">{!varTD.strToggleName}</span>
+                             </div>
+                        </apex:outputText>
+                        
+                    </td>            
+                </apex:repeat>
+                <td></td>
+            </tr>
+        </table>   
+
+        <div id="container">
+            <div id="content">
+                <!-- <c:cmpPartnerPortalSearch ></c:cmpPartnerPortalSearch>   -->
+                
+                <!-- LOG A SUPPORT REQUEST form-->                   
+                <apex:outputPanel id="displayEmailPopup">           
+                    <apex:outputPanel styleClass="popupBackground" layout="block" rendered="{!displayPopUp}"/>
+                    <apex:outputPanel styleClass="custPopup" layout="block" rendered="{!displayPopUp}">
+                        <apex:pageMessages />
+                        <table width="80%" style="padding:8px;" border="0">    
+                            <tr>
+                                <td colspan="3" align="center">
+                                    <h3><b> <font color="#393939" size="3">{!$Label.COMM_CP_VF_EMAIL_Log_a_Support_Request}</font> </b> </h3>
+                                </td>
+                            </tr> 
+                            <tr>
+                                <td colspan="3"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="3"></td>
+                            </tr>  
+                            <tr>
+                                <td align="right">
+                                    <b>{!$Label.COMM_CP_VF_EMAIL_Competency}&nbsp;<span style="color:red;">*</span></b>
+                                </td>
+                                <td align="left">
+                                    <apex:selectList size="1" style="width:180px;" value="{!selectedCompetencyOption}">
+                                        <apex:selectOptions value="{!lstCompetencyOptions}"></apex:selectOptions>
+                                    </apex:selectList>
+                                </td>
+                                <td>&nbsp;</td>
+                            </tr> 
+                            <tr>
+                                <td align="right"><b>{!$Label.COMM_CP_VF_EMAIL_Company_Name}</b></td>
+                                <td align="left"><apex:outputText value="{!contactDetail.account.name}" id="cname"/></td>
+                                <td>&nbsp;</td>
+                            </tr>                             
+                            <tr>
+                                <td align="right"><b>{!$Label.COMM_CP_VF_EMAIL_Contact_Name}</b></td>
+                                <td align="left"><apex:outputText value="{!contactfirstlastname}" id="conname"/></td>
+                                <td>&nbsp;</td>
+                            </tr>   
+                            <tr>   
+                                <td align="right"><b>{!$Label.COMM_CP_VF_EMAIL_Contact_Email_Address}</b></td>
+                                <td align="left"><apex:outputText value="{!contactEmail}" id="emailid"/></td>
+                                <td>&nbsp;</td>    
+                            </tr>
+                            <tr>   
+                                <td align="right"><b>{!$Label.COMM_CP_VF_EMAIL_Contact_Phone_Number}</b></td>
+                                <td align="left">
+                                    <apex:inputText value="{!phoneNumber}" id="phoneId1" rendered="{!If(contactDetail.mobilePhone=='',true,false)}"/>
+                                    <apex:outputText value="{!contactDetail.mobilePhone}" id="phoneId2" rendered="{!!If(contactDetail.mobilePhone=='',true,false)}"/>
+                                </td>
+                                <td>&nbsp;</td>
+                            </tr>                
+                            <tr>
+                                <td align="right"><b>{!$Label.COMM_CP_VF_EMAIL_Short_Desc}</b></td>
+                                <td align="left"><apex:inputText style="height:25px;width:500px;" value="{!problemType}" maxlength="45" id="protype"/></td>
+                                <td>&nbsp;</td>
+                            </tr>                 
+                            <tr>
+                                <td align="right" valign="top"><b>{!$Label.COMM_CP_VF_EMAIL_Problem_Desc}</b></td>
+                                <td align="left"><apex:inputTextArea style="height:100px;width:500px;" value="{!problemDescription}" id="descId"/></td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td align="right" valign="top"><b>{!$Label.COMM_CP_VF_EMAIL_Steps_to_Reproduce}</b></td>
+                                <td align="left"><apex:inputTextArea style="height:100px;width:500px;" value="{!steptoReproduceProblem}" id="stpesId"/></td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td align="right" ><b>{!$Label.COMM_CP_VF_EMAIL_Attach_Support_Docs}</b></td>
+                                <td align="left"><apex:inputFile value="{!Attach}" fileName="{!FileName_Upload}"></apex:inputFile> <br /> {!$Label.COMM_CP_VF_EMAIL_Attach_Support_Docs_Example}</td>                                                      
+                            </tr>                    
+                            <tr>
+                                <td colspan="2" align="center">
+                                    <apex:commandButton value="{!$Label.COMM_CP_VF_EMAIL_Send}" action="{!sendEmail}" />&nbsp;&nbsp;
+                                    <apex:commandButton value="{!$Label.COMM_CP_VF_EMAIL_Cancel}" action="{!closePopup}" />
+                                </td>
+                                <td>&nbsp;</td>
+                            </tr>               
+                        </table>
+                    </apex:outputPanel>
+                </apex:outputPanel>
+
+                <!-- Giving a report a problem button when selected tab is support and REPORT A PROBLEM BUTTON permission set assigned to user. -->
+                <table width="1300px;" border="0" style="font-size:13.7px;" cellspacing="2" cellpadding="2" align="center">                    
+                    
+                    <!-- LOG A SUPPORT REQUEST -->
+                    <apex:outputPanel rendered="{!if(tabName=='Support' && isReportAProblem,true,false)}">
+                        <tr>
+                            <td colspan="3">
+                                <table width="95%" border='0'>
+                                    <tr>
+                                        <td align="center">
+                                            <apex:commandButton action="{!showPopup}" rerender="displayEmailPopup" styleClass="roundCornerButton" value="{!$Label.COMM_PP_VF_BTN_Log_a_Support_Request}">
+                                                <!--<apex:image value="{!$Resource.Report_A_Problem_Button}" width="300" height="40"></apex:image>-->
+                                                <!--<div class="roundCornerButton">LOG A SUPPORT REQUEST</div>-->
+                                            </apex:commandButton>
+                                        </td>
+                                    </tr>
+                                </table>                                                   
+                            </td>
+                        </tr>
+                    </apex:outputPanel>
+                    
+                    <tr>
+                        <td width="100%" colspan="3" align="center"> 
+                            &nbsp;
+                        </td>
+                    </tr>
+               
+                    <apex:repeat value="{!lst_CustomWrap}" var="v">          
+                        <tr height="100%"> 
+                            <apex:repeat value="{!v.lst_wrapper}" var="x">                   
+                                <td width="33%" align="left" style="vertical-align:top;padding-right:0px; padding-bottom:15px;">
+                                    <table border="0" width="100%" cellpadding="0" cellspacing="0">   
+                                        <tr>
+                                            <td><div class="boxTitle">{!x.label}</div></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="boxContent">
+                                                    <apex:repeat value="{!x.lstwrapperData}" var="y">                                          
+                                                        <table border="0" style="padding-left:5px;padding-right:5px;" width="100%">
+                                                            <tr>
+                                                                <td align="{!y.contentJustification}" width="100%" valign="top">
+                                                                    
+                                                                    <apex:outputPanel rendered="{!y.displayBullet}">
+                                                                        <apex:image url="{!$Resource.ListImage}" height="15" width="15"/>
+                                                                    </apex:outputPanel>                                         
+                                                                    
+                                                                    <apex:outputPanel rendered="{!if((y.displayPageWindow=='Open in a New Tab' || y.displayPageWindow=='') && y.IsLink,true,false)}">                            
+                                                                        <apex:outputLink id="theLink" onclick="openinNewTab('{!y.url}');return false;" style="text-decoration: none;" target="_blank">
+                                                                            <apex:outputPanel rendered="{!!IF(CONTAINS(y.value, 'resource'),True, False)}">
+                                                                                     {!y.Value}
+                                                                            </apex:outputPanel>
+                                                                            <apex:image url="{!y.value}" height="50" width="150" rendered="{!IF(CONTAINS(y.value, 'resource'),True, False)}"/>
+                                                                        </apex:outputLink>                                                                                    
+                                                                    </apex:outputPanel>
+
+                                                                    <apex:outputPanel rendered="{!if(y.displayPageWindow=='Open in a New Window' && y.IsLink,true,false)}">
+                                                                        <apex:outputLink id="theLink1" onclick="window.open('{!y.url}','_blank','width=1000,height=700');return false;" style="text-decoration: none;">
+                                                                            <apex:outputPanel rendered="{!!IF(CONTAINS(y.value, 'resource'),True, False)}">
+                                                                                {!y.Value}
+                                                                            </apex:outputPanel>
+                                                                            <apex:image url="{!y.value}" height="50" width="150" rendered="{!IF(CONTAINS(y.value, 'resource'),True, False)}"/>
+                                                                        </apex:outputLink>
+                                                                    </apex:outputPanel>
+                         
+                                                                    <apex:outputPanel rendered="{!if(y.displayPageWindow=='Open in existing page' && y.IsLink,true,false)}">                           
+                                                                        <a href="{!y.url}" style="text-decoration: none;">
+                                                                            <apex:outputPanel rendered="{!!IF(CONTAINS(y.value, 'resource'),True, False)}">
+                                                                                {!y.Value}
+                                                                            </apex:outputPanel>
+                                                                            <apex:image url="{!y.value}" height="50" width="150" rendered="{!IF(CONTAINS(y.value, 'resource'),True, False)}"/>
+                                                                        </a>
+                                                                    </apex:outputPanel>
+                        
+                                                                    <apex:outputPanel rendered="{!!y.IsLink}">
+                                                                        {!y.Value}
+                                                                    </apex:outputPanel>       
+                        
+                                                                    <br/>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </apex:repeat>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>                                    
+                                </td>                                      
+                            </apex:repeat>
+                        </tr>                                        
+                    </apex:repeat>
+                    
+                    <!-- Brainshark -->
+                    <apex:outputPanel rendered="{!tabName == 'Training'}">
+                        <tr><td colspan="3"></td></tr>
+                        <tr>
+                            <td colspan="3">
+                                <div style="text-align:left; font-size:18px; font-weight:bold; margin-left:10px; margin-top:5px;">{!$Label.COMM_CP_VF_NV_Learning_Locker_Instructions}</div>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td colspan="3">
+                                <apex:iframe src="{!brainshark_url}?username={!$User.Email}&fn={!$User.FirstName}&ln={!$User.LastName}&login_dir=nvidia&cid=32450&gids={!strGGGroups}&dest=%2Fbrainshark%2Flearning%2FmyLearning.asp%3Fui%3D507905" height="600px;" frameborder="false" width="100%" scrolling="true" rendered="{!tabName='Training'}"/>
+                            </td>
+                        </tr>
+                    </apex:outputPanel>
+                </table>
+            </div>
+        </div>
+  
+    </apex:form>
+
+    <style type="text/css">
+        .boxTitle {
+            border: 1px solid #505050;
+            background-color:#505050;
+            /*width:349px;*/
+            width:90%;
+            height: 100%;          
+            float:left;
+            color:white;
+            font-size:14px;
+            font-weight:bold;
+            padding:8px;
+            padding-right:22px;
+            border-left: 2px solid #505050;
+            border-top: 2px solid #505050;
+            overflow: hidden;
+            display: inline-block;
+            white-space: nowrap;
+            max-width:350px;
+            min-width:350px;
+            margin-right:6px; /* Set to 0 if you don't want shadow at the right side */
+            margin-left:0px; /* Set to 20px if you want shadow at the left side */
+            margin-top:0px; /* Set to 20px if you want shadow at the top side */
+            margin-bottom:0px; /* Set to 20px if you want shadow at the bottom side */
+            
+            -moz-box-shadow:    3px 3px 5px 6px #ccc;
+            -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+            box-shadow:         6px 0px 5px #ccc;
+        }
+
+        .boxContent {
+            border: 1px solid #F3F3F3;
+            background-color: #F3F3F3;
+            /*width: 350px;*/
+            width:90%;
+            max-width:350px;
+            min-width:350px;
+            height: 160px;
+            padding-top:15px;
+            padding-left:15px;
+            padding-right:15px;
+            overflow:auto;
+            -moz-box-shadow:    3px 3px 5px 6px #ccc;
+            -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+            box-shadow:         6px 6px 5px #ccc;
+        }
+
+        .boxContentShort {
+            border: 1px solid #F3F3F3;
+            background-color: #F3F3F3;
+            width: 100%;
+            height: 130px;
+            padding-top:15px;
+            padding-left:15px;
+            padding-right:15px;
+            overflow:auto;
+            -moz-box-shadow:    3px 3px 5px 6px #ccc;
+            -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+            box-shadow:         10px 10px 5px #ccc;
+        }
+        
+        .roundCornerButton {
+            //width: 275px;
+            height: 40px;
+            background-color: #76B900;
+            background: #76B900;
+            color: white;
+            font-size: 14px;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-align: center;
+            //line-height:40px;
+            moz-border-radius: 5px;
+            -webkit-border-radius: 5px; /* Safari 5.1+, Chrome 10+ */
+            border-radius: 5px; /* IE */
+        }
+        .roundCornerButton:hover {
+            //width: 275px;
+            height: 40px;
+            background-color: #277220;
+            background: #277220;
+            color: white;
+            font-size: 14px;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-align: center;
+            //line-height:40px;
+            moz-border-radius: 5px;
+            -webkit-border-radius: 5px; /* Safari 5.1+, Chrome 10+ */
+            border-radius: 5px; /* IE */
+        }
+    </style>
+    
+</apex:page>

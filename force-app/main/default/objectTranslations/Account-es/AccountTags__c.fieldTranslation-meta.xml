@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- ReadOnly Copy of Tags from the related Account Tags records. Filled from the Account Tags trigger --></help>
+    <label><!-- AccountTags --></label>
+    <name>AccountTags__c</name>
+    <picklistValues>
+        <masterLabel>Consumer Customer</masterLabel>
+        <translation><!-- Consumer Customer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Enterprise Customer</masterLabel>
+        <translation><!-- Enterprise Customer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GFNA Partner</masterLabel>
+        <translation><!-- GFNA Partner --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sample Tag</masterLabel>
+        <translation><!-- Sample Tag --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Strategic OEM</masterLabel>
+        <translation><!-- Strategic OEM --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

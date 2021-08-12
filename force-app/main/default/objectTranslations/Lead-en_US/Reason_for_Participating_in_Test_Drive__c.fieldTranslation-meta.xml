@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Reason for Participating in Test Drive --></label>
+    <name>Reason_for_Participating_in_Test_Drive__c</name>
+    <picklistValues>
+        <masterLabel>Evaluating GPU system for application benchmarks</masterLabel>
+        <translation><!-- Evaluating GPU system for application benchmarks --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Evaluating GPU system for purchase in the future</masterLabel>
+        <translation><!-- Evaluating GPU system for purchase in the future --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Evaluating GPU systems to purchase now</masterLabel>
+        <translation><!-- Evaluating GPU systems to purchase now --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

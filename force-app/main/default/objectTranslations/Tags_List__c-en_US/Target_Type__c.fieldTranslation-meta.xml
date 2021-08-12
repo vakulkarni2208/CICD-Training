@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Target Type --></label>
+    <name>Target_Type__c</name>
+    <picklistValues>
+        <masterLabel>Dev Contact</masterLabel>
+        <translation><!-- Dev Contact --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dev Event</masterLabel>
+        <translation><!-- Dev Event --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dev File</masterLabel>
+        <translation><!-- Dev File --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dev Form</masterLabel>
+        <translation><!-- Dev Form --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dev Form Question</masterLabel>
+        <translation><!-- Dev Form Question --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dev Program</masterLabel>
+        <translation><!-- Dev Program --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

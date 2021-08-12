@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- BriteVerify Email Verification Status. The Valid status indicates the email is valid, and the Invalid status means an email that is invalid.  Unknown and Accept All mean the email cannot be classified as valid or invalid. --></help>
+    <label><!-- Email Status --></label>
+    <name>Email_Status__c</name>
+    <picklistValues>
+        <masterLabel>Accept All</masterLabel>
+        <translation><!-- Accept All --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Invalid</masterLabel>
+        <translation><!-- Invalid --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unknown</masterLabel>
+        <translation><!-- Unknown --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Valid</masterLabel>
+        <translation><!-- Valid --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

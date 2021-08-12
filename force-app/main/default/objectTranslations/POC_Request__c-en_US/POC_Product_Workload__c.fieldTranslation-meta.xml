@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- POC Product Workload --></label>
+    <name>POC_Product_Workload__c</name>
+    <picklistValues>
+        <masterLabel>Data Analytics</masterLabel>
+        <translation><!-- Data Analytics --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Edge AI (Fleet Command)</masterLabel>
+        <translation><!-- Edge AI (Fleet Command) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Enterprise AI</masterLabel>
+        <translation><!-- Enterprise AI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Remote Collab (Omniverse)</masterLabel>
+        <translation><!-- Remote Collab (Omniverse) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Remote Workstation</masterLabel>
+        <translation><!-- Remote Workstation --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

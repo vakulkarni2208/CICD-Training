@@ -1,0 +1,40 @@
+<aura:component controller="RenewEntitlementHelper" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickActionWithoutHeader" access="global" >
+	<aura:attribute name="showErrMessage" type="Boolean" default="false"/>
+	<aura:attribute name="showSuccMessage" type="Boolean" default="false"/>
+    <aura:attribute name="showConfirmDialog" type="Boolean" default="true"/>
+    <!--<aura:handler name="init" action="{!c.confirm}" value="{!this}"/> -->
+    
+    <div class="slds">
+        <aura:renderIf isTrue="{!v.showSuccMessage}">
+            <p class="slds-text-heading_medium">{!$Label.c.ServiceCloud_Renew_Success_Message}</p>
+            <br/>
+            <div class="slds-align_absolute-center">
+            <lightning:button name="close" label="Close" onclick="{!c.close}" />         
+            </div>
+        </aura:renderIf>
+    
+        <aura:renderIf isTrue="{!v.showErrMessage}">
+            <p class="error" style="color:red">{!$Label.c.ServiceCloud_Renew_Fail_Message}</p>
+            <br/>
+            <div class="slds-align_absolute-center">
+            <lightning:button name="close" label="Close" onclick="{!c.close}" />         
+            </div>
+        </aura:renderIf>
+			
+        <!--<br/>
+        <br/>
+        <div class="slds-align_absolute-center">
+		<lightning:button name="close" label="Close" onclick="{!c.close}" />         
+    	</div>
+		-->
+        <aura:renderIf isTrue="{!v.showConfirmDialog}">
+            <p class="slds-text-heading_medium">
+                {!$Label.c.ServiceCloud_Renew_Confirm_Message}
+            </p><br/>
+            <div class="slds-align_absolute-center">
+                <lightning:button label="Cancel" onclick="{!c.close}" class="slds-button slds-button_neutral"/>
+                <lightning:button label="OK" onclick="{!c.renew}" class="slds-button slds-button--brand"/>
+            </div>
+        </aura:renderIf>
+    </div>    
+</aura:component>

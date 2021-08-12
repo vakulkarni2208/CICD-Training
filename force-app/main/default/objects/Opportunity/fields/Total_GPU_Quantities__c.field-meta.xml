@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_GPU_Quantities__c</fullName>
+    <description>Used in SCOPE approval mechanisms.  Sums up full product quantities from Opportunity Products.</description>
+    <externalId>false</externalId>
+    <label>Total GPU Quantities</label>
+    <summarizedField>OpportunityLineItem.GPU_Quantities__c</summarizedField>
+    <summaryForeignKey>OpportunityLineItem.OpportunityId</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

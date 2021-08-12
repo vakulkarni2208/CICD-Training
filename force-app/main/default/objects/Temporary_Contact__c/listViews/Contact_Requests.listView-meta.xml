@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contact_Requests</fullName>
+    <columns>NAME</columns>
+    <columns>First_Name__c</columns>
+    <columns>Last_Name__c</columns>
+    <columns>Email__c</columns>
+    <columns>Action_Requested__c</columns>
+    <columns>Reason_for_Deactivation_Deletion__c</columns>
+    <columns>LAST_UPDATE</columns>
+    <columns>Status__c</columns>
+    <columns>Region__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>Contact Requests</label>
+    <language>en_US</language>
+</ListView>

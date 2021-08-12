@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LIST_DEEP_LEARNING__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Marketo Field for reporting</description>
+    <externalId>false</externalId>
+    <label>LIST_DEEP_LEARNING</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

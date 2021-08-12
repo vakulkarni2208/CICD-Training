@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Default Channel Admin for Jetson Deal Reg Lead --></help>
+    <label><!-- JetsonDR Lead - Default Channel Admin --></label>
+    <name>JetsonDR_Lead_Default_Channel_Admin__c</name>
+</CustomFieldTranslation>

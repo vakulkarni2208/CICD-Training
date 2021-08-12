@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- DLI Region --></label>
+    <name>DLI_Region__c</name>
+    <picklistValues>
+        <masterLabel>China</masterLabel>
+        <translation><!-- China --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EMEA</masterLabel>
+        <translation><!-- EMEA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>India</masterLabel>
+        <translation><!-- India --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Israel</masterLabel>
+        <translation><!-- Israel --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Japan</masterLabel>
+        <translation><!-- Japan --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Latin America</masterLabel>
+        <translation><!-- Latin America --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>North America</masterLabel>
+        <translation><!-- North America --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ROAP</masterLabel>
+        <translation><!-- ROAP --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

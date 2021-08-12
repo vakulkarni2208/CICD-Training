@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- A url external to Salesforce to direct users to if they click on the name of the event in the PRM homepage.  If no value is provided, the link will direct the users to this record. --></help>
+    <label><!-- Externald URL --></label>
+    <name>External_URL__c</name>
+</CustomFieldTranslation>

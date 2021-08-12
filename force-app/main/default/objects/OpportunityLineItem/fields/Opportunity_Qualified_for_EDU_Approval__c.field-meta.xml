@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Opportunity_Qualified_for_EDU_Approval__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>SDS-2823
+This field will be updated by the Process Builder &apos;Opp Prod: Update &apos;Qualified for EDU Approval&apos; on OPP&apos;</description>
+    <externalId>false</externalId>
+    <label>Opportunity Qualified for EDU Approval</label>
+    <type>Checkbox</type>
+</CustomField>

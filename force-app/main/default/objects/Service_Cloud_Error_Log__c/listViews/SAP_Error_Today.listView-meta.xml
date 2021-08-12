@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SAP_Error_Today</fullName>
+    <columns>NAME</columns>
+    <columns>EndPointURL__c</columns>
+    <columns>Callout_Request__c</columns>
+    <columns>Response__c</columns>
+    <columns>Error_Type__c</columns>
+    <columns>Error_Description__c</columns>
+    <columns>Functionality_Name__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CREATED_DATE</field>
+        <operation>equals</operation>
+        <value>TODAY</value>
+    </filters>
+    <label>SAP Error Today</label>
+    <language>en_US</language>
+</ListView>

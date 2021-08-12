@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Select the Distribution Relationships that apply. --></help>
+    <label><!-- Distribution Relationships --></label>
+    <name>Distribution_Relationships__c</name>
+    <picklistValues>
+        <masterLabel>ASI Corporation</masterLabel>
+        <translation><!-- ASI Corporation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Arrow</masterLabel>
+        <translation><!-- Arrow --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>D&amp;H Distributing</masterLabel>
+        <translation><!-- D&amp;H Distributing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ingram Micro</masterLabel>
+        <translation><!-- Ingram Micro --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ma Labs</masterLabel>
+        <translation><!-- Ma Labs --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>None</masterLabel>
+        <translation><!-- None --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SED</masterLabel>
+        <translation><!-- SED --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SuperMicro</masterLabel>
+        <translation><!-- SuperMicro --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Synnex</masterLabel>
+        <translation><!-- Synnex --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tech Data</masterLabel>
+        <translation><!-- Tech Data --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

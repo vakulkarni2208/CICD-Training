@@ -1,0 +1,13 @@
+<apex:component controller="PrmNewsController">
+
+	<div class="sidebarModuleHeader"><h2><label>Recent News</label></h2></div>	
+				<div class="recentNews" style="margin:10px;">
+					<apex:repeat var="item" value="{!news}">
+						<apex:outputPanel layout="none" rendered="{!IF(item.Image__c ='', 'false', 'true')}">
+							<img src="{!item.Image__c}" alt="" style="float:left;padding-right:20px;padding-bottom:10px;" />
+						</apex:outputPanel>
+						<apex:outputText value="{!item.News_Text__c}" escape="false"/> 
+					</apex:repeat>
+				</div>
+
+</apex:component>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Activate_vGPU_DGX_Outreach_Japan__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>SDS-1875 - Sales: Create process builder for Japan to do automated outreach</description>
+    <externalId>false</externalId>
+    <label>Activate vGPU/DGX Outreach Japan</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

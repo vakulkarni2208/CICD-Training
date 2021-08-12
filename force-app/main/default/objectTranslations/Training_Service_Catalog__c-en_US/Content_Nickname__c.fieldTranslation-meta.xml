@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Content Nickname --></label>
+    <name>Content_Nickname__c</name>
+    <picklistValues>
+        <masterLabel>Anomaly Det.</masterLabel>
+        <translation><!-- Anomaly Det. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Auto</masterLabel>
+        <translation><!-- Auto --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CUDA C++</masterLabel>
+        <translation><!-- CUDA C++ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CUDA Python</masterLabel>
+        <translation><!-- CUDA Python --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CV2</masterLabel>
+        <translation><!-- CV2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cyber</masterLabel>
+        <translation><!-- Cyber --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DCC</masterLabel>
+        <translation><!-- DCC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Deep Learning for Healthcare Genomics</masterLabel>
+        <translation><!-- Deep Learning for Healthcare Genomics --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FMV</masterLabel>
+        <translation><!-- FMV --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Finance</masterLabel>
+        <translation><!-- Finance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IVA</masterLabel>
+        <translation><!-- IVA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Image  Analysis</masterLabel>
+        <translation><!-- Image  Analysis --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ind. Insp.</masterLabel>
+        <translation><!-- Ind. Insp. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MDT</masterLabel>
+        <translation><!-- MDT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Multi-GPU</masterLabel>
+        <translation><!-- Multi-GPU --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>N/A</masterLabel>
+        <translation><!-- N/A --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NLP</masterLabel>
+        <translation><!-- NLP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OpenACC</masterLabel>
+        <translation><!-- OpenACC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pred. Maint.</masterLabel>
+        <translation><!-- Pred. Maint. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RAPIDS</masterLabel>
+        <translation><!-- RAPIDS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Robo</masterLabel>
+        <translation><!-- Robo --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

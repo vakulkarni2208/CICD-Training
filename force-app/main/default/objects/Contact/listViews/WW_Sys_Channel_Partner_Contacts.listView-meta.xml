@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>WW_Sys_Channel_Partner_Contacts</fullName>
+    <columns>CONTACT.LAST_NAME</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>CONTACT.PHONE1</columns>
+    <columns>CONTACT.EMAIL</columns>
+    <columns>CONTACT.ADDRESS2_STATE</columns>
+    <columns>CONTACT.LEAD_SOURCE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CONTACT.LEAD_SOURCE</field>
+        <operation>equals</operation>
+        <value>WW Sys Channel Partner Contacts</value>
+    </filters>
+    <label>WW System Channel Partner Contacts</label>
+    <language>en_US</language>
+    <sharedTo>
+        <role>Administrator</role>
+        <role>SalesLeadManagerTesla</role>
+    </sharedTo>
+</ListView>

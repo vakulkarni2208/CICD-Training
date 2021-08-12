@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Architecture_Review_Board_ARB_Complete__c</fullName>
+    <description>SuperPod ACE is a validation and design review with DGX SuperPod experts at NVIDIA to ensure project success</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Scalable Design Meeting with DGX Prod Mgmt/NVPS/SAs/SMEs to enable customer success. For 10+ DGX Systems.</inlineHelpText>
+    <label>AI Center of Excellence (ACE) Complete?</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>DGX_POD_Design__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Yes</fullName>
+                <default>false</default>
+                <label>Yes</label>
+            </value>
+            <value>
+                <fullName>No</fullName>
+                <default>false</default>
+                <label>No</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>NVIDIA DGX SuperPOD</controllingFieldValue>
+            <valueName>Yes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NVIDIA DGX SuperPOD</controllingFieldValue>
+            <valueName>No</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

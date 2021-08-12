@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Date the PO is expected to be delivered to NVIDIA --></help>
+    <label><!-- OEM Reported Close Date --></label>
+    <name>OEM_Reported_Close_Date__c</name>
+</CustomFieldTranslation>

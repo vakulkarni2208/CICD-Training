@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Choose the product associated --></help>
+    <label><!-- Product --></label>
+    <name>Product__c</name>
+    <picklistValues>
+        <masterLabel>DGX</masterLabel>
+        <translation><!-- DGX --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OV</masterLabel>
+        <translation><!-- OV --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Quadro</masterLabel>
+        <translation><!-- Quadro --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RTX Server</masterLabel>
+        <translation><!-- RTX Server --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VGaming</masterLabel>
+        <translation><!-- VGaming --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>vGPU</masterLabel>
+        <translation><!-- vGPU --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

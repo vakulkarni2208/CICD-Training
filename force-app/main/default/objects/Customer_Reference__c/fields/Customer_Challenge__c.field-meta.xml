@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Customer_Challenge__c</fullName>
+    <description>What problem were you trying to solve?</description>
+    <externalId>false</externalId>
+    <inlineHelpText>What problem were you trying to solve?</inlineHelpText>
+    <label>Customer Challenge</label>
+    <length>100000</length>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>2</visibleLines>
+</CustomField>

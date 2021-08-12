@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Total Amount of NV Branded Products from Quote --></help>
+    <label><!-- Total Amount of NV Branded Products --></label>
+    <name>Total_Amount_of_CPQ_Products__c</name>
+</CustomFieldTranslation>

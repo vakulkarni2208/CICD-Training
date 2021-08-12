@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- OEM Press Release (PR) Issuing Date --></label>
+    <name>OEM_Press_Release_PR_Issuing_Date__c</name>
+</CustomFieldTranslation>

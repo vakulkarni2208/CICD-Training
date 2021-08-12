@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IsEduLeadApproverActive__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+AND(
+EduLead_Approver__r.IsActive,
+ISPICKVAL(EduLead_Approver__r.UserType, &apos;Standard&apos;)
+), True, False
+)</formula>
+    <label>IsEduLeadApproverActive</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

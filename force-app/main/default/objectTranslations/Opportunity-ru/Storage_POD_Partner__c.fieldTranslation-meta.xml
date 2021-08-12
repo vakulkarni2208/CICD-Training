@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Storage POD Partner --></label>
+    <name>Storage_POD_Partner__c</name>
+    <picklistValues>
+        <masterLabel>DDN</masterLabel>
+        <translation><!-- DDN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dell/EMC/Isilon</masterLabel>
+        <translation><!-- Dell/EMC/Isilon --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IBM</masterLabel>
+        <translation><!-- IBM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Inspur</masterLabel>
+        <translation><!-- Inspur --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NetApp</masterLabel>
+        <translation><!-- NetApp --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pure Storage</masterLabel>
+        <translation><!-- Pure Storage --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SwiftStack</masterLabel>
+        <translation><!-- SwiftStack --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VAST Data</masterLabel>
+        <translation><!-- VAST Data --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Weka.io</masterLabel>
+        <translation><!-- Weka.io --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

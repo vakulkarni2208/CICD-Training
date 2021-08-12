@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <recordTypes>
+        <label><!-- Automotive Lead --></label>
+        <name>Automotive_Lead</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- DLI Instructor Lead --></label>
+        <name>DLI_Instructor_Lead</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- DLI Lead --></label>
+        <name>DLI_Lead</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Deal Registration --></label>
+        <name>Deal_Registration</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Developer Lead --></label>
+        <name>DeveloperLead</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- EDU Lead Registration --></label>
+        <name>EDU_Lead_Registration</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- EMEAI Training --></label>
+        <name>EMEAI_Training</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Enterprise Customer Lead --></label>
+        <name>Enterprise_Customer_Lead</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- GRID Lead --></label>
+        <name>GRID_VCA_VGX_Lead</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- GeForce Lead --></label>
+        <name>GeForce_Lead</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Jetson Deal Registration --></label>
+        <name>Jetson_Deal_Registration</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- NPN Web Onboard Form --></label>
+        <name>NPN_Web_Onboard_Form</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Notebook Lead --></label>
+        <name>Notebook_Lead</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Partner Lead --></label>
+        <name>Partner_Lead</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Pre-MQL Lead --></label>
+        <name>Pre_MQL_Lead</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Quadro Lead --></label>
+        <name>Quadro_Lead</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- RTX6000 Refresh Promotion --></description>
+        <label><!-- RTX6000 Refresh Promotion --></label>
+        <name>RTX6000_Refresh_Promotion</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Tesla Sales Lead --></label>
+        <name>SalesLead</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Tegra Lead --></label>
+        <name>Tegra_Lead</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- You must set the mandatory fields:- Industry, Automotive Segment, Street, City, Postal Code, Country and Website to change the Lead Status. --></errorMessage>
+        <name>Automotive_Lead_Conversion_Reqd_Fields</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Lead Status should be &apos;Convert to Account&apos; in order to Convert the Lead --></errorMessage>
+        <name>Automotive_Lead_Convertion_Reqd_Status</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Leads without Email address are blocked from insert/update. --></errorMessage>
+        <name>Block_Leads_Without_EmailAddress</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- For DGX-1 and DGX-2 registrations, please confirm the storage and/or networking partner. If unknown at this time, please select N/A --></errorMessage>
+        <name>DGX1_DGX2_NetworkingStorage</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The deal registration status is driven by the approval process. To approve or reject the registration, please use the approval section located to the right of your screen. Please contact npnopportunityregistration@nvidia.com for any questions --></errorMessage>
+        <name>DealReg_DontAllowLeadStausChange</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please fill-in POC Location and POC Details if you select True for &quot;Is Customer Doing POC?&quot; --></errorMessage>
+        <name>DealReg_IfPOCFillLocationDetails</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only Channel Admins can convert Opp Reg Leads. --></errorMessage>
+        <name>DealReg_OnlyAllowChannelAdminsToConvert</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only Approved Deal Registrations can be converted. --></errorMessage>
+        <name>DealReg_OnlyConvertApprovedDealReg</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Currently DGX-2 registrations are unavailable. Please contact your PBM for more information on DGX-2 registration. --></errorMessage>
+        <name>DealReg_Special_Deal_Enabled</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please fill-in Company, First Name, Last Name, Email, Address, Deal Type, Primary Product, Primary Product Quantity fields. --></errorMessage>
+        <name>EDULeadReg_Fields_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please don&apos;t change the Status. --></errorMessage>
+        <name>EDULeadReg_Prevent_StatusChange</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Select Sales Qualified” to convert to an account with opportunity.  Select “Converted to Account” if not creating an opportunity at this time. --></errorMessage>
+        <name>EnforceECLLeadConversionStatus</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please fill-in &quot;Other Lead Status (Comments)&quot; if the Disqualified/Recycling Reason is selected as &quot;Other&quot; --></errorMessage>
+        <name>EnforceECLLeadStatusOtherComment</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- For Parabricks deal type, please select Industry from this list:
+Healthcare, Higher Ed/Research, Public Sector, or Other --></errorMessage>
+        <name>Industries_tied_with_Parabricks_dealtype</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- First Name and all address fields are required. --></errorMessage>
+        <name>JetsonDR_FirstNameAddressFields_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- CompanyId should be a numeric value --></errorMessage>
+        <name>LID__Check_CompanyId_Value</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- NPN Program Deals are now allowed to be converted. --></errorMessage>
+        <name>NPN_Program_Deal_NoConversionAllowed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- RTX6000 Refresh Promotion is not allowed for this region. --></errorMessage>
+        <name>RTX6000_BlockByRegion</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Conga_Composer_OAuth --></label>
+        <name>APXTConga4__Conga_Composer_OAuth</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Conga_Mail_Merge --></label>
+        <name>APXTConga4__Conga_Mail_Merge</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- AltavistaNews --></label>
+        <name>AltavistaNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Assign_Tasks_to_Me_Classic --></label>
+        <name>Assign_Tasks_to_Me_Classic</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- SendaBrainsharkPresentation --></label>
+        <name>BRNSHRK__SendaBrainsharkPresentation</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleNews --></label>
+        <name>GoogleNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- HooversProfile --></label>
+        <name>HooversProfile</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- LS_Related_Accounts --></label>
+        <name>LS_Related_Accounts</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- LS_Related_Leads --></label>
+        <name>LS_Related_Leads</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Mass_Convert_Leads --></label>
+        <name>Mass_Convert_Leads</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- SendGmail --></label>
+        <name>SendGmail</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_via_Docusign_VF --></label>
+        <name>Send_via_Docusign_VF</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- YahooMaps --></label>
+        <name>YahooMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_with_DocuSign --></label>
+        <name>dsfs__Send_with_DocuSign</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Jifflenow_Meetings --></label>
+        <name>jiffle__Jifflenow_Meetings</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Schedule_Jifflenow_Meetings --></label>
+        <name>jiffle__Schedule_Jifflenow_Meetings</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- LeadspaceFindNewProspectsLead --></label>
+        <name>leadspace__LeadspaceFindNewProspectsLead</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Leadspace_enrich_Lead --></label>
+        <name>leadspacesync__Leadspace_enrich_Lead</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- CustomerConvert --></label>
+        <name>lsgirikonIndia__CustomerConvert</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>lsgirikonIndia__GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleNews --></label>
+        <name>lsgirikonIndia__GoogleNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>lsgirikonIndia__GoogleSearch</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- HooversProfile --></label>
+        <name>lsgirikonIndia__HooversProfile</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Lead_Matched_Accounts --></label>
+        <name>lsgirikonIndia__Lead_Matched_Accounts</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Lead_Matched_Leads --></label>
+        <name>lsgirikonIndia__Lead_Matched_Leads</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- SendGmail --></label>
+        <name>lsgirikonIndia__SendGmail</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Add_to_Marketo_Campaign --></label>
+        <name>mkto_si__Add_to_Marketo_Campaign</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Add_to_Marketo_Campaign_Lightning --></label>
+        <name>mkto_si__Add_to_Marketo_Campaign_Lightning</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Add_to_Watch_List --></label>
+        <name>mkto_si__Add_to_Watch_List</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_Marketo_Email --></label>
+        <name>mkto_si__Send_Marketo_Email</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_Marketo_Email_Lightning --></label>
+        <name>mkto_si__Send_Marketo_Email_Lightning</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Link_to_PitchBook --></label>
+        <name>pbk__Link_to_PitchBook</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Pitchbook_Sync --></label>
+        <name>pbk__Pitchbook_Sync</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_to_Slack --></label>
+        <name>slackv2__Send_to_Slack</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Slack_Alerts --></label>
+        <name>slackv2__Slack_Alerts</name>
+    </webLinks>
+</CustomObjectTranslation>

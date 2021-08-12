@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NVIDIA_Hardware__c</fullName>
+    <externalId>false</externalId>
+    <label>NVIDIA Hardware in Vehicle</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <controllingField>NVIDIA_Hardware_Used__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Automotive: DRIVE Platform</fullName>
+                <default>false</default>
+                <label>Automotive: DRIVE Platform</label>
+            </value>
+            <value>
+                <fullName>Automotive: Custom Hardware</fullName>
+                <default>false</default>
+                <label>Automotive: Custom Hardware</label>
+            </value>
+            <value>
+                <fullName>Embedded: Jetson Platform</fullName>
+                <default>false</default>
+                <label>Embedded: Jetson Platform</label>
+            </value>
+            <value>
+                <fullName>GPU: GeForce GTX</fullName>
+                <default>false</default>
+                <label>GPU: GeForce GTX</label>
+            </value>
+            <value>
+                <fullName>GPU: Quadro</fullName>
+                <default>false</default>
+                <label>GPU: Quadro</label>
+            </value>
+            <value>
+                <fullName>GPU: Tesla</fullName>
+                <default>false</default>
+                <label>GPU: Tesla</label>
+            </value>
+            <value>
+                <fullName>GPU: DRIVE PX2-G3</fullName>
+                <default>false</default>
+                <label>GPU: DRIVE PX2-G3</label>
+            </value>
+            <value>
+                <fullName>GPU: PG189</fullName>
+                <default>false</default>
+                <label>GPU: PG189</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Unknown</fullName>
+                <default>false</default>
+                <label>Unknown</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Yes</controllingFieldValue>
+            <valueName>Automotive: DRIVE Platform</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Yes</controllingFieldValue>
+            <valueName>Embedded: Jetson Platform</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Yes</controllingFieldValue>
+            <valueName>GPU: GeForce GTX</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Yes</controllingFieldValue>
+            <valueName>GPU: Quadro</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Yes</controllingFieldValue>
+            <valueName>GPU: Tesla</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Yes</controllingFieldValue>
+            <valueName>GPU: DRIVE PX2-G3</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Yes</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Yes</controllingFieldValue>
+            <valueName>Unknown</valueName>
+        </valueSettings>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

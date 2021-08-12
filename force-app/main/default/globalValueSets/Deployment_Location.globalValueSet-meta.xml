@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Edge</fullName>
+        <default>false</default>
+        <label>Edge</label>
+    </customValue>
+    <customValue>
+        <fullName>Datacenter</fullName>
+        <default>false</default>
+        <label>Datacenter</label>
+    </customValue>
+    <customValue>
+        <fullName>Workstation</fullName>
+        <default>false</default>
+        <label>Workstation</label>
+    </customValue>
+    <description>SOQ-63</description>
+    <masterLabel>Deployment Location</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

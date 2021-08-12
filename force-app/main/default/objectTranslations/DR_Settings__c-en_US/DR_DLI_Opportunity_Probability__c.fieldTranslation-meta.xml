@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- DLI Opportunity Probability set during DLI Opp Reg Lead Conversion --></help>
+    <label><!-- DR : DLI Opportunity : Probability --></label>
+    <name>DR_DLI_Opportunity_Probability__c</name>
+</CustomFieldTranslation>

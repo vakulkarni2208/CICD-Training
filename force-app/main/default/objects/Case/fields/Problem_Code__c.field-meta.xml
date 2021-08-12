@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Problem_Code__c</fullName>
+    <externalId>false</externalId>
+    <label>Problem Code</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Product_Category__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Configuration Assistance</fullName>
+                <default>false</default>
+                <label>Configuration Assistance</label>
+            </value>
+            <value>
+                <fullName>DCS HW</fullName>
+                <default>false</default>
+                <label>DCS HW</label>
+            </value>
+            <value>
+                <fullName>DCS SW</fullName>
+                <default>false</default>
+                <label>DCS SW</label>
+            </value>
+            <value>
+                <fullName>DCV HW</fullName>
+                <default>false</default>
+                <label>DCV HW</label>
+            </value>
+            <value>
+                <fullName>Deep Learning</fullName>
+                <default>false</default>
+                <label>Deep Learning</label>
+            </value>
+            <value>
+                <fullName>Drive AV/OS SW</fullName>
+                <default>false</default>
+                <label>Drive AV/OS SW</label>
+            </value>
+            <value>
+                <fullName>DriveSim SW</fullName>
+                <default>false</default>
+                <label>DriveSim SW</label>
+            </value>
+            <value>
+                <fullName>Error Message, Logs, Debugs</fullName>
+                <default>false</default>
+                <label>Error Message, Logs, Debugs</label>
+            </value>
+            <value>
+                <fullName>Hardware Failure</fullName>
+                <default>false</default>
+                <label>Hardware Failure</label>
+            </value>
+            <value>
+                <fullName>Inference</fullName>
+                <default>false</default>
+                <label>Inference</label>
+            </value>
+            <value>
+                <fullName>Install, Uninstall or Upgrade</fullName>
+                <default>false</default>
+                <label>Install, Uninstall or Upgrade</label>
+            </value>
+            <value>
+                <fullName>Licensing</fullName>
+                <default>false</default>
+                <label>Licensing</label>
+            </value>
+            <value>
+                <fullName>Machine Learning</fullName>
+                <default>false</default>
+                <label>Machine Learning</label>
+            </value>
+            <value>
+                <fullName>Pegasus HW</fullName>
+                <default>false</default>
+                <label>Pegasus HW</label>
+            </value>
+            <value>
+                <fullName>Product Feature/Function Question</fullName>
+                <default>false</default>
+                <label>Product Feature/Function Question</label>
+            </value>
+            <value>
+                <fullName>SW Download Assistance</fullName>
+                <default>false</default>
+                <label>SW Download Assistance</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>GRID</controllingFieldValue>
+            <controllingFieldValue>DGX</controllingFieldValue>
+            <controllingFieldValue>CUDA</controllingFieldValue>
+            <controllingFieldValue>RTX Blade Server</controllingFieldValue>
+            <valueName>Configuration Assistance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GRID</controllingFieldValue>
+            <controllingFieldValue>DGX</controllingFieldValue>
+            <controllingFieldValue>CUDA</controllingFieldValue>
+            <controllingFieldValue>RTX Blade Server</controllingFieldValue>
+            <valueName>Error Message, Logs, Debugs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GRID</controllingFieldValue>
+            <controllingFieldValue>DGX</controllingFieldValue>
+            <controllingFieldValue>CUDA</controllingFieldValue>
+            <controllingFieldValue>RTX Blade Server</controllingFieldValue>
+            <valueName>Install, Uninstall or Upgrade</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GRID</controllingFieldValue>
+            <controllingFieldValue>CUDA</controllingFieldValue>
+            <valueName>Licensing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GRID</controllingFieldValue>
+            <controllingFieldValue>DGX</controllingFieldValue>
+            <controllingFieldValue>CUDA</controllingFieldValue>
+            <controllingFieldValue>RTX Blade Server</controllingFieldValue>
+            <valueName>Product Feature/Function Question</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GRID</controllingFieldValue>
+            <controllingFieldValue>DGX</controllingFieldValue>
+            <controllingFieldValue>CUDA</controllingFieldValue>
+            <controllingFieldValue>RTX Blade Server</controllingFieldValue>
+            <valueName>SW Download Assistance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GRID</controllingFieldValue>
+            <controllingFieldValue>DGX</controllingFieldValue>
+            <controllingFieldValue>CUDA</controllingFieldValue>
+            <controllingFieldValue>RTX Blade Server</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DGX</controllingFieldValue>
+            <controllingFieldValue>RTX Blade Server</controllingFieldValue>
+            <valueName>Hardware Failure</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DRIVE Constellation</controllingFieldValue>
+            <valueName>DCS HW</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DRIVE Constellation</controllingFieldValue>
+            <valueName>DCS SW</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DRIVE Constellation</controllingFieldValue>
+            <valueName>DCV HW</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DRIVE Constellation</controllingFieldValue>
+            <valueName>Drive AV/OS SW</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DRIVE Constellation</controllingFieldValue>
+            <valueName>DriveSim SW</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DRIVE Constellation</controllingFieldValue>
+            <valueName>Pegasus HW</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

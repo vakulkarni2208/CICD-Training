@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>What_generated_this_Opportunity__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Please select the pull-down area which started this opportunity (e.g. qualified lead, call, etc.).  This will help us track how Opportunities get started.</inlineHelpText>
+    <label>What started this Opportunity?</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Inbound Call</fullName>
+                <default>false</default>
+                <label>Inbound Call</label>
+            </value>
+            <value>
+                <fullName>Qualified Lead</fullName>
+                <default>false</default>
+                <label>Qualified Lead</label>
+            </value>
+            <value>
+                <fullName>Personal Contact</fullName>
+                <default>false</default>
+                <label>Personal Contact</label>
+            </value>
+            <value>
+                <fullName>RFP</fullName>
+                <default>false</default>
+                <label>RFP</label>
+            </value>
+            <value>
+                <fullName>Partner called me for support</fullName>
+                <default>false</default>
+                <label>Partner called me for support</label>
+            </value>
+            <value>
+                <fullName>Ongoing Business</fullName>
+                <default>false</default>
+                <label>Ongoing Business</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

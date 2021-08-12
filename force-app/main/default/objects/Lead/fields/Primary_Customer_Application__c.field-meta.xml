@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Primary_Customer_Application__c</fullName>
+    <externalId>false</externalId>
+    <label>Primary Customer Application</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Agriculture/Construction</fullName>
+                <default>false</default>
+                <label>Agriculture/Construction</label>
+            </value>
+            <value>
+                <fullName>Delivery/Logistics Robot</fullName>
+                <default>false</default>
+                <label>Delivery/Logistics Robot</label>
+            </value>
+            <value>
+                <fullName>Industrial Inspection</fullName>
+                <default>false</default>
+                <label>Industrial Inspection</label>
+            </value>
+            <value>
+                <fullName>Industrial/FA Robot</fullName>
+                <default>false</default>
+                <label>Industrial/FA Robot</label>
+            </value>
+            <value>
+                <fullName>IOT Gateway</fullName>
+                <default>false</default>
+                <label>IOT Gateway</label>
+            </value>
+            <value>
+                <fullName>Medical Imaging</fullName>
+                <default>false</default>
+                <label>Medical Imaging</label>
+            </value>
+            <value>
+                <fullName>Medical Robot</fullName>
+                <default>false</default>
+                <label>Medical Robot</label>
+            </value>
+            <value>
+                <fullName>Predictive Maintenance</fullName>
+                <default>false</default>
+                <label>Predictive Maintenance</label>
+            </value>
+            <value>
+                <fullName>Retail Analytics</fullName>
+                <default>false</default>
+                <label>Retail Analytics</label>
+            </value>
+            <value>
+                <fullName>Service Robot</fullName>
+                <default>false</default>
+                <label>Service Robot</label>
+            </value>
+            <value>
+                <fullName>Safety &amp; Security (IVA)</fullName>
+                <default>false</default>
+                <label>Safety &amp; Security (IVA)</label>
+            </value>
+            <value>
+                <fullName>Signal Processing</fullName>
+                <default>false</default>
+                <label>Signal Processing</label>
+            </value>
+            <value>
+                <fullName>Smart City</fullName>
+                <default>false</default>
+                <label>Smart City</label>
+            </value>
+            <value>
+                <fullName>Speech/Audio Processing</fullName>
+                <default>false</default>
+                <label>Speech/Audio Processing</label>
+            </value>
+            <value>
+                <fullName>Telepresence</fullName>
+                <default>false</default>
+                <label>Telepresence</label>
+            </value>
+            <value>
+                <fullName>Video and Image Processing</fullName>
+                <default>false</default>
+                <label>Video and Image Processing</label>
+            </value>
+            <value>
+                <fullName>Virtual &amp; Augmented Reality (VR/AR)</fullName>
+                <default>false</default>
+                <label>Virtual &amp; Augmented Reality (VR/AR)</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Web Browsers ​</fullName>
+                <default>false</default>
+                <label>Web Browsers ​</label>
+            </value>
+            <value>
+                <fullName>Video Conferencing Tools ​</fullName>
+                <default>false</default>
+                <label>Video Conferencing Tools ​</label>
+            </value>
+            <value>
+                <fullName>PACS​</fullName>
+                <default>false</default>
+                <label>PACS​</label>
+            </value>
+            <value>
+                <fullName>Bloomberg</fullName>
+                <default>false</default>
+                <label>Bloomberg</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

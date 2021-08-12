@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product_Family__c</fullName>
+    <externalId>false</externalId>
+    <label>Product Family</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Automotive</fullName>
+                <default>false</default>
+                <label>Automotive</label>
+            </value>
+            <value>
+                <fullName>Cloud Gaming</fullName>
+                <default>false</default>
+                <label>Cloud Gaming</label>
+            </value>
+            <value>
+                <fullName>CPU Products</fullName>
+                <default>false</default>
+                <label>CPU Products</label>
+            </value>
+            <value>
+                <fullName>CUDA Services</fullName>
+                <default>false</default>
+                <label>CUDA Services</label>
+            </value>
+            <value>
+                <fullName>DGX-1 Pascal Product Family</fullName>
+                <default>false</default>
+                <label>DGX-1 Pascal Product Family</label>
+            </value>
+            <value>
+                <fullName>DGX-1 Volta Product Family</fullName>
+                <default>false</default>
+                <label>DGX-1 Volta Product Family</label>
+            </value>
+            <value>
+                <fullName>DGX-2 Volta Product Family</fullName>
+                <default>false</default>
+                <label>DGX-2 Volta Product Family</label>
+            </value>
+            <value>
+                <fullName>DGX A100</fullName>
+                <default>false</default>
+                <label>DGX A100</label>
+            </value>
+            <value>
+                <fullName>DGX Station A100</fullName>
+                <default>false</default>
+                <label>DGX Station A100</label>
+            </value>
+            <value>
+                <fullName>DGX Station Product Family</fullName>
+                <default>false</default>
+                <label>DGX Station Product Family</label>
+            </value>
+            <value>
+                <fullName>DRIVE Constellation</fullName>
+                <default>false</default>
+                <label>DRIVE Constellation</label>
+            </value>
+            <value>
+                <fullName>DRIVE Sim</fullName>
+                <default>false</default>
+                <label>DRIVE Sim</label>
+            </value>
+            <value>
+                <fullName>Embedded Entertainment</fullName>
+                <default>false</default>
+                <label>Embedded Entertainment</label>
+            </value>
+            <value>
+                <fullName>Fleet Command - Enterprise</fullName>
+                <default>false</default>
+                <label>Fleet Command - Enterprise</label>
+            </value>
+            <value>
+                <fullName>GFN Services</fullName>
+                <default>false</default>
+                <label>GFN Services</label>
+            </value>
+            <value>
+                <fullName>GRID Hardware</fullName>
+                <default>false</default>
+                <label>GRID Hardware</label>
+            </value>
+            <value>
+                <fullName>GRID SW PERPETUAL</fullName>
+                <default>false</default>
+                <label>GRID SW PERPETUAL</label>
+            </value>
+            <value>
+                <fullName>GRID SW RENEWAL</fullName>
+                <default>false</default>
+                <label>GRID SW RENEWAL</label>
+            </value>
+            <value>
+                <fullName>GRID SW SUBSCRIPTION</fullName>
+                <default>false</default>
+                <label>GRID SW SUBSCRIPTION</label>
+            </value>
+            <value>
+                <fullName>GRID SW SUMS</fullName>
+                <default>false</default>
+                <label>GRID SW SUMS</label>
+            </value>
+            <value>
+                <fullName>HPC Compiler</fullName>
+                <default>false</default>
+                <label>HPC Compiler</label>
+            </value>
+            <value>
+                <fullName>NGC Support Service - DSWS</fullName>
+                <default>false</default>
+                <label>NGC Support Service - DSWS</label>
+            </value>
+            <value>
+                <fullName>NGC Support Service - T4</fullName>
+                <default>false</default>
+                <label>NGC Support Service - T4</label>
+            </value>
+            <value>
+                <fullName>NGC Support Service - V100</fullName>
+                <default>false</default>
+                <label>NGC Support Service - V100</label>
+            </value>
+            <value>
+                <fullName>Notebook</fullName>
+                <default>false</default>
+                <label>Notebook</label>
+            </value>
+            <value>
+                <fullName>NVIDIA Professional Services</fullName>
+                <default>false</default>
+                <label>NVIDIA Professional Services</label>
+            </value>
+            <value>
+                <fullName>Omniverse - Enterprise</fullName>
+                <default>false</default>
+                <label>Omniverse - Enterprise</label>
+            </value>
+            <value>
+                <fullName>Parabricks</fullName>
+                <default>false</default>
+                <label>Parabricks</label>
+            </value>
+            <value>
+                <fullName>Quadro Desktop - EP</fullName>
+                <default>false</default>
+                <label>Quadro Desktop - EP</label>
+            </value>
+            <value>
+                <fullName>Quadro Desktop - HE</fullName>
+                <default>false</default>
+                <label>Quadro Desktop - HE</label>
+            </value>
+            <value>
+                <fullName>Quadro Desktop - MR</fullName>
+                <default>false</default>
+                <label>Quadro Desktop - MR</label>
+            </value>
+            <value>
+                <fullName>Quadro Desktop - NVS</fullName>
+                <default>false</default>
+                <label>Quadro Desktop - NVS</label>
+            </value>
+            <value>
+                <fullName>Quadro Desktop - UHE</fullName>
+                <default>false</default>
+                <label>Quadro Desktop - UHE</label>
+            </value>
+            <value>
+                <fullName>Quadro Industry Solution</fullName>
+                <default>false</default>
+                <label>Quadro Industry Solution</label>
+            </value>
+            <value>
+                <fullName>Quadro K20/K40</fullName>
+                <default>false</default>
+                <label>Quadro K20/K40</label>
+            </value>
+            <value>
+                <fullName>Quadro Mobile - HE</fullName>
+                <default>false</default>
+                <label>Quadro Mobile - HE</label>
+            </value>
+            <value>
+                <fullName>Quadro Mobile - MR</fullName>
+                <default>false</default>
+                <label>Quadro Mobile - MR</label>
+            </value>
+            <value>
+                <fullName>Quadro Mobile - NVS</fullName>
+                <default>false</default>
+                <label>Quadro Mobile - NVS</label>
+            </value>
+            <value>
+                <fullName>Quadro Mobile - PE</fullName>
+                <default>false</default>
+                <label>Quadro Mobile - PE</label>
+            </value>
+            <value>
+                <fullName>Quadro Plex Visual Computing</fullName>
+                <default>false</default>
+                <label>Quadro Plex Visual Computing</label>
+            </value>
+            <value>
+                <fullName>Quadro Products - Old</fullName>
+                <default>false</default>
+                <label>Quadro Products - Old</label>
+            </value>
+            <value>
+                <fullName>Quadro VCA</fullName>
+                <default>false</default>
+                <label>Quadro VCA</label>
+            </value>
+            <value>
+                <fullName>RTX Blade Server Product Family</fullName>
+                <default>false</default>
+                <label>RTX Blade Server Product Family</label>
+            </value>
+            <value>
+                <fullName>Tegra Auto/Emb</fullName>
+                <default>false</default>
+                <label>Tegra Auto/Emb</label>
+            </value>
+            <value>
+                <fullName>Tegra Embedded</fullName>
+                <default>false</default>
+                <label>Tegra Embedded</label>
+            </value>
+            <value>
+                <fullName>Tegra Tablets</fullName>
+                <default>false</default>
+                <label>Tegra Tablets</label>
+            </value>
+            <value>
+                <fullName>Tesla HW Family</fullName>
+                <default>false</default>
+                <label>Tesla HW Family</label>
+            </value>
+            <value>
+                <fullName>Tesla SW Family</fullName>
+                <default>false</default>
+                <label>Tesla SW Family</label>
+            </value>
+            <value>
+                <fullName>vGaming</fullName>
+                <default>false</default>
+                <label>vGaming</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

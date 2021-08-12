@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Email Encoding Key for the SFDC User --></help>
+    <label><!-- Email Encoding Key --></label>
+    <name>Email_Encoding_Key__c</name>
+</CustomFieldTranslation>

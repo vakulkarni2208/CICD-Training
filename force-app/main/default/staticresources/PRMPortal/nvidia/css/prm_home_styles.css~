@@ -1,0 +1,52 @@
+div.small {
+    float:right;
+    width:400px;
+}
+div.main {
+    width:780px;
+}
+div.boxed {
+    /* border: 1px solid #999999; */
+    margin-top:15px;
+    padding-bottom:10px;
+}
+
+div.prmtext {
+    font-size:0.9em;
+    font-family:sans-serif;
+    padding-left:5px;
+}
+
+
+div.boxed a {
+    font-size:0.9em;
+    font-family:sans-serif;
+    padding-left:5px;
+    margin-top:5px;
+    margin-bottom:5px;
+    padding-top:0px;
+    padding-bottom:0px;
+    display:block;
+}
+
+div.break {
+    height:20px;
+    width:100%;
+}
+
+
+.hd {
+    border-bottom:2px solid green;
+}
+body {
+    margin-left:auto;
+    margin-right:auto;
+}
+.sidebarModuleHeader, div.boxed .sidebarModuleHeader
+{
+    background-image:url(https://cs2.salesforce.com/resource/1276200423000/BackgroundGreen);
+    background-image:url(https://cs2.salesforce.com/resource/1276224429000/BackgroundSilver);
+}
+h2 {
+    color:#111111;
+}

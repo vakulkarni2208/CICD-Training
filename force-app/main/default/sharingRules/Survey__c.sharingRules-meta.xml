@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingGuestRules>
+        <fullName>Share_Customer_Engagement_Survey</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>Customer Engagement Survey</description>
+        <label>Share Customer Engagement Survey</label>
+        <sharedTo>
+            <guestUser>ESPCommunity</guestUser>
+        </sharedTo>
+        <criteriaItems>
+            <field>Name</field>
+            <operation>equals</operation>
+            <value>Customer Engagement Survey</value>
+        </criteriaItems>
+        <includeHVUOwnedRecords>false</includeHVUOwnedRecords>
+    </sharingGuestRules>
+    <sharingGuestRules>
+        <fullName>Share_DLI_Survey</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Share DLI Survey</label>
+        <sharedTo>
+            <guestUser>ESPCommunity</guestUser>
+        </sharedTo>
+        <criteriaItems>
+            <field>Name</field>
+            <operation>contains</operation>
+            <value>NVIDIA Deep Learning Institute Instructor feedback</value>
+        </criteriaItems>
+        <includeHVUOwnedRecords>false</includeHVUOwnedRecords>
+    </sharingGuestRules>
+    <sharingGuestRules>
+        <fullName>Share_Enterprise_Survey_with_Guest_User</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Share Enterprise Survey with Guest User</label>
+        <sharedTo>
+            <guestUser>ESPCommunity</guestUser>
+        </sharedTo>
+        <criteriaItems>
+            <field>Name</field>
+            <operation>contains</operation>
+            <value>Enterprise</value>
+        </criteriaItems>
+        <includeHVUOwnedRecords>false</includeHVUOwnedRecords>
+    </sharingGuestRules>
+    <sharingGuestRules>
+        <fullName>Share_Enterprise_Surveys_with_Guest_User</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Share Enterprise Surveys with Guest User</label>
+        <sharedTo>
+            <guestUser>ESPCommunity</guestUser>
+        </sharedTo>
+        <criteriaItems>
+            <field>Name</field>
+            <operation>contains</operation>
+            <value>Enterprise Customer Satisfaction Survey</value>
+        </criteriaItems>
+        <includeHVUOwnedRecords>false</includeHVUOwnedRecords>
+    </sharingGuestRules>
+    <sharingGuestRules>
+        <fullName>Share_Survey_with_Guest_user_for_Enterprise_Support</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Share Survey with Guest user for Enterprise Support</label>
+        <sharedTo>
+            <guestUser>ESPCommunity</guestUser>
+        </sharedTo>
+        <criteriaItems>
+            <field>Make_Public__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <includeHVUOwnedRecords>false</includeHVUOwnedRecords>
+    </sharingGuestRules>
+</SharingRules>

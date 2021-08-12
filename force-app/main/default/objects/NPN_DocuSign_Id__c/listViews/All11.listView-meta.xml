@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All11</fullName>
+    <columns>NAME</columns>
+    <columns>NPN_Docusign_Comptency__c</columns>
+    <columns>NPN_DocusiNPN_Docusign_Progn_ProgramType__c</columns>
+    <columns>NPN_Docusign_Region__c</columns>
+    <columns>NPN_Docusign_SubProgramType__c</columns>
+    <columns>Docusign_Template_ID__c</columns>
+    <columns>TemplateName__c</columns>
+    <columns>Contracts_Packet__c</columns>
+    <columns>Add_On_Contracts_Packet__c</columns>
+    <columns>CSP_Yes_No__c</columns>
+    <columns>LAST_UPDATE</columns>
+    <columns>Competency_Termination__c</columns>
+    <columns>Termination__c</columns>
+    <columns>Promotion__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>TemplateName__c</field>
+        <operation>contains</operation>
+        <value>key</value>
+    </filters>
+    <filters>
+        <field>NPN_Docusign_SubProgramType__c</field>
+        <operation>contains</operation>
+        <value>Edu</value>
+    </filters>
+    <label>All1</label>
+    <language>en_US</language>
+</ListView>

@@ -1,0 +1,14 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes" access="global" >
+    
+    <aura:attribute name="custom_link" type="String" default="/contactsupport"/>
+    <aura:attribute name="custom_link_label" type="String" default="Contact Us"/>
+    <aura:attribute name="external_link" type="Boolean" default="false"/>
+    
+    <div class="sfdc">
+        
+        <aura:if isTrue="{!!v.external_link}">       
+            <ui:outputURL target="_self" value="{!v.custom_link}" label="{!v.custom_link_label}" class="nv-btn"/>
+        </aura:if>
+    </div>
+    
+</aura:component>

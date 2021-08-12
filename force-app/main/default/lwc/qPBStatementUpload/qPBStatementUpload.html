@@ -1,0 +1,14 @@
+<template>
+    <lightning-card title="QPB Statement Upload" icon-name="custom:custom63">
+        <div class="slds-m-around_medium">
+            <lightning-input type="search" label="Search Region" onchange={updateSearch}>
+            </lightning-input>        
+            <c-file-upload-data-table key-field="id"
+                data={data}
+                columns={columns}
+                onuploadfinished={handleUploadFinished}
+                hide-checkbox-column>
+            </c-file-upload-data-table>
+        </div>
+</lightning-card>   
+</template>

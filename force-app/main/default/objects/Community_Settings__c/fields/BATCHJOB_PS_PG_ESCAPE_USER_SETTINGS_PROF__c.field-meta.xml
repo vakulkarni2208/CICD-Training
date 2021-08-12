@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BATCHJOB_PS_PG_ESCAPE_USER_SETTINGS_PROF__c</fullName>
+    <description>COMM_AssignPSPG_To_CommunityUsers_Batch : Profiles that need to be skipped for user settings such as Salesforce1 User = False, 
+Salesforce CRM Content User = True (Only for Partner Portal Users), 
+Chatter Answers User = false, 
+Receive Salesforce CRM Content Email Alerts = false, 
+Receive Salesforce CRM Content Alerts as Daily Digest = false 
+Note: Semi-colon separated e.g, Marketing Customer Community; this; that</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Semi-colon separated e.g, Marketing Customer Community; Prof2; Prof3</inlineHelpText>
+    <label>BATCHJOB_PS_PG_ESCAPE_USER_SETTINGS_PROF</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

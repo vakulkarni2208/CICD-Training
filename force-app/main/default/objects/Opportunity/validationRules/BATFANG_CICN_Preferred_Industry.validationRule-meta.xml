@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BATFANG_CICN_Preferred_Industry</fullName>
+    <active>true</active>
+    <description>Make sure users cannot select Strategic Hyperscale or CICN Oppty Industry unless the Account matches</description>
+    <errorConditionFormula>OR(
+ AND(
+   ISPICKVAL(Industry__c, &quot;Strategic Hyperscale&quot;),
+   NOT(ISPICKVAL(Account.Industry, &quot;Strategic Hyperscale&quot;)),
+   RecordType.DeveloperName = &quot;Enterprise_Sales_Opportunity&quot; 
+ ),
+ AND(
+   ISPICKVAL(Industry__c, &quot;CRISP (Consumer Internet Service Providers)&quot;),
+   NOT(ISPICKVAL(Account.Industry, &quot;CRISP (Consumer Internet Service Providers)&quot;)),
+   RecordType.DeveloperName = &quot;Enterprise_Sales_Opportunity&quot;
+ )
+)</errorConditionFormula>
+    <errorDisplayField>Industry__c</errorDisplayField>
+    <errorMessage>Strategic Hyperscale or CRISP (Consumer Internet Service Providers)  Industry can only be selected if the Account Industry matches. Please select another Industry or log a Get Help request to update Account Industry.</errorMessage>
+</ValidationRule>

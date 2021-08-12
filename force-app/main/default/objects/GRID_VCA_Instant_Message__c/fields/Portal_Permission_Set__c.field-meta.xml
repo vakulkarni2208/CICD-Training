@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Portal_Permission_Set__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <label>Portal Permission Set</label>
+    <referenceTo>Portal_Permission_Sets__c</referenceTo>
+    <relationshipLabel>Portal Instant Messages</relationshipLabel>
+    <relationshipName>Portal_Instant_Messages</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

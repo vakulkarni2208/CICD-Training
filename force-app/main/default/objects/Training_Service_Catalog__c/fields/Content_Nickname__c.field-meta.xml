@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Content_Nickname__c</fullName>
+    <externalId>false</externalId>
+    <label>Content Nickname</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Anomaly Det.</fullName>
+                <default>false</default>
+                <label>Anomaly Det.</label>
+            </value>
+            <value>
+                <fullName>Auto</fullName>
+                <default>false</default>
+                <label>Auto</label>
+            </value>
+            <value>
+                <fullName>CUDA C++</fullName>
+                <default>false</default>
+                <label>CUDA C++</label>
+            </value>
+            <value>
+                <fullName>CUDA Python</fullName>
+                <default>false</default>
+                <label>CUDA Python</label>
+            </value>
+            <value>
+                <fullName>CV2</fullName>
+                <default>false</default>
+                <label>CV2</label>
+            </value>
+            <value>
+                <fullName>Cyber</fullName>
+                <default>false</default>
+                <label>Cyber</label>
+            </value>
+            <value>
+                <fullName>DCC</fullName>
+                <default>false</default>
+                <label>DCC</label>
+            </value>
+            <value>
+                <fullName>Deep Learning for Healthcare Genomics</fullName>
+                <default>false</default>
+                <label>Deep Learning for Healthcare Genomics</label>
+            </value>
+            <value>
+                <fullName>Finance</fullName>
+                <default>false</default>
+                <label>Finance</label>
+            </value>
+            <value>
+                <fullName>FMV</fullName>
+                <default>false</default>
+                <label>FMV</label>
+            </value>
+            <value>
+                <fullName>Image  Analysis</fullName>
+                <default>false</default>
+                <label>Image  Analysis</label>
+            </value>
+            <value>
+                <fullName>Ind. Insp.</fullName>
+                <default>false</default>
+                <label>Ind. Insp.</label>
+            </value>
+            <value>
+                <fullName>IVA</fullName>
+                <default>false</default>
+                <label>IVA</label>
+            </value>
+            <value>
+                <fullName>MDT</fullName>
+                <default>false</default>
+                <label>MDT</label>
+            </value>
+            <value>
+                <fullName>Multi-GPU</fullName>
+                <default>false</default>
+                <label>Multi-GPU</label>
+            </value>
+            <value>
+                <fullName>N/A</fullName>
+                <default>false</default>
+                <label>N/A</label>
+            </value>
+            <value>
+                <fullName>NLP</fullName>
+                <default>false</default>
+                <label>NLP</label>
+            </value>
+            <value>
+                <fullName>OpenACC</fullName>
+                <default>false</default>
+                <label>OpenACC</label>
+            </value>
+            <value>
+                <fullName>Pred. Maint.</fullName>
+                <default>false</default>
+                <label>Pred. Maint.</label>
+            </value>
+            <value>
+                <fullName>RAPIDS</fullName>
+                <default>false</default>
+                <label>RAPIDS</label>
+            </value>
+            <value>
+                <fullName>Robo</fullName>
+                <default>false</default>
+                <label>Robo</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

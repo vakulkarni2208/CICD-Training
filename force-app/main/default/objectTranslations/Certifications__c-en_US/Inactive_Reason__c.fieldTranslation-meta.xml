@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Inactive Reason --></label>
+    <name>Inactive_Reason__c</name>
+    <picklistValues>
+        <masterLabel>Covid</masterLabel>
+        <translation><!-- Covid --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Family constraints</masterLabel>
+        <translation><!-- Family constraints --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other reasons</masterLabel>
+        <translation><!-- Other reasons --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Work constraints</masterLabel>
+        <translation><!-- Work constraints --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

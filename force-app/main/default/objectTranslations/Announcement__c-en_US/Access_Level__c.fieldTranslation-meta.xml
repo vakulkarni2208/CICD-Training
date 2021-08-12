@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Access Level --></label>
+    <name>Access_Level__c</name>
+    <picklistValues>
+        <masterLabel>Archived</masterLabel>
+        <translation><!-- Archived --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer Specific</masterLabel>
+        <translation><!-- Customer Specific --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Entitlement Specific</masterLabel>
+        <translation><!-- Entitlement Specific --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Generic</masterLabel>
+        <translation><!-- Generic --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Product Specific</masterLabel>
+        <translation><!-- Product Specific --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

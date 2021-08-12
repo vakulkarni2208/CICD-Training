@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Inactive_Contact_Updated_Notification</fullName>
+        <description>Inactive Contact Updated Notification</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>ghardy1@nvidia.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>talicaya@nvidia.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Inactive_Contact_Updated_Notification_Template</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Check_SAP_Update_Required</fullName>
+        <field>SAP_Update_Required__c</field>
+        <literalValue>1</literalValue>
+        <name>Check SAP Update Required</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Contact_EMS_Update_Required</fullName>
+        <field>EMS_Update_Required__c</field>
+        <literalValue>1</literalValue>
+        <name>Contact: EMS Update Required</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Sync_with_Marketo</fullName>
+        <field>Sync_with_Marketo__c</field>
+        <literalValue>1</literalValue>
+        <name>Sync with Marketo</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Contact_Record_Type_for_NPN</fullName>
+        <field>RecordTypeId</field>
+        <lookupValue>Partner</lookupValue>
+        <lookupValueType>RecordType</lookupValueType>
+        <name>Update Contact Record Type for NPN</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <rules>
+        <fullName>Contact - Check SAP Update Required</fullName>
+        <actions>
+            <name>Check_SAP_Update_Required</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>If contact fields related to SAP are changed, check &quot;SAP Update Required&quot; checkbox.</description>
+        <formula>( RecordType.DeveloperName = &apos;SalesContact&apos; || RecordType.DeveloperName = &apos;Partner&apos;) &amp;&amp; ( $Profile.Name &lt;&gt; &apos;SVC SAP Integration&apos; &amp;&amp; $User.LastName &lt;&gt; &apos;svcDataWriter&apos; ) &amp;&amp; (    ISNEW() ||   (      ISCHANGED(SAP_Contact_ID__c) ||     ISCHANGED(FirstName) ||     ISCHANGED(LastName) ||     ISCHANGED(Email)   ) ) &amp;&amp; (Is_End_Customer__c || Is_Reseller_Contact__c)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Contact - Trigger SAP Sync after 30 minutes</fullName>
+        <active>false</active>
+        <booleanFilter>1 AND 2 AND (3 OR 4) AND 5 AND 6</booleanFilter>
+        <criteriaItems>
+            <field>Account.CreatedDate</field>
+            <operation>equals</operation>
+            <value>TODAY</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.SAP_Customer_Number__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Contact.Is_End_Customer__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Contact.Is_Reseller_Contact__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Contact.SAP_Contact_ID__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Contact.SAP_Update_Required__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+        <description>If contact fields related to SAP are changed, check &quot;SAP Update Required&quot; checkbox.</description>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Contact is created set sync with Marketo</fullName>
+        <actions>
+            <name>Sync_with_Marketo</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Contact.Email</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Contact.Sync_with_Marketo__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Contact.RecordTypeId</field>
+            <operation>notEqual</operation>
+            <value>NGC Contact,NV Developer Contact</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Contact.MKTO_GDPR_Delete__c</field>
+            <operation>notEqual</operation>
+            <value>True</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>EMS Contact Sync</fullName>
+        <actions>
+            <name>Contact_EMS_Update_Required</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>OR(  AND(  NOT(ISBLANK(SAP_Contact_ID__c)),NOT(ISBLANK(Account.SAP_Customer_Number__c)),(ISCHANGED(SAP_Contact_ID__c))),  AND(ISNEW(),NOT(ISBLANK(SAP_Contact_ID__c)),NOT(ISBLANK(Account.SAP_Customer_Number__c)) )  )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update Contact Record Type for NPN</fullName>
+        <actions>
+            <name>Update_Contact_Record_Type_for_NPN</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Contact.Lead_Record_Type_For_Contact__c</field>
+            <operation>equals</operation>
+            <value>NPN Web Onboard Form</value>
+        </criteriaItems>
+        <description>Update account record type to NPN Account Registry for converted accounts from NPN Web Onboard Form lead</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+</Workflow>

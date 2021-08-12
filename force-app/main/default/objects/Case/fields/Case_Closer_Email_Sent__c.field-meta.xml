@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Case_Closer_Email_Sent__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>SDS-2860: This field is used to for Internal Case with Type Reseller or End Customer. It is to track whether closer email is sent or not.</description>
+    <externalId>false</externalId>
+    <label>Case Closer Email Sent</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,64 @@
+<!--
+  @File Name          : NewNVBug.cmp
+  @Description        : This component is used for Creating New NVBug from NVTicket RelatedList Button on Case
+  @Author             : Nilesh Adkar
+  @Group              : SDS-674
+  @Last Modified By   : 
+  @Last Modified On   : 18/2/2020, 5:04:21 pm
+  @Modification Log   : 
+  Ver       Date            Author      		    Modification
+============================================================================================================
+  1.0    17/2/2020   		Nilesh Adkar     		Initial Version SDS-674
+-->
+<aura:component controller="NVBugOperations" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickActionWithoutHeader,lightning:isUrlAddressable" access="global" >
+  <!-- create 2 aura handler with waiting and donewaiting events -->
+<!--    <aura:handler event="aura:waiting" action="{!c.showSpinner}"/>
+    <aura:handler event="aura:doneWaiting" action="{!c.hideSpinner}"/> -->
+  <!--create a component attributs -->
+    <aura:attribute name="Spinner" type="boolean" default="false"/>
+
+    <lightning:workspaceAPI aura:id="workspace"/>
+    <aura:attribute name="Synopsis" type="String"/>
+    <aura:attribute name="Description" type="String" />
+    <aura:attribute name="recordId" type="Id" />
+    <aura:attribute name="caseId" type="string" />
+    <aura:attribute name="bugId" type="string" />
+    <aura:attribute name="refreshFlag" type="boolean" default="false"/>
+    <aura:attribute name="isGridCudaFlag" type="boolean" default="false"/>
+	<aura:attribute name="newNVBug" type="NVBug__c"/>
+    <aura:handler name="init" value="{! this }" action="{! c.init }"/>
+    
+    <div class="slds-box slds-theme_default">
+        <ui:outputText value="Create New NVBug" class="screenHeading"/>
+		<div class="slds-col slds-size_1-of-2">
+            <lightning:recordEditForm objectApiName="NVBug__c"  aura:id="recordEditForm" onsubmit="{!c.saveBug1}" >
+                <lightning:inputField fieldName="Product_Category__c"  value="{!v.newNVBug.Product_Category__c}"/>
+                <aura:if isTrue="{!v.refreshFlag}">
+                <lightning:inputField fieldName="NVBug_Template__c"  value="{!v.newNVBug.NVBug_Template__c}" />
+                </aura:if>  
+                <lightning:inputField fieldName="Synopsis__c" value="{!v.newNVBug.Synopsis__c}" class="synopsisTextArea"/>
+               <!-- <lightning:inputField fieldName="Priority__c"  value="{!v.newNVBug.Priority__c}"/> -->
+                <lightning:inputField fieldName="Severity__c"  value="{!v.newNVBug.Severity__c}"/> 
+                <lightning:inputField fieldName="NVBug_Description__c" value="{!v.newNVBug.NVBug_Description__c}" class="descriptionTextArea"/>
+                <aura:if isTrue="{!v.isGridCudaFlag}">
+                <lightning:inputField fieldName="Versions__c"  value="{!v.newNVBug.Versions__c}"/>
+                </aura:if>    
+                <lightning:input type="checkbox" label="Send Notification" checked="{!v.newNVBug.Is_Send_Notification__c}"/><br/>
+                <lightning:inputField fieldName="Requestor__c" value="{!v.newNVBug.Requestor__c}"/>
+                <lightning:button variant="brand" type="submit" name="save" label="Save"/>
+			    <lightning:button variant="brand-outline" label="Cancel" title="Cancel" onclick="{! c.handleCancel }" />
+            </lightning:recordEditForm>
+		</div>
+    </div> 
+          <!--loading spinner start... style=Brand Medium (blue dots)-->
+      <aura:if isTrue="{!v.Spinner}">
+        <div aura:id="spinnerId" class="slds-spinner_container">
+           <div class="slds-spinner--brand  slds-spinner slds-spinner--large slds-is-relative" role="alert">
+             <div class="slds-spinner__dot-a"></div>
+             <div class="slds-spinner__dot-b"></div>
+           </div>
+        </div>
+     </aura:if>
+      <!-- Loading spinner end -->    
+
+</aura:component>

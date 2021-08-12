@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Partner Software Platform --></label>
+    <name>PartnerSoftwarePlatform__c</name>
+    <picklistValues>
+        <masterLabel>Cloudera</masterLabel>
+        <translation><!-- Cloudera --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Nutanix</masterLabel>
+        <translation><!-- Nutanix --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Red Hat</masterLabel>
+        <translation><!-- Red Hat --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VMWare</masterLabel>
+        <translation><!-- VMWare --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

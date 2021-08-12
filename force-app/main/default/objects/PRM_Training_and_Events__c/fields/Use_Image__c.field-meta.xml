@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Use_Image__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Check this box to display the contents of the Image field on the PRM homepage.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Check this box to display the contents of the Image field on the PRM homepage.</inlineHelpText>
+    <label>Use Image</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

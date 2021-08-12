@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Usernames semicolon separated. These users will be able to see Editable ASP Override field. --></help>
+    <label><!-- ASP Override Admin User(s) --></label>
+    <name>ASP_Override_Admin_User_s__c</name>
+</CustomFieldTranslation>

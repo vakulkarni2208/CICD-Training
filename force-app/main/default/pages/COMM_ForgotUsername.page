@@ -1,0 +1,53 @@
+<apex:page id="forgotusername" showHeader="false" title="{!$Label.site.username}" controller="COMM_ForgotUsername_cls">
+	<style type="text/css">
+		.requiredInput .requiredBlock {
+		    background-color: #c00 !important;
+		    /*position: absolute;*/
+		    left: -4px !important;
+		    width: 3px !important;
+		    top: 1px !important;
+		    margin-top:2px;
+		    bottom: 1px !important;
+		    height:21px;
+		    float:left;
+	}
+	</style>
+	<apex:form forceSSL="true">
+		<table cellpadding="0" cellspacing="0" style="margin-top:50px;margin-left:50px;width:32%;border:solid 1px #999999;">
+		    <tr>
+		        <td style="colspan:2;padding-left:5px;padding-top:1px;padding-bottom:1px;background-color:#76b900;font-family:Arial, Helvetica, sans-serif;color:#111111;font-size:12px;font-weight:bold;">
+		            <apex:outputText styleClass="title" value="{!$Label.COMM_LOGIN_VF_Forgot_Username_Header_Text}"/>
+		        </td>
+		    </tr>
+		    <tr>
+		        <td>
+		            <table cellpadding="0" cellspacing="0" style="width:100%;background-color:#f6f5f5;">
+		                <tr>
+		                    <td colspan="2">
+		                        <div class="pbError" id="errorDiv_ep" style="display: none">Error: Invalid Data. <br/>Review all error messages below to correct your data.</div>
+		                        <apex:pageMessages id="errmsg"/>
+		                    </td>
+		                </tr> 
+		                <tr>
+		                    <td style="width:20%;text-align:right;padding-top:5px;padding-right:20px;">
+		                        <apex:outputLabel style="font-family:Arial, Helvetica, sans-serif;color:#111111;font-size:12px;font-weight:bold;">{!$Label.site.email}</apex:outputLabel>
+		                    </td>
+		                    <td style="width:50%;padding-top:5px;">
+		                        <div class="requiredInput">
+		                        	<div class="requiredBlock"></div>
+		                        	<apex:inputText id="email" label="email" maxlength="240" size="40" value="{!email}"/>
+		                        </div>
+		                    </td>
+		                </tr>
+		                <tr>
+		                    <td colspan="2" style="text-align:center;padding-top:10px;padding-bottom:10px;">
+		                        <apex:commandButton id="submit" value="{!$Label.site.submit}" action="{!forgotUsername}"/>
+		                    </td>
+		                </tr>
+		            </table>
+		        </td>
+		    </tr>
+		</table>
+	<div style="width:30%;margin-left:50px;margin-top:10px;"><a href="{!$CurrentPage.parameters.retURL}">{!$Label.COMM_LOGIN_VF_Return_to_Login_Page}</a></div>
+	</apex:form>
+</apex:page>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- What are your goals around how to achieve the objective? --></help>
+    <label><!-- Strategic Objective 1 Goals --></label>
+    <name>Strategic_Objective_1_Goals__c</name>
+</CustomFieldTranslation>

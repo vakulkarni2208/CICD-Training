@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- FAE OEM HPE&apos;, &apos;Dell Technologies&apos;, &apos;Global Partnerships&apos;, etc --></help>
+    <label><!-- WWFO Coverage Details --></label>
+    <name>WWFO_Coverage_Details__c</name>
+</CustomFieldTranslation>

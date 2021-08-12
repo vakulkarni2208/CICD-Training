@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Customer_Account_Billing_State_Reqd</fullName>
+    <active>true</active>
+    <description>Billing State Required for Accounts with Record Type &apos;NV Customer Account&apos; for specific Countries.
+System Administrator excluded to allow old test classes to pass.</description>
+    <errorConditionFormula>AND( 
+OR(RecordType.Name = &apos;NPN Account Registry&apos;, RecordType.Name = &apos;New Customer Account&apos;, RecordType.Name = &apos;Partner Account&apos;),
+AND($Profile.Name &lt;&gt; &apos;System Administrator&apos;, $Profile.Name &lt;&gt; &apos;SVC SAP Integration&apos;, $Profile.Name &lt;&gt; &apos;Data Administrator&apos;, $Profile.Name &lt;&gt; &apos;Sales Profile - Partner Admin&apos;, LEFT($User.Id, 15)  &lt;&gt; &apos;005400000031iax&apos;),
+ISBLANK(BillingState), 
+OR(
+UPPER(BillingCountry)=&apos;AUSTRALIA&apos;, 
+UPPER(BillingCountry)=&apos;BRAZIL&apos;,
+UPPER(BillingCountry)=&apos;CANADA&apos;, 
+UPPER(BillingCountry)=&apos;CHINA&apos;, 
+UPPER(BillingCountry)=&apos;INDIA&apos;,
+UPPER(BillingCountry)=&apos;IRELAND&apos;, 
+UPPER(BillingCountry)=&apos;ITALY&apos;,
+UPPER(BillingCountry)=&apos;MEXICO&apos;,
+UPPER(BillingCountry)=&apos;UNITED STATES&apos;
+) 
+)</errorConditionFormula>
+    <errorDisplayField>BillingState</errorDisplayField>
+    <errorMessage>Address information is now required for Customer Accounts. Please fill in the State for this Account (e.g.  CA).</errorMessage>
+</ValidationRule>

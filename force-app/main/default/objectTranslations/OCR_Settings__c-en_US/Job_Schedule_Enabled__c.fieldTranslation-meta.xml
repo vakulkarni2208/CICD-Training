@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Is the job execution active? If No, the scheduled job will abort automatically otherwise will continue to add schedules when one scheduled run is complete --></help>
+    <label><!-- Job Schedule Enabled? --></label>
+    <name>Job_Schedule_Enabled__c</name>
+</CustomFieldTranslation>

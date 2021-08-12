@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- License Server Host Type --></label>
+    <name>License_Server_Host_Type__c</name>
+    <picklistValues>
+        <masterLabel>Physical PC</masterLabel>
+        <translation><!-- Physical PC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VM</masterLabel>
+        <translation><!-- VM --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

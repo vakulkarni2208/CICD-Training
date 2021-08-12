@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Customer_classification_change_approved</fullName>
+        <description>Customer classification change approved</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Customer_Classification_Update_Approved</template>
+    </alerts>
+    <alerts>
+        <fullName>Customer_classification_change_rejected</fullName>
+        <description>Customer classification change rejected</description>
+        <protected>false</protected>
+        <recipients>
+            <type>accountOwner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Customer_Classification_Update_Rejected</template>
+    </alerts>
+    <alerts>
+        <fullName>GRID_ELA_6mos_Expiration_Notice</fullName>
+        <description>GRID ELA 6mos Expiration Notice</description>
+        <protected>false</protected>
+        <recipients>
+            <field>GRID_ELA_Owner__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/GRID_ELA_Expiration_Notice</template>
+    </alerts>
+    <alerts>
+        <fullName>New_Auto_Account_Record_Created</fullName>
+        <description>New Auto Account Record Created</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>margaret@nvidia.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/New_Account_Record_Created</template>
+    </alerts>
+    <alerts>
+        <fullName>New_Customer_Account_Approval_Notification_to_Owner</fullName>
+        <description>New Customer Account - Approval Notification to Owner</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderAddress>salesforce_cmt@nvidia.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Account_Approval/Account_Approval_Approval_Notification_to_Owner</template>
+    </alerts>
+    <alerts>
+        <fullName>New_Customer_Account_Notify_Admin</fullName>
+        <description>New Customer Account - Notify Admin</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>Account_Approval_Admin</recipient>
+            <type>group</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Account_Approval/Account_Approval_New_Customer_Account_Email_Notification_to_Admin_Team</template>
+    </alerts>
+    <alerts>
+        <fullName>New_Customer_Account_Notify_Owner</fullName>
+        <description>New Customer Account - Notify Owner</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderAddress>salesforce_cmt@nvidia.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Account_Approval/Account_Approval_New_Customer_Account_Email_Notification_to_Owner</template>
+    </alerts>
+    <alerts>
+        <fullName>New_Customer_Account_Rejection_Notification_to_Owner</fullName>
+        <description>New Customer Account - Rejection Notification to Owner</description>
+        <protected>false</protected>
+        <recipients>
+            <type>accountOwner</type>
+        </recipients>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderAddress>salesforce_cmt@nvidia.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Account_Approval/Account_Approval_Rejection_Notification_to_Owner</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Check_SAP_Update_Required</fullName>
+        <field>SAP_Update_Required__c</field>
+        <literalValue>1</literalValue>
+        <name>Check SAP Update Required</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Classification_Approved_for_Education</fullName>
+        <description>Customer Classification should be updated to &apos;Education&apos; once it is Approved by the Approver</description>
+        <field>CPQ_Customer_Classification__c</field>
+        <literalValue>Education</literalValue>
+        <name>Classification Approved for &apos;Education&apos;</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>EMS_Update_Required</fullName>
+        <field>EMS_Update_Required__c</field>
+        <literalValue>1</literalValue>
+        <name>EMS Update Required</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_Record_Type_to_NPN</fullName>
+        <field>RecordTypeId</field>
+        <lookupValue>NPN_Account_Registry</lookupValue>
+        <lookupValueType>RecordType</lookupValueType>
+        <name>Set Record Type to NPN</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_Renewal_Pricing_Method</fullName>
+        <field>SBQQ__RenewalPricingMethod__c</field>
+        <literalValue>List</literalValue>
+        <name>Set Renewal Pricing Method</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_SAP_Account_Type_ZPEC</fullName>
+        <field>SAP_Account_Type__c</field>
+        <literalValue>ZPEC</literalValue>
+        <name>Set SAP Account Type = ZPEC</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_Suppression_Flag</fullName>
+        <description>Added for SDS-1323
+Set the Supress Approval/Rejection Notification to TRUE as the account is approved.</description>
+        <field>Supress_Approval_Rejection_Notification__c</field>
+        <literalValue>1</literalValue>
+        <name>Set Suppression Flag</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_Value_ZVAR</fullName>
+        <field>SAP_Account_Type__c</field>
+        <literalValue>ZVAR</literalValue>
+        <name>Set Value = ZVAR</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Account_Record_Type_for_NPN</fullName>
+        <field>RecordTypeId</field>
+        <lookupValue>NPN_Account_Registry</lookupValue>
+        <lookupValueType>RecordType</lookupValueType>
+        <name>Update Account Record Type for NPN</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <rules>
+        <fullName>Account - Check SAP Update Required</fullName>
+        <actions>
+            <name>Check_SAP_Update_Required</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>If account fields related to SAP are changed, check &quot;SAP Update Required&quot; checkbox.</description>
+        <formula>( Is_End_Customer__c || ( IsNPN_VAR_OEM__c &amp;&amp; ( Suppress_Sync_with_SAP__c = FALSE ) ) ) &amp;&amp;  ( $Profile.Name &lt;&gt; &apos;SVC SAP Integration&apos; &amp;&amp; $User.LastName &lt;&gt; &apos;svcDataWriter&apos; ) &amp;&amp; (    ISNEW() ||    (      ISCHANGED(SAP_Customer_Number__c) ||     ISCHANGED(SAP_Account_Type__c) ||     ISCHANGED(Name) ||     ISCHANGED(BillingStreet) ||     ISCHANGED(BillingCity) ||     ISCHANGED(BillingState) ||     ISCHANGED(BillingPostalCode) ||     ISCHANGED(BillingCountry) ||     ISCHANGED(Phone) ||     ISCHANGED(CPQ_End_Customer_Mandatory_on_Quote__c) ||     ISCHANGED(CPQ_VAR_Mandatory_on_Quote__c) ||     ISCHANGED(CPQ_Customer_Classification__c) ||     ISCHANGED(Inactive__c) ||     ISCHANGED(Sales_Organization__c) ||     ISCHANGED(CPQ_Price_List__c) ||     ISCHANGED(CPQ_Currency__c) ||     ISCHANGED(IsNPN_VAR_OEM__c) ||     ISCHANGED(Is_End_Customer__c)   ) )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>CPQ - Account Set Renewal Pricing Method</fullName>
+        <actions>
+            <name>Set_Renewal_Pricing_Method</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Set Renewal Pricing Method upon creation of an account</description>
+        <formula>True</formula>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>GRID ELA Expiration Notice</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>Account.GRID_ELA_End_Date__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <description>Alert GRID ELA Owner to the expiration coming due on customer GRID ELA</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>GRID_ELA_6mos_Expiration_Notice</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Account.GRID_ELA_End_Date__c</offsetFromField>
+            <timeLength>-180</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>New Account Record Created</fullName>
+        <actions>
+            <name>New_Auto_Account_Record_Created</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>User.ProfileId</field>
+            <operation>contains</operation>
+            <value>Auto</value>
+        </criteriaItems>
+        <description>Send email when a Tegra Auto user creates a new Account record</description>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>New Customer Account - Approval Notification to Owner</fullName>
+        <actions>
+            <name>New_Customer_Account_Approval_Notification_to_Owner</name>
+            <type>Alert</type>
+        </actions>
+        <actions>
+            <name>Set_Suppression_Flag</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Account.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>New Customer Account</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Approved__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.IsCreatedByInternalUser__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Supress_Approval_Rejection_Notification__c</field>
+            <operation>notEqual</operation>
+            <value>True</value>
+        </criteriaItems>
+        <description>Account Approval: Notify Customer Account owner when the Is Approved flag is set to true
+SDS-1323: Added a field update.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>New Customer Account - Notify Admin and Owner</fullName>
+        <actions>
+            <name>New_Customer_Account_Notify_Owner</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Account.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>New Customer Account</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Approved__c</field>
+            <operation>notEqual</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Rejected__c</field>
+            <operation>notEqual</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Supress_Approval_Rejection_Notification__c</field>
+            <operation>notEqual</operation>
+            <value>True</value>
+        </criteriaItems>
+        <description>Account Approval: When a new customer account is created, notify the owner of the account and admin</description>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>New Customer Account - Rejection Notification to Owner</fullName>
+        <actions>
+            <name>New_Customer_Account_Rejection_Notification_to_Owner</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Account.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>New Customer Account</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Rejected__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.IsCreatedByInternalUser__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Supress_Approval_Rejection_Notification__c</field>
+            <operation>notEqual</operation>
+            <value>True</value>
+        </criteriaItems>
+        <description>Account Approval: Notify Customer Account owner when the Is Rejected flag is set to true</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>New SAP Accounts EMS Sync</fullName>
+        <actions>
+            <name>EMS_Update_Required</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>OR (AND(NOT(ISBLANK(SAP_Customer_Number__c)), OR(ISCHANGED(SAP_Customer_Number__c), ISCHANGED(Name))),  AND(ISNEW(),NOT(ISBLANK(SAP_Customer_Number__c)) ))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Switch to NPN Record Type</fullName>
+        <actions>
+            <name>Set_Record_Type_to_NPN</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Switch Eligible Accounts to NPN Record Type</description>
+        <formula>AND(PRIORVALUE( RecordTypeId ) ==&apos;01240000000QM5Y&apos;, RecordTypeId ==&apos;0121W000000QQ4G&apos; ,   LastModifiedById == &apos;005400000019Cbj&apos; )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update SAP Account Type %3D ZPEC</fullName>
+        <actions>
+            <name>Set_SAP_Account_Type_ZPEC</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Account.Is_End_Customer__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <description>When End Customer, update SAP Account Type = ZPEC</description>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update SAP Account Type %3D ZVAR</fullName>
+        <actions>
+            <name>Set_Value_ZVAR</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Account.IsNPN_VAR_OEM__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <description>When Reseller Customer, update SAP Account Type = ZVAR</description>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

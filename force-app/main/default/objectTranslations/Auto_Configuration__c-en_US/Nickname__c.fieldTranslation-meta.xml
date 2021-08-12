@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Short description of vehicle. For example: BB8-2018 Ford MKZ --></help>
+    <label><!-- Nickname --></label>
+    <name>Nickname__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Current_Automotive_Platforms__c</fullName>
+    <description>MKTO Field : last updated from text to text area long
+3/18/2020: SDS-2128 - label changed to mimic the contact us form.</description>
+    <externalId>false</externalId>
+    <label>Product Dev Status &amp; Platforms Used</label>
+    <length>1000</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>LongTextArea</type>
+    <visibleLines>5</visibleLines>
+</CustomField>

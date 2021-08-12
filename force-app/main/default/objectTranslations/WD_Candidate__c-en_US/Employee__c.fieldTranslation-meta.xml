@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- People who will start in future may not have this assigned yet, but bring in, if and when available --></help>
+    <label><!-- Employee --></label>
+    <name>Employee__c</name>
+</CustomFieldTranslation>

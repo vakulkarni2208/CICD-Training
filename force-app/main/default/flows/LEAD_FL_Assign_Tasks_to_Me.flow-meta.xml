@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignments>
+        <name>Add_all_updated_Tasks_to_the_UpdatedTasksList</name>
+        <label>Add all updated Tasks to the UpdatedTasksList</label>
+        <locationX>346</locationX>
+        <locationY>250</locationY>
+        <assignmentItems>
+            <assignToReference>UpdatedTasksList</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>TaskinLoopVar</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Assign_the_Task_to_the_SObj_Var</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Overwrite_Fields_in_New_Task_SObject_Variable</name>
+        <label>Overwrite Fields in New Task SObject Variable</label>
+        <locationX>345</locationX>
+        <locationY>138</locationY>
+        <assignmentItems>
+            <assignToReference>TaskinLoopVar.OwnerId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>NewOwnerId</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Add_all_updated_Tasks_to_the_UpdatedTasksList</targetReference>
+        </connector>
+    </assignments>
+    <description>This Flow will assign Tasks owned by &apos;Marketo Sync&apos; to the user who clicked on the button &apos;Assign Tasks to Me&apos; on the Lead.</description>
+    <interviewLabel>LEAD: FL: Assign Tasks to Me {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>LEAD: FL: Assign Tasks to Me</label>
+    <loops>
+        <name>Assign_the_Task_to_the_SObj_Var</name>
+        <label>Assign the Task to the SObj Var</label>
+        <locationX>93</locationX>
+        <locationY>139</locationY>
+        <assignNextValueToReference>TaskinLoopVar</assignNextValueToReference>
+        <collectionReference>OriginalTasksList</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Overwrite_Fields_in_New_Task_SObject_Variable</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>update_all_Tasks</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <description>Find the Tasks owned by Marketo Sync for the Lead on which the button &apos;Assign to Me&apos; is clicked</description>
+        <name>Tasks_owned_by_Marketo_Sync_for_this_Opp</name>
+        <label>Tasks owned by Marketo Sync for this Opp</label>
+        <locationX>92</locationX>
+        <locationY>24</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Assign_the_Task_to_the_SObj_Var</targetReference>
+        </connector>
+        <filters>
+            <field>OwnerId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>00540000002Y9kt</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>WhoId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>LeadId</elementReference>
+            </value>
+        </filters>
+        <object>Task</object>
+        <outputReference>OriginalTasksList</outputReference>
+        <queriedFields>OwnerId</queriedFields>
+        <queriedFields>Subject</queriedFields>
+    </recordLookups>
+    <recordUpdates>
+        <name>update_all_Tasks</name>
+        <label>update all Tasks</label>
+        <locationX>93</locationX>
+        <locationY>269</locationY>
+        <connector>
+            <targetReference>Update_the_Lead</targetReference>
+        </connector>
+        <inputReference>UpdatedTasksList</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <description>Update the &apos;Assign to Me&apos; field value to false on which the &apos;Assign to Me&apos; button is clicked.</description>
+        <name>Update_the_Lead</name>
+        <label>Update the Lead</label>
+        <locationX>93</locationX>
+        <locationY>397</locationY>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>LeadId</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Assign_Tasks_to_Me__c</field>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </inputAssignments>
+        <object>Lead</object>
+    </recordUpdates>
+    <startElementReference>Tasks_owned_by_Marketo_Sync_for_this_Opp</startElementReference>
+    <status>Active</status>
+    <variables>
+        <description>This Variable maintains the Lead Id on which the &apos;Assign to Me&apos; button is clicked.</description>
+        <name>LeadId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <description>This Varible contains the Lead on which the &apos;Assign to Me&apos; button is clicked.</description>
+        <name>LeadVar</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Lead</objectType>
+    </variables>
+    <variables>
+        <description>This variable maintains the Id of the User who clicked on the button &apos;Assign to Me&apos; on the Lead</description>
+        <name>NewOwnerId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <description>This variable contains all the Tasks owned by Marketo Sync User for the Lead on which the &apos;Assing to Me&apos; button is clicked.</description>
+        <name>OriginalTasksList</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Task</objectType>
+    </variables>
+    <variables>
+        <description>update the field values of each value by assinging them to the SObj variable from the SObj list variable.</description>
+        <name>TaskinLoopVar</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Task</objectType>
+    </variables>
+    <variables>
+        <description>This variable contains all Tasks with the updated field values.</description>
+        <name>UpdatedTasksList</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Task</objectType>
+    </variables>
+</Flow>

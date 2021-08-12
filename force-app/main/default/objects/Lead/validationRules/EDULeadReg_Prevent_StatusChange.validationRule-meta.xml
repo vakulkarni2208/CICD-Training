@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EDULeadReg_Prevent_StatusChange</fullName>
+    <active>true</active>
+    <description>SDS-1855 - Sales: Prevent users from editing lead status for Edu Leads</description>
+    <errorConditionFormula>AND(
+	RecordType.Name = &quot;EDU Lead Registration&quot;,
+        IsConverted = false,
+	OR(
+		AND( 
+			DR_Is_Submitted__c = false,
+			NOT(ISPICKVAL(Status, &quot;Not Submitted&quot;))
+		),
+
+		AND( 
+			DR_Is_Submitted__c = true,
+			DR_Is_Approved__c = false,
+			NOT(ISPICKVAL(Status, &quot;In Review&quot;))
+		),
+
+		AND( 
+			DR_Is_Approved__c = true,
+			NOT(ISPICKVAL(Status, &quot;Approved&quot;))
+		),
+
+		AND( 
+			DR_Is_Denied__c = true,
+			NOT(ISPICKVAL(Status, &quot;Rejected&quot;))
+		)
+
+	)
+
+)</errorConditionFormula>
+    <errorMessage>Please don&apos;t change the Status.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StaticResource xmlns="http://soap.sforce.com/2006/04/metadata">
+    <cacheControl>Public</cacheControl>
+    <contentType>text/html</contentType>
+    <description>Document served in an iframe to partner portal users to detect whether they accept 3rd party cookies, and to provide a pop-up warning if they do not.</description>
+</StaticResource>

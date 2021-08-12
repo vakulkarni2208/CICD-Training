@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Assets_Created_Today</fullName>
+    <columns>ASSET.NAME</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ASSET.CREATED_DATE</columns>
+    <columns>PRODUCT2.NAME</columns>
+    <columns>ASSET.QUANTITY</columns>
+    <columns>PAKID__c</columns>
+    <columns>ASSET.SERIAL_NUMBER</columns>
+    <columns>SAP_Order__c</columns>
+    <columns>CREATEDBY_USER.ALIAS</columns>
+    <columns>CONTACT.NAME</columns>
+    <columns>ASSET.STATUS</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ASSET.CREATED_DATE</field>
+        <operation>equals</operation>
+        <value>TODAY</value>
+    </filters>
+    <filters>
+        <field>ASSET.NAME</field>
+        <operation>notEqual</operation>
+        <value>null</value>
+    </filters>
+    <label>Assets Created Today</label>
+</ListView>

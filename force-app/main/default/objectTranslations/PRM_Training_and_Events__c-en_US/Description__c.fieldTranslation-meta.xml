@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- The event or training description.  This will be displayed to users who visit this record directly by clicking on the name of the object in the PRM homepage. --></help>
+    <label><!-- Description --></label>
+    <name>Description__c</name>
+</CustomFieldTranslation>

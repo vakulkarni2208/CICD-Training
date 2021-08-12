@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MonthYearFormula__c</fullName>
+    <externalId>false</externalId>
+    <formula>VALUE(RIGHT(Month_Year__c , 2) + 
+IF(CONTAINS(Month_Year__c,&apos;January&apos;),&apos;01&apos;,
+IF(CONTAINS(Month_Year__c,&apos;February&apos;),&apos;02&apos;,
+IF(CONTAINS(Month_Year__c,&apos;March&apos;),&apos;03&apos;,
+IF(CONTAINS(Month_Year__c,&apos;April&apos;),&apos;04&apos;,
+IF(CONTAINS(Month_Year__c,&apos;May&apos;),&apos;05&apos;,
+IF(CONTAINS(Month_Year__c,&apos;June&apos;),&apos;06&apos;,
+IF(CONTAINS(Month_Year__c,&apos;July&apos;),&apos;07&apos;,
+IF(CONTAINS(Month_Year__c,&apos;August&apos;),&apos;08&apos;,
+IF(CONTAINS(Month_Year__c,&apos;September&apos;),&apos;09&apos;,
+IF(CONTAINS(Month_Year__c,&apos;October&apos;),&apos;10&apos;,
+IF(CONTAINS(Month_Year__c,&apos;November&apos;),&apos;11&apos;,
+IF(CONTAINS(Month_Year__c,&apos;December&apos;),&apos;12&apos;,&apos;00&apos;
+))))))))))))
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>MonthYearFormula</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

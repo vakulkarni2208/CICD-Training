@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Used for Inception Partner users to show NPN Resources (Log A Support Request, RMA, Ask a Question). This is similar to Lite Portal users with a slight variation</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>PP : COMM LITE : INCEPTION PARTNERS</label>
+</PermissionSet>

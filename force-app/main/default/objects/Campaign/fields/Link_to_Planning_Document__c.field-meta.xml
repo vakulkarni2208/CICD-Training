@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Link_to_Planning_Document__c</fullName>
+    <description>SDS-2646</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Add a link to the planning document for this campaign, such as the POR or the JIRA ticket.</inlineHelpText>
+    <label>Link to Planning Document</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Url</type>
+</CustomField>

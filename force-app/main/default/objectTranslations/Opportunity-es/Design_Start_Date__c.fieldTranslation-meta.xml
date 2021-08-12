@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Enter estimated date production to begin.  Date ONLY to estimate total Opportunity value (calcs lifetime revenue).  If retail cycle aligned use:
+12/1 = 1C
+4/1 = 1.5C
+7/1 = 2C
+10/1 = 3C --></help>
+    <label><!-- Production Start Date --></label>
+    <name>Design_Start_Date__c</name>
+</CustomFieldTranslation>

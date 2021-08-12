@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>If_ClosedWon_or_60prob_require_FinalOEM</fullName>
+    <active>false</active>
+    <description>If Enterprise sales opportunity and closed won or 80% probability require a confirmed OEM
+Modified rule for SDS-2149 by Sudhakar 4/1/2020</description>
+    <errorConditionFormula>AND (
+$RecordType.Name = &quot;Enterprise Sales Opportunity&quot;,
+AND($Profile.Name &lt;&gt; &apos;System Administrator&apos;,$Profile.Name &lt;&gt; &apos;SVC SAP Integration&apos;),
+DATEVALUE(CreatedDate) &gt; DATEVALUE(&quot;2020-04-13&quot;), 
+Probability &gt;0.79,
+NOT(ISPICKVAL(OEM_ODM_Disti_Status__c ,&apos;Direct from NVIDIA&apos;)),
+ISBLANK(Primary_NPN_OEM_ODM_Disti__c))</errorConditionFormula>
+    <errorDisplayField>Primary_NPN_OEM_ODM_Disti__c</errorDisplayField>
+    <errorMessage>For Opportunities at 80% and 90% please select who the known Disti/OEM is</errorMessage>
+</ValidationRule>

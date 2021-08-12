@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>POS_Portal_Submission__c</fullName>
+    <description>POS Upload via Portal : This field is ON for all new partners. For existing partners (listed in this formula) if they are uploading via POS then it shows ON</description>
+    <externalId>false</externalId>
+    <formula>if((RecordType.DeveloperName = &quot;NPN_Account_Registry&quot; &amp;&amp; NOT(ISBLANK(POS_Reporter_ID__c)) &amp;&amp; Count_Not_Exempted_from_POS_Submission__c &gt; 0), true, false)</formula>
+    <inlineHelpText>NPN Partners uploading POS data via Portal</inlineHelpText>
+    <label>POS Portal Submission</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

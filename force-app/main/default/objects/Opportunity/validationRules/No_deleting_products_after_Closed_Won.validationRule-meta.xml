@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>No_deleting_products_after_Closed_Won</fullName>
+    <active>true</active>
+    <description>Validate that products cannot be deleted after an Oppty is Closed Won</description>
+    <errorConditionFormula>AND ( $RecordType.Name = &quot;Enterprise Sales Opportunity&quot;,
+$Profile.Name &lt;&gt; &apos;System Administrator&apos;, 
+NOT( $Permission.DEPLOYMENT_USER_SKIP_VALIDATIONS),
+ISCHANGED ( Number_of_Products__c ), 
+ISPICKVAL ( StageName , &quot;Closed Won&quot; ) )</errorConditionFormula>
+    <errorMessage>Opportunity Products cannot be deleted when the Stage is Closed Won</errorMessage>
+</ValidationRule>

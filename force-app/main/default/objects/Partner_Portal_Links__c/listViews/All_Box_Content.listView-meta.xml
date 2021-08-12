@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Box_Content</fullName>
+    <columns>NAME</columns>
+    <columns>Partner_Portal_Label__c</columns>
+    <columns>URL__c</columns>
+    <columns>URL1__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All Box Content</label>
+    <language>en_US</language>
+    <sharedTo>
+        <allInternalUsers/>
+    </sharedTo>
+</ListView>

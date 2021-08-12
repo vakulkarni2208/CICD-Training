@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Ensure % of Installation and Deployment is filled in if applies --></help>
+    <label><!-- Installation &amp; Deployment --></label>
+    <name>Installation_Deployment__c</name>
+</CustomFieldTranslation>

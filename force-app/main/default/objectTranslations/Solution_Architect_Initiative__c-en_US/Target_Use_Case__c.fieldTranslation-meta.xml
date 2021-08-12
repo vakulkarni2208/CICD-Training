@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Target Use Case --></label>
+    <name>Target_Use_Case__c</name>
+    <picklistValues>
+        <masterLabel>Heavy Graphics Users</masterLabel>
+        <translation><!-- Heavy Graphics Users --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Knowledge Workers</masterLabel>
+        <translation><!-- Knowledge Workers --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ML/DL</masterLabel>
+        <translation><!-- ML/DL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other Compute</masterLabel>
+        <translation><!-- Other Compute --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

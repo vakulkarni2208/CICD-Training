@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MDF_No_MDF__c</fullName>
+    <externalId>false</externalId>
+    <label>MDF No MDF</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>No MDF</fullName>
+                <default>false</default>
+                <label>No MDF</label>
+            </value>
+            <value>
+                <fullName>MDF</fullName>
+                <default>false</default>
+                <label>MDF</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

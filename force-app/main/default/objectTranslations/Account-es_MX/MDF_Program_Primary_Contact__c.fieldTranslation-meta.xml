@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- MDF Program Primary Contact --></label>
+    <name>MDF_Program_Primary_Contact__c</name>
+    <relationshipLabel><!-- Accounts (MDF Program Primary Contact) --></relationshipLabel>
+</CustomFieldTranslation>

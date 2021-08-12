@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>SDS-2474 - Users can update ChannelAdmin Approval Routing records
+SDS-2900-Include State level routing for US and Canada
+SDS-3055-Global EDU Lead</description>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>ChannelAdmin_Approval_Routing__c.CountryCodeStateCode__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>ChannelAdmin_Approval_Routing__c.EduLead_Approver__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>ChannelAdmin_Approval_Routing__c.IsChannelAdminActiveInternalUser__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>ChannelAdmin_Approval_Routing__c.IsEduLeadApproverActive__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>ChannelAdmin_Approval_Routing__c.Jetson_Approver__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>ChannelAdmin_Approval_Routing__c.StateCode__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>CRM: ChannelAdmin Approval - Admin</label>
+    <license>Salesforce</license>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>ChannelAdmin_Approval_Routing__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <tabSettings>
+        <tab>ChannelAdmin_Approval_Routing__c</tab>
+        <visibility>Visible</visibility>
+    </tabSettings>
+</PermissionSet>

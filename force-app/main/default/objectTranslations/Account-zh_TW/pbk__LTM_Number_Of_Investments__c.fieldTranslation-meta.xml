@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Number of Investments made in the Last 12 Months --></help>
+    <label><!-- PB LTM No. of Investments --></label>
+    <name>pbk__LTM_Number_Of_Investments__c</name>
+</CustomFieldTranslation>

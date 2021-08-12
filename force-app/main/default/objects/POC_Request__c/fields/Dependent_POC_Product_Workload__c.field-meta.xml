@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Dependent_POC_Product_Workload__c</fullName>
+    <externalId>false</externalId>
+    <label>Dependent POC Product Workload</label>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>POC_Product_Workload__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>vApps</fullName>
+                <default>false</default>
+                <label>vApps</label>
+            </value>
+            <value>
+                <fullName>vPC</fullName>
+                <default>false</default>
+                <label>vPC</label>
+            </value>
+            <value>
+                <fullName>vWS</fullName>
+                <default>false</default>
+                <label>vWS</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Remote Workstation</controllingFieldValue>
+            <valueName>vApps</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Remote Workstation</controllingFieldValue>
+            <valueName>vPC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Remote Workstation</controllingFieldValue>
+            <valueName>vWS</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

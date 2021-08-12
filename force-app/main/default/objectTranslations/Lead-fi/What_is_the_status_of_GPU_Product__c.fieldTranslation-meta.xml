@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- What is the status of GPU Product? --></label>
+    <name>What_is_the_status_of_GPU_Product__c</name>
+    <picklistValues>
+        <masterLabel>Customer Trials</masterLabel>
+        <translation><!-- Customer Trials --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Demo/Prototype</masterLabel>
+        <translation><!-- Demo/Prototype --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Development</masterLabel>
+        <translation><!-- Development --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Production</masterLabel>
+        <translation><!-- Production --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Timestamp_Qualification__c</fullName>
+    <description>Tracking for the inside sales team involves the number of opportunities that are &quot;accepted&quot; by the inside account managers.  To do so, we&apos;ll want to know how many opportunities move from 10% to 20%. Using this field as timestamp for opportunities that move to 20%.  This would be similar to the timestamps that we use for leads (i.e. timestamp - marketing qualified, timestamp - sales qualified, etc.</description>
+    <externalId>false</externalId>
+    <label>Timestamp - Qualification</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>DateTime</type>
+</CustomField>

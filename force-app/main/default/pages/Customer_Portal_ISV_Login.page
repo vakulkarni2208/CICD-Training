@@ -1,0 +1,65 @@
+<apex:page showHeader="false" controller="Customer_Portal_ISV_Login" standardStylesheets="true">
+    <html>
+        <head>
+            <title>NVIDIA Preferred Partner Portal : ISV</title>
+            <style type="text/css">
+                noscript div              {width:100%; padding:20px; background-color:red; color:white; font-weight:bold;}
+                body                      {background-color:white;}
+                div a                     {margin-right:15px; font-size:0.8em; font-family:sans-serif;}
+                div.errors                {margin-left:10px; margin-right:30px; height:50px; padding-top:70px;}
+                form.loginForm            {margin-top:80px; margin-left:60px; padding-top:1em;}
+                input.btn                 {margin-left:65px;}
+                div.forgotPasswordLink    {margin-top:10px;}
+                div.otherLinks            {margin-top:70px; width:100%;padding-bottom:15px; text-align:center;}            
+                div.main                  {margin-left:auto; margin-right:auto; width:663px; margin-top:200px; background-image:url("https://na2.salesforce.com/servlet/servlet.ImageServer?id=01540000000yU9Q&amp;oid=00D400000009E3I"); height:449px; background-repeat:no-repeat;}
+        </style>
+        </head>
+        <body>
+            <noscript><div>JavaScript is required for logon to this portal.</div></noscript>
+            <apex:outputPanel id="hiddenLogin">
+                <form id="hiddenLoginForm" action="{!orgUrl}/secur/login_portal.jsp" base_target="_top" method="POST" name="login" enctype="application/x-www-form-urlencoded">
+                    <input name="startUrl"   type="hidden" value=""></input>
+                    <input name="loginURL"   type="hidden" value=""/> 
+                    <input name="useSecure"  type="hidden" value="true"/> 
+                    <input name="orgId"      type="hidden" value="{!orgID}"/> 
+                    <input name="portalId"   type="hidden" value="{!PortalID}"/> 
+                    <input name="loginType"  type="hidden" value="3"/> 
+                    <input name="action"     type="hidden" value="loginAction"/>
+                    <input name="un"         type="hidden" value="{!UID}"/>
+                    <input name="pw"         type="hidden" value="{!PWD}"/>
+                </form>
+                <script type="text/javascript">
+                    if ({!isValid})
+                    {
+                        var hiddenLoginForm = document.getElementById('hiddenLoginForm');
+                        hiddenLoginForm.submit(); 
+                    }
+                </script>
+            </apex:outputPanel>
+            <div class="main">
+                <div class="errors"><apex:pageMessages id="error"/></div>
+                <apex:form id="loginForm" styleClass="loginForm" forceSSL="true">
+                    <div>
+                        <apex:panelGrid columns="2">
+                            <apex:outputLabel value="{!$Label.site.username}" for="username"/>
+                            <apex:inputText id="username" value="{!UID}"/>
+                            <apex:outputLabel value="{!$Label.site.password}" for="password"/>
+                            <apex:inputSecret id="password" value="{!PWD}"/>
+                            <apex:outputText value=""/>
+                            <apex:commandButton action="{!login}" value="{!$Label.site.login_button}" id="loginButton"/>
+                        </apex:panelGrid>
+                        <div class="forgotPasswordLink">
+                            <apex:outputLink value="{!orgUrl}/secur/forgotpasswordp.jsp?orgId={!orgId}&portalId={!PortalID}&pLu={!PortalLoginURL}"> {!$Label.site.forgot_your_password_q}</apex:outputLink>
+                        </div>
+                        <div style="clear:both"></div>
+                    </div> 
+                </apex:form>
+                <div class="otherLinks">
+                    <a target="_blank" href="http://www.nvidia.com/object/legal_info.html">Legal Info</a>
+                    <a target="_blank" href="http://www.nvidia.com/object/privacy_policy.html">Privacy Policy</a>
+                    <a target="_blank" href="/partners/PasswordPolicy">Password Policy</a>
+                </div>
+            </div>
+        </body>
+    </html>
+</apex:page>

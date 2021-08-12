@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Primary Customer Application --></label>
+    <name>Primary_Customer_Application__c</name>
+    <picklistValues>
+        <masterLabel>Agriculture/Construction</masterLabel>
+        <translation><!-- Agriculture/Construction --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Delivery/Logistics Robot</masterLabel>
+        <translation><!-- Delivery/Logistics Robot --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IOT Gateway</masterLabel>
+        <translation><!-- IOT Gateway --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Industrial Inspection</masterLabel>
+        <translation><!-- Industrial Inspection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Industrial/FA Robot</masterLabel>
+        <translation><!-- Industrial/FA Robot --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Medical Imaging</masterLabel>
+        <translation><!-- Medical Imaging --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Medical Robot</masterLabel>
+        <translation><!-- Medical Robot --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Predictive Maintenance</masterLabel>
+        <translation><!-- Predictive Maintenance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Retail Analytics</masterLabel>
+        <translation><!-- Retail Analytics --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Safety &amp; Security (IVA)</masterLabel>
+        <translation><!-- Safety &amp; Security (IVA) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Service Robot</masterLabel>
+        <translation><!-- Service Robot --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Signal Processing</masterLabel>
+        <translation><!-- Signal Processing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Smart City</masterLabel>
+        <translation><!-- Smart City --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Speech/Audio Processing</masterLabel>
+        <translation><!-- Speech/Audio Processing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Telepresence</masterLabel>
+        <translation><!-- Telepresence --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Video and Image Processing</masterLabel>
+        <translation><!-- Video and Image Processing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Virtual &amp; Augmented Reality (VR/AR)</masterLabel>
+        <translation><!-- Virtual &amp; Augmented Reality (VR/AR) --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

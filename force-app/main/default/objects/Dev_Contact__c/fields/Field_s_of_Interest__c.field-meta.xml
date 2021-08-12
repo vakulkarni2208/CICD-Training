@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Field_s_of_Interest__c</fullName>
+    <externalId>false</externalId>
+    <label>Field(s) of Interest</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Science: Astronomy &amp; Astrophysics</fullName>
+                <default>false</default>
+                <label>Science: Astronomy &amp; Astrophysics</label>
+            </value>
+            <value>
+                <fullName>Science: Bioinformatics &amp; Genomics</fullName>
+                <default>false</default>
+                <label>Science: Bioinformatics &amp; Genomics</label>
+            </value>
+            <value>
+                <fullName>Science: Climate/Weather/Ocean Modeling</fullName>
+                <default>false</default>
+                <label>Science: Climate/Weather/Ocean Modeling</label>
+            </value>
+            <value>
+                <fullName>Science: Quantum Chemistry</fullName>
+                <default>false</default>
+                <label>Science: Quantum Chemistry</label>
+            </value>
+            <value>
+                <fullName>Science: Molecular Dynamics</fullName>
+                <default>false</default>
+                <label>Science: Molecular Dynamics</label>
+            </value>
+            <value>
+                <fullName>Science: Computational Chemistry</fullName>
+                <default>false</default>
+                <label>Science: Computational Chemistry</label>
+            </value>
+            <value>
+                <fullName>Science: Geoscience</fullName>
+                <default>false</default>
+                <label>Science: Geoscience</label>
+            </value>
+            <value>
+                <fullName>Science: Material Science</fullName>
+                <default>false</default>
+                <label>Science: Material Science</label>
+            </value>
+            <value>
+                <fullName>Science: Neuroscience</fullName>
+                <default>false</default>
+                <label>Science: Neuroscience</label>
+            </value>
+            <value>
+                <fullName>Science: Physics</fullName>
+                <default>false</default>
+                <label>Science: Physics</label>
+            </value>
+            <value>
+                <fullName>Tech: Augmented Reality</fullName>
+                <default>false</default>
+                <label>Tech: Augmented Reality</label>
+            </value>
+            <value>
+                <fullName>Tech: Big Data &amp; Data Mining</fullName>
+                <default>false</default>
+                <label>Tech: Big Data &amp; Data Mining</label>
+            </value>
+            <value>
+                <fullName>Tech: Business Intelligence &amp; Analytics</fullName>
+                <default>false</default>
+                <label>Tech: Business Intelligence &amp; Analytics</label>
+            </value>
+            <value>
+                <fullName>Tech: Computer Graphics &amp; Vizualization</fullName>
+                <default>false</default>
+                <label>Tech: Computer Graphics &amp; Vizualization</label>
+            </value>
+            <value>
+                <fullName>Tech: Computer Vision &amp; Machine Vision</fullName>
+                <default>false</default>
+                <label>Tech: Computer Vision &amp; Machine Vision</label>
+            </value>
+            <value>
+                <fullName>Tech: Databases</fullName>
+                <default>false</default>
+                <label>Tech: Databases</label>
+            </value>
+            <value>
+                <fullName>Tech: DCC &amp; Special Effects</fullName>
+                <default>false</default>
+                <label>Tech: DCC &amp; Special Effects</label>
+            </value>
+            <value>
+                <fullName>Tech: Machine Learning &amp; AI</fullName>
+                <default>false</default>
+                <label>Tech: Machine Learning &amp; AI</label>
+            </value>
+            <value>
+                <fullName>Tech: Medical Imaging</fullName>
+                <default>false</default>
+                <label>Tech: Medical Imaging</label>
+            </value>
+            <value>
+                <fullName>Tech: Development Tools &amp; Libraries</fullName>
+                <default>false</default>
+                <label>Tech: Development Tools &amp; Libraries</label>
+            </value>
+            <value>
+                <fullName>Tech: Programming Languages &amp; Compilers</fullName>
+                <default>false</default>
+                <label>Tech: Programming Languages &amp; Compilers</label>
+            </value>
+            <value>
+                <fullName>Engr: Computational Structural Mechanics</fullName>
+                <default>false</default>
+                <label>Engr: Computational Structural Mechanics</label>
+            </value>
+            <value>
+                <fullName>Engr: Computer Aided Design (CAD)</fullName>
+                <default>false</default>
+                <label>Engr: Computer Aided Design (CAD)</label>
+            </value>
+            <value>
+                <fullName>Engr: Computational Fluid Dynamics (CFD)</fullName>
+                <default>false</default>
+                <label>Engr: Computational Fluid Dynamics (CFD)</label>
+            </value>
+            <value>
+                <fullName>Engr: Electronic Design Automation (EDA)</fullName>
+                <default>false</default>
+                <label>Engr: Electronic Design Automation (EDA)</label>
+            </value>
+            <value>
+                <fullName>Engr: Energy Exploration &amp; Generation</fullName>
+                <default>false</default>
+                <label>Engr: Energy Exploration &amp; Generation</label>
+            </value>
+            <value>
+                <fullName>Math: Algorithms &amp; Numerical Techniques</fullName>
+                <default>false</default>
+                <label>Math: Algorithms &amp; Numerical Techniques</label>
+            </value>
+            <value>
+                <fullName>Math: Computational Photography</fullName>
+                <default>false</default>
+                <label>Math: Computational Photography</label>
+            </value>
+            <value>
+                <fullName>Math: Economics</fullName>
+                <default>false</default>
+                <label>Math: Economics</label>
+            </value>
+            <value>
+                <fullName>Math: Image Processing</fullName>
+                <default>false</default>
+                <label>Math: Image Processing</label>
+            </value>
+            <value>
+                <fullName>Math: Signal/Audio Processing</fullName>
+                <default>false</default>
+                <label>Math: Signal/Audio Processing</label>
+            </value>
+            <value>
+                <fullName>Math: Video Processing</fullName>
+                <default>false</default>
+                <label>Math: Video Processing</label>
+            </value>
+            <value>
+                <fullName>Math: Ray Tracing</fullName>
+                <default>false</default>
+                <label>Math: Ray Tracing</label>
+            </value>
+            <value>
+                <fullName>Platform: Cloud Computing</fullName>
+                <default>false</default>
+                <label>Platform: Cloud Computing</label>
+            </value>
+            <value>
+                <fullName>Platform: Embedded</fullName>
+                <default>false</default>
+                <label>Platform: Embedded</label>
+            </value>
+            <value>
+                <fullName>Platform: Mobile</fullName>
+                <default>false</default>
+                <label>Platform: Mobile</label>
+            </value>
+            <value>
+                <fullName>Platform: Supercomputing</fullName>
+                <default>false</default>
+                <label>Platform: Supercomputing</label>
+            </value>
+            <value>
+                <fullName>Platform: Workstations</fullName>
+                <default>false</default>
+                <label>Platform: Workstations</label>
+            </value>
+            <value>
+                <fullName>More: Education &amp; Training</fullName>
+                <default>false</default>
+                <label>More: Education &amp; Training</label>
+            </value>
+            <value>
+                <fullName>More: Other (please specify)</fullName>
+                <default>false</default>
+                <label>More: Other (please specify)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>8</visibleLines>
+</CustomField>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Events</fullName>
+    <columns>NAME</columns>
+    <columns>Asset__c</columns>
+    <columns>System_Name__c</columns>
+    <columns>Device_Event_ID__c</columns>
+    <columns>Alert_Create_DateTime__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>Message__c</columns>
+    <columns>Log_File_Name__c</columns>
+    <columns>LAST_UPDATE</columns>
+    <filterScope>Everything</filterScope>
+    <label>All Events</label>
+</ListView>

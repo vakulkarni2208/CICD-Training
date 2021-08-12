@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomTab xmlns="http://soap.sforce.com/2006/04/metadata">
+    <frameHeight>1000</frameHeight>
+    <hasSidebar>true</hasSidebar>
+    <label>GPU Genius Training</label>
+    <motif>Custom33: Desk</motif>
+    <url>https://www.brainshark.com/portal/psapis/api/psSession.aspx?username={!$User.Email}&amp;fn={!$User.FirstName}&amp;ln={!$User.LastName}&amp;login_dir=nvidia&amp;cid=32450&amp;gids=4997879&amp;dest=%2Fbrainshark%2Flearning%2FmyLearning.asp%3Fui%3D507905</url>
+    <urlEncodingKey>UTF-8</urlEncodingKey>
+</CustomTab>

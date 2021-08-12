@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Estimated first year revenue from NVIDIA product sales (USD) --></help>
+    <label><!-- Est. First Yr Rev from NV PRD Sales(USD) --></label>
+    <name>Est_First_Yr_Rev_from_NV_PRD_Sales_USD__c</name>
+</CustomFieldTranslation>

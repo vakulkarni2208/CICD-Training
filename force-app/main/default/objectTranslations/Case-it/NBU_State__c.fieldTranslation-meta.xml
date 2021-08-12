@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- NBU State --></label>
+    <name>NBU_State__c</name>
+    <picklistValues>
+        <masterLabel>Assigned</masterLabel>
+        <translation><!-- Assigned --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Assigned AE</masterLabel>
+        <translation><!-- Assigned AE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Closed</masterLabel>
+        <translation><!-- Closed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Confirmed Vendor Delivery</masterLabel>
+        <translation><!-- Confirmed Vendor Delivery --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Delivered</masterLabel>
+        <translation><!-- Delivered --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Golden Setup Delivered</masterLabel>
+        <translation><!-- Golden Setup Delivered --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Move to OEM RMA</masterLabel>
+        <translation><!-- Move to OEM RMA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Need More Information</masterLabel>
+        <translation><!-- Need More Information --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>On Hold</masterLabel>
+        <translation><!-- On Hold --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Open</masterLabel>
+        <translation><!-- Open --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PO Submitted</masterLabel>
+        <translation><!-- PO Submitted --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PR Issued</masterLabel>
+        <translation><!-- PR Issued --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending PM approval</masterLabel>
+        <translation><!-- Pending PM approval --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending Vendor 8D</masterLabel>
+        <translation><!-- Pending Vendor 8D --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending Vendor Delivery</masterLabel>
+        <translation><!-- Pending Vendor Delivery --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending Vendor RMA</masterLabel>
+        <translation><!-- Pending Vendor RMA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending Vendor Shipment</masterLabel>
+        <translation><!-- Pending Vendor Shipment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Quote Provided</masterLabel>
+        <translation><!-- Quote Provided --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RMA Approved</masterLabel>
+        <translation><!-- RMA Approved --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RMA Assigned</masterLabel>
+        <translation><!-- RMA Assigned --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RMA Canceled</masterLabel>
+        <translation><!-- RMA Canceled --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Soft Close - Pending Approval</masterLabel>
+        <translation><!-- Soft Close - Pending Approval --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Updated Request Arrived</masterLabel>
+        <translation><!-- Updated Request Arrived --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Vendor Approved</masterLabel>
+        <translation><!-- Vendor Approved --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wait for Implementation</masterLabel>
+        <translation><!-- Wait for Implementation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wait for Release</masterLabel>
+        <translation><!-- Wait for Release --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waiting for Customer Approval</masterLabel>
+        <translation><!-- Waiting for Customer Approval --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waiting for Customer Info</masterLabel>
+        <translation><!-- Waiting for Customer Info --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waiting for Customer to apply Patch</masterLabel>
+        <translation><!-- Waiting for Customer to apply Patch --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

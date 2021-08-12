@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tesla_Product_Count_HW__c</fullName>
+    <description>Number of Tesla hardware products
+SDS-2737: Updated the field name from &apos;Tesla Product Count (HW)&apos; to &apos;DC GPU Product Count (HW)&apos;</description>
+    <externalId>false</externalId>
+    <label>DC GPU Product Count (HW)</label>
+    <summarizedField>OpportunityLineItem.Quantity</summarizedField>
+    <summaryFilterItems>
+        <field>OpportunityLineItem.Product_Line__c</field>
+        <operation>equals</operation>
+        <value>DC GPU</value>
+    </summaryFilterItems>
+    <summaryForeignKey>OpportunityLineItem.OpportunityId</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

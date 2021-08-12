@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Legacy_Program_Signed_Date__c</fullName>
+    <description>Old Label: Date of Signed Agreement
+Old Field Name: Date_of_Signed_TPP_Agreement</description>
+    <externalId>false</externalId>
+    <label>Legacy Program Signed Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

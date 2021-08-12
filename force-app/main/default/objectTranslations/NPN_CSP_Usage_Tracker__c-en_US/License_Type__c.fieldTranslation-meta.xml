@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- License Type --></label>
+    <name>License_Type__c</name>
+    <picklistValues>
+        <masterLabel>GRID vApps</masterLabel>
+        <translation><!-- GRID vApps --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GRID vPC</masterLabel>
+        <translation><!-- GRID vPC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Quadro vDWS</masterLabel>
+        <translation><!-- Quadro vDWS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>vCompute Server</masterLabel>
+        <translation><!-- vCompute Server --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Solution Provider</fullName>
+        <default>false</default>
+        <label>Solution Provider</label>
+    </customValue>
+    <customValue>
+        <fullName>OEM</fullName>
+        <default>false</default>
+        <label>OEM</label>
+    </customValue>
+    <customValue>
+        <fullName>Distributor</fullName>
+        <default>false</default>
+        <label>Distributor</label>
+    </customValue>
+    <customValue>
+        <fullName>Cloud Service Provider</fullName>
+        <default>false</default>
+        <label>Cloud Service Provider</label>
+    </customValue>
+    <customValue>
+        <fullName>Solution Advisor</fullName>
+        <default>false</default>
+        <label>Solution Advisor</label>
+    </customValue>
+    <customValue>
+        <fullName>Inception Partner</fullName>
+        <default>false</default>
+        <label>Inception Partner</label>
+    </customValue>
+    <customValue>
+        <fullName>Tegra Embedded</fullName>
+        <default>false</default>
+        <label>Tegra Embedded</label>
+    </customValue>
+    <customValue>
+        <fullName>Services Subcontractor</fullName>
+        <default>false</default>
+        <label>Services Subcontractor</label>
+    </customValue>
+    <customValue>
+        <fullName>Service Delivery Partner</fullName>
+        <default>false</default>
+        <label>Service Delivery Partner</label>
+    </customValue>
+    <customValue>
+        <fullName>Solutions Integration Partner</fullName>
+        <default>false</default>
+        <label>Solutions Integration Partner</label>
+    </customValue>
+    <customValue>
+        <fullName>Federal Systems Integrator</fullName>
+        <default>false</default>
+        <label>Federal Systems Integrator</label>
+    </customValue>
+    <customValue>
+        <fullName>Global Systems Integrator</fullName>
+        <default>false</default>
+        <label>Global Systems Integrator</label>
+    </customValue>
+    <masterLabel>SuRF Partner Program</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

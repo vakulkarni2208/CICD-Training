@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Primary_Customer_Use_Case__c</fullName>
+    <businessStatus>Active</businessStatus>
+    <externalId>false</externalId>
+    <label>Primary Customer Workload</label>
+    <required>false</required>
+    <securityClassification>Internal</securityClassification>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Crypto Mining</fullName>
+                <default>false</default>
+                <label>Crypto Mining</label>
+            </value>
+            <value>
+                <fullName>Data Analytics (Not ML or DL)</fullName>
+                <default>false</default>
+                <label>Data Analytics (Not ML or DL)</label>
+            </value>
+            <value>
+                <fullName>Deep Learning/AI</fullName>
+                <default>false</default>
+                <label>Deep Learning/AI</label>
+            </value>
+            <value>
+                <fullName>High Performance Computing (HPC)</fullName>
+                <default>false</default>
+                <label>High Performance Computing (HPC)</label>
+            </value>
+            <value>
+                <fullName>Infrastructure as a Service</fullName>
+                <default>false</default>
+                <label>Infrastructure as a Service</label>
+            </value>
+            <value>
+                <fullName>Machine Learning (Not DL)</fullName>
+                <default>false</default>
+                <label>Machine Learning (Not DL)</label>
+            </value>
+            <value>
+                <fullName>Visual Computing/Data Center Graphics</fullName>
+                <default>false</default>
+                <label>Visual Computing/Data Center Graphics</label>
+            </value>
+            <value>
+                <fullName>Workstation GPU</fullName>
+                <default>false</default>
+                <label>Workstation GPU</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

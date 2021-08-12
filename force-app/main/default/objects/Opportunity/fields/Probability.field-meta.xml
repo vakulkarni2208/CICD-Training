@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Probability</fullName>
+    <inlineHelpText>The probability field is tied to the Stage selection.  
+Qualification = 20%.   
+Needs Analysis = 40%.
+Proposal/Price Quote = 60%.
+Negotiation/Review = 80%.
+Closed Won = 100%.
+Closed Lost or Closed - Program Cancelled = 0%.</inlineHelpText>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>true</trackTrending>
+</CustomField>

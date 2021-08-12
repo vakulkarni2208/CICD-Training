@@ -1,0 +1,642 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssignmentRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignmentRule>
+        <fullName>Automotive Lead Assignment Rule</fullName>
+        <active>false</active>
+        <ruleEntry>
+            <assignedTo>DLI_Lead_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>DLI Lead</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>North_America_Startups_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>1 AND 2 AND 3</booleanFilter>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Automotive Lead</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Automotive_Startup__c</field>
+                <operation>equals</operation>
+                <value>Yes</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>United States,Canada</value>
+            </criteriaItems>
+            <template>unfiled$public/Automotive_Request_URGENT_Lead_Assignment</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Chinese_Startups_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>1 AND 2 AND 3</booleanFilter>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Automotive Lead</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Automotive_Startup__c</field>
+                <operation>equals</operation>
+                <value>Yes</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>China</value>
+            </criteriaItems>
+            <template>unfiled$public/Automotive_Request_URGENT_Lead_Assignment</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>GAS_Startups_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>1 AND 2 AND 3</booleanFilter>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Automotive Lead</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Automotive_Startup__c</field>
+                <operation>equals</operation>
+                <value>Yes</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Germany,Austria,Switzerland,Turkey</value>
+            </criteriaItems>
+            <template>unfiled$public/Automotive_Request_URGENT_Lead_Assignment</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Western_Europe_Startups_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>1 AND 2 AND 3</booleanFilter>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Automotive Lead</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Automotive_Startup__c</field>
+                <operation>equals</operation>
+                <value>Yes</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>The Netherlands,Spain,France,United Kingdom,Portugal,Belgium,Italy,Ireland</value>
+            </criteriaItems>
+            <template>unfiled$public/Automotive_Request_URGENT_Lead_Assignment</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Russian_Startups_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>1 AND 2 AND 3</booleanFilter>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Automotive Lead</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Automotive_Startup__c</field>
+                <operation>equals</operation>
+                <value>Yes</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Russian Federation</value>
+            </criteriaItems>
+            <template>unfiled$public/Automotive_Request_URGENT_Lead_Assignment</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Singapore_Startups_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>1 AND 2 AND 3</booleanFilter>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Automotive Lead</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Automotive_Startup__c</field>
+                <operation>equals</operation>
+                <value>Yes</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Singapore,Viet Nam</value>
+            </criteriaItems>
+            <template>unfiled$public/Automotive_Request_URGENT_Lead_Assignment</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Japanese_Startups_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Automotive Lead</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Automotive_Startup__c</field>
+                <operation>equals</operation>
+                <value>Yes</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Japan</value>
+            </criteriaItems>
+            <template>unfiled$public/Automotive_Request_URGENT_Lead_Assignment</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Nordic_Startups_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Automotive Lead</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Automotive_Startup__c</field>
+                <operation>equals</operation>
+                <value>Yes</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Sweden,Finland,Norway</value>
+            </criteriaItems>
+            <template>unfiled$public/Automotive_Request_URGENT_Lead_Assignment</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Israel_Startups_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Automotive Lead</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Automotive_Startup__c</field>
+                <operation>equals</operation>
+                <value>Yes</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Israel</value>
+            </criteriaItems>
+            <template>unfiled$public/Automotive_Request_URGENT_Lead_Assignment</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>ROW_Startups_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Automotive Lead</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Automotive_Startup__c</field>
+                <operation>equals</operation>
+                <value>Yes</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>notEqual</operation>
+                <value>United States,China,Germany,Austria,Switzerland,Turkey,The Netherlands,Spain,France,United Kingdom,Portugal,Belgium,Italy,Ireland,Russian Federation,Singapore,Viet Nam,Japan,Sweden,Finland,Norway,Israel</value>
+            </criteriaItems>
+            <template>unfiled$public/Automotive_Request_URGENT_Lead_Assignment</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>America_OEM_and_Tier1s_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>1 AND 2 AND 3 AND 4</booleanFilter>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Automotive Lead</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Automotive_Startup__c</field>
+                <operation>equals</operation>
+                <value>No</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Company_Type__c</field>
+                <operation>equals</operation>
+                <value>Tier 1,OEM</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>United States,Canada,Mexico,Brazil</value>
+            </criteriaItems>
+            <template>unfiled$public/Automotive_Request_URGENT_Lead_Assignment</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>European_OEM_and_Tier1s_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>1 AND 2 AND 3 AND 4</booleanFilter>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Automotive Lead</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Automotive_Startup__c</field>
+                <operation>equals</operation>
+                <value>No</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Company_Type__c</field>
+                <operation>equals</operation>
+                <value>Tier 1,OEM</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Germany,Austria,Switzerland,The Netherlands,Spain,France,United Kingdom,Portugal,Belgium,Italy,Ireland</value>
+            </criteriaItems>
+            <template>unfiled$public/Automotive_Request_URGENT_Lead_Assignment</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Nordic_OEM_and_Tier1s_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>1 AND 2 AND 3 AND 4</booleanFilter>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Automotive Lead</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Automotive_Startup__c</field>
+                <operation>equals</operation>
+                <value>No</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Company_Type__c</field>
+                <operation>equals</operation>
+                <value>Tier 1,OEM</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Russian Federation,Sweden,Finland,Norway</value>
+            </criteriaItems>
+            <template>unfiled$public/Automotive_Request_URGENT_Lead_Assignment</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Asian_OEMs_and_Tier1s_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>1 AND 2 AND 3 AND 4</booleanFilter>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Automotive Lead</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Automotive_Startup__c</field>
+                <operation>equals</operation>
+                <value>No</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Company_Type__c</field>
+                <operation>equals</operation>
+                <value>Tier 1,OEM</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Singapore,Japan,China,Korea</value>
+            </criteriaItems>
+            <template>unfiled$public/Automotive_Request_URGENT_Lead_Assignment</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>ROW_OEM_and_Tier1s_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>1 AND 2 AND 3 AND 4</booleanFilter>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Automotive Lead</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Automotive_Startup__c</field>
+                <operation>equals</operation>
+                <value>No</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Company_Type__c</field>
+                <operation>equals</operation>
+                <value>Tier 1,OEM</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>notEqual</operation>
+                <value>United States,Canada,Mexico,Brazil,Germany,Austria,Switzerland,The Netherlands,Spain,France,United Kingdom,Portugal,Belgium,Italy,Ireland,Russian Federation,Sweden,Finland,Norway,Singapore,Japan,China,Korea</value>
+            </criteriaItems>
+            <template>unfiled$public/Automotive_Request_URGENT_Lead_Assignment</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>North_America_HER_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>1 AND 2 AND 3 AND 4</booleanFilter>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Automotive Lead</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Automotive_Startup__c</field>
+                <operation>equals</operation>
+                <value>No</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Company_Type__c</field>
+                <operation>equals</operation>
+                <value>HER</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>United States,Canada,Mexico</value>
+            </criteriaItems>
+            <template>unfiled$public/Automotive_Request_URGENT_Lead_Assignment</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Chinese_HER_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>1 AND 2 AND 3 AND 4</booleanFilter>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Automotive Lead</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Automotive_Startup__c</field>
+                <operation>equals</operation>
+                <value>No</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Company_Type__c</field>
+                <operation>equals</operation>
+                <value>HER</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>China</value>
+            </criteriaItems>
+            <template>unfiled$public/Automotive_Request_URGENT_Lead_Assignment</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>GAS_HER_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>1 AND 2 AND 3 AND 4</booleanFilter>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Automotive Lead</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Automotive_Startup__c</field>
+                <operation>equals</operation>
+                <value>No</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Company_Type__c</field>
+                <operation>equals</operation>
+                <value>HER</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Germany,Austria,Switzerland,Turkey</value>
+            </criteriaItems>
+            <template>unfiled$public/Automotive_Request_URGENT_Lead_Assignment</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Western_Europe_HER_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>1 AND 2 AND 3 AND 4</booleanFilter>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Automotive Lead</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Automotive_Startup__c</field>
+                <operation>equals</operation>
+                <value>No</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Company_Type__c</field>
+                <operation>equals</operation>
+                <value>HER</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>The Netherlands,Spain,France,United Kingdom,Portugal,Belgium,Italy,Ireland,Greece</value>
+            </criteriaItems>
+            <template>unfiled$public/Automotive_Request_URGENT_Lead_Assignment</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Russian_HER_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>1 AND 2 AND 3 AND 4</booleanFilter>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Automotive Lead</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Automotive_Startup__c</field>
+                <operation>equals</operation>
+                <value>No</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Company_Type__c</field>
+                <operation>equals</operation>
+                <value>HER</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Russian Federation</value>
+            </criteriaItems>
+            <template>unfiled$public/Automotive_Request_URGENT_Lead_Assignment</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Singapore_HER_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>1 AND 2 AND 3 AND 4</booleanFilter>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Automotive Lead</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Automotive_Startup__c</field>
+                <operation>equals</operation>
+                <value>No</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Company_Type__c</field>
+                <operation>equals</operation>
+                <value>HER</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Singapore,Viet Nam,Korea,Japan</value>
+            </criteriaItems>
+            <template>unfiled$public/Automotive_Request_URGENT_Lead_Assignment</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Nordic_HER_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>1 AND 2 AND 3 AND 4</booleanFilter>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Automotive Lead</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Automotive_Startup__c</field>
+                <operation>equals</operation>
+                <value>No</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Company_Type__c</field>
+                <operation>equals</operation>
+                <value>HER</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Sweden,Finland,Norway</value>
+            </criteriaItems>
+            <template>unfiled$public/Automotive_Request_URGENT_Lead_Assignment</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Israel_HER_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>1 AND 2 AND 3 AND 4</booleanFilter>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Automotive Lead</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Automotive_Startup__c</field>
+                <operation>equals</operation>
+                <value>No</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Company_Type__c</field>
+                <operation>equals</operation>
+                <value>HER</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Israel</value>
+            </criteriaItems>
+            <template>unfiled$public/Automotive_Request_URGENT_Lead_Assignment</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>ROW_HER_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>1 AND 2 AND 3 AND 4</booleanFilter>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Automotive Lead</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Automotive_Startup__c</field>
+                <operation>equals</operation>
+                <value>No</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Company_Type__c</field>
+                <operation>equals</operation>
+                <value>HER</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>notEqual</operation>
+                <value>United States,Canada,Mexico,China,Germany,Austria,Switzerland,Turkey,The Netherlands,Spain,France,United Kingdom,Portugal,Belgium,Italy,Ireland,Greece,Russian Federation,Singapore,Viet Nam,Korea,Japan,Sweden,Finland,Norway,Israel</value>
+            </criteriaItems>
+            <template>unfiled$public/Automotive_Request_URGENT_Lead_Assignment</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Contact_Us_General_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Automotive Lead</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Owner_User_Type__c</field>
+                <operation>notEqual</operation>
+                <value>Queue</value>
+            </criteriaItems>
+            <template>unfiled$public/Automotive_Request_URGENT_Lead_Assignment</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>marketo@nvidia.com.crp</assignedTo>
+            <assignedToType>User</assignedToType>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Pre-MQL Lead,Enterprise Customer Lead</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.OwnerId</field>
+                <operation>equals</operation>
+                <value>Marketo Sync</value>
+            </criteriaItems>
+        </ruleEntry>
+    </assignmentRule>
+    <assignmentRule>
+        <fullName>DLI Lead Assignment Rule</fullName>
+        <active>true</active>
+        <ruleEntry>
+            <assignedTo>DLI_Lead_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>DLI Lead</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>marketo@nvidia.com.crp</assignedTo>
+            <assignedToType>User</assignedToType>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Pre-MQL Lead,Enterprise Customer Lead</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.OwnerId</field>
+                <operation>equals</operation>
+                <value>Marketo Sync</value>
+            </criteriaItems>
+        </ruleEntry>
+    </assignmentRule>
+</AssignmentRules>

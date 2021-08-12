@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Default_Cc_Email_Ids__c</fullName>
+    <description>This Email Id&apos;s in this field will be added in the CC for the all the Email Notificaitons (1st, 2nd and 3rd)</description>
+    <externalId>false</externalId>
+    <label>Default Cc Email Ids</label>
+    <length>250</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

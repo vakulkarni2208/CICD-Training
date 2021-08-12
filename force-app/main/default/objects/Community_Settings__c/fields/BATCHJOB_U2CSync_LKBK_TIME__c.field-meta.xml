@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BATCHJOB_U2CSync_LKBK_TIME__c</fullName>
+    <defaultValue>60</defaultValue>
+    <description>COMM_Sync_CommUserDataToContactRec_Batch Job. Lookback time to gather User Records to process</description>
+    <externalId>false</externalId>
+    <inlineHelpText>COMM_Sync_CommUserDataToContactRec_Batch Job : Lookback time to gather User Records to processLookback time to gather User Records to process (e.g., If you want to process user records that got updated in last 5 mintues, set the value to 5</inlineHelpText>
+    <label>BATCHJOB_U2CSync_LKBK_TIME</label>
+    <precision>3</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>SFDCToEMS</label>
+    <protected>false</protected>
+    <values>
+        <field>Authentication_Type__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Client_Id__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Client_Secret__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Content_Type__c</field>
+        <value xsi:type="xsd:string">text</value>
+    </values>
+    <values>
+        <field>EndPoint__c</field>
+        <value xsi:type="xsd:string">https://nvidiacorporation.prod.sentinelcloud.com/axis2/services/NVIDIASAPEMSConnector</value>
+    </values>
+    <values>
+        <field>Environment__c</field>
+        <value xsi:type="xsd:string">Prod</value>
+    </values>
+    <values>
+        <field>IntegrationType__c</field>
+        <value xsi:type="xsd:string">SOAP</value>
+    </values>
+    <values>
+        <field>MethodType__c</field>
+        <value xsi:type="xsd:string">POST</value>
+    </values>
+    <values>
+        <field>Password__c</field>
+        <value xsi:type="xsd:string">h7FQO7WKYAOIZhyi6nferw==</value>
+    </values>
+    <values>
+        <field>RequestType__c</field>
+        <value xsi:type="xsd:string">Outbound</value>
+    </values>
+    <values>
+        <field>SourceSystem__c</field>
+        <value xsi:type="xsd:string">Salesforce</value>
+    </values>
+    <values>
+        <field>Targetsystem__c</field>
+        <value xsi:type="xsd:string">EMS</value>
+    </values>
+    <values>
+        <field>UserName__c</field>
+        <value xsi:type="xsd:string">SFDCTechUser</value>
+    </values>
+    <values>
+        <field>WebServiceName__c</field>
+        <value xsi:type="xsd:string">Partner User</value>
+    </values>
+</CustomMetadata>

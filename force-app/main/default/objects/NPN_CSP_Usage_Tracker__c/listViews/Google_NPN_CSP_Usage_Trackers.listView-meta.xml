@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Google_NPN_CSP_Usage_Trackers</fullName>
+    <columns>NAME</columns>
+    <columns>Account__c</columns>
+    <columns>NPN_CSP_Partner__c</columns>
+    <columns>Status__c</columns>
+    <columns>Contact_who_Verified_NPN_CSP_Usage__c</columns>
+    <columns>Anticipated_Production_Date__c</columns>
+    <columns>GPUs_Consumed__c</columns>
+    <columns>Instance_Type__c</columns>
+    <columns>Products_Used__c</columns>
+    <columns>Project_Name__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>NPN_CSP_Partner__c</field>
+        <operation>equals</operation>
+        <value>Google Cloud</value>
+    </filters>
+    <filters>
+        <field>CREATED_DATE</field>
+        <operation>greaterThan</operation>
+        <value>9/15/2018 12:00 AM</value>
+    </filters>
+    <label>Google NPN CSP Usage Trackers</label>
+</ListView>

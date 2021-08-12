@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GRID_ELA_Level__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>ELA0 is default 
+ELA1 represents a $250K initial order 
+ELA2 represents a $500k initial order 
+ELA3 represents a $750k initial order 
+ELA4 represents a $1000k initial order</inlineHelpText>
+    <label>GRID ELA Level</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ELA0</fullName>
+                <default>false</default>
+                <label>ELA0</label>
+            </value>
+            <value>
+                <fullName>ELA1</fullName>
+                <default>false</default>
+                <label>ELA1</label>
+            </value>
+            <value>
+                <fullName>ELA2</fullName>
+                <default>false</default>
+                <label>ELA2</label>
+            </value>
+            <value>
+                <fullName>ELA3</fullName>
+                <default>false</default>
+                <label>ELA3</label>
+            </value>
+            <value>
+                <fullName>ELA4</fullName>
+                <default>false</default>
+                <label>ELA4</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

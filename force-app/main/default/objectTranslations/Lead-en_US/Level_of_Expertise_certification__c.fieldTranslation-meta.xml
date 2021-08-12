@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Level of Expertise - certification --></label>
+    <name>Level_of_Expertise_certification__c</name>
+    <picklistValues>
+        <masterLabel>Advanced (3+ years of research or development)</masterLabel>
+        <translation><!-- Advanced (3+ years of research or development) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Beginner (1-2 years of research or development)</masterLabel>
+        <translation><!-- Beginner (1-2 years of research or development) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Intermediate (2-3 years of research or development)</masterLabel>
+        <translation><!-- Intermediate (2-3 years of research or development) --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SL_Forecast_Category__c</fullName>
+    <externalId>false</externalId>
+    <label>SL Forecast Category</label>
+    <required>true</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>2-Commit</fullName>
+                <default>true</default>
+                <label>2-Commit</label>
+            </value>
+            <value>
+                <fullName>3-Best Case</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>3-Best Case</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

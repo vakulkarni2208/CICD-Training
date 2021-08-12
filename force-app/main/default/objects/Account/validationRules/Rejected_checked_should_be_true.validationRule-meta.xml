@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Rejected_checked_should_be_true</fullName>
+    <active>true</active>
+    <description>Reason for Rejection pick list only applies when you select the ‘Rejected’ checkbox</description>
+    <errorConditionFormula>AND((Rejected__c=False), NOT(ISBLANK(TEXT(Reason_for_Rejection__c))))</errorConditionFormula>
+    <errorDisplayField>Rejected__c</errorDisplayField>
+    <errorMessage>Reason for Rejection pick list only applies when you select the ‘Rejected’ checkbox</errorMessage>
+</ValidationRule>

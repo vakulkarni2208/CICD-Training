@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Email_Status__c</fullName>
+    <businessOwnerUser>talicaya@nvidia.com.trprod</businessOwnerUser>
+    <description>SDS-2780-Brite Verify-Automated Jobs to Check Invalid Contacts</description>
+    <externalId>false</externalId>
+    <inlineHelpText>BriteVerify Email Verification Status. The Valid status indicates the email is valid, and the Invalid status means an email that is invalid.  Unknown and Accept All mean the email cannot be classified as valid or invalid.</inlineHelpText>
+    <label>Email Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Valid</fullName>
+                <default>false</default>
+                <label>Valid</label>
+            </value>
+            <value>
+                <fullName>Invalid</fullName>
+                <default>false</default>
+                <label>Invalid</label>
+            </value>
+            <value>
+                <fullName>Accept All</fullName>
+                <default>false</default>
+                <label>Accept All</label>
+            </value>
+            <value>
+                <fullName>Unknown</fullName>
+                <default>false</default>
+                <label>Unknown</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

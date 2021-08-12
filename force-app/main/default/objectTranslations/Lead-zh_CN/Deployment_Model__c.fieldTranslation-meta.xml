@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Deployment Model --></label>
+    <name>Deployment_Model__c</name>
+    <picklistValues>
+        <masterLabel>Appliance (on-premises)</masterLabel>
+        <translation><!-- Appliance (on-premises) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cloud API service</masterLabel>
+        <translation><!-- Cloud API service --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Consulting</masterLabel>
+        <translation><!-- Consulting --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SaaS</masterLabel>
+        <translation><!-- SaaS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Software licensing (ISV on-premises)</masterLabel>
+        <translation><!-- Software licensing (ISV on-premises) --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

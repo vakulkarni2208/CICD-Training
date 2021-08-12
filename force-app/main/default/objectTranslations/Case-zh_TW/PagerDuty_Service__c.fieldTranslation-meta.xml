@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Provide a list of Pagerduty Services for Creating an Incident in Pagerduty --></help>
+    <label><!-- Escalation to Incident Manager --></label>
+    <name>PagerDuty_Service__c</name>
+    <picklistValues>
+        <masterLabel>NVES-TEST-SERVICE</masterLabel>
+        <translation><!-- NVES-TEST-SERVICE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>egx-cloud-incidents</masterLabel>
+        <translation><!-- egx-cloud-incidents --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

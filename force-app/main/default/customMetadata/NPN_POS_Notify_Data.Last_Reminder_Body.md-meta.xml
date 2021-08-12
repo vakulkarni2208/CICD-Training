@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Last Reminder Body</label>
+    <protected>false</protected>
+    <values>
+        <field>Value__c</field>
+        <value xsi:type="xsd:string">&lt;p&gt;*Please do not reply to this message.This mailbox is not monitored.*&lt;/p&gt;&lt;p&gt;Dear +partnerUserName+,&lt;/p&gt;&lt;p&gt;POS files are due by the 15&lt;sup&gt;th&lt;/sup&gt; of every month. Our records indicate we have not received your company&amp;rsquo;s +month+ POS file.&lt;/p&gt;&lt;p&gt;Please access the POS Submission tab on the &lt;a href=&quot;https://www.nvidia.com/npnportal&quot;&gt;NPN Partner Portal&lt;/a&gt; to submit as soon as possible.&lt;/p&gt;&lt;p&gt;Please contact your NVIDIA Partner Business Manager for any questions.&lt;/p&gt;&lt;p&gt;Regards,&lt;br/&gt;NVIDIA Partner Network Team&lt;/p&gt;</value>
+    </values>
+</CustomMetadata>

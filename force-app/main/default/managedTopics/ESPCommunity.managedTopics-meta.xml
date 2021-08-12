@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ManagedTopics xmlns="http://soap.sforce.com/2006/04/metadata">
+    <managedTopic>
+        <fullName>ESPCommunity.Featured:CUDA</fullName>
+        <managedTopicType>Featured</managedTopicType>
+        <name>CUDA</name>
+        <parentName/>
+        <position>5</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>ESPCommunity.Featured:DGX</fullName>
+        <managedTopicType>Featured</managedTopicType>
+        <name>DGX</name>
+        <parentName/>
+        <position>0</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>ESPCommunity.Featured:Drive Constellation</fullName>
+        <managedTopicType>Featured</managedTopicType>
+        <name>Drive Constellation</name>
+        <parentName/>
+        <position>2</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>ESPCommunity.Featured:GRID</fullName>
+        <managedTopicType>Featured</managedTopicType>
+        <name>GRID</name>
+        <parentName/>
+        <position>1</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>ESPCommunity.Featured:NGC</fullName>
+        <managedTopicType>Featured</managedTopicType>
+        <name>NGC</name>
+        <parentName/>
+        <position>3</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>ESPCommunity.Featured:RTX Blade Server</fullName>
+        <managedTopicType>Featured</managedTopicType>
+        <name>RTX Blade Server</name>
+        <parentName/>
+        <position>4</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>ESPCommunity.Navigational:CUDA</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>CUDA</name>
+        <parentName/>
+        <position>3</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>ESPCommunity.Navigational:DGX</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>DGX</name>
+        <parentName/>
+        <position>0</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>ESPCommunity.Navigational:Drive Constellation</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Drive Constellation</name>
+        <parentName/>
+        <position>4</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>ESPCommunity.Navigational:GRID</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>GRID</name>
+        <parentName/>
+        <position>1</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>ESPCommunity.Navigational:NGC</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>NGC</name>
+        <parentName/>
+        <position>2</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>ESPCommunity.Navigational:RTX Blade Server</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>RTX Blade Server</name>
+        <parentName/>
+        <position>5</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+</ManagedTopics>

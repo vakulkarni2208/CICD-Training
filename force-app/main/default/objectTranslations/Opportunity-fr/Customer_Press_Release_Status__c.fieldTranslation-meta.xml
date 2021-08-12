@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Customer Press Release Status --></label>
+    <name>Customer_Press_Release_Status__c</name>
+    <picklistValues>
+        <masterLabel>Customer &amp; OEM Releasing PR</masterLabel>
+        <translation><!-- Customer &amp; OEM Releasing PR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer Releasing PR</masterLabel>
+        <translation><!-- Customer Releasing PR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No PR</masterLabel>
+        <translation><!-- No PR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OEM Releasing PR</masterLabel>
+        <translation><!-- OEM Releasing PR --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

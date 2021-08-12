@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Account_NPN_Program_Signed_Date__c</fullName>
+    <description>Account.NPN_Program_Signed_Date__c</description>
+    <externalId>false</externalId>
+    <formula>Account.NPN_Program_Signed_Date__c</formula>
+    <inlineHelpText>Account.NPN_Program_Signed_Date__c</inlineHelpText>
+    <label>Account NPN Program Signed Date</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LeanData_Target_List__c</fullName>
+    <description>For Lean Data Project -SDS-2583</description>
+    <externalId>false</externalId>
+    <label>LeanData Target List</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Auto_DC_P1</fullName>
+                <default>false</default>
+                <label>Auto_DC_P1</label>
+            </value>
+            <value>
+                <fullName>Auto_DC_P2</fullName>
+                <default>false</default>
+                <label>Auto_DC_P2</label>
+            </value>
+            <value>
+                <fullName>Auto_DC_P3</fullName>
+                <default>false</default>
+                <label>Auto_DC_P3</label>
+            </value>
+            <value>
+                <fullName>Auto_DC_P4</fullName>
+                <default>false</default>
+                <label>Auto_DC_P4</label>
+            </value>
+            <value>
+                <fullName>Cryo-EM 2019_P0</fullName>
+                <default>false</default>
+                <label>Cryo-EM 2019_P0</label>
+            </value>
+            <value>
+                <fullName>Cryo-EM 2019_P1</fullName>
+                <default>false</default>
+                <label>Cryo-EM 2019_P1</label>
+            </value>
+            <value>
+                <fullName>Cryo-EM 2019_P2</fullName>
+                <default>false</default>
+                <label>Cryo-EM 2019_P2</label>
+            </value>
+            <value>
+                <fullName>Cryo-EM 2019_P3</fullName>
+                <default>false</default>
+                <label>Cryo-EM 2019_P3</label>
+            </value>
+            <value>
+                <fullName>SuperPOD 2019_P1</fullName>
+                <default>false</default>
+                <label>SuperPOD 2019_P1</label>
+            </value>
+            <value>
+                <fullName>SuperPOD 2019_P2</fullName>
+                <default>false</default>
+                <label>SuperPOD 2019_P2</label>
+            </value>
+            <value>
+                <fullName>SC 2019_P1</fullName>
+                <default>false</default>
+                <label>SC 2019_P1</label>
+            </value>
+            <value>
+                <fullName>SC 2019_P2</fullName>
+                <default>false</default>
+                <label>SC 2019_P2</label>
+            </value>
+            <value>
+                <fullName>SC 2019_P3</fullName>
+                <default>false</default>
+                <label>SC 2019_P3</label>
+            </value>
+            <value>
+                <fullName>HER Target</fullName>
+                <default>false</default>
+                <label>HER Target</label>
+            </value>
+            <value>
+                <fullName>Data Science</fullName>
+                <default>false</default>
+                <label>Data Science</label>
+            </value>
+            <value>
+                <fullName>FSI</fullName>
+                <default>false</default>
+                <label>FSI</label>
+            </value>
+            <value>
+                <fullName>Telco</fullName>
+                <default>false</default>
+                <label>Telco</label>
+            </value>
+            <value>
+                <fullName>Genomics_2019_P0</fullName>
+                <default>false</default>
+                <label>Genomics_2019_P0</label>
+            </value>
+            <value>
+                <fullName>Genomics_2019_P1</fullName>
+                <default>false</default>
+                <label>Genomics_2019_P1</label>
+            </value>
+            <value>
+                <fullName>Genomics_2019_P2</fullName>
+                <default>false</default>
+                <label>Genomics_2019_P2</label>
+            </value>
+            <value>
+                <fullName>Genomics_2019_P3</fullName>
+                <default>false</default>
+                <label>Genomics_2019_P3</label>
+            </value>
+            <value>
+                <fullName>CICN_2019_P0</fullName>
+                <default>false</default>
+                <label>CICN_2019_P0</label>
+            </value>
+            <value>
+                <fullName>CICN_2019_P1</fullName>
+                <default>false</default>
+                <label>CICN_2019_P1</label>
+            </value>
+            <value>
+                <fullName>HC_Instruments_LHA_DXIMG</fullName>
+                <default>false</default>
+                <label>HC_Instruments_LHA_DXIMG</label>
+            </value>
+            <value>
+                <fullName>HC_Instruments_NOTLHA_DXIMG</fullName>
+                <default>false</default>
+                <label>HC_Instruments_NOTLHA_DXIMG</label>
+            </value>
+            <value>
+                <fullName>HC_Instruments_LHA_HIT</fullName>
+                <default>false</default>
+                <label>HC_Instruments_LHA_HIT</label>
+            </value>
+            <value>
+                <fullName>HC_Instruments_NOTLHA_HIT</fullName>
+                <default>false</default>
+                <label>HC_Instruments_NOTLHA_HIT</label>
+            </value>
+            <value>
+                <fullName>HC_Instruments_LHA_IVDX</fullName>
+                <default>false</default>
+                <label>HC_Instruments_LHA_IVDX</label>
+            </value>
+            <value>
+                <fullName>HC_Instruments_NOTLHA_IVDX</fullName>
+                <default>false</default>
+                <label>HC_Instruments_NOTLHA_IVDX</label>
+            </value>
+            <value>
+                <fullName>HC_Instruments_LHA_POC</fullName>
+                <default>false</default>
+                <label>HC_Instruments_LHA_POC</label>
+            </value>
+            <value>
+                <fullName>HC_Instruments_NOTLHA_POC</fullName>
+                <default>false</default>
+                <label>HC_Instruments_NOTLHA_POC</label>
+            </value>
+            <value>
+                <fullName>HC_Instruments_LHA_THDEV</fullName>
+                <default>false</default>
+                <label>HC_Instruments_LHA_THDEV</label>
+            </value>
+            <value>
+                <fullName>HC_Instruments_NOTLHA_THDEV</fullName>
+                <default>false</default>
+                <label>HC_Instruments_NOTLHA_THDEV</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

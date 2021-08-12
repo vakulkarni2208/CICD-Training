@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Co_Location_COLO_Partner__c</fullName>
+    <businessOwnerUser>andriaz@nvidia.com.trprod</businessOwnerUser>
+    <businessStatus>Active</businessStatus>
+    <externalId>false</externalId>
+    <label>Co-Location (COLO) Partner</label>
+    <required>false</required>
+    <securityClassification>Internal</securityClassification>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Co_Location_COLO_Partner_Engaged__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Aligned Energy</fullName>
+                <default>false</default>
+                <label>Aligned Energy</label>
+            </value>
+            <value>
+                <fullName>Colovore</fullName>
+                <default>false</default>
+                <label>Colovore</label>
+            </value>
+            <value>
+                <fullName>Core Scientific</fullName>
+                <default>false</default>
+                <label>Core Scientific</label>
+            </value>
+            <value>
+                <fullName>Cyrus One</fullName>
+                <default>false</default>
+                <label>Cyrus One</label>
+            </value>
+            <value>
+                <fullName>Cyxtera</fullName>
+                <default>false</default>
+                <label>Cyxtera</label>
+            </value>
+            <value>
+                <fullName>Data Dock</fullName>
+                <default>false</default>
+                <label>Data Dock</label>
+            </value>
+            <value>
+                <fullName>Digital Realty</fullName>
+                <default>false</default>
+                <label>Digital Realty</label>
+            </value>
+            <value>
+                <fullName>EdgeConneX</fullName>
+                <default>false</default>
+                <label>EdgeConneX</label>
+            </value>
+            <value>
+                <fullName>Equinix</fullName>
+                <default>false</default>
+                <label>Equinix</label>
+            </value>
+            <value>
+                <fullName>Flexential</fullName>
+                <default>false</default>
+                <label>Flexential</label>
+            </value>
+            <value>
+                <fullName>Fujitsu</fullName>
+                <default>false</default>
+                <label>Fujitsu</label>
+            </value>
+            <value>
+                <fullName>IDCF</fullName>
+                <default>false</default>
+                <label>IDCF</label>
+            </value>
+            <value>
+                <fullName>Interxion</fullName>
+                <default>false</default>
+                <label>Interxion</label>
+            </value>
+            <value>
+                <fullName>NTT Communications</fullName>
+                <default>false</default>
+                <label>NTT Communications</label>
+            </value>
+            <value>
+                <fullName>NTT Data</fullName>
+                <default>false</default>
+                <label>NTT Data</label>
+            </value>
+            <value>
+                <fullName>Scalematrix</fullName>
+                <default>false</default>
+                <label>Scalematrix</label>
+            </value>
+            <value>
+                <fullName>Switch</fullName>
+                <default>false</default>
+                <label>Switch</label>
+            </value>
+            <value>
+                <fullName>Vantage</fullName>
+                <default>false</default>
+                <label>Vantage</label>
+            </value>
+            <value>
+                <fullName>Verne Global</fullName>
+                <default>false</default>
+                <label>Verne Global</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Yes</controllingFieldValue>
+            <valueName>Aligned Energy</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Yes</controllingFieldValue>
+            <valueName>Colovore</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Yes</controllingFieldValue>
+            <valueName>Core Scientific</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Yes</controllingFieldValue>
+            <valueName>Cyrus One</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Yes</controllingFieldValue>
+            <valueName>Cyxtera</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Yes</controllingFieldValue>
+            <valueName>Data Dock</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Yes</controllingFieldValue>
+            <valueName>Digital Realty</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Yes</controllingFieldValue>
+            <valueName>EdgeConneX</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Yes</controllingFieldValue>
+            <valueName>Equinix</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Yes</controllingFieldValue>
+            <valueName>Flexential</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Yes</controllingFieldValue>
+            <valueName>Fujitsu</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Yes</controllingFieldValue>
+            <valueName>IDCF</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Yes</controllingFieldValue>
+            <valueName>Interxion</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Yes</controllingFieldValue>
+            <valueName>NTT Communications</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Yes</controllingFieldValue>
+            <valueName>NTT Data</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Yes</controllingFieldValue>
+            <valueName>Scalematrix</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Yes</controllingFieldValue>
+            <valueName>Switch</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Yes</controllingFieldValue>
+            <valueName>Vantage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Yes</controllingFieldValue>
+            <valueName>Verne Global</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Yes</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

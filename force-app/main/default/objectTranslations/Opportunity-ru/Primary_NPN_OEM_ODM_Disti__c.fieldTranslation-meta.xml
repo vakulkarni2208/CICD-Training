@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Please identify the partner who will issue the PO to NVIDIA --></help>
+    <label><!-- Primary NPN OEM/ODM/Disti --></label>
+    <lookupFilter>
+        <errorMessage><!-- Please make sure to only select those Accounts marked as business engagement layer partner Accounts --></errorMessage>
+    </lookupFilter>
+    <name>Primary_NPN_OEM_ODM_Disti__c</name>
+    <relationshipLabel><!-- Opportunities (Primary NPN OEM/ODM/Disti) --></relationshipLabel>
+</CustomFieldTranslation>

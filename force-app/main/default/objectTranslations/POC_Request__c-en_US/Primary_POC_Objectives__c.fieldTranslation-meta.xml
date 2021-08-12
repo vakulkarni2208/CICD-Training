@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Primary POC Objectives --></label>
+    <name>Primary_POC_Objectives__c</name>
+    <picklistValues>
+        <masterLabel>Benchmarking</masterLabel>
+        <translation><!-- Benchmarking --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Performance / Scalability Testing</masterLabel>
+        <translation><!-- Performance / Scalability Testing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Product Sandboxing</masterLabel>
+        <translation><!-- Product Sandboxing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Validation Testing</masterLabel>
+        <translation><!-- Validation Testing --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

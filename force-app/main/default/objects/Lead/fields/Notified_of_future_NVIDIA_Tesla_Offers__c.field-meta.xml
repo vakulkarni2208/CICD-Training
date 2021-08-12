@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Notified_of_future_NVIDIA_Tesla_Offers__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Would you like to be notified of future NVIDIA (Tesla or Quadro) promotional offers and information?</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Check the box if you would like to be notified of future NVIDIA promotional offers and information.</inlineHelpText>
+    <label>Notify me of future NVIDIA Offers?</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

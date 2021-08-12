@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Added as a mandatory option for the Parent Product
+Ex: DGX A100 Mandatory Installation - Partner for Opp Reg Product --></help>
+    <label><!-- Mandatory Parent Product --></label>
+    <name>Mandatory_Parent_Product__c</name>
+    <relationshipLabel><!-- SOQ OppReg Product Maps (Mandatory Parent Product) --></relationshipLabel>
+</CustomFieldTranslation>

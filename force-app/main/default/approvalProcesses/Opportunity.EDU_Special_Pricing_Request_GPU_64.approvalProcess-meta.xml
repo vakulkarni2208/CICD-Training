@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApprovalProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <allowRecall>true</allowRecall>
+    <allowedSubmitters>
+        <type>creator</type>
+    </allowedSubmitters>
+    <allowedSubmitters>
+        <type>owner</type>
+    </allowedSubmitters>
+    <approvalPageFields>
+        <field>Name</field>
+        <field>Owner</field>
+        <field>Special_Pricing_Request_Type__c</field>
+    </approvalPageFields>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>hmandara@nvidia.com</name>
+                <type>user</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <description>Approval Step for EDU Special Pricing Approval Request. Level 0 when GPUs are &lt;64
+
+Notes: Technically this step will never execute. The only intention here is to auto-approve.</description>
+        <entryCriteria>
+            <criteriaItems>
+                <field>Opportunity.Special_Pricing_Request_Type__c</field>
+                <operation>notEqual</operation>
+                <value>EDU</value>
+            </criteriaItems>
+        </entryCriteria>
+        <ifCriteriaNotMet>ApproveRecord</ifCriteriaNotMet>
+        <label>EDU Special Pricing Auto Approval</label>
+        <name>EDU_Special_Pricing_Approval_Logic_0</name>
+    </approvalStep>
+    <description>JIRA# SDS-2823:  GPU Quantity &lt; 64 then auto-approve for EDU</description>
+    <emailTemplate>Opportunity_Email_Alerts/VF_Pricing_Approval_Request_Rebate_Form</emailTemplate>
+    <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
+    <entryCriteria>
+        <criteriaItems>
+            <field>Opportunity.RecordType</field>
+            <operation>equals</operation>
+            <value>Special Pricing Request</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Special_Pricing_Request_Type__c</field>
+            <operation>equals</operation>
+            <value>EDU</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Qualified_for_EDU_Approval_1__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Qualified_for_EDU_Approval_2__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+    </entryCriteria>
+    <finalApprovalActions>
+        <action>
+            <name>Rebate_Pricing_Approval_Request_Approved</name>
+            <type>Alert</type>
+        </action>
+        <action>
+            <name>Update_OEM_Bid_Approved_Date</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>Update_Opportunity_Stage_to_In_Progress</name>
+            <type>FieldUpdate</type>
+        </action>
+    </finalApprovalActions>
+    <finalApprovalRecordLock>false</finalApprovalRecordLock>
+    <finalRejectionRecordLock>false</finalRejectionRecordLock>
+    <label>EDU Special Pricing Request GPU &lt; 64</label>
+    <processOrder>5</processOrder>
+    <recordEditability>AdminOnly</recordEditability>
+    <showApprovalHistory>false</showApprovalHistory>
+</ApprovalProcess>

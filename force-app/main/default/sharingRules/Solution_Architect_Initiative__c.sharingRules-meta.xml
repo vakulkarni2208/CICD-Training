@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>GRID_POC_Sharing_to_GRID_Team</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>Share all the GRID POC records with the GRID Sales team</description>
+        <label>GRID POC Sharing to GRID Team</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>vGPU_Segment_Manager</roleAndSubordinatesInternal>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>vGPU POC SA Initiative</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingOwnerRules>
+        <fullName>NALA_GRID_Solution_Architect_shared_with_Support_Manager_Role</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>NALA GRID Solution Architect shared with Support Manager Role</description>
+        <label>NALA GRID Solution Architect shared with Support Manager Role</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>Support_Manager</roleAndSubordinatesInternal>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>NALA_Solution_Architect_GRID_Manager</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>SA_Initiative_Read_Only_Sharing</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>Used to share SA Initiatives with a specific public group for this purpose</description>
+        <label>SA Initiative Read Only Sharing</label>
+        <sharedTo>
+            <group>SA_Initiative_Read_Only_Group</group>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>NALA_Solution_Architect_VP</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>SA_Initiatives_Sharing_for_SAs</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>SA Initiatives Sharing for SAs</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>NALA_Solution_Architect_VP</roleAndSubordinatesInternal>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>NALA_Solution_Architect_VP</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

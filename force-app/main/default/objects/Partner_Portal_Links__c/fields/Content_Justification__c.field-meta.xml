@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Content_Justification__c</fullName>
+    <externalId>false</externalId>
+    <label>Content Justification</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Left</fullName>
+                <default>false</default>
+                <label>Left</label>
+            </value>
+            <value>
+                <fullName>Right</fullName>
+                <default>false</default>
+                <label>Right</label>
+            </value>
+            <value>
+                <fullName>Center</fullName>
+                <default>false</default>
+                <label>Center</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

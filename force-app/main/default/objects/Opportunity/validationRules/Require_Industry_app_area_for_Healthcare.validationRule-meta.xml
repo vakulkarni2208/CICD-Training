@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Industry_app_area_for_Healthcare</fullName>
+    <active>true</active>
+    <description>After a certain created date require Industry Application Area for Healthcare Opportunities</description>
+    <errorConditionFormula>AND(
+ RecordType.DeveloperName = &apos;Enterprise_Sales_Opportunity&apos;,
+ Probability &gt; 0.39,
+ ISPICKVAL (Industry__c, &quot;Healthcare&quot;),
+ DATEVALUE (CreatedDate) &gt; DATEVALUE (&apos;2019-10-10&apos;),
+ ISPICKVAL (Primary_Industry_Application_Area__c, &quot;&quot;) 
+)</errorConditionFormula>
+    <errorMessage>To help with Enterprise reporting please enter the Industry Application Area for this Healthcare Opportunity</errorMessage>
+</ValidationRule>

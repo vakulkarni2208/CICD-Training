@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Partner Competency --></label>
+    <name>Partner_Competency__c</name>
+    <picklistValues>
+        <masterLabel>DGX</masterLabel>
+        <translation><!-- DGX --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Quadro Elite</masterLabel>
+        <translation><!-- Quadro Elite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Quadro Preferred</masterLabel>
+        <translation><!-- Quadro Preferred --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tesla Elite</masterLabel>
+        <translation><!-- Tesla Elite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tesla Preferred</masterLabel>
+        <translation><!-- Tesla Preferred --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>vGPU Elite</masterLabel>
+        <translation><!-- vGPU Elite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>vGPU Preferred</masterLabel>
+        <translation><!-- vGPU Preferred --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

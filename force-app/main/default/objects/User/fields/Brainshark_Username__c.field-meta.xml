@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Brainshark_Username__c</fullName>
+    <description>This field is used as unique identifier for the User sync between Salesforce and Brainshark in the User Report and also in the mapping.</description>
+    <externalId>false</externalId>
+    <formula>/*
+IF(BEGINS(Username, &quot;_&quot;), RIGHT(Username, LEN(Username)-1), Username)
+*/
+
+/*
+ * JIRA #SDS-1992
+ * For ‘Internal’ Users in SFDC replace the field ‘Username’ with the ‘Email’ in the Formula field ‘Brainshark Username’ on the User object which is being used in User Sync Report.
+ * For ‘External’ Users in the ‘Brainshark Username_c’ field, enhance the logic to display the result in the field with the prefix ‘ext’ and the ‘Email’ instead of the ‘Username’ field which is being used currently. Make sure this formula field doesn’t display any suffix after the ‘@nvidia.com’ for any external user in the system.
+*/
+IF(NOT(ISPICKVAL(UserType, &apos;Standard&apos;)) &amp;&amp; CONTAINS(Username, &quot;@nvidia.com&quot;), &apos;ext_&apos; + Email, Email)</formula>
+    <label>Brainshark Username</label>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

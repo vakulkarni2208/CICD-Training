@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Oppty_must_be_In_Progress_Stage</fullName>
+    <active>true</active>
+    <description>Used for OEM Bid Opptys to ensure the Oppty is in the In Progress stage before approval</description>
+    <errorConditionFormula>AND(
+ NOT(ISPICKVAL(SCOPE_Opportunity__r.StageName, &quot;Approved - In Progress&quot;)),
+ ISPICKVAL(Status__c, &quot;Files Attached – Ready to Submit&quot;) 
+)</errorConditionFormula>
+    <errorDisplayField>Status__c</errorDisplayField>
+    <errorMessage>The Opportunity must be approved before a milestone can be ready for approval. Please ensure your Opportunity has a product configuration and has been fully approved.</errorMessage>
+</ValidationRule>

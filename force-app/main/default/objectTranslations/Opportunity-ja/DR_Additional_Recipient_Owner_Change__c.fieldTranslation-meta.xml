@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Additional Recipient to get the Owner Change Notification --></help>
+    <label><!-- Additional Recipient (Owner Change) --></label>
+    <name>DR_Additional_Recipient_Owner_Change__c</name>
+    <relationshipLabel><!-- Opportunities (Additional Recipient (Owner Change)) --></relationshipLabel>
+</CustomFieldTranslation>

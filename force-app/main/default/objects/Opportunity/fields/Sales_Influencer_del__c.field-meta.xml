@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sales_Influencer_del__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>For reporting purposes if there was an additional Sales Influencer on this Opportunity please note it here</inlineHelpText>
+    <label>Sales Influencer</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

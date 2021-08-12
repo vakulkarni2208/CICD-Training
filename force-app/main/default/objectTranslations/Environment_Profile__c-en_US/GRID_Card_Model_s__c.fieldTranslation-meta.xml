@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- GRID Card Model(s) --></label>
+    <name>GRID_Card_Model_s__c</name>
+    <picklistValues>
+        <masterLabel>M10</masterLabel>
+        <translation><!-- M10 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>M6</masterLabel>
+        <translation><!-- M6 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>M60</masterLabel>
+        <translation><!-- M60 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>P100</masterLabel>
+        <translation><!-- P100 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>P100 12GB</masterLabel>
+        <translation><!-- P100 12GB --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>P4</masterLabel>
+        <translation><!-- P4 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>P40</masterLabel>
+        <translation><!-- P40 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>P6</masterLabel>
+        <translation><!-- P6 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RTX 6000</masterLabel>
+        <translation><!-- RTX 6000 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RTX 6000 passive</masterLabel>
+        <translation><!-- RTX 6000 passive --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RTX 8000</masterLabel>
+        <translation><!-- RTX 8000 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RTX 8000 passive7</masterLabel>
+        <translation><!-- RTX 8000 passive7 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>T4</masterLabel>
+        <translation><!-- T4 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V100</masterLabel>
+        <translation><!-- V100 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V1006</masterLabel>
+        <translation><!-- V1006 --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>UserAgree_Share_RegInfo_With3rdParty__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>NGC Field: User Agree that NVIDIA will share user&apos;s registration information with such third party software pvroviders, who may use information as permitted by their policies.</description>
+    <externalId>false</externalId>
+    <label>UserAgree_Share_RegInfo_With3rdParty</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

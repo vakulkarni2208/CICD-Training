@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Link_to_Key_Deliverable__c</fullName>
+    <description>SDS-2646</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Add a link to the key deliverable for this campaign, such as the CIB, social media kit, or webinar.</inlineHelpText>
+    <label>Link to Key Deliverable</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Url</type>
+</CustomField>

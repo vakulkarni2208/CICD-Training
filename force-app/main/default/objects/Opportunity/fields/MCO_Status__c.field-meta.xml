@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MCO_Status__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(OR( Tesla_Product_Amount__c &gt;= 450000, 
+Total_DGX_Product_Amount__c &gt;0, 
+GRID_Product_Amount__c &gt; 0 ), &apos;Potential Must Close Opportunity (MCO)&apos;, &apos;Not Potential Must Close Opportunity&apos;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>MCO Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

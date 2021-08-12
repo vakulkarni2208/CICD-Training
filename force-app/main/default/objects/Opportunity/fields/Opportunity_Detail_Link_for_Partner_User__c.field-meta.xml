@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Opportunity_Detail_Link_for_Partner_User__c</fullName>
+    <description>This field will have the Opportunity Detail Link for the Partner Users. This field is being used in the Email Templates for the &apos;Tegra Embedded Partner Opportunity&apos; Expirations project.</description>
+    <externalId>false</externalId>
+    <label>Opportunity Detail Link for Partner User</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,1581 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SalesContact</fullName>
+    <active>true</active>
+    <label>Sales Contact</label>
+    <picklistValues>
+        <picklist>CIP_Agreement_Confirmation__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CIP_Guide_agreement_confirmation__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Company_Affiliation__c</picklist>
+        <values>
+            <fullName>AI Lab</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>APY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ATOS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BIT %28 Beijing Institute of Technology %29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Booze Allen %28 BAH %29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Boston</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CTC Technology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dell</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hancom</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hitachi Information Academy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>III Education</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ITRI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inspur</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Japan Third Party%2C Co%2E %28JTP%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Leaders Systems</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Leadtek Shanghai</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Leadtek Taiwan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ML Reply</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mark III Systems</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Monterrey CIAA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>None</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OpenZeka</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Opteamizer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>QA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rabbit %26 Tortoise</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SCAN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SVA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Skyline</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sugon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Suzhou No%2E 9 Education Technology Co%2E%2C Ltd</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Times Professional Learning</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trace3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Xenon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>iTrain</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Contact_Status__c</picklist>
+        <values>
+            <fullName>Inactive Portal User</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>DLI_Region__c</picklist>
+        <values>
+            <fullName>China</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EMEA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>India</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Israel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Japan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Latin America</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>North America</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ROAP</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Disqualified_Recycling_Reason__c</picklist>
+        <values>
+            <fullName>Budget</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dead Lead</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Geography</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Invalid Data</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Left Company</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No budget at this time</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No need at this time</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Research Phase</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SPAM%2FJunk</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tech Support</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Technology Requirement</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>EMS_Status__c</picklist>
+        <values>
+            <fullName>Processed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ToProcess</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>EmailConnect_Status__c</picklist>
+        <values>
+            <fullName>Accept_All</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Invalid</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unknown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Valid</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Email_Status__c</picklist>
+        <values>
+            <fullName>Accept All</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Invalid</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unknown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Valid</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Email_Sub_Status__c</picklist>
+        <values>
+            <fullName>disposable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>email_account_invalid</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>email_address_invalid</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>email_domain_invalid</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>role_address</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Experience_as_an_Instructor__c</picklist>
+        <values>
+            <fullName>1 to 2 years of instructing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3 to 5 years of instructing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5 or more years of instructing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>None or very little</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Fluency_in_Language__c</picklist>
+        <values>
+            <fullName>English</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>French</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>German</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Japanese</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Korean</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Portuguese</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Simplified Chinese</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Spanish</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Traditional Chinese</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>GPU_Genius_Groups__c</picklist>
+        <values>
+            <fullName>Learning Lenovo DCG%3A5550970</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Learning Lenovo Workstation%3A5845271</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Learning NPN Community%3A4997879</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>GRID_Software_Evaluation__c</picklist>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending Re-approval</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Re-approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rejected</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Industry_Segment_Vertical__c</picklist>
+        <values>
+            <fullName>Financial Services</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Instructor_Type__c</picklist>
+        <values>
+            <fullName>Ambassador</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ambassador %26 SDP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NVIDIA - Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NVIDIA - SA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SDP</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Job_Role__c</picklist>
+        <values>
+            <fullName>Channel%2FPartners</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Director</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Executive%2FManagement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marketing%2FCommunications</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product Design%2FEngineering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product Management%2FTechnical Marketing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Renewal Contact</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sales Engineer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sales%2FBusiness Development</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Senior Vice President %28SVP%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Support%2FServices</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vice President %28VP%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LID__Level__c</picklist>
+        <values>
+            <fullName>Primary</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Secondary</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tertiary</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LID__No_longer_at_Company__c</picklist>
+        <values>
+            <fullName>Ignore</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not at Company</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LeadSource</picklist>
+        <values>
+            <fullName>Content Syndication</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Digital Event</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Discover Database</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internal Event</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Legacy Database</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LinkedIn SalesNav</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PathFactory Briefcase</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Personal Contact</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Social Media</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tradeshow</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web Scraping</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Webinar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZoomInfo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>salesforce%2Ecom</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Lead_Origin_Contact__c</picklist>
+        <values>
+            <fullName>Citrix Servtech</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Lead_Status__c</picklist>
+        <values>
+            <fullName>Disqualified</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marketing Qualified</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prospect</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Recycling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sales Qualified</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Level_of_Expertise_certification__c</picklist>
+        <values>
+            <fullName>Advanced %283%2B years of research or development%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Beginner %281-2 years of research or development%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Intermediate %282-3 years of research or development%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Marketing_Contact_Details__c</picklist>
+        <values>
+            <fullName>General</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Social</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Mgr_Support_4_Workshop_Year__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Name</picklist>
+        <values>
+            <fullName>Dr%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mr%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mrs%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ms%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prof%2E</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Portal_Groups__c</picklist>
+        <values>
+            <fullName>Arrow Embedded Edge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DISTI Compute Preferred</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DISTI Virtualization Preferred</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DISTI Visualization Preferred</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fed SI Compute Elite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fed SI Compute Preferred</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fed SI Embedded Edge Elite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fed SI Embedded Edge Preferred</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fed SI Virtualization Elite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fed SI Virtualization Preferred</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fed SI Visualization Elite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fed SI Visualization Preferred</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IP Compute Elite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IP Compute Preferred</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IP Portal Lite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industry Focus AEC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industry Focus Automotive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industry Focus Financial Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industry Focus HER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industry Focus Industrial Manufacturing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industry Focus Media %26 Entertainment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industry Focus Oil %26 Gas%2FEnergy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MDFV3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manager</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marketing Partners GeForce Content</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OEM Compute Elite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OEM Compute Preferred</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SDP Edu Compute DGX Preferred</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SP Compute Preferred</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SP Virtualization Preferred</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SP Visualization Preferred</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Services Subcontractor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TE Leads %26 Opportunities</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Portal_User_Content_Type__c</picklist>
+        <values>
+            <fullName>Consumer</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Role__c</picklist>
+        <values>
+            <fullName>Marketing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partner Primary Contact</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sales</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Technical</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>TimeZone__c</picklist>
+        <values>
+            <fullName>Africa%2FAlgiers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Africa%2FCairo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Africa%2FCasablanca</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Africa%2FJohannesburg</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Africa%2FNairobi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>America%2FAdak</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>America%2FAnchorage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>America%2FArgentina%2FBuenos_Aires</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>America%2FBogota</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>America%2FCaracas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>America%2FChicago</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>America%2FDenver</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>America%2FEl_Salvador</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>America%2FHalifax</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>America%2FIndiana%2FIndianapolis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>America%2FLima</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>America%2FLos_Angeles</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>America%2FMazatlan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>America%2FMexico_City</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>America%2FNew_York</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>America%2FPanama</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>America%2FPhoenix</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>America%2FPuerto_Rico</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>America%2FSantiago</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>America%2FSao_Paulo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>America%2FScoresbysund</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>America%2FSt_Johns</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>America%2FTijuana</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Asia%2FBaghdad</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Asia%2FBaku</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Asia%2FBangkok</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Asia%2FBeirut</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Asia%2FColombo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Asia%2FDhaka</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Asia%2FDubai</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Asia%2FHo_Chi_Minh</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Asia%2FHong_Kong</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Asia%2FJakarta</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Asia%2FJerusalem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Asia%2FKabul</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Asia%2FKamchatka</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Asia%2FKarachi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Asia%2FKathmandu</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Asia%2FKolkata</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Asia%2FKuala_Lumpur</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Asia%2FKuwait</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Asia%2FManila</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Asia%2FRangoon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Asia%2FRiyadh</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Asia%2FSeoul</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Asia%2FShanghai</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Asia%2FSingapore</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Asia%2FTaipei</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Asia%2FTashkent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Asia%2FTbilisi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Asia%2FTehran</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Asia%2FTokyo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Asia%2FYekaterinburg</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Asia%2FYerevan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Atlantic%2FAzores</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Atlantic%2FBermuda</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Atlantic%2FCape_Verde</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Atlantic%2FSouth_Georgia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Australia%2FAdelaide</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Australia%2FBrisbane</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Australia%2FDarwin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Australia%2FLord_Howe</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Australia%2FPerth</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Australia%2FSydney</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Europe%2FAmsterdam</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Europe%2FAthens</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Europe%2FBerlin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Europe%2FBrussels</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Europe%2FBucharest</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Europe%2FDublin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Europe%2FHelsinki</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Europe%2FIstanbul</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Europe%2FLisbon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Europe%2FLondon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Europe%2FMinsk</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Europe%2FMoscow</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Europe%2FParis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Europe%2FPrague</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Europe%2FRome</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GMT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pacific%2FAuckland</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pacific%2FChatham</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pacific%2FEnderbury</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pacific%2FFiji</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pacific%2FGambier</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pacific%2FGuadalcanal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pacific%2FHonolulu</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pacific%2FKiritimati</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pacific%2FMarquesas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pacific%2FNiue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pacific%2FNorfolk</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pacific%2FPago_Pago</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pacific%2FPitcairn</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pacific%2FTongatapu</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>USA_Immigration_Status__c</picklist>
+        <values>
+            <fullName>Citizen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Permanent Resident</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Work Authorization Visa</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Workshop__c</picklist>
+        <values>
+            <fullName>Accelerating CUDA C%2B%2B Applications with Multiple GPUs%2C Chinese</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Accelerating CUDA C%2B%2B Applications with Multiple GPUs%2C English</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Applications of AI for Anomaly Detection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Applications of AI for Anomaly Detection%2C English</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Applications of AI for Predictive Maintenance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Applications of AI for Predictive Maintenance%2C English</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Building Intelligent Recommender Systems%2C English</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Building Transformer Based Natural Language Processing%2C English</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deep Learning for Autonomous Vehicles - Perception</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deep Learning for Autonomous Vehicles - Perception%2C Chinese</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deep Learning for Autonomous Vehicles - Perception%2C English</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deep Learning for Digital Content Creation using AutoEncoders</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deep Learning for HealthCare Image Analysis%2C Chinese</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deep Learning for Healthcare Image Analysis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deep Learning for Healthcare Image Analysis%2C English</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deep Learning for Healthcare Image Analysis%2C Japanese</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deep Learning for Industrial Inspection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deep Learning for Industrial Inspection%2C Chinese</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deep Learning for Industrial Inspection%2C English</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deep Learning for Industrial Inspection%2C Taiwanese</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deep Learning for Intelligent Video Analytics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deep Learning for Intelligent Video Analytics%2C English</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deep Learning for Intelligent Video Analytics%2C Korean</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deep Learning for Intelligent Video Analytics%2C Taiwan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deep Learning for Robotics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deep Learning for Robotics%2C English</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fundamentals of Accelerated Computing using Open%2C Japanese</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fundamentals of Accelerated Computing using OpenACC%2C English</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fundamentals of Accelerated Computing with CUDA C%2FC%2B%2B</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fundamentals of Accelerated Computing with CUDA C%2FC%2B%2B%2C Chinese</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fundamentals of Accelerated Computing with CUDA C%2FC%2B%2B%2C English</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fundamentals of Accelerated Computing with CUDA C%2FC%2B%2B%2C Japanese</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fundamentals of Accelerated Computing with CUDA C%2FC%2B%2B%2C Korean</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fundamentals of Accelerated Computing with CUDA C%2FC%2B%2B%2C Taiwanese</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fundamentals of Accelerated Computing with CUDA Python</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fundamentals of Accelerated Computing with CUDA Python%2C Chinese</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fundamentals of Accelerated Computing with CUDA Python%2C English</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fundamentals of Accelerated Computing with OpenACC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fundamentals of Accelerated Data Science with RAPIDS %2C Taiwanese</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fundamentals of Accelerating Data Science with RAPIDS%2C English</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fundamentals of Deep Learning for Computer Vision</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fundamentals of Deep Learning for Computer Vision%2C Chinese</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fundamentals of Deep Learning for Computer Vision%2C English</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fundamentals of Deep Learning for Computer Vision%2C Japanese</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fundamentals of Deep Learning for Computer Vision%2C Korean</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fundamentals of Deep Learning for Computer Vision%2C Taiwanese</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fundamentals of Deep Learning for Multi-GPU%2C Chinese</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fundamentals of Deep Learning for Multi-GPU%2C English</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fundamentals of Deep Learning for Multi-GPUs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fundamentals of Deep Learning for Multi-GPUs%2C Korean</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fundamentals of Deep Learning for Multiple Data Types</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fundamentals of Deep Learning for Multiple Data Types%2C Chinese</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fundamentals of Deep Learning for Multiple Data Types%2C English</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fundamentals of Deep Learning for Multiple Data Types%2C Japanese</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fundamentals of Deep Learning for Multiple Data Types%2C Korean</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fundamentals of Deep Learning for Multiple Data Types%2C Taiwanese</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fundamentals of Deep Learning for Natural Language Processing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fundamentals of Deep Learning for Natural Language Processing%2C Chinese</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fundamentals of Deep Learning for Natural Language Processing%2C English</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fundamentals of Deep Learning for Natural Language Processing%2C Korean</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fundamentals of Deep Learning for Natural Language Processing%2C Taiwanese</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fundamentals of Deep Learning%2C Chinese</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fundamentals of Deep Learning%2C English</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fundamentals of Deep Learning%2C Japanese</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fundamentals of Deep Learning%2C Korean</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fundamentals of Deep Learning%2C Taiwanese</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Getting Started with AI on Jetson Nano</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Getting Started with AI on Jetson Nano%2C Chinese</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Getting Started with AI on Jetson Nano%2C English</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>leadspacesync__Status__c</picklist>
+        <values>
+            <fullName>Failure %28LS related%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Failure %28SF related%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Progress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partial Success</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Success</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

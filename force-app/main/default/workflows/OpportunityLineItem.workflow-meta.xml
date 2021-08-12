@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>DR_Is_Deal_Reg_Ref_False</fullName>
+        <description>Set the &quot;Is Deal Reg Ref&quot; to False</description>
+        <field>Is_Deal_Enabled_Ref__c</field>
+        <literalValue>0</literalValue>
+        <name>DR : Is Deal Reg Ref : False</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>DR_Is_Deal_Reg_Ref_True</fullName>
+        <description>Set the &quot;Is Deal Reg Ref&quot; to True</description>
+        <field>Is_Deal_Enabled_Ref__c</field>
+        <literalValue>1</literalValue>
+        <name>DR : Is Deal Reg Ref : True</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <rules>
+        <fullName>DR %3A Is Deal Reg %3A False</fullName>
+        <actions>
+            <name>DR_Is_Deal_Reg_Ref_False</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>OpportunityLineItem.Is_Deal_Enabled__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+        <description>Set the  &quot;Is Deal Reg Ref&quot; to False if &quot;Is Deal Reg&quot; field is False</description>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>DR %3A Is Deal Reg %3A True</fullName>
+        <actions>
+            <name>DR_Is_Deal_Reg_Ref_True</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>OpportunityLineItem.Is_Deal_Enabled__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <description>Set the  &quot;Is Deal Reg Ref&quot; to True if &quot;Is Deal Reg&quot; field is True</description>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

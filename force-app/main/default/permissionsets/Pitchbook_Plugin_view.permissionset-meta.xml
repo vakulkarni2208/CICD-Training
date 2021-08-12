@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customPermissions>
+        <enabled>true</enabled>
+        <name>Pitchbook_Plugin_view</name>
+    </customPermissions>
+    <description>SDS-2818 - Show 6Sense tab or components to 6Sense users - streamline pitchbook visibility</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Pitchbook Plugin - view</label>
+</PermissionSet>

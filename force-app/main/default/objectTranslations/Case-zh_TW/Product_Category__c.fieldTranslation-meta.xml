@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Product Category --></label>
+    <name>Product_Category__c</name>
+    <picklistValues>
+        <masterLabel>CUDA</masterLabel>
+        <translation><!-- CUDA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DGX</masterLabel>
+        <translation><!-- DGX --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DRIVE Constellation</masterLabel>
+        <translation><!-- DRIVE Constellation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fleet Command</masterLabel>
+        <translation><!-- Fleet Command --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GFN Services</masterLabel>
+        <translation><!-- GFN Services --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GRID</masterLabel>
+        <translation><!-- GRID --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HPC SDK</masterLabel>
+        <translation><!-- HPC SDK --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NGC-Ready Service</masterLabel>
+        <translation><!-- NGC-Ready Service --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Omniverse</masterLabel>
+        <translation><!-- Omniverse --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Parabricks</masterLabel>
+        <translation><!-- Parabricks --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RTX Blade Server</masterLabel>
+        <translation><!-- RTX Blade Server --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>vGaming</masterLabel>
+        <translation><!-- vGaming --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>vStreaming</masterLabel>
+        <translation><!-- vStreaming --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

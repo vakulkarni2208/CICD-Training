@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DLI_Other_Confirmed_Reseller_Required</fullName>
+    <active>true</active>
+    <description>SDS-1927-DLI 1.1 Updates</description>
+    <errorConditionFormula>AND(
+ RecordType.DeveloperName = &quot;DLI_Opportunity&quot;,
+ ISPICKVAL(DLI_Confirmed_Reseller__c, &quot;Other&quot;),
+ ISBLANK(Other_Confirmed_Reseller__c)
+)</errorConditionFormula>
+    <errorDisplayField>Other_Confirmed_Reseller__c</errorDisplayField>
+    <errorMessage>Please fill-in Other Confirmed Reseller</errorMessage>
+</ValidationRule>

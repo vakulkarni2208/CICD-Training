@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- When will Strategic go-to-market Objective 1 Sales Activity be executed? --></help>
+    <label><!-- Strategic Objective 1 Sales Date --></label>
+    <name>Strategic_Objective_1_Sales_Date__c</name>
+</CustomFieldTranslation>

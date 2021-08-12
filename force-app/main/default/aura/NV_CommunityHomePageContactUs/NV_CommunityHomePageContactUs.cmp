@@ -1,0 +1,227 @@
+<aura:component controller="NV_CommunityHomePageContactUsController">
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    <aura:attribute name="lstNV" type="NV_UtilityClass.NVIDIAContactsProductWiseWrapper[]" />
+    <aura:attribute name="contactUsData" type="NV_CommunityHomePageContactUsController.ContactUsData" />
+    <aura:attribute name="picklistValues" type="Object" />
+    <aura:attribute name="file" type="Object" />
+    <aura:attribute name="fileContents" type="Object" />
+    <aura:attribute name="fromPos" type="Integer" />
+    <aura:attribute name="toPos" type="Integer" />
+    <aura:attribute name="attachId" type="String" />
+    <aura:attribute name="isOpen" type="boolean" default="false"/>
+    <aura:registerEvent name="cmpEvent" type="c:CloseContactUsPopUp"/>
+	<c:NV_LtgPicklistComponent sObjectName="Lead" fieldName="Approved_Competencies__c" picklistValues="{!v.picklistValues}" />
+    
+    <!--Use aura:if tag to display Model Box, on the bese of conditions. [isOpen boolean attribute] -->   
+        <aura:if isTrue="{!v.isOpen}">            
+            <!--###### MODAL BOX Start######--> 
+            <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+                <div style="width:90%;max-width:2000px;" class="slds-modal__container">
+                    <!-- ###### MODAL BOX HEADER Start ######-->
+                    <header class="slds-modal__header">
+                        <lightning:buttonIcon iconName="utility:close"
+                                              onclick="{! c.closeModel }"
+                                              alternativeText="close"
+                                              variant="bare-inverse"
+                                              class="slds-modal__close"/>
+                        <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate"><b>{!$Label.c.Contact_Us}</b></h2>
+                    </header>
+                    <!--###### MODAL BOX BODY Part Start######-->
+                    <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+                        <div >
+                            <div class="outerDiv">
+                                <div class="block">
+                                    <div class="clear" align="center">
+                                        <img src="{!$Resource.NPN_Community_Home_Page_Competency_Image + '/CompetencyDataImage/icon-questions.svg'}"/>
+                                    </div>
+                                    <br />
+                                    <br />
+                                    <!--<div class="clear headerLgText" align="center">
+                                        QUESTIONS
+                                    </div>-->
+                                    <div class="clear" align="center" style="height:100px;">
+                                        {!$Label.c.NPNHomePage_Portal_Help_and_NPN_Program_Questions}                
+                                    </div>
+                                    <div class="clear" align="center" style="vertical-align: bottom;">
+                                        <lightning:button aura:id="AAQbtn" name="AAQbtn" label="QUESTION" onclick="{! c.handleClick }" class="contactUsButtons" />                    
+                                    </div>
+                                </div>
+                                <div class="block">
+                                    <div class="clear" align="center">
+                                        <img src="{!$Resource.NPN_Community_Home_Page_Competency_Image + '/CompetencyDataImage/icon-nvidia-gpu-genius.svg'}"/>
+                                    </div>                                    
+                                    <br />
+                                    <br />
+                                    <!--<div class="clear headerLgText" align="center">
+                                        TRAINING                    
+                                    </div>-->
+                                    <div class="clear" align="center" style="height:100px;">
+                                        {!$Label.c.NPNHomePage_GPU_Genius_Training_Help}
+                                    </div>
+                                    <div class="clear" align="center" style="vertical-align: bottom;">
+                                        <lightning:button label="TRAINING" aura:id="TRGbtn" name="TRGbtn" onclick="{! c.handleClick }" class="contactUsButtons" />                    
+                                    </div>
+                                </div>
+                                <aura:if isTrue="{!v.contactUsData.bUnRestricted}">
+                                    <div class="block">
+                                        <div class="clear" align="center">
+                                            <img src="{!$Resource.NPN_Community_Home_Page_Competency_Image + '/CompetencyDataImage/icon-support.svg'}"/>
+                                        </div>                                    
+                                        <br />
+                                        <br />
+                                        <!--<div class="clear headerLgText" align="center">
+                                            SUPPORT                    
+                                        </div>-->
+                                        <div class="clear" align="center" style="height:100px;">
+                                            {!$Label.c.NPNHomePage_Get_help_with_your_existing_NVIDIA_products_and_Services}
+                                            <br />
+                                            {!$Label.c.NPNHomePage_Open_and_track_support_cases}
+                                            <br />
+                                            {!$Label.c.NPNHomePage_Search_knowledge_base}
+                                            <br />
+                                            {!$Label.c.NPNHomepage_DGX_and_vGPU_Support_Renewals}
+                                        </div>
+                                        <div class="clear" align="center" style="vertical-align: bottom;">
+                                            <lightning:button aura:id="LASRbtn" name="LASRbtn" label="SUPPORT" onclick="{! c.handleClick }" class="contactUsButtons" />                    
+                                        </div>
+                                    </div>    
+                                </aura:if>
+                                <div class="clear hide" aura:id="AAQid">
+                                    <lightning:select value="{!v.contactUsData.objAskAQuestion.strCompetency}" label="Competency" required="true">    
+                                        <option value="">choose one...</option>
+                                        <aura:iteration items="{!v.picklistValues}" var="item">
+                                            <option value="{!item}">
+                                                {!item}
+                                            </option>
+                                        </aura:iteration>
+                                    </lightning:select>
+                                    <br />             
+                                    <lightning:textarea label="Question" required="true" value="{!v.contactUsData.objAskAQuestion.strQuestion}" aura:id="emailAAQId" rows="10" />
+                                    <br />
+                                    <lightning:input label="Company Name" name="company" value="{!v.contactUsData.objLogASupportRequest.strAccountName}" aura:id="emailAAQId" disabled="true" />
+                                    <br />                                    
+                                    <lightning:input label="Subject" name="subject" required="true" value="{!v.contactUsData.objAskAQuestion.strEmailSubject}" aura:id="emailAAQId" />
+                                    <br />
+                                    <lightning:input label="If problem, steps to reproduce" name="stepsToReproduce" value="{!v.contactUsData.objAskAQuestion.strStepsToReproduce}" aura:id="emailAAQId" />
+                                    <br />                                    
+                                    {!$Label.c.NPNHomePage_Add_Screenshot} <input type="file" class="file" aura:id="fileAAQ" />
+                                    <br />
+                                    <br />
+                                    <lightning:button class="contactUsButtons" iconName="utility:email" iconPosition="left" label="SEND" onclick="{! c.sendEmail }" />                    
+                                </div>
+                                <div class="clear hide" aura:id="TRGid">
+                                    <lightning:select value="{!v.contactUsData.objTrainingRequest.strCompetency}" label="Competency" required="true">    
+                                        <option value="">choose one...</option>
+                                        <aura:iteration items="{!v.picklistValues}" var="item">
+                                            <option value="{!item}">
+                                                {!item}
+                                            </option>
+                                        </aura:iteration>
+                                    </lightning:select>
+                                    <br />                                    
+                                    <lightning:textarea label="Question" required="true" value="{!v.contactUsData.objTrainingRequest.strQuestion}" aura:id="emailTRGId" rows="10" />
+                                    <br />
+                                    <lightning:input label="Company Name" name="company" value="{!v.contactUsData.objTrainingRequest.strAccountName}" aura:id="emailTRGId" disabled="true" />
+                                    <br />                                    
+                                    <lightning:input label="Subject" name="subject" required="true" value="{!v.contactUsData.objTrainingRequest.strEmailSubject}" aura:id="emailTRGId" />
+                                    <br />
+                                    <lightning:input label="If problem, steps to reproduce" name="stepsToReproduce" value="{!v.contactUsData.objTrainingRequest.strStepsToReproduce}" aura:id="emailTRGId" />
+                                    <br />
+                                    {!$Label.c.NPNHomePage_Add_Screenshot}  <input type="file" class="file" aura:id="fileTRG" />
+                                    <br />
+                                    <br />
+                                    <lightning:button class="contactUsButtons" iconName="utility:email" iconPosition="left" label="SEND" onclick="{! c.sendEmailTRG }" />                    
+                                </div>
+                                <div class="clear hide" aura:id="LASRid">
+                                    <lightning:select value="{!v.contactUsData.objLogASupportRequest.strCompetency}" label="Competency" required="true">    
+                                        <option value="">choose one...</option>
+                                        <aura:iteration items="{!v.picklistValues}" var="item">
+                                            <option value="{!item}">
+                                                {!item}
+                                            </option>
+                                        </aura:iteration>
+                                    </lightning:select>
+                                    <br />                
+                                    <lightning:input label="Company Name" name="company" value="{!v.contactUsData.objLogASupportRequest.strAccountName}" aura:id="emailLASRId" disabled="true" />
+                                    <br />
+                                    <lightning:input label="Name" name="Name" value="{!v.contactUsData.objLogASupportRequest.strName}" aura:id="emailLASRId" disabled="true" />
+                                    <br />                
+                                    <lightning:input label="Email" name="email" value="{!v.contactUsData.objLogASupportRequest.strEmail}" aura:id="emailLASRId" disabled="true" />
+                                    <br /> 
+                                    <lightning:input label="Phone" name="phone" value="{!v.contactUsData.objLogASupportRequest.strPhone}" aura:id="emailLASRId" disabled="true" />
+                                    <br />
+                                    <lightning:input label="Short Description" name="shortDescription" value="{!v.contactUsData.objLogASupportRequest.strProblemType}" aura:id="emailLASRId" required="true" maxlength="45" />
+                                    <br />
+                                    <lightning:textarea label="Problem Description" required="true" value="{!v.contactUsData.objLogASupportRequest.strProblemDescription}" aura:id="emailLASRId" rows="10" />
+                                    <br />
+                                    <lightning:textarea label="Steps to Reproduce" required="true" value="{!v.contactUsData.objLogASupportRequest.strStepsToReproduce}" aura:id="emailLASRId" rows="10" />
+                                    <br />                
+                                    {!$Label.c.NPNHomePage_Add_Screenshot}  <input type="file" class="file" aura:id="file" />
+                                    <br />
+                                    <br />
+                                    <lightning:button class="contactUsButtons" iconName="utility:email" iconPosition="left" label="SEND" onclick="{! c.sendLASREmail }" />                    
+                                </div>
+                            </div>
+                            <div class="NVblock">
+                                <div class="clear headerLgText">
+                                    {!$Label.c.NPNHomePage_Your_NVIDIA_Contacts}
+                                </div>
+                                <aura:iteration items="{!v.lstNV}" var="objNV">
+                                    <b><div align="left"><p color="#76b900">{!objNV.productType}</p></div></b>
+                                    <table width="100%" border="0"> 
+                                        <aura:iteration items="{!objNV.lstNVIDIAContactsWrapper}" var="nvCon">
+                                            <tr>
+                                                <td> 
+                                                    <b><i><div align="left" style="margin-top:3px;">{!nvCon.subProgram}</div></i></b>
+                                                    
+                                                    <b><i><div align="left" style="margin-top:5px;">{!nvCon.contentType}</div></i></b>
+                                                    
+                                                    <aura:if isTrue="{!nvCon.Sales_Manager_Name!=null}">
+                                                        <span style="margin-top:5px; display:inline-block;">
+                                                            <p color="#393939">{!nvCon.Sales_Manager_Name} <aura:if isTrue="{!and(nvCon.SalesManager_Title1 != null ,nvCon.Sales_Manager_Name != null)}"> - {!nvCon.SalesManager_Title1} <aura:set attribute="else">{!nvCon.SalesManager_Title1}</aura:set></aura:if></p>
+                                                            <a href="{!'mailto:' + nvCon.Sales_Manager_Email}">{!nvCon.Sales_Manager_Email} </a><aura:if isTrue="{!and(nvCon.Sales_Manager_Contact_Number != null, nvCon.Sales_Manager_Email!= null)}"> | {!nvCon.Sales_Manager_Contact_Number} <aura:set attribute="else">{!nvCon.Sales_Manager_Contact_Number}</aura:set></aura:if>                                        
+                                                        </span>
+                                                    </aura:if> 
+                                                    <br/>
+                                                    <aura:if isTrue="{!nvCon.Marketing_Manager_Name!=null}">
+                                                        <span style="margin-top:5px; display:inline-block;">                                        
+                                                            <p color="#393939">{!nvCon.Marketing_Manager_Name} <aura:if isTrue="{!and(nvCon.MarketingManager_Title2 != null ,nvCon.Marketing_Manager_Name != null)}"> - {!nvCon.MarketingManager_Title2} <aura:set attribute="else">{!nvCon.MarketingManager_Title2}</aura:set></aura:if></p>
+                                                            <a href="{!'mailto:' + nvCon.Marketing_Manager_Email}">{!nvCon.Marketing_Manager_Email}</a><aura:if isTrue="{!and(nvCon.Marketing_Manager_Contact_Number != null, nvCon.Marketing_Manager_Email!= null)}"> | {!nvCon.Marketing_Manager_Contact_Number} <aura:set attribute="else">{!nvCon.Marketing_Manager_Contact_Number}</aura:set></aura:if>
+                                                        </span>
+                                                    </aura:if> 
+                                                    <br/>
+                                                    <aura:if isTrue="{!nvCon.Support_Manager_Name!=null}">
+                                                        <span style="margin-top:5px; display:inline-block;">
+                                                            <p color="#393939">{!nvCon.Support_Manager_Name} <aura:if isTrue="{!and(nvCon.SupportManager_Title3 != null ,nvCon.Support_Manager_Name != null)}"> - {!nvCon.SupportManager_Title3} <aura:set attribute="else">{!nvCon.SupportManager_Title3}</aura:set></aura:if></p>                                     
+                                                            <a href="{!'mailto:' + nvCon.Support_Manager_Email}">{!nvCon.Support_Manager_Email} </a><aura:if isTrue="{!and(nvCon.Support_Manager_Contact_Number != null, nvCon.Support_Manager_Email!= null)}"> | {!nvCon.Support_Manager_Contact_Number} <aura:set attribute="else">{!nvCon.Support_Manager_Contact_Number}</aura:set></aura:if>                                        
+                                                        </span>
+                                                    </aura:if>
+                                                    <br/>
+                                                </td>
+                                            </tr>
+                                        </aura:iteration>
+                                    </table>
+                                </aura:iteration>
+                            </div>            
+                        </div>
+                        <div style="clear:both" align="center">
+                        	{!$Label.c.NPNHomePage_Please_contact_your_NVIDIA_Partner_Business_Manager}
+                        </div>
+                    </div>
+                    <!--###### MODAL BOX FOOTER Part Start ######-->
+                    <footer class="slds-modal__footer">
+                        <lightning:button variant="neutral" 
+                                          label="Cancel"
+                                          title="Cancel"
+                                          onclick="{! c.closeModel }"/>
+                        <!--<lightning:button variant="brand" 
+                                          label="Like and Close"
+                                          title="Like and Close"
+                                          onclick="{! c.likenClose }"/>-->
+                    </footer>
+                </div>
+            </section>
+            <div class="slds-backdrop slds-backdrop_open"></div>
+            <!--###### MODAL BOX Part END Here ######-->            
+        </aura:if>        
+</aura:component>

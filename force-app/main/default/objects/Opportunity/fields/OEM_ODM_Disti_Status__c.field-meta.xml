@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OEM_ODM_Disti_Status__c</fullName>
+    <externalId>false</externalId>
+    <label>NPN OEM/ODM/Disti Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Known</fullName>
+                <default>false</default>
+                <label>Known</label>
+            </value>
+            <value>
+                <fullName>Direct from NVIDIA</fullName>
+                <default>false</default>
+                <label>Direct from NVIDIA</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

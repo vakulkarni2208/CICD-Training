@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Industry_Segment__c</fullName>
+    <description>SDS-1152</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Controlled by IBD team for reporting purposes</inlineHelpText>
+    <label>Industry Segment</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Industry</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Asset Management</fullName>
+                <default>false</default>
+                <label>Asset Management</label>
+            </value>
+            <value>
+                <fullName>Delivery</fullName>
+                <default>false</default>
+                <label>Delivery</label>
+            </value>
+            <value>
+                <fullName>Downstream</fullName>
+                <default>false</default>
+                <label>Downstream</label>
+            </value>
+            <value>
+                <fullName>eCommerce</fullName>
+                <default>false</default>
+                <label>eCommerce</label>
+            </value>
+            <value>
+                <fullName>Electronics</fullName>
+                <default>false</default>
+                <label>Electronics</label>
+            </value>
+            <value>
+                <fullName>Exchanges and Clearinghouses</fullName>
+                <default>false</default>
+                <label>Exchanges and Clearinghouses</label>
+            </value>
+            <value>
+                <fullName>Fintech</fullName>
+                <default>false</default>
+                <label>Fintech</label>
+            </value>
+            <value>
+                <fullName>Hedge Funds and Proprietary Traders</fullName>
+                <default>false</default>
+                <label>Hedge Funds and Proprietary Traders</label>
+            </value>
+            <value>
+                <fullName>Instruments</fullName>
+                <default>false</default>
+                <label>Instruments</label>
+            </value>
+            <value>
+                <fullName>Investment Banking</fullName>
+                <default>false</default>
+                <label>Investment Banking</label>
+            </value>
+            <value>
+                <fullName>MaaS</fullName>
+                <default>false</default>
+                <label>MaaS</label>
+            </value>
+            <value>
+                <fullName>Mapping</fullName>
+                <default>false</default>
+                <label>Mapping</label>
+            </value>
+            <value>
+                <fullName>Market Data Providers</fullName>
+                <default>false</default>
+                <label>Market Data Providers</label>
+            </value>
+            <value>
+                <fullName>Media Streaming</fullName>
+                <default>false</default>
+                <label>Media Streaming</label>
+            </value>
+            <value>
+                <fullName>Midstream</fullName>
+                <default>false</default>
+                <label>Midstream</label>
+            </value>
+            <value>
+                <fullName>Mining</fullName>
+                <default>false</default>
+                <label>Mining</label>
+            </value>
+            <value>
+                <fullName>OEM</fullName>
+                <default>false</default>
+                <label>OEM</label>
+            </value>
+            <value>
+                <fullName>Oilfield Service Provider</fullName>
+                <default>false</default>
+                <label>Oilfield Service Provider</label>
+            </value>
+            <value>
+                <fullName>Payers</fullName>
+                <default>false</default>
+                <label>Payers</label>
+            </value>
+            <value>
+                <fullName>Pharma</fullName>
+                <default>false</default>
+                <label>Pharma</label>
+            </value>
+            <value>
+                <fullName>Provider</fullName>
+                <default>false</default>
+                <label>Provider</label>
+            </value>
+            <value>
+                <fullName>Regulators</fullName>
+                <default>false</default>
+                <label>Regulators</label>
+            </value>
+            <value>
+                <fullName>Research &amp; Government</fullName>
+                <default>false</default>
+                <label>Research &amp; Government</label>
+            </value>
+            <value>
+                <fullName>Retail Banking</fullName>
+                <default>false</default>
+                <label>Retail Banking</label>
+            </value>
+            <value>
+                <fullName>Retail Insurance (Casualty &amp; Property)</fullName>
+                <default>false</default>
+                <label>Retail Insurance (Casualty &amp; Property)</label>
+            </value>
+            <value>
+                <fullName>Semiconductor</fullName>
+                <default>false</default>
+                <label>Semiconductor</label>
+            </value>
+            <value>
+                <fullName>Services</fullName>
+                <default>false</default>
+                <label>Services</label>
+            </value>
+            <value>
+                <fullName>Social Media</fullName>
+                <default>false</default>
+                <label>Social Media</label>
+            </value>
+            <value>
+                <fullName>Startup</fullName>
+                <default>false</default>
+                <label>Startup</label>
+            </value>
+            <value>
+                <fullName>Startups AI</fullName>
+                <default>false</default>
+                <label>Startups AI</label>
+            </value>
+            <value>
+                <fullName>Startups OEM</fullName>
+                <default>false</default>
+                <label>Startups OEM</label>
+            </value>
+            <value>
+                <fullName>Tier 1</fullName>
+                <default>false</default>
+                <label>Tier 1</label>
+            </value>
+            <value>
+                <fullName>Truck</fullName>
+                <default>false</default>
+                <label>Truck</label>
+            </value>
+            <value>
+                <fullName>Upstream</fullName>
+                <default>false</default>
+                <label>Upstream</label>
+            </value>
+            <value>
+                <fullName>Utilities - Distribution (GRID)</fullName>
+                <default>false</default>
+                <label>Utilities - Distribution (GRID)</label>
+            </value>
+            <value>
+                <fullName>Utilities - Power Generation</fullName>
+                <default>false</default>
+                <label>Utilities - Power Generation</label>
+            </value>
+            <value>
+                <fullName>Utilities - Retail</fullName>
+                <default>false</default>
+                <label>Utilities - Retail</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Financial Services Industry (FSI)</controllingFieldValue>
+            <valueName>Asset Management</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Financial Services Industry (FSI)</controllingFieldValue>
+            <valueName>Exchanges and Clearinghouses</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Financial Services Industry (FSI)</controllingFieldValue>
+            <valueName>Fintech</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Financial Services Industry (FSI)</controllingFieldValue>
+            <valueName>Hedge Funds and Proprietary Traders</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Financial Services Industry (FSI)</controllingFieldValue>
+            <valueName>Investment Banking</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Financial Services Industry (FSI)</controllingFieldValue>
+            <valueName>Market Data Providers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Financial Services Industry (FSI)</controllingFieldValue>
+            <valueName>Regulators</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Financial Services Industry (FSI)</controllingFieldValue>
+            <valueName>Retail Banking</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Financial Services Industry (FSI)</controllingFieldValue>
+            <valueName>Retail Insurance (Casualty &amp; Property)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Financial Services Industry (FSI)</controllingFieldValue>
+            <controllingFieldValue>Automotive</controllingFieldValue>
+            <controllingFieldValue>Public Sector</controllingFieldValue>
+            <controllingFieldValue>CRISP (Consumer Internet Service Providers)</controllingFieldValue>
+            <controllingFieldValue>Manufacturing</controllingFieldValue>
+            <controllingFieldValue>Telecommunications</controllingFieldValue>
+            <controllingFieldValue>Healthcare</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Automotive</controllingFieldValue>
+            <controllingFieldValue>Public Sector</controllingFieldValue>
+            <controllingFieldValue>CRISP (Consumer Internet Service Providers)</controllingFieldValue>
+            <controllingFieldValue>Manufacturing</controllingFieldValue>
+            <controllingFieldValue>Strategic Hyperscale</controllingFieldValue>
+            <controllingFieldValue>Telecommunications</controllingFieldValue>
+            <valueName>MaaS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Automotive</controllingFieldValue>
+            <controllingFieldValue>Public Sector</controllingFieldValue>
+            <controllingFieldValue>CRISP (Consumer Internet Service Providers)</controllingFieldValue>
+            <controllingFieldValue>Manufacturing</controllingFieldValue>
+            <controllingFieldValue>Strategic Hyperscale</controllingFieldValue>
+            <controllingFieldValue>Telecommunications</controllingFieldValue>
+            <valueName>Mapping</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Automotive</controllingFieldValue>
+            <controllingFieldValue>Strategic Hyperscale</controllingFieldValue>
+            <valueName>OEM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Automotive</controllingFieldValue>
+            <controllingFieldValue>Public Sector</controllingFieldValue>
+            <controllingFieldValue>CRISP (Consumer Internet Service Providers)</controllingFieldValue>
+            <controllingFieldValue>Manufacturing</controllingFieldValue>
+            <controllingFieldValue>Strategic Hyperscale</controllingFieldValue>
+            <controllingFieldValue>Telecommunications</controllingFieldValue>
+            <valueName>Tier 1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Automotive</controllingFieldValue>
+            <controllingFieldValue>Strategic Hyperscale</controllingFieldValue>
+            <valueName>Truck</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Public Sector</controllingFieldValue>
+            <controllingFieldValue>CRISP (Consumer Internet Service Providers)</controllingFieldValue>
+            <controllingFieldValue>Manufacturing</controllingFieldValue>
+            <controllingFieldValue>Strategic Hyperscale</controllingFieldValue>
+            <controllingFieldValue>Telecommunications</controllingFieldValue>
+            <valueName>Startups AI</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CRISP (Consumer Internet Service Providers)</controllingFieldValue>
+            <valueName>Delivery</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CRISP (Consumer Internet Service Providers)</controllingFieldValue>
+            <valueName>eCommerce</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CRISP (Consumer Internet Service Providers)</controllingFieldValue>
+            <valueName>Media Streaming</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CRISP (Consumer Internet Service Providers)</controllingFieldValue>
+            <valueName>Social Media</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Manufacturing</controllingFieldValue>
+            <valueName>Electronics</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Manufacturing</controllingFieldValue>
+            <valueName>Semiconductor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Oil &amp; Gas/Energy</controllingFieldValue>
+            <valueName>Downstream</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Oil &amp; Gas/Energy</controllingFieldValue>
+            <valueName>Midstream</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Oil &amp; Gas/Energy</controllingFieldValue>
+            <valueName>Mining</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Oil &amp; Gas/Energy</controllingFieldValue>
+            <valueName>Oilfield Service Provider</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Oil &amp; Gas/Energy</controllingFieldValue>
+            <valueName>Upstream</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Oil &amp; Gas/Energy</controllingFieldValue>
+            <valueName>Utilities - Distribution (GRID)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Oil &amp; Gas/Energy</controllingFieldValue>
+            <valueName>Utilities - Power Generation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Oil &amp; Gas/Energy</controllingFieldValue>
+            <valueName>Utilities - Retail</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Strategic Hyperscale</controllingFieldValue>
+            <valueName>Startups OEM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Healthcare</controllingFieldValue>
+            <valueName>Instruments</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Healthcare</controllingFieldValue>
+            <valueName>Payers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Healthcare</controllingFieldValue>
+            <valueName>Pharma</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Healthcare</controllingFieldValue>
+            <valueName>Provider</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Healthcare</controllingFieldValue>
+            <valueName>Research &amp; Government</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Healthcare</controllingFieldValue>
+            <valueName>Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Healthcare</controllingFieldValue>
+            <valueName>Startup</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

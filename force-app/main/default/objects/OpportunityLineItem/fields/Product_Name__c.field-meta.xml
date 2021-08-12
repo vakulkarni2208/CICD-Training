@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product_Name__c</fullName>
+    <description>Product2.Name, captured when the OpportunityLineItem is added for a Notebook Opportunity; this is passed on to any associated Schedule Entries for display in the related list and in reports</description>
+    <externalId>false</externalId>
+    <label>Product Name</label>
+    <length>100</length>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Enterprise_Design_Wins</fullName>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Primary_Industry_Application_Area__c</columns>
+    <columns>Primary_Customer_Use_Case__c</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>OPPORTUNITY.CLOSE_DATE</columns>
+    <columns>OPPORTUNITY.AMOUNT</columns>
+    <columns>Segment__c</columns>
+    <columns>Modality__c</columns>
+    <columns>Project_Classification__c</columns>
+    <columns>OPPORTUNITY.NEXT_STEP</columns>
+    <columns>OEM_ODM_Disti_Status__c</columns>
+    <columns>Prefered_Partner__c</columns>
+    <columns>OPPORTUNITY.LAST_UPDATE</columns>
+    <columns>Opportunity_Owner_Full_Name__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>OPPORTUNITY.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Opportunity.Enterprise_Design_Wins</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>notEqual</operation>
+        <value>Closed Lost</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.NAME</field>
+        <operation>notContain</operation>
+        <value>nvidia,nves generic</value>
+    </filters>
+    <label>Enterprise Design Wins</label>
+    <sharedTo>
+        <role>APAC_Sales_Ops</role>
+        <role>EMEA_Sales_Ops</role>
+        <role>NALA_Inside_Sales_HER</role>
+        <role>NALA_Inside_Sales_Product_Sales_Specialist_PSS</role>
+        <roleAndSubordinatesInternal>Administrator</roleAndSubordinatesInternal>
+        <roleAndSubordinatesInternal>China_HPC</roleAndSubordinatesInternal>
+        <roleAndSubordinatesInternal>EMEA_DACH_Sales_Manager</roleAndSubordinatesInternal>
+        <roleAndSubordinatesInternal>Japan_Healthcare_Sales</roleAndSubordinatesInternal>
+        <roleAndSubordinatesInternal>Japan_SSC_HER_Sales</roleAndSubordinatesInternal>
+        <roleAndSubordinatesInternal>Japan_Sales_Ops_Manager</roleAndSubordinatesInternal>
+        <roleAndSubordinatesInternal>Medical_Inception_Manager</roleAndSubordinatesInternal>
+        <roleAndSubordinatesInternal>NALA_Healthcare_Sales_Manager</roleAndSubordinatesInternal>
+        <roleAndSubordinatesInternal>NALA_Inside_Sales_Manager</roleAndSubordinatesInternal>
+        <roleAndSubordinatesInternal>NALA_Other_Sales</roleAndSubordinatesInternal>
+        <roleAndSubordinatesInternal>NALA_Solution_Architect_Sales</roleAndSubordinatesInternal>
+        <roleAndSubordinatesInternal>vGPU_Enterprise_Sales_Manager</roleAndSubordinatesInternal>
+    </sharedTo>
+</ListView>

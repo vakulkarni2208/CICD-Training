@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product_Upgrade_Entitlement__c</fullName>
+    <externalId>false</externalId>
+    <formula>if( Service_Product__r.ProductCode  = &apos;718-A180I1&apos;, True, False)</formula>
+    <label>Product Upgrade Entitlement?</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

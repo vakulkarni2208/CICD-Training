@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<HomePageComponent xmlns="http://soap.sforce.com/2006/04/metadata">
+    <body>&lt;P style=&quot;MARGIN-RIGHT: 0px&quot;&gt;&lt;A href=&quot;www.nvidiaforhp.com&quot;&gt;&lt;FONT size=5&gt;NVIDIA HP Sales Resource Center&lt;/FONT&gt;&lt;/A&gt;&lt;/P&gt;</body>
+    <pageComponentType>htmlArea</pageComponentType>
+    <width>wide</width>
+</HomePageComponent>

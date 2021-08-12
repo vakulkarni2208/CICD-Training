@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DealReg_Special_Deal_Enabled</fullName>
+    <active>true</active>
+    <description>Validation rule to support white list registrations for DGX-2</description>
+    <errorConditionFormula>AND( 
+RecordType.Name = &quot;Deal Registration&quot;, 
+NOT(DR_Partner_Sales_Rep_Company__r.Special_Reg_Enabled__c), 
+OR( ISPICKVAL(DR_Product__c, &quot;DGX-2 V100-32GB&quot;), 
+ISPICKVAL(DR_Product__c, &quot;DGX-2H V100-32GB&quot;), 
+ISPICKVAL(DR_Secondary_Product__c, &quot;DGX-2H V100-32GB&quot;), 
+ISPICKVAL(DR_Secondary_Product__c, &quot;DGX-2 V100-32GB&quot;), 
+ISPICKVAL(DR_Product__c, &quot;DGX A100 P3687 System 8X 40GB GPUs)&quot;),
+ISPICKVAL(DR_Secondary_Product__c, &quot;DGX A100 P3687 System 8X 40GB GPUs&quot;), 
+ISPICKVAL(DR_Secondary_Product__c, &quot;DGX A100 P3687 System 8X 40GB GPUs&quot;)
+) 
+)</errorConditionFormula>
+    <errorMessage>Currently DGX-2 registrations are unavailable. Please contact your PBM for more information on DGX-2 registration.</errorMessage>
+</ValidationRule>

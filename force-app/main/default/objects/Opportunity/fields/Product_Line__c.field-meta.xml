@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product_Line__c</fullName>
+    <description>4/25/2018 - @Manideep: This field is all set to delete. Look at this JIRA ticket for the details about deleting this field: https://jirasw.nvidia.com/browse/SDS-361</description>
+    <externalId>false</externalId>
+    <label>Product Line (Legacy)</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Tesla</fullName>
+                <default>false</default>
+                <label>Tesla</label>
+            </value>
+            <value>
+                <fullName>QUADRO</fullName>
+                <default>false</default>
+                <label>QUADRO</label>
+            </value>
+            <value>
+                <fullName>GRID</fullName>
+                <default>false</default>
+                <label>GRID</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- GPU Genius --></label>
+    <name>GPU_Genius__c</name>
+    <picklistValues>
+        <masterLabel>Close</masterLabel>
+        <translation><!-- Close --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ELITE_CZ:5118534</masterLabel>
+        <translation><!-- ELITE_CZ:5118534 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ELITE_DE:4565552</masterLabel>
+        <translation><!-- ELITE_DE:4565552 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ELITE_ES:4565563</masterLabel>
+        <translation><!-- ELITE_ES:4565563 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ELITE_FR:4565545</masterLabel>
+        <translation><!-- ELITE_FR:4565545 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ELITE_IT:4565568</masterLabel>
+        <translation><!-- ELITE_IT:4565568 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ELITE_PL:4565571</masterLabel>
+        <translation><!-- ELITE_PL:4565571 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ELITE_TR:5118539</masterLabel>
+        <translation><!-- ELITE_TR:5118539 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ELITE_UK:4565542</masterLabel>
+        <translation><!-- ELITE_UK:4565542 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HP:105395</masterLabel>
+        <translation><!-- HP:105395 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IBM:105791</masterLabel>
+        <translation><!-- IBM:105791 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Learning Dell:4657800</masterLabel>
+        <translation><!-- Learning Dell:4657800 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Learning EMEAI NVEP:4995860</masterLabel>
+        <translation><!-- Learning EMEAI NVEP:4995860 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Learning GRID Restricted:4980382</masterLabel>
+        <translation><!-- Learning GRID Restricted:4980382 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Learning GRID VCA:2970917</masterLabel>
+        <translation><!-- Learning GRID VCA:2970917 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Learning GRID:2965513</masterLabel>
+        <translation><!-- Learning GRID:2965513 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Learning NPN Community:4997879</masterLabel>
+        <translation><!-- Learning NPN Community:4997879 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Learning Quadro:4320588</masterLabel>
+        <translation><!-- Learning Quadro:4320588 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Learning TPP:3200491</masterLabel>
+        <translation><!-- Learning TPP:3200491 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lenovo:520995</masterLabel>
+        <translation><!-- Lenovo:520995 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN DGX Sales:5642759</masterLabel>
+        <translation><!-- NPN DGX Sales:5642759 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN DGX Technical:5642760</masterLabel>
+        <translation><!-- NPN DGX Technical:5642760 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN Quadro Sales:5642757</masterLabel>
+        <translation><!-- NPN Quadro Sales:5642757 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN Quadro Technical:5642758</masterLabel>
+        <translation><!-- NPN Quadro Technical:5642758 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN Tesla Sales:5642753</masterLabel>
+        <translation><!-- NPN Tesla Sales:5642753 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN Tesla Technical:5642754</masterLabel>
+        <translation><!-- NPN Tesla Technical:5642754 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN vGPU Sales:5642755</masterLabel>
+        <translation><!-- NPN vGPU Sales:5642755 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN vGPU Technical:5642756</masterLabel>
+        <translation><!-- NPN vGPU Technical:5642756 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NSC:234133</masterLabel>
+        <translation><!-- NSC:234133 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PNY:2531912</masterLabel>
+        <translation><!-- PNY:2531912 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Public Users:809653</masterLabel>
+        <translation><!-- Public Users:809653 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rapid Learning Testing:3098611</masterLabel>
+        <translation><!-- Rapid Learning Testing:3098611 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TPP Technical:105792</masterLabel>
+        <translation><!-- TPP Technical:105792 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Test Group RL:3423723</masterLabel>
+        <translation><!-- Test Group RL:3423723 --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

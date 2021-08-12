@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reason_For_Revision__c</fullName>
+    <externalId>false</externalId>
+    <label>Reason For Revision</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>File Rejected</fullName>
+                <default>false</default>
+                <label>File Rejected</label>
+            </value>
+            <value>
+                <fullName>Additional POS Data</fullName>
+                <default>false</default>
+                <label>Additional POS Data</label>
+            </value>
+            <value>
+                <fullName>Revising previously submitted POS Data</fullName>
+                <default>false</default>
+                <label>Revising previously submitted POS Data</label>
+            </value>
+            <value>
+                <fullName>Other (Enter details in the Notes field)</fullName>
+                <default>false</default>
+                <label>Other (Enter details in the Notes field)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Automotive AM PIC --></label>
+    <name>Automotive_AM_PIC__c</name>
+    <relationshipLabel><!-- Account Initiatives (Automotive AM PIC) --></relationshipLabel>
+</CustomFieldTranslation>

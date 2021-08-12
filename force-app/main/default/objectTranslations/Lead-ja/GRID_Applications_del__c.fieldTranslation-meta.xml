@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- GRID Applications --></label>
+    <name>GRID_Applications_del__c</name>
+    <picklistValues>
+        <masterLabel>Adobe Creative Suite</masterLabel>
+        <translation><!-- Adobe Creative Suite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Autodesk Design Suite</masterLabel>
+        <translation><!-- Autodesk Design Suite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Autodesk Entertainment Creation Suite</masterLabel>
+        <translation><!-- Autodesk Entertainment Creation Suite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dassault SolidWorks</masterLabel>
+        <translation><!-- Dassault SolidWorks --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

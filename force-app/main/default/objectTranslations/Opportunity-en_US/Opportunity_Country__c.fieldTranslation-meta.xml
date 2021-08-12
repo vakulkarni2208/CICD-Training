@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- This is an optional field to be used if the Opportunity Country is different than the Account Billing Country. Begin typing a country name and click the search icon to invoke the lookup window. --></help>
+    <label><!-- Opportunity Country --></label>
+    <name>Opportunity_Country__c</name>
+    <relationshipLabel><!-- Opportunities --></relationshipLabel>
+</CustomFieldTranslation>

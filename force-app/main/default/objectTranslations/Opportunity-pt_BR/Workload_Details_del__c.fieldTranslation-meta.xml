@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Workload Details --></label>
+    <name>Workload_Details_del__c</name>
+    <picklistValues>
+        <masterLabel>Autonomous vehicle</masterLabel>
+        <translation><!-- Autonomous vehicle --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Broadcast</masterLabel>
+        <translation><!-- Broadcast --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CAE</masterLabel>
+        <translation><!-- CAE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CAE,CFD</masterLabel>
+        <translation><!-- CAE,CFD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Conversational AI</masterLabel>
+        <translation><!-- Conversational AI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cyber Security</masterLabel>
+        <translation><!-- Cyber Security --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Design and Content Creation</masterLabel>
+        <translation><!-- Design and Content Creation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Digital Twin/Factory</masterLabel>
+        <translation><!-- Digital Twin/Factory --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Energy</masterLabel>
+        <translation><!-- Energy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Graphics Virtualization (vGPU)</masterLabel>
+        <translation><!-- Graphics Virtualization (vGPU) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HPC+AI/Machine Learning</masterLabel>
+        <translation><!-- HPC+AI/Machine Learning --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Industrial Inspection</masterLabel>
+        <translation><!-- Industrial Inspection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Intelligent Video Analytics (IVA)</masterLabel>
+        <translation><!-- Intelligent Video Analytics (IVA) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Medical Imaging</masterLabel>
+        <translation><!-- Medical Imaging --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Modeling and Simulation</masterLabel>
+        <translation><!-- Modeling and Simulation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Predictive Maintenance</masterLabel>
+        <translation><!-- Predictive Maintenance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Recommender Systems</masterLabel>
+        <translation><!-- Recommender Systems --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rendering</masterLabel>
+        <translation><!-- Rendering --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Scalable Visualization Solutions (SVS)</masterLabel>
+        <translation><!-- Scalable Visualization Solutions (SVS) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Simulation and Training</masterLabel>
+        <translation><!-- Simulation and Training --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VR/AR/CloudXR</masterLabel>
+        <translation><!-- VR/AR/CloudXR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Video Collaboration/Streaming</masterLabel>
+        <translation><!-- Video Collaboration/Streaming --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Weather and Climate</masterLabel>
+        <translation><!-- Weather and Climate --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

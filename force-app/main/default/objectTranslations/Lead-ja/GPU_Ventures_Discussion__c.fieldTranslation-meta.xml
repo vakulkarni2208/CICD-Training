@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- GPU Ventures Decision --></label>
+    <name>GPU_Ventures_Discussion__c</name>
+    <picklistValues>
+        <masterLabel>Not interested</masterLabel>
+        <translation><!-- Not interested --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not yet contacted</masterLabel>
+        <translation><!-- Not yet contacted --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tracking</masterLabel>
+        <translation><!-- Tracking --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Very interested</masterLabel>
+        <translation><!-- Very interested --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,675 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lead_Orgin__c</fullName>
+    <externalId>false</externalId>
+    <label>Lead Origin</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Auto_Contact Us Form_Web Form_NALA_2016_June</fullName>
+                <default>false</default>
+                <label>Auto_Contact Us Form_Web Form_NALA_2016_June</label>
+            </value>
+            <value>
+                <fullName>Autodesk_Forum_ES_June_2014</fullName>
+                <default>false</default>
+                <label>Autodesk_Forum_ES_June_2014</label>
+            </value>
+            <value>
+                <fullName>Auto Desk Leads - Dec 2013</fullName>
+                <default>false</default>
+                <label>Auto Desk Leads - Dec 2013</label>
+            </value>
+            <value>
+                <fullName>Bear Data Golf and Solution Showcase_10.31.2014</fullName>
+                <default>false</default>
+                <label>Bear Data Golf and Solution Showcase_10.31.2014</label>
+            </value>
+            <value>
+                <fullName>BriForum_Denver_Event/Show_NALA_2015_July</fullName>
+                <default>false</default>
+                <label>BriForum_Denver_Event/Show_NALA_2015_July</label>
+            </value>
+            <value>
+                <fullName>BriForum_London_Event/Show_EMEA_2015_May</fullName>
+                <default>false</default>
+                <label>BriForum_London_Event/Show_EMEA_2015_May</label>
+            </value>
+            <value>
+                <fullName>BriForum NALA 2014</fullName>
+                <default>false</default>
+                <label>BriForum NALA 2014</label>
+            </value>
+            <value>
+                <fullName>BriForum UK Leads</fullName>
+                <default>false</default>
+                <label>BriForum UK Leads</label>
+            </value>
+            <value>
+                <fullName>BVE Event UK 2015</fullName>
+                <default>false</default>
+                <label>BVE Event UK 2015</label>
+            </value>
+            <value>
+                <fullName>CADD Edge Survey Leads - Nov 2013</fullName>
+                <default>false</default>
+                <label>CADD Edge Survey Leads - Nov 2013</label>
+            </value>
+            <value>
+                <fullName>Citrix Mobility Germany 2013</fullName>
+                <default>false</default>
+                <label>Citrix Mobility Germany 2013</label>
+            </value>
+            <value>
+                <fullName>Citrix Mobility UK 2013</fullName>
+                <default>false</default>
+                <label>Citrix Mobility UK 2013</label>
+            </value>
+            <value>
+                <fullName>Citrix Servtech</fullName>
+                <default>false</default>
+                <label>Citrix Servtech</label>
+            </value>
+            <value>
+                <fullName>Citrix Synergy Orlando NALA 2015-05-12</fullName>
+                <default>false</default>
+                <label>Citrix Synergy Orlando NALA 2015-05-12</label>
+            </value>
+            <value>
+                <fullName>Citrix Synergy Survey Leads - May 2014</fullName>
+                <default>false</default>
+                <label>Citrix Synergy Survey Leads - May 2014</label>
+            </value>
+            <value>
+                <fullName>Citrix User Group Leads</fullName>
+                <default>false</default>
+                <label>Citrix User Group Leads</label>
+            </value>
+            <value>
+                <fullName>Citrix Webinar EMEA 2014-9-18</fullName>
+                <default>false</default>
+                <label>Citrix Webinar EMEA 2014-9-18</label>
+            </value>
+            <value>
+                <fullName>Cornerstone/Dell Gaming &amp; Storage Lunch_8.20.2014</fullName>
+                <default>false</default>
+                <label>Cornerstone/Dell Gaming &amp; Storage Lunch_8.20.2014</label>
+            </value>
+            <value>
+                <fullName>Customer Online Web Configured Solution</fullName>
+                <default>false</default>
+                <label>Customer Online Web Configured Solution</label>
+            </value>
+            <value>
+                <fullName>EMEA Dell TechFit - Grid Partner Conference</fullName>
+                <default>false</default>
+                <label>EMEA Dell TechFit - Grid Partner Conference</label>
+            </value>
+            <value>
+                <fullName>EMEAI Training Web Form</fullName>
+                <default>false</default>
+                <label>EMEAI Training Web Form</label>
+            </value>
+            <value>
+                <fullName>EMEA Supermicro Seeding Program - 2013</fullName>
+                <default>false</default>
+                <label>EMEA Supermicro Seeding Program - 2013</label>
+            </value>
+            <value>
+                <fullName>Focus Technologies_Casino event_8.7.2014</fullName>
+                <default>false</default>
+                <label>Focus Technologies_Casino event_8.7.2014</label>
+            </value>
+            <value>
+                <fullName>Focus Technologies_Golf event_9.18.2014</fullName>
+                <default>false</default>
+                <label>Focus Technologies_Golf event_9.18.2014</label>
+            </value>
+            <value>
+                <fullName>Gotham Winter Technology Exchange</fullName>
+                <default>false</default>
+                <label>Gotham Winter Technology Exchange</label>
+            </value>
+            <value>
+                <fullName>GPU Test Drive.K80 Accelerator</fullName>
+                <default>false</default>
+                <label>GPU Test Drive.K80 Accelerator</label>
+            </value>
+            <value>
+                <fullName>GRID_ASEAN Callout Campaign_Campaign_Program_APAC_2016_July</fullName>
+                <default>false</default>
+                <label>GRID_ASEAN Callout Campaign_Campaign_Program_APAC_2016_July</label>
+            </value>
+            <value>
+                <fullName>GRID_Deliver Brilliance_Campaign/Program_EMEA_2015_July</fullName>
+                <default>false</default>
+                <label>GRID_Deliver Brilliance_Campaign/Program_EMEA_2015_July</label>
+            </value>
+            <value>
+                <fullName>GRID_Deliver Brilliance_India_Campaign/Program_APAC_2015_Sept</fullName>
+                <default>false</default>
+                <label>GRID_Deliver Brilliance_India_Campaign/Program_APAC_2015_Sept</label>
+            </value>
+            <value>
+                <fullName>GRID_Deliver Brilliance_Penton_Campaign/Program_NALA_2015_July</fullName>
+                <default>false</default>
+                <label>GRID_Deliver Brilliance_Penton_Campaign/Program_NALA_2015_July</label>
+            </value>
+            <value>
+                <fullName>GRID_Deliver Brilliance_Spiceworks_Campaign/Program_EMEA_2015_July</fullName>
+                <default>false</default>
+                <label>GRID_Deliver Brilliance_Spiceworks_Campaign/Program_EMEA_2015_July</label>
+            </value>
+            <value>
+                <fullName>GRID_Deployment Guide_Japan_Campaign/Program_APAC_2015_Sept</fullName>
+                <default>false</default>
+                <label>GRID_Deployment Guide_Japan_Campaign/Program_APAC_2015_Sept</label>
+            </value>
+            <value>
+                <fullName>GRID_Deployment Guide_Web Form_EMEA_2015_July</fullName>
+                <default>false</default>
+                <label>GRID_Deployment Guide_Web Form_EMEA_2015_July</label>
+            </value>
+            <value>
+                <fullName>GRID_Forrester Analyst Report_Campaign/Program_NALA_2015_Sept</fullName>
+                <default>false</default>
+                <label>GRID_Forrester Analyst Report_Campaign/Program_NALA_2015_Sept</label>
+            </value>
+            <value>
+                <fullName>GRID_Forrester Analyst Report_Japan_Campaign/Program_APAC_2015_Sept</fullName>
+                <default>false</default>
+                <label>GRID_Forrester Analyst Report_Japan_Campaign/Program_APAC_2015_Sept</label>
+            </value>
+            <value>
+                <fullName>GRID_Huawei Cloud Congress _Event/Show_APAC_2015_Sept</fullName>
+                <default>false</default>
+                <label>GRID_Huawei Cloud Congress _Event/Show_APAC_2015_Sept</label>
+            </value>
+            <value>
+                <fullName>GRID_IDG Campaign_Dell_VMware_Campaign/Program_NALA_2015_Aug</fullName>
+                <default>false</default>
+                <label>GRID_IDG Campaign_Dell_VMware_Campaign/Program_NALA_2015_Aug</label>
+            </value>
+            <value>
+                <fullName>GRID_IGEL Roadshow_Germany_Event/Show_EMEA_2015_May</fullName>
+                <default>false</default>
+                <label>GRID_IGEL Roadshow_Germany_Event/Show_EMEA_2015_May</label>
+            </value>
+            <value>
+                <fullName>GRID_Shanghai EDU Event_Event/Show_APAC_2015_July</fullName>
+                <default>false</default>
+                <label>GRID_Shanghai EDU Event_Event/Show_APAC_2015_July</label>
+            </value>
+            <value>
+                <fullName>GRID_Software Evaluation_Web Form_NALA_2015_Oct</fullName>
+                <default>false</default>
+                <label>GRID_Software Evaluation_Web Form_NALA_2015_Oct</label>
+            </value>
+            <value>
+                <fullName>GRID_Unidesk VDI &amp; Pizza Webinar_Partner Generated_Webinar_NALA_2015_July</fullName>
+                <default>false</default>
+                <label>GRID_Unidesk VDI &amp; Pizza Webinar_Partner Generated_Webinar_NALA_2015_July</label>
+            </value>
+            <value>
+                <fullName>GRID_VDI Unleashed_AH Whitepaper_Campaign/Program_NALA_2015_Sept</fullName>
+                <default>false</default>
+                <label>GRID_VDI Unleashed_AH Whitepaper_Campaign/Program_NALA_2015_Sept</label>
+            </value>
+            <value>
+                <fullName>GRID_VDI Unleashed_AH Whitepaper_Japan_Campaign/Program_APAC_2015_Sept</fullName>
+                <default>false</default>
+                <label>GRID_VDI Unleashed_AH Whitepaper_Japan_Campaign/Program_APAC_2015_Sept</label>
+            </value>
+            <value>
+                <fullName>GRID_VMware MFG Event_Event/Show_APAC_2015_July</fullName>
+                <default>false</default>
+                <label>GRID_VMware MFG Event_Event/Show_APAC_2015_July</label>
+            </value>
+            <value>
+                <fullName>GRID Citrix QBR sponsorship</fullName>
+                <default>false</default>
+                <label>GRID Citrix QBR sponsorship</label>
+            </value>
+            <value>
+                <fullName>GRID – Citrix Ready – Webinar - NALA – 2015 – June</fullName>
+                <default>false</default>
+                <label>GRID – Citrix Ready – Webinar - NALA – 2015 – June</label>
+            </value>
+            <value>
+                <fullName>GRID – Deliver Brilliance – Campaign/Program - NALA – 2015 – May</fullName>
+                <default>false</default>
+                <label>GRID – Deliver Brilliance – Campaign/Program - NALA – 2015 – May</label>
+            </value>
+            <value>
+                <fullName>GRID – Deployment Guide – Campaign/Program - NALA – 2015 – March</fullName>
+                <default>false</default>
+                <label>GRID – Deployment Guide – Campaign/Program - NALA – 2015 – March</label>
+            </value>
+            <value>
+                <fullName>GRID Gaming Form - 2013</fullName>
+                <default>false</default>
+                <label>GRID Gaming Form - 2013</label>
+            </value>
+            <value>
+                <fullName>GRID - Nurture Journey - Internal List - NALA - 2015 - June</fullName>
+                <default>false</default>
+                <label>GRID - Nurture Journey - Internal List - NALA - 2015 - June</label>
+            </value>
+            <value>
+                <fullName>GRID - Nurture Journey - VMware Purchased List - NALA - 2015 - June</fullName>
+                <default>false</default>
+                <label>GRID - Nurture Journey - VMware Purchased List - NALA - 2015 - June</label>
+            </value>
+            <value>
+                <fullName>GRID -  NV VM Community – Web Form - NALA – 2015 - July</fullName>
+                <default>false</default>
+                <label>GRID -  NV VM Community – Web Form - NALA – 2015 - July</label>
+            </value>
+            <value>
+                <fullName>GRID VCA Solidworks Dec 2013 Webinar</fullName>
+                <default>false</default>
+                <label>GRID VCA Solidworks Dec 2013 Webinar</label>
+            </value>
+            <value>
+                <fullName>GRID VCA Webinar - July 2013</fullName>
+                <default>false</default>
+                <label>GRID VCA Webinar - July 2013</label>
+            </value>
+            <value>
+                <fullName>GRID – VDI Unleashed - Advertising – NALA – 2015 – May</fullName>
+                <default>false</default>
+                <label>GRID – VDI Unleashed - Advertising – NALA – 2015 – May</label>
+            </value>
+            <value>
+                <fullName>GRID VGX Test Drive</fullName>
+                <default>false</default>
+                <label>GRID VGX Test Drive</label>
+            </value>
+            <value>
+                <fullName>GTC_Japan_Event/Show_APAC_2015_Sept</fullName>
+                <default>false</default>
+                <label>GTC_Japan_Event/Show_APAC_2015_Sept</label>
+            </value>
+            <value>
+                <fullName>IBC EMEA Amsterdam Leads. 16.9.2014</fullName>
+                <default>false</default>
+                <label>IBC EMEA Amsterdam Leads. 16.9.2014</label>
+            </value>
+            <value>
+                <fullName>IBC GRID Leads - Oct 2013</fullName>
+                <default>false</default>
+                <label>IBC GRID Leads - Oct 2013</label>
+            </value>
+            <value>
+                <fullName>India Quadro QPP Program</fullName>
+                <default>false</default>
+                <label>India Quadro QPP Program</label>
+            </value>
+            <value>
+                <fullName>Leadspace</fullName>
+                <default>false</default>
+                <label>Leadspace</label>
+            </value>
+            <value>
+                <fullName>LinkedIn Sales Navigator</fullName>
+                <default>false</default>
+                <label>LinkedIn Sales Navigator</label>
+            </value>
+            <value>
+                <fullName>Logical Front AASB event.9.12.2014</fullName>
+                <default>false</default>
+                <label>Logical Front AASB event.9.12.2014</label>
+            </value>
+            <value>
+                <fullName>Multiple_Contact Us_Web Form_EMEA_2015_July</fullName>
+                <default>false</default>
+                <label>Multiple_Contact Us_Web Form_EMEA_2015_July</label>
+            </value>
+            <value>
+                <fullName>NALA Dell GRID Seeding Program</fullName>
+                <default>false</default>
+                <label>NALA Dell GRID Seeding Program</label>
+            </value>
+            <value>
+                <fullName>NALA HP Seeding Program – 2014</fullName>
+                <default>false</default>
+                <label>NALA HP Seeding Program – 2014</label>
+            </value>
+            <value>
+                <fullName>NALA Supermicro Seeding Program - 2013</fullName>
+                <default>false</default>
+                <label>NALA Supermicro Seeding Program - 2013</label>
+            </value>
+            <value>
+                <fullName>NA NPN Recruitment - SEWP</fullName>
+                <default>false</default>
+                <label>NA NPN Recruitment - SEWP</label>
+            </value>
+            <value>
+                <fullName>North America GRID VAR Events</fullName>
+                <default>false</default>
+                <label>North America GRID VAR Events</label>
+            </value>
+            <value>
+                <fullName>NPN Application</fullName>
+                <default>false</default>
+                <label>NPN Application</label>
+            </value>
+            <value>
+                <fullName>NPN Community Web Form</fullName>
+                <default>false</default>
+                <label>NPN Community Web Form</label>
+            </value>
+            <value>
+                <fullName>NPN Inception Start-Up Program</fullName>
+                <default>false</default>
+                <label>NPN Inception Start-Up Program</label>
+            </value>
+            <value>
+                <fullName>NPN SOEM Web Form</fullName>
+                <default>false</default>
+                <label>NPN SOEM Web Form</label>
+            </value>
+            <value>
+                <fullName>NV.com Website GRID page</fullName>
+                <default>false</default>
+                <label>NV.com Website GRID page</label>
+            </value>
+            <value>
+                <fullName>NVIDIA generated program lead</fullName>
+                <default>false</default>
+                <label>NVIDIA generated program lead</label>
+            </value>
+            <value>
+                <fullName>Partner (NALA)</fullName>
+                <default>false</default>
+                <label>Partner (NALA)</label>
+            </value>
+            <value>
+                <fullName>Quadro_Allplan_123 BIM_Campaign_Program_EMEA_2016_April</fullName>
+                <default>false</default>
+                <label>Quadro_Allplan_123 BIM_Campaign_Program_EMEA_2016_April</label>
+            </value>
+            <value>
+                <fullName>Quadro_Allplan_BIM World_Tradeshow_EMEA_2016_Mar</fullName>
+                <default>false</default>
+                <label>Quadro_Allplan_BIM World_Tradeshow_EMEA_2016_Mar</label>
+            </value>
+            <value>
+                <fullName>Quadro_Quadro VCA _Contact Us_Web Form_NALA_2015_Sept</fullName>
+                <default>false</default>
+                <label>Quadro_Quadro VCA _Contact Us_Web Form_NALA_2015_Sept</label>
+            </value>
+            <value>
+                <fullName>Quadro_Uncompromise_India_Campaign_Program_EMEAI_2016_June</fullName>
+                <default>false</default>
+                <label>Quadro_Uncompromise_India_Campaign_Program_EMEAI_2016_June</label>
+            </value>
+            <value>
+                <fullName>SIGGRAPH_Los Angeles_Event/Show_NALA_2015_Aug</fullName>
+                <default>false</default>
+                <label>SIGGRAPH_Los Angeles_Event/Show_NALA_2015_Aug</label>
+            </value>
+            <value>
+                <fullName>Siggraph NALA 2014</fullName>
+                <default>false</default>
+                <label>Siggraph NALA 2014</label>
+            </value>
+            <value>
+                <fullName>Siggraph NALA Limelight 2014</fullName>
+                <default>false</default>
+                <label>Siggraph NALA Limelight 2014</label>
+            </value>
+            <value>
+                <fullName>Solidworks World Leads - January 2014</fullName>
+                <default>false</default>
+                <label>Solidworks World Leads - January 2014</label>
+            </value>
+            <value>
+                <fullName>Synergy Leads - May 2013</fullName>
+                <default>false</default>
+                <label>Synergy Leads - May 2013</label>
+            </value>
+            <value>
+                <fullName>Tesla_Beijing Deep Learning Roadshow_Event/Show_APAC_2015_July</fullName>
+                <default>false</default>
+                <label>Tesla_Beijing Deep Learning Roadshow_Event/Show_APAC_2015_July</label>
+            </value>
+            <value>
+                <fullName>Tesla_DGX-1 Outbound Campaign_Campaign_Program_EMEAI_2016_Aug</fullName>
+                <default>false</default>
+                <label>Tesla_DGX-1 Outbound Campaign_Campaign_Program_EMEAI_2016_Aug</label>
+            </value>
+            <value>
+                <fullName>Tesla_DGX-1 Pursuit List_M1_Campaign_Program_NALA_2016_Aug</fullName>
+                <default>false</default>
+                <label>Tesla_DGX-1 Pursuit List_M1_Campaign_Program_NALA_2016_Aug</label>
+            </value>
+            <value>
+                <fullName>Tesla_DGX-1 Pursuit List_M2_Campaign_Program_NALA_2016_Aug</fullName>
+                <default>false</default>
+                <label>Tesla_DGX-1 Pursuit List_M2_Campaign_Program_NALA_2016_Aug</label>
+            </value>
+            <value>
+                <fullName>Tesla_DGX-1 Pursuit List_M3_Campaign_Program_NALA_2016_Aug</fullName>
+                <default>false</default>
+                <label>Tesla_DGX-1 Pursuit List_M3_Campaign_Program_NALA_2016_Aug</label>
+            </value>
+            <value>
+                <fullName>Tesla_Guangzhou Deep Learning Roadshow_Event/Show_APAC_2015_July</fullName>
+                <default>false</default>
+                <label>Tesla_Guangzhou Deep Learning Roadshow_Event/Show_APAC_2015_July</label>
+            </value>
+            <value>
+                <fullName>Tesla_HER T3 Outbound Campaign_Call Campaign_EMEA_2016_Feb</fullName>
+                <default>false</default>
+                <label>Tesla_HER T3 Outbound Campaign_Call Campaign_EMEA_2016_Feb</label>
+            </value>
+            <value>
+                <fullName>Tesla_Higher Ed Campaign_APAC South_Campaign_Program_APAC_2016_April</fullName>
+                <default>false</default>
+                <label>Tesla_Higher Ed Campaign_APAC South_Campaign_Program_APAC_2016_April</label>
+            </value>
+            <value>
+                <fullName>Tesla_Higher Ed Outbound Campaign_Campaign_Program_EMEAI_2016_Nov</fullName>
+                <default>false</default>
+                <label>Tesla_Higher Ed Outbound Campaign_Campaign_Program_EMEAI_2016_Nov</label>
+            </value>
+            <value>
+                <fullName>Tesla_Intersect 360_Whitepaper_Web Form_EMEA_2016_April</fullName>
+                <default>false</default>
+                <label>Tesla_Intersect 360_Whitepaper_Web Form_EMEA_2016_April</label>
+            </value>
+            <value>
+                <fullName>Tesla_K80 Boost_Taiwan_Campaign/Program_APAC_2015_Sept</fullName>
+                <default>false</default>
+                <label>Tesla_K80 Boost_Taiwan_Campaign/Program_APAC_2015_Sept</label>
+            </value>
+            <value>
+                <fullName>Tesla_LS_Deep Learning Profile_Prospecting_NALA_2016_July</fullName>
+                <default>false</default>
+                <label>Tesla_LS_Deep Learning Profile_Prospecting_NALA_2016_July</label>
+            </value>
+            <value>
+                <fullName>Tesla_Shanghai Deep Learning Roadshow_Event/Show_APAC_2015_July</fullName>
+                <default>false</default>
+                <label>Tesla_Shanghai Deep Learning Roadshow_Event/Show_APAC_2015_July</label>
+            </value>
+            <value>
+                <fullName>Tesla_Virtualizing ArcGIS Pro Webinar_Webinar_NALA_2015_Aug</fullName>
+                <default>false</default>
+                <label>Tesla_Virtualizing ArcGIS Pro Webinar_Webinar_NALA_2015_Aug</label>
+            </value>
+            <value>
+                <fullName>TPP / System Integrator generated lead</fullName>
+                <default>false</default>
+                <label>TPP / System Integrator generated lead</label>
+            </value>
+            <value>
+                <fullName>UK IT Corporate - 2014</fullName>
+                <default>false</default>
+                <label>UK IT Corporate - 2014</label>
+            </value>
+            <value>
+                <fullName>UK Spiceworks - 2014</fullName>
+                <default>false</default>
+                <label>UK Spiceworks - 2014</label>
+            </value>
+            <value>
+                <fullName>UK Tech Target - 2014</fullName>
+                <default>false</default>
+                <label>UK Tech Target - 2014</label>
+            </value>
+            <value>
+                <fullName>VAR event (NALA)</fullName>
+                <default>false</default>
+                <label>VAR event (NALA)</label>
+            </value>
+            <value>
+                <fullName>vForum_Boston_Event/Show_NALA_2015_June</fullName>
+                <default>false</default>
+                <label>vForum_Boston_Event/Show_NALA_2015_June</label>
+            </value>
+            <value>
+                <fullName>vForum_Toronto_Event/Show_NALA_2015_June</fullName>
+                <default>false</default>
+                <label>vForum_Toronto_Event/Show_NALA_2015_June</label>
+            </value>
+            <value>
+                <fullName>vForum Beijing 29.10.2014</fullName>
+                <default>false</default>
+                <label>vForum Beijing 29.10.2014</label>
+            </value>
+            <value>
+                <fullName>VFORUM Denver NALA 2015</fullName>
+                <default>false</default>
+                <label>VFORUM Denver NALA 2015</label>
+            </value>
+            <value>
+                <fullName>vForum Melbourne 04.11.2014</fullName>
+                <default>false</default>
+                <label>vForum Melbourne 04.11.2014</label>
+            </value>
+            <value>
+                <fullName>vForum - Montreal – Event/Show - NALA – 2015 - May</fullName>
+                <default>false</default>
+                <label>vForum - Montreal – Event/Show - NALA – 2015 - May</label>
+            </value>
+            <value>
+                <fullName>VFORUM Montreal NALA 2015</fullName>
+                <default>false</default>
+                <label>VFORUM Montreal NALA 2015</label>
+            </value>
+            <value>
+                <fullName>vForum Mumbai 30.10.2014</fullName>
+                <default>false</default>
+                <label>vForum Mumbai 30.10.2014</label>
+            </value>
+            <value>
+                <fullName>vForum Seoul 04.11.2014</fullName>
+                <default>false</default>
+                <label>vForum Seoul 04.11.2014</label>
+            </value>
+            <value>
+                <fullName>vForum Singapore 04.11.2014</fullName>
+                <default>false</default>
+                <label>vForum Singapore 04.11.2014</label>
+            </value>
+            <value>
+                <fullName>vForum Sydney 05.11.2014</fullName>
+                <default>false</default>
+                <label>vForum Sydney 05.11.2014</label>
+            </value>
+            <value>
+                <fullName>vForum Tokyo 05.11.2014</fullName>
+                <default>false</default>
+                <label>vForum Tokyo 05.11.2014</label>
+            </value>
+            <value>
+                <fullName>Vmware User Group  (NALA)</fullName>
+                <default>false</default>
+                <label>Vmware User Group  (NALA)</label>
+            </value>
+            <value>
+                <fullName>VMworld_Barcelona_Booth_Event/Show_EMEA_2015_Oct</fullName>
+                <default>false</default>
+                <label>VMworld_Barcelona_Booth_Event/Show_EMEA_2015_Oct</label>
+            </value>
+            <value>
+                <fullName>VMworld_Barcelona_Roundtable_Event/Show_EMEA_2015_Oct</fullName>
+                <default>false</default>
+                <label>VMworld_Barcelona_Roundtable_Event/Show_EMEA_2015_Oct</label>
+            </value>
+            <value>
+                <fullName>VMworld_San Francisco_Event/Show_NALA_2015_Aug</fullName>
+                <default>false</default>
+                <label>VMworld_San Francisco_Event/Show_NALA_2015_Aug</label>
+            </value>
+            <value>
+                <fullName>VMworld - August 2013</fullName>
+                <default>false</default>
+                <label>VMworld - August 2013</label>
+            </value>
+            <value>
+                <fullName>VMworld Barcelona - Badge Scans Only - October 2013</fullName>
+                <default>false</default>
+                <label>VMworld Barcelona - Badge Scans Only - October 2013</label>
+            </value>
+            <value>
+                <fullName>VMWorld Barcelona EMEA 10.10.2014</fullName>
+                <default>false</default>
+                <label>VMWorld Barcelona EMEA 10.10.2014</label>
+            </value>
+            <value>
+                <fullName>VMworld Barcelona - October 2013</fullName>
+                <default>false</default>
+                <label>VMworld Barcelona - October 2013</label>
+            </value>
+            <value>
+                <fullName>VMWorld NALA 2014</fullName>
+                <default>false</default>
+                <label>VMWorld NALA 2014</label>
+            </value>
+            <value>
+                <fullName>VSS Bangalore 11.11.2014</fullName>
+                <default>false</default>
+                <label>VSS Bangalore 11.11.2014</label>
+            </value>
+            <value>
+                <fullName>VSS Chennai 19.11.2014</fullName>
+                <default>false</default>
+                <label>VSS Chennai 19.11.2014</label>
+            </value>
+            <value>
+                <fullName>VSS Delhi 25.11.2014</fullName>
+                <default>false</default>
+                <label>VSS Delhi 25.11.2014</label>
+            </value>
+            <value>
+                <fullName>VSS Hyderabad 27.11.2014</fullName>
+                <default>false</default>
+                <label>VSS Hyderabad 27.11.2014</label>
+            </value>
+            <value>
+                <fullName>VSS Malaysia 12.11.2014</fullName>
+                <default>false</default>
+                <label>VSS Malaysia 12.11.2014</label>
+            </value>
+            <value>
+                <fullName>VSS Taiwan 25.11.2014</fullName>
+                <default>false</default>
+                <label>VSS Taiwan 25.11.2014</label>
+            </value>
+            <value>
+                <fullName>Whitehat technologies VMXpo_10.7.2014</fullName>
+                <default>false</default>
+                <label>Whitehat technologies VMXpo_10.7.2014</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

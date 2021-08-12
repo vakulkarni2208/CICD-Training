@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Role --></label>
+    <name>lsgirikonIndia__Role__c</name>
+    <picklistValues>
+        <masterLabel>CRM Admin</masterLabel>
+        <translation><!-- CRM Admin --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Champion</masterLabel>
+        <translation><!-- Champion --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Consultant</masterLabel>
+        <translation><!-- Consultant --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Decision Maker</masterLabel>
+        <translation><!-- Decision Maker --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Demand Generation</masterLabel>
+        <translation><!-- Demand Generation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Executive</masterLabel>
+        <translation><!-- Executive --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Field Sales</masterLabel>
+        <translation><!-- Field Sales --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Industry Expert</masterLabel>
+        <translation><!-- Industry Expert --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Inside Sales</masterLabel>
+        <translation><!-- Inside Sales --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lead Generation</masterLabel>
+        <translation><!-- Lead Generation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Marketing</masterLabel>
+        <translation><!-- Marketing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Partnership Champion</masterLabel>
+        <translation><!-- Partnership Champion --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Partnership Contact</masterLabel>
+        <translation><!-- Partnership Contact --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Point of Contact</masterLabel>
+        <translation><!-- Point of Contact --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Power User</masterLabel>
+        <translation><!-- Power User --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sales</masterLabel>
+        <translation><!-- Sales --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sales Ops</masterLabel>
+        <translation><!-- Sales Ops --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>User</masterLabel>
+        <translation><!-- User --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

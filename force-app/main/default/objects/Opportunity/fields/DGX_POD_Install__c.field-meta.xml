@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DGX_POD_Install__c</fullName>
+    <description>Track who is providing the DGX POD or SuperPOD installation/implementation</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Partner PS preferred for 1-8 DGX Systems.  Nvidia PS is mandatory for a DGX SuperPOD; recommended for &gt; 8 DGX Systems</inlineHelpText>
+    <label>DGX POD Install</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>DGX_POD_Design__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Partner PS - Project Owner</fullName>
+                <default>true</default>
+                <label>Partner PS - Project Owner</label>
+            </value>
+            <value>
+                <fullName>Nvidia PS - Project Owner</fullName>
+                <default>false</default>
+                <label>Nvidia PS - Project Owner</label>
+            </value>
+            <value>
+                <fullName>NVIDIA PS Led</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>NVIDIA PS Led</label>
+            </value>
+            <value>
+                <fullName>Partner Led</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Partner Led</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>NVIDIA DGX SuperPOD</controllingFieldValue>
+            <controllingFieldValue>Custom_DGX_POD_Design</controllingFieldValue>
+            <valueName>Nvidia PS - Project Owner</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Custom_DGX_POD_Design</controllingFieldValue>
+            <valueName>Partner PS - Project Owner</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

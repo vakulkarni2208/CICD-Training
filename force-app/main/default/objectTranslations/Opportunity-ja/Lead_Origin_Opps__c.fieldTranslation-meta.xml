@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Select the Lead Origin for this Opportunity.Select a Lead Origin if this opportunity was generated from a Lead.  If this opportunity did not originate from a Lead, then leave this field blank. --></help>
+    <label><!-- Lead Origin --></label>
+    <name>Lead_Origin_Opps__c</name>
+    <picklistValues>
+        <masterLabel>BriForum UK Leads</masterLabel>
+        <translation><!-- BriForum UK Leads --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Citrix Servtech</masterLabel>
+        <translation><!-- Citrix Servtech --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Citrix User Group Leads</masterLabel>
+        <translation><!-- Citrix User Group Leads --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer Online Web Configured Solution</masterLabel>
+        <translation><!-- Customer Online Web Configured Solution --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DGX-1 Program Allocation</masterLabel>
+        <translation><!-- DGX-1 Program Allocation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GRID Citrix QBR sponsorship</masterLabel>
+        <translation><!-- GRID Citrix QBR sponsorship --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GRID Gaming Form - 2013</masterLabel>
+        <translation><!-- GRID Gaming Form - 2013 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GRID VCA Webinar - July 2013</masterLabel>
+        <translation><!-- GRID VCA Webinar - July 2013 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GRID Web-To-Lead Form</masterLabel>
+        <translation><!-- GRID Web-To-Lead Form --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>India Quadro QPP Program</masterLabel>
+        <translation><!-- India Quadro QPP Program --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LinkedIN Sales Navigator</masterLabel>
+        <translation><!-- LinkedIN Sales Navigator --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Logical Front AASB event.9.12.2014</masterLabel>
+        <translation><!-- Logical Front AASB event.9.12.2014 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NVIDIA generated program lead</masterLabel>
+        <translation><!-- NVIDIA generated program lead --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>North America GRID VAR Events</masterLabel>
+        <translation><!-- North America GRID VAR Events --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Partner generated lead</masterLabel>
+        <translation><!-- Partner generated lead --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Synergy Leads - May 2013</masterLabel>
+        <translation><!-- Synergy Leads - May 2013 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TPP / System Integrator generated lead</masterLabel>
+        <translation><!-- TPP / System Integrator generated lead --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VMworld - August 2013</masterLabel>
+        <translation><!-- VMworld - August 2013 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VSS Bangalore 11.11.14</masterLabel>
+        <translation><!-- VSS Bangalore 11.11.14 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VSS Chennai 19.11.14</masterLabel>
+        <translation><!-- VSS Chennai 19.11.14 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VSS Delhi 25.11.14</masterLabel>
+        <translation><!-- VSS Delhi 25.11.14 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VSS Hyderabad 27.11.14</masterLabel>
+        <translation><!-- VSS Hyderabad 27.11.14 --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

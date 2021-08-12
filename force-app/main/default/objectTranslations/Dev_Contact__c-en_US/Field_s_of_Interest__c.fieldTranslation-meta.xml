@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Field(s) of Interest --></label>
+    <name>Field_s_of_Interest__c</name>
+    <picklistValues>
+        <masterLabel>Engr: Computational Fluid Dynamics (CFD)</masterLabel>
+        <translation><!-- Engr: Computational Fluid Dynamics (CFD) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Engr: Computational Structural Mechanics</masterLabel>
+        <translation><!-- Engr: Computational Structural Mechanics --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Engr: Computer Aided Design (CAD)</masterLabel>
+        <translation><!-- Engr: Computer Aided Design (CAD) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Engr: Electronic Design Automation (EDA)</masterLabel>
+        <translation><!-- Engr: Electronic Design Automation (EDA) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Engr: Energy Exploration &amp; Generation</masterLabel>
+        <translation><!-- Engr: Energy Exploration &amp; Generation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Math: Algorithms &amp; Numerical Techniques</masterLabel>
+        <translation><!-- Math: Algorithms &amp; Numerical Techniques --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Math: Computational Photography</masterLabel>
+        <translation><!-- Math: Computational Photography --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Math: Economics</masterLabel>
+        <translation><!-- Math: Economics --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Math: Image Processing</masterLabel>
+        <translation><!-- Math: Image Processing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Math: Ray Tracing</masterLabel>
+        <translation><!-- Math: Ray Tracing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Math: Signal/Audio Processing</masterLabel>
+        <translation><!-- Math: Signal/Audio Processing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Math: Video Processing</masterLabel>
+        <translation><!-- Math: Video Processing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>More: Education &amp; Training</masterLabel>
+        <translation><!-- More: Education &amp; Training --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>More: Other (please specify)</masterLabel>
+        <translation><!-- More: Other (please specify) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Platform: Cloud Computing</masterLabel>
+        <translation><!-- Platform: Cloud Computing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Platform: Embedded</masterLabel>
+        <translation><!-- Platform: Embedded --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Platform: Mobile</masterLabel>
+        <translation><!-- Platform: Mobile --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Platform: Supercomputing</masterLabel>
+        <translation><!-- Platform: Supercomputing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Platform: Workstations</masterLabel>
+        <translation><!-- Platform: Workstations --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Science: Astronomy &amp; Astrophysics</masterLabel>
+        <translation><!-- Science: Astronomy &amp; Astrophysics --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Science: Bioinformatics &amp; Genomics</masterLabel>
+        <translation><!-- Science: Bioinformatics &amp; Genomics --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Science: Climate/Weather/Ocean Modeling</masterLabel>
+        <translation><!-- Science: Climate/Weather/Ocean Modeling --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Science: Computational Chemistry</masterLabel>
+        <translation><!-- Science: Computational Chemistry --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Science: Geoscience</masterLabel>
+        <translation><!-- Science: Geoscience --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Science: Material Science</masterLabel>
+        <translation><!-- Science: Material Science --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Science: Molecular Dynamics</masterLabel>
+        <translation><!-- Science: Molecular Dynamics --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Science: Neuroscience</masterLabel>
+        <translation><!-- Science: Neuroscience --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Science: Physics</masterLabel>
+        <translation><!-- Science: Physics --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Science: Quantum Chemistry</masterLabel>
+        <translation><!-- Science: Quantum Chemistry --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tech: Augmented Reality</masterLabel>
+        <translation><!-- Tech: Augmented Reality --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tech: Big Data &amp; Data Mining</masterLabel>
+        <translation><!-- Tech: Big Data &amp; Data Mining --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tech: Business Intelligence &amp; Analytics</masterLabel>
+        <translation><!-- Tech: Business Intelligence &amp; Analytics --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tech: Computer Graphics &amp; Vizualization</masterLabel>
+        <translation><!-- Tech: Computer Graphics &amp; Vizualization --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tech: Computer Vision &amp; Machine Vision</masterLabel>
+        <translation><!-- Tech: Computer Vision &amp; Machine Vision --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tech: DCC &amp; Special Effects</masterLabel>
+        <translation><!-- Tech: DCC &amp; Special Effects --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tech: Databases</masterLabel>
+        <translation><!-- Tech: Databases --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tech: Development Tools &amp; Libraries</masterLabel>
+        <translation><!-- Tech: Development Tools &amp; Libraries --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tech: Machine Learning &amp; AI</masterLabel>
+        <translation><!-- Tech: Machine Learning &amp; AI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tech: Medical Imaging</masterLabel>
+        <translation><!-- Tech: Medical Imaging --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tech: Programming Languages &amp; Compilers</masterLabel>
+        <translation><!-- Tech: Programming Languages &amp; Compilers --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

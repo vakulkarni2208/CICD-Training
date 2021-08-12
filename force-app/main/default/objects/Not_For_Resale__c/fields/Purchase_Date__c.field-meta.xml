@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Purchase_Date__c</fullName>
+    <description>Date NFR Unit Purchased</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Per program requirements, ELITE Partners are required to purchase at least one (1) NFR unit within 90 days of signing the NPN agreement.</inlineHelpText>
+    <label>Purchase Date</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Primary Industry Application Area --></label>
+    <name>Primary_Industry_Application_Area__c</name>
+    <picklistValues>
+        <masterLabel>AI Train for AD - DNN Development</masterLabel>
+        <translation><!-- AI Train for AD - DNN Development --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AI/ML Other</masterLabel>
+        <translation><!-- AI/ML Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AI/Machine Learning/Deep Learning</masterLabel>
+        <translation><!-- AI/Machine Learning/Deep Learning --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AMP</masterLabel>
+        <translation><!-- AMP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CAD/CAM</masterLabel>
+        <translation><!-- CAD/CAM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Data Analytics &amp; Machine Learning</masterLabel>
+        <translation><!-- Data Analytics &amp; Machine Learning --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Data Factory - Ingestion, Inferencing</masterLabel>
+        <translation><!-- Data Factory - Ingestion, Inferencing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Data Science - Enterprise AI</masterLabel>
+        <translation><!-- Data Science - Enterprise AI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Deep Learning: Imaging</masterLabel>
+        <translation><!-- Deep Learning: Imaging --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Deep Learning: NLP, Speech, NLU</masterLabel>
+        <translation><!-- Deep Learning: NLP, Speech, NLU --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Demand Forecasting</masterLabel>
+        <translation><!-- Demand Forecasting --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fintech</masterLabel>
+        <translation><!-- Fintech --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Forecasting/Inventory Management</masterLabel>
+        <translation><!-- Forecasting/Inventory Management --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HPC/CAE</masterLabel>
+        <translation><!-- HPC/CAE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HPC: Computational Chemistry</masterLabel>
+        <translation><!-- HPC: Computational Chemistry --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HPC: Genomics</masterLabel>
+        <translation><!-- HPC: Genomics --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HPC: Microscopy</masterLabel>
+        <translation><!-- HPC: Microscopy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HPC: Other</masterLabel>
+        <translation><!-- HPC: Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HPC: Reservoir Simulation</masterLabel>
+        <translation><!-- HPC: Reservoir Simulation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HPC: Seismic Processing</masterLabel>
+        <translation><!-- HPC: Seismic Processing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Health, Safety, and Environmental</masterLabel>
+        <translation><!-- Health, Safety, and Environmental --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Image Segmentation Detection</masterLabel>
+        <translation><!-- Image Segmentation Detection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Inspection</masterLabel>
+        <translation><!-- Inspection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Instruments: Life Sciences</masterLabel>
+        <translation><!-- Instruments: Life Sciences --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Instruments: Medical Imaging</masterLabel>
+        <translation><!-- Instruments: Medical Imaging --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Intelligent Operations</masterLabel>
+        <translation><!-- Intelligent Operations --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Intelligent Video Analytics (IVA)</masterLabel>
+        <translation><!-- Intelligent Video Analytics (IVA) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Logistics/Supply Chain</masterLabel>
+        <translation><!-- Logistics/Supply Chain --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Modeling and Simulation - Climate/Weather</masterLabel>
+        <translation><!-- Modeling and Simulation - Climate/Weather --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Modeling and Simulation - Computation Fluid Dynamics (CFD)</masterLabel>
+        <translation><!-- Modeling and Simulation - Computation Fluid Dynamics (CFD) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Modeling and Simulation - Life Sciences</masterLabel>
+        <translation><!-- Modeling and Simulation - Life Sciences --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Modeling and Simulation - Physics</masterLabel>
+        <translation><!-- Modeling and Simulation - Physics --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Natural Language Processing (NLP)</masterLabel>
+        <translation><!-- Natural Language Processing (NLP) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pipeline Optimization</masterLabel>
+        <translation><!-- Pipeline Optimization --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Predictive Analytics</masterLabel>
+        <translation><!-- Predictive Analytics --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Predictive Maintenance</masterLabel>
+        <translation><!-- Predictive Maintenance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pro Viz: Visualization, Virtualization</masterLabel>
+        <translation><!-- Pro Viz: Visualization, Virtualization --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Production Optimization</masterLabel>
+        <translation><!-- Production Optimization --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Re-Simulation Software-in-the-Loop (SIL) - Regression Testing on GPUs</masterLabel>
+        <translation><!-- Re-Simulation Software-in-the-Loop (SIL) - Regression Testing on GPUs --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Shared Workload</masterLabel>
+        <translation><!-- Shared Workload --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Simulation Hardware-in-the-Loop (HIL) - Drive Constellation</masterLabel>
+        <translation><!-- Simulation Hardware-in-the-Loop (HIL) - Drive Constellation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TRTIS</masterLabel>
+        <translation><!-- TRTIS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Test Mules in Car</masterLabel>
+        <translation><!-- Test Mules in Car --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Virtualization</masterLabel>
+        <translation><!-- Virtualization --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Visual Search</masterLabel>
+        <translation><!-- Visual Search --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Visualization</masterLabel>
+        <translation><!-- Visualization --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>XGBOOST</masterLabel>
+        <translation><!-- XGBOOST --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

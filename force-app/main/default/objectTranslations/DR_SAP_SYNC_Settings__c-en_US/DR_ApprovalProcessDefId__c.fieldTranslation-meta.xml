@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Lead Deal Registration Approval Process Definition Id (e.g., 04a1W0000008SIGQA2) --></help>
+    <label><!-- DR_ApprovalProcessDefId --></label>
+    <name>DR_ApprovalProcessDefId__c</name>
+</CustomFieldTranslation>

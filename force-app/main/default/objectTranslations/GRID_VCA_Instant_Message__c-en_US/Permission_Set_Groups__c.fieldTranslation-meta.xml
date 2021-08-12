@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Permission Set Groups --></label>
+    <name>Permission_Set_Groups__c</name>
+    <picklistValues>
+        <masterLabel>Compute DGX Portal Full</masterLabel>
+        <translation><!-- Compute DGX Portal Full --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Compute Portal Full</masterLabel>
+        <translation><!-- Compute Portal Full --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MDF</masterLabel>
+        <translation><!-- MDF --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Manager</masterLabel>
+        <translation><!-- Manager --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NVEP</masterLabel>
+        <translation><!-- NVEP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Portal Lite</masterLabel>
+        <translation><!-- Portal Lite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SP Compute DGX Elite</masterLabel>
+        <translation><!-- SP Compute DGX Elite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SP Compute DGX Preferred</masterLabel>
+        <translation><!-- SP Compute DGX Preferred --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SP Compute Elite</masterLabel>
+        <translation><!-- SP Compute Elite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SP Compute Preferred</masterLabel>
+        <translation><!-- SP Compute Preferred --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SP Virtualization Elite</masterLabel>
+        <translation><!-- SP Virtualization Elite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SP Virtualization Preferred</masterLabel>
+        <translation><!-- SP Virtualization Preferred --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SP Visualization Elite</masterLabel>
+        <translation><!-- SP Visualization Elite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SP Visualization Preferred</masterLabel>
+        <translation><!-- SP Visualization Preferred --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Virtualization Portal Full</masterLabel>
+        <translation><!-- Virtualization Portal Full --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Visualization Portal Full</masterLabel>
+        <translation><!-- Visualization Portal Full --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

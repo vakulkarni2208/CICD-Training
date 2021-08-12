@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Customer_Account_Billing_Street_Reqd</fullName>
+    <active>true</active>
+    <description>Billing Street Required for Accounts with Record Type &apos;NV Customer Account&apos;.
+System Administrator excluded to allow old test classes to pass.</description>
+    <errorConditionFormula>AND(
+OR(RecordType.Name = &apos;NPN Account Registry&apos;, RecordType.Name = &apos;New Customer Account&apos;, RecordType.Name = &apos;Partner Account&apos;),
+AND($Profile.Name &lt;&gt; &apos;System Administrator&apos;, $Profile.Name &lt;&gt; &apos;SVC SAP Integration&apos;, $Profile.Name &lt;&gt; &apos;Data Administrator&apos;, $Profile.Name &lt;&gt; &apos;Sales Profile - Partner Admin&apos;, LEFT($User.Id, 15)  &lt;&gt; &apos;005400000031iax&apos;), 
+ISBLANK(BillingStreet)
+)</errorConditionFormula>
+    <errorDisplayField>BillingStreet</errorDisplayField>
+    <errorMessage>Address information is now required for Customer Accounts. Please fill in the Street address  for this Account (e.g. 123 Wall Street).</errorMessage>
+</ValidationRule>

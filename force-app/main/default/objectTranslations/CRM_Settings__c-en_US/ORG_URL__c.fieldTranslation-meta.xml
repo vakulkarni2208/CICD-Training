@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- NVIDIA ORG URL e.g., https://na2.salesforce.com&quot; --></help>
+    <label><!-- ORG URL --></label>
+    <name>ORG_URL__c</name>
+</CustomFieldTranslation>

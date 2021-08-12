@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>My_Open_Sales_Play_Tasks</fullName>
+    <booleanFilter>1 AND 2</booleanFilter>
+    <columns>SUBJECT</columns>
+    <columns>CORE.USERS.FULL_NAME</columns>
+    <columns>STATUS</columns>
+    <columns>DUE_DATE</columns>
+    <columns>Sales_Play__c</columns>
+    <columns>Link_to_Customer_Opportunity__c</columns>
+    <columns>Demo__c</columns>
+    <columns>Customer_Presentation_Status__c</columns>
+    <columns>LAST_UPDATE</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>Sales_Play__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <filters>
+        <field>STATUS</field>
+        <operation>notEqual</operation>
+        <value>Completed,Disqualified</value>
+    </filters>
+    <label>My Open Sales Play Tasks</label>
+</ListView>

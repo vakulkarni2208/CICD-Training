@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>European OEM and Tier1s Queue</name>
+    <queueMembers>
+        <users>
+            <user>khuynh@nvidia.com</user>
+            <user>pvandenberge@nvidia.com.crp</user>
+            <user>saubele@nvidia.com</user>
+            <user>thuynh@nvidia.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Lead</sobjectType>
+    </queueSobject>
+</Queue>

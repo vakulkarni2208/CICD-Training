@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- DLI Confirmed Distributor --></label>
+    <name>DLI_Confirmed_Distributor__c</name>
+    <picklistValues>
+        <masterLabel>BayNex</masterLabel>
+        <translation><!-- BayNex --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>C-data</masterLabel>
+        <translation><!-- C-data --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Carahsoft</masterLabel>
+        <translation><!-- Carahsoft --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ingram Europe</masterLabel>
+        <translation><!-- Ingram Europe --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ingram Micro</masterLabel>
+        <translation><!-- Ingram Micro --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ingram Micro Shanghai</masterLabel>
+        <translation><!-- Ingram Micro Shanghai --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Macnica</masterLabel>
+        <translation><!-- Macnica --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PNY</masterLabel>
+        <translation><!-- PNY --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rashi</masterLabel>
+        <translation><!-- Rashi --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ryoyo</masterLabel>
+        <translation><!-- Ryoyo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Synnex</masterLabel>
+        <translation><!-- Synnex --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Zerone</masterLabel>
+        <translation><!-- Zerone --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

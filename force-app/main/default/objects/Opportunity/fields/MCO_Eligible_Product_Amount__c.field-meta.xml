@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MCO_Eligible_Product_Amount__c</fullName>
+    <description>Used in workflow rule to tag MCO Eligible opportunities.</description>
+    <externalId>false</externalId>
+    <label>MCO Eligible Product Amount</label>
+    <summarizedField>OpportunityLineItem.TotalPrice</summarizedField>
+    <summaryFilterItems>
+        <field>OpportunityLineItem.Product_Line__c</field>
+        <operation>equals</operation>
+        <value>Grid Hardware,ProViz,Parabricks,Fleet Command,HPC Compiler Support,DLI Workshop,NGC Support Services</value>
+    </summaryFilterItems>
+    <summaryForeignKey>OpportunityLineItem.OpportunityId</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

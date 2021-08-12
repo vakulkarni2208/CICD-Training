@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Closed_Comments_on_Auto_Oppty</fullName>
+    <active>true</active>
+    <description>Require Closed Comments on Automotive Opportunity when Closed (Won or Lost)</description>
+    <errorConditionFormula>AND(
+RecordType.Name = &apos;Automotive Opportunity&apos;,
+AND($Profile.Name &lt;&gt; &apos;System Administrator&apos;,$Profile.Name &lt;&gt; &apos;SVC SAP Integration&apos;),
+ISCHANGED(StageName),
+OR (ISPICKVAL(StageName,&apos;Closed Won&apos;),
+ISPICKVAL(StageName,&apos;Closed Lost&apos;),
+ISPICKVAL(StageName,&apos;Inactive&apos;)
+),
+NOT ISCHANGED(Closed_Comments_Automotive__c)
+)</errorConditionFormula>
+    <errorDisplayField>Closed_Comments_Automotive__c</errorDisplayField>
+    <errorMessage>Please Add/Update Closed Comments if Closed (Won or Lost)</errorMessage>
+</ValidationRule>

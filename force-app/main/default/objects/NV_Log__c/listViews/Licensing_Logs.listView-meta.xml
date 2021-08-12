@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Licensing_Logs</fullName>
+    <columns>NAME</columns>
+    <columns>StatusCode__c</columns>
+    <columns>Status__c</columns>
+    <columns>WebMethod_Name__c</columns>
+    <columns>WebServiceName__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>Integration_Type__c</columns>
+    <columns>Inbound_Outbound__c</columns>
+    <columns>Source_System__c</columns>
+    <columns>Target_System__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>WebMethod_Name__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <label>Licensing Logs</label>
+    <language>en_US</language>
+</ListView>

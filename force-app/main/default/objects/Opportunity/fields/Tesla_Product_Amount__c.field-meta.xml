@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tesla_Product_Amount__c</fullName>
+    <description>Total Tesla product roll up amounts from the line items
+SDS-2737: Updated the field name from &apos;Tesla Product Amount&apos; to &apos;DC GPU Product Amount&apos;</description>
+    <externalId>false</externalId>
+    <label>DC GPU Product Amount</label>
+    <summarizedField>OpportunityLineItem.Line_Item_Total_Cost__c</summarizedField>
+    <summaryFilterItems>
+        <field>OpportunityLineItem.Product_Line__c</field>
+        <operation>equals</operation>
+        <value>DC GPU</value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>OpportunityLineItem.Product_Name__c</field>
+        <operation>notEqual</operation>
+        <value>Tesla M6,Tesla M6 MXM,Tesla M10,Tesla M60,Tesla P6,Tesla P6 MXM,Tesla Titan V</value>
+    </summaryFilterItems>
+    <summaryForeignKey>OpportunityLineItem.OpportunityId</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

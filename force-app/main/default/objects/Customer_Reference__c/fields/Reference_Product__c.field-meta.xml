@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reference_Product__c</fullName>
+    <externalId>false</externalId>
+    <label>Reference Product</label>
+    <required>true</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Clara</fullName>
+                <default>false</default>
+                <label>Clara</label>
+            </value>
+            <value>
+                <fullName>Jarvis</fullName>
+                <default>false</default>
+                <label>Conversational AI</label>
+            </value>
+            <value>
+                <fullName>CUDA-X</fullName>
+                <default>false</default>
+                <label>CUDA-X</label>
+            </value>
+            <value>
+                <fullName>DC Platform</fullName>
+                <default>false</default>
+                <label>DC Platform</label>
+            </value>
+            <value>
+                <fullName>DGX Server</fullName>
+                <default>false</default>
+                <label>DGX Server</label>
+            </value>
+            <value>
+                <fullName>DGX Station</fullName>
+                <default>false</default>
+                <label>DGX Station</label>
+            </value>
+            <value>
+                <fullName>DPU</fullName>
+                <default>false</default>
+                <label>DPU</label>
+            </value>
+            <value>
+                <fullName>DRIVE</fullName>
+                <default>false</default>
+                <label>DRIVE</label>
+            </value>
+            <value>
+                <fullName>EGX</fullName>
+                <default>false</default>
+                <label>EGX</label>
+            </value>
+            <value>
+                <fullName>Ethernet Switches</fullName>
+                <default>false</default>
+                <label>Ethernet Switches</label>
+            </value>
+            <value>
+                <fullName>GeForce</fullName>
+                <default>false</default>
+                <label>GeForce</label>
+            </value>
+            <value>
+                <fullName>GeForce Now</fullName>
+                <default>false</default>
+                <label>GeForce Now</label>
+            </value>
+            <value>
+                <fullName>HGX</fullName>
+                <default>false</default>
+                <label>HGX</label>
+            </value>
+            <value>
+                <fullName>DL Inference</fullName>
+                <default>false</default>
+                <label>Inference</label>
+            </value>
+            <value>
+                <fullName>InfiniBand</fullName>
+                <default>false</default>
+                <label>InfiniBand</label>
+            </value>
+            <value>
+                <fullName>ISAAC</fullName>
+                <default>false</default>
+                <label>ISAAC</label>
+            </value>
+            <value>
+                <fullName>Jetson</fullName>
+                <default>false</default>
+                <label>Jetson</label>
+            </value>
+            <value>
+                <fullName>Maxine</fullName>
+                <default>false</default>
+                <label>Maxine</label>
+            </value>
+            <value>
+                <fullName>Metropolis</fullName>
+                <default>false</default>
+                <label>Metropolis</label>
+            </value>
+            <value>
+                <fullName>NGC</fullName>
+                <default>false</default>
+                <label>NGC</label>
+            </value>
+            <value>
+                <fullName>None Specified</fullName>
+                <default>false</default>
+                <label>None Specified</label>
+            </value>
+            <value>
+                <fullName>Omniverse</fullName>
+                <default>false</default>
+                <label>Omniverse</label>
+            </value>
+            <value>
+                <fullName>Optical Transceivers &amp; Cables</fullName>
+                <default>false</default>
+                <label>Optical Transceivers &amp; Cables</label>
+            </value>
+            <value>
+                <fullName>Quadro</fullName>
+                <default>false</default>
+                <label>Quadro</label>
+            </value>
+            <value>
+                <fullName>RAPIDS</fullName>
+                <default>false</default>
+                <label>RAPIDS</label>
+            </value>
+            <value>
+                <fullName>Recommender/Merlin</fullName>
+                <default>false</default>
+                <label>Recommender/Merlin</label>
+            </value>
+            <value>
+                <fullName>SHIELD</fullName>
+                <default>false</default>
+                <label>SHIELD</label>
+            </value>
+            <value>
+                <fullName>Titan</fullName>
+                <default>false</default>
+                <label>Titan</label>
+            </value>
+            <value>
+                <fullName>TRT</fullName>
+                <default>false</default>
+                <label>TRT</label>
+            </value>
+            <value>
+                <fullName>vGPU</fullName>
+                <default>false</default>
+                <label>vGPU</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

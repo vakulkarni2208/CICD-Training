@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Account Manager (TAM/AM)</fullName>
+        <default>false</default>
+        <label>Account Manager (TAM/AM)</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Channel Manager (PBM)</fullName>
+        <default>false</default>
+        <label>Channel Manager (PBM)</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Solution Architect (SA)</fullName>
+        <default>false</default>
+        <label>Solution Architect (SA)</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Product Sales Specialist (PSS)</fullName>
+        <default>false</default>
+        <label>Product Sales Specialist (PSS)</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Industry Business Dev Manager (IBD)</fullName>
+        <default>false</default>
+        <label>Industry Business Dev Manager (IBD)</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Global Account Manager (GAM)</fullName>
+        <default>false</default>
+        <label>Global Account Manager (GAM)</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Industry Segment Leader (PIC)</fullName>
+        <default>false</default>
+        <label>Industry Segment Leader (PIC)</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Developer Technician (Dev Tech)</fullName>
+        <default>false</default>
+        <label>Developer Technician (Dev Tech)</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Developer Relations (DevRel)</fullName>
+        <default>false</default>
+        <label>Developer Relations (DevRel)</label>
+    </standardValue>
+    <standardValue>
+        <fullName>National Sales Center (NSC)</fullName>
+        <default>false</default>
+        <label>National Sales Center (NSC)</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Executive Sponsor</fullName>
+        <default>false</default>
+        <label>Executive Sponsor</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Sales Manager</fullName>
+        <default>false</default>
+        <label>Sales Manager</label>
+    </standardValue>
+    <standardValue>
+        <fullName>NPN Partner Manager (External)</fullName>
+        <default>false</default>
+        <label>NPN Partner Manager (External)</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Customer Program Manager (CPM)</fullName>
+        <default>false</default>
+        <label>Customer Program Manager (CPM)</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Technical Account Manager</fullName>
+        <default>false</default>
+        <label>Technical Account Manager</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Designated Engineer</fullName>
+        <default>false</default>
+        <label>Designated Engineer</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Support Team Member</fullName>
+        <default>false</default>
+        <label>Support Team Member</label>
+    </standardValue>
+</StandardValueSet>

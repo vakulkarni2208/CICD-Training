@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BATCHJOB_OppCreationCutOffDateTime__c</fullName>
+    <description>Only auto create quote and quote line item for Opp Regs created since this cutoff date/time</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Only auto create quote and quote line item for Opp Regs created since this cutoff date/time</inlineHelpText>
+    <label>BATCHJOB_OppCreationCutOffDateTime</label>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>DateTime</type>
+</CustomField>

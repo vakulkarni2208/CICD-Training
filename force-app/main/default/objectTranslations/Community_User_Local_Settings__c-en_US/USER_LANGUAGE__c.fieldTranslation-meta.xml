@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- CP or PP Box and its contents based on the Language Column value.
+User.Language AND USER_LANGLOCALEKEY =&gt; USER_LANGUAGE.
+USER_LANGUAGE AND Portal Home Page Box.Lanugage__c filters the Boxes to be shown.
+(Lite Portal &amp; Partner Portal controllers) --></help>
+    <label><!-- USER_LANGUAGE --></label>
+    <name>USER_LANGUAGE__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Select the role that best describes the Primary Customer Contact above.  This field must be populated when a Primary Customer Contact is identified. --></help>
+    <label><!-- Primary Contact Role --></label>
+    <name>Primary_Contact_Role__c</name>
+    <picklistValues>
+        <masterLabel>Executive Sponsor</masterLabel>
+        <translation><!-- Executive Sponsor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Influencer/Buyer</masterLabel>
+        <translation><!-- Influencer/Buyer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Renewal Contact</masterLabel>
+        <translation><!-- Renewal Contact --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sales Contact</masterLabel>
+        <translation><!-- Sales Contact --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Solution Architect/IT</masterLabel>
+        <translation><!-- Solution Architect/IT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Technical Contact</masterLabel>
+        <translation><!-- Technical Contact --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

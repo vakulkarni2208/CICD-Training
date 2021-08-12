@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>ESP L3</name>
+    <queueMembers>
+        <roles>
+            <role>NV_Agent</role>
+        </roles>
+        <users>
+            <user>afakhouri@nvidia.com</user>
+            <user>ahammad@nvidia.com</user>
+            <user>ahakoo@nvidia.com</user>
+            <user>chuntingl@nvidia.com</user>
+            <user>cgallegos@nvidia.com.crp</user>
+            <user>ddave@nvidia.com</user>
+            <user>fedaaa@nvidia.com</user>
+            <user>glouie@nvidia.com</user>
+            <user>imada@nvidia.com</user>
+            <user>jbovenzi@nvidia.com</user>
+            <user>joek@nvidia.com</user>
+            <user>kmatsuno@nvidia.com</user>
+            <user>lqiao@nvidia.com</user>
+            <user>mhingu@nvidia.com</user>
+            <user>hyungshink@nvidia.com</user>
+            <user>mdamian@nvidia.com</user>
+            <user>retemad@nvidia.com</user>
+            <user>snadarajan@nvidia.com</user>
+            <user>sallyp@nvidia.com</user>
+            <user>sanjivn@nvidia.com</user>
+            <user>scherukuru@nvidia.com</user>
+            <user>tylerh@nvidia.com.nves</user>
+            <user>vjain@nvidia.com</user>
+            <user>wenlongz@nvidia.com</user>
+            <user>zhenyih@nvidia.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Select the NVIDIA Horizontal Solution that applies to this Opportunity --></help>
+    <label><!-- NVIDIA Solutions --></label>
+    <name>NVIDIA_Solutions__c</name>
+    <picklistValues>
+        <masterLabel>Data Analytics</masterLabel>
+        <translation><!-- Data Analytics --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Deep Learning (DL)</masterLabel>
+        <translation><!-- Deep Learning (DL) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Embedded/Mobile</masterLabel>
+        <translation><!-- Embedded/Mobile --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GIS (Geographic Info Systems)</masterLabel>
+        <translation><!-- GIS (Geographic Info Systems) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HPC/Scientific and Technical Computing</masterLabel>
+        <translation><!-- HPC/Scientific and Technical Computing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Intelligent Video Analytics (IVA)</masterLabel>
+        <translation><!-- Intelligent Video Analytics (IVA) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Internet of Things ( IoT)</masterLabel>
+        <translation><!-- Internet of Things ( IoT) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>None at this time</masterLabel>
+        <translation><!-- None at this time --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SVS (Scalable Visualization Solutions)</masterLabel>
+        <translation><!-- SVS (Scalable Visualization Solutions) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Virtual &amp; Augmented Reality (VR/AR)</masterLabel>
+        <translation><!-- Virtual &amp; Augmented Reality (VR/AR) --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

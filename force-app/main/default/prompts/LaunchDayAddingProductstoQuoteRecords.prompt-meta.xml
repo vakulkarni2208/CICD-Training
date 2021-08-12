@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Prompt xmlns="http://soap.sforce.com/2006/04/metadata">
+    <masterLabel>Launch Day Adding Products to Quote Records</masterLabel>
+    <promptVersions>
+        <body>Click Next to go to your quote to add products to your opportunity</body>
+        <customApplication>NVIDIA_Sales_Lightning2</customApplication>
+        <delayDays>1</delayDays>
+        <dismissButtonLabel>Dismiss</dismissButtonLabel>
+        <displayPosition>TopRight</displayPosition>
+        <displayType>FloatingPanel</displayType>
+        <endDate>2021-04-09</endDate>
+        <isPublished>false</isPublished>
+        <masterLabel>Launch Day Adding Products to Quote Records Step 1</masterLabel>
+        <shouldDisplayActionButton>false</shouldDisplayActionButton>
+        <shouldIgnoreGlobalDelay>true</shouldIgnoreGlobalDelay>
+        <startDate>2021-03-21</startDate>
+        <stepNumber>1</stepNumber>
+        <targetPageKey1>Opportunity</targetPageKey1>
+        <targetPageKey2>view</targetPageKey2>
+        <targetPageType>standard__recordPage</targetPageType>
+        <timesToDisplay>2</timesToDisplay>
+        <title>New Way To Add Products</title>
+        <userAccess>Everyone</userAccess>
+        <userProfileAccess>Everyone</userProfileAccess>
+        <versionNumber>1</versionNumber>
+    </promptVersions>
+    <promptVersions>
+        <body>Use Guided Selling to add and update products and add any discounts on your opportunity</body>
+        <customApplication>NVIDIA_Sales_Lightning2</customApplication>
+        <dismissButtonLabel>Dismiss</dismissButtonLabel>
+        <displayPosition>TopRight</displayPosition>
+        <displayType>FloatingPanel</displayType>
+        <isPublished>false</isPublished>
+        <masterLabel>Launch Day Adding Products to Quote Records Step 2</masterLabel>
+        <shouldDisplayActionButton>false</shouldDisplayActionButton>
+        <shouldIgnoreGlobalDelay>false</shouldIgnoreGlobalDelay>
+        <stepNumber>2</stepNumber>
+        <targetPageKey1>SBQQ__Quote__c</targetPageKey1>
+        <targetPageKey2>view</targetPageKey2>
+        <targetPageType>standard__recordPage</targetPageType>
+        <title>Click Edit Lines</title>
+        <userAccess>Everyone</userAccess>
+        <userProfileAccess>Everyone</userProfileAccess>
+        <versionNumber>1</versionNumber>
+    </promptVersions>
+    <promptVersions>
+        <actionButtonLabel>Learn More!</actionButtonLabel>
+        <actionButtonLink>https://nvidia.sharepoint.com/sites/WWFONVIDIACRMInstructionalMaterials/WWFO%20NVIDIA%20CRM%20Training%20Materials/Forms/AllItems.aspx?sortField=Modified&amp;isAscending=false&amp;id=%2Fsites%2FWWFONVIDIACRMInstructionalMaterials%2FWWFO%20NVIDIA%20CRM%20Training%20Materials%2FCreating%20Quote%20Records%20%E2%80%93%20Quick%20Start%20Guide%20for%20Account%20Managers%2Epdf&amp;parent=%2Fsites%2FWWFONVIDIACRMInstructionalMaterials%2FWWFO%20NVIDIA%20CRM%20Training%20Materials</actionButtonLink>
+        <body>On the edit line screen, you will see the ability to add products and terms. Please use the wrench to denote terms.</body>
+        <customApplication>NVIDIA_Sales_Lightning2</customApplication>
+        <dismissButtonLabel>Got It!</dismissButtonLabel>
+        <displayPosition>TopRight</displayPosition>
+        <displayType>FloatingPanel</displayType>
+        <isPublished>false</isPublished>
+        <masterLabel>Launch Day Adding Products to Quote Records Step 3</masterLabel>
+        <shouldDisplayActionButton>true</shouldDisplayActionButton>
+        <shouldIgnoreGlobalDelay>false</shouldIgnoreGlobalDelay>
+        <stepNumber>3</stepNumber>
+        <targetPageKey1>SBQQ__Quote__c</targetPageKey1>
+        <targetPageKey2>view</targetPageKey2>
+        <targetPageType>standard__recordPage</targetPageType>
+        <title>Click Edit Lines</title>
+        <userAccess>Everyone</userAccess>
+        <userProfileAccess>Everyone</userProfileAccess>
+        <versionNumber>1</versionNumber>
+    </promptVersions>
+</Prompt>

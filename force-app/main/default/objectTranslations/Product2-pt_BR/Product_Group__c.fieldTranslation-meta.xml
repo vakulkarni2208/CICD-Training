@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Classification of a Product within a Product Line --></help>
+    <label><!-- Product Group --></label>
+    <name>Product_Group__c</name>
+    <picklistValues>
+        <masterLabel>A100</masterLabel>
+        <translation><!-- A100 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Quadro</masterLabel>
+        <translation><!-- Quadro --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>T4</masterLabel>
+        <translation><!-- T4 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V100</masterLabel>
+        <translation><!-- V100 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VCS</masterLabel>
+        <translation><!-- VCS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Virtual Applications</masterLabel>
+        <translation><!-- Virtual Applications --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Virtual Compute Server</masterLabel>
+        <translation><!-- Virtual Compute Server --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Virtual Personal Computer</masterLabel>
+        <translation><!-- Virtual Personal Computer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Virtual Work Station</masterLabel>
+        <translation><!-- Virtual Work Station --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Workstation</masterLabel>
+        <translation><!-- Workstation --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

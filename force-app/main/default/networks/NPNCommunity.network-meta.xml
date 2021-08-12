@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Network xmlns="http://soap.sforce.com/2006/04/metadata">
+    <allowInternalUserLogin>false</allowInternalUserLogin>
+    <allowMembersToFlag>false</allowMembersToFlag>
+    <changePasswordTemplate>unfiled$public/Communities_Reset_Password_Email</changePasswordTemplate>
+    <communityRoles/>
+    <disableReputationRecordConversations>false</disableReputationRecordConversations>
+    <emailSenderAddress>nvidiapartnerportal@nvidia.com</emailSenderAddress>
+    <emailSenderName>NVIDIA Partner Team</emailSenderName>
+    <enableCustomVFErrorPageOverrides>false</enableCustomVFErrorPageOverrides>
+    <enableDirectMessages>false</enableDirectMessages>
+    <enableGuestChatter>false</enableGuestChatter>
+    <enableGuestFileAccess>false</enableGuestFileAccess>
+    <enableGuestMemberVisibility>false</enableGuestMemberVisibility>
+    <enableInvitation>false</enableInvitation>
+    <enableKnowledgeable>false</enableKnowledgeable>
+    <enableMemberVisibility>false</enableMemberVisibility>
+    <enableNicknameDisplay>false</enableNicknameDisplay>
+    <enablePrivateMessages>false</enablePrivateMessages>
+    <enableReputation>false</enableReputation>
+    <enableShowAllNetworkSettings>false</enableShowAllNetworkSettings>
+    <enableSiteAsContainer>false</enableSiteAsContainer>
+    <enableTalkingAboutStats>false</enableTalkingAboutStats>
+    <enableTopicAssignmentRules>false</enableTopicAssignmentRules>
+    <enableTopicSuggestions>false</enableTopicSuggestions>
+    <enableUpDownVote>false</enableUpDownVote>
+    <forgotPasswordTemplate>unfiled$public/Communities_Reset_Password_Email</forgotPasswordTemplate>
+    <gatherCustomerSentimentData>false</gatherCustomerSentimentData>
+    <networkMemberGroups>
+        <permissionSet>CRM_PARTNER_USER_LOGIN</permissionSet>
+        <profile>admin</profile>
+        <profile>mdf / oem partner lenovo</profile>
+        <profile>community lite profile</profile>
+        <profile>mdf / oem partner - dell workstation</profile>
+        <profile>mdf partner - latam</profile>
+        <profile>mdf / oem partner hp</profile>
+        <profile>mdf partner</profile>
+        <profile>nvidia marketing portal user</profile>
+        <profile>nvidia partner user</profile>
+        <profile>npn partner community(named)</profile>
+        <profile>npn partner community(login)</profile>
+        <profile>marketing partner community(login)</profile>
+        <profile>marketing customer community</profile>
+        <profile>sales profile - pam manager</profile>
+        <profile>nsc manager</profile>
+        <profile>npn tegra jetson partner community(login)</profile>
+    </networkMemberGroups>
+    <networkPageOverrides>
+        <changePasswordPageOverrideSetting>Standard</changePasswordPageOverrideSetting>
+        <forgotPasswordPageOverrideSetting>Standard</forgotPasswordPageOverrideSetting>
+        <homePageOverrideSetting>Standard</homePageOverrideSetting>
+        <loginPageOverrideSetting>VisualForce</loginPageOverrideSetting>
+        <selfRegProfilePageOverrideSetting>Standard</selfRegProfilePageOverrideSetting>
+    </networkPageOverrides>
+    <picassoSite>NPNCommunity1</picassoSite>
+    <selfRegistration>false</selfRegistration>
+    <sendWelcomeEmail>false</sendWelcomeEmail>
+    <site>NPNCommunity</site>
+    <status>Live</status>
+    <tabs>
+        <customTab>Deal_Registration</customTab>
+        <customTab>MDF_Fall_2015</customTab>
+        <customTab>GPU_Genius_ISV</customTab>
+        <customTab>NPN_Compliance</customTab>
+        <customTab>POS_Submission</customTab>
+        <customTab>Manage_Contacts</customTab>
+        <customTab>NFR_SW_License_Request</customTab>
+        <customTab>QPB_Statements</customTab>
+        <defaultTab>home</defaultTab>
+        <standardTab>home</standardTab>
+        <standardTab>Lead</standardTab>
+        <standardTab>Account</standardTab>
+        <standardTab>Contact</standardTab>
+        <standardTab>Opportunity</standardTab>
+        <standardTab>report</standardTab>
+        <standardTab>Dashboard</standardTab>
+        <standardTab>Workspace</standardTab>
+        <standardTab>ContentSearch</standardTab>
+        <standardTab>ContentSubscriptions</standardTab>
+    </tabs>
+    <welcomeTemplate>unfiled$public/Communities_New_Member_Welcome_Email</welcomeTemplate>
+</Network>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Other_if_Workload_is_Other</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND (
+ISPICKVAL (  Workload__c , &apos;Other&apos; ) , 
+ ISBLANK ( Other_Workload_Detail__c ))</errorConditionFormula>
+    <errorDisplayField>Other_Workload_Detail__c</errorDisplayField>
+    <errorMessage>Please fill in the other workload details</errorMessage>
+</ValidationRule>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DLI_Certified_Instructors_InActive</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>Instructor_Type__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>CONTACT.PHONE1</columns>
+    <columns>CONTACT.EMAIL</columns>
+    <columns>CONTACT.TITLE</columns>
+    <columns>CONTACT.ADDRESS2_STREET</columns>
+    <columns>CONTACT.ADDRESS2_CITY</columns>
+    <columns>CONTACT.ADDRESS2_STATE_CODE</columns>
+    <columns>CONTACT.ADDRESS2_COUNTRY_CODE</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>of_Active_Certifications__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.NAME</field>
+        <operation>equals</operation>
+        <value>NVIDIA DLI Certified Instructors</value>
+    </filters>
+    <filters>
+        <field>CONTACT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Contact.SalesContact</value>
+    </filters>
+    <filters>
+        <field>CONTACT.EMAIL</field>
+        <operation>equals</operation>
+    </filters>
+    <label>DLI Certified Instructors -InActive</label>
+    <sharedTo>
+        <roleAndSubordinatesInternal>DLI_Sales</roleAndSubordinatesInternal>
+    </sharedTo>
+</ListView>

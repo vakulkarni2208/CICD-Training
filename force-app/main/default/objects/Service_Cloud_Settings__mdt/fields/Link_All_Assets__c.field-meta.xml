@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Link_All_Assets__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>This checkbox is to indicate whether to process all assets or only matching with criteria. It is used in Asset trigger and ESP_LinkAssets_BAT batch job.</description>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <inlineHelpText>This checkbox is to indicate whether to process all assets or only matching with criteria. It is used in Asset trigger and ESP_LinkAssets_BAT batch job.</inlineHelpText>
+    <label>Link All Assets</label>
+    <type>Checkbox</type>
+</CustomField>

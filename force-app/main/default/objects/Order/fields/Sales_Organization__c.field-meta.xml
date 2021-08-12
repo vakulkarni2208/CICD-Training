@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sales_Organization__c</fullName>
+    <description>Sales Organization used for order booking in SAP</description>
+    <externalId>false</externalId>
+    <inlineHelpText>2100 - US Sales Org
+3300 - SG Sales Org</inlineHelpText>
+    <label>Sales Organization</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>2100</fullName>
+                <default>false</default>
+                <label>2100</label>
+            </value>
+            <value>
+                <fullName>3300</fullName>
+                <default>false</default>
+                <label>3300</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

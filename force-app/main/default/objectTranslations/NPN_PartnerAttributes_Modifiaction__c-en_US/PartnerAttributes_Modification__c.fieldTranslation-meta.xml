@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- PartnerAttributes_Modification --></label>
+    <name>PartnerAttributes_Modification__c</name>
+    <picklistValues>
+        <masterLabel>Add On Contracts Packet</masterLabel>
+        <translation><!-- Add On Contracts Packet --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Competency Termination</masterLabel>
+        <translation><!-- Competency Termination --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Demotion</masterLabel>
+        <translation><!-- Demotion --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Promotion</masterLabel>
+        <translation><!-- Promotion --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Termination</masterLabel>
+        <translation><!-- Termination --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

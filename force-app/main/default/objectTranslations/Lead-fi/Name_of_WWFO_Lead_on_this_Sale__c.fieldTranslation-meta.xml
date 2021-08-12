@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Name of WWFO Lead on this Sale --></label>
+    <name>Name_of_WWFO_Lead_on_this_Sale__c</name>
+    <relationshipLabel><!-- Leads (Name of WWFO Lead on this Sale) --></relationshipLabel>
+</CustomFieldTranslation>

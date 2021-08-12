@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>SCOPE Milestone</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>SCOPE Milestones</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Milestone Status of Approved will be automatically selected after approval --></errorMessage>
+        <name>Approved_Milestone_status_not_allowed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Once Milestone is approved no edits are allowed to Status. Please submit Get Help if further assistance is needed. --></errorMessage>
+        <name>Once_Approved_allow_no_edits_to_Status</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Opportunity must be approved before a milestone can be ready for approval. Please ensure your Opportunity has a product configuration and has been fully approved. --></errorMessage>
+        <name>Oppty_must_be_In_Progress_Stage</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- SCOPE_CRM_Training_Deck --></label>
+        <name>SCOPE_CRM_Training_Deck</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- SCOPE_Milestone_Templates --></label>
+        <name>SCOPE_Milestone_Templates</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- SCOPE_Program_Guide --></label>
+        <name>SCOPE_Program_Guide</name>
+    </webLinks>
+</CustomObjectTranslation>

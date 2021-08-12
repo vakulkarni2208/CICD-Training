@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>If_Sales_Play_closed_require_comments</fullName>
+    <active>true</active>
+    <description>If Sales Play has been completed then require comments</description>
+    <errorConditionFormula>AND (
+  RecordType.Name= &apos;Sales Play&apos;,
+ IsClosed = TRUE, 
+ ISBLANK (Description ))</errorConditionFormula>
+    <errorDisplayField>Description</errorDisplayField>
+    <errorMessage>When closing a Sales Play Task please enter comments related to the closure</errorMessage>
+</ValidationRule>

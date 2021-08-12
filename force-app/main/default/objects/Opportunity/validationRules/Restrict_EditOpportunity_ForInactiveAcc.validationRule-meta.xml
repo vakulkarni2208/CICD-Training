@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Restrict_EditOpportunity_ForInactiveAcc</fullName>
+    <active>true</active>
+    <description>Restrict Edit to Opportunity for Inactive Accounts  (Exception: Data Admin, Sales Profile - Partner Admin, Sys Admin)</description>
+    <errorConditionFormula>AND(
+ Account.Inactive__c = True, 
+ $Profile.Name &lt;&gt; &apos;System Administrator&apos;, 
+ $Profile.Name &lt;&gt; &apos;Data Administrator&apos;, 
+ $Profile.Name &lt;&gt; &apos;Sales Profile - Partner Admin&apos;, 
+ OR(
+  Account.RecordType.Name = &apos;New Customer Account&apos;, 
+  Account.RecordType.Name = &apos;NV Customer Account&apos;, 
+  Account.RecordType.Name = &apos;NV Partner Program Account&apos;, 
+  Account.RecordType.Name = &apos;NPN Account Registry&apos;, 
+  Account.RecordType.Name = &apos;NPN Community Account&apos;
+ ) 
+)</errorConditionFormula>
+    <errorMessage>This account is inactive. Opportunities cannot be created/edited. For assistance, click the &quot;Get Help&quot; button located on the top right of the page.</errorMessage>
+</ValidationRule>

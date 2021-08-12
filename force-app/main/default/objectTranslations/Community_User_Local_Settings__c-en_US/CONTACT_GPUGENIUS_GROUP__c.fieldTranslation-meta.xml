@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Lead.Country And COUNTRY_LIST =&gt; CONTACT_GPUGENIUS_GROUP
+CONTACT_GPUGENIUS_GROUP is set to Contact.GPU_Genius_Groups__c (Lead Trigger) --></help>
+    <label><!-- CONTACT_GPUGENIUS_GROUP --></label>
+    <name>CONTACT_GPUGENIUS_GROUP__c</name>
+</CustomFieldTranslation>

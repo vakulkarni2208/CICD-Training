@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Opp_Prod_RTX_Yes_No</fullName>
+    <active>false</active>
+    <description>If Line item contains RTX600 or 800 with more than 2 then RTX Yes or No SDS-1075
+SDS-1386 
+SDS-1502
+SDS-1956
+SDS-2421</description>
+    <errorConditionFormula>OR(
+  AND(
+     Opportunity.RecordType.DeveloperName = &quot;Enterprise_Sales_Opportunity&quot;, 
+    OR(
+       CONTAINS(Product2.Name, &quot;RTX6000&quot;), 
+       CONTAINS(Product2.Name, &quot;RTX8000&quot;),
+       CONTAINS(Product2.Name, &quot;Quadro GV100&quot;),
+       CONTAINS(Product2.Name, &quot;RTX A6000&quot;)
+    ), 
+    ISPICKVAL( RTX_Details__c , &apos;&apos;)
+  ),
+  AND( 
+    Opportunity.RecordType.DeveloperName = &quot;Enterprise_Sales_Opportunity&quot;,
+    NOT(CONTAINS(Product2.Name, &quot;RTX5000&quot;)),
+    NOT(CONTAINS(Product2.Name, &quot;RTX6000&quot;)), 
+    NOT(CONTAINS(Product2.Name, &quot;RTX8000&quot;)),
+    NOT(CONTAINS(Product2.Name, &quot;Quadro GV100&quot;)),
+    NOT(CONTAINS(Product2.Name, &quot;RTX A6000&quot;)),
+    OR(
+      ISPICKVAL( RTX_Details__c , &apos;RTX Server&apos;), 
+      ISPICKVAL( RTX_Details__c , &apos;Data Science Workstation&apos;), 
+      ISPICKVAL( RTX_Details__c , &apos;Workstation&apos;)
+    )
+  ) 
+)</errorConditionFormula>
+    <errorDisplayField>RTX_Details__c</errorDisplayField>
+    <errorMessage>RTX Details are only required if the products are RTX6k, RTX8k, A6k or Quadro GV100 for other products please leave blank</errorMessage>
+</ValidationRule>

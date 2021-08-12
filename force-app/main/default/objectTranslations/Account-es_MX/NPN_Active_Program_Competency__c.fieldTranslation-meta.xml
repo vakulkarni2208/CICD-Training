@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- This field will contain Active NPN Program and Competency from Partner Attribute records. ReadOnly and will be filled from the Partner Attribute records. --></help>
+    <label><!-- NPN Active Program - Competency --></label>
+    <name>NPN_Active_Program_Competency__c</name>
+</CustomFieldTranslation>

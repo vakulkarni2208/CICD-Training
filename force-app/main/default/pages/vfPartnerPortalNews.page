@@ -1,0 +1,104 @@
+<apex:page id="pageId" controller="clsPartnerPortalTabs" showheader="true" sidebar="false">
+<head>
+<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+<style>
+ul 
+{
+list-style-image:url();
+}
+
+#container{
+   position: absolute;
+   //top: 50%;
+   //margin-top: -200px;/* half of #content height*/
+   left: 0;
+   width: 100%;
+   background-color: white;
+   //height: 3000px;
+   
+}
+#content {
+   max-width: 800px;;
+   min-width: 800px;
+   margin-top:3px;
+   margin-left: auto;
+   margin-right: auto;
+   text-align:center;
+   position: relative;
+   zoom: 1;
+   padding:8px;
+   //height: 2400px;
+   //border: 1px solid #000000;
+   border-left: 1px solid #76B900;
+   border-top: 1px solid #76B900;
+    -moz-box-shadow:    6px 6px 5px #ccc;
+    -webkit-box-shadow: 6px 6px 5px #ccc;
+    box-shadow:         6px 6px 5px #ccc;
+}
+.mainBlock{
+        //border:1px solid #000000;
+        //margin: 30px;
+        margin-top:3px;
+        margin-left:100px;
+        margin-right:100px;
+        //width: 80%;
+        max-width: 800px;
+        min-width: 800px;
+        //text-align:center;
+        position: relative;
+        display: inline-block;
+        *display: inline;
+        zoom: 1;
+        padding:8px;
+        border-left: 1px solid #76B900;
+        border-top: 1px solid #76B900;
+        -moz-box-shadow:    6px 6px 5px #ccc;
+        -webkit-box-shadow: 6px 6px 5px #ccc;
+        box-shadow:         6px 6px 5px #ccc;
+    }
+
+.subBlock{
+//          border:1px solid #000000;
+            margin: 3px;
+            //margin-top:3px;
+            margin-left:100px;
+            margin-right:100px;
+            //width: 85%;
+            //text-align:center;
+          position: relative;
+            display: inline-block;
+            *display: inline;
+            zoom: 1;
+           // padding:8px;
+           // border-left: 1px solid #76B900;
+           // border-top: 1px solid #76B900;
+           // -moz-box-shadow:    6px 6px 5px #ccc;
+           // -webkit-box-shadow: 6px 6px 5px #ccc;
+           // box-shadow:         6px 6px 5px #ccc;
+
+        }
+</style>
+</head>
+<script>
+$(function(){  
+    $('#content').equalHeights();
+});
+</script>
+<!--<table width="1075px;" border="0">  
+<tr>           
+<td>   
+   <c:cmpPartnerPortalSearch ></c:cmpPartnerPortalSearch>  
+</td>
+</tr>
+  
+</table>-->
+<!--<c:cmpPartnerPortalSearch ></c:cmpPartnerPortalSearch>-->
+ <apex:form id="formId">   
+      <!-- <c:cmpPartnerPortalRssFeedSummary title="" debug="false" headline="false" feedURL="http://feeds.feedburner.com/nvidiablog" entriesCount="10" /> -->    
+      <!--<div class="mainBlock">-->
+      <div id="container"><div id="content">
+    <!--  <c:cmpPartnerPortalSearch ></c:cmpPartnerPortalSearch>  -->
+      <c:cmpPartnerPortalRssFeedSummary title="" debug="false" feedURL="http://feeds.feedburner.com/nvidiablog" entriesCount="10" /> 
+      </div></div>
+  </apex:form>
+</apex:page>

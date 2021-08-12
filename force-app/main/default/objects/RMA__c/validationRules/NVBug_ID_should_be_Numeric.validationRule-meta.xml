@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NVBug_ID_should_be_Numeric</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( OR($User.Username &lt;&gt; &apos;!svcdatawriter@nvidia.com.crmprod&apos;, DATEVALUE(CreatedDate)&gt; DATEVALUE(&quot;2020-05-08&quot;))  ,NOT(ISBLANK(NVBug_ID__c)) , NOT(ISNUMBER( NVBug_ID__c ) )) &amp;&amp;
+NOT($CustomMetadata.Service_Cloud_Settings__mdt.Production.Disable_Trigger_Actions__c)</errorConditionFormula>
+    <errorMessage>NVBug ID should be Numeric</errorMessage>
+</ValidationRule>

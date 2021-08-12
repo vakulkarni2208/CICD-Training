@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Select one or more Operating System from the &quot;Available&quot; field.
+Highlight appropriate value(s), then click on the top arrow button to move to the &quot;Chosen&quot; field. --></help>
+    <label><!-- Operating System --></label>
+    <name>Operating_System__c</name>
+    <picklistValues>
+        <masterLabel>Android</masterLabel>
+        <translation><!-- Android --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Android Package</masterLabel>
+        <translation><!-- Android Package --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CE 6 (Legacy)</masterLabel>
+        <translation><!-- CE 6 (Legacy) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Linux L4T</masterLabel>
+        <translation><!-- Linux L4T --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UIComposer Package</masterLabel>
+        <translation><!-- UIComposer Package --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Vibrante Linux</masterLabel>
+        <translation><!-- Vibrante Linux --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Vibrante QNX</masterLabel>
+        <translation><!-- Vibrante QNX --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Vibrante Windows 8 Auto</masterLabel>
+        <translation><!-- Vibrante Windows 8 Auto --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Vision Toolkit Package</masterLabel>
+        <translation><!-- Vision Toolkit Package --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Windows</masterLabel>
+        <translation><!-- Windows --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

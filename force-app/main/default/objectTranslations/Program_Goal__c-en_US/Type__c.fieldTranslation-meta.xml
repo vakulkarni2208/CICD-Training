@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Type --></label>
+    <name>Type__c</name>
+    <picklistValues>
+        <masterLabel>Datacenter Model</masterLabel>
+        <translation><!-- Datacenter Model --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>JFF Revenue</masterLabel>
+        <translation><!-- JFF Revenue --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pipeline</masterLabel>
+        <translation><!-- Pipeline --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Revenue</masterLabel>
+        <translation><!-- Revenue --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

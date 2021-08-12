@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Data entered in this field will be added verbatim to the PRM homepage training section.  No html escaping is done.  Use this option with caution, as style changes or invalid HTML may affect other page elements. --></help>
+    <label><!-- Html --></label>
+    <name>Html__c</name>
+</CustomFieldTranslation>

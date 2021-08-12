@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Remoting Solution --></label>
+    <name>Remoting_Solution__c</name>
+    <picklistValues>
+        <masterLabel>Citrix XenApp</masterLabel>
+        <translation><!-- Citrix XenApp --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Citrix XenDesktop</masterLabel>
+        <translation><!-- Citrix XenDesktop --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RDP</masterLabel>
+        <translation><!-- RDP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VMware Horizon</masterLabel>
+        <translation><!-- VMware Horizon --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VNC</masterLabel>
+        <translation><!-- VNC --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

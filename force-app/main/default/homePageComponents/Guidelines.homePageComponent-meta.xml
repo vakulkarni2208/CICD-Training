@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<HomePageComponent xmlns="http://soap.sforce.com/2006/04/metadata">
+    <body>&lt;A href=&quot;https://na2.salesforce.com/servlet/servlet.FileDownload?file=01540000000Ujn3&quot;&gt;NVIDIA MDF Guidelines&lt;/A&gt;</body>
+    <pageComponentType>htmlArea</pageComponentType>
+    <width>narrow</width>
+</HomePageComponent>

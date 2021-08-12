@@ -1,0 +1,142 @@
+<aura:component implements="forceCommunity:themeLayout" access="global" description="NVIDIA ESP Customer Theme">
+
+    <aura:attribute name="search" type="Aura.Component[]" required="false"/>
+    <aura:attribute name="navBar" type="Aura.Component[]" required="false"/>
+    <aura:attribute name="profileMenu" type="Aura.Component[]" required="false"/>
+    <aura:attribute name="footerBlock" type="Aura.Component[]" required="false"/>
+
+    <aura:attribute name="IsHome" type="Boolean" default="false"/>
+    <aura:attribute name="bkgdImg" type="String" />
+    <aura:attribute name="showNav" type="Boolean" default="true" />
+    
+    <style>
+    	.smallBackgroundImg.Generic {
+        	background-image: url({!$Resource.ESPComm_Resources + '/nvidia_generic_banner.png'});
+        	background-repeat: no-repeat;
+            background-color: black;
+    		background-position: 360px 0;
+        }
+    </style>
+
+
+    <div class="{!v.IsHome+' '+v.bkgdImg}">
+        <section>
+            <div class="slds-grid slds-wrap">
+                <div class="slds-p-horizontal_small slds-size_1-of-1 backToLink">
+                    <div class="interiorFrame">
+                        <a href="http://www.nvidia.com">
+                            <img src="{!$Resource.ESPComm_Resources + '/nvidia_logo.png'}" />
+                        </a>
+                    </div>
+                 </div>
+            </div>
+            <!-- LOGO NAV & PROFILE -->
+            <div class="slds-grid slds-wrap">      
+                <div class="slds-grid slds-wrap logoNavBlock">
+                    <div class="interiorFrame">
+                        <div class="slds-p-horizontal_small slds-col slds-medium-size_2-of-6 slds-large-size_3-of-12 logo">
+                            <a href="/s/">Home</a>
+                            <!--<a href="/ESPCommunity/s/">Home</a>-->
+                        </div>
+                        <div class="slds-p-horizontal_small slds-col slds-medium-size_2-of-6 slds-large-size_7-of-12 ten-nav">
+                            <aura:renderif isTrue="{!v.showNav}">
+                            	{!v.navBar}
+                            </aura:renderif>
+                        </div>
+                        <div class="slds-p-horizontal_small slds-col slds-medium-size_2-of-6 slds-large-size_2-of-12 user-profile">
+                            <aura:renderif isTrue="{!v.showNav}">
+                                <forceCommunity:notifications />
+                                {!v.profileMenu}
+                            </aura:renderif>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Home = Large Banner, else = Small Background -->
+            <div class="slds-grid slds-wrap bannerBlock">
+                <div class="slds-size_1-of-1">
+                    <aura:renderif isTrue="{!v.IsHome}">
+                        <div class="lgBackground">
+                            <div class="interiorFrame">
+                                <div class="slds-grid">
+                                    <div class="slds-size_1-of-2">
+                                        <h1>NVIDIA Enterprise Support Portal</h1>
+                                        <p>Welcome, what can we do for you today?</p>
+                                         {!v.search}
+                                    </div>
+                                    <div class="slds-size_1-of-2">
+                                        <img src="{!$Resource.ESPComm_Resources + '/nvidia_home_banner.png'}" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <aura:set attribute="else">
+                            <aura:renderif isTrue="{!v.bkgdImg != 'Generic'}">
+                                <div class="{!'smallBackgroundImg '+v.bkgdImg}">
+                                    <div class="interiorFrame">
+                                        <div class="slds-grid">
+                                            <div class="slds-size_1-of-2">
+                                                <h1>NVIDIA Enterprise Support Portal</h1>
+                                                 {!v.search}
+                                            </div>
+                                            <div class="slds-size_1-of-2">
+                                                
+                                                <aura:if isTrue="{!v.bkgdImg == 'KB'}">
+                                                    <img src="{!$Resource.ESPComm_Resources + '/nvidia_kb_banner.png'}" />
+                                                </aura:if>
+                                                
+                                                <aura:if isTrue="{!v.bkgdImg == 'Cases'}">
+                                                    <img src="{!$Resource.ESPComm_Resources + '/nvidia_cases_banner.png'}" />
+                                                </aura:if>
+
+                                                <aura:if isTrue="{!v.bkgdImg == 'Announcement'}">
+                                                    <img src="{!$Resource.ESPComm_Resources + '/nvidia_announcement_banner.png'}" />
+                                                </aura:if>
+
+                                                <aura:if isTrue="{!v.bkgdImg == 'Entitlement'}">
+                                                    <img src="{!$Resource.ESPComm_Resources + '/nvidia_entitlement_banner.png'}" />
+                                                </aura:if>
+                                            </div>
+                                    	</div>
+                                    </div>
+                                </div>
+                                <aura:set attribute="else">
+                                	<div class="{!'smallBackgroundImg '+v.bkgdImg}">
+                                        <div class="interiorFrame">
+                                            <div class="slds-grid">
+                                            <div class="slds-size_1-of-2">
+                                                <h1>NVIDIA Enterprise Support Portal</h1>
+                                                 {!v.search}
+                                            </div>
+                                            <div class="slds-size_1-of-2"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                </aura:set>
+                            </aura:renderif>
+                        </aura:set>
+                    </aura:renderif>
+                </div>
+            </div>           
+        </section>
+        
+        <section>
+            <div class="interiorFrame themeBody">
+                {!v.body}
+            </div>
+        </section>
+        	
+        <section>
+        	<div class="slds-grid slds-grid_align-center footerBlock">
+                <div class="interiorFrame">
+                    <div class="slds-p-horizontal_small slds-size_1-of-1">
+                        <!--{!v.footerBlock}-->
+                        <c:ESPComm_Footer />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div><!-- end div -->
+</aura:component>

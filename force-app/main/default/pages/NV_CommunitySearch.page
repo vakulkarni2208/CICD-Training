@@ -1,0 +1,593 @@
+<apex:page controller="NV_CommunitySearchController" sidebar="false">
+    <head>
+        <apex:includeScript value="https://code.jquery.com/jquery-1.9.1.js"  />
+        <apex:includeScript value="{!URLFOR($Resource.AngularJSFlowChart, '/Angular/js/angular.min.js')}"/>
+        <apex:includeScript value="{!URLFOR($Resource.Bootstrap, '/bootstrap-3.3.6-dist/js/bootstrap.min.js')}"/>
+        <style>
+            html, body {margin:0;padding:0;height:100%;}
+            [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+                display: none !important;
+            }
+            th, table {
+                border: 1px solid black;
+            }
+            td {
+                border-top: 1px solid black;
+                border-bottom: 1px solid black;
+            }
+            div.boxCardBS {
+              width: 100%;
+              box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+              text-align: center;
+              margin-top:10px;
+            }
+            
+            div.boxHeaderBS {
+                background-color: #76B900;
+                color: white;
+                padding: 10px;
+                font-size: 14px;
+                font-weight:bold;
+            }
+            
+            div.boxContentBS {
+                padding: 40px;
+                overflow:auto;
+                max-height: 160px;
+                min-height: 160px;
+            }
+            .buttonNV {
+                background-color: #76B900;
+                display: inline-block;
+                padding: 6px 12px;
+                margin-bottom: 0;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 1.42857143;
+                text-align: center;
+                white-space: nowrap;
+                vertical-align: middle;
+                -ms-touch-action: manipulation;
+                touch-action: manipulation;
+                cursor: pointer;
+                -webkit-user-select: none;
+                moz-border-radius: 5px;
+                -webkit-border-radius: 5px; /* Safari 5.1+, Chrome 10+ */
+                border-radius: 5px; /* IE */
+            }
+            .button-successNV {
+                color: #fff;
+                background-color: #76B900;
+                border-color: #4cae4c;
+            }
+            
+            .dashboard {
+                float:left;
+                margin: 5% 5% 5% 5%;
+            }
+            
+            .container {
+                box-shadow: 0 0 30px black;
+                padding:8px 15px 8px 15px;
+            }
+            </style>
+            <apex:StyleSheet value="{!URLFOR($Resource.Bootstrap, '/bootstrap-3.3.6-dist/css/bootstrap.min.css')}"/>
+        </head>    
+<apex:pageMessages />
+        <body ng-app="CommunitySearchApp"> 
+            <div ng-controller="CommunitySearchCtrl">
+                <div class="col-lg-12 ng-cloak">
+                    <div class="container-fluid">
+                        <div id="content"> 
+                            <b>  {!$Label.COMM_PP_VF_Search_Results} : {!searchKeyword}  </b>
+                            <div ng-if="objCommunitySearchWrapper.accounts.length">
+                                <div>
+                                    <a href="javascript:;" data-toggle="collapse" data-parent="#accordion" data-target="#AccountCollapsible">
+                                      <b>{!$ObjectType.Account.labelPlural}</b>
+                                    </a>                                    
+                                </div>
+                                <div id="AccountCollapsible" class="collapse in">
+                                    <table id="demo" class="table table-striped ">
+                                        <thead class="thead-inverse">
+                                            <tr>
+                                                <th>
+                                                    {!$ObjectType.Account.fields.Name.Label}
+                                                </th>                       
+                                                <th>
+                                                    {!$ObjectType.Account.fields.Phone.Label}
+                                                </th>                           
+                                                <th>
+                                                    {!$ObjectType.Account.fields.AccountNumber.Label}
+                                                </th>                           
+                                                <th>
+                                                    {!$ObjectType.User.fields.Alias.Label}
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr ng-repeat="x in objCommunitySearchWrapper.accounts"> 
+                                                <td> 
+                                                    <a href="/{{x.Id}}" target="_blank">{{x.Name}}</a>
+                                                </td>
+                                                <td> 
+                                                    {{x.Phone}}
+                                                </td>
+                                                <td> 
+                                                    {{x.AccountNumber}}
+                                                </td>
+                                                <td> 
+                                                    {{x.Owner.Alias}}
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div ng-if="objCommunitySearchWrapper.opportunities.length">
+                                <div>
+                                    <a href="javascript:;" data-toggle="collapse" data-parent="#accordion" data-target="#OpportunityCollapsible">
+                                      <b>{!$ObjectType.Opportunity.labelPlural}</b>
+                                    </a>                                    
+                                </div>
+                                <div id="OpportunityCollapsible" class="collapse in">
+                                    <table class="table table-striped">
+                                        <thead class="thead-inverse">
+                                            <tr>
+                                                <th>
+                                                    {!$ObjectType.Opportunity.fields.Name.Label}
+                                                </th>                       
+                                                <th>
+                                                    {!$ObjectType.Account.fields.Name.Label}
+                                                </th>                           
+                                                <th>
+                                                    {!$ObjectType.Opportunity.fields.StageName.Label}
+                                                </th>                           
+                                                <th>
+                                                    {!$ObjectType.Opportunity.fields.CloseDate.Label}
+                                                </th>
+                                                <th>
+                                                    {!$ObjectType.User.fields.Alias.Label}
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr ng-repeat="x in objCommunitySearchWrapper.opportunities">
+                                                <td> 
+                                                    <a href="/{{x.Id}}" target="_blank">{{x.Name}}</a>
+                                                </td>
+                                                <td> 
+                                                    <a href="/{{x.AccountId}}" target="_blank">{{x.Account.Name}}</a>
+                                                </td>
+                                                <td> 
+                                                    {{x.StageName}}
+                                                </td>
+                                                <td> 
+                                                    {{x.CloseDate}}
+                                                </td>
+                                                <td> 
+                                                    {{x.Owner.Alias}}
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div ng-if="objCommunitySearchWrapper.leads.length">
+                                <div>
+                                    <a href="javascript:;" data-toggle="collapse" data-parent="#accordion" data-target="#LeadCollapsible">
+                                      <b>{!$ObjectType.Lead.labelPlural}</b>
+                                    </a>                                    
+                                </div>
+                                <div id="LeadCollapsible" class="collapse in">
+                                    <table class="table table-striped">
+                                        <thead class="thead-inverse">
+                                            <!--<tr>
+                                                <th>
+                                                    {!$ObjectType.Lead.fields.Name.Label}
+                                                </th>                       
+                                                <th>
+                                                    {!$ObjectType.Lead.fields.Title.Label}
+                                                </th>
+                                                <th>
+                                                    {!$ObjectType.Lead.fields.LeadSource.Label}
+                                                </th>
+                                                <th>
+                                                    {!$ObjectType.Lead.fields.Phone.Label}
+                                                </th>                           
+                                                <th>
+                                                    {!$ObjectType.Lead.fields.Company.Label}
+                                                </th>   
+                                                <th>
+                                                    {!$ObjectType.Lead.fields.Email.Label}
+                                                </th>   
+                                                <th>
+                                                    {!$ObjectType.Lead.fields.Status.Label}
+                                                </th>                           
+                                                <th>
+                                                    {!$ObjectType.User.fields.Alias.Label}
+                                                </th>
+                                            </tr> -->
+                                            
+                                            
+                                                  <tr>
+                                                <th>
+                                                    {!$ObjectType.Lead.fields.Lead_Number__c.Label}
+                                                </th>                       
+                                                <th>
+                                                    {!$ObjectType.Lead.fields.Company.Label}
+                                                </th>
+                                                <th>
+                                                    {!$ObjectType.Lead.fields.Name.Label}
+                                                </th>
+                                                <th>
+                                                    {!$ObjectType.Lead.fields.Email.Label}
+                                                </th>                           
+                                                <th>
+                                                    {!$ObjectType.Lead.fields.DR_Partner_Sales_Rep_Name__c.Label}
+                                                </th>   
+                                                <th>
+                                                    {!$ObjectType.Lead.fields.DR_Partner_Sales_Rep_Company__c.Label}
+                                                </th>   
+                                                <th>
+                                                    {!$ObjectType.Lead.fields.Address.Label}
+                                                </th>                           
+                                               
+                                            </tr>                                
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                        </thead>
+                                        <tbody>
+                                            <tr ng-repeat="x in objCommunitySearchWrapper.leads">
+                                               <!-- <td> 
+                                                    <a href="/{{x.Id}}" target="_blank">{{x.Name}}</a>
+                                                </td>
+                                                <td> 
+                                                    {{x.Title}}
+                                                </td>
+                                                <td> 
+                                                    {{x.LeadSource}}
+                                                </td>
+                                                <td> 
+                                                    {{x.Phone}}
+                                                </td>
+                                                <td> 
+                                                    {{x.Company}}
+                                                </td>
+                                                <td> 
+                                                    {{x.Email}}
+                                                </td>
+                                                <td> 
+                                                    {{x.Status}}
+                                                </td>
+                                                <td> 
+                                                    {{x.Owner.Alias}}
+                                                </td>
+                                            </tr>-->
+                                            <td> 
+                                                    <a href="/{{x.Id}}" target="_blank">{{x.Lead_Number__c}}</a>
+                                                </td>
+                                                <td> 
+                                                    {{x.Company}}
+                                                </td>
+                                                <td> 
+                                                    {{x.Name}}
+                                                </td>
+                                                <td> 
+                                                    {{x.Email}}
+                                                </td>
+                                                <td> 
+                                                    {{x.DR_Partner_Sales_Rep_Name__r.Name}}
+                                                </td>
+                                                <td> 
+                                                    {{x.DR_Partner_Sales_Rep_Company__r.Name}}
+                                                </td>
+                                                <td> 
+                                                    <!--{{x.Address}}---> 
+                                                    {{x.Street}},{{x.City}}, {{x.PostalCode}},{{x.State}},{{x.Country}},{{x.Region__c}},{{x.Sub_Region__c}}
+                                                </td>
+                                               
+                                            </tr>
+                                            
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div ng-if="objCommunitySearchWrapper.cases.length">
+                                <div>
+                                    <a href="javascript:;" data-toggle="collapse" data-parent="#accordion" data-target="#CaseCollapsible">
+                                      <b>{!$ObjectType.Case.labelPlural}</b>
+                                    </a>                                    
+                                </div>
+                                <div id="CaseCollapsible" class="collapse in">
+                                    <table class="table table-striped">
+                                        <thead class="thead-inverse">
+                                            <tr>
+                                                <th>
+                                                    {!$ObjectType.Case.fields.CaseNumber.Label}
+                                                </th>                       
+                                                <th>
+                                                    {!$ObjectType.Contact.fields.Name.Label}
+                                                </th>                           
+                                                <th>
+                                                    {!$ObjectType.Case.fields.Subject.Label}
+                                                </th>
+                                                <th>
+                                                    {!$ObjectType.Case.fields.Status.Label}
+                                                </th>                           
+                                                <th>
+                                                    {!$ObjectType.Case.fields.Priority.Label}
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr ng-repeat="x in objCommunitySearchWrapper.cases">
+                                                <td> 
+                                                    <a href="/{{x.Id}}" target="_blank">{{x.CaseNumber}}</a>
+                                                </td>
+                                                <td> 
+                                                    <a href="/{{x.ContactId}}" target="_blank">{{x.Contact.Name}}</a>
+                                                </td>
+                                                <td> 
+                                                    {{x.Subject}}
+                                                </td>
+                                                <td> 
+                                                    {{x.Status}}
+                                                </td>
+                                                <td> 
+                                                    {{x.Priority}}
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div ng-if="objCommunitySearchWrapper.contracts.length">
+                                <div>
+                                    <a href="javascript:;" data-toggle="collapse" data-parent="#accordion" data-target="#ContractCollapsible">
+                                      <b>{!$ObjectType.Contract.labelPlural}</b>
+                                    </a>                                    
+                                </div>
+                                <div id="ContractCollapsible" class="collapse in">
+                                    <table class="table table-striped">
+                                        <thead class="thead-inverse">
+                                            <tr>
+                                                <th>
+                                                    {!$ObjectType.Contract.fields.ContractNumber.Label}
+                                                </th>                       
+                                                <th>
+                                                    {!$ObjectType.Account.fields.Name.Label}
+                                                </th>                           
+                                                <th>
+                                                    {!$ObjectType.Contract.fields.StartDate.Label}
+                                                </th>
+                                                <th>
+                                                    {!$ObjectType.Contract.fields.EndDate.Label}
+                                                </th>                           
+                                                <th>
+                                                    {!$ObjectType.Contract.fields.Status.Label}
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr ng-repeat="x in objCommunitySearchWrapper.contracts">
+                                                <td> 
+                                                    <a href="/{{x.Id}}" target="_blank">{{x.ContractNumber}}</a>
+                                                </td>
+                                                <td> 
+                                                    <a href="/{{x.AccountId}}" target="_blank">{{x.Account.Name}}</a>
+                                                </td>
+                                                <td> 
+                                                    {{x.StartDate}}
+                                                </td>
+                                                <td> 
+                                                    {{x.EndDate}}
+                                                </td>
+                                                <td> 
+                                                    {{x.Status}}
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div ng-if="objCommunitySearchWrapper.documents.length">
+                                <div>
+                                    <a href="javascript:;" data-toggle="collapse" data-parent="#accordion" data-target="#DocumentCollapsible">
+                                      <b>{!$ObjectType.Document.labelPlural}</b>
+                                    </a>                                    
+                                </div>
+                                <div id="DocumentCollapsible" class="collapse in">
+                                    <table class="table table-striped">
+                                        <thead class="thead-inverse">
+                                            <tr>
+                                                <th>
+                                                    {!$ObjectType.Document.fields.Name.Label}
+                                                </th>                                               
+                                                <th>
+                                                    {!$ObjectType.Document.fields.Description.Label}
+                                                </th>                           
+                                                <th>
+                                                    {!$ObjectType.Document.fields.Type.Label}
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr ng-repeat="x in objCommunitySearchWrapper.documents">
+                                                <td> 
+                                                    <a href="/{{x.Id}}" target="_blank">{{x.Name}}</a>
+                                                </td>
+                                                <td> 
+                                                    {{x.Description}}
+                                                </td>
+                                                <td> 
+                                                    {{x.Type}}
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div ng-if="objCommunitySearchWrapper.products.length">
+                                <div>
+                                    <a href="javascript:;" data-toggle="collapse" data-parent="#accordion" data-target="#Product2Collapsible">
+                                      <b>{!$ObjectType.Product2.labelPlural}</b>
+                                    </a>                                    
+                                </div>
+                                <div id="Product2Collapsible" class="collapse in">
+                                    <table class="table table-striped">
+                                        <thead class="thead-inverse">
+                                            <tr>
+                                                <th>
+                                                    {!$ObjectType.Product2.fields.Name.Label}
+                                                </th>                       
+                                                <th>
+                                                    {!$ObjectType.Product2.fields.Description.Label}
+                                                </th>                           
+                                                <th>
+                                                    {!$ObjectType.Product2.fields.Family.Label}
+                                                </th>                           
+                                                <th>
+                                                    {!$ObjectType.Product2.fields.IsActive.Label}
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr ng-repeat="x in objCommunitySearchWrapper.products">
+                                                <td> 
+                                                    <a href="/{{x.Id}}"  target="_blank">{{x.Name}}</a>
+                                                </td>
+                                                <td> 
+                                                    {{x.Description}}
+                                                </td>
+                                                <td> 
+                                                    {{x.Family}}
+                                                </td>
+                                                <td> 
+                                                    {{x.IsActive}}
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div ng-if="objCommunitySearchWrapper.lstContentVersion.length">
+                                <div>
+                                    <a href="javascript:;" data-toggle="collapse" data-parent="#accordion" data-target="#CampaignCollapsible">
+                                      <b>{!$ObjectType.ContentVersion.labelPlural}</b>
+                                    </a>                                    
+                                </div>
+                                <div id="CampaignCollapsible" class="collapse in">
+                                    <table class="table table-striped">
+                                        <thead class="thead-inverse">
+                                            <tr>
+                                                <th>
+                                                    {!$ObjectType.ContentVersion.fields.Title.Label}
+                                                </th>                       
+                                                <th>
+                                                    {!$ObjectType.ContentVersion.fields.Description.Label}
+                                                </th>
+                                                <th>
+                                                    {!$ObjectType.ContentVersion.fields.Region__c.Label}
+                                                </th>
+                                                <th>
+                                                    {!$ObjectType.ContentVersion.fields.Language_Region__c.Label}
+                                                </th>
+                                                <th>
+                                                    {!$ObjectType.ContentVersion.fields.Competency__c.Label}
+                                                </th>                                                                                                                            
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr ng-repeat="x in objCommunitySearchWrapper.lstContentVersion">
+                                                <td> 
+                                                    <a href="/{{x.Id}}" target="_blank">{{x.Title}}</a>
+                                                </td>
+                                                <td> 
+                                                    {{x.Description}}
+                                                </td>
+                                                <td> 
+                                                    {{x.Region__c}}
+                                                </td>
+                                                <td> 
+                                                    {{x.Language_Region__c}}
+                                                </td>
+                                               <!-- <td> 
+                                                    {{x.Competency__c}}
+                                                </td>-->                                                
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div> 
+                            <!--<div ng-if="objCommunitySearchWrapper.MDFProjects.length">
+                                <div>
+                                    <a href="javascript:;" data-toggle="collapse" data-parent="#accordion" data-target="#xMDF_Project__cCollapsible">
+                                      <b>{!$ObjectType.xMDF_Project__c.labelPlural}</b>
+                                    </a>                                    
+                                </div>
+                                <div id="#xMDF_Project__cCollapsible" class="collapse in">
+                                    <table class="table table-striped">
+                                        <thead class="thead-inverse">
+                                            <tr>
+                                                <th>
+                                                    {!$ObjectType.xMDF_Project__c.fields.Name.Label}
+                                                </th>                       
+                                                <th>
+                                                    {!$ObjectType.xMDF_Project__c.fields.Project_Name__c.Label}
+                                                </th>                           
+                                                <th>
+                                                    {!$ObjectType.xMDF_Project__c.fields.MDF_Partner__c.Label}
+                                                </th>                           
+                                                <th>
+                                                    {!$ObjectType.xMDF_Activity__c.fields.Name.Label}
+                                                </th>
+                                                <th>
+                                                    {!$ObjectType.xMDF_Project__c.fields.Maximum_Project_Cost_to_be_Reimbursed__c.Label}
+                                                </th>
+                                                <th>
+                                                    {!$Label.COMM_PP_VF_RecordType_Name}
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr ng-repeat="x in objCommunitySearchWrapper.MDFProjects">
+                                                <td> 
+                                                    <a href="/{{x.Id}}" target="_blank">{{x.Name}}</a>
+                                                </td>
+                                                <td> 
+                                                    {{x.Project_Name__c}}
+                                                </td>
+                                                <td> 
+                                                    <a href="/{{x.MDF_Partner__c}}" target="_parent">{{x.MDF_Partner__r.Name}}</a>
+                                                </td>
+                                                <td> 
+                                                    <a href="/{{x.MDF_Activity__c}}" target="_parent">{{x.MDF_Activity__r.Name}}</a>
+                                                </td>
+                                                <td> 
+                                                    {{x.Maximum_Project_Cost_to_be_Reimbursed__c}}
+                                                </td>
+                                                <td> 
+                                                    {{x.RecordType.Name}}
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div> --> 
+                        </div>
+                    </div>
+                </div>     
+            </div>
+        </body>
+        <script>
+            var app = angular.module('CommunitySearchApp', []);
+            app.controller('CommunitySearchCtrl', function($scope) {                
+                $scope.objCommunitySearchWrapper = JSON.parse('{!strCommunitySearchWrapper}');         
+                console.log($scope.objCommunitySearchWrapper);      
+            });
+        </script>
+</apex:page>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SL_Forecast_Other_ANZ_SEA</fullName>
+    <booleanFilter>1 AND 2 AND (3 OR 8) AND 4 AND 5 AND 6 AND 7</booleanFilter>
+    <columns>Close_Date_Fiscal_Quarter__c</columns>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Sales_Leader_Commentary__c</columns>
+    <columns>At_Risk_for_CQ_Revenue__c</columns>
+    <columns>SL_RTX_Amount__c</columns>
+    <columns>SL_Other_Amount__c</columns>
+    <columns>Sales_Leader_Forecast_Category__c</columns>
+    <columns>OPPORTUNITY.NEXT_STEP</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>Opportunity_Number__c</columns>
+    <columns>NBU_Engagement_Justification__c</columns>
+    <columns>NBU_Involved__c</columns>
+    <columns>NBU_Opportunity_Number__c</columns>
+    <columns>NBU_Technology_Being_Proposed__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Sub_Region__c</field>
+        <operation>equals</operation>
+        <value>SEA,ANZ</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Opportunity.Enterprise_Sales_Opportunity</value>
+    </filters>
+    <filters>
+        <field>MCO_Eligible_Product_Amount_Other__c</field>
+        <operation>greaterOrEqual</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>Industry__c</field>
+        <operation>notEqual</operation>
+        <value>Strategic Hyperscale</value>
+    </filters>
+    <filters>
+        <field>Sales_Leader_Forecast_Category__c</field>
+        <operation>equals</operation>
+        <value>5-Other,4-Pipeline,3-Best Case,2-Commit</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.CLOSED</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>Close_Date_Fiscal_Quarter__c</field>
+        <operation>equals</operation>
+        <value>2021-Q4,2022-Q1,2022-Q2,2022-Q3</value>
+    </filters>
+    <filters>
+        <field>RTX_Product_Amount__c</field>
+        <operation>greaterOrEqual</operation>
+        <value>1</value>
+    </filters>
+    <label>SL Forecast _ Other (ANZ/SEA)</label>
+</ListView>

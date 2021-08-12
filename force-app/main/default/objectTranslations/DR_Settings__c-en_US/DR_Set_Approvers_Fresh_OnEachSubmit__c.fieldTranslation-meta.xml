@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- If you want fresh approvers (SalesOps Admin, PBM, PBM Manager) on each submit (Deal Reg Approval, Extension Approval, Claim Approval) set this field to true. --></help>
+    <label><!-- DR : Set Approvers Fresh OnEachSubmit --></label>
+    <name>DR_Set_Approvers_Fresh_OnEachSubmit__c</name>
+</CustomFieldTranslation>

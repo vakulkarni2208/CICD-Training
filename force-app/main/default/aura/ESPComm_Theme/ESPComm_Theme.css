@@ -1,0 +1,729 @@
+.THIS p, .THIS h1, .THIS h2, .THIS h3, .THIS span, .THIS li, .THIS a {
+    font-family: "din-2014", Trebuchet, Arial, sans-serif;
+    font-weight: 300;
+}
+.THIS a:focus,
+.THIS a:active {
+    border: none;
+}
+/* 8/4 Column Overrides */
+.THIS .slds-large-size_8-of-12, 
+.THIS .slds-large-size--8-of-12 {
+    width: 60%;
+    margin-right: 35px;
+}
+
+/* -- -- 
+  HEADER & NAVIGATION
+ -- -- */
+
+/* Back to tenable.com link */
+.THIS .backToLink {
+    height: 50px;
+    background: white;
+    padding: 11px 0 0;
+}
+
+/* Logo */
+.THIS .logoNavBlock {
+    padding: 15px 0 7px;
+    background: black;
+    width: 100%;
+}
+.THIS .logo a {
+    font-size: 24px;
+    color: white;
+    text-transform: uppercase;
+    font-family: "din-2014", Trebuchet, Arial, sans-serif;
+    font-weight: 300;
+}
+.THIS .logo a:hover {
+    text-decoration: none;
+    color: #76b300;
+}
+
+/* Navigation */
+.THIS .forceCommunityGlobalNavigation {
+	background-color: transparent;
+    margin-top: -6px;
+}
+.THIS nav a[title=Home] {
+    display: none;
+}
+.THIS .forceCommunityGlobalNavigation li {
+    padding: 0.6em;
+}
+.THIS .forceCommunityGlobalNavigation li:nth-child(2) a {
+    background: #75b406;
+    border-radius: 0;
+}
+.THIS .forceCommunityGlobalNavigation li a,
+.THIS .forceCommunityGlobalNavigation li button {
+    color: white;
+    font-family: "din-2014", Trebuchet, Arial, sans-serif;
+    font-weight: 300;
+    padding: 5px 0.5em;
+    font-size: 18px;
+    border-radius: 5px;
+}
+.THIS .forceCommunityGlobalNavigation li a:hover,
+.THIS .forceCommunityGlobalNavigation li button:hover {
+    color: #76b300;
+    background-color: transparent !important;
+    text-decoration: none;
+}
+.THIS .forceCommunityGlobalNavigation li a.slds-is-active,
+.THIS .forceCommunityGlobalNavigation li button.slds-is-active {
+    background-color: transparent !important;
+    color: #76b300;
+}
+.THIS .forceCommunityGlobalNavigation .slds-list_vertical {
+    background-color: rgba(255,255,255,0.95);
+    top: 57px;
+    border-radius: 0 !important;
+}
+.THIS .forceCommunityGlobalNavigation .slds-list_vertical li {
+    padding: 0;
+}
+.THIS .forceCommunityGlobalNavigation .slds-list_vertical li a {
+    color: #333;
+}
+.THIS .slds-list_vertical li:first-child a {
+    font-weight: 900 !important;
+    text-transform: uppercase !important;
+}
+.THIS .forceCommunityGlobalNavigation .slds-list_horizontal>.slds-list__item>.slds-list_vertical>.slds-list__item+.slds-list__item>a, 
+.THIS .forceCommunityGlobalNavigation .slds-list_horizontal>.slds-list__item>.slds-list_vertical>.slds-list__item+.slds-list__item>button {
+    border-top: none !important;
+}
+/* User Profile */
+.THIS .selfServiceProfileMenuTrigger .trigger-link:focus,
+.THIS .selfServiceProfileMenuTrigger .trigger-link:active {
+    border: none;
+}
+.THIS span.profileName {
+    font-size: 15px !important;
+    color: white;
+    text-shadow: none;
+    font-family: "din-2014", Trebuchet, Arial, sans-serif;
+    font-weight: 300;
+    text-transform: none;
+}
+.THIS .menuList.visible.positioned {
+    top: 55px;
+    background: rgba(255,255,255,0.95);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.07);
+}
+.THIS .menuList.visible.positioned li a {
+    color: #333;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.THIS .menuList.visible.positioned li a:hover {
+    background-color: transparent;
+    text-decoration: underline;
+}
+.THIS .selfServiceUserProfileMenu .login .linkLabel {
+    color: #76b300;
+}
+.THIS .forceCommunityUserProfileStats .forceCommunityReputationWidget img {
+    width: 56px !important;
+    height: 56px !important;
+    max-width: none;
+}
+.THIS .forceCommunityUserProfileStats .forceCommunityReputationWidget .slds-avatar {
+    overflow: visible;
+    display: initial;
+}
+.THIS .selfServiceProfileMenuTrigger .trigger-link {
+    padding: 0;
+}
+.THIS .selfServiceUserProfileMenu .profileName, 
+.THIS .selfServiceUserProfileMenu .down-arrow {
+    display: inline-block;
+    position: relative;
+    top: 10px;
+    
+}
+.THIS .selfServiceUserProfileMenu .down-arrow {
+    left: 10px;
+    top: 0;
+}
+.THIS .selfServiceProfileMenuTrigger .profileName {
+    vertical-align: unset;
+}
+.THIS div[data-region-name=profileMenu] {
+    display: table;
+}
+/* Body Frame */
+.THIS .interiorFrame {
+    max-width: 1200px;
+    display: inherit;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* -- -- 
+  BANNER
+ -- -- */
+
+.THIS .bannerBlock .lgBackground {
+    background: black;
+}
+.THIS .lgBackground .slds-size_1-of-2:first-child {
+    padding: 60px 60px 0 0;
+}
+.THIS .smallBackgroundImg .slds-size_1-of-2:first-child{
+    padding: 20px 60px 0 0;
+}
+.THIS .lgBackground h1,
+.THIS .smallBackgroundImg h1 {
+    font-size: 30px;
+    color: #76b300;  
+    text-transform: uppercase;
+}
+.THIS .lgBackground p {
+    color: white;
+    font-size: 24px;
+    margin: 10px 0 20px;
+}
+.THIS .smallBackgroundImg {
+    height: 160px;
+    background: black;
+}
+.THIS .smallBackgroundImg .slds-size_1-of-2 img {
+    max-height: 160px;
+    float: right;
+}
+/* Search */
+/*
+.THIS button.slds-button.search-button:before {
+    content: 'search';
+    font-family: 'Material Icons';
+    color: #999;
+    font-size: 34px;
+    top: 6px;
+    position: relative;
+}
+*/
+.THIS .forceCommunitySearchBox .search-field::placeholder,
+.THIS .forceCommunitySearchBox .search-field {
+    font-size: 16px;
+    font-weight: 100;
+}
+.THIS .forceCommunitySearchBox .search-button.uiButton, 
+.THIS .forceCommunitySearchBox .has-input .search-button.uiButton, 
+.THIS .forceCommunitySearchBox .search-button.uiButton.focus {
+    width: 75px;
+    height: 100%;
+    background-color: transparent;
+}
+.THIS .forceCommunitySearchBox .search-button span.label {
+    display: none;
+}
+.THIS .forceCommunitySearchBox .search-button.uiButton:active, 
+.THIS .forceCommunitySearchBox .search-button.uiButton:focus, 
+.THIS .forceCommunitySearchBox .search-button.uiButton:hover, 
+.THIS .forceCommunitySearchBox .has-input .search-button.uiButton:active, 
+.THIS .forceCommunitySearchBox .has-input .search-button.uiButton:focus, 
+.THIS .forceCommunitySearchBox .has-input .search-button.uiButton:hover {
+    background: #f8f8f8;
+}
+
+/* -- -- 
+  HOME PAGE
+ -- -- */
+
+.THIS.Home .forceCommunityRecordListStandard .listTitle {
+    display: none;
+}
+/* Featured Topics */
+.THIS .forceTopicFeaturedTopics .topicContent {
+    background-color: transparent;
+}
+.THIS .forceTopicFeaturedTopicItem.topicItem {
+    width: 50%;
+    height: 210px;
+}
+.THIS .forceTopicFeaturedTopics .topicLabel {
+    font-size: 28px;
+    font-weight: 100;
+    display: block;
+    background: rgba(0,0,0,0.6);
+    position: relative;
+    top: 133px;
+}
+/* Tables */
+.THIS a, .THIS td a {
+    color: #76b300;
+    font-size: 14px;
+}
+.THIS useHeaderBarFix th {
+    font-size: 14px;
+} 
+
+/* -- -- 
+  GENERAL BODY
+ -- -- */
+
+.THIS .uiOutputRichText h2 {
+    font-size: 32px;
+    color: #76b300;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.THIS.Home .uiOutputRichText h2 {
+    margin-bottom: -15px;
+}
+.THIS .uiOutputRichText p {
+    font-size: 16px;
+    color: #141414;
+}
+.THIS .interiorFrame.themeBody {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+/* Tables */
+.THIS .forceBaseListView thead th {
+    background: #ccc;
+    font-size: 14px;
+}
+.THIS .forceBaseListView thead th, 
+.THIS .forceBaseListView tbody td, 
+.THIS .forceBaseListView tbody th {
+	border-bottom: none; 
+}
+.THIS .forceCommunityRecordListStandard .forceBaseListView thead th:first-of-type, 
+.THIS .forceCommunityRecordListStandard .forceBaseListView tbody td:first-of-type {
+    padding-left: 10px;
+}
+.THIS .forceCommunityRecordListStandard .viewAllLink {
+    color: #76b300;
+    float: right;
+}
+.THIS .forceCommunityRecordListStandard .viewAllLink:after {
+	content:">";
+    margin-left: 5px;
+}
+.THIS.Home .forceCommunityRecordListStandard table tr:nth-child(even) td {
+    background-color: #f8f8f8;
+}
+.THIS .forceCommunityHeadline .headlineTitle {
+    text-align: left;
+    color: #76b900;
+    font-size: 32px;
+    border-bottom: 1px solid #D9D9D9;
+}
+/* Trending Articles list */
+.THIS .selfServiceBaseSimpleItems h2.base-items-header {
+    font-size: 28px;
+    font-weight: 100;
+    text-transform: capitalize;
+    color: #76b300;
+    border-bottom: 1px solid #D9D9D9;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+.THIS .selfServiceBaseSimpleItems .base-simple-item,
+.THIS .selfServiceSimilarItemWithViewCount.base-simple-item>* {
+    border-bottom: none;
+}
+.THIS .selfServiceBaseSimpleItems .base-simple-item .item-title-link {
+    padding: 8px 0;
+}
+.THIS .selfServiceBaseSimpleItem .item-title {
+    font-size: 16px;
+}
+
+/* -- --
+ VIEW ALL LIST VIEW
+ -- -- */
+
+.THIS .test-listViewManager ol.slds-breadcrumb span {
+    font-size: 28px;
+    font-weight: 100;
+    text-transform: capitalize;
+    color: #76b300;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+/* Hides the list title and drop down on list views 
+.THIS .test-listViewManager .slds-page-header .slds-media.slds-no-space.slds-grow {
+    display: none;
+}*/
+
+/* Removes list filter/chart options */
+.THIS .test-listViewSettingsMenu.forceListViewSettingsMenu,
+.THIS .forceListViewManagerDisplaySwitcher,
+.THIS force-list-view-manager-button-bar {
+    display: none;
+}
+.THIS .forceListViewPicker {
+    visibility: hidden;
+}
+
+
+/* -- -- 
+  ARTICLE DETAIL
+ -- -- */
+/*---- SDS-1494: Hides Title and URL Name on article detail page-------*/
+.THIS article.content .forcePageBlockSectionRow:nth-child(3) {
+    display:none;
+}
+.THIS article.content .forcePageBlockSectionRow:nth-child(4) {
+    display:none;
+}
+.THIS article.content .uiOutputRichText h2{
+    margin-bottom: 15px;
+	font-weight: 400!important;
+    font-size: 18px!important;
+    color: #76b900!important;
+    
+}
+.THIS article.content .uiOutputRichText h3 {
+    font-size: 18px;
+    font-weight: 100;
+    border-bottom: 1px solid #d9d9d9;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    color: #141414!important;
+ }
+.THIS article.content .uiOutputRichText b span {
+	font-weight: 510!important;
+}
+/*--------------------------------------------------*/
+.THIS .selfServiceArticleHeaderDetail.meta {
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+.THIS .selfServiceArticleLayout .meta .dot,
+.THIS span.article-type {
+    display: none;
+}
+.THIS .selfServiceArticleLayout.zoom.article-column {
+    padding: 0;
+}
+.THIS .forceCommunityHeadline .headlineIcon {
+    display: none;
+}
+.THIS .selfServiceCaseCreate .sub-header-title {
+    display: none;
+}
+/* Typography */
+.THIS .slds-rich-text-editor__output.uiOutputRichText.forceOutputRichText {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+}
+.THIS .selfServiceArticleLayout.voting .slds-media__body.slds-truncate {
+    font-size: 13px;
+}
+.THIS article .selfServiceArticleLayout .forcePageBlockSectionView.full .test-id__field-label, 
+.THIS article .selfServiceArticleLayout .forcePageBlockSectionView.full .test-id__grouped-field-label-icon,
+.THIS .selfServiceArticleLayout .forcePageBlockSectionView.full .test-id__field-label, 
+.THIS .selfServiceArticleLayout .forcePageBlockSectionView.full .test-id__grouped-field-label-icon {
+    text-transform: uppercase;
+    font-weight: 300 !important;
+    font-size: 20px !important;
+    color: #76b900 !important;
+}
+.THIS article .selfServiceArticleLayout.zoom .article-summary, 
+.THIS article .selfServiceArticleLayout.zoom .forcePageBlockSectionView.full .test-id__field-value,
+.THIS article span.uiOutputText {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+}
+
+
+/* -- -- 
+  CREATE CASE FORM
+ -- -- */
+
+ .THIS .selfServiceCaseCreate .caseHeader .bBody {
+    text-align: left;
+ }
+ .THIS .selfServiceCaseCreate .forceRecordLayout .mdp.forcePageBlockSectionEdit:first-of-type .forcePageBlockSectionRow:first-child .forcePageBlockItem:first-child {
+    padding-top: 5px;
+ }
+ .THIS .selfServiceCaseCreate .caseHeader .bBody .headerLabel,
+ .THIS .selfServiceCaseArticleDeflection .header-title {
+    font-weight: 300;
+    text-transform: none;
+    font-family: "din-2014", Trebuchet, Arial, sans-serif !important;
+    font-size: 24px !important;
+    color: #76b900;
+ }
+.THIS .selfServiceCaseCreate .forceRecordLayout .mdp.forcePageBlockItemEdit, 
+.THIS .selfServiceCaseCreate .forceRecordLayout .mdp.forcePageBlockItemView {
+    padding-left: 15px;
+}
+.THIS .selfServiceCaseCreate button.buttonStyle {
+    max-width: 200px;
+    padding: 8px 15px;
+    font-size: 16px;
+}
+.THIS .selfServiceCaseCreate .footer .submitButtonContainer {
+    padding: 0 0 0 15px;
+}
+.THIS .selfServiceBaseSimpleItems .base-simple-item .item-title-link {
+    line-height: 28px;
+    font-size: 15px;
+}
+.THIS .attachLabel span.needsclick.uiOutputText {
+    font-size: 16px;
+}
+
+
+/* -- -- 
+  TOPIC DETAIL
+ -- -- */
+
+.THIS .forceChatterChatterFollow .button, 
+.THIS .forceChatterNewMessageNotification .titleContainer .title {
+    max-width: 200px;
+    padding: 8px 15px;
+    font-size: 16px;
+}
+.THIS .selfServiceBaseArticleList .empty {
+    color: #ccc;
+    font-weight: 100;
+    font-size: 25px;
+}
+.THIS .selfServiceArticleHeaderDetail .article-head {
+    font-weight: 300;
+    color: #76b900;
+}
+.THIS .selfServiceArticleListItem .footer {
+    font-size: 14px;
+}
+
+/* -- -- 
+  RECORD DETAIL 
+ -- -- */
+
+.THIS .forceCommunityRecordHeadline .forceHighlightsStencilDesktop .slds-page-header__title {
+    font-size: 28px;
+}
+.THIS .forceDetailPanel .forcePageBlockSectionView .forcePageBlockItem {
+    margin: 10px 1rem 0;
+}
+ .THIS .slds-form-element__label,
+ .THIS .slds-text-heading--label-normal {
+    font-size: 18px;
+ }
+ .THIS .forcePageBlockItemView .slds-form-element__static,
+  .THIS .forcePageBlockItemView .slds-form-element__static a,
+ .THIS .forceDetailPanel .forceOutputLookup,
+ .THIS .forceCommunityRecordHeadline .forceHighlightsStencilDesktop .slds-page-header__detail-block .slds-text-body--regular {
+    font-size: 15px;
+ }
+ .THIS .slds-text-heading_label-normal,
+ .THIS .slds-text-heading--label-normal {
+    font-size: 14px;
+ }
+ .THIS .forceHighlightsDesktopListRecordItem .slds-truncate {
+    overflow: visible;
+ }
+/* Hides follow button on case detail */
+.THIS .forceCommunityRecordHeadline .forceActionsContainer button {
+    display: none;
+}
+/* Hides Edit button on case detail 
+.THIS.Cases a[title="Edit"] {
+    display: none !important;
+}*/
+ /* Removes SLDS icons */
+ .THIS .forceHighlightsStencilDesktop .forceEntityIcon,
+ .THIS .slds-media__figure {
+    display: none;
+ }
+/* Case Status button on Case detail page */
+.THIS .selfServiceCaseStatusButton {
+    max-width: 150px;
+}
+.THIS .selfServiceCaseStatusButton span {
+    font-size: 16px;
+}
+.THIS h3.slds-section__title {
+    font-size: 21px;
+}
+.THIS h3.slds-section__title span {
+    color: rgb(118, 185, 0);
+    margin: 0;
+    padding: 0;
+}
+
+
+/* -- -- 
+  RECORD LIST 
+ -- -- */
+
+.THIS .forceListViewPicker.triggerLinkText, 
+.THIS .forceListViewPicker.triggerLink .triggerLinkTextAndIconWrapper {
+    font-size: 18px;
+}
+/* Hides New button on Case list view */
+.THIS.false.Cases .forceListViewManagerHeader .slds-button a[title="New"] {
+    display: none;
+}
+
+/* -- -- 
+  REGISTRATION PAGE 
+ -- -- */
+.THIS .uiOutputRichText h3 {
+    font-size: 28px;
+    font-weight: 100;
+    text-transform: capitalize;
+    color: #76b300;
+    border-bottom: 1px solid #D9D9D9;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+.THIS .forceCommunityRichText ul li {
+    padding: 0 0 7px 5px;
+    font-size: 16px;
+}
+
+/* -- -- 
+  USER SETTINGS
+ -- -- */
+
+/* removes editability on email field, removes "field" around it */
+.THIS .forceCommunityUserSettings .settingsEmail {
+    pointer-events: none;
+    padding: 0 !important;
+    font-size: 1rem !important;
+    border: none !important;
+    box-shadow: none !important;
+} 
+/* removes ability to reset password */
+.THIS .accountSection .sectionbox:nth-child(4) {
+    display: none;
+}
+.THIS .forceCommunityUserSettings .texttitle {
+    font-size: 20px;
+}
+.THIS .forceCommunityUserSettings .settingsLabel,
+.THIS .uiInput--default .form-element__label {
+    font-size: 18px;
+    font-weight: 300;
+}
+.THIS .forceCommunityUserSettings .settingsOutputbox,
+.THIS .forceCommunityUserSettings .settingsOutputbox a {
+    font-size: 15px;
+}
+/* Hides profile visibility & email notifications sections */
+.THIS .forceCommunityUserSettings>div .row:nth-child(4), 
+.THIS .forceCommunityUserSettings>div .row:nth-child(5) {
+    display: none;
+}
+
+ /* -- -- 
+  USER PROFILE
+ -- -- */
+
+/* Hides My Account from user dropdown */
+.THIS li.myAccount.uiMenuItem {
+    display: none;
+}
+.THIS .userActions {
+    display: none;
+}
+
+.THIS .forceCommunityUserProfileDetail .userDetailHeader {
+    border: none;
+ }
+
+.THIS .slds-form-element.slds-m-bottom_xx-small.slds-form-element_edit.slds-grow.slds-hint-parent.override--slds-form-element {
+    margin-bottom: 20px;
+}
+
+/* -- -- 
+  TABS
+ -- -- */
+
+.THIS .uiTabItem a span.title {
+    font-size: 20px;
+    color: #76b300;
+}
+.THIS .uiTabset--default .tabs__item.active>a {
+    border-color: #76b300;
+}
+.THIS .uiTabset--default .tabs__item+.tabs__item {
+    margin-left: 50px;
+}
+.THIS .uiTabBar {
+    margin-bottom: 20px;
+}
+
+
+/* -- -- 
+  FOOTER
+ -- -- */
+
+.THIS .footerBlock {
+    padding-top: 40px;
+    background: black;
+    color: white;
+}
+.THIS .footerBlock h3 {
+    font-size: 24px;
+    line-height: 26px;
+    text-align: left;
+    padding-bottom: 12px;
+    font-weight: bold;
+    color: #eee;
+    border-bottom: 1px solid #747474;
+}
+.THIS .footerBlock ul {
+    list-style: none;
+    margin: 10px 0 50px 0;
+}
+.THIS .footerBlock li {
+    margin-bottom: 5px;
+    display: block;
+}
+.THIS .footerBlock li a {
+    color: #76b900;
+    font-size: 16px;
+    line-height: 30px;
+}
+.THIS .footerBlock .subscribe img {
+    display: inline-block;
+    float: left;
+    margin-left: -5px;
+}
+.THIS .footerBlock .subscribe p {
+    display: inline-block;
+    font-size: 21px;
+    text-transform: uppercase;
+    margin: 10px 30px 0;
+}
+.THIS .footerBlock .subscribe a {
+    background-color: #76b900;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 14px 14px;
+    color: white;
+}
+.THIS .footerBlock .social p {
+    font-size: 16px;
+    color: #747474;
+    display: inline-block;
+    float: left;
+    margin-right: 30px;
+    margin-top: 15px;
+}
+.THIS .footerBlock .social li {
+    display: initial !important;
+    margin-right: 13px;
+}
+.THIS .footerBlock .social li a img {
+    height: 30px;
+}
+.THIS .footerBlock ul {
+    list-style: none;
+    margin: 10px 0 50px 0;
+}

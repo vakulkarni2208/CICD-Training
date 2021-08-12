@@ -1,0 +1,110 @@
+<apex:page showHeader="false" standardStylesheets="true"> 
+<html>
+    <head>
+        <apex:includeScript value="https://code.jquery.com/jquery-1.9.1.js"  />
+        <apex:includeScript value="{!URLFOR($Resource.AngularJSFlowChart, '/Angular/js/angular.min.js')}"/>
+        <apex:includeScript value="{!URLFOR($Resource.Bootstrap, '/bootstrap-3.3.6-dist/js/bootstrap.min.js')}"/>
+        <style>
+            html, body {margin:0;padding:0;height:100%;}
+            [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+                display: none !important;
+            }
+            div.boxCardBS {
+              width: 75%;
+              margin-top:15%;
+              margin-left:10%;
+              box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+              text-align: center;
+              margin-top:10px;
+            }
+            
+            div.boxHeaderBS {
+                background-color: #76B900;
+                color: white;
+                padding: 10px;
+                font-size: 16px;
+                font-weight:bold;
+                border-bottom:1px solid white;
+            }
+            
+            div.boxContentBS {
+                padding: 40px;
+                background-color: #FFFFFF;                
+                overflow:auto;
+                max-height: 350;
+                min-height: 350px;
+            }        
+            .buttonNV {
+                background-color: #76B900;
+                display: inline-block;
+                padding: 6px 12px;
+                margin-bottom: 0;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 1.42857143;
+                text-align: center;
+                white-space: nowrap;
+                vertical-align: middle;
+                -ms-touch-action: manipulation;
+                touch-action: manipulation;
+                cursor: pointer;
+                -webkit-user-select: none;
+                moz-border-radius: 5px;
+                -webkit-border-radius: 5px; /* Safari 5.1+, Chrome 10+ */
+                border-radius: 5px; /* IE */
+            }
+            .button-successNV {
+                color: #fff;
+                background-color: #76B900;
+                border-color: #4cae4c;
+            }
+            .container {
+                //box-shadow: 0 0 30px black;
+                align-items: center;
+                padding:8px 15px 8px 15px;
+                margin-top:15%;
+                //background-image:url("{!URLFOR($Resource.COMM_Login_BG_Image)}"); 
+            }
+            a {
+                color: black;
+                font-size:13px;
+            }
+        </style>
+        <apex:StyleSheet value="{!URLFOR($Resource.Bootstrap, '/bootstrap-3.3.6-dist/css/bootstrap.min.css')}"/>
+        <title>Partner Login</title>
+    </head>
+
+    <body ng-app="CommunityLoginApp">
+        <noscript>
+            <div>JavaScript is required for logon to this portal.</div>
+        </noscript>
+        <div class="fluid-container">
+            <div class="container">
+                <div id="content"> 
+                    <div class="boxCardBS">
+                        <div class="boxHeaderBS">NVIDIA PARTNER NETWORK PARTNER PORTAL</div>
+                        <div class="boxContentBS" style="font-size:18px;">
+                            Thank you for visiting the NPN Partner Portal. To login, go to <a target="_blank" href="https://nvid.nvidia.com/dashboard/">https://www.nvidia.com/npnportal</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+   
+    <style type="text/css">
+        noscript div            {width:100%; padding:20px; background-color:red; color:white; font-weight:bold;}
+        body                    {background-color:white;}
+        div a                   {margin-left:5px; margin-right:5px; font-family:sans-serif;}
+        div.errors              {margin-left:20px; margin-right:38px; height:50px; padding-top:10px;}
+        form.loginForm          {margin-top:65px; margin-left:43px; margin-right:60px; padding-top:4em; background-color: rgba(255, 255, 255, 0.4); font-size: 14px; }
+        input.btn               {font-size: 14px; min-width: 80px; text-decoration: none; background-color: #76B900; background: #76B900; color: white; height:30px; align:center; border-radius: 5px; moz-border-radius: 5px; -webkit-border-radius: 5px;}
+        div.forgotPasswordLink  {font-size:14px; margin-top:10px; width:50%; margin-left:30%;}
+        div.otherLinks          {margin-top:30px; text-color:white; width:100%;padding-bottom:15px; text-align:center; color:white; }            
+        div.main                {margin-left:auto; margin-right:auto; width:650px; height:434px; background-repeat:no-repeat; margin-top:200px; background-image:url("{!URLFOR($Resource.COMM_Login_BG_Image)}"); ;}
+        .whitetext              {color:white;}
+        a:hover                 {color:#76B900;}
+        .fixed-input            {width: 230px;}
+    </style>
+</html>
+</apex:page>

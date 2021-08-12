@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- IDM - SOCRM Role - Revoked(manual or automated)? --></help>
+    <label><!-- IDM - SOCRM Role - Revoked --></label>
+    <name>IDM_SOCRM_Role_Revoked__c</name>
+</CustomFieldTranslation>

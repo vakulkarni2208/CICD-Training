@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This flow can be invoked from a button or process builder to share case with a external connection using Salesforce to Salesforce.</description>
+    <interviewLabel>Service Cloud: Share Case with a External Connection {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Service Cloud: Share Case with a External Connection</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <name>Auto_Share_Record_With_Connection</name>
+        <label>Auto Share Record With Connection</label>
+        <locationX>489</locationX>
+        <locationY>68</locationY>
+        <inputAssignments>
+            <field>ConnectionId</field>
+            <value>
+                <elementReference>$Setup.CRM_Settings__c.S2S_Connection_ID_Mellanox__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>LocalRecordId</field>
+            <value>
+                <elementReference>VarT_CaseId</elementReference>
+            </value>
+        </inputAssignments>
+        <object>PartnerNetworkRecordConnection</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>50</locationY>
+        <connector>
+            <targetReference>Auto_Share_Record_With_Connection</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>VarT_CaseId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <value>
+            <stringValue/>
+        </value>
+    </variables>
+    <variables>
+        <name>VarT_ConnectionId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <value>
+            <stringValue>04P1D000000CaU6UAK</stringValue>
+        </value>
+    </variables>
+</Flow>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>Read</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>Oil &amp; Gas Sales</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>Oil &amp; Gas Sales</name>
+    <opportunityAccessLevel>None</opportunityAccessLevel>
+    <parentRole>Oil_Gas_Sales_IBD</parentRole>
+</Role>

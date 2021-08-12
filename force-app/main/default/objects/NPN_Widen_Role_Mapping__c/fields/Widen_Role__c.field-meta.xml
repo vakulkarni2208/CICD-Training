@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Widen_Role__c</fullName>
+    <externalId>false</externalId>
+    <label>Widen Role</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>NPN All Partner Content</fullName>
+                <default>false</default>
+                <label>NPN All Partner Content</label>
+            </value>
+            <value>
+                <fullName>NPN Cisco Elite</fullName>
+                <default>false</default>
+                <label>NPN Cisco Elite</label>
+            </value>
+            <value>
+                <fullName>NPN CSP Compute DGX Elite</fullName>
+                <default>false</default>
+                <label>NPN CSP Compute DGX Elite</label>
+            </value>
+            <value>
+                <fullName>NPN CSP Compute DGX Preferred</fullName>
+                <default>false</default>
+                <label>NPN CSP Compute DGX Preferred</label>
+            </value>
+            <value>
+                <fullName>NPN CSP Compute Elite</fullName>
+                <default>false</default>
+                <label>NPN CSP Compute Elite</label>
+            </value>
+            <value>
+                <fullName>NPN CSP Compute Preferred</fullName>
+                <default>false</default>
+                <label>NPN CSP Compute Preferred</label>
+            </value>
+            <value>
+                <fullName>NPN CSP Virtualization Elite</fullName>
+                <default>false</default>
+                <label>NPN CSP Virtualization Elite</label>
+            </value>
+            <value>
+                <fullName>NPN CSP Virtualization Preferred</fullName>
+                <default>false</default>
+                <label>NPN CSP Virtualization Preferred</label>
+            </value>
+            <value>
+                <fullName>NPN CSP Visualization Elite</fullName>
+                <default>false</default>
+                <label>NPN CSP Visualization Elite</label>
+            </value>
+            <value>
+                <fullName>NPN CSP Visualization Preferred</fullName>
+                <default>false</default>
+                <label>NPN CSP Visualization Preferred</label>
+            </value>
+            <value>
+                <fullName>NPN Dell Datacenter Elite</fullName>
+                <default>false</default>
+                <label>NPN Dell Datacenter Elite</label>
+            </value>
+            <value>
+                <fullName>NPN Dell Workstation Elite</fullName>
+                <default>false</default>
+                <label>NPN Dell Workstation Elite</label>
+            </value>
+            <value>
+                <fullName>NPN DGX Partner Content</fullName>
+                <default>false</default>
+                <label>NPN DGX Partner Content</label>
+            </value>
+            <value>
+                <fullName>NPN Disti Compute DGX Preferred</fullName>
+                <default>false</default>
+                <label>NPN Disti Compute DGX Preferred</label>
+            </value>
+            <value>
+                <fullName>NPN Disti Compute Preferred</fullName>
+                <default>false</default>
+                <label>NPN Disti Compute Preferred</label>
+            </value>
+            <value>
+                <fullName>NPN Disti Embedded Edge Preferred</fullName>
+                <default>false</default>
+                <label>NPN Disti Embedded Edge Preferred</label>
+            </value>
+            <value>
+                <fullName>NPN Disti Virtualization Preferred</fullName>
+                <default>false</default>
+                <label>NPN Disti Virtualization Preferred</label>
+            </value>
+            <value>
+                <fullName>NPN Disti Visualization Preferred</fullName>
+                <default>false</default>
+                <label>NPN Disti Visualization Preferred</label>
+            </value>
+            <value>
+                <fullName>NPN Fed SI Compute DGX Elite</fullName>
+                <default>false</default>
+                <label>NPN Fed SI Compute DGX Elite</label>
+            </value>
+            <value>
+                <fullName>NPN Fed SI Compute DGX Preferred</fullName>
+                <default>false</default>
+                <label>NPN Fed SI Compute DGX Preferred</label>
+            </value>
+            <value>
+                <fullName>NPN Fed SI Compute Elite</fullName>
+                <default>false</default>
+                <label>NPN Fed SI Compute Elite</label>
+            </value>
+            <value>
+                <fullName>NPN Fed SI Compute Preferred</fullName>
+                <default>false</default>
+                <label>NPN Fed SI Compute Preferred</label>
+            </value>
+            <value>
+                <fullName>NPN Fed SI Embedded Edge Elite</fullName>
+                <default>false</default>
+                <label>NPN Fed SI Embedded Edge Elite</label>
+            </value>
+            <value>
+                <fullName>NPN Fed SI Embedded Edge Preferred</fullName>
+                <default>false</default>
+                <label>NPN Fed SI Embedded Edge Preferred</label>
+            </value>
+            <value>
+                <fullName>NPN Fed SI Virtualization Elite</fullName>
+                <default>false</default>
+                <label>NPN Fed SI Virtualization Elite</label>
+            </value>
+            <value>
+                <fullName>NPN Fed SI Virtualization Preferred</fullName>
+                <default>false</default>
+                <label>NPN Fed SI Virtualization Preferred</label>
+            </value>
+            <value>
+                <fullName>NPN Fed SI Visualization Elite</fullName>
+                <default>false</default>
+                <label>NPN Fed SI Visualization Elite</label>
+            </value>
+            <value>
+                <fullName>NPN Fed SI Visualization Preferred</fullName>
+                <default>false</default>
+                <label>NPN Fed SI Visualization Preferred</label>
+            </value>
+            <value>
+                <fullName>NPN GSI Compute DGX Preferred</fullName>
+                <default>false</default>
+                <label>NPN GSI Compute DGX Preferred</label>
+            </value>
+            <value>
+                <fullName>NPN GSI Compute Preferred</fullName>
+                <default>false</default>
+                <label>NPN GSI Compute Preferred</label>
+            </value>
+            <value>
+                <fullName>NPN GSI Embedded Edge Preferred</fullName>
+                <default>false</default>
+                <label>NPN GSI Embedded Edge Preferred</label>
+            </value>
+            <value>
+                <fullName>NPN GSI Virtualization Preferred</fullName>
+                <default>false</default>
+                <label>NPN GSI Virtualization Preferred</label>
+            </value>
+            <value>
+                <fullName>NPN GSI Visualization Preferred</fullName>
+                <default>false</default>
+                <label>NPN GSI Visualization Preferred</label>
+            </value>
+            <value>
+                <fullName>NPN HP Enterprise Elite</fullName>
+                <default>false</default>
+                <label>NPN HP Enterprise Elite</label>
+            </value>
+            <value>
+                <fullName>NPN HP Inc Elite</fullName>
+                <default>false</default>
+                <label>NPN HP Inc Elite</label>
+            </value>
+            <value>
+                <fullName>NPN IBM Cloud Elite</fullName>
+                <default>false</default>
+                <label>NPN IBM Cloud Elite</label>
+            </value>
+            <value>
+                <fullName>NPN IBM Power Elite</fullName>
+                <default>false</default>
+                <label>NPN IBM Power Elite</label>
+            </value>
+            <value>
+                <fullName>NPN Lenovo DCG Elite</fullName>
+                <default>false</default>
+                <label>NPN Lenovo DCG Elite</label>
+            </value>
+            <value>
+                <fullName>NPN Lenovo Workstation Elite</fullName>
+                <default>false</default>
+                <label>NPN Lenovo Workstation Elite</label>
+            </value>
+            <value>
+                <fullName>NPN OEM Compute Elite</fullName>
+                <default>false</default>
+                <label>NPN OEM Compute Elite</label>
+            </value>
+            <value>
+                <fullName>NPN OEM Compute Preferred</fullName>
+                <default>false</default>
+                <label>NPN OEM Compute Preferred</label>
+            </value>
+            <value>
+                <fullName>NPN OEM Embedded Edge Elite</fullName>
+                <default>false</default>
+                <label>NPN OEM Embedded Edge Elite</label>
+            </value>
+            <value>
+                <fullName>NPN OEM Embedded Edge Preferred</fullName>
+                <default>false</default>
+                <label>NPN OEM Embedded Edge Preferred</label>
+            </value>
+            <value>
+                <fullName>NPN OEM Visualization Elite</fullName>
+                <default>false</default>
+                <label>NPN OEM Visualization Elite</label>
+            </value>
+            <value>
+                <fullName>NPN OEM Visualization Preferred</fullName>
+                <default>false</default>
+                <label>NPN OEM Visualization Preferred</label>
+            </value>
+            <value>
+                <fullName>NPN SA Consultant Compute DGX Preferred</fullName>
+                <default>false</default>
+                <label>NPN SA Consultant Compute DGX Preferred</label>
+            </value>
+            <value>
+                <fullName>NPN SA Consultant Compute Preferred</fullName>
+                <default>false</default>
+                <label>NPN SA Consultant Compute Preferred</label>
+            </value>
+            <value>
+                <fullName>NPN SA Consultant Virtualization Preferred</fullName>
+                <default>false</default>
+                <label>NPN SA Consultant Virtualization Preferred</label>
+            </value>
+            <value>
+                <fullName>NPN SA Consultant Visualization Preferred</fullName>
+                <default>false</default>
+                <label>NPN SA Consultant Visualization Preferred</label>
+            </value>
+            <value>
+                <fullName>NPN SA DCP Compute DGX Elite</fullName>
+                <default>false</default>
+                <label>NPN SA DCP Compute DGX Elite</label>
+            </value>
+            <value>
+                <fullName>NPN SA DCP Compute DGX Preferred</fullName>
+                <default>false</default>
+                <label>NPN SA DCP Compute DGX Preferred</label>
+            </value>
+            <value>
+                <fullName>NPN SA Storage Compute DGX Elite</fullName>
+                <default>false</default>
+                <label>NPN SA Storage Compute DGX Elite</label>
+            </value>
+            <value>
+                <fullName>NPN SA Storage Compute DGX Preferred</fullName>
+                <default>false</default>
+                <label>NPN SA Storage Compute DGX Preferred</label>
+            </value>
+            <value>
+                <fullName>NPN SA Storage Compute Elite</fullName>
+                <default>false</default>
+                <label>NPN SA Storage Compute Elite</label>
+            </value>
+            <value>
+                <fullName>NPN SA Storage Compute Preferred</fullName>
+                <default>false</default>
+                <label>NPN SA Storage Compute Preferred</label>
+            </value>
+            <value>
+                <fullName>NPN SDP EDU Compute DGX Preferred</fullName>
+                <default>false</default>
+                <label>NPN SDP EDU Compute DGX Preferred</label>
+            </value>
+            <value>
+                <fullName>NPN SDP PS Compute DGX Elite</fullName>
+                <default>false</default>
+                <label>NPN SDP PS Compute DGX Elite</label>
+            </value>
+            <value>
+                <fullName>NPN SDP PS Compute DGX Preferred</fullName>
+                <default>false</default>
+                <label>NPN SDP PS Compute DGX Preferred</label>
+            </value>
+            <value>
+                <fullName>NPN SDP PS Embedded Edge Elite</fullName>
+                <default>false</default>
+                <label>NPN SDP PS Embedded Edge Elite</label>
+            </value>
+            <value>
+                <fullName>NPN SDP PS Embedded Edge Preferred</fullName>
+                <default>false</default>
+                <label>NPN SDP PS Embedded Edge Preferred</label>
+            </value>
+            <value>
+                <fullName>NPN SIP Compute Elite</fullName>
+                <default>false</default>
+                <label>NPN SIP Compute Elite</label>
+            </value>
+            <value>
+                <fullName>NPN SIP Compute Preferred</fullName>
+                <default>false</default>
+                <label>NPN SIP Compute Preferred</label>
+            </value>
+            <value>
+                <fullName>NPN SIP Embedded Edge Elite</fullName>
+                <default>false</default>
+                <label>NPN SIP Embedded Edge Elite</label>
+            </value>
+            <value>
+                <fullName>NPN SIP Embedded Edge Preferred</fullName>
+                <default>false</default>
+                <label>NPN SIP Embedded Edge Preferred</label>
+            </value>
+            <value>
+                <fullName>NPN SIP Visualization Elite</fullName>
+                <default>false</default>
+                <label>NPN SIP Visualization Elite</label>
+            </value>
+            <value>
+                <fullName>NPN SIP Visualization Preferred</fullName>
+                <default>false</default>
+                <label>NPN SIP Visualization Preferred</label>
+            </value>
+            <value>
+                <fullName>NPN SP Compute DGX Elite</fullName>
+                <default>false</default>
+                <label>NPN SP Compute DGX Elite</label>
+            </value>
+            <value>
+                <fullName>NPN SP Compute DGX Preferred</fullName>
+                <default>false</default>
+                <label>NPN SP Compute DGX Preferred</label>
+            </value>
+            <value>
+                <fullName>NPN SP Compute Elite</fullName>
+                <default>false</default>
+                <label>NPN SP Compute Elite</label>
+            </value>
+            <value>
+                <fullName>NPN SP Compute Preferred</fullName>
+                <default>false</default>
+                <label>NPN SP Compute Preferred</label>
+            </value>
+            <value>
+                <fullName>NPN SP Virtualization Elite</fullName>
+                <default>false</default>
+                <label>NPN SP Virtualization Elite</label>
+            </value>
+            <value>
+                <fullName>NPN SP Virtualization Preferred</fullName>
+                <default>false</default>
+                <label>NPN SP Virtualization Preferred</label>
+            </value>
+            <value>
+                <fullName>NPN SP Visualization Elite</fullName>
+                <default>false</default>
+                <label>NPN SP Visualization Elite</label>
+            </value>
+            <value>
+                <fullName>NPN SP Visualization Preferred</fullName>
+                <default>false</default>
+                <label>NPN SP Visualization Preferred</label>
+            </value>
+            <value>
+                <fullName>NPN Titan RTX</fullName>
+                <default>false</default>
+                <label>NPN Titan RTX</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Type of Device --></label>
+    <name>Type_of_Device__c</name>
+    <picklistValues>
+        <masterLabel>car</masterLabel>
+        <translation><!-- car --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>embedded</masterLabel>
+        <translation><!-- embedded --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>iptv</masterLabel>
+        <translation><!-- iptv --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>phone</masterLabel>
+        <translation><!-- phone --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>pmp</masterLabel>
+        <translation><!-- pmp --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>smartbook</masterLabel>
+        <translation><!-- smartbook --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

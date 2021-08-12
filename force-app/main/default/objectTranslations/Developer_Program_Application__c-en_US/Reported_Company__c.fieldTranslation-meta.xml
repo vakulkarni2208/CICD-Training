@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Enter the name of the company reported by developer --></help>
+    <label><!-- Reported Company --></label>
+    <name>Reported_Company__c</name>
+</CustomFieldTranslation>

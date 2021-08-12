@@ -1,0 +1,63 @@
+<apex:component controller="HomePageTasksController"> 
+<script>
+function callActionfunction(){
+   actiongettask();
+}
+function newtask(){
+    window.parent.location.href = '/00T/e';
+}
+
+</script>
+ 
+ 	<apex:form >  
+      <div>
+
+    <div class="sidebarModuleHeader" style="padding:5px 0px 3px 20px;margin-bottom:0px;">
+       
+        <h2 style="display:inline;"><label>Tasks</label></h2>
+        <button class="btn" onclick="newtask();return false;" style="margin-left:200px;display:inline;">New</button>
+        
+        
+        <apex:selectList onchange="callActionfunction();" value="{!selectedtime}" multiselect="false" size="1" style="margin-left:325px;display:inline;font-size:0.8em;">
+           <apex:selectOptions value="{!timeSelection}"></apex:selectOptions>
+        </apex:selectList> 
+                
+     
+         
+     </div>
+         <apex:outputPanel id="pnlParentTask" layout="block" style="background-color:#EEEEEE;padding:0px 20px 20px 20px;">
+             <apex:outputPanel id="pnlTask" rendered="{!IF(seletedtask.size > 0,true, false)}" >       
+                <apex:dataTable var="task" value="{!seletedtask}" cellspacing="0" cellpadding="5px" bgcolor="#EEEEEE" style="margin-top:15px;width:100%;empty-cells:show;">
+                    <apex:column headerValue="X" styleClass="task_row" headerClass="task_header">
+                        <a target="_top" href="/{!task.Id}/e?close=1&retURL=/home/home.jsp">X</a>
+                    </apex:column>
+                    <apex:column headerValue="Date" styleClass="task_row" headerClass="task_header">
+                        <apex:outputField value="{!task.ActivityDate}"/>
+                    </apex:column> 
+                    <apex:column headerValue="Subject" styleClass="task_row" headerClass="task_header">
+                        <apex:outputLink target="_top" value="/{!task.Id}" rendered="{!task.Subject != null}">{!task.Subject}</apex:outputLink>
+                        <apex:outputText value="&nbps;" rendered="{!task.Subject == null}" escape="false"/>
+                    </apex:column>
+                    <apex:column headerValue="Name" styleClass="task_row" headerClass="task_header">
+                        <apex:outputLink target="_top" value="/{!task.WhoId}" rendered="{!task.WhoId != null}">{!task.Who.Name}</apex:outputLink>
+                        <apex:outputText value="&nbsp;" rendered="{!task.WhoId == null}" escape="false"/>
+                    </apex:column>
+                    <apex:column headerValue="Related To" styleClass="task_row" headerClass="task_header">
+                        <apex:outputLink target="_top" value="/{!task.WhatId}" rendered="{!task.WhatId != null}">{!task.What.Name}</apex:outputLink>
+                        <apex:outputText value="&nbsp;" rendered="{!task.WhatId == null}" escape="false"/>
+                    </apex:column>
+                </apex:dataTable>
+                <br />
+                <b><a target="_top" href="/007">View All</a></b>
+                
+            </apex:outputPanel> 
+            <apex:outputPanel layout="block" id="pnlNoRecords" rendered="{!IF(seletedtask.size = 0,true, false)}" style="padding-top:15px;">
+                 &nbsp;&nbsp;No records to display
+             </apex:outputPanel>
+         </apex:outputPanel> 
+          <apex:actionFunction action="{!generateTasks}" name="actiongettask" reRender="pnlParentTask">      
+             
+          </apex:actionFunction>
+    </div>
+    </apex:form>
+</apex:component>

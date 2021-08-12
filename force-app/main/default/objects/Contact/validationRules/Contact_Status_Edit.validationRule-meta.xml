@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contact_Status_Edit</fullName>
+    <active>true</active>
+    <errorConditionFormula>And( 
+   (ISCHANGED(Contact_Status__c)), 
+
+     (AND
+        (  $User.Id &lt;&gt;  Account.OwnerId ,   $Profile.Name &lt;&gt;&quot;Sales Profile - Partner Admin&quot;, $Profile.Name &lt;&gt;&quot;System Administrator&quot;, $Profile.Name &lt;&gt; &apos;Data Administrator&apos; ,  NOT($Permission.DEPLOYMENT_USER_SKIP_VALIDATIONS) )
+         )
+     )</errorConditionFormula>
+    <errorMessage>Only PBM can edit Contact Status Field</errorMessage>
+</ValidationRule>

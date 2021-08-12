@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>OppReg</fullName>
+        <default>false</default>
+        <label>OppReg</label>
+    </customValue>
+    <description>SOQ-10 - For Opp Reg discounting</description>
+    <masterLabel>Programmatic Disc Type</masterLabel>
+    <sorted>true</sorted>
+</GlobalValueSet>

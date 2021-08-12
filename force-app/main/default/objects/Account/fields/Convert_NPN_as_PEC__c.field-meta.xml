@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Convert_NPN_as_PEC__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>For Licensing 2.0 Change request</description>
+    <externalId>false</externalId>
+    <label>Convert NPN as PEC</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NV_Log__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>This field stores log details for further analysis.</description>
+    <externalId>false</externalId>
+    <label>NV Log</label>
+    <referenceTo>NV_Log__c</referenceTo>
+    <relationshipLabel>Cases</relationshipLabel>
+    <relationshipName>Cases</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

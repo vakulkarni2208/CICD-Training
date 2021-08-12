@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Type --></label>
+    <name>Type__c</name>
+    <picklistValues>
+        <masterLabel>Cloud</masterLabel>
+        <translation><!-- Cloud --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DCS</masterLabel>
+        <translation><!-- DCS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DGX</masterLabel>
+        <translation><!-- DGX --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Early Access</masterLabel>
+        <translation><!-- Early Access --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Enterprise</masterLabel>
+        <translation><!-- Enterprise --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fleet Command</masterLabel>
+        <translation><!-- Fleet Command --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NGC Ready</masterLabel>
+        <translation><!-- NGC Ready --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NVIDIA Team</masterLabel>
+        <translation><!-- NVIDIA Team --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Partner</masterLabel>
+        <translation><!-- Partner --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unknown</masterLabel>
+        <translation><!-- Unknown --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

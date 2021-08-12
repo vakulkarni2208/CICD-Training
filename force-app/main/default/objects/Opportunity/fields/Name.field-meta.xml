@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Name</fullName>
+    <inlineHelpText>Provide the appropriate Opportunity Name. Ensure the format is: Account Name - Project - Product. For example, &quot;General Electric - Install - K80&quot;. For GRID Opportunities include Phase. For example, &quot;General Electric - M6 Install - Trial&quot;.</inlineHelpText>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+</CustomField>

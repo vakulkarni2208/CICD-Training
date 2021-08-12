@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- If you would like to copy to corresponding opportunity values, leave this field checked. To update the sales leader fields, uncheck this box. --></help>
+    <label><!-- Copy Opp Values --></label>
+    <name>Agree_with_Opportunity_Values__c</name>
+</CustomFieldTranslation>

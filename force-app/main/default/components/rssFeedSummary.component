@@ -1,0 +1,85 @@
+<apex:component controller="RssFeed" >
+     <apex:stylesheet value="{!URLFOR($Resource.GRIDStyles, 'grid.css')}"/> 
+
+<style>
+.horz-divider
+{
+border-top: 1px solid #64a739;
+margin-bottom: 1em;
+margin-top: 1em;
+width:1090px;
+}
+</style>
+
+
+    <apex:attribute name="title" description="Title to display at the top of the feed." type="String" required="false" />
+    <apex:attribute name="debug" description="debug DIV is turned on" type="Boolean" />
+    <apex:attribute name="feedURL" description="Where to fetch the RSS feed." type="String" required="true" assignTo="{!compFeedURL}" />
+    <apex:attribute name="entriesCount" description="Number of feed entries to present."  type="Integer"    required="false" assignTo="{!entriesToShow}"  />
+    <apex:attribute name="headline" description="headline only display mode" type="Boolean" /> 
+   <table border="0" width="95%" align="center"><tr><td>
+    <apex:outputPanel layout="block" rendered="{!debug}" > 
+        <br />rssFeed component debug output, 
+        feedURL: {!feedURL}<br />
+        entriesCount: {!entriesCount} entries<br />
+       <apex:repeat value="{!feedContent}" var="entry">
+            <apex:outputText value="{!entry.title}" />
+            <br />  
+        </apex:repeat>          
+    </apex:outputPanel>
+
+    <apex:outputPanel layout="block" rendered="{!NOT(headline)}">
+
+<!--    <div class="seperator"></div>-->
+    <table align="center" width="1500px;" border="0" cellpadding="0" cellspacing="0" style="background-color:#FFFFFF;"> 
+       <tr>
+       <td nowrap="true" valign="top">
+           <div class="newsSeperator"></div>
+       </td>
+       </tr>
+    </table>
+    <!--<div class="newsSeperator"></div>-->
+    <div class="main mainwide">
+        <a name="gravy"></a>    
+    <div class="one_col">
+ 
+    <!--<div class="col colLeft">-->
+    <div class="colLeft">
+
+    <!--<h2 class="rev2"><a href="http://feeds.feedburner.com/nvidiablog?format=xml" target="_blank">Latest NVIDIA News</a></h2>-->
+    <div class="colContent1">
+    <div class="results">
+    <div id="ctl00_body_ctl00_ctlLatestSocialMediaBlog_pnlContainer">
+        <apex:repeat value="{!feedContent}" var="entry">
+        <div class="horz-divider">
+           <br /><h3><a href="{!entry.href}" >{!entry.title}</a></h3><br /><br />
+           <table border="0" width="100%">
+           <tr><td class="content" width="30%"><a href="{!entry.href}"><apex:outputText value="{!entry.summaryImage}" escape="false" /></a></td>
+           <td class="content" width="70%">
+           <b><i><apex:outputText value="By {!entry.author} on {!entry.date}</i>" escape="false"/></i></b><br /><br />
+           <apex:outputText value="{!entry.summary}" escape="false"/></td>
+           </tr></table>
+        </div> <!-- close item-->
+        </apex:repeat>
+    
+    </div><!--ctl00_body_ctl00_ctlLatestSocialMediaBlog_pnlContainer-->
+    </div><!-- close results-->
+</div><!-- close colContent-->
+</div><!-- close col -->
+<div class="clr"></div>
+
+<!--<div class="one_col_end"></div>--><!-- close -->
+
+</div><!-- close mainWide -->
+<!--<div class="clr"></div>-->
+
+</div><!-- close content -->
+   </apex:outputPanel>
+    <apex:outputPanel layout="block" rendered="{!headline}"><h3>{!title}</h3>
+        <apex:repeat value="{!feedContent}" var="entry">
+        <a href="{!entry.href}"><img src="http://www.salesforce.com/site/us/assets/developer/date{!entry.index}.gif" class="date"/><p class="adnindent">{!entry.title}</p></a>
+        </apex:repeat>
+    </apex:outputPanel>
+</td></tr></table>
+
+</apex:component>

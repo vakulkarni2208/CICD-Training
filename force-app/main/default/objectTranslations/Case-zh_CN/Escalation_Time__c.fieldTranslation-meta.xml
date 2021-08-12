@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- ESP : Escalation Time
+If Incident Status moves to Enterprise Support
+-	Then Check escalated = True
+-       Escalation Time = current date time --></help>
+    <label><!-- Escalation Time --></label>
+    <name>Escalation_Time__c</name>
+</CustomFieldTranslation>

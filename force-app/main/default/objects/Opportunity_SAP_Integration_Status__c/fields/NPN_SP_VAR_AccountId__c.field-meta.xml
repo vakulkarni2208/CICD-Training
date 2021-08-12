@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NPN_SP_VAR_AccountId__c</fullName>
+    <description>Opportunity - NPN SP/VAR Account Id</description>
+    <externalId>false</externalId>
+    <formula>OpportunityId__r.NPN_Solution_Provider_VAR__c</formula>
+    <inlineHelpText>Opportunity - NPN SP/VAR Account Id</inlineHelpText>
+    <label>NPN SP VAR AccountId</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

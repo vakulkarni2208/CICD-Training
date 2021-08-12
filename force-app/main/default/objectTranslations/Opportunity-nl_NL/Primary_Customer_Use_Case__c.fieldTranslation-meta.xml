@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Primary Customer Workload --></label>
+    <name>Primary_Customer_Use_Case__c</name>
+    <picklistValues>
+        <masterLabel>Crypto Mining</masterLabel>
+        <translation><!-- Crypto Mining --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Data Analytics (Not ML or DL)</masterLabel>
+        <translation><!-- Data Analytics (Not ML or DL) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Deep Learning/AI</masterLabel>
+        <translation><!-- Deep Learning/AI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>High Performance Computing (HPC)</masterLabel>
+        <translation><!-- High Performance Computing (HPC) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Infrastructure as a Service</masterLabel>
+        <translation><!-- Infrastructure as a Service --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Machine Learning (Not DL)</masterLabel>
+        <translation><!-- Machine Learning (Not DL) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Visual Computing/Data Center Graphics</masterLabel>
+        <translation><!-- Visual Computing/Data Center Graphics --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Workstation GPU</masterLabel>
+        <translation><!-- Workstation GPU --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

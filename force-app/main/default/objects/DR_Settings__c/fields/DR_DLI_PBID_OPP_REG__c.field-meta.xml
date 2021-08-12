@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DR_DLI_PBID_OPP_REG__c</fullName>
+    <defaultValue>&quot;01s1W000000hjqV&quot;</defaultValue>
+    <description>DLI Price Book Id for Opp Reg</description>
+    <externalId>false</externalId>
+    <inlineHelpText>DLI Price Book Id for Opp Reg</inlineHelpText>
+    <label>DR : DLI : PBID : OPP REG</label>
+    <length>18</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

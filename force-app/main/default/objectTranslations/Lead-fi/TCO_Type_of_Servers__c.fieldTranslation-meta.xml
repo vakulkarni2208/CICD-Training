@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Type of Servers --></label>
+    <name>TCO_Type_of_Servers__c</name>
+    <picklistValues>
+        <masterLabel>Blade Servers</masterLabel>
+        <translation><!-- Blade Servers --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rack Servers</masterLabel>
+        <translation><!-- Rack Servers --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

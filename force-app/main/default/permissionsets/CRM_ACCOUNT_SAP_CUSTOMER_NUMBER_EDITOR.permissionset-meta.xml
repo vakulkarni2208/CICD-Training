@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Users with this Permission Set will be able to edit &quot;SAP Customer Number&quot; custom field of Accounts object.</description>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.SAP_Customer_Number__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>CRM : ACCOUNT : SAP CUSTOMER NUMBER : EDITOR</label>
+</PermissionSet>

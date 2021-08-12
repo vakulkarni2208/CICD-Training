@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GPU_Cloud_Provider__c</fullName>
+    <externalId>false</externalId>
+    <label>GPU Cloud Provider</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Amazon Web Services</fullName>
+                <default>false</default>
+                <label>Amazon Web Services</label>
+            </value>
+            <value>
+                <fullName>Google Cloud</fullName>
+                <default>false</default>
+                <label>Google Cloud</label>
+            </value>
+            <value>
+                <fullName>Microsoft Azure</fullName>
+                <default>false</default>
+                <label>Microsoft Azure</label>
+            </value>
+            <value>
+                <fullName>IBM Cloud</fullName>
+                <default>false</default>
+                <label>IBM Cloud</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

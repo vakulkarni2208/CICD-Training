@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- File Development Areas --></label>
+    <name>File_Development_Areas__c</name>
+    <picklistValues>
+        <masterLabel>AI / Deep Learning</masterLabel>
+        <translation><!-- AI / Deep Learning --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AR / VR</masterLabel>
+        <translation><!-- AR / VR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Autonomous Machines</masterLabel>
+        <translation><!-- Autonomous Machines --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Autonomous Vehicles</masterLabel>
+        <translation><!-- Autonomous Vehicles --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Data Science</masterLabel>
+        <translation><!-- Data Science --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Design &amp; Visualization</masterLabel>
+        <translation><!-- Design &amp; Visualization --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Game Development</masterLabel>
+        <translation><!-- Game Development --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HPC</masterLabel>
+        <translation><!-- HPC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IoT / Smart Cities</masterLabel>
+        <translation><!-- IoT / Smart Cities --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Networking</masterLabel>
+        <translation><!-- Networking --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

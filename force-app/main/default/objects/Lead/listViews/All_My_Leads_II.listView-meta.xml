@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_My_Leads_II</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>LEAD.COMPANY</columns>
+    <columns>LEAD.COUNTRY_CODE</columns>
+    <columns>LEAD.STATE_CODE</columns>
+    <columns>LEAD.PHONE</columns>
+    <columns>LEAD.EMAIL</columns>
+    <columns>Lead_Orgin__c</columns>
+    <columns>LEAD.INDUSTRY</columns>
+    <columns>LEAD.STATUS</columns>
+    <columns>LEAD.LAST_UPDATE</columns>
+    <columns>LEAD.UNREAD</columns>
+    <columns>CORE.USERS.FIRST_NAME</columns>
+    <columns>CORE.USERS.LAST_NAME</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>Timestamp_Marketing_Qualified__c</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>LEAD.STATUS</field>
+        <operation>notEqual</operation>
+        <value>Unqualified / Closed,Junk/Delete,Declined,Recycling,Disqualified,Wait,Rejected</value>
+    </filters>
+    <label>All My Leads</label>
+    <language>en_US</language>
+    <sharedTo>
+        <allInternalUsers/>
+        <allPartnerUsers/>
+    </sharedTo>
+</ListView>

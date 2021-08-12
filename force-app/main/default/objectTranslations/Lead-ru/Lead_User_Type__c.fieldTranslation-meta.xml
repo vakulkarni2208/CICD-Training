@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Lead User Type --></label>
+    <name>Lead_User_Type__c</name>
+    <picklistValues>
+        <masterLabel>Citrix reseller</masterLabel>
+        <translation><!-- Citrix reseller --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Distributor</masterLabel>
+        <translation><!-- Distributor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>End User</masterLabel>
+        <translation><!-- End User --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ISV Partner</masterLabel>
+        <translation><!-- ISV Partner --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OEM</masterLabel>
+        <translation><!-- OEM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reseller/Channel Partner</masterLabel>
+        <translation><!-- Reseller/Channel Partner --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VMware reseller</masterLabel>
+        <translation><!-- VMware reseller --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

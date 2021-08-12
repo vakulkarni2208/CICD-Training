@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Other Support Programs --></label>
+    <name>Other_Support_Programs__c</name>
+    <picklistValues>
+        <masterLabel>GRID Eval</masterLabel>
+        <translation><!-- GRID Eval --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MagLev</masterLabel>
+        <translation><!-- MagLev --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NGC Registry</masterLabel>
+        <translation><!-- NGC Registry --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tesla</masterLabel>
+        <translation><!-- Tesla --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Upgrades</masterLabel>
+        <translation><!-- Upgrades --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

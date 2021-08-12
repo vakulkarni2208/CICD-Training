@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- NPN Distributor --></label>
+    <name>DR_NPN_Distributor__c</name>
+    <picklistValues>
+        <masterLabel>Advanced Digital Network Distribution Gmbh</masterLabel>
+        <translation><!-- Advanced Digital Network Distribution Gmbh --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Aptec Distribution FFZ LLC</masterLabel>
+        <translation><!-- Aptec Distribution FFZ LLC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Arrow Electronics</masterLabel>
+        <translation><!-- Arrow Electronics --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Azwell Plus Co Ltd</masterLabel>
+        <translation><!-- Azwell Plus Co Ltd --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BayNex</masterLabel>
+        <translation><!-- BayNex --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>C-Data Computer Ltd.</masterLabel>
+        <translation><!-- C-Data Computer Ltd. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Carahsoft Technology Corporation</masterLabel>
+        <translation><!-- Carahsoft Technology Corporation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Clavis Company (Macnica)</masterLabel>
+        <translation><!-- Clavis Company (Macnica) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Daebo Communication &amp; Systems</masterLabel>
+        <translation><!-- Daebo Communication &amp; Systems --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Daou Data Corp</masterLabel>
+        <translation><!-- Daou Data Corp --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ingram Micro</masterLabel>
+        <translation><!-- Ingram Micro --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Inspur</masterLabel>
+        <translation><!-- Inspur --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Isolin Trade &amp; Invest Limited</masterLabel>
+        <translation><!-- Isolin Trade &amp; Invest Limited --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Leadtek Research (Taiwan)</masterLabel>
+        <translation><!-- Leadtek Research (Taiwan) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>N/A</masterLabel>
+        <translation><!-- N/A --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>None at this time</masterLabel>
+        <translation><!-- None at this time --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PNY</masterLabel>
+        <translation><!-- PNY --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rashi Peripherals</masterLabel>
+        <translation><!-- Rashi Peripherals --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ryoyo Electro Corporation</masterLabel>
+        <translation><!-- Ryoyo Electro Corporation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ScanSource Brasil Distribuidora De</masterLabel>
+        <translation><!-- ScanSource Brasil Distribuidora De --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Softbank Commerce &amp; Service Corp</masterLabel>
+        <translation><!-- Softbank Commerce &amp; Service Corp --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Super Micro</masterLabel>
+        <translation><!-- Super Micro --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Synnex</masterLabel>
+        <translation><!-- Synnex --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tech Data</masterLabel>
+        <translation><!-- Tech Data --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Technology Joint Corporation (Elsa)</masterLabel>
+        <translation><!-- Technology Joint Corporation (Elsa) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VSTECS (Singapore) Pte. Ltd.</masterLabel>
+        <translation><!-- VSTECS (Singapore) Pte. Ltd. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Zero One Tech Co Ltd</masterLabel>
+        <translation><!-- Zero One Tech Co Ltd --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

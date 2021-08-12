@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- DLI Payment Method --></label>
+    <name>DLI_Payment_Method__c</name>
+    <picklistValues>
+        <masterLabel>Barter</masterLabel>
+        <translation><!-- Barter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Channel</masterLabel>
+        <translation><!-- Channel --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Credit Card - Online Store</masterLabel>
+        <translation><!-- Credit Card - Online Store --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Internal Transfer</masterLabel>
+        <translation><!-- Internal Transfer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MDF</masterLabel>
+        <translation><!-- MDF --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Manual Invoice</masterLabel>
+        <translation><!-- Manual Invoice --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RSMP</masterLabel>
+        <translation><!-- RSMP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unpaid</masterLabel>
+        <translation><!-- Unpaid --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

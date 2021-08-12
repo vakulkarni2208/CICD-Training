@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Generic_Profile_Name__c</fullName>
+    <defaultValue>&quot;NVInternalCRMGeneric&quot;</defaultValue>
+    <description>Profile Name : NVInternalCRMGeneric. Used in user trigger test class</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Profile Name : NVInternalCRMGeneric. Used in user trigger test class</inlineHelpText>
+    <label>Generic Profile Name</label>
+    <length>80</length>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

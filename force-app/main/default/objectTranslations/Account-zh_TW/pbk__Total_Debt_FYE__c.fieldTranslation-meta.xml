@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- PB Total Debt (FYE) --></label>
+    <name>pbk__Total_Debt_FYE__c</name>
+</CustomFieldTranslation>

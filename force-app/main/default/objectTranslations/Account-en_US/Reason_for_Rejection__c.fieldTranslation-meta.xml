@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- If you are setting the ‘Rejected’ checkbox to true then this is a required field --></help>
+    <label><!-- Reason for Rejection --></label>
+    <name>Reason_for_Rejection__c</name>
+    <picklistValues>
+        <masterLabel>Account Approval Policy</masterLabel>
+        <translation><!-- Account Approval Policy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Duplicate Account</masterLabel>
+        <translation><!-- Duplicate Account --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Missing/Invalid Website</masterLabel>
+        <translation><!-- Missing/Invalid Website --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Verify Address</masterLabel>
+        <translation><!-- Verify Address --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

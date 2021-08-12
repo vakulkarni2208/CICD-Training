@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Log Type --></label>
+    <name>Log_Type__c</name>
+    <picklistValues>
+        <masterLabel>Error: Batch</masterLabel>
+        <translation><!-- Error: Batch --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Error: Callout</masterLabel>
+        <translation><!-- Error: Callout --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Error: Future Method</masterLabel>
+        <translation><!-- Error: Future Method --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Error: Other</masterLabel>
+        <translation><!-- Error: Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Error: Trigger</masterLabel>
+        <translation><!-- Error: Trigger --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Success</masterLabel>
+        <translation><!-- Success --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

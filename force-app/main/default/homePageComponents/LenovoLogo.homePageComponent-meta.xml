@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<HomePageComponent xmlns="http://soap.sforce.com/2006/04/metadata">
+    <body>&lt;IMG style=&quot;WIDTH: 144px; HEIGHT: 43px&quot; border=0 alt=&quot;&quot; align=left src=&quot;https://na2.salesforce.com/servlet/servlet.FileDownload?file=01540000000Ujmk&quot; width=178 height=57&gt;</body>
+    <pageComponentType>imageOrNote</pageComponentType>
+</HomePageComponent>

@@ -1,0 +1,2320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>CPQ_Automated_0_Day_Notice</fullName>
+        <description>CPQ Automated 0 Day Notice</description>
+        <protected>false</protected>
+        <recipients>
+            <field>DR_Customer_Contact__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <recipient>csparkman@nvidia.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>CPQ_Emails/X0_Day_CPQ_Renewal_Notice</template>
+    </alerts>
+    <alerts>
+        <fullName>CPQ_Automated_15_Day_Notice</fullName>
+        <description>CPQ Automated 15 Day Notice</description>
+        <protected>false</protected>
+        <recipients>
+            <field>DR_Customer_Contact__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <recipient>csparkman@nvidia.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>CPQ_Emails/X15_Day_CPQ_Renewal_Notice</template>
+    </alerts>
+    <alerts>
+        <fullName>CPQ_Automated_30_Day_Notice</fullName>
+        <description>CPQ Automated 30 Day Notice</description>
+        <protected>false</protected>
+        <recipients>
+            <field>DR_Customer_Contact__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <recipient>csparkman@nvidia.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>CPQ_Emails/X45_Day_CPQ_Renewal_Notice</template>
+    </alerts>
+    <alerts>
+        <fullName>CPQ_Automated_60_Day_Notice</fullName>
+        <description>CPQ Automated 60 Day Notice</description>
+        <protected>false</protected>
+        <recipients>
+            <field>DR_Customer_Contact__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <recipient>csparkman@nvidia.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>CPQ_Emails/X60_Day_CPQ_Renewal_Notice</template>
+    </alerts>
+    <alerts>
+        <fullName>CPQ_Automated_7_Day_After_Expiration_Notice</fullName>
+        <description>CPQ Automated 7 Day After Expiration Notice</description>
+        <protected>false</protected>
+        <recipients>
+            <field>DR_Customer_Contact__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <recipient>csparkman@nvidia.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>CPQ_Emails/X7_Day_After_Expiration_CPQ_Renewal_Notice</template>
+    </alerts>
+    <alerts>
+        <fullName>CPQ_Automated_90_Day_Notice</fullName>
+        <description>CPQ Automated 90 Day Notice</description>
+        <protected>false</protected>
+        <recipients>
+            <field>DR_Customer_Contact__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <recipient>csparkman@nvidia.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>CPQ_Emails/X90_Day_CPQ_Renewal_Notice</template>
+    </alerts>
+    <alerts>
+        <fullName>CPQ_China_Automated_0_Day_Notice</fullName>
+        <description>CPQ China Automated 0 Day Notice</description>
+        <protected>false</protected>
+        <recipients>
+            <field>DR_Customer_Contact__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <recipient>csparkman@nvidia.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>CPQ_Emails_Chinese/Day_of_Expiration_CPQ_vGPU_Renewal_Notice</template>
+    </alerts>
+    <alerts>
+        <fullName>CPQ_China_Automated_15_Day_Notice</fullName>
+        <description>CPQ China Automated 15 Day Notice</description>
+        <protected>false</protected>
+        <recipients>
+            <field>DR_Customer_Contact__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <recipient>csparkman@nvidia.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>CPQ_Emails_Chinese/X15_Day_CPQ_vGPU_Renewal_Notice</template>
+    </alerts>
+    <alerts>
+        <fullName>CPQ_China_Automated_30_Day_Notice</fullName>
+        <description>CPQ China Automated 30 Day Notice</description>
+        <protected>false</protected>
+        <recipients>
+            <field>DR_Customer_Contact__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <recipient>csparkman@nvidia.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>CPQ_Emails_Chinese/X30_Day_CPQ_vGPU_Renewal_Notice</template>
+    </alerts>
+    <alerts>
+        <fullName>CPQ_China_Automated_60_Day_Notice</fullName>
+        <description>CPQ China Automated 60 Day Notice</description>
+        <protected>false</protected>
+        <recipients>
+            <field>DR_Customer_Contact__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <recipient>csparkman@nvidia.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>CPQ_Emails_Chinese/X90_to_60_Day_CPQ_vGPU_Renewal_Notice</template>
+    </alerts>
+    <alerts>
+        <fullName>CPQ_China_Automated_7_Day_After_Expiration_Notice</fullName>
+        <description>CPQ China Automated 7 Day After Expiration Notice</description>
+        <protected>false</protected>
+        <recipients>
+            <field>DR_Customer_Contact__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <recipient>csparkman@nvidia.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>CPQ_Emails_Chinese/X14_Day_After_Expiration_CPQ_vGPU_Renewal_Notice</template>
+    </alerts>
+    <alerts>
+        <fullName>CPQ_China_Automated_90_Day_Notice</fullName>
+        <description>CPQ China Automated 90 Day Notice</description>
+        <protected>false</protected>
+        <recipients>
+            <field>DR_Customer_Contact__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <recipient>csparkman@nvidia.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>CPQ_Emails_Chinese/X90_to_60_Day_CPQ_vGPU_Renewal_Notice</template>
+    </alerts>
+    <alerts>
+        <fullName>CPQ_China_DGX_Automated_0_Day_Notice</fullName>
+        <description>CPQ China DGX Automated 0 Day Notice</description>
+        <protected>false</protected>
+        <recipients>
+            <field>DR_Customer_Contact__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <recipient>csparkman@nvidia.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>CPQ_Emails_Chinese/Day_of_Expiration_DGX_Renewal_Notice</template>
+    </alerts>
+    <alerts>
+        <fullName>CPQ_China_DGX_Automated_15_Day_Notice</fullName>
+        <description>CPQ China DGX Automated 15 Day Notice</description>
+        <protected>false</protected>
+        <recipients>
+            <field>DR_Customer_Contact__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <recipient>csparkman@nvidia.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>CPQ_Emails_Chinese/X15_Day_DGX_Renewal_Notice</template>
+    </alerts>
+    <alerts>
+        <fullName>CPQ_China_DGX_Automated_30_Day_Notice</fullName>
+        <description>CPQ China DGX Automated 30 Day Notice</description>
+        <protected>false</protected>
+        <recipients>
+            <field>DR_Customer_Contact__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <recipient>csparkman@nvidia.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>CPQ_Emails_Chinese/X30_Day_CPQ_DGX_Renewal_Notice1</template>
+    </alerts>
+    <alerts>
+        <fullName>CPQ_China_DGX_Automated_60_Day_Notice</fullName>
+        <description>CPQ China DGX Automated 60 Day Notice</description>
+        <protected>false</protected>
+        <recipients>
+            <field>DR_Customer_Contact__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <recipient>csparkman@nvidia.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>CPQ_Emails_Chinese/X90_60_Day_DGX_Renewal_Notice</template>
+    </alerts>
+    <alerts>
+        <fullName>CPQ_China_DGX_Automated_7_Day_After_Expiration_Notice</fullName>
+        <description>CPQ China DGX Automated 7 Day After Expiration Notice</description>
+        <protected>false</protected>
+        <recipients>
+            <field>DR_Customer_Contact__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <recipient>csparkman@nvidia.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>CPQ_Emails_Chinese/X14_Day_After_Expiration_DGX_Renewal_Notice</template>
+    </alerts>
+    <alerts>
+        <fullName>CPQ_China_DGX_Automated_90_Day_Notice</fullName>
+        <description>CPQ China DGX Automated 90 Day Notice</description>
+        <protected>false</protected>
+        <recipients>
+            <field>DR_Customer_Contact__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <recipient>csparkman@nvidia.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>CPQ_Emails_Chinese/X90_60_Day_DGX_Renewal_Notice</template>
+    </alerts>
+    <alerts>
+        <fullName>CPQ_DGX_Automated_0_Day_Notice</fullName>
+        <description>CPQ DGX Automated 0 Day Notice</description>
+        <protected>false</protected>
+        <recipients>
+            <field>DR_Customer_Contact__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <recipient>csparkman@nvidia.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>CPQ_Emails/Day_of_Expiration_CPQ_DGX_Renewal_Notice</template>
+    </alerts>
+    <alerts>
+        <fullName>CPQ_DGX_Automated_15_Day_Notice</fullName>
+        <description>CPQ DGX Automated 15 Day Notice</description>
+        <protected>false</protected>
+        <recipients>
+            <field>DR_Customer_Contact__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <recipient>csparkman@nvidia.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>CPQ_Emails/X15_Day_CPQ_DGX_Renewal_Notice</template>
+    </alerts>
+    <alerts>
+        <fullName>CPQ_DGX_Automated_30_Day_Notice</fullName>
+        <description>CPQ DGX Automated 30 Day Notice</description>
+        <protected>false</protected>
+        <recipients>
+            <field>DR_Customer_Contact__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <recipient>csparkman@nvidia.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>CPQ_Emails/X30_Day_CPQ_DGX_Renewal_Notice</template>
+    </alerts>
+    <alerts>
+        <fullName>CPQ_DGX_Automated_60_Day_Notice</fullName>
+        <description>CPQ DGX Automated 60 Day Notice</description>
+        <protected>false</protected>
+        <recipients>
+            <field>DR_Customer_Contact__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <recipient>csparkman@nvidia.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>CPQ_Emails/X60_Day_CPQ_DGX_Renewal_Notice</template>
+    </alerts>
+    <alerts>
+        <fullName>CPQ_DGX_Automated_7_Day_After_Expiration_Notice</fullName>
+        <description>CPQ DGX Automated 7 Day After Expiration Notice</description>
+        <protected>false</protected>
+        <recipients>
+            <field>DR_Customer_Contact__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <recipient>csparkman@nvidia.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>CPQ_Emails/X14_Day_After_Expiration_CPQ_DGX_Renewal_Notice</template>
+    </alerts>
+    <alerts>
+        <fullName>CPQ_DGX_Automated_90_Day_Notice</fullName>
+        <description>CPQ DGX Automated 90 Day Notice</description>
+        <protected>false</protected>
+        <recipients>
+            <field>DR_Customer_Contact__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <recipient>csparkman@nvidia.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>CPQ_Emails/X90_Day_CPQ_Renewal_Notice_for_DGX</template>
+    </alerts>
+    <alerts>
+        <fullName>CPQ_Japan_DGX_Automated_0_Day_Notice</fullName>
+        <description>CPQ Japan DGX Automated 0 Day Notice</description>
+        <protected>false</protected>
+        <recipients>
+            <field>DR_Customer_Contact__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <recipient>csparkman@nvidia.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>CPQ_Emails_Japanese/Day_of_Notice_for_DGX_Renewal_Notice1</template>
+    </alerts>
+    <alerts>
+        <fullName>CPQ_Japan_DGX_Automated_15_Day_Notice</fullName>
+        <description>CPQ Japan DGX Automated 15 Day Notice</description>
+        <protected>false</protected>
+        <recipients>
+            <field>DR_Customer_Contact__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <recipient>csparkman@nvidia.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>CPQ_Emails_Japanese/X15_day_Notice_for_DGX_Renewal_Notice1</template>
+    </alerts>
+    <alerts>
+        <fullName>CPQ_Japan_DGX_Automated_30_Day_Notice</fullName>
+        <description>CPQ Japan DGX Automated 30 Day Notice</description>
+        <protected>false</protected>
+        <recipients>
+            <field>DR_Customer_Contact__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <recipient>csparkman@nvidia.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>CPQ_Emails_Japanese/X30_day_Notice_for_DGX_Renewal_Notice1</template>
+    </alerts>
+    <alerts>
+        <fullName>CPQ_Japan_DGX_Automated_60_Day_Notice</fullName>
+        <description>CPQ Japan DGX Automated 60 Day Notice</description>
+        <protected>false</protected>
+        <recipients>
+            <field>DR_Customer_Contact__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <recipient>csparkman@nvidia.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>CPQ_Emails_Japanese/X90_60_day_Notice_for_DGX_Renewal_Notice1</template>
+    </alerts>
+    <alerts>
+        <fullName>CPQ_Japan_DGX_Automated_7_Day_After_Expiration_Notice</fullName>
+        <description>CPQ Japan DGX Automated 7 Day After Expiration Notice</description>
+        <protected>false</protected>
+        <recipients>
+            <field>DR_Customer_Contact__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <recipient>csparkman@nvidia.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>CPQ_Emails_Japanese/X14_days_Expired_Notice_for_DGX_Renewal_Notice</template>
+    </alerts>
+    <alerts>
+        <fullName>CPQ_Japan_DGX_Automated_90_Day_Notice</fullName>
+        <description>CPQ Japan DGX Automated 90 Day Notice</description>
+        <protected>false</protected>
+        <recipients>
+            <field>DR_Customer_Contact__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <recipient>csparkman@nvidia.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>CPQ_Emails_Japanese/X90_60_day_Notice_for_DGX_Renewal_Notice1</template>
+    </alerts>
+    <alerts>
+        <fullName>CPQ_Japan_vGPU_Automated_0_Day_Notice</fullName>
+        <description>CPQ Japan vGPU Automated 0 Day Notice</description>
+        <protected>false</protected>
+        <recipients>
+            <field>DR_Customer_Contact__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <recipient>csparkman@nvidia.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>CPQ_Emails_Japanese/Day_of_Notice_for_vGPU_Renewal_Notice1</template>
+    </alerts>
+    <alerts>
+        <fullName>CPQ_Japan_vGPU_Automated_15_Day_Notice</fullName>
+        <description>CPQ Japan vGPU Automated 15 Day Notice</description>
+        <protected>false</protected>
+        <recipients>
+            <field>DR_Customer_Contact__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <recipient>csparkman@nvidia.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>CPQ_Emails_Japanese/X15_day_Notice_for_vGPU_Renewal_Notice1</template>
+    </alerts>
+    <alerts>
+        <fullName>CPQ_Japan_vGPU_Automated_30_Day_Notice</fullName>
+        <description>CPQ Japan vGPU Automated 30 Day Notice</description>
+        <protected>false</protected>
+        <recipients>
+            <field>DR_Customer_Contact__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <recipient>csparkman@nvidia.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>CPQ_Emails_Japanese/X30_day_Notice_for_vGPU_Renewal_Notice1</template>
+    </alerts>
+    <alerts>
+        <fullName>CPQ_Japan_vGPU_Automated_60_Day_Notice</fullName>
+        <description>CPQ Japan vGPU Automated 60 Day Notice</description>
+        <protected>false</protected>
+        <recipients>
+            <field>DR_Customer_Contact__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <recipient>csparkman@nvidia.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>CPQ_Emails_Japanese/X90_60_day_Notice_for_vGPU_Renewal_Notice</template>
+    </alerts>
+    <alerts>
+        <fullName>CPQ_Japan_vGPU_Automated_7_Day_After_Expiration_Notice</fullName>
+        <description>CPQ Japan vGPU Automated 7 Day After Expiration Notice</description>
+        <protected>false</protected>
+        <recipients>
+            <field>DR_Customer_Contact__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <recipient>csparkman@nvidia.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>CPQ_Emails_Japanese/X14_days_Expired_Notice_for_vGPU_Renewal_Notice1</template>
+    </alerts>
+    <alerts>
+        <fullName>CPQ_Japan_vGPU_Automated_90_Day_Notice</fullName>
+        <description>CPQ Japan vGPU Automated 90 Day Notice</description>
+        <protected>false</protected>
+        <recipients>
+            <field>DR_Customer_Contact__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <recipient>csparkman@nvidia.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>CPQ_Emails_Japanese/X90_60_day_Notice_for_vGPU_Renewal_Notice</template>
+    </alerts>
+    <alerts>
+        <fullName>DGX_Focus_Deal_Loss_Alert</fullName>
+        <ccEmails>mma@nvidia.com; mhull@nvidia.com</ccEmails>
+        <description>DGX - Focus Deal - Loss Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <recipient>anishd@nvidia.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>ghardy1@nvidia.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>oweber@nvidia.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <field>Opportunity_Owner_Manager__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <recipients>
+            <field>Opportunity_Owner_SalesOpsLead__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Focus_Deal_Alerts/Loss_Alert</template>
+    </alerts>
+    <alerts>
+        <fullName>DGX_Focus_Deal_Win_Alert</fullName>
+        <ccEmails>mma@nvidia.com; mhull@nvidia.com</ccEmails>
+        <description>DGX - Focus Deal - Win Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <recipient>anishd@nvidia.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>ghardy1@nvidia.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>oweber@nvidia.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <field>Opportunity_Owner_Manager__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <recipients>
+            <field>Opportunity_Owner_SalesOpsLead__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Focus_Deal_Alerts/Win_Alert</template>
+    </alerts>
+    <alerts>
+        <fullName>DR_180Days_Exten_Request_Acknowledge_to_Owner</fullName>
+        <ccEmails>jmattern@nvidia.com</ccEmails>
+        <description>DR : 180Days Exten Request : Acknowledge to Owner</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>npnopportunityregistration@nvidia.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Deal_Registration/DR_180Days_Extn_Request_Acknowledge_to_Owner</template>
+    </alerts>
+    <alerts>
+        <fullName>DR_180Days_Registration_Extension_Approved_Email_To_Owner</fullName>
+        <ccEmails>jmattern@nvidia.com</ccEmails>
+        <description>DR : 180Days Registration Extension Approved : Email To Owner</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>npnopportunityregistration@nvidia.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Deal_Registration/DR_180Days_Registration_Extension_Approved_Email_To_Owner</template>
+    </alerts>
+    <alerts>
+        <fullName>DR_180Days_Registration_Extension_Rejected_Email_To_Owner</fullName>
+        <ccEmails>jmattern@nvidia.com</ccEmails>
+        <description>DR : 180Days Registration Extension Rejected : Email To Owner</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>npnopportunityregistration@nvidia.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Deal_Registration/DR_180Days_Registration_Extension_Rejected_Email_To_Owner</template>
+    </alerts>
+    <alerts>
+        <fullName>DR_Claim_Approved_Email_Alert_To_NALA_Admins</fullName>
+        <description>DR : Claim Approved : Email Alert To NALA Admins</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>OPPORTUNITY_REG_NOTIFY_NALA_ADMINS</recipient>
+            <type>group</type>
+        </recipients>
+        <senderAddress>npnopportunityregistration@nvidia.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Deal_Registration/DR_Claim_Approved_Email_To_Partner</template>
+    </alerts>
+    <alerts>
+        <fullName>DR_Deal_Approved_Email_Alert_To_NALA_Admins</fullName>
+        <description>DR : Deal Approved : Email Alert To NALA Admins</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>OPPORTUNITY_REG_NOTIFY_NALA_ADMINS</recipient>
+            <type>group</type>
+        </recipients>
+        <senderAddress>npnopportunityregistration@nvidia.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Deal_Registration/DR_Deal_Approved_Email_To_Partner</template>
+    </alerts>
+    <alerts>
+        <fullName>DR_Deal_Expiry_Reminder_Email_Alert_To_Partner</fullName>
+        <ccEmails>NPNOpportunityRegistration@nvidia.com; pjena@nvidia.com</ccEmails>
+        <description>DR : Deal Expiry Reminder : Email Alert To Partner</description>
+        <protected>false</protected>
+        <recipients>
+            <field>DR_Additional_Team_Member__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <recipients>
+            <field>DR_Partner_Sales_Rep_Name__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <field>DR_PBM_User__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <recipients>
+            <field>DR_SalesOps_Approver__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderAddress>npnopportunityregistration@nvidia.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Deal_Registration/X7_DR_Deal_Expiry_Reminder_Email_To_Partner</template>
+    </alerts>
+    <alerts>
+        <fullName>DR_Deal_Expiry_Reminder_Email_To_TAM_PBM</fullName>
+        <ccEmails>NPNOpportunityRegistration@nvidia.com; pjena@nvidia.com</ccEmails>
+        <description>DR : Deal Expiry Reminder : Email To TAM/PBM</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <field>DR_PBM_User__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <recipients>
+            <field>DR_SalesOps_Approver__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderAddress>npnopportunityregistration@nvidia.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Deal_Registration/X7_DR_Deal_Expiry_Reminder_Email_To_Opp_Owner_html</template>
+    </alerts>
+    <alerts>
+        <fullName>DR_Deal_Extn_Approved_Email_Alert_To_NALA_Admins</fullName>
+        <description>DR : Deal Extn Approved : Email Alert To NALA Admins</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>OPPORTUNITY_REG_NOTIFY_NALA_ADMINS</recipient>
+            <type>group</type>
+        </recipients>
+        <senderAddress>npnopportunityregistration@nvidia.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Deal_Registration/DR_Deal_Extn_Approved_Email_to_Partner</template>
+    </alerts>
+    <alerts>
+        <fullName>DR_Deal_Extn_Approved_Email_Alert_To_Partner</fullName>
+        <ccEmails>NPNOpportunityRegistration@nvidia.com</ccEmails>
+        <description>DR : Deal Extn Approved : Email Alert To Partner</description>
+        <protected>false</protected>
+        <recipients>
+            <field>DR_Additional_Team_Member__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <recipients>
+            <field>DR_Partner_Sales_Rep_Name__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <field>DR_PBM_User__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <recipients>
+            <field>DR_SalesOps_Approver__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderAddress>npnopportunityregistration@nvidia.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Deal_Registration/X4_DR_Deal_Extn_Rejected_Email_to_Partner</template>
+    </alerts>
+    <alerts>
+        <fullName>DR_Deal_Extn_Rejected_Email_Alert_To_Partner</fullName>
+        <description>DR : Deal Extn Rejected : Email Alert To Partner</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <recipient>anishd@nvidia.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <field>DR_PBM_User__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <recipients>
+            <field>DR_Partner_Owner__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <recipients>
+            <field>DR_SalesOps_Approver__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderAddress>npnopportunityregistration@nvidia.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Deal_Registration/X4_DR_Deal_Extn_Rejected_Email_to_Partner1</template>
+    </alerts>
+    <alerts>
+        <fullName>DR_Deal_Terminated_Email_Alert_To_Partner</fullName>
+        <ccEmails>NPNOpportunityRegistration@nvidia.com</ccEmails>
+        <description>DR : Deal Terminated : Email Alert To Partner</description>
+        <protected>false</protected>
+        <recipients>
+            <field>DR_Additional_Team_Member__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <recipients>
+            <field>DR_Partner_Sales_Rep_Name__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <recipient>pjena@nvidia.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <field>DR_PBM_User__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <recipients>
+            <field>DR_SalesOps_Approver__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderAddress>npnopportunityregistration@nvidia.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Deal_Registration/DR_Notification_to_Requestor_Partner_to_Notify_the_Deal_is_Terminated</template>
+    </alerts>
+    <alerts>
+        <fullName>DR_Extn_Approved_Deal_Expiry_Reminder_Email_Alert_To_Partner</fullName>
+        <ccEmails>NPNOpportunityRegistration@nvidia.com</ccEmails>
+        <description>DR : Extn Approved Deal Expiry Reminder : Email Alert To Partner</description>
+        <protected>false</protected>
+        <recipients>
+            <field>DR_Additional_Team_Member__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <recipients>
+            <field>DR_Partner_Sales_Rep_Name__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <recipient>pjena@nvidia.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <field>DR_PBM_User__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <recipients>
+            <field>DR_SalesOps_Approver__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderAddress>npnopportunityregistration@nvidia.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Deal_Registration/X7_DR_Extn_Approved_Deal_Expiry_Reminder_Email_To_Partner_html</template>
+    </alerts>
+    <alerts>
+        <fullName>DR_Ownership_Change_to_TAM_Email_Alert_to_TAM</fullName>
+        <description>DR : Ownership Change to TAM : Email Alert to TAM</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <field>DR_Additional_Recipient_Owner_Change__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Deal_Registration/DR_Ownership_Change_to_TAM_Email_to_TAM</template>
+    </alerts>
+    <alerts>
+        <fullName>Email_alert_to_OEM_Bid_Opportunity_Owner_to_get_approval</fullName>
+        <description>Email alert to OEM Bid Opportunity Owner to get approval</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>wwsalesops@nvidia.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Opportunity_Email_Alerts/SCOPE_Request_Opportunity_Reminder</template>
+    </alerts>
+    <alerts>
+        <fullName>GRID_Focus_Deal_Loss_Alert</fullName>
+        <description>GRID - Focus Deal - Loss Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <recipient>anishd@nvidia.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>ghardy1@nvidia.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>oweber@nvidia.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>rmirpuri@nvidia.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <field>Opportunity_Owner_Manager__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <recipients>
+            <field>Opportunity_Owner_SalesOpsLead__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Focus_Deal_Alerts/Loss_Alert</template>
+    </alerts>
+    <alerts>
+        <fullName>GRID_Focus_Deal_Win_Alert</fullName>
+        <description>GRID - Focus Deal - Win Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <recipient>anishd@nvidia.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>ghardy1@nvidia.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>oweber@nvidia.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>rmirpuri@nvidia.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <field>Opportunity_Owner_Manager__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <recipients>
+            <field>Opportunity_Owner_SalesOpsLead__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Focus_Deal_Alerts/Win_Alert</template>
+    </alerts>
+    <alerts>
+        <fullName>HPC_Focus_Deal_Loss_Alert</fullName>
+        <ccEmails>mma@nvidia.com</ccEmails>
+        <description>HPC - Focus Deal - Loss Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <recipient>amiyai@nvidia.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>anishd@nvidia.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>ghardy1@nvidia.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>oweber@nvidia.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>yogesha@nvidia.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <field>Opportunity_Owner_Manager__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <recipients>
+            <field>Opportunity_Owner_SalesOpsLead__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Focus_Deal_Alerts/Loss_Alert</template>
+    </alerts>
+    <alerts>
+        <fullName>HPC_Focus_Deal_Win_Alert</fullName>
+        <ccEmails>mma@nvidia.com</ccEmails>
+        <description>HPC - Focus Deal - Win Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <recipient>amiyai@nvidia.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>anishd@nvidia.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>ghardy1@nvidia.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>oweber@nvidia.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>yogesha@nvidia.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <field>Opportunity_Owner_Manager__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <recipients>
+            <field>Opportunity_Owner_SalesOpsLead__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Focus_Deal_Alerts/Win_Alert</template>
+    </alerts>
+    <alerts>
+        <fullName>NVIDIA_Financial_Solutions_NOT_Requested</fullName>
+        <ccEmails>ilanevi@nvidia.com</ccEmails>
+        <description>NVIDIA Financial Solutions NOT Requested</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/NVIDIA_Finance_Solutions_NO_Email</template>
+    </alerts>
+    <alerts>
+        <fullName>NVIDIA_Financial_Solutions_Requested</fullName>
+        <ccEmails>ilanevi@nvidia.com</ccEmails>
+        <description>NVIDIA Financial Solutions Requested</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/NVIDIA_Finance_Solutions_YES_Email</template>
+    </alerts>
+    <alerts>
+        <fullName>Opp_Next_Step_Update_Reminder</fullName>
+        <description>Opp Next Step Update Reminder</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>wwsalesops@nvidia.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>WWFO_Email_Templates/Opp_Next_Step_Update_Reminder</template>
+    </alerts>
+    <alerts>
+        <fullName>Opp_Notify_the_User_to_update</fullName>
+        <description>Opp Notify the User to update</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Opp_Auto_Close_Warning</template>
+    </alerts>
+    <alerts>
+        <fullName>Opportunity_Alert_to_Oppty_Team_Member_SA</fullName>
+        <description>Opportunity : Alert to Oppty Team Member (SA)</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>Solution Architect (SA)</recipient>
+            <type>opportunityTeam</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Sales_Cloud_Templates/Opportunity_Alert_to_Oppty_Team_Member_SA</template>
+    </alerts>
+    <alerts>
+        <fullName>Opportunity_Automotive_Flow_Email_Alert</fullName>
+        <description>Opportunity - Automotive Flow Email Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>wwsalesops@nvidia.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Opportunity_Automotive_Flow_Email_Template</template>
+    </alerts>
+    <alerts>
+        <fullName>Opportunity_Email_Reminder_to_Owner_when_RFI_RFP_Response_is_due</fullName>
+        <description>Opportunity : Email Reminder to Owner when RFI/RFP Response is due</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>wwsalesops@nvidia.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Sales_Cloud_Templates/Opportunity_Email_Reminder_to_Owner_when_RFI_RFP_Response_is_due</template>
+    </alerts>
+    <alerts>
+        <fullName>Opportunity_Expiration_Flow_Email_Alert_14th_Day</fullName>
+        <description>Opportunity - Expiration Flow Email Alert 14th Day</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>wwsalesops@nvidia.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Opportunity_Email_Alerts/Opportunity_Expiration_Flow_Email_Template_14th_Day</template>
+    </alerts>
+    <alerts>
+        <fullName>Opportunity_Expiration_Flow_Email_Alert_7th_Day</fullName>
+        <description>Opportunity - Expiration Flow Email Alert 7th Day</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>wwsalesops@nvidia.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Opportunity_Email_Alerts/Opportunity_Expiration_Flow_Email_Template_7th_Day</template>
+    </alerts>
+    <alerts>
+        <fullName>PO_Order_Received</fullName>
+        <ccEmails>anish@nvidia.com</ccEmails>
+        <description>Focus Deal - PO/Order Received</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <recipient>anishd@nvidia.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>oweber@nvidia.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <field>Opportunity_Owner_Manager__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <recipients>
+            <field>Opportunity_Owner_SalesOpsLead__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Focus_Deal_Alerts/PO_Received_Alert</template>
+    </alerts>
+    <alerts>
+        <fullName>Quadro_Revenue_Email_Alert</fullName>
+        <description>Quadro Revenue Email Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>ghardy1@nvidia.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Quadro_Revenue_Change</template>
+    </alerts>
+    <alerts>
+        <fullName>Quote_Creation_Notification_for_OppReg</fullName>
+        <ccEmails>npnopportunityregistration@nvidia.com</ccEmails>
+        <description>Quote Creation Notification for OppReg</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <field>DR_PBM_User__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <recipients>
+            <field>DR_SalesOps_Approver__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderAddress>npnopportunityregistration@nvidia.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>CPQ_Emails/Quote_Creation_Notification_for_OppReg</template>
+    </alerts>
+    <alerts>
+        <fullName>Rebate_Pricing_Approval_Request_Approved</fullName>
+        <ccEmails>WWEntPricing@nvidia.com</ccEmails>
+        <description>Rebate Pricing Approval Request Approved</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>Account Manager (TAM/AM)</recipient>
+            <type>opportunityTeam</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Opportunity_Email_Alerts/VF_Pricing_Approved_Rebate_Form</template>
+    </alerts>
+    <alerts>
+        <fullName>Repeat_Business_Flow_Email_Alert</fullName>
+        <description>Repeat Business Flow Email Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>unfiled$public/Repeat_Business_Flow_Email_Template</template>
+    </alerts>
+    <alerts>
+        <fullName>SCOPE_Approval_Notification</fullName>
+        <description>SCOPE Approval Notification</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <recipients>
+            <recipient>Account Manager (TAM/AM)</recipient>
+            <type>opportunityTeam</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <recipient>jjosephakis@nvidia.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Opportunity_Email_Alerts/SCOPE_Opportunity_Approved_Template</template>
+    </alerts>
+    <alerts>
+        <fullName>SCOPE_Rejection_Notification</fullName>
+        <description>SCOPE Rejection Notification</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>Account Manager (TAM/AM)</recipient>
+            <type>opportunityTeam</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <recipient>jjosephakis@nvidia.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Opportunity_Email_Alerts/SCOPE_Opportunity_Rejected_Template</template>
+    </alerts>
+    <alerts>
+        <fullName>Service_Cloud_Recommendation_for_SDMR</fullName>
+        <ccEmails>enterpriseservices@nvidia.com</ccEmails>
+        <description>Service Cloud: Recommendation for SDMR</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>Account Manager (TAM/AM)</recipient>
+            <type>opportunityTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>Global Account Manager (GAM)</recipient>
+            <type>opportunityTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>National Sales Center (NSC)</recipient>
+            <type>opportunityTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>Product Sales Specialist (PSS)</recipient>
+            <type>opportunityTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>Sales Manager</recipient>
+            <type>opportunityTeam</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>enterpriseservices@nvidia.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Service_Cloud_Templates/Recommendation_for_Media_Retention_Service</template>
+    </alerts>
+    <alerts>
+        <fullName>Service_Cloud_Recommendation_for_TAM</fullName>
+        <ccEmails>enterpriseservices@nvidia.com</ccEmails>
+        <description>Service Cloud: Recommendation for TAM</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>Account Manager (TAM/AM)</recipient>
+            <type>opportunityTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>Global Account Manager (GAM)</recipient>
+            <type>opportunityTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>National Sales Center (NSC)</recipient>
+            <type>opportunityTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>Product Sales Specialist (PSS)</recipient>
+            <type>opportunityTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>Sales Manager</recipient>
+            <type>opportunityTeam</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>enterpriseservices@nvidia.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Service_Cloud_Templates/Recommendation_for_TAM_Support</template>
+    </alerts>
+    <alerts>
+        <fullName>Tesla_Revenue_Change</fullName>
+        <description>Tesla Revenue Change</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>ghardy1@nvidia.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Tesla_Revenue_Change</template>
+    </alerts>
+    <alerts>
+        <fullName>Update_Open_Opportunities_Close_Date_Today</fullName>
+        <description>Update Open Opportunities (Close Date Today)</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <recipient>margaret@nvidia.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <field>LastModifiedById</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Close_Date_Alert_Today</template>
+    </alerts>
+    <alerts>
+        <fullName>Win_form_creation_alert</fullName>
+        <description>Win form creation alert</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Customer_win_form_creation_notice</template>
+    </alerts>
+    <alerts>
+        <fullName>X2_Deal_Registration_Deal_Approved_Oppty_Email_To_Partner</fullName>
+        <ccEmails>NPNOpportunityRegistration@nvidia.com</ccEmails>
+        <description>2. Deal Registration : Deal Approved : Oppty : Email To Partner</description>
+        <protected>false</protected>
+        <recipients>
+            <type>accountOwner</type>
+        </recipients>
+        <recipients>
+            <type>campaignMemberDerivedOwner</type>
+        </recipients>
+        <recipients>
+            <field>DR_Additional_Team_Member__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <recipients>
+            <field>DR_Partner_Sales_Rep_Name__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <recipients>
+            <recipient>National Sales Center (NSC)</recipient>
+            <type>opportunityTeam</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <recipient>jyip@nvidia.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <field>DR_PBM_User__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <recipients>
+            <field>DR_SalesOps_Approver__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderAddress>npnopportunityregistration@nvidia.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Deal_Registration/X2_Deal_Registration_Deal_Approved_Oppty_Email_To_Partner_html</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>CPQ_Update_Primary_Contact_Role</fullName>
+        <field>Primary_Contact_Role__c</field>
+        <literalValue>Renewal Contact</literalValue>
+        <name>CPQ - Update Primary Contact Role</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Clear_Auto_Closed_Comments</fullName>
+        <description>This will clear the Closed Auto Comments so user can update with new comments</description>
+        <field>Closed_Comments_Automotive__c</field>
+        <name>Clear Auto Closed Comments</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Null</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Contracted_True</fullName>
+        <field>SBQQ__Contracted__c</field>
+        <literalValue>1</literalValue>
+        <name>Contracted = True</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>DR_180Days_Extn_Approved_Date_Now</fullName>
+        <description>Sets DR_180Days_Extn_Approved_Date__c to current date</description>
+        <field>DR_180Days_Extn_Approved_Date__c</field>
+        <formula>NOW()</formula>
+        <name>DR : 180Days Extn Approved Date : Now</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>DR_180Days_Extn_Rejected_Date_Now</fullName>
+        <description>Sets DR_180Days_Extn_Rejected_Date__c to true</description>
+        <field>DR_180Days_Extn_Rejected_Date__c</field>
+        <formula>NOW()</formula>
+        <name>DR : 180Days Extn Rejected Date : Now</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>DR_180Days_Extn_Submission_Date_Now</fullName>
+        <description>Sets DR_180Days_Extn_Submission_Date__c to true</description>
+        <field>DR_180Days_Extn_Submission_Date__c</field>
+        <formula>NOW()</formula>
+        <name>DR : 180Days Extn Submission Date : Now</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>DR_180Days_Extn_Submission_Date_Nul</fullName>
+        <description>Sets DR_180Days_Extn_Submission_Date__c to null</description>
+        <field>DR_180Days_Extn_Submission_Date__c</field>
+        <name>DR : 180Days Extn Submission Date : Nul</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Null</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>DR_180Days_Extn_Update_Exp_Date</fullName>
+        <description>DR : Update Expiration Date (Admin Override) to another 90days</description>
+        <field>DR_Expiration_Date_Admin_Override__c</field>
+        <formula>DR_Expiration_Date__c + 90</formula>
+        <name>DR : 180Days Extn : Update Exp Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>DR_Approved_Date_Null</fullName>
+        <description>Sets &quot;Approved Date&quot; to Null</description>
+        <field>DR_Approved_Date__c</field>
+        <name>DR : Approved Date : Null</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Null</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>DR_Is_180Days_Extn_Approved_T</fullName>
+        <description>Sets DR_Is_180Days_Extn_Approved__c to true</description>
+        <field>DR_Is_180Days_Extn_Approved__c</field>
+        <literalValue>1</literalValue>
+        <name>DR : Is 180Days Extn Approved : T</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>DR_Is_180Days_Extn_Rejected_T</fullName>
+        <description>Sets DR_Is_180Days_Extn_Rejected__c to true</description>
+        <field>DR_Is_180Days_Extn_Rejected__c</field>
+        <literalValue>1</literalValue>
+        <name>DR : Is 180Days Extn Rejected : T</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>DR_Is_Approved_F</fullName>
+        <description>Sets &quot;Is Approved&quot; to False</description>
+        <field>DR_Is_Approved__c</field>
+        <literalValue>0</literalValue>
+        <name>DR : Is Approved : F</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>DR_Is_Rejected_F</fullName>
+        <description>Sets &quot;Is Rejected&quot; to False</description>
+        <field>DR_Is_Rejected__c</field>
+        <literalValue>0</literalValue>
+        <name>DR : Is Rejected : F</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>DR_Is_Submitted_For_180Days_Extn_F</fullName>
+        <description>Sets DR_Is_Submitted_For_180Days_Extn__c to False</description>
+        <field>DR_Is_Submitted_For_180Days_Extn__c</field>
+        <literalValue>0</literalValue>
+        <name>DR : Is Submitted For 180Days Extn : F</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>DR_Is_Submitted_For_180Days_Extn_T</fullName>
+        <description>Set DR_Is_Submitted_For_180Days_Extn__c to true</description>
+        <field>DR_Is_Submitted_For_180Days_Extn__c</field>
+        <literalValue>1</literalValue>
+        <name>DR : Is Submitted For 180Days Extn : T</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>DR_Rejected_Date_Null</fullName>
+        <description>Sets &quot;Rejected Date&quot; to Null</description>
+        <field>DR_Rejected_Date__c</field>
+        <name>DR : Rejected Date : Null</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Null</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>DR_Submitted_Date_Null</fullName>
+        <description>Sets DR_Submitted_Date to Null</description>
+        <field>DR_Submitted_Date__c</field>
+        <name>DR : Submitted Date : Null</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Null</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Flag_Strategic_Opportunity_Date</fullName>
+        <field>Strategic_Opportunity_Date__c</field>
+        <formula>TODAY ()</formula>
+        <name>Flag Strategic Opportunity Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Flag_Strategic_Opportunity_Date1</fullName>
+        <field>Strategic_Opportunity_Date__c</field>
+        <formula>TODAY ()</formula>
+        <name>Flag Strategic Opportunity Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Flag_Strategic_Opportunity_Status</fullName>
+        <field>Strategic_Opportunity_Status__c</field>
+        <literalValue>Must Close</literalValue>
+        <name>Flag Strategic Opportunity Status</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Flag_Strategic_Opportunity_Status1</fullName>
+        <field>Strategic_Opportunity_Status__c</field>
+        <literalValue>Must Close</literalValue>
+        <name>Flag Strategic Opportunity Status</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Mellanox_Involved_Yes</fullName>
+        <description>If Networking Pod Partner is &apos;Mellanox&apos; then, &apos;Mellanox Involved&apos; field shall be updated to  &apos;Yes&apos;</description>
+        <field>NBU_Involved__c</field>
+        <literalValue>Yes</literalValue>
+        <name>Mellanox Involved Yes</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Next_Steps_Last_Modified_Date</fullName>
+        <field>Next_Step_Last_Modified_Date__c</field>
+        <formula>TODAY()</formula>
+        <name>Next Steps Last Modified Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Opp_Auto_Close_Lost</fullName>
+        <field>StageName</field>
+        <literalValue>Closed Lost</literalValue>
+        <name>Opp Auto Close Lost</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Opp_Auto_Close_Lost_Reason</fullName>
+        <field>Closed_Lost_Reason__c</field>
+        <literalValue>No Activity</literalValue>
+        <name>Opp Auto Close Lost Reason</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Populate_First_Expiration_Date</fullName>
+        <field>First_Expiration_Date__c</field>
+        <formula>CloseDate</formula>
+        <name>Populate First Expiration Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Prior_Close_Date_Update</fullName>
+        <field>Prior_Close_Date__c</field>
+        <formula>PRIORVALUE(CloseDate)</formula>
+        <name>Prior Close Date Update</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Prior_Probability_Update</fullName>
+        <field>Prior_Probability_Value__c</field>
+        <formula>PRIORVALUE(Probability)</formula>
+        <name>Prior Probability Update</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Re_Flag_Copy_Opp_Values</fullName>
+        <field>Agree_with_Opportunity_Values__c</field>
+        <literalValue>1</literalValue>
+        <name>Re-Flag Copy Opp Values</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Remove_Special_Pricing_Approved_Date</fullName>
+        <description>Used to remove the special pricing approved date for Opportunities that may need to be resubmitted</description>
+        <field>OEM_Bid_Approved_Date__c</field>
+        <name>Remove Special Pricing Approved Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Null</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Rename_Renewal_Opportunity</fullName>
+        <field>Name</field>
+        <formula>IF(LEN(Account.Name)&gt;90, LEFT(Account.Name,75) + &quot; - &quot; + TEXT(Renewal_Product_Type__c) + &quot;Renewal &quot; + SBQQ__RenewedContract__r.Custom_End_Date__c,
+Account.Name + &quot; - &quot; + TEXT(Renewal_Product_Type__c) + &quot;Renewal &quot; + SBQQ__RenewedContract__r.Custom_End_Date__c)</formula>
+        <name>Rename Renewal Opportunity</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>SCOPE_Opportunity_Approved_Date_Update</fullName>
+        <field>OEM_Bid_Approved_Date__c</field>
+        <formula>TODAY()</formula>
+        <name>SCOPE Opportunity Approved Date Update</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_Parent_Opportunity_ID</fullName>
+        <field>Opportunity_ID__c</field>
+        <formula>Id</formula>
+        <name>Set Parent Opportunity ID</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_STAGE_back_to_Not_Submitted</fullName>
+        <description>This will set the stage back to NOT SUBMITTED if approval request is recalled</description>
+        <field>StageName</field>
+        <literalValue>Not Submitted</literalValue>
+        <name>Set STAGE back to Not Submitted</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_opportunity_IsCloned_to_True</fullName>
+        <field>Is_Cloned__c</field>
+        <literalValue>1</literalValue>
+        <name>Set opportunity IsCloned to True</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Stage_Prior_Value</fullName>
+        <field>Prior_Stage_Value__c</field>
+        <formula>TEXT(PRIORVALUE(StageName))</formula>
+        <name>Stage Prior Value</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Submitted_Pending_Approval</fullName>
+        <description>Move from Not Submitted to Submitted - pending approval.</description>
+        <field>StageName</field>
+        <literalValue>Submitted - Pending Approval</literalValue>
+        <name>Submitted - Pending Approval</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Times_Pushed_Months</fullName>
+        <field>Times_Pushed_Months__c</field>
+        <formula>IF(
+ISNULL( Times_Pushed_Months__c ),
+1,
+Times_Pushed_Months__c + 1
+)</formula>
+        <name>Times Pushed (Months)</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Enterprise_Oppty_Type_Text_field</fullName>
+        <description>For use in automated sharing we are updating the Enterprise Oppty Type to then share to segment leaders based on type</description>
+        <field>Enterprise_Opportunity_Type_Text__c</field>
+        <formula>Enterprise_Opportunity_Type__c</formula>
+        <name>Update Enterprise Oppty Type Text field</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_OEM_Bid_Approved_Date</fullName>
+        <description>Used to update the OEM Bid Approved Date</description>
+        <field>OEM_Bid_Approved_Date__c</field>
+        <formula>TODAY ()</formula>
+        <name>Update OEM Bid Approved Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Opportunity_Stage_to_In_Progress</fullName>
+        <description>Move Opportunity Stage to In Progress after approval</description>
+        <field>StageName</field>
+        <literalValue>In Progress</literalValue>
+        <name>Update Opportunity Stage to In Progress</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Renewal_RecordType_to_SW_Servic</fullName>
+        <field>RecordTypeId</field>
+        <lookupValue>SW_Service_Renewals</lookupValue>
+        <lookupValueType>RecordType</lookupValueType>
+        <name>Update Renewal RecordType to SW &amp; Servic</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_SCOPE_Stage_after_approval</fullName>
+        <description>Used to update SCOPE Opportunities to the In Progress Stage after approval</description>
+        <field>StageName</field>
+        <literalValue>Approved - In Progress</literalValue>
+        <name>Update SCOPE Stage after approval</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Stage_Opportunity_Review</fullName>
+        <field>StageName</field>
+        <literalValue>Opportunity Review</literalValue>
+        <name>Update Stage = Opportunity Review</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>update_to_Closed_Rejected</fullName>
+        <description>to update the status field if Approver rejects.</description>
+        <field>StageName</field>
+        <literalValue>Closed - Rejected</literalValue>
+        <name>update to Closed - Rejected</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <rules>
+        <fullName>Align Sales Leader Category to Opp</fullName>
+        <actions>
+            <name>Re_Flag_Copy_Opp_Values</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>1 AND (2 OR 3 OR 4)</booleanFilter>
+        <criteriaItems>
+            <field>Opportunity.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Enterprise Sales Opportunity</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>equals</operation>
+            <value>Closed Won</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>equals</operation>
+            <value>Closed Lost</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>equals</operation>
+            <value>Closed - Went to Cloud</value>
+        </criteriaItems>
+        <description>This is to automatically align sales leader forecast fields to the opportunity if the opportunity is closed won/lost. This kicks off the Sales Leader Process builder.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Auto Oppty Closed Comments</fullName>
+        <actions>
+            <name>Clear_Auto_Closed_Comments</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>SDS- 2140, SDS-2872
+Need to clear comments ALWAYS when the state changes Closed &lt;&gt; Open</description>
+        <formula>AND(   RecordType.DeveloperName = &apos;Automotive_Opportunity&apos;,   PRIORVALUE(IsClosed) = TRUE,   IsClosed = FALSE )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>CPQ - Populate First Expiration Date</fullName>
+        <actions>
+            <name>Populate_First_Expiration_Date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Populate &quot;First Expiration Date&quot; field on opportunity with the &quot;Closed Date&quot;</description>
+        <formula>True</formula>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>CPQ - Primary Contact Role</fullName>
+        <actions>
+            <name>CPQ_Update_Primary_Contact_Role</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.SBQQ__Renewal__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <description>Update primary contact role with &quot;Renewal Contact&quot; when opportunity = CPQ renewal</description>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>CPQ - Rename Renewal Opportunities</fullName>
+        <actions>
+            <name>Rename_Renewal_Opportunity</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.SBQQ__Renewal__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <description>Update name of renewal opportunity on creation.</description>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>DR %3A Deal Termination - Notify Partner</fullName>
+        <actions>
+            <name>DR_Deal_Terminated_Email_Alert_To_Partner</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.DR_Is_Terminated__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <description>DR : When the deal gets terminated send email to Partner</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Flag MCO Eligible Opportunity</fullName>
+        <actions>
+            <name>Flag_Strategic_Opportunity_Date1</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Flag_Strategic_Opportunity_Status1</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <booleanFilter>1 AND 2 AND 3 AND 4 AND 7 AND (5 OR 6)</booleanFilter>
+        <criteriaItems>
+            <field>Opportunity.Strategic_Opportunity_Date__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.NV_Forecast_Category__c</field>
+            <operation>equals</operation>
+            <value>2-Commit,1-Closed</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Enterprise Sales Opportunity,Repeat Business Opportunity</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.CloseDate</field>
+            <operation>equals</operation>
+            <value>THIS FISCAL QUARTER</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.MCO_Eligible_Product_Amount__c</field>
+            <operation>greaterOrEqual</operation>
+            <value>1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Tesla_Product_Amount__c</field>
+            <operation>greaterOrEqual</operation>
+            <value>450000</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Industry__c</field>
+            <operation>notEqual</operation>
+            <value>Strategic Hyperscale</value>
+        </criteriaItems>
+        <description>Used to automatically flag MCO opportunities</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Identify Cloned Opportunity</fullName>
+        <actions>
+            <name>Set_opportunity_IsCloned_to_True</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <formula>ISCLONE()</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Is Closed%2FWon</fullName>
+        <active>true</active>
+        <description>Opportunity field update: set Contracted = True if Stage = Won</description>
+        <formula>SBQQ__PrimaryQuote__c != null &amp;&amp; RecordType.Name = &apos;SW &amp; Service Renewals&apos; &amp;&amp; (   TEXT(StageName) = &apos;Renewal Closed Won&apos; || TEXT(StageName) = &apos;Closed Won&apos; ) &amp;&amp; (NOT(ISBLANK( SAP_Delivery__c ) ) )</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Contracted_True</name>
+                <type>FieldUpdate</type>
+            </actions>
+            <timeLength>24</timeLength>
+            <workflowTimeTriggerUnit>Hours</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>NVIDIA Finance Solutions_NO Email</fullName>
+        <actions>
+            <name>NVIDIA_Financial_Solutions_NOT_Requested</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.NVIDIA_Financing_Solutions_Status__c</field>
+            <operation>equals</operation>
+            <value>Not applicable</value>
+        </criteriaItems>
+        <description>Send NVIDIA Financial Solutions NO email</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>NVIDIA Finance Solutions_YES Email</fullName>
+        <actions>
+            <name>NVIDIA_Financial_Solutions_Requested</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.NVIDIA_Financing_Solutions_Status__c</field>
+            <operation>equals</operation>
+            <value>Review Opportunity with NVFS Resource,Price and Credit evaluation,Term Sheet sent to customer,Create Master Lease agreement,NVFS proposal Finalized</value>
+        </criteriaItems>
+        <description>Send NVIDIA Financial Solutions YES email</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Next Step Last Modified Date</fullName>
+        <actions>
+            <name>Next_Steps_Last_Modified_Date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Workflow to auto populate the Next Step Last Modified Date on the opportunity.
+SDS-2862-Add the logic for new records as well</description>
+        <formula>AND( 	OR( 		AND( 			ISNEW(), 			NOT(ISBLANK(NextStep)) 		), 		ISCHANGED (NextStep) 	), 	IsClosed = False )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>OEM Bid Opportunity Reminder</fullName>
+        <actions>
+            <name>Email_alert_to_OEM_Bid_Opportunity_Owner_to_get_approval</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>OEM Bid Opportunity</value>
+        </criteriaItems>
+        <description>Used to remind users to move forward with approval on their OEM bid Opportunity</description>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>OPP_AutoClose_If_Not_Active</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Enterprise Sales Opportunity</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Type</field>
+            <operation>notEqual</operation>
+            <value>Deal Registration</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>equals</operation>
+            <value>Prospecting</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Lead_Id_For_Opportunity__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <description>Close the opportunity if not updated in last 30days</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Opp_Notify_the_User_to_update</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Opportunity.Last_Activity_For_Auto_Close__c</offsetFromField>
+            <timeLength>-15</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Opp_Auto_Close_Lost</name>
+                <type>FieldUpdate</type>
+            </actions>
+            <actions>
+                <name>Opp_Auto_Close_Lost_Reason</name>
+                <type>FieldUpdate</type>
+            </actions>
+            <offsetFromField>Opportunity.Last_Activity_For_Auto_Close__c</offsetFromField>
+            <timeLength>2</timeLength>
+            <workflowTimeTriggerUnit>Hours</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Opportunity %3A  Alert to Oppty Team Member %28SA%29</fullName>
+        <actions>
+            <name>Opportunity_Alert_to_Oppty_Team_Member_SA</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.SA_Request_Date__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <description>Send an alert to an SA that they&apos;ve been included in an Opportunity with a target date</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Prior Close Date Update</fullName>
+        <actions>
+            <name>Prior_Close_Date_Update</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Updating prior close date.</description>
+        <formula>AND( NOT(ISNEW()), ISCHANGED( CloseDate ) )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Prior Probability Update</fullName>
+        <actions>
+            <name>Prior_Probability_Update</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Populating prior probability value</description>
+        <formula>ISCHANGED( Probability )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Prior Stage Update</fullName>
+        <actions>
+            <name>Stage_Prior_Value</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Updating prior stage</description>
+        <formula>AND( NOT(ISNEW()), ISCHANGED( StageName ) )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Remove Special Pricing Approved Date</fullName>
+        <actions>
+            <name>Remove_Special_Pricing_Approved_Date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Special Pricing Request</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>equals</operation>
+            <value>Awaiting Approval</value>
+        </criteriaItems>
+        <description>Used to help with Special Pricing Requests to remove the approved date if in Stage, &apos;Awaiting Approval&apos;</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Set CPQ renewal record type</fullName>
+        <actions>
+            <name>Update_Renewal_RecordType_to_SW_Servic</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>SBQQ__Renewal__c = true</formula>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Set Stage %3D Opportunity Review</fullName>
+        <actions>
+            <name>Update_Stage_Opportunity_Review</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.SBQQ__Renewal__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <description>When Opportunity = renewal, set Stage = Opportunity Review</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Times Pushed %28Months%29</fullName>
+        <actions>
+            <name>Times_Pushed_Months</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>How many times (months) has the opportunity close date been pushed?</description>
+        <formula>AND(CloseDate &gt; PRIORVALUE( CloseDate ), OR(  MONTH(CloseDate) &lt;&gt; MONTH(PRIORVALUE( CloseDate )),  YEAR(CloseDate) &lt;&gt; YEAR(PRIORVALUE( CloseDate ))))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update the product currency fields on Oppty</fullName>
+        <actions>
+            <name>Update_Enterprise_Oppty_Type_Text_field</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.CreatedDate</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <description>For use in updating the product currency fields on Oppty to enable automated sharing based upon Products being attached</description>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

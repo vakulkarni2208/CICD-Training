@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Please list Education/Academic authorizations/specializations --></help>
+    <label><!-- EDU Authorizations/Specializations --></label>
+    <name>EDU_Authorizations_Specializations__c</name>
+</CustomFieldTranslation>

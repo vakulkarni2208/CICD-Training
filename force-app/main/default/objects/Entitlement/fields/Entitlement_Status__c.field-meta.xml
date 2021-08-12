@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Entitlement_Status__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF ( Text(Order_Type__c) = &apos;ZMRS&apos;  || Text(Order_Type__c) = &apos;ZKB&apos; , &quot;MRS&quot;,
+	IF ( ISBLANK(SAP_Order__c) &amp;&amp; ISBLANK(Subscription__c), &quot;Removed&quot;,
+		IF ( TODAY() &gt;= StartDate &amp;&amp; TODAY() &lt;= EndDate, &quot;Active&quot;,
+			IF(StartDate &gt; TODAY(), &quot;Inactive&quot;, 
+						&quot;Expired&quot;
+			)
+		)
+	)
+)</formula>
+    <label>Entitlement Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

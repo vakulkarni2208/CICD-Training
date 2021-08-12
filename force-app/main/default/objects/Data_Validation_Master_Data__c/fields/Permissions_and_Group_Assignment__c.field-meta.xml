@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Permissions_and_Group_Assignment__c</fullName>
+    <externalId>false</externalId>
+    <label>Permissions and Group Assignment</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Community</fullName>
+                <default>false</default>
+                <label>Community</label>
+            </value>
+            <value>
+                <fullName>Deal Registration</fullName>
+                <default>false</default>
+                <label>Deal Registration</label>
+            </value>
+            <value>
+                <fullName>DGX Full Portal</fullName>
+                <default>false</default>
+                <label>DGX Full Portal</label>
+            </value>
+            <value>
+                <fullName>DISTI DGX Elite</fullName>
+                <default>false</default>
+                <label>DISTI DGX Elite</label>
+            </value>
+            <value>
+                <fullName>DISTI DGX Preferred</fullName>
+                <default>false</default>
+                <label>DISTI DGX Preferred</label>
+            </value>
+            <value>
+                <fullName>DISTI Quadro Elite</fullName>
+                <default>false</default>
+                <label>DISTI Quadro Elite</label>
+            </value>
+            <value>
+                <fullName>DISTI Quadro Preferred</fullName>
+                <default>false</default>
+                <label>DISTI Quadro Preferred</label>
+            </value>
+            <value>
+                <fullName>DISTI Tesla Elite</fullName>
+                <default>false</default>
+                <label>DISTI Tesla Elite</label>
+            </value>
+            <value>
+                <fullName>DISTI Tesla Preferred</fullName>
+                <default>false</default>
+                <label>DISTI Tesla Preferred</label>
+            </value>
+            <value>
+                <fullName>DISTI vGPU Elite</fullName>
+                <default>false</default>
+                <label>DISTI vGPU Elite</label>
+            </value>
+            <value>
+                <fullName>DISTI vGPU Preferred</fullName>
+                <default>false</default>
+                <label>DISTI vGPU Preferred</label>
+            </value>
+            <value>
+                <fullName>Elite</fullName>
+                <default>false</default>
+                <label>Elite</label>
+            </value>
+            <value>
+                <fullName>GRID VCA Legacy</fullName>
+                <default>false</default>
+                <label>GRID VCA Legacy</label>
+            </value>
+            <value>
+                <fullName>GRID VGX Legacy</fullName>
+                <default>false</default>
+                <label>GRID VGX Legacy</label>
+            </value>
+            <value>
+                <fullName>IP Portal Lite</fullName>
+                <default>false</default>
+                <label>IP Portal Lite</label>
+            </value>
+            <value>
+                <fullName>IP Tesla Elite</fullName>
+                <default>false</default>
+                <label>IP Tesla Elite</label>
+            </value>
+            <value>
+                <fullName>IP Tesla Preferred</fullName>
+                <default>false</default>
+                <label>IP Tesla Preferred</label>
+            </value>
+            <value>
+                <fullName>Leads &amp; Opportunities</fullName>
+                <default>false</default>
+                <label>Leads &amp; Opportunities</label>
+            </value>
+            <value>
+                <fullName>Manager</fullName>
+                <default>false</default>
+                <label>Manager</label>
+            </value>
+            <value>
+                <fullName>MDF</fullName>
+                <default>false</default>
+                <label>MDF</label>
+            </value>
+            <value>
+                <fullName>MDFV3</fullName>
+                <default>false</default>
+                <label>MDFV3</label>
+            </value>
+            <value>
+                <fullName>NVEP</fullName>
+                <default>false</default>
+                <label>NVEP</label>
+            </value>
+            <value>
+                <fullName>OEM DGX Elite</fullName>
+                <default>false</default>
+                <label>OEM DGX Elite</label>
+            </value>
+            <value>
+                <fullName>OEM DGX Preferred</fullName>
+                <default>false</default>
+                <label>OEM DGX Preferred</label>
+            </value>
+            <value>
+                <fullName>OEM Quadro Elite</fullName>
+                <default>false</default>
+                <label>OEM Quadro Elite</label>
+            </value>
+            <value>
+                <fullName>OEM Quadro Preferred</fullName>
+                <default>false</default>
+                <label>OEM Quadro Preferred</label>
+            </value>
+            <value>
+                <fullName>OEM Tesla Elite</fullName>
+                <default>false</default>
+                <label>OEM Tesla Elite</label>
+            </value>
+            <value>
+                <fullName>OEM Tesla Preferred</fullName>
+                <default>false</default>
+                <label>OEM Tesla Preferred</label>
+            </value>
+            <value>
+                <fullName>OEM vGPU Elite</fullName>
+                <default>false</default>
+                <label>OEM vGPU Elite</label>
+            </value>
+            <value>
+                <fullName>OEM vGPU Preferred</fullName>
+                <default>false</default>
+                <label>OEM vGPU Preferred</label>
+            </value>
+            <value>
+                <fullName>Portal</fullName>
+                <default>false</default>
+                <label>Portal</label>
+            </value>
+            <value>
+                <fullName>Portal Lite</fullName>
+                <default>false</default>
+                <label>Portal Lite</label>
+            </value>
+            <value>
+                <fullName>Quadro Portal Full</fullName>
+                <default>false</default>
+                <label>Quadro Portal Full</label>
+            </value>
+            <value>
+                <fullName>SP DGX Elite</fullName>
+                <default>false</default>
+                <label>SP DGX Elite</label>
+            </value>
+            <value>
+                <fullName>SP DGX Preferred</fullName>
+                <default>false</default>
+                <label>SP DGX Preferred</label>
+            </value>
+            <value>
+                <fullName>SP Quadro Elite</fullName>
+                <default>false</default>
+                <label>SP Quadro Elite</label>
+            </value>
+            <value>
+                <fullName>SP Quadro Preferred</fullName>
+                <default>false</default>
+                <label>SP Quadro Preferred</label>
+            </value>
+            <value>
+                <fullName>SP Tesla Elite</fullName>
+                <default>false</default>
+                <label>SP Tesla Elite</label>
+            </value>
+            <value>
+                <fullName>SP Tesla Preferred</fullName>
+                <default>false</default>
+                <label>SP Tesla Preferred</label>
+            </value>
+            <value>
+                <fullName>SP vGPU Elite</fullName>
+                <default>false</default>
+                <label>SP vGPU Elite</label>
+            </value>
+            <value>
+                <fullName>SP vGPU Preferred</fullName>
+                <default>false</default>
+                <label>SP vGPU Preferred</label>
+            </value>
+            <value>
+                <fullName>Tesla Full Portal</fullName>
+                <default>false</default>
+                <label>Tesla Full Portal</label>
+            </value>
+            <value>
+                <fullName>TPP Legacy</fullName>
+                <default>false</default>
+                <label>TPP Legacy</label>
+            </value>
+            <value>
+                <fullName>vGPU Portal Full</fullName>
+                <default>false</default>
+                <label>vGPU Portal Full</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

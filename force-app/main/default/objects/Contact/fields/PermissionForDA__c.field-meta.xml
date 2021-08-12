@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PermissionForDA__c</fullName>
+    <externalId>false</externalId>
+    <formula>substitute(Substitute(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(Account.NPN_Active_Program_Competency__c,&apos;Solution Provider&apos;, &apos;SP&apos;),&apos;Cloud Service Provider&apos;, &apos;CSP&apos;),&apos;Distributor&apos;, &apos;DISTI&apos;),&apos;Solutions Integration Partner&apos;, &apos;SIP&apos;),&apos;Government System Integrator&apos;,&apos;Gov SI&apos;),&apos;Solution Advisor&apos;,&apos;SA Consultant&apos;),&apos;::&apos;,&apos;;&apos;),&apos;:&apos;,&apos; &apos;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>PermissionForDA</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

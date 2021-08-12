@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NetworkBranding xmlns="http://soap.sforce.com/2006/04/metadata">
+    <loginFooterText>salesforce.com</loginFooterText>
+    <network>NPNCommunity</network>
+    <primaryColor>#76B900</primaryColor>
+    <primaryComplementColor>#222222</primaryComplementColor>
+    <quaternaryColor>#FFFFFF</quaternaryColor>
+    <quaternaryComplementColor>#222222</quaternaryComplementColor>
+    <secondaryColor>#818181</secondaryColor>
+    <tertiaryColor>#000000</tertiaryColor>
+    <tertiaryComplementColor>#FFFFFF</tertiaryComplementColor>
+    <zeronaryColor>#76B900</zeronaryColor>
+    <zeronaryComplementColor>#222222</zeronaryComplementColor>
+</NetworkBranding>

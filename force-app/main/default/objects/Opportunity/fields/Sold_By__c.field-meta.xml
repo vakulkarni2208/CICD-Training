@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sold_By__c</fullName>
+    <externalId>false</externalId>
+    <label>Sold By</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>AutonomouStuff</fullName>
+                <default>false</default>
+                <label>AutonomouStuff</label>
+            </value>
+            <value>
+                <fullName>AutoStuff</fullName>
+                <default>false</default>
+                <label>AutoStuff</label>
+            </value>
+            <value>
+                <fullName>C-Data</fullName>
+                <default>false</default>
+                <label>C-Data</label>
+            </value>
+            <value>
+                <fullName>Corimetal</fullName>
+                <default>false</default>
+                <label>Corimetal</label>
+            </value>
+            <value>
+                <fullName>Desay</fullName>
+                <default>false</default>
+                <label>Desay</label>
+            </value>
+            <value>
+                <fullName>EDOM</fullName>
+                <default>false</default>
+                <label>EDOM</label>
+            </value>
+            <value>
+                <fullName>Hancom MDS</fullName>
+                <default>false</default>
+                <label>Hancom MDS</label>
+            </value>
+            <value>
+                <fullName>Leadtek</fullName>
+                <default>false</default>
+                <label>Leadtek</label>
+            </value>
+            <value>
+                <fullName>Macnica</fullName>
+                <default>false</default>
+                <label>Macnica</label>
+            </value>
+            <value>
+                <fullName>NEXTY</fullName>
+                <default>false</default>
+                <label>NEXTY</label>
+            </value>
+            <value>
+                <fullName>NVIDIA</fullName>
+                <default>true</default>
+                <label>NVIDIA</label>
+            </value>
+            <value>
+                <fullName>Open Zeka</fullName>
+                <default>false</default>
+                <label>Open Zeka</label>
+            </value>
+            <value>
+                <fullName>PNY Technologies</fullName>
+                <default>false</default>
+                <label>PNY Technologies</label>
+            </value>
+            <value>
+                <fullName>PrestonEV</fullName>
+                <default>false</default>
+                <label>PrestonEV</label>
+            </value>
+            <value>
+                <fullName>Quanta</fullName>
+                <default>false</default>
+                <label>Quanta</label>
+            </value>
+            <value>
+                <fullName>Syntech Asia</fullName>
+                <default>false</default>
+                <label>Syntech Asia</label>
+            </value>
+            <value>
+                <fullName>Turing Drive</fullName>
+                <default>false</default>
+                <label>Turing Drive</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

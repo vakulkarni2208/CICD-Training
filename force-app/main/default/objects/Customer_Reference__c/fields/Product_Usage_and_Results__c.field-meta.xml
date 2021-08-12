@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product_Usage_and_Results__c</fullName>
+    <description>What was the result? (before/after)</description>
+    <externalId>false</externalId>
+    <inlineHelpText>What was the result? (before/after)</inlineHelpText>
+    <label>NVIDIA Product Usage &amp; Results</label>
+    <length>100000</length>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>2</visibleLines>
+</CustomField>

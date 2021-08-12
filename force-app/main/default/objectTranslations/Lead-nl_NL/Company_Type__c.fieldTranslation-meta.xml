@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Company Type --></label>
+    <name>Company_Type__c</name>
+    <picklistValues>
+        <masterLabel>Agriculture</masterLabel>
+        <translation><!-- Agriculture --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Algorithm</masterLabel>
+        <translation><!-- Algorithm --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ESV</masterLabel>
+        <translation><!-- ESV --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Electric Vertical Takeoff &amp; Landing</masterLabel>
+        <translation><!-- Electric Vertical Takeoff &amp; Landing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Engineering Service Vendor: Service Providers</masterLabel>
+        <translation><!-- Engineering Service Vendor: Service Providers --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HER</masterLabel>
+        <translation><!-- HER --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Higher Education &amp; Research: Research Labs</masterLabel>
+        <translation><!-- Higher Education &amp; Research: Research Labs --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Higher Education &amp; Research: University</masterLabel>
+        <translation><!-- Higher Education &amp; Research: University --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IHV</masterLabel>
+        <translation><!-- IHV --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ISV</masterLabel>
+        <translation><!-- ISV --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Independent Hardware Vendor: Hardware</masterLabel>
+        <translation><!-- Independent Hardware Vendor: Hardware --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Independent Hardware Vendor: Sensors</masterLabel>
+        <translation><!-- Independent Hardware Vendor: Sensors --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Independent Software Vendor: AV Algorithm</masterLabel>
+        <translation><!-- Independent Software Vendor: AV Algorithm --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Independent Software Vendor: Software &amp; Simulation</masterLabel>
+        <translation><!-- Independent Software Vendor: Software &amp; Simulation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Independent Software Vendor: Trucking</masterLabel>
+        <translation><!-- Independent Software Vendor: Trucking --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mapping</masterLabel>
+        <translation><!-- Mapping --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OEM</masterLabel>
+        <translation><!-- OEM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OEM: Commercial Vehicles</masterLabel>
+        <translation><!-- OEM: Commercial Vehicles --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OEM: Passenger Cars</masterLabel>
+        <translation><!-- OEM: Passenger Cars --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>R &amp; D Labs</masterLabel>
+        <translation><!-- R &amp; D Labs --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Robo-taxi</masterLabel>
+        <translation><!-- Robo-taxi --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sensors</masterLabel>
+        <translation><!-- Sensors --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TAAS</masterLabel>
+        <translation><!-- TAAS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tier 1</masterLabel>
+        <translation><!-- Tier 1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Truck / Bus / Shuttle</masterLabel>
+        <translation><!-- Truck / Bus / Shuttle --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Trucking</masterLabel>
+        <translation><!-- Trucking --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>University</masterLabel>
+        <translation><!-- University --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

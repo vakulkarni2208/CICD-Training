@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MKTO_GDPR_Delete__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>This field is used by Marketo. Will update this field to &quot;Checked&quot; if this Contact have to be deleted. Later a new case will be created to delete this Contact by the Process Builder.</description>
+    <externalId>false</externalId>
+    <label>MKTO GDPR Delete</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

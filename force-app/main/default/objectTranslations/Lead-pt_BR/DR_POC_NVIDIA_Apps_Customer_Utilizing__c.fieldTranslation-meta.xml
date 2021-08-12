@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- NVIDIA Applications Customer Utilizing --></label>
+    <name>DR_POC_NVIDIA_Apps_Customer_Utilizing__c</name>
+</CustomFieldTranslation>

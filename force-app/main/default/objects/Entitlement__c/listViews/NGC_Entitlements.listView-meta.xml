@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NGC_Entitlements</fullName>
+    <booleanFilter>1 AND (2 OR 3)</booleanFilter>
+    <columns>NAME</columns>
+    <columns>Status__c</columns>
+    <columns>End_Date__c</columns>
+    <columns>PAK_ID__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Product_Line__c</field>
+        <operation>equals</operation>
+        <value>NGC-Ready Systems</value>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>notEqual</operation>
+        <value>Removed</value>
+    </filters>
+    <filters>
+        <field>Order_Type__c</field>
+        <operation>equals</operation>
+        <value>ZMRS</value>
+    </filters>
+    <label>NGC Entitlements</label>
+    <language>en_US</language>
+</ListView>

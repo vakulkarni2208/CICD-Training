@@ -1,0 +1,54 @@
+/* Styles used on public-facing PRM pages */
+
+body
+{
+    background-image: url(../img/background_gradient.gif);
+    background-repeat: repeat-x;
+} 
+
+div.main 
+{
+    width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.content 
+{
+    padding:20px 100px 20px 240px;
+    font-family: "Trebuchet MS",Arial,Helvetica,sans-serif;
+    font-size: 13px;
+    background-color: white;
+    height:1200px;
+}
+
+h1
+{
+    color: #76B900;
+    font: 24px "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+h4
+{
+    color: #76B900;
+    font: bold 14px arial;
+}
+
+a
+{
+    color: #76B900;
+}
+
+div.header
+{
+    height:100px;
+    width:100%;
+    background-color:#000000;
+    overflow:hidden;
+}
+
+div.header img.logo
+{
+    margin-left:20px;
+    margin-top:22px;
+}

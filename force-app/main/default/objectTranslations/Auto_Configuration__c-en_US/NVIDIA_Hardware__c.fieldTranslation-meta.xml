@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- NVIDIA Hardware in Vehicle --></label>
+    <name>NVIDIA_Hardware__c</name>
+    <picklistValues>
+        <masterLabel>Automotive: Custom Hardware</masterLabel>
+        <translation><!-- Automotive: Custom Hardware --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Automotive: DRIVE Platform</masterLabel>
+        <translation><!-- Automotive: DRIVE Platform --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Embedded: Jetson Platform</masterLabel>
+        <translation><!-- Embedded: Jetson Platform --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GPU: DRIVE PX2-G3</masterLabel>
+        <translation><!-- GPU: DRIVE PX2-G3 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GPU: GeForce GTX</masterLabel>
+        <translation><!-- GPU: GeForce GTX --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GPU: PG189</masterLabel>
+        <translation><!-- GPU: PG189 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GPU: Quadro</masterLabel>
+        <translation><!-- GPU: Quadro --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GPU: Tesla</masterLabel>
+        <translation><!-- GPU: Tesla --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unknown</masterLabel>
+        <translation><!-- Unknown --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

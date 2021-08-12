@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GPUs__c</fullName>
+    <description>TCO Calculator Questions</description>
+    <externalId>false</externalId>
+    <label>GPUs</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>2x Tesla K80</fullName>
+                <default>false</default>
+                <label>2x Tesla K80</label>
+            </value>
+            <value>
+                <fullName>4x Tesla K80</fullName>
+                <default>false</default>
+                <label>4x Tesla K80</label>
+            </value>
+            <value>
+                <fullName>2x Tesla P100</fullName>
+                <default>false</default>
+                <label>2x Tesla P100</label>
+            </value>
+            <value>
+                <fullName>4x Tesla P100</fullName>
+                <default>false</default>
+                <label>4x Tesla P100</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

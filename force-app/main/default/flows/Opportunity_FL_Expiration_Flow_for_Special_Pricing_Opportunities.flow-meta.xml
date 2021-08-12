@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <description>Send Email notification to Opportunity Owner on 14th Day before the date of expiration.</description>
+        <name>Send_Email_notification_Pre_14th_Day_of_Expiration</name>
+        <label>Send Email notification Pre-14th Day of Expiration</label>
+        <locationX>1055</locationX>
+        <locationY>312</locationY>
+        <actionName>Opportunity.Opportunity_Expiration_Flow_Email_Alert_14th_Day</actionName>
+        <actionType>emailAlert</actionType>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>Extract_Oppty_1_by_1.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <description>Send Email notification to Opportunity Owner on Pre-7th Day of expiration date</description>
+        <name>Send_Email_on_Pre_7th_Day_of_Expiration</name>
+        <label>Send Email on Pre-7th Day of Expiration</label>
+        <locationX>1066</locationX>
+        <locationY>566</locationY>
+        <actionName>Opportunity.Opportunity_Expiration_Flow_Email_Alert_7th_Day</actionName>
+        <actionType>emailAlert</actionType>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>Extract_Oppty_1_by_1.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <assignments>
+        <description>Assign the Stage &apos;Closed Lost&apos; and Reason as &apos;Pricing Expired&apos; to the Opportunities those that have met Past 1 Day.</description>
+        <name>Assign_Data_to_Update_Opportunity</name>
+        <label>Assign_Data_to_Update_Opportunity</label>
+        <locationX>390</locationX>
+        <locationY>470</locationY>
+        <assignmentItems>
+            <assignToReference>Extract_Oppty_1_by_1.StageName</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Closed Lost</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_the_Yesterday_Expired_Opportunities_to_Closed_Lost</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <description>Check if Opportunity Pricing Approval Expiration Date field is going to Expire in next 14 Days or in 7 Days or if it already Expired Yesterday</description>
+        <name>Check_if_Oppty_Pricing_Approval_Expiration_Date_is_going_to_Expire_in_14_Days_or</name>
+        <label>Check if Oppty Pricing Approval Expiration Date is going to Expire in 14 Days or 7 Days or Expired Yesterday</label>
+        <locationX>676</locationX>
+        <locationY>472</locationY>
+        <defaultConnectorLabel>None are matched</defaultConnectorLabel>
+        <rules>
+            <name>Is_Pricing_Approval_Expiration_Date_expires_in_14_Days</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Extract_Oppty_1_by_1.Pricing_Approval_Expiration_Date__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>Today_Plus_14th_Day_Date</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Send_Email_notification_Pre_14th_Day_of_Expiration</targetReference>
+            </connector>
+            <label>Is Pricing Approval Expiration Date expires in 14 Days</label>
+        </rules>
+        <rules>
+            <name>Is_Pricing_Approval_Expiration_Date_expires_in_7_Days</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Extract_Oppty_1_by_1.Pricing_Approval_Expiration_Date__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>Today_Plus_7th_Day_Date</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Send_Email_on_Pre_7th_Day_of_Expiration</targetReference>
+            </connector>
+            <label>Is Pricing Approval Expiration Date expires in 7 Days</label>
+        </rules>
+        <rules>
+            <name>Is_Pricing_Approval_Expiration_Date_Expired_Yesterday</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Extract_Oppty_1_by_1.Pricing_Approval_Expiration_Date__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>Today_Minus_1_Day_Date</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Data_to_Update_Opportunity</targetReference>
+            </connector>
+            <label>Is Pricing Approval Expiration Date Expired Yesterday</label>
+        </rules>
+    </decisions>
+    <description>JIRA: SDS-2261 : Implement Expiration Flow for Special Pricing Opportunities</description>
+    <formulas>
+        <description>Date is Today - 1 (Yesterday)</description>
+        <name>Today_Minus_1_Day_Date</name>
+        <dataType>Date</dataType>
+        <expression>{!$Flow.CurrentDate} - 1</expression>
+    </formulas>
+    <formulas>
+        <description>Date is Today + 14 Days</description>
+        <name>Today_Plus_14th_Day_Date</name>
+        <dataType>Date</dataType>
+        <expression>{!$Flow.CurrentDate} + 14</expression>
+    </formulas>
+    <formulas>
+        <description>Date is Today + 7 Days</description>
+        <name>Today_Plus_7th_Day_Date</name>
+        <dataType>Date</dataType>
+        <expression>{!$Flow.CurrentDate} + 7</expression>
+    </formulas>
+    <interviewLabel>Opp {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Opportunity: FL: Expiration Flow for Special Pricing Opportunities</label>
+    <loops>
+        <description>Loop over the Opportunities one by one</description>
+        <name>Extract_Oppty_1_by_1</name>
+        <label>Extract Oppty 1 by 1</label>
+        <locationX>685</locationX>
+        <locationY>281</locationY>
+        <collectionReference>Fetch_Special_Pricing_Opportunities</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Check_if_Oppty_Pricing_Approval_Expiration_Date_is_going_to_Expire_in_14_Days_or</targetReference>
+        </nextValueConnector>
+    </loops>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <description>Query for the Special Pricing Request Opportunities</description>
+        <name>Fetch_Special_Pricing_Opportunities</name>
+        <label>Fetch Special Pricing Opportunities</label>
+        <locationX>685</locationX>
+        <locationY>116</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Extract_Oppty_1_by_1</targetReference>
+        </connector>
+        <filters>
+            <field>Pricing_Approval_Expiration_Date__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>RecordTypeId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>varSPROppRecordTypeId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>Opportunity</object>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>StageName</queriedFields>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>Query and get the Special Pricing Opportunity RecordType Id</description>
+        <name>Fetch_the_Special_Pricing_Opportunity_RecordType_Id</name>
+        <label>Fetch the Special Pricing Opportunity RecordType Id</label>
+        <locationX>473</locationX>
+        <locationY>116</locationY>
+        <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Fetch_Special_Pricing_Opportunities</targetReference>
+        </connector>
+        <filters>
+            <field>DeveloperName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Special_Pricing_Request</stringValue>
+            </value>
+        </filters>
+        <object>RecordType</object>
+        <outputAssignments>
+            <assignToReference>varSPROppRecordTypeId</assignToReference>
+            <field>Id</field>
+        </outputAssignments>
+    </recordLookups>
+    <recordUpdates>
+        <description>Update the Opportunity Stage to Closed Lost for the Opportunities those that have expired yesterday</description>
+        <name>Update_the_Yesterday_Expired_Opportunities_to_Closed_Lost</name>
+        <label>Update the Yesterday Expired Opportunities to Closed Lost</label>
+        <locationX>154</locationX>
+        <locationY>470</locationY>
+        <inputReference>Extract_Oppty_1_by_1</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>49</locationX>
+        <locationY>38</locationY>
+        <connector>
+            <targetReference>Fetch_the_Special_Pricing_Opportunity_RecordType_Id</targetReference>
+        </connector>
+        <filters>
+            <field>Pricing_Approval_Expiration_Date__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <object>Opportunity</object>
+        <schedule>
+            <frequency>Daily</frequency>
+            <startDate>2020-08-27</startDate>
+            <startTime>07:00:00.000Z</startTime>
+        </schedule>
+        <triggerType>Scheduled</triggerType>
+    </start>
+    <status>Active</status>
+    <variables>
+        <description>This variable will have the Record Type Id if the &apos;Special Pricing Request&apos; Opportunity Record Type.</description>
+        <name>varSPROppRecordTypeId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

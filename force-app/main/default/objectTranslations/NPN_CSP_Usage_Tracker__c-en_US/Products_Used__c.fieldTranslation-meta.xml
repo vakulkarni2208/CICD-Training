@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Products Used (Old Field) --></label>
+    <name>Products_Used__c</name>
+    <picklistValues>
+        <masterLabel>M60</masterLabel>
+        <translation><!-- M60 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>P100</masterLabel>
+        <translation><!-- P100 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>P4</masterLabel>
+        <translation><!-- P4 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>T4</masterLabel>
+        <translation><!-- T4 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V100</masterLabel>
+        <translation><!-- V100 --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

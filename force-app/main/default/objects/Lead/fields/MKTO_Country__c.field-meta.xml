@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MKTO_Country__c</fullName>
+    <description>Country/State picklist enablement: MKTO syncs its Country to this field and SFDC trigger deduces the full Country name from Country_List object and sets to the SFDC standard Country field</description>
+    <externalId>false</externalId>
+    <label>MKTO Country</label>
+    <length>100</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

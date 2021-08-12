@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DLI_Other_Payment_Reference_ID_Required</fullName>
+    <active>true</active>
+    <description>SDS-2017-Other Payment Reference ID Required if Payment Method = MDF/RSMP/Manual Invoice</description>
+    <errorConditionFormula>AND (
+	RecordType.DeveloperName = &quot;DLI_Opportunity&quot;,
+  	OR (
+		ISPICKVAL(DLI_Payment_Method__c, &quot;MDF&quot;),
+     		ISPICKVAL(DLI_Payment_Method__c, &quot;RSMP&quot;),
+     		ISPICKVAL(DLI_Payment_Method__c, &quot;Manual Invoice&quot;)
+  	),
+  	ISPICKVAL(DLI_Payment_Status__c, &quot;Order Accepted&quot;),
+  	ISBLANK (Other_Payment_Reference_ID__c)
+)</errorConditionFormula>
+    <errorDisplayField>Other_Payment_Reference_ID__c</errorDisplayField>
+    <errorMessage>If the Payment Method is MDF or RSMP or Manual Invoice then please detail the Other Payment Reference ID.</errorMessage>
+</ValidationRule>

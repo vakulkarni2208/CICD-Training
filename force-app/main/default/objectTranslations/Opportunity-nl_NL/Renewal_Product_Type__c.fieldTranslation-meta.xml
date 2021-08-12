@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Renewal Product Type --></label>
+    <name>Renewal_Product_Type__c</name>
+    <picklistValues>
+        <masterLabel>CUDA Support</masterLabel>
+        <translation><!-- CUDA Support --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cloud Gaming</masterLabel>
+        <translation><!-- Cloud Gaming --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DGX A100 Support Services</masterLabel>
+        <translation><!-- DGX A100 Support Services --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DGX Station Support Services</masterLabel>
+        <translation><!-- DGX Station Support Services --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DGX-1 Support Services</masterLabel>
+        <translation><!-- DGX-1 Support Services --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DGX-2 Support Services</masterLabel>
+        <translation><!-- DGX-2 Support Services --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Drive Constellation Support</masterLabel>
+        <translation><!-- Drive Constellation Support --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fleet Command</masterLabel>
+        <translation><!-- Fleet Command --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HPC Compiler</masterLabel>
+        <translation><!-- HPC Compiler --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NGC Support</masterLabel>
+        <translation><!-- NGC Support --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Parabricks</masterLabel>
+        <translation><!-- Parabricks --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RTX Blade Server Support</masterLabel>
+        <translation><!-- RTX Blade Server Support --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Technical Account Manager (TAM)</masterLabel>
+        <translation><!-- Technical Account Manager (TAM) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>vGPU CSP</masterLabel>
+        <translation><!-- vGPU CSP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>vGPU SUMS</masterLabel>
+        <translation><!-- vGPU SUMS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>vGPU Subscription</masterLabel>
+        <translation><!-- vGPU Subscription --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

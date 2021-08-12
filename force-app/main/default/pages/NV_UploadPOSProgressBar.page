@@ -1,0 +1,4 @@
+<apex:page sidebar="false" controller="NV_UploadPOSProgressBarController">
+    <!--<c:NV_FileUploadCompnent parentId="{!IF($User.Contact.Id != null, $User.Contact.Id, '0034000000Vq0oh')}"/>-->
+    <c:NV_FileUploadCompnent parentId="{!accountId}" />
+</apex:page>

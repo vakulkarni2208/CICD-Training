@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Program Type --></label>
+    <name>Program_Type__c</name>
+    <picklistValues>
+        <masterLabel>DGX Opp Reg</masterLabel>
+        <translation><!-- DGX Opp Reg --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DGX Opp Reg EDU</masterLabel>
+        <translation><!-- DGX Opp Reg EDU --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DGX Opp Reg Inception</masterLabel>
+        <translation><!-- DGX Opp Reg Inception --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DGX Opp Reg New Logo</masterLabel>
+        <translation><!-- DGX Opp Reg New Logo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DGX-1 Program Allocation</masterLabel>
+        <translation><!-- DGX-1 Program Allocation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DLI Opp Reg</masterLabel>
+        <translation><!-- DLI Opp Reg --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dev Promo</masterLabel>
+        <translation><!-- Dev Promo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EDU</masterLabel>
+        <translation><!-- EDU --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EUC AMPLIFY PROGRAM 2015</masterLabel>
+        <translation><!-- EUC AMPLIFY PROGRAM 2015 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Evaluation Testing</masterLabel>
+        <translation><!-- Evaluation Testing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GPU Test Drive Program</masterLabel>
+        <translation><!-- GPU Test Drive Program --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GRID Program</masterLabel>
+        <translation><!-- GRID Program --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GRID SW Accelerator</masterLabel>
+        <translation><!-- GRID SW Accelerator --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GRID SW EDU Promo</masterLabel>
+        <translation><!-- GRID SW EDU Promo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NA GRID SE Pilot Rewards Program - Oct - Mar 2015</masterLabel>
+        <translation><!-- NA GRID SE Pilot Rewards Program - Oct - Mar 2015 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NA GRID Sales Incentive Program - Oct - Jan 2015</masterLabel>
+        <translation><!-- NA GRID Sales Incentive Program - Oct - Jan 2015 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NA GRID VAR SA INCENTIVE 2015</masterLabel>
+        <translation><!-- NA GRID VAR SA INCENTIVE 2015 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>None at this time</masterLabel>
+        <translation><!-- None at this time --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>North America GRID Incentive Program</masterLabel>
+        <translation><!-- North America GRID Incentive Program --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>POC Development</masterLabel>
+        <translation><!-- POC Development --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Parabricks Opp Reg</masterLabel>
+        <translation><!-- Parabricks Opp Reg --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Parabricks Opp Reg EDU</masterLabel>
+        <translation><!-- Parabricks Opp Reg EDU --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Product Development</masterLabel>
+        <translation><!-- Product Development --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Seed</masterLabel>
+        <translation><!-- Seed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tesla Installed Base Program (TIB)</masterLabel>
+        <translation><!-- Tesla Installed Base Program (TIB) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>vGPU SW Opp Reg</masterLabel>
+        <translation><!-- vGPU SW Opp Reg --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>vGPU SW Opp Reg EDU</masterLabel>
+        <translation><!-- vGPU SW Opp Reg EDU --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>vGPU SW OppReg</masterLabel>
+        <translation><!-- vGPU SW OppReg --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DR_LastStatusModifiedDateWithinRangeN__c</fullName>
+    <description>Is LastStatusModifiedDate within 10 days</description>
+    <externalId>false</externalId>
+    <formula>TODAY() -  DR_LastStatusModifiedDate__c &lt;= 10</formula>
+    <inlineHelpText>Is LastStatusModifiedDate within 10 days</inlineHelpText>
+    <label>LastStatusModifiedDateWithinRangeN</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Keep track of Opportunity &quot;Next Steps&quot;. You may use this field to add updates, issues or items you want to highlight as the next step for this opportunity. Remember that management can view and report on this field. --></help>
+    <label><!-- Status:  Next Step --></label>
+    <name>Status_Next_Step__c</name>
+</CustomFieldTranslation>

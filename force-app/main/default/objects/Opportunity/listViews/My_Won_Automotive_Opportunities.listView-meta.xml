@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>My_Won_Automotive_Opportunities</fullName>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>OPPORTUNITY.CLOSE_DATE</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>Company_Type__c</columns>
+    <columns>Automotive_Segment__c</columns>
+    <columns>Auto_BU_Priority__c</columns>
+    <columns>Customer_DRIVE_Configuration__c</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>OPPORTUNITY.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Opportunity.Automotive_Opportunity</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.WON</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>My Won Automotive Opportunities</label>
+    <sharedTo>
+        <roleAndSubordinatesInternal>Sales_Lead_Manager_Auto</roleAndSubordinatesInternal>
+    </sharedTo>
+</ListView>

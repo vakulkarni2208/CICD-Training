@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Automotive Agreements --></label>
+    <name>Automotive_Agreements__c</name>
+    <picklistValues>
+        <masterLabel>NPLA Addendum A</masterLabel>
+        <translation><!-- NPLA Addendum A --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NRE / Custom Agreement</masterLabel>
+        <translation><!-- NRE / Custom Agreement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NVIDIA Platform License Agreement (PLA)</masterLabel>
+        <translation><!-- NVIDIA Platform License Agreement (PLA) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NVIDIA Prerelease License Agreement (NPLA)</masterLabel>
+        <translation><!-- NVIDIA Prerelease License Agreement (NPLA) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NVIDIA Software License Agreement (SLA) [obsolete]</masterLabel>
+        <translation><!-- NVIDIA Software License Agreement (SLA) [obsolete] --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Non-Disclosure Agreement (NDA)</masterLabel>
+        <translation><!-- Non-Disclosure Agreement (NDA) --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

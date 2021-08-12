@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>New_NVIDIA_PBM_User</fullName>
+        <ccEmails>npnprogramteam@exchange.nvidia.com</ccEmails>
+        <ccEmails>wwsalesops@nvidia.com</ccEmails>
+        <description>New NVIDIA PBM User</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Email</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>wwsalesops@nvidia.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Welcome_Emails/Welcome_Email_Sales_PBM</template>
+    </alerts>
+    <alerts>
+        <fullName>New_NVIDIA_Sales_User_APAC</fullName>
+        <ccEmails>RegSalesOps_APAC@exchange.nvidia.com</ccEmails>
+        <ccEmails>wwsalesops@nvidia.com</ccEmails>
+        <description>New NVIDIA Sales User - APAC</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Email</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>wwsalesops@nvidia.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Welcome_Emails/Welcome_Email_Sales_APAC</template>
+    </alerts>
+    <alerts>
+        <fullName>New_NVIDIA_Sales_User_EMEA</fullName>
+        <ccEmails>RegSalesOps_EMEA@exchange.nvidia.com</ccEmails>
+        <ccEmails>wwsalesops@nvidia.com</ccEmails>
+        <description>New NVIDIA Sales User - EMEA</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Email</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>wwsalesops@nvidia.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Welcome_Emails/Welcome_Email_Sales_EMEA</template>
+    </alerts>
+    <alerts>
+        <fullName>New_NVIDIA_Sales_User_JAPAN</fullName>
+        <ccEmails>RegSalesOps_Japan@exchange.nvidia.com</ccEmails>
+        <ccEmails>wwsalesops@nvidia.com</ccEmails>
+        <description>New NVIDIA Sales User - JAPAN</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Email</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>wwsalesops@nvidia.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Welcome_Emails/Welcome_Email_Sales_JAPAN</template>
+    </alerts>
+    <alerts>
+        <fullName>New_NVIDIA_Sales_User_NALA</fullName>
+        <ccEmails>RegSalesOps_NALA@exchange.nvidia.com</ccEmails>
+        <ccEmails>wwsalesops@nvidia.com</ccEmails>
+        <description>New NVIDIA Sales User - NALA</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Email</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>wwsalesops@nvidia.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Welcome_Emails/Welcome_Email_Sales_NALA</template>
+    </alerts>
+</Workflow>

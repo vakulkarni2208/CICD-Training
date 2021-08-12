@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Graphics_API__c</fullName>
+    <externalId>false</externalId>
+    <label>Graphics API</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>None</fullName>
+                <default>false</default>
+                <label>None</label>
+            </value>
+            <value>
+                <fullName>OpenGL</fullName>
+                <default>false</default>
+                <label>OpenGL</label>
+            </value>
+            <value>
+                <fullName>Direct3D</fullName>
+                <default>false</default>
+                <label>Direct3D</label>
+            </value>
+            <value>
+                <fullName>CgFX</fullName>
+                <default>false</default>
+                <label>CgFX</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>10</visibleLines>
+</CustomField>

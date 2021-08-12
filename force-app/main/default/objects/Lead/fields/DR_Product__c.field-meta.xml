@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DR_Product__c</fullName>
+    <externalId>false</externalId>
+    <label>Primary Product</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>DR_Deal_Type__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetName>Primary_Product</valueSetName>
+        <valueSettings>
+            <controllingFieldValue>DGX</controllingFieldValue>
+            <valueName>DGX Station A100-80G</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DGX</controllingFieldValue>
+            <valueName>DGX Station A100-40G</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DGX</controllingFieldValue>
+            <valueName>DGX A100 40GB HW</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DGX</controllingFieldValue>
+            <valueName>DGX A100 80G Full</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DGX</controllingFieldValue>
+            <valueName>AI Starter Kit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>vGPU</controllingFieldValue>
+            <valueName>vGPU vApps Perp - GRID</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>vGPU</controllingFieldValue>
+            <valueName>vGPU vApps Subs 1yr - GRID</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>vGPU</controllingFieldValue>
+            <valueName>vGPU vApps Subs 3yr - GRID</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>vGPU</controllingFieldValue>
+            <valueName>vGPU vApps Subs 4yr - GRID</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>vGPU</controllingFieldValue>
+            <valueName>vGPU vApps Subs 5yr - GRID</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>vGPU</controllingFieldValue>
+            <valueName>vGPU vPC Perpetual - GRID</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>vGPU</controllingFieldValue>
+            <valueName>vGPU vPC Subs 1yr - GRID</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>vGPU</controllingFieldValue>
+            <valueName>vGPU vPC Subs 3yr - GRID</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>vGPU</controllingFieldValue>
+            <valueName>vGPU vApps SUMS 4yr - GRID</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>vGPU</controllingFieldValue>
+            <valueName>vGPU vApps SUMS 5yr - GRID</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>vGPU</controllingFieldValue>
+            <valueName>vGPU vWS Perp - GRID</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>vGPU</controllingFieldValue>
+            <valueName>vGPU vWS Subs 1yr - GRID</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>vGPU</controllingFieldValue>
+            <valueName>vGPU vWS Subs 3yr - GRID</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>vGPU</controllingFieldValue>
+            <valueName>vGPU vWS Subs 4yr - GRID</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>vGPU</controllingFieldValue>
+            <valueName>vGPU vWS Subs 5yr - GRID</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>vGPU</controllingFieldValue>
+            <valueName>vGPU Virtual Compute Server Subs 1yr - GRID</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>vGPU</controllingFieldValue>
+            <valueName>vGPU vPC Subs 4yr - GRID</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>vGPU</controllingFieldValue>
+            <valueName>vGPU vPC Subs 5yr - GRID</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Titan</controllingFieldValue>
+            <valueName>Titan RTX</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Jetson</controllingFieldValue>
+            <valueName>Jetson TX2 (module)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Jetson</controllingFieldValue>
+            <valueName>Jetson AGX Xavier (module)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Jetson</controllingFieldValue>
+            <valueName>Jetson TX2 4GB (module)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Jetson</controllingFieldValue>
+            <valueName>Jetson TX2i (module)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Jetson</controllingFieldValue>
+            <valueName>Jetson Nano (Module)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Jetson</controllingFieldValue>
+            <valueName>Jetson Xavier NX (module)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Jetson</controllingFieldValue>
+            <valueName>Jetson TX2 NX (module)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Server</controllingFieldValue>
+            <controllingFieldValue>Workstation</controllingFieldValue>
+            <valueName>Quadro RTX5000</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Server</controllingFieldValue>
+            <controllingFieldValue>Workstation</controllingFieldValue>
+            <valueName>Quadro RTX6000</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Server</controllingFieldValue>
+            <controllingFieldValue>Workstation</controllingFieldValue>
+            <valueName>Quadro RTX8000</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Server</controllingFieldValue>
+            <controllingFieldValue>Workstation</controllingFieldValue>
+            <controllingFieldValue>Quadro</controllingFieldValue>
+            <valueName>RTX A6000</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DLI</controllingFieldValue>
+            <valueName>DLI 1-Day Workshop</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DLI</controllingFieldValue>
+            <valueName>DLI 1-Day Workshop, EDU</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Parabricks</controllingFieldValue>
+            <valueName>Parabricks Pipelines Subscription, 1 GPU, 1 Year</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Parabricks</controllingFieldValue>
+            <valueName>Parabricks Pipelines Subscription, 1 GPU, 3 Year</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

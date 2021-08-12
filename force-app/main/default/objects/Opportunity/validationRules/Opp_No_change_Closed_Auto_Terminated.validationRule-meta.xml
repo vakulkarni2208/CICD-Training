@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Opp_No_change_Closed_Auto_Terminated</fullName>
+    <active>true</active>
+    <description>Close Lost Auto Terminated deals cannot be edited (SDS-850)</description>
+    <errorConditionFormula>AND( RecordType.Name = &apos;Enterprise Sales Opportunity&apos;, 
+NOT( $Permission.DEPLOYMENT_USER_SKIP_VALIDATIONS), 
+PRIORVALUE(IsClosed), 
+DR_Deal_Status__c = &quot;Auto Terminated&quot;, 
+(OR 
+( 
+ISCHANGED (StageName), 
+ISCHANGED( CloseDate), 
+ISCHANGED( Industry__c), 
+ISCHANGED( Primary_Customer_Use_Case__c ), 
+ISCHANGED( Number_of_Products__c), 
+ISCHANGED(Amount), 
+ISCHANGED( Name) 
+) 
+) 
+)</errorConditionFormula>
+    <errorMessage>Closed Lost Auto Terminated deals cannot be edited. For assistance, click the &quot;Get Help&quot; button located on the top right of the page.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Technology Solutions Offered --></label>
+    <name>Technology_Solutions_Offered__c</name>
+    <picklistValues>
+        <masterLabel>Client Software (Application / OS)</masterLabel>
+        <translation><!-- Client Software (Application / OS) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cloud Service/API</masterLabel>
+        <translation><!-- Cloud Service/API --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Components</masterLabel>
+        <translation><!-- Components --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Datacenter Infrastructure</masterLabel>
+        <translation><!-- Datacenter Infrastructure --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Desktop &amp; Application Virtualization</masterLabel>
+        <translation><!-- Desktop &amp; Application Virtualization --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Enterprise Software</masterLabel>
+        <translation><!-- Enterprise Software --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HPC Servers/Solutions</masterLabel>
+        <translation><!-- HPC Servers/Solutions --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Managed Services</masterLabel>
+        <translation><!-- Managed Services --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mobile/Embedded</masterLabel>
+        <translation><!-- Mobile/Embedded --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Networking</masterLabel>
+        <translation><!-- Networking --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Peripherals</masterLabel>
+        <translation><!-- Peripherals --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Retail / POS</masterLabel>
+        <translation><!-- Retail / POS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Security</masterLabel>
+        <translation><!-- Security --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Server Virtualization</masterLabel>
+        <translation><!-- Server Virtualization --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Storage</masterLabel>
+        <translation><!-- Storage --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

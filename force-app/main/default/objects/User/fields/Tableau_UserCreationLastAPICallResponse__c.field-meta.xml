@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tableau_UserCreationLastAPICallResponse__c</fullName>
+    <description>The response of SFDC user&apos;s creation call to Tableau server</description>
+    <externalId>false</externalId>
+    <label>Tableau_UserCreationLastAPICallResponse</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

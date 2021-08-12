@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Workload_Details_del__c</fullName>
+    <externalId>false</externalId>
+    <label>Workload Details</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Primary_Customer_Use_Case__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Autonomous vehicle</fullName>
+                <default>false</default>
+                <label>Autonomous vehicle</label>
+            </value>
+            <value>
+                <fullName>Broadcast</fullName>
+                <default>false</default>
+                <label>Broadcast</label>
+            </value>
+            <value>
+                <fullName>CAE</fullName>
+                <default>false</default>
+                <label>CAE</label>
+            </value>
+            <value>
+                <fullName>CAE,CFD</fullName>
+                <default>false</default>
+                <label>CAE,CFD</label>
+            </value>
+            <value>
+                <fullName>Conversational AI</fullName>
+                <default>false</default>
+                <label>Conversational AI</label>
+            </value>
+            <value>
+                <fullName>Cyber Security</fullName>
+                <default>false</default>
+                <label>Cyber Security</label>
+            </value>
+            <value>
+                <fullName>Design and Content Creation</fullName>
+                <default>false</default>
+                <label>Design and Content Creation</label>
+            </value>
+            <value>
+                <fullName>Digital Twin/Factory</fullName>
+                <default>false</default>
+                <label>Digital Twin/Factory</label>
+            </value>
+            <value>
+                <fullName>Energy</fullName>
+                <default>false</default>
+                <label>Energy</label>
+            </value>
+            <value>
+                <fullName>Graphics Virtualization (vGPU)</fullName>
+                <default>false</default>
+                <label>Graphics Virtualization (vGPU)</label>
+            </value>
+            <value>
+                <fullName>HPC+AI/Machine Learning</fullName>
+                <default>false</default>
+                <label>HPC+AI/Machine Learning</label>
+            </value>
+            <value>
+                <fullName>Industrial Inspection</fullName>
+                <default>false</default>
+                <label>Industrial Inspection</label>
+            </value>
+            <value>
+                <fullName>Intelligent Video Analytics (IVA)</fullName>
+                <default>false</default>
+                <label>Intelligent Video Analytics (IVA)</label>
+            </value>
+            <value>
+                <fullName>Medical Imaging</fullName>
+                <default>false</default>
+                <label>Medical Imaging</label>
+            </value>
+            <value>
+                <fullName>Modeling and Simulation</fullName>
+                <default>false</default>
+                <label>Modeling and Simulation</label>
+            </value>
+            <value>
+                <fullName>Predictive Maintenance</fullName>
+                <default>false</default>
+                <label>Predictive Maintenance</label>
+            </value>
+            <value>
+                <fullName>Recommender Systems</fullName>
+                <default>false</default>
+                <label>Recommender Systems</label>
+            </value>
+            <value>
+                <fullName>Rendering</fullName>
+                <default>false</default>
+                <label>Rendering</label>
+            </value>
+            <value>
+                <fullName>Scalable Visualization Solutions (SVS)</fullName>
+                <default>false</default>
+                <label>Scalable Visualization Solutions (SVS)</label>
+            </value>
+            <value>
+                <fullName>Simulation and Training</fullName>
+                <default>false</default>
+                <label>Simulation and Training</label>
+            </value>
+            <value>
+                <fullName>Video Collaboration/Streaming</fullName>
+                <default>false</default>
+                <label>Video Collaboration/Streaming</label>
+            </value>
+            <value>
+                <fullName>VR/AR/CloudXR</fullName>
+                <default>false</default>
+                <label>VR/AR/CloudXR</label>
+            </value>
+            <value>
+                <fullName>Weather and Climate</fullName>
+                <default>false</default>
+                <label>Weather and Climate</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Machine Learning (Not DL)</controllingFieldValue>
+            <controllingFieldValue>Deep Learning/AI</controllingFieldValue>
+            <valueName>Autonomous vehicle</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Machine Learning (Not DL)</controllingFieldValue>
+            <controllingFieldValue>Deep Learning/AI</controllingFieldValue>
+            <valueName>Industrial Inspection</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Machine Learning (Not DL)</controllingFieldValue>
+            <controllingFieldValue>Deep Learning/AI</controllingFieldValue>
+            <valueName>Intelligent Video Analytics (IVA)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Machine Learning (Not DL)</controllingFieldValue>
+            <controllingFieldValue>Deep Learning/AI</controllingFieldValue>
+            <valueName>Medical Imaging</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Machine Learning (Not DL)</controllingFieldValue>
+            <controllingFieldValue>Deep Learning/AI</controllingFieldValue>
+            <valueName>Predictive Maintenance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Machine Learning (Not DL)</controllingFieldValue>
+            <controllingFieldValue>Deep Learning/AI</controllingFieldValue>
+            <controllingFieldValue>Visual Computing/Data Center Graphics</controllingFieldValue>
+            <controllingFieldValue>Workstation GPU</controllingFieldValue>
+            <controllingFieldValue>High Performance Computing (HPC)</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Deep Learning/AI</controllingFieldValue>
+            <valueName>Conversational AI</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Deep Learning/AI</controllingFieldValue>
+            <valueName>Cyber Security</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Deep Learning/AI</controllingFieldValue>
+            <valueName>Recommender Systems</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Deep Learning/AI</controllingFieldValue>
+            <valueName>Video Collaboration/Streaming</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Visual Computing/Data Center Graphics</controllingFieldValue>
+            <valueName>Broadcast</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Visual Computing/Data Center Graphics</controllingFieldValue>
+            <controllingFieldValue>Workstation GPU</controllingFieldValue>
+            <valueName>Design and Content Creation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Visual Computing/Data Center Graphics</controllingFieldValue>
+            <valueName>Digital Twin/Factory</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Visual Computing/Data Center Graphics</controllingFieldValue>
+            <valueName>Graphics Virtualization (vGPU)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Visual Computing/Data Center Graphics</controllingFieldValue>
+            <controllingFieldValue>Workstation GPU</controllingFieldValue>
+            <valueName>Rendering</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Visual Computing/Data Center Graphics</controllingFieldValue>
+            <controllingFieldValue>Workstation GPU</controllingFieldValue>
+            <valueName>Scalable Visualization Solutions (SVS)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Visual Computing/Data Center Graphics</controllingFieldValue>
+            <controllingFieldValue>Workstation GPU</controllingFieldValue>
+            <valueName>VR/AR/CloudXR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Workstation GPU</controllingFieldValue>
+            <valueName>CAE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>High Performance Computing (HPC)</controllingFieldValue>
+            <valueName>CAE,CFD</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>High Performance Computing (HPC)</controllingFieldValue>
+            <valueName>Energy</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>High Performance Computing (HPC)</controllingFieldValue>
+            <valueName>HPC+AI/Machine Learning</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>High Performance Computing (HPC)</controllingFieldValue>
+            <valueName>Modeling and Simulation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>High Performance Computing (HPC)</controllingFieldValue>
+            <valueName>Weather and Climate</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

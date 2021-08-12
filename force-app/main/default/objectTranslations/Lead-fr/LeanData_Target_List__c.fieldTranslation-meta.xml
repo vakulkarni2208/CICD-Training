@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- LeanData Target List --></label>
+    <name>LeanData_Target_List__c</name>
+    <picklistValues>
+        <masterLabel>Auto_DC_P1</masterLabel>
+        <translation><!-- Auto_DC_P1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Auto_DC_P2</masterLabel>
+        <translation><!-- Auto_DC_P2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Auto_DC_P3</masterLabel>
+        <translation><!-- Auto_DC_P3 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Auto_DC_P4</masterLabel>
+        <translation><!-- Auto_DC_P4 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CICN_2019_P0</masterLabel>
+        <translation><!-- CICN_2019_P0 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CICN_2019_P1</masterLabel>
+        <translation><!-- CICN_2019_P1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cryo-EM 2019_P0</masterLabel>
+        <translation><!-- Cryo-EM 2019_P0 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cryo-EM 2019_P1</masterLabel>
+        <translation><!-- Cryo-EM 2019_P1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cryo-EM 2019_P2</masterLabel>
+        <translation><!-- Cryo-EM 2019_P2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cryo-EM 2019_P3</masterLabel>
+        <translation><!-- Cryo-EM 2019_P3 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Data Science</masterLabel>
+        <translation><!-- Data Science --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FSI</masterLabel>
+        <translation><!-- FSI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Genomics_2019_P0</masterLabel>
+        <translation><!-- Genomics_2019_P0 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Genomics_2019_P1</masterLabel>
+        <translation><!-- Genomics_2019_P1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Genomics_2019_P2</masterLabel>
+        <translation><!-- Genomics_2019_P2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Genomics_2019_P3</masterLabel>
+        <translation><!-- Genomics_2019_P3 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HC_Instruments_LHA_DXIMG</masterLabel>
+        <translation><!-- HC_Instruments_LHA_DXIMG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HC_Instruments_LHA_HIT</masterLabel>
+        <translation><!-- HC_Instruments_LHA_HIT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HC_Instruments_LHA_IVDX</masterLabel>
+        <translation><!-- HC_Instruments_LHA_IVDX --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HC_Instruments_LHA_POC</masterLabel>
+        <translation><!-- HC_Instruments_LHA_POC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HC_Instruments_LHA_THDEV</masterLabel>
+        <translation><!-- HC_Instruments_LHA_THDEV --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HC_Instruments_NOTLHA_DXIMG</masterLabel>
+        <translation><!-- HC_Instruments_NOTLHA_DXIMG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HC_Instruments_NOTLHA_HIT</masterLabel>
+        <translation><!-- HC_Instruments_NOTLHA_HIT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HC_Instruments_NOTLHA_IVDX</masterLabel>
+        <translation><!-- HC_Instruments_NOTLHA_IVDX --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HC_Instruments_NOTLHA_POC</masterLabel>
+        <translation><!-- HC_Instruments_NOTLHA_POC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HC_Instruments_NOTLHA_THDEV</masterLabel>
+        <translation><!-- HC_Instruments_NOTLHA_THDEV --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HER Target</masterLabel>
+        <translation><!-- HER Target --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SC 2019_P1</masterLabel>
+        <translation><!-- SC 2019_P1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SC 2019_P2</masterLabel>
+        <translation><!-- SC 2019_P2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SC 2019_P3</masterLabel>
+        <translation><!-- SC 2019_P3 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SuperPOD 2019_P1</masterLabel>
+        <translation><!-- SuperPOD 2019_P1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SuperPOD 2019_P2</masterLabel>
+        <translation><!-- SuperPOD 2019_P2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Telco</masterLabel>
+        <translation><!-- Telco --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Attended__c</fullName>
+    <externalId>false</externalId>
+    <label>Attended</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Attended Live</fullName>
+                <default>false</default>
+                <label>Attended Live</label>
+            </value>
+            <value>
+                <fullName>Attended On-Demand</fullName>
+                <default>false</default>
+                <label>Attended On-Demand</label>
+            </value>
+            <value>
+                <fullName>Enrolled</fullName>
+                <default>false</default>
+                <label>Enrolled</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

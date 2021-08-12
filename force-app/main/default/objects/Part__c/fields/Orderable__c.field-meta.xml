@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Orderable__c</fullName>
+    <defaultValue>true</defaultValue>
+    <description>SDS-1632 Service: Disable parts for RMA. Only specific users should be able to specify if a part is orderable.</description>
+    <externalId>false</externalId>
+    <label>Orderable</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

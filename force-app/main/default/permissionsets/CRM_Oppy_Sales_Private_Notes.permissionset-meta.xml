@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Provide read and write access to Opportunity &quot;Segment Sales Private Notes&quot; Field</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>CRM : Oppy Sales Private Notes</label>
+</PermissionSet>

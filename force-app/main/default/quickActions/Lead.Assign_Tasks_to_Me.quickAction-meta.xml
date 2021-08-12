@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This button will update the field &quot;Assign to Me&quot; on the Lead</description>
+    <fieldOverrides>
+        <field>Assign_Tasks_to_Me__c</field>
+        <formula>true</formula>
+    </fieldOverrides>
+    <label>Assign Tasks to Me</label>
+    <optionsCreateFeedItem>false</optionsCreateFeedItem>
+    <quickActionLayout>
+        <layoutSectionStyle>TwoColumnsLeftToRight</layoutSectionStyle>
+        <quickActionLayoutColumns/>
+        <quickActionLayoutColumns/>
+    </quickActionLayout>
+    <type>Update</type>
+</QuickAction>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Segment__c</fullName>
+    <externalId>false</externalId>
+    <label>Segment</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>DGX</fullName>
+                <default>false</default>
+                <label>DGX</label>
+            </value>
+            <value>
+                <fullName>GRID</fullName>
+                <default>false</default>
+                <label>GRID</label>
+            </value>
+            <value>
+                <fullName>HPC</fullName>
+                <default>false</default>
+                <label>HPC</label>
+            </value>
+            <value>
+                <fullName>RTX</fullName>
+                <default>false</default>
+                <label>RTX</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Tesla Unverified</fullName>
+                <default>false</default>
+                <label>Tesla Unverified</label>
+            </value>
+            <value>
+                <fullName>Datacenter</fullName>
+                <default>false</default>
+                <label>Datacenter</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

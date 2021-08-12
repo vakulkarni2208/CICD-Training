@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Customer_Account_Approval_Validation</fullName>
+    <active>true</active>
+    <description>Both Approved and Rejected cannot be true simultaneously.</description>
+    <errorConditionFormula>AND(RecordType.Name = &apos;New Customer Account&apos;, 
+Approved__c = True, Rejected__c = True 
+)</errorConditionFormula>
+    <errorMessage>Both &quot;Approved&quot; and &quot;Rejected&quot; cannot be true simultaneously.</errorMessage>
+</ValidationRule>

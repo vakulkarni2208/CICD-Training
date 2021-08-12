@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Assigned_to_Business_Critical_Queue__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>This flag will be check when a Case is assigned to Business Critical Queue in its lifetime.</description>
+    <externalId>false</externalId>
+    <label>Assigned to Business Critical Queue</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

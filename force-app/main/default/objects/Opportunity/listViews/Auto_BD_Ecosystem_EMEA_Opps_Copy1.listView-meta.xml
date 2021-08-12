@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Auto_BD_Ecosystem_EMEA_Opps_Copy1</fullName>
+    <columns>Region__c</columns>
+    <columns>Opportunity_Country__c</columns>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>Company_Type__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Opportunity_Owner_Full_Name__c</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>Auto_BU_Priority__c</columns>
+    <columns>Auto_Status__c</columns>
+    <columns>OPPORTUNITY.NEXT_STEP</columns>
+    <columns>Automotive_Segment__c</columns>
+    <columns>Autonomy_Level__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Region__c</field>
+        <operation>equals</operation>
+        <value>EMEA</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Opportunity.Automotive_Opportunity</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>notEqual</operation>
+        <value>Closed Won,Renewal Closed Won,Closed Lost,Closed - Program Canceled,Closed - Transfer to Another BU,Closed - Other,Inactive/Duplicate,Closed - Went to Cloud,Completed,Cancelled</value>
+    </filters>
+    <filters>
+        <field>Opportunity_Owner_Full_Name__c</field>
+        <operation>contains</operation>
+        <value>Eddy Gryvelius,Serkan Arslan,Christoph Unterreiner,Diana Engesser,Rammy Bahalul,Dmitry Konyagin</value>
+    </filters>
+    <label>Auto BD Ecosystem EMEA all Opps</label>
+</ListView>

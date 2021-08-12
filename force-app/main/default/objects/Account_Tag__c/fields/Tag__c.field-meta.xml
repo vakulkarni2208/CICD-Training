@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tag__c</fullName>
+    <externalId>false</externalId>
+    <label>Tag</label>
+    <required>true</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>DGX-1 Approved</fullName>
+                <default>false</default>
+                <label>DGX-1 Approved</label>
+            </value>
+            <value>
+                <fullName>DGX-1 Proposed</fullName>
+                <default>false</default>
+                <label>DGX-1 Proposed</label>
+            </value>
+            <value>
+                <fullName>Strategic OEM</fullName>
+                <default>false</default>
+                <label>Strategic OEM</label>
+            </value>
+            <value>
+                <fullName>Consumer Customer</fullName>
+                <default>false</default>
+                <label>Consumer Customer</label>
+            </value>
+            <value>
+                <fullName>Enterprise Customer</fullName>
+                <default>false</default>
+                <label>Enterprise Customer</label>
+            </value>
+            <value>
+                <fullName>Automotive Customer</fullName>
+                <default>false</default>
+                <label>Automotive Customer</label>
+            </value>
+            <value>
+                <fullName>Assigned Account</fullName>
+                <default>false</default>
+                <label>Assigned Account</label>
+            </value>
+            <value>
+                <fullName>CPQ Account</fullName>
+                <default>false</default>
+                <label>CPQ Account</label>
+            </value>
+            <value>
+                <fullName>Tegra Embedded Customer</fullName>
+                <default>false</default>
+                <label>Tegra Embedded Customer</label>
+            </value>
+            <value>
+                <fullName>GFNA Partner</fullName>
+                <default>false</default>
+                <label>GFNA Partner</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

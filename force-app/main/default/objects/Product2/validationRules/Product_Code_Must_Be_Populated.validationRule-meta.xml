@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product_Code_Must_Be_Populated</fullName>
+    <active>true</active>
+    <description>Product code must be populated on products.</description>
+    <errorConditionFormula>AND(ISBLANK( ProductCode ), IsCPQ__c = True)</errorConditionFormula>
+    <errorMessage>Product Code must be populated and unique for CPQ products.</errorMessage>
+</ValidationRule>

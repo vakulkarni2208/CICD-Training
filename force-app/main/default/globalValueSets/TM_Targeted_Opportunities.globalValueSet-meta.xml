@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>SHIELD China</fullName>
+        <default>false</default>
+        <label>SHIELD China</label>
+    </customValue>
+    <customValue>
+        <fullName>GFN</fullName>
+        <default>false</default>
+        <label>GFN</label>
+    </customValue>
+    <customValue>
+        <fullName>SHIELD Hub</fullName>
+        <default>false</default>
+        <label>SHIELD Hub</label>
+    </customValue>
+    <customValue>
+        <fullName>1080 Ti</fullName>
+        <default>false</default>
+        <label>1080 Ti</label>
+    </customValue>
+    <customValue>
+        <fullName>GeForce</fullName>
+        <default>false</default>
+        <label>GeForce</label>
+    </customValue>
+    <customValue>
+        <fullName>GFN-PC/Mac</fullName>
+        <default>false</default>
+        <label>GFN-PC/Mac</label>
+    </customValue>
+    <customValue>
+        <fullName>VR</fullName>
+        <default>false</default>
+        <label>VR</label>
+    </customValue>
+    <customValue>
+        <fullName>GFN-SHIELD</fullName>
+        <default>false</default>
+        <label>GFN-SHIELD</label>
+    </customValue>
+    <description>Title Management : Targeted Opportunities</description>
+    <masterLabel>TM : Targeted Opportunities</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

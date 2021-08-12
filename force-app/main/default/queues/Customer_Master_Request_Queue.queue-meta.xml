@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>true</doesSendEmailToMembers>
+    <email>salesforce_cmt@exchange.nvidia.com</email>
+    <name>Customer Master Request Queue</name>
+    <queueMembers>
+        <users>
+            <user>thyang@nvidia.com</user>
+            <user>talicaya@nvidia.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

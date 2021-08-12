@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Production</label>
+    <protected>false</protected>
+    <values>
+        <field>Agent_Profile_Names__c</field>
+        <value xsi:type="xsd:string">Service Cloud Generic User</value>
+    </values>
+    <values>
+        <field>Case_Team_Roles_Design_Win__c</field>
+        <value xsi:type="xsd:string">Solution Architect (SA),Account Manager (TAM/AM), Customer Program Manager (CPM)</value>
+    </values>
+    <values>
+        <field>Customer_Profile_Names__c</field>
+        <value xsi:type="xsd:string">ESP Community User,NVES Community User Non-Admin,NPN Partner Community(LOGIN),NPN Partner Community(NAMED),NPN Tegra Jetson Partner Community(LOGIN)</value>
+    </values>
+    <values>
+        <field>Default_Asset_Contact_ID__c</field>
+        <value xsi:type="xsd:string">0031W000026ea4z</value>
+    </values>
+    <values>
+        <field>Disable_Trigger_Actions__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>EGX_Slack_Channel_ID__c</field>
+        <value xsi:type="xsd:string">a0K1W00000ikAvnUAE</value>
+    </values>
+    <values>
+        <field>Internal_User_Types__c</field>
+        <value xsi:type="xsd:string">Standard</value>
+    </values>
+    <values>
+        <field>Link_All_Assets__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>NVIDIA_CORPORATE_ACCOUNT_ID__c</field>
+        <value xsi:type="xsd:string">0014000000YYLSK</value>
+    </values>
+    <values>
+        <field>NVIDIA_Return_Account_ID__c</field>
+        <value xsi:type="xsd:string">0011W00002QHqHQ</value>
+    </values>
+    <values>
+        <field>Placeholder_Entitlement_Name__c</field>
+        <value xsi:type="xsd:string">Placeholder Entitlement - Please Update</value>
+    </values>
+    <values>
+        <field>SLA_24x7Support_Label__c</field>
+        <value xsi:type="xsd:string">24x7 Escalated Remote</value>
+    </values>
+    <values>
+        <field>TAM_Queue__c</field>
+        <value xsi:type="xsd:string">TAM_Queue</value>
+    </values>
+</CustomMetadata>

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VGX_Software_Stack__c</fullName>
+    <description>Purpose:
+The purpose of the field is for GRID team to know which SW Stacks are used with GRID SW products.  Which are most popular?   Most widely used?  They really wanted to report on this field usage.   
+
+Current Updates:
+We recently met with the GRID team and refreshed the pick list (removing old and adding new) so it’s up-to-date.
+
+Optional vs Required: 
+In the old GRID opportunity type, it was a required field.  The GRID team wanted to keep required.   But since about 25% of the enterprise opportunities are GRID, we could not force this on the rest of the users who are not.  However, perhaps we could think of a validation rule if GRID SW is selected, then the field is required.
+
+Owners:
+Don Bradley, Bryan Gottsman, Matt McGrigg</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Please select the Software application used in this opportunity.  If this does not apply, then select &quot;Not Applicable&quot; and then save.</inlineHelpText>
+    <label>Virtualization Software Stack</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Primary_Customer_Use_Case__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>XenDesktop on XenServer</fullName>
+                <default>false</default>
+                <label>XenDesktop on XenServer</label>
+            </value>
+            <value>
+                <fullName>XenDesktop on vSphere/ESX</fullName>
+                <default>false</default>
+                <label>XenDesktop on vSphere/ESX</label>
+            </value>
+            <value>
+                <fullName>XenDesktop on HyperV</fullName>
+                <default>false</default>
+                <label>XenDesktop on HyperV</label>
+            </value>
+            <value>
+                <fullName>View on vSphere/ESX</fullName>
+                <default>false</default>
+                <label>View on vSphere/ESX</label>
+            </value>
+            <value>
+                <fullName>View on HyperV</fullName>
+                <default>false</default>
+                <label>View on HyperV</label>
+            </value>
+            <value>
+                <fullName>Horizon Apps</fullName>
+                <default>false</default>
+                <label>Horizon Apps</label>
+            </value>
+            <value>
+                <fullName>Nutanix AHV</fullName>
+                <default>false</default>
+                <label>Nutanix AHV</label>
+            </value>
+            <value>
+                <fullName>Microsoft RemoteFX</fullName>
+                <default>false</default>
+                <label>Microsoft RemoteFX</label>
+            </value>
+            <value>
+                <fullName>Citrix XenApp Virtual Application</fullName>
+                <default>false</default>
+                <label>Citrix XenApp Virtual Application</label>
+            </value>
+            <value>
+                <fullName>Citrix XenApp Virtual Desktop</fullName>
+                <default>false</default>
+                <label>Citrix XenApp Virtual Desktop</label>
+            </value>
+            <value>
+                <fullName>Open Source Xen</fullName>
+                <default>false</default>
+                <label>Open Source Xen</label>
+            </value>
+            <value>
+                <fullName>Red Hat RHEL</fullName>
+                <default>false</default>
+                <label>Red Hat RHEL</label>
+            </value>
+            <value>
+                <fullName>Red Hat RHV</fullName>
+                <default>false</default>
+                <label>Red Hat RHV</label>
+            </value>
+            <value>
+                <fullName>KVM</fullName>
+                <default>false</default>
+                <label>KVM</label>
+            </value>
+            <value>
+                <fullName>Oracle Virtual Box</fullName>
+                <default>false</default>
+                <label>Oracle Virtual Box</label>
+            </value>
+            <value>
+                <fullName>Citrix XenDesktop on Nutanix</fullName>
+                <default>false</default>
+                <label>Citrix XenDesktop on Nutanix</label>
+            </value>
+            <value>
+                <fullName>Citrix XenApp on Nutanix</fullName>
+                <default>false</default>
+                <label>Citrix XenApp on Nutanix</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Not Applicable</fullName>
+                <default>false</default>
+                <label>Not Applicable</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Visual Computing/Data Center Graphics</controllingFieldValue>
+            <valueName>XenDesktop on XenServer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Visual Computing/Data Center Graphics</controllingFieldValue>
+            <valueName>XenDesktop on vSphere/ESX</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Visual Computing/Data Center Graphics</controllingFieldValue>
+            <valueName>XenDesktop on HyperV</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Visual Computing/Data Center Graphics</controllingFieldValue>
+            <valueName>View on vSphere/ESX</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Visual Computing/Data Center Graphics</controllingFieldValue>
+            <valueName>View on HyperV</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Visual Computing/Data Center Graphics</controllingFieldValue>
+            <valueName>Horizon Apps</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Visual Computing/Data Center Graphics</controllingFieldValue>
+            <valueName>Nutanix AHV</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Visual Computing/Data Center Graphics</controllingFieldValue>
+            <valueName>Microsoft RemoteFX</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Visual Computing/Data Center Graphics</controllingFieldValue>
+            <valueName>Citrix XenApp Virtual Application</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Visual Computing/Data Center Graphics</controllingFieldValue>
+            <valueName>Citrix XenApp Virtual Desktop</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Visual Computing/Data Center Graphics</controllingFieldValue>
+            <valueName>Open Source Xen</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Visual Computing/Data Center Graphics</controllingFieldValue>
+            <valueName>Red Hat RHEL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Visual Computing/Data Center Graphics</controllingFieldValue>
+            <valueName>Red Hat RHV</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Visual Computing/Data Center Graphics</controllingFieldValue>
+            <valueName>KVM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Visual Computing/Data Center Graphics</controllingFieldValue>
+            <valueName>Oracle Virtual Box</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Visual Computing/Data Center Graphics</controllingFieldValue>
+            <valueName>Citrix XenDesktop on Nutanix</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Visual Computing/Data Center Graphics</controllingFieldValue>
+            <valueName>Citrix XenApp on Nutanix</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Visual Computing/Data Center Graphics</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Visual Computing/Data Center Graphics</controllingFieldValue>
+            <valueName>Not Applicable</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

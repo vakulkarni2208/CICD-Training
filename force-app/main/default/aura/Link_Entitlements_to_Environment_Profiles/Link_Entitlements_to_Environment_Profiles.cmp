@@ -1,0 +1,41 @@
+<aura:component controller="EnvironmentProfileHelper" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickActionWithoutHeader" access="global" >
+	<!--Style-->
+    <aura:html tag="style">
+        .slds-modal__container{
+        height : auto;
+        width: 70%;
+        max-width: 70rem;
+        }
+        .modal-body{
+        height : 500px !important;
+        max-height: 500px !important;
+        }
+        
+        .customFooter{
+        display: inline !important;
+        }
+    </aura:html> 
+    <!-- attributes -->
+    <aura:attribute name="data" type="Object"/>
+    <aura:attribute name="columns" type="List"/>
+    <aura:attribute name="selectedRowsCount" type="Integer" default="0"/>
+    <aura:attribute name="recordId" type="Id"  default="a7k22000000BQY5AAO"/>
+	<aura:attribute name="selectedRowsList" type="List" />
+    <aura:attribute name="selectedRows" type="List" />
+    <!-- handlers-->
+    <aura:handler name="init" value="{! this }" action="{! c.init }"/>
+        <!-- the container element determine the height of the datatable -->
+    
+    <div style="height:400px;max-height : 450px; overflow-y:scroll;"> 
+        <lightning:datatable id="EntitlementsTable" 
+            aura:id="EntitlementsTable"                 
+            columns="{! v.columns }"
+            data="{! v.data }"
+            onrowselection="{! c.addRows }"
+            selectedRows="{! v.selectedRows }"                 
+            keyField="id"/>
+
+    </div>
+    <br/><br/>
+    <lightning:button variant="brand" label="Link" title="Brand action" onclick="{! c.Link }" />
+</aura:component>

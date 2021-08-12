@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Frame Buffer --></label>
+    <name>Frame_Buffer__c</name>
+    <picklistValues>
+        <masterLabel>12GB</masterLabel>
+        <translation><!-- 12GB --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>1GB</masterLabel>
+        <translation><!-- 1GB --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>24GB</masterLabel>
+        <translation><!-- 24GB --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2GB</masterLabel>
+        <translation><!-- 2GB --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>3GB</masterLabel>
+        <translation><!-- 3GB --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>48GB</masterLabel>
+        <translation><!-- 48GB --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>4GB</masterLabel>
+        <translation><!-- 4GB --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>6GB</masterLabel>
+        <translation><!-- 6GB --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>8GB</masterLabel>
+        <translation><!-- 8GB --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

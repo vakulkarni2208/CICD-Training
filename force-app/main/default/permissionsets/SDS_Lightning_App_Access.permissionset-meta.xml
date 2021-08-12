@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <applicationVisibilities>
+        <application>SDS_Sales_Console</application>
+        <visible>true</visible>
+    </applicationVisibilities>
+    <description>Access to the SDS Lightning App and Home Page</description>
+    <hasActivationRequired>true</hasActivationRequired>
+    <label>SDS Lightning App Access</label>
+    <license>Salesforce</license>
+</PermissionSet>

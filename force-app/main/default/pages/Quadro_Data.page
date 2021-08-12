@@ -1,0 +1,81 @@
+<apex:page standardController="Opportunity">
+<apex:pageMessages />
+
+<apex:sectionHeader subtitle="{!opportunity.name}" title="Opportunity Data" />
+<!--<apex:pageBlock >
+
+<apex:pageBlockSection title="Q4-FY2010" columns="1">
+    <apex:outputField value="{!opportunity.Desk_Top_Quadro_Q4_FY_10__c}" />
+    <apex:outputField value="{!opportunity.Mobile_Quadro_Q4_FY_10__c}" />
+    <apex:outputField value="{!opportunity.Industry_Solution_Quadro_Q4_FY_10__c}" />
+    <apex:outputField value="{!opportunity.Quadro_Units_Q4_FY_10__c}" />
+    <apex:outputField value="{!opportunity.Quadro_Revenue_Q4_FY_10__c }" />
+</apex:pageBlockSection>
+
+<apex:pageBlockSection title="Q1-FY2011" columns="1">
+    <apex:outputField value="{!opportunity.Desk_Top_Quadro_Q1_FY_11__c}" />
+    <apex:outputField value="{!opportunity.Mobile_Quadro_Q1_FY_11__c}" />
+    <apex:outputField value="{!opportunity.Industry_Solution_Quadro_Q1_FY_11__c}" />
+    <apex:outputField value="{!opportunity.Quadro_Units_Q1_FY_11__c}" />
+    <apex:outputField value="{!opportunity.Quadro_Revenue_Q1_FY_11__c}" />
+</apex:pageBlockSection>
+
+<apex:pageBlockSection title="Q2-FY2011" columns="1">
+    <apex:outputField value="{!opportunity.Desk_Top_Quadro_Q2_FY_11__c}" />
+    <apex:outputField value="{!opportunity.Mobile_Quadro_Q2_FY_11__c}" />
+    <apex:outputField value="{!opportunity.Industry_Solution_Q2__c}" />
+    <apex:outputField value="{!opportunity.Quadro_Units_Q2_FY_11__c}" />
+    <apex:outputField value="{!opportunity.Quadro_Revenue_Q2_FY_11__c}" />
+</apex:pageBlockSection>
+
+<apex:pageBlockSection title="Q3-FY2011" columns="1">
+    <apex:outputField value="{!opportunity.Desk_Top_Quadro_Q3_FY_11__c}" />
+    <apex:outputField value="{!opportunity.Mobile_Quadro_Q3_FY_11__c}" />
+    <apex:outputField value="{!opportunity.Industry_Solution_Quadro_Q3_FY_11__c}" />
+    <apex:outputField value="{!opportunity.Quadro_Units_Q3_FY_11__c}" />
+    <apex:outputField value="{!opportunity.Quadro_Revenue_Q3_FY_11__c}" />
+</apex:pageBlockSection>
+
+<apex:pageBlockSection title="Q4-FY2011" columns="1">
+    <apex:outputField value="{!opportunity.DeskTop_Products_Q4FY11__c}" />
+    <apex:outputField value="{!opportunity.Mobile_Products_Q4_FY_11__c}" />
+    <apex:outputField value="{!opportunity.Industry_Solution_Quadro_Q4_FY_11__c}" />
+    <apex:outputField value="{!opportunity.Quadro_Units_Q4_FY_11__c}" />
+    <apex:outputField value="{!opportunity.Quadro_Revenue_Q4_FY_11__c}" />
+</apex:pageBlockSection>
+
+<apex:pageBlockSection title="Q1-FY2012" columns="1">
+    <apex:outputField value="{!opportunity.DeskTop_Products_Q1FY12__c}" />
+    <apex:outputField value="{!opportunity.Field2__c}" />
+    <apex:outputField value="{!opportunity.Industry_Solution_Quadro_Q1_FY_12__c}" />
+    <apex:outputField value="{!opportunity.Quadro_Units_Q1_FY_12__c}" />
+    <apex:outputField value="{!opportunity.Quadro_Revenue_Q1_FY_12__c}" />
+</apex:pageBlockSection>
+
+<apex:pageBlockSection title="Q2-FY2012" columns="1">
+    <apex:outputField value="{!opportunity.DeskTop_Products_Q2FY12__c}" />
+    <apex:outputField value="{!opportunity.Mobile_Products_Q2_FY12__c}" />
+    <apex:outputField value="{!opportunity.Field1__c}" />
+    <apex:outputField value="{!opportunity.Quadro_Units_Q2_FY_12__c}" />
+    <apex:outputField value="{!opportunity.Quadro_Revenue_Q2_FY_12__c}" />
+</apex:pageBlockSection>
+
+<apex:pageBlockSection title="Q3-FY2012" columns="1">
+    <apex:outputField value="{!opportunity.DeskTop_Products_Q3FY12__c}" />
+    <apex:outputField value="{!opportunity.Mobile_Products_Q3_FY12__c}" />
+    <apex:outputField value="{!opportunity.Industry_Solution_Quadro_Q3_FY_12__c}" />
+    <apex:outputField value="{!opportunity.Quadro_Units_Q3_FY_12__c}" />
+    <apex:outputField value="{!opportunity.Quadro_Revenue_Q3_FY_12__c}" />
+</apex:pageBlockSection>
+
+<apex:pageBlockSection title="Q4-FY2012" columns="1">
+    <apex:outputField value="{!opportunity.DeskTop_Products_Q4FY12__c}" />
+    <apex:outputField value="{!opportunity.Mobile_Products_Q4_FY12__c}" />
+    <apex:outputField value="{!opportunity.Industry_Solution_Quadro_Q4_FY_12__c}" />
+    <apex:outputField value="{!opportunity.Quadro_Units_Q4_FY_12__c}" />
+    <apex:outputField value="{!opportunity.Quadro_Revenue_Q4_FY_12__c}" />
+</apex:pageBlockSection>
+
+
+</apex:pageBlock>-->
+</apex:page>

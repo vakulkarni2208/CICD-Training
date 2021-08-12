@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Is End Customer/VAR --></label>
+    <name>Is_End_Customer_VAR__c</name>
+</CustomFieldTranslation>

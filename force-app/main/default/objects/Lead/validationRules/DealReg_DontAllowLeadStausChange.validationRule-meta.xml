@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DealReg_DontAllowLeadStausChange</fullName>
+    <active>true</active>
+    <description>Deal Registration: Don&apos;t allow Lead Status change except Approval Process doing it</description>
+    <errorConditionFormula>AND( 
+RecordType.Name = &quot;Deal Registration&quot;,
+DR_Is_Approved__c &lt;&gt; true,
+ISCHANGED(Status),
+$Profile.Name &lt;&gt; &quot;System Administrator&quot;
+)</errorConditionFormula>
+    <errorMessage>The deal registration status is driven by the approval process. To approve or reject the registration, please use the approval section located to the right of your screen. Please contact npnopportunityregistration@nvidia.com for any questions</errorMessage>
+</ValidationRule>

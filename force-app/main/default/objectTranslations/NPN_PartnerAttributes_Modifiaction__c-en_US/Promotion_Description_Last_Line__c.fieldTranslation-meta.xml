@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Promotion_Description_Last_Line --></label>
+    <name>Promotion_Description_Last_Line__c</name>
+</CustomFieldTranslation>

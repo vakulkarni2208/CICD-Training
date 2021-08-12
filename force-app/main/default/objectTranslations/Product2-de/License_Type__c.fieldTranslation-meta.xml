@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Software Product License Type --></help>
+    <label><!-- License Type --></label>
+    <name>License_Type__c</name>
+    <picklistValues>
+        <masterLabel>Perpetual</masterLabel>
+        <translation><!-- Perpetual --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Subscription</masterLabel>
+        <translation><!-- Subscription --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Upfront</masterLabel>
+        <translation><!-- Upfront --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Usage</masterLabel>
+        <translation><!-- Usage --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

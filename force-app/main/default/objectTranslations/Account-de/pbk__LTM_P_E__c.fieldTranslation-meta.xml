@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Last Twelve Month Price/Earnings --></help>
+    <label><!-- PB LTM P/E --></label>
+    <name>pbk__LTM_P_E__c</name>
+</CustomFieldTranslation>

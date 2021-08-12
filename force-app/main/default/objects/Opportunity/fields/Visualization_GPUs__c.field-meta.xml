@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Visualization_GPUs__c</fullName>
+    <description>SDS-2252: EDU Design Wins</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Auto populated field based on Product selection + Use Case</inlineHelpText>
+    <label>Visualization GPUs</label>
+    <summarizedField>OpportunityLineItem.Quantity</summarizedField>
+    <summaryFilterItems>
+        <field>OpportunityLineItem.Use_Case__c</field>
+        <operation>equals</operation>
+        <value>Visualization</value>
+    </summaryFilterItems>
+    <summaryForeignKey>OpportunityLineItem.OpportunityId</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

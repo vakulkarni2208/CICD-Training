@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Please enter the non-NPN VAR related to this deal. If the VAR is signed with NVIDIA, please enter them in the NPN Solution Provider/VAR field. --></help>
+    <label><!-- Non-NPN VAR --></label>
+    <name>Non_NPN_VAR__c</name>
+</CustomFieldTranslation>

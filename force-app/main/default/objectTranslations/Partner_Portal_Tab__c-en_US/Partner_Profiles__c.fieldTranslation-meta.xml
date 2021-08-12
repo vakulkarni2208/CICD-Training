@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Partner Profiles --></label>
+    <name>Partner_Profiles__c</name>
+    <picklistValues>
+        <masterLabel>GRID_VCA_Manager</masterLabel>
+        <translation><!-- GRID_VCA_Manager --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GRID_VCA_Marketing</masterLabel>
+        <translation><!-- GRID_VCA_Marketing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GRID_VCA_Sales</masterLabel>
+        <translation><!-- GRID_VCA_Sales --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GRID_VCA_Support</masterLabel>
+        <translation><!-- GRID_VCA_Support --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GRID_VCA_Technical</masterLabel>
+        <translation><!-- GRID_VCA_Technical --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

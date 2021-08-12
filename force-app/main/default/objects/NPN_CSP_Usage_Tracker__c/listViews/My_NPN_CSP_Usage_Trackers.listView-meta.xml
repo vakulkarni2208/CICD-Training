@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>My_NPN_CSP_Usage_Trackers</fullName>
+    <columns>NAME</columns>
+    <columns>Account__c</columns>
+    <columns>NPN_CSP_Partner__c</columns>
+    <columns>Status__c</columns>
+    <columns>Contact_who_Verified_NPN_CSP_Usage__c</columns>
+    <columns>Anticipated_Production_Date__c</columns>
+    <columns>GPUs_Consumed__c</columns>
+    <columns>Instance_Type__c</columns>
+    <columns>Products_Used__c</columns>
+    <columns>Product_Used__c</columns>
+    <columns>Project_Name__c</columns>
+    <columns>Anticipated_Production_Date_FQ__c</columns>
+    <filterScope>Mine</filterScope>
+    <label>My NPN CSP Usage Trackers</label>
+</ListView>

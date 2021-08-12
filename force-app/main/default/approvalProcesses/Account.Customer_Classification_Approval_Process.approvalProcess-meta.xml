@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApprovalProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <allowRecall>true</allowRecall>
+    <allowedSubmitters>
+        <type>creator</type>
+    </allowedSubmitters>
+    <allowedSubmitters>
+        <type>owner</type>
+    </allowedSubmitters>
+    <approvalPageFields>
+        <field>Name</field>
+        <field>Owner</field>
+        <field>CPQ_Customer_Classification__c</field>
+        <field>Classification_Change_Justification__c</field>
+        <field>Website</field>
+    </approvalPageFields>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>chmartin@nvidia.com</name>
+                <type>user</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <description>Approval for changing Classification to &apos;Education&apos;</description>
+        <label>Classification to Education Approval Step</label>
+        <name>Classification_to_Education_Approval_Step</name>
+    </approvalStep>
+    <description>SDS-3258</description>
+    <emailTemplate>unfiled$public/Customer_Classification_Approval_Template</emailTemplate>
+    <enableMobileDeviceAccess>true</enableMobileDeviceAccess>
+    <entryCriteria>
+        <booleanFilter>1 AND 2 AND 3 AND 4</booleanFilter>
+        <criteriaItems>
+            <field>Account.RecordType</field>
+            <operation>equals</operation>
+            <value>New Customer Account</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.CPQ_Customer_Classification__c</field>
+            <operation>equals</operation>
+            <value>Commercial</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Website</field>
+            <operation>notContain</operation>
+            <value>.EDU</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Classification_Change_Justification__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+    </entryCriteria>
+    <finalApprovalActions>
+        <action>
+            <name>Classification_Approved_for_Education</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>Customer_classification_change_approved</name>
+            <type>Alert</type>
+        </action>
+    </finalApprovalActions>
+    <finalApprovalRecordLock>false</finalApprovalRecordLock>
+    <finalRejectionActions>
+        <action>
+            <name>Customer_classification_change_rejected</name>
+            <type>Alert</type>
+        </action>
+    </finalRejectionActions>
+    <finalRejectionRecordLock>false</finalRejectionRecordLock>
+    <label>Customer Classification Approval Process</label>
+    <processOrder>1</processOrder>
+    <recordEditability>AdminOnly</recordEditability>
+    <showApprovalHistory>false</showApprovalHistory>
+</ApprovalProcess>

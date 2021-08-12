@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Parent_oppty_on_Pricing_Req_EDU</fullName>
+    <active>true</active>
+    <description>Used to ensure if Parent Enterprise Opportunity exists if the Special Pricing Request Type = EDU and the quantity of GPUs is greater than 64
+SDS-2828</description>
+    <errorConditionFormula>AND(
+AND($Profile.Name &lt;&gt; &apos;System Administrator&apos;,$Profile.Name &lt;&gt; &apos;SVC SAP Integration&apos;),
+ RecordType.DeveloperName = &quot;Special_Pricing_Request&quot;,
+ ISPICKVAL(Special_Pricing_Request_Type__c, &apos;EDU&apos;),
+ ISBLANK(Parent_Enterprise_Opportunity__c),
+ OR(
+  Qualified_for_EDU_Approval_1__c = TRUE,
+  Qualified_for_EDU_Approval_2__c = TRUE 
+ )
+)</errorConditionFormula>
+    <errorDisplayField>Parent_Enterprise_Opportunity__c</errorDisplayField>
+    <errorMessage>Please fill-in the Parent Enterprise Opportunity if the Special Pricing Request Type is EDU and the quantity of GPUs is greater than 64</errorMessage>
+</ValidationRule>

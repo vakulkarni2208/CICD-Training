@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Select a GEO Area that applies to this specific opportunity. --></help>
+    <label><!-- GEO Area --></label>
+    <name>GEO_Area__c</name>
+    <picklistValues>
+        <masterLabel>APAC</masterLabel>
+        <translation><!-- APAC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>APAC-China</masterLabel>
+        <translation><!-- APAC-China --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>APAC-Korea</masterLabel>
+        <translation><!-- APAC-Korea --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>APAC-TASA</masterLabel>
+        <translation><!-- APAC-TASA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EMEA</masterLabel>
+        <translation><!-- EMEA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>India</masterLabel>
+        <translation><!-- India --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Japan</masterLabel>
+        <translation><!-- Japan --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NALA</masterLabel>
+        <translation><!-- NALA --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Docusign_Line_for_Program_name__c</fullName>
+    <externalId>false</externalId>
+    <formula>&quot;Subject: NVIDIA Partner Network&quot; &amp;
+IF (INCLUDES(Approved_Program_Type__c ,&quot;Solution Provider&quot; ),&quot; Solution Provider&quot;,null)&amp;
+IF (INCLUDES(Approved_Program_Type__c ,&quot;OEM&quot;), &quot; OEM&quot;,null)&amp;
+IF (INCLUDES(Approved_Program_Type__c ,&quot;Federal Systems Integrator&quot;), &quot; Federal Systems Integrator&quot;,null)&amp; 
+IF (INCLUDES(Approved_Program_Type__c ,&quot;Global Systems Integrator&quot;), &quot; Global Systems Integrator&quot;,null)&amp;
+IF (INCLUDES(Approved_Program_Type__c ,&quot;Service Delivery Partner&quot;), &quot; Service Delivery Partner&quot;, null) + If(INCLUDES(Approved_SubProgram_Type__c ,&quot;Professional Services&quot;), &quot; Professional Services&quot; ,null)+ If(INCLUDES(Approved_SubProgram_Type__c ,&quot;EDU Services&quot;), &quot; EDU Services&quot; ,null)&amp;
+IF (INCLUDES(Approved_Program_Type__c ,&quot;Cloud Service Provider&quot; ), &quot; Cloud Service Provider&quot;,null)&amp;
+IF (INCLUDES(Approved_Program_Type__c ,&quot;Solution Advisor&quot; ), &quot; Solution Advisor&quot;,null)+ If(INCLUDES(Approved_SubProgram_Type__c ,&quot;Consultant&quot;), &quot; Consultant&quot; ,null)+ If(INCLUDES(Approved_SubProgram_Type__c ,&quot;Storage&quot;), &quot; Storage&quot; ,null)+ If(INCLUDES(Approved_SubProgram_Type__c ,&quot;Data Center Provider&quot;), &quot; Data Center Provider&quot; ,null)&amp; 
+IF (INCLUDES(Approved_Program_Type__c ,&quot;Solutions Integration Partner&quot; ), &quot; Solutions Integration Partner&quot;,null)
+&amp; &quot; Partner Program&quot;</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Docusign_Line for Program name</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

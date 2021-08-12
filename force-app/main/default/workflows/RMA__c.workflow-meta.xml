@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Notification_to_Agent_for_RMA_got_rejected</fullName>
+        <description>Notification to Agent for RMA got rejected</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderAddress>nvsupport@nvidia.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Service_Cloud_Templates/RMA_Rejected</template>
+    </alerts>
+    <alerts>
+        <fullName>Notify_Case_Owner_When_Tracking_Number_is_populated</fullName>
+        <description>Service Cloud : Notify Case Owner When Tracking Number is populated</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Case_Owner_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>no_reply@nvidia.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Service_Cloud_Templates/Service_Cloud_Notify_Case_Owner_Tracking_Number_Populated</template>
+    </alerts>
+    <alerts>
+        <fullName>Service_Cloud_Notification_to_customer_Tracking_number_is_populated_on_the_RMA</fullName>
+        <description>Service Cloud: Notification to a customer when a Tracking number is populated on the RMA</description>
+        <protected>false</protected>
+        <recipients>
+            <field>On_site_Contact1_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <recipients>
+            <field>Onsite_Contact2_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <recipients>
+            <field>ShipTo_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>no_reply@nvidia.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Service_Cloud_ESP_Community_User_Email/Service_Cloud_RMA_Notification_to_Customer</template>
+    </alerts>
+    <alerts>
+        <fullName>Service_Cloud_Notify_CaseOwner_Reship_PartNo_not_populated_but_Shipdate_populate</fullName>
+        <description>Service Cloud-Notify CaseOwner Reship PartNo not populated but Shipdate populated</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Case_Owner_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>no_reply@nvidia.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Service_Cloud_Templates/Service_Cloud_Notify_CaseOwner_Reship_PartNo_not_populated_but_ShipDate_populate</template>
+    </alerts>
+    <alerts>
+        <fullName>Service_Cloud_Notify_Case_Owner_Tracking_Number_not_Populated_24_hours</fullName>
+        <description>Service Cloud Notify Case Owner Tracking Number not Populated 24 hours</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Case_Owner_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>no_reply@nvidia.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Service_Cloud_Templates/Service_Cloud_Notify_Case_Owner_Tracking_Number_not_Populated_24_hours</template>
+    </alerts>
+    <alerts>
+        <fullName>Service_Cloud_Notify_Case_Owner_Tracking_Number_not_Populated_6_hours</fullName>
+        <description>Service Cloud Notify Case Owner Tracking Number not Populated 6 hours</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Case_Owner_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>no_reply@nvidia.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Service_Cloud_Templates/Service_Cloud_Notify_Case_Owner_Tracking_Number_not_Populated_6_hours</template>
+    </alerts>
+    <alerts>
+        <fullName>Service_Cloud_Notify_Case_owner_Reship_Part_Number_not_equal_to_NVIDIA_Part_Numb</fullName>
+        <description>Service Cloud: Notify Case owner Reship Part Number not equal to NVIDIA Part Number</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Case_Owner_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>no_reply@nvidia.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Service_Cloud_Templates/Service_Cloud_Notify_Reship_and_NVIDIA_Part_numbers_different</template>
+    </alerts>
+    <alerts>
+        <fullName>Service_Cloud_Notify_FSL_Support_for_RMAs_in_WA_or_UT</fullName>
+        <ccEmails>fsl-support@nvidia.com</ccEmails>
+        <ccEmails>ldiep@nvidia.com</ccEmails>
+        <description>Service Cloud Notify FSL-Support for RMAs in WA or UT</description>
+        <protected>false</protected>
+        <senderAddress>enterprisesupport@nvidia.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Service_Cloud_Templates/Service_Cloud_Notify_FSL_Support_for_RMAs_in_WA_or_UT</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Update_Case_Owner_Email_on_RMA</fullName>
+        <field>Case_Owner_Email__c</field>
+        <formula>Case__r.Owner:User.Email</formula>
+        <name>Update Case Owner Email on RMA</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <rules>
+        <fullName>RMA Rejected</fullName>
+        <actions>
+            <name>Notification_to_Agent_for_RMA_got_rejected</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>RMA__c.RMA_Status__c</field>
+            <operation>equals</operation>
+            <value>REJE</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Service Cloud %3A Update Case Owner Email on RMA</fullName>
+        <actions>
+            <name>Update_Case_Owner_Email_on_RMA</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>Case__r.OwnerId &lt;&gt; null</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Service Cloud Notify FSL-Support for RMAs in WA or UT</fullName>
+        <actions>
+            <name>Service_Cloud_Notify_FSL_Support_for_RMAs_in_WA_or_UT</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>(1 OR 2 OR 3) AND 4</booleanFilter>
+        <criteriaItems>
+            <field>RMA__c.State__c</field>
+            <operation>equals</operation>
+            <value>WA</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RMA__c.State__c</field>
+            <operation>equals</operation>
+            <value>UT</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RMA__c.State__c</field>
+            <operation>equals</operation>
+            <value>FL</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RMA__c.SAP_RMA_Number__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <description>SDS-2866 Service: Notify FSL-Support for RMAs in WA or UT</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Service Cloud%3A Notify Case Owner Reship Part unequal NVIDIA Part</fullName>
+        <actions>
+            <name>Service_Cloud_Notify_Case_owner_Reship_Part_Number_not_equal_to_NVIDIA_Part_Numb</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <description>Service Cloud : SDS-1416 - Service: Internal RMA Notifications for Case Owner.
+-Notify Current Owner of the case, When &quot;Reship Part Number&quot; information is populated and &quot;Reship Part Number&quot; does not match with &quot;NVIDIA Part Number&quot; on an RMA.</description>
+        <formula>AND( NOT(ISNEW()),ISCHANGED(Reship_Part_Number__c), NOT( ISBLANK( Reship_Part_Number__c ) ) ,NOT( ISBLANK( NVIDIA_Part_Number__c ) ) ,  Reship_Part_Number__c &lt;&gt; NVIDIA_Part_Number__c,OR( RMA_Status__c =&apos;INPR&apos;,RMA_Status__c =&apos;SHIP&apos;))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Service Cloud-Notify Case Owner Replace Part No not populated but Ship date populated</fullName>
+        <actions>
+            <name>Service_Cloud_Notify_CaseOwner_Reship_PartNo_not_populated_but_Shipdate_populate</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>1 AND 2 AND (3 OR 4 OR 5)</booleanFilter>
+        <criteriaItems>
+            <field>RMA__c.Reship_Part_Number__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RMA__c.Planned_ShipoutDate__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RMA__c.RMA_Status__c</field>
+            <operation>equals</operation>
+            <value>INPR</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RMA__c.RMA_Status__c</field>
+            <operation>equals</operation>
+            <value>SHIP</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RMA__c.RMA_Status__c</field>
+            <operation>equals</operation>
+            <value>COMP</value>
+        </criteriaItems>
+        <description>SDS-1443
+Service: Internal RMA Notifications for missing Tracking Number
+Notify Current Owner when &quot;Replace Part Number&quot; is not populated when Ship date is populated</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+</Workflow>

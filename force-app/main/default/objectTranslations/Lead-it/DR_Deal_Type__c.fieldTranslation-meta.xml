@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Deal Type --></label>
+    <name>DR_Deal_Type__c</name>
+    <picklistValues>
+        <masterLabel>DGX</masterLabel>
+        <translation><!-- DGX --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DLI</masterLabel>
+        <translation><!-- DLI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Jetson</masterLabel>
+        <translation><!-- Jetson --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Parabricks</masterLabel>
+        <translation><!-- Parabricks --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Quadro</masterLabel>
+        <translation><!-- Quadro --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Server</masterLabel>
+        <translation><!-- Server --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Titan</masterLabel>
+        <translation><!-- Titan --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Workstation</masterLabel>
+        <translation><!-- Workstation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>vGPU</masterLabel>
+        <translation><!-- vGPU --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

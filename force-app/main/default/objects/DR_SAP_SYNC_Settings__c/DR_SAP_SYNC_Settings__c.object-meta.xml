@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <description>Opp Reg &gt; SAP data sync job (DR_OPPREG_SAP_SYNC_Batch) uses this setup</description>
+    <enableFeeds>false</enableFeeds>
+    <label>DR : SAP SYNC : Settings</label>
+    <visibility>Public</visibility>
+</CustomObject>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Users who need API access to CampaignInfluence object needs this PS</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>CRM : CampaignInfluence Data Access</label>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>CampaignInfluence2</name>
+    </userPermissions>
+</PermissionSet>

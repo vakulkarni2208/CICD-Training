@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Customer DRIVE Configuration</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Customer DRIVE Configurations</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- If NVIDIA Software Used is None please enter details on the 3rd Party Software Used --></errorMessage>
+        <name>If_NVIDIA_software_none_3rd_party_req</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please confirm the vehicle nickname if the customer has vehicles --></errorMessage>
+        <name>If_Vehicle_require_nickname</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter number of vehicles with this configuration --></errorMessage>
+        <name>If_Vehicle_then_require_vehicle_count</name>
+    </validationRules>
+</CustomObjectTranslation>

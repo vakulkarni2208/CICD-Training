@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>RTX Server</fullName>
+        <default>false</default>
+        <label>RTX Server</label>
+    </customValue>
+    <customValue>
+        <fullName>Data Science Workstation</fullName>
+        <default>false</default>
+        <label>Data Science Workstation</label>
+    </customValue>
+    <customValue>
+        <fullName>Workstation</fullName>
+        <default>false</default>
+        <label>Workstation</label>
+    </customValue>
+    <description>RTX Details Picklist used for CPQ Product Attribute (SOQ-63)</description>
+    <masterLabel>RTX Details</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

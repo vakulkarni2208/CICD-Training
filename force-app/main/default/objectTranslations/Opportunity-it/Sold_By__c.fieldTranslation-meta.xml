@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Sold By --></label>
+    <name>Sold_By__c</name>
+    <picklistValues>
+        <masterLabel>AutoStuff</masterLabel>
+        <translation><!-- AutoStuff --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AutonomouStuff</masterLabel>
+        <translation><!-- AutonomouStuff --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>C-Data</masterLabel>
+        <translation><!-- C-Data --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Corimetal</masterLabel>
+        <translation><!-- Corimetal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Desay</masterLabel>
+        <translation><!-- Desay --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EDOM</masterLabel>
+        <translation><!-- EDOM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hancom MDS</masterLabel>
+        <translation><!-- Hancom MDS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Leadtek</masterLabel>
+        <translation><!-- Leadtek --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Macnica</masterLabel>
+        <translation><!-- Macnica --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NEXTY</masterLabel>
+        <translation><!-- NEXTY --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NVIDIA</masterLabel>
+        <translation><!-- NVIDIA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Open Zeka</masterLabel>
+        <translation><!-- Open Zeka --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PNY Technologies</masterLabel>
+        <translation><!-- PNY Technologies --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PrestonEV</masterLabel>
+        <translation><!-- PrestonEV --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Quanta</masterLabel>
+        <translation><!-- Quanta --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Syntech Asia</masterLabel>
+        <translation><!-- Syntech Asia --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Turing Drive</masterLabel>
+        <translation><!-- Turing Drive --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

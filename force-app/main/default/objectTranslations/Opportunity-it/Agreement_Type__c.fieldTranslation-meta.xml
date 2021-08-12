@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Agreement Type --></label>
+    <name>Agreement_Type__c</name>
+    <picklistValues>
+        <masterLabel>LTB</masterLabel>
+        <translation><!-- LTB --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Long Life Deal</masterLabel>
+        <translation><!-- Long Life Deal --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

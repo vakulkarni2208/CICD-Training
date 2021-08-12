@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignments>
+        <description>Set the Preliminary OEM/ODM/Disti List (Text) field from Preliminary OEM/ODM/Disti List  multi-picklist</description>
+        <name>Set_the_Preliminary_OEM_ODM_Disti_List_Text</name>
+        <label>Set the Preliminary OEM/ODM/Disti List (Text)</label>
+        <locationX>649</locationX>
+        <locationY>51</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Preliminary_OEM_ODM_Disti_List_Text__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Preliminary_OEM_ODM_Disti__c</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <decisions>
+        <description>Check if Preliminary_OEM_ODM_DistiList and Preliminary/OEM/ODM/DistiList (text)</description>
+        <name>Check_if_Preliminary_OEM_ODM_DistiList_is_different_than_Preliminary_OEM_ODM_Dis</name>
+        <label>Check if Preliminary/OEM/ODM/DistiList is different than Preliminary OEM/ODM/DistiLis(Text)</label>
+        <locationX>267</locationX>
+        <locationY>51</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Preliminary_OEM_ODM_DistiList_IS_NOT_SAME_AS_Preliminary_OEM_ODM_DistiList_Text</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Preliminary_OEM_ODM_Disti_List_Text__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <elementReference>$Record.Preliminary_OEM_ODM_Disti__c</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_the_Preliminary_OEM_ODM_Disti_List_Text</targetReference>
+            </connector>
+            <label>Preliminary/OEM/ODM/DistiList IS NOT SAME AS  Preliminary/OEM/ODM/DistiList(Text)</label>
+        </rules>
+    </decisions>
+    <description>Autoset Preliminary OEM/ODM/Disti List(Text) from Preliminary OEM/ODM/Disti List multi-picklist</description>
+    <interviewLabel>OPP - AutoSet Preliminary OEM/ODM/Disti List(Text) {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>OPP - AutoSet Preliminary OEM/ODM/Disti List(Text)</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>50</locationX>
+        <locationY>49</locationY>
+        <connector>
+            <targetReference>Check_if_Preliminary_OEM_ODM_DistiList_is_different_than_Preliminary_OEM_ODM_Dis</targetReference>
+        </connector>
+        <object>Opportunity</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Obsolete</status>
+</Flow>

@@ -1,0 +1,30 @@
+<apex:component controller="PrmEventsController">
+
+	<div class="sidebarModuleHeader"><h2><label>Training & Events</label></h2></div>
+	<apex:repeat var="event" value="{!events}">
+		
+		<apex:outputPanel layout="none" rendered="{! event.Use_Html__c}">
+			<apex:outputText value="{!event.Html__c}" escape="false"/>
+		</apex:outputPanel>
+		
+		<apex:outputPanel layout="none" rendered="{! event.Use_Description__c}">
+			<apex:outputText value="{!event.Description__c}" escape="false"/>
+		</apex:outputPanel>
+		
+		<apex:outputPanel layout="none" rendered="{! event.Use_Image__c}">
+			<div style="margin-top:10px;">
+         <a target="_blank" href="{!event.External_URL__c}">
+         	<img src="{!event.Image__c}" height="75px" width="400px;" alt="" style="border:none;"/>
+         </a>
+      </div>
+		</apex:outputPanel>
+		
+		<apex:outputPanel layout="none" rendered="{! event.Use_Html__c == false && event.Use_Description__c == false && event.Use_Image__c == false}">
+			<a target="_blank" href="{! event.External_URL__c}" style="font-weight:bold">{!event.Name}</a>
+			<div class="prmtext">{!event.Date_Display__c}</div>
+		</apex:outputPanel>
+		
+		<div style="height:10px;"></div>
+	</apex:repeat>
+
+</apex:component>

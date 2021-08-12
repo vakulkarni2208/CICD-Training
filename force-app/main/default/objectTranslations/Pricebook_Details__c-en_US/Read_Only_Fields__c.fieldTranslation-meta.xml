@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- This field contains list of field names which are read only for each record type. --></help>
+    <label><!-- Read Only Fields --></label>
+    <name>Read_Only_Fields__c</name>
+</CustomFieldTranslation>

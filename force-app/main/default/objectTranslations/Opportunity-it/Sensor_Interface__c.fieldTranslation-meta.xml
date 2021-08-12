@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Sensor Interface --></label>
+    <name>Sensor_Interface__c</name>
+    <picklistValues>
+        <masterLabel>CAN</masterLabel>
+        <translation><!-- CAN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ethernet</masterLabel>
+        <translation><!-- Ethernet --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FPDLink3</masterLabel>
+        <translation><!-- FPDLink3 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FPDLink4</masterLabel>
+        <translation><!-- FPDLink4 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GMSL1</masterLabel>
+        <translation><!-- GMSL1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GMSL2</masterLabel>
+        <translation><!-- GMSL2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GMSL3</masterLabel>
+        <translation><!-- GMSL3 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>USB</masterLabel>
+        <translation><!-- USB --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

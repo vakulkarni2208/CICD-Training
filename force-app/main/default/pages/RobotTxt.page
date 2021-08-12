@@ -1,0 +1,5 @@
+<apex:page contentType="text/plain" showHeader="false">
+Sitemap: https://enterprise-support.nvidia.com/s/sitemap.xml
+User-agent: *
+Allow: /ESPCommunity/s/article
+</apex:page>

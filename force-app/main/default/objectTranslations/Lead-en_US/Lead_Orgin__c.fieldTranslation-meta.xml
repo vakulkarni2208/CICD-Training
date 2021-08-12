@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Lead Origin --></label>
+    <name>Lead_Orgin__c</name>
+    <picklistValues>
+        <masterLabel>Auto Desk Leads - Dec 2013</masterLabel>
+        <translation><!-- Auto Desk Leads - Dec 2013 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Auto_Contact Us Form_Web Form_NALA_2016_June</masterLabel>
+        <translation><!-- Auto_Contact Us Form_Web Form_NALA_2016_June --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Autodesk_Forum_ES_June_2014</masterLabel>
+        <translation><!-- Autodesk_Forum_ES_June_2014 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BVE Event UK 2015</masterLabel>
+        <translation><!-- BVE Event UK 2015 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bear Data Golf and Solution Showcase_10.31.2014</masterLabel>
+        <translation><!-- Bear Data Golf and Solution Showcase_10.31.2014 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BriForum NALA 2014</masterLabel>
+        <translation><!-- BriForum NALA 2014 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BriForum UK Leads</masterLabel>
+        <translation><!-- BriForum UK Leads --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BriForum_Denver_Event/Show_NALA_2015_July</masterLabel>
+        <translation><!-- BriForum_Denver_Event/Show_NALA_2015_July --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BriForum_London_Event/Show_EMEA_2015_May</masterLabel>
+        <translation><!-- BriForum_London_Event/Show_EMEA_2015_May --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CADD Edge Survey Leads - Nov 2013</masterLabel>
+        <translation><!-- CADD Edge Survey Leads - Nov 2013 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Citrix Mobility Germany 2013</masterLabel>
+        <translation><!-- Citrix Mobility Germany 2013 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Citrix Mobility UK 2013</masterLabel>
+        <translation><!-- Citrix Mobility UK 2013 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Citrix Servtech</masterLabel>
+        <translation><!-- Citrix Servtech --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Citrix Synergy Orlando NALA 2015-05-12</masterLabel>
+        <translation><!-- Citrix Synergy Orlando NALA 2015-05-12 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Citrix Synergy Survey Leads - May 2014</masterLabel>
+        <translation><!-- Citrix Synergy Survey Leads - May 2014 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Citrix User Group Leads</masterLabel>
+        <translation><!-- Citrix User Group Leads --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Citrix Webinar EMEA 2014-9-18</masterLabel>
+        <translation><!-- Citrix Webinar EMEA 2014-9-18 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cornerstone/Dell Gaming &amp; Storage Lunch_8.20.2014</masterLabel>
+        <translation><!-- Cornerstone/Dell Gaming &amp; Storage Lunch_8.20.2014 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer Online Web Configured Solution</masterLabel>
+        <translation><!-- Customer Online Web Configured Solution --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EMEA Dell TechFit - Grid Partner Conference</masterLabel>
+        <translation><!-- EMEA Dell TechFit - Grid Partner Conference --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EMEA Supermicro Seeding Program - 2013</masterLabel>
+        <translation><!-- EMEA Supermicro Seeding Program - 2013 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EMEAI Training Web Form</masterLabel>
+        <translation><!-- EMEAI Training Web Form --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Focus Technologies_Casino event_8.7.2014</masterLabel>
+        <translation><!-- Focus Technologies_Casino event_8.7.2014 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Focus Technologies_Golf event_9.18.2014</masterLabel>
+        <translation><!-- Focus Technologies_Golf event_9.18.2014 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GPU Test Drive.K80 Accelerator</masterLabel>
+        <translation><!-- GPU Test Drive.K80 Accelerator --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GRID -  NV VM Community – Web Form - NALA – 2015 - July</masterLabel>
+        <translation><!-- GRID -  NV VM Community – Web Form - NALA – 2015 - July --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GRID - Nurture Journey - Internal List - NALA - 2015 - June</masterLabel>
+        <translation><!-- GRID - Nurture Journey - Internal List - NALA - 2015 - June --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GRID - Nurture Journey - VMware Purchased List - NALA - 2015 - June</masterLabel>
+        <translation><!-- GRID - Nurture Journey - VMware Purchased List - NALA - 2015 - June --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GRID Citrix QBR sponsorship</masterLabel>
+        <translation><!-- GRID Citrix QBR sponsorship --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GRID Gaming Form - 2013</masterLabel>
+        <translation><!-- GRID Gaming Form - 2013 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GRID VCA Solidworks Dec 2013 Webinar</masterLabel>
+        <translation><!-- GRID VCA Solidworks Dec 2013 Webinar --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GRID VCA Webinar - July 2013</masterLabel>
+        <translation><!-- GRID VCA Webinar - July 2013 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GRID VGX Test Drive</masterLabel>
+        <translation><!-- GRID VGX Test Drive --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GRID – Citrix Ready – Webinar - NALA – 2015 – June</masterLabel>
+        <translation><!-- GRID – Citrix Ready – Webinar - NALA – 2015 – June --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GRID – Deliver Brilliance – Campaign/Program - NALA – 2015 – May</masterLabel>
+        <translation><!-- GRID – Deliver Brilliance – Campaign/Program - NALA – 2015 – May --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GRID – Deployment Guide – Campaign/Program - NALA – 2015 – March</masterLabel>
+        <translation><!-- GRID – Deployment Guide – Campaign/Program - NALA – 2015 – March --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GRID – VDI Unleashed - Advertising – NALA – 2015 – May</masterLabel>
+        <translation><!-- GRID – VDI Unleashed - Advertising – NALA – 2015 – May --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GRID_ASEAN Callout Campaign_Campaign_Program_APAC_2016_July</masterLabel>
+        <translation><!-- GRID_ASEAN Callout Campaign_Campaign_Program_APAC_2016_July --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GRID_Deliver Brilliance_Campaign/Program_EMEA_2015_July</masterLabel>
+        <translation><!-- GRID_Deliver Brilliance_Campaign/Program_EMEA_2015_July --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GRID_Deliver Brilliance_India_Campaign/Program_APAC_2015_Sept</masterLabel>
+        <translation><!-- GRID_Deliver Brilliance_India_Campaign/Program_APAC_2015_Sept --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GRID_Deliver Brilliance_Penton_Campaign/Program_NALA_2015_July</masterLabel>
+        <translation><!-- GRID_Deliver Brilliance_Penton_Campaign/Program_NALA_2015_July --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GRID_Deliver Brilliance_Spiceworks_Campaign/Program_EMEA_2015_July</masterLabel>
+        <translation><!-- GRID_Deliver Brilliance_Spiceworks_Campaign/Program_EMEA_2015_July --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GRID_Deployment Guide_Japan_Campaign/Program_APAC_2015_Sept</masterLabel>
+        <translation><!-- GRID_Deployment Guide_Japan_Campaign/Program_APAC_2015_Sept --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GRID_Deployment Guide_Web Form_EMEA_2015_July</masterLabel>
+        <translation><!-- GRID_Deployment Guide_Web Form_EMEA_2015_July --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GRID_Forrester Analyst Report_Campaign/Program_NALA_2015_Sept</masterLabel>
+        <translation><!-- GRID_Forrester Analyst Report_Campaign/Program_NALA_2015_Sept --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GRID_Forrester Analyst Report_Japan_Campaign/Program_APAC_2015_Sept</masterLabel>
+        <translation><!-- GRID_Forrester Analyst Report_Japan_Campaign/Program_APAC_2015_Sept --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GRID_Huawei Cloud Congress _Event/Show_APAC_2015_Sept</masterLabel>
+        <translation><!-- GRID_Huawei Cloud Congress _Event/Show_APAC_2015_Sept --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GRID_IDG Campaign_Dell_VMware_Campaign/Program_NALA_2015_Aug</masterLabel>
+        <translation><!-- GRID_IDG Campaign_Dell_VMware_Campaign/Program_NALA_2015_Aug --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GRID_IGEL Roadshow_Germany_Event/Show_EMEA_2015_May</masterLabel>
+        <translation><!-- GRID_IGEL Roadshow_Germany_Event/Show_EMEA_2015_May --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GRID_Shanghai EDU Event_Event/Show_APAC_2015_July</masterLabel>
+        <translation><!-- GRID_Shanghai EDU Event_Event/Show_APAC_2015_July --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GRID_Software Evaluation_Web Form_NALA_2015_Oct</masterLabel>
+        <translation><!-- GRID_Software Evaluation_Web Form_NALA_2015_Oct --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GRID_Unidesk VDI &amp; Pizza Webinar_Partner Generated_Webinar_NALA_2015_July</masterLabel>
+        <translation><!-- GRID_Unidesk VDI &amp; Pizza Webinar_Partner Generated_Webinar_NALA_2015_July --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GRID_VDI Unleashed_AH Whitepaper_Campaign/Program_NALA_2015_Sept</masterLabel>
+        <translation><!-- GRID_VDI Unleashed_AH Whitepaper_Campaign/Program_NALA_2015_Sept --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GRID_VDI Unleashed_AH Whitepaper_Japan_Campaign/Program_APAC_2015_Sept</masterLabel>
+        <translation><!-- GRID_VDI Unleashed_AH Whitepaper_Japan_Campaign/Program_APAC_2015_Sept --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GRID_VMware MFG Event_Event/Show_APAC_2015_July</masterLabel>
+        <translation><!-- GRID_VMware MFG Event_Event/Show_APAC_2015_July --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GTC_Japan_Event/Show_APAC_2015_Sept</masterLabel>
+        <translation><!-- GTC_Japan_Event/Show_APAC_2015_Sept --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gotham Winter Technology Exchange</masterLabel>
+        <translation><!-- Gotham Winter Technology Exchange --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IBC EMEA Amsterdam Leads. 16.9.2014</masterLabel>
+        <translation><!-- IBC EMEA Amsterdam Leads. 16.9.2014 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IBC GRID Leads - Oct 2013</masterLabel>
+        <translation><!-- IBC GRID Leads - Oct 2013 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>India Quadro QPP Program</masterLabel>
+        <translation><!-- India Quadro QPP Program --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Leadspace</masterLabel>
+        <translation><!-- Leadspace --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LinkedIn Sales Navigator</masterLabel>
+        <translation><!-- LinkedIn Sales Navigator --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Logical Front AASB event.9.12.2014</masterLabel>
+        <translation><!-- Logical Front AASB event.9.12.2014 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Multiple_Contact Us_Web Form_EMEA_2015_July</masterLabel>
+        <translation><!-- Multiple_Contact Us_Web Form_EMEA_2015_July --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NA NPN Recruitment - SEWP</masterLabel>
+        <translation><!-- NA NPN Recruitment - SEWP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NALA Dell GRID Seeding Program</masterLabel>
+        <translation><!-- NALA Dell GRID Seeding Program --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NALA HP Seeding Program – 2014</masterLabel>
+        <translation><!-- NALA HP Seeding Program – 2014 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NALA Supermicro Seeding Program - 2013</masterLabel>
+        <translation><!-- NALA Supermicro Seeding Program - 2013 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN Application</masterLabel>
+        <translation><!-- NPN Application --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN Community Web Form</masterLabel>
+        <translation><!-- NPN Community Web Form --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN Inception Start-Up Program</masterLabel>
+        <translation><!-- NPN Inception Start-Up Program --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN SOEM Web Form</masterLabel>
+        <translation><!-- NPN SOEM Web Form --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NV.com Website GRID page</masterLabel>
+        <translation><!-- NV.com Website GRID page --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NVIDIA generated program lead</masterLabel>
+        <translation><!-- NVIDIA generated program lead --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>North America GRID VAR Events</masterLabel>
+        <translation><!-- North America GRID VAR Events --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Partner (NALA)</masterLabel>
+        <translation><!-- Partner (NALA) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Quadro_Allplan_123 BIM_Campaign_Program_EMEA_2016_April</masterLabel>
+        <translation><!-- Quadro_Allplan_123 BIM_Campaign_Program_EMEA_2016_April --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Quadro_Allplan_BIM World_Tradeshow_EMEA_2016_Mar</masterLabel>
+        <translation><!-- Quadro_Allplan_BIM World_Tradeshow_EMEA_2016_Mar --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Quadro_Quadro VCA _Contact Us_Web Form_NALA_2015_Sept</masterLabel>
+        <translation><!-- Quadro_Quadro VCA _Contact Us_Web Form_NALA_2015_Sept --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Quadro_Uncompromise_India_Campaign_Program_EMEAI_2016_June</masterLabel>
+        <translation><!-- Quadro_Uncompromise_India_Campaign_Program_EMEAI_2016_June --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SIGGRAPH_Los Angeles_Event/Show_NALA_2015_Aug</masterLabel>
+        <translation><!-- SIGGRAPH_Los Angeles_Event/Show_NALA_2015_Aug --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Siggraph NALA 2014</masterLabel>
+        <translation><!-- Siggraph NALA 2014 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Siggraph NALA Limelight 2014</masterLabel>
+        <translation><!-- Siggraph NALA Limelight 2014 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Solidworks World Leads - January 2014</masterLabel>
+        <translation><!-- Solidworks World Leads - January 2014 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Synergy Leads - May 2013</masterLabel>
+        <translation><!-- Synergy Leads - May 2013 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TPP / System Integrator generated lead</masterLabel>
+        <translation><!-- TPP / System Integrator generated lead --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tesla_Beijing Deep Learning Roadshow_Event/Show_APAC_2015_July</masterLabel>
+        <translation><!-- Tesla_Beijing Deep Learning Roadshow_Event/Show_APAC_2015_July --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tesla_DGX-1 Outbound Campaign_Campaign_Program_EMEAI_2016_Aug</masterLabel>
+        <translation><!-- Tesla_DGX-1 Outbound Campaign_Campaign_Program_EMEAI_2016_Aug --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tesla_DGX-1 Pursuit List_M1_Campaign_Program_NALA_2016_Aug</masterLabel>
+        <translation><!-- Tesla_DGX-1 Pursuit List_M1_Campaign_Program_NALA_2016_Aug --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tesla_DGX-1 Pursuit List_M2_Campaign_Program_NALA_2016_Aug</masterLabel>
+        <translation><!-- Tesla_DGX-1 Pursuit List_M2_Campaign_Program_NALA_2016_Aug --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tesla_DGX-1 Pursuit List_M3_Campaign_Program_NALA_2016_Aug</masterLabel>
+        <translation><!-- Tesla_DGX-1 Pursuit List_M3_Campaign_Program_NALA_2016_Aug --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tesla_Guangzhou Deep Learning Roadshow_Event/Show_APAC_2015_July</masterLabel>
+        <translation><!-- Tesla_Guangzhou Deep Learning Roadshow_Event/Show_APAC_2015_July --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tesla_HER T3 Outbound Campaign_Call Campaign_EMEA_2016_Feb</masterLabel>
+        <translation><!-- Tesla_HER T3 Outbound Campaign_Call Campaign_EMEA_2016_Feb --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tesla_Higher Ed Campaign_APAC South_Campaign_Program_APAC_2016_April</masterLabel>
+        <translation><!-- Tesla_Higher Ed Campaign_APAC South_Campaign_Program_APAC_2016_April --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tesla_Higher Ed Outbound Campaign_Campaign_Program_EMEAI_2016_Nov</masterLabel>
+        <translation><!-- Tesla_Higher Ed Outbound Campaign_Campaign_Program_EMEAI_2016_Nov --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tesla_Intersect 360_Whitepaper_Web Form_EMEA_2016_April</masterLabel>
+        <translation><!-- Tesla_Intersect 360_Whitepaper_Web Form_EMEA_2016_April --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tesla_K80 Boost_Taiwan_Campaign/Program_APAC_2015_Sept</masterLabel>
+        <translation><!-- Tesla_K80 Boost_Taiwan_Campaign/Program_APAC_2015_Sept --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tesla_LS_Deep Learning Profile_Prospecting_NALA_2016_July</masterLabel>
+        <translation><!-- Tesla_LS_Deep Learning Profile_Prospecting_NALA_2016_July --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tesla_Shanghai Deep Learning Roadshow_Event/Show_APAC_2015_July</masterLabel>
+        <translation><!-- Tesla_Shanghai Deep Learning Roadshow_Event/Show_APAC_2015_July --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tesla_Virtualizing ArcGIS Pro Webinar_Webinar_NALA_2015_Aug</masterLabel>
+        <translation><!-- Tesla_Virtualizing ArcGIS Pro Webinar_Webinar_NALA_2015_Aug --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UK IT Corporate - 2014</masterLabel>
+        <translation><!-- UK IT Corporate - 2014 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UK Spiceworks - 2014</masterLabel>
+        <translation><!-- UK Spiceworks - 2014 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UK Tech Target - 2014</masterLabel>
+        <translation><!-- UK Tech Target - 2014 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VAR event (NALA)</masterLabel>
+        <translation><!-- VAR event (NALA) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VFORUM Denver NALA 2015</masterLabel>
+        <translation><!-- VFORUM Denver NALA 2015 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VFORUM Montreal NALA 2015</masterLabel>
+        <translation><!-- VFORUM Montreal NALA 2015 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VMWorld Barcelona EMEA 10.10.2014</masterLabel>
+        <translation><!-- VMWorld Barcelona EMEA 10.10.2014 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VMWorld NALA 2014</masterLabel>
+        <translation><!-- VMWorld NALA 2014 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VMworld - August 2013</masterLabel>
+        <translation><!-- VMworld - August 2013 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VMworld Barcelona - Badge Scans Only - October 2013</masterLabel>
+        <translation><!-- VMworld Barcelona - Badge Scans Only - October 2013 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VMworld Barcelona - October 2013</masterLabel>
+        <translation><!-- VMworld Barcelona - October 2013 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VMworld_Barcelona_Booth_Event/Show_EMEA_2015_Oct</masterLabel>
+        <translation><!-- VMworld_Barcelona_Booth_Event/Show_EMEA_2015_Oct --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VMworld_Barcelona_Roundtable_Event/Show_EMEA_2015_Oct</masterLabel>
+        <translation><!-- VMworld_Barcelona_Roundtable_Event/Show_EMEA_2015_Oct --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VMworld_San Francisco_Event/Show_NALA_2015_Aug</masterLabel>
+        <translation><!-- VMworld_San Francisco_Event/Show_NALA_2015_Aug --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VSS Bangalore 11.11.2014</masterLabel>
+        <translation><!-- VSS Bangalore 11.11.2014 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VSS Chennai 19.11.2014</masterLabel>
+        <translation><!-- VSS Chennai 19.11.2014 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VSS Delhi 25.11.2014</masterLabel>
+        <translation><!-- VSS Delhi 25.11.2014 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VSS Hyderabad 27.11.2014</masterLabel>
+        <translation><!-- VSS Hyderabad 27.11.2014 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VSS Malaysia 12.11.2014</masterLabel>
+        <translation><!-- VSS Malaysia 12.11.2014 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VSS Taiwan 25.11.2014</masterLabel>
+        <translation><!-- VSS Taiwan 25.11.2014 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Vmware User Group  (NALA)</masterLabel>
+        <translation><!-- Vmware User Group  (NALA) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Whitehat technologies VMXpo_10.7.2014</masterLabel>
+        <translation><!-- Whitehat technologies VMXpo_10.7.2014 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>vForum - Montreal – Event/Show - NALA – 2015 - May</masterLabel>
+        <translation><!-- vForum - Montreal – Event/Show - NALA – 2015 - May --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>vForum Beijing 29.10.2014</masterLabel>
+        <translation><!-- vForum Beijing 29.10.2014 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>vForum Melbourne 04.11.2014</masterLabel>
+        <translation><!-- vForum Melbourne 04.11.2014 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>vForum Mumbai 30.10.2014</masterLabel>
+        <translation><!-- vForum Mumbai 30.10.2014 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>vForum Seoul 04.11.2014</masterLabel>
+        <translation><!-- vForum Seoul 04.11.2014 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>vForum Singapore 04.11.2014</masterLabel>
+        <translation><!-- vForum Singapore 04.11.2014 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>vForum Sydney 05.11.2014</masterLabel>
+        <translation><!-- vForum Sydney 05.11.2014 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>vForum Tokyo 05.11.2014</masterLabel>
+        <translation><!-- vForum Tokyo 05.11.2014 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>vForum_Boston_Event/Show_NALA_2015_June</masterLabel>
+        <translation><!-- vForum_Boston_Event/Show_NALA_2015_June --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>vForum_Toronto_Event/Show_NALA_2015_June</masterLabel>
+        <translation><!-- vForum_Toronto_Event/Show_NALA_2015_June --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

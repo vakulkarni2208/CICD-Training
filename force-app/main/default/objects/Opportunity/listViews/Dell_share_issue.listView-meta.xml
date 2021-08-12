@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Dell_share_issue</fullName>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>OPPORTUNITY.AMOUNT</columns>
+    <columns>OPPORTUNITY.CLOSE_DATE</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>NPN_Solution_Provider_VAR_Text__c</columns>
+    <columns>Primary_NPN_OEM_ODM_Disti_Text__c</columns>
+    <columns>Primary_NPN_OEM_ODM_Disti__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>OPPORTUNITY.NAME</field>
+        <operation>equals</operation>
+        <value>BMA_Phase 1_2000 camera</value>
+    </filters>
+    <label>Dell share issue</label>
+    <language>en_US</language>
+    <sharedTo>
+        <role>Administrator</role>
+    </sharedTo>
+</ListView>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DGX1_DGX2_NetworkingStorage</fullName>
+    <active>true</active>
+    <description>Validation rule requiring networking/storage partners for DGX1 &amp; DGX2</description>
+    <errorConditionFormula>AND( 
+RecordType.Name = &quot;Deal Registration&quot;, 
+OR ( 
+ISBLANK(TEXT(Opportunity_Network_Partner__c)), 
+ISBLANK(TEXT(Opportunity_Storage_Partner__c )) 
+), 
+OR( ISPICKVAL(DR_Product__c, &quot;DGX-1 V100-32GB&quot;), 
+ISPICKVAL(DR_Product__c, &quot;DGX-2 V100-32GB&quot;), 
+ISPICKVAL(DR_Product__c, &quot;DGX-2H V100-32GB&quot;), 
+ISPICKVAL(DR_Secondary_Product__c, &quot;DGX-1 V100-32GB&quot;), 
+ISPICKVAL(DR_Secondary_Product__c, &quot;DGX-2 V100-32GB&quot;), 
+ISPICKVAL(DR_Secondary_Product__c, &quot;DGX-2H V100-32GB&quot;) 
+) 
+)</errorConditionFormula>
+    <errorMessage>For DGX-1 and DGX-2 registrations, please confirm the storage and/or networking partner. If unknown at this time, please select N/A</errorMessage>
+</ValidationRule>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Inbound Inquiry Type --></label>
+    <name>Inbound_Inquiry_Type__c</name>
+    <picklistValues>
+        <masterLabel>Channel Partner</masterLabel>
+        <translation><!-- Channel Partner --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Info@NVIDIA.com</masterLabel>
+        <translation><!-- Info@NVIDIA.com --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Phone</masterLabel>
+        <translation><!-- Phone --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Quadro Inbox</masterLabel>
+        <translation><!-- Quadro Inbox --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tesla Inbox</masterLabel>
+        <translation><!-- Tesla Inbox --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

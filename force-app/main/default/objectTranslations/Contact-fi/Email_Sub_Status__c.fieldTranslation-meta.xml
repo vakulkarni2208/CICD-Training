@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- BriteVerify Email Verification Sub-Status --></help>
+    <label><!-- Email Sub-Status --></label>
+    <name>Email_Sub_Status__c</name>
+    <picklistValues>
+        <masterLabel>disposable</masterLabel>
+        <translation><!-- disposable --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>email_account_invalid</masterLabel>
+        <translation><!-- email_account_invalid --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>email_address_invalid</masterLabel>
+        <translation><!-- email_address_invalid --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>email_domain_invalid</masterLabel>
+        <translation><!-- email_domain_invalid --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>role_address</masterLabel>
+        <translation><!-- role_address --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

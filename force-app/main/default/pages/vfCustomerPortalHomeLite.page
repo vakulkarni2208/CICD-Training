@@ -1,0 +1,788 @@
+<apex:page id="thePage" controller="clsCustomerPortalHomeLite" standardStylesheets="true"  showHeader="false" sidebar="false">
+    <head>
+        <style>
+            html, body {
+                height:100%;
+                margin-top: 0px;
+                font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+                font-size: 13px;
+                line-height: 18px;
+            }
+            
+            .mdfproductselected
+            { 
+                background:white;
+                height:30px;
+                 
+            }
+            
+            .ticker {
+                margin: 0 0 0 0 ;
+            }
+        </style>
+    </head>
+    
+    <apex:includeScript value="https://code.jquery.com/jquery-1.7.2.js"  />
+    <apex:stylesheet value="{!URLFOR($Resource.jquery_news_ticker, '/styles/portal-home.css')}" />
+    <apex:stylesheet value="{!URLFOR($Resource.jquery_news_ticker, '/styles/mainstyles.css')}" />
+    <apex:stylesheet value="{!URLFOR($Resource.jquery_news_ticker, '/styles/ticker-style.min.css')}" />
+    
+    <body>
+        <apex:form id="formId" styleClass="myFormStyle">
+            <apex:inputHidden value="{!strTabName}" id="idinpthdnTabname" />
+            <apex:inputHidden value="{!strImageiframeName}" id="idinpthdnImageName" />
+            <div id="container">
+                <div id="content">
+                    <table border="0" align="left" width="100%" style="color: #393939;" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td>
+                                <!-- LOG A SUPPORT REQUEST POP UP -->
+                                <apex:outputPanel id="displayEmailPopup_LogASupportReq">
+                                    <!--Using these output panel to display popup using css classes popupBackground & custPopup1-->         
+                                    <apex:outputPanel styleClass="popupBackground" layout="block" rendered="{!DisplayPopup_LogASupportRequest}"/>
+                                    <apex:outputPanel styleClass="custPopup1" layout="block" rendered="{!DisplayPopup_LogASupportRequest}">
+                                        <apex:pageMessages />
+                                        <table width="100%" style="padding:8px; text-align:none;" border="0">                   
+                                            <tr>
+                                                <td colspan="3" align="center">
+                                                    <h4><b> <font color="#393939">{!$Label.COMM_CP_VF_EMAIL_Log_a_Support_Request}</font> </b> </h4>
+                                                </td>
+                                            </tr> 
+                                            <tr>
+                                                <td colspan="3" ></td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="3" ></td>
+                                            </tr>
+                                            <tr>
+                                                <td align="right">
+                                                    <b>{!$Label.COMM_CP_VF_EMAIL_Competency}&nbsp;<span style="color:red;">*</span></b>
+                                                </td>
+                                                <td>
+                                                    <apex:selectList size="1" style="width:180px;" value="{!selectedLPCompetency}">
+                                                        <apex:selectOptions value="{!lstLPCompetencies}"></apex:selectOptions>
+                                                    </apex:selectList>
+                                                </td>
+                                            </tr> 
+                                            <tr>
+                                                <td align="right"><b>{!$Label.COMM_CP_VF_EMAIL_Company_Name}</b></td>
+                                                <td>
+                                                    <apex:outputText value="{!contactDetail.Account.name}" id="cname"/>
+                                                </td>
+                                            </tr>                             
+                                            <tr>
+                                                <td align="right"><b>{!$Label.COMM_CP_VF_EMAIL_Contact_Name}</b></td>
+                                                <td>
+                                                    <apex:outputText value="{!contactfirstlastname}" id="conname"/>
+                                                </td>
+                                            </tr>   
+                                            <tr>
+                                                <td align="right"><b>{!$Label.COMM_CP_VF_EMAIL_Contact_Email_Address}</b></td>
+                                                <td>
+                                                    <apex:outputText value="{!contactEmail}" id="emailid"/>
+                                                </td>
+                                            </tr>
+                                            <tr>   
+                                                <td align="right"><b>{!$Label.COMM_CP_VF_EMAIL_Contact_Phone_Number}&nbsp;<span style="color:red;">*</span></b></td>
+                                                <td>
+                                                    <apex:inputText value="{!phoneNumber}" id="phoneId1" rendered="{!if(contactMobilePhone == '',true,false)}"/>
+                                                    <apex:outputText value="{!contactMobilePhone}" id="phoneId2" rendered="{!!if(contactMobilePhone == '',true,false)}"/>
+                                                </td>
+                                            </tr>
+                                                            
+                                            <tr>
+                                                <td align="right"><b>{!$Label.COMM_CP_VF_EMAIL_Short_Desc}&nbsp;<span style="color:red;">*</span></b></td>
+                                                <td>
+                                                    <apex:inputText style="height:25px;width:500px;" value="{!problemType}" maxlength="45" id="protype"/>
+                                                </td>
+                                                <td>&nbsp;</td>
+                                            </tr> 
+                                                            
+                                            <tr>
+                                                <td align="right" valign="top"><b>{!$Label.COMM_CP_VF_EMAIL_Problem_Desc}&nbsp;<span style="color:red;">*</span></b></td>
+                                                <td>
+                                                    <apex:inputTextArea style="height:100px;width:500px;" value="{!problemDescription}" id="descId"/>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td align="right" valign="top"><b>{!$Label.COMM_CP_VF_EMAIL_Steps_to_Reproduce}&nbsp;<span style="color:red;">*</span></b></td>
+                                                <td>
+                                                    <apex:inputTextArea style="height:100px;width:500px;" value="{!steptoReproduceProblem}" id="stpesId"/>
+                                                </td>
+                                            </tr>
+            
+                                            <tr>
+                                                <td align="right">
+                                                    <b>{!$Label.COMM_CP_VF_EMAIL_Attach_Support_Docs}</b>
+                                                </td>
+                                                <td>
+                                                    <apex:inputFile value="{!Attach}" fileName="{!FileName_Upload}"/> <br />
+                                                    {!$Label.COMM_CP_VF_EMAIL_Attach_Support_Docs_Example}
+                                                </td>
+                                            </tr>
+            
+                                            <tr>
+                                                <td colspan="2" align="center">
+                                                    <apex:commandButton value="{!$Label.COMM_CP_VF_EMAIL_Send}" action="{!sendEmail_LogASupportRequest}"/>&nbsp;&nbsp;
+                                                    <apex:commandButton value="{!$Label.COMM_CP_VF_EMAIL_Cancel}" action="{!closePopup_LogASupportRequest}"/>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </apex:outputPanel>
+                                </apex:outputPanel>
+                                
+                                <!-- ASK A QUESTION POP UP -->
+                                <apex:outputPanel id="displayEmailPopup_AskAQuestion">        
+                                    <apex:outputPanel styleClass="popupBackground" layout="block" rendered="{!DisplayPopup_AskAQuestion}"/>
+                                    <apex:outputPanel styleClass="custPopup1" layout="block" rendered="{!DisplayPopup_AskAQuestion}">
+                                        <apex:pageMessages />
+                                        <table width="100%" style="padding:8px;" border="0">
+                                            <tr>
+                                                <td colspan="3" align="center">
+                                                    <h4><b> <font color="#393939">{!$Label.COMM_CP_VF_EMAIL_Ask_a_Question}</font> </b> </h4>
+                                                </td>
+                                            </tr>
+                                                                             
+                                            <tr>
+                                                <td colspan="3"> </td> 
+                                            </tr>
+                                                    
+                                            <tr>
+                                                <td colspan="3"> </td> 
+                                            </tr>
+                                            
+                                            <tr>
+                                                <td align="right">
+                                                    <b>{!$Label.COMM_CP_VF_EMAIL_Competency}&nbsp;<span style="color:red;">*</span></b>
+                                                </td>
+                                                <td>
+                                                    <apex:selectList size="1" style="width:180px;" value="{!selectedLPCompetency}">
+                                                        <apex:selectOptions value="{!lstLPCompetencies}"></apex:selectOptions>
+                                                    </apex:selectList>
+                                                </td>
+                                            </tr> 
+        
+                                            <tr>
+                                                <td valign="top"  align="right" width="15%">
+                                                    <b>{!$Label.COMM_CP_VF_EMAIL_Subject}</b>
+                                                </td>
+                                                <td colspan="2">
+                                                    <apex:inputText style="height:20px;width:600px;" value="{!subject}"/>
+                                                </td>
+                                            </tr>
+                                                
+                                            <tr>
+                                                <td valign="top" align="right" width="15%">
+                                                    <b>{!$Label.COMM_CP_VF_EMAIL_Body}</b>
+                                                </td>
+                                                <td colspan="2">
+                                                    <apex:inputTextArea style="height:200px;width:600px;" value="{!body}"/>
+                                                </td>
+                                            </tr>
+                                                    
+                                            <tr>
+                                                <td colspan="3" align="center">
+                                                    <apex:commandButton value="{!$Label.COMM_CP_VF_EMAIL_Send}" action="{!sendEmail_AskAQuestion}"/>&nbsp;&nbsp;
+                                                    <apex:commandButton value="{!$Label.COMM_CP_VF_EMAIL_Cancel}" action="{!closePopup_AskAQuestion}"/>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </apex:outputPanel>
+                                </apex:outputPanel>
+                            </td>
+                        </tr>
+                        
+                        <!-- Row1.
+                        LOGO, Welcome First Name and Last Name, Logout, 
+                        NVIDIA PARTNER PORTAL Text, MDF PROJECTS, HOME 
+                        -->
+                        <tr>
+                            <td align="left">
+                                <div style="" id="box">                         
+                                    
+                                    <div class="mainBody" id="nvidiaHeader">
+                                        <div id="nvLogo" style="padding-top:25px;padding-bottom:15px;padding-left:15px;display:inline-block;width:57%;white-space: nowrap;">
+                                            <apex:image id="nvidiaLogo" value="{!$Resource.nvidia_logo}"/>
+                                        </div>
+                                        <div style="text-align:right;display:inline-block;white-space: nowrap;width:40%;">
+                                            <apex:outputText style="font-size:13px;text-decoration:none;color:#FFFFFF;font-weight:bold" value="{!$Label.COMM_CP_VF_Welcome} {!$User.FirstName} {!$User.LastName}"/>
+                                            <br />
+                                            <apex:outputLink value="{!$Site.Prefix}/secur/logout.jsp" rendered="{!NOT(ISPICKVAL($User.UserType,'Guest'))}" style="font-size:13px;text-decoration:none;color:#FFFFFF;font-weight:bold">{!$Label.site.logout}&nbsp;</apex:outputLink>
+                                        </div>
+                                    </div>
+                                    
+                                    <div id="greenBar">
+                                        
+                                        <div id="greenBarTitle" style="width:365px;">
+                                            <h2><span style="font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;">{!$Label.COMM_CP_VF_NVIDIA_Partner_Portal}</span></h2>
+                                        </div>
+                                        
+                                        <div id="greenBarTabs">
+                                            <div style="float:right;width:300px;">
+                                                <!--  <apex:outputPanel rendered="{!$ObjectType.xMDF_Project__c.accessible}"> -->
+                                                <apex:outputPanel rendered="{!isMDFV2User}">
+                                                    <div id="mdfproduct" style="width: 100px;float: left;font-size:12px;font-weight:bold;padding-top:10px;color:#FFFFFF;text-align:center;">
+                                                        <a id="idamdf" href="/a08/o" style="text-decoration:none;color:#FFFFFF" onclick="window.open(this.href,'_blank','width=1000, height=800'); return false;">{!$Label.COMM_CP_VF_MDF_Projects}</a>
+                                                    </div>
+                                                </apex:outputPanel>
+                                                 <!--  <apex:outputPanel rendered="{!$ObjectType.xMDF_Project__c.accessible}"> -->
+                                                 <apex:outputPanel rendered="{!isMDFV3User}">
+                                                    <div id="mdfproduct" style="width: 100px;float: left;font-size:12px;font-weight:bold;padding-top:10px;color:#FFFFFF;text-align:center;">
+                                                        <a id="idamdf" href="/apex/COMM_MDF_LandingPage" style="text-decoration:none;color:#FFFFFF" onclick="window.open(this.href,'_blank'); return false;">{!$Label.COMM_CP_MDFV3_COMMUNITY_NAME}</a>
+                                                    </div>
+                                                </apex:outputPanel>
+                                                <div id="home" style=" width: 70px;float: right;font-size:12px;text-decoration:none;color:#FFFFFF;font-weight:bold;padding-top:10px;text-align:center;">
+                                                    <a id="idahome" href="#" style="text-decoration:none;color:#FFFFFF" onclick="selectedhome();">{!$Label.COMM_CP_VF_Home}</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td style="vertical-align:middle;text-align:right;width:1075px;height:10px;padding-right:20px;"></td>
+                        </tr>
+                                        
+                        <apex:outputpanel rendered="true">
+                            <apex:outputPanel id="idoutpnlhome" rendered="true">
+                                <!-- Row3.  Elite Banner, NVIDIA News, Learning Locker in a single table-->
+                                <tr>
+                                    <td>
+                                        <table border="0" align="center" width="90%" style="background-color:#F3F3F3;color: #393939;" cellpadding="0" cellspacing="0">
+                                            
+                                            <!-- Banner-->
+                                            <tr>
+                                                <td>
+                                                    <div id="rightContent" class="fullWidth">
+                                                        <!-- ---------Begin: Show Elite Portal banner for EMEAI Training Users only --------- -->
+                                                        <apex:outputPanel rendered="{! NOT isNVEPUser}">
+                                                            <div style="background-image: url('{!$Resource.NPNCommunityPortalHeader}'); background-repeat: no-repeat; width:1075px; height:183px"></div>
+                                                        </apex:outputPanel>
+                                                        <apex:outputPanel rendered="{!isNVEPUser}"> 
+                                                            <div style="background-image: url('{!$Resource.NV_PP_Elite_Top_Banner}'); background-repeat: no-repeat; width:1075px; height:183px"></div>
+                                                        </apex:outputPanel>
+                                                        <!-- ---------End: Show Elite Portal banner for EMEAI Training Users only --------- -->
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            
+                                            <apex:outputPanel rendered="{! NOT (isNVEPUser || isServicesSubcontractors)}">
+                                            <tr>
+                                                <td>
+                                                    <div id="rightContent" class="fullWidth">
+                                                        <div class="pf--divider"></div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- NVIDIA News and Marketing Assets/Sales Tools and NV Contacts-->
+                                            <tr>
+                                                <td align="left" width="1000px" style="background-color:#F3F3F3;max-width:795px;min-width:795px;border-bottom: 1px solid #575757;border-left: 1px solid #575757; border-right: 1px solid #575757;" valign="top">
+                                                    
+                                                    <!-- NVIDIA NEWS -->
+                                                    <c:cmpCutomerPortalLiteNewsTicker title="" debug="false" feedURL="http://feeds.feedburner.com/nvidiablog" />
+                                                    <!-- LATEST MESSAGES --> 
+                                                    <c:cmpCustomerPortalLatestMessages />
+                                                    <table width="100%" border="0" style="background-color:#F3F3F3;" cellpadding="0" cellspacing="0">
+                                                        <tr>
+                                                            <apex:repeat value="{!lstMainWrapper}" var="x">
+                                                                <apex:outputPanel rendered="{! If(x.presentation_Type == 'SALES TOOLS' || x.presentation_Type=='MARKETING ASSETS' || x.presentation_Type=='NVIDIA CONTACTS',true,false)}">
+                                                                    <td width="33%" align="left" style="vertical-align:top;padding-right:10px;padding-left:15px;">
+                                                                        
+                                                                        <table border="0" width="100%" cellpadding="0" cellspacing="0" style="border-spacing:0;background-color:F3F3F3">
+                                                                            
+                                                                            <tr>
+                                                                                <td>
+                                                                                    <div class="boxTitle" style="border:1px solid #000000;">
+                                                                                        &nbsp;&nbsp;{!x.presentation_Label}
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                
+                                                                            <tr>
+                                                                                <td>
+                                                                                    <div class="boxContent"> 
+                                                                                        <!-- NVIDIA CONTACTS -->
+                                                                                        <apex:variable var="count" value="{!0}" /> 
+    
+                                                                                        <apex:outputPanel rendered="{! If(x.presentation_Type == 'NVIDIA CONTACTS',true,false)}">
+                                                                                            <apex:repeat value="{!lstNVIDIAContactsProductWiseWrapper}" var="nvConProdwise">
+                                                                                                <apex:variable var="count" value="{!count+1}"/>
+                                                                                                <b><div align="left"><font color="#76b900">{!nvConProdwise.productType}</font></div></b>
+                                                                                                <apex:repeat value="{!nvConProdwise.lstNVIDIAContactsWrapper}" var="nvCon" >                                                                                                    
+                                                                                                    <span style="{! if (nvCon.contentType == 'Community', 'display:none','')}"><b><i><div align="left">{!nvCon.contentType}</div></i></b></span>
+                                                                                                    <!-- Sales Manager -->
+                                                                                                    <font color="#393939">{!nvCon.Sales_Manager_Name} {!IF(AND(nvCon.SalesManager_Title1!= null, nvCon.Sales_Manager_Name != null),'-','')}</font> <b><font color="#76b900">{!nvCon.SalesManager_Title1}</font></b>
+                                                                                                    <br/>
+                                                                                                    <a href="mailto:{!nvCon.Sales_Manager_Email}">
+                                                                                                        <font color="#393939">{!nvCon.Sales_Manager_Email}</font>
+                                                                                                    </a>
+                                                                                                    &nbsp;
+                                                                                                    {!IF(AND(nvCon.Sales_Manager_Contact_Number != null,nvCon.Sales_Manager_Email!= null),'|','')}
+                                                                                                    &nbsp;
+                                                                                                    {!nvCon.Sales_Manager_Contact_Number}
+                                                                                                    <br/>
+                                                                                                        
+                                                                                                    <!-- Marketing Manager -->
+                                                                                                    <apex:outputText rendered="{!if(nvCon.Marketing_Manager_Name!=null,true,false)}">
+                                                                                                        <font color="#393939">{!nvCon.Marketing_Manager_Name} {!IF(AND(nvCon.MarketingManager_Title2!= null,nvCon.Marketing_Manager_Name != null),'-','')}</font> <b><font color="#76b900">{!nvCon.MarketingManager_Title2}</font></b>
+                                                                                                        <br/>
+                                                                                                        <a href="mailto:{!nvCon.Marketing_Manager_Email}"><font color="#393939">{!nvCon.Marketing_Manager_Email}</font></a>
+                                                                                                        &nbsp;{!IF(AND(nvCon.Marketing_Manager_Contact_Number!= null, nvCon.Marketing_Manager_Email != null),'|','')}
+                                                                                                        &nbsp;{!nvCon.Marketing_Manager_Contact_Number}
+                                                                                                        <br/>
+                                                                                                    </apex:outputText>
+                                                                                                                 
+                                                                                                    <!-- Support Manager -->
+                                                                                                    <apex:outputText rendered="{!if(nvCon.Support_Manager_Name!=null,true,false)}">
+                                                                                                        <font color="#393939">{!nvCon.Support_Manager_Name} {!IF(AND(nvCon.SupportManager_Title3 != null,nvCon.Support_Manager_Name != null),'-','')}</font> <b><font color="#76b900">{!nvCon.SupportManager_Title3}</font></b>
+                                                                                                        <br/>
+                                                                                                        <a href="mailto:{!nvCon.Support_Manager_Email}"><font color="#393939">{!nvCon.Support_Manager_Email}</font></a>
+                                                                                                        &nbsp;
+                                                                                                        {!IF(AND(nvCon.Support_Manager_Contact_Number!= null,nvCon.Support_Manager_Email != null),'|','')} 
+                                                                                                        &nbsp;{!nvCon.Support_Manager_Contact_Number} 
+                                                                                                        <br/>
+                                                                                                    </apex:outputText>
+                                                                                                        
+                                                                                                </apex:repeat>         
+                                                                                                <apex:outputPanel rendered="{!if(lstNVIDIAContactsProductWiseWrapper.size != count,true,false)}">
+                                                                                                    <br />
+                                                                                                    <hr/>
+                                                                                                </apex:outputPanel>
+                                                                                            </apex:repeat>
+                                                                                        </apex:outputPanel>
+                                                                                        
+                                                                                        <!-- Marketing Assets & Sales Tools FOR COMMUNITY USERS: Governed by Permission Sets-->
+                                                                                        <apex:outputPanel rendered="{! If(x.presentation_Type == 'SALES TOOLS' || x.presentation_Type=='MARKETING ASSETS',true,false)}">
+                                                                                            <apex:repeat value="{!x.lstW}" var="y"> 
+                                                                                                <table border="0" width="100%" style="background-color:F3F3F3">
+                                                                                                    <tr>
+                                                                                                        <td align="center">
+                                                                                                            <apex:outputLink value="{!y.presentation_URL}" onclick="window.open(this.href,'_blank','width=1000, height=1000, scrollbars=1'); return false;">                                                                                
+                                                                                                                <apex:image style="border: none; outline: none;" url="{!y.image_URL}" height="150" width="260"/>                                                                                 
+                                                                                                            </apex:outputLink>
+                                                                                                        </td>
+                                                                                                    </tr>
+                                                                                                </table>
+                                                                                            </apex:repeat>
+                                                                                            
+                                                                                        </apex:outputPanel>
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            
+                                                                        </table>
+                                                                        
+                                                                    </td>
+                                                                </apex:outputPanel>
+                                                            </apex:repeat>
+                                                        </tr>
+                                                        <tr>
+                                                            <td colspan="3">&nbsp;<br/></td>
+                                                        </tr>
+                                                    </table>
+
+                                                    <!-- NPN RESOURCES HEADER And BOXES-->
+                                                    <apex:outputPanel rendered="{! isPortalLiteUser || isInceptionPartnerUser }">
+                                                        <table width="100%" border="0" style="background-color:#F3F3F3;padding-right:10px;padding-left:15px;" cellpadding="0" cellspacing="0">
+                                                            <tr>
+                                                                <td style="vertical-align:top;">
+                                                                    <div class="tickerShort-box">
+                                                                        &nbsp;&nbsp;{!$Label.COMM_CP_VF_NPN_Resources}
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            
+                                                            <!-- NPN RESOURCES BOXES-->
+                                                            <tr>
+                                                                <td style="vertical-align:top;">
+                                                                    <table width="100%" cellpadding="0" cellspacing="0">
+                                                                        <tr style="vertical-align:top;">
+                                                                            <td width="34%">
+                                                                                <!--  
+                                                                                <apex:outputPanel >
+                                                                                    <div class="NPNResourceBoxTitle">
+                                                                                        <apex:commandLink action="{!showPopup_LogASupportRequest}" rerender="displayEmailPopup_LogASupportReq" styleClass="cmdLinkStyle"> 
+                                                                                            &nbsp;&nbsp;{!$Label.COMM_CP_VF_EMAIL_Log_a_Support_Request}&nbsp;&gt;
+                                                                                        </apex:commandLink>
+                                                                                    </div>
+                                                                                </apex:outputPanel>
+                                                                                -->
+                                                                                <apex:repeat value="{!lstMainWrapper}" var="x">
+                                                                                    <apex:outputPanel style="text-align:left;" rendered="{! If(x.presentation_Type == 'NPN RESOURCE-LOGASUPPORTREQUEST' && isPortalLiteUser,true,false)}">
+                                                                                        <apex:commandLink action="{!showPopup_LogASupportRequest}"  styleClass="cmdLinkStyle">
+                                                                                            <div class="NPNResourceBoxTitle" 
+                                                                                                onclick="javascript: document.getElementById('lsrbox').style.display='block';"
+                                                                                                onmouseover="javascript: document.getElementById('lsrbox').style.display='block';"
+                                                                                                onmouseout="javascript: document.getElementById('lsrbox').style.display='none';">
+                                                                                                &nbsp;&nbsp;<span style="cursor: pointer;">{!x.presentation_Label}</span>&nbsp;&gt;
+                                                                                            </div>
+                                                                                        </apex:commandLink>
+                                                                                    </apex:outputPanel>
+                                                                                    <apex:outputPanel style="text-align:left;" rendered="{! If(x.presentation_Type == 'NPN RESOURCE-LOGASUPPORTREQUEST' && isInceptionPartnerUser,true,false)}">
+                                                                                            <div class="NPNResourceBoxTitle" 
+                                                                                                onclick="javascript: document.getElementById('lsrbox').style.display='block';"
+                                                                                                onmouseover="javascript: document.getElementById('lsrbox').style.display='block';"
+                                                                                                onmouseout="javascript: document.getElementById('lsrbox').style.display='none';">
+                                                                                                &nbsp;&nbsp;<span style="cursor: pointer;">{!x.presentation_Label}</span>&nbsp;&gt;
+                                                                                            </div>
+                                                                                    </apex:outputPanel>
+                                                                                </apex:repeat>
+                                                                            </td>
+                                                                            <td width="33%">
+                                                                                <apex:repeat value="{!lstMainWrapper}" var="x">
+                                                                                    <apex:outputPanel style="text-align:left;" rendered="{! If(x.presentation_Type == 'NPN RESOURCE-RMA',true,false)}">
+                                                                                        <div class="NPNResourceBoxTitle" 
+                                                                                            onclick="javascript: document.getElementById('rmabox').style.display='block';"
+                                                                                            onmouseover="javascript: document.getElementById('rmabox').style.display='block';"
+                                                                                            onmouseout="javascript: document.getElementById('rmabox').style.display='none';">
+                                                                                            &nbsp;&nbsp;<span style="cursor: pointer;">{!x.presentation_Label}</span>&nbsp;&gt;
+                                                                                        </div>
+                                                                                    </apex:outputPanel>
+                                                                                </apex:repeat>
+                                                                            </td>
+                                                                            <!--
+                                                                            <td width="33%">
+                                                                                <apex:outputPanel >
+                                                                                    <div class="NPNResourceBoxTitle">
+                                                                                        <apex:commandLink action="{!showPopup_AskAQuestion}" rerender="displayEmailPopup_AskAQuestion" styleClass="cmdLinkStyle"> 
+                                                                                            &nbsp;&nbsp;{!$Label.COMM_CP_VF_EMAIL_Ask_a_Question}&nbsp;&gt;
+                                                                                        </apex:commandLink>
+                                                                                    </div>
+                                                                                </apex:outputPanel>
+                                                                            </td>
+                                                                            -->
+                                                                            <td width="33%">
+                                                                                <apex:repeat value="{!lstMainWrapper}" var="x">
+                                                                                    <apex:outputPanel style="text-align:left;" rendered="{! If(x.presentation_Type == 'NPN RESOURCE-GSNH',true,false)}">
+                                                                                        <div class="NPNResourceBoxTitle" 
+                                                                                            onclick="javascript: document.getElementById('gsnhbox').style.display='block';"
+                                                                                            onmouseover="javascript: document.getElementById('gsnhbox').style.display='block';"
+                                                                                            onmouseout="javascript: document.getElementById('gsnhbox').style.display='none';">
+                                                                                            &nbsp;&nbsp;<span style="cursor: pointer;">{!x.presentation_Label}</span>&nbsp;&gt;
+                                                                                        </div>
+                                                                                    </apex:outputPanel>
+                                                                                </apex:repeat>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                        
+                                                        <!-- NPN RESOURCES-RMA Floating DIV-->
+                                                         <div>
+                                                            <apex:repeat value="{!lstMainWrapper}" var="x">
+                                                                <apex:outputPanel style="text-align:left;" rendered="{! If(x.presentation_Type == 'NPN RESOURCE-RMA',true,false)}">
+                                                                    <div class="rmaPopup" id="rmabox" style="display:none; top-margin: 0px; padding-top:0px; padding-bottom:0px;" onmouseout="javascript: document.getElementById('rmabox').style.display='none';" onmouseover="javascript: document.getElementById('rmabox').style.display='block';">
+                                                                        <apex:repeat value="{!x.lstW}" var="y"> 
+                                                                            <apex:outputText value="{!y.presentation_Text}" escape="false"/>
+                                                                        </apex:repeat>
+                                                                    </div>
+                                                                </apex:outputPanel>
+                                                            </apex:repeat>
+                                                        </div>
+                                                        
+                                                        <!-- NPN RESOURCES-LOG A SUPPORT REQUEST Floating DIV-->
+                                                         <div>
+                                                            <apex:repeat value="{!lstMainWrapper}" var="x">
+                                                                <apex:outputPanel style="text-align:left;" rendered="{! If(x.presentation_Type == 'NPN RESOURCE-LOGASUPPORTREQUEST',true,false)}">
+                                                                    <div class="lsrPopup" id="lsrbox" style="display:none; top-margin: 0px; padding-top:0px; padding-bottom:0px;" onmouseout="javascript: document.getElementById('lsrbox').style.display='none';" onmouseover="javascript: document.getElementById('lsrbox').style.display='block';">
+                                                                        <apex:repeat value="{!x.lstW}" var="y"> 
+                                                                            <apex:outputText value="{!y.presentation_Text}" escape="false"/>
+                                                                        </apex:repeat>
+                                                                    </div>
+                                                                </apex:outputPanel>
+                                                            </apex:repeat>
+                                                        </div>
+                                                        
+                                                        <!-- GETTING STARTED / NEED HELP Floating DIV-->
+                                                         <div>
+                                                            <apex:repeat value="{!lstMainWrapper}" var="x">
+                                                                <apex:outputPanel style="text-align:left;" rendered="{! If(x.presentation_Type == 'NPN RESOURCE-GSNH',true,false)}">
+                                                                    <div class="gsnhPopup" id="gsnhbox" style="display:none; top-margin: 0px; padding-top:0px; padding-bottom:0px;" onmouseout="javascript: document.getElementById('gsnhbox').style.display='none';" onmouseover="javascript: document.getElementById('gsnhbox').style.display='block';">
+                                                                        <apex:repeat value="{!x.lstW}" var="y"> 
+                                                                            <apex:outputText value="{!y.presentation_Text}" escape="false"/>
+                                                                        </apex:repeat>
+                                                                    </div>
+                                                                </apex:outputPanel>
+                                                            </apex:repeat>
+                                                        </div>
+                                                        
+                                                        <br/>
+                                                    </apex:outputPanel>
+                                                    
+                                                </td>
+                                            </tr>
+                                            </apex:outputPanel>
+                                            
+                                            <!-- NVIDIA Learning Locker Header Text-->
+                                            <tr>
+                                                <td>
+                                                    <div id="rightContent" class="fullWidth">
+                                                        <div class="pf--divider"></div>
+                                                    </div>
+                                                    <div class="tickerShort-box">
+                                                        &nbsp;&nbsp;{!$Label.COMM_CP_VF_NV_Learning_Locker}
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            
+                                             <!-- NVIDIA Learning Locker Instructions -->
+                                            <tr>
+                                                <td style="background-color:#F3F3F3; border-left: 1px solid #575757;border-right: 1px solid #575757;">
+                                                    <div style="text-align:left; font-size:18px; font-weight:bold; margin-left:10px; margin-top:5px;">{!$Label.COMM_CP_VF_NV_Learning_Locker_Instructions}</div>
+                                                </td>
+                                            </tr>
+                                            
+                                            <!-- NVIDIA Learning Locker IFRAME-->
+                                            <tr>
+                                                <td style="background-color:#F3F3F3;border-bottom: 1px solid #575757;border-left: 1px solid #575757;border-right: 1px solid #575757;">
+                                                    <apex:iframe src="{!brainshark_url}?username={!$User.Email}&fn={!$User.FirstName}&ln={!$User.LastName}&login_dir=nvidia&cid=32450&gids={!strGGGroups}&dest=%2Fbrainshark%2Flearning%2FmyLearning.asp%3Fui%3D507905" height="600px;" frameborder="false" width="100%" scrolling="true"/>
+                                                </td>
+                                            </tr>
+                                                
+                                        </table>
+                                        
+                                    </td>
+                                </tr>
+
+                            </apex:outputPanel>
+
+                        </apex:outputpanel>
+                    
+                    
+                
+                </table>
+            
+            </div>
+        </div>
+        </apex:form>
+    </body>
+
+    <style type="text/css">
+        .myFormStyle{
+            background-color: white;
+        }
+        
+        .boxTitle {
+            height: 30px;
+            margin: 0 0 0 0;
+            padding: 0 0 0 0;
+            display: block;
+            position: relative;
+            overflow: hidden;
+            background: url("{!URLFOR($Resource.jquery_news_ticker, '/images/messageticker_background.jpg')}");
+            font: 12px 'Trebuchet MS';
+            font-weight: bold;
+            text-transform: uppercase;
+            text-align: left;
+            line-height: 30px;
+            color: #fff;
+        }
+    
+        .boxContent {
+            border: 1px solid #575757;
+            //background-color: #FFFFFF;
+            background-color: #F3F3F3;
+            //width:95%;
+            height: 165px;
+            padding-top:15px;
+            padding-left:15px;
+            //max-width:277px;
+            //min-width:277px;
+            overflow:auto;
+            -moz-box-shadow:    6px 6px 5px #ccc;
+            -webkit-box-shadow: 6px 6px 5px #ccc;
+            box-shadow:         6px 6px 5px #ccc;
+        }
+        
+        .boxContentShort {
+            border: 1px solid #F3F3F3;
+            background-color: #FFFFFF;
+            width: 95%;
+            height: 135px;   
+            padding-top:5px;
+            padding-left:15px;
+            max-width:275px;
+            min-width:275px;
+            overflow:auto;
+            -moz-box-shadow:    6px 6px 5px  #ccc;
+            -webkit-box-shadow: 6px 6px 5px #ccc;
+            box-shadow:         6px 6px 5px #ccc;
+        }
+        
+        .NPNResourceBoxTitle {
+            height: 50px;
+            display: block;
+            position: relative;
+            overflow: hidden;
+            font-size: 16px ;
+            text-align: left;
+            line-height: 50px;
+            //border: 1px solid #575757;
+            //-moz-box-shadow:    0px 1px 1px 0px rgba(0,0,0,0.22);
+            -moz-box-shadow:    6px 6px 5px #ccc;
+            -webkit-box-shadow: 6px 6px 5px #ccc;
+            box-shadow:         6px 6px 5px #ccc;
+            color:  #76b900;
+            
+        }
+        
+        .cmdLinkStyle {
+            //background-color: #E4F5F8;
+            //border: 1px solid #C0DEED; 
+            text-decoration: none !important;
+        }
+        
+        
+        /* This CSS is for Report A Problem Button  */
+        .custPopup1{   
+            background-color: white;
+            border-width: 2px;
+            border-style: solid;
+            z-index: 9999;       
+            left: 35%;       
+            padding:10px; 
+            position: absolute;
+            /* These are the 3 css properties you will need to change so the popup 
+            displays in the center of the screen. First set the width. Then set 
+            margin-left to negative half of what the width is. You can add 
+            the height property for a fixed size pop up if you want.*/
+            width: 900px;   
+            margin-left: -300px;
+            top:200px;
+        }
+        
+        .popupBackground{   
+             background-color:black;
+             opacity: 0.20;
+             filter: alpha(opacity = 20);
+             position: absolute;
+             width: 100%;
+             height: 100%;   
+             top: 0;
+             left: 0;
+             z-index: 9998;
+         }
+         /*
+         .rmaPopup{
+            background-color: black;
+            -moz-border-radius: 6px 6px 6px 6px;
+            -webkit-border-radius: 6px;  
+            border-radius: 6px 6px 6px 6px;
+            border: 1px solid rgba(0,0,0,0.22);
+            opacity: 0.90;
+            filter: alpha(opacity = 90);
+            position: absolute;
+            width: 35%;
+            height: 200px;   
+            top: 450px;
+            left: 400px;
+            z-index: 9998;
+         }
+         */
+         .lsrPopup{
+            background-color: white;
+            -moz-border-radius: 6px 6px 6px 6px;
+            -webkit-border-radius: 6px;  
+            border-radius: 6px 6px 6px 6px;
+            border: 1px solid rgba(0,0,0,0.22);
+            //opacity: 0.90;
+            //filter: alpha(opacity = 90);
+            border-width: 2px;
+            border-style: solid;
+            z-index: 9999;       
+            left: 2.5%;       
+            padding: 5px; 
+            position: absolute;
+            width: 31.5%;
+            top: 695px;
+        }
+         .rmaPopup{
+            background-color: white;
+            -moz-border-radius: 6px 6px 6px 6px;
+            -webkit-border-radius: 6px;  
+            border-radius: 6px 6px 6px 6px;
+            border: 1px solid rgba(0,0,0,0.22);
+            //opacity: 0.90;
+            //filter: alpha(opacity = 90);
+            border-width: 2px;
+            border-style: solid;
+            z-index: 9999;       
+            left: 35%;       
+            padding: 5px; 
+            position: absolute;
+            width: 30.5%;
+            top: 695px;
+            word-wrap: break-word;
+        }
+        
+        .gsnhPopup{
+            background-color: white;
+            -moz-border-radius: 6px 6px 6px 6px;
+            -webkit-border-radius: 6px;  
+            border-radius: 6px 6px 6px 6px;
+            border: 1px solid rgba(0,0,0,0.22);
+            //opacity: 0.90;
+            //filter: alpha(opacity = 90);
+            border-width: 2px;
+            border-style: solid;
+            z-index: 9999;       
+            left: 66.5%;       
+            padding: 5px; 
+            position: absolute;
+            width: 30.4%;
+            top: 695px;
+        }
+        #content{
+            text-align: justify;
+        }
+        a{
+            text-decoration: none;
+        }
+        a:hover{ 
+            color: #76b900;
+            text-decoration: underline;
+        }
+        
+    </style>
+    
+    <script>
+        $(document).ready(function(){
+            if(document.getElementById('thePage:formId:idinpthdnTabname').value == "mdf"){
+                selectMDF();
+            }
+            else{
+                selectHOME();
+            }
+        })
+        
+        function selectmdftab(){    
+            document.getElementById('thePage:formId:idinpthdnTabname').value = "mdf";
+             selecttab();
+        }
+        
+        function selectedhome(){
+            document.getElementById('thePage:formId:idinpthdnTabname').value = "home";
+            selecttab();    
+        }
+        
+        function selectMDF(){
+            $("#mdfproduct").addClass("mdfproductselected");
+            $("#idamdf").css("color","black");
+            $("#home").removeClass("mdfproductselected");
+            $("#idahome").css("color","white");
+        }
+        
+        function selectHOME(){
+            $("#home").addClass("mdfproductselected");
+            $("#idahome").css("color","black");
+            $("#mdfproduct").removeClass("mdfproductselected");
+            $("#idamdf").css("color","white");
+        }
+    </script>
+
+</apex:page>

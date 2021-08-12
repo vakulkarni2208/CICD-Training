@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Search User and add it as Opportunity Team Member.</description>
+    <flowDefinition>Opportunity_Add_Opportunity_Team_Member</flowDefinition>
+    <label>Add Team Member</label>
+    <optionsCreateFeedItem>false</optionsCreateFeedItem>
+    <type>Flow</type>
+</QuickAction>

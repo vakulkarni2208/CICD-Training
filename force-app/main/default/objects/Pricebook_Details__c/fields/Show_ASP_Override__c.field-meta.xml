@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Show_ASP_Override__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Set it to true, for showing ASP Override editable field (only Enterprise Internal ones though)</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Set it to true, for showing ASP Override editable field (only Enterprise Internal ones though)</inlineHelpText>
+    <label>Show ASP Override</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

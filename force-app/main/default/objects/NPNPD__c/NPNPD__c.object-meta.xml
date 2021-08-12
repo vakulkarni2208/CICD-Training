@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <description>NPN Program Deal (EDU Lead Registration) : Channel Admin mappings based on Country Code
+SDS-3055-Approves moved to Custom Object. Only Other__c field is used from this CS</description>
+    <enableFeeds>false</enableFeeds>
+    <label>NPNPD</label>
+    <visibility>Public</visibility>
+</CustomObject>

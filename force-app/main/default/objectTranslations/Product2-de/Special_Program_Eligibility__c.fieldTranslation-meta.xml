@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Identify product eligibility for special promotions programs that may provide additional discounts and require Special price approvals. --></help>
+    <label><!-- Special Program Eligibility --></label>
+    <name>Special_Program_Eligibility__c</name>
+    <picklistValues>
+        <masterLabel>NFR</masterLabel>
+        <translation><!-- NFR --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CompetencyExhibitWithAccNameAndCompDate__c</fullName>
+    <externalId>false</externalId>
+    <formula>lEFT((
+IF (INCLUDES( Competency__c ,&quot;Compute&quot; ),&quot; Compute Competency Exhibit for &quot; &amp; Text(Program_Type__c) &amp; &quot; &amp; &quot;,null) &amp;
+IF (INCLUDES(Competency__c ,&quot;Visualization&quot;), &quot; Visualization Competency Exhibit for &quot; &amp; Text(Program_Type__c) &amp; &quot; &amp; &quot;,null) &amp;
+IF (INCLUDES(Competency__c ,&quot;Compute DGX&quot;), &quot; Compute DGX Competency Exhibit for &quot; &amp; Text(Program_Type__c) &amp; &quot; &amp; &quot;,null) &amp;
+IF (INCLUDES(Competency__c ,&quot;DGX&quot;), &quot; DGX Competency Exhibit for &quot; &amp; Text(Program_Type__c) &amp; &quot; &amp; &quot;,null) &amp;
+IF (INCLUDES(Competency__c ,&quot;Embedded Edge&quot;), &quot; Embedded Edge Competency Exhibit for &quot; &amp; Text(Program_Type__c) &amp; &quot; &amp; &quot;,null) &amp;
+IF (INCLUDES(Competency__c ,&quot;Virtualization&quot; ), &quot; Virtualization Competency Exhibit for &quot; &amp; Text(Program_Type__c) &amp; &quot; &amp; &quot;,null)),
+LEN(
+IF (INCLUDES( Competency__c ,&quot;Compute&quot; ),&quot; Compute Competency Exhibit for &quot; &amp; Text(Program_Type__c) &amp; &quot; &amp; &quot;,null) &amp;
+IF (INCLUDES(Competency__c ,&quot;Visualization&quot;), &quot; Visualization Competency Exhibit for &quot; &amp; Text(Program_Type__c) &amp; &quot; &amp; &quot;,null) &amp;
+IF (INCLUDES(Competency__c ,&quot;Compute DGX&quot;), &quot; Compute DGX Competency Exhibit for &quot; &amp; Text(Program_Type__c) &amp; &quot; &amp; &quot;,null) &amp;
+IF (INCLUDES(Competency__c ,&quot;DGX&quot;), &quot; DGX Competency Exhibit for &quot; &amp; Text(Program_Type__c) &amp; &quot; &amp; &quot;,null) &amp;
+IF (INCLUDES(Competency__c ,&quot;Embedded Edge&quot;), &quot; Embedded Edge Competency Exhibit for &quot; &amp; Text(Program_Type__c) &amp; &quot; &amp; &quot;,null) &amp;
+IF (INCLUDES(Competency__c ,&quot;Virtualization&quot; ), &quot; Virtualization Competency Exhibit for &quot; &amp; Text(Program_Type__c) &amp; &quot; &amp; &quot;,null)
+)-2)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>CompetencyExhibitWithAccNameAndCompDate</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

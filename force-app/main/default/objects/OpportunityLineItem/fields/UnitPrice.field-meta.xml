@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>UnitPrice</fullName>
+    <inlineHelpText>To change your Sales Price to an amount different from the Price Book please click on Log a Case on the Opportunity and fully detail the request</inlineHelpText>
+</CustomField>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <applicationVisibilities>
+        <application>NVIDIA_Sales_Lightning2</application>
+        <visible>true</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>Renewal_Sales</application>
+        <visible>true</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__LightningSalesConsole</application>
+        <visible>true</visible>
+    </applicationVisibilities>
+    <description>Permission set for renewals team access to Renewal Sales Home Page</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Renewal Sales Home Page Access</label>
+    <license>Salesforce</license>
+</PermissionSet>

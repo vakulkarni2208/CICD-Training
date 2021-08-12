@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ESP_L3_Case</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Account_Region__c</columns>
+    <columns>Severity__c</columns>
+    <columns>CASES.SUBJECT</columns>
+    <columns>Product_Category__c</columns>
+    <columns>Product_Family__c</columns>
+    <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
+    <columns>Duration_in_Customer_Status_Hrs__c</columns>
+    <columns>Time_Assigned_to_L3__c</columns>
+    <columns>Days_in_ESP_L3_Queue__c</columns>
+    <columns>Last_Activity_Date__c</columns>
+    <columns>CASES.ORIGIN</columns>
+    <filterScope>Queue</filterScope>
+    <label>ESP L3</label>
+    <queue>ESP_L3</queue>
+    <sharedTo>
+        <allInternalUsers/>
+    </sharedTo>
+</ListView>

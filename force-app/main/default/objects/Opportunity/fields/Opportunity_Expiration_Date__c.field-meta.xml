@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Opportunity_Expiration_Date__c</fullName>
+    <description>This field will have the &apos;Expired Date&apos; of the Tegra Embedded Partner Opportunity. This field can have either Future or Past dates. This field is being used in the Email templates for the Reminder Notification to the Partners about the expiration. The Value in this field will be populated/updated by the Batch Class and by an Opportunity Trigger.</description>
+    <externalId>false</externalId>
+    <label>Opportunity Expiration Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

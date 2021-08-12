@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- ZOR - Standard, ZSO - Sample, ZMRS - MRS Internal, ZRMA - Return --></help>
+    <label><!-- Order Type --></label>
+    <name>Order_Type__c</name>
+    <picklistValues>
+        <masterLabel>ZDO</masterLabel>
+        <translation><!-- ZDO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZKB</masterLabel>
+        <translation><!-- ZKB --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZMRS</masterLabel>
+        <translation><!-- ZMRS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZOR</masterLabel>
+        <translation><!-- ZOR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZRMA</masterLabel>
+        <translation><!-- ZRMA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZSO</masterLabel>
+        <translation><!-- ZSO --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

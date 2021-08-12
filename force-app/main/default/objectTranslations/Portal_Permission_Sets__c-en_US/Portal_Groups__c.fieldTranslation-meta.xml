@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Permissions &amp; Group Assignments --></label>
+    <name>Portal_Groups__c</name>
+    <picklistValues>
+        <masterLabel>Community</masterLabel>
+        <translation><!-- Community --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Compute DGX Portal Full</masterLabel>
+        <translation><!-- Compute DGX Portal Full --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Compute Portal Full</masterLabel>
+        <translation><!-- Compute Portal Full --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DISTI Compute DGX Elite</masterLabel>
+        <translation><!-- DISTI Compute DGX Elite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DISTI Compute DGX Preferred</masterLabel>
+        <translation><!-- DISTI Compute DGX Preferred --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DISTI Compute Elite</masterLabel>
+        <translation><!-- DISTI Compute Elite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DISTI Compute Preferred</masterLabel>
+        <translation><!-- DISTI Compute Preferred --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DISTI Virtualization Elite</masterLabel>
+        <translation><!-- DISTI Virtualization Elite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DISTI Virtualization Preferred</masterLabel>
+        <translation><!-- DISTI Virtualization Preferred --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DISTI Visualization Elite</masterLabel>
+        <translation><!-- DISTI Visualization Elite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DISTI Visualization Preferred</masterLabel>
+        <translation><!-- DISTI Visualization Preferred --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EDU Lead Registration</masterLabel>
+        <translation><!-- EDU Lead Registration --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Elite</masterLabel>
+        <translation><!-- Elite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Embedded Edge Portal Full</masterLabel>
+        <translation><!-- Embedded Edge Portal Full --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Entitlements</masterLabel>
+        <translation><!-- Entitlements --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GRID VCA Legacy</masterLabel>
+        <translation><!-- GRID VCA Legacy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GRID VGX Legacy</masterLabel>
+        <translation><!-- GRID VGX Legacy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IP Portal Lite</masterLabel>
+        <translation><!-- IP Portal Lite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Leads &amp; Opportunities</masterLabel>
+        <translation><!-- Leads &amp; Opportunities --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MDF</masterLabel>
+        <translation><!-- MDF --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MDFV3</masterLabel>
+        <translation><!-- MDFV3 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Manage Contacts</masterLabel>
+        <translation><!-- Manage Contacts --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Manager</masterLabel>
+        <translation><!-- Manager --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Marketing Hub</masterLabel>
+        <translation><!-- Marketing Hub --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NFR SW License Request</masterLabel>
+        <translation><!-- NFR SW License Request --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN Compliance(SFDC)</masterLabel>
+        <translation><!-- NPN Compliance(SFDC) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN Compliance(Tableau)</masterLabel>
+        <translation><!-- NPN Compliance(Tableau) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN QPB Statement</masterLabel>
+        <translation><!-- NPN QPB Statement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN Submit POS</masterLabel>
+        <translation><!-- NPN Submit POS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OEM Compute Elite</masterLabel>
+        <translation><!-- OEM Compute Elite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Opportunity Registration</masterLabel>
+        <translation><!-- Opportunity Registration --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Portal</masterLabel>
+        <translation><!-- Portal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Portal Lite</masterLabel>
+        <translation><!-- Portal Lite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RTX6000 Refresh Promotion</masterLabel>
+        <translation><!-- RTX6000 Refresh Promotion --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Renewals</masterLabel>
+        <translation><!-- Renewals --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SDP Edu Compute DGX Preferred</masterLabel>
+        <translation><!-- SDP Edu Compute DGX Preferred --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SDP PS Embedded Edge Preferred</masterLabel>
+        <translation><!-- SDP PS Embedded Edge Preferred --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SIP Embedded Edge Elite</masterLabel>
+        <translation><!-- SIP Embedded Edge Elite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SIP Embedded Edge Preferred</masterLabel>
+        <translation><!-- SIP Embedded Edge Preferred --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SOEM Portal Lite</masterLabel>
+        <translation><!-- SOEM Portal Lite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SP Compute DGX Elite</masterLabel>
+        <translation><!-- SP Compute DGX Elite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SP Compute DGX Preferred</masterLabel>
+        <translation><!-- SP Compute DGX Preferred --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SP Compute Elite</masterLabel>
+        <translation><!-- SP Compute Elite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SP Compute Preferred</masterLabel>
+        <translation><!-- SP Compute Preferred --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SP Virtualization Elite</masterLabel>
+        <translation><!-- SP Virtualization Elite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SP Virtualization Preferred</masterLabel>
+        <translation><!-- SP Virtualization Preferred --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SP Visualization Elite</masterLabel>
+        <translation><!-- SP Visualization Elite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SP Visualization Preferred</masterLabel>
+        <translation><!-- SP Visualization Preferred --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Service Cloud Access</masterLabel>
+        <translation><!-- Service Cloud Access --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Services Subcontractor</masterLabel>
+        <translation><!-- Services Subcontractor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TE Leads &amp; Opportunities</masterLabel>
+        <translation><!-- TE Leads &amp; Opportunities --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TPP Legacy</masterLabel>
+        <translation><!-- TPP Legacy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Virtualization Portal Full</masterLabel>
+        <translation><!-- Virtualization Portal Full --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Visualization Portal Full</masterLabel>
+        <translation><!-- Visualization Portal Full --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Number of VDI Seats --></label>
+    <name>Number_of_VDI_Seats__c</name>
+    <picklistValues>
+        <masterLabel>1-99</masterLabel>
+        <translation><!-- 1-99 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>100-499</masterLabel>
+        <translation><!-- 100-499 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>1500-4999</masterLabel>
+        <translation><!-- 1500-4999 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>500-1499</masterLabel>
+        <translation><!-- 500-1499 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>5000+</masterLabel>
+        <translation><!-- 5000+ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>None</masterLabel>
+        <translation><!-- None --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

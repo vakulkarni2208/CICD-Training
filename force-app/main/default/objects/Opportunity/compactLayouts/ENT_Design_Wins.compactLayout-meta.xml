@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ENT_Design_Wins</fullName>
+    <fields>AccountName__c</fields>
+    <fields>CloseDate</fields>
+    <fields>Amount</fields>
+    <fields>Project_Classification__c</fields>
+    <fields>OwnerId</fields>
+    <label>ENT Design Wins</label>
+</CompactLayout>

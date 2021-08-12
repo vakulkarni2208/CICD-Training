@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Debug_SAP_Order_for_Customere</fullName>
+    <columns>NAME</columns>
+    <columns>Condition_Type__c</columns>
+    <columns>Contract__c</columns>
+    <columns>Created_Date__c</columns>
+    <columns>Start_Date__c</columns>
+    <columns>End_Date__c</columns>
+    <columns>CREATEDBY_USER</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>LAST_UPDATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>SAP_Delivery__c</field>
+        <operation>contains</operation>
+        <value>85001625</value>
+    </filters>
+    <label>Debug SAP Order for Customer</label>
+    <language>en_US</language>
+</ListView>

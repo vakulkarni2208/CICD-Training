@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PartnerInitiatedOrNVInitiated__c</fullName>
+    <description>Used in Enterprise KPI dashboards</description>
+    <externalId>false</externalId>
+    <label>PartnerInitiatedOrNVInitiated</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>NV Initiated</fullName>
+                <default>false</default>
+                <label>NV Initiated</label>
+            </value>
+            <value>
+                <fullName>Partner Initiated</fullName>
+                <default>false</default>
+                <label>Partner Initiated</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

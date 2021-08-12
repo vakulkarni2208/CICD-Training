@@ -1,0 +1,196 @@
+<apex:page controller="portalHeaderControllerPhase2" showHeader="false" sidebar="false">
+<apex:includeScript value="/soap/ajax/17.0/connection.js"/>
+<script>
+    function changeBGcolor(cont){        
+        //document.getElementById('pageId:formId:home').style.backgroundColor = 'white';
+        //document.getElementById('pageId:formId:home').style.color = 'black';
+        //document.getElementById('pageId:formId:home').style.background = 'https://cs12.salesforce.com/resource/1364822697000/bgimage';        
+    }
+</script>
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.js"></script>
+<script>
+jQuery(function ($) {            
+                 
+            jQuery(".menu").find("td").each(function () {
+            
+            if (jQuery('#menuH').hasClass('home')) {
+                            jQuery(this).find("#home").addClass("selected");
+                    }
+            else if (jQuery('#menuH').hasClass('sales')) {
+                            jQuery(this).find("#sales").addClass("selected");
+                    }
+           else if (jQuery('#menuH').hasClass('marketing')) {
+                            jQuery(this).find("#marketing").addClass("selected");
+                    }                   
+           else if (jQuery('#menuH').hasClass('training')) {
+                            jQuery(this).find("#training").addClass("selected");
+                    }                    
+          else if (jQuery('#menuH').hasClass('support')) {
+                            jQuery(this).find("#support").addClass("selected");
+                    }
+          else if (jQuery('#menuH').hasClass('news')) {
+                            jQuery(this).find("#news").addClass("selected");
+                    }
+          else {                  
+                            jQuery(this).find("a").removeClass("selected");
+                    }
+            });
+       
+});
+</script>
+<style>
+.menu a,.menu a:hover,.menu a:visited{
+font-size:13px;text-decoration:none;color:#FFFFFF;font-weight:bold;padding: 7px 15px;
+}
+.menu a.selected{
+color:#000000;background:#ffffff;
+}
+</style>
+<!--<body style="overflow: hidden">-->
+
+<apex:form id="formId">
+<table cellspacing="0" border="0" cellpadding="0" height="100%" width="100%" style="background-color:black;border-color:red;overflow:hidden;min-width=250px;">
+  <tr style="height:110px;" >
+  <!--   <td width="500px;"> -->
+    <!--<td height="100%" width="100%;" style="vertical-align:top;background: url({!$Resource.PortalBanner}) no-repeat left top;">-->
+    <td style="vertical-align:top;background: url({!$Resource.PortalBanner}) no-repeat left top;background-size: 2020px 125px;">
+    
+    <table id="table" width="100%" border="0" class="menu">
+                   <tr style="height:40px;">
+                      <apex:repeat value="{!lstTabs}" var="tabs">
+                            <td style="width:70px;padding-top:77px;" align="center">
+                                    <apex:commandLink value="{!if(tabs.Name != 'Home', tabs.Name, null)}" onclick="window.open('{!tabs.Tab_URL__c}','_parent')" rendered="{!if(CurrentTab !=tabs.Name, TRUE, FALSE)}" >
+                                    <apex:image url="{!$Resource.homeIcon1}" height="25" width="25" rendered="{!if(tabs.Name == 'Home', TRUE, FALSE)}"/>                                           
+                                      </apex:commandLink>
+
+                                     <!-- Below is renderred when a specific link is selected-->
+                                    <apex:outputText style="padding:5px;background-color:white;font-weight:bold" value="{!if(tabs.Name != 'Home', tabs.Name, null)}" rendered="{!if(CurrentTab ==tabs.Name && CurrentTab != 'Home', TRUE, FALSE)}"   />
+                                    <apex:image style="padding-left:15px;padding-right:15px;" url="{!$Resource.homeIcon1}" height="25" width="25" rendered="{!if(CurrentTab == 'Home' && tabs.Name == 'Home', TRUE, FALSE)}"/>
+                              </td>
+                     </apex:repeat>
+
+                      <td>
+                          <table width="100%" border="0">
+                              <tr height="50px;">
+                                  <td valign="top" align="right" nowrap="nowrap">                    
+                                     <apex:commandLink style="padding-right:8px;font-size:13px;text-decoration:none;color:#FFFFFF;font-weight:bold" value="Logout" onclick="window.open('/secur/logout.jsp','_parent')"/>
+                                  </td>
+                              </tr>
+                             <!--<tr height="18px;"><td align="right" nowrap="nowrap"><span style="font-size:13px;text-decoration:none;color:#FFFFFF;font-weight:bold" target="_blank">Welcome {!$User.FirstName} {!$User.LastName}</span></td></tr>-->
+                             <tr height="18px;">
+                                 <td align="right" nowrap="nowrap"><apex:outputText style="padding-right:8px;font-size:13px;text-decoration:none;color:#FFFFFF;font-weight:bold" value="Welcome {!$User.FirstName} {!$User.LastName}"/></td>
+                             </tr>     
+                             <tr>
+                                 <td align="right" nowrap="nowrap"><apex:commandLink style="padding-right:8px;font-size:13px;text-decoration:none;color:#FFFFFF;font-weight:bold" value="My Profile" onclick="window.open('/apex/GRID_updateUserInfo','_parent')"/></td>
+                             </tr>            
+                            <tr height="5px"><td><span style="font-size:13px;text-decoration:none;color:#FFFFFF;font-weight:bold" target="_blank"></span></td></tr>
+                          </table>
+                      </td>
+
+                   </tr>
+            </table>
+    </td>
+</tr>
+<!--<tr width="100%" style="height:30px;background-color:#76B900;">
+<td align="left" class="menu">
+   <apex:outputText id="tabs" />
+</td></tr>-->
+<!--<tr>
+      <td width="1000px;">
+      <div style="margin-left:22px;margin-top:18px;height:88px;width:100%;background-color:#000000;overflow:hidden;">
+            <img src="{!$Resource.nvidia_header}" alt="NVIDIA logo" class="logo" height="60%"/>-
+            <table width="500px;" border="0" class="menu">
+                   <tr style="height:40px;">
+                      <apex:repeat value="{!lstTabs}" var="tabs">
+                            <td style="width:70px;" align="center">
+                                    <apex:commandLink value="{!if(tabs.Name != 'Home', tabs.Name, null)}" onclick="window.open('{!tabs.Tab_URL__c}','_parent')" rendered="{!if(CurrentTab !=tabs.Name, TRUE, FALSE)}" >
+                                    <apex:image url="{!$Resource.homeIcon1}" height="25" width="25" rendered="{!if(tabs.Name == 'Home', TRUE, FALSE)}"/>                                           
+                                      </apex:commandLink>-->
+
+                                      <!-- Below is renderred when a specific link is selected-->
+                                      <!--<apex:outputText style="padding:5px;background-color:white;font-weight:bold" value="{!if(tabs.Name != 'Home', tabs.Name, null)}" rendered="{!if(CurrentTab ==tabs.Name && CurrentTab != 'Home', TRUE, FALSE)}"   />
+                                    <apex:image style="padding-left:15px;padding-right:15px;" url="{!$Resource.homeIcon1}" height="25" width="25" rendered="{!if(CurrentTab == 'Home' && tabs.Name == 'Home', TRUE, FALSE)}"/>
+                              </td>
+                     </apex:repeat>
+                   </tr>
+            </table>
+      </div>
+    </td>        
+      <td style="vertical-align:top;background: url({!$Resource.header_claw_dark}) no-repeat right top;background-size:750px 130px;">      
+
+      <div style="float:right;margin-right:20px;margin-top:10px;">
+        <table width="100%">
+            <tr height="50px;">
+                <td colspan="2" valign="top" align="right" wrap="nowrap">                    
+                    <apex:commandLink style="font-size:13px;text-decoration:none;color:#FFFFFF;font-weight:bold" value="Logout" onclick="window.open('/secur/logout.jsp','_parent')"/>
+                </td>
+            </tr>
+            <tr height="18px;"><td align="right" nowrap="nowrap"><span style="font-size:13px;text-decoration:none;color:#FFFFFF;font-weight:bold" target="_blank">Welcome {!$User.FirstName} {!$User.LastName}</span></td></tr>     
+            <tr ><td align="right"><apex:commandLink style="font-size:13px;text-decoration:none;color:#FFFFFF;font-weight:bold" value="My Profile" onclick="window.open('/apex/GRID_updateUserInfo','_parent')"/></td></tr>            
+            <tr height="5px"><td><span style="font-size:13px;text-decoration:none;color:#FFFFFF;font-weight:bold" target="_blank"></span></td></tr>
+        </table>           
+        
+      </div>
+   </td>
+  </tr>-->
+</table>
+
+</apex:form>
+<script type="text/javascript">
+function displayTabs(tabs) {
+var strTabs = ""; 
+for( var i=0; i<tabs.length; i++) {
+var tab = tabs[i];
+//document.write(" " + tab.label + " " + tab.url + " " + tab.iconUrl + " " + tab.miniIconUrl + " " + tab.sobjectName );
+if (tab.label != "Home") {
+    //document.write("<b><a href=" + tab.url + " target='_parent'>" + tab.label +  "</a></b>&nbsp;");
+    strTabs += "&nbsp;&nbsp;<b><a href=" + tab.url + " target='_parent'>" + tab.label +  "</a></b>";
+    //document.getElementById('pageId:formId:tabs').value=strTabs;
+    //document.getElementById('{!$Component.formId.tabs}').innerHTML=strTabs;
+}
+}
+}
+ 
+ 
+ sforce.connection.sessionId = '{!$Api.Session_ID}';
+try {var
+result = sforce.connection.describeTabs();
+} catch(error) {
+document.write(error);
+}for
+(var i=0; i < result.length; i++) {var tabSet = result[i];
+var tabs = tabSet.get("tabs");
+if (tabSet.label == "Partner Portal") {
+    displayTabs(tabs);
+}
+}
+</script>
+<!--</body>-->
+<style type="text/css">
+      .topMenuSelected {
+         background-color:white;
+      }
+
+      .boxContent {
+         border: 1px solid #F3F3F3;
+         background-color: #F3F3F3;
+          width: 100%;
+          height: 160px;
+          padding-top:15px;
+          padding-left:15px;
+          overflow:auto;
+      }
+
+       .boxContentShort {
+          border: 1px solid #F3F3F3;
+         background-color: #F3F3F3;
+          width: 100%;
+          height: 130px;
+          padding-top:15px;
+          padding-left:15px;
+          overflow:auto;
+      }
+
+    </style>
+</apex:page>

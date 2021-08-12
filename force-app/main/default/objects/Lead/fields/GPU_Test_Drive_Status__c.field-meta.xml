@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GPU_Test_Drive_Status__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Please update status of GPU Test with either &quot;Pending&quot; or &quot;Completed&quot;.</inlineHelpText>
+    <label>GPU Test Drive Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Cluster Invitation Sent</fullName>
+                <default>false</default>
+                <label>Cluster Invitation Sent</label>
+            </value>
+            <value>
+                <fullName>Preparing Test Drive</fullName>
+                <default>false</default>
+                <label>Preparing Test Drive</label>
+            </value>
+            <value>
+                <fullName>Test Drive Pending</fullName>
+                <default>false</default>
+                <label>Test Drive Pending</label>
+            </value>
+            <value>
+                <fullName>Test Drive Completed</fullName>
+                <default>false</default>
+                <label>Test Drive Completed</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

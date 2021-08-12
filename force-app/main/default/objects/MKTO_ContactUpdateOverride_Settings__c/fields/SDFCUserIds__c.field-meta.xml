@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SDFCUserIds__c</fullName>
+    <description>SFDCUserIds semicolon separated, these are the users for which the updates to Contacts will be overridden</description>
+    <externalId>false</externalId>
+    <inlineHelpText>SFDCUserIds semicolon separated, these are the users for which the updates to Contacts will be overridden</inlineHelpText>
+    <label>SDFCUserIds</label>
+    <length>60</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

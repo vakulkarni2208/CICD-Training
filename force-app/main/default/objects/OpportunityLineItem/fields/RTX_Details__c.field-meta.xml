@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RTX_Details__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>RTX Server: RTX is deployed in the data center
+Data Science Workstation: Data science opportunities with workstations
+Workstation: Opportunity with no specific solution</inlineHelpText>
+    <label>RTX Details</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>RTX Server</fullName>
+                <default>false</default>
+                <label>RTX Server</label>
+            </value>
+            <value>
+                <fullName>Data Science Workstation</fullName>
+                <default>false</default>
+                <label>Data Science Workstation</label>
+            </value>
+            <value>
+                <fullName>Workstation</fullName>
+                <default>false</default>
+                <label>Workstation</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

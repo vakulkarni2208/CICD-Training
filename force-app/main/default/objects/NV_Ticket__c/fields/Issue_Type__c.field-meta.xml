@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Issue_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Issue Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Type__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Login</fullName>
+                <default>false</default>
+                <label>Login</label>
+            </value>
+            <value>
+                <fullName>Game rendering</fullName>
+                <default>false</default>
+                <label>Game rendering</label>
+            </value>
+            <value>
+                <fullName>Game display</fullName>
+                <default>false</default>
+                <label>Game display</label>
+            </value>
+            <value>
+                <fullName>User metadata</fullName>
+                <default>false</default>
+                <label>User metadata</label>
+            </value>
+            <value>
+                <fullName>Session Start</fullName>
+                <default>false</default>
+                <label>Session Start</label>
+            </value>
+            <value>
+                <fullName>Uninterrupted Session play</fullName>
+                <default>false</default>
+                <label>Uninterrupted Session play</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>JIRA</controllingFieldValue>
+            <controllingFieldValue>PagerDuty</controllingFieldValue>
+            <valueName>Login</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>JIRA</controllingFieldValue>
+            <controllingFieldValue>PagerDuty</controllingFieldValue>
+            <valueName>Game rendering</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>JIRA</controllingFieldValue>
+            <controllingFieldValue>PagerDuty</controllingFieldValue>
+            <valueName>Game display</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>JIRA</controllingFieldValue>
+            <controllingFieldValue>PagerDuty</controllingFieldValue>
+            <valueName>User metadata</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>JIRA</controllingFieldValue>
+            <controllingFieldValue>PagerDuty</controllingFieldValue>
+            <valueName>Session Start</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>JIRA</controllingFieldValue>
+            <controllingFieldValue>PagerDuty</controllingFieldValue>
+            <valueName>Uninterrupted Session play</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

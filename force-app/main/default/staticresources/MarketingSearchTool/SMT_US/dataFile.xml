@@ -1,0 +1,20 @@
+<?xml version="1.0"  encoding="UTF-8"  ?>
+<smt>
+	<path>D:\Documents and Settings\psaxena\My Documents\Flex Builder 3\SMT_EMAI_MainPage\bin-debug\MainPage.html</path>
+	<searchMarketingTool>Search Marketing Tools</searchMarketingTool>
+	<desc>You are currently viewing</desc>
+	<SelectCategories>Select Categories</SelectCategories>
+	<Select>Select</Select>
+	<ViewText>You are currently viewing</ViewText>
+	<BackText>Click Here to go back to Main Page</BackText>
+	<downloadButtonText>Download</downloadButtonText>
+	<moreInfoButtonText>More Info</moreInfoButtonText>
+	<nextButtonText>Next</nextButtonText>
+	<previousButtonText>Previous</previousButtonText>
+	<closeButtonText>Close</closeButtonText>
+	<preview>Click to Preview</preview>
+	<DocumentType>Document Type</DocumentType>
+	<FileSize>File Size</FileSize>
+	<LastModified>Last Modified</LastModified> 
+	<Description>Description</Description>
+</smt>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Customer_Updates__c</fullName>
+    <description>SDS: 2553: Notes provided in this filed will be shared as a public comment on an attached Cases.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>IMPORTANT: Notes provided in this field will be shared as a public comment on attached Cases.</inlineHelpText>
+    <label>Customer Updates</label>
+    <length>1000</length>
+    <trackHistory>false</trackHistory>
+    <type>LongTextArea</type>
+    <visibleLines>5</visibleLines>
+</CustomField>

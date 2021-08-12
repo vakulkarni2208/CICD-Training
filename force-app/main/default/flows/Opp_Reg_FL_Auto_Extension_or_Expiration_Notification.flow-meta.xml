@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Extn_Approved_Email_to_Partner</name>
+        <label>Extn Approved : Email to Partner</label>
+        <locationX>436</locationX>
+        <locationY>274</locationY>
+        <actionName>Opportunity.DR_Deal_Extn_Approved_Email_Alert_To_Partner</actionName>
+        <actionType>emailAlert</actionType>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>OppRegRecord.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Send_Expiry_Notification_to_NVIDIA_TAM</name>
+        <label>Send Expiry Notification to NVIDIA TAM</label>
+        <locationX>740</locationX>
+        <locationY>182</locationY>
+        <actionName>Opportunity.DR_Deal_Expiry_Reminder_Email_To_TAM_PBM</actionName>
+        <actionType>emailAlert</actionType>
+        <connector>
+            <targetReference>Is_it_T_7th_day</targetReference>
+        </connector>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>OppRegRecord.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Send_T_7th_day_deal_expiry_reminder_to_Partner</name>
+        <label>Send T-7th day deal expiry reminder to Partner</label>
+        <locationX>746</locationX>
+        <locationY>415</locationY>
+        <actionName>Opportunity.DR_Deal_Expiry_Reminder_Email_Alert_To_Partner</actionName>
+        <actionType>emailAlert</actionType>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>OppRegRecord.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <decisions>
+        <description>Approved AND Not Extn Approved AND status updated within last 10 days</description>
+        <name>Is_it_eligible_for_Auto_Extension</name>
+        <label>Is it eligible for Auto Extension</label>
+        <locationX>500</locationX>
+        <locationY>59</locationY>
+        <defaultConnectorLabel>[Default Outcome]</defaultConnectorLabel>
+        <rules>
+            <name>Eligile_for_Auto_Extn</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>OppRegRecord.DR_Deal_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Approved</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>OppRegRecord.DR_LastStatusModifiedDateWithinRangeN__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>OppRegRecord.IsClosed</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Auto_Extend_Opp_Reg</targetReference>
+            </connector>
+            <label>Eligile for Auto Extn</label>
+        </rules>
+        <rules>
+            <name>Not_Eligible_For_Auto_Extn</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>OppRegRecord.DR_LastStatusModifiedDateWithinRangeN__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>OppRegRecord.DR_Deal_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Approved</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>OppRegRecord.IsClosed</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Send_Expiry_Notification_to_NVIDIA_TAM</targetReference>
+            </connector>
+            <label>Not Eligible For Auto Extn</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>If today is the 7th day from expiration, send expiration notification to partner.</description>
+        <name>Is_it_T_7th_day</name>
+        <label>Is it T-7th day?</label>
+        <locationX>743</locationX>
+        <locationY>292</locationY>
+        <defaultConnectorLabel>[Default Outcome]</defaultConnectorLabel>
+        <rules>
+            <name>Today_is_T_7th_Day</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>OppRegRecord.DR_Days_to_Expire__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <numberValue>7.0</numberValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>OppRegRecord.DR_LastStatusModifiedDateWithinRangeN__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Send_T_7th_day_deal_expiry_reminder_to_Partner</targetReference>
+            </connector>
+            <label>Today is T-7th Day</label>
+        </rules>
+    </decisions>
+    <description>Opp Reg : Flow that Auto Extends and Sends T-7/6/5/4/3/2/1 days to expire notification to owner and sends &quot;7 days to expire&quot; reminder notification to Partner</description>
+    <interviewLabel>Opp Reg : FL : Auto Extension or Expiration Notification {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Opp Reg : FL : Auto Extension or Expiration Notification</label>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Auto_Extend_Opp_Reg</name>
+        <label>Auto Extend Opp Reg</label>
+        <locationX>440</locationX>
+        <locationY>173</locationY>
+        <connector>
+            <targetReference>Extn_Approved_Email_to_Partner</targetReference>
+        </connector>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>OppRegRecord.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>DR_Extension_Approved_By__c</field>
+            <value>
+                <elementReference>OppRegRecord.LastModifiedById</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>DR_Extension_Approved_Date__c</field>
+            <value>
+                <elementReference>$Flow.CurrentDateTime</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>DR_Extn_Duration__c</field>
+            <value>
+                <stringValue>90</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>DR_Is_Extension_Approved__c</field>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputAssignments>
+        <object>Opportunity</object>
+    </recordUpdates>
+    <startElementReference>Is_it_eligible_for_Auto_Extension</startElementReference>
+    <status>Obsolete</status>
+    <variables>
+        <description>Opportunity Registration Record that gets set from Process Builder</description>
+        <name>OppRegRecord</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Opportunity</objectType>
+    </variables>
+</Flow>

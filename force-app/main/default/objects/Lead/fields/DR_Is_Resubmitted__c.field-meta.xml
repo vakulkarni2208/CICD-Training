@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DR_Is_Resubmitted__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>SDS-1698- Sales: Allow for update and Resubmit Jetson Registrations</description>
+    <externalId>false</externalId>
+    <label>Is Resubmitted</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

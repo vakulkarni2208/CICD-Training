@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DR_Secondary_Product__c</fullName>
+    <description>Deal Registration</description>
+    <externalId>false</externalId>
+    <label>Secondary Product</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>DR_Deal_Type__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>DGX Station A100-40G</fullName>
+                <default>false</default>
+                <label>DGX Station A100-40G</label>
+            </value>
+            <value>
+                <fullName>DGX Station A100-80G</fullName>
+                <default>false</default>
+                <label>DGX Station A100-80G</label>
+            </value>
+            <value>
+                <fullName>DGX A100 40GB HW</fullName>
+                <default>false</default>
+                <label>DGX A100 40GB HW</label>
+            </value>
+            <value>
+                <fullName>DGX A100 80G Full</fullName>
+                <default>false</default>
+                <label>DGX A100 80G Full</label>
+            </value>
+            <value>
+                <fullName>vGPU vApps Perp - GRID</fullName>
+                <default>false</default>
+                <label>vGPU vApps Perp - GRID</label>
+            </value>
+            <value>
+                <fullName>vGPU vApps Subs 1yr - GRID</fullName>
+                <default>false</default>
+                <label>vGPU vApps Subs 1yr - GRID</label>
+            </value>
+            <value>
+                <fullName>vGPU vApps Subs 3yr - GRID</fullName>
+                <default>false</default>
+                <label>vGPU vApps Subs 3yr - GRID</label>
+            </value>
+            <value>
+                <fullName>vGPU vApps Subs 4yr - GRID</fullName>
+                <default>false</default>
+                <label>vGPU vApps Subs 4yr - GRID</label>
+            </value>
+            <value>
+                <fullName>vGPU vApps Subs 5yr - GRID</fullName>
+                <default>false</default>
+                <label>vGPU vApps Subs 5yr - GRID</label>
+            </value>
+            <value>
+                <fullName>vGPU vPC Perpetual - GRID</fullName>
+                <default>false</default>
+                <label>vGPU vPC Perpetual - GRID</label>
+            </value>
+            <value>
+                <fullName>vGPU vPC Subs 1yr - GRID</fullName>
+                <default>false</default>
+                <label>vGPU vPC Subs 1yr - GRID</label>
+            </value>
+            <value>
+                <fullName>vGPU vPC Subs 3yr - GRID</fullName>
+                <default>false</default>
+                <label>vGPU vPC Subs 3yr - GRID</label>
+            </value>
+            <value>
+                <fullName>vGPU vPC Subs 4yr - GRID</fullName>
+                <default>false</default>
+                <label>vGPU vPC Subs 4yr - GRID</label>
+            </value>
+            <value>
+                <fullName>vGPU vPC Subs 5yr - GRID</fullName>
+                <default>false</default>
+                <label>vGPU vPC Subs 5yr - GRID</label>
+            </value>
+            <value>
+                <fullName>vGPU vWS Perp - GRID</fullName>
+                <default>false</default>
+                <label>vGPU vWS Perp - GRID</label>
+            </value>
+            <value>
+                <fullName>vGPU vWS Subs 1yr - GRID</fullName>
+                <default>false</default>
+                <label>vGPU vWS Subs 1yr - GRID</label>
+            </value>
+            <value>
+                <fullName>vGPU vWS Subs 3yr - GRID</fullName>
+                <default>false</default>
+                <label>vGPU vWS Subs 3yr - GRID</label>
+            </value>
+            <value>
+                <fullName>vGPU vWS Subs 4yr - GRID</fullName>
+                <default>false</default>
+                <label>vGPU vWS Subs 4yr - GRID</label>
+            </value>
+            <value>
+                <fullName>vGPU vWS Subs 5yr - GRID</fullName>
+                <default>false</default>
+                <label>vGPU vWS Subs 5yr - GRID</label>
+            </value>
+            <value>
+                <fullName>vGPU Virtual Compute Server Subs 1yr - GRID</fullName>
+                <default>false</default>
+                <label>vGPU Virtual Compute Server Subs 1yr - GRID</label>
+            </value>
+            <value>
+                <fullName>Tesla P4</fullName>
+                <default>false</default>
+                <label>Tesla P4</label>
+            </value>
+            <value>
+                <fullName>Tesla P40</fullName>
+                <default>false</default>
+                <label>Tesla P40</label>
+            </value>
+            <value>
+                <fullName>Tesla V100 PCIE-16GB</fullName>
+                <default>false</default>
+                <label>Tesla V100 PCIE-16GB</label>
+            </value>
+            <value>
+                <fullName>Tesla P6</fullName>
+                <default>false</default>
+                <label>Tesla P6</label>
+            </value>
+            <value>
+                <fullName>Tesla M10</fullName>
+                <default>false</default>
+                <label>Tesla M10</label>
+            </value>
+            <value>
+                <fullName>Tesla M60</fullName>
+                <default>false</default>
+                <label>Tesla M60</label>
+            </value>
+            <value>
+                <fullName>Tesla P100 PCIE-16GB</fullName>
+                <default>false</default>
+                <label>Tesla P100 PCIE-16GB</label>
+            </value>
+            <value>
+                <fullName>Tesla T4</fullName>
+                <default>false</default>
+                <label>Tesla T4</label>
+            </value>
+            <value>
+                <fullName>AI Starter Kit</fullName>
+                <default>false</default>
+                <label>AI Starter Kit</label>
+            </value>
+            <value>
+                <fullName>Quadro RTX5000</fullName>
+                <default>false</default>
+                <label>Quadro RTX5000</label>
+            </value>
+            <value>
+                <fullName>Quadro RTX6000</fullName>
+                <default>false</default>
+                <label>Quadro RTX6000</label>
+            </value>
+            <value>
+                <fullName>Quadro RTX8000</fullName>
+                <default>false</default>
+                <label>Quadro RTX8000</label>
+            </value>
+            <value>
+                <fullName>RTX A6000</fullName>
+                <default>false</default>
+                <label>RTX A6000</label>
+            </value>
+            <value>
+                <fullName>Tesla V100-32GB</fullName>
+                <default>false</default>
+                <label>Tesla V100-32GB</label>
+            </value>
+            <value>
+                <fullName>Parabricks Pipelines Subscription, 1 GPU, 1 Year</fullName>
+                <default>false</default>
+                <label>Parabricks Pipelines Subscription, 1 GPU, 1 Year</label>
+            </value>
+            <value>
+                <fullName>Parabricks Pipelines Subscription, 1 GPU, 3 Year</fullName>
+                <default>false</default>
+                <label>Parabricks Pipelines Subscription, 1 GPU, 3 Year</label>
+            </value>
+            <value>
+                <fullName>DGX A100 P3687 System 8X 40GB GPUs</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>DGX A100 P3687 System 8X 40GB GPUs</label>
+            </value>
+            <value>
+                <fullName>DGX DL Station EDU-16GB</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>DGX DL Station EDU-16GB</label>
+            </value>
+            <value>
+                <fullName>DGX DL Station EDU-32GB</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>DGX DL Station EDU-32GB</label>
+            </value>
+            <value>
+                <fullName>DGX Fiber Mezz EDU</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>DGX Fiber Mezz EDU</label>
+            </value>
+            <value>
+                <fullName>DGX Pascal P100</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>DGX Pascal P100</label>
+            </value>
+            <value>
+                <fullName>DGX Pascal P100 EDU</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>DGX Pascal P100 EDU</label>
+            </value>
+            <value>
+                <fullName>DGX Station V100-16GB</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>DGX Station V100-16GB</label>
+            </value>
+            <value>
+                <fullName>DGX Station V100-32GB</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>DGX Station V100-32GB</label>
+            </value>
+            <value>
+                <fullName>DGX Volta Upgrade</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>DGX Volta Upgrade</label>
+            </value>
+            <value>
+                <fullName>DGX Volta Upgrade EDU</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>DGX Volta Upgrade EDU</label>
+            </value>
+            <value>
+                <fullName>DGX Volta V100 EDU-16GB</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>DGX Volta V100 EDU-16GB</label>
+            </value>
+            <value>
+                <fullName>DGX Volta V100 EDU-32GB</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>DGX Volta V100 EDU-32GB</label>
+            </value>
+            <value>
+                <fullName>DGX-1 Fiber Mezz-10GB</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>DGX-1 Fiber Mezz-10GB</label>
+            </value>
+            <value>
+                <fullName>DGX-1 Upgrade-16GB</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>DGX-1 Upgrade-16GB</label>
+            </value>
+            <value>
+                <fullName>DGX-1 V100-16GB</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>DGX-1 V100-16GB</label>
+            </value>
+            <value>
+                <fullName>DGX-1 V100-32GB</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>DGX-1 V100-32GB</label>
+            </value>
+            <value>
+                <fullName>DGX-2 V100-32GB</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>DGX-2 V100-32GB</label>
+            </value>
+            <value>
+                <fullName>DGX-2H V100-32GB</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>DGX-2H V100-32GB</label>
+            </value>
+            <value>
+                <fullName>GRID SW Perpetual EDU</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>GRID SW Perpetual EDU</label>
+            </value>
+            <value>
+                <fullName>GRID SW vApps Subs 1yr EDU</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>GRID SW vApps Subs 1yr EDU</label>
+            </value>
+            <value>
+                <fullName>GRID SW vApps Subs 3yr EDU</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>GRID SW vApps Subs 3yr EDU</label>
+            </value>
+            <value>
+                <fullName>GRID SW vPC Subs 1yr EDU</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>GRID SW vPC Subs 1yr EDU</label>
+            </value>
+            <value>
+                <fullName>GRID SW vPC Subs 3yr EDU</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>GRID SW vPC Subs 3yr EDU</label>
+            </value>
+            <value>
+                <fullName>GRID SW vWS Perpetual</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>GRID SW vWS Perpetual</label>
+            </value>
+            <value>
+                <fullName>GRID SW vWS Subs 3yr</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>GRID SW vWS Subs 3yr</label>
+            </value>
+            <value>
+                <fullName>GRID SW vWS Subs 3yr EDU</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>GRID SW vWS Subs 3yr EDU</label>
+            </value>
+            <value>
+                <fullName>GRID SW vWs Subs 1yr</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>GRID SW vWs Subs 1yr</label>
+            </value>
+            <value>
+                <fullName>GRID SW vWs Subs 1yr EDU</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>GRID SW vWs Subs 1yr EDU</label>
+            </value>
+            <value>
+                <fullName>Quadro vDWS Perp 1 CCU EDU</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Quadro vDWS Perp 1 CCU EDU</label>
+            </value>
+            <value>
+                <fullName>Quadro vDWS Subs 1 yr EDU</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Quadro vDWS Subs 1 yr EDU</label>
+            </value>
+            <value>
+                <fullName>Quadro vDWS Subs 3 yr EDU</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Quadro vDWS Subs 3 yr EDU</label>
+            </value>
+            <value>
+                <fullName>Quadro vDWS Subs 5 yr EDU</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Quadro vDWS Subs 5 yr EDU</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>DGX</controllingFieldValue>
+            <valueName>DGX Station A100-40G</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DGX</controllingFieldValue>
+            <valueName>DGX Station A100-80G</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DGX</controllingFieldValue>
+            <controllingFieldValue>Parabricks</controllingFieldValue>
+            <valueName>DGX A100 40GB HW</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DGX</controllingFieldValue>
+            <controllingFieldValue>Parabricks</controllingFieldValue>
+            <valueName>DGX A100 80G Full</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DGX</controllingFieldValue>
+            <valueName>AI Starter Kit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DGX</controllingFieldValue>
+            <valueName>Parabricks Pipelines Subscription, 1 GPU, 1 Year</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DGX</controllingFieldValue>
+            <valueName>Parabricks Pipelines Subscription, 1 GPU, 3 Year</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>vGPU</controllingFieldValue>
+            <valueName>vGPU vApps Perp - GRID</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>vGPU</controllingFieldValue>
+            <valueName>vGPU vApps Subs 1yr - GRID</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>vGPU</controllingFieldValue>
+            <valueName>vGPU vApps Subs 3yr - GRID</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>vGPU</controllingFieldValue>
+            <valueName>vGPU vApps Subs 4yr - GRID</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>vGPU</controllingFieldValue>
+            <valueName>vGPU vApps Subs 5yr - GRID</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>vGPU</controllingFieldValue>
+            <valueName>vGPU vPC Perpetual - GRID</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>vGPU</controllingFieldValue>
+            <valueName>vGPU vPC Subs 1yr - GRID</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>vGPU</controllingFieldValue>
+            <valueName>vGPU vPC Subs 3yr - GRID</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>vGPU</controllingFieldValue>
+            <valueName>vGPU vPC Subs 4yr - GRID</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>vGPU</controllingFieldValue>
+            <valueName>vGPU vPC Subs 5yr - GRID</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>vGPU</controllingFieldValue>
+            <valueName>vGPU vWS Perp - GRID</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>vGPU</controllingFieldValue>
+            <valueName>vGPU vWS Subs 1yr - GRID</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>vGPU</controllingFieldValue>
+            <valueName>vGPU vWS Subs 3yr - GRID</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>vGPU</controllingFieldValue>
+            <valueName>vGPU vWS Subs 4yr - GRID</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>vGPU</controllingFieldValue>
+            <valueName>vGPU vWS Subs 5yr - GRID</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>vGPU</controllingFieldValue>
+            <valueName>vGPU Virtual Compute Server Subs 1yr - GRID</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>vGPU</controllingFieldValue>
+            <valueName>Tesla P4</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>vGPU</controllingFieldValue>
+            <valueName>Tesla P40</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>vGPU</controllingFieldValue>
+            <valueName>Tesla V100 PCIE-16GB</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>vGPU</controllingFieldValue>
+            <valueName>Tesla P6</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>vGPU</controllingFieldValue>
+            <valueName>Tesla M10</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>vGPU</controllingFieldValue>
+            <valueName>Tesla M60</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>vGPU</controllingFieldValue>
+            <valueName>Tesla P100 PCIE-16GB</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>vGPU</controllingFieldValue>
+            <valueName>Tesla T4</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Server</controllingFieldValue>
+            <controllingFieldValue>Workstation</controllingFieldValue>
+            <valueName>Quadro RTX5000</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Server</controllingFieldValue>
+            <controllingFieldValue>Workstation</controllingFieldValue>
+            <valueName>Quadro RTX6000</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Server</controllingFieldValue>
+            <controllingFieldValue>Workstation</controllingFieldValue>
+            <valueName>Quadro RTX8000</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Server</controllingFieldValue>
+            <controllingFieldValue>Workstation</controllingFieldValue>
+            <valueName>RTX A6000</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Parabricks</controllingFieldValue>
+            <valueName>Tesla V100-32GB</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

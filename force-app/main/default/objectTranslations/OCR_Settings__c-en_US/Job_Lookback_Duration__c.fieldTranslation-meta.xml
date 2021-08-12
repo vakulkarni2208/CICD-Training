@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Job Lookback duration in minutes. It is used to find out the timestamp (Current Time - Job Lookback Duration) from which the job needs to process data --></help>
+    <label><!-- Job Lookback Duration --></label>
+    <name>Job_Lookback_Duration__c</name>
+</CustomFieldTranslation>

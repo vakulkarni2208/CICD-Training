@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Based on how the PO is flowing through the channel, please enter the Channel Partners associated. --></help>
+    <label><!-- Channel Partners Associated --></label>
+    <name>Channel_Partners_Associated__c</name>
+    <picklistValues>
+        <masterLabel>Disti/NPN VAR/Customer</masterLabel>
+        <translation><!-- Disti/NPN VAR/Customer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Strategic OEM/Customer</masterLabel>
+        <translation><!-- Strategic OEM/Customer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Strategic OEM/NPN VAR/Customer</masterLabel>
+        <translation><!-- Strategic OEM/NPN VAR/Customer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Strategic OEM/Non-NPN VAR/Customer</masterLabel>
+        <translation><!-- Strategic OEM/Non-NPN VAR/Customer --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

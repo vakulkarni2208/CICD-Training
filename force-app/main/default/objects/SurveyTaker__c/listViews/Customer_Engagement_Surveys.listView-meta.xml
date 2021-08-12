@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Customer_Engagement_Surveys</fullName>
+    <columns>NAME</columns>
+    <columns>Account_Name__c</columns>
+    <columns>Contact__c</columns>
+    <columns>Survey__c</columns>
+    <columns>CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Survey__c</field>
+        <operation>equals</operation>
+        <value>Customer Engagement Survey</value>
+    </filters>
+    <label>Customer Engagement Surveys</label>
+</ListView>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <baseObject>sbaa__EmailTemplate__c</baseObject>
+    <category>admin</category>
+    <deployed>true</deployed>
+    <description>To measure Email Template Usage</description>
+    <label>Email Templates</label>
+    <sections>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Id</field>
+            <table>sbaa__EmailTemplate__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Owner</field>
+            <table>sbaa__EmailTemplate__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <field>Name</field>
+            <table>sbaa__EmailTemplate__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>CreatedDate</field>
+            <table>sbaa__EmailTemplate__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>CreatedBy</field>
+            <table>sbaa__EmailTemplate__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>LastModifiedDate</field>
+            <table>sbaa__EmailTemplate__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>LastModifiedBy</field>
+            <table>sbaa__EmailTemplate__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>sbaa__TemplateId__c</field>
+            <table>sbaa__EmailTemplate__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>AutorabitExtId__c</field>
+            <table>sbaa__EmailTemplate__c</table>
+        </columns>
+        <masterLabel>Email Templates</masterLabel>
+    </sections>
+</ReportType>

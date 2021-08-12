@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <recordTypes>
+        <description><!-- SOQ -  Initial Order --></description>
+        <label><!-- Initial Order --></label>
+        <name>Initial_Order</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Not Submitted To Sap --></label>
+        <name>Not_Submitted_To_Sap</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Submitted To Sap --></label>
+        <name>Submitted_To_Sap</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Customer Requested Date on the PO is greater than the Quote Expiration Date --></errorMessage>
+        <name>Initial_Order_CRD_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- PO Amount must match with the total Order Amount --></errorMessage>
+        <name>Initial_Order_PO_Amount_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Purchase Order #, PO Amount, Sales Organization are required. --></errorMessage>
+        <name>Initial_Order_PO_Information</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Check flag if End Customer on Quote and PO are the same. If not, populate PO End Customer Information. --></errorMessage>
+        <name>New_Ordering_End_Customer_Information</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- PO Date is Required --></errorMessage>
+        <name>PO_Date_is_required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Can&apos;t contract the order. Activate the order and try again. --></errorMessage>
+        <name>SBQQ__Cannot_Contract_New_Order</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Sales Organization is Required --></errorMessage>
+        <name>Sales_Organization_is_required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter Purchase Order Number --></errorMessage>
+        <name>Validate_Purchase_Order_Number</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- EditOrderProducts --></label>
+        <name>SBQQ__EditOrderProducts</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Submit_To_SAP --></label>
+        <name>Submit_To_SAP</name>
+    </webLinks>
+</CustomObjectTranslation>

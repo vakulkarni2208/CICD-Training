@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Deployment Location --></label>
+    <name>Deployment_Location__c</name>
+    <picklistValues>
+        <masterLabel>Datacenter</masterLabel>
+        <translation><!-- Datacenter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Edge</masterLabel>
+        <translation><!-- Edge --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Workstation</masterLabel>
+        <translation><!-- Workstation --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

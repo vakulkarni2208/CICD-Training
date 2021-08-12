@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Partner_Competency__c</fullName>
+    <externalId>false</externalId>
+    <label>Partner Competency</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Partner_Program_Name__c</controllingField>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Compute</fullName>
+                <default>false</default>
+                <label>Compute</label>
+            </value>
+            <value>
+                <fullName>Compute DGX</fullName>
+                <default>false</default>
+                <label>Compute DGX</label>
+            </value>
+            <value>
+                <fullName>DGX</fullName>
+                <default>false</default>
+                <label>DGX</label>
+            </value>
+            <value>
+                <fullName>Embedded Edge</fullName>
+                <default>false</default>
+                <label>Embedded Edge</label>
+            </value>
+            <value>
+                <fullName>Healthcare</fullName>
+                <default>false</default>
+                <label>Healthcare</label>
+            </value>
+            <value>
+                <fullName>Virtualization</fullName>
+                <default>false</default>
+                <label>Virtualization</label>
+            </value>
+            <value>
+                <fullName>Visualization</fullName>
+                <default>false</default>
+                <label>Visualization</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Solutions Integration Partner</controllingFieldValue>
+            <controllingFieldValue>Solution Provider</controllingFieldValue>
+            <controllingFieldValue>OEM</controllingFieldValue>
+            <controllingFieldValue>Federal Systems Integrator</controllingFieldValue>
+            <controllingFieldValue>Distributor</controllingFieldValue>
+            <controllingFieldValue>Global Systems Integrator</controllingFieldValue>
+            <controllingFieldValue>Services Subcontractor</controllingFieldValue>
+            <controllingFieldValue>Cloud Service Provider</controllingFieldValue>
+            <controllingFieldValue>Service Delivery Partner</controllingFieldValue>
+            <controllingFieldValue>Solution Advisor</controllingFieldValue>
+            <valueName>Compute</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Solutions Integration Partner</controllingFieldValue>
+            <controllingFieldValue>Solution Provider</controllingFieldValue>
+            <controllingFieldValue>OEM</controllingFieldValue>
+            <controllingFieldValue>Federal Systems Integrator</controllingFieldValue>
+            <controllingFieldValue>Distributor</controllingFieldValue>
+            <controllingFieldValue>Global Systems Integrator</controllingFieldValue>
+            <controllingFieldValue>Services Subcontractor</controllingFieldValue>
+            <controllingFieldValue>Cloud Service Provider</controllingFieldValue>
+            <controllingFieldValue>Service Delivery Partner</controllingFieldValue>
+            <controllingFieldValue>Solution Advisor</controllingFieldValue>
+            <valueName>Compute DGX</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Solutions Integration Partner</controllingFieldValue>
+            <controllingFieldValue>Solution Provider</controllingFieldValue>
+            <controllingFieldValue>OEM</controllingFieldValue>
+            <controllingFieldValue>Federal Systems Integrator</controllingFieldValue>
+            <controllingFieldValue>Distributor</controllingFieldValue>
+            <controllingFieldValue>Global Systems Integrator</controllingFieldValue>
+            <controllingFieldValue>Tegra Embedded</controllingFieldValue>
+            <controllingFieldValue>Services Subcontractor</controllingFieldValue>
+            <controllingFieldValue>Service Delivery Partner</controllingFieldValue>
+            <controllingFieldValue>Solution Advisor</controllingFieldValue>
+            <valueName>Embedded Edge</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Solutions Integration Partner</controllingFieldValue>
+            <controllingFieldValue>Solution Provider</controllingFieldValue>
+            <controllingFieldValue>OEM</controllingFieldValue>
+            <controllingFieldValue>Federal Systems Integrator</controllingFieldValue>
+            <controllingFieldValue>Distributor</controllingFieldValue>
+            <controllingFieldValue>Global Systems Integrator</controllingFieldValue>
+            <controllingFieldValue>Services Subcontractor</controllingFieldValue>
+            <controllingFieldValue>Cloud Service Provider</controllingFieldValue>
+            <controllingFieldValue>Service Delivery Partner</controllingFieldValue>
+            <controllingFieldValue>Solution Advisor</controllingFieldValue>
+            <valueName>Virtualization</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Solutions Integration Partner</controllingFieldValue>
+            <controllingFieldValue>Solution Provider</controllingFieldValue>
+            <controllingFieldValue>OEM</controllingFieldValue>
+            <controllingFieldValue>Federal Systems Integrator</controllingFieldValue>
+            <controllingFieldValue>Distributor</controllingFieldValue>
+            <controllingFieldValue>Global Systems Integrator</controllingFieldValue>
+            <controllingFieldValue>Services Subcontractor</controllingFieldValue>
+            <controllingFieldValue>Cloud Service Provider</controllingFieldValue>
+            <controllingFieldValue>Service Delivery Partner</controllingFieldValue>
+            <controllingFieldValue>Solution Advisor</controllingFieldValue>
+            <valueName>Visualization</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Solution Provider</controllingFieldValue>
+            <valueName>DGX</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industry Focus</controllingFieldValue>
+            <valueName>Healthcare</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

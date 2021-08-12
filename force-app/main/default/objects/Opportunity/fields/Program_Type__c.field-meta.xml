@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Program_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Program Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Dev Promo</fullName>
+                <default>false</default>
+                <label>Dev Promo</label>
+            </value>
+            <value>
+                <fullName>DGX-1 Program Allocation</fullName>
+                <default>false</default>
+                <label>DGX-1 Program Allocation</label>
+            </value>
+            <value>
+                <fullName>DGX Opp Reg</fullName>
+                <default>false</default>
+                <label>DGX Opp Reg</label>
+            </value>
+            <value>
+                <fullName>DGX Opp Reg EDU</fullName>
+                <default>false</default>
+                <label>DGX Opp Reg EDU</label>
+            </value>
+            <value>
+                <fullName>DGX Opp Reg Inception</fullName>
+                <default>false</default>
+                <label>DGX Opp Reg Inception</label>
+            </value>
+            <value>
+                <fullName>DGX Opp Reg New Logo</fullName>
+                <default>false</default>
+                <label>DGX Opp Reg New Logo</label>
+            </value>
+            <value>
+                <fullName>DLI Opp Reg</fullName>
+                <default>false</default>
+                <label>DLI Opp Reg</label>
+            </value>
+            <value>
+                <fullName>EDU</fullName>
+                <default>false</default>
+                <label>EDU</label>
+            </value>
+            <value>
+                <fullName>EUC AMPLIFY PROGRAM 2015</fullName>
+                <default>false</default>
+                <label>EUC AMPLIFY PROGRAM 2015</label>
+            </value>
+            <value>
+                <fullName>Evaluation Testing</fullName>
+                <default>false</default>
+                <label>Evaluation Testing</label>
+            </value>
+            <value>
+                <fullName>GPU Test Drive Program</fullName>
+                <default>false</default>
+                <label>GPU Test Drive Program</label>
+            </value>
+            <value>
+                <fullName>GRID Program</fullName>
+                <default>false</default>
+                <label>GRID Program</label>
+            </value>
+            <value>
+                <fullName>GRID SW Accelerator</fullName>
+                <default>false</default>
+                <label>GRID SW Accelerator</label>
+            </value>
+            <value>
+                <fullName>GRID SW EDU Promo</fullName>
+                <default>false</default>
+                <label>GRID SW EDU Promo</label>
+            </value>
+            <value>
+                <fullName>NA GRID Sales Incentive Program - Oct - Jan 2015</fullName>
+                <default>false</default>
+                <label>NA GRID Sales Incentive Program - Oct - Jan 2015</label>
+            </value>
+            <value>
+                <fullName>NA GRID SE Pilot Rewards Program - Oct - Mar 2015</fullName>
+                <default>false</default>
+                <label>NA GRID SE Pilot Rewards Program - Oct - Mar 2015</label>
+            </value>
+            <value>
+                <fullName>NA GRID VAR SA INCENTIVE 2015</fullName>
+                <default>false</default>
+                <label>NA GRID VAR SA INCENTIVE 2015</label>
+            </value>
+            <value>
+                <fullName>None at this time</fullName>
+                <default>false</default>
+                <label>None at this time</label>
+            </value>
+            <value>
+                <fullName>North America GRID Incentive Program</fullName>
+                <default>false</default>
+                <label>North America GRID Incentive Program</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Parabricks Opp Reg</fullName>
+                <default>false</default>
+                <label>Parabricks Opp Reg</label>
+            </value>
+            <value>
+                <fullName>Parabricks Opp Reg EDU</fullName>
+                <default>false</default>
+                <label>Parabricks Opp Reg EDU</label>
+            </value>
+            <value>
+                <fullName>POC Development</fullName>
+                <default>false</default>
+                <label>POC Development</label>
+            </value>
+            <value>
+                <fullName>Product Development</fullName>
+                <default>false</default>
+                <label>Product Development</label>
+            </value>
+            <value>
+                <fullName>Seed</fullName>
+                <default>false</default>
+                <label>Seed</label>
+            </value>
+            <value>
+                <fullName>Tesla Installed Base Program (TIB)</fullName>
+                <default>false</default>
+                <label>Tesla Installed Base Program (TIB)</label>
+            </value>
+            <value>
+                <fullName>vGPU SW OppReg</fullName>
+                <default>false</default>
+                <label>vGPU SW OppReg</label>
+            </value>
+            <value>
+                <fullName>vGPU SW Opp Reg</fullName>
+                <default>false</default>
+                <label>vGPU SW Opp Reg</label>
+            </value>
+            <value>
+                <fullName>vGPU SW Opp Reg EDU</fullName>
+                <default>false</default>
+                <label>vGPU SW Opp Reg EDU</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Conga_Composer_DLI_PreAuthorization_Email</fullName>
+    <availability>online</availability>
+    <description>Originally created by Conga Solution Manager. Date of last use of Update Button from Conga Solution record: https://nvcrm--apxtconga4.na87.visual.force.com/a5Q1W0000015BIIUA2
+05-Feb-2020 02:56:01 PM</description>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <hasMenubar>false</hasMenubar>
+    <hasScrollbars>false</hasScrollbars>
+    <hasToolbar>false</hasToolbar>
+    <height>660</height>
+    <isResizable>false</isResizable>
+    <linkType>url</linkType>
+    <masterLabel>DLI PreAuthorization Email</masterLabel>
+    <openType>newWindow</openType>
+    <position>none</position>
+    <protected>false</protected>
+    <showsLocation>false</showsLocation>
+    <showsStatus>false</showsStatus>
+    <url>/apex/APXTConga4__Conga_Composer?SolMgr=1
+&amp;serverUrl={!API.Partner_Server_URL_370}
+&amp;Id={!Service_Delivery__c.Id}
+
+&amp;QueryId=[OLIfromSD]a5K1W000000x11r,
+[OpptyfromServiceDeli]a5K1W000000x1wO
+
+&amp;TemplateId=a5S1W000001hDQ7
+
+&amp;AC0=1
+&amp;AC1=DLI+Pre-Authorization+Email+Sent
+&amp;SC0=1
+&amp;SC1=Chatter
+&amp;DefaultPDF=1
+&amp;OFN=DLI+PreAuthorization+Document
+&amp;EmailTemplateId=00X1W0000027q47</url>
+    <width>900</width>
+</WebLink>

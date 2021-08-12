@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Entitlement_Name_cannot_be_edited</fullName>
+    <active>false</active>
+    <description>Service Cloud : Block edit to the Name and AccountId on Entitlement record</description>
+    <errorConditionFormula>(ISCHANGED( Name ) || ISCHANGED( AccountId ) ) &amp;&amp;   ($Profile.Name != &apos;System Administrator&apos; &amp;&amp; $Profile.Name != &apos;SVC SAP Integration&apos;  &amp;&amp; NOT($Permission.Service_Cloud_Allow_Edit_Entitlement_Name) )</errorConditionFormula>
+    <errorMessage>Entitlement Name and Account Name cannot be edited.</errorMessage>
+</ValidationRule>

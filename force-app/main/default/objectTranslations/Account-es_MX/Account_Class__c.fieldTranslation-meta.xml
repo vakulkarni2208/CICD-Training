@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Select the class that applies. Select &quot;Named Account&quot; if on Named Account List or a key important revenue account.  Select Lighthouse if major installation/test account.  Select General for all other type accounts. --></help>
+    <label><!-- Account Class --></label>
+    <name>Account_Class__c</name>
+    <picklistValues>
+        <masterLabel>General Account</masterLabel>
+        <translation><!-- General Account --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lighthouse Account</masterLabel>
+        <translation><!-- Lighthouse Account --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Named Account</masterLabel>
+        <translation><!-- Named Account --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

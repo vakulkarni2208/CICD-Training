@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Entitlement_Modification_Request</fullName>
+    <availability>online</availability>
+    <displayType>massActionButton</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>Entitlement Modification Request</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <requireRowSelection>false</requireRowSelection>
+    <url>/lightning/o/Case/new?recordTypeId=0121W0000005jKmQAI&amp;defaultFieldValues=ParentId={!Case.Id},AccountId={!Case.AccountId},Submitted_By__c={!User.Id}</url>
+</WebLink>

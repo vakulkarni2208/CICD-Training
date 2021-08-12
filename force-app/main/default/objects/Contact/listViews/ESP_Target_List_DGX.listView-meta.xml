@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ESP_Target_List_DGX</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>CONTACT.PHONE1</columns>
+    <columns>CONTACT.EMAIL</columns>
+    <columns>CONTACT.TITLE</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Community_User_Type__c</field>
+        <operation>contains</operation>
+        <value>ESP</value>
+    </filters>
+    <filters>
+        <field>Product_Lines__c</field>
+        <operation>contains</operation>
+        <value>DGX</value>
+    </filters>
+    <filters>
+        <field>CONTACT.EMAIL_OPT_OUT</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <label>ESP Target List - DGX</label>
+    <sharedTo>
+        <role>EMEA_Inside_Sales</role>
+        <role>EMEA_Inside_Sales_Manager</role>
+    </sharedTo>
+</ListView>

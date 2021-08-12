@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Incentive_Program_no__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>If the opportunity has applied for NVIDIA’s icafe incentive program, please fill in the approval no. here.  The no. can be found in the confirmation letter issued by Channel Support Center for each icafe application</inlineHelpText>
+    <label>Incentive Program no</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

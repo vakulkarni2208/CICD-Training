@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Account_Tag_Owner_Edit</fullName>
+    <active>true</active>
+    <description>Account Tag can be edited by the record owner</description>
+    <errorConditionFormula>And ( AND($Profile.Name &lt;&gt; &apos;System Administrator&apos;, $Profile.Name &lt;&gt; &apos;Sales Profile - Partner Admin&apos;,CreatedById &lt;&gt; $User.Id, $Profile.Name &lt;&gt; &apos;Data Administrator&apos; ,  NOT($Permission.DEPLOYMENT_USER_SKIP_VALIDATIONS) , NOT( $Permission.CRM_CPQ_ACCOUNT_CONTACT_ALIASING )), ischanged( Tag__c ))</errorConditionFormula>
+    <errorMessage>Only the record owner can edit the edit the record</errorMessage>
+</ValidationRule>

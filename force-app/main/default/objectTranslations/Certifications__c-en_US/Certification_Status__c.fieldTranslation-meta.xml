@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Certification Status --></label>
+    <name>Certification_Status__c</name>
+    <picklistValues>
+        <masterLabel>Certified</masterLabel>
+        <translation><!-- Certified --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Failed</masterLabel>
+        <translation><!-- Failed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>In Progress</masterLabel>
+        <translation><!-- In Progress --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Invalid – No response</masterLabel>
+        <translation><!-- Invalid – No response --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Invalid – Too many workshops</masterLabel>
+        <translation><!-- Invalid – Too many workshops --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Suspended</masterLabel>
+        <translation><!-- Suspended --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

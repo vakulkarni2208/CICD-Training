@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prevent_Updating_Sales_Price_on_Opps</fullName>
+    <active>false</active>
+    <description>This validation rule works with the permission set special pricing oppty recordy type access and will prevent users from updating the price on on non special pricing opportunity record type. Jira ticket 2915</description>
+    <errorConditionFormula>AND(
+NOT(Opportunity.RecordType.Name = &apos;Special Pricing Request&apos;),($Permission.Sales_Special_Pricing_Oppty_Record_Type_Access),
+ISCHANGED(UnitPrice) 
+)</errorConditionFormula>
+    <errorMessage>To update the pricing, please use the Get Help button.</errorMessage>
+</ValidationRule>

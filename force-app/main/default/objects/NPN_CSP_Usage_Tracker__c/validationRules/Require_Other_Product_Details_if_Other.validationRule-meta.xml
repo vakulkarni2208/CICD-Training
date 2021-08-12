@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Other_Product_Details_if_Other</fullName>
+    <active>true</active>
+    <description>If the Product selection contains Other then require text details on the Other Product being used</description>
+    <errorConditionFormula>AND ( INCLUDES( Products_Used__c , &quot;Other&quot;) , 
+ ISBLANK ( Other_Product_Details__c ))</errorConditionFormula>
+    <errorDisplayField>Other_Product_Details__c</errorDisplayField>
+    <errorMessage>If Products Used includes &apos;Other&apos; please detail the other product(s) being used</errorMessage>
+</ValidationRule>

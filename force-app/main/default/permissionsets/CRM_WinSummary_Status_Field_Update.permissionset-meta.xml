@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Users with this permission set can update the status field in win summary update</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>CRM : WinSummary Status Field Update</label>
+</PermissionSet>

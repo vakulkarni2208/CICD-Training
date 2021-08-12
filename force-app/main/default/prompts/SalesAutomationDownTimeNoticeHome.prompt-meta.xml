@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Prompt xmlns="http://soap.sforce.com/2006/04/metadata">
+    <masterLabel>Sales Automation Down Time Notice Home Page</masterLabel>
+    <promptVersions>
+        <actionButtonLabel>Learn More</actionButtonLabel>
+        <actionButtonLink>https://nvidia.sharepoint.com/:b:/r/sites/WWFONVIDIACRMInstructionalMaterials/WWFO%20NVIDIA%20CRM%20Training%20Materials/Creating%20Quote%20Records%20%E2%80%93%20Quick%20Start%20Guide%20for%20Account%20Managers.pdf?csf=1&amp;web=1&amp;e=QwCaQb</actionButtonLink>
+        <body>NVIDIA CRM Downtime Starting Friday, March 19 at noon (PDT) through Sunday, March 21, 6 PM (PDT), the NVIDIA CRM will be down for maintenance and will not be available. For training please reference training materials (&apos;CRM Training&apos;).</body>
+        <customApplication>NVIDIA_Sales_Lightning2</customApplication>
+        <delayDays>1</delayDays>
+        <dismissButtonLabel>Got It</dismissButtonLabel>
+        <displayPosition>BottomRight</displayPosition>
+        <displayType>FloatingPanel</displayType>
+        <endDate>2021-03-21</endDate>
+        <isPublished>false</isPublished>
+        <masterLabel>Sales Automation Down Time Notice Home Page</masterLabel>
+        <shouldDisplayActionButton>true</shouldDisplayActionButton>
+        <shouldIgnoreGlobalDelay>true</shouldIgnoreGlobalDelay>
+        <startDate>2021-03-18</startDate>
+        <targetPageKey1>home</targetPageKey1>
+        <targetPageType>standard__namedPage</targetPageType>
+        <timesToDisplay>1</timesToDisplay>
+        <title>Sales Automation Readiness (Mar22)</title>
+        <userAccess>Everyone</userAccess>
+        <userProfileAccess>Everyone</userProfileAccess>
+        <versionNumber>1</versionNumber>
+    </promptVersions>
+</Prompt>

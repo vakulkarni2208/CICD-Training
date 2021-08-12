@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- eg:&apos;OEM&apos;,&apos;Geforce&apos;,&apos;Embedded&apos;,&apos;Territory&apos;, etc --></help>
+    <label><!-- WWFO Coverage --></label>
+    <name>WWFO_Coverage__c</name>
+</CustomFieldTranslation>

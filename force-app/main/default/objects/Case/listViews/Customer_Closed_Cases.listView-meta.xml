@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Customer_Closed_Cases</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>CASES.SUBJECT</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>NAME</columns>
+    <columns>OWNER_NAME</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>Incident_Status__c</columns>
+    <columns>Incident_Substatus__c</columns>
+    <columns>CASES.CLOSED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Incident_Substatus__c</field>
+        <operation>equals</operation>
+        <value>Customer Closure</value>
+    </filters>
+    <filters>
+        <field>CASES.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Case.Community_User_Record_Type</value>
+    </filters>
+    <label>Customer Closed Cases</label>
+    <language>en_US</language>
+    <sharedTo>
+        <group>DRIVE_Constellation_Service_Group</group>
+        <group>NGC_Ready_Service_Group</group>
+        <group>Service_Cloud_JTP_L1</group>
+        <group>Service_Cloud_JTP_L2</group>
+        <group>Service_Cloud_NCR_L1</group>
+        <group>Service_Cloud_NCR_L2</group>
+        <group>Service_Cloud_Service_Managers</group>
+        <group>Service_Cloud_Supp_Mgrs_Account_Edit</group>
+        <role>Enterprise_Support</role>
+        <role>JTP_Agent</role>
+        <role>JTP_Manager</role>
+        <role>NCR_Agent</role>
+        <role>NCR_Manager</role>
+        <role>NV_Agent</role>
+        <role>Service</role>
+        <role>Service_Program</role>
+        <role>Service_Program_Director</role>
+        <role>Service_Program_Manager</role>
+        <role>Support_Director</role>
+        <role>Support_Manager</role>
+    </sharedTo>
+</ListView>

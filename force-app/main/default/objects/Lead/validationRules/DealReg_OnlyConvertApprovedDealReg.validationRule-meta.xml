@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DealReg_OnlyConvertApprovedDealReg</fullName>
+    <active>true</active>
+    <description>Only Approved Deal Registrations can be converted
+SDS-890 : Jetson Opp Reg Process</description>
+    <errorConditionFormula>AND(
+IsConverted = true,
+OR(RecordType.DeveloperName = &apos;Deal_Registration&apos;, RecordType.DeveloperName = &apos;Jetson_Deal_Registration&apos;),
+DR_Is_Approved__c &lt;&gt; true
+)</errorConditionFormula>
+    <errorMessage>Only Approved Deal Registrations can be converted.</errorMessage>
+</ValidationRule>

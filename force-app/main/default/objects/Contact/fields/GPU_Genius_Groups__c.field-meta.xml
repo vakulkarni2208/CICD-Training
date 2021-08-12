@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GPU_Genius_Groups__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Select all GPU Genius groups this user needs to be added to</inlineHelpText>
+    <label>GPU Genius Groups</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Learning ATP Partner:5874323</fullName>
+                <default>false</default>
+                <label>Learning ATP Partner:5874323</label>
+            </value>
+            <value>
+                <fullName>Learning Cisco:5501047</fullName>
+                <default>false</default>
+                <label>Learning Cisco:5501047</label>
+            </value>
+            <value>
+                <fullName>Learning Compute:3200491</fullName>
+                <default>false</default>
+                <label>Learning Compute:3200491</label>
+            </value>
+            <value>
+                <fullName>Learning Compute DGX:5753092</fullName>
+                <default>false</default>
+                <label>Learning Compute DGX:5753092</label>
+            </value>
+            <value>
+                <fullName>Learning CSP:5769933</fullName>
+                <default>false</default>
+                <label>Learning CSP:5769933</label>
+            </value>
+            <value>
+                <fullName>Learning Dell:4657800</fullName>
+                <default>false</default>
+                <label>Learning Dell:4657800</label>
+            </value>
+            <value>
+                <fullName>Learning Dell Data Center:5843833</fullName>
+                <default>false</default>
+                <label>Learning Dell Data Center:5843833</label>
+            </value>
+            <value>
+                <fullName>Learning Dell Workstation:4657800</fullName>
+                <default>false</default>
+                <label>Learning Dell Workstation:4657800</label>
+            </value>
+            <value>
+                <fullName>Learning Embedded Edge:5879418</fullName>
+                <default>false</default>
+                <label>Learning Embedded Edge:5879418</label>
+            </value>
+            <value>
+                <fullName>Learning GSI:5942052</fullName>
+                <default>false</default>
+                <label>Learning GSI:5942052</label>
+            </value>
+            <value>
+                <fullName>Learning Healthcare:5877534</fullName>
+                <default>false</default>
+                <label>Learning Healthcare:5877534</label>
+            </value>
+            <value>
+                <fullName>Learning HPE: 5414314</fullName>
+                <default>false</default>
+                <label>Learning HPE: 5414314</label>
+            </value>
+            <value>
+                <fullName>Learning HPI:5844095</fullName>
+                <default>false</default>
+                <label>Learning HPI:5844095</label>
+            </value>
+            <value>
+                <fullName>Learning IBM Cloud:5191859</fullName>
+                <default>false</default>
+                <label>Learning IBM Cloud:5191859</label>
+            </value>
+            <value>
+                <fullName>Learning IBM Power:5844092</fullName>
+                <default>false</default>
+                <label>Learning IBM Power:5844092</label>
+            </value>
+            <value>
+                <fullName>Learning Industry:5877534</fullName>
+                <default>false</default>
+                <label>Learning Industry:5877534</label>
+            </value>
+            <value>
+                <fullName>Learning Lenovo DCG:5550970</fullName>
+                <default>false</default>
+                <label>Learning Lenovo DCG:5550970</label>
+            </value>
+            <value>
+                <fullName>Learning Lenovo Workstation:5845271</fullName>
+                <default>false</default>
+                <label>Learning Lenovo Workstation:5845271</label>
+            </value>
+            <value>
+                <fullName>Learning NPN Community:4997879</fullName>
+                <default>false</default>
+                <label>Learning NPN Community:4997879</label>
+            </value>
+            <value>
+                <fullName>Learning SA DCP:5942050</fullName>
+                <default>false</default>
+                <label>Learning SA DCP:5942050</label>
+            </value>
+            <value>
+                <fullName>Learning SDP PS:5937339</fullName>
+                <default>false</default>
+                <label>Learning SDP PS:5937339</label>
+            </value>
+            <value>
+                <fullName>Learning Services Subcontractors:5674835</fullName>
+                <default>false</default>
+                <label>Learning Services Subcontractors:5674835</label>
+            </value>
+            <value>
+                <fullName>Learning Virtualization:2965513</fullName>
+                <default>false</default>
+                <label>Learning Virtualization:2965513</label>
+            </value>
+            <value>
+                <fullName>Learning Visualization:4320588</fullName>
+                <default>false</default>
+                <label>Learning Visualization:4320588</label>
+            </value>
+            <value>
+                <fullName>NPN Compute DGX Sales:5765886</fullName>
+                <default>false</default>
+                <label>NPN Compute DGX Sales:5765886</label>
+            </value>
+            <value>
+                <fullName>NPN Compute DGX Technical:5765889</fullName>
+                <default>false</default>
+                <label>NPN Compute DGX Technical:5765889</label>
+            </value>
+            <value>
+                <fullName>NPN Compute Sales:5642753</fullName>
+                <default>false</default>
+                <label>NPN Compute Sales:5642753</label>
+            </value>
+            <value>
+                <fullName>NPN Compute Sales CHINESE:5754894</fullName>
+                <default>false</default>
+                <label>NPN Compute Sales CHINESE:5754894</label>
+            </value>
+            <value>
+                <fullName>NPN Compute Technical:5642754</fullName>
+                <default>false</default>
+                <label>NPN Compute Technical:5642754</label>
+            </value>
+            <value>
+                <fullName>NPN CSP Virtualization Sales:5749415</fullName>
+                <default>false</default>
+                <label>NPN CSP Virtualization Sales:5749415</label>
+            </value>
+            <value>
+                <fullName>NPN CSP Virtualization Technical:5749418</fullName>
+                <default>false</default>
+                <label>NPN CSP Virtualization Technical:5749418</label>
+            </value>
+            <value>
+                <fullName>NPN Disti Compute DGX Sales-:5874555</fullName>
+                <default>false</default>
+                <label>NPN Disti Compute DGX Sales:5874555</label>
+            </value>
+            <value>
+                <fullName>NPN Disti Compute DGX Technical:5874554</fullName>
+                <default>false</default>
+                <label>NPN Disti Compute DGX Technical:5874554</label>
+            </value>
+            <value>
+                <fullName>NPN Disti Compute Learning Sales:5874551</fullName>
+                <default>false</default>
+                <label>NPN Disti Compute Learning Sales:5874551</label>
+            </value>
+            <value>
+                <fullName>NPN Disti Compute Learning Technical:5874550</fullName>
+                <default>false</default>
+                <label>NPN Disti Compute Learning Technical:5874550</label>
+            </value>
+            <value>
+                <fullName>NPN Disti Virtualization Learning Technical:5874552</fullName>
+                <default>false</default>
+                <label>NPN Disti Virtualization Learning Technical:5874552</label>
+            </value>
+            <value>
+                <fullName>NPN Disti Virtualization Sales:5874553</fullName>
+                <default>false</default>
+                <label>NPN Disti Virtualization Sales:5874553</label>
+            </value>
+            <value>
+                <fullName>NPN Disti Visualization Learning Sales:5874549</fullName>
+                <default>false</default>
+                <label>NPN Disti Visualization Learning Sales:5874549</label>
+            </value>
+            <value>
+                <fullName>NPN Disti Visualization Learning Technical:5874548</fullName>
+                <default>false</default>
+                <label>NPN Disti Visualization Learning Technical:5874548</label>
+            </value>
+            <value>
+                <fullName>NPN Embedded Edge Sales:5874123</fullName>
+                <default>false</default>
+                <label>NPN Embedded Edge Sales:5874123</label>
+            </value>
+            <value>
+                <fullName>NPN Embedded Edge Technical:5874122</fullName>
+                <default>false</default>
+                <label>NPN Embedded Edge Technical:5874122</label>
+            </value>
+            <value>
+                <fullName>NPN Healthcare Training:5877154</fullName>
+                <default>false</default>
+                <label>NPN Healthcare Training:5877154</label>
+            </value>
+            <value>
+                <fullName>NPN Virtualization Sales:5642755</fullName>
+                <default>false</default>
+                <label>NPN Virtualization Sales:5642755</label>
+            </value>
+            <value>
+                <fullName>NPN Virtualization Technical:5642756</fullName>
+                <default>false</default>
+                <label>NPN Virtualization Technical:5642756</label>
+            </value>
+            <value>
+                <fullName>NPN Visualization Sales:5642757</fullName>
+                <default>false</default>
+                <label>NPN Visualization Sales:5642757</label>
+            </value>
+            <value>
+                <fullName>NPN Visualization Technical:5642758</fullName>
+                <default>false</default>
+                <label>NPN Visualization Technical:5642758</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>5</visibleLines>
+</CustomField>

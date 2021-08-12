@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>is_Certification_Active_Formula__c</fullName>
+    <description>SDS-2793: This field auto calculates if the current Certification is Active/inActive</description>
+    <externalId>false</externalId>
+    <formula>/*
+IF( ISPICKVAL(Training_Service_Catalog__r.Active__c, &apos;Active&apos;) &amp;&amp; (ISBLANK(Expiration_Date__c) || Expiration_Date__c &gt; TODAY()), TRUE, FALSE)
+*/
+
+/* SDS-2950: Updated the previous version of the formula to replace Expiration Date logic with the Certification Status field*/
+IF(ISPICKVAL(Certification_Status__c, &apos;Certified&apos;) &amp;&amp; ISPICKVAL(Training_Service_Catalog__r.Active__c, &apos;Active&apos;), TRUE, FALSE)</formula>
+    <label>is Certification Active (F)</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Security Restrictions --></label>
+    <name>Security_Restrictions__c</name>
+    <picklistValues>
+        <masterLabel>No Entry by Service Personnel</masterLabel>
+        <translation><!-- No Entry by Service Personnel --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Logs</masterLabel>
+        <translation><!-- No Logs --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Photos</masterLabel>
+        <translation><!-- No Photos --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No USB Drives</masterLabel>
+        <translation><!-- No USB Drives --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

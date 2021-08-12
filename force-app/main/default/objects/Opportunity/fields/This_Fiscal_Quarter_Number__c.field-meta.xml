@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>This_Fiscal_Quarter_Number__c</fullName>
+    <description>SDS-2546. Special Pricing 1.2 items (Conga, Lookup field)
+* This field is being used in the Flow to fetch the &quot;THIS FISCAL QUARTER&quot; End Date value.</description>
+    <externalId>false</externalId>
+    <formula>if(TODAY() &gt;= date(2023, 10, 30), 4,
+if(TODAY() &gt;= date(2023, 7, 31), 3,
+if(TODAY() &gt;= date(2023, 5, 1), 2,
+if(TODAY() &gt;= date(2023, 1, 30), 1,
+if(TODAY() &gt;= date(2022, 10, 31), 4,
+if(TODAY() &gt;= date(2022, 8, 1), 3,
+if(TODAY() &gt;= date(2022, 5, 2), 2,
+if(TODAY() &gt;= date(2022, 1, 31), 1,
+if(TODAY() &gt;= date(2021, 11, 1), 4,
+if(TODAY() &gt;= date(2021, 8, 2), 3,
+if(TODAY() &gt;= date(2021, 5, 3), 2,
+if(TODAY() &gt;= date(2021, 2, 1), 1,
+if(TODAY() &gt;= date(2020, 10, 26), 4,
+if(TODAY() &gt;= date(2020, 7, 27), 3,
+if(TODAY() &gt;= date(2020, 4, 27), 2,
+if(TODAY() &gt;= date(2020, 1, 27), 1,
+if(TODAY() &gt;= date(2019, 10, 28), 4,
+if(TODAY() &gt;= date(2019, 7, 29), 3,
+if(TODAY() &gt;= date(2019, 4, 29), 2,
+if(TODAY() &gt;= date(2019, 1, 28), 1, null))))))))))))))))))))</formula>
+    <label>This Fiscal Quarter Number</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

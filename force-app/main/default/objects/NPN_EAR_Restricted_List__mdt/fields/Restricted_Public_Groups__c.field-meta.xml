@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Restricted_Public_Groups__c</fullName>
+    <description>List of Semicolon separated Public Group Labels that should not be assigned to NPN Users</description>
+    <externalId>false</externalId>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <inlineHelpText>List of Semicolon separated Public Group Labels that should not be assigned to NPN Users</inlineHelpText>
+    <label>Restricted Public Groups</label>
+    <length>32768</length>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

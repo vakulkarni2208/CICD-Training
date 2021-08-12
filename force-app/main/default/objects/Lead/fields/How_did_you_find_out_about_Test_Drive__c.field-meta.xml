@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>How_did_you_find_out_about_Test_Drive__c</fullName>
+    <externalId>false</externalId>
+    <label>How did you find out about Test Drive?</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>NVIDIA Email or Newsletter</fullName>
+                <default>false</default>
+                <label>NVIDIA Email or Newsletter</label>
+            </value>
+            <value>
+                <fullName>NVIDIA Social Web - Blog/Facebook</fullName>
+                <default>false</default>
+                <label>NVIDIA Social Web - Blog/Facebook</label>
+            </value>
+            <value>
+                <fullName>Partner Email or Newsletter</fullName>
+                <default>false</default>
+                <label>Partner Email or Newsletter</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

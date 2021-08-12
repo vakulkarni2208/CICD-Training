@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Service Cloud field to Log the processing status for Entitlements. --></help>
+    <label><!-- Service Entitlement Processing Status --></label>
+    <name>Entitlement_Processing_Status__c</name>
+</CustomFieldTranslation>

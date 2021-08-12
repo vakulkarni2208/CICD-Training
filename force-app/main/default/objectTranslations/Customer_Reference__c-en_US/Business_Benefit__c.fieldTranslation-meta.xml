@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- What&apos;s the potential impact to people?
+What&apos;s the potential impact to industry? --></help>
+    <label><!-- Business Benefit --></label>
+    <name>Business_Benefit__c</name>
+</CustomFieldTranslation>

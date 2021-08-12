@@ -1,0 +1,70 @@
+<apex:page controller="chartController" showHeader="false" sidebar="false">
+
+<table align="center" width="1000px;" border="0" cellpadding="5" cellspacing="40" style="background-color:#FFFFFF;color:#393939"> 
+<!--   <tr><td colspan="3" nowrap="true" valign="top">
+   <b><hr color="#76B900" size="5" nowrap="true" width="100%"/></b>
+   <font size="3"><b>ACCOUNT DASHBOARD</b></font>
+   </td></tr>-->
+    <tr height="260px;">                
+        <td width="40%" align="center" valign="top" class="cellBorder" nowrap="true">
+            <apex:outputPanel rendered="{!if(pieDataLeadsByOwner.size>0,false, true)}">
+                <font color="#393939" size="3" align="left"><b>Company Leads</b></font><br /><br /><br />
+                <apex:outputText rendered="{!if(pieDataLeadsByOwner.size>0 ,false,true)}"><font color="red" size="3" align="left" valign="middle">Sorry, there are no leads at this time</font></apex:outputText>
+            </apex:outputPanel>
+            
+            <apex:outputPanel rendered="{!if(pieDataLeadsByOwner.size>0,true,false)}">
+            <font color="#393939" size="3" align="left"><b>Company Leads</b></font>    
+            <apex:outputLink value="/00Q/o" target="_blank">        
+            <apex:chart height="200" width="100%" data="{!pieDataLeadsByOwner}" >               
+                <apex:pieSeries dataField="leaddata" labelField="leadOwner" tips="false" >
+                           <apex:chartLabel display="none" field="leadOwner" font="12px  Helvetica, sans-serif" />  
+                 </apex:pieSeries>
+              <apex:legend position="right" />  
+            </apex:chart>       
+            </apex:outputLink>       
+            </apex:outputPanel>
+        </td>
+        
+        <td width="40%" align="center" valign="top" class="cellBorder" nowrap="true">
+          <apex:outputPanel rendered="{!if(PieDataOpportunitiesByOwner.size>0,false, true)}">
+                <font color="#393939" size="3" align="left"><b>Company Opportunities</b></font><br /><br /><br />
+                <apex:outputText rendered="{!if(PieDataOpportunitiesByOwner.size>0 ,false,true)}"><font color="red" size="3" align="left" valign="middle">Sorry, there are no opportunities at this time</font></apex:outputText>
+            </apex:outputPanel>
+          <apex:outputPanel rendered="{!if(PieDataOpportunitiesByOwner.size>0 ,true,false)}">                          
+          <font color="#393939" size="3">  <b>Company Opportunities</b></font>
+          <apex:outputLink value="/006/o" target="_blank">
+            <apex:chart height="200" width="100%" data="{!PieDataOpportunitiesByOwner}" animate="">                                
+                <apex:pieSeries dataField="data" labelField="opportunityOwner" tips="false">
+                    <apex:chartLabel display="none" field="opportunityOwner" font="12px  Helvetica, sans-serif" />
+                </apex:pieSeries>
+                <apex:legend position="right" /> 
+            </apex:chart>
+            </apex:outputLink>
+            </apex:outputPanel>    
+        </td>  
+        <td width="20%" align="center" valign="top" nowrap="true">&nbsp;&nbsp;</td>
+    </tr>
+    
+</table>
+
+<style type="text/css">
+.cellBorder {
+         border: 1px solid #76B900;
+         box-shadow:         6px 6px 5px #ccc;
+      }
+
+.seperator {
+height: 15px;
+background: #4e9231 url(images/green_divider_perspective.jpg) no-repeat center top;
+margin: 0;
+width: 940px;
+}
+
+.rev {
+background-color: #929292;
+color: #fffeff;
+padding: 2px;
+}
+</style> 
+
+</apex:page>

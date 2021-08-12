@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Select the vGPU Type that applies to this opportunity. --></help>
+    <label><!-- vGPU Type --></label>
+    <name>vGPU_Type__c</name>
+    <picklistValues>
+        <masterLabel>Citrix</masterLabel>
+        <translation><!-- Citrix --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VMware</masterLabel>
+        <translation><!-- VMware --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

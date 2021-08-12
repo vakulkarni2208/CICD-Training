@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Check box if Elite Partner has registered to participate --></help>
+    <label><!-- NVIDIA Rewards (Elite) --></label>
+    <name>NVIDIA_Rewards__c</name>
+</CustomFieldTranslation>

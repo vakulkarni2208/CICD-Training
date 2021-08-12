@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PrimaryOEM_RequireAt20pc</fullName>
+    <active>true</active>
+    <description>Require Primary OEM/ODM/etc on Enterprise Opportunities before 20% probability
+3/30/2021- @Sudhakar/@MP - Added criteria to suppress validation for ISV&apos;s.</description>
+    <errorConditionFormula>AND(
+ $UserRole.Name &lt;&gt; &quot;Administrator&quot;,
+ RecordType.DeveloperName = &apos;Enterprise_Sales_Opportunity&apos;,
+ ISBLANK(Primary_NPN_OEM_ODM_Disti__c),
+ NOT(ISPICKVAL(Type, &quot;Deal Registration&quot;)),
+ NOT(ISPICKVAL(Opportunity_Sale_Type__c, &apos;ISV&apos;)),
+ NOT(ISPICKVAL(OEM_ODM_Disti_Status__c, &apos;Direct from NVIDIA&apos;)),
+ Probability &gt;= 0.19
+)</errorConditionFormula>
+    <errorDisplayField>Primary_NPN_OEM_ODM_Disti__c</errorDisplayField>
+    <errorMessage>At 20% or greater Probability please detail the Primary OEM/ODM/etc.</errorMessage>
+</ValidationRule>

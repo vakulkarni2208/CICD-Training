@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>Candidate_ID__c</columns>
+    <columns>Employee__c</columns>
+    <columns>Expected_Start_Date__c</columns>
+    <columns>JobReq_Workday_ID__c</columns>
+    <columns>Manager__c</columns>
+    <columns>Manager_Employee_Number__c</columns>
+    <columns>Notes_Comments__c</columns>
+    <columns>Offer_Status__c</columns>
+    <columns>Org_3__c</columns>
+    <columns>Org_4__c</columns>
+    <columns>Requisition_ID__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All</label>
+    <language>en_US</language>
+</ListView>

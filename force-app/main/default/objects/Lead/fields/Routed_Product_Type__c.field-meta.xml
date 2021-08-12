@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Routed_Product_Type__c</fullName>
+    <businessOwnerUser>kgoles@nvidia.com.trprod</businessOwnerUser>
+    <description>What was the product type value used at time of routing for LeanData</description>
+    <externalId>false</externalId>
+    <label>Routed Product Type</label>
+    <length>40</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Customer_Reference_Compact_Layout</fullName>
+    <fields>Company_Name__c</fields>
+    <fields>Account_Manager__c</fields>
+    <fields>Account_Industry__c</fields>
+    <fields>Approved_for_use__c</fields>
+    <fields>Expiration_Date__c</fields>
+    <label>Customer Reference Compact Layout</label>
+</CompactLayout>

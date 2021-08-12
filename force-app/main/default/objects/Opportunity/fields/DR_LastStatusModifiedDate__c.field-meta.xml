@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DR_LastStatusModifiedDate__c</fullName>
+    <description>Last Modified Date of Stage or Status: Next Step field</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Last Modified Date of Stage or Status: Next Step field</inlineHelpText>
+    <label>LastStatusModifiedDate</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

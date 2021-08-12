@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Last_Activity_User_Email__c</fullName>
+    <description>This field is get auto populated with the name of User who did last communication on Case either via Case Comment or Email.</description>
+    <externalId>false</externalId>
+    <label>Last Activity User Email</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Email</type>
+    <unique>false</unique>
+</CustomField>

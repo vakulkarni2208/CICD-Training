@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Last Modified Date of Stage or Status: Next Step field --></help>
+    <label><!-- LastStatusModifiedDate --></label>
+    <name>DR_LastStatusModifiedDate__c</name>
+</CustomFieldTranslation>

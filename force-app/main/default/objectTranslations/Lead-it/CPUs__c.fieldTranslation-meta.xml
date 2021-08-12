@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- CPUs --></label>
+    <name>CPUs__c</name>
+    <picklistValues>
+        <masterLabel>Dual Broadwell CPUs</masterLabel>
+        <translation><!-- Dual Broadwell CPUs --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dual Haswell CPUs</masterLabel>
+        <translation><!-- Dual Haswell CPUs --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

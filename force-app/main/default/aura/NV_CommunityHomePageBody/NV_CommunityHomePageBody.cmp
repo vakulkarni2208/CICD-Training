@@ -1,0 +1,94 @@
+<aura:component>
+    <aura:attribute name="objID" type="NV_LightningCommunityHomePageController.InitializationData" />
+    <aura:attribute name="isOpen" type="boolean" default="false"/>
+    <aura:handler name="cmpEvent" event="c:CloseContactUsPopUp" action="{!c.handleComponentEvent}"/>  
+	<aura:attribute name="complianceHeaderTitle" type="Aura.Component[]">
+        <h1 style="color:#76b900; font-size:20px;">
+            {!$Label.c.NPNHomePage_NPN_COMPLIANCE}
+        </h1>
+    </aura:attribute>
+    <aura:attribute name="dashboardHeaderTitle" type="Aura.Component[]">
+        <h1 style="color:#76b900; font-size:20px;">
+			{!$Label.c.NPNHomePage_MY_DASHBOARD}
+        </h1>
+    </aura:attribute>
+    <div class="slds-grid slds-wrap">
+        <!--<div class="left" style="overflow-wrap: break-word;width:80%;padding:2%;min-width:500px;">-->
+        <div class="slds-col slds-size_1-of-1 slds-large-size_9-of-12" style="padding:2%;">
+            <!--<c:LightningCarouselDemo lstHPMessages="{!v.objID.lstHomePageMessages}"/>-->
+            <div class="slds-size_1-of-1 slds-p-around_x-small">
+                <aura:iteration items="{!v.objID.lstCompetencyData}" var="objCD">
+                    <aura:if isTrue="{!objCD.Name==v.objID.objPartnerPerformanceScorecard.defaultCompetency}">                     
+                        <div aura:id="output">                        
+                            <p class="headerLargeText"> {!objCD.Name} </p> <br />
+                            <b> {!objCD.Competency_Long_Description__c} </b> <br />
+                            <div class="slds-p-around_xx-small;"> 
+                                <div style="width:50%" class="slds-grid slds-wrap">
+                                    <aura:iteration items="{!objCD.Competency_Data_Links__r}" var="objCDLnk" indexVar="objCDLnkIndex">                                            
+                                        <div class="slds-size_1-of-2" >
+                                            <aura:if isTrue="{!objCDLnk.Default_Competency__c}"> 
+                                                <a class="competencyLink" href="{!objCDLnk.Link_Url_Text__c}">{!objCDLnk.Link_Label__c} ></a>
+                                            </aura:if>
+                                        </div>
+                                    </aura:iteration>
+                                </div>
+                            </div>
+                        </div>
+                    </aura:if>
+                </aura:iteration>
+            </div>
+            <div class="slds-grid slds-wrap">
+                <aura:iteration items="{!v.objID.lstCompetencyData}" var="objCD">
+                    <aura:if isTrue="{!objCD.Name!=v.objID.objPartnerPerformanceScorecard.defaultCompetency}">                     
+                        <div class="slds-col slds-small-size_1-of-1 slds-medium-size_1-of-2 slds-large-size_1-of-2 left slds-p-around_x-small">
+                            <div aura:id="output" style="{!'overflow-wrap:break-word;background-size:cover;padding:10px;min-height:170px;color:white;background-image: url(/resource/NPN_Community_Home_Page_Competency_Image/CompetencyDataImage/'+objCD.Static_Resource_Image_Path__c+'/box-image-portal-homepage-refresh.png)'}">                        
+                                <!--<ui:outputRichText value="{!objCD.Partner_Home_Page_Image__c}" class="imgCompetencyBG"/>-->
+                                <p class="competencyNameText"> {!objCD.Name} </p> <br />
+                                <b> {!objCD.Competency_Short_Description__c} </b>
+                            </div>
+                            <aura:iteration items="{!objCD.Competency_Data_Links__r}" var="objCDLnk" indexVar="objCDLnkIndex">                                
+                                <aura:if isTrue="{!objCDLnk.Default_Competency__c!=True}"> 
+                                    <a class="competencyLink" href="{!objCDLnk.Link_Url_Text__c}">{!objCDLnk.Link_Label__c} ></a> <br />
+                                </aura:if>
+                            </aura:iteration>
+                        </div>
+                    </aura:if>
+                </aura:iteration>
+            </div>
+        </div>            
+        <!--<div class="left" style="width:20%;min-width:200px;padding:2%;">-->
+        <div class="slds-col slds-size_1-of-1 slds-large-size_3-of-12" style="padding:2%;">
+            <aura:iteration items="{!v.objID.lstHomePageLinks}" var="objHP">
+                <aura:if isTrue="{!objHP.strLinkLabel=='NPN Compliance Tab'}">
+                    <div class="compliance">
+                        <div class="slds-box slds-theme_shade">
+                            {!v.complianceHeaderTitle} <br />
+                            <p class="slds-p-horizontal--small">                                        
+                                <c:NV_CommunityHomePageNPNCompliance bPPS="{!v.objID.objPartnerPerformanceScorecard.overallCompliant}" />
+                            </p>
+                            <br />
+                            <a class="dashboardLink" href="/apex/NPN_Surf">{!$Label.c.NPNHomePage_See_details}</a>
+                        </div>
+                    </div>
+                </aura:if>
+            </aura:iteration>
+            <div class="dashboard">                   
+                <div class="slds-box slds-theme_shade">
+                    {!v.dashboardHeaderTitle} <br />
+                    <aura:iteration items="{!v.objID.lstHomePageLinks}" var="objHP">
+                        <aura:if isTrue="{!objHP.strLinkType=='Dashboard'}">
+                            <a class="dashboardLink" href="{!objHP.strLinkURL}">{!objHP.strLinkLabel} ></a>  <br />
+                        </aura:if>
+                    </aura:iteration>
+                </div>
+            </div>
+            <div class="newsMessages">
+            </div>
+            <div class="contactUs">
+                <a onclick="{! c.openModel }" class="contactUsLink"> {!$Label.c.Contact_Us} </a>
+            </div>
+        </div>
+    </div>
+    <div style="clear:both;" />
+    <c:NV_CommunityHomePageContactUs isOpen="{!v.isOpen}" />
+</aura:component>

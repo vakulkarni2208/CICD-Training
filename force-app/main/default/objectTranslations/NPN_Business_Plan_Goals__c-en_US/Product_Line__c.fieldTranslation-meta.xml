@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Product Line --></label>
+    <name>Product_Line__c</name>
+    <picklistValues>
+        <masterLabel>DGX</masterLabel>
+        <translation><!-- DGX --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Grid</masterLabel>
+        <translation><!-- Grid --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Quadro</masterLabel>
+        <translation><!-- Quadro --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tesla</masterLabel>
+        <translation><!-- Tesla --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

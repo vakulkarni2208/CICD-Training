@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Image Location --></label>
+    <name>Image_Location__c</name>
+    <picklistValues>
+        <masterLabel>Bottom</masterLabel>
+        <translation><!-- Bottom --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Center</masterLabel>
+        <translation><!-- Center --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Left</masterLabel>
+        <translation><!-- Left --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Right</masterLabel>
+        <translation><!-- Right --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Top</masterLabel>
+        <translation><!-- Top --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

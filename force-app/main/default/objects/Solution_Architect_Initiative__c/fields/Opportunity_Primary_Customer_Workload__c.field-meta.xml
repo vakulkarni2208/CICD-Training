@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Opportunity_Primary_Customer_Workload__c</fullName>
+    <description>Primary Customer Workload data from the Opportunity Object</description>
+    <externalId>false</externalId>
+    <formula>TEXT(Related_Opportunity__r.Primary_Customer_Use_Case__c)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Primary Customer Workload data from the Opportunity Object</inlineHelpText>
+    <label>Opportunity Primary Customer Workload</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

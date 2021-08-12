@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <description>Contains setting related to the batch job CRM_AddPBMsAsOpptyTeamMember_Batch</description>
+    <enableFeeds>false</enableFeeds>
+    <label>CRM :AddPBMsAsOpptyTeamMember : Settings</label>
+    <visibility>Public</visibility>
+</CustomObject>

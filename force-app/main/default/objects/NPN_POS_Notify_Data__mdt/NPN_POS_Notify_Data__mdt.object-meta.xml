@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>NPN_POS_Notify_Data</label>
+    <pluralLabel>NPN_POS_Notify_Data</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

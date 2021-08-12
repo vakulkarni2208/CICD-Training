@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lead_Origin_Opps__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Select the Lead Origin for this Opportunity.Select a Lead Origin if this opportunity was generated from a Lead.  If this opportunity did not originate from a Lead, then leave this field blank.</inlineHelpText>
+    <label>Lead Origin</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>GRID Web-To-Lead Form</fullName>
+                <default>false</default>
+                <label>GRID Web-To-Lead Form</label>
+            </value>
+            <value>
+                <fullName>Citrix Servtech</fullName>
+                <default>false</default>
+                <label>Citrix Servtech</label>
+            </value>
+            <value>
+                <fullName>Citrix User Group Leads</fullName>
+                <default>false</default>
+                <label>Citrix User Group Leads</label>
+            </value>
+            <value>
+                <fullName>Synergy Leads - May 2013</fullName>
+                <default>false</default>
+                <label>Synergy Leads - May 2013</label>
+            </value>
+            <value>
+                <fullName>GRID Citrix QBR sponsorship</fullName>
+                <default>false</default>
+                <label>GRID Citrix QBR sponsorship</label>
+            </value>
+            <value>
+                <fullName>BriForum UK Leads</fullName>
+                <default>false</default>
+                <label>BriForum UK Leads</label>
+            </value>
+            <value>
+                <fullName>GRID VCA Webinar - July 2013</fullName>
+                <default>false</default>
+                <label>GRID VCA Webinar - July 2013</label>
+            </value>
+            <value>
+                <fullName>GRID Gaming Form - 2013</fullName>
+                <default>false</default>
+                <label>GRID Gaming Form - 2013</label>
+            </value>
+            <value>
+                <fullName>India Quadro QPP Program</fullName>
+                <default>false</default>
+                <label>India Quadro QPP Program</label>
+            </value>
+            <value>
+                <fullName>North America GRID VAR Events</fullName>
+                <default>false</default>
+                <label>North America GRID VAR Events</label>
+            </value>
+            <value>
+                <fullName>NVIDIA generated program lead</fullName>
+                <default>false</default>
+                <label>NVIDIA generated program lead</label>
+            </value>
+            <value>
+                <fullName>TPP / System Integrator generated lead</fullName>
+                <default>false</default>
+                <label>TPP / System Integrator generated lead</label>
+            </value>
+            <value>
+                <fullName>Customer Online Web Configured Solution</fullName>
+                <default>false</default>
+                <label>Customer Online Web Configured Solution</label>
+            </value>
+            <value>
+                <fullName>VMworld - August 2013</fullName>
+                <default>false</default>
+                <label>VMworld - August 2013</label>
+            </value>
+            <value>
+                <fullName>Partner generated lead</fullName>
+                <default>false</default>
+                <label>Partner generated lead</label>
+            </value>
+            <value>
+                <fullName>Logical Front AASB event.9.12.2014</fullName>
+                <default>false</default>
+                <label>Logical Front AASB event.9.12.2014</label>
+            </value>
+            <value>
+                <fullName>VSS Bangalore 11.11.14</fullName>
+                <default>false</default>
+                <label>VSS Bangalore 11.11.14</label>
+            </value>
+            <value>
+                <fullName>VSS Chennai 19.11.14</fullName>
+                <default>false</default>
+                <label>VSS Chennai 19.11.14</label>
+            </value>
+            <value>
+                <fullName>VSS Delhi 25.11.14</fullName>
+                <default>false</default>
+                <label>VSS Delhi 25.11.14</label>
+            </value>
+            <value>
+                <fullName>VSS Hyderabad 27.11.14</fullName>
+                <default>false</default>
+                <label>VSS Hyderabad 27.11.14</label>
+            </value>
+            <value>
+                <fullName>DGX-1 Program Allocation</fullName>
+                <default>false</default>
+                <label>DGX-1 Program Allocation</label>
+            </value>
+            <value>
+                <fullName>LinkedIN Sales Navigator</fullName>
+                <default>false</default>
+                <label>LinkedIN Sales Navigator</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

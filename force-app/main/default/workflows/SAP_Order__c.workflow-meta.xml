@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>Check_SAP_Update_Required</fullName>
+        <description>Check SAP Update Required</description>
+        <field>SAP_Update_Required__c</field>
+        <literalValue>1</literalValue>
+        <name>Check SAP Update Required</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <rules>
+        <fullName>SAP Order - Check SAP Update Required</fullName>
+        <actions>
+            <name>Check_SAP_Update_Required</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>SAP Order - Check SAP Update Required</description>
+        <formula>AND (OR(AND (NOT(ISBLANK(SFDC_Account__c)),  ISNEW() ), ISCHANGED(SFDC_Account__c))  ,  OR( Sold_To_Partner__c  ==&apos;0000105807&apos;, Sold_To_Partner__c ==&apos;0000105320&apos;) )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

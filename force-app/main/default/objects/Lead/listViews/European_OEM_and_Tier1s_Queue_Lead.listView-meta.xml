@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>European_OEM_and_Tier1s_Queue_Lead</fullName>
+    <filterScope>Queue</filterScope>
+    <label>European OEM and Tier1s Queue</label>
+    <queue>European_OEM_and_Tier1s_Queue</queue>
+    <sharedTo>
+        <allInternalUsers/>
+    </sharedTo>
+</ListView>

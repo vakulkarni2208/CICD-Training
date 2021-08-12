@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Data_Source__c</fullName>
+    <description>Specifies the data source whether a developer program, feedback survey, event, etc.</description>
+    <externalId>false</externalId>
+    <label>Data Source</label>
+    <length>216</length>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

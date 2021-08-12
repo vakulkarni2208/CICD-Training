@@ -1,0 +1,95 @@
+<apex:page controller="NPN_QPB_Statements_ctlr" tabStyle="QPB_Statement__c" sidebar="false">
+    <br/>
+    <!--<div class="pageBlockHeader" style="background-color:#eeeeee;">QPB Statement Details</div>-->
+    <div class="pageBlockHeader">QPB Statement Details</div>
+    <!--<div style="overflow: scroll; height: 420px;">-->
+    <br/>
+    <br/>
+    <apex:pageMessages id="showmsg"></apex:pageMessages>
+    <apex:outputPanel rendered="{!showTable}">
+        <div style="overflow: scroll; height: 800px; overflow-x: hidden; ">
+            <table width="30%" align="center" style="border:1px solid black;border-collapse: collapse;">
+                <colgroup>
+                    <col width="20%" />
+                    <col width="10%" />
+                    <col width="10%" />
+                    <col width="10%" />
+                    <col width="20%" />
+                </colgroup>
+                <tr>
+                    <th class="tdthStyle">
+                        <b>QPB ID</b>
+                    </th>
+                    <th class="tdthStyle">
+                        <b>Quarter</b>
+                    </th>
+                    <th class="tdthStyle">
+                        <b>Fiscal Year</b>
+                    </th>
+                    <th class="tdthStyle">
+                        <b>Type</b>
+                    </th>
+                    <th class="tdthStyle">
+                        <b>Link</b>
+                    </th>
+                </tr>
+                <apex:repeat value="{!lstQPBStatements}" var="objQPBStmt">
+                    <tr>
+                        <td class="tdthStyle">{!objQPBStmt.qpbId}</td>
+                        <td class="tdthStyle">{!objQPBStmt.quarter}</td>
+                        <td class="tdthStyle">{!objQPBStmt.fiscalYear}</td>
+                        <td class="tdthStyle">{!objQPBStmt.type}</td>
+                        <td class="tdthStyle">
+                            <apex:outputLink value="{!objQPBStmt.attachmentLink}" target="_blank">Click Here</apex:outputLink>
+                        </td>
+                    </tr>
+                </apex:repeat>
+            </table>
+        </div>
+    </apex:outputPanel>
+    <!--</div>-->
+    <style>
+        .tdthStyle {
+            padding: 15px;
+            border: 1px solid black;
+            width="25%" font-family: 'Trebuchet MS';
+        }
+
+        th {
+            background-color: #eeeeee;
+        }
+
+        .pageBlockHeader {
+            font-size: 21px;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-family: 'Trebuchet MS';
+            text-align: center;
+        }
+
+        .secTitle {
+            font-size: 21px;
+            font-weight: bold;
+            text-transform: uppercase;
+            line-height: 2.5;
+            font-family: 'Trebuchet MS';
+            color: rgb(59, 93, 0);
+        }
+
+        .title {
+            text-align: left;
+            font-size: 17px;
+            line-height: 1.25;
+            font-weight: bold;
+            font-family: 'Trebuchet MS';
+        }
+
+        .subtitle {
+            text-align: left;
+            font-size: 13px;
+            line-height: 1.25;
+            font-family: 'Trebuchet MS';
+            height: 12.25px;
+        }
+    </style>
+</apex:page>

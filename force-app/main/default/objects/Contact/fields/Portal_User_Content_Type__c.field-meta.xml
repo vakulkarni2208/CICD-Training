@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Portal_User_Content_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Default Competency</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Community</fullName>
+                <default>false</default>
+                <label>Community</label>
+            </value>
+            <value>
+                <fullName>Compute</fullName>
+                <default>false</default>
+                <label>Compute</label>
+            </value>
+            <value>
+                <fullName>Compute DGX</fullName>
+                <default>false</default>
+                <label>Compute DGX</label>
+            </value>
+            <value>
+                <fullName>Consumer</fullName>
+                <default>false</default>
+                <label>Consumer</label>
+            </value>
+            <value>
+                <fullName>DGX</fullName>
+                <default>false</default>
+                <label>DGX</label>
+            </value>
+            <value>
+                <fullName>Embedded Edge</fullName>
+                <default>false</default>
+                <label>Embedded Edge</label>
+            </value>
+            <value>
+                <fullName>NVEP</fullName>
+                <default>false</default>
+                <label>NVEP</label>
+            </value>
+            <value>
+                <fullName>Virtualization</fullName>
+                <default>false</default>
+                <label>Virtualization</label>
+            </value>
+            <value>
+                <fullName>Visualization</fullName>
+                <default>false</default>
+                <label>Visualization</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

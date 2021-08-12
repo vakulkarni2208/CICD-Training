@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Key Contact #1 --></label>
+    <lookupFilter>
+        <errorMessage><!-- Please ensure Key Contact is on the NPN Business Plan Account --></errorMessage>
+        <informationalMessage><!-- Key Contact must be related to the NPN Business Plan Account --></informationalMessage>
+    </lookupFilter>
+    <name>Key_Contact_1__c</name>
+    <relationshipLabel><!-- NPN Business Plans --></relationshipLabel>
+</CustomFieldTranslation>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DR_PBM_User__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>PBM for the opportunity. Derived from Opp &gt; NPN SP/VAR Account Owner or set from Partner Contact &gt; Account Owner</description>
+    <externalId>false</externalId>
+    <label>Opportunity PBM</label>
+    <referenceTo>User</referenceTo>
+    <relationshipName>Opportunities</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Functionality Name --></label>
+    <name>Functionality_Name__c</name>
+    <picklistValues>
+        <masterLabel>IDM: User Sync</masterLabel>
+        <translation><!-- IDM: User Sync --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Service: SAP RMA Callout</masterLabel>
+        <translation><!-- Service: SAP RMA Callout --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

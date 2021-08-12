@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BlockDuplicatePrimaryPtnrProgForPOS</fullName>
+    <active>true</active>
+    <description>SDS-1571-Sales: Primary Program for POS duplicate validation</description>
+    <errorConditionFormula>OR( 
+Count_Primary_Porgram_for_POS_DGX__c &gt; 1, 
+Count_Primary_Porgram_for_POS_vGPU__c &gt; 1, 
+Count_Primary_Porgram_for_POS_Tesla__c &gt; 1, 
+Count_Primary_Porgram_for_POS_Quadro__c &gt; 1 
+)</errorConditionFormula>
+    <errorMessage>You cannot have more than one Primary Program for POS for a Competency</errorMessage>
+</ValidationRule>

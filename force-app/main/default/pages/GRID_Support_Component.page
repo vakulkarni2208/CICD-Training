@@ -1,0 +1,90 @@
+<apex:page tabStyle="Support__tab" standardStylesheets="true" controller="popupModal">
+<apex:form >
+        <apex:outputPanel id="PhoneHelpPopup">
+        <apex:outputPanel styleClass="popupBackground" layout="block" rendered="{!displayPopUp}"/>
+            <apex:outputPanel styleClass="custPopup" layout="block" rendered="{!displayPopUp}">
+                <center>+1 408 486-2500</center><br/><br/><br/>
+                <center><apex:commandButton value="OK" action="{!closePopup}" rerender="PhoneHelpPopup"/></center>
+            </apex:outputPanel>
+        </apex:outputPanel>
+ 
+ <font face="verdana">
+    <table width="75%">
+    <tr><td>
+     
+<font style="font-weight: bold;" size="5"><br></br>Need help?</font>
+<br />
+    
+<table cellspacing="10" cellpadding="10" width="750"><tbody>
+    <tr>
+        <td bgcolor="#EEEEEE" width="250" valign="top">
+        <b>Frequently Asked Questions</b>
+        <br /><br />
+            Our knowledgebase is available online 24x7x365 and contains answers to the most common questions and issues.
+        <br /> <br /> 
+        <center>
+            <apex:commandLink target="_blank" action="http://nvidia.custhelp.com/app/answers/list" style="text-decoration:none;"><img src="https://na2.salesforce.com/servlet/servlet.ImageServer?id=01540000000YWpx&oid=00D400000009E3I&lastMod=1365200467000" width="150" height="22"></img></apex:commandLink>
+        </center>
+         </td>
+    
+        <td bgcolor="#EEEEEE" width="250" valign="top"><b>Technical Support<br></br></b>
+
+Email: <a href="mailto:enterprisesupport@nvidia.com">enterprisesupport@nvidia.com</a><br></br><br></br>
+Phone: +1 408 566-5042<br></br><br></br>
+You will be assigned an Enterprise Support Engineer to work with you on a regular basis.<br></br><br></br>
+<font style="font-weight: bold;" size="1" color="333333">Emergency Off-Hours Support</font><br></br>
+<font size="1" color="333333">On the web: <a href="http://www.nvidia.com/nvcc">http://www.nvidia.com/nvcc</a> and click on Ask a Question or Live Help<br></br>
+Phone: +1 800-797-6530 (from USA) or +1 408-486-2000 <br></br>
+Off-hours Support staff will log your case and may gather information for follow-up during California business hours. </font> 
+
+
+<!-- <li><apex:commandLink value="Phone Help" action="{!showPopup}" rerender="PhoneHelpPopup" style="text-decoration:none;"/></li> -->
+
+</td>
+
+ <td bgcolor="#EEEEEE" width="250" valign="top"><b>Returns</b><br></br><br></br>
+
+For RMAs, please contact your Distributor</td>
+</tr></tbody></table>
+    
+        <table height="10" width="750"><tr><td><br></br><hr color="#92d050" 
+
+size="5"></hr></td></tr>
+         </table>
+     
+     </td></tr></table>
+
+          </font>
+    </apex:form>
+  
+<style type="text/css">
+        .custPopup{
+            background-color: white;
+            border-width: 2px;
+            border-style: solid;
+            z-index: 9999;
+            left: 50%;
+            padding:10px;
+            position: absolute;
+            /* These are the 3 css properties you will need to change so the popup 
+            displays in the center of the screen. First set the width. Then set 
+            margin-left to negative half of what the width is. You can add 
+            the height property for a fixed size pop up if you want.*/
+            width: 200px;
+            margin-left: -250px;
+            top:100px;
+        }
+        .popupBackground{
+            background-color:black;
+            opacity: 0.20;
+            filter: alpha(opacity = 20);
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 9998;
+        }
+
+    </style>
+</apex:page>

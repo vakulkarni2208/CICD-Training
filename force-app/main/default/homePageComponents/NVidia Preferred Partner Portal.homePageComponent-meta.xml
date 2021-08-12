@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<HomePageComponent xmlns="http://soap.sforce.com/2006/04/metadata">
+    <body>&lt;div style=&quot;width: 750px;&quot;&gt;
+&lt;p class=&quot;MsoNormal&quot;&gt;&lt;font face=&quot;Arial,Sans-Serif&quot;&gt;&lt;font size=&quot;4&quot;&gt;Welcome to the NVIDIA Partner Portal&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p class=&quot;MsoNormal&quot;&gt;&lt;span style=&quot;color: rgb(51, 51, 51); font-size: 10.5pt;&quot;&gt;&lt;font face=&quot;Arial,Sans-Serif&quot; size=&quot;3&quot;&gt;From this site, you can download marketing assets for NVIDIA product launches and marketing campaigns as well as upload assets for NVIDIA review. Assets include box templates, logos, messaging, email and web page templates, game screenshots, videos and more.&lt;/font&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p class=&quot;MsoNormal&quot;&gt; &lt;/p&gt;
+
+&lt;p class=&quot;MsoNormal&quot;&gt;&lt;b&gt;&lt;span style=&quot;color: rgb(118, 185, 0); font-size: 10.5pt;&quot;&gt;&lt;font face=&quot;Arial,Sans-Serif&quot;&gt;&lt;font size=&quot;3&quot;&gt;Portal Quick Reference Guide&lt;/font&gt;&lt;/font&gt;&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;
+
+&lt;p class=&quot;MsoNormal&quot;&gt;&lt;font size=&quot;3&quot;&gt;&lt;font face=&quot;Arial,Sans-Serif&quot;&gt;&lt;b&gt;&lt;span style=&quot;color: rgb(118, 185, 0); font-size: 10.5pt;&quot;&gt;Libraries&lt;/span&gt;&lt;/b&gt;&lt;span style=&quot;color: rgb(51, 51, 51); font-size: 10.5pt;&quot;&gt;: &lt;/span&gt;&lt;span style=&quot;color: rgb(51, 51, 51); font-size: 10.5pt;&quot;&gt;All marketing assets are organized into libraries.&lt;span&gt;  &lt;/span&gt;This tab allows you to browse libraries for content and to upload content for NVIDIA review.&lt;span&gt;  &lt;/span&gt;It also shows you recent activity such as newly added assets and comments on assets in review, as well as top content based on the frequency of downloads.&lt;/span&gt;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p class=&quot;MsoNormal&quot;&gt;&lt;font face=&quot;Arial,Sans-Serif&quot;&gt;&lt;font size=&quot;3&quot;&gt;&lt;b&gt;&lt;span style=&quot;color: rgb(118, 185, 0); font-size: 10.5pt;&quot;&gt;Content&lt;/span&gt;&lt;/b&gt;&lt;span style=&quot;color: rgb(51, 51, 51); font-size: 10.5pt;&quot;&gt;: &lt;/span&gt;&lt;span style=&quot;color: rgb(51, 51, 51); font-size: 10.5pt;&quot;&gt;This tab allows you to easily search for specific marketing assets.&lt;span&gt;  &lt;/span&gt;You can select specific libraries to search or run a broad search across all libraries.&lt;span&gt;  &lt;/span&gt;The left navigation within this tab provides filters to use to narrow your search such as asset type, file format, author, and more.&lt;/span&gt;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p class=&quot;MsoNormal&quot;&gt;&lt;font face=&quot;Arial,Sans-Serif&quot;&gt;&lt;font size=&quot;3&quot;&gt;&lt;b&gt;&lt;span style=&quot;color: rgb(118, 185, 0); font-size: 10.5pt;&quot;&gt;Subscriptions&lt;/span&gt;&lt;/b&gt;&lt;span style=&quot;color: rgb(51, 51, 51); font-size: 10.5pt;&quot;&gt;: &lt;/span&gt;&lt;span style=&quot;color: rgb(51, 51, 51); font-size: 10.5pt;&quot;&gt;You have already been subscribed to relevant content.&lt;span&gt;  &lt;/span&gt;Feel free to add any new subscriptions you desire, but please do not unsubscribe from your current content subscriptions.&lt;span&gt;  &lt;/span&gt;If you feel you have been subscribed to content which is not relevant, please contact your NVIDIA account rep.&lt;/span&gt;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;/div&gt;</body>
+    <pageComponentType>htmlArea</pageComponentType>
+    <width>wide</width>
+</HomePageComponent>

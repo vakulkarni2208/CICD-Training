@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>Service_Cloud_Sync_Serial_Number</fullName>
+        <field>Serial_Number__c</field>
+        <formula>SerialNumber</formula>
+        <name>Service Cloud: Sync Serial Number</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <rules>
+        <fullName>Service Cloud%3A Update Unique Serial Number field</fullName>
+        <actions>
+            <name>Service_Cloud_Sync_Serial_Number</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>true</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

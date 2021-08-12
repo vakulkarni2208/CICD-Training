@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Opp Reg 3.0 field to set the DR_Lead_Type__c &quot;Deal Registration&quot; of the Lead --></help>
+    <label><!-- Lead Type --></label>
+    <name>Lead_Type__c</name>
+</CustomFieldTranslation>

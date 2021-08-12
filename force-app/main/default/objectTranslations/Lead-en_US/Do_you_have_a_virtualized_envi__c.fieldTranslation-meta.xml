@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Virtualized Environment (VDI)? --></label>
+    <name>Do_you_have_a_virtualized_envi__c</name>
+    <picklistValues>
+        <masterLabel>Already Deployed Graphics Accelerated VDI</masterLabel>
+        <translation><!-- Already Deployed Graphics Accelerated VDI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Already Deployed VDI</masterLabel>
+        <translation><!-- Already Deployed VDI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No plans at this time</masterLabel>
+        <translation><!-- No plans at this time --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not familiar with VDI</masterLabel>
+        <translation><!-- Not familiar with VDI --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

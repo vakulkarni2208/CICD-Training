@@ -1,0 +1,1760 @@
+<apex:page id="pageId" controller="NPN_SuRF_Ctrl" sidebar="false">
+    <apex:includeScript value="{!$Resource.Loader}"/>
+    <apex:pageBlock id="pageBlockId" mode="detail">
+        <!-- Inline if statement to display specific partner program if there are multiple programs. -->
+        <div id="pageBlockHeader" class="pageBlockHeader">{!$Label.CRM_NPN_SuRF_Partner_Type}: {!defaultProgram} {!defaultSubProgram}</div>
+        <div style="font-family: Trebuchet MS; text-align: right">{!updateTime}</div>
+        <!-- Program Selector for partners with multiple programs. Display shown at the end of loadPartnerScorecard function. -->
+        <apex:form id="formId">
+            <div id="programSelector" style="display:none">
+                <span style="font-family: Trebuchet MS">{!$Label.CRM_NPN_SuRF_Program_Selector}: </span>
+                <apex:selectList size="1" value="{!selectedProgram}">
+                    <apex:selectOptions value="{!programSelect}"/>
+                    <apex:actionSupport event="onchange" action="{!populateSubPrograms}" reRender="subProgramPicklist,idCurrentProgramOneSP" oncomplete="initCharts(this.value,'{!selectedSubProgram}')"/>
+                </apex:selectList>
+            </div>
+            <div id="subProgramSelector" style="display:none" >
+                <span style="font-family: Trebuchet MS">Sub-Program Selector: </span>
+                <apex:selectList id="subProgramPicklist" size="1" value="{!selectedSubProgram}" onchange="initCharts('{!selectedProgram}',this.value);">
+                    <apex:selectOptions value="{!subProgramSelect}"/>
+                </apex:selectList>
+                <apex:inputHidden value="{!currentProgramHasOneSubProgram}" id="idCurrentProgramOneSP"/>
+            </div>
+        </apex:form>
+        <hr/>
+        <div id="error" class="errorText">Error:</div>
+        <!-- Legend describing check, caution, and x symbols. Display shown at the end of loadPartnerScorecard function. -->
+        <div id="legend" style="text-align:center; clear:both; display:none">
+            <span class="check">✔</span>
+            <span class="subtitle"> = {!$Label.CRM_NPN_SuRF_Complete}</span>
+            <span class="caution yellowTriangle" style="display: inline-block; text-indent: 15px">⚠<span class="yellowTriangleText" >This symbol shows that you have not yet completed the compliance requirements, but you are not yet non-compliant<br /><br /> Please complete the compliance requirements soon.</span></span>
+            <span class="subtitle"> = {!$Label.CRM_NPN_SuRF_In_Progress}</span>
+            
+            <span class="x Exclamation" style="display: inline-block; text-indent: 15px">!<!--<span class="ExclamationText" ></span>--> </span>
+            <span class="subtitle"> = {!$Label.CRM_NPN_SURF_Exclamation}</span>
+            
+            <span class="x" style="display: inline-block; text-indent: 15px">✘</span>
+            <span class="subtitle"> = {!$Label.CRM_NPN_SuRF_Incomplete}</span>
+            <span class="blackSquare" style="display: inline-block; text-indent: 15px">■</span>
+            <span class="subtitle"> = {!$Label.CRM_NPN_SuRF_High_Alert}</span>
+            <span class="notApplicable" style="display: inline-block; text-indent: 15px">—</span>
+            <span class="subtitle"> = Not Applicable(NV Branded Products)</span>
+        </div>
+        <div class="loader"/>
+        <div id="table" style="display:none">
+            <table>
+                <!--<colgroup>
+                    <col span="1" style="width: 16.66%" />
+                    <col span="2" style="width: 16.66%" />
+                    <col span="3" style="width: 16.66%" />
+                    <col span="4" style="width: 16.66%" />
+                    <col span="5" style="width: 16.66%" />
+                    <col span="6" style="width: 16.66%" />
+                </colgroup>-->
+                <tr>
+                    <td class="topleveltd1" colSpan='4'>
+                        <div class="secTitle">{!$Label.CRM_NPN_SuRF_PARTNER_COMPLIANCE_OVERVIEW}:</div>
+                        <div id="PPS" class="chart" style="margin-bottom:15px;"/>
+                    </td>
+                </tr>
+                 <tr style="display:none">
+                    <td class="topleveltd1" colSpan='4'>
+                        <div id="partnerContacts" class="sectionTitle">{!$Label.CRM_NPN_SuRF_Partner_Contacts}:</div>
+                    </td>
+                </tr>
+                <tr style="display:none">
+                    <td class="topleveltd1" colSpan='3'>
+                        <div class="pcDiv" style="height:300px;overflow:auto;">                            
+                            <div id="PC" class="chart"/>
+                        </div>
+                    </td>
+                    <td valign="top">
+                        <div style="float:left"><button type="button" onclick="sendEmail()">{!$Label.CRM_NPN_SuRF_Update_Contacts}</button></div>
+                        <div style="float:left"><div id="parent" style="float:left width:20px; padding-top:3px;"><apex:image url="{!$Resource.ExclamationImage}"  height="13px;"/></div><div id="popup" style="float:left; display: none">Please provide the following information for new Contacts: <br /><br /> First Name <br /><br /> Last Name<br /><br /> Email Address <br /><br /> Title<br /><br /> Does this contact need to be enrolled in Sales Training ? (Y/N)<br /><br /> Does this contact need to be enrolled in Technical Training ? (Y/N)</div></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="topleveltd1" colSpan='4'>
+                        <div class="secTitle">{!$Label.CRM_NPN_SuRF_Partner_Performance_Detail}:</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="topleveltd1" colSpan='4'>
+                        <div class="trainingSectionTitle">{!$Label.CRM_NPN_SuRF_Training_Compliance}:</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="topleveltd1" colSpan='2' style="width:50%">
+                        <div class="title">{!$Label.CRM_NPN_SuRF_By_Competency}</div>
+                        <div class="subtitle">{!$Label.CRM_NPN_SuRF_Click_on_row_to_see_Contact_details_in_table_on_right}</div>
+                        <div id="PTC" style="height:400px;" class="chart"/>
+                    </td>
+                    <td class="topleveltd1" colSpan='2' style="width:50%">
+                        <div class="title">{!$Label.CRM_NPN_SuRF_By_Contact}</div>
+                        <div class="subtitle"></div>
+                        <div id="PKCTC" style="height:400px;" class="chart"/>
+                    </td>
+                </tr>
+                <!-- Changes for SDS-3054 START -->          
+                <tr id='DHTitle' style="display:none;">
+                    <td class="topleveltd1" colSpan='4'>
+                        <div class="trainingSectionTitle">DGX Hands on Training (HOT) Compliance:</div>
+                        <br/>
+                    </td>
+                </tr>
+                <tr id="DHSection" style="display:none;">
+                    <td class="topleveltd1" colSpan='2' style="width:50%">
+                        <div class="title">{!$Label.CRM_NPN_SuRF_By_Competency}</div>
+                        <div class="subtitle">{!$Label.CRM_NPN_SuRF_Click_on_row_to_see_Contact_details_in_table_on_right}</div>
+                        <div id="DHTC" style="height:400px;" class="chart"/>
+                    </td>
+                    <td class="topleveltd1" colSpan='2' style="width:50%;">
+                        <div class="title">{!$Label.CRM_NPN_SuRF_By_Contact}</div>
+                        <div class="subtitle"></div>
+                        <div id="DHTCTC" style="height:400px;" class="chart"/>
+                    </td>
+                </tr> 
+                <!-- Changes for SDS-3054 END -->
+                <tr style="display:none;">
+                    <td class="topleveltd1" colSpan='4'>
+                        <div class="sectionTitle"> {!$Label.CRM_NPN_SuRF_Pipeline_Summary}:</div>
+                    </td>
+                </tr>
+            </table>
+            <table id="idPOSSection">                
+                <tr id="opportunity" style="display:none;">
+                    <td class="topleveltd2" colSpan='1'>
+                        <div class="title">{!$Label.CRM_NPN_SuRF_Opportunity_Creation_Status}</div>
+                        <div id="POCS" style="height:400px;" class="chart"/>
+                    </td>
+                    <td class="topleveltd2" colSpan='1'>
+                        <div class="title">{!$Label.CRM_NPN_SuRF_By_Competency_Current_Next_3_Fiscal_Quarters}</div>
+                        <div id="POBC" class="chart"/>
+                    </td>
+                    <td class="topleveltd2" colSpan='1'>
+                        <div class="title">{!$Label.CRM_NPN_SuRF_By_Stage_Current_Next_3_Fiscal_Quarters}</div>
+                        <div id="POBS" class="chart"/>
+                    </td>
+                </tr>
+                <tr style="display:none;"><td class="topleveltd2" colSpan='3'><div id="opportunitydiv" class="errorText">{!$Label.CRM_NPN_SuRF_No_Opportunities_to_Display_Current_and_Next_3_Fiscal_Quarters}</div></td></tr>
+                <tr>
+                    <td class="topleveltd2" colSpan='3'>
+                        <div class="sectionTitle">{!$Label.CRM_NPN_SuRF_POS_Summary}:</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="topleveltd2" colSpan='1'>
+                        <div class="title">{!$Label.CRM_NPN_SuRF_POS_Submission}</div>
+                        <div id="PPOSS" style="height:400px;" class="chart"/>
+                    </td>
+                    <td class="topleveltd2" colSpan='1'>
+                        <div class="title">{!$Label.CRM_NPN_SuRF_By_Competency_Current_Last_3_Fiscal_Quarters}</div>
+                        <div id="PPOSC" class="chart"/>
+                    </td>
+                    <td class="topleveltd2" colSpan='1'>
+                        <div class="title">{!$Label.CRM_NPN_SuRF_By_Product_Current_Last_3_Fiscal_Quarters}</div>
+                        <div id="PPOSP" class="chart"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="topleveltd2" colSpan='2'>
+                        <div class="sectionTitle">{!$Label.CRM_NPN_SuRF_POS_Actual_VS_Target_Revenue}:</div>
+                        <div id="PPOST" style="height:300px;" class="chart"/>
+                    </td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+        <!-- Legend describing check, caution, and x symbols. Display shown at the end of loadPartnerScorecard function. -->
+        <div id="legendBottom" style="text-align:center; display:none">
+            <span class="check">✔</span>
+            <span class="subtitle"> = {!$Label.CRM_NPN_SuRF_Complete}</span>
+            <span class="caution yellowTriangle" style="display: inline-block; text-indent: 15px">⚠<span class="yellowTriangleText" >This symbol shows that you have not yet completed the compliance requirements, but you are not yet non-compliant<br /><br /> Please complete the compliance requirements soon.</span></span>            
+             <span class="subtitle"> = {!$Label.CRM_NPN_SuRF_In_Progress}</span>
+            <span class="x Exclamation" style="display: inline-block; text-indent: 15px">!<!--<span class="ExclamationText" ></span>--> </span>            
+                        
+            <span class="subtitle"> = {!$Label.CRM_NPN_SURF_Exclamation}</span>
+            <span class="x" style="display: inline-block; text-indent: 15px">✘</span>
+            <span class="subtitle"> = {!$Label.CRM_NPN_SuRF_Incomplete}</span>
+            <span class="blackSquare" style="display: inline-block; text-indent: 15px">■</span>
+            <span class="subtitle"> = {!$Label.CRM_NPN_SuRF_High_Alert}</span>
+            <span class="notApplicable" style="display: inline-block; text-indent: 15px">—</span>
+            <span class="subtitle"> = Not Applicable(NV Branded Products)</span>
+        </div>
+    </apex:pageBlock>
+    <!-- CSS Styles -->
+    <style type='text/css'>
+        table { table-layout: fixed; }
+        .topleveltd1 { width: 25%; display: table-cell; vertical-align:top; }
+        .topleveltd2 { width: 33%; display: table-cell; vertical-align:top; }
+        
+        .loader {
+            border: 16px solid #f3f3f3;
+            border-radius: 50%;
+            border-top: 16px solid #76B900;
+            width: 100px;
+            height: 100px;
+            -webkit-animation: spin 1.5s linear infinite;
+            animation: spin 1.5s linear infinite;
+            display: block;
+            margin: 0 auto;
+        }
+        @-webkit-keyframes spin {
+            0% { -webkit-transform: rotate(0deg); }
+            100% { -webkit-transform: rotate(360deg); }
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        #popup {
+            display:none;
+            position:absolute;
+            border:1px solid #000;
+            width:250px;
+        }​
+        .chart {
+            border: 1px solid #ccc;
+        }
+        .pageBlockHeader {
+            font-size: 21px;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-family: 'Trebuchet MS';
+            text-align: center;
+        }
+        .secTitle {
+            font-size: 21px;
+            font-weight: bold;
+            text-transform: uppercase;
+            line-height: 2.5;
+            font-family: 'Trebuchet MS';
+            color: rgb(59, 93, 0);
+        }
+        .sectionTitle {
+            font-size: 19px;
+            font-weight: bold;
+            text-transform: uppercase;
+            line-height: 2.5;
+            font-family: 'Trebuchet MS';
+        }
+        .trainingSectionTitle {
+            font-size: 19px;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-family: 'Trebuchet MS';
+        }
+        .title {
+            text-align:center;
+            font-size: 14px;
+            line-height: 1.25;
+            font-weight: bold;
+            font-family: 'Trebuchet MS';
+        }
+        .subtitle {
+            text-align: center;
+            font-size: 12px;
+            line-height: 1.25;
+            font-family: 'Trebuchet MS';
+            height: 12.25px;
+        }
+        .errorText {
+            font-family: Trebuchet MS;
+            text-align: center;
+            font-size: 16px;
+            display: none;
+        }
+        .google-visualization-table-table {
+            font-family: 'Trebuchet MS' !important;
+        }
+        .google-visualization-table-td {
+            font-family: 'Trebuchet MS' !important;
+        }
+        .google-visualization-table-table .gradient,
+        .google-visualization-table-div-page .gradient {
+            background: #F4F4F4 !important;
+        }
+        .google-visualization-table-tr-sel td,
+        .google-visualization-table-tr-over td {
+           background-color: #F8F8F8 !important;
+        }        
+        .google-visualization-table-tr-sel td.hoverTD,
+        .google-visualization-table-tr-over td.hoverTD {
+           background-color: #D3D3D3 !important;
+        }
+        .alignLeft {
+            text-align: left !important;
+        }
+        .check {
+            text-align: center;
+            color: green !important;
+            font-weight: bold;
+            text-shadow: #000 0px 0px 1px;
+            -webkit-font-smoothing: antialiased;
+        }
+        .x {
+            text-align: center;
+            color: red !important;
+            text-shadow: #000 0px 0px 1px;
+            -webkit-font-smoothing: antialiased;
+        }
+        
+             
+        
+        .blackSquare {
+            text-align: center;            
+            text-shadow: #000 0px 0px 1px;
+            -webkit-font-smoothing: antialiased;
+        }
+        .notApplicable {
+            text-align: center;            
+            font-weight: bold;
+            text-shadow: #000 0px 0px 1px;
+            -webkit-font-smoothing: antialiased;
+        }
+        .caution {
+            text-align: center;
+            color: black !important;
+            //font-weight: bold;
+            text-shadow: #FFFF00 0px 0px 3px;
+            -webkit-font-smoothing: antialiased;
+        }
+        .yellowTriangle {
+          position: relative;
+          display: inline-block;
+        }
+        
+        .yellowTriangle .yellowTriangleText {
+          visibility: hidden;
+          width: 120px;
+          background-color: black;
+          color: #fff;
+          text-align: center;
+          border-radius: 6px;
+          padding: 5px 0;
+        
+          /* Position the tooltip */
+          position: absolute;
+          z-index: 1;
+        }
+        
+        .yellowTriangle:hover .yellowTriangleText {
+          visibility: visible;
+        }
+        
+         .Exclamation {
+            position: relative;
+          display: inline-block;
+        }
+        
+        .Exclamation .ExclamationText {
+          visibility: hidden;
+          width: 120px;
+          background-color: black;
+          color: #fff;
+          text-align: center;
+          border-radius: 6px;
+          padding: 5px 0;
+        
+          /* Position the tooltip */
+          position: absolute;
+          z-index: 1;
+        }
+        
+        .Exclamation:hover .ExclamationText {
+          visibility: visible;
+        }
+        
+        
+        
+        .width50 {
+            width: 50px;
+        }
+        .width75 {
+            width: 75px;
+        }
+        .width100 {
+            width: 100px;
+        }
+        .width125 {
+            width: 125px;
+        }
+        .width150 {
+            width: 150px;
+        }
+        .width200 {
+            width: 200px;
+        }
+        .width250 {
+            width: 250px;
+        }
+        .width300 {
+            width: 300px;
+        }
+        .widthp50 {
+            width: 50%;
+        }
+        .widthp40 {
+            width: 40%;
+        }
+        .widthp30 {
+            width: 30%;
+        }
+        .widthp20 {
+            width: 20%;
+        }
+        .widthp15 {
+            width: 15%;
+        }
+        .googleHeaderCell {white-space:normal;background-color:gray;}
+        th, google-visualization-table-th { background-color:gray;}
+    </style>
+    <!-- Javascript -->
+    <script type="text/javascript">
+    Visualforce.remoting.timeout = 120000; // Set timeout at page level
+    
+    var e = document.getElementById('parent');
+    e.onmouseover = function() {
+      document.getElementById('popup').style.display = 'block';
+    }
+    e.onmouseout = function() {
+      document.getElementById('popup').style.display = 'none';
+    }
+    if('{!accId}' == '') {
+        document.getElementsByClassName('loader')[0].style.display = 'none';
+        document.getElementById('error').innerHTML += ' No Account Id Found';
+        document.getElementById('error').style.display = 'block';
+        throw new Error('No Account Id Found');
+    }
+    //Loads google visualizations api: 'corechart' for bar charts, column charts, and line charts; 'table' for table charts.
+    google.charts.load('current', {'packages':['corechart','table']});
+    var defaultProgram = '{!defaultProgram}';
+    var defaultSubProgram = '{!defaultSubProgram}';
+    var programContactCountApex = '{!programContactCount}';
+    var row = programContactCountApex.slice(1,programContactCountApex.length-1).split(', ');
+    var programContactCount = new Map();
+    for(var i = 0; i < row.length; i++)
+        programContactCount.set(row[i].split('=')[0],row[i].split('=')[1]);
+    //default portal login data and global variables
+    var PPLG;
+    var data3;
+    var currentDay = new Date();
+    currentDay.setSeconds(0);
+    currentDay.setMinutes(0);
+    currentDay.setHours(0);
+    var endYear = currentDay.getFullYear();
+    var endMonth = currentDay.getMonth() + 1;
+    var startYear = endYear - 1;
+    var startMonth = currentDay.getMonth() + 1;
+    var rowMonthYear = new Map();
+    var rowMonthYearBackup;
+    
+    var firstRun = true;
+    google.charts.setOnLoadCallback(function() {initCharts(defaultProgram, defaultSubProgram);});
+    //Draws all charts and updates div displays.
+    function initCharts(program, subprogram) {
+        var hasOneProgram = '{!hasOneProgram}';
+        var hasOneSubProgram = document.getElementById('{!$Component.pageId.pageBlockId.formId.idCurrentProgramOneSP}').value;
+        if(!firstRun) {
+            document.getElementById('pageBlockHeader').innerHTML = 'Partner Type:'+program+' '+subprogram;
+            document.getElementsByClassName('loader')[0].style.display = 'block';
+            document.getElementById('legend').style.display = 'none';
+            document.getElementById('table').style.display = 'none';
+            document.getElementById('programSelector').style.display = 'none';
+            document.getElementById('subProgramSelector').style.display = 'none';
+            //document.getElementById('partnerContacts').innerHTML = document.getElementById('partnerContacts').innerHTML.replace(' '+programContactCount.get(program),'');
+        }
+        if('{!$Setup.SuRF_Transit__c.POS_Hide_For_Programs__c}'.includes(program)) {
+            document.getElementById('idPOSSection').style.display = 'none';
+        } else {
+            document.getElementById('idPOSSection').style.display = 'block';
+        }
+        
+        //document.getElementById('partnerContacts').innerHTML += ' ' + programContactCount.get(program);
+        //Global chart variables. Mostly necessary for sharing chart data across functions (for drilldowns).
+        var currentFiscalYear = '{!currentFiscalYear}';
+        var partnerContactTrainingData;
+        var partnerContactCourseTrainingData;
+        var DGXHOTContactTrainingData;  // Added for SDS-3054
+        var drilldownRowContact = new Map();
+        var currentCurriculumSelection;
+        var PKCTCdrilldown = false;
+        var competencySet = new Set();
+        var competencyLevel = new Map();
+        var PPS = new google.visualization.Table(document.getElementById('PPS'));
+        var PC = new google.visualization.Table(document.getElementById('PC'));
+        var divPTC = document.getElementById('PTC');
+        var PTC = new google.visualization.Table(divPTC);
+        var PKCTC = new google.visualization.Table(document.getElementById('PKCTC'));
+        var POCS = new google.visualization.Table(document.getElementById('POCS'));
+        var POBC = new google.visualization.ColumnChart(document.getElementById('POBC'));
+        var POBS = new google.visualization.ColumnChart(document.getElementById('POBS'));
+        var PPOSS = new google.visualization.Table(document.getElementById('PPOSS'));
+        var PPOSC = new google.visualization.ColumnChart(document.getElementById('PPOSC'));
+        var PPOSP = new google.visualization.ColumnChart(document.getElementById('PPOSP'));
+        var divPPOST = document.getElementById('PPOST');
+        var PPOST = new google.visualization.Table(divPPOST);
+        var divDHTC = document.getElementById('DHTC');    // Added for SDS-3054
+        var DHTC = new google.visualization.Table(divDHTC);   // Added for SDS-3054
+        var DHTCTC = new google.visualization.Table(document.getElementById('DHTCTC')); // Added for SDS-3054
+        var DHTCTCdrilldown = false;        // Added for SDS-3054
+        
+        
+        //Remote action function calls. Inner function's 'result' variable is a 2d array of the query result.
+        NPN_SuRF_Ctrl.loadPartnerScorecard(program, subprogram, '{!loadPartnerScorecard}', '{!accId}', '{!isTransit}', function(result,event) {
+            var data = new google.visualization.DataTable();
+            data.addColumn('string', '{!$Label.CRM_NPN_SuRF_Competency}');
+            data.addColumn('string', '{!$Label.CRM_NPN_SuRF_Level}');
+            data.addColumn('string', '{!$Label.CRM_NPN_SuRF_NPN_Agreement_Signed_Date}');
+            data.addColumn('string', '{!$Label.CRM_NPN_SuRF_Competency_Signed_Date}');
+            //data.addColumn('string', '{!$Label.CRM_NPN_SuRF_Region}');
+            data.addColumn('string', '{!$Label.CRM_NPN_SuRF_PBM}');
+            data.addColumn('string', '{!$Label.CRM_NPN_SuRF_Training_Compliance}');
+            //data.addColumn('string', '{!$Label.CRM_NPN_SuRF_Portal_Login_Activity}');
+            //data.addColumn('string', '{!$Label.CRM_NPN_SuRF_Pipeline_Management}');
+            data.addColumn('string', '{!$Label.CRM_NPN_SuRF_POS_Submitted}');
+            data.addColumn('string', '{!$Label.CRM_NPN_SuRF_Revenue_Attainment_on_track}');
+            //data.addColumn('string', '{!$Label.CRM_NPN_SuRF_NPN_Badge_on_Website}');
+            var rowCount = 0;
+            var isPartiallyFilled = false;
+            var competencyRow = new Map();
+            for(var i = 0; i < result.length; i++) {
+                competencySet.add(result[i].Competency__c);
+                competencyLevel.set(result[i].Competency__c,result[i].Level__c);
+            }
+            competencySet.forEach(function(competency) {
+                competencyRow.set(competency,rowCount++);
+                for(var i = 0; i < result.length; i++) {
+                    if(result[i].Competency__c == competency) {
+                        if(!isPartiallyFilled) {
+                            data.addRow([competency
+                                         ,result[i].Level__c
+                                         ,prettyDate(new Date(result[i].Program_Signed_Date__c))
+                                         ,prettyDate(new Date(result[i].Competency_Signed_Date__c))
+                                         //,result[i].Region__c
+                                         ,result[i].PBM__c
+                                         ,'✘'
+                                        // ,'✘'
+                                        // ,'✘'
+                                         ,'✘'
+                                         ,'✘'
+                                         //,'✘'
+                                        ]);
+                            isPartiallyFilled = true;
+                            for(var j = 5; j < 8; j++)
+                                data.setProperties(competencyRow.get(competency),j,{'className':'x'});
+                        }
+                        //training compliance
+                        if(result[i].Order__c == 1) {
+                            if( (data.getValue(competencyRow.get(competency),5) == '✘') && (result[i].Flag__c == 1) )
+                                data.setCell(competencyRow.get(competency),5,'✔',null,{'className':'check'});
+                            else if( (data.getValue(competencyRow.get(competency),5) == '✘') && (result[i].Flag__c == 0) )
+                                data.setCell(competencyRow.get(competency),5,'⚠',null,{'className':'caution'});
+                            else if((data.getValue(competencyRow.get(competency),5) == '✘') && (result[i].Flag__c == 99))
+                                data.setCell(competencyRow.get(competency),5,'■',null,{'className':'blackSquare'});
+                            else if((data.getValue(competencyRow.get(competency),5) == '✘') && (result[i].Flag__c == 100))
+                                data.setCell(competencyRow.get(competency),5,'—',null,{'className':'notApplicable'}); 
+                          // else if((data.getValue(competencyRow.get(competency),5) == '✘') && (result[i].Flag__c == 5))
+                            //    data.setCell(competencyRow.get(competency),5,'!',null,{'className':'notApplicable'});        
+                        }
+                        //portal login activity
+                        else if(result[i].Order__c == 2) {
+                         //   if( (data.getValue(competencyRow.get(competency),6) == '✘') && (result[i].Flag__c == 1) )
+                         //       data.setCell(competencyRow.get(competency),6,'✔',null,{'className':'check'});
+                         //   else if( (data.getValue(competencyRow.get(competency),6) == '✘') && (result[i].Flag__c == 0) )
+                         //       data.setCell(competencyRow.get(competency),6,'⚠',null,{'className':'caution'});
+                        }
+                        //opportunity creation
+                        else if(result[i].Order__c == 3) {
+                        //    if( (data.getValue(competencyRow.get(competency),6) == '✘') && (result[i].Flag__c == 1) )
+                        //        data.setCell(competencyRow.get(competency),6,'✔',null,{'className':'check'});
+                        //    else if( (data.getValue(competencyRow.get(competency),6) == '✘') && (result[i].Flag__c == 0) )
+                        //        data.setCell(competencyRow.get(competency),6,'⚠',null,{'className':'caution'});
+                        //    else if((data.getValue(competencyRow.get(competency),6) == '✘') && (result[i].Flag__c == 99))
+                        //        data.setCell(competencyRow.get(competency),6,'■',null,{'className':'blackSquare'});         
+                        } 
+                        //pos submission
+                        else if(result[i].Order__c == 4) {
+                            if( (data.getValue(competencyRow.get(competency),6) == '✘') && (result[i].Flag__c == 1) )
+                                data.setCell(competencyRow.get(competency),6,'✔',null,{'className':'check'});
+                            else if( (data.getValue(competencyRow.get(competency),6) == '✘') && (result[i].Flag__c == 0) )
+                                data.setCell(competencyRow.get(competency),6,'⚠',null,{'className':'caution'});
+                            else if((data.getValue(competencyRow.get(competency),6) == '✘') && (result[i].Flag__c == 99))
+                                data.setCell(competencyRow.get(competency),6,'■',null,{'className':'blackSquare'}); 
+                            else if((data.getValue(competencyRow.get(competency),6) == '✘') && (result[i].Flag__c == 100))
+                                data.setCell(competencyRow.get(competency),6,'—',null,{'className':'notApplicable'});            
+                        }
+                        //pos revenue
+                        else if(result[i].Order__c == 5) {
+                            if( (data.getValue(competencyRow.get(competency),7) == '✘') && (result[i].Flag__c == 1) )
+                                data.setCell(competencyRow.get(competency),7,'✔',null,{'className':'check'});
+                            else if( (data.getValue(competencyRow.get(competency),7) == '✘') && (result[i].Flag__c == 0) )
+                                data.setCell(competencyRow.get(competency),7,'⚠',null,{'className':'caution'});
+                            else if((data.getValue(competencyRow.get(competency),7) == '✘') && (result[i].Flag__c == 99))
+                                data.setCell(competencyRow.get(competency),7,'■',null,{'className':'blackSquare'});     
+                            else if((data.getValue(competencyRow.get(competency),7) == '✘') && (result[i].Flag__c == 100))
+                                data.setCell(competencyRow.get(competency),7,'—',null,{'className':'notApplicable'});
+                        }
+                        //npn badging
+                        else {
+                            //if( (data.getValue(competencyRow.get(competency),8) == '✘') && (result[i].Flag__c == 1) )
+                            //    data.setCell(competencyRow.get(competency),8,'✔',null,{'className':'check'});
+                            //else if( (data.getValue(competencyRow.get(competency),8) == '✘') && (result[i].Flag__c == 0) )
+                            //    data.setCell(competencyRow.get(competency),8,'⚠',null,{'className':'caution'});
+                            //else if((data.getValue(competencyRow.get(competency),8) == '✘') && (result[i].Flag__c == 99))
+                            //    data.setCell(competencyRow.get(competency),8,'■',null,{'className':'blackSquare'});         
+                        }
+                    }
+                }
+                isPartiallyFilled = false;
+            });
+            //data.setProperty(0,1,'style','width:100px');
+            PPS.draw(data, {showRowNumber: false, width: '100%', height: '100%', allowHtml: true, cssClassNames: {headerCell: 'googleHeaderCell'}});
+            //Hides loader, shows legend and table. If there are multiple programs additionally show the program selector.
+            document.getElementsByClassName('loader')[0].style.display = 'none';
+            document.getElementById('legend').style.display = 'block';
+            document.getElementById('legendBottom').style.display = 'block';
+            document.getElementById('table').style.display = 'block';
+            if(hasOneProgram == 'false')
+                document.getElementById('programSelector').style.display = 'block';
+            if(hasOneSubProgram == 'false' && subprogram !='')
+                document.getElementById('subProgramSelector').style.display = 'block';
+        }, {escape:true});
+        
+        NPN_SuRF_Ctrl.loadPartnerContacts(program, '{!loadPartnerContacts}', '{!accId}', '{!isTransit}', function(result,event) {
+            var data = new google.visualization.DataTable();
+            data.addColumn('string', '{!$Label.CRM_NPN_SuRF_Contacts}');
+            data.addColumn('string', '{!$Label.CRM_NPN_SuRF_Role}');            
+            data.addColumn('string', '{!$Label.CRM_NPN_SuRF_Phone_Number}');
+            data.addColumn('string', '{!$Label.CRM_NPN_SuRF_Email}');
+            var rowIndex = 0;
+            var placementSet = new Set();
+            for(var i = 0; i < result.length; i++) {
+                if(!placementSet.has(result[i].Contact_Name__c)) {
+                    placementSet.add(result[i].Contact_Name__c);
+                    data.addRow([result[i].Contact_Name__c,result[i].Role__c,result[i].Phone_Number__c,result[i].Email__c]);
+                }
+            }
+            data.setColumnProperties(0,{'className':'widthp20'});            
+            data.setColumnProperties(1,{'className':'widthp30'});
+            data.setColumnProperties(2,{'className':'widthp20'});
+            data.setColumnProperties(3,{'className':'widthp30'});
+            PC.draw(data, {showRowNumber: false, cssClassNames: {rowNumberCell: 'alignLeft', headerCell: 'googleHeaderCell'}, allowHtml: true, width: '100%'});
+        }, {escape:true});
+        
+        NPN_SuRF_Ctrl.loadPartnerTraining(program, subprogram, '{!accId}', '{!isTransit}', function(result,event) {
+            var data = new google.visualization.DataTable();
+            data.addColumn('string', '{!$Label.CRM_NPN_SuRF_Competency}');
+            //data.addColumn('string', '{!$Label.CRM_NPN_SuRF_Training_Type}');
+            //data.addColumn('string', '{!$Label.CRM_NPN_SuRF_Product_Type}');
+            data.addColumn('string', 'Type');
+            data.addColumn('string', '{!$Label.CRM_NPN_SuRF_Curriculum}');
+            data.addColumn('string', '{!$Label.CRM_NPN_SuRF_Status}');
+            data.addColumn('string', '{!$Label.CRM_NPN_SuRF_Required}');
+            var rowCount = 0;
+            var rowCurriculum = new Map();
+            var curriculumRow = new Map();
+            var placementMap = new Map();
+            data.addRow(['All',null,null,null,null]);
+            rowCount++;                        
+            for(var i = 0; i < result.length; i++) {
+                if(!placementMap.has(result[i].Curriculum_Title__c+result[i].Type__c+result[i].ProductType__c)) {
+                    placementMap.set(result[i].Curriculum_Title__c+result[i].Type__c+result[i].ProductType__c,result[i].Partner_Training_Compliance__c);
+                    rowCurriculum.set(result[i].Curriculum_Title__c+result[i].Type__c+result[i].ProductType__c,rowCount);
+                    curriculumRow.set(rowCount,result[i].Curriculum_Title__c);
+                    if(result[i].Partner_Training_Compliance__c == 1) {
+                        if(result[i].ProductType__c == 'Product') {
+                            
+                            if(result[i].Type__c == 'Sales') {
+                                data.addRow([result[i].Competency__c,'Sales & Product',result[i].Curriculum_Title__c,'✔',result[i].Partner_Training_Required__c]);
+                            } else if(result[i].Type__c == 'Technical') {
+                                
+                                data.addRow([result[i].Competency__c,'Technical & Product',result[i].Curriculum_Title__c,'✔',result[i].Partner_Training_Required__c]);
+                            }
+                        } else if(result[i].ProductType__c == 'Sales') {
+                            data.addRow([result[i].Competency__c,'Sales & Product',result[i].Curriculum_Title__c,'✔',result[i].Partner_Training_Required__c]);
+                        } else if(result[i].ProductType__c == 'Technical') {                            
+                            data.addRow([result[i].Competency__c,'Technical & Product',result[i].Curriculum_Title__c,'✔',result[i].Partner_Training_Required__c]);
+                        } else {
+                            data.addRow([result[i].Competency__c,result[i].Type__c,result[i].Curriculum_Title__c,'✔',result[i].Partner_Training_Required__c]);
+                        }
+                        data.setProperties(rowCount++,3,{'className':'check hoverTD'});
+                    }
+                    else if(result[i].Partner_Training_Compliance__c == 5) {
+                        if(result[i].ProductType__c == 'Product') {
+                            if(result[i].Type__c == 'Sales') {
+                                data.addRow([result[i].Competency__c,'Sales & Product',result[i].Curriculum_Title__c,'!',result[i].Partner_Training_Required__c]);
+                            } else if(result[i].Type__c == 'Technical') {
+                                data.addRow([result[i].Competency__c,'Technical & Product',result[i].Curriculum_Title__c,'!',result[i].Partner_Training_Required__c]);
+                            }
+                        } else if(result[i].ProductType__c == 'Sales') {
+                            data.addRow([result[i].Competency__c,'Sales & Product',result[i].Curriculum_Title__c,'!',result[i].Partner_Training_Required__c]);
+                        } else if(result[i].ProductType__c == 'Technical') {
+                            data.addRow([result[i].Competency__c,'Technical & Product',result[i].Curriculum_Title__c,'!',result[i].Partner_Training_Required__c]);
+                        } else {
+                            data.addRow([result[i].Competency__c,result[i].Type__c,result[i].Curriculum_Title__c,'!',result[i].Partner_Training_Required__c]);
+                        }
+                        data.setProperties(rowCount++,3,{'className':'x hoverTD'});
+                    }
+                    
+                    
+                    else if(result[i].Partner_Training_Compliance__c == 0) {
+                        if(result[i].ProductType__c == 'Product') {
+                            if(result[i].Type__c == 'Sales') {
+                                data.addRow([result[i].Competency__c,'Sales & Product',result[i].Curriculum_Title__c,'⚠',result[i].Partner_Training_Required__c]);
+                            } else if(result[i].Type__c == 'Technical') {
+                                data.addRow([result[i].Competency__c,'Technical & Product',result[i].Curriculum_Title__c,'⚠',result[i].Partner_Training_Required__c]);
+                            }
+                        } else if(result[i].ProductType__c == 'Sales') {
+                            data.addRow([result[i].Competency__c,'Sales & Product',result[i].Curriculum_Title__c,'⚠',result[i].Partner_Training_Required__c]);
+                        } else if(result[i].ProductType__c == 'Technical') {
+                            data.addRow([result[i].Competency__c,'Technical & Product',result[i].Curriculum_Title__c,'⚠',result[i].Partner_Training_Required__c]);
+                        } else {
+                            data.addRow([result[i].Competency__c,result[i].Type__c,result[i].Curriculum_Title__c,'⚠',result[i].Partner_Training_Required__c]);
+                        }
+                        data.setProperties(rowCount++,3,{'className':'caution hoverTD'});
+                    }
+                    
+                    
+                    
+                    
+                    
+                    
+                    else {
+                        if(result[i].ProductType__c == 'Product') {
+                            if(result[i].Type__c == 'Sales') {
+                                data.addRow([result[i].Competency__c,'Sales & Product',result[i].Curriculum_Title__c,'✘',result[i].Partner_Training_Required__c]);
+                            } else if(result[i].Type__c == 'Technical') {
+                                data.addRow([result[i].Competency__c,'Technical & Product',result[i].Curriculum_Title__c,'✘',result[i].Partner_Training_Required__c]);
+                            }
+                        } else if(result[i].ProductType__c == 'Sales') {
+                            data.addRow([result[i].Competency__c,'Sales & Product',result[i].Curriculum_Title__c,'✘',result[i].Partner_Training_Required__c]);
+                        } else if(result[i].ProductType__c == 'Technical') {
+                            data.addRow([result[i].Competency__c,'Technical & Product',result[i].Curriculum_Title__c,'✘',result[i].Partner_Training_Required__c]);
+                        } else { 
+                            data.addRow([result[i].Competency__c,result[i].Type__c,result[i].Curriculum_Title__c,'✘',result[i].Partner_Training_Required__c]);
+                        }
+                        data.setProperties(rowCount++,3,{'className':'x hoverTD'});
+                    }
+                }
+                else if(result[i].Partner_Training_Compliance__c > placementMap.get(result[i].Curriculum_Title__c+result[i].Type__c+result[i].ProductType__c)) {
+                    if(result[i].Partner_Training_Compliance__c == 1)
+                        data.setCell(rowCurriculum.get(result[i].Curriculum_Title__c+result[i].Type__c+result[i].ProductType__c),3,'✔',null,{'className':'check hoverTD'});
+                    else if(result[i].Partner_Training_Compliance__c == 0)
+                        data.setCell(rowCurriculum.get(result[i].Curriculum_Title__c+result[i].Type__c+result[i].ProductType__c),3,'⚠',null,{'className':'caution hoverTD'});
+                    else if(result[i].Partner_Training_Compliance__c == 5)
+                        data.setCell(rowCurriculum.get(result[i].Curriculum_Title__c+result[i].Type__c+result[i].ProductType__c),3,'!',null,{'className':'x hoverTD'});
+                    else
+                        data.setCell(rowCurriculum.get(result[i].Curriculum_Title__c+result[i].Type__c+result[i].ProductType__c),3,'✘',null,{'className':'x hoverTD'});
+                }
+            }
+            data.setColumnProperties(0,{'className':'widthp20 hoverTD'});
+            data.setColumnProperties(1,{'className':'widthp20 hoverTD'});
+            data.setColumnProperties(2,{'className':'widthp30 hoverTD'});
+            data.setColumnProperties(3,{'className':'widthp20 hoverTD'});
+            data.setColumnProperties(4,{'className':'widthp15 hoverTD'});
+            
+            google.visualization.events.addOneTimeListener(PTC, 'ready', function () {
+              var rowLabel = null;
+              var rowIndex;
+              var rowSpan;
+              var rows = divPTC.getElementsByTagName('tr');
+              Array.prototype.forEach.call(rows, function (row, index) {
+                rowIndex = index+1;
+                if (rowLabel !== row.cells[0].innerHTML + row.cells[1].innerHTML) {
+                  rowLabel = row.cells[0].innerHTML + row.cells[1].innerHTML;                  
+                  if (rowSpan > 1) {
+                    rows[index - rowSpan].cells[1].rowSpan = rowSpan;
+                  }
+                  rowSpan = 1;
+                } else {
+                  rowSpan++;
+                  row.removeChild(row.cells[1]);
+                }
+              });
+              if (rowSpan > 1) {
+                rows[rowIndex - rowSpan].cells[1].rowSpan = rowSpan;
+              }
+            });
+            google.visualization.events.addOneTimeListener(PTC, 'ready', function () {
+              var rowLabel = null;
+              var rowIndex;
+              var rowSpan;
+              var rows = divPTC.getElementsByTagName('tr');
+              Array.prototype.forEach.call(rows, function (row, index) {
+                rowIndex = index+1;
+                if (rowLabel !== row.cells[0].innerHTML) {
+                  rowLabel = row.cells[0].innerHTML;                  
+                  if (rowSpan > 1) {
+                    rows[index - rowSpan].cells[0].rowSpan = rowSpan;
+                  }
+                  rowSpan = 1;
+                } else {
+                  rowSpan++;
+                  row.removeChild(row.cells[0]);
+                }
+              });
+              if (rowSpan > 1) {
+                rows[rowIndex - rowSpan].cells[0].rowSpan = rowSpan;
+              }
+            });
+            google.visualization.events.addOneTimeListener(PTC, 'ready', function () {
+                var rows = divPTC.getElementsByTagName('tr');           
+                rows[1].cells[0].colSpan = 4;
+                rows[1].cells[0].style = 'text-align: center';
+            });
+            PTC.draw(data, {showRowNumber: false, width: '100%', allowHtml: true, cssClassNames: {headerCell: 'googleHeaderCell'}});            
+            google.visualization.events.addListener(PTC, 'select', selectHandler);
+            var pastSelection;
+            //Drilldown handler.
+            function selectHandler() {
+                //Array of selection information.
+                var selection = PTC.getSelection();
+                if(selection!=''){
+                    if(currentCurriculumSelection != null)
+                        pastSelection = currentCurriculumSelection;
+                    
+                    currentCurriculumSelection = curriculumRow.get(selection[0].row);
+                    //Toggles drilldown.
+                    if( selection[0].row == 0 ) {
+                        PKCTC.draw(partnerContactTrainingData, {showRowNumber: false, width: '100%', allowHtml: true, cssClassNames: {headerCell: 'googleHeaderCell'}});
+                        PKCTCdrilldown = false;
+                    }
+                    //Activates drilldown.
+                    else {
+                        NPN_SuRF_Ctrl.loadPartnerContactTrainingDrilldown(program, subprogram, currentCurriculumSelection, '{!accId}', '{!isTransit}', function(result,event) {
+                            var data = new google.visualization.DataTable();
+                            data.addColumn('string', '{!$Label.CRM_NPN_SuRF_Curriculum}');
+                            data.addColumn('string', '{!$Label.CRM_NPN_SuRF_Contacts}');                        
+                            data.addColumn('string', '{!$Label.CRM_NPN_SuRF_Status}');
+                            data.addColumn('string', '{!$Label.CRM_NPN_SuRF_Training_Type}');
+                            var rowCount = 0;
+                            drilldownRowContact.clear();
+                            var placementSet = new Set();
+                            for(var i = 0; i < result.length; i++) {
+                                if(!placementSet.has(result[i].Type__c+result[i].Contact_Name__c+result[i].Curriculum_Title__c)) {
+                                    placementSet.add(result[i].Type__c+result[i].Contact_Name__c+result[i].Curriculum_Title__c);
+                                    if(result[i].Training_Completion_Status__c == 'Complete') {
+                                        if(result[i].Partner_Training_Compliance__c == 5) {
+                                            data.addRow([result[i].Curriculum_Title__c,result[i].Contact_Name__c,'!',result[i].Type__c]);
+                                            data.setProperties(rowCount,2,{'className':'x'});
+                                        } else {
+                                            data.addRow([result[i].Curriculum_Title__c,result[i].Contact_Name__c,'✔',result[i].Type__c]);
+                                            data.setProperties(rowCount,2,{'className':'check'});
+                                        }  
+                                    }
+                                   
+                                    else if(result[i].Training_Completion_Status__c == 'Enrolled') {
+                                        data.addRow([result[i].Curriculum_Title__c,result[i].Contact_Name__c,'⚠',result[i].Type__c]);
+                                        data.setProperties(rowCount,2,{'className':'caution'});    
+                                    }
+                                    else {
+                                        data.addRow([result[i].Curriculum_Title__c,result[i].Contact_Name__c,'✘',result[i].Type__c]);
+                                        data.setProperties(rowCount,2,{'className':'x'});
+                                    }
+                                    drilldownRowContact.set(rowCount++,result[i].Contact_Name__c);
+                                }
+                            }
+                            data.setColumnProperties(3,{'className':'widthp20'});
+                            data.setColumnProperties(2,{'className':'widthp20'});
+                            data.setColumnProperties(1,{'className':'widthp30'});
+                            data.setColumnProperties(0,{'className':'widthp30'});
+                            PKCTC.draw(data, {showRowNumber: false, width: '100%', allowHtml: true, cssClassNames: {headerCell: 'googleHeaderCell'}});
+                        }, {escape:true});                    
+                    }
+                }
+            }
+        }, {escape:true});
+        
+        NPN_SuRF_Ctrl.loadPartnerContactTraining(program, subprogram, '{!accId}', '{!isTransit}', function(result,event) {
+            partnerContactTrainingData = new google.visualization.DataTable();
+            partnerContactTrainingData.addColumn('string', '{!$Label.CRM_NPN_SuRF_Curriculum}');
+            partnerContactTrainingData.addColumn('string', '{!$Label.CRM_NPN_SuRF_Contacts}');                        
+            partnerContactTrainingData.addColumn('string', '{!$Label.CRM_NPN_SuRF_Status}');
+            partnerContactTrainingData.addColumn('string', '{!$Label.CRM_NPN_SuRF_Training_Type}');
+            var rowCount = 0;
+            var rowContact = new Map();
+            var placementSet = new Set();
+            for(var i = 0; i < result.length; i++) {
+                if(!placementSet.has(result[i].Type__c+result[i].Contact_Name__c+result[i].Curriculum_Title__c)) {
+                    placementSet.add(result[i].Type__c+result[i].Contact_Name__c+result[i].Curriculum_Title__c);
+                    if(result[i].Training_Completion_Status__c == 'Complete' && result[i].Partner_Training_Compliance__c == 5) {
+                        
+                        partnerContactTrainingData.addRow([result[i].Curriculum_Title__c,result[i].Contact_Name__c,'!',result[i].Type__c]);
+                        partnerContactTrainingData.setProperties(rowCount,2,{'className':'x'});
+                    }
+                    else if(result[i].Training_Completion_Status__c == 'Complete') {                       
+                        
+                        partnerContactTrainingData.addRow([result[i].Curriculum_Title__c,result[i].Contact_Name__c,'✔',result[i].Type__c]);
+                        partnerContactTrainingData.setProperties(rowCount,2,{'className':'check'});
+ 
+                    }                    
+                    else if(result[i].Training_Completion_Status__c == 'Enrolled') {
+                       
+                        partnerContactTrainingData.addRow([result[i].Curriculum_Title__c,result[i].Contact_Name__c,'⚠',result[i].Type__c]);
+                        partnerContactTrainingData.setProperties(rowCount,2,{'className':'caution'});
+                    }
+                    else {
+                        
+                        partnerContactTrainingData.addRow([result[i].Curriculum_Title__c,result[i].Contact_Name__c,'✘',result[i].Type__c]);
+                        
+                        partnerContactTrainingData.setProperties(rowCount,2,{'className':'x'});
+                    }
+                    
+                     rowContact.set(rowCount++,result[i].Contact_Name__c);
+                } 
+                
+            }
+            partnerContactTrainingData.setColumnProperties(3,{'className':'widthp20'});
+            partnerContactTrainingData.setColumnProperties(2,{'className':'widthp20'});
+            partnerContactTrainingData.setColumnProperties(1,{'className':'widthp30'});
+            partnerContactTrainingData.setColumnProperties(0,{'className':'widthp30'});
+            PKCTC.draw(partnerContactTrainingData, {showRowNumber: false, width: '100%', allowHtml: true, cssClassNames: {headerCell: 'googleHeaderCell'}});
+            google.visualization.events.addListener(PKCTC, 'select', selectHandler);
+            var currentSelection;
+            var pastSelection;
+            var drilldown = false;
+            //Drilldown handler.
+            function selectHandler() {
+                //Array of selection information.
+                var selection = PKCTC.getSelection();
+                if(currentSelection != null)
+                    pastSelection = currentSelection;
+                currentSelection = rowContact.get(selection[0].row);
+                if( (pastSelection != null) && (pastSelection == currentSelection) && (drilldown) ) {
+                    //PKCCCD.draw(partnerContactCourseTrainingData, {showRowNumber: false, width: '100%', allowHtml: true, cssClassNames: {headerCell: 'googleHeaderCell'}});
+                    drilldown = false;
+                }
+            }
+        }, {escape:true});
+        
+        NPN_SuRF_Ctrl.loadPartnerOpportunity(program, '{!loadPartnerOpportunity}', '{!accId}', '{!isTransit}', function(result,event) {
+            if(result.length == 0) {
+                document.getElementById('opportunity').style.display = 'none';
+                document.getElementById('opportunitydiv').style.display = 'block';
+                return;
+            }
+            var dataArray = new Array();
+            dataArray[0] = [{label:'{!$Label.CRM_NPN_SuRF_Competency}',type:'string'},{label:'{!$Label.CRM_NPN_SuRF_Cost}',type:'number'},{role: 'annotation'},{role: 'annotation'},{type: 'string', role: 'tooltip', 'p': {'html': true}},{role: 'style'}];
+            var placementSet = new Set();
+            var stageSet = new Set();
+            var stageProbability = new Map();
+            var index = 0;
+            var revenue;
+            var quantity;
+            var totalRevenue = 0;
+            var totalQuantity = 0;
+            var otherRevenue = 0;
+            var otherQuantity = 0;
+            var hex = 'abcdef0123456789';
+            var style;
+            var competencyRevenue = new Map();
+            for(var i = 0; i < result.length; i++) {
+                if(result[i].Stage__c != null) {
+                    stageSet.add(result[i].Stage__c);
+                    stageProbability.set(result[i].Stage__c,result[i].Probability__c);
+                }
+                totalRevenue += result[i].POS_Amount__c;
+                totalQuantity += result[i].Quantity__c;
+                if(!competencyRevenue.has(result[i].Competency__c)) {
+                    competencyRevenue.set(result[i].Competency__c,result[i].POS_Amount__c);
+                }
+                else {
+                    var keyRevenue = competencyRevenue.get(result[i].Competency__c);
+                    competencyRevenue.set(result[i].Competency__c,keyRevenue += result[i].POS_Amount__c);
+                }
+                if( (!placementSet.has(result[i].Competency__c)) && (result[i].POS_Amount__c != 0) ) {
+                    placementSet.add(result[i].Competency__c);
+                    revenue = 0;
+                    revenue += result[i].POS_Amount__c;
+                    quantity = 0;
+                    quantity += result[i].Quantity__c;
+                    var tooltip = '{!$Label.CRM_NPN_SuRF_Competency}: <b>'+result[i].Competency__c+'</b><br/>{!$Label.CRM_NPN_SuRF_Opportunity_Cost}: <b>$'+new Number(revenue).toLocaleString('en')+'</b><br/>{!$Label.CRM_NPN_SuRF_Opportunity_Quantity}: <b>'+quantity+'</b>';
+                    style='#3b5d00';
+                    //style = '#';
+                    //for(var i = 0; i < 6; i++)
+                        //style += hex.charAt(Math.floor(Math.random() * hex.length));
+                    dataArray[++index] = [result[i].Competency__c,revenue,quantity,revenue/1000000,tooltip,style];
+                }
+                else if(result[i].POS_Amount__c != 0) {
+                    revenue += result[i].POS_Amount__c;
+                    quantity += result[i].Quantity__c;
+                    var tooltip = '{!$Label.CRM_NPN_SuRF_Competency}: <b>'+result[i].Competency__c+'</b><br/>{!$Label.CRM_NPN_SuRF_Opportunity_Cost}: <b>$'+new Number(revenue).toLocaleString('en')+'</b><br/>{!$Label.CRM_NPN_SuRF_Opportunity_Quantity}: <b>'+quantity+'</b>';
+                    dataArray[index] = [result[i].Competency__c,revenue,quantity,revenue/1000000,tooltip,style];
+                }
+            }
+            if(index > 1) {
+                var tooltip = '{!$Label.CRM_NPN_SuRF_Competency}: <b>All</b><br/>{!$Label.CRM_NPN_SuRF_Opportunity_Cost}: <b>$'+new Number(totalRevenue).toLocaleString('en')+'</b><br/>{!$Label.CRM_NPN_SuRF_Opportunity_Quantity}: <b>'+totalQuantity+'</b>';
+                style='#3b5d00';
+                //style = '#';
+                //for(var i = 0; i < 6; i++)
+                    //style += hex.charAt(Math.floor(Math.random() * hex.length));
+                dataArray[++index] = ['{!$Label.CRM_NPN_SuRF_Total}',totalRevenue,totalQuantity,totalRevenue/1000000,tooltip,style];
+            }
+            var data2 = google.visualization.arrayToDataTable(dataArray);
+            var formatter = new google.visualization.NumberFormat({fractionDigits: 2, prefix: '$', suffix: 'm'});
+            formatter.format(data2,1);
+            formatter.format(data2,3);
+            POBC.draw(data2,{height: 400, width: '100%', bar: {groupWidth: "10%"}, vAxis: {textPosition: 'none'}, tooltip: {isHtml: true}, legend:'none'});
+            var data = new google.visualization.DataTable();
+            data.addColumn('string', '{!$Label.CRM_NPN_SuRF_Competency}');
+            data.addColumn('string', '{!$Label.CRM_NPN_SuRF_Level}');
+            data.addColumn('number', '{!$Label.CRM_NPN_SuRF_Target}');
+            data.addColumn('string', '{!$Label.CRM_NPN_SuRF_Target_Met}');
+            placementSet.clear();
+            index = 0;
+            for(var i = 0; i < result.length; i++) {
+                if(!placementSet.has(result[i].Competency__c)) {
+                    placementSet.add(result[i].Competency__c);
+                    if(competencyRevenue.get(result[i].Competency__c) > result[i].Target__c) {
+                        data.addRow([result[i].Competency__c, result[i].Level__c, result[i].Target__c, '✔']);
+                        data.setProperties(index++,3,{'className':'check'});
+                    }
+                    else {
+                        data.addRow([result[i].Competency__c, result[i].Level__c, result[i].Target__c, '⚠']);
+                        data.setProperties(index++,3,{'className':'caution'});
+                    }
+                }
+            }
+            data.setColumnProperties(0,{'className':'widthp40'});
+            POCS.draw(data, {showRowNumber: false, width: '100%', allowHtml: true, cssClassNames: {headerCell: 'googleHeaderCell'}});
+            
+            var dataArray2 = new Array();
+            dataArray2[0] = [{label:'{!$Label.CRM_NPN_SuRF_Stage}',type:'string'},{label:'{!$Label.CRM_NPN_SuRF_Cost}',type:'number'},{role: 'annotation'},{role: 'annotation'},{type: 'string', role: 'tooltip', 'p': {'html': true}},{role: 'style'}];
+            var stageProbabilitySort = new Array();
+            index = 0;
+            stageSet.forEach(function(stage) {
+                stageProbabilitySort[index++] = [stage,stageProbability.get(stage)];
+            });
+            stageProbabilitySort.sort(function(a,b) {
+                return a[1] - b[1];
+            });
+            for(var i = 0; i < stageProbabilitySort.length; i++) {
+                revenue = 0;
+                quantity = 0;
+                for(var j = 0; j < result.length; j++) {
+                    if(stageProbabilitySort[i][0] == result[j].Stage__c) {
+                        revenue += result[j].POS_Amount__c
+                        quantity += result[j].Quantity__c;
+                    }
+                }
+                style = '#3b5d00';
+                //style = '#';
+                //for(var j = 0; j < 6; j++)
+                    //style += hex.charAt(Math.floor(Math.random() * hex.length));
+                var tooltip = '{!$Label.CRM_NPN_SuRF_Stage}: <b>'+stageProbabilitySort[i][0]+'</b><br/>{!$Label.CRM_NPN_SuRF_Opportunity_Cost}: <b>$'+new Number(revenue).toLocaleString('en')+'</b><br/>{!$Label.CRM_NPN_SuRF_Opportunity_Quantity}: <b>'+quantity+'</b>';
+                dataArray2[i+1] = [stageProbabilitySort[i][0],revenue,quantity,revenue/1000000,tooltip,style];
+            }
+            if(dataArray2.length > 6) {
+                for(var i = dataArray2.length - 1; i > 5; i--) {
+                    otherRevenue += dataArray2[i][1];
+                    otherQuantity += dataArray2[i][2];
+                    dataArray2.pop();
+                }
+                style='#3b5d00';
+                //style = '#';
+                //for(var i = 0; i < 6; i++)
+                    //style += hex.charAt(Math.floor(Math.random() * hex.length));
+                var tooltip = '{!$Label.CRM_NPN_SuRF_Product}: <b>{!$Label.CRM_NPN_SuRF_Others}</b><br/>{!$Label.CRM_NPN_SuRF_POS_Cost}: <b>$'+new Number(otherRevenue).toLocaleString('en')+'</b><br/>{!$Label.CRM_NPN_SuRF_POS_Quantity}: <b>'+otherQuantity+'</b>';
+                dataArray2[dataArray2.length] = ['{!$Label.CRM_NPN_SuRF_Others}',otherRevenue,otherQuantity,otherRevenue/1000000,tooltip,style];
+            }
+            if(dataArray2.length > 2) {
+                style='#3b5d00';
+                //style = '#';
+                //for(var i = 0; i < 6; i++)
+                    //style += hex.charAt(Math.floor(Math.random() * hex.length));
+                var tooltip = 'Stage: <b>All</b><br/>Opportunity Cost: <b>$'+new Number(totalRevenue).toLocaleString('en')+'</b><br/>Opportunity Quantity: <b>'+totalQuantity+'</b>';
+                dataArray2[dataArray2.length] = ['{!$Label.CRM_NPN_SuRF_Total}',totalRevenue,totalQuantity,totalRevenue/1000000,tooltip,style];
+            }
+            var data3 = google.visualization.arrayToDataTable(dataArray2);
+            formatter.format(data3,1);
+            formatter.format(data3,3);
+            POBS.draw(data3,{height: 400,  width: '100%', bar: {groupWidth: "20%"}, vAxis: {textPosition: 'none'}, tooltip: {isHtml: true}, legend:'none'});
+        }, {escape:true});
+        
+        NPN_SuRF_Ctrl.loadPartnerPOSSubmission(program, subprogram, '{!loadPartnerPOSSubmission}', '{!accId}', '{!isTransit}', function(result,event) {
+            var data = new google.visualization.DataTable();
+            data.addColumn('date', '{!$Label.CRM_NPN_SuRF_Submission_Date}');
+            data.addColumn('string', '{!$Label.CRM_NPN_SuRF_Yes_No}');
+            var year = currentDay.getFullYear();
+            var month = currentDay.getMonth()+1;
+            var count = 0;
+            var rowCount = 0;
+            var strProgramPOSRequirement = JSON.parse('{!strProgramPOSRequirement}');
+            let mapProgramPOSRequirement = new Map();
+            for (var value in strProgramPOSRequirement ) {
+                mapProgramPOSRequirement.set(value,strProgramPOSRequirement[value]);
+            } 
+            console.log(mapProgramPOSRequirement);
+            console.log(!mapProgramPOSRequirement.get(program));
+            //if((program != '{!$Label.Solution_Provider}' && program != '{!$Label.Cloud_Service_Provider}') || (competencySet.has('Compute') || competencySet.has('{!$Label.Competency_Compute_DGX}') || competencySet.has('{!$Label.Competency_Visualization}'))) {                                                           
+                var resultIndex = 0;
+                var objectYear;
+                var objectMonth; 
+                var notFound = true;
+                var allDataNotDone = true;
+                while(count < 6) {                
+                    if(year < parseInt('{!decAgreementYear}') || (year == parseInt('{!decAgreementYear}') && month-1 < parseInt('{!decAgreementMonth}')) ) {
+                        data.addRow([new Date(year,month-1,1),'—']);
+                        data.setProperties(rowCount++,1,{'className':'notApplicable'});
+                        count++;
+                    } else if(year == parseInt('{!decAgreementYear}') && month-1 == parseInt('{!decAgreementMonth}')) {
+                        data.addRow([new Date(year,month-1,1),'']);
+                        data.setProperties(rowCount++,1,{'className':'notApplicable'});
+                        count++;
+                    } else {
+                        while(resultIndex < result.length) {
+                            objectYear = parseInt(result[resultIndex].Submission_Date__c.substring(0,4),10);
+                            objectMonth = parseInt(result[resultIndex].Submission_Date__c.substring(5),10);              
+                            if( (objectYear == year) && (objectMonth == month) ) {
+                                data.addRow([new Date(objectYear,objectMonth-1,1),'✔']);
+                                data.setProperties(rowCount++,1,{'className':'check'});
+                                notFound = false;
+                                count++;
+                            }
+                            resultIndex ++;
+                        }
+                        resultIndex = 0;
+                        if(notFound == true) {
+                            if((year == currentDay.getFullYear() && month < currentDay.getMonth()) || (year == currentDay.getFullYear() && month == currentDay.getMonth() && currentDay.getDate() >= 15) || (year == currentDay.getFullYear()-1 && month == 12 && currentDay.getMonth() == 0 && currentDay.getDate() >= 15) || (year == currentDay.getFullYear()-1 && month < 12) || (year == currentDay.getFullYear()-1 && month == 12 && currentDay.getMonth()>0)) {
+                                if(!mapProgramPOSRequirement.get(program)) {
+                                    data.addRow([new Date(year,month-1,1),'—']);
+                                    data.setProperties(rowCount++,1,{'className':'notApplicable'});
+                                    count++;
+                                } else {
+                                    data.addRow([new Date(year,month-1,1),'✘']);
+                                    data.setProperties(rowCount++,1,{'className':'x'});
+                                    count++;
+                                }
+                            }
+                            // else {
+                              //  data.addRow([new Date(year,month-1,1),'']);
+                              //  data.setProperties(rowCount++,1,{'className':'notApplicable'});
+                              //  count++;
+                            //}
+                        }
+                        notFound = true;   
+                    }
+                    if(--month == 0) {
+                        year --;
+                        month = 12;
+                    } 
+                                    
+                }
+          // }  else {
+          //     while(count < 6) {
+          //         data.addRow([new Date(year,month-1,1),'—']);
+          //          data.setProperties(rowCount++,1,{'className':'notApplicable'});
+          //          count++;
+          //          if(--month == 0) {
+          //              year --;
+          //              month = 12;
+          //          }
+          //     }
+          //}
+            var formatter = new google.visualization.DateFormat({pattern: "MMM yyyy"});
+            formatter.format(data,0);
+            PPOSS.draw(data, {showRowNumber: false, width: '100%', allowHtml: true, cssClassNames: {headerCell: 'googleHeaderCell'}});
+        }, {escape:true});
+        
+        NPN_SuRF_Ctrl.loadPartnerPOS(program, subprogram, '{!loadPartnerPOS}', '{!accId}', '{!isTransit}', function(result,event) {
+            var dataArray = new Array();
+            dataArray[0] = [{label:'{!$Label.CRM_NPN_SuRF_Competency}',type:'string'},{label:'{!$Label.CRM_NPN_SuRF_Cost}',type:'number'},{role: 'annotation'},{type: 'string', role: 'tooltip', 'p': {'html': true}},{role: 'style'}];
+            var placementSet = new Set();
+            var index = 0;
+            var revenue = 0;
+            var revInMil = 0;
+            var quantity = 0;
+            var totalQuantity = 0;
+            var totalRevenue = 0.0;
+            var otherRevenue = 0;
+            var otherQuantity = 0;
+            var hex = 'abcdef0123456789';
+            var style;
+            var competencyYearRevenue = new Map();
+            var productSet = new Set();
+            
+            for(var i = 0; i < result.length; i++) {
+                if(result[i].Fiscal_Year_Quarter__c.length == 4 ||((parseInt(currentFiscalYear.substring(2,4))) <= parseInt(result[i].Fiscal_Year_Quarter__c.substring(2,4))) || (((parseInt(currentFiscalYear.substring(2,4))) > parseInt(result[i].Fiscal_Year_Quarter__c.substring(2,4))) && parseInt('{!currentFiscalQuarter}')<parseInt(result[i].Fiscal_Year_Quarter__c.substring(5,6)))) {
+                    totalRevenue += result[i].Partner_POS_Revenue__c;
+                    totalQuantity += result[i].POS_Quantity__c;
+                    productSet.add(result[i].Product_Code__c);
+                    if(!competencyYearRevenue.has(result[i].Competency__c+result[i].Fiscal_Year_Quarter__c.substring(2,4))) {
+                        competencyYearRevenue.set(result[i].Competency__c+result[i].Fiscal_Year_Quarter__c.substring(2,4),result[i].Partner_POS_Revenue__c);
+                    }
+                    else {
+                        var keyRevenue = competencyYearRevenue.get(result[i].Competency__c+result[i].Fiscal_Year_Quarter__c.substring(2,4));
+                        competencyYearRevenue.set(result[i].Competency__c+result[i].Fiscal_Year_Quarter__c.substring(2,4),keyRevenue += result[i].Partner_POS_Revenue__c);
+                    }
+                    if( (!placementSet.has(result[i].Competency__c)) && (result[i].Partner_POS_Revenue__c != 0 || result[i].Partner_POS_Quantity__c != 0) ) {
+                        placementSet.add(result[i].Competency__c);
+                        revenue = 0;
+                        revenue += result[i].Partner_POS_Revenue__c;
+                        quantity = 0;
+                        quantity += result[i].POS_Quantity__c;
+                        var tooltip = '{!$Label.CRM_NPN_SuRF_Competency}: <b>'+result[i].Competency__c+'</b><br/>{!$Label.CRM_NPN_SuRF_POS_Cost}: <b>$'+new Number(revenue).toLocaleString('en')+'</b><br/>{!$Label.CRM_NPN_SuRF_POS_Quantity}: <b>'+quantity+'</b>';
+                        style="#3b5d00";
+                        //style = '#';
+                        //for(var j = 0; j < 6; j++)
+                          //  style += hex.charAt(Math.floor(Math.random() * hex.length));
+                        //dataArray[++index] = [result[i].Competency__c,revenue,quantity,revenue/1000000,tooltip,style];
+                        dataArray[++index] = [result[i].Competency__c,revenue,revenue,tooltip,style];
+                    }
+                    else if(result[i].Partner_POS_Revenue__c != 0 || result[i].Partner_POS_Quantity__c != 0) {
+                        revenue += result[i].Partner_POS_Revenue__c;
+                        quantity += result[i].POS_Quantity__c;
+                        var tooltip = '{!$Label.CRM_NPN_SuRF_Competency}: <b>'+result[i].Competency__c+'</b><br/>{!$Label.CRM_NPN_SuRF_POS_Cost}: <b>$'+new Number(revenue).toLocaleString('en')+'</b><br/>{!$Label.CRM_NPN_SuRF_POS_Quantity}: <b>'+quantity+'</b>';
+                        //dataArray[index] = [result[i].Competency__c,revenue,quantity,revenue/1000000,tooltip,style];
+                        dataArray[index] = [result[i].Competency__c,revenue,revenue,tooltip,style];
+                    }
+                }
+            }
+            if(index > 1) {
+                var tooltip = '{!$Label.CRM_NPN_SuRF_Competency}: <b>All</b><br/>{!$Label.CRM_NPN_SuRF_POS_Cost}: <b>$'+new Number(totalRevenue).toLocaleString('en')+'</b><br/>{!$Label.CRM_NPN_SuRF_POS_Quantity}: <b>'+totalQuantity+'</b>';
+                style="#3b5d00";
+                //style = '#';
+                //for(var i = 0; i < 6; i++)
+                    //style += hex.charAt(Math.floor(Math.random() * hex.length));
+                //dataArray[++index] = ['Total',totalRevenue,totalQuantity,(totalRevenue/1000000).toFixed(2),tooltip,style];
+                dataArray[++index] = ['Total',totalRevenue,totalRevenue,tooltip,style];
+            }
+            var data = google.visualization.arrayToDataTable(dataArray);
+            //var formatter = new google.visualization.NumberFormat({fractionDigits: 2, prefix: '$', suffix: 'm'});
+            var formatter = new google.visualization.NumberFormat({fractionDigits: 0, prefix: '$'});
+            formatter.format(data,1);
+            formatter.format(data,3);
+            PPOSC.draw(data,{height: 400, width: '100%', bar: {groupWidth: "20%"}, vAxis: {textPosition: 'none'}, tooltip: {isHtml: true}, legend:'none'});
+            var dataArray2 = new Array();
+            dataArray2[0] = [{label:'{!$Label.CRM_NPN_SuRF_Product}',type:'string'},{label:'{!$Label.CRM_NPN_SuRF_Cost}',type:'number'},{role: 'annotation'},{type: 'string', role: 'tooltip', 'p': {'html': true}},{role: 'style'}];
+            index = 0;
+            productSet.forEach(function(product) {
+                revenue = 0;
+                quantity = 0;
+                for(var i = 0; i < result.length; i++) {
+                    if(result[i].Fiscal_Year_Quarter__c.length == 4 ||((parseInt(currentFiscalYear.substring(2,4))) <= parseInt(result[i].Fiscal_Year_Quarter__c.substring(2,4))) || (((parseInt(currentFiscalYear.substring(2,4))) > parseInt(result[i].Fiscal_Year_Quarter__c.substring(2,4))) && parseInt('{!currentFiscalQuarter}')<parseInt(result[i].Fiscal_Year_Quarter__c.substring(5,6)))) {
+                        if(result[i].Product_Code__c == product) {
+                            revenue += result[i].Partner_POS_Revenue__c;
+                            quantity += result[i].POS_Quantity__c;
+                        }
+                    }
+                }
+                style="#3b5d00";
+                //style = '#';
+                //for(var i = 0; i < 6; i++)
+                    //style += hex.charAt(Math.floor(Math.random() * hex.length));
+                var tooltip = '{!$Label.CRM_NPN_SuRF_Product}: <b>'+product+'</b><br/>{!$Label.CRM_NPN_SuRF_POS_Cost}: <b>$'+new Number(revenue).toLocaleString('en')+'</b><br/>{!$Label.CRM_NPN_SuRF_POS_Quantity}: <b>'+quantity+'</b>';
+                //dataArray2[++index] = [product,revenue,quantity,revenue/1000000,tooltip,style];
+                dataArray2[++index] = [product,revenue,revenue,tooltip,style];
+            });
+            dataArray2.sort(function(a,b) {
+                return b[1] - a[1];
+            });
+            if(dataArray2.length > 6) {
+                for(var i = dataArray2.length - 1; i > 5; i--) {
+                    otherRevenue += dataArray2[i][1];
+                    otherQuantity += dataArray2[i][2];
+                    dataArray2.pop();
+                }
+                style="#3b5d00";
+                //style = '#';
+                //for(var i = 0; i < 6; i++)
+                    //style += hex.charAt(Math.floor(Math.random() * hex.length));
+                var tooltip = '{!$Label.CRM_NPN_SuRF_Product}: <b>Others</b><br/>{!$Label.CRM_NPN_SuRF_POS_Cost}: <b>$'+new Number(otherRevenue).toLocaleString('en')+'</b><br/>{!$Label.CRM_NPN_SuRF_POS_Quantity}: <b>'+otherQuantity+'</b>';
+                //dataArray2[dataArray2.length] = ['Others',otherRevenue,otherQuantity,(otherRevenue/1000000).toFixed(2),tooltip,style];
+                dataArray2[dataArray2.length] = ['Others',otherRevenue,otherRevenue,tooltip,style];
+            }
+            if(dataArray2.length > 2) {
+                style="#3b5d00";
+                //style = '#';
+                //for(var i = 0; i < 6; i++)
+                    //style += hex.charAt(Math.floor(Math.random() * hex.length));                    
+                var tooltip = '{!$Label.CRM_NPN_SuRF_Product}: <b>Total</b><br/>{!$Label.CRM_NPN_SuRF_POS_Cost}: <b>$'+new Number(totalRevenue).toLocaleString('en')+'</b><br/>{!$Label.CRM_NPN_SuRF_POS_Quantity}: <b>'+totalQuantity+'</b>';
+                //dataArray2[dataArray2.length] = ['Total',totalRevenue,totalQuantity,(totalRevenue/1000000).toFixed(2),tooltip,style];
+                dataArray2[dataArray2.length] = ['Total',totalRevenue,totalRevenue,tooltip,style];
+            }
+            var data2 = google.visualization.arrayToDataTable(dataArray2);
+            formatter.format(data2,1);
+            formatter.format(data2,3);
+            PPOSP.draw(data2,{height: 400, width:'100%', bar: {groupWidth: "20%"}, vAxis: {textPosition: 'none'}, tooltip: {isHtml: true}, legend:{position:'none'}});
+            var data3 = new google.visualization.DataTable();
+            data3.addColumn('string', '{!$Label.CRM_NPN_SuRF_Fiscal_Year}');
+            data3.addColumn('string', '{!$Label.CRM_NPN_SuRF_Competency}');
+            data3.addColumn('number', '{!$Label.CRM_NPN_SuRF_Minimum_Annual_Sales_Commitment}');
+            data3.addColumn('number', '{!$Label.CRM_NPN_SuRF_POS_Revenue}');
+            data3.addColumn('string', '{!$Label.CRM_NPN_SuRF_Target_Met}');
+            var yearSet = new Set();
+            var competencyYearRevenue = new Map();
+            for(var i = 0; i < result.length; i++) {
+                if(!yearSet.has(result[i].Fiscal_Year_Quarter__c.substring(2,4)))
+                    yearSet.add(result[i].Fiscal_Year_Quarter__c.substring(2,4));
+                if(!competencyYearRevenue.has(result[i].Competency__c+result[i].Fiscal_Year_Quarter__c.substring(2,4))) {
+                    competencyYearRevenue.set(result[i].Competency__c+result[i].Fiscal_Year_Quarter__c.substring(2,4),result[i].Partner_POS_Revenue__c);
+                }
+                else {
+                    var keyRevenue = competencyYearRevenue.get(result[i].Competency__c+result[i].Fiscal_Year_Quarter__c.substring(2,4));
+                    competencyYearRevenue.set(result[i].Competency__c+result[i].Fiscal_Year_Quarter__c.substring(2,4),keyRevenue += result[i].Partner_POS_Revenue__c);
+                }
+            }            
+            index = 0;
+            var totalRevenue = 0;
+            var totalTarget = 0;
+            var yearRevenue = 0;
+            var yearTarget = 0;
+            yearSet.forEach(function(year) {
+                if(parseInt(currentFiscalYear.substring(2,4)) - year == 0) {
+                    yearRevenue = 0;
+                    yearTarget = 0;
+                    competencySet.forEach(function(competency) {
+                        for(var i = 0; i < result.length; i++) {
+                            if( (result[i].Competency__c == competency) && (result[i].Fiscal_Year_Quarter__c.substring(2,4) == year) ) {
+                                if(result[i].Target_Achieved__c == 1) {
+                                    data3.addRow(['FY20'+year,competency,result[i].Target__c,competencyYearRevenue.get(competency+result[i].Fiscal_Year_Quarter__c.substring(2,4)),'✔']);
+                                    data3.setProperties(index++,4,{'className':'check'});
+                                    yearRevenue += competencyYearRevenue.get(competency+result[i].Fiscal_Year_Quarter__c.substring(2,4));
+                                    yearTarget += result[i].Target__c;
+                                }
+                                else if(competencyYearRevenue.get(competency+result[i].Fiscal_Year_Quarter__c.substring(2,4)) > result[i].Target__c) {
+                                    data3.addRow(['FY20'+year,competency,result[i].Target__c,competencyYearRevenue.get(competency+result[i].Fiscal_Year_Quarter__c.substring(2,4)),'✔']);
+                                    data3.setProperties(index++,4,{'className':'check'});
+                                    yearRevenue += competencyYearRevenue.get(competency+result[i].Fiscal_Year_Quarter__c.substring(2,4));
+                                    yearTarget += result[i].Target__c;
+                                }
+                             //   else if(result[i].Fiscal_Year_Quarter__c.substring(2,4) < currentFiscalYear.substring(2,4)) {
+                             //       data3.addRow(['FY20'+year,competency,result[i].Target__c,competencyYearRevenue.get(competency+result[i].Fiscal_Year_Quarter__c.substring(2,4)),'✘']);
+                             //       data3.setProperties(index++,4,{'className':'x'});
+                             //       yearRevenue += competencyYearRevenue.get(competency+result[i].Fiscal_Year_Quarter__c.substring(2,4));
+                             //       yearTarget += result[i].Target__c;
+                             //   }
+                                else {
+                                    data3.addRow(['FY20'+year,competency,result[i].Target__c,competencyYearRevenue.get(competency+result[i].Fiscal_Year_Quarter__c.substring(2,4)),'⚠']);
+                                    data3.setProperties(index++,4,{'className':'caution'});
+                                    yearRevenue += competencyYearRevenue.get(competency+result[i].Fiscal_Year_Quarter__c.substring(2,4));
+                                    yearTarget += result[i].Target__c;
+                                }
+                                break;
+                            }
+                        }
+                    });
+                    if(yearRevenue > yearTarget) {
+                        data3.addRow(['FY20'+year,'<b>{!$Label.CRM_NPN_SuRF_Total}</b>',yearTarget,yearRevenue,'✔']);
+                        data3.setProperties(index++,4,{'className':'check'});
+                    }
+                    //else if(year < currentFiscalYear.substring(2,4)) {
+                    //    data3.addRow(['FY20'+year,'<b>{!$Label.CRM_NPN_SuRF_Total}</b>',yearTarget,yearRevenue,'✘']);
+                    //    data3.setProperties(index++,4,{'className':'x'});
+                    //}
+                    else {
+                        data3.addRow(['FY20'+year,'<b>{!$Label.CRM_NPN_SuRF_Total}</b>',yearTarget,yearRevenue,'⚠']);
+                        data3.setProperties(index++,4,{'className':'caution'});
+                    }
+                    totalRevenue += yearRevenue;
+                    totalTarget += yearTarget;
+                }
+            });
+            yearSet.forEach(function(year) {
+                if(parseInt(currentFiscalYear.substring(2,4)) - year == 1) {
+                    yearRevenue = 0;
+                    yearTarget = 0;
+                    competencySet.forEach(function(competency) {
+                        for(var i = 0; i < result.length; i++) {
+                            if( (result[i].Competency__c == competency) && (result[i].Fiscal_Year_Quarter__c.substring(2,4) == year) ) {
+                                if(result[i].Target_Achieved__c == 1) {
+                                    data3.addRow(['FY20'+year,competency,result[i].Target__c,competencyYearRevenue.get(competency+result[i].Fiscal_Year_Quarter__c.substring(2,4)),'✔']);
+                                    data3.setProperties(index++,4,{'className':'check'});
+                                    yearRevenue += competencyYearRevenue.get(competency+result[i].Fiscal_Year_Quarter__c.substring(2,4));
+                                    yearTarget += result[i].Target__c;
+                                }
+                                else if(competencyYearRevenue.get(competency+result[i].Fiscal_Year_Quarter__c.substring(2,4)) > result[i].Target__c) {
+                                    data3.addRow(['FY20'+year,competency,result[i].Target__c,competencyYearRevenue.get(competency+result[i].Fiscal_Year_Quarter__c.substring(2,4)),'✔']);
+                                    data3.setProperties(index++,4,{'className':'check'});
+                                    yearRevenue += competencyYearRevenue.get(competency+result[i].Fiscal_Year_Quarter__c.substring(2,4));
+                                    yearTarget += result[i].Target__c;
+                                }
+                              //  else if(result[i].Fiscal_Year_Quarter__c.substring(2,4) < currentFiscalYear.substring(2,4)) {
+                              //      data3.addRow(['FY20'+year,competency,result[i].Target__c,competencyYearRevenue.get(competency+result[i].Fiscal_Year_Quarter__c.substring(2,4)),'✘']);
+                              //      data3.setProperties(index++,4,{'className':'x'});
+                              //      yearRevenue += competencyYearRevenue.get(competency+result[i].Fiscal_Year_Quarter__c.substring(2,4));
+                              //      yearTarget += result[i].Target__c;
+                              //  }
+                                else {
+                                    data3.addRow(['FY20'+year,competency,result[i].Target__c,competencyYearRevenue.get(competency+result[i].Fiscal_Year_Quarter__c.substring(2,4)),'⚠']);
+                                    data3.setProperties(index++,4,{'className':'caution'});
+                                    yearRevenue += competencyYearRevenue.get(competency+result[i].Fiscal_Year_Quarter__c.substring(2,4));
+                                    yearTarget += result[i].Target__c;
+                                }
+                                break;
+                            }
+                        }
+                    });
+                    if(yearRevenue > yearTarget) {
+                        data3.addRow(['FY20'+year,'<b>{!$Label.CRM_NPN_SuRF_Total}</b>',yearTarget,yearRevenue,'✔']);
+                        data3.setProperties(index++,4,{'className':'check'});
+                    }
+                    //else if(year < currentFiscalYear.substring(2,4)) {
+                   //     data3.addRow(['FY20'+year,'<b>{!$Label.CRM_NPN_SuRF_Total}</b>',yearTarget,yearRevenue,'✘']);
+                   //     data3.setProperties(index++,4,{'className':'x'});
+                   // }
+                    else {
+                        data3.addRow(['FY20'+year,'<b>{!$Label.CRM_NPN_SuRF_Total}</b>',yearTarget,yearRevenue,'⚠']);
+                        data3.setProperties(index++,4,{'className':'caution'});
+                    }
+                    totalRevenue += yearRevenue;
+                    totalTarget += yearTarget;
+                }
+            });
+            if(totalRevenue > totalTarget) {
+                data3.addRow(['<b>{!$Label.CRM_NPN_SuRF_Total}</b>','',totalTarget,totalRevenue,'✔']);
+                data3.setProperties(index,4,{'className':'check'});
+            }
+            else {
+                data3.addRow(['<b>{!$Label.CRM_NPN_SuRF_Total}</b>','',totalTarget,totalRevenue,'⚠']);
+                data3.setProperties(index,4,{'className':'caution'});
+            }
+            data3.setColumnProperties(2,{'className':'alignLeft'});
+            data3.setColumnProperties(3,{'className':'alignLeft'});
+            formatter = new google.visualization.NumberFormat({fractionDigits: 0, prefix: '$'});
+            formatter.format(data3,2);
+            formatter.format(data3,3);
+            google.visualization.events.addOneTimeListener(PPOST, 'ready', function () {
+              var rowLabel = null;
+              var rowIndex;
+              var rowSpan;
+              var rows = divPPOST.getElementsByTagName('tr');
+              Array.prototype.forEach.call(rows, function (row, index) {
+                if (rowLabel !== row.cells[0].innerHTML) {
+                  rowLabel = row.cells[0].innerHTML;
+                  rowIndex = index;
+                  if (rowSpan > 1) {
+                    rows[index - rowSpan].cells[0].rowSpan = rowSpan;
+                  }
+                  rowSpan = 1;
+                } else {
+                  rowSpan++;
+                  row.removeChild(row.cells[0]);
+                }
+              });
+            });
+            PPOST.draw(data3, {showRowNumber: false, width: '100%', allowHtml: true, cssClassNames: {headerCell: 'googleHeaderCell'}});
+        }, {escape:true});
+
+        /* Changes for SDS-3054  START*/
+        // copied from loadPartnerTraining     
+
+        NPN_SuRF_Ctrl.loadDGXHOTComplianceContacts(program, subprogram, '{!loadDGXHOTComplianceContacts}', '{!accId}', '{!isTransit}', function(result,event) {
+            
+            var rowCount = 0;
+            var rowCountTwo = 0;
+            var competencySetNew = new Set();
+            var rowCurriculum = new Map();
+            var curriculumRow = new Map();
+            var placementMap = new Map();
+
+            var data = new google.visualization.DataTable();
+            data.addColumn('string', 'Competency');
+            data.addColumn('string', '{!$Label.CRM_NPN_SuRF_Training_Type}');
+            data.addColumn('string', 'Curriculum');            
+            data.addColumn('string', 'Status');
+            data.addColumn('string', 'Required');
+
+            DGXHOTContactTrainingData = new google.visualization.DataTable();
+            DGXHOTContactTrainingData.addColumn('string', '{!$Label.CRM_NPN_SuRF_Curriculum}');
+            DGXHOTContactTrainingData.addColumn('string', '{!$Label.CRM_NPN_SuRF_Contacts}');
+            DGXHOTContactTrainingData.addColumn('string', '{!$Label.CRM_NPN_SuRF_Status}');
+            DGXHOTContactTrainingData.addColumn('string', '{!$Label.CRM_NPN_SuRF_Training_Type}');
+            
+            data.addRow(['All',null,null,null,null]);
+            rowCount++;
+            for(var i = 0; i < result.length; i++) {
+                competencySetNew.add(result[i].Competency__c);
+                if(!placementMap.has(result[i].Curriculum_Title__c+result[i].Type__c+result[i].ProductType__c)) {
+                    placementMap.set(result[i].Curriculum_Title__c+result[i].Type__c+result[i].ProductType__c,result[i].Partner_Training_Compliance__c);
+                    rowCurriculum.set(result[i].Curriculum_Title__c+result[i].Type__c+result[i].ProductType__c,rowCount);
+                    curriculumRow.set(rowCount,result[i].Curriculum_Title__c);
+                    if(result[i].Partner_Training_Compliance__c == 1) {
+                        if(result[i].ProductType__c == 'Product') {                            
+                            if(result[i].Type__c == 'Sales') {
+                                data.addRow([result[i].Competency__c
+                                        ,result[i].Type__c
+                                        ,result[i].Curriculum_Title__c
+                                        ,'✔'
+                                        ,result[i].Partner_Training_Required__c]);
+                            } else if(result[i].Type__c == 'Technical') {                                
+                                data.addRow([result[i].Competency__c
+                                        ,result[i].Type__c
+                                        ,result[i].Curriculum_Title__c
+                                        ,'✔'
+                                        ,result[i].Partner_Training_Required__c]);
+                            }
+                        } else if(result[i].ProductType__c == 'Sales') {
+                            data.addRow([result[i].Competency__c
+                                        ,result[i].Type__c
+                                        ,result[i].Curriculum_Title__c
+                                        ,'✔'
+                                        ,result[i].Partner_Training_Required__c]);
+                        } else if(result[i].ProductType__c == 'Technical') {                            
+                            data.addRow([result[i].Competency__c
+                                        ,result[i].Type__c
+                                        ,result[i].Curriculum_Title__c
+                                        ,'✔'
+                                        ,result[i].Partner_Training_Required__c]);
+                        } else {
+                            data.addRow([result[i].Competency__c
+                                        ,result[i].Type__c
+                                        ,result[i].Curriculum_Title__c
+                                        ,'✔'
+                                        ,result[i].Partner_Training_Required__c]);
+                        }
+                        data.setProperties(rowCount++,3,{'className':'check hoverTD'});
+                    }
+                    else if(result[i].Partner_Training_Compliance__c == 0) {
+                        if(result[i].ProductType__c == 'Product') {
+                            if(result[i].Type__c == 'Sales') {
+                                data.addRow([result[i].Competency__c
+                                        ,result[i].Type__c
+                                        ,result[i].Curriculum_Title__c
+                                        ,'⚠'
+                                        ,result[i].Partner_Training_Required__c]);
+                            } else if(result[i].Type__c == 'Technical') {
+                                data.addRow([result[i].Competency__c
+                                        ,result[i].Type__c
+                                        ,result[i].Curriculum_Title__c
+                                        ,'⚠'
+                                        ,result[i].Partner_Training_Required__c]);
+                            }
+                        } else if(result[i].ProductType__c == 'Sales') {
+                            data.addRow([result[i].Competency__c
+                                        ,result[i].Type__c
+                                        ,result[i].Curriculum_Title__c
+                                        ,'⚠'
+                                        ,result[i].Partner_Training_Required__c]);
+                        } else if(result[i].ProductType__c == 'Technical') {
+                            data.addRow([result[i].Competency__c
+                                        ,result[i].Type__c
+                                        ,result[i].Curriculum_Title__c
+                                        ,'⚠'
+                                        ,result[i].Partner_Training_Required__c]);
+                        } else {
+                            data.addRow([result[i].Competency__c
+                                        ,result[i].Type__c
+                                        ,result[i].Curriculum_Title__c
+                                        ,'⚠'
+                                        ,result[i].Partner_Training_Required__c]);
+                        }
+                        data.setProperties(rowCount++,3,{'className':'caution hoverTD'});
+                    } 
+                    else {
+                        if(result[i].ProductType__c == 'Product') {
+                            if(result[i].Type__c == 'Sales') {
+                                data.addRow([result[i].Competency__c
+                                        ,result[i].Type__c
+                                        ,result[i].Curriculum_Title__c
+                                        ,'✘'
+                                        ,result[i].Partner_Training_Required__c]);
+                            } else if(result[i].Type__c == 'Technical') {
+                                data.addRow([result[i].Competency__c
+                                        ,result[i].Type__c
+                                        ,result[i].Curriculum_Title__c
+                                        ,'✘'
+                                        ,result[i].Partner_Training_Required__c]);
+                            }
+                        } else if(result[i].ProductType__c == 'Sales') {
+                            data.addRow([result[i].Competency__c
+                                        ,result[i].Type__c
+                                        ,result[i].Curriculum_Title__c
+                                        ,'✘'
+                                        ,result[i].Partner_Training_Required__c]);
+                        } else if(result[i].ProductType__c == 'Technical') {
+                            data.addRow([result[i].Competency__c
+                                        ,result[i].Type__c
+                                        ,result[i].Curriculum_Title__c
+                                        ,'✘'
+                                        ,result[i].Partner_Training_Required__c]);
+                        } else { 
+                            data.addRow([result[i].Competency__c
+                                        ,result[i].Type__c
+                                        ,result[i].Curriculum_Title__c
+                                        ,'✘'
+                                        ,result[i].Partner_Training_Required__c]);
+                        }
+                        data.setProperties(rowCount++,3,{'className':'x hoverTD'});
+                    }
+                }
+                else if(result[i].Partner_Training_Compliance__c > placementMap.get(result[i].Curriculum_Title__c+result[i].Type__c+result[i].ProductType__c)) {
+                    if(result[i].Partner_Training_Compliance__c == 1){
+                        data.setCell(rowCurriculum.get(result[i].Curriculum_Title__c+result[i].Type__c+result[i].ProductType__c),3,'✔',null,{'className':'check hoverTD'});
+                    }
+                    else if(result[i].Partner_Training_Compliance__c == 0){
+                        data.setCell(rowCurriculum.get(result[i].Curriculum_Title__c+result[i].Type__c+result[i].ProductType__c),3,'⚠',null,{'className':'caution hoverTD'});
+                    }
+                    else{
+                        data.setCell(rowCurriculum.get(result[i].Curriculum_Title__c+result[i].Type__c+result[i].ProductType__c),3,'✘',null,{'className':'x hoverTD'});
+                    }
+                }
+
+                if(result[i].Training_Compliance_Status__c == 'Complete') {                                        
+                    DGXHOTContactTrainingData.addRow([result[i].Curriculum_Title__c,result[i].Contact_Name__c,'✔',result[i].Type__c]);
+                    DGXHOTContactTrainingData.setProperties(rowCountTwo,2,{'className':'check'});                                          
+                }
+                
+                else if(result[i].Training_Compliance_Status__c == 'Enrolled') {
+                    DGXHOTContactTrainingData.addRow([result[i].Curriculum_Title__c,result[i].Contact_Name__c,'⚠',result[i].Type__c]);
+                    DGXHOTContactTrainingData.setProperties(rowCountTwo,2,{'className':'caution'});    
+                }
+                else {
+                    DGXHOTContactTrainingData.addRow([result[i].Curriculum_Title__c,result[i].Contact_Name__c,'✘',result[i].Type__c]);
+                    DGXHOTContactTrainingData.setProperties(rowCountTwo,2,{'className':'x'});
+                }
+                drilldownRowContact.set(rowCountTwo++,result[i].Contact_Name__c);       
+            }
+
+            data.setColumnProperties(0,{'className':'widthp20 hoverTD'});
+            data.setColumnProperties(1,{'className':'widthp20 hoverTD'});
+            data.setColumnProperties(2,{'className':'widthp30 hoverTD'});
+            data.setColumnProperties(3,{'className':'widthp20 hoverTD'});
+            data.setColumnProperties(4,{'className':'widthp15 hoverTD'});        
+            
+            google.visualization.events.addOneTimeListener(DHTC, 'ready', function () {
+                var rowLabel = null;
+                var rowIndex;
+                var rowSpan;
+                var rows = divDHTC.getElementsByTagName('tr');
+                Array.prototype.forEach.call(rows, function (row, index) {
+                    rowIndex = index+1;
+                    
+                    if (rowLabel !== row.cells[0].innerHTML + row.cells[1].innerHTML) {
+                        rowLabel = row.cells[0].innerHTML + row.cells[1].innerHTML;                  
+                        if (rowSpan > 1) {
+                            rows[index - rowSpan].cells[1].rowSpan = rowSpan;
+                        }
+                        rowSpan = 1;
+                    } else {
+                        rowSpan++;
+                        row.removeChild(row.cells[1]);
+                    }
+                });
+                if (rowSpan > 1) {
+                    rows[rowIndex - rowSpan].cells[1].rowSpan = rowSpan;
+                }
+            });            
+            google.visualization.events.addOneTimeListener(DHTC, 'ready', function () {
+                var rowLabel = null;
+                var rowIndex;
+                var rowSpan;
+                var rows = divDHTC.getElementsByTagName('tr');
+                Array.prototype.forEach.call(rows, function (row, index) {
+                    rowIndex = index+1;
+                    if (rowLabel !== row.cells[0].innerHTML) {
+                        rowLabel = row.cells[0].innerHTML;
+                        if (rowSpan > 1) {
+                            rows[index - rowSpan].cells[0].rowSpan = rowSpan;
+                        }
+                        rowSpan = 1;
+                    } else {
+                        rowSpan++;
+                        row.removeChild(row.cells[0]);
+                    }
+                });
+                if (rowSpan > 1) {
+                    rows[rowIndex - rowSpan].cells[0].rowSpan = rowSpan;
+                }
+            });
+            google.visualization.events.addOneTimeListener(DHTC, 'ready', function () {
+                var rows = divDHTC.getElementsByTagName('tr');
+                rows[1].cells[0].colSpan = 4;
+                rows[1].cells[0].style = 'text-align: center';
+            });
+
+            // Changes for SDS-3054 START
+            // The DGX HOT Compliace section is shown only for SP Compute DGX/ DGX.
+            console.log('competencySetNew: '+ Array.from(competencySetNew.values()));
+            if(program == 'Solution Provider' && (competencySetNew.has('Compute DGX') || competencySetNew.has('DGX'))) {
+                document.getElementById('DHTitle').style.display = 'table-row'; 
+                document.getElementById('DHSection').style.display = 'table-row';
+            }else{
+                document.getElementById('DHTitle').style.display = 'none'; 
+                document.getElementById('DHSection').style.display = 'none'; 
+            }
+            // Changes for SDS-3054 END        
+            
+            // draw both of the tables
+            DHTC.draw(data, {showRowNumber: false, width: '100%', allowHtml: true, cssClassNames: {headerCell: 'googleHeaderCell'}});            
+            DHTCTC.draw(DGXHOTContactTrainingData, {showRowNumber: false, width: '100%', allowHtml: true, cssClassNames: {headerCell: 'googleHeaderCell'}});                        
+
+            google.visualization.events.addListener(DHTC, 'select', selectHandler);
+            var pastSelection;
+            //Drilldown handler.
+            function selectHandler() {
+                //Array of selection information.
+                var selection = DHTC.getSelection();
+                if(selection!=''){                   
+                    if(currentCurriculumSelection != null){
+                        pastSelection = currentCurriculumSelection;
+                    }                    
+                    currentCurriculumSelection = curriculumRow.get(selection[0].row);
+                    //Toggles drilldown.
+                    if(selection[0].row == 0) {
+                        DHTCTC.draw(DGXHOTContactTrainingData, {showRowNumber: false, width: '100%', allowHtml: true, cssClassNames: {headerCell: 'googleHeaderCell'}});
+                        DHTCTCdrilldown = false;
+                    }
+                    //Activates drilldown.
+                    else {
+                        NPN_SuRF_Ctrl.loadDGXHOTComplianceContacts(program, subprogram, '{!loadDGXHOTComplianceContacts}', '{!accId}', '{!isTransit}', function(result,event) {
+                            var data = new google.visualization.DataTable();
+                            data.addColumn('string', '{!$Label.CRM_NPN_SuRF_Curriculum}');
+                            data.addColumn('string', '{!$Label.CRM_NPN_SuRF_Contacts}');                        
+                            data.addColumn('string', '{!$Label.CRM_NPN_SuRF_Status}');
+                            data.addColumn('string', '{!$Label.CRM_NPN_SuRF_Training_Type}');
+                            var rowCount = 0;
+                            drilldownRowContact.clear();
+                            var placementSet = new Set();
+                            for(var i = 0; i < result.length; i++) {
+                                if(currentCurriculumSelection == result[i].Curriculum_Title__c){
+                                    if(!placementSet.has(result[i].Type__c+result[i].Contact_Name__c+result[i].Curriculum_Title__c)) {
+                                        placementSet.add(result[i].Type__c+result[i].Contact_Name__c+result[i].Curriculum_Title__c);
+                                        if(result[i].Training_Compliance_Status__c == 'Complete') {                                        
+                                            data.addRow([result[i].Curriculum_Title__c,result[i].Contact_Name__c,'✔',result[i].Type__c]);
+                                            data.setProperties(rowCount,2,{'className':'check'});                                          
+                                        }
+                                    
+                                        else if(result[i].Training_Compliance_Status__c == 'Enrolled') {
+                                            data.addRow([result[i].Curriculum_Title__c,result[i].Contact_Name__c,'⚠',result[i].Type__c]);
+                                            data.setProperties(rowCount,2,{'className':'caution'});    
+                                        }
+                                        else {
+                                            data.addRow([result[i].Curriculum_Title__c,result[i].Contact_Name__c,'✘',result[i].Type__c]);
+                                            data.setProperties(rowCount,2,{'className':'x'});
+                                        }
+                                        drilldownRowContact.set(rowCount++,result[i].Contact_Name__c);
+                                    }
+                                }
+                            }
+                            data.setColumnProperties(3,{'className':'widthp20'});
+                            data.setColumnProperties(2,{'className':'widthp20'});
+                            data.setColumnProperties(1,{'className':'widthp30'});
+                            data.setColumnProperties(0,{'className':'widthp30'});
+                            DHTCTC.draw(data, {showRowNumber: false, width: '100%', allowHtml: true, cssClassNames: {headerCell: 'googleHeaderCell'}});
+                        }, {escape:true});
+                    }
+                }
+            }
+        }, {escape:true});
+        /* Changes for SDS-3054  END*/
+        firstRun = false;
+    }
+    
+    function sendEmail() {
+        window.location.href = "mailto:nvidiapartnerportal@nvidia.com";    
+    }
+    
+    function hoverColor(objTD) {
+        objTD.style.backgroundColor="#76B900"; 
+    }
+    
+    function prettyDate(date) {
+        var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
+                    'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+    
+        return months[date.getUTCMonth()] + ' ' + date.getUTCDate() + ', ' + date.getUTCFullYear();
+    }
+    </script>
+</apex:page>

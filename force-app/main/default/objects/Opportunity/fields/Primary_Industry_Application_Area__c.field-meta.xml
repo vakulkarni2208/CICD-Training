@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Primary_Industry_Application_Area__c</fullName>
+    <externalId>false</externalId>
+    <label>Primary Industry Application Area</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Industry__c</controllingField>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>AI/Machine Learning/Deep Learning</fullName>
+                <default>false</default>
+                <label>AI/Machine Learning/Deep Learning</label>
+            </value>
+            <value>
+                <fullName>AI/ML Other</fullName>
+                <default>false</default>
+                <label>AI/ML Other</label>
+            </value>
+            <value>
+                <fullName>AI Train for AD - DNN Development</fullName>
+                <default>false</default>
+                <label>AI Train for AD - DNN Development</label>
+            </value>
+            <value>
+                <fullName>AMP</fullName>
+                <default>false</default>
+                <label>AMP</label>
+            </value>
+            <value>
+                <fullName>CAD/CAM</fullName>
+                <default>false</default>
+                <label>CAD/CAM</label>
+            </value>
+            <value>
+                <fullName>Data Analytics &amp; Machine Learning</fullName>
+                <default>false</default>
+                <label>Data Analytics &amp; Machine Learning</label>
+            </value>
+            <value>
+                <fullName>Data Factory - Ingestion, Inferencing</fullName>
+                <default>false</default>
+                <label>Data Factory - Ingestion, Inferencing</label>
+            </value>
+            <value>
+                <fullName>Data Science - Enterprise AI</fullName>
+                <default>false</default>
+                <label>Data Science - Enterprise AI</label>
+            </value>
+            <value>
+                <fullName>Deep Learning: Imaging</fullName>
+                <default>false</default>
+                <label>Deep Learning: Imaging</label>
+            </value>
+            <value>
+                <fullName>Deep Learning: NLP, Speech, NLU</fullName>
+                <default>false</default>
+                <label>Deep Learning: NLP, Speech, NLU</label>
+            </value>
+            <value>
+                <fullName>Demand Forecasting</fullName>
+                <default>false</default>
+                <label>Demand Forecasting</label>
+            </value>
+            <value>
+                <fullName>Fintech</fullName>
+                <default>false</default>
+                <label>Fintech</label>
+            </value>
+            <value>
+                <fullName>Forecasting/Inventory Management</fullName>
+                <default>false</default>
+                <label>Forecasting/Inventory Management</label>
+            </value>
+            <value>
+                <fullName>Health, Safety, and Environmental</fullName>
+                <default>false</default>
+                <label>Health, Safety, and Environmental</label>
+            </value>
+            <value>
+                <fullName>HPC: Computational Chemistry</fullName>
+                <default>false</default>
+                <label>HPC: Computational Chemistry</label>
+            </value>
+            <value>
+                <fullName>HPC: Genomics</fullName>
+                <default>false</default>
+                <label>HPC: Genomics</label>
+            </value>
+            <value>
+                <fullName>HPC: Microscopy</fullName>
+                <default>false</default>
+                <label>HPC: Microscopy</label>
+            </value>
+            <value>
+                <fullName>HPC: Other</fullName>
+                <default>false</default>
+                <label>HPC: Other</label>
+            </value>
+            <value>
+                <fullName>HPC: Reservoir Simulation</fullName>
+                <default>false</default>
+                <label>HPC: Reservoir Simulation</label>
+            </value>
+            <value>
+                <fullName>HPC: Seismic Processing</fullName>
+                <default>false</default>
+                <label>HPC: Seismic Processing</label>
+            </value>
+            <value>
+                <fullName>HPC/CAE</fullName>
+                <default>false</default>
+                <label>HPC/CAE</label>
+            </value>
+            <value>
+                <fullName>Image Segmentation Detection</fullName>
+                <default>false</default>
+                <label>Image Segmentation Detection</label>
+            </value>
+            <value>
+                <fullName>Inspection</fullName>
+                <default>false</default>
+                <label>Inspection</label>
+            </value>
+            <value>
+                <fullName>Instruments: Life Sciences</fullName>
+                <default>false</default>
+                <label>Instruments: Life Sciences</label>
+            </value>
+            <value>
+                <fullName>Instruments: Medical Imaging</fullName>
+                <default>false</default>
+                <label>Instruments: Medical Imaging</label>
+            </value>
+            <value>
+                <fullName>Intelligent Operations</fullName>
+                <default>false</default>
+                <label>Intelligent Operations</label>
+            </value>
+            <value>
+                <fullName>Intelligent Video Analytics (IVA)</fullName>
+                <default>false</default>
+                <label>Intelligent Video Analytics (IVA)</label>
+            </value>
+            <value>
+                <fullName>Logistics/Supply Chain</fullName>
+                <default>false</default>
+                <label>Logistics/Supply Chain</label>
+            </value>
+            <value>
+                <fullName>Modeling and Simulation - Climate/Weather</fullName>
+                <default>false</default>
+                <label>Modeling and Simulation - Climate/Weather</label>
+            </value>
+            <value>
+                <fullName>Modeling and Simulation - Computation Fluid Dynamics (CFD)</fullName>
+                <default>false</default>
+                <label>Modeling and Simulation - Computation Fluid Dynamics (CFD)</label>
+            </value>
+            <value>
+                <fullName>Modeling and Simulation - Life Sciences</fullName>
+                <default>false</default>
+                <label>Modeling and Simulation - Life Sciences</label>
+            </value>
+            <value>
+                <fullName>Modeling and Simulation - Physics</fullName>
+                <default>false</default>
+                <label>Modeling and Simulation - Physics</label>
+            </value>
+            <value>
+                <fullName>Natural Language Processing (NLP)</fullName>
+                <default>false</default>
+                <label>Natural Language Processing (NLP)</label>
+            </value>
+            <value>
+                <fullName>Pipeline Optimization</fullName>
+                <default>false</default>
+                <label>Pipeline Optimization</label>
+            </value>
+            <value>
+                <fullName>Predictive Analytics</fullName>
+                <default>false</default>
+                <label>Predictive Analytics</label>
+            </value>
+            <value>
+                <fullName>Predictive Maintenance</fullName>
+                <default>false</default>
+                <label>Predictive Maintenance</label>
+            </value>
+            <value>
+                <fullName>Production Optimization</fullName>
+                <default>false</default>
+                <label>Production Optimization</label>
+            </value>
+            <value>
+                <fullName>Pro Viz: Visualization, Virtualization</fullName>
+                <default>false</default>
+                <label>Pro Viz: Visualization, Virtualization</label>
+            </value>
+            <value>
+                <fullName>Re-Simulation Software-in-the-Loop (SIL) - Regression Testing on GPUs</fullName>
+                <default>false</default>
+                <label>Re-Simulation Software-in-the-Loop (SIL) - Regression Testing on GPUs</label>
+            </value>
+            <value>
+                <fullName>Shared Workload</fullName>
+                <default>false</default>
+                <label>Shared Workload</label>
+            </value>
+            <value>
+                <fullName>Simulation Hardware-in-the-Loop (HIL) - Drive Constellation</fullName>
+                <default>false</default>
+                <label>Simulation Hardware-in-the-Loop (HIL) - Drive Constellation</label>
+            </value>
+            <value>
+                <fullName>Test Mules in Car</fullName>
+                <default>false</default>
+                <label>Test Mules in Car</label>
+            </value>
+            <value>
+                <fullName>TRTIS</fullName>
+                <default>false</default>
+                <label>TRTIS</label>
+            </value>
+            <value>
+                <fullName>Virtualization</fullName>
+                <default>false</default>
+                <label>Virtualization</label>
+            </value>
+            <value>
+                <fullName>Visualization</fullName>
+                <default>false</default>
+                <label>Visualization</label>
+            </value>
+            <value>
+                <fullName>Visual Search</fullName>
+                <default>false</default>
+                <label>Visual Search</label>
+            </value>
+            <value>
+                <fullName>XGBOOST</fullName>
+                <default>false</default>
+                <label>XGBOOST</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Higher Ed/Research</controllingFieldValue>
+            <controllingFieldValue>Healthcare</controllingFieldValue>
+            <valueName>Data Analytics &amp; Machine Learning</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Higher Ed/Research</controllingFieldValue>
+            <controllingFieldValue>Healthcare</controllingFieldValue>
+            <valueName>Deep Learning: Imaging</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Higher Ed/Research</controllingFieldValue>
+            <controllingFieldValue>Healthcare</controllingFieldValue>
+            <valueName>Deep Learning: NLP, Speech, NLU</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Higher Ed/Research</controllingFieldValue>
+            <controllingFieldValue>Supercomputing</controllingFieldValue>
+            <controllingFieldValue>Healthcare</controllingFieldValue>
+            <valueName>HPC: Computational Chemistry</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Higher Ed/Research</controllingFieldValue>
+            <controllingFieldValue>Supercomputing</controllingFieldValue>
+            <controllingFieldValue>Healthcare</controllingFieldValue>
+            <valueName>HPC: Genomics</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Higher Ed/Research</controllingFieldValue>
+            <controllingFieldValue>Supercomputing</controllingFieldValue>
+            <controllingFieldValue>Healthcare</controllingFieldValue>
+            <valueName>HPC: Microscopy</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Higher Ed/Research</controllingFieldValue>
+            <controllingFieldValue>Healthcare</controllingFieldValue>
+            <valueName>Instruments: Life Sciences</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Higher Ed/Research</controllingFieldValue>
+            <controllingFieldValue>Healthcare</controllingFieldValue>
+            <valueName>Instruments: Medical Imaging</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Higher Ed/Research</controllingFieldValue>
+            <controllingFieldValue>Healthcare</controllingFieldValue>
+            <valueName>Pro Viz: Visualization, Virtualization</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CRISP (Consumer Internet Service Providers)</controllingFieldValue>
+            <valueName>AMP</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CRISP (Consumer Internet Service Providers)</controllingFieldValue>
+            <valueName>Image Segmentation Detection</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CRISP (Consumer Internet Service Providers)</controllingFieldValue>
+            <controllingFieldValue>Retail and CPG</controllingFieldValue>
+            <valueName>Natural Language Processing (NLP)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CRISP (Consumer Internet Service Providers)</controllingFieldValue>
+            <valueName>TRTIS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CRISP (Consumer Internet Service Providers)</controllingFieldValue>
+            <valueName>Visual Search</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CRISP (Consumer Internet Service Providers)</controllingFieldValue>
+            <valueName>XGBOOST</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Manufacturing</controllingFieldValue>
+            <valueName>CAD/CAM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Manufacturing</controllingFieldValue>
+            <valueName>HPC/CAE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Manufacturing</controllingFieldValue>
+            <valueName>Inspection</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Manufacturing</controllingFieldValue>
+            <controllingFieldValue>Retail and CPG</controllingFieldValue>
+            <valueName>Intelligent Video Analytics (IVA)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Manufacturing</controllingFieldValue>
+            <controllingFieldValue>Retail and CPG</controllingFieldValue>
+            <valueName>Logistics/Supply Chain</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Manufacturing</controllingFieldValue>
+            <controllingFieldValue>Oil &amp; Gas/Energy</controllingFieldValue>
+            <valueName>Predictive Maintenance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Manufacturing</controllingFieldValue>
+            <controllingFieldValue>Retail and CPG</controllingFieldValue>
+            <valueName>Shared Workload</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Oil &amp; Gas/Energy</controllingFieldValue>
+            <valueName>AI/ML Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Oil &amp; Gas/Energy</controllingFieldValue>
+            <valueName>Demand Forecasting</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Oil &amp; Gas/Energy</controllingFieldValue>
+            <valueName>Health, Safety, and Environmental</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Oil &amp; Gas/Energy</controllingFieldValue>
+            <valueName>HPC: Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Oil &amp; Gas/Energy</controllingFieldValue>
+            <valueName>HPC: Reservoir Simulation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Oil &amp; Gas/Energy</controllingFieldValue>
+            <valueName>HPC: Seismic Processing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Oil &amp; Gas/Energy</controllingFieldValue>
+            <valueName>Intelligent Operations</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Oil &amp; Gas/Energy</controllingFieldValue>
+            <valueName>Pipeline Optimization</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Oil &amp; Gas/Energy</controllingFieldValue>
+            <valueName>Predictive Analytics</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Oil &amp; Gas/Energy</controllingFieldValue>
+            <valueName>Production Optimization</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Oil &amp; Gas/Energy</controllingFieldValue>
+            <valueName>Virtualization</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Oil &amp; Gas/Energy</controllingFieldValue>
+            <valueName>Visualization</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Retail and CPG</controllingFieldValue>
+            <valueName>Forecasting/Inventory Management</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Supercomputing</controllingFieldValue>
+            <valueName>AI/Machine Learning/Deep Learning</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Supercomputing</controllingFieldValue>
+            <valueName>Modeling and Simulation - Climate/Weather</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Supercomputing</controllingFieldValue>
+            <valueName>Modeling and Simulation - Computation Fluid Dynamics (CFD)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Supercomputing</controllingFieldValue>
+            <valueName>Modeling and Simulation - Life Sciences</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Supercomputing</controllingFieldValue>
+            <valueName>Modeling and Simulation - Physics</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Automotive</controllingFieldValue>
+            <valueName>AI Train for AD - DNN Development</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Automotive</controllingFieldValue>
+            <valueName>Data Factory - Ingestion, Inferencing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Automotive</controllingFieldValue>
+            <valueName>Data Science - Enterprise AI</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Automotive</controllingFieldValue>
+            <valueName>Re-Simulation Software-in-the-Loop (SIL) - Regression Testing on GPUs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Automotive</controllingFieldValue>
+            <valueName>Simulation Hardware-in-the-Loop (HIL) - Drive Constellation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Automotive</controllingFieldValue>
+            <valueName>Test Mules in Car</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Financial Services Industry (FSI)</controllingFieldValue>
+            <valueName>Fintech</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

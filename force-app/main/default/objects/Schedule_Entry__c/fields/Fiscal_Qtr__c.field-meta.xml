@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Fiscal_Qtr__c</fullName>
+    <description>Looks to Display Quarter (formatted &apos;Q1-FY2012&apos;) to determine the quarter and year (current or next) that the Schedule Entry is referring to, for use in other formulas</description>
+    <externalId>false</externalId>
+    <formula>CASE(Left(Display_Quarter__c, 2),
+            &apos;Q1&apos;, 
+            CASE(Right(Display_Quarter__c, 4),
+                       TEXT(YEAR(TODAY())), &apos;Q1CY&apos;,
+                       TEXT(YEAR(TODAY())+1), &apos;Q1NY&apos;,
+                       &apos;other&apos;),
+            &apos;Q2&apos;, 
+            CASE(Right(Display_Quarter__c, 4),
+                       TEXT(YEAR(TODAY())), &apos;Q2CY&apos;,
+                       TEXT(YEAR(TODAY())+1), &apos;Q2NY&apos;,
+                       &apos;other&apos;),
+            &apos;Q3&apos;, 
+            CASE(Right(Display_Quarter__c, 4),
+                       TEXT(YEAR(TODAY())), &apos;Q3CY&apos;,
+                       TEXT(YEAR(TODAY())+1), &apos;Q3NY&apos;,
+                       &apos;other&apos;),
+            &apos;Q4&apos;, 
+            CASE(Right(Display_Quarter__c, 4),
+                       TEXT(YEAR(TODAY())), &apos;Q4CY&apos;,
+                       TEXT(YEAR(TODAY())+1), &apos;Q4NY&apos;,
+                       &apos;other&apos;),
+    &apos;other&apos;)</formula>
+    <label>Fiscal Qtr</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

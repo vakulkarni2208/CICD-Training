@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Is_Approved_Account</fullName>
+    <active>true</active>
+    <description>Customer Accounts need to be approved before any Opportunity can be added to it.
+Exception: Allow Contact and Oppty to be created during Lead Conversion even if the Account is not Approved.</description>
+    <errorConditionFormula>AND(
+NOT(Account.Approved__c),
+ISBLANK(Lead_Id_For_Opportunity__c),
+$Profile.Name &lt;&gt; &apos;System Administrator&apos;,
+$Profile.Name &lt;&gt; &apos;SVC SAP Integration&apos;,
+Probability &gt; 0.4,
+OR(
+Account.RecordType.Name = &apos;NV Customer Account&apos;,
+Account.RecordType.Name = &apos;New Customer Account&apos;
+)
+)</errorConditionFormula>
+    <errorMessage>Customer Accounts need to be approved before any Opportunity with 40% or greater probability can be added to it</errorMessage>
+</ValidationRule>

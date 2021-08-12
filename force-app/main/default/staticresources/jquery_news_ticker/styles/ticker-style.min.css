@@ -1,0 +1,237 @@
+﻿.tickerShort-box{
+    width:100%;
+    height:30px;
+    margin:0 0 0 0;
+    padding:0 0 0 0;
+    display:block;
+    position:relative;
+    overflow:hidden;
+    background:url('../images/messageticker_background.jpg');
+    font:12px 'Trebuchet MS';
+    font-weight: bold;
+    text-transform:uppercase;
+    text-align: left;
+    line-height: 30px;
+    color: #fff;
+
+}
+.ticker-wrapper.has-js
+{
+    width:100%;
+    height:0;
+    margin:0 0 0 0;
+    padding:0 0 0 0;
+    display:block;
+    background:url('../images/messageticker_background.jpg');
+    font:12px 'Trebuchet MS';
+    z-index:5
+
+}
+.ticker{
+    width:100%;
+    height:30px;
+    margin:0 0 10px 0;
+    padding:0 0 0 0;
+    display:block;
+    position:relative;
+    overflow:hidden;
+    background:url('../images/messageticker_background.jpg');
+    font:12px 'Trebuchet MS'
+
+
+
+}
+.ticker-controls
+{
+    width:10%;
+    height:30px;
+    margin:0 0 0 0;
+    padding:0 0 0 0;
+    display:block;
+    position:relative;
+    overflow:hidden;
+    list-style-type:none;
+    float:left;
+    background:url('../images/messageticker_background.jpg');
+
+}
+.ticker-title
+{
+    margin:6px 5px 4px 10px;
+    padding:0 0 1px 0;
+    border-bottom-width:0;
+    border-left-width:0;
+    border-right-width:0;
+    border-top-width:0;
+    color:#76b900;
+    float:none;
+    font:14px 'Trebuchet MS';
+    font-weight:bold;
+    text-transform:uppercase;
+    line-height:18px
+
+}
+.ticker-content
+{
+    margin:7px 5px 4px 10px;
+    padding:0 0 2px 0;
+    border-bottom-width:0;
+    border-left-width:0;
+    border-right-width:0;
+    border-top-width:0;
+    color:#fff;
+    float:none;
+    font:12px 'Trebuchet MS';
+    font-weight:normal;
+    overflow:hidden;
+    white-space:nowrap;
+    line-height:18px
+
+}
+.ticker-swipe
+{
+    width:90%;
+    height:30px;
+    top:0;
+    position:absolute;
+    display:block;
+    font:12px 'Trebuchet MS';
+    font-weight:normal;
+    overflow:hidden;
+    white-space:nowrap;
+    line-height:18px
+
+}
+.ticker-content:focus
+{
+    none
+
+}
+.ticker-content a
+{
+    COLOR:#fff;
+    TEXT-DECORATION:none
+
+}
+.ticker-content a:hover
+{
+    text-decoration:underline
+
+}
+.ticker-swipe span
+{
+    margin-left:1px;
+    border-bottom:1px solid #1f527b;
+    height:2px;
+    width:2px;
+    display:block;
+    FONT:12px 'Trebuchet MS'
+
+}
+.ticker-controls ul
+{
+    width:100%;
+    height:20px;
+    margin:7px 10px 4px 10px;
+    display:block;
+    float:left
+
+}
+.ticker-controls li
+{
+    width:15px;
+    height:15px;
+    margin:0 2px 0 2px;
+    padding:0 0 0 0;
+    display:block;
+    float:left;
+    cursor:pointer
+
+}
+.ticker-controls li.jnt-play-pause
+{
+    background-image:url('/images/controls.png');
+    background-position:30px 15px
+
+}
+.ticker-controls li.jnt-play-pause.over
+{
+    background-position:30px 30px
+
+}
+.ticker-controls li.jnt-play-pause.down
+{
+    background-position:30px 0
+
+}
+.ticker-controls li.jnt-play-pause.paused
+{
+    background-image:url('../images/controls.png');
+    background-position:45px 15px
+    
+}
+.ticker-controls li.jnt-play-pause.paused.over
+{
+    background-position:45px 30px
+
+}
+.ticker-controls li.jnt-play-pause.paused.down
+{
+    background-position:45px 0
+
+}
+.ticker-controls li.jnt-prev
+{
+    background-image:url('../images/controls.png');
+    background-position:0 15px
+
+}
+.ticker-controls li.jnt-prev.over
+{
+    background-position:0 30px
+
+}
+.ticker-controls li.jnt-prev.down
+{
+    background-position:0 0
+
+}
+.ticker-controls li.jnt-next
+{
+    background-image:url('../images/controls.png');
+    background-position:15px 15px
+
+}
+.ticker-controls li.jnt-next.over
+{
+    background-position:15px 30px
+
+}
+.ticker-controls li.jnt-next.down
+{
+    background-position:15px 0
+
+}
+.js-hidden
+{
+    display:none
+
+}
+.left .ticker-swipe
+{
+
+}
+.left .ticker-controls,.left .ticker-content,.left .ticker-title,.left .ticker
+{
+    float:left
+
+}
+.right .ticker-swipe
+{
+
+}
+.right .ticker-controls,.right .ticker-content,.right .ticker-title,.right .ticker
+{
+    float:right
+
+}

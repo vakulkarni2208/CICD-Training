@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IncStatusSubStatusPopulated__c</fullName>
+    <externalId>false</externalId>
+    <formula>if( RecordType.DeveloperName = &quot;Community_User_Record_Type&quot; &amp;&amp;(ISPICKVAL( Incident_Status__c ,&quot;Enterprise Support&quot;) || ISPICKVAL( Incident_Status__c ,&quot;Closed&quot;) || ISPICKVAL( Incident_Status__c ,&quot;Resolved (Temp Workaround)&quot;) || ISPICKVAL( Incident_Status__c ,&quot;Resolved (Permanently)&quot;) || ISPICKVAL( Incident_Status__c ,&quot;Resolved (No Customer Response)&quot;)) &amp;&amp; ISBLANK( TEXT(Incident_Substatus__c )),false,true)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>IncStatusSubStatusPopulated</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

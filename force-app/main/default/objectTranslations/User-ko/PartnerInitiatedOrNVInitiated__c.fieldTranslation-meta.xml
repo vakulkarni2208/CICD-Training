@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- PartnerInitiatedOrNVInitiated --></label>
+    <name>PartnerInitiatedOrNVInitiated__c</name>
+    <picklistValues>
+        <masterLabel>NV Initiated</masterLabel>
+        <translation><!-- NV Initiated --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Partner Initiated</masterLabel>
+        <translation><!-- Partner Initiated --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

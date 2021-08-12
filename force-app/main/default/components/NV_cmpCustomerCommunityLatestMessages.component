@@ -1,0 +1,32 @@
+<apex:component controller="cmpPartnerPortalMessage_cls">
+<!--  <apex:component controller="clsPartnerPortalComponentSearch"> -->
+
+    <table width="100%" border="0" cellpadding="1" style="background-color:#FFFFFF;white-space:nowrap;color:#393939"> 
+        <tr>           
+           <td style="font-size:14px;padding-right:20px;" align="center" valign="middle">
+                <apex:outputPanel rendered="{!(lstWrappedInstanceMessages.empty == false)}">
+                    <ul id="js-latest-message" class="js-hidden">
+                        <apex:repeat value="{!lstWrappedInstanceMessages}" var="x">
+                            <li class="latest-message-item">
+                                <b>
+                                    <font color="#000000"> 
+                                       <apex:outputLink id="outputLinkid" value="{!x.url}" target="_blank" style="color:Black;" rendered="{!!(ISBLANK(x.url) || x.url=='')}" >{!x.message}</apex:outputLink>
+                                       <apex:outputText value="{!x.message}" rendered="{!ISBLANK(x.url) || x.url==''}" />                               
+                                    </font>
+                                </b>                    
+                            </li>
+                        </apex:repeat>
+                    </ul>
+                </apex:outputPanel>            
+            </td>
+        </tr>
+    </table>
+   
+    <script type="text/javascript">
+        $j(function () {
+            //$('#js-news').ticker({controls:false,titleText:'Latest Messages:',displayType:'fade'});
+            $j('#js-latest-message').tickerLatest({controls:false,titleText:'{!$Label.COMM_PP_CMP_Latest_Messages}',displayType:'fade'});
+        });
+    </script>
+    
+</apex:component>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CQ_JFF_Forecast__c</fullName>
+    <externalId>false</externalId>
+    <label>CQ JFF Forecast</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>CQ JFF</fullName>
+                <default>false</default>
+                <label>CQ JFF</label>
+            </value>
+            <value>
+                <fullName>CQ Upside</fullName>
+                <default>false</default>
+                <label>CQ Upside</label>
+            </value>
+            <value>
+                <fullName>NQ JFF</fullName>
+                <default>false</default>
+                <label>NQ JFF</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

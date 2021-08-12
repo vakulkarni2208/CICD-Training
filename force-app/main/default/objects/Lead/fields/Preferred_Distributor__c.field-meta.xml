@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Preferred_Distributor__c</fullName>
+    <externalId>false</externalId>
+    <label>Preferred Distributor</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Ingram Micro</fullName>
+                <default>false</default>
+                <label>Ingram Micro</label>
+            </value>
+            <value>
+                <fullName>Synnex</fullName>
+                <default>false</default>
+                <label>Synnex</label>
+            </value>
+            <value>
+                <fullName>Carahsoft</fullName>
+                <default>false</default>
+                <label>Carahsoft</label>
+            </value>
+            <value>
+                <fullName>PNY</fullName>
+                <default>false</default>
+                <label>PNY</label>
+            </value>
+            <value>
+                <fullName>Ingram Europe</fullName>
+                <default>false</default>
+                <label>Ingram Europe</label>
+            </value>
+            <value>
+                <fullName>Ingram Micro Shanghai</fullName>
+                <default>false</default>
+                <label>Ingram Micro Shanghai</label>
+            </value>
+            <value>
+                <fullName>Macnica</fullName>
+                <default>false</default>
+                <label>Macnica</label>
+            </value>
+            <value>
+                <fullName>Ryoyo</fullName>
+                <default>false</default>
+                <label>Ryoyo</label>
+            </value>
+            <value>
+                <fullName>Rashi</fullName>
+                <default>false</default>
+                <label>Rashi</label>
+            </value>
+            <value>
+                <fullName>Zerone</fullName>
+                <default>false</default>
+                <label>Zerone</label>
+            </value>
+            <value>
+                <fullName>C-data</fullName>
+                <default>false</default>
+                <label>C-data</label>
+            </value>
+            <value>
+                <fullName>BayNex</fullName>
+                <default>false</default>
+                <label>BayNex</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

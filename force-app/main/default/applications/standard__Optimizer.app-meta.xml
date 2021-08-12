@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <label>Optimizer</label>
+    <navType>Console</navType>
+    <tabs>standard-OrgMetric</tabs>
+    <tabs>Certifications__c</tabs>
+    <tabs>sbaa__ApprovalCondition__c</tabs>
+    <tabs>POC_Request__c</tabs>
+    <uiType>Lightning</uiType>
+    <workspaceConfig>
+        <mappings>
+            <tab>Certifications__c</tab>
+        </mappings>
+        <mappings>
+            <tab>POC_Request__c</tab>
+        </mappings>
+        <mappings>
+            <tab>sbaa__ApprovalCondition__c</tab>
+        </mappings>
+        <mappings>
+            <tab>standard-OrgMetric</tab>
+        </mappings>
+    </workspaceConfig>
+</CustomApplication>

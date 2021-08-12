@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>renewal</fullName>
+    <booleanFilter>1 OR 2</booleanFilter>
+    <columns>NAME</columns>
+    <columns>Program_Type__c</columns>
+    <columns>Competency__c</columns>
+    <columns>Sub_Program_Type__c</columns>
+    <columns>Program_Level__c</columns>
+    <columns>Role__c</columns>
+    <columns>Permissions_and_Group__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>UPDATEDBY_USER</columns>
+    <columns>LAST_UPDATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Permissions_and_Group__c</field>
+        <operation>contains</operation>
+        <value>renewal</value>
+    </filters>
+    <filters>
+        <field>Role__c</field>
+        <operation>contains</operation>
+        <value>renewal</value>
+    </filters>
+    <label>renewal</label>
+    <language>en_US</language>
+</ListView>

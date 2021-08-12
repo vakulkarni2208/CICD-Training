@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NVES_generic</fullName>
+    <columns>NAME</columns>
+    <columns>Product_Category__c</columns>
+    <columns>User_Guide__c</columns>
+    <columns>OWNER.FIRST_NAME</columns>
+    <columns>OWNER.LAST_NAME</columns>
+    <columns>CREATEDBY_USER</columns>
+    <columns>RMA_Status__c</columns>
+    <columns>Case_Owner_Name__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Organization_Name__c</field>
+        <operation>contains</operation>
+        <value>NVES</value>
+    </filters>
+    <label>NVES generic</label>
+    <language>en_US</language>
+</ListView>

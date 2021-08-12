@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NPN_SDP_Professional_Services__c</fullName>
+    <externalId>false</externalId>
+    <label>NPN SDP - Professional Services</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Berge</fullName>
+                <default>false</default>
+                <label>Berge</label>
+            </value>
+            <value>
+                <fullName>Booz Allen Hamilton</fullName>
+                <default>false</default>
+                <label>Booz Allen Hamilton</label>
+            </value>
+            <value>
+                <fullName>Cambridge Consulting</fullName>
+                <default>false</default>
+                <label>Cambridge Consulting</label>
+            </value>
+            <value>
+                <fullName>Ciklum</fullName>
+                <default>false</default>
+                <label>Ciklum</label>
+            </value>
+            <value>
+                <fullName>Data Monsters (aka FlexisUS Inc.)</fullName>
+                <default>false</default>
+                <label>Data Monsters (aka FlexisUS Inc.)</label>
+            </value>
+            <value>
+                <fullName>Deepsense.ai (aka CodiLime)</fullName>
+                <default>false</default>
+                <label>Deepsense.ai (aka CodiLime)</label>
+            </value>
+            <value>
+                <fullName>Dessa (aka DeepLearni.ng)</fullName>
+                <default>false</default>
+                <label>Dessa (aka DeepLearni.ng)</label>
+            </value>
+            <value>
+                <fullName>ElementAI</fullName>
+                <default>false</default>
+                <label>ElementAI</label>
+            </value>
+            <value>
+                <fullName>EverFortuneAI</fullName>
+                <default>false</default>
+                <label>EverFortuneAI</label>
+            </value>
+            <value>
+                <fullName>Everis</fullName>
+                <default>false</default>
+                <label>Everis</label>
+            </value>
+            <value>
+                <fullName>Lander Analytics</fullName>
+                <default>false</default>
+                <label>Lander Analytics</label>
+            </value>
+            <value>
+                <fullName>Mobiliya (aka Agreeya Mobility Inc.)</fullName>
+                <default>false</default>
+                <label>Mobiliya (aka Agreeya Mobility Inc.)</label>
+            </value>
+            <value>
+                <fullName>Quantiphi</fullName>
+                <default>false</default>
+                <label>Quantiphi</label>
+            </value>
+            <value>
+                <fullName>SFL Scientific</fullName>
+                <default>false</default>
+                <label>SFL Scientific</label>
+            </value>
+            <value>
+                <fullName>Sigmoidal</fullName>
+                <default>false</default>
+                <label>Sigmoidal</label>
+            </value>
+            <value>
+                <fullName>Skymind</fullName>
+                <default>false</default>
+                <label>Skymind</label>
+            </value>
+            <value>
+                <fullName>Tata Consultancy Services</fullName>
+                <default>false</default>
+                <label>Tata Consultancy Services</label>
+            </value>
+            <value>
+                <fullName>Teradata (aka ThinkBig Analytics)</fullName>
+                <default>false</default>
+                <label>Teradata (aka ThinkBig Analytics)</label>
+            </value>
+            <value>
+                <fullName>Trace3</fullName>
+                <default>false</default>
+                <label>Trace3</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

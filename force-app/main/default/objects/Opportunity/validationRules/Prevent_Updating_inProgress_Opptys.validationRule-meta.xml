@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prevent_Updating_inProgress_Opptys</fullName>
+    <active>true</active>
+    <description>SDS-3043</description>
+    <errorConditionFormula>AND(
+ $Profile.Name &lt;&gt; &apos;System Administrator&apos;,
+ RecordType.DeveloperName = &quot;Special_Pricing_Request&quot;,
+ ISPICKVAL(StageName, &apos;In Progress&apos;),
+ OR(
+  ISCHANGED(Tesla_Product_Amount__c),
+  ISCHANGED(Quadro_Product_Amount__c),
+  ISCHANGED(Total_DGX_Product_Amount__c),
+  ISCHANGED(DGX_Station_Product_Amount__c),
+  ISCHANGED(GRID_Product_Amount__c),
+  ISCHANGED(MCO_Eligible_Product_Amount__c),
+  ISCHANGED(MCO_Eligible_Product_Amount_Other__c),
+  ISCHANGED(RTX_Product_Amount__c)
+ )  
+)</errorConditionFormula>
+    <errorMessage>Requests that are approved cannot be edited. Please enter a new pricing request for re-approval</errorMessage>
+</ValidationRule>

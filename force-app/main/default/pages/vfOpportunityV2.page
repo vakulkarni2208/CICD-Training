@@ -1,0 +1,1194 @@
+<!-- 
+    Change List:
+    2016.12.07 - PJENA - Price Override 
+    
+    2017.09.15 - Manideep - Disable Schedule Entry capability for Future Quarters and do not copy over existing Schedule Entries while Cloning Opportunity.
+    
+    1/18/2018 - @Manideep -  The logic that is using RecordTypes those that are part of Opportunity RecordType Cleanup is commented out.
+    
+    3/1/2021 - @Manideep - SDS-2928: Removed the code/logic that refers the existing field 'migrated_from_old_design__c'
+-->
+
+<apex:page lightningStylesheets="true" standardController="Opportunity" extensions="clsOpportunityV2" id="pageId">
+    <apex:styleSheet value="{!$Resource.YUI}/skin.css" />
+    <apex:includeScript value="{!$Resource.YUI}/yahoo-dom-event.js" />
+    <apex:includeScript value="{!$Resource.YUI}/animation-min.js" />
+    <apex:includeScript value="{!$Resource.YUI}/dragdrop-min.js"/>
+    <apex:includeScript value="{!$Resource.YUI}/container-min.js" />
+ 
+    <style>
+        .Processing{ 
+            position: fixed; 
+            background: url('/img/loading32.gif'); 
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 100%;
+            height: 100%;
+            z-index: 1004;
+            left: 0%;
+            top: 0%;
+        }
+     
+        tr.multiSelectPicklistRow td select {
+            width:150px;
+        }
+
+        .custPopup{
+            background-color: white;   
+            border-width: 2px;
+            border-style: solid;
+            z-index: 9999;
+            left: 50%;
+            padding:10px;
+            position: absolute;
+            /* These are the 3 css properties you will need to change so the popup 
+                displays in the center of the screen. First set the width. Then set 
+                margin-left to negative half of what the width is. You can add 
+                the height property for a fixed size pop up if you want.
+            */
+            width: 500px;
+            margin-left: -250px;
+            top:100px;   
+        }
+        
+        .popupBackground{
+            background-color:black;
+            opacity: 0.20;
+            filter: alpha(opacity = 20);
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 9998;   
+        }
+        
+        .cols{
+            padding-left:10px;
+            padding-right:10px;
+        }
+        
+        .rows {
+            padding-bottom:10px;
+            margin-bottom:10px;
+        }
+
+        .required{
+            border-left: 3px solid #C00;
+            border-right: 1px solid #E3DEB8;
+            border-top: 1px solid #E3DEB8;
+            border-bottom: 1px solid #E3DEB8;
+        }
+        
+        .requiredSign{
+            float:left;
+            border-left:3px solid #FF0000;
+            height:20px;
+            margin-top:3px;
+            margin-left:-5px;
+        }
+    
+    </style>
+    
+    <!-- 
+      -- @Manideep - Opportunity RecordType Cleanup
+    <script type="text/javascript">
+        
+        function ValidateRecordtypeChange(){
+            if('{!$CurrentPage.parameters.RecordTypeChange}' == 'true'){
+                var cnfbox = confirm("If you change recordtype then existing opportuniy line items will be deleted. Are you sure?");
+                if(!cnfbox){
+                    window.location = '/'+'{!$CurrentPage.parameters.id}'
+                }   
+            }
+        }
+        
+        //add the event listener to call the function ValidateRecordtypeChange() 
+        document.addEventListener('DOMContentLoaded', function() {
+            ValidateRecordtypeChange()
+        }, false);
+        
+    </script>
+    -->
+     
+    <apex:sectionHeader title="Opportunity Edit" subTitle="{!IF(ISNULL(opp.id),'New Opportunity', opp.Name + IF($CurrentPage.parameters.isClone=='true', ' (Clone)', ''))}"/>
+    
+    <apex:pageMessages id="messages"></apex:pageMessages>
+    
+    <apex:form id="formId">
+    
+        <div style="position:fixed;" id="divProcessImg"> 
+            <apex:actionStatus id="idStatus" startStyleClass="Processing"/>
+        </div>
+
+        <apex:inputHidden value="{!flag}" id="flagId"/> 
+    
+        <!-- Input hidden field of probability for  stage-->  
+        <apex:repeat value="{!lstOpportunityStage}" var="OppStage"> 
+            <input type="hidden" value="{!OppStage.DefaultProbability}" id="id{!OppStage.MasterLabel}" />
+        </apex:repeat>
+    
+
+        <apex:actionFunction name="initone" action="{!initOne}" status="sts"/>
+        <apex:actionFunction name="pickStartingQuarter" action="{!pickStartingQuarter}" rerender="formId,messages" status="idStatus"/>
+        <apex:actionFunction name="changeStageName" action="{!changeStageName}" reRender="pageblockSection" status="idStatus"/>
+        <apex:actionFunction name="updateQuarters" action="{!updateStartingQuarter}" rerender="formId,pageblockSection" status="idStatus" />
+    
+        <apex:actionStatus id="sts" startText="processing....."></apex:actionStatus>
+
+        <apex:outputPanel rendered="{!flag}" id="outpanelId">       
+            <apex:repeat value="{!lstPageBlockWrapper}" var="pageBlock" id="repeatId">
+                <apex:pageBlock title="{!pageBlock.Name}" id="pageblockId">
+                    
+                    <apex:pageBlockButtons id="buttonsId">
+                        <apex:commandButton value="Save" action="{!save}" rendered="{!OR(NOT(ISNULL(startingQuarter)), NOT(ISNULL(helpers)))}"/>               
+                        <apex:commandButton value="Cancel" action="{!cancel}"/>
+                        <br />
+                        <apex:OutputPanel rendered="{!$CurrentPage.parameters.param == 'New'}">
+                            <br/>
+                            <font color="red">
+                                <b>Note: All required fields (red bar) must be filled out to "save" Opportunity<br/>
+                                    {!strPageMessage}<br />
+                                </b>
+                            </font><br />
+                        </apex:OutputPanel> 
+        
+                        <apex:OutputPanel rendered="{!$CurrentPage.parameters.param == 'Clone'}">
+                            <font color="red">
+                                <b>This is a Cloned Opportunity. Ensure you update any of the existing fields that have changed <br />
+                                    (e.g., units, products, close date, stage, etc.)
+                                </b>
+                            </font>
+                        </apex:OutputPanel>
+                    </apex:pageBlockButtons>
+                    
+                    <!-- For Tegra Opps show the Guidelines and Training Deck link  -->
+                    <apex:outputPanel rendered="{!AND(IsTegraOpp,strGuidelinesUrl!='',strTrainingDeckUrl!='')}">
+                        <div style="text-align:center;float:center;">
+                            <a href="javascript:openPopupFocusEscapePounds('{!strGuidelinesUrl}', 'Guidelines', 700, 600, 'width=700,height=700,resizable=yes,toolbar=no,status=no,scrollbars=yes,menubar=no,directories=no,location=no,dependant=no', false, false);" 
+                                class="linkCol">
+                                <span class="linkSpan">
+                                    <font color='red'><b>Guidelines</b></font>
+                                </span>
+                            </a>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="javascript:openPopupFocusEscapePounds('{!strTrainingDeckUrl}', 'Training', 700, 600, 'width=1000,height=900,resizable=yes,toolbar=no,status=no,scrollbars=yes,menubar=no,directories=no,location=no,dependant=no', false, false);" 
+                                    class="linkCol">
+                                <span class="linkSpan">
+                                    <font color='red'><b>Training Deck</b></font>
+                                </span>
+                            </a>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                        </div>
+                        <center>&nbsp;</center>                    
+                    </apex:outputPanel>
+                    
+                    <apex:inputHidden id="StartingQuarter" value="{!startingQuarter}" rendered="{!IsGeoforceOpp}" />
+            
+                    <apex:repeat value="{!pageBlock.lstpageblockSectionWrapper}" var="pageblockSection" id="repeatIdPageBlock">
+                        <apex:pageBlockSection title="{!pageblockSection.pageblocSectionkName}" columns="{!pageblockSection.Columns}" id="pageblockSection">
+                            
+                            <apex:outputLabel value="" rendered="{!AND(IsTegraOpp,OR(pageblockSection.pageblocSectionkName == 'Opportunity Summary', pageblockSection.pageblocSectionkName == 'Approvals', pageblockSection.pageblocSectionkName == 'SharePoint Links'))}" />
+                            
+                            <apex:outputPanel rendered="{!AND(IsTegraOpp,pageblockSection.pageblocSectionkName == 'Opportunity Summary')}">
+                                <div style="text-align:right;float:right;">
+                                    <a href="javascript:openPopupFocusEscapePounds('/apex/TegraAuto_OpportunityInformation_Help', 'Help', 700, 600, 'width=700,height=700,resizable=yes,toolbar=no,status=no,scrollbars=yes,menubar=no,directories=no,location=no,dependant=no', false, false);" class="linkCol">
+                                        <span class="linkSpan">Help</span>
+                                    </a>
+                                    <img src="/s.gif" alt="help (New Window)" class="helpIcon" title="help (New Window)" />
+                                </div>
+                                <center>&nbsp;</center>                    
+                            </apex:outputPanel>
+                            
+                            <apex:outputPanel rendered="{!AND(IsTegraOpp,pageblockSection.pageblocSectionkName == 'Approvals')}">
+                                <div style="text-align:right;float:right;">
+                                    <a href="javascript:openPopupFocusEscapePounds('/apex/TegraAuto_Approvals_Help', 'Help', 700, 600, 'width=800,height=300,resizable=yes,toolbar=no,status=no,scrollbars=yes,menubar=no,directories=no,location=no,dependant=no', false, false);" class="linkCol">
+                                        <span class="linkSpan">Help</span>
+                                    </a>
+                                    <img src="/s.gif" alt="help (New Window)" class="helpIcon" title="help (New Window)" />
+                                </div>
+                                <center>&nbsp;</center>                    
+                            </apex:outputPanel>
+                            
+                            <apex:outputPanel rendered="{!AND(IsTegraOpp,pageblockSection.pageblocSectionkName == 'SharePoint Links')}">
+                                <div style="text-align:right;float:right;">
+                                    <a href="javascript:openPopupFocusEscapePounds('/apex/TegraAuto_SharepointLinks_Help', 'Help', 700, 600, 'width=700,height=350,resizable=yes,toolbar=no,status=no,scrollbars=yes,menubar=no,directories=no,location=no,dependant=no', false, false);" class="linkCol">
+                                        <span class="linkSpan">Help</span>
+                                    </a>
+                                    <img src="/s.gif" alt="help (New Window)" class="helpIcon" title="help (New Window)" />
+                                </div>
+                                <center>&nbsp;</center>                    
+                            </apex:outputPanel>  
+
+                            <apex:repeat value="{!pageblockSection.lstpageblocksectionfieldWrapper}" var="pageblockSectionField" id="repeatIdInputField"> 
+                                <apex:inputField Required="{!IF(OR(pageblockSectionField.IsRequired==true, pageblockSectionField.fieldName == 'Name',pageblockSectionField.fieldName == 'CloseDate', pageblockSectionField.fieldName == 'StageName'),true,false)}" 
+                                                style="{!IF(pageblockSectionField.IsTextAreaField ==true,'Width:315px;height:110px;','')}" 
+                                                value="{!opp[pageblockSectionField.fieldName]}" 
+                                                id="dynamicField" 
+                                                onChange="populateOpportunityProbability(this);" 
+                                                rendered="{!IF(AND(pageblockSectionField.IsReadOnly != true,pageblockSectionField.IsEmptySpace != true), true, false)}">                                                
+                                </apex:inputField>
+                                
+                                <apex:outputField rendered="{!AND(pageblockSectionField.IsReadOnly,NOT(pageblockSectionField.IsEmptySpace))}" 
+                                                    value="{!opp[pageblockSectionField.fieldName]}" 
+                                                    id="outptdynamicField">
+                                </apex:outputField>
+                                <apex:outputLabel rendered="{!pageblockSectionField.IsEmptySpace}" value="" id="idlblBlankSpace"></apex:outputLabel> 
+                            </apex:repeat>
+                            
+                        </apex:pageBlockSection>
+                    </apex:repeat>
+                    
+                    <!-- Starting Quarter Section -->
+                    <!--  
+                    <apex:pageBlockSection title="Starting Quarter" 
+                            collapsible="false" 
+                            columns="1" 
+                            id="thePBS25" 
+                            rendered="{!AND(IsGeoforceOpp,ISNULL(startingQuarter))}">
+                    
+                        <apex:pageBlockSectionItem >
+                            <apex:outputPanel >
+                                <div class="requiredInput">
+                                    <div class="requiredBlock"></div>
+                                      <apex:commandButton value="Add Starting Quarter" rendered="{!AND(NOT(suspendScheduleEntriesForCloneBoolean),NOT(suspendScheduleEntriesForEditBoolean))}" onclick="pickStartingQuarter();return false;"   /> 
+                                      <apex:commandButton value="Add Quarter" rendered="{!OR(suspendScheduleEntriesForCloneBoolean,suspendScheduleEntriesForEditBoolean)}" onclick="pickStartingQuarter();return false;"   />  
+                                </div>
+                            </apex:outputPanel>
+                        </apex:pageBlockSectionItem>
+                    </apex:pageBlockSection>
+                    -->
+                    <!-- End: Starting Quarter Section -->
+                    
+                    <!-- Starting Quarter Section: populate the Section Name and button Name dynamically from Controller --> 
+                    <!-- 
+                      -- @Manideep -  Opportunity RecordType Cleanup
+                    <apex:pageBlockSection title="{!startingQuarterSectionName}" 
+                            collapsible="false" 
+                            columns="1" 
+                            id="thePBS25" 
+                            rendered="{!AND(IsGeoforceOpp,ISNULL(startingQuarter))}">
+                    
+                        <apex:pageBlockSectionItem >
+                            <apex:outputPanel >
+                                <div class="requiredInput">
+                                    <div class="requiredBlock"></div>
+                                      <apex:commandButton value="{!addQuarterButtonName}" onclick="pickStartingQuarter();return false;"   />   
+                                </div>
+                            </apex:outputPanel>
+                        </apex:pageBlockSectionItem>
+                    </apex:pageBlockSection>
+                    -->
+                    
+                    <!-- Starting Quarter Section -->
+                    <apex:pageBlockSection title="Starting Quarter" 
+                            collapsible="false" 
+                            columns="1" 
+                            id="thePBS25" 
+                            rendered="{!AND(IsGeoforceOpp,ISNULL(startingQuarter))}">
+                    
+                        <apex:pageBlockSectionItem >
+                            <apex:outputPanel >
+                                <div class="requiredInput">
+                                    <div class="requiredBlock"></div>
+                                    <apex:commandButton value="Add Starting Quarter" onclick="pickStartingQuarter();return false;"   />
+                                </div>
+                            </apex:outputPanel>
+                        </apex:pageBlockSectionItem>
+                    </apex:pageBlockSection>
+                    <!-- End: Starting Quarter Section -->
+                    
+                    <!--Only for tegra opportunity   -->
+                    <apex:pageBlockSection title="Tegra Auto/Emb Products" 
+                        collapsible="false" 
+                        columns="1" 
+                        id="thePBS_StartingQuarter" 
+                        rendered="{!IF(AND(IsTegraOpp == true,lstSEHsByQuarter.size == 0), true,false)}" >
+                        
+                        <apex:outputPanel >
+                            <div style="text-align:right;float:right;">
+                                <a href="javascript:openPopupFocusEscapePounds('/apex/TegraAuto_EmbProducts_Help', 'Help', 700, 600, 'width=700,height=250,resizable=yes,toolbar=no,status=no,scrollbars=yes,menubar=no,directories=no,location=no,dependant=no', false, false);" class="linkCol">
+                                    <span class="linkSpan">Help</span>
+                                </a>
+                                <img src="/s.gif" alt="help (New Window)" class="helpIcon" title="help (New Window)" />
+                            </div>
+                            <center>&nbsp;</center>                    
+                        </apex:outputPanel>
+
+                        <apex:pageBlockSectionItem >
+                            <apex:outputPanel >
+                                <span id="help_startingQuarter-_help" class="helpButton">
+                                    <apex:outputLabel value="Starting Quarter" />
+                                    <img src="/s.gif" alt="" class="helpOrb" title="" />
+                                    <script type="text/javascript">
+                                        sfdcPage.setHelp('help_startingQuarter', 'Select the Fiscal Quarter production is estimated to begin and then click the “Select Starting Quarter” button.  You will then be prompted to select the Tegra product(s), ASP, and Units.');
+                                    </script>
+                                </span>
+                            </apex:outputPanel>
+                            <apex:outputPanel id="outptpnlStartingQuarter" rendered="{!IsTegraOpp}">
+                                <apex:selectList value="{!startingQuarter}" size="1" id="idselectlist">
+                                    <apex:selectOptions value="{!lstPossibleQuarters}" />
+                                </apex:selectList>
+                                &nbsp;
+                                <apex:commandButton value="Select Starting Quarter" onclick="pickStartingQuarter();return false;" />
+                                <br/>&nbsp;
+                            </apex:outputPanel>
+                        </apex:pageBlockSectionItem>
+                        
+                    </apex:pageBlockSection>
+                    <!--End: Only for tegra opportunity   -->
+            
+                    <!-- Product Family - Product Selection And Product Revenue Line Item by Quarter section -->
+                    <apex:actionRegion >
+                        <!-- Products Selection section  -->      
+                        <apex:pageBlockSection title="{!strProductPageBlockSectioName}" collapsible="false" columns="1" id="thePBS3" rendered="{!NOT(ISNULL(startingQuarter))}">
+                    
+                            <!-- Add Product button and help link -->
+                            <apex:outputPanel >
+                                <div style="text-align:right;float:right;">
+                                    <a href="javascript:openPopupFocusEscapePounds('{!strHelpUrl}', 'Help', 700, 600, 'width=700,height=600,resizable=yes,toolbar=yes,status=no,scrollbars=yes,menubar=yes,directories=no,location=no,dependant=no', false, false);" class="linkCol">
+                                        <span class="linkSpan">Help</span>
+                                    </a>
+                                    <img src="/s.gif" alt="help (New Window)" class="helpIcon" title="help (New Window)" />
+                                </div>
+                                <center>
+                                    <apex:commandButton value="Add Product" action="{!addProduct}" rerender="messages,thePBS3,sehsByQuarter" status="idStatus" />
+                                </center>
+                            </apex:outputPanel>
+                    
+                            <!-- Tabular data to show rows of Product Family, Product and ASP columns to select the Line Items and delete button -->
+                            <apex:pageBlockTable value="{!lstOLIHelpers}" var="oliHelper" id="oliHelpers">
+                                <apex:column headerValue="" style="width:15%;">
+                                    <apex:actionRegion >
+                                        <apex:commandButton value="Delete" action="{!deleteProduct}" rendered="{!oliHelper.isDeletable}" 
+                                            rerender="messages,thePBS3,pbeList,asp,sehsByQuarter"  status="idStatus">
+                                            <apex:param assignTo="{!deleteProductIndex}" name="deleteProductIndex" value="{!oliHelper.index}" />
+                                        </apex:commandButton>
+                                    </apex:actionRegion>   
+                                </apex:column>
+                        
+                                <!-- This column will not shown for tegra -->
+                                <apex:column headerValue="Product Family" rendered="{!NOT(IsProductFamilyClmnShow)}" style="width:35%;" >
+                                    <apex:actionRegion >
+                                        <apex:selectList value="{!oliHelper.family}" size="1" style="width:250px;" disabled="{!NOT(oliHelper.isDeletable)}" >
+                                            <apex:selectOptions value="{!lstProductFamilies}" />
+                                            <apex:actionSupport event="onchange" rerender="messages,pbeList,asp,sehsByQuarter" status="idStatus" />
+                                        </apex:selectList> 
+                                    </apex:actionRegion>
+                                </apex:column>
+                        
+                                <apex:column headerValue="{!strColumnName}" style="width:35%;">
+                                    <apex:actionRegion >
+                                        <apex:selectList value="{!oliHelper.pbeId}" size="1" style="width:250px;" id="pbeList" disabled="{!NOT(oliHelper.isDeletable)}" >
+                                            <!-- This will be available only for tegra -->
+                                            <apex:selectOption itemLabel="" itemValue="" />
+                                            <apex:selectOptions value="{!oliHelper.pbesForFamily}" />
+                                            <apex:actionSupport event="onchange" rerender="messages,asp,sehsByQuarter" status="idStatus"/>
+                                        </apex:selectList>
+                                    </apex:actionRegion>  
+                                </apex:column>
+                                
+                                <apex:column headerValue="ASP" style="width:15%;" rendered="{!IF(OR(IsGeoforceOpp == false,bShowAsp == false),false,true)}" >
+                                    <apex:outputText value="${0, number, integer}" id="asp" >
+                                        <apex:param value="{!oliHelper.asp}"/>
+                                    </apex:outputText>
+                                </apex:column>
+                            </apex:pageBlockTable>
+                            <!-- End: Tabular data to show rows of Product Family, Product and ASP columns to select the Line Items and delete button -->
+                
+                        </apex:pageBlockSection>
+                        <!-- End: Products Selection section  -->
+                    
+                        <!-- Product Revenue By Quarter Section -->
+                        <apex:actionRegion >
+                            <!-- Product Revenue By Quarter Section -->
+                            <apex:pageBlockSection title="{!strQuarterPageblockSectionName}" collapsible="false" columns="1" id="thePBS4" rendered="{!NOT(ISNULL(startingQuarter))}">
+                        
+                                <!-- @Manideep - Disable Schedule Entries for future quarters notification message 
+                                  /* <apex:outputText rendered="{!OR(suspendScheduleEntriesForCloneBoolean,suspendScheduleEntriesForEditBoolean)}" style="font-weight:Bold; font-size:13px; color:Red; text-align:Center;" 
+                                  value="The ability to schedule products in multiple quarters is being retired. Please create additional opportunities to represent each individual quarter. 
+                                         The Close Date for each opportunity should be correctly selected to align to the intended revenue Quarter." /> 
+                                  */
+                                -->                           
+                                
+                                <!-- Add Previous and Next Quarter buttons -->
+                                <!-- 
+                                  -- @Manideep -  Opportunity RecordType Cleanup
+                                <apex:outputPanel rendered="{!AND(NOT(suspendScheduleEntriesForCloneBoolean),NOT(suspendScheduleEntriesForEditBoolean))}">
+                                    <div style="text-align:center;">
+                                        <apex:commandButton value="Add Previous Quarter" action="{!addPreviousQuarter}" rerender="messages,sehsByQuarter" status="idStatus" />
+                                        <apex:commandButton value="Add Next Quarter" action="{!addNextQuarter}" rerender="messages,sehsByQuarter" status="idStatus" /> 
+                                        // Not for tegra 
+                                        <div style="text-align:right;float:right;">
+                                            <apex:outputText value="Old Opportunity: ASP is editable" 
+                                                            style="font-size:8pt;"/>
+                                        </div>
+                                    </div>
+                                </apex:outputPanel>
+                                -->
+                                
+                                <apex:outputPanel >
+                                    <div style="text-align:center;">
+                                        <apex:commandButton value="Add Previous Quarter" action="{!addPreviousQuarter}" rerender="messages,sehsByQuarter" status="idStatus" />
+                                        <apex:commandButton value="Add Next Quarter" action="{!addNextQuarter}" rerender="messages,sehsByQuarter" status="idStatus" />
+                                        <!-- Not for tegra -->
+                                        <div style="text-align:right;float:right;">
+                                            <apex:outputText value="Old Opportunity: ASP is editable" 
+                                                            style="font-size:8pt;"/>
+                                        </div>
+                                    </div>
+                                </apex:outputPanel>
+                                <!-- End: Add Previous and Next Quarter buttons -->
+                        
+                                <!-- Page Block Table that shows Quarter, Product, ASP, Units and Revenue -->
+                                <apex:pageBlockTable value="{!lstSEHsByQuarter}" var="seh" id="sehsByQuarter">
+                                
+                                    <apex:column headerValue="Quarter" value="{!seh.quarterSortable}" style="width:15%;"/>
+                                    
+                                    <apex:column headerValue="{!strColumnName}" value="{!seh.olih.productName}" style="width:30%;"/>
+                                    
+                                    <apex:column headerValue="ASP" style="width:15%;" rendered="{!bShowAsp}">
+                                        <apex:outputPanel rendered="{!IsTegraOpp}" >
+                                            <apex:actionRegion >
+                                                $&nbsp;
+                                                <apex:inputText value="{!seh.asp}" style="width:65px;"  rendered="{!seh.isEditable}">
+                                                    <apex:actionSupport event="onchange" rerender="revenue1,revenue2" status="idStatus" />
+                                                </apex:inputText>
+                                            </apex:actionRegion>
+                                            <apex:outputText value="{!seh.asp}" style="width:65px;" rendered="{!NOT(seh.isEditable)}" />
+                                        </apex:outputPanel>
+            
+                                        <!-- Not for tegra -->
+                                        <apex:outputText value="${0,number,integer}"  rendered="{!NOT(IsTegraOpp)}">
+                                            <apex:param value="{!seh.olih.asp}" />
+                                        </apex:outputText>
+                                    
+                                    </apex:column>
+                                    
+                                    <!-- PJENA-2016.09.12: Price Override -->
+                                    <apex:column headerValue="ASP Override" style="width:15%;" rendered="{!AND(bShowAsp, bShowASPOverride)}">
+                                        <apex:outputPanel >
+                                            <apex:actionRegion >
+                                                <apex:inputText value="{!seh.aspoverride}" onkeypress="return IntegerCharsOnly(event);" style="width:65px;"  rendered="{!AND(seh.isEditable, bIsOverrideAdmin)}">
+                                                    <apex:actionSupport event="onchange" rerender="revenue1,revenue2" status="idStatus" />
+                                                </apex:inputText>
+                                            </apex:actionRegion>
+                                            <apex:outputText value="{!seh.aspoverride}" style="width:65px;" rendered="{!NOT(AND(seh.isEditable, bIsOverrideAdmin))}" />
+                                        </apex:outputPanel>
+                                    </apex:column>
+                                    
+                                    <!-- End: PJENA-2016.09.12: Price Override -->
+            
+                                    <apex:column headerValue="Units" style="width:15%;">
+                                        <apex:actionRegion >
+                                            <apex:inputText value="{!seh.units}" onkeypress="return IntegerCharsOnly(event);" style="width:50px;" rendered="{!seh.isEditable}" >
+                                                <apex:actionSupport event="onchange" rerender="revenue1,revenue2" status="idStatus" />
+                                            </apex:inputText>
+                                        </apex:actionRegion>
+                                        
+                                        <apex:outputText value="{!seh.units}" style="width:50px;" rendered="{!NOT(seh.isEditable)}" />
+                                    </apex:column>
+                                    
+                                    <apex:column headerValue="Revenue" style="width:25%;" rendered="{!bShowRevenue}">
+                                        <apex:outputText value="${0,number,integer}" id="revenue1" >
+                                            <apex:param value="{!seh.revenue}" />
+                                        </apex:outputText>
+                                        <apex:outputText value="${0,number,0.00}" id="revenue2" >
+                                            <apex:param value="{!seh.revenue}" />
+                                        </apex:outputText>
+                                    </apex:column>
+                                
+                                </apex:pageBlockTable>
+                                <!-- End: Page Block Table that shows Quarter, Product, ASP, Units and Revenue -->
+                        
+                            </apex:pageBlockSection>
+                        
+                
+                            <!-- For tegra only -->
+                            <apex:actionRegion >
+                                <apex:pageBlockSection title="Comments" collapsible="false" columns="1" id="thePBS9" rendered="{!NOT(IsGeoforceOpp)}" >
+                                    <apex:pageBlockTable value="{!lstCommentsByDateDesc}" var="com" id="comByDateDesc">
+                                        <apex:column headerValue="Comment Type" value="{!com.Name}" style="width:15%;"/>
+                                        <apex:column headerValue="Created Date" value="{!com.CreatedDate}" style="width:10%;"/>
+                                        <apex:column headerValue="Comments" value="{!com.Comments__c}" style="width:30%;"/>
+                                        <apex:column headerValue="Last Modified By" value="{!com.LastModifiedBy.Name}" style="width:35%;"/>
+                                        <apex:column headerValue="Last Modified Date" value="{!com.LastModifiedDate}" style="width:35%;"/>
+                                    </apex:pageBlockTable>
+                                </apex:pageBlockSection>
+                            </apex:actionRegion>
+                            <!-- End: For tegra only -->
+                            
+                        </apex:actionRegion>
+                        <!-- End: Product Revenue By Quarter Section -->
+                    
+                    </apex:actionRegion>
+                    <!-- End: Product Family - Product Selection And Product Revenue Line Item by Quarter section -->
+                    
+                    
+                    <apex:outputText style="font-weight:bold;color:red" 
+                                    value="{!if($CurrentPage.parameters.isClone=="true", "This is a Cloned Opportunity.  Ensure you update any of the existing fields that have changed (e.g., units, products, close date, stage, etc.)", "")}" />
+                    
+                    <!-- Tegra related -->
+                    <!-- 
+                      -- @Manideep - Opportunity Record Type Cleanup
+                    <apex:outputPanel title="Product Detail" id="product1"  rendered="{!IsTegraSBSPRecordtype}">
+                    
+                        <apex:actionRegion >
+                            <apex:pageBlockSection title="Products" columns="5" collapsible="false" />
+                            <apex:dataTable value="{!helpers}" var="helper" columnClasses="cols" headerClass="cols" rowClasses="rows" cellpadding="4" width="100%">
+                                <apex:column headerValue="Action">
+                                    <apex:commandLink value="Select Product" 
+                                            action="{!selectHelper}" 
+                                            onComplete="YAHOO.nvidia.com.showFindProduct();" 
+                                            rerender="product1,pageMessages"
+                                            rendered="{!IsNull(helper.oli.Product_Name__c)}" status="idStatus">
+                                        <apex:param assignTo="{!selectedHelper}" name="selectedHelper" value="{!helper.index}" />
+                                    </apex:commandLink>
+                    
+                                    <apex:commandLink value="Edit Product" 
+                                            action="{!selectProduct}" 
+                                            onComplete="YAHOO.nvidia.com.showGetOLIDetails();" 
+                                            rerender="product1,GetOLIDetailsData,pageMessages"
+                                            rendered="{!NOT(IsNull(helper.oli.Product_Name__c))}" status="idStatus">
+                                        <apex:param assignTo="{!selectedHelper}" name="selectedHelper" value="{!helper.index}" />
+                                        <apex:param assignTo="{!selectedPbeId}" name="selectedPbeId" value="{!helper.pbe.id}" />
+                                    </apex:commandLink>
+                                    &nbsp;
+                                    <apex:actionRegion >
+                                        <apex:commandLink value="Delete" 
+                                            action="{!deleteProduct}" 
+                                            rerender="product1,pageMessages"
+                                            rendered="{!NOT(IsNull(helper.oli.Product_Name__c))}" status="idStatus">
+                                            <apex:param assignTo="{!selectedHelper}" name="selectedHelper" value="{!helper.index}" />                   
+                                        </apex:commandLink>             
+                                    </apex:actionRegion>
+                                    <br/>
+                                </apex:column>
+                                
+                                <apex:column headerValue="Product" >
+                                    <apex:outputField value="{!helper.pbe.Product2.Name}" />
+                                </apex:column>
+                                
+                                <apex:column headerValue="Monthly Quantity" >
+                                    <apex:outputField value="{!helper.oli.Monthly_Quantity__c}" />
+                                </apex:column>
+                                
+                                <apex:column headerValue="Net ASP" >
+                                    <apex:outputField value="{!helper.oli.UnitPrice}" />
+                                </apex:column>
+                            </apex:dataTable>
+                        </apex:actionRegion>
+                        
+                    </apex:outputPanel>
+                    -->
+                    <!-- End: Tegra related -->
+                    
+                </apex:pageBlock>
+            </apex:repeat>
+        </apex:outputPanel>
+        
+        <apex:inputHidden id="isClonedOpportunity" />
+        
+        <!-- -------------------- FindProduct modal dialog -------------------- -->
+        <!-- Displays the list of Products associated with the Opportunity Record Type -->
+        <!-- This first outputPanel contains the Search inputfield -->
+        
+        <!-- 
+          -- @Manideep - Opportunity Record Type Cleanup
+        <apex:actionRegion >
+            <apex:outputPanel id="panelFindProduct" rendered="{!IsTegraSBSPRecordtype}">
+                <div id="dlgFindProduct" style="display: none" >
+                    <div class="hd">
+                        Select a Product
+                    </div> 
+                    <div class="bd">
+                        <div>
+                            Search:&nbsp;<input id="searchText" type="text" value="" />
+                            <apex:commandButton value="Search" 
+                                    action="{!search}" 
+                                    rerender="tblProducts,,messages" 
+                                    onMouseDown="document.getElementById('{!$Component.inputForSearchText}').value=document.getElementById('searchText').value;"
+                                    onComplete="YAHOO.nvidia.com.showFindProduct();" 
+                                    status="idStatus" />
+                        </div>
+
+                        <div style="height:300px;overflow:scroll;" id="dataTableForProductsGoesHere"></div>
+                        <p style="text-align:center;">
+                            <input type="button" value="Cancel" onClick="YAHOO.nvidia.com.hideFindProduct();" />
+                        </p>
+                    </div>
+                </div>
+            </apex:outputPanel>
+            
+            <!-- These areas are used to transfer data between the controller and the DOM for
+                 the FindProduct dialog that's rendered into the window's document's DOM. -->
+            <!-- The dataTable displays the actual list of Products, with Select links next to each Product entry -->
+            <!-- 
+              -- @Manideep - Opportunity Record Type Cleanup
+            <apex:inputHidden id="inputForSearchText" value="{!searchText}" />
+            <apex:outputPanel id="tblProducts" rendered="{!IsTegraSBSPRecordtype}">
+                <div id="dataTableForProducts" style="visibility:hidden;display:none;">
+                    <apex:dataTable value="{!pbes}" var="item" columnClasses="cols" headerClass="cols">
+                        <apex:column headerValue="Select">
+                            <apex:commandLink value="Select" 
+                                    onComplete="YAHOO.nvidia.com.doFindProduct();return true;" 
+                                    action="{!selectProduct}" rerender="inputForGetOLIDialog" status="idStatus">
+                                <apex:param assignTo="{!selectedPbeId}" name="selectedPbeId" value="{!item.id}" />
+                            </apex:commandLink>
+                        </apex:column>
+                        <apex:column headerValue="Product Name" value="{!item.Product2.Name}"/>
+                    </apex:dataTable>
+                </div>
+            </apex:outputPanel>
+                       
+        </apex:actionRegion>
+        -->
+        <!-- -------------------- End: of FindProduct modal dialog -------------------- -->
+
+
+        <!-- -------------------- GetOLIDetails modal dialog -------------------- -->
+        <!-- This panel displays the Product name and fields for entering Product Quantity and Unit Price -->
+        <!-- 
+          -- @Manideep - Opportunity Record Type Cleanup
+        <apex:outputPanel id="panelGetOLIDetails" rendered="{!IsTegraSBSPRecordtype}">
+            <div id="dlgGetOLIDetails" style="display: none" >
+                <div class="hd">Product Details</div> 
+                <div class="bd">
+                    <table style="width:100%" >
+                        <tr>
+                            <th>Product:</th>
+                            <td><span id="selectedProductName"></span><br/></td>
+                        </tr>
+                        <tr>
+                            <th>Monthly Quantity:</th>
+                            <td><input id="selectedQuantity" type="text" value="" width="50" onkeypress="return DecimalCharsOnly();"/></td>
+                        </tr>
+                        <tr>
+                            <th>Net ASP:</th>
+                            <td>
+                                <input id="selectedASP" type="text" value="" width="50" onkeypress="return DecimalCharsOnly();"/>
+                                <br />
+                                <small>(Gross ASP less Rebates and MDF.)</small>
+                            </td>
+                        </tr>
+                    </table>
+                    <p style="text-align:center;">
+                        <input type="button" value="OK" onClick="YAHOO.nvidia.com.doGetOLIDetails();" />
+                        <input type="button" value="Cancel" onClick="YAHOO.nvidia.com.hideGetOLIDetails();" />
+                    </p>
+                </div>
+            </div>
+        </apex:outputPanel>
+        -->
+        <!-- These areas are used to transfer data between the controller and the DOM for
+                the GetOLIDetails dialog that's rendered into the window's document's DOM. -->
+        <!--
+          -- @Manideep - Opportunity Record Type Cleanup
+        <apex:outputPanel id="GetOLIDetailsData" rendered="{!IsTegraSBSPRecordtype}">
+            <apex:actionRegion >
+                <apex:outputPanel id="inputForGetOLIDialog">
+                    <apex:inputHidden id="inputForSelectedProductName" value="{!selectedProductName}" />
+                    <apex:inputHidden id="inputForSelectedQuantity" value="{!selectedQuantity}" />
+                    <apex:inputHidden id="inputForSelectedASP" value="{!selectedASP}" />
+                    <apex:actionFunction name="RememberHelperInfo" action="{!RememberHelperInfo}" rerender="product1,pageMessages" status="idStatus"/>
+                </apex:outputPanel>
+            </apex:actionRegion>
+        </apex:outputPanel>
+        -->
+        <!-- -------------------- End of GetOLIDetails modal dialog -------------------- -->
+    </apex:form>
+
+    <script>
+        function populateOpportunityProbability(cont){  
+            if(cont.id=='pageId:formId:repeatId:0:pageblockId:repeatIdPageBlock:0:pageblockSection:repeatIdInputField:3:dynamicField'){
+                var queryOpportunityStage = sforce.connection.query("SELECT MasterLabel, DefaultProbability FROM OpportunityStage");
+                if(queryOpportunityStage.size>0){
+                    var osRecords = queryOpportunityStage.getArray('records');
+                    //alert(osRecords);
+                    for(var i=0;i<=osRecords.length;i++){
+                        //alert(osRecords[i]);
+                        if(osRecords[i] != undefined && 
+                            document.getElementById('pageId:formId:repeatId:0:pageblockId:repeatIdPageBlock:0:pageblockSection:repeatIdInputField:3:dynamicField').value == osRecords[i].MasterLabel){
+                                //alert(document.getElementById('id'+osRecords[i].MasterLabel));
+                                document.getElementById('pageId:formId:repeatId:0:pageblockId:repeatIdPageBlock:0:pageblockSection:repeatIdInputField:5:dynamicField').value = document.getElementById('id'+osRecords[i].MasterLabel).value;
+                            }
+                        }
+                    }            
+            }
+    
+            //For close date
+            if(cont.id=='pageId:formId:repeatId:0:pageblockId:repeatIdPageBlock:0:pageblockSection:repeatIdInputField:1:dynamicField'){
+                var oStaringQuarter = document.getElementById("pageId:formId:repeatId:0:pageblockId:StartingQuarter");
+                if(oStaringQuarter!= null && oStaringQuarter.value != "") {
+                    updateQuarters();
+                }
+            }
+        }
+    </script>
+
+    <script type="text/javascript">
+        var __sfdcSessionId = '{!GETSESSIONID()}';
+    </script>
+    
+    <script src="../../soap/ajax/19.0/connection.js" type="text/javascript"></script>
+    
+    <script type="text/javascript">
+
+        function createdynamicpagedata(){
+            //alert('PJ: in createdynamicpagedata() method');
+            //alert(document.getElementById('pageId:formId:flagId').value);
+            var recordTypeId = '{!recordTypeId}';  //Get RecordtypeId
+            //alert(recordTypeId);
+            var recordtypename = '{!strRecordtypeName}'; //Get Recordtype Name
+            var csLModifiedDate;
+            if(document.getElementById('pageId:formId:flagId').value=='false'){
+                //Query on custom setting & get layout modified date
+                var queryResultCustomSetting = sforce.connection.query("SELECT Layout_Modified_Date__c from Pricebook_Details__c WHERE Name='" + recordtypename + "'");
+                if(queryResultCustomSetting.size>0){
+                    var csRecords = queryResultCustomSetting.getArray('records');
+                    csLModifiedDate = csRecords[0].Layout_Modified_Date__c;
+                    // alert(csRecords[0].Layout_Modified_Date__c);
+                }
+                
+                //Query on Pageblock & get Created Date to compare & Id to delete
+                var queryResult = sforce.connection.query("SELECT ID, CreatedDate from PageBlock__c WHERE Record_Type_Id__c='" + recordTypeId + "'");        
+        
+                if(queryResult.size>0){
+                    var records = queryResult.getArray('records');            
+                    //alert(records);
+                    
+                    //Get record created date
+                    var varCreatedDate =  records[0].CreatedDate;
+                    
+                    //Compare if custom setting Modified date greater than records created date then return
+                    if(csLModifiedDate <= varCreatedDate){
+                        //alert('Not Insert Pageblock')
+                        //alert('PJ: call initone() method');
+                        initone();
+                        return false;
+                    }
+                    
+                    //Delete existing record
+                    var delResult = sforce.connection.deleteIds([records[0].Id]);
+                }
+                
+                //alert('PJ: call setupPage() method');
+                setupPage();
+                
+                //alert('PJ: call initone() method');
+                initone();
+                //alert('It is done!');
+            }
+        }
+    
+        //Create dynamic page methode on load
+        //alert('PJ: call createdynamicpagedata');
+        createdynamicpagedata();
+    
+        function setupPage() {
+            //alert('PJ: in setupPage() method');
+            var obj = 'Opportunity';             
+            var opt = 'Edit';           
+            var rct = '{!recordTypeId}';    
+            //alert(rct);
+            var result;
+                    
+            if(rct != '' && rct != null){
+                result = sforce.connection.describeLayout(obj, new Array(rct));                               
+            }else {
+                result = sforce.connection.describeLayout(obj);            
+                alert(result);
+                alert('please note that you have not provided record type id. if the object has more than one record type and different page layout assignments, you will get the code with all the page layouts');
+            }
+        
+            if(opt == 'Edit')editLayoutResults(result, obj);
+            
+            function editLayoutResults(result, obj) {
+                output = '';
+                // alert(result);
+                var layouts = result.getArray("layouts");
+                //alert(layouts);
+                //alert('Started');
+                var pageblock = new sforce.SObject("PageBlock__c");    
+                pageblock.Name = obj;     
+                pageblock.Record_Type_Id__c    = rct;    
+                var objPageBlock = sforce.connection.create([pageblock]);
+                
+                output += '<' + 'apex' + ':' + 'page standardController=' + '"' + obj + '"' + '>';    
+                output += '\n';
+                output += '<' + 'apex' + ':' + 'sectionHeader' + ' title=' + '"' + obj + ' Edit' + '"' + ' subtitle=' + '"' + '{' + '!' + obj + '.name}' + '"' + '/>';
+                output += '\n';
+                output += '<' + 'apex' + ':' + 'form' + '>';
+                output += '\n';
+                output += '<' + 'apex' + ':' + 'pageBlock title=' + '"' + obj + ' Edit' + '"' + ' mode=' + '"edit">';
+                output += '\n';
+                output += '\n';
+                output += '<' + 'apex' + ':' + 'pageBlockButtons location=' + '"top">';
+                output += '\n';
+                output += '<' + 'apex:commandButton value=' + '"' + 'Save' + '" ' + 'action=' + '"' + '{' + '!' + 'save' + '}"' + '/>';
+                output += '\n';
+                output += '<' + 'apex:commandButton value=' + '"' + 'Save & New' + '"' + ' action=' + '"' + '{' + '!save}" />';
+                output += '\n';
+                output += '<' + 'apex:commandButton value="Cancel" action=' + '"' + '{' + '!cancel}' + '"/>';
+                output += '\n';
+                output += '<' + '/apex:pageBlockButtons>';
+                output += '\n';
+                output += '\n';
+                output += '<' + 'apex' + ':' + 'pageBlockButtons location=' + '"bottom">';
+                output += '\n';
+                output += '<' + 'apex:commandButton value=' + '"' + 'Save' + '" ' + 'action=' + '"' + '{' + '!' + 'save' + '}"' + '/>';
+                output += '\n';
+                output += '<' + 'apex:commandButton value=' + '"' + 'Save & New' + '"' + ' action=' + '"' + '{' + '!save}" />';
+                output += '\n';
+                output += '<' + 'apex:commandButton value="Cancel" action=' + '"' + '{' + '!cancel}' + '"/>';
+                output += '\n';
+                output += '<' + '/apex:pageBlockButtons>';
+
+                //adding fields and sections
+                //alert(layouts);
+                var allTheLayouts = result.getArray("layouts");
+                //alert('All Layout--------'+allTheLayouts);
+                var pageblockSectionsButtons = new Array();
+                var pageblockSectionsFields = new Array();
+                
+                for (var i = 0; i < allTheLayouts.length; i++){
+                    var layout = allTheLayouts[i];
+                    
+                    if(layout.buttonLayoutSection!=null){
+                        //alert('layout.buttonLayoutSection-----------'+layout.buttonLayoutSection);
+                        var buttons = layout.getArray("buttonLayoutSection");
+                        //alert(buttons.length);
+                        //alert(buttons[0].editButtons);
+                        for(var b=0;b<buttons[0].detailButtons.length;b++){
+                            var pageblockButton = new sforce.SObject("Button__c");
+                            pageblockButton.Name = buttons[0].detailButtons[b].name;
+                            pageblockButton.Custom__c = buttons[0].detailButtons[b].custom;
+                            pageblockButton.PageBlock__c = objPageBlock[0].id;
+                            pageblockSectionsButtons.push(pageblockButton);
+                            //alert('custom------'+buttons[0].detailButtons[b].custom);
+                            //alert('label------'+buttons[0].detailButtons[b].name);
+                        }
+                    }
+                    
+                    // alert(layout);
+                    //  alert(result);
+                    var pageblockSections = new Array();
+                    
+                    //  alert('++++Edit Layout+++++++++'+layout.getArray("layoutSections"));
+                    //  alert('++++Detail Layout+++++++++'+layout.editLayoutSections);
+                    // alert('++++Detail Layout+++++++++'+layout.detailLayoutSections);    
+                    //Console.log(layout.detailLayoutSections);           
+                    if (layout.editLayoutSections != null){
+                        var elSections = layout.getArray("editLayoutSections");
+            
+                        //Create a map to insert pageblock sections and their fields.                                                
+                        for (var j = 0; j < elSections.length; j++){
+                            var els = elSections[j];
+                            //alert(els.heading);                   
+                            //alert(objPageBlock[0].id);
+                            var pageblockSection = new sforce.SObject("PageBlockSection__c");
+                            pageblockSection.Name = els.heading; 
+                            pageblockSection.PageBlock__c= objPageBlock[0].id;
+                            pageblockSection.Columns__c = els.columns;
+                            pageblockSection.Sequence_Number__c = j;
+                                     
+                            var objPageBlockSection = sforce.connection.create([pageblockSection]); 
+                            //alert('objPageBlockSection-------'+objPageBlockSection);        
+                            output += '\n';
+                            output += '\n';
+                            output += '<' + 'apex:pageBlockSection title=' + '"' + els.heading + '" ' +  'columns=' + '"' + els.columns + '"' + '>';
+                            output += '\n';
+    
+                            var allTheLayoutRows = els.getArray("layoutRows");
+                            var seq = 1; 
+                            var IsRequired; 
+                            var IsEditable;
+                            var IsEmptySpace;                   
+                            
+                            for (var k = 0; k < allTheLayoutRows.length; k++){                    
+                                var lr = allTheLayoutRows[k];
+                                var lis = lr.getArray("layoutItems");
+                                
+                                for (var h = 0; h < lis.length; h++){                           
+                                    var li = lis[h];
+                                    
+                                    //alert('++++LayoutItems Layout+++++++++'+li);
+                                    //  alert('Check LayoutItem------'+li.LayoutSection);
+                                    // alert('Check Field Name------'+li.label);
+                                    //alert('Check Required------'+li.required);
+                                    //  alert('Check isEditable------'+li.editable);
+                                    //alert('Check EmptySpace------'+li.placeholder);
+                                    
+                                    //only in case of Lead and Contact First Name, which includes Salutation also                            
+                                    if (li.layoutComponents != null && li.layoutComponents!=''){
+                                        if(li.layoutComponents.length == 2){                            
+                                            output += '<' + 'apex:inputField value=' + '"' + '{' + '!' + obj + '.' + li.layoutComponents[1] + '}' + '" ' + 'required=' + '"' + li.required.toString() + '"' + '/>';
+                                            output += '\n';
+                                        }
+                                    }
+                            
+                                    //for all other fields
+                                    //alert('li.layoutComponents---Field value------'+li.layoutComponents);
+                                    else if (li.layoutComponents != null && li.layoutComponents!=''){
+                                        output += '<' + 'apex:inputField value=' + '"' + '{' + '!' + obj + '.' + li.layoutComponents + '}' + '" ' + 'required=' + '"' + li.required.toString() + '"' + '/>'; 
+                                        output += '\n';
+                                    }
+                                
+                                    //alert(li.layoutComponents); 
+                                    if(li.layoutComponents!=null && li.layoutComponents!=''){
+                                        //alert('li.layoutComponents------------------'+li.layoutComponents);                               
+                                        var pageblockSectionField = new sforce.SObject("Field__c");
+                                        //alert(li.layoutComponents);
+                                        pageblockSectionField.PageBlockSection__c = objPageBlockSection[0].id;                                                                
+                                        pageblockSectionField.Sequence_Number__c = seq;
+                                        seq = seq + 1;                                                                                                                         
+                                        pageblockSectionField.Name = li.layoutComponents.value;
+                                        //For Blank space on page layout
+                                        //alert(li.layoutComponents.type);
+                                        //For required field
+                                        IsRequired = li.required;
+                                        IsEditable = li.editable;
+                                        pageblockSectionField.IsRequired__c = IsRequired;
+                                        pageblockSectionField.IsEditable__c = IsEditable;
+                                        if(li.layoutComponents.type == 'EmptySpace'){
+                                            pageblockSectionField.Is_Empty_Space__c = true;
+                                        }
+                                        pageblockSectionsFields.push(pageblockSectionField);
+                                        
+                                        //alert('pageblockSectionsFields.push------------------'+pageblockSectionsFields);
+                                    }
+                                    //alert(pageblockSectionsFields);                           
+                                }
+                            } 
+                            //alert('pageblockSectionsFields.push------------------'+pageblockSectionsFields);        
+                            output += '<' + '/apex:pageBlockSection>';
+                            output += '\n';
+                        }
+                    }
+                    //alert('Finish layout here');
+                }
+            
+                //alert('**************'+pageblockSectionsFields); 
+                //alert('*********************++++++++++++'+pageblockSectionsButtons);
+                var objPageBlockButton = sforce.connection.create(pageblockSectionsButtons);
+                var objPageBlockSection = sforce.connection.create(pageblockSectionsFields);
+                //alert(objPageBlockSection[0].id);
+                output += '\n';
+                output += '<' + '/apex:pageBlock>';
+                output += '\n';
+                output += '<' + '/apex:form>';
+                output += '\n';
+                output += '<' + '/apex:page>';
+            
+                //document.getElementById("{!$Component.hide}") = output;
+                //alert('Done');  
+            }
+        
+        }
+        
+        /* 
+         * @Manideep - Opportunity RecordType Cleanup 
+        //********FOR TEGRA AP,SB Opportunity RecordType************
+        // Create a namespace for our custom functions
+        YAHOO.namespace("nvidia.com");
+
+        // ---------- Functions to show the dialogs ----------
+        YAHOO.nvidia.com.showFindProduct = function() {
+            // Do any initialization to clear any of the user's past selections, etc.
+            document.getElementById('dataTableForProductsGoesHere').innerHTML =
+            document.getElementById('dataTableForProducts').innerHTML;
+    
+            // Show the dialog
+            document.getElementById("dlgFindProduct").style.display = "block";
+            YAHOO.nvidia.com.myFindProduct.show();
+        }
+        
+        YAHOO.nvidia.com.showGetOLIDetails = function() {
+            // Do any initialization to clear any of the user's past selections, etc.
+            document.getElementById('selectedProductName').innerHTML =
+            document.getElementById('{!$Component.pageId:formId:inputForSelectedProductName}').value;
+            document.getElementById('selectedQuantity').value = '';
+            document.getElementById('selectedASP').value = '';
+    
+            // Show the dialog
+            document.getElementById("dlgGetOLIDetails").style.display = "block";
+            YAHOO.nvidia.com.myGetOLIDetails.show();
+        }
+
+        // ---------- Functions to hide the dialogs ----------
+        YAHOO.nvidia.com.hideFindProduct = function() {
+            YAHOO.nvidia.com.myFindProduct.hide();
+        }
+    
+        YAHOO.nvidia.com.hideGetOLIDetails = function() {
+            YAHOO.nvidia.com.myGetOLIDetails.hide();
+        }
+
+        // ---------- Functions to do the dialogs' main actions ----------
+        YAHOO.nvidia.com.doFindProduct = function() {
+            // Do whatever we need to do to save the product the user selected
+            // (For the FindProduct dialog, this is done by a commandLink.)
+        
+            // Hide the FindProduct dialog
+            YAHOO.nvidia.com.myFindProduct.hide();
+
+            // Show the GetOLIDetails dialog
+            YAHOO.nvidia.com.showGetOLIDetails();
+        }
+    
+        YAHOO.nvidia.com.doGetOLIDetails = function() {
+            if (IsItANumber(document.getElementById("selectedQuantity").value) &&
+                IsItANumber(document.getElementById("selectedASP").value)) {
+    
+                // Do whatever we need to do to save the product the user selected
+                document.getElementById("{!$Component.pageId:formId:inputForSelectedQuantity}").value =
+                document.getElementById("selectedQuantity").value;
+                document.getElementById("{!$Component.pageId:formId:inputForSelectedASP}").value =
+                document.getElementById("selectedASP").value;
+    
+                // Call the action method that saves the user's input
+                RememberHelperInfo();
+
+                // Hide the GetOLIDetails dialog
+                YAHOO.nvidia.com.myGetOLIDetails.hide();
+            } else {
+                alert('Please enter numbers for Monthly Quantity and Net ASP.'); 
+            }
+        }
+        
+        // ---------- Function called when the page is fully loaded ----------
+        YAHOO.nvidia.com.init = function() {
+            document.body.className = document.body.className + " yui-skin-sam";
+            
+            YAHOO.nvidia.com.myFindProduct = new YAHOO.widget.Panel(
+                "dlgFindProduct",  // The id of our dialog container
+                { 
+                    width           :   450,    // You can play with this until it's right
+                    visible         :   false,  // Should be invisible when rendered
+                    draggable       :   true,   // Make the dialog draggable
+                    close           :   false,  // Don't include a close title button
+                    modal           :   true,   // Make it modal
+                    fixedcenter     :   true,   // Keep centered if window is scrolled
+                    zindex          :   40,     // Make sure it's on top of everything
+                    
+                    // This line adds the appear/vanish fade effect
+                    effect          :   {
+                                          effect:YAHOO.widget.ContainerEffect.FADE,
+                                          duration:0.35
+                                        } 
+                }
+            );
+
+            YAHOO.nvidia.com.myGetOLIDetails = new YAHOO.widget.Panel(
+                "dlgGetOLIDetails",  // The id of our dialog container
+                { 
+                    width           :   400,    // You can play with this until it's right
+                    visible         :   false,  // Should be invisible when rendered
+                    draggable       :   true,   // Make the dialog draggable
+                    close           :   false,  // Don't include a close title button
+                    modal           :   true,   // Make it modal
+                    fixedcenter     :   true,   // Keep centered if window is scrolled
+                    zindex          :   40,     // Make sure it's on top of everything
+                    
+                    // This line adds the appear/vanish fade effect
+                    effect          :   {
+                                          effect:YAHOO.widget.ContainerEffect.FADE,
+                                          duration:0.35
+                                        } 
+                }
+            );
+
+            // Render the dialog to the document.body level of the DOM
+            YAHOO.nvidia.com.myFindProduct.render(document.body);
+            YAHOO.nvidia.com.myGetOLIDetails.render(document.body);
+        }        
+    
+        // Add the init method to the window.load event
+        YAHOO.util.Event.addListener(window, "load", YAHOO.nvidia.com.init);
+        
+        //get the isCLone querystring value
+        var qs = getQueryStrings();
+        var isClone = qs["isClone"];
+        
+        //set the isClonedOpportunity field value to true if this is a cloned opportunity
+        //set this value only once because the opportunity name field value should not be reset each time the page refreshes
+        var oClonedOpportunity = document.getElementById("{!$Component.pageId:formId:isClonedOpportunity}");
+        if (oClonedOpportunity.value != "true") {
+            if (isClone == 'true') {
+                var oppName = document.getElementById("{!$Component.pageId:formId:repeatId:0:pageblockId:repeatIdPageBlock:0:pageblockSection:repeatIdInputField:2:dynamicField}");
+                oppName.value = "";
+                oClonedOpportunity.value="true";
+                var oClonedOpportunity = document.getElementById("{!$Component.pageId:formId:repeatId:0:pageblockId:repeatIdPageBlock:0:pageblockSection:repeatIdInputField:2:dynamicField}");
+            }
+        }
+                 
+        // When the page loads, VF automatically calls setFocusOnLoad() to 
+        // give focus to the first field in the form. On this page, that
+        // happens to be a Date field, which causes the calendar picker
+        // to display, which is annoying. To avoid giving focus to that
+        // control when the page loads, we override setFocusOnLoad():
+        function setFocusOnLoad() {} 
+
+        //this function reads querystring values
+        function getQueryStrings() {
+            var assoc  = {};
+            var decode = function (s) { return decodeURIComponent(s.replace(/\+/g, " ")); };
+            var queryString = location.search.substring(1); 
+            var keyValues = queryString.split('&'); 
+        
+            for(var i in keyValues) { 
+                var key = keyValues[i].split('=');
+                if (key.length > 1) {
+                    assoc[decode(key[0])] = decode(key[1]);
+                }
+            } 
+
+            return assoc; 
+        }
+    
+        // Add a String.trim() method
+        String.prototype.trim = function() {
+            return this.replace(/^\s+|\s+$/g,"");
+        }
+
+        // This function should be called by an onkeypress event.
+        // It returns true if the number passed in is of the correct numeric type (integer(qty) or float(decimal/currency))
+        // ** This may be working, but it's not 'doing' anything
+        function CheckForNumber(fldId, type) {
+            var fld = document.getElementById(fldId);
+            if (type == 'float') result = parseFloat(fld.value);
+            else result = parseInt(fld.value);
+
+            return result;
+        }
+ 
+        // This function should be called by an onkeypress event.
+        // It returns true if the key that was pressed is a valid
+        // character for a number
+        function DecimalCharsOnly(evt) {
+            //var ret = false;
+        
+            evt = (evt) ? evt : ((event) ? event : null);
+            var key = evt.keyCode;
+            if (key == 0) key = evt.charCode;
+    
+            // Make sure the key is between '0' (0x30) and '9' (0x39)
+            // or that it's a period (0x2E)
+            if (((key >= 0x30) && (key <= 0x39)) || (key==0x2E)) {
+                return true;
+            }else {
+                return false;
+            }
+        }
+
+        function IsItANumber(str) {
+            if (str.trim() == '') return false;
+            var num = new Number(str);
+            if (isNaN(num)) return false;
+            return true;
+        }
+        */
+                      
+    </script>
+    <p id="para"></p>
+</apex:page>

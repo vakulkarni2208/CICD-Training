@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Primary Vehicle Purpose --></label>
+    <name>Primary_Vehicle_Purpose__c</name>
+    <picklistValues>
+        <masterLabel>Autonomous Driving</masterLabel>
+        <translation><!-- Autonomous Driving --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Data Collection</masterLabel>
+        <translation><!-- Data Collection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Driver Monitoring</masterLabel>
+        <translation><!-- Driver Monitoring --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

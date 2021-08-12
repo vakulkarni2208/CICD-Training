@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Incident Substatus --></label>
+    <name>Incident_Substatus__c</name>
+    <picklistValues>
+        <masterLabel>3rd party software issue</masterLabel>
+        <translation><!-- 3rd party software issue --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>At Customer Site</masterLabel>
+        <translation><!-- At Customer Site --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Change</masterLabel>
+        <translation><!-- Change --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Complete</masterLabel>
+        <translation><!-- Complete --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Configuration Issue</masterLabel>
+        <translation><!-- Configuration Issue --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Contained</masterLabel>
+        <translation><!-- Contained --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer Closure</masterLabel>
+        <translation><!-- Customer Closure --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer Custom Configuration</masterLabel>
+        <translation><!-- Customer Custom Configuration --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer Education</masterLabel>
+        <translation><!-- Customer Education --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer Question</masterLabel>
+        <translation><!-- Customer Question --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer request to escalate</masterLabel>
+        <translation><!-- Customer request to escalate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Deep Learning SW Defect</masterLabel>
+        <translation><!-- Deep Learning SW Defect --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Design Flaw</masterLabel>
+        <translation><!-- Design Flaw --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Docker/Container Software or DL</masterLabel>
+        <translation><!-- Docker/Container Software or DL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Documentation</masterLabel>
+        <translation><!-- Documentation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Documentation Provided</masterLabel>
+        <translation><!-- Documentation Provided --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DriveAV SW Defect</masterLabel>
+        <translation><!-- DriveAV SW Defect --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DriveSIM SW Defect</masterLabel>
+        <translation><!-- DriveSIM SW Defect --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Enhancement Request</masterLabel>
+        <translation><!-- Enhancement Request --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Entitlement Issue</masterLabel>
+        <translation><!-- Entitlement Issue --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Environment</masterLabel>
+        <translation><!-- Environment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Escalated Account</masterLabel>
+        <translation><!-- Escalated Account --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Firmware</masterLabel>
+        <translation><!-- Firmware --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fully Operational</masterLabel>
+        <translation><!-- Fully Operational --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GFNA Escalation to Incident Managers</masterLabel>
+        <translation><!-- GFNA Escalation to Incident Managers --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HW Replacement (RMA)</masterLabel>
+        <translation><!-- HW Replacement (RMA) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hardware</masterLabel>
+        <translation><!-- Hardware --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Installation</masterLabel>
+        <translation><!-- Installation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Known Issue</masterLabel>
+        <translation><!-- Known Issue --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>License Server Issue</masterLabel>
+        <translation><!-- License Server Issue --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>License validation</masterLabel>
+        <translation><!-- License validation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NGC</masterLabel>
+        <translation><!-- NGC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NGC Account Agreements</masterLabel>
+        <translation><!-- NGC Account Agreements --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NVES Agent Direct Support</masterLabel>
+        <translation><!-- NVES Agent Direct Support --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Network</masterLabel>
+        <translation><!-- Network --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Problem Found</masterLabel>
+        <translation><!-- No Problem Found --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Response from Customer</masterLabel>
+        <translation><!-- No Response from Customer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not Operational</masterLabel>
+        <translation><!-- Not Operational --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>On Route</masterLabel>
+        <translation><!-- On Route --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Out of scope</masterLabel>
+        <translation><!-- Out of scope --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Partially Operational</masterLabel>
+        <translation><!-- Partially Operational --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Performance</masterLabel>
+        <translation><!-- Performance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Platform SW Defect</masterLabel>
+        <translation><!-- Platform SW Defect --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Portal/Login Issue</masterLabel>
+        <translation><!-- Portal/Login Issue --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Process</masterLabel>
+        <translation><!-- Process --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RMA needs NVES approval</masterLabel>
+        <translation><!-- RMA needs NVES approval --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Redirected to 3rd Party Support</masterLabel>
+        <translation><!-- Redirected to 3rd Party Support --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resolved by Customer</masterLabel>
+        <translation><!-- Resolved by Customer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resolved w/o Action</masterLabel>
+        <translation><!-- Resolved w/o Action --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Restart Service</masterLabel>
+        <translation><!-- Restart Service --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Restart System</masterLabel>
+        <translation><!-- Restart System --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Scheduled</masterLabel>
+        <translation><!-- Scheduled --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Software</masterLabel>
+        <translation><!-- Software --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Software Issue</masterLabel>
+        <translation><!-- Software Issue --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Submitted</masterLabel>
+        <translation><!-- Submitted --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unable to Solve the Issue</masterLabel>
+        <translation><!-- Unable to Solve the Issue --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>User Error</masterLabel>
+        <translation><!-- User Error --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>User Requested</masterLabel>
+        <translation><!-- User Requested --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Vendor/Partner/3rd Party Issue</masterLabel>
+        <translation><!-- Vendor/Partner/3rd Party Issue --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waiting for Stock</masterLabel>
+        <translation><!-- Waiting for Stock --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

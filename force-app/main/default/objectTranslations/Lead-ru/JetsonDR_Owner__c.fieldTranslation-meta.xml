@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Jetson Opp Reg : Owner used in approval process and gets set from Custom Settings via Process Builder. --></help>
+    <label><!-- JetsonDR Owner --></label>
+    <name>JetsonDR_Owner__c</name>
+    <relationshipLabel><!-- Leads (JetsonDR Owner) --></relationshipLabel>
+</CustomFieldTranslation>

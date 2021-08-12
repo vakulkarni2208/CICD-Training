@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Widen Role --></label>
+    <name>Widen_Role__c</name>
+    <picklistValues>
+        <masterLabel>NPN All Partner Content</masterLabel>
+        <translation><!-- NPN All Partner Content --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN CSP Compute DGX Elite</masterLabel>
+        <translation><!-- NPN CSP Compute DGX Elite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN CSP Compute DGX Preferred</masterLabel>
+        <translation><!-- NPN CSP Compute DGX Preferred --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN CSP Compute Elite</masterLabel>
+        <translation><!-- NPN CSP Compute Elite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN CSP Compute Preferred</masterLabel>
+        <translation><!-- NPN CSP Compute Preferred --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN CSP Virtualization Elite</masterLabel>
+        <translation><!-- NPN CSP Virtualization Elite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN CSP Virtualization Preferred</masterLabel>
+        <translation><!-- NPN CSP Virtualization Preferred --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN CSP Visualization Elite</masterLabel>
+        <translation><!-- NPN CSP Visualization Elite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN CSP Visualization Preferred</masterLabel>
+        <translation><!-- NPN CSP Visualization Preferred --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN Cisco Elite</masterLabel>
+        <translation><!-- NPN Cisco Elite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN DGX Partner Content</masterLabel>
+        <translation><!-- NPN DGX Partner Content --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN Dell Datacenter Elite</masterLabel>
+        <translation><!-- NPN Dell Datacenter Elite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN Dell Workstation Elite</masterLabel>
+        <translation><!-- NPN Dell Workstation Elite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN Disti Compute DGX Preferred</masterLabel>
+        <translation><!-- NPN Disti Compute DGX Preferred --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN Disti Compute Preferred</masterLabel>
+        <translation><!-- NPN Disti Compute Preferred --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN Disti Embedded Edge Preferred</masterLabel>
+        <translation><!-- NPN Disti Embedded Edge Preferred --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN Disti Virtualization Preferred</masterLabel>
+        <translation><!-- NPN Disti Virtualization Preferred --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN Disti Visualization Preferred</masterLabel>
+        <translation><!-- NPN Disti Visualization Preferred --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN Fed SI Compute DGX Elite</masterLabel>
+        <translation><!-- NPN Fed SI Compute DGX Elite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN Fed SI Compute DGX Preferred</masterLabel>
+        <translation><!-- NPN Fed SI Compute DGX Preferred --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN Fed SI Compute Elite</masterLabel>
+        <translation><!-- NPN Fed SI Compute Elite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN Fed SI Compute Preferred</masterLabel>
+        <translation><!-- NPN Fed SI Compute Preferred --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN Fed SI Embedded Edge Elite</masterLabel>
+        <translation><!-- NPN Fed SI Embedded Edge Elite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN Fed SI Embedded Edge Preferred</masterLabel>
+        <translation><!-- NPN Fed SI Embedded Edge Preferred --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN Fed SI Virtualization Elite</masterLabel>
+        <translation><!-- NPN Fed SI Virtualization Elite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN Fed SI Virtualization Preferred</masterLabel>
+        <translation><!-- NPN Fed SI Virtualization Preferred --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN Fed SI Visualization Elite</masterLabel>
+        <translation><!-- NPN Fed SI Visualization Elite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN Fed SI Visualization Preferred</masterLabel>
+        <translation><!-- NPN Fed SI Visualization Preferred --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN GSI Compute DGX Preferred</masterLabel>
+        <translation><!-- NPN GSI Compute DGX Preferred --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN GSI Compute Preferred</masterLabel>
+        <translation><!-- NPN GSI Compute Preferred --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN GSI Embedded Edge Preferred</masterLabel>
+        <translation><!-- NPN GSI Embedded Edge Preferred --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN GSI Virtualization Preferred</masterLabel>
+        <translation><!-- NPN GSI Virtualization Preferred --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN GSI Visualization Preferred</masterLabel>
+        <translation><!-- NPN GSI Visualization Preferred --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN HP Enterprise Elite</masterLabel>
+        <translation><!-- NPN HP Enterprise Elite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN HP Inc Elite</masterLabel>
+        <translation><!-- NPN HP Inc Elite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN IBM Cloud Elite</masterLabel>
+        <translation><!-- NPN IBM Cloud Elite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN IBM Power Elite</masterLabel>
+        <translation><!-- NPN IBM Power Elite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN Lenovo DCG Elite</masterLabel>
+        <translation><!-- NPN Lenovo DCG Elite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN Lenovo Workstation Elite</masterLabel>
+        <translation><!-- NPN Lenovo Workstation Elite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN OEM Compute Elite</masterLabel>
+        <translation><!-- NPN OEM Compute Elite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN OEM Compute Preferred</masterLabel>
+        <translation><!-- NPN OEM Compute Preferred --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN OEM Embedded Edge Elite</masterLabel>
+        <translation><!-- NPN OEM Embedded Edge Elite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN OEM Embedded Edge Preferred</masterLabel>
+        <translation><!-- NPN OEM Embedded Edge Preferred --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN OEM Visualization Elite</masterLabel>
+        <translation><!-- NPN OEM Visualization Elite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN OEM Visualization Preferred</masterLabel>
+        <translation><!-- NPN OEM Visualization Preferred --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN SA Consultant Compute DGX Preferred</masterLabel>
+        <translation><!-- NPN SA Consultant Compute DGX Preferred --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN SA Consultant Compute Preferred</masterLabel>
+        <translation><!-- NPN SA Consultant Compute Preferred --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN SA Consultant Virtualization Preferred</masterLabel>
+        <translation><!-- NPN SA Consultant Virtualization Preferred --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN SA Consultant Visualization Preferred</masterLabel>
+        <translation><!-- NPN SA Consultant Visualization Preferred --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN SA DCP Compute DGX Elite</masterLabel>
+        <translation><!-- NPN SA DCP Compute DGX Elite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN SA DCP Compute DGX Preferred</masterLabel>
+        <translation><!-- NPN SA DCP Compute DGX Preferred --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN SA Storage Compute DGX Elite</masterLabel>
+        <translation><!-- NPN SA Storage Compute DGX Elite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN SA Storage Compute DGX Preferred</masterLabel>
+        <translation><!-- NPN SA Storage Compute DGX Preferred --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN SA Storage Compute Elite</masterLabel>
+        <translation><!-- NPN SA Storage Compute Elite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN SA Storage Compute Preferred</masterLabel>
+        <translation><!-- NPN SA Storage Compute Preferred --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN SDP EDU Compute DGX Preferred</masterLabel>
+        <translation><!-- NPN SDP EDU Compute DGX Preferred --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN SDP PS Compute DGX Elite</masterLabel>
+        <translation><!-- NPN SDP PS Compute DGX Elite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN SDP PS Compute DGX Preferred</masterLabel>
+        <translation><!-- NPN SDP PS Compute DGX Preferred --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN SDP PS Embedded Edge Elite</masterLabel>
+        <translation><!-- NPN SDP PS Embedded Edge Elite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN SDP PS Embedded Edge Preferred</masterLabel>
+        <translation><!-- NPN SDP PS Embedded Edge Preferred --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN SIP Compute Elite</masterLabel>
+        <translation><!-- NPN SIP Compute Elite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN SIP Compute Preferred</masterLabel>
+        <translation><!-- NPN SIP Compute Preferred --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN SIP Embedded Edge Elite</masterLabel>
+        <translation><!-- NPN SIP Embedded Edge Elite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN SIP Embedded Edge Preferred</masterLabel>
+        <translation><!-- NPN SIP Embedded Edge Preferred --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN SIP Visualization Elite</masterLabel>
+        <translation><!-- NPN SIP Visualization Elite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN SIP Visualization Preferred</masterLabel>
+        <translation><!-- NPN SIP Visualization Preferred --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN SP Compute DGX Elite</masterLabel>
+        <translation><!-- NPN SP Compute DGX Elite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN SP Compute DGX Preferred</masterLabel>
+        <translation><!-- NPN SP Compute DGX Preferred --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN SP Compute Elite</masterLabel>
+        <translation><!-- NPN SP Compute Elite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN SP Compute Preferred</masterLabel>
+        <translation><!-- NPN SP Compute Preferred --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN SP Virtualization Elite</masterLabel>
+        <translation><!-- NPN SP Virtualization Elite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN SP Virtualization Preferred</masterLabel>
+        <translation><!-- NPN SP Virtualization Preferred --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN SP Visualization Elite</masterLabel>
+        <translation><!-- NPN SP Visualization Elite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN SP Visualization Preferred</masterLabel>
+        <translation><!-- NPN SP Visualization Preferred --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN Titan RTX</masterLabel>
+        <translation><!-- NPN Titan RTX --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

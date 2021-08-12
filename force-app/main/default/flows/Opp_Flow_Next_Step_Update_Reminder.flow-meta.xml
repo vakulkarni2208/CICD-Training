@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <description>Email Alert - Opp Next Step Update Reminder</description>
+        <name>Invoke_Email_Alert_Opp_Next_Step_Update_Reminder</name>
+        <label>Invoke Email Alert - Opp Next Step Update Reminder</label>
+        <locationX>522</locationX>
+        <locationY>123</locationY>
+        <actionName>Opportunity.Opp_Next_Step_Update_Reminder</actionName>
+        <actionType>emailAlert</actionType>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <description>Send Notification to Opp Owner when the Close Date is 185 Days out, Opportunity is Open and Enterprise, and Next Step Last Modified (Days) &gt; 14 days</description>
+    <interviewLabel>Opp : Flow : Next Step Update Reminder-{!$Record.Opportunity_Number__c}-{!$Record.Id}-{!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Opp : Flow : Next Step Update Reminder</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>49</locationX>
+        <locationY>50</locationY>
+        <connector>
+            <targetReference>Invoke_Email_Alert_Opp_Next_Step_Update_Reminder</targetReference>
+        </connector>
+        <filters>
+            <field>Days_to_Close__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <numberValue>185.0</numberValue>
+            </value>
+        </filters>
+        <filters>
+            <field>IsClosed</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Next_Step_Last_Modified_Days__c</field>
+            <operator>GreaterThan</operator>
+            <value>
+                <numberValue>14.0</numberValue>
+            </value>
+        </filters>
+        <filters>
+            <field>RecordTypeId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>0121W000000DybgQAC</stringValue>
+            </value>
+        </filters>
+        <object>Opportunity</object>
+        <schedule>
+            <frequency>Daily</frequency>
+            <startDate>2020-06-23</startDate>
+            <startTime>06:30:00.000Z</startTime>
+        </schedule>
+        <triggerType>Scheduled</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

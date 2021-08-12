@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pushed_Downgraded_Focus_Deal__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( 
+AND( 
+NOT(ISBLANK(TEXT(Strategic_Opportunity_Status__c))), 
+
+OR( 
+ISPICKVAL( NV_Forecast_Category__c, &quot;3-Best Case&quot;) , 
+ISPICKVAL( NV_Forecast_Category__c, &quot;4-Pipeline&quot;) , 
+ISPICKVAL( NV_Forecast_Category__c, &quot;5-Other&quot;) , 
+CloseDate &gt; DATEVALUE(&quot;2020-01-26&quot;) 
+) 
+
+) 
+
+, true, false)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Pushed/Downgraded Focus Deal</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

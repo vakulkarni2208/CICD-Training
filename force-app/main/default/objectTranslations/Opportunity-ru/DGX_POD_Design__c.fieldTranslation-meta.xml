@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Select if a NVIDIA SuperPod Design or a Custom DGX POD Design --></help>
+    <label><!-- DGX POD Design --></label>
+    <name>DGX_POD_Design__c</name>
+    <picklistValues>
+        <masterLabel>Custom DGX POD Design</masterLabel>
+        <translation><!-- Custom DGX POD Design --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NVIDIA DGX SuperPOD</masterLabel>
+        <translation><!-- NVIDIA DGX SuperPOD --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

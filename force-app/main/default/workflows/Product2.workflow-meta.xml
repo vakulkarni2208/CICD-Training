@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>Set_Product_SKU_from_Product_Code</fullName>
+        <field>StockKeepingUnit</field>
+        <formula>ProductCode</formula>
+        <name>Set Product SKU from Product Code</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Unique_Code</fullName>
+        <field>UniqueCode__c</field>
+        <formula>ProductCode</formula>
+        <name>Update Unique Code</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <rules>
+        <fullName>CPQ - Populate Unique Code</fullName>
+        <actions>
+            <name>Update_Unique_Code</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Populate field Unique Code on product object to use as unique identifier for products.</description>
+        <formula>IsCPQ__c = True</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>CPQ%3A Populate Product SKU from Product Code</fullName>
+        <actions>
+            <name>Set_Product_SKU_from_Product_Code</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Product2.ProductCode</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Product2.Product_Type__c</field>
+            <operation>equals</operation>
+            <value>Service,Software,Spares</value>
+        </criteriaItems>
+        <description>For Service Or Software Product types</description>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

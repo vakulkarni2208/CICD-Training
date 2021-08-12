@@ -1,0 +1,630 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Select all key software applications included in this opportunity.  If none, select &quot;Not Applicable.” --></help>
+    <label><!-- ISV Software Apps: --></label>
+    <name>Critical_Priority_1_Software_Apps__c</name>
+    <picklistValues>
+        <masterLabel>AMBER</masterLabel>
+        <translation><!-- AMBER --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AMR</masterLabel>
+        <translation><!-- AMR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ANSYS</masterLabel>
+        <translation><!-- ANSYS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ANSYS AIM</masterLabel>
+        <translation><!-- ANSYS AIM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ANSYS FLUENT</masterLabel>
+        <translation><!-- ANSYS FLUENT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ANSYS HFSS</masterLabel>
+        <translation><!-- ANSYS HFSS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ANSYS HFSS SBR+</masterLabel>
+        <translation><!-- ANSYS HFSS SBR+ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ANSYS Mechanical</masterLabel>
+        <translation><!-- ANSYS Mechanical --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ANSYS Nexxim</masterLabel>
+        <translation><!-- ANSYS Nexxim --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ANSYS Polyflow</masterLabel>
+        <translation><!-- ANSYS Polyflow --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ANSYS Workbench</masterLabel>
+        <translation><!-- ANSYS Workbench --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ASUCA</masterLabel>
+        <translation><!-- ASUCA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AVBP</masterLabel>
+        <translation><!-- AVBP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Acceleware RTM</masterLabel>
+        <translation><!-- Acceleware RTM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Adobe Creative Suite</masterLabel>
+        <translation><!-- Adobe Creative Suite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Agilent Technologies ADS</masterLabel>
+        <translation><!-- Agilent Technologies ADS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Allegorithmic Substance Designer</masterLabel>
+        <translation><!-- Allegorithmic Substance Designer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Allegorithmic Substance Painter</masterLabel>
+        <translation><!-- Allegorithmic Substance Painter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Altair HyperWorks</masterLabel>
+        <translation><!-- Altair HyperWorks --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Amira5</masterLabel>
+        <translation><!-- Amira5 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Autodesk 3DS Max</masterLabel>
+        <translation><!-- Autodesk 3DS Max --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Autodesk AutoCAD</masterLabel>
+        <translation><!-- Autodesk AutoCAD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Autodesk Inventor 2012</masterLabel>
+        <translation><!-- Autodesk Inventor 2012 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Autodesk Maya</masterLabel>
+        <translation><!-- Autodesk Maya --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Autodesk Revit.</masterLabel>
+        <translation><!-- Autodesk Revit. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Autodesk vRed</masterLabel>
+        <translation><!-- Autodesk vRed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BEST</masterLabel>
+        <translation><!-- BEST --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BLAST</masterLabel>
+        <translation><!-- BLAST --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BSC-DREAM8B</masterLabel>
+        <translation><!-- BSC-DREAM8B --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BetaCAE ANSA</masterLabel>
+        <translation><!-- BetaCAE ANSA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CACTUS</masterLabel>
+        <translation><!-- CACTUS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CCMS</masterLabel>
+        <translation><!-- CCMS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CEI EnSight</masterLabel>
+        <translation><!-- CEI EnSight --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CHARMM</masterLabel>
+        <translation><!-- CHARMM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CNTK</masterLabel>
+        <translation><!-- CNTK --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CODE_SATURNE</masterLabel>
+        <translation><!-- CODE_SATURNE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>COMSOL COMSOL</masterLabel>
+        <translation><!-- COMSOL COMSOL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>COSMO</masterLabel>
+        <translation><!-- COSMO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CP2K</masterLabel>
+        <translation><!-- CP2K --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CPMD</masterLabel>
+        <translation><!-- CPMD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CST STUDIO SUITE</masterLabel>
+        <translation><!-- CST STUDIO SUITE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Café</masterLabel>
+        <translation><!-- Café --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chainer</masterLabel>
+        <translation><!-- Chainer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>D2S TrueMask</masterLabel>
+        <translation><!-- D2S TrueMask --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DENOVO</masterLabel>
+        <translation><!-- DENOVO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DESMOND</masterLabel>
+        <translation><!-- DESMOND --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DL_POLY</masterLabel>
+        <translation><!-- DL_POLY --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dassault Systèmes 3DEXCITE Deltagen</masterLabel>
+        <translation><!-- Dassault Systèmes 3DEXCITE Deltagen --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dassault Systèmes CATIA</masterLabel>
+        <translation><!-- Dassault Systèmes CATIA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dassault Systèmes Enovia</masterLabel>
+        <translation><!-- Dassault Systèmes Enovia --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dassault Systèmes SIMULIA Abaqus</masterLabel>
+        <translation><!-- Dassault Systèmes SIMULIA Abaqus --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dassault Systèmes SIMULIA Abaqus/CAE</masterLabel>
+        <translation><!-- Dassault Systèmes SIMULIA Abaqus/CAE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dassault Systèmes SOLIDWORKS</masterLabel>
+        <translation><!-- Dassault Systèmes SOLIDWORKS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dassault Systèmes SOLIDWORKS Visualize</masterLabel>
+        <translation><!-- Dassault Systèmes SOLIDWORKS Visualize --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Digits</masterLabel>
+        <translation><!-- Digits --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EC EARTH</masterLabel>
+        <translation><!-- EC EARTH --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ECHAM5</masterLabel>
+        <translation><!-- ECHAM5 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ESI OPENFOAM</masterLabel>
+        <translation><!-- ESI OPENFOAM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ESPRESSO</masterLabel>
+        <translation><!-- ESPRESSO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ESRI – ArcGIS</masterLabel>
+        <translation><!-- ESRI – ArcGIS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ESSS/GDI RockyDEM</masterLabel>
+        <translation><!-- ESSS/GDI RockyDEM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EXA PowerViz</masterLabel>
+        <translation><!-- EXA PowerViz --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FEFLO</masterLabel>
+        <translation><!-- FEFLO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FFT Actran</masterLabel>
+        <translation><!-- FFT Actran --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fluent</masterLabel>
+        <translation><!-- Fluent --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FluiDyna aeroFluidX</masterLabel>
+        <translation><!-- FluiDyna aeroFluidX --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FluiDyna culises</masterLabel>
+        <translation><!-- FluiDyna culises --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FluiDyna nanoFluidX</masterLabel>
+        <translation><!-- FluiDyna nanoFluidX --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FluiDyna ultraFluidX</masterLabel>
+        <translation><!-- FluiDyna ultraFluidX --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GADGET2</masterLabel>
+        <translation><!-- GADGET2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GAMESS</masterLabel>
+        <translation><!-- GAMESS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GAUSSIAN</masterLabel>
+        <translation><!-- GAUSSIAN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GEOS-5</masterLabel>
+        <translation><!-- GEOS-5 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GROMACS</masterLabel>
+        <translation><!-- GROMACS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GTC</masterLabel>
+        <translation><!-- GTC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HELIUM</masterLabel>
+        <translation><!-- HELIUM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HMMER</masterLabel>
+        <translation><!-- HMMER --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HOMME</masterLabel>
+        <translation><!-- HOMME --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HOOMD</masterLabel>
+        <translation><!-- HOOMD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HYCOM</masterLabel>
+        <translation><!-- HYCOM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IRAY</masterLabel>
+        <translation><!-- IRAY --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Image Processing (Defense)</masterLabel>
+        <translation><!-- Image Processing (Defense) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Impetus Afea Impetus Afea</masterLabel>
+        <translation><!-- Impetus Afea Impetus Afea --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Intergraph – ERDAS Imagine</masterLabel>
+        <translation><!-- Intergraph – ERDAS Imagine --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>JSOL JMAG</masterLabel>
+        <translation><!-- JSOL JMAG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Kinetica - GPUdb</masterLabel>
+        <translation><!-- Kinetica - GPUdb --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LAMMPS</masterLabel>
+        <translation><!-- LAMMPS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LSMS</masterLabel>
+        <translation><!-- LSMS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LSTC LS-Dyna Implicit</masterLabel>
+        <translation><!-- LSTC LS-Dyna Implicit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LSTC LS-PrePost</masterLabel>
+        <translation><!-- LSTC LS-PrePost --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>M3D</masterLabel>
+        <translation><!-- M3D --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MATLAB</masterLabel>
+        <translation><!-- MATLAB --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MILC</masterLabel>
+        <translation><!-- MILC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MOLPRO</masterLabel>
+        <translation><!-- MOLPRO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MS Office</masterLabel>
+        <translation><!-- MS Office --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MSC ADAMS</masterLabel>
+        <translation><!-- MSC ADAMS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MSC Apex</masterLabel>
+        <translation><!-- MSC Apex --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MSC Marc</masterLabel>
+        <translation><!-- MSC Marc --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MSC Nastran</masterLabel>
+        <translation><!-- MSC Nastran --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MSC Patran</masterLabel>
+        <translation><!-- MSC Patran --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MapD</masterLabel>
+        <translation><!-- MapD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mathematica</masterLabel>
+        <translation><!-- Mathematica --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mentor Graphics Mentor Graphics</masterLabel>
+        <translation><!-- Mentor Graphics Mentor Graphics --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Murex MACS</masterLabel>
+        <translation><!-- Murex MACS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mxnet</masterLabel>
+        <translation><!-- Mxnet --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NAMD</masterLabel>
+        <translation><!-- NAMD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NEMO</masterLabel>
+        <translation><!-- NEMO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NIM</masterLabel>
+        <translation><!-- NIM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NSU3D</masterLabel>
+        <translation><!-- NSU3D --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Name</masterLabel>
+        <translation><!-- Name --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Navisworks</masterLabel>
+        <translation><!-- Navisworks --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not Applicable</masterLabel>
+        <translation><!-- Not Applicable --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OptiX</masterLabel>
+        <translation><!-- OptiX --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Overwatch RemoteView</masterLabel>
+        <translation><!-- Overwatch RemoteView --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PARATEC</masterLabel>
+        <translation><!-- PARATEC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PFLOTRAN</masterLabel>
+        <translation><!-- PFLOTRAN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PTC Creo</masterLabel>
+        <translation><!-- PTC Creo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PTC IoT</masterLabel>
+        <translation><!-- PTC IoT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PTC Windchill</masterLabel>
+        <translation><!-- PTC Windchill --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PWscf</masterLabel>
+        <translation><!-- PWscf --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PyTorch</masterLabel>
+        <translation><!-- PyTorch --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>QCD BENCH</masterLabel>
+        <translation><!-- QCD BENCH --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>QMCPACK</masterLabel>
+        <translation><!-- QMCPACK --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>REMCOM REMCOM XFdtd</masterLabel>
+        <translation><!-- REMCOM REMCOM XFdtd --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RHINO</masterLabel>
+        <translation><!-- RHINO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RTT DeltaPix</masterLabel>
+        <translation><!-- RTT DeltaPix --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>S3D</masterLabel>
+        <translation><!-- S3D --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SEQUEST</masterLabel>
+        <translation><!-- SEQUEST --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SMMP</masterLabel>
+        <translation><!-- SMMP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SPEAG SEMCAD-X</masterLabel>
+        <translation><!-- SPEAG SEMCAD-X --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Siemens CD-adapco STAR-CCM+</masterLabel>
+        <translation><!-- Siemens CD-adapco STAR-CCM+ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Siemens PLM FEMAP</masterLabel>
+        <translation><!-- Siemens PLM FEMAP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Siemens PLM LMS Virtual.lab</masterLabel>
+        <translation><!-- Siemens PLM LMS Virtual.lab --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Siemens PLM NX</masterLabel>
+        <translation><!-- Siemens PLM NX --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Siemens PLM NX Nastran</masterLabel>
+        <translation><!-- Siemens PLM NX Nastran --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Siemens PLM SimCenter 3D</masterLabel>
+        <translation><!-- Siemens PLM SimCenter 3D --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Siemens PLM TeamCenter</masterLabel>
+        <translation><!-- Siemens PLM TeamCenter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Signal Processing (Defense)</masterLabel>
+        <translation><!-- Signal Processing (Defense) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tableau</masterLabel>
+        <translation><!-- Tableau --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tensor Flow</masterLabel>
+        <translation><!-- Tensor Flow --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TeraChem</masterLabel>
+        <translation><!-- TeraChem --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Theano</masterLabel>
+        <translation><!-- Theano --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Torch</masterLabel>
+        <translation><!-- Torch --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TurboStream</masterLabel>
+        <translation><!-- TurboStream --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>USM3D</masterLabel>
+        <translation><!-- USM3D --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unreal Engine</masterLabel>
+        <translation><!-- Unreal Engine --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VASP</masterLabel>
+        <translation><!-- VASP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VMD</masterLabel>
+        <translation><!-- VMD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Vismockup</masterLabel>
+        <translation><!-- Vismockup --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Vratis Speed IT Flow</masterLabel>
+        <translation><!-- Vratis Speed IT Flow --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Vray-RT</masterLabel>
+        <translation><!-- Vray-RT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WRF</masterLabel>
+        <translation><!-- WRF --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZeroLight</masterLabel>
+        <translation><!-- ZeroLight --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>gWL-LSMS</masterLabel>
+        <translation><!-- gWL-LSMS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>midas IT midas</masterLabel>
+        <translation><!-- midas IT midas --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

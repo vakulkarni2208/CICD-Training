@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Do_you_have_a_NPN_Solution_Provider_VAR__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Select &quot;Yes&quot; if you are working with an NPN Solution Provider/VAR. Otherwise, select &quot;No&quot;.  If &quot;Yes&quot;, then you must select the specific NPN Solution Provider/VAR for this opportunity in the field to the right.</inlineHelpText>
+    <label>Do you have a NPN Solution Provider/VAR?</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Yes</fullName>
+                <default>false</default>
+                <label>Yes</label>
+            </value>
+            <value>
+                <fullName>No</fullName>
+                <default>false</default>
+                <label>No</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

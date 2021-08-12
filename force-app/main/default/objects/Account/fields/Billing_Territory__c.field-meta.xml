@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Billing_Territory__c</fullName>
+    <externalId>false</externalId>
+    <label>Billing Territory</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ROMANIA_CROATIA_BULGARIA_SERBIA_REST OF BALKANS</fullName>
+                <default>false</default>
+                <label>ROMANIA_CROATIA_BULGARIA_SERBIA_REST OF BALKANS</label>
+            </value>
+            <value>
+                <fullName>DACH</fullName>
+                <default>false</default>
+                <label>DACH</label>
+            </value>
+            <value>
+                <fullName>CZECH_HUNGARY_SLOVAKIA</fullName>
+                <default>false</default>
+                <label>CZECH_HUNGARY_SLOVAKIA</label>
+            </value>
+            <value>
+                <fullName>POLAND_BALTICS</fullName>
+                <default>false</default>
+                <label>POLAND_BALTICS</label>
+            </value>
+            <value>
+                <fullName>CIS</fullName>
+                <default>false</default>
+                <label>CIS</label>
+            </value>
+            <value>
+                <fullName>RUSSIA</fullName>
+                <default>false</default>
+                <label>RUSSIA</label>
+            </value>
+            <value>
+                <fullName>UKRAINE</fullName>
+                <default>false</default>
+                <label>UKRAINE</label>
+            </value>
+            <value>
+                <fullName>MIDDLE EAST</fullName>
+                <default>false</default>
+                <label>MIDDLE EAST</label>
+            </value>
+            <value>
+                <fullName>AFRICA</fullName>
+                <default>false</default>
+                <label>AFRICA</label>
+            </value>
+            <value>
+                <fullName>TURKEY</fullName>
+                <default>false</default>
+                <label>TURKEY</label>
+            </value>
+            <value>
+                <fullName>UK_NORDICS</fullName>
+                <default>false</default>
+                <label>UK_NORDICS</label>
+            </value>
+            <value>
+                <fullName>FRANCE_BENELUX</fullName>
+                <default>false</default>
+                <label>FRANCE_BENELUX</label>
+            </value>
+            <value>
+                <fullName>SOUTH ASIA</fullName>
+                <default>false</default>
+                <label>SOUTH ASIA</label>
+            </value>
+            <value>
+                <fullName>IBERIA</fullName>
+                <default>false</default>
+                <label>IBERIA</label>
+            </value>
+            <value>
+                <fullName>ITALY_GREECE_ISRAEL</fullName>
+                <default>false</default>
+                <label>ITALY_GREECE_ISRAEL</label>
+            </value>
+            <value>
+                <fullName>LA</fullName>
+                <default>false</default>
+                <label>LA</label>
+            </value>
+            <value>
+                <fullName>NA</fullName>
+                <default>false</default>
+                <label>NA</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

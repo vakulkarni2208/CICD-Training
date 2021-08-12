@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Use &quot;Case Collaborators&quot; if you would like a colleague within your Organization to collaborate on this Case. Your colleague will receive an email advising that you would like them to collaborate. The colleague should also be registered to access the NVIDIA Enterprise Support Portal. If they are not registered; you can create &quot;Add User&quot; to invite them to register. --></help>
+    <label><!-- Case Collaborators --></label>
+    <name>Community_Contact__c</name>
+    <relationshipLabel><!-- Cases --></relationshipLabel>
+</CustomFieldTranslation>

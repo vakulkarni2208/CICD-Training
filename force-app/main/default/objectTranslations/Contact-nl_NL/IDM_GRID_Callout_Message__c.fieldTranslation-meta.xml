@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- IDM_GRID_Callout_Message --></label>
+    <name>IDM_GRID_Callout_Message__c</name>
+</CustomFieldTranslation>

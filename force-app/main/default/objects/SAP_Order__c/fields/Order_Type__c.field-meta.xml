@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Order_Type__c</fullName>
+    <description>ZOR - Standard, ZSO - Sample, ZMRS - MRS Internal, ZRMA - Return</description>
+    <externalId>false</externalId>
+    <inlineHelpText>ZOR - Standard, ZSO - Sample, ZMRS - MRS Internal, ZRMA - Return</inlineHelpText>
+    <label>Order Type</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ZOR</fullName>
+                <default>false</default>
+                <label>ZOR</label>
+            </value>
+            <value>
+                <fullName>ZSO</fullName>
+                <default>false</default>
+                <label>ZSO</label>
+            </value>
+            <value>
+                <fullName>ZMRS</fullName>
+                <default>false</default>
+                <label>ZMRS</label>
+            </value>
+            <value>
+                <fullName>ZRMA</fullName>
+                <default>false</default>
+                <label>ZRMA</label>
+            </value>
+            <value>
+                <fullName>ZDO</fullName>
+                <default>false</default>
+                <label>ZDO</label>
+            </value>
+            <value>
+                <fullName>ZKB</fullName>
+                <default>false</default>
+                <label>ZKB</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

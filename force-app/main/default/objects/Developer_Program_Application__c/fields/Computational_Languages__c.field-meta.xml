@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Computational_Languages__c</fullName>
+    <externalId>false</externalId>
+    <label>Computational Languages</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>C</fullName>
+                <default>false</default>
+                <label>C</label>
+            </value>
+            <value>
+                <fullName>C++</fullName>
+                <default>false</default>
+                <label>C++</label>
+            </value>
+            <value>
+                <fullName>C#</fullName>
+                <default>false</default>
+                <label>C#</label>
+            </value>
+            <value>
+                <fullName>F#</fullName>
+                <default>false</default>
+                <label>F#</label>
+            </value>
+            <value>
+                <fullName>Fortran</fullName>
+                <default>false</default>
+                <label>Fortran</label>
+            </value>
+            <value>
+                <fullName>Java</fullName>
+                <default>false</default>
+                <label>Java</label>
+            </value>
+            <value>
+                <fullName>LabVIEW</fullName>
+                <default>false</default>
+                <label>LabVIEW</label>
+            </value>
+            <value>
+                <fullName>Matlab</fullName>
+                <default>false</default>
+                <label>Matlab</label>
+            </value>
+            <value>
+                <fullName>Perl</fullName>
+                <default>false</default>
+                <label>Perl</label>
+            </value>
+            <value>
+                <fullName>Python</fullName>
+                <default>false</default>
+                <label>Python</label>
+            </value>
+            <value>
+                <fullName>R</fullName>
+                <default>false</default>
+                <label>R</label>
+            </value>
+            <value>
+                <fullName>Visual Basic</fullName>
+                <default>false</default>
+                <label>Visual Basic</label>
+            </value>
+            <value>
+                <fullName>Other (please explain)</fullName>
+                <default>false</default>
+                <label>Other (please explain)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>10</visibleLines>
+</CustomField>

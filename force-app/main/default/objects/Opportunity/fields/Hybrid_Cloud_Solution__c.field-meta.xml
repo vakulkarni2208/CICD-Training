@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Hybrid_Cloud_Solution__c</fullName>
+    <externalId>false</externalId>
+    <label>Hybrid Cloud Solution</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Microsoft Azure Stack Edge</fullName>
+                <default>false</default>
+                <label>Microsoft Azure Stack Edge</label>
+            </value>
+            <value>
+                <fullName>Microsoft Azure Stack HCI</fullName>
+                <default>false</default>
+                <label>Microsoft Azure Stack HCI</label>
+            </value>
+            <value>
+                <fullName>Microsoft Azure Stack Hub</fullName>
+                <default>false</default>
+                <label>Microsoft Azure Stack Hub</label>
+            </value>
+            <value>
+                <fullName>Google Anthos</fullName>
+                <default>false</default>
+                <label>Google Anthos</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>AWS Outposts</fullName>
+                <default>false</default>
+                <label>AWS Outposts</label>
+            </value>
+            <value>
+                <fullName>AWS Wavelength</fullName>
+                <default>false</default>
+                <label>AWS Wavelength</label>
+            </value>
+            <value>
+                <fullName>AWS Snowball</fullName>
+                <default>false</default>
+                <label>AWS Snowball</label>
+            </value>
+            <value>
+                <fullName>AWS Panorama</fullName>
+                <default>false</default>
+                <label>AWS Panorama</label>
+            </value>
+            <value>
+                <fullName>Amazon Outpost</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Amazon Outpost</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

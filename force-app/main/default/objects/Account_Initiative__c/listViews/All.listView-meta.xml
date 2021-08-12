@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>Account__c</columns>
+    <columns>Initiative__c</columns>
+    <columns>X1_Year_Potential__c</columns>
+    <columns>X4_Year_Potential__c</columns>
+    <columns>UPDATEDBY_USER</columns>
+    <columns>LAST_UPDATE</columns>
+    <columns>Account_Billing_Region__c</columns>
+    <columns>Account_Country__c</columns>
+    <columns>Account_Owner__c</columns>
+    <columns>Priority__c</columns>
+    <columns>NAME</columns>
+    <filterScope>Everything</filterScope>
+    <label>All</label>
+</ListView>

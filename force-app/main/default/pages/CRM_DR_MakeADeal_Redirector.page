@@ -1,0 +1,5 @@
+<apex:page standardController="Opportunity" extensions="CRM_DR_MakeADeal_Redirector_cls">
+	<script>
+		window.parent.location.href = '/' + '{!opptyId}' + '/e';
+	</script>
+</apex:page>

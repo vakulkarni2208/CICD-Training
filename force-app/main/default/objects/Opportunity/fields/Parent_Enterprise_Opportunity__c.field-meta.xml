@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Parent_Enterprise_Opportunity__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Large Deal Handling: To group large deals by a parent Opportunity
+SDS-1480-Special Pricing-Renamed from Parent_Opportunity__c</description>
+    <externalId>false</externalId>
+    <label>Parent Enterprise Opportunity</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>Opportunity.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Enterprise Sales Opportunity</value>
+        </filterItems>
+        <filterItems>
+            <field>Opportunity.Parent_Enterprise_Opportunity__c</field>
+            <operation>equals</operation>
+            <value/>
+        </filterItems>
+        <infoMessage>Only Tesla internal opportunities with no parent opportunities (Child records cannot be parent records)</infoMessage>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Opportunity</referenceTo>
+    <relationshipLabel>Bid Opportunities</relationshipLabel>
+    <relationshipName>BidOpportunities</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

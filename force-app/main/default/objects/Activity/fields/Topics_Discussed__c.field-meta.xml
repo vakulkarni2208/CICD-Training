@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Topics_Discussed__c</fullName>
+    <externalId>false</externalId>
+    <label>Topics Discussed</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Autodesk Reseller / PSP-E-store</fullName>
+                <default>false</default>
+                <label>Autodesk Reseller / PSP-E-store</label>
+            </value>
+            <value>
+                <fullName>System Builder / BFP-Built for Professionals</fullName>
+                <default>false</default>
+                <label>System Builder / BFP-Built for Professionals</label>
+            </value>
+            <value>
+                <fullName>ATC – Autodesk Training Center</fullName>
+                <default>false</default>
+                <label>ATC – Autodesk Training Center</label>
+            </value>
+            <value>
+                <fullName>System Builder / SolidWorks</fullName>
+                <default>false</default>
+                <label>System Builder / SolidWorks</label>
+            </value>
+            <value>
+                <fullName>System Builder / Adobe</fullName>
+                <default>false</default>
+                <label>System Builder / Adobe</label>
+            </value>
+            <value>
+                <fullName>System Builder / AutoCAD</fullName>
+                <default>false</default>
+                <label>System Builder / AutoCAD</label>
+            </value>
+            <value>
+                <fullName>System Builder / 3DSMax</fullName>
+                <default>false</default>
+                <label>System Builder / 3DSMax</label>
+            </value>
+            <value>
+                <fullName>System Builder / Bunkspeed</fullName>
+                <default>false</default>
+                <label>System Builder / Bunkspeed</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

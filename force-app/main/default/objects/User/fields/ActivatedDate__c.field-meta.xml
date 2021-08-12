@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ActivatedDate__c</fullName>
+    <description>Date of Activation of this user record</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Date of Activation of this user record</inlineHelpText>
+    <label>ActivatedDate</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Date</type>
+</CustomField>

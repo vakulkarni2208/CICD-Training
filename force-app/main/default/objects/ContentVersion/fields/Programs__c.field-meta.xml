@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Programs__c</fullName>
+    <externalId>false</externalId>
+    <label>Programs</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Tesla Bio Workbench</fullName>
+                <default>false</default>
+                <label>Tesla Bio Workbench</label>
+            </value>
+            <value>
+                <fullName>Top 500</fullName>
+                <default>false</default>
+                <label>Top 500</label>
+            </value>
+            <value>
+                <fullName>The GPU Test Drive</fullName>
+                <default>false</default>
+                <label>The GPU Test Drive</label>
+            </value>
+            <value>
+                <fullName>TPP Jacket/CULA Promotion</fullName>
+                <default>false</default>
+                <label>TPP Jacket/CULA Promotion</label>
+            </value>
+            <value>
+                <fullName>Manufacturing Campaign</fullName>
+                <default>false</default>
+                <label>Manufacturing Campaign</label>
+            </value>
+            <value>
+                <fullName>Awareness Campaign</fullName>
+                <default>false</default>
+                <label>Awareness Campaign</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,13 @@
+<apex:page >
+   <script>
+       window.onload = window.setTimeout(redirect(),5000);
+       function redirect(){    
+            if("{!$Site.BaseUrl}" != "") {            
+                top.location.href = '/apex/NV_PartnerCommunityHomePage';
+            } else {
+                top.location.href = '/apex/vfPartnerPortalHome';
+            }
+            
+        }
+    </script>
+</apex:page>

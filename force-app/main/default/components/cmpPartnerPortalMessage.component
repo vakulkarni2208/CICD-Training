@@ -1,0 +1,36 @@
+<apex:component controller="cmpPartnerPortalMessage_cls">
+<!--  <apex:component controller="clsPartnerPortalComponentSearch"> -->
+
+	<apex:includeScript value="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" />
+	<apex:includeScript value="{!URLFOR($Resource.jquery_news_ticker, '/includes/jquery.ticker.js')}" />
+	<apex:stylesheet value="{!URLFOR($Resource.jquery_news_ticker, '/styles/ticker-style.min.css')}" />
+	
+	<table width="95%" border="0" cellpadding="1" style="background-color:#FFFFFF;white-space:nowrap;color:#393939"> 
+		<tr>           
+           <td style="font-size:15px;padding-right:20px;" width="797px;" align="center" valign="middle">
+	           	<apex:outputPanel rendered="{!(lstWrappedInstanceMessages.empty == false)}">
+	           		<ul id="js-news" class="js-hidden">
+	                	<apex:repeat value="{!lstWrappedInstanceMessages}" var="x">
+	                    	<li class="news-item">
+	                        	<b>
+		                            <font color="#FFFFFF"> 
+		                               <apex:outputLink id="outputLinkid" value="{!x.url}" target="_blank" style="color:White;" rendered="{!!(ISBLANK(x.url) || x.url=='')}" >{!x.message}</apex:outputLink>
+		                               <apex:outputText value="{!x.message}" rendered="{!ISBLANK(x.url) || x.url==''}" />                               
+		                            </font>
+	                        	</b>                    
+	                    	</li>
+	                	</apex:repeat>
+	            	</ul>
+	            </apex:outputPanel>            
+        	</td>
+		</tr>
+	</table>
+   
+	<script type="text/javascript">
+	    $(function () {
+	        //$('#js-news').ticker({controls:false,titleText:'Latest Messages:',displayType:'fade'});
+	        $('#js-news').ticker({controls:false,titleText:'{!$Label.COMM_PP_CMP_Latest_Messages}',displayType:'fade'});
+	    });
+    </script>
+    
+</apex:component>

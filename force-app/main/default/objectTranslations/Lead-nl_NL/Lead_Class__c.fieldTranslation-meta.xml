@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Lead Class–Account Fit + Lead Intent + Recency + Engagement --></help>
+    <label><!-- Lead Class --></label>
+    <name>Lead_Class__c</name>
+</CustomFieldTranslation>

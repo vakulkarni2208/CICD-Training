@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomPermission xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Give users the permission to create Special Pricing Requests even if not in the GAM/OSE profile</description>
+    <label>Sales_Special_Pricing_Oppty_Record_Type_Access</label>
+</CustomPermission>

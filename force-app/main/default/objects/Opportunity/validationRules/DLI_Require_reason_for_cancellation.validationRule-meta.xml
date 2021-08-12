@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DLI_Require_reason_for_cancellation</fullName>
+    <active>true</active>
+    <description>Require the reason for cancellation for DLI Opportunities if cancelled</description>
+    <errorConditionFormula>AND (
+  RecordType.DeveloperName = &apos;DLI_Opportunity&apos;,
+  Probability = 0,
+  ISBLANK (Reason_for_Cancellation__c)
+)</errorConditionFormula>
+    <errorDisplayField>Reason_for_Cancellation__c</errorDisplayField>
+    <errorMessage>Please enter the Reason for Cancellation if deal is Cancelled</errorMessage>
+</ValidationRule>

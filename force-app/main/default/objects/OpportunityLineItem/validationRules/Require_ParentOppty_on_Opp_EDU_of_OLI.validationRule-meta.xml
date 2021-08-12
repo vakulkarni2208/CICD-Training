@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_ParentOppty_on_Opp_EDU_of_OLI</fullName>
+    <active>true</active>
+    <description>SDS-2823
+&apos;Parent Enterprise Opportunity&apos; field on Opportunity cannot be Blank</description>
+    <errorConditionFormula>AND(
+ $Profile.Name &lt;&gt; &apos;System Administrator&apos;,
+ Opportunity.RecordType.DeveloperName = &quot;Special_Pricing_Request&quot;,
+ ISPICKVAL(Opportunity.Special_Pricing_Request_Type__c, &apos;EDU&apos;),
+ ISBLANK(Opportunity.Parent_Enterprise_Opportunity__c),
+ Opportunity_Qualified_for_EDU_Approval__c = TRUE
+)</errorConditionFormula>
+    <errorDisplayField>Quantity</errorDisplayField>
+    <errorMessage>&apos;Parent Enterprise Opportunity&apos; on the Opportunity cannot be Blank</errorMessage>
+</ValidationRule>

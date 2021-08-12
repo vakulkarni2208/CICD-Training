@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApprovalProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <allowRecall>true</allowRecall>
+    <allowedSubmitters>
+        <type>creator</type>
+    </allowedSubmitters>
+    <allowedSubmitters>
+        <type>owner</type>
+    </allowedSubmitters>
+    <approvalPageFields>
+        <field>Name</field>
+        <field>Owner</field>
+        <field>Prefered_Partner__c</field>
+        <field>NPN_Solution_Provider_VAR__c</field>
+        <field>System_Configuration__c</field>
+        <field>Primary_Customer_Use_Case__c</field>
+        <field>Offer_Period_Start_Date__c</field>
+    </approvalPageFields>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>hmandara@nvidia.com</name>
+                <type>user</type>
+            </approver>
+            <approver>
+                <name>jchaney@nvidia.com</name>
+                <type>user</type>
+            </approver>
+            <approver>
+                <name>phall@nvidia.com</name>
+                <type>user</type>
+            </approver>
+            <approver>
+                <name>vesrinivasan@nvidia.com</name>
+                <type>user</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <entryCriteria>
+            <booleanFilter>1</booleanFilter>
+            <criteriaItems>
+                <field>Opportunity.GRID_Product_Amount__c</field>
+                <operation>greaterThan</operation>
+                <value>0</value>
+            </criteriaItems>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>Pro-Viz/GRID Approval Step</label>
+        <name>Pro_Viz_GRID_Approval_Step</name>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>hmandara@nvidia.com</name>
+                <type>user</type>
+            </approver>
+            <approver>
+                <name>mhull@nvidia.com</name>
+                <type>user</type>
+            </approver>
+            <approver>
+                <name>phall@nvidia.com</name>
+                <type>user</type>
+            </approver>
+            <approver>
+                <name>vesrinivasan@nvidia.com</name>
+                <type>user</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <entryCriteria>
+            <criteriaItems>
+                <field>Opportunity.Total_DGX_Product_Amount__c</field>
+                <operation>greaterThan</operation>
+                <value>0</value>
+            </criteriaItems>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>DGX Rebate Pricing Approval Step</label>
+        <name>DGX_Rebate_Pricing_Approval_Step</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>mallocco@nvidia.com</name>
+                <type>user</type>
+            </approver>
+            <approver>
+                <name>sbaker@nvidia.com</name>
+                <type>user</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <description>Used for Samples, NFR, Engineering Qual and End Customer&apos;s Industry based Special Pricing requests</description>
+        <entryCriteria>
+            <formula>AND(
+ OR(
+   ISPICKVAL(Special_Pricing_Request_Type__c , &apos;Not for Resale (NFR)&apos;),
+   ISPICKVAL(Special_Pricing_Request_Type__c , &apos;Engineering Qual&apos;),
+   ISPICKVAL(Special_Pricing_Request_Type__c , &apos;Samples&apos;)
+ ),
+   ISPICKVAL(End_Customer__r.Industry, &apos;Strategic Hyperscale&apos;) 
+)</formula>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>CSP Samples/NFR/Eng Qual 1st Approval</label>
+        <name>Samples_NFR_Eng_Qual_End_Customer_Industry_Approval_Step_1</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>hmandara@nvidia.com</name>
+                <type>user</type>
+            </approver>
+            <approver>
+                <name>phall@nvidia.com</name>
+                <type>user</type>
+            </approver>
+            <approver>
+                <name>vesrinivasan@nvidia.com</name>
+                <type>user</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <description>Used for Samples, NFR, Engineering Qual and End Customer&apos;s Industry based Special Pricing requests</description>
+        <entryCriteria>
+            <formula>AND(
+ OR(
+  ISPICKVAL(Special_Pricing_Request_Type__c , &apos;Not for Resale (NFR)&apos;),
+  ISPICKVAL(Special_Pricing_Request_Type__c , &apos;Engineering Qual&apos;),
+  ISPICKVAL(Special_Pricing_Request_Type__c , &apos;Samples&apos;)
+),
+  ISPICKVAL(End_Customer__r.Industry, &apos;Strategic Hyperscale&apos;)
+)</formula>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>CSP Samples/NFR/Eng Qual 2nd Approval</label>
+        <name>Samples_NFR_Eng_Qual_End_Customer_Industry_Approval_Step_2</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>sbaker@nvidia.com</name>
+                <type>user</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <description>Used for Sample, Engineering Qualification and NFR Special Pricing requests</description>
+        <entryCriteria>
+            <formula>AND(
+ OR(
+  ISPICKVAL(Special_Pricing_Request_Type__c , &apos;Not for Resale (NFR)&apos;),
+  ISPICKVAL(Special_Pricing_Request_Type__c , &apos;Engineering Qual&apos;),
+  ISPICKVAL(Special_Pricing_Request_Type__c , &apos;Samples&apos;)
+ ),
+ NOT(ISPICKVAL(End_Customer__r.Industry, &apos;Strategic Hyperscale&apos;))
+)</formula>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>Samples/NFR/Eng Qual 1st Approval</label>
+        <name>Sample_Eng_Qual_NFR_Approval_Step_1</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>hmandara@nvidia.com</name>
+                <type>user</type>
+            </approver>
+            <approver>
+                <name>phall@nvidia.com</name>
+                <type>user</type>
+            </approver>
+            <approver>
+                <name>vesrinivasan@nvidia.com</name>
+                <type>user</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <description>Used to secure special pricing request approval for Sample, Engineering Qualification or NFR deals</description>
+        <entryCriteria>
+            <formula>AND(
+ OR(
+  ISPICKVAL(Special_Pricing_Request_Type__c , &apos;Not for Resale (NFR)&apos;),
+  ISPICKVAL(Special_Pricing_Request_Type__c , &apos;Engineering Qual&apos;),
+  ISPICKVAL(Special_Pricing_Request_Type__c , &apos;Samples&apos;)
+),
+  NOT(ISPICKVAL(End_Customer__r.Industry, &apos;Strategic Hyperscale&apos;))
+)</formula>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>Samples/NFR/Eng Qual 2nd Approval</label>
+        <name>Sample_Eng_Qual_NFR_Approval_Step_2</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>hmandara@nvidia.com</name>
+                <type>user</type>
+            </approver>
+            <approver>
+                <name>phall@nvidia.com</name>
+                <type>user</type>
+            </approver>
+            <approver>
+                <name>vesrinivasan@nvidia.com</name>
+                <type>user</type>
+            </approver>
+            <approver>
+                <name>yogesha@nvidia.com</name>
+                <type>user</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <description>DC GPU Upfront Rebate Discount and Back End Rebate step 1</description>
+        <entryCriteria>
+            <criteriaItems>
+                <field>Opportunity.Special_Pricing_Request_Type__c</field>
+                <operation>equals</operation>
+                <value>Back-end Rebate,Upfront Discount,TOP EDU Back-end Rebate</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Opportunity.Tesla_Product_Amount__c</field>
+                <operation>greaterThan</operation>
+                <value>0</value>
+            </criteriaItems>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>DC GPU Special Pricing Approval</label>
+        <name>Tesla_Upfront_Discount_Back_End_Rebate_Step_1</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>hmandara@nvidia.com</name>
+                <type>user</type>
+            </approver>
+            <approver>
+                <name>jchaney@nvidia.com</name>
+                <type>user</type>
+            </approver>
+            <approver>
+                <name>phall@nvidia.com</name>
+                <type>user</type>
+            </approver>
+            <approver>
+                <name>vesrinivasan@nvidia.com</name>
+                <type>user</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <description>DC Viz &amp; Rendering Upfront Discount Back-end Rebate Step</description>
+        <entryCriteria>
+            <criteriaItems>
+                <field>Opportunity.Special_Pricing_Request_Type__c</field>
+                <operation>equals</operation>
+                <value>,Back-end Rebate,Upfront Discount,TOP EDU Back-end Rebate</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Opportunity.Quadro_Product_Amount__c</field>
+                <operation>greaterThan</operation>
+                <value>0</value>
+            </criteriaItems>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>DC Viz &amp; Rendering Special Price Approval</label>
+        <name>Quadro_Upfront_Discount_Back_end_Rebate_Step</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>hmandara@nvidia.com</name>
+                <type>user</type>
+            </approver>
+            <approver>
+                <name>jchaney@nvidia.com</name>
+                <type>user</type>
+            </approver>
+            <approver>
+                <name>phall@nvidia.com</name>
+                <type>user</type>
+            </approver>
+            <approver>
+                <name>vesrinivasan@nvidia.com</name>
+                <type>user</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <description>RTX Upfront Discount Back-end Rebate Step</description>
+        <entryCriteria>
+            <criteriaItems>
+                <field>Opportunity.Special_Pricing_Request_Type__c</field>
+                <operation>equals</operation>
+                <value>Back-end Rebate,Upfront Discount,TOP EDU Back-end Rebate</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Opportunity.RTX_Product_Amount__c</field>
+                <operation>greaterThan</operation>
+                <value>0</value>
+            </criteriaItems>
+        </entryCriteria>
+        <label>RTX Special Price Approval</label>
+        <name>RTX_Special_Price_Approval</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <description>SDS-2828 (Updated as per this ticket)
+SDS-2922 (Updated as per the ticket)
+SDS-3052: Special Pricing Approval Updates for RTX</description>
+    <emailTemplate>Opportunity_Email_Alerts/VF_Pricing_Approval_Request_Rebate_Form</emailTemplate>
+    <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
+    <entryCriteria>
+        <criteriaItems>
+            <field>Opportunity.RecordType</field>
+            <operation>equals</operation>
+            <value>Special Pricing Request</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.HasOpportunityLineItem</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>equals</operation>
+            <value>Awaiting Approval</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Special_Pricing_Request_Type__c</field>
+            <operation>equals</operation>
+            <value>,Not for Resale (NFR),Engineering Qual,Samples,Back-end Rebate,Upfront Discount,TOP EDU Back-end Rebate</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Special_Pricing_Request_Type__c</field>
+            <operation>notEqual</operation>
+            <value>EDU,Inception</value>
+        </criteriaItems>
+    </entryCriteria>
+    <finalApprovalActions>
+        <action>
+            <name>Rebate_Pricing_Approval_Request_Approved</name>
+            <type>Alert</type>
+        </action>
+        <action>
+            <name>Update_OEM_Bid_Approved_Date</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>Update_Opportunity_Stage_to_In_Progress</name>
+            <type>FieldUpdate</type>
+        </action>
+    </finalApprovalActions>
+    <finalApprovalRecordLock>false</finalApprovalRecordLock>
+    <finalRejectionRecordLock>false</finalRejectionRecordLock>
+    <label>Special Pricing Approval Request v8</label>
+    <processOrder>3</processOrder>
+    <recordEditability>AdminOnly</recordEditability>
+    <showApprovalHistory>true</showApprovalHistory>
+</ApprovalProcess>

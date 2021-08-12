@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Bitsquid</fullName>
+        <default>false</default>
+        <label>Bitsquid</label>
+    </customValue>
+    <customValue>
+        <fullName>CryEngine</fullName>
+        <default>false</default>
+        <label>CryEngine</label>
+    </customValue>
+    <customValue>
+        <fullName>Gamemaker</fullName>
+        <default>false</default>
+        <label>Gamemaker</label>
+    </customValue>
+    <customValue>
+        <fullName>Internal</fullName>
+        <default>false</default>
+        <label>Internal</label>
+    </customValue>
+    <customValue>
+        <fullName>Marmalade</fullName>
+        <default>false</default>
+        <label>Marmalade</label>
+    </customValue>
+    <customValue>
+        <fullName>Monogame</fullName>
+        <default>false</default>
+        <label>Monogame</label>
+    </customValue>
+    <customValue>
+        <fullName>Stingray</fullName>
+        <default>false</default>
+        <label>Stingray</label>
+    </customValue>
+    <customValue>
+        <fullName>Unity</fullName>
+        <default>false</default>
+        <label>Unity</label>
+    </customValue>
+    <customValue>
+        <fullName>Unreal</fullName>
+        <default>false</default>
+        <label>Unreal</label>
+    </customValue>
+    <description>Title Management : Game Engine picklists</description>
+    <masterLabel>TM : Game Engine</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

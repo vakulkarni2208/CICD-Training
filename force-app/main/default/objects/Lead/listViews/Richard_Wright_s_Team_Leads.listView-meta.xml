@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Richard_Wright_s_Team_Leads</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>LEAD.EMAIL</columns>
+    <columns>LEAD.COMPANY</columns>
+    <columns>LEAD.STATE_CODE</columns>
+    <columns>LEAD.STATUS</columns>
+    <columns>LEAD.UNREAD</columns>
+    <columns>LEAD.CREATED_DATE</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Lead_Owner_Full_Name__c</field>
+        <operation>equals</operation>
+        <value>Roman Strobl,Vito Castellana,Denis Battistella,Sara N&apos;Goumba,Ruwen Jeffe</value>
+    </filters>
+    <label>Richard Wright&apos;s Team Leads</label>
+    <sharedTo>
+        <role>EMEA_Inside_Sales_Manager</role>
+    </sharedTo>
+</ListView>

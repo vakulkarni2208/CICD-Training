@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Design_Win_Start_QTR__c</fullName>
+    <description>ENT Design Win Sales process - OLE schedule date copied to this</description>
+    <externalId>false</externalId>
+    <label>Design Win Start QTR</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

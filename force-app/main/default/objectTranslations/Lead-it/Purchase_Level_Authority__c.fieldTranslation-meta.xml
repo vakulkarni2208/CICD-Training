@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Purchase Level Authority? --></label>
+    <name>Purchase_Level_Authority__c</name>
+    <picklistValues>
+        <masterLabel>No, but I do influence the decision</masterLabel>
+        <translation><!-- No, but I do influence the decision --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No, the purchasing decision is made by others in my organization</masterLabel>
+        <translation><!-- No, the purchasing decision is made by others in my organization --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Yes</masterLabel>
+        <translation><!-- Yes --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

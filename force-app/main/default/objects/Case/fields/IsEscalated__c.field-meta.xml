@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IsEscalated__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>ESP : IsEscalated, If Incident Status moves to Enterprise Support, Then Check escalated = True</description>
+    <externalId>false</externalId>
+    <inlineHelpText>ESP : IsEscalated, If Incident Status moves to Enterprise Support, Then Check escalated = True</inlineHelpText>
+    <label>IsEscalated</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

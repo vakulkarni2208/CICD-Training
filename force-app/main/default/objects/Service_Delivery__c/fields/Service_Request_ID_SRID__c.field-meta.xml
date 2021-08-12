@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Service_Request_ID_SRID__c</fullName>
+    <displayFormat>SRID-{000000}</displayFormat>
+    <externalId>false</externalId>
+    <label>Service Request ID (SRID)</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>AutoNumber</type>
+</CustomField>

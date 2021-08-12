@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Customer_Survey_Link__c</fullName>
+    <externalId>false</externalId>
+    <formula>&quot;https://npncommunity.force.com/ESPCommunity/TakeSurvey?id=a4y1W000009C5BtQAK&amp;cId=&quot;&amp;ContactId&amp;&quot;caId=none&quot;</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Customer Survey Link</label>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

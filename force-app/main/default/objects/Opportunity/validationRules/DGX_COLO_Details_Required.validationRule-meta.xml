@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DGX_COLO_Details_Required</fullName>
+    <active>true</active>
+    <description>If DGX deal then require COLO details before Opportunity is closed</description>
+    <errorConditionFormula>AND (
+ RecordType.Name = &quot;Enterprise Sales Opportunity&quot;, 
+AND($Profile.Name &lt;&gt; &apos;System Administrator&apos;,$Profile.Name &lt;&gt; &apos;SVC SAP Integration&apos;),
+ Total_DGX_Product_Amount__c &gt; 299999 ,
+ ISPICKVAL (  Co_Location_COLO_Partner_Engaged__c  , &quot;&quot; ),
+ ( Probability &gt; 0.79 ) )</errorConditionFormula>
+    <errorDisplayField>Co_Location_COLO_Partner_Engaged__c</errorDisplayField>
+    <errorMessage>For larger DGX Opportunities please detail if a Co-Location (COLO) Partner is engaged and, if so, the Partner name</errorMessage>
+</ValidationRule>

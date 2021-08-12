@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Compute DGX</fullName>
+        <default>false</default>
+        <label>Compute DGX</label>
+    </customValue>
+    <customValue>
+        <fullName>Virtualization</fullName>
+        <default>false</default>
+        <label>Virtualization</label>
+    </customValue>
+    <customValue>
+        <fullName>Compute</fullName>
+        <default>false</default>
+        <label>Compute</label>
+    </customValue>
+    <customValue>
+        <fullName>Visualization</fullName>
+        <default>false</default>
+        <label>Visualization</label>
+    </customValue>
+    <customValue>
+        <fullName>Embedded Edge</fullName>
+        <default>false</default>
+        <label>Embedded Edge</label>
+    </customValue>
+    <customValue>
+        <fullName>DGX</fullName>
+        <default>false</default>
+        <label>DGX</label>
+    </customValue>
+    <masterLabel>Surf Competency</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

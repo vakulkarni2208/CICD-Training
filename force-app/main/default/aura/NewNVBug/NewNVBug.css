@@ -1,0 +1,19 @@
+.THIS .synopsisTextArea textarea {
+  height: 4rem !important;
+}
+.THIS .slds-rich-text-editor{
+    height: 25rem;
+    width: 70rem;
+}
+.THIS .screenHeading{
+    font-weight : bold;
+    font-size: 15px;
+}
+.THIS.slds-spinner_container {
+  z-index: 10000;
+  position: fixed;
+}
+.THIS .slds-rich-text-area__content{
+    max-height: 22rem;
+    width: 70rem;
+}

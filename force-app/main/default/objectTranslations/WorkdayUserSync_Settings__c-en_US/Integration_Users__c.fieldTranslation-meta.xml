@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Comma separate usernames. The trigger code will run only in case of the logged on user&apos;s username matches with this list. --></help>
+    <label><!-- Integration_User(s) --></label>
+    <name>Integration_Users__c</name>
+</CustomFieldTranslation>

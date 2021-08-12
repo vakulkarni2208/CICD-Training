@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Prompt xmlns="http://soap.sforce.com/2006/04/metadata">
+    <masterLabel>SOQ Update on Enterprise Opps</masterLabel>
+    <promptVersions>
+        <actionButtonLabel>Learn More!</actionButtonLabel>
+        <actionButtonLink>https://nvidia.sharepoint.com/sites/WWFONVIDIACRMInstructionalMaterials/WWFO%20NVIDIA%20CRM%20Training%20Materials/Forms/AllItems.aspx?id=%2Fsites%2FWWFONVIDIACRMInstructionalMaterials%2FWWFO%20NVIDIA%20CRM%20Training%20Materials%2FSales%20Automation%20Project%20%E2%80%93%20Quoting%20for%20NVIDIA%20Branded%20Products%20Coming%20Soon%21%2Emsg&amp;parent=%2Fsites%2FWWFONVIDIACRMInstructionalMaterials%2FWWFO%20NVIDIA%20CRM%20Training%20Materials</actionButtonLink>
+        <body>Sales Automation project is coming Mar 22.  Make sure you know how to create and update opportunities by attending one of these training sessions. Check your inbox for the meeting invite: March 9, 2021 8:30 AM PST  March 9, 2021 5:00 PM PST</body>
+        <customApplication>NVIDIA_Sales_Lightning2</customApplication>
+        <delayDays>1</delayDays>
+        <dismissButtonLabel>Dismiss</dismissButtonLabel>
+        <displayPosition>TopCenter</displayPosition>
+        <displayType>FloatingPanel</displayType>
+        <endDate>2021-03-17</endDate>
+        <isPublished>false</isPublished>
+        <masterLabel>SOQ Update on Enterprise Opps</masterLabel>
+        <shouldDisplayActionButton>true</shouldDisplayActionButton>
+        <shouldIgnoreGlobalDelay>true</shouldIgnoreGlobalDelay>
+        <startDate>2021-02-25</startDate>
+        <targetPageKey1>Opportunity</targetPageKey1>
+        <targetPageKey2>view</targetPageKey2>
+        <targetPageType>standard__recordPage</targetPageType>
+        <timesToDisplay>10</timesToDisplay>
+        <title>Coming Soon!</title>
+        <userAccess>Everyone</userAccess>
+        <userProfileAccess>Everyone</userProfileAccess>
+        <versionNumber>1</versionNumber>
+    </promptVersions>
+</Prompt>

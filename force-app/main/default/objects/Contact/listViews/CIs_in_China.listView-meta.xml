@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CIs_in_China</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>Instructor_Type__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>of_Active_Certifications__c</columns>
+    <columns>CONTACT.PHONE1</columns>
+    <columns>CONTACT.EMAIL</columns>
+    <columns>CONTACT.TITLE</columns>
+    <columns>CONTACT.ADDRESS2_STREET</columns>
+    <columns>CONTACT.ADDRESS2_CITY</columns>
+    <columns>CONTACT.ADDRESS2_STATE_CODE</columns>
+    <columns>CONTACT.ADDRESS2_COUNTRY_CODE</columns>
+    <columns>DLI_Region__c</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>DLI_Region__c</field>
+        <operation>equals</operation>
+        <value>China</value>
+    </filters>
+    <filters>
+        <field>Instructor_Type__c</field>
+        <operation>equals</operation>
+        <value>NVIDIA - SA,NVIDIA - Other,Ambassador,SDP,Ambassador &amp; SDP</value>
+    </filters>
+    <label>CIs in China</label>
+    <sharedTo>
+        <roleAndSubordinatesInternal>DLI_Sales</roleAndSubordinatesInternal>
+    </sharedTo>
+</ListView>

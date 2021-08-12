@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Deal Desk --></label>
+        <name>sbaa__DealDesk</name>
+    </fieldSets>
+    <validationRules>
+        <errorMessage><!-- The Deal MDF outlined is greater than the amount outlined in the Pricebook for this product --></errorMessage>
+        <name>MDF_Amount_cannot_exceed_guidance</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Sales Price cannot be changed on SCOPE deals --></errorMessage>
+        <name>No_price_changes_on_SCOPE_Opptys</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- RTX Details are only required if the products are RTX6k, RTX8k, A6k or Quadro GV100 for other products please leave blank --></errorMessage>
+        <name>Opp_Prod_RTX_Yes_No</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- To update the pricing, please use the Get Help button. --></errorMessage>
+        <name>Prevent_Updating_Sales_Price_on_Opps</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Requests that are approved cannot be edited. Please enter a new pricing request for re-approval --></errorMessage>
+        <name>Prevent_Updating_inProgress_Opptys</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- &apos;Parent Enterprise Opportunity&apos; on the Opportunity cannot be Blank --></errorMessage>
+        <name>Require_ParentOppty_on_Opp_EDU_of_OLI</name>
+    </validationRules>
+</CustomObjectTranslation>

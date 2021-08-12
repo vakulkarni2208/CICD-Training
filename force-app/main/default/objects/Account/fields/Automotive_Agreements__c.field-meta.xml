@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Automotive_Agreements__c</fullName>
+    <externalId>false</externalId>
+    <label>Automotive Agreements</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Non-Disclosure Agreement (NDA)</fullName>
+                <default>false</default>
+                <label>Non-Disclosure Agreement (NDA)</label>
+            </value>
+            <value>
+                <fullName>NVIDIA Prerelease License Agreement (NPLA)</fullName>
+                <default>false</default>
+                <label>NVIDIA Prerelease License Agreement (NPLA)</label>
+            </value>
+            <value>
+                <fullName>NPLA Addendum A</fullName>
+                <default>false</default>
+                <label>NPLA Addendum A</label>
+            </value>
+            <value>
+                <fullName>NVIDIA Software License Agreement (SLA) [obsolete]</fullName>
+                <default>false</default>
+                <label>NVIDIA Software License Agreement (SLA) [obsolete]</label>
+            </value>
+            <value>
+                <fullName>NVIDIA Platform License Agreement (PLA)</fullName>
+                <default>false</default>
+                <label>NVIDIA Platform License Agreement (PLA)</label>
+            </value>
+            <value>
+                <fullName>NRE / Custom Agreement</fullName>
+                <default>false</default>
+                <label>NRE / Custom Agreement</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>5</visibleLines>
+</CustomField>

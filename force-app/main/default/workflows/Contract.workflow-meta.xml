@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Service_Cloud_Contract_End_Date_Update</fullName>
+        <description>Service Cloud : Contract End Date Update</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>pjena@nvidia.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>Service_Cloud_Templates/Service_Cloud_Contract_End_Date_Update</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Activate_Contract_action</fullName>
+        <field>Status</field>
+        <literalValue>Activated</literalValue>
+        <name>Activate Contract</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Check_Renewal_Quoted</fullName>
+        <field>SBQQ__RenewalQuoted__c</field>
+        <literalValue>1</literalValue>
+        <name>Check Renewal Quoted</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Disable_Amendment_Co_term</fullName>
+        <field>SBQQ__DisableAmendmentCoTerm__c</field>
+        <literalValue>1</literalValue>
+        <name>Disable Amendment Co-term</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_Status_Expired</fullName>
+        <description>Set Status = Expired</description>
+        <field>Nvidia_Status__c</field>
+        <literalValue>Expired</literalValue>
+        <name>Set Status = Expired</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Renewal_Pricebook_Id</fullName>
+        <field>SBQQ__RenewalPricebookId__c</field>
+        <formula>&quot;01s40000000C90M&quot;</formula>
+        <name>Update Renewal Pricebook Id</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Renewal_Term</fullName>
+        <field>SBQQ__RenewalTerm__c</field>
+        <formula>IF( SBQQ__RenewalTerm__c = 366,366,365)</formula>
+        <name>Update Renewal Term</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <rules>
+        <fullName>Activate Contract2</fullName>
+        <active>true</active>
+        <formula>True</formula>
+        <triggerType>onCreateOnly</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Activate_Contract_action</name>
+                <type>FieldUpdate</type>
+            </actions>
+            <actions>
+                <name>Disable_Amendment_Co_term</name>
+                <type>FieldUpdate</type>
+            </actions>
+            <offsetFromField>Contract.CreatedDate</offsetFromField>
+            <timeLength>0</timeLength>
+            <workflowTimeTriggerUnit>Hours</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>CPQ - Contract Status %3D Expired</fullName>
+        <active>true</active>
+        <description>Update contract status to Expired if Today &gt; Contract End Date and Status != Renewed</description>
+        <formula>TEXT(Nvidia_Status__c) &lt;&gt; &quot;Renewed&quot;</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Set_Status_Expired</name>
+                <type>FieldUpdate</type>
+            </actions>
+            <offsetFromField>Contract.SBQQ__ExpirationDate__c</offsetFromField>
+            <timeLength>1</timeLength>
+            <workflowTimeTriggerUnit>Hours</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>CPQ - Populate Renewal Pricebook Id</fullName>
+        <actions>
+            <name>Update_Renewal_Pricebook_Id</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Contract.StartDate</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <description>Populate renewal pricebook id on the contract with Service and Software Pricebook</description>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>CPQ - Renewal Quoted 120 Days</fullName>
+        <active>false</active>
+        <description>Check Renewal Quoted 120 days before Contract End Date</description>
+        <formula>True</formula>
+        <triggerType>onCreateOnly</triggerType>
+        <workflowTimeTriggers>
+            <offsetFromField>Contract.EndDate</offsetFromField>
+            <timeLength>-120</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>CPQ - Renewal Quoted 180 Days</fullName>
+        <active>true</active>
+        <description>Check Renewal Quoted 180 days before Contract End Date</description>
+        <formula>True</formula>
+        <triggerType>onCreateOnly</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Check_Renewal_Quoted</name>
+                <type>FieldUpdate</type>
+            </actions>
+            <offsetFromField>Contract.EndDate</offsetFromField>
+            <timeLength>-180</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Update Renewal Term</fullName>
+        <actions>
+            <name>Update_Renewal_Term</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>TRUE</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

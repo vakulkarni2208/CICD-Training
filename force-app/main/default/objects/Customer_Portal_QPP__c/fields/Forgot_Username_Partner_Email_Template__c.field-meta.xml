@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Forgot_Username_Partner_Email_Template__c</fullName>
+    <defaultValue>&quot;COMM_Forgot_Username_To_Partner_User&quot;</defaultValue>
+    <externalId>false</externalId>
+    <label>Forgot_Username_Partner_Email_Template</label>
+    <length>255</length>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

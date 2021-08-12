@@ -1,0 +1,531 @@
+<!--
+2020.12.14-PJENA-SDS-2748-EDU Lead Form Enhancements
+        Show Pending, Approved, Rejected Edu Lead Registrations
+-->
+<apex:page controller="EDU_DR_Report_ctlr" sidebar="false" tabStyle="Lead">
+    <meta http-equiv="content-type" content="text/plain; charset=UTF-8" />
+    <apex:includeScript value="{!$Resource.Loader}" />
+
+    <apex:pageBlock mode="detail">
+        <div style="width:175px" class="buttonNV button-successNV" onclick="window.open('/00Q/e?retURL=%2F00Q%2Fo&RecordType=0121W000000DytG&ent=Lead');">
+            <b style="text-transform: uppercase;">Register EDU Lead</b>
+        </div>
+
+        <br/>
+        <div id="table">
+            <table>
+                <tr>
+                    <td class="topleveltd1" colSpan='4' style="width:100%">
+                        <div class="title">Pending Registrations</div>
+                        <div id="searchPR" class="searchtitle"></div>
+                        <table id="submittedTable">
+                            <tr>
+                                <td>
+                                    <div id="PR" style="height:400px;" class="chart" />
+                                </td>
+                            </tr>
+                        </table>
+                        <button onclick="tableToExcel(submittedTable)">Export</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="topleveltd1" colSpan='4' style="width:100%">
+                        <div class="title">Approved Registrations</div>
+                        <div id="searchAR" class="searchtitle"></div>
+                        <table id="approvedTable">
+                            <tr>
+                                <td>
+                                    <div id="AR" style="height:400px;" class="chart" />
+                                </td>
+                            </tr>
+                        </table>
+                        <button onclick="tableToExcel(approvedTable)">Export</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="topleveltd1" colSpan='4' style="width:100%">
+                        <div class="title">Rejected Registrations</div>
+                        <div id="searchRR" class="searchtitle"></div>
+                        <table id="rejectedTable">
+                            <tr>
+                                <td>
+                                    <div id="RR" style="height:400px;" class="chart" />
+                                </td>
+                            </tr>
+                        </table>
+                        <button onclick="tableToExcel(rejectedTable)">Export</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </apex:pageBlock>
+
+    <!-- CSS Styles -->
+    <style type='text/css'>
+        table {
+            table-layout: fixed;
+        }
+
+        .topleveltd1 {
+            width: 25%;
+            display: table-cell;
+            vertical-align: top;
+        }
+
+        .topleveltd2 {
+            width: 33%;
+            display: table-cell;
+            vertical-align: top;
+        }
+
+        .loader {
+            border: 16px solid #f3f3f3;
+            border-radius: 50%;
+            border-top: 16px solid #76B900;
+            width: 100px;
+            height: 100px;
+            -webkit-animation: spin 1.5s linear infinite;
+            animation: spin 1.5s linear infinite;
+            display: block;
+            margin: 0 auto;
+        }
+
+        @-webkit-keyframes spin {
+            0% {
+                -webkit-transform: rotate(0deg);
+            }
+            100% {
+                -webkit-transform: rotate(360deg);
+            }
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .chart {
+            border: 1px solid #ccc;
+        }
+
+        .pageBlockHeader {
+            font-size: 21px;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-family: 'Trebuchet MS';
+            text-align: center;
+        }
+
+        .secTitle {
+            font-size: 21px;
+            font-weight: bold;
+            text-transform: uppercase;
+            line-height: 2.5;
+            font-family: 'Trebuchet MS';
+            color: rgb(59, 93, 0);
+        }
+
+        .sectionTitle {
+            font-size: 19px;
+            font-weight: bold;
+            text-transform: uppercase;
+            line-height: 2.5;
+            font-family: 'Trebuchet MS';
+        }
+
+        .title {
+            text-align: center;
+            font-size: 14px;
+            line-height: 1.25;
+            font-weight: bold;
+            font-family: 'Trebuchet MS';
+        }
+
+        .searchtitle {
+            font-size: 14px;
+            line-height: 1.25;
+            font-weight: bold;
+            font-family: 'Trebuchet MS';
+        }
+
+        .subtitle {
+            text-align: center;
+            font-size: 12px;
+            line-height: 1.25;
+            font-family: 'Trebuchet MS';
+            height: 12.25px;
+        }
+
+        .errorText {
+            font-family: Trebuchet MS;
+            text-align: center;
+            font-size: 16px;
+            display: none;
+        }
+
+        .google-visualization-table-table {
+            font-family: 'Trebuchet MS' !important;
+        }
+
+        .google-visualization-table-td {
+            font-family: 'Trebuchet MS' !important;
+        }
+
+        .google-visualization-table-table .gradient,
+        .google-visualization-table-div-page .gradient {
+            background: #F4F4F4 !important;
+        }
+
+        .google-visualization-table-tr-sel td,
+        .google-visualization-table-tr-over td {
+            background-color: #F8F8F8 !important;
+        }
+
+        .alignLeft {
+            text-align: left !important;
+        }
+
+        .check {
+            text-align: center;
+            color: green !important;
+            font-weight: bold;
+            text-shadow: #000 0px 0px 1px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .x {
+            text-align: center;
+            color: red !important;
+            text-shadow: #000 0px 0px 1px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .blackSquare {
+            text-align: center;
+            text-shadow: #000 0px 0px 1px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .caution {
+            text-align: center;
+            color: black !important; //font-weight: bold;
+            text-shadow: #FFFF00 0px 0px 3px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .buttonNV {
+            background-color: #76B900;
+            width: 100%;
+            display: inline-block;
+            padding: 3px 15px;
+            margin-bottom: 0;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1.42857143;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: middle;
+            -ms-touch-action: manipulation;
+            touch-action: manipulation;
+            cursor: pointer;
+            -webkit-user-select: none;
+            moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            /* Safari 5.1+, Chrome 10+ */
+            border-radius: 5px;
+            /* IE */
+        }
+
+        .button-successNV {
+            color: #fff;
+            background-color: #76B900;
+            border-color: #4cae4c;
+        }
+
+        .width50 {
+            width: 50px;
+        }
+
+        .width75 {
+            width: 75px;
+        }
+
+        .width100 {
+            width: 100px;
+        }
+
+        .width125 {
+            width: 125px;
+        }
+
+        .width150 {
+            width: 150px;
+        }
+
+        .width200 {
+            width: 200px;
+        }
+
+        .width250 {
+            width: 250px;
+        }
+
+        .width300 {
+            width: 300px;
+        }
+
+        .widthp50 {
+            width: 50%;
+        }
+
+        .widthp40 {
+            width: 40%;
+        }
+
+        .widthp30 {
+            width: 30%;
+        }
+
+        .widthp20 {
+            width: 20%;
+        }
+
+        .widthp15 {
+            width: 15%;
+        }
+
+        .widthp5 {
+            width: 5%;
+        }
+
+        .googleHeaderCell {
+            white-space: normal;
+            background-color: gray;
+        }
+
+        th,
+        google-visualization-table-th {
+            background-color: gray;
+            color: white;
+            font-size: 10px;
+        }
+    </style>
+
+    <script type="text/javascript">
+        Visualforce.remoting.timeout = 120000; // Set timeout at page level
+        //Loads google visualizations api: 'corechart' for bar charts, column charts, and line charts; 'table' for table charts.
+        google.charts.load('current', { 'packages': ['controls', 'table'] });
+        google.charts.setOnLoadCallback(drawVisualization);
+
+        function drawVisualization() {
+            var PR = new google.visualization.Table(document.getElementById('PR'));
+            var AR = new google.visualization.Table(document.getElementById('AR'));
+            var RR = new google.visualization.Table(document.getElementById('RR'));
+
+            EDU_DR_Report_ctlr.loadPendingEduLeads(function (result, event) {
+                var data = new google.visualization.DataTable();
+                data.addColumn('string', 'Request ID');
+                data.addColumn('string', 'Customer Name');
+                data.addColumn('string', 'Program Name');
+                data.addColumn('string', 'Deal Type');
+                data.addColumn('string', 'Primary Product');
+                data.addColumn('number', 'Primary Product Quantity');
+                data.addColumn('string', 'Secondary Product');
+                data.addColumn('number', 'Secondary Product Quantity');
+                data.addColumn('date', 'Submitted Date');
+                data.addColumn('string', 'Account Executive Name');
+                data.addColumn('string', 'Partner Details');
+                if (result != null) {
+                    for (var i = 0; i < result.length; i++) {
+                        data.addRow([result[i].RequestId, result[i].CustomerName, result[i].ProgramName, result[i].DealType, result[i].PrimaryProduct, result[i].PrimaryProductQuantity, result[i].SecondaryProduct, result[i].SecondaryProductQuantity, new Date(result[i].SubmittedDate), result[i].AccountExecutiveName, result[i].PartnerDetails]);
+                    }
+                }
+                // create a list of columns for the dashboard
+                var columns = [{
+                    // this column aggregates all of the data into one column
+                    // for use with the string filter
+                    type: 'string',
+                    calc: function (dt, row) {
+                        for (var i = 0, vals = [], cols = dt.getNumberOfColumns(); i < cols; i++) {
+                            vals.push(dt.getFormattedValue(row, i));
+                        }
+                        return vals.join('\n');
+                    }
+                }];
+                for (var i = 0, cols = data.getNumberOfColumns(); i < cols; i++) {
+                    columns.push(i);
+                }
+
+                var stringFilter = new google.visualization.ControlWrapper({
+                    controlType: 'StringFilter',
+                    containerId: 'searchPR',
+                    options: {
+                        filterColumnIndex: 0,
+                        matchType: 'any',
+                        caseSensitive: false,
+                        ui: { label: 'Search' }
+                    },
+                    view: {
+                        columns: columns
+                    }
+                });
+
+                // Configure the string filter to affect the table contents
+                var table = new google.visualization.ChartWrapper({
+                    'chartType': 'Table',
+                    'containerId': 'PR',
+                    'options': { showRowNumber: false, cssClassNames: { rowNumberCell: 'alignLeft', headerCell: 'googleHeaderCell' }, allowHtml: true, width: '100%' },
+                    view: {
+                        columns: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+                    }
+                });
+                new google.visualization.Dashboard(document.getElementById('table')).bind(stringFilter, table).draw(data);
+            }, { escape: true });
+
+
+            //Approved Registrations
+            EDU_DR_Report_ctlr.loadApprovedEduLeads(function (result, event) {
+                var data = new google.visualization.DataTable();
+                data.addColumn('string', 'Request ID');
+                data.addColumn('string', 'Customer Name');
+                data.addColumn('string', 'Program Name');
+                data.addColumn('string', 'Deal Type');
+                data.addColumn('string', 'Primary Product');
+                data.addColumn('number', 'Primary Product Quantity');
+                data.addColumn('string', 'Secondary Product');
+                data.addColumn('number', 'Secondary Product Quantity');
+                data.addColumn('date', 'Submitted Date');
+                data.addColumn('string', 'Account Executive Name');
+                data.addColumn('string', 'Partner Details');
+                if (result != null) {
+                    for (var i = 0; i < result.length; i++) {
+                        data.addRow([result[i].RequestId, result[i].CustomerName, result[i].ProgramName, result[i].DealType, result[i].PrimaryProduct, result[i].PrimaryProductQuantity, result[i].SecondaryProduct, result[i].SecondaryProductQuantity, new Date(result[i].SubmittedDate), result[i].AccountExecutiveName, result[i].PartnerDetails]);
+                    }
+                }
+                // create a list of columns for the dashboard
+                var columns = [{
+                    // this column aggregates all of the data into one column
+                    // for use with the string filter
+                    type: 'string',
+                    calc: function (dt, row) {
+                        for (var i = 0, vals = [], cols = dt.getNumberOfColumns(); i < cols; i++) {
+                            vals.push(dt.getFormattedValue(row, i));
+                        }
+                        return vals.join('\n');
+                    }
+                }];
+                for (var i = 0, cols = data.getNumberOfColumns(); i < cols; i++) {
+                    columns.push(i);
+                }
+
+                var stringFilter = new google.visualization.ControlWrapper({
+                    controlType: 'StringFilter',
+                    containerId: 'searchAR',
+                    options: {
+                        filterColumnIndex: 0,
+                        matchType: 'any',
+                        caseSensitive: false,
+                        ui: { label: 'Search' }
+                    },
+                    view: {
+                        columns: columns
+                    }
+                });
+
+                // Configure the string filter to affect the table contents
+                var table = new google.visualization.ChartWrapper({
+                    'chartType': 'Table',
+                    'containerId': 'AR',
+                    'options': { showRowNumber: false, cssClassNames: { rowNumberCell: 'alignLeft', headerCell: 'googleHeaderCell' }, allowHtml: true, width: '100%' },
+                    view: {
+                        columns: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+                    }
+                });
+                new google.visualization.Dashboard(document.getElementById('table')).bind(stringFilter, table).draw(data);
+            }, { escape: true });
+
+
+
+            //Rejected Registrations
+            EDU_DR_Report_ctlr.loadRejectedEduLeads(function (result, event) {
+                var data = new google.visualization.DataTable();
+                data.addColumn('string', 'Request ID');
+                data.addColumn('string', 'Customer Name');
+                data.addColumn('string', 'Program Name');
+                data.addColumn('string', 'Deal Type');
+                data.addColumn('string', 'Primary Product');
+                data.addColumn('number', 'Primary Product Quantity');
+                data.addColumn('string', 'Secondary Product');
+                data.addColumn('number', 'Secondary Product Quantity');
+                data.addColumn('date', 'Submitted Date');
+                data.addColumn('string', 'Account Executive Name');
+                data.addColumn('string', 'Partner Details');
+                if (result != null) {
+                    for (var i = 0; i < result.length; i++) {
+                        data.addRow([result[i].RequestId, result[i].CustomerName, result[i].ProgramName, result[i].DealType, result[i].PrimaryProduct, result[i].PrimaryProductQuantity, result[i].SecondaryProduct, result[i].SecondaryProductQuantity, new Date(result[i].SubmittedDate), result[i].AccountExecutiveName, result[i].PartnerDetails]);
+                    }
+                }
+                // create a list of columns for the dashboard
+                var columns = [{
+                    // this column aggregates all of the data into one column
+                    // for use with the string filter
+                    type: 'string',
+                    calc: function (dt, row) {
+                        for (var i = 0, vals = [], cols = dt.getNumberOfColumns(); i < cols; i++) {
+                            vals.push(dt.getFormattedValue(row, i));
+                        }
+                        return vals.join('\n');
+                    }
+                }];
+                for (var i = 0, cols = data.getNumberOfColumns(); i < cols; i++) {
+                    columns.push(i);
+                }
+
+                var stringFilter = new google.visualization.ControlWrapper({
+                    controlType: 'StringFilter',
+                    containerId: 'searchRR',
+                    options: {
+                        filterColumnIndex: 0,
+                        matchType: 'any',
+                        caseSensitive: false,
+                        ui: { label: 'Search' }
+                    },
+                    view: {
+                        columns: columns
+                    }
+                });
+
+                // Configure the string filter to affect the table contents
+                var table = new google.visualization.ChartWrapper({
+                    'chartType': 'Table',
+                    'containerId': 'RR',
+                    'options': { showRowNumber: false, cssClassNames: { rowNumberCell: 'alignLeft', headerCell: 'googleHeaderCell' }, allowHtml: true, width: '100%' },
+                    view: {
+                        columns: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+                    }
+                });
+                new google.visualization.Dashboard(document.getElementById('table')).bind(stringFilter, table).draw(data);
+            }, { escape: true });
+
+        }
+    </script>
+
+    <script type="text/javascript">
+        var tableToExcel = (function () {
+            var uri = 'data:application/vnd.ms-excel;base64,'
+                , template = '<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:x="urn:schemas-microsoft-com:office:excel" xmlns="http://www.w3.org/TR/REC-html40"><head><!--[if gte mso 9]><xml><x:ExcelWorkbook><x:ExcelWorksheets><x:ExcelWorksheet><x:Name>{worksheet}</x:Name><x:WorksheetOptions><x:DisplayGridlines/></x:WorksheetOptions></x:ExcelWorksheet></x:ExcelWorksheets></x:ExcelWorkbook></xml><![endif]--><meta http-equiv="content-type" content="text/plain; charset=UTF-8"/></head><body><table>{table}</table></body></html>'
+                , base64 = function (s) { return window.btoa(unescape(encodeURIComponent(s))) }
+                , format = function (s, c) { return s.replace(/{(\w+)}/g, function (m, p) { return c[p]; }) }
+            return function (table, name) {
+                if (!table.nodeType) table = document.getElementById(table)
+                var ctx = { worksheet: name || 'Worksheet', table: table.innerHTML }
+                window.location.href = uri + base64(format(template, ctx))
+            }
+        })()
+    </script>
+
+</apex:page>

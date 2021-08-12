@@ -1,0 +1,550 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Role__c</fullName>
+    <externalId>false</externalId>
+    <label>Role</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Marketing</fullName>
+                <default>false</default>
+                <label>Marketing</label>
+            </value>
+            <value>
+                <fullName>Sales</fullName>
+                <default>false</default>
+                <label>Sales</label>
+            </value>
+            <value>
+                <fullName>Technical</fullName>
+                <default>false</default>
+                <label>Technical</label>
+            </value>
+            <value>
+                <fullName>Service and Support</fullName>
+                <default>false</default>
+                <label>Service and Support</label>
+            </value>
+            <value>
+                <fullName>Service &amp; Support</fullName>
+                <default>false</default>
+                <label>Service &amp; Support</label>
+            </value>
+            <value>
+                <fullName>RMA</fullName>
+                <default>false</default>
+                <label>RMA</label>
+            </value>
+            <value>
+                <fullName>MDF</fullName>
+                <default>false</default>
+                <label>MDF</label>
+            </value>
+            <value>
+                <fullName>Marketing;MDF</fullName>
+                <default>false</default>
+                <label>Marketing;MDF</label>
+            </value>
+            <value>
+                <fullName>Marketing;POS</fullName>
+                <default>false</default>
+                <label>Marketing;POS</label>
+            </value>
+            <value>
+                <fullName>Marketing;POS;MDF</fullName>
+                <default>false</default>
+                <label>Marketing;POS;MDF</label>
+            </value>
+            <value>
+                <fullName>Marketing;POS;Partner Primary Contact</fullName>
+                <default>false</default>
+                <label>Marketing;POS;Partner Primary Contact</label>
+            </value>
+            <value>
+                <fullName>Marketing;POS;Partner Primary Contact;MDF</fullName>
+                <default>false</default>
+                <label>Marketing;POS;Partner Primary Contact;MDF</label>
+            </value>
+            <value>
+                <fullName>Marketing;Partner Primary Contact</fullName>
+                <default>false</default>
+                <label>Marketing;Partner Primary Contact</label>
+            </value>
+            <value>
+                <fullName>Marketing;Partner Primary Contact;MDF</fullName>
+                <default>false</default>
+                <label>Marketing;Partner Primary Contact;MDF</label>
+            </value>
+            <value>
+                <fullName>Marketing;RMA</fullName>
+                <default>false</default>
+                <label>Marketing;RMA</label>
+            </value>
+            <value>
+                <fullName>Marketing;RMA;POS</fullName>
+                <default>false</default>
+                <label>Marketing;RMA;POS</label>
+            </value>
+            <value>
+                <fullName>Marketing;Service and Support;Partner Primary Contact;MDF</fullName>
+                <default>false</default>
+                <label>Marketing;Service and Support;Partner Primary Contact;MDF</label>
+            </value>
+            <value>
+                <fullName>Marketing;Technical</fullName>
+                <default>false</default>
+                <label>Marketing;Technical</label>
+            </value>
+            <value>
+                <fullName>Marketing;Technical;POS;Partner Primary Contact;MDF</fullName>
+                <default>false</default>
+                <label>Marketing;Technical;POS;Partner Primary Contact;MDF</label>
+            </value>
+            <value>
+                <fullName>Marketing;Technical;Service and Support</fullName>
+                <default>false</default>
+                <label>Marketing;Technical;Service and Support</label>
+            </value>
+            <value>
+                <fullName>Marketing;Technical;Service and Support;POS</fullName>
+                <default>false</default>
+                <label>Marketing;Technical;Service and Support;POS</label>
+            </value>
+            <value>
+                <fullName>POS</fullName>
+                <default>false</default>
+                <label>POS</label>
+            </value>
+            <value>
+                <fullName>POS;MDF</fullName>
+                <default>false</default>
+                <label>POS;MDF</label>
+            </value>
+            <value>
+                <fullName>POS;Partner Primary Contact</fullName>
+                <default>false</default>
+                <label>POS;Partner Primary Contact</label>
+            </value>
+            <value>
+                <fullName>POS;Partner Primary Contact;MDF</fullName>
+                <default>false</default>
+                <label>POS;Partner Primary Contact;MDF</label>
+            </value>
+            <value>
+                <fullName>Partner Primary Contact</fullName>
+                <default>false</default>
+                <label>Partner Primary Contact</label>
+            </value>
+            <value>
+                <fullName>Partner Primary Contact;MDF</fullName>
+                <default>false</default>
+                <label>Partner Primary Contact;MDF</label>
+            </value>
+            <value>
+                <fullName>RMA;POS;Partner Primary Contact</fullName>
+                <default>false</default>
+                <label>RMA;POS;Partner Primary Contact</label>
+            </value>
+            <value>
+                <fullName>RMA;POS;Partner Primary Contact;MDF</fullName>
+                <default>false</default>
+                <label>RMA;POS;Partner Primary Contact;MDF</label>
+            </value>
+            <value>
+                <fullName>RMA;Partner Primary Contact;MDF</fullName>
+                <default>false</default>
+                <label>RMA;Partner Primary Contact;MDF</label>
+            </value>
+            <value>
+                <fullName>Sales;MDF</fullName>
+                <default>false</default>
+                <label>Sales;MDF</label>
+            </value>
+            <value>
+                <fullName>Sales;Marketing</fullName>
+                <default>false</default>
+                <label>Sales;Marketing</label>
+            </value>
+            <value>
+                <fullName>Sales;Marketing;MDF</fullName>
+                <default>false</default>
+                <label>Sales;Marketing;MDF</label>
+            </value>
+            <value>
+                <fullName>Sales;Marketing;POS</fullName>
+                <default>false</default>
+                <label>Sales;Marketing;POS</label>
+            </value>
+            <value>
+                <fullName>Sales;Marketing;POS;MDF</fullName>
+                <default>false</default>
+                <label>Sales;Marketing;POS;MDF</label>
+            </value>
+            <value>
+                <fullName>Sales;Marketing;POS;Partner Primary Contact</fullName>
+                <default>false</default>
+                <label>Sales;Marketing;POS;Partner Primary Contact</label>
+            </value>
+            <value>
+                <fullName>Sales;Marketing;POS;Partner Primary Contact;MDF</fullName>
+                <default>false</default>
+                <label>Sales;Marketing;POS;Partner Primary Contact;MDF</label>
+            </value>
+            <value>
+                <fullName>Sales;Marketing;Partner Primary Contact</fullName>
+                <default>false</default>
+                <label>Sales;Marketing;Partner Primary Contact</label>
+            </value>
+            <value>
+                <fullName>Sales;Marketing;Partner Primary Contact;MDF</fullName>
+                <default>false</default>
+                <label>Sales;Marketing;Partner Primary Contact;MDF</label>
+            </value>
+            <value>
+                <fullName>Sales;Marketing;RMA;POS;MDF</fullName>
+                <default>false</default>
+                <label>Sales;Marketing;RMA;POS;MDF</label>
+            </value>
+            <value>
+                <fullName>Sales;Marketing;RMA;POS;Partner Primary Contact</fullName>
+                <default>false</default>
+                <label>Sales;Marketing;RMA;POS;Partner Primary Contact</label>
+            </value>
+            <value>
+                <fullName>Sales;Marketing;RMA;POS;Partner Primary Contact;MDF</fullName>
+                <default>false</default>
+                <label>Sales;Marketing;RMA;POS;Partner Primary Contact;MDF</label>
+            </value>
+            <value>
+                <fullName>Sales;Marketing;Service and Support</fullName>
+                <default>false</default>
+                <label>Sales;Marketing;Service and Support</label>
+            </value>
+            <value>
+                <fullName>Sales;Marketing;Service and Support;POS;Partner Primary Contact;MDF</fullName>
+                <default>false</default>
+                <label>Sales;Marketing;Service and Support;POS;Partner Primary Contact;MDF</label>
+            </value>
+            <value>
+                <fullName>Sales;Marketing;Technical</fullName>
+                <default>false</default>
+                <label>Sales;Marketing;Technical</label>
+            </value>
+            <value>
+                <fullName>Sales;Marketing;Technical;MDF</fullName>
+                <default>false</default>
+                <label>Sales;Marketing;Technical;MDF</label>
+            </value>
+            <value>
+                <fullName>Sales;Marketing;Technical;POS</fullName>
+                <default>false</default>
+                <label>Sales;Marketing;Technical;POS</label>
+            </value>
+            <value>
+                <fullName>Sales;Marketing;Technical;POS;MDF</fullName>
+                <default>false</default>
+                <label>Sales;Marketing;Technical;POS;MDF</label>
+            </value>
+            <value>
+                <fullName>Sales;Marketing;Technical;POS;Partner Primary Contact</fullName>
+                <default>false</default>
+                <label>Sales;Marketing;Technical;POS;Partner Primary Contact</label>
+            </value>
+            <value>
+                <fullName>Sales;Marketing;Technical;Partner Primary Contact</fullName>
+                <default>false</default>
+                <label>Sales;Marketing;Technical;Partner Primary Contact</label>
+            </value>
+            <value>
+                <fullName>Sales;Marketing;Technical;Partner Primary Contact;MDF</fullName>
+                <default>false</default>
+                <label>Sales;Marketing;Technical;Partner Primary Contact;MDF</label>
+            </value>
+            <value>
+                <fullName>Sales;Marketing;Technical;RMA;Partner Primary Contact;MDF</fullName>
+                <default>false</default>
+                <label>Sales;Marketing;Technical;RMA;Partner Primary Contact;MDF</label>
+            </value>
+            <value>
+                <fullName>Sales;Marketing;Technical;Service and Support</fullName>
+                <default>false</default>
+                <label>Sales;Marketing;Technical;Service and Support</label>
+            </value>
+            <value>
+                <fullName>Sales;Marketing;Technical;Service and Support;MDF</fullName>
+                <default>false</default>
+                <label>Sales;Marketing;Technical;Service and Support;MDF</label>
+            </value>
+            <value>
+                <fullName>Sales;Marketing;Technical;Service and Support;POS;Partner Primary Contact</fullName>
+                <default>false</default>
+                <label>Sales;Marketing;Technical;Service and Support;POS;Partner Primary Contact</label>
+            </value>
+            <value>
+                <fullName>Sales;Marketing;Technical;Service and Support;RMA;POS;Partner Primary Contact</fullName>
+                <default>false</default>
+                <label>Sales;Marketing;Technical;Service and Support;RMA;POS;Partner Primary Contact</label>
+            </value>
+            <value>
+                <fullName>Sales;Marketing;Technical;Service and Support;RMA;POS;Partner Primary Contact;MDF</fullName>
+                <default>false</default>
+                <label>Sales;Marketing;Technical;Service and Support;RMA;POS;Partner Primary Contact;MDF</label>
+            </value>
+            <value>
+                <fullName>Sales;POS</fullName>
+                <default>false</default>
+                <label>Sales;POS</label>
+            </value>
+            <value>
+                <fullName>Sales;POS;MDF</fullName>
+                <default>false</default>
+                <label>Sales;POS;MDF</label>
+            </value>
+            <value>
+                <fullName>Sales;POS;Partner Primary Contact</fullName>
+                <default>false</default>
+                <label>Sales;POS;Partner Primary Contact</label>
+            </value>
+            <value>
+                <fullName>Sales;POS;Partner Primary Contact;MDF</fullName>
+                <default>false</default>
+                <label>Sales;POS;Partner Primary Contact;MDF</label>
+            </value>
+            <value>
+                <fullName>Sales;Partner Primary Contact</fullName>
+                <default>false</default>
+                <label>Sales;Partner Primary Contact</label>
+            </value>
+            <value>
+                <fullName>Sales;Partner Primary Contact;MDF</fullName>
+                <default>false</default>
+                <label>Sales;Partner Primary Contact;MDF</label>
+            </value>
+            <value>
+                <fullName>Sales;RMA</fullName>
+                <default>false</default>
+                <label>Sales;RMA</label>
+            </value>
+            <value>
+                <fullName>Sales;RMA;MDF</fullName>
+                <default>false</default>
+                <label>Sales;RMA;MDF</label>
+            </value>
+            <value>
+                <fullName>Sales;RMA;POS</fullName>
+                <default>false</default>
+                <label>Sales;RMA;POS</label>
+            </value>
+            <value>
+                <fullName>Sales;RMA;POS;MDF</fullName>
+                <default>false</default>
+                <label>Sales;RMA;POS;MDF</label>
+            </value>
+            <value>
+                <fullName>Sales;Service and Support</fullName>
+                <default>false</default>
+                <label>Sales;Service and Support</label>
+            </value>
+            <value>
+                <fullName>Sales;Service and Support;Partner Primary Contact;MDF</fullName>
+                <default>false</default>
+                <label>Sales;Service and Support;Partner Primary Contact;MDF</label>
+            </value>
+            <value>
+                <fullName>Sales;Service and Support;RMA;MDF</fullName>
+                <default>false</default>
+                <label>Sales;Service and Support;RMA;MDF</label>
+            </value>
+            <value>
+                <fullName>Sales;Service and Support;RMA;POS;Partner Primary Contact</fullName>
+                <default>false</default>
+                <label>Sales;Service and Support;RMA;POS;Partner Primary Contact</label>
+            </value>
+            <value>
+                <fullName>Sales;Service and Support;RMA;Partner Primary Contact</fullName>
+                <default>false</default>
+                <label>Sales;Service and Support;RMA;Partner Primary Contact</label>
+            </value>
+            <value>
+                <fullName>Sales;Technical</fullName>
+                <default>false</default>
+                <label>Sales;Technical</label>
+            </value>
+            <value>
+                <fullName>Sales;Technical;MDF</fullName>
+                <default>false</default>
+                <label>Sales;Technical;MDF</label>
+            </value>
+            <value>
+                <fullName>Sales;Technical;POS</fullName>
+                <default>false</default>
+                <label>Sales;Technical;POS</label>
+            </value>
+            <value>
+                <fullName>Sales;Technical;POS;MDF</fullName>
+                <default>false</default>
+                <label>Sales;Technical;POS;MDF</label>
+            </value>
+            <value>
+                <fullName>Sales;Technical;POS;Partner Primary Contact</fullName>
+                <default>false</default>
+                <label>Sales;Technical;POS;Partner Primary Contact</label>
+            </value>
+            <value>
+                <fullName>Sales;Technical;POS;Partner Primary Contact;MDF</fullName>
+                <default>false</default>
+                <label>Sales;Technical;POS;Partner Primary Contact;MDF</label>
+            </value>
+            <value>
+                <fullName>Sales;Technical;Partner Primary Contact</fullName>
+                <default>false</default>
+                <label>Sales;Technical;Partner Primary Contact</label>
+            </value>
+            <value>
+                <fullName>Sales;Technical;Partner Primary Contact;MDF</fullName>
+                <default>false</default>
+                <label>Sales;Technical;Partner Primary Contact;MDF</label>
+            </value>
+            <value>
+                <fullName>Sales;Technical;RMA;POS;Partner Primary Contact;MDF</fullName>
+                <default>false</default>
+                <label>Sales;Technical;RMA;POS;Partner Primary Contact;MDF</label>
+            </value>
+            <value>
+                <fullName>Sales;Technical;Service and Support</fullName>
+                <default>false</default>
+                <label>Sales;Technical;Service and Support</label>
+            </value>
+            <value>
+                <fullName>Sales;Technical;Service and Support;POS;MDF</fullName>
+                <default>false</default>
+                <label>Sales;Technical;Service and Support;POS;MDF</label>
+            </value>
+            <value>
+                <fullName>Sales;Technical;Service and Support;POS;Partner Primary Contact</fullName>
+                <default>false</default>
+                <label>Sales;Technical;Service and Support;POS;Partner Primary Contact</label>
+            </value>
+            <value>
+                <fullName>Sales;Technical;Service and Support;Partner Primary Contact;MDF</fullName>
+                <default>false</default>
+                <label>Sales;Technical;Service and Support;Partner Primary Contact;MDF</label>
+            </value>
+            <value>
+                <fullName>Service and Support;MDF</fullName>
+                <default>false</default>
+                <label>Service and Support;MDF</label>
+            </value>
+            <value>
+                <fullName>Service and Support;POS</fullName>
+                <default>false</default>
+                <label>Service and Support;POS</label>
+            </value>
+            <value>
+                <fullName>Service and Support;Partner Primary Contact</fullName>
+                <default>false</default>
+                <label>Service and Support;Partner Primary Contact</label>
+            </value>
+            <value>
+                <fullName>Service and Support;Partner Primary Contact;MDF</fullName>
+                <default>false</default>
+                <label>Service and Support;Partner Primary Contact;MDF</label>
+            </value>
+            <value>
+                <fullName>Service and Support;RMA</fullName>
+                <default>false</default>
+                <label>Service and Support;RMA</label>
+            </value>
+            <value>
+                <fullName>Service and Support;RMA;POS</fullName>
+                <default>false</default>
+                <label>Service and Support;RMA;POS</label>
+            </value>
+            <value>
+                <fullName>Service and Support;RMA;POS;MDF</fullName>
+                <default>false</default>
+                <label>Service and Support;RMA;POS;MDF</label>
+            </value>
+            <value>
+                <fullName>Service and Support;RMA;Partner Primary Contact</fullName>
+                <default>false</default>
+                <label>Service and Support;RMA;Partner Primary Contact</label>
+            </value>
+            <value>
+                <fullName>Technical,Sales</fullName>
+                <default>false</default>
+                <label>Technical,Sales</label>
+            </value>
+            <value>
+                <fullName>Technical;MDF</fullName>
+                <default>false</default>
+                <label>Technical;MDF</label>
+            </value>
+            <value>
+                <fullName>Technical;POS</fullName>
+                <default>false</default>
+                <label>Technical;POS</label>
+            </value>
+            <value>
+                <fullName>Technical;POS;Partner Primary Contact</fullName>
+                <default>false</default>
+                <label>Technical;POS;Partner Primary Contact</label>
+            </value>
+            <value>
+                <fullName>Technical;POS;Partner Primary Contact;MDF</fullName>
+                <default>false</default>
+                <label>Technical;POS;Partner Primary Contact;MDF</label>
+            </value>
+            <value>
+                <fullName>Technical;Partner Primary Contact</fullName>
+                <default>false</default>
+                <label>Technical;Partner Primary Contact</label>
+            </value>
+            <value>
+                <fullName>Technical;Partner Primary Contact;MDF</fullName>
+                <default>false</default>
+                <label>Technical;Partner Primary Contact;MDF</label>
+            </value>
+            <value>
+                <fullName>Technical;RMA</fullName>
+                <default>false</default>
+                <label>Technical;RMA</label>
+            </value>
+            <value>
+                <fullName>Technical;Service and Support</fullName>
+                <default>false</default>
+                <label>Technical;Service and Support</label>
+            </value>
+            <value>
+                <fullName>Technical;Service and Support;POS;Partner Primary Contact;MDF</fullName>
+                <default>false</default>
+                <label>Technical;Service and Support;POS;Partner Primary Contact;MDF</label>
+            </value>
+            <value>
+                <fullName>Technical;Service and Support;Partner Primary Contact</fullName>
+                <default>false</default>
+                <label>Technical;Service and Support;Partner Primary Contact</label>
+            </value>
+            <value>
+                <fullName>Technical;Service and Support;RMA</fullName>
+                <default>false</default>
+                <label>Technical;Service and Support;RMA</label>
+            </value>
+            <value>
+                <fullName>Technical;Service and Support;RMA;Partner Primary Contact</fullName>
+                <default>false</default>
+                <label>Technical;Service and Support;RMA;Partner Primary Contact</label>
+            </value>
+            <value>
+                <fullName>NA</fullName>
+                <default>false</default>
+                <label>NA</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

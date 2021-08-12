@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>ESP : Invalid Case Queue</name>
+    <queueMembers>
+        <roleAndSubordinatesInternal>
+            <roleAndSubordinateInternal>JTP_Manager</roleAndSubordinateInternal>
+            <roleAndSubordinateInternal>NCR_Manager</roleAndSubordinateInternal>
+            <roleAndSubordinateInternal>NV_Agent</roleAndSubordinateInternal>
+        </roleAndSubordinatesInternal>
+        <users>
+            <user>dk250372@ncr.com.nvcrm</user>
+            <user>im250293@ncr.com.nvcrm</user>
+            <user>wsze@nvidia.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

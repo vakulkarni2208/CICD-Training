@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Oranization_Type__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Select the Organization Type that best fits this Account</inlineHelpText>
+    <label>Organization (Partner) Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Authorized Board Partner</fullName>
+                <default>false</default>
+                <label>Authorized Board Partner</label>
+            </value>
+            <value>
+                <fullName>Cloud Service Provider</fullName>
+                <default>false</default>
+                <label>Cloud Service Provider</label>
+            </value>
+            <value>
+                <fullName>Consultant/System Integrator</fullName>
+                <default>false</default>
+                <label>Consultant/System Integrator</label>
+            </value>
+            <value>
+                <fullName>Corp Reseller/Direct Market Reseller</fullName>
+                <default>false</default>
+                <label>Corp Reseller/Direct Market Reseller</label>
+            </value>
+            <value>
+                <fullName>Distributor</fullName>
+                <default>false</default>
+                <label>Distributor</label>
+            </value>
+            <value>
+                <fullName>Education Services</fullName>
+                <default>false</default>
+                <label>Education Services</label>
+            </value>
+            <value>
+                <fullName>Etailer</fullName>
+                <default>false</default>
+                <label>Etailer</label>
+            </value>
+            <value>
+                <fullName>iCafe</fullName>
+                <default>false</default>
+                <label>iCafe</label>
+            </value>
+            <value>
+                <fullName>Inception Partner (Startup)</fullName>
+                <default>false</default>
+                <label>Inception Partner (Startup)</label>
+            </value>
+            <value>
+                <fullName>ISV</fullName>
+                <default>false</default>
+                <label>ISV</label>
+            </value>
+            <value>
+                <fullName>ODM</fullName>
+                <default>false</default>
+                <label>ODM</label>
+            </value>
+            <value>
+                <fullName>OEM</fullName>
+                <default>false</default>
+                <label>OEM</label>
+            </value>
+            <value>
+                <fullName>Professional Services</fullName>
+                <default>false</default>
+                <label>Professional Services</label>
+            </value>
+            <value>
+                <fullName>Retailer</fullName>
+                <default>false</default>
+                <label>Retailer</label>
+            </value>
+            <value>
+                <fullName>Solution Advisor</fullName>
+                <default>false</default>
+                <label>Solution Advisor</label>
+            </value>
+            <value>
+                <fullName>Solution Provider (VAR)</fullName>
+                <default>false</default>
+                <label>Solution Provider (VAR)</label>
+            </value>
+            <value>
+                <fullName>Solutions Integration Partner</fullName>
+                <default>false</default>
+                <label>Solutions Integration Partner</label>
+            </value>
+            <value>
+                <fullName>Support &amp; Services Delivery Partner</fullName>
+                <default>false</default>
+                <label>Support &amp; Services Delivery Partner</label>
+            </value>
+            <value>
+                <fullName>System Builder</fullName>
+                <default>false</default>
+                <label>System Builder</label>
+            </value>
+            <value>
+                <fullName>Training Center</fullName>
+                <default>false</default>
+                <label>Training Center</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Federal Systems Integrator</fullName>
+                <default>false</default>
+                <label>Federal Systems Integrator</label>
+            </value>
+            <value>
+                <fullName>Global Systems Integrator</fullName>
+                <default>false</default>
+                <label>Global Systems Integrator</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

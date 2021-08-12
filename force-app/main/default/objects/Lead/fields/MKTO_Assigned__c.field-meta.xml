@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MKTO_Assigned__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Marketo needs to flag this if the leads are from those special campaigns. So that SFDC will not try to reassign it</description>
+    <externalId>false</externalId>
+    <label>MKTO_Assigned</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

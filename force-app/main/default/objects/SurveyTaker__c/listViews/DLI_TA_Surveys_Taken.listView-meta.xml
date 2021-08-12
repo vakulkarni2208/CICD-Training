@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DLI_TA_Surveys_Taken</fullName>
+    <columns>NAME</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>Service_Delivery__c</columns>
+    <columns>Contact__c</columns>
+    <columns>Survey__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Survey__c</field>
+        <operation>equals</operation>
+        <value>NVIDIA DLI TA Feedback (Post workshop delivery)</value>
+    </filters>
+    <label>DLI TA Surveys Taken</label>
+    <sharedTo>
+        <roleAndSubordinatesInternal>DLI_Sales</roleAndSubordinatesInternal>
+    </sharedTo>
+</ListView>

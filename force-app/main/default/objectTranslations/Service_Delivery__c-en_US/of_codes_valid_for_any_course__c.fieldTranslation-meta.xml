@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- # of codes valid for any course --></label>
+    <name>of_codes_valid_for_any_course__c</name>
+</CustomFieldTranslation>

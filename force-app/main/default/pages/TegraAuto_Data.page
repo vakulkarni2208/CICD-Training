@@ -1,0 +1,282 @@
+<apex:page standardController="Opportunity">
+<apex:pageMessages />
+
+<apex:sectionHeader subtitle="{!opportunity.name}" title="Opportunity Data" />
+<!--<apex:pageBlock >
+
+<apex:pageBlockSection title="FY10 - Tegra Units and Revenue" columns="4">
+    <apex:outputField value="{!opportunity.Units_Q4FY_10__c}" />
+    <apex:outputField value="{!opportunity.ASP_Q4FY10__c}"  />
+    <apex:outputField value="{!opportunity.Revenue_Q4_FY10__c}" />
+    <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+</apex:pageBlockSection>
+
+
+<apex:pageBlockSection title="FY11 - Tegra Units and Revenue" columns="4">
+    <apex:outputField value="{!opportunity.Units_Q1FY_11__c}" />
+    <apex:outputField value="{!opportunity.ASP_Q1FY11__c}"  />
+    <apex:outputField value="{!opportunity.Revenue_Q1FY11__c}" />
+    <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+    <apex:outputField value="{!opportunity.Units_Q2_FY11__c}" />
+    <apex:outputField value="{!opportunity.ASP_Q2FY11__c}" />
+    <apex:outputField value="{!opportunity.Revenue_Q2FY11__c}" />
+    <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+    <apex:outputField value="{!opportunity.Units_Q3_FY_11__c}" />
+    <apex:outputField value="{!opportunity.ASP_Q3FY11__c}" />
+    <apex:outputField value="{!opportunity.Revenue_Q3FY11__c}" />
+    <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+    <apex:outputField value="{!opportunity.Units_Q4_FY_11__c}" />
+    <apex:outputField value="{!opportunity.ASP_Q4FY11__c}" />
+    <apex:outputField value="{!opportunity.Revenue_Q4FY11__c}" />
+    <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+</apex:pageBlockSection>
+
+<apex:pageBlockSection title="FY12 - Tegra Units and Revenue" columns="4">
+    <apex:outputField value="{!opportunity.Units_Q1_FY12__c}" />
+    <apex:outputField value="{!opportunity.ASP_Q1FY12__c}" />
+    <apex:outputField value="{!opportunity.Revenue_Q1FY12__c}" />
+    <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+    <apex:outputField value="{!opportunity.Units_Q2_FY12__c}" />
+    <apex:outputField value="{!opportunity.ASP_Q2FY12__c}" />
+    <apex:outputField value="{!opportunity.Revenue_Q2FY12__c}" />
+    <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+    <apex:outputField value="{!opportunity.Units_Q3_FY12__c}" />
+    <apex:outputField value="{!opportunity.ASP_Q3FY12__c}" />
+    <apex:outputField value="{!opportunity.Revenue_Q3FY12__c}" />
+    <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+    <apex:outputField value="{!opportunity.Units_Q4_FY12__c}" />
+    <apex:outputField value="{!opportunity.ASP_Q4FY12__c}" />
+    <apex:outputField value="{!opportunity.Revenue_Q4FY12__c}" />
+    <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+</apex:pageBlockSection>
+
+<apex:pageBlockSection title="FY13 - Tegra Units and Revenue" columns="4">
+    <apex:outputField value="{!opportunity.Units_Q1_FY13__c}" />
+    <apex:outputField value="{!opportunity.ASP_Q1FY13__c}" />
+    <apex:outputField value="{!opportunity.Revenue_Q1FY13__c}" />
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+    <apex:outputField value="{!opportunity.Units_Q2_FY13__c}" />
+    <apex:outputField value="{!opportunity.ASP_Q2FY13__c}" />
+    <apex:outputField value="{!opportunity.Revenue_Q2FY13__c}" />
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+    <apex:outputField value="{!opportunity.Units_Q3_FY13__c}" />
+    <apex:outputField value="{!opportunity.ASP_Q3FY13__c}" />
+    <apex:outputField value="{!opportunity.Revenue_Q3FY13__c}" />
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+    <apex:outputField value="{!opportunity.Units_Q4_FY13__c}" />
+    <apex:outputField value="{!opportunity.ASP_Q4FY13__c}" />
+    <apex:outputField value="{!opportunity.Revenue_Q4FY13__c}" />
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+</apex:pageBlockSection>
+
+<apex:pageBlockSection title="FY14 - Tegra Units and Revenue" columns="4">
+    <apex:outputField value="{!opportunity.Units_Q1_FY14__c}" />
+    <apex:outputField value="{!opportunity.ASP_Q1FY14__c}" />
+    <apex:outputField value="{!opportunity.Revenue_Q1FY14__c}" />
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+    <apex:outputField value="{!opportunity.Units_Q2FY14__c}" />
+    <apex:outputField value="{!opportunity.ASP_Q2FY14__c}" />
+    <apex:outputField value="{!opportunity.Revenue_Q2FY14__c}" />
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+    <apex:outputField value="{!opportunity.Units_Q3FY14__c}" />
+    <apex:outputField value="{!opportunity.ASP_Q3FY14__c}" />
+    <apex:outputField value="{!opportunity.Revenue_Q3FY14__c}" />
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+    <apex:outputField value="{!opportunity.Units_Q4FY14__c}" />
+    <apex:outputField value="{!opportunity.ASP_Q4FY14__c}" />
+    <apex:outputField value="{!opportunity.Revenue_Q4FY14__c}" />
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+</apex:pageBlockSection>
+
+<apex:pageBlockSection title="FY15 - Tegra Units and Revenue" columns="4">
+    <apex:outputField value="{!opportunity.Units_Q1FY15__c}" />
+    <apex:outputField value="{!opportunity.ASP_Q1FY15__c}" />
+    <apex:outputField value="{!opportunity.Revenue_Q1FY15__c}" />
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+    <apex:outputField value="{!opportunity.Units_Q2FY15__c}" />
+    <apex:outputField value="{!opportunity.ASP_Q2FY15__c}" />
+    <apex:outputField value="{!opportunity.Revenue_Q2FY15__c}" />
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+    <apex:outputField value="{!opportunity.Units_Q3FY15__c}" />
+    <apex:outputField value="{!opportunity.ASP_Q3FY15__c}" />
+    <apex:outputField value="{!opportunity.Revenue_Q3FY15__c}" />
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+    <apex:outputField value="{!opportunity.Units_Q4FY15__c}" />
+    <apex:outputField value="{!opportunity.ASP_Q4FY15__c}" />
+    <apex:outputField value="{!opportunity.Revenue_Q4FY15__c}" />
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+</apex:pageBlockSection>
+
+<apex:pageBlockSection title="FY16 - Tegra Units and Revenue" columns="4">
+    <apex:outputField value="{!opportunity.Units_Q1FY16__c}" />
+    <apex:outputField value="{!opportunity.ASP_Q1FY16__c}" />
+    <apex:outputField value="{!opportunity.Revenue_Q1FY16__c}" />
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+    <apex:outputField value="{!opportunity.Units_Q2FY16__c}" />
+    <apex:outputField value="{!opportunity.ASP_Q2FY16__c}" />
+    <apex:outputField value="{!opportunity.Revenue_Q2FY16__c}" />
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+    <apex:outputField value="{!opportunity.Units_Q3FY16__c}" />
+    <apex:outputField value="{!opportunity.ASP_Q3FY16__c}" />
+    <apex:outputField value="{!opportunity.Revenue_Q3FY16__c}" />
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+    <apex:outputField value="{!opportunity.Units_Q4FY16__c}" />
+    <apex:outputField value="{!opportunity.ASP_Q4FY16__c}" />
+    <apex:outputField value="{!opportunity.Revenue_Q4FY16__c}" />
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+</apex:pageBlockSection>
+
+<apex:pageBlockSection title="FY17 - Tegra Units and Revenue" columns="4">
+    <apex:outputField value="{!opportunity.Units_Q1FY17__c}" />
+    <apex:outputField value="{!opportunity.ASP_Q1FY17__c}" />
+    <apex:outputField value="{!opportunity.Revenue_Q1FY17__c}" />
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+    <apex:outputField value="{!opportunity.Units_Q2FY17__c}" />
+    <apex:outputField value="{!opportunity.ASP_Q2FY17__c}" />
+    <apex:outputField value="{!opportunity.Revenue_Q2FY17__c}" />
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+    <apex:outputField value="{!opportunity.Units_Q3FY17__c}" />
+    <apex:outputField value="{!opportunity.ASP_Q3FY17__c}" />
+    <apex:outputField value="{!opportunity.Revenue_Q3FY17__c}" />
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+    <apex:outputField value="{!opportunity.Units_Q4FY17__c}" />
+    <apex:outputField value="{!opportunity.ASP_Q4FY17__c}" />
+    <apex:outputField value="{!opportunity.Revenue_Q4FY17__c}" />
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+</apex:pageBlockSection>
+
+<apex:pageBlockSection title="FY18 - Tegra Units and Revenue" columns="4">
+    <apex:outputField value="{!opportunity.Units_Q1FY18__c}" />
+    <apex:outputField value="{!opportunity.ASP_Q1FY18__c}" />
+    <apex:outputField value="{!opportunity.Revenue_Q1FY18__c}" />
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+    <apex:outputField value="{!opportunity.Units_Q2FY18__c}" />
+    <apex:outputField value="{!opportunity.ASP_Q2FY18__c}" />
+    <apex:outputField value="{!opportunity.Revenue_Q2FY18__c}" />
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+    <apex:outputField value="{!opportunity.Units_Q3FY18__c}" />
+    <apex:outputField value="{!opportunity.ASP_Q3FY18__c}" />
+    <apex:outputField value="{!opportunity.Revenue_Q3FY18__c}" />
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+    <apex:outputField value="{!opportunity.Units_Q4FY18__c}" />
+    <apex:outputField value="{!opportunity.ASP_Q4FY18__c}" />
+    <apex:outputField value="{!opportunity.Revenue_Q4FY18__c}" />
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+</apex:pageBlockSection>
+
+<apex:pageBlockSection title="FY19 - Tegra Units &amp; Revenue" columns="4">
+    <apex:outputField value="{!opportunity.Units_Q1FY19__c}" />
+    <apex:outputField value="{!opportunity.ASP_Q1FY19__c}" />
+    <apex:outputField value="{!opportunity.Revenue_Q1FY19__c}" />
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+    <apex:outputField value="{!opportunity.Units_Q2FY19__c}" />
+    <apex:outputField value="{!opportunity.ASP_Q2FY19__c}" />
+    <apex:outputField value="{!opportunity.Revenue_Q2FY19__c}" />
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+    <apex:outputField value="{!opportunity.Units_Q3FY19__c}" />
+    <apex:outputField value="{!opportunity.ASP_Q3FY19__c}" />
+    <apex:outputField value="{!opportunity.Revenue_Q3FY19__c}" />
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+    <apex:outputField value="{!opportunity.Units_Q4FY19__c}" />
+    <apex:outputField value="{!opportunity.ASP_Q4FY19__c}" />
+    <apex:outputField value="{!opportunity.Revenue_Q4FY19__c}" />
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+</apex:pageBlockSection>
+
+<apex:pageBlockSection title="FY20 - Tegra Units and Revenue" columns="4">
+    <apex:outputField value="{!opportunity.Units_Q1FY20__c}" />
+    <apex:outputField value="{!opportunity.ASP_Q1FY20__c}" />
+    <apex:outputField value="{!opportunity.Revenue_Q1FY20__c}" />
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+    <apex:outputField value="{!opportunity.Units_Q2FY20__c}" />
+    <apex:outputField value="{!opportunity.ASP_Q2FY20__c}" />
+    <apex:outputField value="{!opportunity.Revenue_Q2FY20__c}" />
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+    <apex:outputField value="{!opportunity.Units_Q3FY20__c}" />
+    <apex:outputField value="{!opportunity.ASP_Q3FY20__c}" />
+    <apex:outputField value="{!opportunity.Revenue_Q3FY20__c}" />
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+    <apex:outputField value="{!opportunity.Units_Q4FY20__c}" />
+    <apex:outputField value="{!opportunity.ASP_Q4FY20__c}" />
+    <apex:outputField value="{!opportunity.Revenue_Q4FY20__c}" />
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+</apex:pageBlockSection>
+
+<apex:pageBlockSection title="FY21 - Tegra Units and Revenue" columns="4">
+    <apex:outputField value="{!opportunity.Units_Q1FY21__c}" />
+    <apex:outputField value="{!opportunity.ASP_Q1FY21__c}" />
+    <apex:outputField value="{!opportunity.Revenue_Q1FY21__c}" />
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+    <apex:outputField value="{!opportunity.Units_Q2FY21__c}" />
+    <apex:outputField value="{!opportunity.ASP_Q2FY21__c}" />
+    <apex:outputField value="{!opportunity.Revenue_Q2FY21__c}" />
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+    <apex:outputField value="{!opportunity.Units_Q3FY21__c}" />
+    <apex:outputField value="{!opportunity.ASP_Q3FY21__c}" />
+    <apex:outputField value="{!opportunity.Revenue_Q3FY21__c}" />
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+    <apex:outputField value="{!opportunity.Units_Q4FY21__c}" />
+    <apex:outputField value="{!opportunity.ASP_Q4FY21__c}" />
+    <apex:outputField value="{!opportunity.Revenue_Q4FY21__c}" />
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+</apex:pageBlockSection>
+
+<apex:pageBlockSection title="FY22 - Tegra Units and Revenue" columns="4">
+    <apex:outputField value="{!opportunity.Units_Q1FY22__c}" />
+    <apex:outputField value="{!opportunity.ASP_Q1FY22__c}" />
+    <apex:outputField value="{!opportunity.Revenue_Q1FY22__c}" />
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+    <apex:outputField value="{!opportunity.Units_Q2FY22__c}" />
+    <apex:outputField value="{!opportunity.ASP_Q2FY22__c}" />
+    <apex:outputField value="{!opportunity.Revenue_Q2FY22__c}" />
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+    <apex:outputField value="{!opportunity.Units_Q3FY22__c}" />
+    <apex:outputField value="{!opportunity.ASP_Q3FY22__c}" />
+    <apex:outputField value="{!opportunity.Revenue_Q3FY22__c}" />
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+    <apex:outputField value="{!opportunity.Units_Q4FY22__c}" />
+    <apex:outputField value="{!opportunity.ASP_Q4FY22__c}" />
+    <apex:outputField value="{!opportunity.Revenue_Q4FY22__c}" />
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+</apex:pageBlockSection>
+
+<apex:pageBlockSection title="FY23 - Tegra Units and Revenue" columns="4">
+    <apex:outputField value="{!opportunity.Units_Q1FY23__c}" />
+    <apex:outputField value="{!opportunity.ASP_Q1FY23__c}" />
+    <apex:outputField value="{!opportunity.Revenue_Q1FY23__c}" />
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+    <apex:outputField value="{!opportunity.Units_Q2FY23__c}" />
+    <apex:outputField value="{!opportunity.ASP_Q2FY23__c}" />
+    <apex:outputField value="{!opportunity.Revenue_Q2FY23__c}" />
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+    <apex:outputField value="{!opportunity.Units_Q3FY23__c}" />
+    <apex:outputField value="{!opportunity.ASP_Q3FY23__c}" />
+    <apex:outputField value="{!opportunity.Revenue_Q3FY23__c}" />
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+    <apex:outputField value="{!opportunity.Units_Q4FY23__c}" />
+    <apex:outputField value="{!opportunity.ASP_Q4FY23__c}" />
+    <apex:outputField value="{!opportunity.Revenue_Q4FY23__c}" />
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+</apex:pageBlockSection>
+
+<apex:pageBlockSection title="FY24 - Tegra Units and Revenue" columns="4">
+    <apex:outputField value="{!opportunity.Units_Q1FY24__c}" />
+    <apex:outputField value="{!opportunity.ASP_Q1FY24__c}" />
+    <apex:outputField value="{!opportunity.Revenue_Q1FY24__c}" />
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+    <apex:outputField value="{!opportunity.Units_Q2FY24__c}" />
+    <apex:outputField value="{!opportunity.ASP_Q2FY24__c}" />
+    <apex:outputField value="{!opportunity.Revenue_Q2FY24__c}" />
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+    <apex:outputField value="{!opportunity.Units_Q3FY24__c}" />
+    <apex:outputField value="{!opportunity.ASP_Q3FY24__c}" />
+    <apex:outputField value="{!opportunity.Revenue_Q3FY24__c}" />
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+    <apex:outputField value="{!opportunity.Units_Q4FY24__c}" />
+    <apex:outputField value="{!opportunity.ASP_Q4FY24__c}" />
+    <apex:outputField value="{!opportunity.Revenue_Q4FY24__c}" />
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+</apex:pageBlockSection>
+
+</apex:pageBlock>-->
+</apex:page>

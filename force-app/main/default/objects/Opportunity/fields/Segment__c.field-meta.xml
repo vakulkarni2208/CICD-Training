@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Segment__c</fullName>
+    <description>For Enterprise Design Wins sales process</description>
+    <externalId>false</externalId>
+    <label>Segment</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Diagnostic Imaging</fullName>
+                <default>false</default>
+                <label>Diagnostic Imaging</label>
+            </value>
+            <value>
+                <fullName>HIT</fullName>
+                <default>false</default>
+                <label>HIT</label>
+            </value>
+            <value>
+                <fullName>In Vitro Diagnostics</fullName>
+                <default>false</default>
+                <label>In Vitro Diagnostics</label>
+            </value>
+            <value>
+                <fullName>Point of Care</fullName>
+                <default>false</default>
+                <label>Point of Care</label>
+            </value>
+            <value>
+                <fullName>Therapeutic Devices</fullName>
+                <default>false</default>
+                <label>Therapeutic/Interventional Devices</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Description_For_Promotion__c</fullName>
+    <externalId>false</externalId>
+    <formula>&quot;As a &quot;&amp; TEXT(Competency_Level__c) &amp;&quot; level partner, there are additional program benefits and requirements, which can be found in detail in the NPN Partner Program Guide.&quot;</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Description_For_Promotion</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

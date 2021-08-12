@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- PB Preferred Investment Amount --></label>
+    <name>pbk__Preferred_Investment_Amount__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Mailing Territory --></label>
+    <name>Mailing_Territory__c</name>
+    <picklistValues>
+        <masterLabel>AFRICA</masterLabel>
+        <translation><!-- AFRICA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CIS</masterLabel>
+        <translation><!-- CIS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CZECH_HUNGARY_SLOVAKIA</masterLabel>
+        <translation><!-- CZECH_HUNGARY_SLOVAKIA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DACH</masterLabel>
+        <translation><!-- DACH --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FRANCE_BENELUX</masterLabel>
+        <translation><!-- FRANCE_BENELUX --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IBERIA</masterLabel>
+        <translation><!-- IBERIA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ITALY_GREECE_ISRAEL</masterLabel>
+        <translation><!-- ITALY_GREECE_ISRAEL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LA</masterLabel>
+        <translation><!-- LA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MIDDLE EAST</masterLabel>
+        <translation><!-- MIDDLE EAST --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NA</masterLabel>
+        <translation><!-- NA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>POLAND_BALTICS</masterLabel>
+        <translation><!-- POLAND_BALTICS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ROMANIA_CROATIA_BULGARIA_SERBIA_REST OF BALKANS</masterLabel>
+        <translation><!-- ROMANIA_CROATIA_BULGARIA_SERBIA_REST OF BALKANS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RUSSIA</masterLabel>
+        <translation><!-- RUSSIA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SOUTH ASIA</masterLabel>
+        <translation><!-- SOUTH ASIA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TURKEY</masterLabel>
+        <translation><!-- TURKEY --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UKRAINE</masterLabel>
+        <translation><!-- UKRAINE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UK_NORDICS</masterLabel>
+        <translation><!-- UK_NORDICS --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

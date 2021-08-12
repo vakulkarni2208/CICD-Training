@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DR_Deal_Status__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( TEXT(Type) =   $Setup.DR_Settings__c.Lead_Type__c, 
+IF(DR_Is_Deal_Auto_Terminated__c  = True, $Setup.DR_Settings__c.Deal_Status_AutoTerminated__c, 
+	IF (DR_Is_Terminated__c = True, $Setup.DR_Settings__c.Deal_Status_Terminated__c,
+		IF (DR_Is_180Days_Extn_Approved__c = True, $Setup.DR_Settings__c.Deal_Status_ExtensionApproved__c,
+			IF (DR_Is_180Days_Extn_Rejected__c = True, $Setup.DR_Settings__c.Deal_Status_ExtensionApproved__c,
+				IF (DR_Is_Submitted_For_180Days_Extn__c = True, $Setup.DR_Settings__c.Deal_Status_ExtensionApproved__c,
+					IF(DR_Is_Extension_Approved__c = True, $Setup.DR_Settings__c.Deal_Status_ExtensionApproved__c,
+						IF(DR_Is_Extension_Rejected__c = True, $Setup.DR_Settings__c.Deal_Status_ExtensionRejected__c,
+							IF(DR_Is_Submitted_For_Extension__c = True, $Setup.DR_Settings__c.Deal_Status_ExtensionApprovalInProgress__c,
+								IF (DR_Is_Approved__c = True, $Setup.DR_Settings__c.Deal_Status_Approved__c,
+									IF (DR_Is_Rejected__c = True, $Setup.DR_Settings__c.Deal_Status_Rejected__c,
+										IF (DR_Is_Submitted_For_Approval__c = True, $Setup.DR_Settings__c.Deal_Status_ApprovalInProgress__c, $Setup.DR_Settings__c.Deal_Status_NotSubmitted__c)
+									)
+								)
+							)
+						)
+					)
+				)	
+			)	
+		)	
+	)
+)
+, IF(CONTAINS( $Setup.DR_Settings__c.Deal_Reg_Record_Types__c, RecordType.Name), &quot;Non-Deal Reg&quot;, &quot;Not Applicable&quot;)
+)</formula>
+    <label>Registration Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

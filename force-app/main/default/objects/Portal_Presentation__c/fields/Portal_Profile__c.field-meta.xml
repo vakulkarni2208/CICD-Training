@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Portal_Profile__c</fullName>
+    <externalId>false</externalId>
+    <label>Portal_Profile</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>GRID_VCA_Support</fullName>
+                <default>false</default>
+                <label>GRID_VCA_Support</label>
+            </value>
+            <value>
+                <fullName>GRID_VCA_Sales</fullName>
+                <default>false</default>
+                <label>GRID_VCA_Sales</label>
+            </value>
+            <value>
+                <fullName>GRID_VCA_Training</fullName>
+                <default>false</default>
+                <label>GRID_VCA_Training</label>
+            </value>
+            <value>
+                <fullName>GRID_VCA_Marketing</fullName>
+                <default>false</default>
+                <label>GRID_VCA_Marketing</label>
+            </value>
+            <value>
+                <fullName>GRID_VCA_Manager</fullName>
+                <default>false</default>
+                <label>GRID_VCA_Manager</label>
+            </value>
+            <value>
+                <fullName>GRID VCA Partner Portal Profile(Generic)</fullName>
+                <default>false</default>
+                <label>GRID VCA Partner Portal Profile(Generic)</label>
+            </value>
+            <value>
+                <fullName>GRID VGX Partner Portal Profile(Generic)</fullName>
+                <default>false</default>
+                <label>GRID VGX Partner Portal Profile(Generic)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

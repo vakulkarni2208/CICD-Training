@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Products__c</fullName>
+    <description>SDS-2797:Campaign MGMT: Phase2 Enhancement Request</description>
+    <externalId>false</externalId>
+    <label>Products</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>A10</fullName>
+                <default>false</default>
+                <label>A10</label>
+            </value>
+            <value>
+                <fullName>A30</fullName>
+                <default>false</default>
+                <label>A30</label>
+            </value>
+            <value>
+                <fullName>A4</fullName>
+                <default>false</default>
+                <label>A4</label>
+            </value>
+            <value>
+                <fullName>A40</fullName>
+                <default>false</default>
+                <label>A40</label>
+            </value>
+            <value>
+                <fullName>Aerial</fullName>
+                <default>false</default>
+                <label>Aerial</label>
+            </value>
+            <value>
+                <fullName>BFA10</fullName>
+                <default>false</default>
+                <label>BFA10</label>
+            </value>
+            <value>
+                <fullName>BlueField DPU</fullName>
+                <default>false</default>
+                <label>BlueField DPU</label>
+            </value>
+            <value>
+                <fullName>Clara</fullName>
+                <default>false</default>
+                <label>Clara</label>
+            </value>
+            <value>
+                <fullName>ConnectX</fullName>
+                <default>false</default>
+                <label>ConnectX</label>
+            </value>
+            <value>
+                <fullName>CUDA-X</fullName>
+                <default>false</default>
+                <label>CUDA-X</label>
+            </value>
+            <value>
+                <fullName>DC Platform</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>DC Platform</label>
+            </value>
+            <value>
+                <fullName>DGX</fullName>
+                <default>false</default>
+                <label>DGX</label>
+            </value>
+            <value>
+                <fullName>DGX A100</fullName>
+                <default>false</default>
+                <label>DGX A100</label>
+            </value>
+            <value>
+                <fullName>DGX POD</fullName>
+                <default>false</default>
+                <label>DGX POD</label>
+            </value>
+            <value>
+                <fullName>DGX Station A100</fullName>
+                <default>false</default>
+                <label>DGX Station A100</label>
+            </value>
+            <value>
+                <fullName>DGX SuperPOD</fullName>
+                <default>false</default>
+                <label>DGX SuperPOD</label>
+            </value>
+            <value>
+                <fullName>DOCA</fullName>
+                <default>false</default>
+                <label>DOCA</label>
+            </value>
+            <value>
+                <fullName>DRIVE</fullName>
+                <default>false</default>
+                <label>DRIVE</label>
+            </value>
+            <value>
+                <fullName>EGX</fullName>
+                <default>false</default>
+                <label>EGX</label>
+            </value>
+            <value>
+                <fullName>EGX A100</fullName>
+                <default>false</default>
+                <label>EGX A100</label>
+            </value>
+            <value>
+                <fullName>Enterprise AI SW Suite</fullName>
+                <default>false</default>
+                <label>Enterprise AI SW Suite</label>
+            </value>
+            <value>
+                <fullName>Ethernet Adapters &amp; DPUs</fullName>
+                <default>false</default>
+                <label>Ethernet Adapters &amp; DPUs</label>
+            </value>
+            <value>
+                <fullName>Ethernet Switches</fullName>
+                <default>false</default>
+                <label>Ethernet Switches</label>
+            </value>
+            <value>
+                <fullName>Fleet Command</fullName>
+                <default>false</default>
+                <label>Fleet Command</label>
+            </value>
+            <value>
+                <fullName>GeForce NOW</fullName>
+                <default>false</default>
+                <label>GeForce NOW</label>
+            </value>
+            <value>
+                <fullName>HGX</fullName>
+                <default>false</default>
+                <label>HGX</label>
+            </value>
+            <value>
+                <fullName>HGX A100</fullName>
+                <default>false</default>
+                <label>HGX A100</label>
+            </value>
+            <value>
+                <fullName>Infiniband</fullName>
+                <default>false</default>
+                <label>Infiniband</label>
+            </value>
+            <value>
+                <fullName>Isaac</fullName>
+                <default>false</default>
+                <label>Isaac</label>
+            </value>
+            <value>
+                <fullName>Jarvis</fullName>
+                <default>false</default>
+                <label>Jarvis</label>
+            </value>
+            <value>
+                <fullName>Jetson</fullName>
+                <default>false</default>
+                <label>Jetson</label>
+            </value>
+            <value>
+                <fullName>Maxine</fullName>
+                <default>false</default>
+                <label>Maxine</label>
+            </value>
+            <value>
+                <fullName>Metropolis</fullName>
+                <default>false</default>
+                <label>Metropolis</label>
+            </value>
+            <value>
+                <fullName>NGC</fullName>
+                <default>false</default>
+                <label>NGC</label>
+            </value>
+            <value>
+                <fullName>NVIDIA-Certified Systems</fullName>
+                <default>false</default>
+                <label>NVIDIA-Certified Systems</label>
+            </value>
+            <value>
+                <fullName>Omniverse</fullName>
+                <default>false</default>
+                <label>Omniverse</label>
+            </value>
+            <value>
+                <fullName>Optical Transceivers &amp; Cables</fullName>
+                <default>false</default>
+                <label>Optical Transceivers &amp; Cables</label>
+            </value>
+            <value>
+                <fullName>Quadro</fullName>
+                <default>false</default>
+                <label>Quadro</label>
+            </value>
+            <value>
+                <fullName>RAPIDS</fullName>
+                <default>false</default>
+                <label>RAPIDS</label>
+            </value>
+            <value>
+                <fullName>Recommender/Merlin</fullName>
+                <default>false</default>
+                <label>Recommender/Merlin</label>
+            </value>
+            <value>
+                <fullName>Spark</fullName>
+                <default>false</default>
+                <label>Spark</label>
+            </value>
+            <value>
+                <fullName>T4</fullName>
+                <default>false</default>
+                <label>T4</label>
+            </value>
+            <value>
+                <fullName>Titan</fullName>
+                <default>false</default>
+                <label>Titan</label>
+            </value>
+            <value>
+                <fullName>Triton</fullName>
+                <default>false</default>
+                <label>Triton</label>
+            </value>
+            <value>
+                <fullName>TRT</fullName>
+                <default>false</default>
+                <label>TRT</label>
+            </value>
+            <value>
+                <fullName>vGPU</fullName>
+                <default>false</default>
+                <label>vGPU</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Close_Date_Compliance_Issue__c</fullName>
+    <description>formula fields to support Weekly Commit (SDS-1104)</description>
+    <externalId>false</externalId>
+    <formula>AND(Not(IsClosed) , CloseDate &lt; Today())</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Close Date Compliance Issue</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

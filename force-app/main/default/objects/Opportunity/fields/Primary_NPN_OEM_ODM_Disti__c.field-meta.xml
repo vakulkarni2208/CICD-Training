@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Primary_NPN_OEM_ODM_Disti__c</fullName>
+    <businessOwnerUser>oweber@nvidia.com.trprod</businessOwnerUser>
+    <businessStatus>Active</businessStatus>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>SOQ-79
+
+5/24/2021 Geo Update: Updated help text. Added admin field information like Data Owner.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Please identify the partner who will issue the PO to NVIDIA</inlineHelpText>
+    <label>Primary NPN OEM/ODM/Disti</label>
+    <lookupFilter>
+        <active>true</active>
+        <errorMessage>Please make sure to only select those Accounts marked as business engagement layer partner Accounts</errorMessage>
+        <filterItems>
+            <field>Account.Business_Engagement_Relationship__c</field>
+            <operation>equals</operation>
+            <value>Distributor, ODM, OEM</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Opportunities (Primary NPN OEM/ODM/Disti)</relationshipLabel>
+    <relationshipName>PartnerOpportunities2</relationshipName>
+    <required>false</required>
+    <securityClassification>Internal</securityClassification>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

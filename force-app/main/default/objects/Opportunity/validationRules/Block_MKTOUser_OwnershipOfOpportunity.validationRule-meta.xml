@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Block_MKTOUser_OwnershipOfOpportunity</fullName>
+    <active>true</active>
+    <description>SDS-1472: Block Marketo User taking ownership of Contact Or Opportunity</description>
+    <errorConditionFormula>Owner.Profile.Name = &apos;Marketo User Profile&apos;</errorConditionFormula>
+    <errorMessage>MKTO User cannot own any Opportunity.</errorMessage>
+</ValidationRule>

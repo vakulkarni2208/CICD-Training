@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Only inputted by DLI Finance person in charge (PIC) --></help>
+    <label><!-- DLI Amount Received --></label>
+    <name>DLI_Amount_Received__c</name>
+</CustomFieldTranslation>

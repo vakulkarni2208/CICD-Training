@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_NBU_Engagement_Justification</fullName>
+    <active>true</active>
+    <description>SDS-2892 - if the NBU Involved is &apos;No&apos; then the field NBU Engagement Justification cannot be left blank</description>
+    <errorConditionFormula>AND(
+ RecordType.DeveloperName = &apos;Enterprise_Sales_Opportunity&apos;,
+AND($Profile.Name &lt;&gt; &apos;System Administrator&apos;,$Profile.Name &lt;&gt; &apos;SVC SAP Integration&apos;),
+ NOT(ISPICKVAL(Industry__c, &apos;Strategic Hyperscale&apos;)), 
+ ISPICKVAL(NBU_Involved__c, &apos;No&apos;),
+ ISBLANK(NBU_Engagement_Justification__c) 
+)</errorConditionFormula>
+    <errorDisplayField>NBU_Engagement_Justification__c</errorDisplayField>
+    <errorMessage>For Opportunities where NBU is not engaged please detail why in the &apos;NBU Engagement Justification&apos; field</errorMessage>
+</ValidationRule>

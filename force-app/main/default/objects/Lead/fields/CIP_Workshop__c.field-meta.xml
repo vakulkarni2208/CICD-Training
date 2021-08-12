@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CIP_Workshop__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>SDS-3007</description>
+    <externalId>false</externalId>
+    <label>CIP Workshop</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>Training_Service_Catalog__c.Active__c</field>
+            <operation>equals</operation>
+            <value>Active</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Training_Service_Catalog__c</referenceTo>
+    <relationshipLabel>Leads</relationshipLabel>
+    <relationshipName>Leads</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

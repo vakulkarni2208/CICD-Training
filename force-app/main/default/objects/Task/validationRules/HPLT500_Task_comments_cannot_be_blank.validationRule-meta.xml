@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>HPLT500_Task_comments_cannot_be_blank</fullName>
+    <active>true</active>
+    <description>(JIRA: SDS-2294)  if HPL/T500 Task Status = Disqualified that the Comments cannot be blank</description>
+    <errorConditionFormula>AND(
+ RecordType.DeveloperName = &apos;HPL_T500_Task&apos;,
+ ISPICKVAL(Status, &apos;Disqualified&apos;),
+ ISBLANK(Description) 
+)</errorConditionFormula>
+    <errorDisplayField>Description</errorDisplayField>
+    <errorMessage>When Status is moved to Disqualified please describe details on this in the Comments</errorMessage>
+</ValidationRule>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- URL for JIRA/NVBUG/GIT# --></help>
+    <label><!-- JIRA/NVBUG/GIT# Link --></label>
+    <name>JIRA_NVBUG_GIT_Link__c</name>
+</CustomFieldTranslation>

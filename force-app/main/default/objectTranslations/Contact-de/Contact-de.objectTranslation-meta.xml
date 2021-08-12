@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <recordTypes>
+        <label><!-- Partner Contact --></label>
+        <name>Partner</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Sales Contact --></label>
+        <name>SalesContact</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Contacts without Email address are blocked from insert/update. --></errorMessage>
+        <name>Block_Contacts_Without_EmailAddress</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- MKTO User cannot own any Contacts! --></errorMessage>
+        <name>Block_MKTOUser_TakingOwnershipOfContact</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only Admins can edit Account Name and Email for contacts that have synced to downstream systems. For assistance, create a &quot;Get Help&quot; request. --></errorMessage>
+        <name>Block_update_to_AccountOrEmail</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only PBM can edit Contact Status Field --></errorMessage>
+        <name>Contact_Status_Edit</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- CompanyId should be a numeric value --></errorMessage>
+        <name>LID__Check_CompanyId_Value</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only Contact Account Owners can edit PBM Verified field --></errorMessage>
+        <name>PBM_Verified_Edit</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Contact cannot be created/edited as the Account is inactive.  Please contact your Sales Ops Administrator. --></errorMessage>
+        <name>Restrict_EditContact_ForInactiveAccounts</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Conga_Composer_OAuth --></label>
+        <name>APXTConga4__Conga_Composer_OAuth</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Conga_Mail_Merge --></label>
+        <name>APXTConga4__Conga_Mail_Merge</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- SendaBrainsharkPresentation --></label>
+        <name>BRNSHRK__SendaBrainsharkPresentation</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Conga_Composer_Composer_SP_Client_Letter --></label>
+        <name>Conga_Composer_Composer_SP_Client_Letter</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Conga_Composer_DGX_A100_Proposal --></label>
+        <name>Conga_Composer_DGX_A100_Proposal</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- SendGmail --></label>
+        <name>SendGmail</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- YahooMaps --></label>
+        <name>YahooMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- YahooWeather --></label>
+        <name>YahooWeather</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_with_DocuSign --></label>
+        <name>dsfs__Send_with_DocuSign</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Jifflenow_Meetings --></label>
+        <name>jiffle__Jifflenow_Meetings</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- LeadspaceFindNewProspectsContact --></label>
+        <name>leadspace__LeadspaceFindNewProspectsContact</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Leadspace_enrich_Contact --></label>
+        <name>leadspacesync__Leadspace_enrich_Contact</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Contact_Matched_Accounts --></label>
+        <name>lsgirikonIndia__Contact_Matched_Accounts</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Contact_Matched_Leads --></label>
+        <name>lsgirikonIndia__Contact_Matched_Leads</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>lsgirikonIndia__GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>lsgirikonIndia__GoogleSearch</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- SendGmail --></label>
+        <name>lsgirikonIndia__SendGmail</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- YahooWeather --></label>
+        <name>lsgirikonIndia__YahooWeather</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Add_to_Marketo_Campaign --></label>
+        <name>mkto_si__Add_to_Marketo_Campaign</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Add_to_Marketo_Campaign_Lightning --></label>
+        <name>mkto_si__Add_to_Marketo_Campaign_Lightning</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Add_to_Watch_List --></label>
+        <name>mkto_si__Add_to_Watch_List</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_Marketo_Email --></label>
+        <name>mkto_si__Send_Marketo_Email</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_Marketo_Email_Lightning --></label>
+        <name>mkto_si__Send_Marketo_Email_Lightning</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Link_to_PitchBook --></label>
+        <name>pbk__Link_to_PitchBook</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Pitchbook_Sync --></label>
+        <name>pbk__Pitchbook_Sync</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_to_Slack --></label>
+        <name>slackv2__Send_to_Slack</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Slack_Alerts --></label>
+        <name>slackv2__Slack_Alerts</name>
+    </webLinks>
+</CustomObjectTranslation>

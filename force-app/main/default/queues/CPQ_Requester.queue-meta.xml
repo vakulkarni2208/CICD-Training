@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>CPQ Requester</name>
+    <queueMembers>
+        <users>
+            <user>ddayam@nvidia.com</user>
+            <user>nkohir@nvidia.com</user>
+            <user>talicaya@nvidia.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>CPQ_Requester__c</sobjectType>
+    </queueSobject>
+</Queue>

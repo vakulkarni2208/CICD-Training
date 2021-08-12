@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Check if the Mapping is active and be considered in adding the lead to the Campaign --></help>
+    <label><!-- IsActive --></label>
+    <name>IsActive__c</name>
+</CustomFieldTranslation>

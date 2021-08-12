@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Quote_Type_c__c</fullName>
+    <defaultValue>&quot;Quote&quot;</defaultValue>
+    <description>Quote Type - Quote/Renewal/Amendment/Re-quote</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Quote Type - in case of initial one it is &quot;Quote&quot;</inlineHelpText>
+    <label>Quote Type</label>
+    <length>25</length>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

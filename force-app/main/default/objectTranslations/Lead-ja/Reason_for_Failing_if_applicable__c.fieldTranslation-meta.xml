@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Reason for Failing (if applicable) --></label>
+    <name>Reason_for_Failing_if_applicable__c</name>
+    <picklistValues>
+        <masterLabel>Abandoned / incomplete application</masterLabel>
+        <translation><!-- Abandoned / incomplete application --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Application responses reflect someone that is not serious about carrying out DLI mission</masterLabel>
+        <translation><!-- Application responses reflect someone that is not serious about carrying out DLI mission --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Changed employment to an unaffiliated organization</masterLabel>
+        <translation><!-- Changed employment to an unaffiliated organization --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Confusing explanations (i.e. students would find it hard to follow the instructor)</masterLabel>
+        <translation><!-- Confusing explanations (i.e. students would find it hard to follow the instructor) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Duplicate record</masterLabel>
+        <translation><!-- Duplicate record --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Inaccurate / imprecise / cursory responses</masterLabel>
+        <translation><!-- Inaccurate / imprecise / cursory responses --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Invalid email address – no way to contact</masterLabel>
+        <translation><!-- Invalid email address – no way to contact --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lack of subject knowledge</masterLabel>
+        <translation><!-- Lack of subject knowledge --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Needs more confidence presenting</masterLabel>
+        <translation><!-- Needs more confidence presenting --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No NVIDIA relationship</masterLabel>
+        <translation><!-- No NVIDIA relationship --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No show to interview, no response to follow-up</masterLabel>
+        <translation><!-- No show to interview, no response to follow-up --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Requires better presentation skills</masterLabel>
+        <translation><!-- Requires better presentation skills --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Suspicious credentials (e.g. 10 Ph.D.s – this is a real example)</masterLabel>
+        <translation><!-- Suspicious credentials (e.g. 10 Ph.D.s – this is a real example) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Too advanced for workshop / better suited for other workshops</masterLabel>
+        <translation><!-- Too advanced for workshop / better suited for other workshops --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Withdrew application – medical / professional / personal reasons</masterLabel>
+        <translation><!-- Withdrew application – medical / professional / personal reasons --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

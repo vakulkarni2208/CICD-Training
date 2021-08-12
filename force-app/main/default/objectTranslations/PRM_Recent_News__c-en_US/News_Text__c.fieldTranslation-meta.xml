@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- The text, exactly as it should appear on the PRM homepage.  All formatting, hyperlinks, and other HTML entered here will be transferred verbatim to the page. --></help>
+    <label><!-- News Text --></label>
+    <name>News_Text__c</name>
+</CustomFieldTranslation>

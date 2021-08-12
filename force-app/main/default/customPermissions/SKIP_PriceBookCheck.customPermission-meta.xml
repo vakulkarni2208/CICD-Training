@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomPermission xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Skips price book check:
+Allow_Standard_PriceBook_For_NonDealReg</description>
+    <label>SKIP_PriceBookCheck</label>
+</CustomPermission>

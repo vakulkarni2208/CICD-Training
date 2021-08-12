@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>Read</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>NALA T2 CSP Sales</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>NALA T2 CSP Sales</name>
+    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <parentRole>NALA_CRISP_T2_CSP_Sales_Manager</parentRole>
+</Role>

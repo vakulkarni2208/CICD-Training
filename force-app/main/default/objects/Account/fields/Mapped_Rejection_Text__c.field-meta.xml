@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mapped_Rejection_Text__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(ISPICKVAL(Reason_for_Rejection__c , &quot;Account Approval Policy&quot;) , &apos;Your account should have at least a contact/opportunity/activity/NPN CSP Usage Tracker item in order to be approved.&apos;,
+IF(ISPICKVAL(Reason_for_Rejection__c , &quot;Missing/Invalid Website&quot;) , &apos;Website is not provided for the business entity or the link provided is not directing to the official website.&apos;,
+IF(ISPICKVAL(Reason_for_Rejection__c , &quot;Duplicate Account&quot;) , &apos;The account you created is a duplicate. We will merge it into the existing account, so that your contacts and opportunities are preserved (if any).&apos;
+			 + &apos; If you do not own the original account, we will add you to the Account Team for visibility provided that the Master record is not a Named/Lighthouse account. Please use the original account to manage your contacts and opportunities (see below link). No further action is required.&apos;,
+IF(ISPICKVAL(Reason_for_Rejection__c , &quot;Verify Address&quot;) , &apos;We are unable to verify the billing address on the account.&apos;,&apos;&apos;))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Mapped Rejection Text</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

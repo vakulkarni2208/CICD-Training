@@ -1,0 +1,13 @@
+<design:component label="General Button">
+    
+        <design:attribute name="external_link" 
+                      	  label="External Link?" 
+                     	  description="Will the alert link be external (outside the community)?" />
+	    <design:attribute name="custom_link" 
+                          label="Internal/External Link" 
+                          description="Internal Link format = '/pagename' &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; External Link format = 'www.external-link.com' Do NOT include the 'https://' or 'http://'"  />
+	    <design:attribute name="custom_link_label" 
+                          label="Custom Button Label" 
+                          description="Label shown on button" />
+
+</design:component>

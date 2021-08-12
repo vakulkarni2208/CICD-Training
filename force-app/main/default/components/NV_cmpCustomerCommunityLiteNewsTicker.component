@@ -1,0 +1,37 @@
+<apex:component controller="clsPartnerPortalRssFeed" >
+
+    <apex:attribute name="title" description="Title to display at the top of the feed." type="String" required="false" />
+    <apex:attribute name="debug" description="debug DIV is turned on" type="Boolean" />
+    <apex:attribute name="feedURL" description="Where to fetch the RSS feed." type="String" required="true" assignTo="{!compFeedURL}" />
+    <apex:attribute name="entriesCount" description="Number of feed entries to present."  type="Integer"    required="false" assignTo="{!entriesToShow}"  />
+    <apex:attribute name="headline" description="headline only display mode" type="Boolean" />
+    
+
+	<table width="100%" border="0" cellpadding="0" cellspacing="0" style="background-color:#F3F3F3;white-space:nowrap;color:#393939;"> 
+    	<tr>
+        	<td style="font-size:15px;" width="100%" align="center" valign="middle">
+           		<apex:outputPanel rendered="{!(feedContent.empty == false)}">
+           			<ul id="js-news" class="js-hidden">
+                		<apex:repeat value="{!feedContent}" var="entry">
+                    		<li class="news-item">
+                        		<b>
+                            		<font color="#FFFFFF">
+                               			<a target="_blank" href="{!entry.href}">{!entry.title}</a>
+                            		</font>
+                        		</b>
+                    		</li>
+                		</apex:repeat>
+            		</ul>
+            	</apex:outputPanel>
+        	</td>
+		</tr>
+	</table>
+   
+   <script type="text/javascript">
+	    $j(function () {
+	        //$('#js-news').ticker({controls:false,titleText:'NVIDIA NEWS:',displayType:'fade'});
+	        $j('#js-news').ticker({controls:false,titleText:'{!$Label.COMM_CP_CMP_NVIDIA_News}',displayType:'fade'});
+	    });
+	</script>
+    
+</apex:component>

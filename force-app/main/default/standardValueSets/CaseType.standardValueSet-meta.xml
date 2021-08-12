@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Account Assistance</fullName>
+        <default>false</default>
+        <label>Account Assistance</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Customer Install</fullName>
+        <default>false</default>
+        <label>Customer Install</label>
+    </standardValue>
+    <standardValue>
+        <fullName>EBC Assistance</fullName>
+        <default>false</default>
+        <label>EBC Assistance</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Email Assistance</fullName>
+        <default>false</default>
+        <label>Email Assistance</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Entitlement Transfer</fullName>
+        <default>false</default>
+        <label>Entitlement Transfer</label>
+    </standardValue>
+    <standardValue>
+        <fullName>General User Question</fullName>
+        <default>false</default>
+        <label>General User Question</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Lead Assistance</fullName>
+        <default>false</default>
+        <label>Lead Assistance</label>
+    </standardValue>
+    <standardValue>
+        <fullName>MKTO GDPR Contact Deletion</fullName>
+        <default>false</default>
+        <label>MKTO GDPR Contact Deletion</label>
+    </standardValue>
+    <standardValue>
+        <fullName>New Account Approval</fullName>
+        <default>false</default>
+        <label>New Account Approval</label>
+    </standardValue>
+    <standardValue>
+        <fullName>New NVIDIA CRM User Setup Request</fullName>
+        <default>false</default>
+        <label>New CRM User Setup</label>
+    </standardValue>
+    <standardValue>
+        <fullName>NPN Assistance</fullName>
+        <default>false</default>
+        <label>NPN Assistance</label>
+    </standardValue>
+    <standardValue>
+        <fullName>NVIDIA Installation</fullName>
+        <default>false</default>
+        <label>NVIDIA Installation</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Opportunity Assistance</fullName>
+        <default>false</default>
+        <label>Opportunity Assistance</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Quoting Assistance</fullName>
+        <default>false</default>
+        <label>Quoting Assistance</label>
+    </standardValue>
+    <standardValue>
+        <fullName>OppReg Assistance</fullName>
+        <default>false</default>
+        <label>OppReg Assistance</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Partner Installation</fullName>
+        <default>false</default>
+        <label>Partner Installation</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Product/Pricebook Issue</fullName>
+        <default>false</default>
+        <label>Pricebook Issue</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Pricing Update</fullName>
+        <default>false</default>
+        <label>Pricing Update</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Report/Dashboard Assistance</fullName>
+        <default>false</default>
+        <label>Report/Dashboard Assistance</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Salesforce User Account Issue</fullName>
+        <default>false</default>
+        <label>Salesforce User Account Issue</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Service Cloud</fullName>
+        <default>false</default>
+        <label>Service Cloud</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Sharing Question</fullName>
+        <default>false</default>
+        <label>Sharing Question</label>
+    </standardValue>
+    <standardValue>
+        <fullName>System Idea</fullName>
+        <default>false</default>
+        <label>System Idea</label>
+    </standardValue>
+    <standardValue>
+        <fullName>System Issue</fullName>
+        <default>false</default>
+        <label>System Issue</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Training Request</fullName>
+        <default>false</default>
+        <label>Training Request</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Transfer</fullName>
+        <default>false</default>
+        <label>Transfer</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Serial Number Change</fullName>
+        <default>false</default>
+        <label>Serial Number Change</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Hardware Bug</fullName>
+        <default>false</default>
+        <label>Hardware Bug</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Software Bug</fullName>
+        <default>false</default>
+        <label>Software Bug</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Enhancement Request</fullName>
+        <default>false</default>
+        <label>Enhancement Request</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Support Issue</fullName>
+        <default>false</default>
+        <label>Support Issue</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Legal</fullName>
+        <default>false</default>
+        <label>Legal</label>
+    </standardValue>
+    <standardValue>
+        <fullName>General Information</fullName>
+        <default>false</default>
+        <label>General Information</label>
+    </standardValue>
+    <standardValue>
+        <fullName>WWFO Systems Access</fullName>
+        <default>false</default>
+        <label>WWFO Systems Access</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Data Request</fullName>
+        <default>false</default>
+        <label>Data Request</label>
+    </standardValue>
+    <standardValue>
+        <fullName>POC Support Portal Access</fullName>
+        <default>false</default>
+        <label>POC Support Portal Access</label>
+    </standardValue>
+    <standardValue>
+        <fullName>End Customer</fullName>
+        <default>false</default>
+        <label>End Customer</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Reseller</fullName>
+        <default>false</default>
+        <label>Reseller</label>
+    </standardValue>
+</StandardValueSet>

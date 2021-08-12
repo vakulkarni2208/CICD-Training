@@ -1,0 +1,15 @@
+<!-- 
+ * Author: @Manideep
+ * Date : 12/4/2018
+ * Description: This is a Visualforce Page which enables "DocuSign for Automotive". This Page is invoked through a Custom Button on Account "Send via DocuSign".
+-->
+<apex:page standardController="Account" extensions="NV_Account_DocuSignCtrl" action="{!invokeVFPage}">
+ <apex:form >
+  <apex:pageBlock >
+    <apex:pageMessages ></apex:pageMessages>
+    <apex:pageBlockButtons location="Bottom">
+      <apex:commandButton action="{!Cancel}" value="Back to Account" id="backButton"/>
+    </apex:pageBlockButtons>
+  </apex:pageBlock>
+ </apex:form>
+</apex:page>

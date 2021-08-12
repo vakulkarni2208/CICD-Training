@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Graphics Virtualization Type --></label>
+    <name>Graphics_Virtualization_Type__c</name>
+    <picklistValues>
+        <masterLabel>Bare Metal or Pass-through</masterLabel>
+        <translation><!-- Bare Metal or Pass-through --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DDA</masterLabel>
+        <translation><!-- DDA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HDX 3D Pro</masterLabel>
+        <translation><!-- HDX 3D Pro --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RemoteFX</masterLabel>
+        <translation><!-- RemoteFX --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VDA</masterLabel>
+        <translation><!-- VDA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>vGPU</masterLabel>
+        <translation><!-- vGPU --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>vSGA</masterLabel>
+        <translation><!-- vSGA --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

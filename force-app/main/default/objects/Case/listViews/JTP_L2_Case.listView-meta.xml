@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>JTP_L2_Case</fullName>
+    <filterScope>Queue</filterScope>
+    <label>JTP L2</label>
+    <queue>JTP_L2</queue>
+    <sharedTo>
+        <allInternalUsers/>
+    </sharedTo>
+</ListView>

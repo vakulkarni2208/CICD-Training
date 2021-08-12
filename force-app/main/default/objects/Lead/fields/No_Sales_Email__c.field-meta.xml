@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>No_Sales_Email__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Do Not Contact implementation</description>
+    <externalId>false</externalId>
+    <inlineHelpText>&quot;Do Not Email&quot; indicates that the user does not wish to receive emails from NVIDIA Sales personnel. If a user would like to unsubscribe from marketing emails, please refer them to: http://info.nvidianews.com/unsubscribepage.html</inlineHelpText>
+    <label>Do Not Email</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

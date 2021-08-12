@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Account_Admin_to_Edit_after_Approved</fullName>
+    <active>true</active>
+    <description>Only Account admins can edit few fields once the account is approved</description>
+    <errorConditionFormula>AND
+(
+	OR(
+		ISchanged(Name),
+   		( And 
+   			(
+   				ISchanged(Website),
+       				(!ISBLANK(PRIORVALUE(Website)))
+       			)
+       		),
+     		ISchanged(Industry),
+     		ISchanged(BillingCity),
+     		ISchanged(BillingCountry),
+     		ISchanged(BillingStreet),
+     		ISchanged(BillingState),
+     		ISchanged(BillingPostalCode),
+     		ISchanged(BillingCountryCode),
+     		ISchanged(BillingStateCode),
+                ISchanged(OwnerId) 
+     	),
+     	(Approved__c = true),
+   	(RecordType.Name = &apos;New Customer Account&apos; ),
+   	(
+   		AND 	
+   		($Profile.Name &lt;&gt; &apos;System Administrator&apos;, 
+         	$Profile.Name &lt;&gt; &apos;Sales Profile - Partner Admin&apos;, 
+     		Not($Permission.CRM_Edit_Approved_Accounts),
+                $Profile.Name &lt;&gt; &apos;Data Administrator&apos; ,  NOT($Permission.DEPLOYMENT_USER_SKIP_VALIDATIONS)   
+		)
+   	)
+)</errorConditionFormula>
+    <errorMessage>Only Admins can edit Name, Website, Industry, Billing Address and Owner, once Account is Approved. For assistance, click the &quot;Get Help&quot; button located on the top right of the page.</errorMessage>
+</ValidationRule>

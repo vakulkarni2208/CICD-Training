@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Industry__c</fullName>
+    <externalId>false</externalId>
+    <label>Industry</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Aerospace</fullName>
+                <default>false</default>
+                <label>Aerospace</label>
+            </value>
+            <value>
+                <fullName>Architecture, Eng and Construction</fullName>
+                <default>false</default>
+                <label>Architecture, Eng and Construction</label>
+            </value>
+            <value>
+                <fullName>Automotive</fullName>
+                <default>false</default>
+                <label>Automotive</label>
+            </value>
+            <value>
+                <fullName>Cloud Service Provider</fullName>
+                <default>false</default>
+                <label>Cloud Service Provider</label>
+            </value>
+            <value>
+                <fullName>Defense/Government</fullName>
+                <default>false</default>
+                <label>Defense/Government</label>
+            </value>
+            <value>
+                <fullName>Financial Services Industry (FSI)</fullName>
+                <default>false</default>
+                <label>Financial Services Industry (FSI)</label>
+            </value>
+            <value>
+                <fullName>Gaming</fullName>
+                <default>false</default>
+                <label>Gaming</label>
+            </value>
+            <value>
+                <fullName>Higher Ed/Research</fullName>
+                <default>false</default>
+                <label>Higher Ed/Research</label>
+            </value>
+            <value>
+                <fullName>IT Services</fullName>
+                <default>false</default>
+                <label>IT Services</label>
+            </value>
+            <value>
+                <fullName>Manufacturing</fullName>
+                <default>false</default>
+                <label>Manufacturing</label>
+            </value>
+            <value>
+                <fullName>Media/Entertainment</fullName>
+                <default>false</default>
+                <label>Media/Entertainment</label>
+            </value>
+            <value>
+                <fullName>Medical Imaging/Life Sci instruments</fullName>
+                <default>false</default>
+                <label>Medical Imaging/Life Sci instruments</label>
+            </value>
+            <value>
+                <fullName>Oil &amp; Gas/Energy</fullName>
+                <default>false</default>
+                <label>Oil &amp; Gas/Energy</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Retail/Etail</fullName>
+                <default>false</default>
+                <label>Retail/Etail</label>
+            </value>
+            <value>
+                <fullName>Supercomputing</fullName>
+                <default>false</default>
+                <label>Supercomputing</label>
+            </value>
+            <value>
+                <fullName>Telecommunications</fullName>
+                <default>false</default>
+                <label>Telecommunications</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

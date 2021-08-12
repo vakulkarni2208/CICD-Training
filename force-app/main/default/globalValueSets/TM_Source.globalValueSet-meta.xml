@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Google Play Store</fullName>
+        <default>false</default>
+        <label>Google Play Store</label>
+    </customValue>
+    <customValue>
+        <fullName>iTunes Store</fullName>
+        <default>false</default>
+        <label>iTunes Store</label>
+    </customValue>
+    <customValue>
+        <fullName>Amazon App Store</fullName>
+        <default>false</default>
+        <label>Amazon App Store</label>
+    </customValue>
+    <customValue>
+        <fullName>Gaming Website</fullName>
+        <default>false</default>
+        <label>Gaming Website</label>
+    </customValue>
+    <customValue>
+        <fullName>Social Media</fullName>
+        <default>false</default>
+        <label>Social Media</label>
+    </customValue>
+    <customValue>
+        <fullName>Event</fullName>
+        <default>false</default>
+        <label>Event</label>
+    </customValue>
+    <customValue>
+        <fullName>Pulse Feed</fullName>
+        <default>false</default>
+        <label>Pulse Feed</label>
+    </customValue>
+    <customValue>
+        <fullName>Employee recommendation</fullName>
+        <default>false</default>
+        <label>Employee recommendation</label>
+    </customValue>
+    <customValue>
+        <fullName>Developer Lead</fullName>
+        <default>false</default>
+        <label>Developer Lead</label>
+    </customValue>
+    <customValue>
+        <fullName>NVIDIA Indie Spotlight</fullName>
+        <default>false</default>
+        <label>NVIDIA Indie Spotlight</label>
+    </customValue>
+    <description>Title Management : Source</description>
+    <masterLabel>TM : Source</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

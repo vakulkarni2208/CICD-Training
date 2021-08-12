@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RMA__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>SDS-2204</description>
+    <externalId>false</externalId>
+    <label>RMA</label>
+    <referenceTo>RMA__c</referenceTo>
+    <relationshipLabel>NVBugs</relationshipLabel>
+    <relationshipName>NVBugs</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

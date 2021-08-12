@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- The portal home page box name such as SALES TOOLS, MARKETING ASSEST --></help>
+    <label><!-- Portal Home Page Box Name --></label>
+    <name>Portal_Home_Page_Box_Name__c</name>
+</CustomFieldTranslation>

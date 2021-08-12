@@ -1,0 +1,875 @@
+<!--
+    2017.05.19 - VKULK- LOG A SUPPORT REQUEST validations & attachments
+    2018.08.17 - PJENA - Brainshark New UI - Increase iframe height
+    2019.06.22 - PJENA - add Brainshark iFrame attribute allowfullscreen for full screen
+    2019.11.11 - RKAMB - Added NFR SW License Request tab.
+    2020.01.09 - RKAMB - Added Entitlements link tab for SDS-1920
+    2021.01.31 - RKAMB - Added changes for SDS-2695
+-->
+<apex:page id="thePage" controller="NV_CustomerCommunityHomeController" standardStylesheets="true" showHeader="false" sidebar="false">
+
+    <head>
+        <apex:includeScript value="https://code.jquery.com/jquery-1.9.1.js" />
+        <apex:includeScript value="{!URLFOR($Resource.jquery_news_ticker, '/includes/jquery.ticker.js')}" />
+        <apex:includeScript value="{!URLFOR($Resource.Latest_Message_Ticker, '/includes/jquery.ticker.js')}" />
+        <apex:includeScript value="{!URLFOR($Resource.AngularJSFlowChart, '/Angular/js/angular.min.js')}" />
+        <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular-sanitize.js"></script>-->
+        <apex:includeScript value="{!URLFOR($Resource.AngularSanitize)}" />
+        <apex:includeScript value="{!URLFOR($Resource.Bootstrap, '/bootstrap-3.3.6-dist/js/bootstrap.min.js')}" />
+        <apex:stylesheet value="{!URLFOR($Resource.jquery_news_ticker, '/styles/portal-home.css')}" />
+        <apex:stylesheet value="{!URLFOR($Resource.jquery_news_ticker, '/styles/mainstyles.css')}" />
+        <apex:stylesheet value="{!URLFOR($Resource.jquery_news_ticker, '/styles/ticker-style.min.css')}" />
+        <apex:stylesheet value="{!URLFOR($Resource.Latest_Message_Ticker, '/styles/ticker-style.css')}" />
+        <apex:StyleSheet value="{!URLFOR($Resource.Bootstrap, '/bootstrap-3.3.6-dist/css/bootstrap.min.css')}" />
+
+        <style>
+            html,
+            body {
+                margin: 0;
+                padding: 0;
+                height: 100%;
+                font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+                font-size: 13px;
+                line-height: 18px;
+            }
+
+            [ng\:cloak],
+            [ng-cloak],
+            [data-ng-cloak],
+            [x-ng-cloak],
+            .ng-cloak,
+            .x-ng-cloak {
+                display: none !important;
+            }
+
+            div.boxCardBS {
+                width: 30%;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                text-align: left;
+                margin-top: 10px;
+                margin-right: 1.5%;
+                margin-left: 1.5%;
+                margin-bottom: 3%;
+                float: left;
+                border-radius: 5px;
+            }
+
+            div.boxHeaderBS {
+                background-color: #D3D3D3;
+                color: #404040;
+                padding: 10px;
+                font-size: 14px;
+                font-weight: bold;
+                border-radius: 5px 5px 0px 0px;
+            }
+
+            div.boxContentBS {
+                padding-top: 10px;
+                padding-left: 10px;
+                overflow: auto;
+                max-height: 160px;
+                min-height: 160px;
+            }
+
+            div.boxContentBSNVContacts {
+                overflow: auto;
+                max-height: 160px;
+                min-height: 160px;
+            }
+
+            .buttonNV {
+                background-color: #76B900;
+                display: inline-block;
+                padding: 6px 12px;
+                margin-bottom: 0;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 1.42857143;
+                text-align: center;
+                white-space: nowrap;
+                vertical-align: middle;
+                -ms-touch-action: manipulation;
+                touch-action: manipulation;
+                cursor: pointer;
+                -webkit-user-select: none;
+                moz-border-radius: 5px;
+                -webkit-border-radius: 5px;
+                /* Safari 5.1+, Chrome 10+ */
+                border-radius: 5px;
+                /* IE */
+            }
+
+            .button-successNV {
+                color: #fff;
+                background-color: #76B900;
+                border-color: #4cae4c;
+            }
+
+            .dashboard {
+                float: left;
+                margin: 5% 5% 5% 5%;
+            }
+
+            .container {
+                box-shadow: 0 0 30px black;
+                padding: 8px 15px 8px 15px;
+            }
+
+            .navbar {
+                margin-bottom: 10px;
+                background-color: #76B900;
+            }
+
+            div.tickerShort-box {
+                padding-left: 10px;
+            }
+
+            ul {
+                padding-left: 10px;
+            }
+        </style>
+        <script>
+            var $j = jQuery.noConflict();
+        </script>
+        <title>Customer Community Home Page</title>
+    </head>
+
+    <body ng-app="CustomerCommunityHomeApp">
+        <div class="fluid-container" ng-controller="CustomerCommunityHomeCtrl">
+            <div id="supportRequestModal" class="modal fade" role="dialog">
+                <div class="modal-dialog modal-lg">
+                    <form name="logASupportRequestForm" ng-submit="logASupportRequestFn()">
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h3 class="modal-title">
+                                    <b>
+                                        <font color="#393939">
+                                            <span class="glyphicon glyphicon-envelope"></span> {!$Label.COMM_CP_VF_EMAIL_Log_a_Support_Request}</font>
+                                    </b>
+                                </h3>
+                            </div>
+                            <div class="modal-body">
+                                <apex:pageMessages />
+                                <fieldset class="form-group">
+                                    <label for="contentTypeId">
+                                        <b>{!$Label.COMM_CP_VF_EMAIL_Competency}&nbsp;
+                                            <span style="color:red;">*</span>
+                                        </b>
+                                    </label>
+                                    <!-- ng-options="contentType.label for contentType in logASupportRequest.portalContentTypes track by contentType.value" -->
+                                    <select class="form-control" name="LSRcompetency" id="contentTypeId" ng-model="logASupportRequest.selectedLPCompetency" ng-options="contentType.label for contentType in logASupportRequest.portalContentTypes track by contentType.value"
+                                        required="true">
+                                        <!--<option ng-repeat="contentType in logASupportRequest.portalContentTypes" value="{{contentType.value}}">{{contentType.label}}</option> -->
+                                    </select>
+                                </fieldset>
+                                <fieldset class="form-group">
+                                    <label for="cname">
+                                        <b>{!$Label.COMM_CP_VF_EMAIL_Company_Name}</b>
+                                    </label>
+                                    <input class="form-control" id="cname" type="text" ng-model="logASupportRequest.contact.AccountName" disabled="true" />
+                                </fieldset>
+                                <fieldset class="form-group">
+                                    <label for="conname">
+                                        <b>{!$Label.COMM_CP_VF_EMAIL_Contact_Name}</b>
+                                    </label>
+                                    <input class="form-control" id="conname" type="text" ng-model="logASupportRequest.contact.FirstName" disabled="true" />
+                                </fieldset>
+                                <fieldset class="form-group">
+                                    <label for="emailid">
+                                        <b>{!$Label.COMM_CP_VF_EMAIL_Contact_Email_Address}</b>
+                                    </label>
+                                    <input class="form-control" id="emailid" type="text" ng-model="logASupportRequest.contact.Email" disabled="true" />
+                                </fieldset>
+                                <fieldset class="form-group">
+                                    <label for="phoneId1">
+                                        <b>{!$Label.COMM_CP_VF_EMAIL_Contact_Phone_Number}&nbsp;
+                                            <span style="color:red;">*</span>
+                                        </b>
+                                    </label>
+                                    <input type="text" class="form-control" name="phone" ng-model="logASupportRequest.contact.Phone" required="true" minlength="10"
+                                        id="phoneId1" ng-if="logASupportRequest.contact.MobilePhone == ''" />
+                                    <input class="form-control" id="phoneId2" type="text" ng-model="logASupportRequest.contact.MobilePhone" ng-if="logASupportRequest.contact.MobilePhone != ''"
+                                        disabled="true" />
+                                </fieldset>
+                                <fieldset class="form-group">
+                                    <label for="shortDescId">
+                                        <b>{!$Label.COMM_CP_VF_EMAIL_Short_Desc}&nbsp;
+                                            <span style="color:red;">*</span>
+                                        </b>
+                                    </label>
+                                    <input type="text" class="form-control" id="shortDescId" ng-model="logASupportRequest.problemType" name="shortDesc" required="true"
+                                        width="80%" ng-maxlength="45" />
+                                </fieldset>
+                                <fieldset class="form-group">
+                                    <label for="descId">
+                                        <b>{!$Label.COMM_CP_VF_EMAIL_Problem_Desc}&nbsp;
+                                            <span style="color:red;">*</span>
+                                        </b>
+                                    </label>
+                                    <textarea class="form-control" ng-model="logASupportRequest.problemDescription" name="problemDesc" required="true" id="descId"
+                                        height="100px" width="80%" />
+                                </fieldset>
+                                <fieldset class="form-group">
+                                    <label for="stepsId">
+                                        <b>{!$Label.COMM_CP_VF_EMAIL_Steps_to_Reproduce}&nbsp;
+                                            <span style="color:red;">*</span>
+                                        </b>
+                                    </label>
+                                    <textarea class="form-control" ng-model="logASupportRequest.stepToReproduce" name="stepsToReproduce" required="true" id="stepsId"
+                                        height="100px" width="80%" />
+                                </fieldset>
+                                <fieldset class="form-group">
+                                    <label for="supportDocsId">
+                                        <b>{!$Label.COMM_CP_VF_EMAIL_Attach_Support_Docs}</b>
+                                    </label>
+                                    <input type="file" id="supportDocsId" class="form-control-file" fileread="logASupportRequest.FileBody" />
+                                    <small class="text-muted">{!$Label.COMM_CP_VF_EMAIL_Attach_Support_Docs_Example}</small>
+                                </fieldset>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn pull-left btn-default" ng-disabled="isLSRInvalid()" type="submit">{!$Label.COMM_CP_VF_EMAIL_Send}</button>
+                                <button type="button" class="btn btn-danger btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- Modal -->
+            <div id="askAQuestionModal" class="modal fade" role="dialog">
+                <div class="modal-dialog modal-lg">
+                    <form name="askAQuestionForm" ng-submit="askAQuestionFn()">
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title">{!$Label.COMM_CP_VF_EMAIL_Ask_a_Question}</h4>
+                            </div>
+                            <div class="modal-body">
+                                <!-- ASK A QUESTION POP UP -->
+                                <apex:pageMessages />
+                                <fieldset class="form-group">
+                                    <label for="contentTypeId1">
+                                        <b>{!$Label.COMM_CP_VF_EMAIL_Competency}&nbsp;
+                                            <span style="color:red;">*</span>
+                                        </b>
+                                    </label>
+                                    <!-- ng-options="contentType.label for contentType in askAQuestion.portalContentTypes track by contentType.value"-->
+                                    <select class="form-control" name="AAQcompetency" id="contentTypeId1" ng-model="askAQuestion.selectedLPCompetency" ng-options="contentType.label for contentType in askAQuestion.portalContentTypes track by contentType.value"
+                                        required="true">
+                                        <!-- <option ng-repeat="contentType in askAQuestion.portalContentTypes" value="{{contentType.value}}">{{contentType.label}}</option> -->
+                                    </select>
+                                </fieldset>
+                                <fieldset class="form-group">
+                                    <label for="emailSubjectId">
+                                        <b>{!$Label.COMM_CP_VF_EMAIL_Subject}&nbsp;
+                                            <span style="color:red;">*</span>
+                                        </b>
+                                    </label>
+                                    <input class="form-control" name="emailSubject" id="emailSubjectId" type="text" ng-model="askAQuestion.emailSubject" required="true"
+                                    />
+                                </fieldset>
+                                <fieldset class="form-group">
+                                    <label for="emailBodyId">
+                                        <b>{!$Label.COMM_CP_VF_EMAIL_Body}&nbsp;
+                                            <span style="color:red;">*</span>
+                                        </b>
+                                    </label>
+                                    <textarea class="form-control" name="emailBody" ng-model="askAQuestion.emailBody" required="true" id="emailBodyId" rows="10"
+                                        width="80%" />
+                                </fieldset>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn pull-left btn-default" ng-disabled="isAAQInvalid()" type="submit">{!$Label.COMM_CP_VF_EMAIL_Send}</button>
+                                <button type="button" class="btn btn-danger btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div id="container">
+                <div id="content" class="ng-cloak">
+                    <!-- Row1.
+                        LOGO, Welcome First Name and Last Name, Logout, 
+                        NVIDIA PARTNER PORTAL Text, MDF PROJECTS, HOME 
+                        -->
+                    <div style="" id="box">
+                        <div class="mainBody" id="nvidiaHeader">
+                            <div id="nvLogo" style="padding-top:25px;padding-bottom:15px;padding-left:15px;display:inline-block;width:57%;white-space: nowrap;">
+                                <img id="nvidiaLogo" src="{!$Resource.nvidia_logo}" />
+                            </div>
+                            <div style="text-align:right;display:inline-block;white-space: nowrap;width:40%;">
+                                <span style="font-size:13px;text-decoration:none;color:#FFFFFF;font-weight:bold">{!$Label.COMM_CP_VF_Welcome} {!$User.FirstName} {!$User.LastName}</span>
+                                <br />
+                                <apex:outputLink value="{!$Label.COMM_IDM_LandingPage_URL}" rendered="{!NOT(ISPICKVAL($User.UserType,'Guest'))}" style="font-size:13px;text-decoration:none;color:#FFFFFF;font-weight:bold">{!$Label.COMM_IDM_LandingPage_DisplayText}&nbsp;</apex:outputLink>
+                                <br />
+                                <apex:outputLink value="{!$Site.Prefix}/secur/logout.jsp" rendered="{!NOT(ISPICKVAL($User.UserType,'Guest'))}" style="font-size:13px;text-decoration:none;color:#FFFFFF;font-weight:bold">{!$Label.site.logout}&nbsp;</apex:outputLink>
+                            </div>
+                        </div>
+                        <div>
+                            <nav class="navbar navbar-default" style="vertical-align:middle;">
+                                <div class="container-fluid">
+                                    <div ng-if="objBoolWrapper.isTrainingOnlyUser != 'true'" class="navbar-header">
+                                        <h2>
+                                            <span style="line-height:160%; font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif; color:#FFFFFF;">{!$Label.COMM_CP_VF_NVIDIA_Partner_Portal}</span>
+                                        </h2>
+                                    </div>
+                                    <div ng-if="objBoolWrapper.isTrainingOnlyUser == 'true'" class="navbar-header">
+                                        <h2>                                            
+                                            <span style="line-height:160%; font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif; color:#FFFFFF;">{!$Label.COMM_CP_VF_NVIDIA_Training_Portal}</span>
+                                        </h2>
+                                    </div>
+                                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                        <ul class="nav navbar-nav navbar-right">
+                                            <li ng-if="objBoolWrapper.isPOSUser == 'true'">
+                                                <div style="margin-top:15px;">
+                                                    <a href="/apex/NV_UploadPOSProgressBar" style="color:#FFFFFF;" onclick="window.open(this.href,'_blank'); return false;">
+                                                        POS Submission</a>
+                                                </div>
+                                            </li>
+                                            <li ng-if="objBoolWrapper.isEntitlementsUser == 'true'">
+                                                <div style="margin-top:15px;">
+                                                    <a href="{!entitlementTabURL}" style="color:#FFFFFF;" onclick="window.open(this.href,'_blank'); return false;">Entitlements</a>
+                                                </div>
+                                            </li>
+                                            <li ng-if="objBoolWrapper.isNFRUser == 'true'">
+                                                <div style="margin-top:15px;">
+                                                    <a href="/apex/NPN_DemoUnitRequest" style="color:#FFFFFF;" onclick="window.open(this.href,'_blank'); return false;">NFR SW License Request</a>
+                                                </div>
+                                            </li>
+                                            <li ng-if="objBoolWrapper.isMDFV2User == 'true'">
+                                                <div style="margin-top:15px;">
+                                                    <a href="/a08/o" style="color:#FFFFFF;" onclick="window.open(this.href,'_blank','width=1000, height=800'); return false;">{!$Label.COMM_CP_VF_MDF_Projects}</a>
+                                                </div>
+                                            </li>
+                                            <li ng-if="objBoolWrapper.isMDFV3User == 'true'">
+                                                <div style="margin-top:15px;">
+                                                    <a href="/apex/COMM_MDF_LandingPage" style="color:#FFFFFF;" onclick="window.open(this.href,'_blank'); return false;">{!$Label.COMM_CP_MDFV3_COMMUNITY_NAME}</a>
+                                                </div>
+                                            </li>
+                                            <li class="active">
+                                                <a href="#" style="color:#000000;background-color:#FFFFFF;">{!$Label.COMM_CP_VF_Home}</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                    <div id="idoutpnlhome">
+                        <!-- Row3.  Elite Banner, NVIDIA News, Learning Locker in a single table-->
+                        <!-- Banner-->
+                        <div id="rightContent" class="fullWidth">
+                            <!-- ---------Begin: Show Elite Portal banner for EMEAI Training Users only --------- -->
+                            <div ng-if="objBoolWrapper.isTrainingOnlyUser == 'true'">
+                                <div style="background-image: url('{!$Resource.NPN_Training_Portal_Header}'); background-size:100% 100%; background-repeat: no-repeat; width:100%; height:183px"></div>
+                            </div>
+                            <div ng-if="objBoolWrapper.isNVEPUser != 'true' && objBoolWrapper.isTrainingOnlyUser != 'true'">
+                                <div style="background-image: url('{!$Resource.NPNCommunityPortalHeader}'); background-size:100% 100%; background-repeat: no-repeat; width:100%; height:213px"></div>
+                            </div>
+                            <div ng-if="objBoolWrapper.isNVEPUser == 'true'">
+                                <div style="background-image: url('{!$Resource.NV_PP_Elite_Top_Banner}'); background-repeat: no-repeat; background-size:100% 100%; width:100%; height:183px"></div>
+                            </div>
+                            <!-- ---------End: Show Elite Portal banner for EMEAI Training Users only --------- -->
+                        </div>
+                        <div style="clear:both">
+                            <div ng-if="objBoolWrapper.isTrainingOnlyUser != 'true'">
+                            <div ng-if="objBoolWrapper.isNVEPUser != 'true'">
+                                <div id="rightContent" class="fullWidth">
+                                    <div class="pf--divider"></div>
+                                </div>
+                                <!-- NVIDIA News and Marketing Assets/Sales Tools and NV Contacts-->
+                                <!-- NVIDIA NEWS -->
+                                <c:NV_cmpCustomerCommunityLiteNewsTicker title="" debug="false" feedURL="http://feeds.feedburner.com/nvidiablog" />
+                                <!--LATEST MESSAGES -->
+                                <c:NV_cmpCustomerCommunityLatestMessages />
+                                <div ng-repeat="objPortalParent in lstParentPresentationWrapper">
+                                    <div ng-if="objPortalParent.presentation_Type == 'SALES TOOLS' || objPortalParent.presentation_Type=='MARKETING ASSETS' || objPortalParent.presentation_Type=='NVIDIA CONTACTS'">
+                                        <div class="boxCardBS">
+                                            <div class="boxHeaderBS">
+                                                &nbsp;&nbsp;{{objPortalParent.presentation_Label}}
+                                            </div>
+                                            <div class="boxContentBS" style="font-size:12px;">
+                                                <apex:variable var="count" value="{!0}" />
+                                                <div ng-if="objPortalParent.presentation_Type == 'NVIDIA CONTACTS'">
+                                                    <div ng-repeat="nvConProdwise in strNVContacts">
+                                                        <b>
+                                                            <div align="left">
+                                                                <font color="#76b900">{{nvConProdwise.productType}}</font>
+                                                            </div>
+                                                        </b>
+                                                        <table width="100%" border="0">
+                                                            <apex:variable var="count" value="{!count+1}" />
+                                                            <tr ng-repeat="nvCon in nvConProdwise.lstNVIDIAContactsWrapper">
+                                                                <td>
+                                                                    <span ng-if="nvCon.contentType != 'Community'">
+                                                                        <b>
+                                                                            <i>
+                                                                                <div align="left" style="margin-top:3px;">{{nvCon.subProgram}}</div>
+                                                                            </i>
+                                                                        </b>
+                                                                        <b>
+                                                                            <i>
+                                                                                <div align="left" style="margin-top:5px;">{{nvCon.contentType}}</div>
+                                                                            </i>
+                                                                        </b>
+                                                                    </span>
+
+                                                                    <span style="margin-top:5px; display:inline-block;">
+                                                                        <font color="#393939">{{nvCon.Sales_Manager_Name}} {{(nvCon.SalesManager_Title1
+                                                                            != null &amp;&amp; nvCon.Sales_Manager_Name !=
+                                                                            null) ? '-' : ''}}</font>
+                                                                        <b>
+                                                                            <font color="#76b900">{{nvCon.SalesManager_Title1}}</font>
+                                                                        </b>
+                                                                        <br/>
+                                                                        <a href="mailto:{{nvCon.Sales_Manager_Email}}">
+                                                                            <font color="#393939">{{nvCon.Sales_Manager_Email}}</font>
+                                                                        </a>&nbsp;{{nvCon.Sales_Manager_Contact_Number != null
+                                                                        &amp;&amp; nvCon.Sales_Manager_Email!= null?'|':''}}&nbsp;{{nvCon.Sales_Manager_Contact_Number}}
+                                                                        <br/>
+                                                                    </span>
+
+                                                                    <span ng-if="nvCon.Marketing_Manager_Name!=null" style="margin-top:5px;display:inline-block;">
+                                                                        <font color="#393939">{{nvCon.Marketing_Manager_Name}} {{((nvCon.MarketingManager_Title2!=
+                                                                            null &amp;&amp; nvCon.Marketing_Manager_Name
+                                                                            != null)?'-':'')}}</font>
+                                                                        <b>
+                                                                            <font color="#76b900">{{nvCon.MarketingManager_Title2}}</font>
+                                                                        </b>
+                                                                        <br/>
+                                                                        <a href="mailto:{{nvCon.Marketing_Manager_Email}}">
+                                                                            <font color="#393939">{{nvCon.Marketing_Manager_Email}}</font>
+                                                                        </a>&nbsp;{{((nvCon.Marketing_Manager_Contact_Number!=
+                                                                        null &amp;&amp; nvCon.Marketing_Manager_Email !=
+                                                                        null)?'|':'')}}&nbsp;{{nvCon.Marketing_Manager_Contact_Number}}
+                                                                        <br/>
+                                                                    </span>
+
+                                                                    <span ng-if="nvCon.Support_Manager_Name!=null" style="margin-top:5px;display:inline-block;">
+                                                                        <font color="#393939">{{nvCon.Support_Manager_Name}} {{((nvCon.SupportManager_Title3
+                                                                            != null &amp;&amp; nvCon.Support_Manager_Name
+                                                                            != null)?'-':'')}}</font>
+                                                                        <b>
+                                                                            <font color="#76b900">{{nvCon.SupportManager_Title3}}</font>
+                                                                        </b>
+                                                                        <br/>
+                                                                        <a href="mailto:{{nvCon.Support_Manager_Email}}">
+                                                                            <font color="#393939">{{nvCon.Support_Manager_Email}}</font>
+                                                                        </a>&nbsp;{{((nvCon.Support_Manager_Contact_Number!=
+                                                                        null &amp;&amp; nvCon.Support_Manager_Email != null)?'|':'')}}&nbsp;{{nvCon.Support_Manager_Contact_Number}}
+                                                                        <br/>
+                                                                    </span>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                        <div ng-if="strNVContacts.length!=count">
+                                                            <br />
+                                                            <hr/>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Marketing Assets & Sales Tools FOR COMMUNITY USERS: Governed by Permission Sets-->
+                                                <div ng-if="objPortalParent.presentation_Type == 'SALES TOOLS' || objPortalParent.presentation_Type == 'MARKETING ASSETS'">
+                                                    <div ng-repeat="objPortalChild in objPortalParent.lstW">
+                                                        <table border="0" width="100%" style="background-color:F3F3F3">
+                                                            <tr>
+                                                                <td align="center">
+                                                                    <!-- Commented below line for SDS-2695 by Rajat-->
+                                                                    <!--<a href="{{objPortalChild.presentation_URL}}" onclick="window.open(this.href,'_blank','width=1000, height=1000, scrollbars=1'); return false;">-->
+                                                                        <a href="{{objPortalChild.presentation_URL}}" target="_blank">
+                                                                        <img style="border: none; outline: none;" src="{{objPortalChild.image_URL}}" height="150" width="260" />
+                                                                    </a>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- NPN RESOURCES HEADER And BOXES-->
+
+                                <div ng-if="objBoolWrapper.isPortalLiteUser == 'true' || objBoolWrapper.isInceptionPartnerUser == 'true'">
+                                    <div class="tickerShort-box">
+                                        {!$Label.COMM_CP_VF_NPN_Resources}
+                                    </div>
+                                    <!-- NPN RESOURCES BOXES-->
+                                    <div style="clear:both;">
+                                        <div ng-repeat="objPortalParent in lstParentPresentationWrapper">
+                                            <div style="text-align:left;" ng-if="objPortalParent.presentation_Type == 'NPN RESOURCE-LOGASUPPORTREQUEST' && objBoolWrapper.isPortalLiteUser == 'true'">
+                                                <div data-toggle="modal" data-target="#supportRequestModal">
+                                                    <div class="rcorners8 ">
+                                                        <div ng-repeat="objPortalChild in objPortalParent.lstW">
+                                                            <div style="padding-left:10px;text-align:left;" data-trigger="hover" data-html="true" data-container="body" data-toggle="popover"
+                                                                data-placement="bottom" data-content="{{objPortalChild.presentation_text}}">
+                                                                <a href="#">{{objPortalParent.presentation_Label}}
+                                                                    <span> ></span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div style="text-align:left;" ng-if="objPortalParent.presentation_Type == 'NPN RESOURCE-LOGASUPPORTREQUEST' && objBoolWrapper.isInceptionPartnerUser == 'true'">
+                                                <div class="rcorners8">
+                                                    <div ng-repeat="objPortalChild in objPortalParent.lstW">
+                                                        <div style="padding-left:10px;text-align:left;" data-trigger="hover" data-html="true" data-container="body" data-toggle="popover"
+                                                            data-placement="bottom" data-content="{{objPortalChild.presentation_text}}">
+                                                            <a href="#">{{objPortalParent.presentation_Label}}
+                                                                <span> ></span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div ng-repeat="objPortalParent in lstParentPresentationWrapper">
+                                            <div style="text-align:left;" ng-if="objPortalParent.presentation_Type == 'NPN RESOURCE-RMA'">
+                                                <div class="rcorners8">
+                                                    <div ng-repeat="objPortalChild in objPortalParent.lstW">
+                                                        <div style="padding-left:10px;text-align:left;white-space:nowrap;" data-trigger="hover" data-html="true" data-container="body"
+                                                            data-toggle="popover" data-placement="bottom" data-content="{{objPortalChild.presentation_text}}">
+                                                            <a href="#">{{objPortalParent.presentation_Label}}
+                                                                <span> ></span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div ng-repeat="objPortalParent in lstParentPresentationWrapper">
+                                            <div style="text-align:left;" ng-if="objPortalParent.presentation_Type == 'NPN RESOURCE-GSNH'">
+                                                <div class="rcorners8">
+                                                    <div ng-repeat="objPortalChild in objPortalParent.lstW">
+                                                        <div style="padding-left:10px;text-align:left;" data-trigger="hover" data-html="true" data-container="body" data-toggle="popover"
+                                                            data-placement="bottom" data-content="{{objPortalChild.presentation_text}}">
+                                                            <a href="#">{{objPortalParent.presentation_Label}}
+                                                                <span> ></span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <!-- NVIDIA Learning Locker Header Text-->
+                        <div id="rightContent" class="fullWidth">
+                            <div class="pf--divider"></div>
+                        </div>
+                        <div class="tickerShort-box">
+                            {!$Label.COMM_CP_VF_NV_Learning_Locker}
+                        </div>
+                        <!-- NVIDIA Learning Locker IFRAME-->
+                        <div style=" border-left: 1px solid #575757;border-right: 1px solid #575757;border-bottom: 1px solid #575757; margin-bottom:10px;">
+                            <iframe allowfullscreen="true" src="{!brainshark_url}?username={!$User.Email}&fn={!$User.FirstName}&ln={!$User.LastName}&login_dir=nvidia&cid=32450&gids={!strGGGroups}&dest=%2Fbrainshark%2Flearning%2FmyLearning.asp%3Fui%3D507905"
+                                height="1000px;" frameborder="false" width="100%" scrolling="true" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <style type="text/css">
+        .myFormStyle {
+            background-color: white;
+        }
+
+        .pf--divider {
+            clear: both;
+        }
+
+        .rcorners8 {
+            border-radius: 5%;
+            background: #D3D3D3;
+            padding: 2px;
+            width: 31%;
+            height: 50px;
+            display: block;
+            position: relative;
+            overflow: hidden;
+            font-size: 16px;
+            text-align: center;
+            line-height: 50px;
+            margin-right: 1%;
+            margin-left: 1%;
+            float: left;
+        }
+
+        #content {
+            text-align: justify;
+        }
+
+        body a:hover {
+            color: #000000;
+        }
+
+        a {
+            color: #000000;
+        }
+
+        iframe {
+            border: inherit;
+        }
+
+        .popover {
+            max-width: 350px;
+            overflow: hidden;
+            margin-right: 1%;
+            margin-left: 1%;
+        }
+    </style>
+    <script>
+        var $j = jQuery.noConflict();
+        $j(document).ready(function () {
+
+            $j(".nav a").on("click", function () {
+                $j(".nav").find(".active").removeClass("active");
+                $j(this).parent().addClass("active");
+            });
+
+
+            $j('[data-toggle="popover"]').popover({ trigger: "manual", html: true, animation: false })
+                .on("mouseenter", function () {
+                    var _this = this;
+                    $j(this).popover("show");
+                    $j(".popover").on("mouseleave", function () {
+                        $j(_this).popover('hide');
+                    });
+                }).on("mouseleave", function () {
+                    var _this = this;
+                    setTimeout(function () {
+                        if (!$j(".popover:hover").length) {
+                            $j(_this).popover("hide");
+                        }
+                    }, 300);
+                });
+
+        });
+    </script>
+    <script> 
+        var lstContentTypes = []; 
+    </script>
+    <apex:repeat value="{!lstLPCompetencies}" var="contentType">
+        <script> 
+            lstContentTypes.push('{!contentType}'); 
+        </script>
+    </apex:repeat>
+    <script>                
+        var contentTypes = [];
+        for (var contentTypeItr = 0; contentTypeItr < lstContentTypes.length; contentTypeItr++) {
+            var contentType = { label: '', value: '' };
+            contentType.label = lstContentTypes[contentTypeItr];
+            if (lstContentTypes[contentTypeItr] != '--None--') {
+                contentType.value = lstContentTypes[contentTypeItr];
+            }
+            contentTypes.push(contentType);
+        }
+    </script>
+    <script>                     
+        function OpenPopupCenter(pageURL, title, w, h) {
+            var left = (screen.width - w) / 2;
+            var top = (screen.height - h) / 4;  // for 25% - devide by 4  |  for 33% - devide by 3
+            var targetWin = window.open(pageURL, title, 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width=' + w + ', height=' + h + ', top=' + top + ', left=' + left);
+        }
+
+        var app = angular.module('CustomerCommunityHomeApp', ['ngSanitize']);
+        app.controller('CustomerCommunityHomeCtrl', function ($scope) {
+
+            $scope.objBoolWrapper = {
+                isPortalLiteUser: '{!objBoolWrapper.isPortalLiteUser}',
+                isInceptionPartnerUser: '{!objBoolWrapper.isInceptionPartnerUser}',
+                isMDFV2User: '{!objBoolWrapper.isMDFV2User}',
+                isMDFV3User: '{!objBoolWrapper.isMDFV3User}',
+                isNVEPUser: '{!objBoolWrapper.isNVEPUser}',
+                isNPNCommunityUser: '{!objBoolWrapper.isNPNCommunityUser}',
+                isNFRUser: '{!objBoolWrapper.isNFRUser}',
+                isEntitlementsUser: '{!objBoolWrapper.isEntitlementsUser}',
+                isPOSUser: '{!objBoolWrapper.isPOSUser}',
+                isTrainingOnlyUser: '{!objBoolWrapper.isTrainingOnlyUser}'
+            }
+        
+            if ('{!strNVContacts}' != '') {
+                $scope.strNVContacts = JSON.parse('{!strNVContacts}');
+                if ($scope.strNVContacts != '') {
+                    $scope.strNVContacts[0].lstNVIDIAContactsWrapper.sort(
+                        function (a, b) {
+                            if (a.contentType < b.contentType) { return -1; } else { return 1; }
+                        }
+                    );
+                }
+            }
+            if ('{!strLstParentPresentationWrapper}' != '') {
+                $scope.lstParentPresentationWrapper = JSON.parse('{!strLstParentPresentationWrapper}');
+            }
+
+            $scope.isAAQInvalid = function () {
+                var askAQuestionForm = $scope.askAQuestionForm;
+                var valid = askAQuestionForm.$valid;
+                if (askAQuestionForm.emailSubject.$modelValue != null) {
+                    valid = valid && askAQuestionForm.emailSubject.$modelValue.trim().length > 0;
+                }
+                if (askAQuestionForm.emailBody.$modelValue != null) {
+                    valid = valid && askAQuestionForm.emailBody.$modelValue.trim().length > 0;
+                }
+                if (askAQuestionForm.AAQcompetency.$modelValue != null) {
+                    valid = valid && askAQuestionForm.AAQcompetency.$modelValue.value.trim().length > 0;
+                    valid = valid && !(askAQuestionForm.AAQcompetency.$modelValue.value.trim().indexOf("?") >= 0);
+                }
+                return !valid;
+            };
+
+            $scope.isLSRInvalid = function () {
+                var logASupportRequestForm = $scope.logASupportRequestForm;
+                var valid = logASupportRequestForm.$valid;
+                if (logASupportRequestForm.shortDesc.$modelValue != null) {
+                    valid = valid && logASupportRequestForm.shortDesc.$modelValue.trim().length > 0;
+                }
+                if (logASupportRequestForm.problemDesc.$modelValue != null) {
+                    valid = valid && logASupportRequestForm.problemDesc.$modelValue.trim().length > 0;
+                }
+                if (logASupportRequestForm.stepsToReproduce.$modelValue != null) {
+                    valid = valid && logASupportRequestForm.stepsToReproduce.$modelValue.trim().length > 0;
+                }
+                if (logASupportRequestForm.phone.$modelValue != null) {
+                    valid = valid && logASupportRequestForm.phone.$modelValue.trim().length > 0;
+                }
+                if (logASupportRequestForm.LSRcompetency.$modelValue != null) {
+                    valid = valid && logASupportRequestForm.LSRcompetency.$modelValue.value.trim().length > 0;
+                    valid = valid && !(logASupportRequestForm.LSRcompetency.$modelValue.value.trim().indexOf("?") >= 0);
+                }
+                return !valid;
+            }
+
+            $scope.logASupportRequest = {
+                contact: {
+                    FirstName: '{!JSENCODE(contactDetail.firstName)} {!JSENCODE(contactDetail.lastName)}',
+                    AccountName: '{!JSENCODE(contactDetail.Account.name)}',
+                    Email: '{!JSENCODE(contactEmail)}',
+                    Phone: '{!JSENCODE(contactPhone)}',
+                    MobilePhone: '{!JSENCODE(contactMobilePhone)}',
+                    Id: '{!JSENCODE(contactDetail.Id)}',
+                    AccountId: '{!JSENCODE(contactDetail.AccountId)}'
+                },
+                problemType: '{!problemType}',
+                problemDescription: '{!problemDescription}',
+                stepsToReproduce: '{!steptoReproduceProblem}',
+                selectedLPCompetency: '{!selectedLPCompetency}',
+                FileBody: '',
+                FileName: '',
+                portalContentTypes: contentTypes
+
+            };
+
+            $scope.logASupportRequestFn = function () {
+                console.log($scope.logASupportRequest);
+                Visualforce.remoting.Manager.invokeAction(
+                    '{!$RemoteAction.NV_CustomerCommunityHomeController.sendEmail_LogASupportRequest}',
+                    JSON.stringify($scope.logASupportRequest),
+                    function (result, event) {
+                        if (event.status) {
+                            var emailSuccessString = "{!JSENCODE($Label.COMM_CP_VF_EMAIL_MSG_Send_Success)}".replace(/(\r\n|\n|\r)/gm, "<br>");
+                            alert(emailSuccessString);
+                        } else {
+                            var emailFailureString = "{!JSENCODE($Label.COMM_CP_VF_EMAIL_MSG_Send_Failure)}".replace(/(\r\n|\n|\r)/gm, "<br>");
+                            alert(emailFailureString);
+                        }
+                    },
+                    { escape: true }
+                );
+                $j('#supportRequestModal').modal('hide');
+                $scope.logASupportRequest = {
+                    contact: {
+                        FirstName: '{!JSENCODE(contactDetail.firstName)} {!JSENCODE(contactDetail.lastName)}',
+                        AccountName: '{!JSENCODE(contactDetail.Account.name)}',
+                        Email: '{!JSENCODE(contactEmail)}',
+                        Phone: '{!JSENCODE(contactPhone)}',
+                        MobilePhone: '{!JSENCODE(contactMobilePhone)}',
+                        Id: '{!JSENCODE(contactDetail.Id)}',
+                        AccountId: '{!JSENCODE(contactDetail.AccountId)}'
+                    },
+                    problemType: '{!problemType}',
+                    problemDescription: '{!problemDescription}',
+                    stepsToReproduce: '{!steptoReproduceProblem}',
+                    selectedLPCompetency: '{!selectedLPCompetency}',
+                    FileBody: '',
+                    FileName: '',
+                    portalContentTypes: contentTypes
+
+                };
+            }
+
+            $scope.askAQuestion = {
+                contact: {
+                    FirstName: '{!JSENCODE(contactDetail.firstName)} {!JSENCODE(contactDetail.lastName)}',
+                    AccountName: '{!JSENCODE(contactDetail.Account.name)}',
+                    Email: '{!JSENCODE(contactEmail)}',
+                    Phone: '{!JSENCODE(contactPhone)}',
+                    MobilePhone: '{!JSENCODE(contactMobilePhone)}',
+                    Id: '{!JSENCODE(contactDetail.Id)}',
+                    AccountId: '{!JSENCODE(contactDetail.AccountId)}'
+                },
+                selectedLPCompetency: '{!selectedLPCompetency}',
+                portalContentTypes: contentTypes
+            }
+
+            $scope.askAQuestionFn = function () {
+                console.log($scope.askAQuestion);
+                Visualforce.remoting.Manager.invokeAction(
+                    '{!$RemoteAction.NV_CustomerCommunityHomeController.sendEmail_askAQuestion}',
+                    JSON.stringify($scope.askAQuestion),
+                    function (result, event) {
+                        if (event.status) {
+                            var emailSuccessString = "{!JSENCODE($Label.COMM_CP_VF_EMAIL_MSG_Send_Success)}".replace(/(\r\n|\n|\r)/gm, "<br>");
+                            alert(emailSuccessString);
+                        } else {
+                            var emailFailureString = "{!JSENCODE($Label.COMM_CP_VF_EMAIL_MSG_Send_Failure)}".replace(/(\r\n|\n|\r)/gm, "<br>");
+                            alert(emailFailureString);
+                        }
+                    },
+                    { escape: true }
+                );
+                $j('#askAQuestionModal').modal('hide');
+                $scope.askAQuestion = {
+                    contact: {
+                        FirstName: '{!JSENCODE(contactDetail.firstName)} {!JSENCODE(contactDetail.lastName)}',
+                        AccountName: '{!JSENCODE(contactDetail.Account.name)}',
+                        Email: '{!JSENCODE(contactEmail)}',
+                        Phone: '{!JSENCODE(contactPhone)}',
+                        MobilePhone: '{!JSENCODE(contactMobilePhone)}',
+                        Id: '{!JSENCODE(contactDetail.Id)}',
+                        AccountId: '{!JSENCODE(contactDetail.AccountId)}'
+                    },
+                    portalContentTypes: contentTypes,
+                    emailBody: '',
+                    emailSubject: '',
+                    selectedLPCompetency: ''
+                };
+            }
+        }).directive("fileread", [function () {
+            return {
+                scope: {
+                    fileread: "="
+                },
+                link: function (scope, element, attributes) {
+                    element.bind("change", function (changeEvent) {
+                        var reader = new FileReader();
+                        reader.onload = function (loadEvent) {
+                            scope.$apply(function () {
+                                scope.fileread = { 'body': loadEvent.target.result, 'name': changeEvent.target.files[0].name };
+                                console.log(scope.fileread);
+                            });
+                        }
+                        reader.readAsDataURL(changeEvent.target.files[0]);
+                    });
+                }
+            }
+        }]);
+    </script>
+</apex:page>

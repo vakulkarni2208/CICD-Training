@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Presentation Type --></label>
+    <name>Presentation_Type__c</name>
+    <picklistValues>
+        <masterLabel>FEATURED CONTENT</masterLabel>
+        <translation><!-- FEATURED CONTENT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GETTING STARTED</masterLabel>
+        <translation><!-- GETTING STARTED --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LOG A SUPPORT REQUEST</masterLabel>
+        <translation><!-- LOG A SUPPORT REQUEST --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MARKETING ASSETS</masterLabel>
+        <translation><!-- MARKETING ASSETS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN RESOURCE-GSNH</masterLabel>
+        <translation><!-- NPN RESOURCE-GSNH --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN RESOURCE-LOGASUPPORTREQUEST</masterLabel>
+        <translation><!-- NPN RESOURCE-LOGASUPPORTREQUEST --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN RESOURCE-RMA</masterLabel>
+        <translation><!-- NPN RESOURCE-RMA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NVIDIA CONTACTS</masterLabel>
+        <translation><!-- NVIDIA CONTACTS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SALES TOOLS</masterLabel>
+        <translation><!-- SALES TOOLS --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Restrict_Edit_to_Inactive_Accounts</fullName>
+    <active>true</active>
+    <description>Restrict Edit to Inactive Accounts  (Exception: Data Admin, Sales Profile - Partner Admin, Sys Admin)</description>
+    <errorConditionFormula>AND(Inactive__c = True, $Profile.Name &lt;&gt; &apos;System Administrator&apos;, $Profile.Name &lt;&gt; &apos;Data Administrator&apos;, $Profile.Name &lt;&gt; &apos;Sales Profile - Partner Admin&apos;, $Profile.Name &lt;&gt; &apos;Marketo User Profile&apos;,
+$Profile.Name &lt;&gt; &apos;SVC SAP Integration&apos;,
+Not($Permission.CRM_Edit_Approved_Accounts),
+OR (RecordType.Name = &apos;New Customer Account&apos;,  RecordType.Name = &apos;NV Partner Program Account&apos;, RecordType.Name = &apos;NPN Account Registry&apos;, RecordType.Name = &apos;NPN Community Account&apos;) 
+)</errorConditionFormula>
+    <errorMessage>Inactive account cannot be modified. For assistance, click the &quot;Get Help&quot; button located on the top right of the page.</errorMessage>
+</ValidationRule>

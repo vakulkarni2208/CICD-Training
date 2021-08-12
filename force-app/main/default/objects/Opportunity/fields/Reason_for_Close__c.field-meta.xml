@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reason_for_Close__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Select best reason for not winning deal</inlineHelpText>
+    <label>Reason for Close/Lost?</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>StageName</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Bad Experience w/Support</fullName>
+                <default>false</default>
+                <label>Bad Experience w/Support</label>
+            </value>
+            <value>
+                <fullName>Budget</fullName>
+                <default>false</default>
+                <label>Budget</label>
+            </value>
+            <value>
+                <fullName>Channel Issue</fullName>
+                <default>false</default>
+                <label>Channel Issue</label>
+            </value>
+            <value>
+                <fullName>Did Not Deploy Solution</fullName>
+                <default>false</default>
+                <label>Did Not Deploy Solution</label>
+            </value>
+            <value>
+                <fullName>EC Responded/Reason Unknown</fullName>
+                <default>false</default>
+                <label>EC Responded/Reason Unknown</label>
+            </value>
+            <value>
+                <fullName>Lost Contact with EC/VAR</fullName>
+                <default>false</default>
+                <label>Lost Contact with EC/VAR</label>
+            </value>
+            <value>
+                <fullName>No Longer Using Solution</fullName>
+                <default>false</default>
+                <label>No Longer Using Solution</label>
+            </value>
+            <value>
+                <fullName>No Response</fullName>
+                <default>false</default>
+                <label>No Response</label>
+            </value>
+            <value>
+                <fullName>No Response - EC never responded</fullName>
+                <default>false</default>
+                <label>No Response - EC never responded</label>
+            </value>
+            <value>
+                <fullName>No Response - VAR never got a response from the EC</fullName>
+                <default>false</default>
+                <label>No Response - VAR never got a response from the EC</label>
+            </value>
+            <value>
+                <fullName>No Response - VAR never responded</fullName>
+                <default>false</default>
+                <label>No Response - VAR never responded</label>
+            </value>
+            <value>
+                <fullName>Partial Renewal</fullName>
+                <default>false</default>
+                <label>Partial Renewal</label>
+            </value>
+            <value>
+                <fullName>Purchased New/Not Renewal</fullName>
+                <default>false</default>
+                <label>Purchased New/Not Renewal</label>
+            </value>
+            <value>
+                <fullName>Upgraded</fullName>
+                <default>false</default>
+                <label>Upgraded</label>
+            </value>
+            <value>
+                <fullName>Used in Dev/Research/EDU Enviro</fullName>
+                <default>false</default>
+                <label>Used in Dev/Research/EDU Enviro</label>
+            </value>
+            <value>
+                <fullName>Value/Price Perception</fullName>
+                <default>false</default>
+                <label>Value/Price Perception</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>Bad Experience w/Support</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>Budget</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>Channel Issue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>Did Not Deploy Solution</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>EC Responded/Reason Unknown</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>Lost Contact with EC/VAR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>No Longer Using Solution</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>No Response</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>No Response - EC never responded</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>No Response - VAR never got a response from the EC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>No Response - VAR never responded</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>Partial Renewal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>Purchased New/Not Renewal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>Upgraded</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>Used in Dev/Research/EDU Enviro</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <valueName>Value/Price Perception</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed Lost</controllingFieldValue>
+            <controllingFieldValue>Closed - Program Canceled</controllingFieldValue>
+            <controllingFieldValue>Closed - Other</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

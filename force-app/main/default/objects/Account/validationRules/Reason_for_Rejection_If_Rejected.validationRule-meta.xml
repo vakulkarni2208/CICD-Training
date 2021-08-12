@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reason_for_Rejection_If_Rejected</fullName>
+    <active>true</active>
+    <description>If you are setting the ‘Rejected’ checkbox to true then this is a required field</description>
+    <errorConditionFormula>AND((Rejected__c=TRUE), ISPICKVAL(Reason_for_Rejection__c,&quot;&quot;))</errorConditionFormula>
+    <errorDisplayField>Reason_for_Rejection__c</errorDisplayField>
+    <errorMessage>If you are setting the ‘Rejected’ checkbox to true then this is a required field</errorMessage>
+</ValidationRule>

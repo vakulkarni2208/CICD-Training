@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>It will help to set SLA_Text__c value on Case on the basis of  Milestone Name and Severity.</description>
+    <label>Milestone Time Setting</label>
+    <pluralLabel>Milestone Settings</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

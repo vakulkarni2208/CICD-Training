@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Enter the Quarter the meeting was held.  These meetings should be held on a quarterly basis. --></help>
+    <label><!-- Quarter --></label>
+    <name>Quarter__c</name>
+    <picklistValues>
+        <masterLabel>Q1</masterLabel>
+        <translation><!-- Q1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Q2</masterLabel>
+        <translation><!-- Q2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Q3</masterLabel>
+        <translation><!-- Q3 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Q4</masterLabel>
+        <translation><!-- Q4 --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

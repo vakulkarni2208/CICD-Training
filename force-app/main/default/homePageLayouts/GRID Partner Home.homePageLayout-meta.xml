@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<HomePageLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <narrowComponents>GRID Partner Portal Home</narrowComponents>
+    <narrowComponents>standard-StandardSearch</narrowComponents>
+    <narrowComponents>Getting Started</narrowComponents>
+    <narrowComponents>standard-CreateNew</narrowComponents>
+    <narrowComponents>standard-RecentItems</narrowComponents>
+    <wideComponents>GRID Welcome Home</wideComponents>
+</HomePageLayout>

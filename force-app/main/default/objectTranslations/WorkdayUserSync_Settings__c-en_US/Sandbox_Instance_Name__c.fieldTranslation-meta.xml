@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- It will be used to create the username extension.
+e.g., &quot;.sfdcstage1&quot;
+For Prod Instance, keep it blank. --></help>
+    <label><!-- Sandbox Instance Name --></label>
+    <name>Sandbox_Instance_Name__c</name>
+</CustomFieldTranslation>

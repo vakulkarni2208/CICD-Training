@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NSC_Managed_Quadro_Accounts</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ACCOUNT.ADDRESS1_CITY</columns>
+    <columns>ACCOUNT.ADDRESS1_STATE</columns>
+    <columns>ACCOUNT.ADDRESS1_COUNTRY</columns>
+    <columns>ACCOUNT.PHONE1</columns>
+    <columns>CORE.USERS.LAST_NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.TYPE</field>
+        <operation>contains</operation>
+        <value>NSC T50 Type</value>
+    </filters>
+    <label>NSC T50 Quadro Accounts</label>
+    <sharedTo>
+        <role>Administrator</role>
+        <role>SaleRepQuadro</role>
+        <role>SalesTeamLeadQuadro</role>
+    </sharedTo>
+</ListView>

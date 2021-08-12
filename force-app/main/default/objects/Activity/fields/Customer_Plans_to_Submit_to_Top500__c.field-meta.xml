@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Customer_Plans_to_Submit_to_Top500__c</fullName>
+    <externalId>false</externalId>
+    <label>Customer Plans to Submit to Top500</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Yes</fullName>
+                <default>false</default>
+                <label>Yes</label>
+            </value>
+            <value>
+                <fullName>No</fullName>
+                <default>false</default>
+                <label>No</label>
+            </value>
+            <value>
+                <fullName>Further Discussion Needed</fullName>
+                <default>false</default>
+                <label>Further Discussion Needed</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

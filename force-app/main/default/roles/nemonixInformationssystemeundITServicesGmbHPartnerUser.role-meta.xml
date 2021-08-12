@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>None</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>Nemonix Informationssysteme und IT Services GmbH Partner User</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>Nemonix Informationssysteme und IT Services GmbH Partner User</name>
+    <opportunityAccessLevel>None</opportunityAccessLevel>
+    <parentRole>EMEA_PBM_Sales</parentRole>
+</Role>

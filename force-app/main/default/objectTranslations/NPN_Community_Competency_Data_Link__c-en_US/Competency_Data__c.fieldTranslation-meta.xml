@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Competency Data --></label>
+    <name>Competency_Data__c</name>
+    <relationshipLabel><!-- NPN Community Competency Data Links --></relationshipLabel>
+</CustomFieldTranslation>

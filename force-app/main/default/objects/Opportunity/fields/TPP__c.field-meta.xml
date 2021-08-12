@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TPP__c</fullName>
+    <description>GPU&apos;s Technology
+RongTian Huihai
+Zanqi</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select the NPN Solution Provider/VAR for this Opportunity (if applicable)</inlineHelpText>
+    <label>NPN Solution Provider/VAR (Legacy)</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Not Applicable</fullName>
+                <default>false</default>
+                <label>Not Applicable</label>
+            </value>
+            <value>
+                <fullName>Advanced Clustering Technologies</fullName>
+                <default>false</default>
+                <label>Advanced Clustering Technologies</label>
+            </value>
+            <value>
+                <fullName>Alineos</fullName>
+                <default>false</default>
+                <label>Alineos</label>
+            </value>
+            <value>
+                <fullName>AMAX</fullName>
+                <default>false</default>
+                <label>AMAX</label>
+            </value>
+            <value>
+                <fullName>Armari</fullName>
+                <default>false</default>
+                <label>Armari</label>
+            </value>
+            <value>
+                <fullName>ASI Computer Technologies</fullName>
+                <default>false</default>
+                <label>ASI Computer Technologies</label>
+            </value>
+            <value>
+                <fullName>Avnet</fullName>
+                <default>false</default>
+                <label>Avnet</label>
+            </value>
+            <value>
+                <fullName>Azken Muga</fullName>
+                <default>false</default>
+                <label>Azken Muga</label>
+            </value>
+            <value>
+                <fullName>Boston Ltd UK</fullName>
+                <default>false</default>
+                <label>Boston Ltd UK</label>
+            </value>
+            <value>
+                <fullName>Braincon GmbH</fullName>
+                <default>false</default>
+                <label>Braincon GmbH</label>
+            </value>
+            <value>
+                <fullName>Burwood Group</fullName>
+                <default>false</default>
+                <label>Burwood Group</label>
+            </value>
+            <value>
+                <fullName>CADnetwork</fullName>
+                <default>false</default>
+                <label>CADnetwork</label>
+            </value>
+            <value>
+                <fullName>Carri</fullName>
+                <default>false</default>
+                <label>Carri</label>
+            </value>
+            <value>
+                <fullName>Chassis Plans</fullName>
+                <default>false</default>
+                <label>Chassis Plans</label>
+            </value>
+            <value>
+                <fullName>Cirrascale</fullName>
+                <default>false</default>
+                <label>Cirrascale</label>
+            </value>
+            <value>
+                <fullName>Clustervision</fullName>
+                <default>false</default>
+                <label>Clustervision</label>
+            </value>
+            <value>
+                <fullName>Colorado Engineering Inc.</fullName>
+                <default>false</default>
+                <label>Colorado Engineering Inc.</label>
+            </value>
+            <value>
+                <fullName>Colfax</fullName>
+                <default>false</default>
+                <label>Colfax</label>
+            </value>
+            <value>
+                <fullName>Computacenter (UK) Ltd</fullName>
+                <default>false</default>
+                <label>Computacenter (UK) Ltd</label>
+            </value>
+            <value>
+                <fullName>Concept Information Technologies</fullName>
+                <default>false</default>
+                <label>Concept Information Technologies</label>
+            </value>
+            <value>
+                <fullName>Curtiss Wright</fullName>
+                <default>false</default>
+                <label>Curtiss Wright</label>
+            </value>
+            <value>
+                <fullName>CRG Electronics</fullName>
+                <default>false</default>
+                <label>CRG Electronics</label>
+            </value>
+            <value>
+                <fullName>Dasher Technologies</fullName>
+                <default>false</default>
+                <label>Dasher Technologies</label>
+            </value>
+            <value>
+                <fullName>Delta Computer Products</fullName>
+                <default>false</default>
+                <label>Delta Computer Products</label>
+            </value>
+            <value>
+                <fullName>E4 Computer Engineering</fullName>
+                <default>false</default>
+                <label>E4 Computer Engineering</label>
+            </value>
+            <value>
+                <fullName>Echostream</fullName>
+                <default>false</default>
+                <label>Echostream</label>
+            </value>
+            <value>
+                <fullName>Exxact</fullName>
+                <default>false</default>
+                <label>Exxact</label>
+            </value>
+            <value>
+                <fullName>FluiDyna</fullName>
+                <default>false</default>
+                <label>FluiDyna</label>
+            </value>
+            <value>
+                <fullName>Flytech</fullName>
+                <default>false</default>
+                <label>Flytech</label>
+            </value>
+            <value>
+                <fullName>GIS Federal</fullName>
+                <default>false</default>
+                <label>GIS Federal</label>
+            </value>
+            <value>
+                <fullName>GPL Solutions</fullName>
+                <default>false</default>
+                <label>GPL Solutions</label>
+            </value>
+            <value>
+                <fullName>GPU Solution Technologies</fullName>
+                <default>false</default>
+                <label>GPU Solution Technologies</label>
+            </value>
+            <value>
+                <fullName>Granite Microsystems</fullName>
+                <default>false</default>
+                <label>Granite Microsystems</label>
+            </value>
+            <value>
+                <fullName>Intersystem</fullName>
+                <default>false</default>
+                <label>Intersystem</label>
+            </value>
+            <value>
+                <fullName>Koi Computer</fullName>
+                <default>false</default>
+                <label>Koi Computer</label>
+            </value>
+            <value>
+                <fullName>Leaders systems – Korea TPP</fullName>
+                <default>false</default>
+                <label>Leaders systems – Korea TPP</label>
+            </value>
+            <value>
+                <fullName>Locuz Enterprise Solutions</fullName>
+                <default>false</default>
+                <label>Locuz Enterprise Solutions</label>
+            </value>
+            <value>
+                <fullName>Meadowgate</fullName>
+                <default>false</default>
+                <label>Meadowgate</label>
+            </value>
+            <value>
+                <fullName>Megware</fullName>
+                <default>false</default>
+                <label>Megware</label>
+            </value>
+            <value>
+                <fullName>Micropoint Computers</fullName>
+                <default>false</default>
+                <label>Micropoint Computers</label>
+            </value>
+            <value>
+                <fullName>Microway</fullName>
+                <default>false</default>
+                <label>Microway</label>
+            </value>
+            <value>
+                <fullName>Netweb Technologies</fullName>
+                <default>false</default>
+                <label>Netweb Technologies</label>
+            </value>
+            <value>
+                <fullName>Nextron</fullName>
+                <default>false</default>
+                <label>Nextron</label>
+            </value>
+            <value>
+                <fullName>OCF PLC</fullName>
+                <default>false</default>
+                <label>OCF PLC</label>
+            </value>
+            <value>
+                <fullName>One Stop Systems</fullName>
+                <default>false</default>
+                <label>One Stop Systems</label>
+            </value>
+            <value>
+                <fullName>PCPC Direct</fullName>
+                <default>false</default>
+                <label>PCPC Direct</label>
+            </value>
+            <value>
+                <fullName>Penguin</fullName>
+                <default>false</default>
+                <label>Penguin</label>
+            </value>
+            <value>
+                <fullName>Rave Computer</fullName>
+                <default>false</default>
+                <label>Rave Computer</label>
+            </value>
+            <value>
+                <fullName>RongTian Huihai</fullName>
+                <default>false</default>
+                <label>RongTian Huihai</label>
+            </value>
+            <value>
+                <fullName>Scan Computer</fullName>
+                <default>false</default>
+                <label>Scan Computer</label>
+            </value>
+            <value>
+                <fullName>Seneca Data</fullName>
+                <default>false</default>
+                <label>Seneca Data</label>
+            </value>
+            <value>
+                <fullName>SGI</fullName>
+                <default>false</default>
+                <label>SGI</label>
+            </value>
+            <value>
+                <fullName>Silicon Mechanics</fullName>
+                <default>false</default>
+                <label>Silicon Mechanics</label>
+            </value>
+            <value>
+                <fullName>Super Cluster</fullName>
+                <default>false</default>
+                <label>Super Cluster</label>
+            </value>
+            <value>
+                <fullName>Sysgen</fullName>
+                <default>false</default>
+                <label>Sysgen</label>
+            </value>
+            <value>
+                <fullName>Teknon</fullName>
+                <default>false</default>
+                <label>Teknon</label>
+            </value>
+            <value>
+                <fullName>Themis</fullName>
+                <default>false</default>
+                <label>Themis</label>
+            </value>
+            <value>
+                <fullName>Transtec</fullName>
+                <default>false</default>
+                <label>Transtec</label>
+            </value>
+            <value>
+                <fullName>Trenton Systems</fullName>
+                <default>false</default>
+                <label>Trenton Systems</label>
+            </value>
+            <value>
+                <fullName>VAR Group S.p.A</fullName>
+                <default>false</default>
+                <label>VAR Group S.p.A</label>
+            </value>
+            <value>
+                <fullName>Viglen Limited</fullName>
+                <default>false</default>
+                <label>Viglen Limited</label>
+            </value>
+            <value>
+                <fullName>Workstation Specialists</fullName>
+                <default>false</default>
+                <label>Workstation Specialists</label>
+            </value>
+            <value>
+                <fullName>World Wide Technology (wwt)</fullName>
+                <default>false</default>
+                <label>World Wide Technology (wwt)</label>
+            </value>
+            <value>
+                <fullName>Xenon</fullName>
+                <default>false</default>
+                <label>Xenon</label>
+            </value>
+            <value>
+                <fullName>Zanqi</fullName>
+                <default>false</default>
+                <label>Zanqi</label>
+            </value>
+            <value>
+                <fullName>@Xi Computer Corporation</fullName>
+                <default>false</default>
+                <label>@Xi Computer Corporation</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

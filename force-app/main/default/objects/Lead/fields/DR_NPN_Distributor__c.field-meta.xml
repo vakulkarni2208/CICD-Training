@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DR_NPN_Distributor__c</fullName>
+    <description>Deal Reg : Distis</description>
+    <externalId>false</externalId>
+    <label>NPN Distributor</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>DR_Deal_Type__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Advanced Digital Network Distribution Gmbh</fullName>
+                <default>false</default>
+                <label>Advanced Digital Network Distribution Gmbh</label>
+            </value>
+            <value>
+                <fullName>Aptec Distribution FFZ LLC</fullName>
+                <default>false</default>
+                <label>Aptec Distribution FFZ LLC</label>
+            </value>
+            <value>
+                <fullName>Arrow Electronics</fullName>
+                <default>false</default>
+                <label>Arrow Electronics</label>
+            </value>
+            <value>
+                <fullName>Azwell Plus Co Ltd</fullName>
+                <default>false</default>
+                <label>Azwell Plus Co Ltd</label>
+            </value>
+            <value>
+                <fullName>BayNex</fullName>
+                <default>false</default>
+                <label>BayNex</label>
+            </value>
+            <value>
+                <fullName>Carahsoft Technology Corporation</fullName>
+                <default>false</default>
+                <label>Carahsoft Technology Corporation</label>
+            </value>
+            <value>
+                <fullName>C-Data Computer Ltd.</fullName>
+                <default>false</default>
+                <label>C-Data Computer Ltd.</label>
+            </value>
+            <value>
+                <fullName>Clavis Company (Macnica)</fullName>
+                <default>false</default>
+                <label>Clavis Company (Macnica)</label>
+            </value>
+            <value>
+                <fullName>Daebo Communication &amp; Systems</fullName>
+                <default>false</default>
+                <label>Daebo Communication &amp; Systems</label>
+            </value>
+            <value>
+                <fullName>Daou Data Corp</fullName>
+                <default>false</default>
+                <label>Daou Data Corp</label>
+            </value>
+            <value>
+                <fullName>Ingram Micro</fullName>
+                <default>false</default>
+                <label>Ingram Micro</label>
+            </value>
+            <value>
+                <fullName>Inspur</fullName>
+                <default>false</default>
+                <label>Inspur</label>
+            </value>
+            <value>
+                <fullName>Isolin Trade &amp; Invest Limited</fullName>
+                <default>false</default>
+                <label>Isolin Trade &amp; Invest Limited</label>
+            </value>
+            <value>
+                <fullName>Leadtek Research (Taiwan)</fullName>
+                <default>false</default>
+                <label>Leadtek Research (Taiwan)</label>
+            </value>
+            <value>
+                <fullName>PNY</fullName>
+                <default>false</default>
+                <label>PNY</label>
+            </value>
+            <value>
+                <fullName>Rashi Peripherals</fullName>
+                <default>false</default>
+                <label>Rashi Peripherals</label>
+            </value>
+            <value>
+                <fullName>Ryoyo Electro Corporation</fullName>
+                <default>false</default>
+                <label>Ryoyo Electro Corporation</label>
+            </value>
+            <value>
+                <fullName>ScanSource Brasil Distribuidora De</fullName>
+                <default>false</default>
+                <label>ScanSource Brasil Distribuidora De</label>
+            </value>
+            <value>
+                <fullName>Softbank Commerce &amp; Service Corp</fullName>
+                <default>false</default>
+                <label>Softbank Commerce &amp; Service Corp</label>
+            </value>
+            <value>
+                <fullName>Super Micro</fullName>
+                <default>false</default>
+                <label>Super Micro</label>
+            </value>
+            <value>
+                <fullName>Synnex</fullName>
+                <default>false</default>
+                <label>Synnex</label>
+            </value>
+            <value>
+                <fullName>Tech Data</fullName>
+                <default>false</default>
+                <label>Tech Data</label>
+            </value>
+            <value>
+                <fullName>Technology Joint Corporation (Elsa)</fullName>
+                <default>false</default>
+                <label>Technology Joint Corporation (Elsa)</label>
+            </value>
+            <value>
+                <fullName>VSTECS (Singapore) Pte. Ltd</fullName>
+                <default>false</default>
+                <label>VSTECS (Singapore) Pte. Ltd.</label>
+            </value>
+            <value>
+                <fullName>Zero One Tech Co Ltd</fullName>
+                <default>false</default>
+                <label>Zero One Tech Co Ltd</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>N/A</fullName>
+                <default>false</default>
+                <label>N/A</label>
+            </value>
+            <value>
+                <fullName>None at this time</fullName>
+                <default>false</default>
+                <label>None at this time</label>
+            </value>
+            <value>
+                <fullName>Dawning (Sugon)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Dawning (Sugon)</label>
+            </value>
+            <value>
+                <fullName>Elsa Japan Co Ltd</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Elsa Japan Co Ltd</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>DGX</controllingFieldValue>
+            <controllingFieldValue>vGPU</controllingFieldValue>
+            <controllingFieldValue>Parabricks</controllingFieldValue>
+            <valueName>Aptec Distribution FFZ LLC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DGX</controllingFieldValue>
+            <controllingFieldValue>vGPU</controllingFieldValue>
+            <controllingFieldValue>DLI</controllingFieldValue>
+            <controllingFieldValue>Parabricks</controllingFieldValue>
+            <valueName>Arrow Electronics</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DGX</controllingFieldValue>
+            <controllingFieldValue>vGPU</controllingFieldValue>
+            <valueName>Azwell Plus Co Ltd</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DGX</controllingFieldValue>
+            <controllingFieldValue>DLI</controllingFieldValue>
+            <controllingFieldValue>Parabricks</controllingFieldValue>
+            <valueName>BayNex</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DGX</controllingFieldValue>
+            <controllingFieldValue>vGPU</controllingFieldValue>
+            <controllingFieldValue>DLI</controllingFieldValue>
+            <controllingFieldValue>Parabricks</controllingFieldValue>
+            <valueName>Carahsoft Technology Corporation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DGX</controllingFieldValue>
+            <controllingFieldValue>vGPU</controllingFieldValue>
+            <controllingFieldValue>DLI</controllingFieldValue>
+            <controllingFieldValue>Parabricks</controllingFieldValue>
+            <valueName>C-Data Computer Ltd.</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DGX</controllingFieldValue>
+            <controllingFieldValue>vGPU</controllingFieldValue>
+            <controllingFieldValue>Parabricks</controllingFieldValue>
+            <valueName>Clavis Company (Macnica)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DGX</controllingFieldValue>
+            <valueName>Daebo Communication &amp; Systems</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DGX</controllingFieldValue>
+            <controllingFieldValue>vGPU</controllingFieldValue>
+            <controllingFieldValue>DLI</controllingFieldValue>
+            <controllingFieldValue>Parabricks</controllingFieldValue>
+            <valueName>Ingram Micro</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DGX</controllingFieldValue>
+            <valueName>Inspur</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DGX</controllingFieldValue>
+            <controllingFieldValue>vGPU</controllingFieldValue>
+            <controllingFieldValue>DLI</controllingFieldValue>
+            <controllingFieldValue>Parabricks</controllingFieldValue>
+            <valueName>Isolin Trade &amp; Invest Limited</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DGX</controllingFieldValue>
+            <controllingFieldValue>vGPU</controllingFieldValue>
+            <valueName>Leadtek Research (Taiwan)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DGX</controllingFieldValue>
+            <controllingFieldValue>vGPU</controllingFieldValue>
+            <controllingFieldValue>DLI</controllingFieldValue>
+            <controllingFieldValue>Parabricks</controllingFieldValue>
+            <valueName>PNY</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DGX</controllingFieldValue>
+            <controllingFieldValue>vGPU</controllingFieldValue>
+            <controllingFieldValue>DLI</controllingFieldValue>
+            <controllingFieldValue>Parabricks</controllingFieldValue>
+            <valueName>Rashi Peripherals</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DGX</controllingFieldValue>
+            <controllingFieldValue>vGPU</controllingFieldValue>
+            <controllingFieldValue>DLI</controllingFieldValue>
+            <controllingFieldValue>Parabricks</controllingFieldValue>
+            <valueName>Ryoyo Electro Corporation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DGX</controllingFieldValue>
+            <controllingFieldValue>vGPU</controllingFieldValue>
+            <controllingFieldValue>Parabricks</controllingFieldValue>
+            <valueName>ScanSource Brasil Distribuidora De</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DGX</controllingFieldValue>
+            <controllingFieldValue>vGPU</controllingFieldValue>
+            <controllingFieldValue>Parabricks</controllingFieldValue>
+            <valueName>Softbank Commerce &amp; Service Corp</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DGX</controllingFieldValue>
+            <controllingFieldValue>vGPU</controllingFieldValue>
+            <controllingFieldValue>DLI</controllingFieldValue>
+            <controllingFieldValue>Parabricks</controllingFieldValue>
+            <valueName>Synnex</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DGX</controllingFieldValue>
+            <controllingFieldValue>vGPU</controllingFieldValue>
+            <controllingFieldValue>DLI</controllingFieldValue>
+            <controllingFieldValue>Parabricks</controllingFieldValue>
+            <valueName>Tech Data</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DGX</controllingFieldValue>
+            <controllingFieldValue>vGPU</controllingFieldValue>
+            <controllingFieldValue>DLI</controllingFieldValue>
+            <controllingFieldValue>Parabricks</controllingFieldValue>
+            <valueName>VSTECS (Singapore) Pte. Ltd</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DGX</controllingFieldValue>
+            <controllingFieldValue>vGPU</controllingFieldValue>
+            <controllingFieldValue>DLI</controllingFieldValue>
+            <controllingFieldValue>Parabricks</controllingFieldValue>
+            <valueName>Zero One Tech Co Ltd</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>vGPU</controllingFieldValue>
+            <valueName>Advanced Digital Network Distribution Gmbh</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>vGPU</controllingFieldValue>
+            <controllingFieldValue>Parabricks</controllingFieldValue>
+            <valueName>Daou Data Corp</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>vGPU</controllingFieldValue>
+            <valueName>Super Micro</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>vGPU</controllingFieldValue>
+            <valueName>Technology Joint Corporation (Elsa)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DLI</controllingFieldValue>
+            <valueName>N/A</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Parabricks</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

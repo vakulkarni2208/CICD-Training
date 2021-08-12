@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_SC_Open_Opportunities</fullName>
+    <booleanFilter>1 AND 2 AND 3 AND (4 or 5 or 6)</booleanFilter>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>OPPORTUNITY.AMOUNT</columns>
+    <columns>OPPORTUNITY.CLOSE_DATE</columns>
+    <columns>RFP_Release_Date__c</columns>
+    <columns>RFP_Response_Due_Date__c</columns>
+    <columns>Decision_Date__c</columns>
+    <columns>TPC_Completed__c</columns>
+    <columns>TPC_Last_Update_Review_Date__c</columns>
+    <columns>Deal_Worksheet_Completed__c</columns>
+    <columns>OPPORTUNITY.PROBABILITY</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Industry__c</field>
+        <operation>equals</operation>
+        <value>Supercomputing</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.CLOSED</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Opportunity.Enterprise_Sales_Opportunity</value>
+    </filters>
+    <filters>
+        <field>Tesla_Product_Amount__c</field>
+        <operation>greaterOrEqual</operation>
+        <value>450000</value>
+    </filters>
+    <filters>
+        <field>Total_DGX_Product_Amount__c</field>
+        <operation>greaterThan</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>GRID_Product_Amount__c</field>
+        <operation>greaterThan</operation>
+        <value>0</value>
+    </filters>
+    <label>All SC Open Opportunities</label>
+</ListView>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tegra_All_Opportunities</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>Opportunity_Line_Item_Products__c</columns>
+    <columns>OPPORTUNITY.AMOUNT</columns>
+    <columns>Lifetime_Volume__c</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>OPPORTUNITY.LAST_UPDATE</columns>
+    <columns>OPPORTUNITY.CREATED_DATE</columns>
+    <columns>CORE.USERS.FULL_NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>OPPORTUNITY.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>012400000009dTp</value>
+    </filters>
+    <label>Tegra - All Opportunities</label>
+    <language>en_US</language>
+    <sharedTo>
+        <role>Administrator</role>
+        <role>SalesLeadManagerNotebookTegra</role>
+        <role>SalesRepRoleNotebook</role>
+        <role>SalesRepRoleTegra</role>
+    </sharedTo>
+</ListView>

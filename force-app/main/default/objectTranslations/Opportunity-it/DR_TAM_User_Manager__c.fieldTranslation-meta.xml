@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- TAM User&apos;s Manager --></label>
+    <name>DR_TAM_User_Manager__c</name>
+    <relationshipLabel><!-- Opportunities (TAM User&apos;s Manager) --></relationshipLabel>
+</CustomFieldTranslation>

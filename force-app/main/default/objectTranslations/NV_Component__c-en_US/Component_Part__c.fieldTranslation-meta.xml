@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Component_Part --></label>
+    <name>Component_Part__c</name>
+    <relationshipLabel><!-- Components (Component_Part) --></relationshipLabel>
+</CustomFieldTranslation>

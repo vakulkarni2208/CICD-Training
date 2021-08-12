@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>JetsonDR_FirstNameAddressFields_Required</fullName>
+    <active>true</active>
+    <description>Jetson DR: First Name cannot be blank (SDS-1250)
+SDS-1658 - Sales: Have the Address Field Mandatory on the Jetson Lead Page</description>
+    <errorConditionFormula>AND( 
+	RecordType.Name = &quot;Jetson Deal Registration&quot;,
+    	OR (
+         	ISBLANK( Country ), 
+         	ISBLANK( City ), 
+         	ISBLANK( PostalCode ), 
+         	ISBLANK( Street ),
+         	ISBLANK( FirstName ),
+         	
+         	OR (
+		         AND(
+				ISBLANK(State),
+				OR(
+					UPPER(Country)=&apos;AUSTRALIA&apos;,
+					UPPER(Country)=&apos;BRAZIL&apos;,
+					UPPER(Country)=&apos;CANADA&apos;,
+					UPPER(Country)=&apos;CHINA&apos;,
+					UPPER(Country)=&apos;INDIA&apos;,
+					UPPER(Country)=&apos;IRELAND&apos;,
+					UPPER(Country)=&apos;ITALY&apos;,
+					UPPER(Country)=&apos;JAPAN&apos;,
+					UPPER(Country)=&apos;MEXICO&apos;,
+					UPPER(Country)=&apos;SWITZERLAND&apos;,
+					UPPER(Country)=&apos;UNITED STATES&apos;
+				)
+			)
+		
+         	)
+         	
+    	)
+    	
+)</errorConditionFormula>
+    <errorMessage>First Name and all address fields are required.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCategoryGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <dataCategory>
+        <dataCategory>
+            <label>General</label>
+            <name>General</name>
+        </dataCategory>
+        <dataCategory>
+            <label>DGX Entitled</label>
+            <name>DGX_Entitled</name>
+        </dataCategory>
+        <dataCategory>
+            <label>DGX Product</label>
+            <name>DGX_Product</name>
+        </dataCategory>
+        <dataCategory>
+            <label>GRID Entitled</label>
+            <name>GRID_Entitled</name>
+        </dataCategory>
+        <dataCategory>
+            <label>GRID Product</label>
+            <name>GRID_Product</name>
+        </dataCategory>
+        <label>All</label>
+        <name>All</name>
+    </dataCategory>
+    <label>Article Visibility</label>
+    <objectUsage>
+        <object>KnowledgeArticleVersion</object>
+    </objectUsage>
+</DataCategoryGroup>

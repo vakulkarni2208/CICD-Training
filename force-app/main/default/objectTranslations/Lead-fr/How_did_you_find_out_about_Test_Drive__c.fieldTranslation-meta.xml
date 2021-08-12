@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- How did you find out about Test Drive? --></label>
+    <name>How_did_you_find_out_about_Test_Drive__c</name>
+    <picklistValues>
+        <masterLabel>NVIDIA Email or Newsletter</masterLabel>
+        <translation><!-- NVIDIA Email or Newsletter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NVIDIA Social Web - Blog/Facebook</masterLabel>
+        <translation><!-- NVIDIA Social Web - Blog/Facebook --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Partner Email or Newsletter</masterLabel>
+        <translation><!-- Partner Email or Newsletter --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

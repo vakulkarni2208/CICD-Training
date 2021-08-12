@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Campaigns__c</fullName>
+    <externalId>false</externalId>
+    <label>Campaigns</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>AI for Business (DL04)</fullName>
+                <default>false</default>
+                <label>AI for Business (DL04)</label>
+            </value>
+            <value>
+                <fullName>AI for Developers (DL13)</fullName>
+                <default>false</default>
+                <label>AI for Developers (DL13)</label>
+            </value>
+            <value>
+                <fullName>AI for Enterprise (DL14)</fullName>
+                <default>false</default>
+                <label>AI for Enterprise (DL14)</label>
+            </value>
+            <value>
+                <fullName>Applications Awareness (HPC08)</fullName>
+                <default>false</default>
+                <label>Applications Awareness (HPC08)</label>
+            </value>
+            <value>
+                <fullName>CRISP Campaign (IX07)</fullName>
+                <default>false</default>
+                <label>CRISP Campaign (IX07)</label>
+            </value>
+            <value>
+                <fullName>Cryo-EM (IX10)</fullName>
+                <default>false</default>
+                <label>Cryo-EM (IX10)</label>
+            </value>
+            <value>
+                <fullName>CSP Campaign (IX13)</fullName>
+                <default>false</default>
+                <label>CSP Campaign (IX13)</label>
+            </value>
+            <value>
+                <fullName>Data Science Workstation (AN03)</fullName>
+                <default>false</default>
+                <label>Data Science Workstation (AN03)</label>
+            </value>
+            <value>
+                <fullName>DGX Systems: Solving the World&apos;s AI Challenges (DL09)</fullName>
+                <default>false</default>
+                <label>DGX Systems: Solving the World&apos;s AI Challenges (DL09)</label>
+            </value>
+            <value>
+                <fullName>EGX Campaign (HPC09)</fullName>
+                <default>false</default>
+                <label>EGX Campaign (HPC09)</label>
+            </value>
+            <value>
+                <fullName>Energy Campaign (IX14)</fullName>
+                <default>false</default>
+                <label>Energy Campaign (IX14)</label>
+            </value>
+            <value>
+                <fullName>Financial Services (IX06)</fullName>
+                <default>false</default>
+                <label>Financial Services (IX06)</label>
+            </value>
+            <value>
+                <fullName>Genomics (IX09)</fullName>
+                <default>false</default>
+                <label>Genomics (IX09)</label>
+            </value>
+            <value>
+                <fullName>GPU for Public Cloud (RW05)</fullName>
+                <default>false</default>
+                <label>GPU for Public Cloud (RW05)</label>
+            </value>
+            <value>
+                <fullName>GPU Rendering (PV04)</fullName>
+                <default>false</default>
+                <label>GPU Rendering (PV04)</label>
+            </value>
+            <value>
+                <fullName>GRID for Healthcare (IX12)</fullName>
+                <default>false</default>
+                <label>GRID for Healthcare (IX12)</label>
+            </value>
+            <value>
+                <fullName>Healthcare Campaign (IX03)</fullName>
+                <default>false</default>
+                <label>Healthcare Campaign (IX03)</label>
+            </value>
+            <value>
+                <fullName>HER Campaign (IX01)</fullName>
+                <default>false</default>
+                <label>HER Campaign (IX01)</label>
+            </value>
+            <value>
+                <fullName>HPC Campaign (HPC06)</fullName>
+                <default>false</default>
+                <label>HPC Campaign (HPC06)</label>
+            </value>
+            <value>
+                <fullName>HPC for Developers (HPC03)</fullName>
+                <default>false</default>
+                <label>HPC for Developers (HPC03)</label>
+            </value>
+            <value>
+                <fullName>HPC Platform (HPC07)</fullName>
+                <default>false</default>
+                <label>HPC Platform (HPC07)</label>
+            </value>
+            <value>
+                <fullName>I am AI (DL01)</fullName>
+                <default>false</default>
+                <label>I am AI (DL01)</label>
+            </value>
+            <value>
+                <fullName>Inception (IN01)</fullName>
+                <default>false</default>
+                <label>Inception (IN01)</label>
+            </value>
+            <value>
+                <fullName>Industrial Manufacturing (IX08)</fullName>
+                <default>false</default>
+                <label>Industrial Manufacturing (IX08)</label>
+            </value>
+            <value>
+                <fullName>Instruments Campaign (IX18)</fullName>
+                <default>false</default>
+                <label>Instruments Campaign (IX18)</label>
+            </value>
+            <value>
+                <fullName>Jetson Ecosystem &amp; Community (EM16)</fullName>
+                <default>false</default>
+                <label>Jetson Ecosystem &amp; Community (EM16)</label>
+            </value>
+            <value>
+                <fullName>Jetson Nano (EM06)</fullName>
+                <default>false</default>
+                <label>Jetson Nano (EM06)</label>
+            </value>
+            <value>
+                <fullName>Jetson Xavier NX (EM15)</fullName>
+                <default>false</default>
+                <label>Jetson Xavier NX (EM15)</label>
+            </value>
+            <value>
+                <fullName>Laptops (RW02)</fullName>
+                <default>false</default>
+                <label>Laptops (RW02)</label>
+            </value>
+            <value>
+                <fullName>Mainstream GPU Infrastructure (HPC05)</fullName>
+                <default>false</default>
+                <label>Mainstream GPU Infrastructure (HPC05)</label>
+            </value>
+            <value>
+                <fullName>Medical Imaging (IX11)</fullName>
+                <default>false</default>
+                <label>Medical Imaging (IX11)</label>
+            </value>
+            <value>
+                <fullName>Mellanox Launch (MX01)</fullName>
+                <default>false</default>
+                <label>Mellanox Launch (MX01)</label>
+            </value>
+            <value>
+                <fullName>NGC (NGC01)</fullName>
+                <default>false</default>
+                <label>NGC (NGC01)</label>
+            </value>
+            <value>
+                <fullName>NVIDIA Accelerated Data Science (AN01)</fullName>
+                <default>false</default>
+                <label>NVIDIA Accelerated Data Science (AN01)</label>
+            </value>
+            <value>
+                <fullName>NVIDIA Studio (PV13)</fullName>
+                <default>false</default>
+                <label>NVIDIA Studio (PV13)</label>
+            </value>
+            <value>
+                <fullName>NV Research (NR 02)</fullName>
+                <default>false</default>
+                <label>NV Research (NR 02)</label>
+            </value>
+            <value>
+                <fullName>NV Research Activations (NR 01)</fullName>
+                <default>false</default>
+                <label>NV Research Activations (NR 01)</label>
+            </value>
+            <value>
+                <fullName>Pro Vis Always On (PV11)</fullName>
+                <default>false</default>
+                <label>Pro Vis Always On (PV11)</label>
+            </value>
+            <value>
+                <fullName>Pro Vis for Developers (PV05)</fullName>
+                <default>false</default>
+                <label>Pro Vis for Developers (PV05)</label>
+            </value>
+            <value>
+                <fullName>Public Sector (DL12)</fullName>
+                <default>false</default>
+                <label>Public Sector (DL12)</label>
+            </value>
+            <value>
+                <fullName>RAPIDS Open Source (AN02)</fullName>
+                <default>false</default>
+                <label>RAPIDS Open Source (AN02)</label>
+            </value>
+            <value>
+                <fullName>Remote Work with NVIDIA (RW01)</fullName>
+                <default>false</default>
+                <label>Remote Work with NVIDIA (RW01)</label>
+            </value>
+            <value>
+                <fullName>Research (NR01)</fullName>
+                <default>false</default>
+                <label>Research (NR01)</label>
+            </value>
+            <value>
+                <fullName>Retail (IX04)</fullName>
+                <default>false</default>
+                <label>Retail (IX04)</label>
+            </value>
+            <value>
+                <fullName>RTX Everywhere (PV10)</fullName>
+                <default>false</default>
+                <label>RTX Everywhere (PV10)</label>
+            </value>
+            <value>
+                <fullName>RTX for AEC (PV02)</fullName>
+                <default>false</default>
+                <label>RTX for AEC (PV02)</label>
+            </value>
+            <value>
+                <fullName>RTX for M&amp;E (PV03)</fullName>
+                <default>false</default>
+                <label>RTX for M&amp;E (PV03)</label>
+            </value>
+            <value>
+                <fullName>RTX for MFG (PV01)</fullName>
+                <default>false</default>
+                <label>RTX for MFG (PV01)</label>
+            </value>
+            <value>
+                <fullName>RTX Server (PV14)</fullName>
+                <default>false</default>
+                <label>RTX Server (PV14)</label>
+            </value>
+            <value>
+                <fullName>RTX Server (RW03)</fullName>
+                <default>false</default>
+                <label>RTX Server (RW03)</label>
+            </value>
+            <value>
+                <fullName>Scaling AI Infrastructure (DGX RA PODs) (DL07)</fullName>
+                <default>false</default>
+                <label>Scaling AI Infrastructure (DGX RA PODs) (DL07)</label>
+            </value>
+            <value>
+                <fullName>Spark Campaign (AN04)</fullName>
+                <default>false</default>
+                <label>Spark Campaign (AN04)</label>
+            </value>
+            <value>
+                <fullName>Supercomputing (HPC02)</fullName>
+                <default>false</default>
+                <label>Supercomputing (HPC02)</label>
+            </value>
+            <value>
+                <fullName>Telco (IX05)</fullName>
+                <default>false</default>
+                <label>Telco (IX05)</label>
+            </value>
+            <value>
+                <fullName>vGPU for Every Workload (PV12)</fullName>
+                <default>false</default>
+                <label>vGPU for Every Workload (PV12)</label>
+            </value>
+            <value>
+                <fullName>vGPU for Healthcare (IX12)</fullName>
+                <default>false</default>
+                <label>vGPU for Healthcare (IX12)</label>
+            </value>
+            <value>
+                <fullName>vGPU for Virtualized Workloads (RW04)</fullName>
+                <default>false</default>
+                <label>vGPU for Virtualized Workloads (RW04)</label>
+            </value>
+            <value>
+                <fullName>Win Inference (DL05)</fullName>
+                <default>false</default>
+                <label>Win Inference (DL05)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

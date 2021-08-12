@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Open (new lead)</fullName>
+        <default>true</default>
+        <label>Open (new lead)</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>New</fullName>
+        <default>false</default>
+        <label>New</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Requires more information</fullName>
+        <default>false</default>
+        <label>Requires more information</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Working</fullName>
+        <default>false</default>
+        <label>Working</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Qualified</fullName>
+        <default>false</default>
+        <label>Qualified</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Unqualified / Closed</fullName>
+        <default>false</default>
+        <label>Unqualified / Closed</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Junk/Delete</fullName>
+        <default>false</default>
+        <label>Junk/Delete</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Out for Approval</fullName>
+        <default>false</default>
+        <label>Out for Approval</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Approved</fullName>
+        <default>false</default>
+        <label>Approved</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Accepted</fullName>
+        <default>false</default>
+        <label>Accepted</label>
+        <converted>true</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Declined</fullName>
+        <default>false</default>
+        <label>Declined</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Contracts Packet Sent</fullName>
+        <default>false</default>
+        <label>Contracts Packet Sent</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Prospect</fullName>
+        <default>false</default>
+        <label>Prospect</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Recycling</fullName>
+        <default>false</default>
+        <label>Recycling</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Disqualified</fullName>
+        <default>false</default>
+        <label>Disqualified</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Wait</fullName>
+        <default>false</default>
+        <label>Wait</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Not Submitted</fullName>
+        <default>false</default>
+        <label>Not Submitted</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>In Review</fullName>
+        <default>false</default>
+        <label>In Review</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Rejected</fullName>
+        <default>false</default>
+        <label>Rejected</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Sales Qualified</fullName>
+        <default>false</default>
+        <label>Sales Qualified</label>
+        <converted>true</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Convert to Account</fullName>
+        <default>false</default>
+        <label>Convert to Account</label>
+        <converted>true</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Analytics Qualified</fullName>
+        <default>false</default>
+        <label>Analytics Qualified</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Marketing Qualified</fullName>
+        <default>false</default>
+        <label>Marketing Qualified</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>6QL</fullName>
+        <default>false</default>
+        <label>6QL</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Request Contact</fullName>
+        <default>false</default>
+        <label>Request Contact</label>
+        <converted>false</converted>
+    </standardValue>
+</StandardValueSet>

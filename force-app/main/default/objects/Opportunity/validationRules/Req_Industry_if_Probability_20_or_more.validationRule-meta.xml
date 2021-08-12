@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Req_Industry_if_Probability_20_or_more</fullName>
+    <active>true</active>
+    <description>Industry field on Opportunity cannot be Blank when Probability is greater than or equal to &quot;20%&quot; on Enterprise and Repeat Business Opportunity</description>
+    <errorConditionFormula>AND(
+ OR(
+  $RecordType.Name = &quot;Enterprise Sales Opportunity&quot;),
+ 
+AND($Profile.Name &lt;&gt; &apos;System Administrator&apos;,$Profile.Name &lt;&gt; &apos;SVC SAP Integration&apos;),
+ Probability &gt;= 0.20,
+ ISBLANK(TEXT(Industry__c)) 
+)</errorConditionFormula>
+    <errorMessage>&apos;Industry&apos; cannot be Blank if the Probability is equal or greater than 20%.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <classAccesses>
+        <apexClass>NPN_LWCQPBStatementsController</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <customPermissions>
+        <enabled>true</enabled>
+        <name>QPB_Statement_Upload</name>
+    </customPermissions>
+    <description>SDS-2978 - Mass QPB Statement Upload</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>QPB Statement Upload</label>
+    <tabSettings>
+        <tab>QPB_Statement_Upload</tab>
+        <visibility>Visible</visibility>
+    </tabSettings>
+</PermissionSet>

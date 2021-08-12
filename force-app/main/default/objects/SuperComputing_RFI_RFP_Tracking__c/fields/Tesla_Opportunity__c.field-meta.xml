@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tesla_Opportunity__c</fullName>
+    <externalId>false</externalId>
+    <label>Tesla Opportunity</label>
+    <lookupFilter>
+        <active>false</active>
+        <filterItems>
+            <field>Opportunity.RecordType.DeveloperName</field>
+            <operation>equals</operation>
+            <value>SalesOpportunity</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Opportunity</referenceTo>
+    <relationshipLabel>SuperComputing RFI/RFP Trackings</relationshipLabel>
+    <relationshipName>SuperComputing_RFI_RFP_Trackings</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

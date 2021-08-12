@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Please select one --></help>
+    <label><!-- What graphics card is in your system? --></label>
+    <name>What_graphics_card_is_in_your_system_del__c</name>
+    <picklistValues>
+        <masterLabel>ATI FireGL/FirePro</masterLabel>
+        <translation><!-- ATI FireGL/FirePro --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ATI Radeon</masterLabel>
+        <translation><!-- ATI Radeon --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Integrated Graphics</masterLabel>
+        <translation><!-- Integrated Graphics --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NVIDIA GeForce</masterLabel>
+        <translation><!-- NVIDIA GeForce --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NVIDIA NVS</masterLabel>
+        <translation><!-- NVIDIA NVS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NVIDIA Quadro</masterLabel>
+        <translation><!-- NVIDIA Quadro --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NVIDIA Tesla</masterLabel>
+        <translation><!-- NVIDIA Tesla --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unknown</masterLabel>
+        <translation><!-- Unknown --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

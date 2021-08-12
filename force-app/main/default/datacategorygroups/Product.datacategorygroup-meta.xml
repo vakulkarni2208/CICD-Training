@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCategoryGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <dataCategory>
+        <dataCategory>
+            <label>Fleet Command</label>
+            <name>Fleet_Command</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Cloud Gaming</label>
+            <name>Cloud_Gaming</name>
+        </dataCategory>
+        <dataCategory>
+            <label>CUDA</label>
+            <name>CUDA</name>
+        </dataCategory>
+        <dataCategory>
+            <label>DGX</label>
+            <name>DGX</name>
+        </dataCategory>
+        <dataCategory>
+            <label>GRID</label>
+            <name>GRID</name>
+        </dataCategory>
+        <dataCategory>
+            <label>NGC</label>
+            <name>NGC</name>
+        </dataCategory>
+        <dataCategory>
+            <label>DRIVE Constellation</label>
+            <name>DRIVE_Constellation</name>
+        </dataCategory>
+        <dataCategory>
+            <label>RTX Blade Server</label>
+            <name>RTX_Blade_Server</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Omniverse</label>
+            <name>Omniverse</name>
+        </dataCategory>
+        <label>All</label>
+        <name>All</name>
+    </dataCategory>
+    <label>Product</label>
+    <objectUsage>
+        <object>KnowledgeArticleVersion</object>
+    </objectUsage>
+</DataCategoryGroup>

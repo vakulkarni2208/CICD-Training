@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Don_t_Sync_to_Brainshark__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>This field is being used in the report for the User Sync between Salesforce to Brianshark.</description>
+    <externalId>false</externalId>
+    <label>Don&apos;t Sync to Brainshark</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Checkbox</type>
+</CustomField>

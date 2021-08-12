@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Business Units --></label>
+    <name>Business_Units__c</name>
+    <picklistValues>
+        <masterLabel>IT</masterLabel>
+        <translation><!-- IT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PS3</masterLabel>
+        <translation><!-- PS3 --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

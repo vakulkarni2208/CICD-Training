@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customPermissions>
+        <enabled>true</enabled>
+        <name>Skip_Opp_Val_Require_RFI_RFP_Details</name>
+    </customPermissions>
+    <description>This Permission set will skip the RFI RFP validation on Opportunity.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>CRM : OPP : SKIP RFI/RFP VALID</label>
+</PermissionSet>

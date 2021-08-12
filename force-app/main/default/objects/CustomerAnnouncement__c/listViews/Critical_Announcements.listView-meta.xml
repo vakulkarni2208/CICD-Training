@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Critical_Announcements</fullName>
+    <columns>Age__c</columns>
+    <columns>Announcement__c</columns>
+    <columns>CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Announcement_Type__c</field>
+        <operation>equals</operation>
+        <value>Critical</value>
+    </filters>
+    <label>Critical Announcements</label>
+    <language>en_US</language>
+</ListView>

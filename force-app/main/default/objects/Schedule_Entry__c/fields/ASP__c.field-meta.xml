@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ASP__c</fullName>
+    <description>Used only by Schedule Entries for Tegra Auto and other types of Opportunities that allow the ASP to change from month to month or quarter to quarter</description>
+    <externalId>false</externalId>
+    <label>ASP</label>
+    <precision>14</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

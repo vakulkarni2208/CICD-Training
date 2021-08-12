@@ -1,0 +1,439 @@
+<apex:page >
+<!-- 
+  -- @Manideep - 5/8/2019
+  -- This page is not being used. This page was using by the Record Type - 'Tegra Tablets, SB, SP Opportunity'. So this Page is commented out
+     as part of Opportunity Record Type Cleanup process.
+  
+<apex:page controller="TegraTablet_OppAndProducts_Controller" tabStyle="Opportunity" showHeader="true">
+<style>
+    .cols {padding-left:10px;padding-right:10px;}
+    .rows {padding-bottom:10px;margin-bottom:10px;}
+</style>
+
+
+<apex:sectionHeader title="Tegra Tablet Opportunity and Products" />
+<apex:pageMessages id="pageMessages" />
+
+<apex:outputPanel >
+<apex:form id="theForm">
+ 
+<apex:pageBlock title="" mode="edit">
+    <apex:pageBlockButtons >----  location="top" ----        
+        <apex:commandButton value="Save" action="{!save}" immediate="false" />          
+        <apex:commandButton value="Cancel" action="{!cancel}" immediate="true" />   
+    </apex:pageBlockButtons>
+
+    <apex:pageBlockSection title="Opportunity Details" columns="2" collapsible="false" >
+                        
+        <apex:inputField value="{!opp.Name}"  required="true"/>
+        <apex:inputField value="{!opp.CloseDate}" />
+    </apex:pageBlockSection>
+
+    <apex:pageBlockSection columns="2">
+        <apex:inputField value="{!opp.accountId}" required="true" />
+        <apex:pageBlockSectionItem >
+            <apex:outputLabel value="Stage" />
+            <apex:actionRegion >
+                    <apex:inputField value="{!opp.StageName}" required="true">
+                        <apex:actionSupport event="onchange" action="{!changeStageName}"  
+                                            rerender="oppClosedLostReason,oppCloseLostComments,oppProbability" />
+                    </apex:inputField>
+            </apex:actionRegion>
+        </apex:pageBlockSectionItem>
+                    
+        <apex:inputField value="{!opp.Customer_Type__c}" required="true" />   
+        <apex:inputField value="{!opp.Probability}" id="oppProbability" />
+        <apex:inputField value="{!opp.Competition__c}" />        
+
+        <apex:inputField value="{!opp.Closed_Lost_Comments__c}" id="oppCloseLostComments" style="width:200px;"/>
+               
+    </apex:pageBlockSection>
+    
+    <apex:actionRegion >
+    <apex:pageBlockSection title="Approvals" columns="2" collapsible="false" id="approvals">    
+        <apex:inputField value="{!opp.Business_Approval__c}" />
+        <apex:inputField value="{!opp.Opportunity_Rejected__c}" />
+        <apex:inputField value="{!opp.Technical_Approval__c}" />
+        <apex:inputField value="{!opp.No_Direct_Support__c}" />
+                                
+        <apex:inputField value="{!opp.Conditions_of_Approval__c}" style="width:200px;" />         
+
+        &nbsp;
+    </apex:pageBlockSection>
+    </apex:actionRegion>    
+         
+    <apex:actionRegion >
+    <apex:pageBlockSection title="Additional Information" columns="2" collapsible="false" id="additionalInfo" >
+
+        <apex:inputField value="{!opp.Design_Start_Date__c}" required="true" />
+        <apex:inputField value="{!opp.Panel_Size_Tegra__c}" required="true" id="panelSize"/>
+        
+        <apex:inputField value="{!opp.Design_EOL_Date__c}" required="true" />
+        <apex:inputField value="{!opp.Panel_Size_Other__c}"/>
+        
+        <apex:pageBlockSectionItem >
+            <apex:outputLabel value="Type of Device" />
+            <apex:actionRegion >
+                <apex:inputField value="{!opp.Type_of_Device__c}" required="true">
+                    <apex:actionSupport event="onchange"  
+                      rerender="odm,panelSize,panelResolution,modemImplementation,modemTechnology,modemVendor,memoryType,memorySize,x3dDisplay" />
+                </apex:inputField>
+            </apex:actionRegion>
+        </apex:pageBlockSectionItem>
+        <apex:inputField value="{!opp.Panel_Resolution__c}" required="true" id="panelResolution" />
+
+        <apex:inputField value="{!opp.ODM__c}" required="true" id="odm"/>
+        <apex:inputField value="{!opp.Modem_Implementation__c}" required="true" id="modemImplementation"/>
+        
+        <apex:inputField value="{!opp.ODM_Other__c}"/>
+        <apex:inputField value="{!opp.Modem_Technology__c}" required="true" id="modemTechnology"/>
+
+        <apex:inputField value="{!opp.Operating_System_Type__c}" required="true" >
+            <apex:actionSupport event="onchange" rerender="AndroidRevision" />
+        </apex:inputField>
+        <apex:inputField value="{!opp.Modem_Vendor__c}" required="true" id="modemVendor"/>
+
+        <apex:inputField value="{!opp.Android_Revision__c}" id="AndroidRevision" required="true" />
+        <apex:inputField value="{!opp.Memory_Type_Tegra__c}" required="true" id="memoryType"/>
+
+        <apex:inputField value="{!opp.Telco__c}" required="true" />
+        <apex:inputField value="{!opp.Memory_Size__c}" required="true" id="memorySize"/>
+        
+        <apex:inputField value="{!opp.Carrier_Name__c}"  />       
+        <apex:inputField value="{!opp.X3D_Display__c}"  required="true" id="x3dDisplay"/>
+
+        &nbsp;
+        <apex:inputField value="{!opp.Business_Justification__c}" style="width:200px;"/>
+    </apex:pageBlockSection>
+    </apex:actionRegion>
+    
+    <apex:actionRegion >
+    <apex:pageBlockSection title="Software Upgrade for Existing Project" columns="2" collapsible="false">    
+        <apex:inputField value="{!opp.SW_Upgrade__c}" />
+        <apex:inputField value="{!opp.Business_Approval_SW_Upgrade__c}" />
+        <apex:inputField value="{!opp.SW_Revision_for_Update__c}" />
+        <apex:inputField value="{!opp.Technical_Approval_SW_Upgrade__c}" />
+    </apex:pageBlockSection>
+    </apex:actionRegion>    
+    
+    <apex:outputPanel title="Product Detail" id="product1" >
+       <apex:actionRegion >
+        <apex:pageBlockSection title="Products" 
+          columns="5" collapsible="false" >
+        </apex:pageBlockSection>            
+        <apex:dataTable value="{!helpers}" var="helper" columnClasses="cols" headerClass="cols" rowClasses="rows" cellpadding="4"
+            width="100%">
+            <apex:column headerValue="Action" >
+                <apex:commandLink value="Select Product" action="{!selectHelper}" 
+                    onComplete="YAHOO.nvidia.com.showFindProduct();" rerender="product1,pageMessages"
+                    rendered="{!IsNull(helper.oli.Product_Name__c)}">
+                    <apex:param assignTo="{!selectedHelper}" name="selectedHelper" value="{!helper.index}" />
+                </apex:commandLink>
+                <apex:commandLink value="Edit Product" action="{!selectProduct}" 
+                    onComplete="YAHOO.nvidia.com.showGetOLIDetails();" rerender="product1,GetOLIDetailsData,pageMessages"
+                    rendered="{!NOT(IsNull(helper.oli.Product_Name__c))}">
+                    <apex:param assignTo="{!selectedHelper}" name="selectedHelper" value="{!helper.index}" />
+                    <apex:param assignTo="{!selectedPbeId}" name="selectedPbeId" value="{!helper.pbe.id}" />
+                </apex:commandLink>
+                &nbsp;
+                <apex:actionRegion >
+                    <apex:commandLink value="Delete" action="{!deleteProduct}" 
+                        rerender="product1,pageMessages"
+                        rendered="{!NOT(IsNull(helper.oli.Product_Name__c))}">
+                        <apex:param assignTo="{!selectedHelper}" name="selectedHelper" value="{!helper.index}" />                   
+                    </apex:commandLink>             
+                </apex:actionRegion>
+                <br/>
+            </apex:column>
+            <apex:column headerValue="Product" >
+                <apex:outputField value="{!helper.pbe.Product2.Name}" />
+            </apex:column>
+            <apex:column headerValue="Monthly Quantity" >
+                <apex:outputField value="{!helper.oli.Monthly_Quantity__c}" />
+            </apex:column>
+            <apex:column headerValue="Net ASP" >
+                <apex:outputField value="{!helper.oli.UnitPrice}" />
+                ---- Add helptext(?) "Please enter Net ASP = Gross ASP Less Rebates and MDF." ----
+            </apex:column>
+        </apex:dataTable>
+        </apex:actionRegion>
+    </apex:outputPanel>
+
+</apex:pageBlock>
+
+----  ------------------ Script ------------------------------------------------ ----
+
+---- Includes files for the Yahoo YUI libraries ----
+<apex:styleSheet value="{!$Resource.YUI}/skin.css" />
+<apex:includeScript value="{!$Resource.YUI}/yahoo-dom-event.js" />
+<apex:includeScript value="{!$Resource.YUI}/animation-min.js" />
+<apex:includeScript value="{!$Resource.YUI}/dragdrop-min.js"/>
+<apex:includeScript value="{!$Resource.YUI}/container-min.js" />
+
+<script type="text/javascript">
+
+    // Create a namespace for our custom functions
+    YAHOO.namespace("nvidia.com");
+
+    // ---------- Functions to show the dialogs ----------
+    YAHOO.nvidia.com.showFindProduct = function() {
+        // Do any initialization to clear any of the user's past selections, etc.
+        document.getElementById('dataTableForProductsGoesHere').innerHTML =
+          document.getElementById('dataTableForProducts').innerHTML;
+    
+        // Show the dialog
+        document.getElementById("dlgFindProduct").style.display = "block";
+        YAHOO.nvidia.com.myFindProduct.show();
+    }
+    YAHOO.nvidia.com.showGetOLIDetails = function() {
+        // Do any initialization to clear any of the user's past selections, etc.
+        document.getElementById('selectedProductName').innerHTML =
+          document.getElementById('{!$Component.inputForSelectedProductName}').value;
+        document.getElementById('selectedQuantity').value = '';
+        document.getElementById('selectedASP').value = '';
+    
+        // Show the dialog
+        document.getElementById("dlgGetOLIDetails").style.display = "block";
+        YAHOO.nvidia.com.myGetOLIDetails.show();
+    }
+
+
+    // ---------- Functions to hide the dialogs ----------
+    YAHOO.nvidia.com.hideFindProduct = function() {
+        YAHOO.nvidia.com.myFindProduct.hide();
+    }
+    YAHOO.nvidia.com.hideGetOLIDetails = function() {
+        YAHOO.nvidia.com.myGetOLIDetails.hide();
+    }
+
+
+    // ---------- Functions to do the dialogs' main actions ----------
+    YAHOO.nvidia.com.doFindProduct = function() {
+        // Do whatever we need to do to save the product the user selected
+        // (For the FindProduct dialog, this is done by a commandLink.)
+        
+        // Hide the FindProduct dialog
+        YAHOO.nvidia.com.myFindProduct.hide();
+
+        // Show the GetOLIDetails dialog
+        YAHOO.nvidia.com.showGetOLIDetails();
+    }
+    
+    YAHOO.nvidia.com.doGetOLIDetails = function() {
+    
+        if (IsItANumber(document.getElementById("selectedQuantity").value) &&
+            IsItANumber(document.getElementById("selectedASP").value)) {
+    
+            // Do whatever we need to do to save the product the user selected
+            document.getElementById("{!$Component.inputForSelectedQuantity}").value =
+              document.getElementById("selectedQuantity").value;
+            document.getElementById("{!$Component.inputForSelectedASP}").value =
+              document.getElementById("selectedASP").value;
+    
+            // Call the action method that saves the user's input
+            RememberHelperInfo();
+
+            // Hide the GetOLIDetails dialog
+            YAHOO.nvidia.com.myGetOLIDetails.hide();
+        } else {
+            alert('Please enter numbers for Monthly Quantity and Net ASP.'); 
+        }
+        
+    }
+
+
+    // ---------- Function called when the page is fully loaded ----------
+    YAHOO.nvidia.com.init = function() {
+        document.body.className = document.body.className + " yui-skin-sam";
+        
+        YAHOO.nvidia.com.myFindProduct = new YAHOO.widget.Panel(
+            "dlgFindProduct",  // The id of our dialog container
+            { 
+                    width           :   450,    // You can play with this until it's right
+                    visible         :   false,  // Should be invisible when rendered
+                    draggable       :   true,   // Make the dialog draggable
+                    close           :   false,  // Don't include a close title button
+                    modal           :   true,   // Make it modal
+                    fixedcenter     :   true,   // Keep centered if window is scrolled
+                    zindex          :   40,     // Make sure it's on top of everything
+                    
+                    // This line adds the appear/vanish fade effect
+                    effect          :   {
+                                          effect:YAHOO.widget.ContainerEffect.FADE,
+                                          duration:0.35
+                                        } 
+            }
+         );
+
+        YAHOO.nvidia.com.myGetOLIDetails = new YAHOO.widget.Panel(
+            "dlgGetOLIDetails",  // The id of our dialog container
+            { 
+                    width           :   400,    // You can play with this until it's right
+                    visible         :   false,  // Should be invisible when rendered
+                    draggable       :   true,   // Make the dialog draggable
+                    close           :   false,  // Don't include a close title button
+                    modal           :   true,   // Make it modal
+                    fixedcenter     :   true,   // Keep centered if window is scrolled
+                    zindex          :   40,     // Make sure it's on top of everything
+                    
+                    // This line adds the appear/vanish fade effect
+                    effect          :   {
+                                          effect:YAHOO.widget.ContainerEffect.FADE,
+                                          duration:0.35
+                                        } 
+            }
+         );
+
+        // Render the dialog to the document.body level of the DOM
+        YAHOO.nvidia.com.myFindProduct.render(document.body);
+        YAHOO.nvidia.com.myGetOLIDetails.render(document.body);
+    }
+
+    
+    // Add the init method to the window.load event
+    YAHOO.util.Event.addListener(window, "load", YAHOO.nvidia.com.init);
+
+    // Add a String.trim() method
+    String.prototype.trim = function() {
+        return this.replace(/^\s+|\s+$/g,"");
+    }
+
+    // This function should be called by an onkeypress event.
+    // It returns true if the number passed in is of the correct numeric type (integer(qty) or float(decimal/currency))
+    // ** This may be working, but it's not 'doing' anything
+    function CheckForNumber(fldId, type) {
+        var fld = document.getElementById(fldId);
+ 
+        if (type == 'float')
+            result = parseFloat(fld.value);
+            //alert("This is a float");
+        else
+            result = parseInt(fld.value);
+            //alert("This is an integer");
+                
+        return result;
+    }
+ 
+    // This function should be called by an onkeypress event.
+    // It returns true if the key that was pressed is a valid
+    // character for a number
+    function DecimalCharsOnly(evt) {
+        //var ret = false;
+        
+        evt = (evt) ? evt : ((event) ? event : null);
+        var key = evt.keyCode;
+        if (key == 0) key = evt.charCode;
+    
+        // Make sure the key is between '0' (0x30) and '9' (0x39)
+        // or that it's a period (0x2E)
+        if (((key >= 0x30) && (key <= 0x39)) || (key==0x2E)) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+
+    function IsItANumber(str) {
+        if (str.trim() == '') return false;
+        var num = new Number(str);
+        if (isNaN(num)) return false;
+        return true;
+    }
+
+</script>
+
+---- -------------------- FindProduct modal dialog -------------------- ----
+---- Displays the list of Products associated with the Opportunity Record Type ----
+---- This first outputPanel contains the Search inputfield ----
+<apex:actionRegion >
+<apex:outputPanel id="panelFindProduct">
+    <div id="dlgFindProduct" style="display: none" >
+          <div class="hd">
+                Select a Product
+                </div> 
+                <div class="bd">
+                    <div>
+                          Search:&nbsp;<input id="searchText" type="text" value="" />
+                          <apex:commandButton value="Search" action="{!search}" rerender="tblProducts,,messages" 
+                                              onMouseDown="document.getElementById('{!$Component.inputForSearchText}').value=document.getElementById('searchText').value;"
+                                              onComplete="YAHOO.nvidia.com.showFindProduct();" />
+                    </div>
+                <div style="height:300px;overflow:scroll;" id="dataTableForProductsGoesHere"></div>
+                <p style="text-align:center;">
+                    <input type="button" value="Cancel" onClick="YAHOO.nvidia.com.hideFindProduct();" />
+                </p>
+          </div>
+    </div>
+</apex:outputPanel>
+
+---- These areas are used to transfer data between the controller and the DOM for
+     the FindProduct dialog that's rendered into the window's document's DOM. ----
+---- The dataTable displays the actual list of Products, with Select links next to each Product entry ----
+<apex:inputHidden id="inputForSearchText" value="{!searchText}" />
+<apex:outputPanel id="tblProducts" >
+<div id="dataTableForProducts" style="visibility:hidden;display:none;">
+    <apex:dataTable value="{!pbes}" var="item" columnClasses="cols" headerClass="cols">
+         <apex:column headerValue="Select">
+            <apex:commandLink value="Select" onComplete="YAHOO.nvidia.com.doFindProduct();return true;" 
+                              action="{!selectProduct}" rerender="inputForGetOLIDialog">
+                <apex:param assignTo="{!selectedPbeId}" name="selectedPbeId" value="{!item.id}" />
+            </apex:commandLink>
+         </apex:column>
+         <apex:column headerValue="Product Name" value="{!item.Product2.Name}"/>
+    </apex:dataTable>
+</div>
+</apex:outputPanel>
+</apex:actionRegion>
+---- -------------------- End of FindProduct modal dialog -------------------- ----
+
+
+---- -------------------- GetOLIDetails modal dialog -------------------- ----
+---- This panel displays the Product name and fields for entering Product Quantity and Unit Price ----
+<apex:outputPanel id="panelGetOLIDetails">
+<div id="dlgGetOLIDetails" style="display: none" >
+  <div class="hd">
+    Product Details
+  </div> 
+  <div class="bd">
+    <table style="width:100%" >
+      <tr>
+        <th>Product:</th>
+        <td><span id="selectedProductName"></span><br/></td>
+      </tr>
+      <tr>
+        <th>Monthly Quantity:</th>
+        <td><input id="selectedQuantity" type="text" value="" width="50" onkeypress="return DecimalCharsOnly();"/></td>
+      </tr>
+      <tr>
+        <th>Net ASP:</th>
+        <td><input id="selectedASP" type="text" value="" width="50" onkeypress="return DecimalCharsOnly();"/><br />
+            <small>(Gross ASP less Rebates and MDF.)</small></td>
+      </tr>
+    </table>
+    <p style="text-align:center;">
+    <input type="button" value="OK" onClick="YAHOO.nvidia.com.doGetOLIDetails();" />
+    <input type="button" value="Cancel" onClick="YAHOO.nvidia.com.hideGetOLIDetails();" />
+    </p>
+  </div>
+</div>
+</apex:outputPanel>
+---- These areas are used to transfer data between the controller and the DOM for
+     the GetOLIDetails dialog that's rendered into the window's document's DOM. ----
+<apex:outputPanel id="GetOLIDetailsData">
+<apex:actionRegion >
+    <apex:outputPanel id="inputForGetOLIDialog">
+    <apex:inputHidden id="inputForSelectedProductName" value="{!selectedProductName}" />
+    <apex:inputHidden id="inputForSelectedQuantity" value="{!selectedQuantity}" />
+    <apex:inputHidden id="inputForSelectedASP" value="{!selectedASP}" />
+    <apex:actionFunction name="RememberHelperInfo" action="{!RememberHelperInfo}" rerender="product1,pageMessages"/>
+    </apex:outputPanel>
+</apex:actionRegion>
+</apex:outputPanel>
+---- -------------------- End of GetOLIDetails modal dialog -------------------- ----
+
+</apex:form>
+</apex:outputPanel>
+</apex:page>
+-->
+</apex:page>

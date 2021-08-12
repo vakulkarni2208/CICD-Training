@@ -1,0 +1,135 @@
+<aura:component controller="AddUserHelper" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    <ltng:require styles="{!$Resource.slds + '/assets/styles/salesforce-lightning-design-system.css'}"/>
+    <aura:handler name="init" action="{!c.doInit}" value="{!this}"/>
+    <aura:attribute name="email" type="String" />
+    <aura:attribute name="showError" type="Boolean" default="false"/>
+    <aura:attribute name="noEntitlement" type="Boolean" default="false"/>
+    <aura:attribute name="NPNUser" type="Boolean" default="false"/>
+    <aura:attribute name="options" type="List" />
+    <aura:attribute name="errorMessages" type="String[]"/>
+    <aura:attribute name="contact1" type="Contact" default="{'sobjectType':'Contact'}"/>
+    <aura:attribute name="both" type="Boolean" default="false" />
+    <aura:attribute name="gridonly" type="Boolean" default="false" />
+    <aura:attribute name="dgxonly" type="Boolean" default="false" />
+    <aura:attribute name="dgxselected" type="Boolean" default="false" />
+    <aura:attribute name="gridselected" type="Boolean" default="false" />
+    <aura:attribute name="isUserCreationAllowed" type="Boolean" default="true"/>
+    <aura:attribute name="radiooptions" type="List" default="[
+                                                             {'label': 'Enterprise Support Portal', 'value': 'DGX User'},
+                                                             {'label': 'Enterprise Support Portal and vGPU Licensing Portal', 'value': 'GRID User'}
+                                                             ]"/>
+    <aura:attribute name="dgxInstructions" type="List" default="[]" />
+    <aura:attribute name="gridInstructions" type="List" default="[]" />
+    <aura:attribute name="radioSelection" type="String"/>
+    <div class="demo-only" style="height: 640px;">
+        <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+                <header class="slds-modal__header">
+                    <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">ADD NEW USER</h2>
+                </header>
+                
+                <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+                    <div style="margin-left : 20px ; margin-top :10px; margin-right :20px;">
+                        
+                        <div class="slds-grid slds-wrap" >  
+                            <div class="slds-col slds-size--2-of-1 " >
+                                <div class="slds-form-element__control">
+                                    <div class="slds-form-element">
+                                        <aura:renderif isTrue="{!and(v.both,v.isUserCreationAllowed)}">
+                                            <lightning:radioGroup aura:id="mygroup"
+                                                                  name="radioButtonGroup"
+                                                                  label="Select User Portal Access"
+                                                                  options="{!v.radiooptions}"
+                                                                  value="{!v.radioSelection}"
+                                                                  onchange="{!c.handleChange}"
+                                                                  required="true" />
+                                            <br/>          
+                                            <!--{!$Label.c.Add_DGX_Member_Header}
+                                            <ul class="slds-list_dotted">
+                                                <li>{!$Label.c.Add_DGX_Member_Title}</li>
+                                                <ul class="slds-list_dotted slds-is-nested">
+                                                <aura:iteration items="{!v.dgxInstructions}" var="item">
+                                                    {!item}<br/>
+                                                </aura:iteration>
+                                                </ul>
+                                            </ul>
+                                            <br/>
+                                            {!$Label.c.Add_GRID_Member_Header}
+                                            <ul class="slds-list_dotted">
+                                            <li>{!$Label.c.Add_GRID_Member_Title}</li>
+                                            	<ul class="slds-list_dotted slds-is-nested">
+                                                    <aura:iteration items="{!v.gridInstructions}" var="item">
+                                                    {!item}<br/>
+                                                	</aura:iteration>
+                                            	</ul>
+                                            </ul>--> 
+                                            <!--<footer class="slds-modal__footer">
+                                            <lightning:button label="Cancel" onclick="{!c.Cancel}" class="slds-button slds-button_neutral " />
+                                            </footer>-->
+                                        </aura:renderif>                                                
+                                    </div>
+                                </div>
+                               <!-- <aura:renderIf isTrue="{!and(v.dgxselected,v.isUserCreationAllowed)}">        
+                                   --> 
+                                <aura:renderIf isTrue="{!v.noEntitlement}">
+                                    <p class="error">You are not able to add a new user as It appears that there are no active entitlements. Please Contact <a href="/ESPCommunity/s/contact-nvidia-renewals">NVIDIA Renewals Team</a>, if this is not correct or to renew your Entitlement.
+                                    </p>
+                                    <br/>
+                                </aura:renderIf>
+                                <aura:renderIf isTrue="{!v.NPNUser}">
+                                    <p class="error">
+                                        Please use NPN Portal to request new user access.
+                                    </p>
+                                    <br/>
+                                </aura:renderIf>
+                               <!-- </aura:renderIf>-->
+                                <aura:renderIf isTrue="{!and(v.dgxselected,v.isUserCreationAllowed)}">        
+                                    <lightning:input type="email" label="Please enter the User's email address" name="email" value="{!v.email}" />
+                                    
+                                    <br/>                                   
+                                    <!--<ul class="slds-list_dotted">
+                                        <ul class="slds-list_dotted slds-is-nested">
+                                            <aura:iteration items="{!v.dgxInstructions}" var="item">
+                                               {!item}<br/>
+                                            </aura:iteration>
+                                        </ul>
+                                    </ul>
+                                    <br/>-->
+                                </aura:renderIf>
+                                <aura:renderIf isTrue="{!and(v.gridselected,v.isUserCreationAllowed)}">        
+                                    <ul class="slds-list_dotted">
+                                        <ul class="slds-list_dotted slds-is-nested">
+                                           <aura:iteration items="{!v.gridInstructions}" var="item">
+                                               {!item}<br/>
+                                           </aura:iteration>
+                                         </ul>
+                                    </ul>
+                                </aura:renderIf>
+                            </div>
+                            <div class="slds-col slds-size--2-of-1 " style="margin-left : 30px ;">
+                            </div>
+                        </div>
+                    </div>
+                    <aura:renderIf isTrue="{!and(v.showError,v.isUserCreationAllowed)}">
+                        <div id="error" aura:id="error">
+                            <aura:iteration items="{!v.errorMessages}" var="err">
+                                <p class="error" style="color:red">{!err}</p>
+                            </aura:iteration>
+                        </div>
+                    </aura:renderIf>
+                </div>
+                
+                <footer class="slds-modal__footer">
+                        <lightning:button label="Cancel" onclick="{!c.Cancel}" class="slds-button slds-button_neutral"/>
+                    <aura:renderIf isTrue="{!and(v.dgxselected,v.isUserCreationAllowed)}">
+                        <lightning:button label="Send" onclick="{!c.SendMail}" class="slds-button slds-button--brand"/>
+                    </aura:renderIf>
+                    <aura:renderIf isTrue="{!and(v.gridselected,v.isUserCreationAllowed)}">
+                    	<lightning:button label="OK" onclick="{!c.Redirect}" class="slds-button slds-button--brand"/>
+                    </aura:renderIf>
+                </footer>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </div>
+</aura:component>

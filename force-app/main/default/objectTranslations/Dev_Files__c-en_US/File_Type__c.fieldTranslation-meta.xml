@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- File Type --></label>
+    <name>File_Type__c</name>
+    <picklistValues>
+        <masterLabel>Container</masterLabel>
+        <translation><!-- Container --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Documentation</masterLabel>
+        <translation><!-- Documentation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Driver</masterLabel>
+        <translation><!-- Driver --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Firmware</masterLabel>
+        <translation><!-- Firmware --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Helm Chart</masterLabel>
+        <translation><!-- Helm Chart --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Installer</masterLabel>
+        <translation><!-- Installer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>License Agreement</masterLabel>
+        <translation><!-- License Agreement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Model</masterLabel>
+        <translation><!-- Model --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resource</masterLabel>
+        <translation><!-- Resource --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Samples</masterLabel>
+        <translation><!-- Samples --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Video</masterLabel>
+        <translation><!-- Video --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

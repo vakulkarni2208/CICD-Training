@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Question type --></label>
+    <name>Question_type__c</name>
+    <picklistValues>
+        <masterLabel>Boolean</masterLabel>
+        <translation><!-- Boolean --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Date</masterLabel>
+        <translation><!-- Date --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Integer</masterLabel>
+        <translation><!-- Integer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Long Text</masterLabel>
+        <translation><!-- Long Text --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Multiple Choice Multiple Values</masterLabel>
+        <translation><!-- Multiple Choice Multiple Values --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Multiple Choice Single Value</masterLabel>
+        <translation><!-- Multiple Choice Single Value --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ranking</masterLabel>
+        <translation><!-- Ranking --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rating Scale</masterLabel>
+        <translation><!-- Rating Scale --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Short Text</masterLabel>
+        <translation><!-- Short Text --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

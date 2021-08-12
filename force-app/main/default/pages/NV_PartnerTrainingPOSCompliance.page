@@ -1,0 +1,99 @@
+<apex:page standardController="Lead" extensions="NV_PartnerTrainingPOSComplianceCtrl">
+    <div class="centertop">
+        Partner Compliance Information
+    </div>
+    <br />
+    <div class="centermiddle">
+        <apex:form >
+            <u>
+                <b>Partner:</b>
+            </u>&nbsp;&nbsp;
+            <apex:outputField value="{!lead.DR_Partner_Sales_Rep_Company__r.Name}" />
+            <br />
+            <u>
+                <b>Competency:</b>
+            </u>&nbsp; {!strCompetency}
+        </apex:form>
+    </div>
+    <div class="centerbottom">
+        <!-- Changes for SDS-3181 START -->
+        <u>
+            <b>Competency Signed Status:</b>
+        </u>
+        <span class="{!IF(dRegComplStatus==1,'check','x')}" style="display: inline-block; text-indent: 15px">
+            {!IF(dRegComplStatus==1 ,'✔','✘')}</span>
+        <!-- Changes for SDS-3181 END -->
+        <br/>
+        <u>Training Compliant:</u>
+        <span class="{!IF(dTrainingCmpl==1 ,'check',IF(dTrainingCmpl==0,'caution',IF(dTrainingCmpl==99,'blackSquare','x'))) }" style="display: inline-block; text-indent: 15px">
+            {!IF(dTrainingCmpl==1 ,'✔',IF(dTrainingCmpl==0,'⚠',IF(dTrainingCmpl==99,'■','✘'))) }</span>
+        <br />
+        <div style="{!IF(dDGXHOTCmpl==9,'display:none;','display:inline;')}">
+            <u>DGX Hands on Training (HOT) Compliant:</u>
+            <span class="{!IF(dDGXHOTCmpl==1 ,'check',IF(dDGXHOTCmpl==0,'caution',IF(dDGXHOTCmpl==-1,'x','blackSquare'))) }" style="display: inline-block; text-indent: 15px">
+                {!IF(dDGXHOTCmpl==1 ,'✔',IF(dDGXHOTCmpl==0,'⚠',IF(dDGXHOTCmpl==-1,'✘','■'))) }</span>
+            <br />
+        </div>
+        <!-- <u>POS Compliant:</u> <span class="{!IF(dPOSCmpl==1 ,'check',IF(dPOSCmpl==0,'caution',IF(dPOSCmpl==99,'blackSquare','x'))) }" style="display: inline-block; text-indent: 15px">{!IF(dPOSCmpl==1 ,'✔',IF(dPOSCmpl==0,'⚠',IF(dPOSCmpl==99,'■','✘'))) }</span>
+    -->
+    </div>
+    <style>
+        .centertop {
+            font-size: 30px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .centermiddle {
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .centerbottom {
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .centerHeader {
+            font-size: 14px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .left {
+            font-size: 11px;
+            font-weight: bold;
+            text-align: left;
+        }
+
+        .check {
+            text-align: center;
+            color: green !important;
+            font-weight: bold;
+            text-shadow: #000 0px 0px 1px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .x {
+            text-align: center;
+            color: red !important;
+            text-shadow: #000 0px 0px 1px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .blackSquare {
+            text-align: center;
+            text-shadow: #000 0px 0px 1px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .caution {
+            text-align: center;
+            color: black !important; //font-weight: bold;
+            text-shadow: #FFFF00 0px 0px 3px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+    </style>
+</apex:page>

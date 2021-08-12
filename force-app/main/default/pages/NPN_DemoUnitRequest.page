@@ -1,0 +1,203 @@
+<apex:page controller="NPN_DemoUnitReqController" sidebar="false" tabStyle="NPN_NFR_Software_Request__c" docType="html-5.0">
+    <apex:form >
+        <apex:pageBlock title="NFR SW License Request">
+            <div style="float:left;width:40%;">
+                <div>
+                    <b>Name :</b> {!reqstrName}</div>
+                <br />
+                <div class="subtitle">
+                    <b>Account Name :</b> {!accountName}</div>
+                <br />
+            </div>
+            <div style="float:left;text-align:left;width:40%;">
+                <div class="subtitle">
+                    <b>Email :</b> {!email}</div>
+                <br />
+                <div class="subtitle">
+                    <b>Billing Address :</b> {!billingAddress}</div>
+                <br />
+            </div>
+            <div>
+                <br/>
+                <table class="customTable">
+                    <colgroup>
+                        <col class="one" />
+                        <col class="two" />
+                        <col class="three" />
+                        <col class="two" />
+                        <col class="twenty" />
+                    </colgroup>
+                    <tr>
+                        <th class="tdthStyle">
+                            <b>#</b>
+                        </th>
+                        <th class="tdthStyle">
+                            <b>Licenses</b>
+                        </th>
+                        <th class="tdthStyle">
+                            <b>Description</b>
+                        </th>
+                        <th class="tdthStyle">
+                            <b>Quantity</b>
+                        </th>
+                        <th class="tdthStyle">
+                            <b>Justification/Comments</b>
+                        </th>
+                    </tr>
+                    <apex:repeat value="{!softwareList}" var="eachRecord">
+                        <tr>
+                            <td class="tdthStyle">{!eachRecord.serialNo}</td>
+                            <td class="tdthStyle">{!eachRecord.swName}</td>
+                            <td class="tdthStyle">{!eachRecord.swDescription}</td>
+                            <!--<td class="tdthStyle">{!eachRecord.Quantity__c}</td>
+                            <td class="tdthStyle">
+                                <input class="eachQuantityLst" type="number" html-min="0" style="width: 70%; height: 10%" label="" value="{!eachRecord.swQuantity}" required="true"
+                                    onkeypress="return event.charCode >= 48 && event.charCode <=57" oninvalid="setCustomValidity('Please enter a value of 0 or higher.')"
+                                />
+                            </td>-->
+
+                            <td class="tdthStyle">
+                                <apex:input type="number" styleclass="eachQuantityLst" style="width: 70%; height: 10%" value="{!eachRecord.swQuantity}" required="true"
+                                    onkeypress="checkNumber(this)" />
+                            </td>
+                            <td class="tdthStyle">
+                                <apex:inputText style="width: 100%; height: 10%" maxlength="100" label="" value="{!eachRecord.swComment}" />
+                            </td>
+                        </tr>
+                    </apex:repeat>
+                </table>
+            </div>
+            <div align="center" draggable="false">
+                <br/>
+                <br/>
+                <apex:commandButton value="Submit Request" action="{!saveRequest}" />
+                <!--<apex:commandButton value="Submit Request" onclick="saveIt();return false;" />
+                <apex:actionFunction action="{!saveRequest}" name="saveRequest" rerender="NFRReqs"/>-->
+            </div>
+        </apex:pageBlock>
+        <apex:pageBlock title="Request Status" id="NFRReqs">
+            <div style="overflow: scroll; height: 220px;">
+                <apex:pageBlockTable value="{!swRequests}" var="recVar" width="100%">
+                    <apex:column headerValue="Requester Name">
+                        <apex:outputText value="{!recVar.name}" /></apex:column>
+                    <apex:column headerValue="Email">
+                        <apex:outputText value="{!recVar.emailAddr}" /></apex:column>
+                    <apex:column headerValue="Demo Units Requested">
+                        <apex:outputText value="{!recVar.swReqstd}" /></apex:column>
+                    <apex:column headerValue="Justification/Comments From Requestor">
+                        <apex:outputText value="{!recVar.commentsFromReq}" escape="false" /></apex:column>
+                    <apex:column headerValue="Status">
+                        <apex:outputText value="{!recVar.status}" /></apex:column>
+                    <apex:column headerValue="Comments From PBM">
+                        <apex:outputText value="{!recVar.commentsFromPBM}" />
+                    </apex:column>
+                    <apex:column headerValue="Request Submit Date">
+                        <apex:outputText value="{!recVar.lastModifiedDate}" /></apex:column>
+                </apex:pageBlockTable>
+            </div>
+        </apex:pageBlock>
+    </apex:form>
+    <script>
+        window.onload = function () {
+            var lstQty = document.getElementsByClassName("eachQuantityLst");
+            console.log(lstQty.length);
+            for (var i = 0; i < lstQty.length; i++) {
+                if (lstQty[i].value == null || lstQty[i].value == '') {
+                    lstQty[i].setAttribute("oninvalid", "setCustomValidity('Please enter a value of 0 or higher.')");
+                }
+            }
+        }
+
+        function saveIt() {
+            var lstQty = document.getElementsByClassName("eachQuantityLst");
+            console.log(lstQty.length);
+            for (var i = 0; i < lstQty.length; i++) {
+                if (lstQty[i].value == null || lstQty[i].value == '') {
+                    //lstQty[i].removeAttribute("oninvalid");
+                }
+            }
+            saveRequest();
+        }
+
+        function checkNumber(element) {
+            console.log(element);
+            console.log(event.charCode);
+            if (event.charCode >= 48 && event.charCode <= 57) {
+                element.setAttribute("oninvalid", "setCustomValidity('')");
+            } else {
+                element.setAttribute("oninvalid", "setCustomValidity('Please enter a value of 0 or higher.')");
+            }
+        }
+    </script>
+    <style>
+        .customTable {
+            width: 80%;
+            table-layout: fixed;
+            border: 1px solid black;
+            border-collapse: collapse;
+            table-layout: fixed;
+        }
+
+        .one {
+            width: 1%;
+            /*background: tomato;*/
+        }
+
+        .two {
+            width: 2%;
+            /*background: yellowgreen;*/
+        }
+
+        .three {
+            width: 3%;
+            /*background: tomato;*/
+        }
+
+        .twenty {
+            width: 20%;
+            /*background: turquoise*/
+        }
+
+        .tdthStyle {
+            padding: 15px;
+            border: 1px solid black;
+            /*font-family: 'Trebuchet MS';*/
+        }
+
+        .sButton {
+
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 13px;
+            margin: 4px 2px;
+            cursor: pointer;
+            font-weight: bold;
+            width: 100px;
+        }
+
+        div.relative {
+            position: center;
+            /*left: 30px;*/
+        }
+
+        /* Remove controls from Firefox */
+
+        input[type=number] {
+            -moz-appearance: textfield;
+        }
+
+        input[type=number]::-webkit-inner-spin-button,
+        input[type=number]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        /* Re-applies the controls on :hover and :focus 
+        input[type="number"]:hover,
+        input[type="number"]:focus {
+        -moz-appearance: number-input;
+        }*/
+    </style>
+</apex:page>

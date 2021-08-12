@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<HomePageComponent xmlns="http://soap.sforce.com/2006/04/metadata">
+    <body>&lt;H2&gt;
+&lt;MARQUEE onmouseover=this.scrollAmount=2 onmouseout=this.scrollAmount=6 bgColor=yellow&gt;&lt;FONT color=black&gt;Salesforce is Temporarily Down for Maintenance&lt;/FONT&gt;&lt;/MARQUEE&gt;&lt;/H2&gt;</body>
+    <pageComponentType>htmlArea</pageComponentType>
+    <width>wide</width>
+</HomePageComponent>

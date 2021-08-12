@@ -1,0 +1,5 @@
+<apex:page standardController="Dev_Contact__c">
+  <!-- Begin Default Content REMOVE THIS -->
+  <h1>Delete is not allowed!</h1>
+  <!-- End Default Content REMOVE THIS -->
+</apex:page>

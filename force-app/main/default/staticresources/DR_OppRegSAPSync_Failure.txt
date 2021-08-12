@@ -1,0 +1,1 @@
+<SOAP:Envelope xmlns:SOAP='http://schemas.xmlsoap.org/soap/envelope/'><SOAP:Header/><SOAP:Body><ns1:NvidiaOppReg_Response xmlns:ns1='urn:nvidia:OppReg'><RETURN_ITEM><RETURN_TYPE>E</RETURN_TYPE><RETURN_CODE>101</RETURN_CODE><RETURN_MESSAGE>Material 711-DWS022A does not exists in SAP</RETURN_MESSAGE></RETURN_ITEM></ns1:NvidiaOppReg_Response></SOAP:Body></SOAP:Envelope>

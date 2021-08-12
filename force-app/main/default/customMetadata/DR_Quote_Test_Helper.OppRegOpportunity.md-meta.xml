@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>OppRegOpportunity</label>
+    <protected>false</protected>
+    <values>
+        <field>Deal_Type__c</field>
+        <value xsi:type="xsd:string">DGX</value>
+    </values>
+    <values>
+        <field>End_Customer_Account__c</field>
+        <value xsi:type="xsd:string">0011W000022BKzS</value>
+    </values>
+    <values>
+        <field>End_Customer_Contact_Role__c</field>
+        <value xsi:type="xsd:string">Sales Contact</value>
+    </values>
+    <values>
+        <field>End_Customer_Contact__c</field>
+        <value xsi:type="xsd:string">0031W00002LPYB2</value>
+    </values>
+    <values>
+        <field>OppRegLeadId__c</field>
+        <value xsi:type="xsd:string">00Q1W00001Y9r5U</value>
+    </values>
+    <values>
+        <field>Partner_VAR_Account__c</field>
+        <value xsi:type="xsd:string">0014000001mVCTl</value>
+    </values>
+    <values>
+        <field>Partner_VAR_Contact__c</field>
+        <value xsi:type="xsd:string">0031W00002JzzL3</value>
+    </values>
+    <values>
+        <field>PriceBookId__c</field>
+        <value xsi:type="xsd:string">01s40000000ANuh</value>
+    </values>
+    <values>
+        <field>Primary_HW_Product__c</field>
+        <value xsi:type="xsd:string">DGX A100 40GB HW</value>
+    </values>
+    <values>
+        <field>Primary_Support_SKU__c</field>
+        <value xsi:type="xsd:string">DGX A100 40GB CMR 3yr</value>
+    </values>
+    <values>
+        <field>Program_Type__c</field>
+        <value xsi:type="xsd:string">DGX OppReg EDU</value>
+    </values>
+    <values>
+        <field>RecordTypeId__c</field>
+        <value xsi:type="xsd:string">0121W000000DybgQAC</value>
+    </values>
+    <values>
+        <field>Secondary_HW_Product__c</field>
+        <value xsi:type="xsd:string">DGX Station A100-80G</value>
+    </values>
+    <values>
+        <field>Secondary_Support_SKU__c</field>
+        <value xsi:type="xsd:string">DGX Station A100 80G Support-3yrs</value>
+    </values>
+    <values>
+        <field>Stage__c</field>
+        <value xsi:type="xsd:string">Prospecting</value>
+    </values>
+    <values>
+        <field>Type__c</field>
+        <value xsi:type="xsd:string">Deal Registration</value>
+    </values>
+</CustomMetadata>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Operating_Systems__c</fullName>
+    <externalId>false</externalId>
+    <label>Operating Systems</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Android</fullName>
+                <default>false</default>
+                <label>Android</label>
+            </value>
+            <value>
+                <fullName>iOS</fullName>
+                <default>false</default>
+                <label>iOS</label>
+            </value>
+            <value>
+                <fullName>Linux - 32 bit</fullName>
+                <default>false</default>
+                <label>Linux - 32 bit</label>
+            </value>
+            <value>
+                <fullName>Linux - 64 bit</fullName>
+                <default>false</default>
+                <label>Linux - 64 bit</label>
+            </value>
+            <value>
+                <fullName>Mac OSX</fullName>
+                <default>false</default>
+                <label>Mac OSX</label>
+            </value>
+            <value>
+                <fullName>Win 7</fullName>
+                <default>false</default>
+                <label>Win 7</label>
+            </value>
+            <value>
+                <fullName>Win 7 - 32 bit</fullName>
+                <default>false</default>
+                <label>Win 7 - 32 bit</label>
+            </value>
+            <value>
+                <fullName>Win 7 - 64 bit</fullName>
+                <default>false</default>
+                <label>Win 7 - 64 bit</label>
+            </value>
+            <value>
+                <fullName>Win 8</fullName>
+                <default>false</default>
+                <label>Win 8</label>
+            </value>
+            <value>
+                <fullName>Win 8 - 32 bit</fullName>
+                <default>false</default>
+                <label>Win 8 - 32 bit</label>
+            </value>
+            <value>
+                <fullName>Win 8 - 64 bit</fullName>
+                <default>false</default>
+                <label>Win 8 - 64 bit</label>
+            </value>
+            <value>
+                <fullName>Win 10</fullName>
+                <default>false</default>
+                <label>Win 10</label>
+            </value>
+            <value>
+                <fullName>WinRT</fullName>
+                <default>false</default>
+                <label>WinRT</label>
+            </value>
+            <value>
+                <fullName>Win Vista</fullName>
+                <default>false</default>
+                <label>Win Vista</label>
+            </value>
+            <value>
+                <fullName>Win Vista - 32 bit</fullName>
+                <default>false</default>
+                <label>Win Vista - 32 bit</label>
+            </value>
+            <value>
+                <fullName>Win Vista - 64 bit</fullName>
+                <default>false</default>
+                <label>Win Vista - 64 bit</label>
+            </value>
+            <value>
+                <fullName>Win XP</fullName>
+                <default>false</default>
+                <label>Win XP</label>
+            </value>
+            <value>
+                <fullName>Win XP - 32 bit</fullName>
+                <default>false</default>
+                <label>Win XP - 32 bit</label>
+            </value>
+            <value>
+                <fullName>Win XP - 64 bit</fullName>
+                <default>false</default>
+                <label>Win XP - 64 bit</label>
+            </value>
+            <value>
+                <fullName>Other (please specify)</fullName>
+                <default>false</default>
+                <label>Other (please specify)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>10</visibleLines>
+</CustomField>

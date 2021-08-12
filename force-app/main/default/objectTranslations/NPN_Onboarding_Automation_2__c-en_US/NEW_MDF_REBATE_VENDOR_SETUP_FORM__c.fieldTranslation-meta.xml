@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- NEW MDF REBATE VENDOR SETUP FORM --></label>
+    <name>NEW_MDF_REBATE_VENDOR_SETUP_FORM__c</name>
+</CustomFieldTranslation>

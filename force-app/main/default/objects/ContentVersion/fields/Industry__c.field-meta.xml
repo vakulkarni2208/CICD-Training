@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Industry__c</fullName>
+    <externalId>false</externalId>
+    <label>Industry</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Architecture, Engineering, and Construction</fullName>
+                <default>false</default>
+                <label>Architecture, Engineering, and Construction</label>
+            </value>
+            <value>
+                <fullName>Automotive</fullName>
+                <default>false</default>
+                <label>Automotive</label>
+            </value>
+            <value>
+                <fullName>Embedded/Edge Computing</fullName>
+                <default>false</default>
+                <label>Embedded/Edge Computing</label>
+            </value>
+            <value>
+                <fullName>Energy/Oil &amp; Gas</fullName>
+                <default>false</default>
+                <label>Energy/Oil &amp; Gas</label>
+            </value>
+            <value>
+                <fullName>Financial Services</fullName>
+                <default>false</default>
+                <label>Financial Services</label>
+            </value>
+            <value>
+                <fullName>Healthcare</fullName>
+                <default>false</default>
+                <label>Healthcare</label>
+            </value>
+            <value>
+                <fullName>Higher Education and Research</fullName>
+                <default>false</default>
+                <label>Higher Education and Research</label>
+            </value>
+            <value>
+                <fullName>Industrial Manufacturing</fullName>
+                <default>false</default>
+                <label>Industrial Manufacturing</label>
+            </value>
+            <value>
+                <fullName>Media &amp; Entertainment</fullName>
+                <default>false</default>
+                <label>Media &amp; Entertainment</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>3</visibleLines>
+</CustomField>

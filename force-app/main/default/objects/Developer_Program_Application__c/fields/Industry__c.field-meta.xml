@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Industry__c</fullName>
+    <externalId>false</externalId>
+    <label>Industry Segment/Vertical</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Automotive</fullName>
+                <default>false</default>
+                <label>Automotive</label>
+            </value>
+            <value>
+                <fullName>Defense</fullName>
+                <default>false</default>
+                <label>Defense</label>
+            </value>
+            <value>
+                <fullName>Development Tools &amp; Libraries</fullName>
+                <default>false</default>
+                <label>Development Tools &amp; Libraries</label>
+            </value>
+            <value>
+                <fullName>Finance &amp; Economics</fullName>
+                <default>false</default>
+                <label>Finance &amp; Economics</label>
+            </value>
+            <value>
+                <fullName>Games</fullName>
+                <default>false</default>
+                <label>Games</label>
+            </value>
+            <value>
+                <fullName>Government / National Labs</fullName>
+                <default>false</default>
+                <label>Government / National Labs</label>
+            </value>
+            <value>
+                <fullName>Higher Education / Academia</fullName>
+                <default>false</default>
+                <label>Higher Education / Academia</label>
+            </value>
+            <value>
+                <fullName>Internet / Communications</fullName>
+                <default>false</default>
+                <label>Internet / Communications</label>
+            </value>
+            <value>
+                <fullName>Manufacturing</fullName>
+                <default>false</default>
+                <label>Manufacturing</label>
+            </value>
+            <value>
+                <fullName>Media &amp; Entertainment</fullName>
+                <default>false</default>
+                <label>Media &amp; Entertainment</label>
+            </value>
+            <value>
+                <fullName>Medical &amp; LifeSciences</fullName>
+                <default>false</default>
+                <label>Medical &amp; LifeSciences</label>
+            </value>
+            <value>
+                <fullName>Oil &amp; Gas</fullName>
+                <default>false</default>
+                <label>Oil &amp; Gas</label>
+            </value>
+            <value>
+                <fullName>Other (please specify)</fullName>
+                <default>false</default>
+                <label>Other (please specify)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

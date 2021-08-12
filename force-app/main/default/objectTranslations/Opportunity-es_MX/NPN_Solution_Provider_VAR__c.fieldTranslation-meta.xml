@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Select the NPN Solution Provider/VAR that applies to this specific opportunity.  This should represent the tier 2 partner involved with the deal. --></help>
+    <label><!-- NPN Solution Provider/VAR --></label>
+    <name>NPN_Solution_Provider_VAR__c</name>
+    <relationshipLabel><!-- Opportunities (NPN Solution Provider (VAR)) --></relationshipLabel>
+</CustomFieldTranslation>

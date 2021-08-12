@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Suppress_Sync_with_SAP__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>The account will not be created and synced with SAP when Checked. The field is created to support the BEL account structure and could be used for other use cases.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The account will not be created and synced with SAP when Checked</inlineHelpText>
+    <label>Suppress Sync with SAP</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

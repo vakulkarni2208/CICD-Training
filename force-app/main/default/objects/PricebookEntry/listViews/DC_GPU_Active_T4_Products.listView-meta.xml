@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DC_GPU_Active_T4_Products</fullName>
+    <columns>PRODUCT.NAME</columns>
+    <columns>PRODUCT.CUSTOMER_PRODUCT_ID</columns>
+    <columns>PRODUCT.DEFAULT_PRICE</columns>
+    <columns>PRODUCT.ACTIVE</columns>
+    <columns>PRODUCT2.FAMILY_ENUM</columns>
+    <columns>Product2.Product_Number__c</columns>
+    <columns>Product2.Product_Type__c</columns>
+    <columns>Product2.Product_Line__c</columns>
+    <columns>PRICEBOOK.NAME</columns>
+    <columns>Product2.Available_for_Datacenter_or_Edge__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>PRODUCT.NAME</field>
+        <operation>contains</operation>
+        <value>Tesla T4,DC GPU T4</value>
+    </filters>
+    <filters>
+        <field>PRODUCT2.ACTIVE</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>PRODUCT.ACTIVE</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>PRICEBOOK.NAME</field>
+        <operation>contains</operation>
+        <value>Standard</value>
+    </filters>
+    <label>DC GPU Active T4 Products</label>
+    <language>en_US</language>
+</ListView>

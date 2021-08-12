@@ -1,0 +1,101 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes" access="global" >
+
+    <aura:attribute name="Col1Header" type="String" default="Headline" />
+    <aura:attribute name="Col1Link1URL" type="String" default="" />
+    <aura:attribute name="Col1Link1" type="String" default="" />
+    <aura:attribute name="Col1Link2URL" type="String" default="" />
+    <aura:attribute name="Col1Link2" type="String" default="" />
+    <aura:attribute name="Col1Link3URL" type="String" default="" />
+    <aura:attribute name="Col1Link3" type="String" default="" />
+    <aura:attribute name="Col1Link4URL" type="String" default="" />
+    <aura:attribute name="Col1Link4" type="String" default="" />
+    <aura:attribute name="Col1Link5URL" type="String" default="" />
+    <aura:attribute name="Col1Link5" type="String" default="" />
+    <aura:attribute name="Col1Link6URL" type="String" default="" />
+    <aura:attribute name="Col1Link6" type="String" default="" />
+    <aura:attribute name="Col1Link7URL" type="String" default="" />
+    <aura:attribute name="Col1Link7" type="String" default="" />
+    <aura:attribute name="Col1Link8URL" type="String" default="" />
+    <aura:attribute name="Col1Link8" type="String" default="" />
+    <aura:attribute name="Col1Link9URL" type="String" default="" />
+    <aura:attribute name="Col1Link9" type="String" default="" />
+    <aura:attribute name="Col1Link10URL" type="String" default="" />
+    <aura:attribute name="Col1Link10" type="String" default="" />
+
+    <aura:attribute name="Col2Header" type="String" default="Headline" />
+    <aura:attribute name="Col2Link1URL" type="String" default="" />
+    <aura:attribute name="Col2Link1" type="String" default="" />
+    <aura:attribute name="Col2Link2URL" type="String" default="" />
+    <aura:attribute name="Col2Link2" type="String" default="" />
+    <aura:attribute name="Col2Link3URL" type="String" default="" />
+    <aura:attribute name="Col2Link3" type="String" default="" />
+    <aura:attribute name="Col2Link4URL" type="String" default="" />
+    <aura:attribute name="Col2Link4" type="String" default="" />
+    <aura:attribute name="Col2Link5URL" type="String" default="" />
+    <aura:attribute name="Col2Link5" type="String" default="" />
+    <aura:attribute name="Col2Link6URL" type="String" default="" />
+    <aura:attribute name="Col2Link6" type="String" default="" />
+    <aura:attribute name="Col2Link7URL" type="String" default="" />
+    <aura:attribute name="Col2Link7" type="String" default="" />
+    <aura:attribute name="Col2Link8URL" type="String" default="" />
+    <aura:attribute name="Col2Link8" type="String" default="" />
+    <aura:attribute name="Col2Link9URL" type="String" default="" />
+    <aura:attribute name="Col2Link9" type="String" default="" />
+    <aura:attribute name="Col2Link10URL" type="String" default="" />
+    <aura:attribute name="Col2Link10" type="String" default="" />
+
+    <aura:attribute name="Col3Header" type="String" default="Headline" />
+    <aura:attribute name="Col3Link1URL" type="String" default="" />
+    <aura:attribute name="Col3Link1" type="String" default="" />
+    <aura:attribute name="Col3Link2URL" type="String" default="" />
+    <aura:attribute name="Col3Link2" type="String" default="" />
+    <aura:attribute name="Col3Link3URL" type="String" default="" />
+    <aura:attribute name="Col3Link3" type="String" default="" />
+    <aura:attribute name="Col3Link4URL" type="String" default="" />
+    <aura:attribute name="Col3Link4" type="String" default="" />
+    <aura:attribute name="Col3Link5URL" type="String" default="" />
+    <aura:attribute name="Col3Link5" type="String" default="" />
+    <aura:attribute name="Col3Link6URL" type="String" default="" />
+    <aura:attribute name="Col3Link6" type="String" default="" />
+    <aura:attribute name="Col3Link7URL" type="String" default="" />
+    <aura:attribute name="Col3Link7" type="String" default="" />
+    <aura:attribute name="Col3Link8URL" type="String" default="" />
+    <aura:attribute name="Col3Link8" type="String" default="" />
+    <aura:attribute name="Col3Link9URL" type="String" default="" />
+    <aura:attribute name="Col3Link9" type="String" default="" />
+    <aura:attribute name="Col3Link10URL" type="String" default="" />
+    <aura:attribute name="Col3Link10" type="String" default="" />
+
+    <aura:attribute name="SubscribeTitle" type="String" default="Sign Up for NVIDIA News" />
+    <aura:attribute name="SubscribeBtnURL" type="String" default="http://www.nvidia.com/object/newsletter.html" />
+    <aura:attribute name="SubscribeBtnText" type="String" default="Subscribe" />
+    <aura:attribute name="SocialTitle" type="String" default="Follow NVIDIA" />
+
+    <aura:attribute name="Social1URL" type="String" default="http://www.facebook.com/NVIDIA/" />
+    <aura:attribute name="Social2URL" type="String" default="http://twitter.com/nvidia" />
+    <aura:attribute name="Social3URL" type="String" default="http://www.youtube.com/user/nvidia" />
+    <aura:attribute name="Social4URL" type="String" default="https://www.linkedin.com/company/nvidia" />
+    <aura:attribute name="Social5URL" type="String" default="https://www.instagram.com/nvidia" />
+
+       
+	<div>
+        <!-- Email and Social links -->
+        <div class="slds-grid slds-wrap">
+            <!-- email -->
+            <div class="slds-p-horizontal_small slds-size_1-of-1 slds-medium-size_3-of-6 slds-large-size_7-of-12 subscribe">
+                <img src="{!$Resource.ESPComm_Resources + '/nvidia_email_icon.png'}" /> <p>{!v.SubscribeTitle}</p> <a href="{!v.SubscribeBtnURL}">{!v.SubscribeBtnText}</a>
+            </div>
+            <!-- social links -->
+            <div class="slds-p-horizontal_small slds-size_1-of-1 slds-medium-size_3-of-6 slds-large-size_5-of-12 social">
+                <p>{!v.SocialTitle}</p>
+                <ul>
+                    <li><a href="{!v.Social1URL}" target="_blank"><img src="{!$Resource.ESPComm_Resources + '/nvidia_facebook_icon.svg'}" /></a></li>
+                    <li><a href="{!v.Social2URL}" target="_blank"><img src="{!$Resource.ESPComm_Resources + '/nvidia_twitter_icon.svg'}" /></a></li>
+                    <li><a href="{!v.Social3URL}" target="_blank"><img src="{!$Resource.ESPComm_Resources + '/nvidia_yt_icon.svg'}" /></a></li>
+                    <li><a href="{!v.Social4URL}" target="_blank"><img src="{!$Resource.ESPComm_Resources + '/SM-LinkedIn.svg'}" /></a></li>
+                    <li><a href="{!v.Social5URL}" target="_blank"><img src="{!$Resource.ESPComm_Resources + '/SM-Instagram.svg'}" /></a></li> 
+                </ul>
+            </div>
+        </div><!-- end slds-grid -->
+    </div>
+</aura:component>

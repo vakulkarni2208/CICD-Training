@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NVIDIA_Solutions__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Select the NVIDIA Horizontal Solution that applies to this Opportunity</inlineHelpText>
+    <label>NVIDIA Solutions</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Deep Learning (DL)</fullName>
+                <default>false</default>
+                <label>Deep Learning (DL)</label>
+            </value>
+            <value>
+                <fullName>Virtual &amp; Augmented Reality (VR/AR)</fullName>
+                <default>false</default>
+                <label>Virtual &amp; Augmented Reality (VR/AR)</label>
+            </value>
+            <value>
+                <fullName>HPC/Scientific and Technical Computing</fullName>
+                <default>false</default>
+                <label>HPC/Scientific and Technical Computing</label>
+            </value>
+            <value>
+                <fullName>Data Analytics</fullName>
+                <default>false</default>
+                <label>Data Analytics</label>
+            </value>
+            <value>
+                <fullName>Intelligent Video Analytics (IVA)</fullName>
+                <default>false</default>
+                <label>Intelligent Video Analytics (IVA)</label>
+            </value>
+            <value>
+                <fullName>GIS (Geographic Info Systems)</fullName>
+                <default>false</default>
+                <label>GIS (Geographic Info Systems)</label>
+            </value>
+            <value>
+                <fullName>Internet of Things ( IoT)</fullName>
+                <default>false</default>
+                <label>Internet of Things ( IoT)</label>
+            </value>
+            <value>
+                <fullName>Embedded/Mobile</fullName>
+                <default>false</default>
+                <label>Embedded/Mobile</label>
+            </value>
+            <value>
+                <fullName>SVS (Scalable Visualization Solutions)</fullName>
+                <default>false</default>
+                <label>SVS (Scalable Visualization Solutions)</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>None at this time</fullName>
+                <default>false</default>
+                <label>None at this time</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>3</visibleLines>
+</CustomField>

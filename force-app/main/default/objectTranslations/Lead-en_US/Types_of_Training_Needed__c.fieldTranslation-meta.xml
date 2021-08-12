@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Type(s) of Training Needed --></label>
+    <name>Types_of_Training_Needed__c</name>
+    <picklistValues>
+        <masterLabel>Instructor Led</masterLabel>
+        <translation><!-- Instructor Led --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Self-Paced</masterLabel>
+        <translation><!-- Self-Paced --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

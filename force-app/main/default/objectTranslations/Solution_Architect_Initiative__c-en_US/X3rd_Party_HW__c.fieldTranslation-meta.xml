@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- i.e server/workstation --></help>
+    <label><!-- 3rd Party HW --></label>
+    <name>X3rd_Party_HW__c</name>
+</CustomFieldTranslation>

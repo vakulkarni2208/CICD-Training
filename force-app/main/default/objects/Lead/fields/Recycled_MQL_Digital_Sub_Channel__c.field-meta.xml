@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Recycled_MQL_Digital_Sub_Channel__c</fullName>
+    <businessOwnerUser>dersun@nvidia.com.trprod</businessOwnerUser>
+    <description>Jira #SDS-2898; MQL digital sub-channel source (derived from NCID)  </description>
+    <externalId>false</externalId>
+    <label>Recycled MQL Digital Sub-Channel</label>
+    <length>100</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

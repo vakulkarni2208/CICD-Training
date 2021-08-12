@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- 2100 - US Sales Org
+3300 - SG Sales Org --></help>
+    <label><!-- Sales Organization --></label>
+    <name>Sales_Organization__c</name>
+    <picklistValues>
+        <masterLabel>2100</masterLabel>
+        <translation><!-- 2100 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>3300</masterLabel>
+        <translation><!-- 3300 --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NPN_SP_VAR_SAP__c</fullName>
+    <description>NPN (Reseller/VAR) - SAP Customer Number</description>
+    <externalId>false</externalId>
+    <formula>OpportunityId__r.NPN_Solution_Provider_VAR__r.SAP_Customer_Number__c</formula>
+    <inlineHelpText>NPN (Reseller/VAR) - SAP Customer Number</inlineHelpText>
+    <label>NPN-SP/VAR SAP#</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

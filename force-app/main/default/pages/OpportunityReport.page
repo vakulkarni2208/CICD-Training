@@ -1,0 +1,178 @@
+<apex:page >
+
+<!-- 
+   ----- 
+   /* @Manideep: 5/8/2019 - This code is commented by Manideep as its not being used and part of Opportunity RecordType clean up. This is an old code
+      and is not used anymore. Confirmed by Margaret and Gregg as well. So this page is ready to delete.
+   */ -----
+   
+<apex:page standardController="Opportunity" extensions="OpportunityReport_Controller" recordSetvar="opps" 
+           tabStyle="Opportunity_Report__tab" sidebar="false" 
+           cache="{!IF(renderAsCsv,true, false)}"
+           showHeader="{!IF(renderAsCsv,false, true)}"
+           contentType="{!IF(renderAsCsv,'text/csv#OpportunityReport.csv','')}"
+           >
+
+<apex:outputPanel rendered="{!NOT(renderAsCsv)}" >
+    <style>
+    .table {border:1px solid black;}
+    .tr    {border:1px solid black;vertical-align: top;}
+    .td    {border:1px solid black;}
+    .th    {border:1px solid black;}
+    </style>
+
+    <apex:form id="theForm">
+
+    <apex:sectionHeader title="Opportunity Report"/>
+    <apex:pageMessages id="messages" />
+    <table>
+    <tr valign="top">
+        <th>Opportunities:</th>
+        <td>
+             <apex:selectList id="lstOpportunities" value="{!filterId}" size="1" onmousedown="sortOpportunityList();">
+                <apex:actionSupport event="onchange" action="{!selectListView}" />
+                <apex:selectOptions value="{!listviewoptions}"/>
+            </apex:selectList>
+            &nbsp;
+            <apex:outputText value="({!numOpps} Opportunities)"  /><br/>
+        </td>
+    </tr>
+    <tr valign="top">
+        <th>Format:</th>
+        <td>
+            <apex:selectRadio value="{!format}" layout="pageDirection">
+                <apex:selectOption itemValue="browser" itemLabel="A regular browser page" />
+                <apex:selectOption itemValue="csv" itemLabel="CSV, suitable for importing into Excel for further analysis" />
+            </apex:selectRadio>
+            <apex:inputCheckbox value="{!repeatData}" />&nbsp;
+            If an Opportunity has more than one Product, repeat the Opportunity data for each Product. 
+        </td>
+    </tr>
+    <tr valign="top">
+        <th>Starting Quarter:</th>
+        <td>
+            <apex:selectList value="{!startingQuarter}" size="1">
+                <apex:selectOptions value="{!lstQuarterSelectOptions}"/>
+            </apex:selectList>
+        </td>
+    </tr>
+    <tr valign="top">
+        <th>Ending Quarter:</th>
+        <td>
+            <apex:selectList value="{!endingQuarter}" size="1">
+                <apex:selectOptions value="{!lstQuarterSelectOptions}"/>
+            </apex:selectList>
+        </td>
+    </tr>
+    </table>
+
+    <apex:commandButton value="Run Report" action="{!runReportPart1}" status="actionStatus"  
+      rerender="progress,results,messages" 
+      onComplete="doRunReportPart2();" />
+    &nbsp;&nbsp;<apex:actionStatus id="actionStatus">
+        <apex:facet name="start">
+            <apex:image value="{!URLFOR($Resource.AjaxInProgress)}" />
+        </apex:facet>
+        <apex:facet name="stop">
+        </apex:facet>
+    </apex:actionStatus>
+    <br/>
+    <br/>
+    <apex:actionFunction name="runReportPart2"    action="{!runReportPart2}" status="actionStatus" rerender="progress" onComplete="doRunReportPart2();" />
+    <apex:actionFunction name="runReportPart3"    action="{!runReportPart3}" status="actionStatus" rerender="j_id0:results,progress" />
+    <apex:actionFunction name="runReportPart3CSV" action="{!runReportPart3}"  />
+
+    </apex:form>
+
+    <script language="JavaScript">
+        function doRunReportPart2() {
+            var pageError = document.getElementById('pageError').value;
+            var currentRowNum = document.getElementById('currentRowNum').value;
+            var numRows = document.getElementById('numRows').value;
+            var doneWithOpps = document.getElementById('doneWithOpps').value;
+            var renderAsCsv = document.getElementById('renderAsCsv').value;
+            var format = document.getElementById('format').value;
+            var intCurrentRowNum = parseInt(currentRowNum);
+            var intNumRows = parseInt(numRows);
+            //alert('in doRunReportPart2(): \n' +
+            //      'renderAsCsv = ' + renderAsCsv + '\n' +
+            //      'currentRowNum = ' + currentRowNum + '\n' +
+            //      'intCurrentRowNum = ' + intCurrentRowNum + '\n' +
+            //      'numRows = ' + numRows + '\n' +
+            //      'intNumRows = ' + intNumRows + '\n' +
+            //      'doneWithOpps = ' + doneWithOpps + '\n'); 
+            if (pageError == 'true') return;
+            if (doneWithOpps == 'false') {
+                //alert('about to runReportPart2()');
+                runReportPart2();
+            }
+            else {
+                //alert('about to doRunReportPart3()');
+                doRunReportPart3();
+            }
+        }
+        
+        function doRunReportPart3() {
+            var renderAsCsv = document.getElementById('renderAsCsv').value;
+            var format = document.getElementById('format').value;
+            if (format == 'csv') {
+                //alert('about to run runReportPart3CSV()');
+                runReportPart3CSV();
+            }
+            else {
+                //alert('about to run runReportPart3()');
+                runReportPart3();
+            }
+        }
+        
+        function runReportPart3Complete() {
+        }
+        
+        //function to sort Opportunities drop down
+        function sortOpportunityList() {
+            var objOpportunities = document.getElementById('{!$Component.theForm.lstOpportunities}');
+            
+            var iSelectedOpportunity = objOpportunities.selectedIndex;
+
+            //get the current selected opportunity so as to reselect after sorting
+            var strSelectedOpportunity = objOpportunities.options[iSelectedOpportunity].text;
+           
+            arrOpportunities = new Array();
+            for(i=0; i<objOpportunities.length; i++)  {
+              arrOpportunities[i] = objOpportunities.options[i].text + "!/!" + objOpportunities.options[i].value;
+            }
+            
+            arrOpportunities.sort();
+
+            //reload the list of opportunities
+            arrSplit = new Array();
+            for(i=0; i<objOpportunities.length; i++)  {
+              arrSplit = arrOpportunities[i].split("!/!");
+              objOpportunities.options[i].text = arrSplit[0];
+              objOpportunities.options[i].value = arrSplit[1];
+              if (objOpportunities.options[i].text == strSelectedOpportunity){
+                  objOpportunities.options[i].selected = true;
+              }
+            }
+            
+        }
+    
+    </script>
+</apex:outputPanel>
+
+<apex:outputPanel id="progress" rendered="{!strResults==''}" >
+    <div style="visibility:hidden;display:none;">
+    pageError = <input type="text" id="pageError" value="{!pageError}"/><br/>
+    currentRowNum = <input type="text" id="currentRowNum" value="{!currentRowNum}"/><br/>
+    numRows = <input type="text" id="numRows" value="{!numRows}" /><br/>
+    doneWithOpps = <input type="text" id="doneWithOpps" value="{!doneWithOpps}" /><br/>
+    renderAsCsv = <input type="text" id="renderAsCsv" value="{!renderAsCsv}" /><br/>
+    format = <input type="text" id="format" value="{!format}" /><br/>
+    </div>
+</apex:outputPanel>
+
+
+<apex:outputText id="results" value="{!strResults}" escape="false"  />
+
+-->
+</apex:page>

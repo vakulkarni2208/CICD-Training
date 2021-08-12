@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Customer_Specific</fullName>
+    <columns>NAME</columns>
+    <columns>Access_Level__c</columns>
+    <columns>Product__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>Announcement_Type__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Access_Level__c</field>
+        <operation>equals</operation>
+        <value>Customer Specific</value>
+    </filters>
+    <label>All Customer Specific</label>
+    <language>en_US</language>
+</ListView>

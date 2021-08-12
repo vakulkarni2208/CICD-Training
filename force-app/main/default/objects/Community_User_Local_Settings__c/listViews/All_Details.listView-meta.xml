@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Details</fullName>
+    <columns>NAME</columns>
+    <columns>Localized_Portal__c</columns>
+    <columns>COUNTRY_LIST__c</columns>
+    <columns>CONTACT_GPUGENIUS_GROUP__c</columns>
+    <columns>USER_ALIAS__c</columns>
+    <columns>USER_EMAILENCODEKEY__c</columns>
+    <columns>USER_LANGLOCALEKEY__c</columns>
+    <columns>USER_LANGUAGE__c</columns>
+    <columns>USER_LOCALESIDKEY__c</columns>
+    <columns>USER_TZSIDKEY__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All Details</label>
+    <language>en_US</language>
+</ListView>

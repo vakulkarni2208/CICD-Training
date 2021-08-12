@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Select the level of Accelerated Application usage --></help>
+    <label><!-- Developing your own Accelerated Apps? --></label>
+    <name>Developing_your_own_Accelerated_Apps__c</name>
+    <picklistValues>
+        <masterLabel>No, but I plan to</masterLabel>
+        <translation><!-- No, but I plan to --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No, but I use existing applications</masterLabel>
+        <translation><!-- No, but I use existing applications --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unsure</masterLabel>
+        <translation><!-- Unsure --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Yes, I am</masterLabel>
+        <translation><!-- Yes, I am --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

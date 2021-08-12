@@ -1,0 +1,52 @@
+<aura:component >
+    <!--<aura:attribute name="objPPS" type="SuRF_Partner_Performance_Scorecard__c" required="true" />        
+    <p style="color:#76b900">></p> {!v.objPPS.Competency__c}, {!v.objPPS.Level__c}
+    <aura:attribute name="Competency" type="String" />
+    <aura:attribute name="Level" type="String" />
+    <aura:attribute name="Flag" type="Integer" />
+    <p>{!v.Competency}, {!v.Level} </p>
+    <aura:if isTrue="{!v.Flag==1}">
+        ✔
+        <aura:set attribute="else">
+      		✘
+    	</aura:set>
+    </aura:if>-->
+    <aura:attribute name="bPPS" type="boolean" />
+    <aura:attribute name="bInProgressCompliance" type="boolean" />
+    <aura:if isTrue="{!!v.bPPS}">
+        <div style="line-height:30px;">
+            <span class="check" style="display:inline-block">&nbsp;  </span><span class="complianceText" style="padding-left:10px;display:inline-block"> {!$Label.c.NPNHomePage_COMPLIANT} </span>
+        </div>
+        <div style="margin-top:5px;line-height:30px;">
+            <span class="caution" style="display:inline-block">&nbsp; </span><span class="complianceText" style="padding-left:10px;display:inline-block">{!$Label.c.NPNHomePage_IN_PROGRESS} </span>
+        </div>
+        <div style="margin-top:5px;line-height:30px;">
+            <span class="x" style="{!'display:inline-block;background-image: url(/resource/NPN_Community_Home_Page_Competency_Image/CompetencyDataImage/icon-non-compliant.svg)'}"> &nbsp;</span><span class="complianceText" style="padding-left:10px;display:inline-block"> {!$Label.c.NPNHomePage_Non_Cmpliant}</span>
+        </div>
+        <aura:set attribute="else">
+            <aura:if isTrue="{!!v.bInProgressCompliance}">
+                <div style="line-height:30px;">
+                    <span class="check" style="{!'display:inline-block;background-image: url(/resource/NPN_Community_Home_Page_Competency_Image/CompetencyDataImage/icon-compliant.svg)'}"> &nbsp;</span><span class="complianceText" style="padding-left:10px;display:inline-block"> {!$Label.c.NPNHomePage_COMPLIANT} </span>
+                </div>
+                <div style="margin-top:5px;line-height:30px;">
+                    <span class="caution" style="display:inline-block">&nbsp; </span><span class="complianceText" style="padding-left:10px;display:inline-block"> {!$Label.c.NPNHomePage_IN_PROGRESS}</span>
+                </div>
+                <div style="margin-top:5px;line-height:30px;">
+                    <span class="x" style="display:inline-block">&nbsp; </span><span class="complianceText" style="padding-left:10px;display:inline-block"> {!$Label.c.NPNHomePage_Non_Cmpliant}</span>
+                </div>
+                <aura:set attribute="else">
+                	<div style="line-height:30px;">
+                        <span class="check" style="display:inline-block"> &nbsp;</span><span class="complianceText" style="padding-left:10px;display:inline-block"> {!$Label.c.NPNHomePage_COMPLIANT} </span>
+                    </div>
+                    <div style="margin-top:5px;line-height:30px;">
+                        <span class="caution" style="{!'display:inline-block;background-image: url(/resource/NPN_Community_Home_Page_Competency_Image/CompetencyDataImage/icon-inprogress.svg)'}">&nbsp; </span><span class="complianceText" style="padding-left:10px;display:inline-block"> {!$Label.c.NPNHomePage_IN_PROGRESS}</span>
+                    </div>
+                    <div style="margin-top:5px;line-height:30px;">
+                        <span class="x" style="display:inline-block">&nbsp; </span><span class="complianceText" style="padding-left:10px;display:inline-block"> {!$Label.c.NPNHomePage_Non_Cmpliant}</span>
+                    </div>
+                </aura:set>
+            </aura:if> 
+    	</aura:set>
+    </aura:if> 
+    
+</aura:component>

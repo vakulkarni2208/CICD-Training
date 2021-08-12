@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<IframeWhiteListUrlSettings xmlns="http://soap.sforce.com/2006/04/metadata">
+    <iframeWhiteListUrls>
+        <context>VisualforcePages</context>
+        <url>*.gus.visual.force.com</url>
+    </iframeWhiteListUrls>
+    <iframeWhiteListUrls>
+        <context>VisualforcePages</context>
+        <url>gblite.gus.visual.force.com</url>
+    </iframeWhiteListUrls>
+    <iframeWhiteListUrls>
+        <context>VisualforcePages</context>
+        <url>gs0.lightning.force.com</url>
+    </iframeWhiteListUrls>
+    <iframeWhiteListUrls>
+        <context>VisualforcePages</context>
+        <url>nvcrm.lightning.force.com</url>
+    </iframeWhiteListUrls>
+    <iframeWhiteListUrls>
+        <context>VisualforcePages</context>
+        <url>nvcrm.my.salesforce.com</url>
+    </iframeWhiteListUrls>
+    <iframeWhiteListUrls>
+        <context>VisualforcePages</context>
+        <url>tableaureporting.nvidia.com</url>
+    </iframeWhiteListUrls>
+</IframeWhiteListUrlSettings>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>Service_Set_Original_Details</fullName>
+        <field>Original_Details__c</field>
+        <formula>&apos;Source contact SAP ID: &apos; &amp; Contact__r.SAP_Contact_ID__c</formula>
+        <name>Service: Set Original Details</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <rules>
+        <fullName>Service-Actions on Modify Record Creation</fullName>
+        <actions>
+            <name>Service_Set_Original_Details</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Modify_Records__c.Type__c</field>
+            <operation>equals</operation>
+            <value>Contact</value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+</Workflow>

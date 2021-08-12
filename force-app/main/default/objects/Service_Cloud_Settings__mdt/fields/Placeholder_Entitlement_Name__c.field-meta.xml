@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Placeholder_Entitlement_Name__c</fullName>
+    <defaultValue>&apos;Placeholder Entitlement - Please Update&apos;</defaultValue>
+    <description>This field value is used to set Placeholder Entitlement Name for Business Critical service.</description>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Placeholder Entitlement Name</label>
+    <length>255</length>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

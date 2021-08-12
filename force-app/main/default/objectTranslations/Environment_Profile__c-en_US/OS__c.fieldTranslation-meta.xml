@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- OS --></label>
+    <name>OS__c</name>
+    <picklistValues>
+        <masterLabel>BaseOS</masterLabel>
+        <translation><!-- BaseOS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CentOS</masterLabel>
+        <translation><!-- CentOS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Custom</masterLabel>
+        <translation><!-- Custom --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DGX OS</masterLabel>
+        <translation><!-- DGX OS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RHEL</masterLabel>
+        <translation><!-- RHEL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Red Hat Enterprise Linux 6.6</masterLabel>
+        <translation><!-- Red Hat Enterprise Linux 6.6 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Red Hat Enterprise Linux 7.0</masterLabel>
+        <translation><!-- Red Hat Enterprise Linux 7.0 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Red Hat Enterprise Linux 7.6</masterLabel>
+        <translation><!-- Red Hat Enterprise Linux 7.6 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Red Hat Enterprise Linux 7.7</masterLabel>
+        <translation><!-- Red Hat Enterprise Linux 7.7 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RedHat</masterLabel>
+        <translation><!-- RedHat --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SUSE Linux Enterprise Server 12 SP3+</masterLabel>
+        <translation><!-- SUSE Linux Enterprise Server 12 SP3+ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ubuntu 14.04 LTS</masterLabel>
+        <translation><!-- Ubuntu 14.04 LTS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ubuntu 16.04 LTS</masterLabel>
+        <translation><!-- Ubuntu 16.04 LTS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ubuntu 18.04 LTS</masterLabel>
+        <translation><!-- Ubuntu 18.04 LTS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Windows 10 1507</masterLabel>
+        <translation><!-- Windows 10 1507 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Windows 10 1511</masterLabel>
+        <translation><!-- Windows 10 1511 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Windows 10 1607</masterLabel>
+        <translation><!-- Windows 10 1607 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Windows 10 1703</masterLabel>
+        <translation><!-- Windows 10 1703 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Windows 10 1709</masterLabel>
+        <translation><!-- Windows 10 1709 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Windows 10 1803</masterLabel>
+        <translation><!-- Windows 10 1803 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Windows 10 1809</masterLabel>
+        <translation><!-- Windows 10 1809 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Windows 10 1903</masterLabel>
+        <translation><!-- Windows 10 1903 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Windows 10 1909</masterLabel>
+        <translation><!-- Windows 10 1909 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Windows 7</masterLabel>
+        <translation><!-- Windows 7 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Windows 8</masterLabel>
+        <translation><!-- Windows 8 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Windows 8.1</masterLabel>
+        <translation><!-- Windows 8.1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Windows Server 2008 R2</masterLabel>
+        <translation><!-- Windows Server 2008 R2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Windows Server 2012 R2</masterLabel>
+        <translation><!-- Windows Server 2012 R2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Windows Server 2016 1607</masterLabel>
+        <translation><!-- Windows Server 2016 1607 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Windows Server 2016 1709</masterLabel>
+        <translation><!-- Windows Server 2016 1709 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Windows Server 2019</masterLabel>
+        <translation><!-- Windows Server 2019 --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

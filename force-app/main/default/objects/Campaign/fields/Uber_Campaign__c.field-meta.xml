@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Uber_Campaign__c</fullName>
+    <description>SDS-2646</description>
+    <externalId>false</externalId>
+    <label>Uber Campaign</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>AI for Developer</fullName>
+                <default>false</default>
+                <label>AI for Developer</label>
+            </value>
+            <value>
+                <fullName>AI for Enterprise</fullName>
+                <default>false</default>
+                <label>AI for Enterprise</label>
+            </value>
+            <value>
+                <fullName>Healthcare Campaign</fullName>
+                <default>false</default>
+                <label>Healthcare Campaign</label>
+            </value>
+            <value>
+                <fullName>HPC Campaign</fullName>
+                <default>false</default>
+                <label>HPC Campaign</label>
+            </value>
+            <value>
+                <fullName>Manufacturing Campaign</fullName>
+                <default>false</default>
+                <label>Manufacturing Campaign</label>
+            </value>
+            <value>
+                <fullName>NVIDIA Accelerated Data Science</fullName>
+                <default>false</default>
+                <label>NVIDIA Accelerated Data Science</label>
+            </value>
+            <value>
+                <fullName>Remote Work with NVIDIA</fullName>
+                <default>false</default>
+                <label>Remote Work with NVIDIA</label>
+            </value>
+            <value>
+                <fullName>RTX Everywhere</fullName>
+                <default>false</default>
+                <label>RTX Everywhere</label>
+            </value>
+            <value>
+                <fullName>vGPU for Every Workload</fullName>
+                <default>false</default>
+                <label>vGPU for Every Workload</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

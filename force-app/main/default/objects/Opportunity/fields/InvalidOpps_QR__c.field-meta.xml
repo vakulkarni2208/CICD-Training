@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>InvalidOpps_QR__c</fullName>
+    <description>Reporting - SE Quantity &lt;&gt; 0 but Revenue = 0</description>
+    <externalId>false</externalId>
+    <label>InvalidOpps_QR</label>
+    <summaryFilterItems>
+        <field>Schedule_Entry__c.Quantity__c</field>
+        <operation>greaterThan</operation>
+        <value>0</value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>Schedule_Entry__c.Revenue__c</field>
+        <operation>equals</operation>
+        <value/>
+    </summaryFilterItems>
+    <summaryForeignKey>Schedule_Entry__c.Opportunity__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

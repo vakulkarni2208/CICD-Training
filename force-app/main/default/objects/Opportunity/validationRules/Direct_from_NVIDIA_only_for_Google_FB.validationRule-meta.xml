@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Direct_from_NVIDIA_only_for_Google_FB</fullName>
+    <active>false</active>
+    <description>Only allow selection of OEM status of &apos;Direct from NVIDIA&apos; by a Google or FB account</description>
+    <errorConditionFormula>AND(
+ $RecordType.Name = &quot;Enterprise Sales Opportunity&quot;, 
+ NOT($Permission.SKIP_PriceBookCheck), 
+ ISPICKVAL(OEM_ODM_Disti_Status__c, &quot;Direct from NVIDIA&quot;),
+ NOT(CONTAINS(Account.Name, &quot;Google&quot;)),
+ NOT(CONTAINS(Account.Name, &quot;Facebook&quot;)),
+ NOT(CONTAINS(Account.Name, &quot;Amazon&quot;)),
+ NOT(CONTAINS(Account.Name, &quot;Waymo&quot;)),
+ NOT(CONTAINS(Account.Name, &quot;Elemental Technologies&quot;))
+
+ 
+)</errorConditionFormula>
+    <errorDisplayField>OEM_ODM_Disti_Status__c</errorDisplayField>
+    <errorMessage>Only the Google, Facebook , Amazon, Waymo or Elemental Technologies Inc accounts are allowed to select &apos;Direct from NVIDIA&apos; sales methods.  Please select another option.</errorMessage>
+</ValidationRule>

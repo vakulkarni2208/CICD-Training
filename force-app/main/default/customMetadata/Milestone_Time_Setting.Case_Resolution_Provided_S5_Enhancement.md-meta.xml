@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Case Resolution Provided-S5: Enhancement</label>
+    <protected>false</protected>
+    <values>
+        <field>Milestone_Name__c</field>
+        <value xsi:type="xsd:string">Resolve or Escalate to NVES</value>
+    </values>
+    <values>
+        <field>Severity__c</field>
+        <value xsi:type="xsd:string">S5:_Enhancement_Request</value>
+    </values>
+    <values>
+        <field>Time__c</field>
+        <value xsi:type="xsd:double">7200.0</value>
+    </values>
+</CustomMetadata>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- A sort order must be specified in order to include the news on the PRM homepage.  To remove a news item from the homepage, remove this value.   If multiple news items have a sort order, they will all be displayed in the order specified by this field. --></help>
+    <label><!-- Sort Order --></label>
+    <name>Sort_Order__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LATAM_Leads1</fullName>
+    <columns>LEAD.COMPANY</columns>
+    <columns>Other_Lead_Status_Comments__c</columns>
+    <columns>LEAD.LAST_NAME</columns>
+    <columns>Lead_Owner_Full_Name__c</columns>
+    <columns>GTC_Sessions_Attended__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>LEAD.STATUS</field>
+        <operation>equals</operation>
+        <value>Prospect</value>
+    </filters>
+    <filters>
+        <field>Lead_Owner_Full_Name__c</field>
+        <operation>equals</operation>
+        <value>Fernando Otavio Wehrs da Silva Pereira,Airan de Abreu Junior,Marcel Saraiva</value>
+    </filters>
+    <label>LATAM Leads</label>
+    <sharedTo>
+        <allInternalUsers/>
+    </sharedTo>
+</ListView>

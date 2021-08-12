@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tableau_IsUserCreated__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Check if the SFDC user is created in Tableau</description>
+    <externalId>false</externalId>
+    <label>Tableau_IsUserCreated?</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Checkbox</type>
+</CustomField>

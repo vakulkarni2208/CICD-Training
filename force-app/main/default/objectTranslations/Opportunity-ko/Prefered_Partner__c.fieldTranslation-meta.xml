@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Select the NPN OEM that applies to this specific opportunity. --></help>
+    <label><!-- NPN OEM/Distributor --></label>
+    <name>Prefered_Partner__c</name>
+    <picklistValues>
+        <masterLabel>ASUS</masterLabel>
+        <translation><!-- ASUS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Acer Incorporated</masterLabel>
+        <translation><!-- Acer Incorporated --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Adlink</masterLabel>
+        <translation><!-- Adlink --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Advantech</masterLabel>
+        <translation><!-- Advantech --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Aptec Distribution FFZ LLC</masterLabel>
+        <translation><!-- Aptec Distribution FFZ LLC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Arrow Electronics</masterLabel>
+        <translation><!-- Arrow Electronics --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BayNex</masterLabel>
+        <translation><!-- BayNex --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bull</masterLabel>
+        <translation><!-- Bull --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>C-Data Computer Ltd.</masterLabel>
+        <translation><!-- C-Data Computer Ltd. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CEAC International</masterLabel>
+        <translation><!-- CEAC International --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Carahsoft Technology Corporation</masterLabel>
+        <translation><!-- Carahsoft Technology Corporation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cirrascale</masterLabel>
+        <translation><!-- Cirrascale --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cisco</masterLabel>
+        <translation><!-- Cisco --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Clavis Company (Macnica)</masterLabel>
+        <translation><!-- Clavis Company (Macnica) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cray</masterLabel>
+        <translation><!-- Cray --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Daebo Communication &amp; Systems</masterLabel>
+        <translation><!-- Daebo Communication &amp; Systems --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Daou Data</masterLabel>
+        <translation><!-- Daou Data --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dawning (Sugon)</masterLabel>
+        <translation><!-- Dawning (Sugon) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dell</masterLabel>
+        <translation><!-- Dell --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Foxconn</masterLabel>
+        <translation><!-- Foxconn --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fujitsu</masterLabel>
+        <translation><!-- Fujitsu --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gigabyte</masterLabel>
+        <translation><!-- Gigabyte --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>H3C</masterLabel>
+        <translation><!-- H3C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HPE</masterLabel>
+        <translation><!-- HPE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HPI</masterLabel>
+        <translation><!-- HPI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Huawei</masterLabel>
+        <translation><!-- Huawei --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IBM</masterLabel>
+        <translation><!-- IBM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ingram Micro</masterLabel>
+        <translation><!-- Ingram Micro --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Inspur</masterLabel>
+        <translation><!-- Inspur --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Inventec</masterLabel>
+        <translation><!-- Inventec --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Isolin Trade &amp; Invest Limited</masterLabel>
+        <translation><!-- Isolin Trade &amp; Invest Limited --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Leadtek Research (Taiwan)</masterLabel>
+        <translation><!-- Leadtek Research (Taiwan) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lenovo</masterLabel>
+        <translation><!-- Lenovo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>N/A</masterLabel>
+        <translation><!-- N/A --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PNY</masterLabel>
+        <translation><!-- PNY --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Penguin Computing</masterLabel>
+        <translation><!-- Penguin Computing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Quanta</masterLabel>
+        <translation><!-- Quanta --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rashi Peripherals</masterLabel>
+        <translation><!-- Rashi Peripherals --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ryoyo Electro Corporation</masterLabel>
+        <translation><!-- Ryoyo Electro Corporation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ScanSource</masterLabel>
+        <translation><!-- ScanSource --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Softbank Commerce &amp; Service Corp</masterLabel>
+        <translation><!-- Softbank Commerce &amp; Service Corp --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Super Micro</masterLabel>
+        <translation><!-- Super Micro --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Synnex</masterLabel>
+        <translation><!-- Synnex --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>T-Platforms</masterLabel>
+        <translation><!-- T-Platforms --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tech Data</masterLabel>
+        <translation><!-- Tech Data --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Technology Joint Corporation (Elsa)</masterLabel>
+        <translation><!-- Technology Joint Corporation (Elsa) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tongfang</masterLabel>
+        <translation><!-- Tongfang --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tyan</masterLabel>
+        <translation><!-- Tyan --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VSTECS (Singapore) Pte. Ltd.</masterLabel>
+        <translation><!-- VSTECS (Singapore) Pte. Ltd. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZT Systems</masterLabel>
+        <translation><!-- ZT Systems --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Zero One Tech Co Ltd</masterLabel>
+        <translation><!-- Zero One Tech Co Ltd --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,97 @@
+<apex:page standardController="contact" extensions="NV_AddEditContactController" tabStyle="Temporary_Contact__c">
+    <style>
+        span.tooltip {
+            float: center;
+            position: relative;
+            display: inline-block;
+        }
+        span.tooltip:hover {
+            background: #ffffff;
+            text-decoration: none;
+        } /*BG color is a must for IE6*/
+        span.tooltip span {
+            display: none;
+            padding: 2px 3px;
+            margin-left: 8px;
+            width:150px;
+        }
+        span.tooltip:hover span {
+            display: inline;
+            position: absolute;
+            border: 1px solid #cccccc;
+            background: #FFC;;
+            color: #000000;
+        }
+    </style>  
+    <apex:form >
+        <apex:pageBlock title="Contact " rendered="{!IF($CurrentPage.Parameters.readonly == 'true', false, true)}">
+            <apex:pageMessages ></apex:pageMessages>
+            <apex:pageBlockSection title="Contact Information" columns="2">
+                <apex:pageBlockSectionItem >
+                    Contact Owner 
+                    <apex:outputText value="{!IF(contact.Ownerid=='',$User.FirstName +' '+ $User.LastName,contact.Owner.Name)}"/>
+                </apex:pageBlockSectionItem>
+                <apex:inputField value="{!contact.Title}"/>
+                <apex:inputfield value="{!contact.FirstName}" required="true"/>
+                <apex:inputField value="{!contact.Phone}"/>
+                <apex:inputField value="{!contact.LastName}" required="true"/>
+                <apex:inputField value="{!contact.Email}"  required="true" rendered="{!IF(contact.id==null,true,false)}" />
+                <apex:outputPanel id="emailPanel" rendered="{!IF(contact.id==null,false,true)}" style="padding-left:30%;">
+                    <span style="display:inline-block;font-weight: bold; ">
+                            Email &nbsp;
+                            <span class="tooltip"><apex:image url="{!$Resource.ExclamationImage}"  height="14px;"/>
+                            <span class="innerSpanTooltip">Please contact your PBM for email address updates.</span>&nbsp;
+                            {!contact.Email}
+                        </span>
+                    </span>
+                </apex:outputPanel>
+                <apex:outputPanel id="rolePanel1" style="padding-left:18%">
+                    <span style="font-weight: bold;"> NPN Portal Access Role <span class="tooltip"><apex:image url="{!$Resource.ExclamationTooltip}"  height="14px;"/>
+                        <span style="font-weight:normal">By assigning a role, you are requesting portal access for this contact. If the contact requires sales or technical training, please be sure to include the Sales or Technical role</span></span>
+                    </span>
+                    <apex:panelGrid columns="3" id="abcd" style="padding-left:36%">
+                        <apex:selectList id="sel1" value="{!leftSelected}" multiselect="true" style="width:175px" size="6">
+                            <apex:selectOptions value="{!DeselectedValues}" />
+                        </apex:selectList>
+                        <apex:panelGroup >
+                            <br/>
+                            <apex:image styleClass="picklistArrowRight" value="/s.gif">
+                                <apex:actionSupport event="onclick" action="{!getSelect}" reRender="abcd"/>
+                            </apex:image>
+                            <br/><br/>
+                            <apex:image styleClass="picklistArrowLeft" value="/s.gif">
+                                <apex:actionSupport event="onclick" action="{!getDeselect}" reRender="abcd"/>
+                            </apex:image>
+                        </apex:panelGroup>
+                        <apex:selectList id="sel2" value="{!rightSelected}" multiselect="true" style="width:175px" size="6">
+                            <apex:selectOptions value="{!SelectedValues}" />
+                        </apex:selectList>
+                    </apex:panelGrid>
+                </apex:outputPanel>
+                <apex:inputHidden value="{!contact.AddEditTempContactID__c}"/>
+            </apex:pageBlockSection>
+            <apex:pageBlockButtons >
+                <apex:commandButton value="Save" action="{!saveContact}" />
+                <apex:commandButton value="Cancel" action="{!cancelContact}" immediate="true"/>
+            </apex:pageBlockButtons>
+        </apex:pageBlock>
+        <apex:pageBlock title="Contact " rendered="{!IF($CurrentPage.Parameters.readonly == 'true', true, false)}">
+            <span align="center">
+                <apex:commandButton value="Cancel" style="padding: 4px 3px;" action="{!cancelContact}" />
+            </span>
+            <apex:pageBlockSection title="Contact Information" columns="2">
+                <apex:pageBlockSectionItem >
+                    Contact Owner 
+                    <apex:outputText value="{!IF(contact.Ownerid=='',$User.FirstName +' '+ $User.LastName,contact.Owner.Name)}"/>
+                </apex:pageBlockSectionItem>
+                <apex:outputField value="{!contact.Title}"/>
+                <apex:outputField value="{!contact.FirstName}" />
+                <apex:outputField value="{!contact.Phone}"/>
+                <apex:outputField value="{!contact.LastName}"/>
+                <apex:outputField value="{!contact.Email}"/>
+                <apex:outputField value="{!contact.Role__c}"/>
+                <apex:inputHidden value="{!contact.AddEditTempContactID__c}"/>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form> 
+</apex:page>

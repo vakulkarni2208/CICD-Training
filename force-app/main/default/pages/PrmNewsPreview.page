@@ -1,0 +1,11 @@
+<apex:page standardController="PRM_Recent_News__c" showHeader="false">
+
+	<link rel="stylesheet" href="https://cs2.salesforce.com/sCSS/19.0/1272647533000/PortalDefault/default/common.css" />
+	<link rel="stylesheet" href="https://cs2.salesforce.com/sCSS/19.0/1272647533000/PortalDefault/default/extended.css" />
+	<link rel="stylesheet" href="https://cs2.salesforce.com/sCSS/19.0/1237834536000/PortalDefault/00DR0000000F5ck/06040000000D7uX/portal.css" />
+
+	<div style="width:600px;">
+		<c:PrmNews />
+	</div> 
+
+</apex:page>

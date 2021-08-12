@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>bsource__AssociateDSR</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>Associate DSR</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <url>{!REQUIRESCRIPT(&quot;/resource/bsource__libs_vf_dsr/multidatespicker/js/jquery-2.1.1.js&quot;)}
+// get the dialog with your dialog name 
+var d = sfdcPage.dialogs[&apos;AssociateDSR&apos;],
+    close;
+var url = &quot;/apex/AssociateDSR?OppID={!Opportunity.Id}&quot;;
+if (!d) {
+    // if the dialog doesn&apos;t exist create one 
+    d = sfdcPage.dialogs[&apos;AssociateDSR&apos;] = new SimpleDialog(&apos;AssociateDSR&apos;, false);
+    // set general information on your dialog and finally run the create function 
+    d.setTitle(&apos;Associate DSR&apos;);
+    d.setWidth(400);
+    d.createDialog();
+}
+
+$(d.dialog).find(&apos;#AssociateDSRInner&apos;).html(&apos;&lt;iframe src=&apos; + url + &apos; frameborder=&quot;0&quot; scrolling=&quot;no&quot; allowtransparency=&quot;true&quot; height=&quot;100%&quot; width=&quot;100%&quot; border=&quot;0&quot; style=&quot;border: 0;&quot; /&gt;&apos;);
+// once the iframe is loaded you may want to give it some functionality 
+$(d.dialog).find(&apos;#AssociateDSRInner iframe&apos;).on(&apos;load&apos;, function() {
+    // find the input boxes within the iframe and attach a click handler 
+    /* $(this).contents().find(&apos;input[type=&quot;submit&quot;]&apos;).on(&apos;click&apos;, function() { 
+    // if it is a cancel button close the dialog 
+    if ($(this).val() == &apos;Cancel&apos;) d.hide(); 
+    return false; 
+    });*/
+});
+// we also need to make sure we have a close button on the dialog 
+if ($(d.dialog).find(&apos;#InlineEditDialogX&apos;).size() == 0) {
+    // if there is none we create it 
+    close = $(&apos;&lt;a id=&quot;InlineEditDialogX&quot; title=&quot;Close&quot; tabindex=&quot;0&quot; href=&quot;javascript:void(0)&quot; class=&quot;dialogClose&quot;&gt;Close&lt;/a&gt;&apos;);
+    // add some functionality to the close button (for the default ui we change the classname on mouseover/out 
+    close.mouseover(function() {
+        this.className = &apos;dialogCloseOn&apos;;
+    }).mouseout(function() {
+        this.className = &apos;dialogClose&apos;;
+    }).click(function() {
+        // finally our on click handler which closes the dialog 
+        window.location.reload();
+        d.hide();
+    });
+    // insert the new generated close button before the h2 tag so it&apos;ll show up on the top right corner 
+    close.insertBefore($(d.dialog).find(&apos;.topLeft h2&apos;));
+}
+// now it&apos;s time to show the new dialog 
+d.show();</url>
+</WebLink>

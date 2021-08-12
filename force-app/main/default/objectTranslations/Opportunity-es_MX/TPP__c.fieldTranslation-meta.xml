@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Select the NPN Solution Provider/VAR for this Opportunity (if applicable) --></help>
+    <label><!-- NPN Solution Provider/VAR (Legacy) --></label>
+    <name>TPP__c</name>
+    <picklistValues>
+        <masterLabel>@Xi Computer Corporation</masterLabel>
+        <translation><!-- @Xi Computer Corporation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AMAX</masterLabel>
+        <translation><!-- AMAX --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ASI Computer Technologies</masterLabel>
+        <translation><!-- ASI Computer Technologies --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Advanced Clustering Technologies</masterLabel>
+        <translation><!-- Advanced Clustering Technologies --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Alineos</masterLabel>
+        <translation><!-- Alineos --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Armari</masterLabel>
+        <translation><!-- Armari --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Avnet</masterLabel>
+        <translation><!-- Avnet --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Azken Muga</masterLabel>
+        <translation><!-- Azken Muga --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Boston Ltd UK</masterLabel>
+        <translation><!-- Boston Ltd UK --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Braincon GmbH</masterLabel>
+        <translation><!-- Braincon GmbH --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Burwood Group</masterLabel>
+        <translation><!-- Burwood Group --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CADnetwork</masterLabel>
+        <translation><!-- CADnetwork --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CRG Electronics</masterLabel>
+        <translation><!-- CRG Electronics --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Carri</masterLabel>
+        <translation><!-- Carri --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chassis Plans</masterLabel>
+        <translation><!-- Chassis Plans --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cirrascale</masterLabel>
+        <translation><!-- Cirrascale --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Clustervision</masterLabel>
+        <translation><!-- Clustervision --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Colfax</masterLabel>
+        <translation><!-- Colfax --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Colorado Engineering Inc.</masterLabel>
+        <translation><!-- Colorado Engineering Inc. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Computacenter (UK) Ltd</masterLabel>
+        <translation><!-- Computacenter (UK) Ltd --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Concept Information Technologies</masterLabel>
+        <translation><!-- Concept Information Technologies --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Curtiss Wright</masterLabel>
+        <translation><!-- Curtiss Wright --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dasher Technologies</masterLabel>
+        <translation><!-- Dasher Technologies --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Delta Computer Products</masterLabel>
+        <translation><!-- Delta Computer Products --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E4 Computer Engineering</masterLabel>
+        <translation><!-- E4 Computer Engineering --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Echostream</masterLabel>
+        <translation><!-- Echostream --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Exxact</masterLabel>
+        <translation><!-- Exxact --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FluiDyna</masterLabel>
+        <translation><!-- FluiDyna --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Flytech</masterLabel>
+        <translation><!-- Flytech --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GIS Federal</masterLabel>
+        <translation><!-- GIS Federal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GPL Solutions</masterLabel>
+        <translation><!-- GPL Solutions --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GPU Solution Technologies</masterLabel>
+        <translation><!-- GPU Solution Technologies --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Granite Microsystems</masterLabel>
+        <translation><!-- Granite Microsystems --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Intersystem</masterLabel>
+        <translation><!-- Intersystem --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Koi Computer</masterLabel>
+        <translation><!-- Koi Computer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Leaders systems – Korea TPP</masterLabel>
+        <translation><!-- Leaders systems – Korea TPP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Locuz Enterprise Solutions</masterLabel>
+        <translation><!-- Locuz Enterprise Solutions --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Meadowgate</masterLabel>
+        <translation><!-- Meadowgate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Megware</masterLabel>
+        <translation><!-- Megware --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Micropoint Computers</masterLabel>
+        <translation><!-- Micropoint Computers --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Microway</masterLabel>
+        <translation><!-- Microway --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Netweb Technologies</masterLabel>
+        <translation><!-- Netweb Technologies --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Nextron</masterLabel>
+        <translation><!-- Nextron --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not Applicable</masterLabel>
+        <translation><!-- Not Applicable --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OCF PLC</masterLabel>
+        <translation><!-- OCF PLC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>One Stop Systems</masterLabel>
+        <translation><!-- One Stop Systems --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PCPC Direct</masterLabel>
+        <translation><!-- PCPC Direct --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Penguin</masterLabel>
+        <translation><!-- Penguin --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rave Computer</masterLabel>
+        <translation><!-- Rave Computer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RongTian Huihai</masterLabel>
+        <translation><!-- RongTian Huihai --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SGI</masterLabel>
+        <translation><!-- SGI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Scan Computer</masterLabel>
+        <translation><!-- Scan Computer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Seneca Data</masterLabel>
+        <translation><!-- Seneca Data --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Silicon Mechanics</masterLabel>
+        <translation><!-- Silicon Mechanics --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Super Cluster</masterLabel>
+        <translation><!-- Super Cluster --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sysgen</masterLabel>
+        <translation><!-- Sysgen --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Teknon</masterLabel>
+        <translation><!-- Teknon --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Themis</masterLabel>
+        <translation><!-- Themis --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Transtec</masterLabel>
+        <translation><!-- Transtec --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Trenton Systems</masterLabel>
+        <translation><!-- Trenton Systems --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VAR Group S.p.A</masterLabel>
+        <translation><!-- VAR Group S.p.A --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Viglen Limited</masterLabel>
+        <translation><!-- Viglen Limited --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Workstation Specialists</masterLabel>
+        <translation><!-- Workstation Specialists --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>World Wide Technology (wwt)</masterLabel>
+        <translation><!-- World Wide Technology (wwt) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Xenon</masterLabel>
+        <translation><!-- Xenon --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Zanqi</masterLabel>
+        <translation><!-- Zanqi --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

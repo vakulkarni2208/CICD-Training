@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Escalation_Reason__c</fullName>
+    <description>ESP : Escalation Reason
+If Incident Status moves to Enterprise Support
+-	Then Check escalated = True
+And write in Incident Sub-status into escalated reason field</description>
+    <externalId>false</externalId>
+    <inlineHelpText>ESP : Escalation Reason
+If Incident Status moves to Enterprise Support
+-	Then Check escalated = True
+And write in Incident Sub-status into escalated reason field</inlineHelpText>
+    <label>Escalation Reason</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

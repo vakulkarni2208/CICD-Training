@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- This field is driven by Opportunity Stage but can be changed independently. The value in this field should reflect the best judgement as to the viability of the Opportunity moving to Closed Won Stage in the time frame specified. --></help>
+    <label><!-- NV Forecast Category --></label>
+    <name>NV_Forecast_Category__c</name>
+    <picklistValues>
+        <masterLabel>1-Closed</masterLabel>
+        <translation><!-- 1-Closed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2-Commit</masterLabel>
+        <translation><!-- 2-Commit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>3-Best Case</masterLabel>
+        <translation><!-- 3-Best Case --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>4-Pipeline</masterLabel>
+        <translation><!-- 4-Pipeline --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>5-Other</masterLabel>
+        <translation><!-- 5-Other --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

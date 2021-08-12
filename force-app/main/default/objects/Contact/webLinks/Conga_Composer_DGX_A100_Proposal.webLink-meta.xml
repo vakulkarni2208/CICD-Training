@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Conga_Composer_DGX_A100_Proposal</fullName>
+    <availability>online</availability>
+    <description>Originally created by Conga Solution Manager. Date of last use of Update Button from Conga Solution record: https://nvcrm--apxtconga4.na87.visual.force.com/a5Q1W00000122h0UAA
+05-Jun-2020 01:28:55 PM</description>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <hasMenubar>false</hasMenubar>
+    <hasScrollbars>false</hasScrollbars>
+    <hasToolbar>false</hasToolbar>
+    <height>660</height>
+    <isResizable>false</isResizable>
+    <linkType>url</linkType>
+    <masterLabel>DGX A100 Proposal</masterLabel>
+    <openType>newWindow</openType>
+    <position>none</position>
+    <protected>false</protected>
+    <showsLocation>false</showsLocation>
+    <showsStatus>false</showsStatus>
+    <url>/apex/APXTConga4__Conga_Composer?SolMgr=1
+&amp;serverUrl={!API.Partner_Server_URL_370}
+&amp;Id={!Contact.Id}
+
+&amp;TemplateId=a5S1W000001f353
+
+&amp;DS7=2
+&amp;DefaultPDF=1
+&amp;OFN=DGX_A100_Proposal
+&amp;AC0=1
+&amp;AC1=DGX+A100+Proposal+Generated
+&amp;AC3=14
+&amp;SC0=1
+&amp;SC1=SalesforceFile</url>
+    <width>900</width>
+</WebLink>

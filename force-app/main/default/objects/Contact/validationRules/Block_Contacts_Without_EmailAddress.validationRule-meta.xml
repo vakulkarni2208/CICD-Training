@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Block_Contacts_Without_EmailAddress</fullName>
+    <active>true</active>
+    <description>2017.06.28-Timo: Block Leads/Contacts without email address for insert/update for Marketo User</description>
+    <errorConditionFormula>ISBLANK(Email) &amp;&amp; $Profile.Name = &apos;Marketo User Profile&apos;</errorConditionFormula>
+    <errorMessage>Contacts without Email address are blocked from insert/update.</errorMessage>
+</ValidationRule>

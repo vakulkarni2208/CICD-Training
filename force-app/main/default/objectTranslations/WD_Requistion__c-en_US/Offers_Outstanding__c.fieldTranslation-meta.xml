@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- # of Offers Outstanding thus far for the Job Req --></help>
+    <label><!-- Offers Outstanding --></label>
+    <name>Offers_Outstanding__c</name>
+</CustomFieldTranslation>

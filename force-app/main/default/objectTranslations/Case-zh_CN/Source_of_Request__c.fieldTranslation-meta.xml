@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Source of Request --></label>
+    <name>Source_of_Request__c</name>
+    <picklistValues>
+        <masterLabel>External (Customer or Partner)</masterLabel>
+        <translation><!-- External (Customer or Partner) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Internal (CMT)</masterLabel>
+        <translation><!-- Internal (CMT) --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

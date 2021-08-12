@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Events_approved__c</fullName>
+    <description>Indicate which specific platform(s) this reference is approved for.</description>
+    <externalId>false</externalId>
+    <label>Events approved</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>GTC Spring 2021</fullName>
+                <default>false</default>
+                <label>GTC Spring 2021</label>
+            </value>
+            <value>
+                <fullName>GTC China 2020</fullName>
+                <default>false</default>
+                <label>GTC China 2020</label>
+            </value>
+            <value>
+                <fullName>Supercomputing 2020</fullName>
+                <default>false</default>
+                <label>Supercomputing 2020</label>
+            </value>
+            <value>
+                <fullName>GTC Fall 2020</fullName>
+                <default>false</default>
+                <label>GTC Fall 2020</label>
+            </value>
+            <value>
+                <fullName>MLPerf May 2020</fullName>
+                <default>false</default>
+                <label>MLPerf May 2020</label>
+            </value>
+            <value>
+                <fullName>GTC San Jose 2020</fullName>
+                <default>false</default>
+                <label>GTC San Jose 2020</label>
+            </value>
+            <value>
+                <fullName>Computex 2021</fullName>
+                <default>false</default>
+                <label>Computex 2021</label>
+            </value>
+            <value>
+                <fullName>MWC 2021</fullName>
+                <default>false</default>
+                <label>MWC 2021</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

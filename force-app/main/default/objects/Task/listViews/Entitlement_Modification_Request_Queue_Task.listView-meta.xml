@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Entitlement_Modification_Request_Queue_Task</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Entitlement Modification Request Queue</label>
+    <queue>Entitlement_Modification_Request_Queue</queue>
+    <sharedTo>
+        <allInternalUsers/>
+    </sharedTo>
+</ListView>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Country Names in UPPER case and separated by comma(,) --></help>
+    <label><!-- COUNTRY_LIST --></label>
+    <name>COUNTRY_LIST__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sales_Play__c</fullName>
+    <externalId>false</externalId>
+    <label>Sales Play</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Installed Base Upgrade to Volta - FY20</fullName>
+                <default>false</default>
+                <label>Installed Base Upgrade to Volta - FY20</label>
+            </value>
+            <value>
+                <fullName>AI/DL for Insurance</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>AI/DL for Insurance</label>
+            </value>
+            <value>
+                <fullName>AI/DL for Medical Imaging</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>AI/DL for Medical Imaging</label>
+            </value>
+            <value>
+                <fullName>AI/DL for Pharma</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>AI/DL for Pharma</label>
+            </value>
+            <value>
+                <fullName>Cryo-electron Microscopy (Cryo-EM)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Cryo-electron Microscopy (Cryo-EM)</label>
+            </value>
+            <value>
+                <fullName>DGXpand</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>DGXpand</label>
+            </value>
+            <value>
+                <fullName>Installed Base Upgrade to Volta</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Installed Base Upgrade to Volta</label>
+            </value>
+            <value>
+                <fullName>Molecular Dynamics and Quantum Chemistry (MD/QC)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Molecular Dynamics and Quantum Chemistry (MD/QC)</label>
+            </value>
+            <value>
+                <fullName>Oil and Gas - Predictive Maintenance</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Oil and Gas - Predictive Maintenance</label>
+            </value>
+            <value>
+                <fullName>Placeholder #4</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Placeholder #4</label>
+            </value>
+            <value>
+                <fullName>Sales Play #1</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Sales Play #1</label>
+            </value>
+            <value>
+                <fullName>Sales Play #2</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Sales Play #2</label>
+            </value>
+            <value>
+                <fullName>Sales Play #3</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Sales Play #3</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

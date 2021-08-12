@@ -1,0 +1,85 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+ <HEAD>
+  <TITLE> Search Marketing Tools </TITLE>
+
+ <script type="text/javascript" src="AC_OETags.js" ></script>
+ <script src="NoOfHits.js" ></script>
+ </HEAD>
+
+<script type="text/javascript">
+	function parseXML()
+	{
+		//check for variable
+		var args = new Object();
+		var userSelValue = null;
+		var userselLevel  = 0;
+		var query = location.search.substring(1);
+		
+		if(query!=null){
+			var pairs = query.split("&");
+			for(var i = 0; i < pairs.length; i++) {
+				var pos = pairs[i].indexOf('=');
+	    		if (pos == -1) continue;
+	   	 		var argname = pairs[i].substring(0,pos);
+	    		userSelValue = pairs[i].substring(pos+1);
+			}
+		
+			if(userSelValue!=null)
+				getSWF().setProperty("browserVal" + userSelValue);
+			else
+				getSWF.setProperty("Select");
+		}
+	}
+
+  var theSWF;
+   function getSWF() {
+        if (theSWF == null)
+        {
+            theSWF = document.getElementById("flexApp");
+        }
+        return theSWF;
+    }
+
+
+</script>
+</head>
+<body style="margin-top:0px; margin-left:5px; background:#ffffff ; background-repeat: no-repeat;" onload="setTimeout('parseXML();',500)">
+">
+<div style="position: absolute; top:-4px; left:0px; width:1240px; height:615px; overflow:hidden;">
+<script>
+AC_FL_RunContent("src", "MarketingTool",
+                    "width", "1240",
+                    "height", "615",
+                    "align", "middle",
+                    "id", "flexApp",
+                    "quality", "high",
+                    "bgcolor", "#ffffff",
+                    "name", "catalog",
+                    "allowScriptAccess","always",
+                    "type", "application/x-shockwave-flash",
+                    "pluginspage", "http://www.adobe.com/go/getflashplayer",
+                    "wmode", "transparent",
+                    "FlashVars",window.location.search.substring(1)
+                    );
+
+</script>
+</div>
+<style type="text/css">
+select{
+	background: #ffffff;
+	border: 1px solid #4C77B6;
+	color: #e7e6e6;
+	font-family: Trebuchet MS;
+	font-size: 12px;
+	margin: 0px;
+	padding: 0px;
+	vertical-align: middle;
+}
+
+
+</style>
+<body onload="setTimeout('parseXML();',500)" bgColor="#ffffff">
+
+</body>
+</html>

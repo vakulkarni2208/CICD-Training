@@ -1,0 +1,31 @@
+<apex:page standardController="Order" showHeader="true" sidebar="true" extensions="SubmitToSapController">
+   
+
+    <apex:pageMessages id="pgMsgs"  />
+    <apex:form >
+      <table>
+          <tr>
+            <td style="position: relative;left: 421px;top:-11px;">
+              <apex:commandButton id="theButton" action="{!SubmitInitialSORequest}" value="Submit SO Request" status="processStatus"
+                  rerender="result,pgMsgs,theButton" rendered="{! IF( Order.Status!='Submitted'  ,true, false)}" disabled="{!disable}"/>
+            </td>
+            <td>
+              <apex:actionStatus id="processStatus" layout="block" style="float:right">
+                  <apex:facet name="start">
+                      <apex:outputPanel styleClass="overlayStatus" >
+                          <apex:image value="/img/loading32.gif" styleClass="loadIMG"/>
+                          <apex:outputLabel value="Processing..." styleClass="loadLabel"/>
+                      </apex:outputPanel>
+                  </apex:facet>
+                  <apex:facet name="stop"/>
+              </apex:actionstatus>
+            </td>
+            <td>
+              <apex:OutputText value="{!strResult}" id="result"/>
+              <apex:OutputText value="{!$Label.OrderSubmittedToSap}" id="submittedOrder" rendered="{!Order.Submitted_to_SAP__c}"/>
+            </td>
+          </tr>
+      </table>
+    </apex:form>
+     
+</apex:page>

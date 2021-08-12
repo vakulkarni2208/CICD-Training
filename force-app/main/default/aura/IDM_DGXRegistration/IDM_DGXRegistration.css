@@ -1,0 +1,62 @@
+/* SECTION HEADERS */
+.THIS .slds-card {
+    background: transparent;
+    border-radius: 0;
+    border: none; 
+    margin: 30px 0 15px;
+}
+.THIS .slds-card:first-child {
+    margin: 0 0 15px 0;
+}
+.THIS .slds-card h3 {
+    font-size: 24px;
+    font-weight: 100;
+    text-transform: capitalize;
+    color: #76b300;
+}
+.THIS .slds-card p {
+    font-size: 15px;
+}
+
+/* FORM STYLES */
+.THIS .slds-form-element {
+    margin-bottom: 15px;
+}
+.THIS .slds-form-element__label {
+    font-size: 15px;
+    color: #333;
+}
+.THIS abbr.slds-required {
+    float: right;
+    font-size: 12px;
+}
+.THIS .serialNo .slds-form-element:after {
+    content: 'Provide a valid Serial Number or PAKID under an Active Service Contract. For NGC-Ready Services, please enter your PAKID';
+    font-size: 13px;
+    font-style: italic;
+    color: #999;
+}
+.THIS .serialNo .slds-form-element:first-child:after {
+    content: '';
+}
+.THIS button {
+    background-color: #76b900;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 10px 14px;
+    color: white !important;
+    border: none;
+    border-radius: 0;
+    float: right;
+    min-width: 120px;
+}
+
+.THIS button:hover{
+    color : green !important;
+}
+.THIS input::placeholder {
+    font-size: 14px;
+    font-weight: 100 !important;
+    color: #999;
+    font-family: "din-2014", Trebuchet, Arial, sans-serif;
+}

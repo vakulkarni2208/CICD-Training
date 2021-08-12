@@ -1,0 +1,937 @@
+<apex:page controller="NV_DR_Pipeline_PendingApprovalController" sidebar="false" tabStyle="Deal_Registration__tab">
+    <meta http-equiv="content-type" content="text/plain; charset=UTF-8" />
+    <apex:includeScript value="{!$Resource.Loader}" />
+
+    <apex:pageBlock mode="detail">
+        <div style="width:10%" class="buttonNV button-successNV" onclick="window.open('/apex/DR_CreateDR');">
+            <b style="text-transform: uppercase;">{!$Label.CRM_DR_NV_DR_Pipeline_PendingApproval_REGISTER_A_DEAL}</b>
+        </div>
+        <!--<div class="searchtitle">
+            <a href="{!$Label.Opportunity_Registration_Process_Link}">{!$Label.CRM_DR_NV_DR_Pipeline_PendingApproval_Deal_Registration_Process}</a>
+        </div>
+        <!-- Rajat: Changes for SDS-1741 START-->
+        <!--<br />
+        <div style="text-align:left;">
+            <b>{!$Label.CRM_SURF_SubmitPOS_NEED_HELP}</b>
+        </div>
+        <div style="text-align:left;">
+            <apex:outputPanel >
+                <apex:outputLink target="_blank" value="/sfc/#version?selectedDocumentId=">NPN Opportunity Registration Program Guidelines (Internal)</apex:outputLink>
+                <br/>
+                <apex:outputLink target="_blank" value="/sfc/#version?selectedDocumentId=">NPN Opportunity Registration Program Guidelines (External)</apex:outputLink>
+            </apex:outputPanel>
+        </div>
+        <div style="text-align:left;">
+            <apex:outputPanel rendered="true">
+                <apex:outputLink target="_blank" value="/sfc/#version?selectedDocumentId=">NPN Opportunity Registration Program Overview</apex:outputLink>
+            </apex:outputPanel>
+        </div>
+        <div style="text-align:left;">
+            <apex:outputLink target="_blank" rendered="true" value="/sfc/#version?selectedDocumentId=">How-to-Video</apex:outputLink>
+        </div>-->
+        <!-- Rajat: Changes for SDS-1741 START-->
+
+        <!--New style -->
+        <br />
+
+        <div class="searchtitle" style="float:left;width:50%">
+            <!--<a href="{!$Label.Opportunity_Registration_Process_Link}">{!$Label.CRM_DR_NV_DR_Pipeline_PendingApproval_Deal_Registration_Process}</a>-->
+            <br/>
+        </div>
+        <div style="float:left;text-align:center;width:50%">
+            <div style="text-align:left" id="helpSection">
+                <br />
+                <div style="text-align:left;">
+                    <b>{!$Label.CRM_DR_NV_DR_Need_Help}</b>
+                </div>
+                <div style="text-align:left;">
+                    <apex:outputPanel >
+                        <apex:outputLink target="_blank" value="{!$Label.NPN_Opp_Reg_Program_Guidelines}">{!$Label.CRM_DR_NV_DR_Prgm_Guide}</apex:outputLink>
+                    </apex:outputPanel>
+                </div>
+                <div style="text-align:left;">
+                    <apex:outputPanel rendered="true">
+                        <apex:outputLink target="_blank" value="{!$Label.NPN_Opp_Reg_Program_Overview}">{!$Label.CRM_DR_NV_DR_Prgm_Overview}</apex:outputLink>
+                    </apex:outputPanel>
+                </div>
+                <div style="text-align:left;">
+                    <apex:outputLink target="_blank" rendered="true" value="{!$Label.CRM_DR_NV_DR_How_To_Video_URL}">{!$Label.CRM_DR_NV_DR_How_To_Video}</apex:outputLink>
+                    <br/>
+                    <br/>
+                </div>
+            </div>
+        </div>
+        <br/>
+        <br/>
+        <!-- -->
+        <div id="table">
+            <table>
+                <tr>
+                    <td class="topleveltd1" colSpan='4' style="width:100%">
+                        <div class="title">{!$Label.CRM_DR_NV_DR_Pipeline_PendingApproval_Submitted_Registrations_Pending_Approval}</div>
+                        <div id="control2" class="searchtitle"></div>
+                        <table id="approvalTable">
+                            <tr>
+                                <td>
+                                    <div id="RPAL" style="height:400px;" class="chart" />
+                                </td>
+                            </tr>
+                        </table>
+                        <button onclick="tableToExcel(approvalTable)">{!$Label.CRM_DR_NV_DR_Pipeline_PendingApproval_Export}</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="topleveltd1" colSpan='4' style="width:100%">
+                        <div class="title">{!$Label.CRM_DR_NV_DR_Pipeline_PendingApproval_Registration_Pipeline_Current_FQ}</div>
+                        <div id="control3" class="searchtitle"></div>
+                        <table id="currentFQAllPipelineTable">
+                            <tr>
+                                <td>
+                                    <div id="RPCF" style="height:400px;" class="chart" />
+                                </td>
+                            </tr>
+                        </table>
+                        <button onclick="tableToExcel(currentFQAllPipelineTable)">{!$Label.CRM_DR_NV_DR_Pipeline_PendingApproval_Export}</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="topleveltd1" colSpan='4' style="width:100%">
+                        <div class="title">{!$Label.CRM_DR_NV_DR_Pipeline_PendingApproval_All_Registration_Pipeline} </div>
+                        <div id="control1" class="searchtitle"></div>
+                        <table id="pipelineTable">
+                            <tr>
+                                <td>
+                                    <div id="POP" style="height:400px;" class="chart" />
+                                </td>
+                            </tr>
+                        </table>
+                        <button onclick="tableToExcel(pipelineTable)">{!$Label.CRM_DR_NV_DR_Pipeline_PendingApproval_Export}</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="topleveltd1" colSpan='4' style="width:100%">
+                        <div class="title">{!$Label.CRM_DR_NV_DR_Pipeline_PendingApproval_Closed_Won_Registrations_Current_FQ} </div>
+                        <div id="control4" class="searchtitle"></div>
+                        <table id="closedWonCQTable">
+                            <tr>
+                                <td>
+                                    <div id="CWRCFQ" style="height:400px;" class="chart" />
+                                </td>
+                            </tr>
+                        </table>
+                        <button onclick="tableToExcel(closedWonCQTable)">{!$Label.CRM_DR_NV_DR_Pipeline_PendingApproval_Export}</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="topleveltd1" colSpan='4' style="width:100%">
+                        <div class="title">{!$Label.CRM_DR_NV_DR_Pipeline_PendingApproval_Closed_Won_Registrations_All_Time} </div>
+                        <div id="control5" class="searchtitle"></div>
+                        <table id="CWpipelineTable">
+                            <tr>
+                                <td>
+                                    <div id="CWRAT" style="height:400px;" class="chart" />
+                                </td>
+                            </tr>
+                        </table>
+                        <button onclick="tableToExcel(CWpipelineTable)">{!$Label.CRM_DR_NV_DR_Pipeline_PendingApproval_Export}</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="topleveltd1" colSpan='4' style="width:100%">
+                        <div class="title">Rejected Registrations - All Time</div>
+                        <div id="control7" class="searchtitle"></div>
+                        <table id="rejectionTable">
+                            <tr>
+                                <td>
+                                    <div id="RR" style="height:400px;" class="chart" />
+                                </td>
+                            </tr>
+                        </table>
+                        <button onclick="tableToExcel(rejectionTable)">{!$Label.CRM_DR_NV_DR_Pipeline_PendingApproval_Export}</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="topleveltd1" colSpan='4' style="width:100%">
+                        <div class="title">Closed Lost Registrations - All Time </div>
+                        <div id="control6" class="searchtitle"></div>
+                        <table id="CLpipelineTable">
+                            <tr>
+                                <td>
+                                    <div id="CWRATL" style="height:400px;" class="chart" />
+                                </td>
+                            </tr>
+                        </table>
+                        <button onclick="tableToExcel(CLpipelineTable)">{!$Label.CRM_DR_NV_DR_Pipeline_PendingApproval_Export}</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </apex:pageBlock>
+    <!-- CSS Styles -->
+    <style type='text/css'>
+        table {
+            table-layout: fixed;
+        }
+
+        .topleveltd1 {
+            width: 25%;
+            display: table-cell;
+            vertical-align: top;
+        }
+
+        .topleveltd2 {
+            width: 33%;
+            display: table-cell;
+            vertical-align: top;
+        }
+
+        .loader {
+            border: 16px solid #f3f3f3;
+            border-radius: 50%;
+            border-top: 16px solid #76B900;
+            width: 100px;
+            height: 100px;
+            -webkit-animation: spin 1.5s linear infinite;
+            animation: spin 1.5s linear infinite;
+            display: block;
+            margin: 0 auto;
+        }
+
+        @-webkit-keyframes spin {
+            0% {
+                -webkit-transform: rotate(0deg);
+            }
+            100% {
+                -webkit-transform: rotate(360deg);
+            }
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .chart {
+            border: 1px solid #ccc;
+        }
+
+        .pageBlockHeader {
+            font-size: 21px;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-family: 'Trebuchet MS';
+            text-align: center;
+        }
+
+        .secTitle {
+            font-size: 21px;
+            font-weight: bold;
+            text-transform: uppercase;
+            line-height: 2.5;
+            font-family: 'Trebuchet MS';
+            color: rgb(59, 93, 0);
+        }
+
+        .sectionTitle {
+            font-size: 19px;
+            font-weight: bold;
+            text-transform: uppercase;
+            line-height: 2.5;
+            font-family: 'Trebuchet MS';
+        }
+
+        .title {
+            text-align: center;
+            font-size: 14px;
+            line-height: 1.25;
+            font-weight: bold;
+            font-family: 'Trebuchet MS';
+        }
+
+        .searchtitle {
+            font-size: 14px;
+            line-height: 1.25;
+            font-weight: bold;
+            font-family: 'Trebuchet MS';
+        }
+
+        .subtitle {
+            text-align: center;
+            font-size: 12px;
+            line-height: 1.25;
+            font-family: 'Trebuchet MS';
+            height: 12.25px;
+        }
+
+        .errorText {
+            font-family: Trebuchet MS;
+            text-align: center;
+            font-size: 16px;
+            display: none;
+        }
+
+        .google-visualization-table-table {
+            font-family: 'Trebuchet MS' !important;
+        }
+
+        .google-visualization-table-td {
+            font-family: 'Trebuchet MS' !important;
+        }
+
+        .google-visualization-table-table .gradient,
+        .google-visualization-table-div-page .gradient {
+            background: #F4F4F4 !important;
+        }
+
+        .google-visualization-table-tr-sel td,
+        .google-visualization-table-tr-over td {
+            background-color: #F8F8F8 !important;
+        }
+
+        .alignLeft {
+            text-align: left !important;
+        }
+
+        .check {
+            text-align: center;
+            color: green !important;
+            font-weight: bold;
+            text-shadow: #000 0px 0px 1px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .x {
+            text-align: center;
+            color: red !important;
+            text-shadow: #000 0px 0px 1px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .blackSquare {
+            text-align: center;
+            text-shadow: #000 0px 0px 1px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .caution {
+            text-align: center;
+            color: black !important; //font-weight: bold;
+            text-shadow: #FFFF00 0px 0px 3px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .buttonNV {
+            background-color: #76B900;
+            width: 100%;
+            display: inline-block;
+            padding: 3px 30px;
+            margin-bottom: 0;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1.42857143;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: middle;
+            -ms-touch-action: manipulation;
+            touch-action: manipulation;
+            cursor: pointer;
+            -webkit-user-select: none;
+            moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            /* Safari 5.1+, Chrome 10+ */
+            border-radius: 5px;
+            /* IE */
+        }
+
+        .button-successNV {
+            color: #fff;
+            background-color: #76B900;
+            border-color: #4cae4c;
+        }
+
+        .width50 {
+            width: 50px;
+        }
+
+        .width75 {
+            width: 75px;
+        }
+
+        .width100 {
+            width: 100px;
+        }
+
+        .width125 {
+            width: 125px;
+        }
+
+        .width150 {
+            width: 150px;
+        }
+
+        .width200 {
+            width: 200px;
+        }
+
+        .width250 {
+            width: 250px;
+        }
+
+        .width300 {
+            width: 300px;
+        }
+
+        .widthp50 {
+            width: 50%;
+        }
+
+        .widthp40 {
+            width: 40%;
+        }
+
+        .widthp30 {
+            width: 30%;
+        }
+
+        .widthp20 {
+            width: 20%;
+        }
+
+        .widthp15 {
+            width: 15%;
+        }
+
+        .widthp5 {
+            width: 5%;
+        }
+
+        .googleHeaderCell {
+            white-space: normal;
+            background-color: gray;
+        }
+
+        th,
+        google-visualization-table-th {
+            background-color: gray;
+            color: white;
+            font-size: 10px;
+        }
+    </style>
+    <script type="text/javascript">
+        Visualforce.remoting.timeout = 120000; // Set timeout at page level
+        //Loads google visualizations api: 'corechart' for bar charts, column charts, and line charts; 'table' for table charts.
+        google.charts.load('current', { 'packages': ['controls', 'table'] });
+        google.charts.setOnLoadCallback(drawVisualization);
+        function drawVisualization() {
+
+            var POP = new google.visualization.Table(document.getElementById('POP'));
+            var RPAL = new google.visualization.Table(document.getElementById('RPAL'));
+            var RPCF = new google.visualization.Table(document.getElementById('RPCF'));
+            var CWRCFQ = new google.visualization.Table(document.getElementById('CWRCFQ'));
+
+            NV_DR_Pipeline_PendingApprovalController.loadOverallPipeline(function (result, event) {
+                var data = new google.visualization.DataTable();
+                data.addColumn('string', '{!$Label.CRM_DR_NV_DR_Pipeline_PendingApproval_Opportunity_Name}');
+                data.addColumn('string', '{!$Label.CRM_DR_NV_DR_Pipeline_PendingApproval_Opportunity_Number}');
+                data.addColumn('string', '{!$Label.CRM_DR_NV_DR_Pipeline_PendingApproval_Quote_Number}');
+                data.addColumn('string', '{!$Label.CRM_DR_NV_DR_Pipeline_PendingApproval_Customer_Name}');
+                data.addColumn('string', 'End User Contact');
+                data.addColumn('string', '{!$Label.CRM_DR_NV_DR_Pipeline_PendingApproval_OEM_Disti}');
+                data.addColumn('string', '{!$Label.CRM_DR_NV_DR_Pipeline_PendingApproval_Program_Name}');
+                data.addColumn('number', 'Probability');
+                data.addColumn('date', '{!$Label.CRM_DR_NV_DR_Pipeline_PendingApproval_Created_Date}');
+                data.addColumn('date', '{!$Label.CRM_DR_NV_DR_Pipeline_PendingApproval_Close_Date}');
+                data.addColumn('date', '{!$Label.CRM_DR_NV_DR_Pipeline_PendingApproval_Registration_Expiration_Date}');
+                data.addColumn('string', '{!$Label.CRM_DR_NV_DR_Pipeline_PendingApproval_NVIDIA_Sales_Rep}');
+                data.addColumn('string', '{!$Label.CRM_DR_NV_DR_Pipeline_PendingApproval_Email}');
+                data.addColumn('string', 'Products');
+                if (result != null) {
+                    for (var i = 0; i < result.length; i++) {
+                        var products = '';
+                        for (var j = 0; j < result[i].lstProductWrapper.length; j++) {
+                            products += result[i].lstProductWrapper[j].Name + ' (Qty - ' + result[i].lstProductWrapper[j].Quantity + '),<br /> ';
+                        }
+                        data.addRow([result[i].Name, result[i].OpportunityNumber, result[i].QuoteNumber, result[i].Company, result[i].CustomerContact, result[i].confirmedOEMODMDistiPartner, result[i].ProgramName, result[i].Probability, new Date(result[i].CreatedDate), new Date(result[i].CloseDate), new Date(result[i].ExpirationDate), result[i].ownerName, result[i].ownerEmail, products]);
+                    }
+                }
+                data.setColumnProperties(12, { 'className': 'widthp15' });
+                data.setColumnProperties(4, { 'className': 'widthp5' });
+                data.setColumnProperties(7, { 'className': 'widthp5' });
+                data.setColumnProperties(8, { 'className': 'widthp5' });
+                data.setColumnProperties(9, { 'className': 'widthp5' });
+                // create a list of columns for the dashboard
+                var columns = [{
+                    // this column aggregates all of the data into one column
+                    // for use with the string filter
+                    type: 'string',
+                    calc: function (dt, row) {
+                        for (var i = 0, vals = [], cols = dt.getNumberOfColumns(); i < cols; i++) {
+                            vals.push(dt.getFormattedValue(row, i));
+                        }
+                        return vals.join('\n');
+                    }
+                }];
+                for (var i = 0, cols = data.getNumberOfColumns(); i < cols; i++) {
+                    columns.push(i);
+                }
+
+                data.setTableProperty('Id', 'pipeline');
+                var stringFilter = new google.visualization.ControlWrapper({
+                    controlType: 'StringFilter',
+                    containerId: 'control1',
+                    options: {
+                        filterColumnIndex: 0,
+                        matchType: 'any',
+                        caseSensitive: false,
+                        ui: { label: '{!$Label.CRM_DR_NV_DR_Pipeline_PendingApproval_Search}:' }
+                    },
+                    view: {
+                        columns: columns
+                    }
+                });
+
+                // Configure the string filter to affect the table contents
+                var table = new google.visualization.ChartWrapper({
+                    'chartType': 'Table',
+                    'containerId': 'POP',
+                    'options': { showRowNumber: false, cssClassNames: { rowNumberCell: 'alignLeft', headerCell: 'googleHeaderCell' }, allowHtml: true, width: '100%' },
+                    view: {
+                        columns: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
+                    }
+                });
+                new google.visualization.Dashboard(document.getElementById('table')).bind(stringFilter, table).draw(data);
+            }, { escape: true });
+
+            NV_DR_Pipeline_PendingApprovalController.loadOverallPipelineClosedWon(function (result, event) {
+                var data = new google.visualization.DataTable();
+                data.addColumn('string', '{!$Label.CRM_DR_NV_DR_Pipeline_PendingApproval_Opportunity_Name}');
+                data.addColumn('string', '{!$Label.CRM_DR_NV_DR_Pipeline_PendingApproval_Opportunity_Number}');
+                data.addColumn('string', '{!$Label.CRM_DR_NV_DR_Pipeline_PendingApproval_Quote_Number}');
+                data.addColumn('string', '{!$Label.CRM_DR_NV_DR_Pipeline_PendingApproval_Customer_Name}');
+                data.addColumn('string', 'End User Contact');
+                data.addColumn('string', '{!$Label.CRM_DR_NV_DR_Pipeline_PendingApproval_OEM_Disti}');
+                data.addColumn('string', '{!$Label.CRM_DR_NV_DR_Pipeline_PendingApproval_Program_Name}');
+                data.addColumn('number', 'Probability');
+                data.addColumn('date', '{!$Label.CRM_DR_NV_DR_Pipeline_PendingApproval_Created_Date}');
+                data.addColumn('date', '{!$Label.CRM_DR_NV_DR_Pipeline_PendingApproval_Close_Date}');
+                data.addColumn('date', '{!$Label.CRM_DR_NV_DR_Pipeline_PendingApproval_Registration_Expiration_Date}');
+                data.addColumn('string', '{!$Label.CRM_DR_NV_DR_Pipeline_PendingApproval_NVIDIA_Sales_Rep}');
+                data.addColumn('string', '{!$Label.CRM_DR_NV_DR_Pipeline_PendingApproval_Email}');
+                data.addColumn('string', 'Products');
+                if (result != null) {
+                    for (var i = 0; i < result.length; i++) {
+                        var products = '';
+                        for (var j = 0; j < result[i].lstProductWrapper.length; j++) {
+                            products += result[i].lstProductWrapper[j].Name + ' (Qty - ' + result[i].lstProductWrapper[j].Quantity + '),<br /> ';
+                        }
+                        data.addRow([result[i].Name, result[i].OpportunityNumber, result[i].QuoteNumber, result[i].Company, result[i].CustomerContact, result[i].confirmedOEMODMDistiPartner, result[i].ProgramName, result[i].Probability, new Date(result[i].CreatedDate), new Date(result[i].CloseDate), new Date(result[i].ExpirationDate), result[i].ownerName, result[i].ownerEmail, products]);
+                    }
+                }
+                data.setColumnProperties(12, { 'className': 'widthp15' });
+                data.setColumnProperties(4, { 'className': 'widthp5' });
+                data.setColumnProperties(7, { 'className': 'widthp5' });
+                data.setColumnProperties(8, { 'className': 'widthp5' });
+                data.setColumnProperties(9, { 'className': 'widthp5' });
+                // create a list of columns for the dashboard
+                var columns = [{
+                    // this column aggregates all of the data into one column
+                    // for use with the string filter
+                    type: 'string',
+                    calc: function (dt, row) {
+                        for (var i = 0, vals = [], cols = dt.getNumberOfColumns(); i < cols; i++) {
+                            vals.push(dt.getFormattedValue(row, i));
+                        }
+                        return vals.join('\n');
+                    }
+                }];
+                for (var i = 0, cols = data.getNumberOfColumns(); i < cols; i++) {
+                    columns.push(i);
+                }
+
+                data.setTableProperty('Id', 'pipelineClosedWon');
+                var stringFilter = new google.visualization.ControlWrapper({
+                    controlType: 'StringFilter',
+                    containerId: 'control5',
+                    options: {
+                        filterColumnIndex: 0,
+                        matchType: 'any',
+                        caseSensitive: false,
+                        ui: { label: '{!$Label.CRM_DR_NV_DR_Pipeline_PendingApproval_Search}:' }
+                    },
+                    view: {
+                        columns: columns
+                    }
+                });
+
+                // Configure the string filter to affect the table contents
+                var table = new google.visualization.ChartWrapper({
+                    'chartType': 'Table',
+                    'containerId': 'CWRAT',
+                    'options': { showRowNumber: false, cssClassNames: { rowNumberCell: 'alignLeft', headerCell: 'googleHeaderCell' }, allowHtml: true, width: '100%' },
+                    view: {
+                        columns: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
+                    }
+                });
+                new google.visualization.Dashboard(document.getElementById('table')).bind(stringFilter, table).draw(data);
+            }, { escape: true });
+
+            NV_DR_Pipeline_PendingApprovalController.loadOverallPipelineCurrentFQ(function (result, event) {
+                var data = new google.visualization.DataTable();
+                data.addColumn('string', '{!$Label.CRM_DR_NV_DR_Pipeline_PendingApproval_Opportunity_Name}');
+                data.addColumn('string', '{!$Label.CRM_DR_NV_DR_Pipeline_PendingApproval_Opportunity_Number}');
+                data.addColumn('string', '{!$Label.CRM_DR_NV_DR_Pipeline_PendingApproval_Quote_Number}');
+                data.addColumn('string', '{!$Label.CRM_DR_NV_DR_Pipeline_PendingApproval_Customer_Name}');
+                data.addColumn('string', 'End User Contact');
+                data.addColumn('string', '{!$Label.CRM_DR_NV_DR_Pipeline_PendingApproval_OEM_Disti}');
+                data.addColumn('string', '{!$Label.CRM_DR_NV_DR_Pipeline_PendingApproval_Program_Name}');
+                data.addColumn('number', 'Probability');
+                data.addColumn('date', '{!$Label.CRM_DR_NV_DR_Pipeline_PendingApproval_Created_Date}');
+                data.addColumn('date', '{!$Label.CRM_DR_NV_DR_Pipeline_PendingApproval_Close_Date}');
+                data.addColumn('date', '{!$Label.CRM_DR_NV_DR_Pipeline_PendingApproval_Registration_Expiration_Date}');
+                data.addColumn('string', '{!$Label.CRM_DR_NV_DR_Pipeline_PendingApproval_NVIDIA_Sales_Rep}');
+                data.addColumn('string', '{!$Label.CRM_DR_NV_DR_Pipeline_PendingApproval_Email}');
+                data.addColumn('string', 'Products');
+                if (result != null) {
+                    for (var i = 0; i < result.length; i++) {
+                        var products = '';
+                        for (var j = 0; j < result[i].lstProductWrapper.length; j++) {
+                            products += result[i].lstProductWrapper[j].Name + ' (Qty - ' + result[i].lstProductWrapper[j].Quantity + '),<br /> ';
+                        }
+                        data.addRow([result[i].Name, result[i].OpportunityNumber, result[i].QuoteNumber, result[i].Company, result[i].CustomerContact, result[i].confirmedOEMODMDistiPartner, result[i].ProgramName, result[i].Probability, new Date(result[i].CreatedDate), new Date(result[i].CloseDate), new Date(result[i].ExpirationDate), result[i].ownerName, result[i].ownerEmail, products]);
+                    }
+                }
+                data.setColumnProperties(12, { 'className': 'widthp15' });
+                data.setColumnProperties(4, { 'className': 'widthp5' });
+                data.setColumnProperties(7, { 'className': 'widthp5' });
+                data.setColumnProperties(8, { 'className': 'widthp5' });
+                data.setColumnProperties(9, { 'className': 'widthp5' });
+                // create a list of columns for the dashboard
+                var columns = [{
+                    // this column aggregates all of the data into one column
+                    // for use with the string filter
+                    type: 'string',
+                    calc: function (dt, row) {
+                        for (var i = 0, vals = [], cols = dt.getNumberOfColumns(); i < cols; i++) {
+                            vals.push(dt.getFormattedValue(row, i));
+                        }
+                        return vals.join('\n');
+                    }
+                }];
+                for (var i = 0, cols = data.getNumberOfColumns(); i < cols; i++) {
+                    columns.push(i);
+                }
+
+                data.setTableProperty('Id', 'pipelineCurrentQuarter');
+                var stringFilter = new google.visualization.ControlWrapper({
+                    controlType: 'StringFilter',
+                    containerId: 'control3',
+                    options: {
+                        filterColumnIndex: 0,
+                        matchType: 'any',
+                        caseSensitive: false,
+                        ui: { label: '{!$Label.CRM_DR_NV_DR_Pipeline_PendingApproval_Search}:' }
+                    },
+                    view: {
+                        columns: columns
+                    }
+                });
+
+                // Configure the string filter to affect the table contents
+                var table = new google.visualization.ChartWrapper({
+                    'chartType': 'Table',
+                    'containerId': 'RPCF',
+                    'options': { showRowNumber: false, cssClassNames: { rowNumberCell: 'alignLeft', headerCell: 'googleHeaderCell' }, allowHtml: true, width: '100%' },
+                    view: {
+                        columns: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
+                    }
+                });
+                new google.visualization.Dashboard(document.getElementById('table')).bind(stringFilter, table).draw(data);
+            }, { escape: true });
+
+            NV_DR_Pipeline_PendingApprovalController.loadClosedWonPipelineCurrentFQ(function (result, event) {
+                var data = new google.visualization.DataTable();
+                data.addColumn('string', '{!$Label.CRM_DR_NV_DR_Pipeline_PendingApproval_Opportunity_Name}');
+                data.addColumn('string', '{!$Label.CRM_DR_NV_DR_Pipeline_PendingApproval_Opportunity_Number}');
+                data.addColumn('string', '{!$Label.CRM_DR_NV_DR_Pipeline_PendingApproval_Quote_Number}');
+                data.addColumn('string', '{!$Label.CRM_DR_NV_DR_Pipeline_PendingApproval_Customer_Name}');
+                data.addColumn('string', 'End User Contact');
+                data.addColumn('string', '{!$Label.CRM_DR_NV_DR_Pipeline_PendingApproval_OEM_Disti}');
+                data.addColumn('string', '{!$Label.CRM_DR_NV_DR_Pipeline_PendingApproval_Program_Name}');
+                data.addColumn('number', 'Probability');
+                data.addColumn('date', '{!$Label.CRM_DR_NV_DR_Pipeline_PendingApproval_Created_Date}');
+                data.addColumn('date', '{!$Label.CRM_DR_NV_DR_Pipeline_PendingApproval_Close_Date}');
+                data.addColumn('date', '{!$Label.CRM_DR_NV_DR_Pipeline_PendingApproval_Registration_Expiration_Date}');
+                data.addColumn('string', '{!$Label.CRM_DR_NV_DR_Pipeline_PendingApproval_NVIDIA_Sales_Rep}');
+                data.addColumn('string', '{!$Label.CRM_DR_NV_DR_Pipeline_PendingApproval_Email}');
+                data.addColumn('string', 'Products');
+                if (result != null) {
+                    for (var i = 0; i < result.length; i++) {
+                        var products = '';
+                        for (var j = 0; j < result[i].lstProductWrapper.length; j++) {
+                            products += result[i].lstProductWrapper[j].Name + ' (Qty - ' + result[i].lstProductWrapper[j].Quantity + '),<br /> ';
+                        }
+                        data.addRow([result[i].Name, result[i].OpportunityNumber, result[i].QuoteNumber, result[i].Company, result[i].CustomerContact, result[i].confirmedOEMODMDistiPartner, result[i].ProgramName, result[i].Probability, new Date(result[i].CreatedDate), new Date(result[i].CloseDate), new Date(result[i].ExpirationDate), result[i].ownerName, result[i].ownerEmail, products]);
+                    }
+                }
+                data.setColumnProperties(12, { 'className': 'widthp15' });
+                data.setColumnProperties(4, { 'className': 'widthp5' });
+                data.setColumnProperties(7, { 'className': 'widthp5' });
+                data.setColumnProperties(8, { 'className': 'widthp5' });
+                data.setColumnProperties(9, { 'className': 'widthp5' });
+                // create a list of columns for the dashboard
+                var columns = [{
+                    // this column aggregates all of the data into one column
+                    // for use with the string filter
+                    type: 'string',
+                    calc: function (dt, row) {
+                        for (var i = 0, vals = [], cols = dt.getNumberOfColumns(); i < cols; i++) {
+                            vals.push(dt.getFormattedValue(row, i));
+                        }
+                        return vals.join('\n');
+                    }
+                }];
+                for (var i = 0, cols = data.getNumberOfColumns(); i < cols; i++) {
+                    columns.push(i);
+                }
+
+                data.setTableProperty('Id', 'pipelineClosedWonCurrentQuarter');
+                var stringFilter = new google.visualization.ControlWrapper({
+                    controlType: 'StringFilter',
+                    containerId: 'control4',
+                    options: {
+                        filterColumnIndex: 0,
+                        matchType: 'any',
+                        caseSensitive: false,
+                        ui: { label: '{!$Label.CRM_DR_NV_DR_Pipeline_PendingApproval_Search}:' }
+                    },
+                    view: {
+                        columns: columns
+                    }
+                });
+
+                // Configure the string filter to affect the table contents
+                var table = new google.visualization.ChartWrapper({
+                    'chartType': 'Table',
+                    'containerId': 'CWRCFQ',
+                    'options': { showRowNumber: false, cssClassNames: { rowNumberCell: 'alignLeft', headerCell: 'googleHeaderCell' }, allowHtml: true, width: '100%' },
+                    view: {
+                        columns: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
+                    }
+                });
+                new google.visualization.Dashboard(document.getElementById('table')).bind(stringFilter, table).draw(data);
+            }, { escape: true });
+
+            NV_DR_Pipeline_PendingApprovalController.loadOverallPipelineClosedLost(function (result, event) {
+                var data = new google.visualization.DataTable();
+                data.addColumn('string', '{!$Label.CRM_DR_NV_DR_Pipeline_PendingApproval_Opportunity_Name}');
+                data.addColumn('string', '{!$Label.CRM_DR_NV_DR_Pipeline_PendingApproval_Opportunity_Number}');
+                data.addColumn('string', '{!$Label.CRM_DR_NV_DR_Pipeline_PendingApproval_Quote_Number}');
+                data.addColumn('string', '{!$Label.CRM_DR_NV_DR_Pipeline_PendingApproval_Customer_Name}');
+                data.addColumn('string', 'End User Contact');
+                data.addColumn('string', '{!$Label.CRM_DR_NV_DR_Pipeline_PendingApproval_OEM_Disti}');
+                data.addColumn('string', '{!$Label.CRM_DR_NV_DR_Pipeline_PendingApproval_Program_Name}');
+                data.addColumn('number', 'Probability');
+                data.addColumn('date', '{!$Label.CRM_DR_NV_DR_Pipeline_PendingApproval_Created_Date}');
+                data.addColumn('date', '{!$Label.CRM_DR_NV_DR_Pipeline_PendingApproval_Close_Date}');
+                data.addColumn('date', '{!$Label.CRM_DR_NV_DR_Pipeline_PendingApproval_Registration_Expiration_Date}');
+                data.addColumn('string', '{!$Label.CRM_DR_NV_DR_Pipeline_PendingApproval_NVIDIA_Sales_Rep}');
+                data.addColumn('string', '{!$Label.CRM_DR_NV_DR_Pipeline_PendingApproval_Email}');
+                data.addColumn('string', 'Products');
+                if (result != null) {
+                    for (var i = 0; i < result.length; i++) {
+                        var products = '';
+                        for (var j = 0; j < result[i].lstProductWrapper.length; j++) {
+                            products += result[i].lstProductWrapper[j].Name + ' (Qty - ' + result[i].lstProductWrapper[j].Quantity + '),<br /> ';
+                        }
+                        data.addRow([result[i].Name, result[i].OpportunityNumber, result[i].QuoteNumber, result[i].Company, result[i].CustomerContact, result[i].confirmedOEMODMDistiPartner, result[i].ProgramName, result[i].Probability, new Date(result[i].CreatedDate), new Date(result[i].CloseDate), new Date(result[i].ExpirationDate), result[i].ownerName, result[i].ownerEmail, products]);
+                    }
+                }
+                data.setColumnProperties(12, { 'className': 'widthp15' });
+                data.setColumnProperties(4, { 'className': 'widthp5' });
+                data.setColumnProperties(7, { 'className': 'widthp5' });
+                data.setColumnProperties(8, { 'className': 'widthp5' });
+                data.setColumnProperties(9, { 'className': 'widthp5' });
+                // create a list of columns for the dashboard
+                var columns = [{
+                    // this column aggregates all of the data into one column
+                    // for use with the string filter
+                    type: 'string',
+                    calc: function (dt, row) {
+                        for (var i = 0, vals = [], cols = dt.getNumberOfColumns(); i < cols; i++) {
+                            vals.push(dt.getFormattedValue(row, i));
+                        }
+                        return vals.join('\n');
+                    }
+                }];
+                for (var i = 0, cols = data.getNumberOfColumns(); i < cols; i++) {
+                    columns.push(i);
+                }
+
+                data.setTableProperty('Id', 'pipelineClosedLost');
+                var stringFilter = new google.visualization.ControlWrapper({
+                    controlType: 'StringFilter',
+                    containerId: 'control6',
+                    options: {
+                        filterColumnIndex: 0,
+                        matchType: 'any',
+                        caseSensitive: false,
+                        ui: { label: '{!$Label.CRM_DR_NV_DR_Pipeline_PendingApproval_Search}:' }
+                    },
+                    view: {
+                        columns: columns
+                    }
+                });
+
+                // Configure the string filter to affect the table contents
+                var table = new google.visualization.ChartWrapper({
+                    'chartType': 'Table',
+                    'containerId': 'CWRATL',
+                    'options': { showRowNumber: false, cssClassNames: { rowNumberCell: 'alignLeft', headerCell: 'googleHeaderCell' }, allowHtml: true, width: '100%' },
+                    view: {
+                        columns: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
+                    }
+                });
+                new google.visualization.Dashboard(document.getElementById('table')).bind(stringFilter, table).draw(data);
+            }, { escape: true });
+
+            NV_DR_Pipeline_PendingApprovalController.loadRejectedLeads(function (result, event) {
+                var data = new google.visualization.DataTable();
+                data.addColumn('string', '{!$Label.CRM_DR_NV_DR_Pipeline_PendingApproval_Customer_Name}');
+                data.addColumn('string', '{!$Label.CRM_DR_NV_DR_Pipeline_PendingApproval_Program_Name}');
+                data.addColumn('string', '{!$Label.CRM_DR_NV_DR_Pipeline_PendingApproval_Primary_Customer_Contact}');
+                data.addColumn('string', '{!$Label.CRM_DR_NV_DR_Pipeline_PendingApproval_Program_Type}');
+                data.addColumn('string', '{!$Label.CRM_DR_NV_DR_Pipeline_PendingApproval_Product}');
+                data.addColumn('string', '{!$Label.CRM_DR_NV_DR_Pipeline_PendingApproval_SUMS_Support}');
+                data.addColumn('number', '{!$Label.CRM_DR_NV_DR_Pipeline_PendingApproval_Quantity}');
+                data.addColumn('date', '{!$Label.CRM_DR_NV_DR_Pipeline_PendingApproval_Submitted_Date}');
+                data.addColumn('date', 'Rejected Date');
+                data.addColumn('string', 'Rejected NV Approver');
+                data.addColumn('string', 'Rejection Comment');
+                console.log(result);
+                if (result != null) {
+                    for (var i = 0; i < result.length; i++) {
+                        data.addRow([result[i].Company, result[i].ProgramName, result[i].Name, result[i].ProgramType, result[i].Product, result[i].SUMSSupport, result[i].Quantity, new Date(result[i].CreatedDate), new Date(result[i].RejectedDate), result[i].RejectedNVApprover, result[i].RejectionComment]);
+                    }
+                }
+                // create a list of columns for the dashboard
+                var columns = [{
+                    // this column aggregates all of the data into one column
+                    // for use with the string filter
+                    type: 'string',
+                    calc: function (dt, row) {
+                        for (var i = 0, vals = [], cols = dt.getNumberOfColumns(); i < cols; i++) {
+                            vals.push(dt.getFormattedValue(row, i));
+                        }
+                        return vals.join('\n');
+                    }
+                }];
+                for (var i = 0, cols = data.getNumberOfColumns(); i < cols; i++) {
+                    columns.push(i);
+                }
+
+                var stringFilter = new google.visualization.ControlWrapper({
+                    controlType: 'StringFilter',
+                    containerId: 'control7',
+                    options: {
+                        filterColumnIndex: 0,
+                        matchType: 'any',
+                        caseSensitive: false,
+                        ui: { label: '{!$Label.CRM_DR_NV_DR_Pipeline_PendingApproval_Search}:' }
+                    },
+                    view: {
+                        columns: columns
+                    }
+                });
+
+                // Configure the string filter to affect the table contents
+                var table = new google.visualization.ChartWrapper({
+                    'chartType': 'Table',
+                    'containerId': 'RR',
+                    'options': { showRowNumber: false, cssClassNames: { rowNumberCell: 'alignLeft', headerCell: 'googleHeaderCell' }, allowHtml: true, width: '100%' },
+                    view: {
+                        columns: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+                    }
+                });
+                new google.visualization.Dashboard(document.getElementById('table')).bind(stringFilter, table).draw(data);
+            }, { escape: true });
+
+
+            NV_DR_Pipeline_PendingApprovalController.loadPendingApprovalLeads(function (result, event) {
+                var data = new google.visualization.DataTable();
+                data.addColumn('string', '{!$Label.CRM_DR_NV_DR_Pipeline_PendingApproval_Customer_Name}');
+                data.addColumn('string', '{!$Label.CRM_DR_NV_DR_Pipeline_PendingApproval_Program_Name}');
+                data.addColumn('string', '{!$Label.CRM_DR_NV_DR_Pipeline_PendingApproval_Primary_Customer_Contact}');
+                data.addColumn('string', '{!$Label.CRM_DR_NV_DR_Pipeline_PendingApproval_Program_Type}');
+                data.addColumn('string', '{!$Label.CRM_DR_NV_DR_Pipeline_PendingApproval_Product}');
+                data.addColumn('string', '{!$Label.CRM_DR_NV_DR_Pipeline_PendingApproval_SUMS_Support}');
+                data.addColumn('number', '{!$Label.CRM_DR_NV_DR_Pipeline_PendingApproval_Quantity}');
+                data.addColumn('date', '{!$Label.CRM_DR_NV_DR_Pipeline_PendingApproval_Submitted_Date}');
+                data.addColumn('string', '{!$Label.CRM_DR_NV_DR_Pipeline_PendingApproval_Next_Approver}');
+                data.addColumn('string', '{!$Label.CRM_DR_NV_DR_Pipeline_PendingApproval_NVIDIA_Sales_Rep}');
+                data.addColumn('string', '{!$Label.CRM_DR_NV_DR_Pipeline_PendingApproval_Email}');
+                if (result != null) {
+                    for (var i = 0; i < result.length; i++) {
+                        data.addRow([result[i].Company, result[i].ProgramName, result[i].Name, result[i].ProgramType, result[i].Product, result[i].SUMSSupport, result[i].Quantity, new Date(result[i].CreatedDate), result[i].NextApprover, result[i].ownerName, result[i].ownerEmail]);
+                    }
+                }
+                // create a list of columns for the dashboard
+                var columns = [{
+                    // this column aggregates all of the data into one column
+                    // for use with the string filter
+                    type: 'string',
+                    calc: function (dt, row) {
+                        for (var i = 0, vals = [], cols = dt.getNumberOfColumns(); i < cols; i++) {
+                            vals.push(dt.getFormattedValue(row, i));
+                        }
+                        return vals.join('\n');
+                    }
+                }];
+                for (var i = 0, cols = data.getNumberOfColumns(); i < cols; i++) {
+                    columns.push(i);
+                }
+
+                var stringFilter = new google.visualization.ControlWrapper({
+                    controlType: 'StringFilter',
+                    containerId: 'control2',
+                    options: {
+                        filterColumnIndex: 0,
+                        matchType: 'any',
+                        caseSensitive: false,
+                        ui: { label: '{!$Label.CRM_DR_NV_DR_Pipeline_PendingApproval_Search}:' }
+                    },
+                    view: {
+                        columns: columns
+                    }
+                });
+
+                // Configure the string filter to affect the table contents
+                var table = new google.visualization.ChartWrapper({
+                    'chartType': 'Table',
+                    'containerId': 'RPAL',
+                    'options': { showRowNumber: false, cssClassNames: { rowNumberCell: 'alignLeft', headerCell: 'googleHeaderCell' }, allowHtml: true, width: '100%' },
+                    view: {
+                        columns: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+                    }
+                });
+                new google.visualization.Dashboard(document.getElementById('table')).bind(stringFilter, table).draw(data);
+            }, { escape: true });
+        }
+    </script>
+    <script type="text/javascript">
+        var tableToExcel = (function () {
+            var uri = 'data:application/vnd.ms-excel;base64,'
+                , template = '<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:x="urn:schemas-microsoft-com:office:excel" xmlns="http://www.w3.org/TR/REC-html40"><head><!--[if gte mso 9]><xml><x:ExcelWorkbook><x:ExcelWorksheets><x:ExcelWorksheet><x:Name>{worksheet}</x:Name><x:WorksheetOptions><x:DisplayGridlines/></x:WorksheetOptions></x:ExcelWorksheet></x:ExcelWorksheets></x:ExcelWorkbook></xml><![endif]--><meta http-equiv="content-type" content="text/plain; charset=UTF-8"/></head><body><table>{table}</table></body></html>'
+                , base64 = function (s) { return window.btoa(unescape(encodeURIComponent(s))) }
+                , format = function (s, c) { return s.replace(/{(\w+)}/g, function (m, p) { return c[p]; }) }
+            return function (table, name) {
+                if (!table.nodeType) table = document.getElementById(table)
+                var ctx = { worksheet: name || 'Worksheet', table: table.innerHTML }
+                window.location.href = uri + base64(format(template, ctx))
+            }
+        })()
+    </script>
+</apex:page>

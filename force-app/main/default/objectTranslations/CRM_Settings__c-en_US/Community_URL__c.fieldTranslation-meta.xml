@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Community URL : Used in Lead Routing Rules (Ex: https://npncommunity.force.com) --></help>
+    <label><!-- Community URL --></label>
+    <name>Community_URL__c</name>
+</CustomFieldTranslation>

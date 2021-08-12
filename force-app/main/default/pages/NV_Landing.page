@@ -1,0 +1,8 @@
+<apex:page >
+   <script>
+    window.onload = window.setTimeout(redirect(),5000);
+    function redirect(){
+        top.location.href = '/home/home.jsp';
+    }
+    </script>
+</apex:page>

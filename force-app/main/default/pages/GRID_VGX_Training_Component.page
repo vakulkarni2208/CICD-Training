@@ -1,0 +1,48 @@
+<apex:page showHeader="true" sidebar="true" title="GPU Genius">
+    <html>
+    <head>
+    </head>
+    <body>
+    <font face="verdana">
+    <table width="75%">
+    <tr><td>
+    <table width="800">
+    
+    <tr>
+    <td colspan="2">
+        <div style="text-align: right;">
+        <a href="http://www.nvidia.com/gpugenius" target="_blank"><img src="{!
+
+$Resource.GPUGenius}/GPUGenius.png" width="300"></img></a>
+    </div>
+    </td></tr>
+    <tr><td colspan="2" align="left" valign="bottom">
+    <font style="font-weight: bold;" size="5"><br></br>NVIDIA GRID Training Portal</font></td>
+    </tr>
+    <tr><td align="left"><br></br><font size="3">NVIDIA GPU Genius offers you a variety of tools, such 
+    as training and customer presentations, demos, customer leave behinds, datasheets, and much more. Click on
+    the GPU Genius logo to access this content.</font><br></br><br></br></td></tr>
+        <tr><td align="left"><br></br><font size="3"><b>Sales Training</b></font><br></br><br></br>
+        <a href="http://www.brainshark.com/nvidia/vu?pi=zGOzASWgaz34dFz0" target="_blank"><img src="https://na2.salesforce.com/servlet/servlet.ImageServer?id=01540000000Z0v6&oid=00D400000009E3I&lastMod=1371668413000" width="250" height="136"></img></a>
+        </td>
+<td></td></tr>
+<tr><td align="left"><br></br><font size="3"><b>Technical Training</b></font><br></br><br></br>
+ <a href="http://www.brainshark.com/nvidia/vu?pi=zI1zksOxdzBg0Ez0" target="_blank"><img src="https://na2.salesforce.com/servlet/servlet.ImageServer?id=01540000000ZAtA&oid=00D400000009E3I&lastMod=1373471963000" width="250" height="136"></img></a>
+        </td>
+<td></td></tr>
+    </table>
+    
+    
+    
+    
+         <table height="1000" width="800"><tr><td><br></br><hr color="#92d050" 
+
+size="5"></hr></td></tr>
+         </table>
+     
+     </td></tr></table>
+
+          </font>
+</body>
+</html>
+</apex:page>

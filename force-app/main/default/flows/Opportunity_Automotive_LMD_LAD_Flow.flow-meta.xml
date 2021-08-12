@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <description>Send Email notification to Opportunity Owner on 91st Day</description>
+        <name>Send_Email_to_Oppty_Owner_on_91st_Day</name>
+        <label>Send Email to Oppty Owner on 91st Day</label>
+        <locationX>655</locationX>
+        <locationY>395</locationY>
+        <actionName>Opportunity.Opportunity_Automotive_Flow_Email_Alert</actionName>
+        <actionType>emailAlert</actionType>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>Auto_Opp_Var.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <assignments>
+        <description>Assign the Stage &apos;Inactive&apos; to the Opportunities those that have met 121st day in the &apos;LMDorLAD121stDay_List&apos;.</description>
+        <name>Assign_Data_Into_New_LMDorLAD121st_Day_Variable</name>
+        <label>Assign Data Into New LMDorLAD121st Day Variable</label>
+        <locationX>126</locationX>
+        <locationY>398</locationY>
+        <assignmentItems>
+            <assignToReference>New_LMDorLAD121stDay_Var.Id</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Auto_Opp_Var.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>New_LMDorLAD121stDay_Var.StageName</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Inactive</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_the_LMDorLAD121stDay_List</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <description>Check if Opportunity LastModifiedDate or LastActivityDate is greater than 90 or 120 Days</description>
+        <name>Check_if_Oppty_LMD_or_LAD_is_greater_than_90_or_120_Days</name>
+        <label>Check if Oppty LMD or LAD is greater than 90 or 120 Days</label>
+        <locationX>388</locationX>
+        <locationY>398</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Is_LMD_or_LAD_is_equal_to_91st_Day</name>
+            <conditionLogic>1 or 2</conditionLogic>
+            <conditions>
+                <leftValueReference>Auto_Opp_Var.LastModifiedDate</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>Past_91st_Day_Date</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Auto_Opp_Var.LastActivityDate</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>Past_91st_Day_Date</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Send_Email_to_Oppty_Owner_on_91st_Day</targetReference>
+            </connector>
+            <label>Is LMD or LAD is equal to 91st Day</label>
+        </rules>
+        <rules>
+            <name>Is_LMD_or_LAD_is_equal_to_121st_Day</name>
+            <conditionLogic>1 or 2</conditionLogic>
+            <conditions>
+                <leftValueReference>Auto_Opp_Var.LastModifiedDate</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>Past_121st_Day_Date</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Auto_Opp_Var.LastActivityDate</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>Past_121st_Day_Date</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Data_Into_New_LMDorLAD121st_Day_Variable</targetReference>
+            </connector>
+            <label>Is LMD or LAD is equal to 121st Day</label>
+        </rules>
+    </decisions>
+    <description>(Update/Send Email Individually)
+* Scheduled this Flow to run daily at 7:30AM
+1. After 90 days of Last Activity or Last Modified not being updated on the Opportunity please send an email to the Opportunity Owner.
+2. At 120 days of Last Activity or Last Modified not being updated on the Opportunity move the stage to Inactive.
+3. Send Email Notification to Opportunity Owner</description>
+    <formulas>
+        <description>This variable will have the Date value of past 121st day from Today</description>
+        <name>Past_121st_Day_Date</name>
+        <dataType>Date</dataType>
+        <expression>{!$Flow.CurrentDate} - 121</expression>
+    </formulas>
+    <formulas>
+        <description>This variable will have the Date value of past 91st day from Today</description>
+        <name>Past_91st_Day_Date</name>
+        <dataType>Date</dataType>
+        <expression>{!$Flow.CurrentDate} - 91</expression>
+    </formulas>
+    <interviewLabel>Opportunity - Automotive LMD/LAD Flow {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Opportunity - Automotive LMD/LAD Flow</label>
+    <loops>
+        <description>Loop over the Opportunity one by one</description>
+        <name>Extract_Oppty_1_by_1</name>
+        <label>Extract Oppty 1 by 1</label>
+        <locationX>396</locationX>
+        <locationY>218</locationY>
+        <assignNextValueToReference>Auto_Opp_Var</assignNextValueToReference>
+        <collectionReference>Fetch_Automotive_Opportunities</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Check_if_Oppty_LMD_or_LAD_is_greater_than_90_or_120_Days</targetReference>
+        </nextValueConnector>
+    </loops>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <description>Query for all the Automotive Opportunities</description>
+        <name>Fetch_Automotive_Opportunities</name>
+        <label>Fetch Automotive Opportunities</label>
+        <locationX>395</locationX>
+        <locationY>50</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Extract_Oppty_1_by_1</targetReference>
+        </connector>
+        <filters>
+            <field>RecordTypeId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>varAutoOppRecordTypeId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>Opportunity</object>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>LastModifiedDate</queriedFields>
+        <queriedFields>LastActivityDate</queriedFields>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>Query and get the Automotive Opportunity RecordType Id</description>
+        <name>Fetch_the_Automotive_Opportunity_RecordTypeId</name>
+        <label>Fetch the Automotive Opportunity RecordTypeId</label>
+        <locationX>226</locationX>
+        <locationY>50</locationY>
+        <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Fetch_Automotive_Opportunities</targetReference>
+        </connector>
+        <filters>
+            <field>DeveloperName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Automotive_Opportunity</stringValue>
+            </value>
+        </filters>
+        <object>RecordType</object>
+        <outputAssignments>
+            <assignToReference>varAutoOppRecordTypeId</assignToReference>
+            <field>Id</field>
+        </outputAssignments>
+    </recordLookups>
+    <recordUpdates>
+        <description>Update the Opportunity Stage to Inactive for the Opportunities those that have either LMD or LAD met with 121st day</description>
+        <name>Update_the_LMDorLAD121stDay_List</name>
+        <label>Update the LMDorLAD121stDay List</label>
+        <locationX>126</locationX>
+        <locationY>591</locationY>
+        <inputReference>New_LMDorLAD121stDay_Var</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>82</locationX>
+        <locationY>50</locationY>
+        <connector>
+            <targetReference>Fetch_the_Automotive_Opportunity_RecordTypeId</targetReference>
+        </connector>
+        <schedule>
+            <frequency>Daily</frequency>
+            <startDate>2020-05-14</startDate>
+            <startTime>07:30:00.000Z</startTime>
+        </schedule>
+        <triggerType>Scheduled</triggerType>
+    </start>
+    <status>Active</status>
+    <textTemplates>
+        <description>After 90 days of Last Activity or Last Modified not being updated on the Opportunity. send an email to the Opportunity Owner</description>
+        <name>EmailOpportunityOwnerafter90daysofLastActivityDateorLastModifiedDate</name>
+        <text>&lt;p&gt;Hello Owner,&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); font-size: 14px; font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, Roboto, Oxygen, Ubuntu, &amp;quot;Fira Sans&amp;quot;, &amp;quot;Droid Sans&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, sans-serif; color: rgb(23, 43, 77);&quot;&gt;{!LMDorLAD91stDay_List.Name} &lt;/span&gt;&lt;/p&gt;&lt;p&gt;has not been updated in at least 90 days.&amp;nbsp;Please immediately update this Opportunity – E.g. Update Next Steps, verify that stage is correct and update, add forecast, report on recent meetings with partner.&amp;nbsp;If this Opportunity is no longer an active engagement then please update Stage to &apos;Closed Lost&apos;.&amp;nbsp;&amp;nbsp;&lt;/p&gt;&lt;p&gt;If this Opportunity is not updated in the next 21 days then the stage will be moved to &apos;Inactive&apos;.&amp;nbsp;&amp;nbsp;&lt;/p&gt;&lt;p&gt;If you have any questions or need any help please email&amp;nbsp;&lt;a href=&quot;mailto:CRM-Auto@nvidia.com&quot; target=&quot;_blank&quot; style=&quot;color: rgb(0, 82, 204);&quot;&gt;CRM-Auto@nvidia.com&lt;sup style=&quot;color: rgb(0, 82, 204);&quot;&gt;&lt;img src=&quot;https://jirasw.nvidia.com/images/icons/mail_small.gif&quot;&gt;&lt;/sup&gt;&lt;/a&gt; &lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Regards,&lt;/p&gt;&lt;p&gt;Rishi and CRM Auto Team&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</text>
+    </textTemplates>
+    <variables>
+        <description>This variable will have each Opportunity</description>
+        <name>Auto_Opp_Var</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Opportunity</objectType>
+    </variables>
+    <variables>
+        <description>Opportunity List where LMD or LAD is equal to 121st Day</description>
+        <name>LMDorLAD121stDay_List</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Opportunity</objectType>
+    </variables>
+    <variables>
+        <description>Opportunity List where LMD or LAD is equal to 91st Day</description>
+        <name>LMDorLAD91stDay_List</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Opportunity</objectType>
+    </variables>
+    <variables>
+        <description>This is record variable to the list &apos;LMDorLAD121stDay&apos;</description>
+        <name>New_LMDorLAD121stDay_Var</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Opportunity</objectType>
+    </variables>
+    <variables>
+        <description>This is record variable for the list &apos;LMDorLAD91stDay_List&apos;</description>
+        <name>New_LMDorLAD91stDay_Var</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Opportunity</objectType>
+    </variables>
+    <variables>
+        <description>This variable has Record Type Id of the Automotive Opportunity</description>
+        <name>varAutoOppRecordTypeId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

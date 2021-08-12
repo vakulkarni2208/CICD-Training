@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Classification_Justification_is_Required</fullName>
+    <active>false</active>
+    <description>SDS-3258</description>
+    <errorConditionFormula>AND(
+ $Profile.Name &lt;&gt; &apos;System Administrator&apos;,
+ $Profile.Name &lt;&gt; &apos;Sales Profile - Partner Admin&apos;,
+ RecordType.Name = &apos;New Customer Account&apos;,
+ ISBLANK(Classification_Change_Justification__c), 
+ NOT(ISPICKVAL(CPQ_Customer_Classification__c, &apos;Education&apos;)), 
+ ISPICKVAL(Industry, &apos;Higher Ed/Research&apos;),
+ NOT(CONTAINS(Website, &apos;.EDU&apos;)) 
+)</errorConditionFormula>
+    <errorMessage>Classification Change Justification is required for Industry &apos;Higher Ed/Research&apos;</errorMessage>
+</ValidationRule>

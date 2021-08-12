@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Date TPC Results Reviewed with Customer --></label>
+    <name>Date_TPC_Results_Reviewed_with_Customer__c</name>
+</CustomFieldTranslation>

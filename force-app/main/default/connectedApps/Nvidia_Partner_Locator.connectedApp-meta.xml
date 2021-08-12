@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>vakulkarni@nvidia.com</contactEmail>
+    <label>Nvidia Partner Locator</label>
+    <oauthConfig>
+        <callbackUrl>https://www.nvidia.com/partnerlocator</callbackUrl>
+        <consumerKey>3MVG9c1ghSpUbLl8ac5dB8XuSM5chc42OdFwr9QGYUqBDFiluesMhabA1Dh8EZvIk70HG_.xWJnD_FalgEwPQ</consumerKey>
+        <isAdminApproved>false</isAdminApproved>
+        <isConsumerSecretOptional>false</isConsumerSecretOptional>
+        <isIntrospectAllTokens>false</isIntrospectAllTokens>
+        <scopes>Full</scopes>
+    </oauthConfig>
+    <oauthPolicy>
+        <ipRelaxation>ENFORCE</ipRelaxation>
+        <refreshTokenPolicy>infinite</refreshTokenPolicy>
+    </oauthPolicy>
+</ConnectedApp>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ASP_Override_Admin_User_s__c</fullName>
+    <description>Usernames semicolon separated. These users will be able to see Editable ASP Override field.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Usernames semicolon separated. These users will be able to see Editable ASP Override field.</inlineHelpText>
+    <label>ASP Override Admin User(s)</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

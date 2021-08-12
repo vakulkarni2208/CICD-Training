@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OS__c</fullName>
+    <externalId>false</externalId>
+    <label>OS</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Windows 7</fullName>
+                <default>false</default>
+                <label>Windows 7</label>
+            </value>
+            <value>
+                <fullName>Windows 8</fullName>
+                <default>false</default>
+                <label>Windows 8</label>
+            </value>
+            <value>
+                <fullName>Windows 8.1</fullName>
+                <default>false</default>
+                <label>Windows 8.1</label>
+            </value>
+            <value>
+                <fullName>Windows 10 1507</fullName>
+                <default>false</default>
+                <label>Windows 10 1507</label>
+            </value>
+            <value>
+                <fullName>Windows 10 1511</fullName>
+                <default>false</default>
+                <label>Windows 10 1511</label>
+            </value>
+            <value>
+                <fullName>Windows 10 1607</fullName>
+                <default>false</default>
+                <label>Windows 10 1607</label>
+            </value>
+            <value>
+                <fullName>Windows 10 1703</fullName>
+                <default>false</default>
+                <label>Windows 10 1703</label>
+            </value>
+            <value>
+                <fullName>Windows 10 1709</fullName>
+                <default>false</default>
+                <label>Windows 10 1709</label>
+            </value>
+            <value>
+                <fullName>Windows 10 1803</fullName>
+                <default>false</default>
+                <label>Windows 10 1803</label>
+            </value>
+            <value>
+                <fullName>Windows 10 1809</fullName>
+                <default>false</default>
+                <label>Windows 10 1809</label>
+            </value>
+            <value>
+                <fullName>Windows 10 1903</fullName>
+                <default>false</default>
+                <label>Windows 10 1903</label>
+            </value>
+            <value>
+                <fullName>Windows 10 1909</fullName>
+                <default>false</default>
+                <label>Windows 10 1909</label>
+            </value>
+            <value>
+                <fullName>Windows Server 2008 R2</fullName>
+                <default>false</default>
+                <label>Windows Server 2008 R2</label>
+            </value>
+            <value>
+                <fullName>Windows Server 2012 R2</fullName>
+                <default>false</default>
+                <label>Windows Server 2012 R2</label>
+            </value>
+            <value>
+                <fullName>Windows Server 2016 1607</fullName>
+                <default>false</default>
+                <label>Windows Server 2016 1607</label>
+            </value>
+            <value>
+                <fullName>Windows Server 2016 1709</fullName>
+                <default>false</default>
+                <label>Windows Server 2016 1709</label>
+            </value>
+            <value>
+                <fullName>Windows Server 2019</fullName>
+                <default>false</default>
+                <label>Windows Server 2019</label>
+            </value>
+            <value>
+                <fullName>Red Hat Enterprise Linux 6.6</fullName>
+                <default>false</default>
+                <label>Red Hat Enterprise Linux 6.6</label>
+            </value>
+            <value>
+                <fullName>Red Hat Enterprise Linux 7.0</fullName>
+                <default>false</default>
+                <label>Red Hat Enterprise Linux 7.0</label>
+            </value>
+            <value>
+                <fullName>Red Hat Enterprise Linux 7.6</fullName>
+                <default>false</default>
+                <label>Red Hat Enterprise Linux 7.6</label>
+            </value>
+            <value>
+                <fullName>Red Hat Enterprise Linux 7.7</fullName>
+                <default>false</default>
+                <label>Red Hat Enterprise Linux 7.7</label>
+            </value>
+            <value>
+                <fullName>SUSE Linux Enterprise Server 12 SP3+</fullName>
+                <default>false</default>
+                <label>SUSE Linux Enterprise Server 12 SP3+</label>
+            </value>
+            <value>
+                <fullName>Ubuntu 14.04 LTS</fullName>
+                <default>false</default>
+                <label>Ubuntu 14.04 LTS</label>
+            </value>
+            <value>
+                <fullName>Ubuntu 16.04 LTS</fullName>
+                <default>false</default>
+                <label>Ubuntu 16.04 LTS</label>
+            </value>
+            <value>
+                <fullName>Ubuntu 18.04 LTS</fullName>
+                <default>false</default>
+                <label>Ubuntu 18.04 LTS</label>
+            </value>
+            <value>
+                <fullName>BaseOS</fullName>
+                <default>false</default>
+                <label>BaseOS</label>
+            </value>
+            <value>
+                <fullName>RedHat</fullName>
+                <default>false</default>
+                <label>RedHat</label>
+            </value>
+            <value>
+                <fullName>Custom</fullName>
+                <default>false</default>
+                <label>Custom</label>
+            </value>
+            <value>
+                <fullName>DGX OS</fullName>
+                <default>false</default>
+                <label>DGX OS</label>
+            </value>
+            <value>
+                <fullName>CentOS</fullName>
+                <default>false</default>
+                <label>CentOS</label>
+            </value>
+            <value>
+                <fullName>RHEL</fullName>
+                <default>false</default>
+                <label>RHEL</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Required_EDU_PreApproved_Rebate_for_EDU</fullName>
+    <active>true</active>
+    <description>&apos;EDU Pre-Approved Rebate&apos; field should not be NULL when &apos;Available for EDU Discount&apos; is YES</description>
+    <errorConditionFormula>AND(
+  ISPICKVAL(Available_for_EDU_Discount__c, &quot;YES&quot;),
+  OR(
+    ISNULL(EDU_Pre_Approved_Rebate__c),
+    (EDU_Pre_Approved_Rebate__c &lt; 1)
+  )
+)</errorConditionFormula>
+    <errorMessage>Please enter the Discount Amount in &apos;EDU Pre-Approved Rebate&apos; because &apos;Available for EDU Discount&apos; is YES</errorMessage>
+</ValidationRule>

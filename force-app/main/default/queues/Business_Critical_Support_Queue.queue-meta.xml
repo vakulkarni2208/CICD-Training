@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>true</doesSendEmailToMembers>
+    <name>Business Critical Support Queue</name>
+    <queueMembers>
+        <publicGroups>
+            <publicGroup>Service_Cloud_Admin_Users</publicGroup>
+            <publicGroup>Service_Cloud_NVES_vGPU_Support_team</publicGroup>
+        </publicGroups>
+        <users>
+            <user>abird@nvidia.com</user>
+            <user>peilunt@nvidia.com</user>
+            <user>tcosta@nvidia.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

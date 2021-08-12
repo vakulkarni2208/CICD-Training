@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DR_CreatedByMe__c</fullName>
+    <description>This field is used for Opportunity Registration related Report (Owner Opportunities by Stage) and List View (My Opportunities). No need to use it in the Page Layouts</description>
+    <externalId>false</externalId>
+    <formula>if( CreatedById = $User.Id , true, false)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>This field is used for Opportunity Registration related Report (Owner Opportunities by Stage) and List View (My Opportunities).</inlineHelpText>
+    <label>CreatedByMe</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

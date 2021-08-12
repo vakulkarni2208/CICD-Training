@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Industry --></label>
+    <name>Industry__c</name>
+    <picklistValues>
+        <masterLabel>AI City-China</masterLabel>
+        <translation><!-- AI City-China --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AI City-ROW</masterLabel>
+        <translation><!-- AI City-ROW --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Aerospace</masterLabel>
+        <translation><!-- Aerospace --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Architecture, Eng and Construction</masterLabel>
+        <translation><!-- Architecture, Eng and Construction --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Automotive</masterLabel>
+        <translation><!-- Automotive --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CRISP</masterLabel>
+        <translation><!-- CRISP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Data Analytics</masterLabel>
+        <translation><!-- Data Analytics --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Financial Services Industry (FSI)</masterLabel>
+        <translation><!-- Financial Services Industry (FSI) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Healthcare</masterLabel>
+        <translation><!-- Healthcare --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Higher Ed/Research</masterLabel>
+        <translation><!-- Higher Ed/Research --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IT Services</masterLabel>
+        <translation><!-- IT Services --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Manufacturing</masterLabel>
+        <translation><!-- Manufacturing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Media/Entertainment</masterLabel>
+        <translation><!-- Media/Entertainment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Oil &amp; Gas/Energy</masterLabel>
+        <translation><!-- Oil &amp; Gas/Energy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Public Sector-ROW</masterLabel>
+        <translation><!-- Public Sector-ROW --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Public Sector-US</masterLabel>
+        <translation><!-- Public Sector-US --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Retail and CPG</masterLabel>
+        <translation><!-- Retail and CPG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Strategic Hyperscale</masterLabel>
+        <translation><!-- Strategic Hyperscale --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Supercomputing</masterLabel>
+        <translation><!-- Supercomputing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Telecommunications</masterLabel>
+        <translation><!-- Telecommunications --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unassigned</masterLabel>
+        <translation><!-- Unassigned --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Why_Strategic__c</fullName>
+    <description>NPN Onboard Lead specific</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Potential Sales: Product/Service is deployed and scaling out or Target Customers in Fortune 500: (e.g. Walmart, Ebay, Bloomberg)
+Technical Credibility: Thought leader CEO or Strong Investors</inlineHelpText>
+    <label>Why Strategic?</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Potential Sales</fullName>
+                <default>false</default>
+                <label>Potential Sales</label>
+            </value>
+            <value>
+                <fullName>Technical Credibility</fullName>
+                <default>false</default>
+                <label>Technical Credibility</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

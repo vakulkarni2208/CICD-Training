@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Additional_Customer_Use_Cases__c</fullName>
+    <externalId>false</externalId>
+    <label>Additional Customer Workload</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Autonomous vehicle</fullName>
+                <default>false</default>
+                <label>Autonomous vehicle</label>
+            </value>
+            <value>
+                <fullName>Data Analytics (Not ML or DL)</fullName>
+                <default>false</default>
+                <label>Data Analytics (Not ML or DL)</label>
+            </value>
+            <value>
+                <fullName>Deep Learning – Inferencing</fullName>
+                <default>false</default>
+                <label>Deep Learning – Inferencing</label>
+            </value>
+            <value>
+                <fullName>Deep Learning – Training</fullName>
+                <default>false</default>
+                <label>Deep Learning – Training</label>
+            </value>
+            <value>
+                <fullName>Design and Content Creation</fullName>
+                <default>false</default>
+                <label>Design and Content Creation</label>
+            </value>
+            <value>
+                <fullName>Graphics Virtualization (vGPU)</fullName>
+                <default>false</default>
+                <label>Graphics Virtualization (vGPU)</label>
+            </value>
+            <value>
+                <fullName>High Performance Computing (HPC)</fullName>
+                <default>false</default>
+                <label>High Performance Computing (HPC)</label>
+            </value>
+            <value>
+                <fullName>Industrial Inspection</fullName>
+                <default>false</default>
+                <label>Industrial Inspection</label>
+            </value>
+            <value>
+                <fullName>Infrastructure as a Service</fullName>
+                <default>false</default>
+                <label>Infrastructure as a Service</label>
+            </value>
+            <value>
+                <fullName>Intelligent Video Analytics (IVA)</fullName>
+                <default>false</default>
+                <label>Intelligent Video Analytics (IVA)</label>
+            </value>
+            <value>
+                <fullName>Machine Learning (Not DL)</fullName>
+                <default>false</default>
+                <label>Machine Learning (Not DL)</label>
+            </value>
+            <value>
+                <fullName>Medical Imaging</fullName>
+                <default>false</default>
+                <label>Medical Imaging</label>
+            </value>
+            <value>
+                <fullName>Predictive Maintenance</fullName>
+                <default>false</default>
+                <label>Predictive Maintenance</label>
+            </value>
+            <value>
+                <fullName>Rendering </fullName>
+                <default>false</default>
+                <label>Rendering </label>
+            </value>
+            <value>
+                <fullName>Scalable Visualization Solutions (SVS)</fullName>
+                <default>false</default>
+                <label>Scalable Visualization Solutions (SVS)</label>
+            </value>
+            <value>
+                <fullName>Virtual &amp; Augmented Reality (VR/AR)</fullName>
+                <default>false</default>
+                <label>Virtual &amp; Augmented Reality (VR/AR)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

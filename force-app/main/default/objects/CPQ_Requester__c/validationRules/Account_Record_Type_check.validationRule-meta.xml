@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Account_Record_Type_check</fullName>
+    <active>false</active>
+    <description>If the Request type is EC, ECC then Account Record type should be New Customer Account and for RC, RCC Account Record type should be NPN account Registry</description>
+    <errorConditionFormula>AND(
+(OR( 
+ISPICKVAL(Request_Type__c,&apos;EC&apos;),
+ISPICKVAL(Request_Type__c,&apos;ECC&apos;))),
+AND(CPQ_Account__r.RecordType.Name &lt;&gt;&apos;Content Technology&apos;,
+CPQ_Account__r.RecordType.Name &lt;&gt;&apos;EMEAI Training Account&apos;, CPQ_Account__r.RecordType.Name &lt;&gt;&apos;MDF Account&apos;, CPQ_Account__r.RecordType.Name &lt;&gt;&apos;NPN Account Registry &apos;, CPQ_Account__r.RecordType.Name &lt;&gt;&apos;NPN Community Account&apos;, CPQ_Account__r.RecordType.Name &lt;&gt;&apos;NV Customer Account&apos;, CPQ_Account__r.RecordType.Name &lt;&gt;&apos;NV Partner Program Account&apos;, CPQ_Account__r.RecordType.Name &lt;&gt;&apos;NVIDIA Marketing Partner Portal&apos;, CPQ_Account__r.RecordType.Name &lt;&gt;&apos;Partner Account&apos;)
+)</errorConditionFormula>
+    <errorMessage>Please select correct account Record type for Request type
+ECC, EC = New Customer Account and RC, RCC = NPN Account registry</errorMessage>
+</ValidationRule>

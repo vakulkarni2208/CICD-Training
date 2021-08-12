@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Remoting_Solution__c</fullName>
+    <externalId>false</externalId>
+    <label>Remoting Solution</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>VMware Horizon</fullName>
+                <default>false</default>
+                <label>VMware Horizon</label>
+            </value>
+            <value>
+                <fullName>Citrix XenDesktop</fullName>
+                <default>false</default>
+                <label>Citrix XenDesktop</label>
+            </value>
+            <value>
+                <fullName>Citrix XenApp</fullName>
+                <default>false</default>
+                <label>Citrix XenApp</label>
+            </value>
+            <value>
+                <fullName>VNC</fullName>
+                <default>false</default>
+                <label>VNC</label>
+            </value>
+            <value>
+                <fullName>RDP</fullName>
+                <default>false</default>
+                <label>RDP</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

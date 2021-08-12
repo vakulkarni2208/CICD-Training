@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- GPU Cloud Provider --></label>
+    <name>GPU_Cloud_Provider__c</name>
+    <picklistValues>
+        <masterLabel>Amazon Web Services</masterLabel>
+        <translation><!-- Amazon Web Services --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Google Cloud</masterLabel>
+        <translation><!-- Google Cloud --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IBM Cloud</masterLabel>
+        <translation><!-- IBM Cloud --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Microsoft Azure</masterLabel>
+        <translation><!-- Microsoft Azure --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

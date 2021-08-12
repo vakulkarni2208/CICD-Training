@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Competency Status Change Line Demotion --></label>
+    <name>Competency_Status_Change_Line_Demotion__c</name>
+</CustomFieldTranslation>

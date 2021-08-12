@@ -1,0 +1,83 @@
+<apex:page controller="clsPartnerPortalMyProfile" sidebar="false" showheader="true">
+    
+    <!--<apex:sectionHeader title="My Profile"/>-->
+    <!--<table border="0" width="100%" style="background-color:#FFFFFF;">
+   <tr>
+       <td><apex:iframe src="/apex/PartnerPortalHeaderPage" height="100%" width="100%"/></td>
+   </tr>
+   </table>-->
+    <apex:form id="formId">
+
+       <apex:pagemessages ></apex:pagemessages>
+       <table width="100%" border="0">
+           <tr>
+               <td width="10%"><b><apex:outputText value="First Name" /></b></td>
+               <td><apex:inputText value="{!firstname}" /></td>                              
+           </tr>
+           <tr>
+               <td><b><apex:outputText value="Last Name" /></b></td>
+               <td><apex:inputText value="{!lastname}" /></td>                              
+           </tr>    
+           <tr>
+               <td><b><apex:outputText value="Title" /></b></td>
+               <td><apex:inputText value="{!title}" /></td>                              
+           </tr>   
+           <tr>
+               <td><b><apex:outputText value="Email" /></b></td>
+               <td><apex:inputText value="{!email}" /></td>                              
+           </tr>       
+           <tr>
+               <td><b><apex:outputText value="Phone" /></b></td>
+               <td><apex:inputText value="{!phone}" /></td>                              
+           </tr>
+           <tr>
+               <td colspan="2">&nbsp;</td>               
+           </tr>
+           <tr>
+               <td colspan="2" ><apex:commandButton value="Update" style="margin-left:200px;" action="{!updateUserDetail}" reRender="formId"/></td>           
+           </tr>
+       </table>
+       <!--
+        <apex:pageBlock >            
+            <apex:pageBlockButtons >                
+            </apex:pageBlockButtons>
+            
+            <apex:pageBlockSection >
+               <apex:pageBlockSectionItem >
+                   
+               </apex:pageBlockSectionItem>
+               
+               <apex:pageBlockSectionItem >
+               </apex:pageBlockSectionItem>
+               
+               <apex:pageBlockSectionItem >
+                   <apex:outputLabel >Last Name</apex:outputLabel>
+               </apex:pageBlockSectionItem>
+               
+               <apex:pageBlockSectionItem >
+               </apex:pageBlockSectionItem>
+               
+               <apex:pageBlockSectionItem >
+                   <apex:outputLabel >Email</apex:outputLabel><apex:inputText value="{!email}"/>
+               </apex:pageBlockSectionItem>
+               
+               <apex:pageBlockSectionItem >
+               </apex:pageBlockSectionItem>
+               
+               <apex:pageBlockSectionItem >
+                   <apex:outputLabel >Phone</apex:outputLabel><apex:inputText value="{!phone}"/>
+               </apex:pageBlockSectionItem>
+               
+               <apex:pageBlockSectionItem >
+               </apex:pageBlockSectionItem>
+                                           
+               
+            </apex:pageBlockSection>
+        </apex:pageBlock>                      
+        
+        -->
+        
+        
+    </apex:form>
+
+</apex:page>

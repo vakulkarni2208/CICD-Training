@@ -1,0 +1,1 @@
+<SOAP:Envelope xmlns:SOAP='http://schemas.xmlsoap.org/soap/envelope/'><SOAP:Header/><SOAP:Body><ns1:NvidiaOppReg_Response xmlns:ns1='urn:nvidia:OppReg'><RETURN_ITEM><RETURN_TYPE>S</RETURN_TYPE><RETURN_CODE>0</RETURN_CODE><RETURN_MESSAGE>Database was updated successfully</RETURN_MESSAGE></RETURN_ITEM></ns1:NvidiaOppReg_Response></SOAP:Body></SOAP:Envelope>

@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>true</sorted>
+    <standardValue>
+        <fullName>1 Member</fullName>
+        <default>false</default>
+        <label>1 Member</label>
+    </standardValue>
+    <standardValue>
+        <fullName>2 - Account Team Consensus</fullName>
+        <default>false</default>
+        <label>2 - Account Team Consensus</label>
+    </standardValue>
+    <standardValue>
+        <fullName>2 Engaged - Success</fullName>
+        <default>false</default>
+        <label>2 Engaged - Success</label>
+    </standardValue>
+    <standardValue>
+        <fullName>2 Registered - Success</fullName>
+        <default>false</default>
+        <label>2 Registered - Success</label>
+    </standardValue>
+    <standardValue>
+        <fullName>2 Visited Booth - Success</fullName>
+        <default>false</default>
+        <label>2 Visited Booth - Success</label>
+    </standardValue>
+    <standardValue>
+        <fullName>3 Engaged - Success</fullName>
+        <default>false</default>
+        <label>3 Engaged - Success</label>
+    </standardValue>
+    <standardValue>
+        <fullName>3 No Show - Success</fullName>
+        <default>false</default>
+        <label>3 No Show - Success</label>
+    </standardValue>
+    <standardValue>
+        <fullName>4 Attended - Success</fullName>
+        <default>false</default>
+        <label>4 Attended - Success</label>
+    </standardValue>
+    <standardValue>
+        <fullName>4 Requested Contact</fullName>
+        <default>false</default>
+        <label>4 Requested Contact</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Abandoned Cart</fullName>
+        <default>false</default>
+        <label>Abandoned Cart</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Accepted</fullName>
+        <default>false</default>
+        <label>Accepted</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Already Downloaded Asset</fullName>
+        <default>false</default>
+        <label>Already Downloaded Asset</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Applied</fullName>
+        <default>false</default>
+        <label>Applied</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Applied - Inception Program</fullName>
+        <default>false</default>
+        <label>Applied - Inception Program</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Approved</fullName>
+        <default>false</default>
+        <label>Approved</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Attended</fullName>
+        <default>false</default>
+        <label>Attended</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Attended On-demand</fullName>
+        <default>false</default>
+        <label>Attended On-demand</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Attended Session</fullName>
+        <default>false</default>
+        <label>Attended Session</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Block From Email</fullName>
+        <default>false</default>
+        <label>Block From Email</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Cancelled / No show</fullName>
+        <default>false</default>
+        <label>Cancelled / No show</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Clicked</fullName>
+        <default>false</default>
+        <label>Clicked</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Clicked (Request Contact Link)</fullName>
+        <default>false</default>
+        <label>Clicked (Request Contact Link)</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Clicked JHH Email</fullName>
+        <default>false</default>
+        <label>Clicked JHH Email</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Community</fullName>
+        <default>false</default>
+        <label>Community</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Community Member - Inception Program</fullName>
+        <default>false</default>
+        <label>Community Member - Inception Program</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Completed Nurture</fullName>
+        <default>false</default>
+        <label>Completed Nurture</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Converted</fullName>
+        <default>false</default>
+        <label>Converted</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Declined</fullName>
+        <default>false</default>
+        <label>Declined</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Delivered</fullName>
+        <default>false</default>
+        <label>Delivered</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Disqualified</fullName>
+        <default>false</default>
+        <label>Disqualified</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Disqualified - Inception Program</fullName>
+        <default>false</default>
+        <label>Disqualified - Inception Program</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Engaged</fullName>
+        <default>false</default>
+        <label>Engaged</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Engaged With Content</fullName>
+        <default>false</default>
+        <label>Engaged With Content</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Filled Out Form</fullName>
+        <default>false</default>
+        <label>Filled Out Form</label>
+    </standardValue>
+    <standardValue>
+        <fullName>In Awareness Stream</fullName>
+        <default>false</default>
+        <label>In Awareness Stream</label>
+    </standardValue>
+    <standardValue>
+        <fullName>In Consideration Stream</fullName>
+        <default>false</default>
+        <label>In Consideration Stream</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Incubator Partner</fullName>
+        <default>false</default>
+        <label>Incubator Partner</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Influenced MQL</fullName>
+        <default>false</default>
+        <label>Influenced MQL</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Influenced Opp</fullName>
+        <default>false</default>
+        <label>Influenced Opp</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Influenced RCL</fullName>
+        <default>false</default>
+        <label>Influenced RCL</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Influenced SQL</fullName>
+        <default>false</default>
+        <label>Influenced SQL</label>
+    </standardValue>
+    <standardValue>
+        <fullName>In Purchase Stream</fullName>
+        <default>false</default>
+        <label>In Purchase Stream</label>
+    </standardValue>
+    <standardValue>
+        <fullName>In Review</fullName>
+        <default>false</default>
+        <label>In Review</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Invited</fullName>
+        <default>false</default>
+        <label>Invited</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Language Not Supported</fullName>
+        <default>false</default>
+        <label>Language Not Supported</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Meeting</fullName>
+        <default>false</default>
+        <label>Meeting</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Member</fullName>
+        <default>false</default>
+        <label>Member</label>
+    </standardValue>
+    <standardValue>
+        <fullName>MQL</fullName>
+        <default>false</default>
+        <label>MQL</label>
+    </standardValue>
+    <standardValue>
+        <fullName>MQL Influenced by Program</fullName>
+        <default>false</default>
+        <label>MQL Influenced by Program</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Net New Names</fullName>
+        <default>false</default>
+        <label>Net New Names</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Nominated</fullName>
+        <default>false</default>
+        <label>Nominated</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Non-Applicant - Inception Program</fullName>
+        <default>false</default>
+        <label>Non-Applicant - Inception Program</label>
+    </standardValue>
+    <standardValue>
+        <fullName>No Show</fullName>
+        <default>false</default>
+        <label>No Show</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Not in Buyer Stage</fullName>
+        <default>false</default>
+        <label>Not in Buyer Stage</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Not in Program</fullName>
+        <default>false</default>
+        <label>Not in Program</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Not Qualified</fullName>
+        <default>false</default>
+        <label>Not Qualified</label>
+    </standardValue>
+    <standardValue>
+        <fullName>NVPS Opportunity</fullName>
+        <default>false</default>
+        <label>NVPS Opportunity</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Opened</fullName>
+        <default>false</default>
+        <label>Opened</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Outreach Made</fullName>
+        <default>false</default>
+        <label>Outreach Made</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Past Member</fullName>
+        <default>false</default>
+        <label>Past Member</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Pending</fullName>
+        <default>false</default>
+        <label>Pending</label>
+    </standardValue>
+    <standardValue>
+        <fullName>POC Completed</fullName>
+        <default>false</default>
+        <label>POC Completed</label>
+    </standardValue>
+    <standardValue>
+        <fullName>POC in progress</fullName>
+        <default>false</default>
+        <label>POC in progress</label>
+    </standardValue>
+    <standardValue>
+        <fullName>POC Planned</fullName>
+        <default>false</default>
+        <label>POC Planned</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Preferred Member - Inception Program</fullName>
+        <default>false</default>
+        <label>Preferred Member - Inception Program</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Premier</fullName>
+        <default>false</default>
+        <label>Premier</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Processed</fullName>
+        <default>false</default>
+        <label>Processed</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Purchase Stream (67-99 pts)</fullName>
+        <default>false</default>
+        <label>Purchase Stream (67-99 pts)</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Re-Applied - Inception Program</fullName>
+        <default>false</default>
+        <label>Re-Applied - Inception Program</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Registered</fullName>
+        <default>false</default>
+        <label>Registered</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Registration Error</fullName>
+        <default>false</default>
+        <label>Registration Error</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Rejected</fullName>
+        <default>false</default>
+        <label>Rejected</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Request Contact</fullName>
+        <default>false</default>
+        <label>Request Contact</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Requested Contact</fullName>
+        <default>false</default>
+        <label>Requested Contact</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Requested Contact (In Past)</fullName>
+        <default>false</default>
+        <label>Requested Contact (In Past)</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Responded</fullName>
+        <default>false</default>
+        <label>Responded</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Scheduled</fullName>
+        <default>false</default>
+        <label>Scheduled</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Sent</fullName>
+        <default>false</default>
+        <label>Sent</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Sent Invite</fullName>
+        <default>false</default>
+        <label>Sent Invite</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Submitted</fullName>
+        <default>false</default>
+        <label>Submitted</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Synced</fullName>
+        <default>false</default>
+        <label>Synced</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Unsubscribed (From List)</fullName>
+        <default>false</default>
+        <label>Unsubscribed (From List)</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Unsubscribed (From System)</fullName>
+        <default>false</default>
+        <label>Unsubscribed (From System)</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Unsubscribed (Opt-List)</fullName>
+        <default>false</default>
+        <label>Unsubscribed (Opt-List)</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Unsubscribed (System)</fullName>
+        <default>false</default>
+        <label>Unsubscribed (System)</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Unsubscribed From List</fullName>
+        <default>false</default>
+        <label>Unsubscribed From List</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Unsubscribed From System</fullName>
+        <default>false</default>
+        <label>Unsubscribed From System</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Visited</fullName>
+        <default>false</default>
+        <label>Visited</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Visited Booth</fullName>
+        <default>false</default>
+        <label>Visited Booth</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Waitlisted</fullName>
+        <default>false</default>
+        <label>Waitlisted</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Workshop Completed</fullName>
+        <default>false</default>
+        <label>Workshop Completed</label>
+    </standardValue>
+</StandardValueSet>

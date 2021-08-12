@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Task_Sales_Play_Need_Comment_On_Status</fullName>
+    <active>true</active>
+    <description>Comment field should not be blank if the status is Blocked Or Disqualified</description>
+    <errorConditionFormula>And(
+    OR(ISPICKVAL( Status , &apos;Disqualified&apos;), 
+       ISPICKVAL( Status , &apos;Blocked&apos;)),
+      ISBLANK(Description),
+    NOT( $Permission.DEPLOYMENT_USER_SKIP_VALIDATIONS),
+    RecordType.DeveloperName =&apos;Sales_Play&apos;)</errorConditionFormula>
+    <errorMessage>Please add a comment if the status is Blocked or Disqualified</errorMessage>
+</ValidationRule>

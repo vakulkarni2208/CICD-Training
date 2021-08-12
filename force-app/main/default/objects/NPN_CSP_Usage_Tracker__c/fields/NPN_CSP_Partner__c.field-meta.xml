@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NPN_CSP_Partner__c</fullName>
+    <externalId>false</externalId>
+    <label>NPN CSP Partner</label>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Advance2000</fullName>
+                <default>false</default>
+                <label>Advance2000</label>
+            </value>
+            <value>
+                <fullName>Alibaba (Aliyun)</fullName>
+                <default>false</default>
+                <label>Alibaba (Aliyun)</label>
+            </value>
+            <value>
+                <fullName>Amazon (AWS)</fullName>
+                <default>false</default>
+                <label>Amazon (AWS)</label>
+            </value>
+            <value>
+                <fullName>Approach Technology</fullName>
+                <default>false</default>
+                <label>Approach Technology</label>
+            </value>
+            <value>
+                <fullName>Blue Sky Systems</fullName>
+                <default>false</default>
+                <label>Blue Sky Systems</label>
+            </value>
+            <value>
+                <fullName>Carolinas IT</fullName>
+                <default>false</default>
+                <label>Carolinas IT</label>
+            </value>
+            <value>
+                <fullName>Cloudalize</fullName>
+                <default>false</default>
+                <label>Cloudalize</label>
+            </value>
+            <value>
+                <fullName>Core Scientific</fullName>
+                <default>false</default>
+                <label>Core Scientific</label>
+            </value>
+            <value>
+                <fullName>Deutsche Telekom – Open Telekom Cloud</fullName>
+                <default>false</default>
+                <label>Deutsche Telekom – Open Telekom Cloud</label>
+            </value>
+            <value>
+                <fullName>Epigrid</fullName>
+                <default>false</default>
+                <label>Epigrid</label>
+            </value>
+            <value>
+                <fullName>FNW</fullName>
+                <default>false</default>
+                <label>FNW</label>
+            </value>
+            <value>
+                <fullName>Google Cloud</fullName>
+                <default>false</default>
+                <label>Google Cloud</label>
+            </value>
+            <value>
+                <fullName>IBM (Bluemix)</fullName>
+                <default>false</default>
+                <label>IBM (Bluemix)</label>
+            </value>
+            <value>
+                <fullName>Komplett Group</fullName>
+                <default>false</default>
+                <label>Komplett Group</label>
+            </value>
+            <value>
+                <fullName>LightEdge Solutions</fullName>
+                <default>false</default>
+                <label>LightEdge Solutions</label>
+            </value>
+            <value>
+                <fullName>Magic Cloud</fullName>
+                <default>false</default>
+                <label>Magic Cloud</label>
+            </value>
+            <value>
+                <fullName>Microsoft (Azure)</fullName>
+                <default>false</default>
+                <label>Microsoft (Azure)</label>
+            </value>
+            <value>
+                <fullName>Nimbix</fullName>
+                <default>false</default>
+                <label>Nimbix</label>
+            </value>
+            <value>
+                <fullName>Oracle</fullName>
+                <default>false</default>
+                <label>Oracle</label>
+            </value>
+            <value>
+                <fullName>PlayKey</fullName>
+                <default>false</default>
+                <label>PlayKey</label>
+            </value>
+            <value>
+                <fullName>SCC UK</fullName>
+                <default>false</default>
+                <label>SCC UK</label>
+            </value>
+            <value>
+                <fullName>Tencent</fullName>
+                <default>false</default>
+                <label>Tencent</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

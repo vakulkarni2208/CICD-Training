@@ -1,0 +1,13 @@
+<apex:page showHeader="false" sidebar="false">
+
+	<body style="overflow: hidden">
+		<apex:form id="formId">
+			<table cellspacing="0" border="0" cellpadding="0" height="100%" width="100%" style="background-color:black;border-color:red;overflow:hidden;min-width: 250px">
+	  			<tr style="height:110px;">
+	    			<td style="vertical-align:top;background: url({!$Resource.CustomerPortalBanner}) no-repeat left top; background-size: 1600px 125px "/>
+				</tr>
+			</table>
+		</apex:form>
+	</body>
+
+</apex:page>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>HPL_T500_Task_Ownership_alert</fullName>
+        <description>HPL/T500 Task Ownership alert</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <recipient>adeangelis@nvidia.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>mhamilton@nvidia.com.crp</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Sales_Cloud_Templates/HPL_T500_Task_Email_Alert</template>
+    </alerts>
+    <rules>
+        <fullName>HPL%2FT500 Task Email Alert</fullName>
+        <actions>
+            <name>HPL_T500_Task_Ownership_alert</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Task.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>HPL T500 Task</value>
+        </criteriaItems>
+        <description>Used to alert the assigned user that a new HPL/T500 task has been assigned to them</description>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+</Workflow>

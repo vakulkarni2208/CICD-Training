@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Other</fullName>
+    <active>true</active>
+    <label>Other</label>
+    <picklistValues>
+        <picklist>Issue_Type__c</picklist>
+        <values>
+            <fullName>Game display</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Game rendering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Login</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Session Start</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Uninterrupted Session play</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>User metadata</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type__c</picklist>
+        <values>
+            <fullName>3rd Party Case</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JIRA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PagerDuty</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ServiceNow</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

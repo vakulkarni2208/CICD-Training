@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <recordTypes>
+        <label><!-- Community User Record Type --></label>
+        <name>Community_User_Record_Type</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- To create a support request for Design Win customers. --></description>
+        <label><!-- Design Win Support Request --></label>
+        <name>Design_Win_Support_Request</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- For use in tracking entitlement transfers in the NVIDIA CRM --></description>
+        <label><!-- Entitlement Modification Request --></label>
+        <name>Entitlement_Modification_Request</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Case type to manage DGX-2 installation. --></description>
+        <label><!-- Installation Case --></label>
+        <name>Installation_Case</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- This Record type is to create NBU cases which are shared with NBU team via S2S connection. --></description>
+        <label><!-- NBU Case --></label>
+        <name>NBU_Case</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- For use with NVIDIA internal only case --></description>
+        <label><!-- NVIDIA Internal Case --></label>
+        <name>NVIDIA_Internal_Case</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Service Agent Record Type --></label>
+        <name>Service_Agent_Record_Type</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Please enter Learnings before closing the Case. --></errorMessage>
+        <name>Case_Closer_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You can not reopen the case --></errorMessage>
+        <name>Community_User_should_not_reopen_Case</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select an Entitlement for Onsite RMA Installation. --></errorMessage>
+        <name>Entitlement_Required_for_Onsite_RMA</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Select Incident SubStatus Value --></errorMessage>
+        <name>Incident_Substatus_cannot_be_blank</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please confirm the case Sub-Type. --></errorMessage>
+        <name>Require_Case_Sub_Type</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- For a new NVIDIA CRM user request please fill in the new user name, email, manager and template user fields --></errorMessage>
+        <name>Require_details_about_the_New_User</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please use Incident Status and Incident Substatus field to close the case --></errorMessage>
+        <name>ServiceCloud_PreventUsingClosedStatus</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Subject and Description provided by the Customer cannot be edited. --></errorMessage>
+        <name>Subject_for_Email_and_Web_Cases</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Conga_Composer_OAuth --></label>
+        <name>APXTConga4__Conga_Composer_OAuth</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Conga_Mail_Merge --></label>
+        <name>APXTConga4__Conga_Mail_Merge</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Close_Case_VF --></label>
+        <name>Close_Case_VF</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Create_RMA --></label>
+        <name>Create_RMA</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Entitlement_Modification_Request --></label>
+        <name>Entitlement_Modification_Request</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Get_Help --></label>
+        <name>Get_Help</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- New_NBU_Case --></label>
+        <name>New_NBU_Case</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Share_With_External_Connection --></label>
+        <name>Share_With_External_Connection</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_with_DocuSign --></label>
+        <name>dsfs__Send_with_DocuSign</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Slay_Images --></label>
+        <name>icatp__Slay_Images</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_to_Slack --></label>
+        <name>slackv2__Send_to_Slack</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Slack_Alerts --></label>
+        <name>slackv2__Slack_Alerts</name>
+    </webLinks>
+</CustomObjectTranslation>

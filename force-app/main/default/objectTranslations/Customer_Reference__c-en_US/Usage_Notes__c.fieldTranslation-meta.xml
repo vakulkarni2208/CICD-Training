@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Note any additional  details on the use or restrictions for this reference --></help>
+    <label><!-- Usage Notes --></label>
+    <name>Usage_Notes__c</name>
+</CustomFieldTranslation>

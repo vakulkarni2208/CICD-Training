@@ -1,0 +1,3283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sold_To_Partner_Account</fullName>
+    <active>true</active>
+    <label>Sold-To Partner Account</label>
+    <picklistValues>
+        <picklist>AccountSource</picklist>
+        <values>
+            <fullName>Content Syndication</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Digital Event</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Discover Database</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Legacy Database</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PathFactory Briefcase</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Personal Contact</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Social Media</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tradeshow</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web Scraping</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Webinar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZoomInfo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>salesforce%2Ecom</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AccountTags__c</picklist>
+        <values>
+            <fullName>Consumer Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Enterprise Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GFNA Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sample Tag</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Strategic OEM</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Account_Class__c</picklist>
+        <values>
+            <fullName>General Account</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lighthouse Account</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Named Account</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Account_Hierarchy_Designation__c</picklist>
+        <values>
+            <fullName>Division</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Headquarters</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prospect</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Automotive_Agreements__c</picklist>
+        <values>
+            <fullName>NPLA Addendum A</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NRE %2F Custom Agreement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NVIDIA Platform License Agreement %28PLA%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NVIDIA Prerelease License Agreement %28NPLA%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NVIDIA Software License Agreement %28SLA%29 %5Bobsolete%5D</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Disclosure Agreement %28NDA%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Automotive_Inception__c</picklist>
+        <values>
+            <fullName>Accepted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Applied</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Declined</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Automotive_Startup__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Billing_Region__c</picklist>
+        <values>
+            <fullName>APAC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EMEA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JAPAN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NALA</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Billing_Sub_Region__c</picklist>
+        <values>
+            <fullName>ANZ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>APAC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CHINA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JAPAN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KOREA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ME</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SASIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SEA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TW</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Billing_Territory__c</picklist>
+        <values>
+            <fullName>AFRICA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CIS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CZECH_HUNGARY_SLOVAKIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DACH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FRANCE_BENELUX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IBERIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ITALY_GREECE_ISRAEL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MIDDLE EAST</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>POLAND_BALTICS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ROMANIA_CROATIA_BULGARIA_SERBIA_REST OF BALKANS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RUSSIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SOUTH ASIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TURKEY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UKRAINE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UK_NORDICS</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Business_Engagement_Relationship__c</picklist>
+        <values>
+            <fullName>Direct Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Distributor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ODM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OEM</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CPQ_Customer_Classification__c</picklist>
+        <values>
+            <fullName>CSP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commercial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Education</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inception</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CPQ_Price_List__c</picklist>
+        <values>
+            <fullName>CSP List Price</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Direct VAR Price</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Disti List Price</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NVIDIA List Price</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OEM List Price</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SDP List Price</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Channel_Program_10__c</picklist>
+        <values>
+            <fullName>Adobe Solution Provider</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Autodesk Solution Provider</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cisco Solution Provider</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Citrix Solution Provider</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dassault Systemes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dell Technology Partner Program</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HP Partner One Program</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IBM PartnerWorld</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lenovo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Microsoft</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VMware Solution Provider</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Channel_Program_11__c</picklist>
+        <values>
+            <fullName>Adobe Solution Provider</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Autodesk Solution Provider</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cisco Solution Provider</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Citrix Solution Provider</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dassault Systemes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dell Technology Partner Program</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HP Partner One Program</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IBM PartnerWorld</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lenovo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Microsoft</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VMware Solution Provider</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Channel_Program_1__c</picklist>
+        <values>
+            <fullName>Adobe Solution Provider</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Autodesk Solution Provider</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cisco Solution Provider</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Citrix Solution Provider</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dassault Systemes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dell Technology Partner Program</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HP Partner One Program</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IBM PartnerWorld</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lenovo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Microsoft</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VMware Solution Provider</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Channel_Program_2__c</picklist>
+        <values>
+            <fullName>Adobe Solution Provider</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Autodesk Solution Provider</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cisco Solution Provider</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Citrix Solution Provider</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dassault Systemes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dell Technology Partner Program</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HP Partner One Program</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IBM PartnerWorld</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lenovo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Microsoft</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VMware Solution Provider</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Channel_Program_3__c</picklist>
+        <values>
+            <fullName>Adobe Solution Provider</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Autodesk Solution Provider</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cisco Solution Provider</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Citrix Solution Provider</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dassault Systemes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dell Technology Partner Program</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HP Partner One Program</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IBM PartnerWorld</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lenovo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Microsoft</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VMware Solution Provider</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Channel_Program_4__c</picklist>
+        <values>
+            <fullName>Adobe Solution Provider</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Autodesk Solution Provider</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cisco Solution Provider</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Citrix Solution Provider</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dassault Systemes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dell Technology Partner Program</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HP Partner One Program</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IBM PartnerWorld</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lenovo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Microsoft</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VMware Solution Provider</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Channel_Program_5__c</picklist>
+        <values>
+            <fullName>Adobe Solution Provider</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Autodesk Solution Provider</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cisco Solution Provider</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Citrix Solution Provider</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dassault Systemes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dell Technology Partner Program</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HP Partner One Program</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IBM PartnerWorld</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lenovo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Microsoft</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VMware Solution Provider</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Channel_Program_6__c</picklist>
+        <values>
+            <fullName>Adobe Solution Provider</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Autodesk Solution Provider</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cisco Solution Provider</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Citrix Solution Provider</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dassault Systemes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dell Technology Partner Program</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HP Partner One Program</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IBM PartnerWorld</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lenovo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Microsoft</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VMware Solution Provider</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Channel_Program_7__c</picklist>
+        <values>
+            <fullName>Adobe Solution Provider</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Autodesk Solution Provider</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cisco Solution Provider</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Citrix Solution Provider</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dassault Systemes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dell Technology Partner Program</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HP Partner One Program</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IBM PartnerWorld</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lenovo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Microsoft</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VMware Solution Provider</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Channel_Program_8__c</picklist>
+        <values>
+            <fullName>Adobe Solution Provider</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Autodesk Solution Provider</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cisco Solution Provider</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Citrix Solution Provider</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dassault Systemes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dell Technology Partner Program</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HP Partner One Program</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IBM PartnerWorld</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lenovo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Microsoft</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VMware Solution Provider</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Channel_Program_9__c</picklist>
+        <values>
+            <fullName>Adobe Solution Provider</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Autodesk Solution Provider</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cisco Solution Provider</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Citrix Solution Provider</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dassault Systemes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dell Technology Partner Program</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HP Partner One Program</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IBM PartnerWorld</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lenovo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Microsoft</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VMware Solution Provider</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Channel_Program_Attribute_10__c</picklist>
+        <values>
+            <fullName>Advanced</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business Plus</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Certified</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Community Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Education Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Enterprise</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Member</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Platinum</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Preferred Solution Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Premier</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Premium</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Professional</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Registered</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reseller</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Services Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Silver</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Software Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solution Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Strategic Solution Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Technology Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Verified</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Channel_Program_Attribute_11__c</picklist>
+        <values>
+            <fullName>Advanced</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business Plus</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Certified</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Community Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Education Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Enterprise</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Member</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Platinum</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Preferred Solution Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Premier</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Premium</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Professional</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Registered</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reseller</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Services Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Silver</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Software Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solution Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Strategic Solution Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Technology Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Verified</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Channel_Program_Attribute_1__c</picklist>
+        <values>
+            <fullName>Advanced</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business Plus</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Certified</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Community Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Education Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Enterprise</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Member</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Platinum</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Preferred Solution Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Premier</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Premium</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Professional</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Registered</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reseller</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Services Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Silver</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Software Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solution Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Strategic Solution Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Technology Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Verified</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Channel_Program_Attribute_2__c</picklist>
+        <values>
+            <fullName>Advanced</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business Plus</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Certified</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Community Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Education Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Enterprise</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Member</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Platinum</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Preferred Solution Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Premier</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Premium</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Professional</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Registered</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reseller</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Services Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Silver</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Software Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solution Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Strategic Solution Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Technology Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Verified</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Channel_Program_Attribute_3__c</picklist>
+        <values>
+            <fullName>Advanced</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business Plus</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Certified</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Community Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Education Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Enterprise</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Member</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Platinum</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Preferred Solution Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Premier</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Premium</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Professional</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Registered</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reseller</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Services Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Silver</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Software Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solution Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Strategic Solution Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Technology Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Verified</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Channel_Program_Attribute_4__c</picklist>
+        <values>
+            <fullName>Advanced</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business Plus</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Certified</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Community Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Education Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Enterprise</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Member</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Platinum</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Preferred Solution Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Premier</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Premium</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Professional</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Registered</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reseller</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Services Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Silver</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Software Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solution Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Strategic Solution Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Technology Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Verified</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Channel_Program_Attribute_5__c</picklist>
+        <values>
+            <fullName>Advanced</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business Plus</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Certified</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Community Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Education Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Enterprise</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Member</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Platinum</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Preferred Solution Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Premier</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Premium</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Professional</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Registered</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reseller</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Services Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Silver</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Software Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solution Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Strategic Solution Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Technology Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Verified</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Channel_Program_Attribute_6__c</picklist>
+        <values>
+            <fullName>Advanced</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business Plus</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Certified</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Community Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Education Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Enterprise</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Member</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Platinum</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Preferred Solution Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Premier</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Premium</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Professional</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Registered</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reseller</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Services Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Silver</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Software Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solution Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Strategic Solution Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Technology Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Verified</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Channel_Program_Attribute_7__c</picklist>
+        <values>
+            <fullName>Advanced</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business Plus</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Certified</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Community Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Education Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Enterprise</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Member</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Platinum</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Preferred Solution Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Premier</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Premium</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Professional</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Registered</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reseller</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Services Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Silver</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Software Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solution Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Strategic Solution Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Technology Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Verified</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Channel_Program_Attribute_8__c</picklist>
+        <values>
+            <fullName>Advanced</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business Plus</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Certified</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Community Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Education Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Enterprise</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Member</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Platinum</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Preferred Solution Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Premier</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Premium</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Professional</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Registered</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reseller</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Services Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Silver</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Software Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solution Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Strategic Solution Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Technology Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Verified</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Channel_Program_Attribute_9__c</picklist>
+        <values>
+            <fullName>Advanced</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business Plus</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Certified</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Community Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Education Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Enterprise</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Member</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Platinum</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Preferred Solution Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Premier</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Premium</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Professional</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Registered</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reseller</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Services Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Silver</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Software Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solution Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Strategic Solution Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Technology Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Verified</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Competencies_Interested_In__c</picklist>
+        <values>
+            <fullName>Compute</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Compute DGX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DGX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Embedded Edge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gaming</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Virtualization</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Visualization</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Distribution_Relationships__c</picklist>
+        <values>
+            <fullName>ASI Corporation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Arrow</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D%26H Distributing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ingram Micro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ma Labs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>None</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SED</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SuperMicro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Synnex</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tech Data</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Enterprise_Data_Center_Priority__c</picklist>
+        <values>
+            <fullName>Not a Priority</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P4</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>GRID_ELA_Level__c</picklist>
+        <values>
+            <fullName>ELA0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ELA1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ELA2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ELA3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ELA4</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Industries_Select_which_apply__c</picklist>
+        <values>
+            <fullName>Aerospace</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Architecture%2C Eng and Construction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Automotive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Communications</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Defense%2FGovernment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Drones</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Financial Services Industry %28FSI%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GIS %28Geographic Info Systems%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gaming</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Higher Ed%2FResearch</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IT Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IVA %28Security %26 Safety%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manufacturing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Media%2FEntertainment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medical Imaging%2FLife Sci Instruments</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oil %26 Gas%2FEnergy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail%2FEtail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Supercomputing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Telecommunications</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Industry</picklist>
+        <values>
+            <fullName>Aerospace</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Architecture%2C Eng and Construction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Automotive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CRISP %28Consumer Internet Service Providers%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Financial Services Industry %28FSI%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gaming</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Healthcare</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Higher Ed%2FResearch</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IT Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Logistics %26 Transportation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manufacturing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Media%2FEntertainment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oil %26 Gas%2FEnergy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public Sector</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail and CPG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Strategic Hyperscale</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Supercomputing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Telecommunications</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Industry_Segment__c</picklist>
+        <values>
+            <fullName>Asset Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Delivery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Downstream</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electronics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Exchanges and Clearinghouses</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fintech</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hedge Funds and Proprietary Traders</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Instruments</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Investment Banking</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MaaS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mapping</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Market Data Providers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Media Streaming</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Midstream</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mining</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OEM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oilfield Service Provider</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Payers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pharma</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Provider</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Regulators</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Research %26 Government</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail Banking</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail Insurance %28Casualty %26 Property%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Semiconductor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Social Media</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Startup</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Startups AI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Startups OEM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tier 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Truck</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Upstream</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Utilities - Distribution %28GRID%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Utilities - Power Generation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Utilities - Retail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>eCommerce</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Merged_Fiscal_Quarter__c</picklist>
+        <values>
+            <fullName>FY21Q1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FY21Q2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FY21Q3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FY21Q4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FY22Q1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FY22Q2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FY22Q3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FY22Q4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FY23Q1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FY23Q2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FY23Q3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FY23Q4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FY24Q1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FY24Q2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FY24Q3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FY24Q4</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Oranization_Type__c</picklist>
+        <values>
+            <fullName>Authorized Board Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cloud Service Provider</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consultant%2FSystem Integrator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Corp Reseller%2FDirect Market Reseller</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Distributor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Education Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Etailer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Federal Systems Integrator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Global Systems Integrator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ISV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inception Partner %28Startup%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ODM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OEM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Professional Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retailer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solution Advisor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solution Provider %28VAR%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solutions Integration Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Support %26 Services Delivery Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>System Builder</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Training Center</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>iCafe</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Ownership</picklist>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Private</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Subsidiary</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Product_Lines__c</picklist>
+        <values>
+            <fullName>Automotive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Automotive Datacenter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DGX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DRIVE Constellation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Embedded</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GeForce</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Grid</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NGC-Ready Systems</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quadro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RTX Blade Server</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tesla</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Rating</picklist>
+        <values>
+            <fullName>Cold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hot</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Warm</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reason_for_Rejection__c</picklist>
+        <values>
+            <fullName>Account Approval Policy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Duplicate Account</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Missing%2FInvalid Website</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Verify Address</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SAP_Account_Type__c</picklist>
+        <values>
+            <fullName>0001</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZPEC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZVAR</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SAP_Partner_Type__c</picklist>
+        <values>
+            <fullName>CUSTOMER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VENDOR</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SBQQ__CoTerminationEvent__c</picklist>
+        <values>
+            <fullName>Add-on</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Renewal</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SBQQ__ContractCoTermination__c</picklist>
+        <values>
+            <fullName>Always</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Never</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Prompt</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SBQQ__RenewalModel__c</picklist>
+        <values>
+            <fullName>Asset Based</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contract Based</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SBQQ__RenewalPricingMethod__c</picklist>
+        <values>
+            <fullName>List</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Same</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Uplift</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SBQQ__TaxExempt__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Service_Account_Type__c</picklist>
+        <values>
+            <fullName>Design Win Support</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Escalated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Watchlist %E2%80%93 12 Hours</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Watchlist %E2%80%93 24 Hours</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Shipping_Region__c</picklist>
+        <values>
+            <fullName>APAC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EMEA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NALA</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Shipping_Sub_Region__c</picklist>
+        <values>
+            <fullName>ANZ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>APAC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CHINA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JAPAN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KOREA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ME</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SASIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SEA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TW</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Shipping_Territory__c</picklist>
+        <values>
+            <fullName>AFRICA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CIS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CZECH_HUNGARY_SLOVAKIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DACH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FRANCE_BENELUX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IBERIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ITALY_GREECE_ISRAEL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MIDDLE EAST</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>POLAND_BALTICS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ROMANIA_CROATIA_BULGARIA_SERBIA_REST OF BALKANS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RUSSIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SOUTH ASIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TURKEY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UKRAINE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UK_NORDICS</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Support_Level__c</picklist>
+        <values>
+            <fullName>24x7 Escalated Remote</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Target_List__c</picklist>
+        <values>
+            <fullName>Auto_DC_P1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Auto_DC_P2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Auto_DC_P3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Auto_DC_P4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CICN_2019_P0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CICN_2019_P1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cryo-EM 2019_P0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cryo-EM 2019_P1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cryo-EM 2019_P2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cryo-EM 2019_P3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Data Science</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Drug Discovery_P0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Drug Discovery_P1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Drug Discovery_P2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FSI_Banking</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FSI_Capital Markets</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FSI_Fintech</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FSI_Insurance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FSI_Payments</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Federal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Genomics_2019_P0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Genomics_2019_P1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Genomics_2019_P2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Genomics_2019_P3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HC_Instruments_LHA_DXIMG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HC_Instruments_LHA_HIT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HC_Instruments_LHA_IVDX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HC_Instruments_LHA_POC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HC_Instruments_LHA_THDEV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HC_Instruments_NOTLHA_DXIMG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HC_Instruments_NOTLHA_HIT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HC_Instruments_NOTLHA_IVDX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HC_Instruments_NOTLHA_POC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HC_Instruments_NOTLHA_THDEV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HER Target</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail_P1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail_P1_AM_OUTREACH_ONLY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail_P2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SC 2019_P1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SC 2019_P2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SC 2019_P3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SuperPOD 2019_P1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SuperPOD 2019_P2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Telco</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Technology_Solutions_Offered__c</picklist>
+        <values>
+            <fullName>Client Software %28Application %2F OS%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Components</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Datacenter Infrastructure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Desktop %26 Application Virtualization</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Enterprise Software</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Managed Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mobile Solutions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Networking</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Peripherals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail %2F POS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Security</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Server Virtualization</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Storage</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Tesla_Distributor__c</picklist>
+        <values>
+            <fullName>Bell Micro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Elsa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ingram Micro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Leadtek</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PNY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Synnex</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Analyst</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CUDA Consultant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CUDA Developer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Competitor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Enterprise End Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ISV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Investor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Press</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prospect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Software Reseller</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tesla Named Account</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Validated__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Verified_Potential_with_Customer__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>leadspacesync__Status__c</picklist>
+        <values>
+            <fullName>Failure %28LS related%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Failure %28SF related%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Progress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partial Success</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Success</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

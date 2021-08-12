@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This button invokes a Flow which will add Products to the Opportunity.</description>
+    <height>220</height>
+    <label>Convert DR Products</label>
+    <optionsCreateFeedItem>false</optionsCreateFeedItem>
+    <page>VF_Convert_DR_Products</page>
+    <type>VisualforcePage</type>
+    <width>-100</width>
+</QuickAction>

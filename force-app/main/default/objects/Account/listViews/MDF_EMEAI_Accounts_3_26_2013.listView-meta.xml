@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MDF_EMEAI_Accounts_3_26_2013</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ACCOUNT.ADDRESS1_COUNTRY</columns>
+    <columns>Oranization_Type__c</columns>
+    <columns>MDF_Program_SAP_Company_Code__c</columns>
+    <columns>CORE.USERS.FIRST_NAME</columns>
+    <columns>CORE.USERS.LAST_NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>01240000000Dta8</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.CREATED_DATE</field>
+        <operation>equals</operation>
+        <value>3/26/2013 12:00 AM</value>
+    </filters>
+    <label>MDF EMEAI Accounts - 3/26/2013</label>
+    <language>en_US</language>
+    <sharedTo/>
+</ListView>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Regional_TAM__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>This field is used in Service Cloud to auto populate Regional TAM on Case and Send Email to the User.</description>
+    <externalId>false</externalId>
+    <label>TAM Primary</label>
+    <lookupFilter>
+        <active>true</active>
+        <errorMessage>Only Internal Users can be selected for this field.</errorMessage>
+        <filterItems>
+            <field>User.UserType</field>
+            <operation>equals</operation>
+            <value>Standard</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>User</referenceTo>
+    <relationshipName>RegionalAccounts</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

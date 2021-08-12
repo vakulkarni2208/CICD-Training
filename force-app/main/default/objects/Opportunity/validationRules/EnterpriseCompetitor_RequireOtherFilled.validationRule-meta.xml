@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EnterpriseCompetitor_RequireOtherFilled</fullName>
+    <active>false</active>
+    <description>SDS-1585 - Sales: Implement a Enterprise Competitor field on Opportunity required at 40%</description>
+    <errorConditionFormula>AND(
+$UserRole.Name &lt;&gt; &quot;Administrator&quot;,
+DATEVALUE(CreatedDate) &gt;= DATEVALUE(&quot;2019-08-21&quot;),
+ISPICKVAL(Enterprise_Competitor__c, &apos;Other&apos;),
+ISBLANK(Other_Competitor__c),
+RecordType.DeveloperName = &apos;Enterprise_Sales_Opportunity&apos;
+)</errorConditionFormula>
+    <errorDisplayField>Other_Competitor__c</errorDisplayField>
+    <errorMessage>Please fill Other Competitor if Enterprise Competitor is Other</errorMessage>
+</ValidationRule>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Once_Approved_allow_no_edits_to_Status</fullName>
+    <active>true</active>
+    <description>Once Milestone is approved allow no edits to the status field</description>
+    <errorConditionFormula>PRIORVALUE( Status__c ) = &quot;Approved&quot;</errorConditionFormula>
+    <errorDisplayField>Status__c</errorDisplayField>
+    <errorMessage>Once Milestone is approved no edits are allowed to Status. Please submit Get Help if further assistance is needed.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Incident_Status__c</fullName>
+    <externalId>false</externalId>
+    <label>Incident Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>true</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Awaiting Agent Assignment</fullName>
+                <default>true</default>
+                <label>Awaiting Agent Assignment</label>
+            </value>
+            <value>
+                <fullName>Troubleshooting-Sub</fullName>
+                <default>false</default>
+                <label>Troubleshooting-Sub</label>
+            </value>
+            <value>
+                <fullName>Enterprise Support</fullName>
+                <default>false</default>
+                <label>Enterprise Support</label>
+            </value>
+            <value>
+                <fullName>With 3rd Party Partner</fullName>
+                <default>false</default>
+                <label>With 3rd Party Partner</label>
+            </value>
+            <value>
+                <fullName>With Engineering</fullName>
+                <default>false</default>
+                <label>With Engineering</label>
+            </value>
+            <value>
+                <fullName>With RMA</fullName>
+                <default>false</default>
+                <label>With RMA</label>
+            </value>
+            <value>
+                <fullName>With Engineering + RMA</fullName>
+                <default>false</default>
+                <label>With Engineering + RMA</label>
+            </value>
+            <value>
+                <fullName>With NVIDIA non-engineering</fullName>
+                <default>false</default>
+                <label>With NVIDIA non-engineering</label>
+            </value>
+            <value>
+                <fullName>New Installation</fullName>
+                <default>false</default>
+                <label>New Installation</label>
+            </value>
+            <value>
+                <fullName>On-Site RMA Install</fullName>
+                <default>false</default>
+                <label>On-Site RMA Install</label>
+            </value>
+            <value>
+                <fullName>Resolved (Temp Workaround)</fullName>
+                <default>false</default>
+                <label>Resolved (Temp Workaround)</label>
+            </value>
+            <value>
+                <fullName>Resolved (Permanently)</fullName>
+                <default>false</default>
+                <label>Resolved (Permanently)</label>
+            </value>
+            <value>
+                <fullName>Resolved (No Customer Response)</fullName>
+                <default>false</default>
+                <label>Resolved (No Customer Response)</label>
+            </value>
+            <value>
+                <fullName>Closed</fullName>
+                <default>false</default>
+                <label>Closed</label>
+            </value>
+            <value>
+                <fullName>Awaiting Customer Information</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Awaiting Customer Information</label>
+            </value>
+            <value>
+                <fullName>Customer Closure</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Customer Closure</label>
+            </value>
+            <value>
+                <fullName>Pending - No Customer Response</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Pending - No Customer Response</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

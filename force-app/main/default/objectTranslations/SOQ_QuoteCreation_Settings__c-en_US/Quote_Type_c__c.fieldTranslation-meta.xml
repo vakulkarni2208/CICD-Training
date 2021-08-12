@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Quote Type - in case of initial one it is &quot;Quote&quot; --></help>
+    <label><!-- Quote Type --></label>
+    <name>Quote_Type_c__c</name>
+</CustomFieldTranslation>

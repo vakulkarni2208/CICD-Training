@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Message banner shown in Pre-MQL Lead detail pages --></help>
+    <label><!-- Pre-MQL Lead View Msg --></label>
+    <name>Pre_MQL_Lead_View_Msg__c</name>
+</CustomFieldTranslation>

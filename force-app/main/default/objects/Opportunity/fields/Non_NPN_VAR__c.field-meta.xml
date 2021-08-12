@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Non_NPN_VAR__c</fullName>
+    <description>Non-NPN VAR related to Tesla MCO deal</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Please enter the non-NPN VAR related to this deal. If the VAR is signed with NVIDIA, please enter them in the NPN Solution Provider/VAR field.</inlineHelpText>
+    <label>Non-NPN VAR</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GPU_Ventures_Discussion__c</fullName>
+    <description>NPN Onboard Lead specific</description>
+    <externalId>false</externalId>
+    <label>GPU Ventures Decision</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Not yet contacted</fullName>
+                <default>false</default>
+                <label>Not yet contacted</label>
+            </value>
+            <value>
+                <fullName>Not interested</fullName>
+                <default>false</default>
+                <label>Not interested</label>
+            </value>
+            <value>
+                <fullName>Tracking</fullName>
+                <default>false</default>
+                <label>Tracking</label>
+            </value>
+            <value>
+                <fullName>Very interested</fullName>
+                <default>false</default>
+                <label>Very interested</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

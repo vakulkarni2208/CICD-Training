@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Topics_of_Interest__c</fullName>
+    <externalId>false</externalId>
+    <label>Topics of Interest</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Accelerated Computing - C/C++</fullName>
+                <default>false</default>
+                <label>Accelerated Computing - C/C++</label>
+            </value>
+            <value>
+                <fullName>Accelerated Computing - Python</fullName>
+                <default>false</default>
+                <label>Accelerated Computing - Python</label>
+            </value>
+            <value>
+                <fullName>Deep Learning</fullName>
+                <default>false</default>
+                <label>Deep Learning</label>
+            </value>
+            <value>
+                <fullName>Data Science</fullName>
+                <default>false</default>
+                <label>Data Science</label>
+            </value>
+            <value>
+                <fullName>Industry Segment - Healthcare</fullName>
+                <default>false</default>
+                <label>Industry Segment - Healthcare</label>
+            </value>
+            <value>
+                <fullName>Industry Segment - Automotive</fullName>
+                <default>false</default>
+                <label>Industry Segment - Automotive</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Deal_Registration_Pending_Products</fullName>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>OPPORTUNITY.CLOSE_DATE</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>OPPORTUNITY.RECORDTYPE</columns>
+    <columns>Prefered_Partner__c</columns>
+    <columns>NPN_Solution_Provider_VAR__c</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>Number_of_Products__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.TYPE</field>
+        <operation>equals</operation>
+        <value>Deal Registration</value>
+    </filters>
+    <filters>
+        <field>DR_Deal_Status__c</field>
+        <operation>equals</operation>
+        <value>Approved,Extension Approved</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.CLOSED</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <label>My Registrations - Pending Products</label>
+    <language>en_US</language>
+</ListView>

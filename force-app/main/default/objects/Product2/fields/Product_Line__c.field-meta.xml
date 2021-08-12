@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product_Line__c</fullName>
+    <externalId>false</externalId>
+    <label>Product Line</label>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Product_Type__c</controllingField>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Automotive</fullName>
+                <default>false</default>
+                <label>Automotive</label>
+            </value>
+            <value>
+                <fullName>Automotive Datacenter</fullName>
+                <default>false</default>
+                <label>Automotive Datacenter</label>
+            </value>
+            <value>
+                <fullName>CMP</fullName>
+                <default>false</default>
+                <label>CMP</label>
+            </value>
+            <value>
+                <fullName>DC GPU</fullName>
+                <default>false</default>
+                <label>DC GPU</label>
+            </value>
+            <value>
+                <fullName>DGX</fullName>
+                <default>false</default>
+                <label>DGX</label>
+            </value>
+            <value>
+                <fullName>Educational Services</fullName>
+                <default>false</default>
+                <label>Educational Services</label>
+            </value>
+            <value>
+                <fullName>Fleet Command</fullName>
+                <default>false</default>
+                <label>Fleet Command</label>
+            </value>
+            <value>
+                <fullName>GeForce</fullName>
+                <default>false</default>
+                <label>GeForce</label>
+            </value>
+            <value>
+                <fullName>Grid</fullName>
+                <default>false</default>
+                <label>Grid</label>
+            </value>
+            <value>
+                <fullName>Grid Hardware</fullName>
+                <default>false</default>
+                <label>Grid Hardware</label>
+            </value>
+            <value>
+                <fullName>HPC SDK</fullName>
+                <default>false</default>
+                <label>HPC SDK</label>
+            </value>
+            <value>
+                <fullName>Jetson</fullName>
+                <default>false</default>
+                <label>Jetson</label>
+            </value>
+            <value>
+                <fullName>NGC-Ready Services</fullName>
+                <default>false</default>
+                <label>NGC-Ready Services</label>
+            </value>
+            <value>
+                <fullName>Parabricks</fullName>
+                <default>false</default>
+                <label>Parabricks</label>
+            </value>
+            <value>
+                <fullName>ProViz</fullName>
+                <default>false</default>
+                <label>ProViz</label>
+            </value>
+            <value>
+                <fullName>RTX</fullName>
+                <default>false</default>
+                <label>RTX</label>
+            </value>
+            <value>
+                <fullName>RTX Blade Server</fullName>
+                <default>false</default>
+                <label>RTX Blade Server</label>
+            </value>
+            <value>
+                <fullName>Titan</fullName>
+                <default>false</default>
+                <label>Titan</label>
+            </value>
+            <value>
+                <fullName>Value-Added Services</fullName>
+                <default>false</default>
+                <label>Value-Added Services</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Hardware</controllingFieldValue>
+            <valueName>Automotive</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hardware</controllingFieldValue>
+            <controllingFieldValue>Service</controllingFieldValue>
+            <controllingFieldValue>Spares</controllingFieldValue>
+            <valueName>Automotive Datacenter</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hardware</controllingFieldValue>
+            <controllingFieldValue>Spares</controllingFieldValue>
+            <valueName>CMP</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hardware</controllingFieldValue>
+            <controllingFieldValue>Spares</controllingFieldValue>
+            <valueName>DC GPU</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hardware</controllingFieldValue>
+            <controllingFieldValue>Service</controllingFieldValue>
+            <controllingFieldValue>Software</controllingFieldValue>
+            <controllingFieldValue>Spares</controllingFieldValue>
+            <valueName>DGX</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hardware</controllingFieldValue>
+            <valueName>GeForce</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hardware</controllingFieldValue>
+            <valueName>Grid Hardware</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hardware</controllingFieldValue>
+            <controllingFieldValue>Spares</controllingFieldValue>
+            <valueName>Jetson</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hardware</controllingFieldValue>
+            <controllingFieldValue>Software</controllingFieldValue>
+            <valueName>ProViz</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hardware</controllingFieldValue>
+            <controllingFieldValue>Software</controllingFieldValue>
+            <valueName>RTX</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hardware</controllingFieldValue>
+            <controllingFieldValue>Service</controllingFieldValue>
+            <controllingFieldValue>Spares</controllingFieldValue>
+            <valueName>RTX Blade Server</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hardware</controllingFieldValue>
+            <valueName>Titan</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Service</controllingFieldValue>
+            <valueName>Educational Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Service</controllingFieldValue>
+            <controllingFieldValue>Software</controllingFieldValue>
+            <valueName>Fleet Command</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Service</controllingFieldValue>
+            <controllingFieldValue>Software</controllingFieldValue>
+            <valueName>Grid</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Service</controllingFieldValue>
+            <controllingFieldValue>Software</controllingFieldValue>
+            <valueName>HPC SDK</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Service</controllingFieldValue>
+            <controllingFieldValue>Software</controllingFieldValue>
+            <valueName>NGC-Ready Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Service</controllingFieldValue>
+            <controllingFieldValue>Software</controllingFieldValue>
+            <valueName>Parabricks</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Service</controllingFieldValue>
+            <valueName>Value-Added Services</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

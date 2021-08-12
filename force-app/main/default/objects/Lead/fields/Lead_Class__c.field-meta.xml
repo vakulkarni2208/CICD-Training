@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lead_Class__c</fullName>
+    <description>Lead Class = Account Strength + Lead Strength. Account strength ranges between A (High) and D (Low). Lead Strength ranges between 1 (High) and 4 (Low). As per Jira #SDS-2961</description>
+    <externalId>false</externalId>
+    <formula>Account_Strength__c  +  Lead_Strength__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Lead Class–Account Fit + Lead Intent + Recency + Engagement</inlineHelpText>
+    <label>Lead Class</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

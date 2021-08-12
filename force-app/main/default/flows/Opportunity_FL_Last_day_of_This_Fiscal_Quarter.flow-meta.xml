@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignments>
+        <description>Assignment of Opportunity fields those need to be updated</description>
+        <name>Assign_Opportunity_Field_Value</name>
+        <label>Assign Opportunity Field Value</label>
+        <locationX>470</locationX>
+        <locationY>349</locationY>
+        <assignmentItems>
+            <assignToReference>OpportunitySObjVar.Pricing_Approval_Expiration_Date__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>PeriodSObjVar.EndDate</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_the_Opportunity</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <description>Check if the Opportunity Record Variable is NULL? and run the next steps only if it is NOT NULL</description>
+        <name>Check_if_Opportunity_Record_Variable_is_NULL</name>
+        <label>Check if Opportunity Record Variable is NULL?</label>
+        <locationX>660</locationX>
+        <locationY>119</locationY>
+        <defaultConnectorLabel>Opportunity Record Variable is NULL</defaultConnectorLabel>
+        <rules>
+            <name>Opportunity_Record_Variable_is_NOT_NULL</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>OpportunitySObjVar</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Query_on_Period_object</targetReference>
+            </connector>
+            <label>Opportunity Record Variable is NOT NULL</label>
+        </rules>
+    </decisions>
+    <description>Find and populate Last day of This Fiscal Quarter into the field &apos;Pricing Approval Expiration Date&apos;</description>
+    <interviewLabel>Opportunity: FL: Last day of This Fiscal Quarter {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Opportunity: FL: Last day of This Fiscal Quarter</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <description>Fetch the Opportunity object record</description>
+        <name>Query_on_Opportunity_Object</name>
+        <label>Query on Opportunity Object</label>
+        <locationX>473</locationX>
+        <locationY>117</locationY>
+        <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Check_if_Opportunity_Record_Variable_is_NULL</targetReference>
+        </connector>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Special_Pricing_Request_Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Back-end Rebate</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Special_Pricing_Request_Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Upfront Discount</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Special_Pricing_Request_Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Not for Resale (NFR)</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Special_Pricing_Request_Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Samples</stringValue>
+            </value>
+        </filters>
+        <object>Opportunity</object>
+        <outputReference>OpportunitySObjVar</outputReference>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>Pricing_Approval_Expiration_Date__c</queriedFields>
+    </recordLookups>
+    <recordLookups>
+        <description>Query on Period object to get the end date for Current Quarter</description>
+        <name>Query_on_Period_object</name>
+        <label>Query on Period object</label>
+        <locationX>662</locationX>
+        <locationY>349</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Assign_Opportunity_Field_Value</targetReference>
+        </connector>
+        <filters>
+            <field>EndDate</field>
+            <operator>GreaterThanOrEqualTo</operator>
+            <value>
+                <elementReference>$Flow.CurrentDate</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Number</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.This_Fiscal_Quarter_Number__c</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>StartDate</field>
+            <operator>LessThanOrEqualTo</operator>
+            <value>
+                <elementReference>$Flow.CurrentDate</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Type</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Quarter</stringValue>
+            </value>
+        </filters>
+        <object>Period</object>
+        <outputReference>PeriodSObjVar</outputReference>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>EndDate</queriedFields>
+    </recordLookups>
+    <recordUpdates>
+        <description>Update the Opportunity with the field &apos;Pricing Approval Expiration Date&apos;</description>
+        <name>Update_the_Opportunity</name>
+        <label>Update the Opportunity</label>
+        <locationX>308</locationX>
+        <locationY>349</locationY>
+        <inputReference>OpportunitySObjVar</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>50</locationY>
+        <connector>
+            <targetReference>Query_on_Opportunity_Object</targetReference>
+        </connector>
+        <object>Opportunity</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <variables>
+        <description>This variable will have the Opportunity with the fields those need to be updated</description>
+        <name>OpportunitySObjVar</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Opportunity</objectType>
+    </variables>
+    <variables>
+        <description>This variable will have the Period object query results with the fields those assinged.</description>
+        <name>PeriodSObjVar</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Period</objectType>
+    </variables>
+</Flow>

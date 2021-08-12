@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Training_Topics__c</fullName>
+    <externalId>false</externalId>
+    <label>Training Topics</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Accelarated Computing</fullName>
+                <default>false</default>
+                <label>Accelarated Computing</label>
+            </value>
+            <value>
+                <fullName>Cloud/Virtualization</fullName>
+                <default>false</default>
+                <label>Cloud/Virtualization</label>
+            </value>
+            <value>
+                <fullName>DVP Training</fullName>
+                <default>false</default>
+                <label>DVP Training</label>
+            </value>
+            <value>
+                <fullName>Gaming/Consumer</fullName>
+                <default>false</default>
+                <label>Gaming/Consumer</label>
+            </value>
+            <value>
+                <fullName>GPU Genius Training</fullName>
+                <default>false</default>
+                <label>GPU Genius Training</label>
+            </value>
+            <value>
+                <fullName>Pro Visualization</fullName>
+                <default>false</default>
+                <label>Pro Visualization</label>
+            </value>
+            <value>
+                <fullName>Sales Training</fullName>
+                <default>false</default>
+                <label>Sales Training</label>
+            </value>
+            <value>
+                <fullName>Tegra/Embedded</fullName>
+                <default>false</default>
+                <label>Tegra/Embedded</label>
+            </value>
+            <value>
+                <fullName>VCA Training</fullName>
+                <default>false</default>
+                <label>VCA Training</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

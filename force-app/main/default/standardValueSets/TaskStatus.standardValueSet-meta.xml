@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Not Started</fullName>
+        <color>#FF0000</color>
+        <default>true</default>
+        <label>Not Started</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>In Progress</fullName>
+        <color>#33CC00</color>
+        <default>false</default>
+        <label>In Progress</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Completed</fullName>
+        <color>#009900</color>
+        <default>false</default>
+        <label>Completed</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Waiting on someone else</fullName>
+        <default>false</default>
+        <label>Waiting on someone else</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Deferred</fullName>
+        <default>false</default>
+        <label>Deferred</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Disqualified</fullName>
+        <color>#999999</color>
+        <default>false</default>
+        <label>Disqualified</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Not Executed</fullName>
+        <default>false</default>
+        <label>Not Executed</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Follow On Meeting</fullName>
+        <default>false</default>
+        <label>Follow On Meeting</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Technical Deep Dive</fullName>
+        <default>false</default>
+        <label>Technical Deep Dive</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Blocked</fullName>
+        <color>#FFCC33</color>
+        <default>false</default>
+        <label>Blocked</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Completed - Opportunity Created</fullName>
+        <default>false</default>
+        <label>Completed - Opportunity Created</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Completed - No Interest</fullName>
+        <default>false</default>
+        <label>Completed - No Interest</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+        <closed>false</closed>
+    </standardValue>
+</StandardValueSet>

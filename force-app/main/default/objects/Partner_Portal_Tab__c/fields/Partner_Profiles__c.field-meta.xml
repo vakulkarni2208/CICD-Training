@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Partner_Profiles__c</fullName>
+    <externalId>false</externalId>
+    <label>Partner Profiles</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>GRID_VCA_Marketing</fullName>
+                <default>false</default>
+                <label>GRID_VCA_Marketing</label>
+            </value>
+            <value>
+                <fullName>GRID_VCA_Sales</fullName>
+                <default>false</default>
+                <label>GRID_VCA_Sales</label>
+            </value>
+            <value>
+                <fullName>GRID_VCA_Support</fullName>
+                <default>false</default>
+                <label>GRID_VCA_Support</label>
+            </value>
+            <value>
+                <fullName>GRID_VCA_Technical</fullName>
+                <default>false</default>
+                <label>GRID_VCA_Technical</label>
+            </value>
+            <value>
+                <fullName>GRID_VCA_Manager</fullName>
+                <default>false</default>
+                <label>GRID_VCA_Manager</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

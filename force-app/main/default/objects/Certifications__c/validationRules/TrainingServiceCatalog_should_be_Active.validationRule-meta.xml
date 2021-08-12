@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TrainingServiceCatalog_should_be_Active</fullName>
+    <active>true</active>
+    <description>SDS-2793: Training Service Catalog should be Active</description>
+    <errorConditionFormula>AND(
+  ISNEW(),
+  NOT(ISNULL(Training_Service_Catalog__c)), 
+  ISPICKVAL(Training_Service_Catalog__r.Active__c, &apos;Inactive&apos;)  
+)</errorConditionFormula>
+    <errorMessage>Please select an active Training Service Catalog</errorMessage>
+</ValidationRule>

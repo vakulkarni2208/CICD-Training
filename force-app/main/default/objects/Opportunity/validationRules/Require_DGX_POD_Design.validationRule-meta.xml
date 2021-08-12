@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_DGX_POD_Design</fullName>
+    <active>true</active>
+    <description>For DGX &gt;$3M deals moving to Needs Analysis stage, DGX POD Design details are required.</description>
+    <errorConditionFormula>AND ( 
+Probability &gt; 0.39, 
+RecordType.DeveloperName = &apos;Enterprise_Sales_Opportunity&apos;, 
+DATEVALUE(CreatedDate) &gt; DATE (2021,2,15),
+OR( Total_DGX_Product_Amount__c  &gt; 3000000), 
+ISBLANK ( TEXT (DGX_POD_Design__c)), 
+NOT( $Permission.DEPLOYMENT_USER_SKIP_VALIDATIONS ))</errorConditionFormula>
+    <errorDisplayField>DGX_POD_Design__c</errorDisplayField>
+    <errorMessage>For DGX &gt;$3M deals moving to Needs Analysis Stage, please update the DGX Pod Design field(s)</errorMessage>
+</ValidationRule>

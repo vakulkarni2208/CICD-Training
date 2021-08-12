@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Block_MKTOUser_TakingOwnershipOfContact</fullName>
+    <active>true</active>
+    <description>SDS-1472: Block Marketo User taking ownership of Contacts
+SDS-1579: Update Contact Validation to allow MKTO User the owner of contacts only under SOEM Accounts</description>
+    <errorConditionFormula>AND ( 
+Owner.Profile.Name = &apos;Marketo User Profile&apos;, 
+NOT(CONTAINS($Label.SOEMs_Accounts, CASESAFEID(AccountId))) 
+)</errorConditionFormula>
+    <errorMessage>MKTO User cannot own any Contacts!</errorMessage>
+</ValidationRule>

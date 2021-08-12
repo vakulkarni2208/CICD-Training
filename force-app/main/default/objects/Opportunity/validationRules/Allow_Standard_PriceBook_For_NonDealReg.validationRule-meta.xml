@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Allow_Standard_PriceBook_For_NonDealReg</fullName>
+    <active>true</active>
+    <description>For Enterprise Sales Opportunity if the Lead source is not Deal Registration and Probability &gt;.19 and Legacy RecordtypID is null then the users need to select Standard Price book.</description>
+    <errorConditionFormula>AND( 
+ OR( 
+  RecordType.Name = &apos;Enterprise Sales Opportunity&apos;, 
+  RecordType.Name = &apos;Repeat Business Opportunity&apos;
+ ), 
+ NOT(ISPICKVAL(LeadSource, &quot;Deal Registration&quot;)), 
+ ISBLANK(Legacy_RecordTypeID__c), 
+ NOT( Pricebook2.Name = &apos;Standard Price Book&apos;), 
+ NOT( Pricebook2.Name = &apos;EDU/Inception Price Book&apos;), 
+ NOT( ISBLANK(Pricebook2.Name)), 
+ $UserRole.Name &lt;&gt; &quot;NALA HER Sales&quot;, 
+ NOT($Permission.SKIP_PriceBookCheck), 
+ NOT(IsClosed) 
+)</errorConditionFormula>
+    <errorMessage>Only the Standard or EDU Price book can be utilized for non-Opportunity Registration opportunities. For assistance or a pricing update, click the &quot;Get Help&quot; button located on the top right of the page.</errorMessage>
+</ValidationRule>

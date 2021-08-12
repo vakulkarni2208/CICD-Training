@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Confirmed OEM/ODM/Disti (NPN Partner) --></label>
+    <name>Confirmed_OEM_ODM_Disti_Partner__c</name>
+    <relationshipLabel><!-- Opportunities (Confirmed OEM/ODM/Disti (NPN Partner)) --></relationshipLabel>
+</CustomFieldTranslation>

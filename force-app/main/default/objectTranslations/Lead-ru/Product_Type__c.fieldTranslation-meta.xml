@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Please select the product line (e.g. Tesla) that pertains to this specific lead. --></help>
+    <label><!-- Product Type --></label>
+    <name>Product_Type__c</name>
+    <picklistValues>
+        <masterLabel>Automotive</masterLabel>
+        <translation><!-- Automotive --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cloud</masterLabel>
+        <translation><!-- Cloud --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DGX</masterLabel>
+        <translation><!-- DGX --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EGX</masterLabel>
+        <translation><!-- EGX --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Embedded</masterLabel>
+        <translation><!-- Embedded --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Multiple Products</masterLabel>
+        <translation><!-- Multiple Products --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Quadro</masterLabel>
+        <translation><!-- Quadro --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tesla</masterLabel>
+        <translation><!-- Tesla --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>vGPU</masterLabel>
+        <translation><!-- vGPU --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

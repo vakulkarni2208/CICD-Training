@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Marketing_Vertical__c</fullName>
+    <description>SDS-2797:Campaign MGMT: Phase2 Enhancement Request</description>
+    <externalId>false</externalId>
+    <label>Marketing Vertical</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>VT01_Aerospace</fullName>
+                <default>false</default>
+                <label>VT01_Aerospace</label>
+            </value>
+            <value>
+                <fullName>VT02_AEC</fullName>
+                <default>false</default>
+                <label>VT02_AEC</label>
+            </value>
+            <value>
+                <fullName>VT03_Auto</fullName>
+                <default>false</default>
+                <label>VT03_Auto</label>
+            </value>
+            <value>
+                <fullName>VT04_CSP</fullName>
+                <default>false</default>
+                <label>VT04_CSP</label>
+            </value>
+            <value>
+                <fullName>VT05_Consulting Services</fullName>
+                <default>false</default>
+                <label>VT05_Consulting Services</label>
+            </value>
+            <value>
+                <fullName>VT06_CRISP</fullName>
+                <default>false</default>
+                <label>VT06_CRISP</label>
+            </value>
+            <value>
+                <fullName>VT07_K-12</fullName>
+                <default>false</default>
+                <label>VT07_K-12</label>
+            </value>
+            <value>
+                <fullName>VT08_Enterprise SW</fullName>
+                <default>false</default>
+                <label>VT08_Enterprise SW</label>
+            </value>
+            <value>
+                <fullName>VT09_FSI</fullName>
+                <default>false</default>
+                <label>VT09_FSI</label>
+            </value>
+            <value>
+                <fullName>VT10_Game Development</fullName>
+                <default>false</default>
+                <label>VT10_Game Development</label>
+            </value>
+            <value>
+                <fullName>VT11_Hardware / Semiconductor</fullName>
+                <default>false</default>
+                <label>VT11_Hardware / Semiconductor</label>
+            </value>
+            <value>
+                <fullName>VT12_Healthcare - Overall</fullName>
+                <default>false</default>
+                <label>VT12_Healthcare - Overall</label>
+            </value>
+            <value>
+                <fullName>VT13_Healthcare - Instruments</fullName>
+                <default>false</default>
+                <label>VT13_Healthcare - Instruments</label>
+            </value>
+            <value>
+                <fullName>VT14_Healthcare - Medical Imaging</fullName>
+                <default>false</default>
+                <label>VT14_Healthcare - Medical Imaging</label>
+            </value>
+            <value>
+                <fullName>VT15_Healthcare - vGPU</fullName>
+                <default>false</default>
+                <label>VT15_Healthcare - vGPU</label>
+            </value>
+            <value>
+                <fullName>VT16_HER</fullName>
+                <default>false</default>
+                <label>VT16_HER</label>
+            </value>
+            <value>
+                <fullName>VT17_Industrial Manufacturing</fullName>
+                <default>false</default>
+                <label>VT17_Industrial Manufacturing</label>
+            </value>
+            <value>
+                <fullName>VT18_IT Services</fullName>
+                <default>false</default>
+                <label>VT18_IT Services</label>
+            </value>
+            <value>
+                <fullName>VT19_Logistics &amp; Transportation</fullName>
+                <default>false</default>
+                <label>VT19_Logistics &amp; Transportation</label>
+            </value>
+            <value>
+                <fullName>VT20_M&amp;E</fullName>
+                <default>false</default>
+                <label>VT20_M&amp;E</label>
+            </value>
+            <value>
+                <fullName>VT21_Oil &amp; Gas</fullName>
+                <default>false</default>
+                <label>VT21_Oil &amp; Gas</label>
+            </value>
+            <value>
+                <fullName>VT22_Public Sector</fullName>
+                <default>false</default>
+                <label>VT22_Public Sector</label>
+            </value>
+            <value>
+                <fullName>VT23_Retail &amp; CPG</fullName>
+                <default>false</default>
+                <label>VT23_Retail &amp; CPG</label>
+            </value>
+            <value>
+                <fullName>VT24_Smart Cities</fullName>
+                <default>false</default>
+                <label>VT24_Smart Cities</label>
+            </value>
+            <value>
+                <fullName>VT25_Supercomputing</fullName>
+                <default>false</default>
+                <label>VT25_Supercomputing</label>
+            </value>
+            <value>
+                <fullName>VT26_Telecommunications</fullName>
+                <default>false</default>
+                <label>VT26_Telecommunications</label>
+            </value>
+            <value>
+                <fullName>VT27_Data Science</fullName>
+                <default>false</default>
+                <label>VT27_Data Science</label>
+            </value>
+            <value>
+                <fullName>VT28_Healthcare - Drug Discovery</fullName>
+                <default>false</default>
+                <label>VT28_Healthcare - Drug Discovery</label>
+            </value>
+            <value>
+                <fullName>VT29_Healthcare - Genomics</fullName>
+                <default>false</default>
+                <label>VT29_Healthcare - Genomics</label>
+            </value>
+            <value>
+                <fullName>VT30_MFG Product Design</fullName>
+                <default>false</default>
+                <label>VT30_MFG Product Design</label>
+            </value>
+            <value>
+                <fullName>VT31_Utilities</fullName>
+                <default>false</default>
+                <label>VT31_Utilities</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

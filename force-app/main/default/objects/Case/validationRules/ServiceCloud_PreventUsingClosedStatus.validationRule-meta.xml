@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ServiceCloud_PreventUsingClosedStatus</fullName>
+    <active>true</active>
+    <description>Prevent Agents to close a case using Closed value in the status field</description>
+    <errorConditionFormula>AND(
+RecordType.Name = &quot;Community User Record Type&quot;,
+ISCHANGED(Status), 
+ISPICKVAL(Status, &quot;Closed&quot;), 
+NOT(ISPICKVAL(Incident_Status__c ,&quot;Closed&quot;) || ISPICKVAL( Incident_Status__c ,&quot;Resolved (Temp Workaround)&quot;) || ISPICKVAL( Incident_Status__c ,&quot;Resolved (Permanently)&quot;) || ISPICKVAL( Incident_Status__c ,&quot;Resolved (No Customer Response)&quot;))
+)</errorConditionFormula>
+    <errorDisplayField>Incident_Status__c</errorDisplayField>
+    <errorMessage>Please use Incident Status and Incident Substatus field to close the case</errorMessage>
+</ValidationRule>

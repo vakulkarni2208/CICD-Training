@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Use the pull-down option to list any Sales Inhibitors --></help>
+    <label><!-- Sales Inhibitors --></label>
+    <name>Sales_Inhibitors__c</name>
+    <picklistValues>
+        <masterLabel>Budget</masterLabel>
+        <translation><!-- Budget --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cost</masterLabel>
+        <translation><!-- Cost --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hardware limitations</masterLabel>
+        <translation><!-- Hardware limitations --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IT Resource limitations</masterLabel>
+        <translation><!-- IT Resource limitations --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lack of information on how to deploy</masterLabel>
+        <translation><!-- Lack of information on how to deploy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Need benchmark data</masterLabel>
+        <translation><!-- Need benchmark data --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Need end user buy in</masterLabel>
+        <translation><!-- Need end user buy in --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Technology is too new</masterLabel>
+        <translation><!-- Technology is too new --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

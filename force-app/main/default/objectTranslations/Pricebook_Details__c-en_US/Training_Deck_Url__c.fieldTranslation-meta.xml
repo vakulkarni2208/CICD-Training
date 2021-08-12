@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- This field holds the TRaining URL for Tegra Auto OEM and Tegra Tier1 Opportunities. --></help>
+    <label><!-- Training Deck Url --></label>
+    <name>Training_Deck_Url__c</name>
+</CustomFieldTranslation>

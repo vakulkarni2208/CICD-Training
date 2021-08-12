@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>What_Program_Type_apply_for_Preferred__c</fullName>
+    <externalId>false</externalId>
+    <label>What Program Type apply for Preferred?</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Solution Provider (VAR)</fullName>
+                <default>false</default>
+                <label>Solution Provider (VAR)</label>
+            </value>
+            <value>
+                <fullName>OEM</fullName>
+                <default>false</default>
+                <label>OEM</label>
+            </value>
+            <value>
+                <fullName>Inception Partner (Startup)</fullName>
+                <default>false</default>
+                <label>Inception Partner (Startup)</label>
+            </value>
+            <value>
+                <fullName>Cloud Service Provider</fullName>
+                <default>false</default>
+                <label>Cloud Service Provider</label>
+            </value>
+            <value>
+                <fullName>Service Delivery Partner: Professional Services</fullName>
+                <default>false</default>
+                <label>Service Delivery Partner: Professional Services</label>
+            </value>
+            <value>
+                <fullName>Solution Advisor</fullName>
+                <default>false</default>
+                <label>Solution Advisor</label>
+            </value>
+            <value>
+                <fullName>Solutions Integration Partner</fullName>
+                <default>false</default>
+                <label>Solutions Integration Partner</label>
+            </value>
+            <value>
+                <fullName>Service Delivery Partner: Education Services</fullName>
+                <default>false</default>
+                <label>Service Delivery Partner: Education Services</label>
+            </value>
+            <value>
+                <fullName>Federal Systems Integrator</fullName>
+                <default>false</default>
+                <label>Federal Systems Integrator</label>
+            </value>
+            <value>
+                <fullName>Global Systems Integrator</fullName>
+                <default>false</default>
+                <label>Global Systems Integrator</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

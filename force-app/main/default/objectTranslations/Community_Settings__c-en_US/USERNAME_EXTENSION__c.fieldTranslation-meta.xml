@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- default username extension for bulk sOEM community users --></help>
+    <label><!-- USERNAME_EXTENSION --></label>
+    <name>USERNAME_EXTENSION__c</name>
+</CustomFieldTranslation>

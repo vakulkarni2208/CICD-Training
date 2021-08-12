@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Territory --></label>
+    <name>Territory__c</name>
+    <picklistValues>
+        <masterLabel>ANZ</masterLabel>
+        <translation><!-- ANZ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BD</masterLabel>
+        <translation><!-- BD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CSP</masterLabel>
+        <translation><!-- CSP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>China</masterLabel>
+        <translation><!-- China --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>East</masterLabel>
+        <translation><!-- East --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Europe</masterLabel>
+        <translation><!-- Europe --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fed/HER</masterLabel>
+        <translation><!-- Fed/HER --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>India</masterLabel>
+        <translation><!-- India --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Japan</masterLabel>
+        <translation><!-- Japan --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Korea</masterLabel>
+        <translation><!-- Korea --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Latam</masterLabel>
+        <translation><!-- Latam --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OEM</masterLabel>
+        <translation><!-- OEM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other Tesla SW</masterLabel>
+        <translation><!-- Other Tesla SW --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Partner</masterLabel>
+        <translation><!-- Partner --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Russia</masterLabel>
+        <translation><!-- Russia --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SE Asia</masterLabel>
+        <translation><!-- SE Asia --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Taiwan</masterLabel>
+        <translation><!-- Taiwan --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>West</masterLabel>
+        <translation><!-- West --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

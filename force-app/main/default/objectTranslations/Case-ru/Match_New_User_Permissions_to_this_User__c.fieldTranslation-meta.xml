@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- This user will be used as the template for the new user being setup --></help>
+    <label><!-- Match New User Permissions to this User --></label>
+    <name>Match_New_User_Permissions_to_this_User__c</name>
+    <relationshipLabel><!-- Cases (Match New User Permissions to this User) --></relationshipLabel>
+</CustomFieldTranslation>

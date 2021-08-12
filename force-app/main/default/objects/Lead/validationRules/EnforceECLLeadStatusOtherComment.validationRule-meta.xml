@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EnforceECLLeadStatusOtherComment</fullName>
+    <active>true</active>
+    <description>SDS-1625 - MKTG: Lead Status Validations for ECL and pre-MQL Leads
+If the Recyle/Disqualified Reason is &quot;Other&quot;, require Other Lead Status (Comment) text field</description>
+    <errorConditionFormula>AND(
+	NOT($Permission.DEPLOYMENT_USER_SKIP_VALIDATIONS),
+        OR (
+		RecordType.DeveloperName = &apos;Enterprise_Customer_Lead&apos;,
+		RecordType.DeveloperName = &apos;Pre_MQL_Lead&apos;
+	),
+        OR (
+                 ISPICKVAL( Status , &apos;Recycling&apos;),
+                 ISPICKVAL( Status , &apos;Disqualified&apos;)
+        ),
+        ISPICKVAL( Disqualified_Recycling_Reason__c , &apos;Other&apos;),
+        ISBLANK(Other_Lead_Status_Comments__c) 
+)</errorConditionFormula>
+    <errorDisplayField>Other_Lead_Status_Comments__c</errorDisplayField>
+    <errorMessage>Please fill-in &quot;Other Lead Status (Comments)&quot; if the Disqualified/Recycling Reason is selected as &quot;Other&quot;</errorMessage>
+</ValidationRule>

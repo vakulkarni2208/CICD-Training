@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Available_for_Direct_Selling__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Identify products that can be sold directly to the End Customer</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Check this box to Identify products that can be sold directly to the End Customer</inlineHelpText>
+    <label>Available for Direct Selling</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

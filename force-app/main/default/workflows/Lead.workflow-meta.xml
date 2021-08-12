@@ -1,0 +1,1029 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Auto_response_to_a_DLI_Lead_submission</fullName>
+        <description>Auto response to a DLI Lead submission</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Email</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>nvdli@nvidia.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>DLI_Sales_Email_Templates/DLI_Lead_Auto_Response_Notice</template>
+    </alerts>
+    <alerts>
+        <fullName>Automotive_Request_URGENT_Lead_Assignment_Alert</fullName>
+        <description>Automotive Request URGENT Lead Assignment Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>demandgen@nvidia.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Automotive_Request_URGENT_Lead_Assignment</template>
+    </alerts>
+    <alerts>
+        <fullName>Email_alert_to_DLI_Lead_Team_Internal</fullName>
+        <ccEmails>nvdli@nvidia.com</ccEmails>
+        <description>Email alert to DLI Lead Team (Internal)</description>
+        <protected>false</protected>
+        <recipients>
+            <type>campaignMemberDerivedOwner</type>
+        </recipients>
+        <senderAddress>nvdli@nvidia.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>DLI_Sales_Email_Templates/DLI_Lead_Creation_Internal_Notice</template>
+    </alerts>
+    <alerts>
+        <fullName>Lead_ECL_GRID_2_0_Software_Eval_Alerts</fullName>
+        <description>Lead : ECL : GRID 2.0 Software Eval Alerts</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>bchiu@nvidia.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Lead_ECL_GRID_2_0_Software_Eval_Alerts</template>
+    </alerts>
+    <alerts>
+        <fullName>Leads_Owner_Change_Notification_Internal_User</fullName>
+        <description>Leads: Owner Change Notification - Internal User</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Lead_Owner_Change_Notification/Leads_Owner_Change_Notification_Internal_User</template>
+    </alerts>
+    <alerts>
+        <fullName>Leads_Owner_Change_Notification_Partner</fullName>
+        <description>Leads: Owner Change Notification - Partner</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Lead_Owner_Change_Notification/Leads_Owner_Change_Notification_Partner</template>
+    </alerts>
+    <alerts>
+        <fullName>VGPU_Eval_Pending_Approval_Notification</fullName>
+        <ccEmails>julee@nvidia.com</ccEmails>
+        <description>VGPU Eval Pending Approval Notification</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>kgoles@nvidia.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>npollayil@nvidia.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>vgattamaneni@nvidia.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderAddress>vgattamaneni@nvidia.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>VGPU_Eval_Templates/VGPU_EVAL_APPROVAL</template>
+    </alerts>
+    <alerts>
+        <fullName>X1_Deal_Registration_Deal_Submitted_Email_To_Partner</fullName>
+        <ccEmails>npnopportunityregistration@nvidia.com</ccEmails>
+        <description>1. Deal Registration : Deal Submitted : Email To Partner</description>
+        <protected>false</protected>
+        <recipients>
+            <field>DR_Additional_Team_Member__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <recipients>
+            <field>DR_Partner_Sales_Rep_Name__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <field>DR_ChannelAdmin__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <recipients>
+            <field>DR_PBM__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <recipients>
+            <field>DR_Registration_Inside_Sales_Rep__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderAddress>npnopportunityregistration@nvidia.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Deal_Registration/X1_Deal_Registration_Deal_Submitted_Email_To_Partner_html</template>
+    </alerts>
+    <alerts>
+        <fullName>X1_Jetson_Registration_Deal_Submitted_Email_To_Partner</fullName>
+        <ccEmails>npnopportunityregistration@nvidia.com</ccEmails>
+        <description>1. Jetson Registration : Deal Submitted : Email To Partner</description>
+        <protected>false</protected>
+        <recipients>
+            <field>DR_Additional_Team_Member__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <recipients>
+            <field>DR_Partner_Sales_Rep_Name__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <field>DR_ChannelAdmin__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <recipients>
+            <field>DR_PBM__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <recipients>
+            <field>DR_Registration_Inside_Sales_Rep__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderAddress>npnopportunityregistration@nvidia.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Deal_Registration/X1_Jetson_Registration_Deal_Submitted_Email_To_Partner</template>
+    </alerts>
+    <alerts>
+        <fullName>X1_NPN_Program_Deal_Deal_Submitted_Email_To_Partner</fullName>
+        <ccEmails>npnopportunityregistration@nvidia.com</ccEmails>
+        <description>1. NPN Program Deal : Deal Submitted : Email To Partner</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <field>DR_PBM__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderAddress>npnopportunityregistration@nvidia.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>NPN_Program_Deal/X1_NPN_Program_Deal_Deal_Submitted_Email_To_Partner</template>
+    </alerts>
+    <alerts>
+        <fullName>X1_RTX6000_Refresh_Promotion_Deal_Submitted_Email_To_Partner</fullName>
+        <ccEmails>npnopportunityregistration@nvidia.com</ccEmails>
+        <description>1. RTX6000 Refresh Promotion : Deal Submitted : Email To Partner</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <field>DR_PBM__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderAddress>npnopportunityregistration@nvidia.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Deal_Registration/X1_RTX6000_Refresh_Promotion_Deal_Submitted_Email_To_Partner</template>
+    </alerts>
+    <alerts>
+        <fullName>X2_Deal_Registration_Deal_Approved_Email_To_Partner</fullName>
+        <ccEmails>NPNOpportunityRegistration@nvidia.com</ccEmails>
+        <description>2. Deal Registration : Deal Approved : Email To Partner</description>
+        <protected>false</protected>
+        <recipients>
+            <field>DR_Additional_Team_Member__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <recipients>
+            <field>DR_Partner_Sales_Rep_Name__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <recipient>anishd@nvidia.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <field>DR_ChannelAdmin__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <recipients>
+            <field>DR_PBM__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <recipients>
+            <field>DR_Registration_Inside_Sales_Rep__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderAddress>npnopportunityregistration@nvidia.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Deal_Registration/X2_Deal_Registration_Deal_Approved_Email_To_Partner_html</template>
+    </alerts>
+    <alerts>
+        <fullName>X2_Deal_Registration_Deal_Rejected_Email_To_Partner</fullName>
+        <ccEmails>NPNOpportunityRegistration@nvidia.com</ccEmails>
+        <description>2. Deal Registration : Deal Rejected : Email To Partner</description>
+        <protected>false</protected>
+        <recipients>
+            <field>DR_Additional_Team_Member__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <recipients>
+            <field>DR_Partner_Sales_Rep_Name__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <recipient>anishd@nvidia.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <field>DR_ChannelAdmin__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <recipients>
+            <field>DR_PBM__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <recipients>
+            <field>DR_Registration_Inside_Sales_Rep__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderAddress>npnopportunityregistration@nvidia.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Deal_Registration/X2_Deal_Registration_Deal_Rejected_Email_To_Partner_html</template>
+    </alerts>
+    <alerts>
+        <fullName>X2_Jetson_Registration_Deal_Approved_Email_To_Partner</fullName>
+        <ccEmails>NPNOpportunityRegistration@nvidia.com</ccEmails>
+        <description>2. Jetson Registration : Deal Approved : Email To Partner</description>
+        <protected>false</protected>
+        <recipients>
+            <field>DR_Additional_Team_Member__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <recipients>
+            <field>DR_Partner_Sales_Rep_Name__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <recipient>taverett@nvidia.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <field>DR_ChannelAdmin__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <recipients>
+            <field>DR_PBM__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <recipients>
+            <field>DR_Registration_Inside_Sales_Rep__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderAddress>npnopportunityregistration@nvidia.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Deal_Registration/X2_Jetson_Registration_Deal_Approved_Email_To_Partner</template>
+    </alerts>
+    <alerts>
+        <fullName>X2_Jetson_Registration_Deal_Rejected_Email_To_Partner</fullName>
+        <ccEmails>NPNOpportunityRegistration@nvidia.com</ccEmails>
+        <description>2. Jetson Registration : Deal Rejected : Email To Partner</description>
+        <protected>false</protected>
+        <recipients>
+            <field>DR_Additional_Team_Member__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <recipients>
+            <field>DR_Partner_Sales_Rep_Name__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <field>DR_ChannelAdmin__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <recipients>
+            <field>DR_PBM__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <recipients>
+            <field>DR_Registration_Inside_Sales_Rep__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderAddress>npnopportunityregistration@nvidia.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Deal_Registration/X2_Jetson_Registration_Deal_Rejected_Email_To_Partner</template>
+    </alerts>
+    <alerts>
+        <fullName>X2_NPN_Program_Deal_Deal_Approved_Email_To_Partner</fullName>
+        <ccEmails>NPNOpportunityRegistration@nvidia.com</ccEmails>
+        <description>2. NPN Program Deal : Deal Approved : Email To Partner</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <recipient>bolsen@nvidia.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>ltorres@nvidia.com.crp</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>smehta1@nvidia.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>vesrinivasan@nvidia.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <field>DR_PBM__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderAddress>npnopportunityregistration@nvidia.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>NPN_Program_Deal/X2_NPN_Program_Deal_Deal_Approved_Email_To_Partner</template>
+    </alerts>
+    <alerts>
+        <fullName>X2_NPN_Program_Deal_Deal_Rejected_Email_To_Partner</fullName>
+        <ccEmails>NPNOpportunityRegistration@nvidia.com</ccEmails>
+        <description>2. NPN Program Deal : Deal Rejected : Email To Partner</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <field>DR_PBM__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderAddress>npnopportunityregistration@nvidia.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>NPN_Program_Deal/X2_NPN_Program_Deal_Deal_Rejected_Email_To_Partner</template>
+    </alerts>
+    <alerts>
+        <fullName>X2_RTX6000_Refresh_Promotion_Deal_Approved_Email_To_Partner</fullName>
+        <ccEmails>NPNOpportunityRegistration@nvidia.com;</ccEmails>
+        <description>2.  RTX6000 Refresh Promotion : Deal Approved : Email To Partner</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <recipient>ahall@nvidia.com.crp</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>bolsen@nvidia.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>ltorres@nvidia.com.crp</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>smehta1@nvidia.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>vesrinivasan@nvidia.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <field>DR_PBM__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderAddress>npnopportunityregistration@nvidia.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Deal_Registration/X2_RTX6000_Refresh_Promotion_Deal_Approved_Email_To_Partner</template>
+    </alerts>
+    <alerts>
+        <fullName>X2_RTX6000_Refresh_Promotion_Deal_Rejected_Email_To_Partner</fullName>
+        <ccEmails>NPNOpportunityRegistration@nvidia.com</ccEmails>
+        <description>2. RTX6000 Refresh Promotion : Deal Rejected : Email To Partner</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <field>DR_PBM__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderAddress>npnopportunityregistration@nvidia.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Deal_Registration/X2_RTX6000_Refresh_Promotion_Deal_Rejected_Email_To_Partner</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>DR_Approved_Date_Channel_Admin_Now</fullName>
+        <description>Deal Registration: Sets Approved Date (Channel Admin) to Now</description>
+        <field>DR_Approved_Date_Channel_Admin__c</field>
+        <formula>Now()</formula>
+        <name>DR : Approved Date (Channel Admin) : Now</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>DR_Approved_Date_Now</fullName>
+        <description>Deal Registration: Sets  &quot;Approved Date&quot; to current date/time</description>
+        <field>DR_Approved_Date__c</field>
+        <formula>Now()</formula>
+        <name>DR : Approved Date : Now</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>DR_Approved_Date_Sales_Rep_Now</fullName>
+        <description>Deal Registration: Sets Approved Date (Sales Rep) to Now</description>
+        <field>DR_Approved_Date_SalesRep__c</field>
+        <formula>Now()</formula>
+        <name>DR : Approved Date (Sales Rep) : Now</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>DR_Denied_Date_Channel_Admin_Now</fullName>
+        <description>Deal Registration: Sets  &quot;Denied Date (Channel Admin)&quot; to current date/time</description>
+        <field>DR_Denied_Date_Channel_Admin__c</field>
+        <formula>Now()</formula>
+        <name>DR : Denied Date (Channel Admin) : Now</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>DR_Denied_Date_Now</fullName>
+        <description>Deal Registration: Sets  &quot;Denied Date&quot; to current date/time</description>
+        <field>DR_Denied_Date__c</field>
+        <formula>Now()</formula>
+        <name>DR : Denied Date : Now</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>DR_Denied_Date_Sales_Rep_Now</fullName>
+        <description>Deal Registration: Sets  &quot;Denied Date (Sales Rep)&quot; to current date/time</description>
+        <field>DR_Denied_Date_SalesRep__c</field>
+        <formula>Now()</formula>
+        <name>DR : Denied Date (Sales Rep) : Now</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>DR_Is_Approved_By_Channel_Admin_F</fullName>
+        <description>JetsonDR : Set Lead &gt;Is Approved By Channel Admin to False</description>
+        <field>DR_Is_Approved_by_Channel_Admin__c</field>
+        <literalValue>0</literalValue>
+        <name>DR : Is Approved By Channel Admin : F</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>DR_Is_Approved_By_Channel_Admin_T</fullName>
+        <description>Deal Registration: Sets Is Approved by Channel Admin to True</description>
+        <field>DR_Is_Approved_by_Channel_Admin__c</field>
+        <literalValue>1</literalValue>
+        <name>DR : Is Approved By Channel Admin : T</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>DR_Is_Approved_By_Sales_Rep_F</fullName>
+        <description>JetsonDR: Set Lead &gt; Is Approve By SalesRep to False</description>
+        <field>DR_Is_Approved_by_SalesRep__c</field>
+        <literalValue>0</literalValue>
+        <name>DR : Is Approved By Sales Rep : F</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>DR_Is_Approved_By_Sales_Rep_T</fullName>
+        <description>Deal Registration: Sets Is Approved by Sales Rep to True</description>
+        <field>DR_Is_Approved_by_SalesRep__c</field>
+        <literalValue>1</literalValue>
+        <name>DR : Is Approved By Sales Rep : T</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>DR_Is_Approved_T</fullName>
+        <description>Deal Registration: Sets  &quot;Is Approved&quot; to True</description>
+        <field>DR_Is_Approved__c</field>
+        <literalValue>1</literalValue>
+        <name>DR : Is Approved : T</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>DR_Is_Denied_F</fullName>
+        <description>JetsonDR: Set Lead &gt; Is Denied to False</description>
+        <field>DR_Is_Denied__c</field>
+        <literalValue>0</literalValue>
+        <name>DR : Is Denied : F</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>DR_Is_Denied_T</fullName>
+        <description>Deal Registration: Sets  &quot;Is Denied&quot; to True</description>
+        <field>DR_Is_Denied__c</field>
+        <literalValue>1</literalValue>
+        <name>DR : Is Denied : T</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>DR_Is_Denied_by_Channel_Admin_F</fullName>
+        <description>JetsonDR: Set Lead &gt; Is Denied By Channel Admin to false</description>
+        <field>DR_Is_Denied_by_Channel_Admin__c</field>
+        <literalValue>0</literalValue>
+        <name>DR : Is Denied by Channel Admin : F</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>DR_Is_Denied_by_Channel_Admin_T</fullName>
+        <description>Deal Registration: Sets &quot;Is Denied by Channel Admin&quot; to True</description>
+        <field>DR_Is_Denied_by_Channel_Admin__c</field>
+        <literalValue>1</literalValue>
+        <name>DR : Is Denied by Channel Admin : T</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>DR_Is_Denied_by_Sales_Rep_F</fullName>
+        <description>JetsonDR: Set Lead &gt; Is Denied by SalesRep to False</description>
+        <field>DR_Is_Denied_by_SalesRep__c</field>
+        <literalValue>0</literalValue>
+        <name>DR : Is Denied by Sales Rep : F</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>DR_Is_Denied_by_Sales_Rep_T</fullName>
+        <description>Deal Registration: Sets &quot;Is Denied by Sales Rep&quot; to True</description>
+        <field>DR_Is_Denied_by_SalesRep__c</field>
+        <literalValue>1</literalValue>
+        <name>DR : Is Denied by Sales Rep : T</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>DR_Is_Resubmitted_T</fullName>
+        <description>JetsonDR: Set Lead &gt; Is Resubmitted to True</description>
+        <field>DR_Is_Resubmitted__c</field>
+        <literalValue>1</literalValue>
+        <name>DR : Is Resubmitted : T</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>DR_Is_Submitted_T</fullName>
+        <description>Deal Registration: Set Is Deal Submitted For Approval to True</description>
+        <field>DR_Is_Submitted__c</field>
+        <literalValue>1</literalValue>
+        <name>DR : Is Submitted : T</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>DR_Lead_Status_Approved</fullName>
+        <description>Deal Registration: Sets  &quot;Lead Status&quot; to Approved</description>
+        <field>Status</field>
+        <literalValue>Approved</literalValue>
+        <name>DR : Lead Status : Approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>DR_Lead_Status_In_Review</fullName>
+        <description>Deal Registration: Sets  &quot;Lead Status&quot; to In Review</description>
+        <field>Status</field>
+        <literalValue>In Review</literalValue>
+        <name>DR : Lead Status : In Review</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>DR_Lead_Status_Rejected</fullName>
+        <description>Deal Registration: Sets  &quot;Lead Status&quot; to Rejected</description>
+        <field>Status</field>
+        <literalValue>Rejected</literalValue>
+        <name>DR : Lead Status : Rejected</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>DR_Resubmitted_Date_Now</fullName>
+        <description>JetsonDR: Set Lead &gt; Resubmitted Date to Now</description>
+        <field>Resubmitted_Date__c</field>
+        <formula>NOW()</formula>
+        <name>DR : Resubmitted Date : Now</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>DR_SubmittedViaBtnClick_F</fullName>
+        <description>Deal Registration: Sets the field DR_Is_SubmittedViaBtnClick__c to false</description>
+        <field>DR_Is_Submitted_via_Btn_Click__c</field>
+        <literalValue>0</literalValue>
+        <name>DR : SubmittedViaBtnClick : F</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>DR_Submitted_Date_Now</fullName>
+        <description>Deal Registration: Sets DR_Submitted_Date to current Date/Time</description>
+        <field>DR_Submitted_Date__c</field>
+        <formula>Now()</formula>
+        <name>DR : Submitted Date : Now</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>JetsonDR_Product_Type_Embedded</fullName>
+        <description>JetsonDR : Set Product Type field of Lead to Embedded so during the Lead Conversion, the lead will be converted to Tegra Embedded Opportunity</description>
+        <field>Product_Type__c</field>
+        <literalValue>Embedded</literalValue>
+        <name>JetsonDR : Product Type : Embedded</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>JetsonDR_UpdateOwnerAddSharing_True</fullName>
+        <description>JetsonDR : Set the flag JetsonDR_UpdateOwnerAddSharing to true</description>
+        <field>JetsonDR_UpdateOwnerAddSharing__c</field>
+        <literalValue>1</literalValue>
+        <name>JetsonDR : UpdateOwnerAddSharing : True</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>NPNPD_Approved_Date_PBM_Now</fullName>
+        <description>NPN Porgram Deal</description>
+        <field>NPNPD_PBMApprovedDate__c</field>
+        <formula>NOW()</formula>
+        <name>NPNPD : Approved Date (PBM) : Now</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>NPNPD_Approved_Date_SalesVP_Now</fullName>
+        <description>NPN Program Lead</description>
+        <field>NPNPD_SalesVPApprovedDate__c</field>
+        <formula>NOW()</formula>
+        <name>NPNPD : Approved Date (SalesVP) : Now</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>NPNPD_Approved_Date_SegmentSalesLead</fullName>
+        <description>NPN Program Lead</description>
+        <field>NPNPD_SegmentSalesLeadApprovedDate__c</field>
+        <formula>NOW()</formula>
+        <name>NPNPD : Approved Date (SegmentSalesLead)</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>NPNPD_Denied_Date_PBM_Now</fullName>
+        <description>NPN Porgram Deal</description>
+        <field>NPNPD_PBMDeniedDate__c</field>
+        <formula>NOW()</formula>
+        <name>NPNPD : Denied Date (PBM) : Now</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>NPNPD_Denied_Date_SalesVP_Now</fullName>
+        <description>NPN Program Lead</description>
+        <field>NPNPD_SalesVPDeniedDate__c</field>
+        <formula>NOW()</formula>
+        <name>NPNPD : Denied Date (SalesVP) : Now</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>NPNPD_Denied_Date_SegmentSalesLead</fullName>
+        <description>NPN Program Lead</description>
+        <field>NPNPD_SegmentSalesLeadDeniedDate__c</field>
+        <formula>NOW()</formula>
+        <name>NPNPD : Denied Date (SegmentSalesLead) :</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>NPNPD_Is_Approved_By_PBM_T</fullName>
+        <description>NPN Porgram Deal : Set NPNPD_IsPBMApproved to true</description>
+        <field>NPNPD_IsPBMApproved__c</field>
+        <literalValue>1</literalValue>
+        <name>NPNPD : Is Approved By PBM : T</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>NPNPD_Is_Approved_By_SalesVP_T</fullName>
+        <description>NPN Program Lead</description>
+        <field>NPNPD_IsSalesVPApproved__c</field>
+        <literalValue>1</literalValue>
+        <name>NPNPD : Is Approved By SalesVP : T</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>NPNPD_Is_Approved_By_SegmentSalesLead</fullName>
+        <description>NPN Program Deal</description>
+        <field>NPNPD_IsSegmentSalesLeadApproved__c</field>
+        <literalValue>1</literalValue>
+        <name>NPNPD : Is Approved By SegmentSalesLead</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>NPNPD_Is_Denied_By_PBM_T</fullName>
+        <description>NPN Porgram Deal</description>
+        <field>NPNPD_IsPBMDenied__c</field>
+        <literalValue>1</literalValue>
+        <name>NPNPD : Is Denied By PBM : T</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>NPNPD_Is_Denied_By_SalesVP_T</fullName>
+        <description>NPN Program Lead</description>
+        <field>NPNPD_IsSalesVPDenied__c</field>
+        <literalValue>1</literalValue>
+        <name>NPNPD : Is Denied By SalesVP : T</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>NPNPD_Is_Denied_By_SegmentSalesLead</fullName>
+        <description>NPN Program Lead</description>
+        <field>NPNPD_IsSegmentSalesLeadDenied__c</field>
+        <literalValue>1</literalValue>
+        <name>NPNPD : Is Denied By SegmentSalesLead :</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_Lead_Record_Type_to_Enterprise_Custo</fullName>
+        <description>If the lead record type is Tesla Sales Lead or Quadro Lead or GRID Lead, set it to Enterprise Customer Lead record type (Until we remove these old record types from all web forms)</description>
+        <field>RecordTypeId</field>
+        <lookupValue>Enterprise_Customer_Lead</lookupValue>
+        <lookupValueType>RecordType</lookupValueType>
+        <name>Set Lead Record Type to Enterprise Custo</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Sync_with_Marketo</fullName>
+        <field>Sync_with_Marketo__c</field>
+        <literalValue>1</literalValue>
+        <name>Sync with Marketo</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Initial_Lead_Class_field</fullName>
+        <description>Initial value of &apos;Lead Class (dynamic)&apos; field wil be saved in &apos;Inital Lead Class&apos; field. As per Jira #SDS-2961</description>
+        <field>Initial_Lead_Class__c</field>
+        <formula>Lead_Class__c</formula>
+        <name>Update Initial Lead Class field</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_NPN_Application_Lead_Status</fullName>
+        <description>Rule-Update NPN Application Lead Status, change NPN Application Lead Status to &quot;Convert to Account&quot; if the Lead Source is NPN Application and IsConverted is true</description>
+        <field>Status</field>
+        <literalValue>Convert to Account</literalValue>
+        <name>Update NPN Application Lead Status</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <rules>
+        <fullName>Auto emails to DLI Lead Record Type</fullName>
+        <actions>
+            <name>Auto_response_to_a_DLI_Lead_submission</name>
+            <type>Alert</type>
+        </actions>
+        <actions>
+            <name>Email_alert_to_DLI_Lead_Team_Internal</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Lead.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>DLI Lead</value>
+        </criteriaItems>
+        <description>Used for auto response to Leads as native feature doesn&apos;t allow use of the DLI email address</description>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Initial Lead Class</fullName>
+        <actions>
+            <name>Update_Initial_Lead_Class_field</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>To display the value of Lead Class first populated (~ &quot;A2&quot;) i.e. one time stamp when Account Strength gets A/B/C/D. As per Jira #SDs-2961</description>
+        <formula>NOT( ISNULL( Account_Strength__c ) )</formula>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Lead %3A VGPU Eval Pending Approval Notification V2</fullName>
+        <actions>
+            <name>VGPU_Eval_Pending_Approval_Notification</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <description>Lead : VGPU Eval Pending Approval Notification</description>
+        <formula>NOT( ISBLANK(GRID_Software_Evaluation_PAK__c)) &amp;&amp; ISCHANGED( GRID_Software_Evaluation_PAK__c ) &amp;&amp; ISPICKVAL( GRID_Software_Evaluation__c , &apos;Pending Re-approval&apos;)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Lead is created from Marketo set sync with Marketo</fullName>
+        <actions>
+            <name>Sync_with_Marketo</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Lead.Email</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.Sync_with_Marketo__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.CreatedById</field>
+            <operation>equals</operation>
+            <value>Marketo Sync</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.MKTO_GDPR_Delete__c</field>
+            <operation>notEqual</operation>
+            <value>True</value>
+        </criteriaItems>
+        <description>Special sync with leads with Marketo. Lead is created from Marketo.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Lead is created set sync with Marketo</fullName>
+        <actions>
+            <name>Sync_with_Marketo</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>1 AND 2 AND 3 AND 4</booleanFilter>
+        <criteriaItems>
+            <field>Lead.Email</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.Sync_with_Marketo__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.RecordTypeId</field>
+            <operation>notEqual</operation>
+            <value>CPQ Requests,Deal Registration,DLI Lead,NPN Web Onboard Form</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.MKTO_GDPR_Delete__c</field>
+            <operation>notEqual</operation>
+            <value>True</value>
+        </criteriaItems>
+        <description>Updated this WF for the SDS-3014</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Set Lead Record Type to Enterprise Customer Lead</fullName>
+        <actions>
+            <name>Set_Lead_Record_Type_to_Enterprise_Custo</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Lead.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Tesla Sales Lead,Quadro Lead,GRID Lead</value>
+        </criteriaItems>
+        <description>If the lead record type is Tesla Sales Lea or Quadro Lead or GRID Lead, set it to Enterprise Customer Lead record type (Until we remove these old record types from all web forms)</description>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update NPN Application Lead Status</fullName>
+        <actions>
+            <name>Update_NPN_Application_Lead_Status</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Lead.Lead_Orgin__c</field>
+            <operation>equals</operation>
+            <value>NPN Application,EMEAI Training Web Form,NPN Community Web Form</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.IsConverted</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <description>when converted NPN Applicatoin lead should have the lead status to Convert to Account</description>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

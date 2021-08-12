@@ -1,0 +1,1847 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>APAC_Lead_Sharing</fullName>
+        <accessLevel>Edit</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>Read</caseAccessLevel>
+            <contactAccessLevel>Edit</contactAccessLevel>
+            <opportunityAccessLevel>Read</opportunityAccessLevel>
+        </accountSettings>
+        <description>To enable APAC lead managers to convert leads as needed</description>
+        <label>APAC Lead Sharing</label>
+        <sharedTo>
+            <group>APAC_Lead_Management</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Billing_Region__c</field>
+            <operation>equals</operation>
+            <value>APAC</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>NPN Account Registry,New Customer Account</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>APAC_South_Sharing</fullName>
+        <accessLevel>Read</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>None</caseAccessLevel>
+            <contactAccessLevel>Read</contactAccessLevel>
+            <opportunityAccessLevel>Edit</opportunityAccessLevel>
+        </accountSettings>
+        <label>APAC South Sharing</label>
+        <sharedTo>
+            <group>APAC_South_Sharing</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Shipping_Region__c</field>
+            <operation>equals</operation>
+            <value>APAC</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Shipping_Sub_Region__c</field>
+            <operation>equals</operation>
+            <value>SEA,ANZ</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Austria_Switzerland</fullName>
+        <accessLevel>Read</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>None</caseAccessLevel>
+            <contactAccessLevel>Read</contactAccessLevel>
+            <opportunityAccessLevel>Read</opportunityAccessLevel>
+        </accountSettings>
+        <label>Austria,Switzerland</label>
+        <sharedTo>
+            <group>Austria_Switzerland_visibility</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>BillingCountry</field>
+            <operation>contains</operation>
+            <value>Austria,Switzerland</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>NPN Account Registry,New Customer Account</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Automotive_Sharing_Accounts</fullName>
+        <accessLevel>Read</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>Read</caseAccessLevel>
+            <contactAccessLevel>Read</contactAccessLevel>
+            <opportunityAccessLevel>Read</opportunityAccessLevel>
+        </accountSettings>
+        <description>For Carlos and Elizabeth</description>
+        <label>Automotive Sharing Accounts</label>
+        <sharedTo>
+            <group>Automotive_Sales_Operations</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Industry</field>
+            <operation>equals</operation>
+            <value>Automotive</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>NPN Account Registry,NPN Community Account,New Customer Account</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>CA_Account_Sharing_APAC</fullName>
+        <accessLevel>Edit</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>None</caseAccessLevel>
+            <contactAccessLevel>Edit</contactAccessLevel>
+            <opportunityAccessLevel>None</opportunityAccessLevel>
+        </accountSettings>
+        <label>CA_Account Sharing_APAC</label>
+        <sharedTo>
+            <group>APAC_Read_Write_Opp_Access</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Billing_Region__c</field>
+            <operation>equals</operation>
+            <value>APAC</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>NPN Account Registry,New Customer Account</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>CA_Account_Sharing_EMEA</fullName>
+        <accessLevel>Edit</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>None</caseAccessLevel>
+            <contactAccessLevel>Edit</contactAccessLevel>
+            <opportunityAccessLevel>None</opportunityAccessLevel>
+        </accountSettings>
+        <label>CA_Account Sharing_EMEA</label>
+        <sharedTo>
+            <group>EMEA_RW_Opp_Access</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Billing_Region__c</field>
+            <operation>equals</operation>
+            <value>EMEA</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Partner Account,NPN Account Registry,NPN Community Account,New Customer Account</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>CA_Account_Sharing_Japan</fullName>
+        <accessLevel>Edit</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>None</caseAccessLevel>
+            <contactAccessLevel>Edit</contactAccessLevel>
+            <opportunityAccessLevel>None</opportunityAccessLevel>
+        </accountSettings>
+        <label>CA_Account Sharing_Japan</label>
+        <sharedTo>
+            <role>Japan_Sales_Ops</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>Billing_Region__c</field>
+            <operation>equals</operation>
+            <value>JAPAN</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>NPN Account Registry,New Customer Account</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>CA_Account_Sharing_NALA</fullName>
+        <accessLevel>Edit</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>None</caseAccessLevel>
+            <contactAccessLevel>Edit</contactAccessLevel>
+            <opportunityAccessLevel>None</opportunityAccessLevel>
+        </accountSettings>
+        <label>CA_Account Sharing_NALA</label>
+        <sharedTo>
+            <group>NALA_Read_Write_Opp_Access</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Billing_Region__c</field>
+            <operation>equals</operation>
+            <value>NALA</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>NPN Account Registry,New Customer Account</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>China_Read_Write</fullName>
+        <accessLevel>Edit</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>Read</caseAccessLevel>
+            <contactAccessLevel>Edit</contactAccessLevel>
+            <opportunityAccessLevel>Edit</opportunityAccessLevel>
+        </accountSettings>
+        <label>China Read/Write</label>
+        <sharedTo>
+            <group>China_Read_Write</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>BillingCountry</field>
+            <operation>equals</operation>
+            <value>CHINA</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Comcast_NBCU_Visibility</fullName>
+        <accessLevel>Read</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>None</caseAccessLevel>
+            <contactAccessLevel>Read</contactAccessLevel>
+            <opportunityAccessLevel>Read</opportunityAccessLevel>
+        </accountSettings>
+        <label>Comcast/NBCU Visibility</label>
+        <sharedTo>
+            <group>Comcast_NBCU_Visibility</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Name</field>
+            <operation>equals</operation>
+            <value>Comcast Corporation,Comcast Spotlight,Hulu LLC,National Broadcasting Company (NBC),NBC Universal,SKY UK,Telemundo Studios Miami LLC</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>DACH_Sales_Sharing</fullName>
+        <accessLevel>Edit</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>None</caseAccessLevel>
+            <contactAccessLevel>Edit</contactAccessLevel>
+            <opportunityAccessLevel>Edit</opportunityAccessLevel>
+        </accountSettings>
+        <label>DACH Sales Sharing</label>
+        <sharedTo>
+            <role>EMEA_DACH_Sales</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>BillingCountry</field>
+            <operation>equals</operation>
+            <value>Germany,Austria,Switzerland</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>NPN Account Registry,New Customer Account</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>EMEA_Auto_CCO</fullName>
+        <accessLevel>Edit</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>None</caseAccessLevel>
+            <contactAccessLevel>Edit</contactAccessLevel>
+            <opportunityAccessLevel>Edit</opportunityAccessLevel>
+        </accountSettings>
+        <label>EMEA Auto CCO</label>
+        <sharedTo>
+            <group>EMEA_Auto_CCO</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Industry</field>
+            <operation>equals</operation>
+            <value>Automotive</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>New Customer Account</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>EMEA_Automotive</fullName>
+        <accessLevel>Edit</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>None</caseAccessLevel>
+            <contactAccessLevel>Edit</contactAccessLevel>
+            <opportunityAccessLevel>Edit</opportunityAccessLevel>
+        </accountSettings>
+        <label>EMEA Automotive</label>
+        <sharedTo>
+            <group>EMEA_Automotive</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Industry</field>
+            <operation>equals</operation>
+            <value>Automotive</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Billing_Region__c</field>
+            <operation>equals</operation>
+            <value>EMEA</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>EMEA_Healthcare_Sharing</fullName>
+        <accessLevel>Read</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>Read</caseAccessLevel>
+            <contactAccessLevel>Read</contactAccessLevel>
+            <opportunityAccessLevel>Read</opportunityAccessLevel>
+        </accountSettings>
+        <description>Used to share EMEA Healthcare Opportunities and Accounts with appropriate users</description>
+        <label>EMEA Healthcare Sharing</label>
+        <sharedTo>
+            <group>EMEA_Healthcare_Sharing</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Billing_Region__c</field>
+            <operation>equals</operation>
+            <value>EMEA</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Industry</field>
+            <operation>equals</operation>
+            <value>Higher Ed/Research,Healthcare</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>EMEA_Lead_Manager_Sharing</fullName>
+        <accessLevel>Edit</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>Read</caseAccessLevel>
+            <contactAccessLevel>Edit</contactAccessLevel>
+            <opportunityAccessLevel>Read</opportunityAccessLevel>
+        </accountSettings>
+        <description>EMEAI Lead manager sharing</description>
+        <label>EMEA Lead Manager Sharing</label>
+        <sharedTo>
+            <group>EMEAI_Lead_Management</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Billing_Region__c</field>
+            <operation>equals</operation>
+            <value>EMEA</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>NPN Account Registry,New Customer Account</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>EMEA_Manufacturing_Industrial_Read_Only</fullName>
+        <accessLevel>Read</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>None</caseAccessLevel>
+            <contactAccessLevel>Read</contactAccessLevel>
+            <opportunityAccessLevel>Read</opportunityAccessLevel>
+        </accountSettings>
+        <label>EMEA Manufacturing Industrial Read Only</label>
+        <sharedTo>
+            <group>EMEA_Manufacturing_Industrial_IBD</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Billing_Region__c</field>
+            <operation>equals</operation>
+            <value>EMEA</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Industry</field>
+            <operation>equals</operation>
+            <value>Manufacturing,Aerospace</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>NPN Account Registry,New Customer Account</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>EMEA_Nordics_Benelux_Sales_Manager</fullName>
+        <accessLevel>Read</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>Read</caseAccessLevel>
+            <contactAccessLevel>Read</contactAccessLevel>
+            <opportunityAccessLevel>Edit</opportunityAccessLevel>
+        </accountSettings>
+        <label>EMEA Nordics/Benelux Sales Manager</label>
+        <sharedTo>
+            <role>EMEA_Nordics_Benelux_Sales_Manager</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>BillingCountry</field>
+            <operation>equals</operation>
+            <value>Belgium,The Netherlands,Luxembourg,Sweden,Norway,Finland,Denmark,Iceland</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>NPN Account Registry,New Customer Account</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>EMEA_UKI_Retail_Sales</fullName>
+        <accessLevel>Read</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>Read</caseAccessLevel>
+            <contactAccessLevel>Read</contactAccessLevel>
+            <opportunityAccessLevel>Edit</opportunityAccessLevel>
+        </accountSettings>
+        <description>SDS-2598-EMEA UKI Retail Sales - Share UK and Ireland opportunities only</description>
+        <label>EMEA UKI Retail Sales</label>
+        <sharedTo>
+            <role>EMEA_UKI_Retail_Sales</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>Industry</field>
+            <operation>equals</operation>
+            <value>Retail and CPG</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>BillingCountryCode</field>
+            <operation>equals</operation>
+            <value>United Kingdom,Ireland</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Financial_Services_Sharing</fullName>
+        <accessLevel>Read</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>Read</caseAccessLevel>
+            <contactAccessLevel>Read</contactAccessLevel>
+            <opportunityAccessLevel>Read</opportunityAccessLevel>
+        </accountSettings>
+        <description>Share Financial service account data with the FSI IBD</description>
+        <label>Financial Services Sharing</label>
+        <sharedTo>
+            <role>Financial_Service_FSI_IBD</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>Industry</field>
+            <operation>equals</operation>
+            <value>Financial Services Industry (FSI)</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Global_Accounts</fullName>
+        <accessLevel>Read</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>None</caseAccessLevel>
+            <contactAccessLevel>Read</contactAccessLevel>
+            <opportunityAccessLevel>None</opportunityAccessLevel>
+        </accountSettings>
+        <label>Global Accounts</label>
+        <sharedTo>
+            <group>Global_Accounts_Sharing</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Billing_Region__c</field>
+            <operation>equals</operation>
+            <value>APAC,NALA,JAPAN,EMEA</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>HER_Account_Sharing</fullName>
+        <accessLevel>Read</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>Read</caseAccessLevel>
+            <contactAccessLevel>Read</contactAccessLevel>
+            <opportunityAccessLevel>Read</opportunityAccessLevel>
+        </accountSettings>
+        <label>HER Account Sharing</label>
+        <sharedTo>
+            <role>Higher_Education_and_Research_HER_IBD</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>Industry</field>
+            <operation>equals</operation>
+            <value>Healthcare</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Higher_Ed_Research</fullName>
+        <accessLevel>Read</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>Read</caseAccessLevel>
+            <contactAccessLevel>Read</contactAccessLevel>
+            <opportunityAccessLevel>Read</opportunityAccessLevel>
+        </accountSettings>
+        <label>Higher Ed /Research</label>
+        <sharedTo>
+            <group>Healthcare_Education_Report_Group</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Industry</field>
+            <operation>equals</operation>
+            <value>Higher Ed/Research,Healthcare</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Billing_Region__c</field>
+            <operation>equals</operation>
+            <value>APAC,NALA,JAPAN,EMEA</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Inception_Account_Sharing</fullName>
+        <accessLevel>Read</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>Read</caseAccessLevel>
+            <contactAccessLevel>Read</contactAccessLevel>
+            <opportunityAccessLevel>Read</opportunityAccessLevel>
+        </accountSettings>
+        <label>Inception Account Sharing</label>
+        <sharedTo>
+            <group>Inception_Oppty_Sharing</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Automotive_Inception__c</field>
+            <operation>equals</operation>
+            <value>Accepted</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Industry_Focus_Telecommunication</fullName>
+        <accessLevel>Read</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>Read</caseAccessLevel>
+            <contactAccessLevel>Read</contactAccessLevel>
+            <opportunityAccessLevel>Read</opportunityAccessLevel>
+        </accountSettings>
+        <label>Industry Focus Telecommunication</label>
+        <sharedTo>
+            <group>Industry_Focus_Telecommunication</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Industry</field>
+            <operation>equals</operation>
+            <value>Telecommunications</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Israel_Account_Sharing</fullName>
+        <accessLevel>Edit</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>Read</caseAccessLevel>
+            <contactAccessLevel>Edit</contactAccessLevel>
+            <opportunityAccessLevel>Read</opportunityAccessLevel>
+        </accountSettings>
+        <description>Allows sharing for Israel Accounts</description>
+        <label>Israel Account Sharing</label>
+        <sharedTo>
+            <group>Nati_Amsterdam</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>BillingCountry</field>
+            <operation>equals</operation>
+            <value>Israel</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>NPN Account Registry,New Customer Account</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Israel_Read_Write</fullName>
+        <accessLevel>Read</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>None</caseAccessLevel>
+            <contactAccessLevel>Read</contactAccessLevel>
+            <opportunityAccessLevel>Read</opportunityAccessLevel>
+        </accountSettings>
+        <label>Israel Read/Write</label>
+        <sharedTo>
+            <group>Israel_Read_Write</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>BillingCountry</field>
+            <operation>equals</operation>
+            <value>Israel</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>NPN Account Registry,New Customer Account</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Japan_Lead_Management_Sharing</fullName>
+        <accessLevel>Edit</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>Read</caseAccessLevel>
+            <contactAccessLevel>Edit</contactAccessLevel>
+            <opportunityAccessLevel>Edit</opportunityAccessLevel>
+        </accountSettings>
+        <description>Sharing setup for Japan Lead Management purposes</description>
+        <label>Japan Lead Management Sharing</label>
+        <sharedTo>
+            <group>Japan_Lead_Management_Group</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Billing_Region__c</field>
+            <operation>equals</operation>
+            <value>JAPAN</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>NPN Account Registry,New Customer Account</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>LATAM_Read_Write</fullName>
+        <accessLevel>Read</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>Read</caseAccessLevel>
+            <contactAccessLevel>Read</contactAccessLevel>
+            <opportunityAccessLevel>Edit</opportunityAccessLevel>
+        </accountSettings>
+        <label>LATAM Read/Write</label>
+        <sharedTo>
+            <group>LATAM_Read_Write</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>BillingCountry</field>
+            <operation>equals</operation>
+            <value>Brazil,Mexico,Colombia,Argentina,Venezuela,Peru,Chile,Ecuador,Guatemala,Cuba,Bolivia,Dominican Republic,Haiti,Honduras,Paraguay,El Salavador,Nicaragua,Costa Rica,Puerto Rico,Panama,Uruguay</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>NPN Account Registry,New Customer Account</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>NALA_Automotive_Access</fullName>
+        <accessLevel>Read</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>None</caseAccessLevel>
+            <contactAccessLevel>Read</contactAccessLevel>
+            <opportunityAccessLevel>Read</opportunityAccessLevel>
+        </accountSettings>
+        <label>NALA Automotive Access</label>
+        <sharedTo>
+            <group>NALA_Automotive_Access</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Industry</field>
+            <operation>equals</operation>
+            <value>Automotive</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>NALA_CRISP_SA_Sharing</fullName>
+        <accessLevel>Read</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>Read</caseAccessLevel>
+            <contactAccessLevel>Read</contactAccessLevel>
+            <opportunityAccessLevel>Read</opportunityAccessLevel>
+        </accountSettings>
+        <label>NALA CRISP SA Sharing</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>NALA_Solution_Architect_CRISP_Manager</roleAndSubordinatesInternal>
+        </sharedTo>
+        <criteriaItems>
+            <field>Industry</field>
+            <operation>equals</operation>
+            <value>CRISP (Consumer Internet Service Providers)</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>NALA_CSP_Sharing</fullName>
+        <accessLevel>Read</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>None</caseAccessLevel>
+            <contactAccessLevel>Read</contactAccessLevel>
+            <opportunityAccessLevel>Read</opportunityAccessLevel>
+        </accountSettings>
+        <label>NALA CSP Sharing</label>
+        <sharedTo>
+            <group>NALA_CRISP_CSP_Sharing</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>NPN_Active_Program_Competency__c</field>
+            <operation>equals</operation>
+            <value>CSP</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>NALA_HER_Sharing_Rule</fullName>
+        <accessLevel>Edit</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>Read</caseAccessLevel>
+            <contactAccessLevel>Edit</contactAccessLevel>
+            <opportunityAccessLevel>Read</opportunityAccessLevel>
+        </accountSettings>
+        <description>Share NALA HER Accounts with NALA HER group</description>
+        <label>NALA HER Sharing Rule</label>
+        <sharedTo>
+            <group>NALA_HER_Sharing_Group</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>New Customer Account</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Industry</field>
+            <operation>equals</operation>
+            <value>Higher Ed/Research</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Billing_Region__c</field>
+            <operation>equals</operation>
+            <value>NALA</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>NALA_Inside_Sales_Manager</fullName>
+        <accessLevel>Read</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>Read</caseAccessLevel>
+            <contactAccessLevel>Read</contactAccessLevel>
+            <opportunityAccessLevel>Read</opportunityAccessLevel>
+        </accountSettings>
+        <label>NALA Inside Sales Manager</label>
+        <sharedTo>
+            <role>NALA_Inside_Sales_Manager</role>
+        </sharedTo>
+        <booleanFilter>1 AND 2</booleanFilter>
+        <criteriaItems>
+            <field>Billing_Region__c</field>
+            <operation>equals</operation>
+            <value>NALA</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>notEqual</operation>
+            <value>Sold-To Partner Account</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>NALA_Lead_Manager_Sharing</fullName>
+        <accessLevel>Edit</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>Read</caseAccessLevel>
+            <contactAccessLevel>Edit</contactAccessLevel>
+            <opportunityAccessLevel>Read</opportunityAccessLevel>
+        </accountSettings>
+        <description>Used to share details with NALA lead managers</description>
+        <label>NALA Lead Manager Sharing</label>
+        <sharedTo>
+            <group>NALA_Lead_Management</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Billing_Region__c</field>
+            <operation>equals</operation>
+            <value>NALA</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>NPN Account Registry,New Customer Account</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>NALA_Medical_HER_Sharing</fullName>
+        <accessLevel>Edit</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>Read</caseAccessLevel>
+            <contactAccessLevel>Edit</contactAccessLevel>
+            <opportunityAccessLevel>Read</opportunityAccessLevel>
+        </accountSettings>
+        <description>Share all NALA medical/HER details with Medical/HER Management</description>
+        <label>NALA Medical/HER Sharing</label>
+        <sharedTo>
+            <role>Medical_Inception_Manager</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>Industry</field>
+            <operation>equals</operation>
+            <value>Healthcare</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>NPN Account Registry,New Customer Account</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>NALA_NSC_FSI_Sharing</fullName>
+        <accessLevel>Read</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>Read</caseAccessLevel>
+            <contactAccessLevel>Read</contactAccessLevel>
+            <opportunityAccessLevel>Read</opportunityAccessLevel>
+        </accountSettings>
+        <description>Used to share NALA FSI Accounts and Opptys to the NSC rep(s)</description>
+        <label>NALA NSC FSI Sharing</label>
+        <sharedTo>
+            <group>NSC_NALA_FSI_Sharing</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Billing_Region__c</field>
+            <operation>equals</operation>
+            <value>NALA</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Industry</field>
+            <operation>equals</operation>
+            <value>Financial Services Industry (FSI)</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>NALA_PSS_Edit</fullName>
+        <accessLevel>Edit</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>Read</caseAccessLevel>
+            <contactAccessLevel>Edit</contactAccessLevel>
+            <opportunityAccessLevel>Read</opportunityAccessLevel>
+        </accountSettings>
+        <description>Sharing rule to allow for GRID PSS Inside Sales to do lead conversions.</description>
+        <label>NALA PSS Edit</label>
+        <sharedTo>
+            <role>NALA_Inside_Sales_Product_Sales_Specialist_PSS</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>Billing_Region__c</field>
+            <operation>equals</operation>
+            <value>NALA</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>NPN Account Registry,New Customer Account</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Industry</field>
+            <operation>notEqual</operation>
+            <value>Strategic Hyperscale,Supercomputing</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>NALA_Public_Sector</fullName>
+        <accessLevel>Edit</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>None</caseAccessLevel>
+            <contactAccessLevel>Edit</contactAccessLevel>
+            <opportunityAccessLevel>Edit</opportunityAccessLevel>
+        </accountSettings>
+        <label>NALA Public Sector</label>
+        <sharedTo>
+            <group>Public_Sector</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Industry</field>
+            <operation>equals</operation>
+            <value>Public Sector</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Billing_Region__c</field>
+            <operation>equals</operation>
+            <value>NALA</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>NALA_Retail_and_MFG_Sharing</fullName>
+        <accessLevel>Read</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>Read</caseAccessLevel>
+            <contactAccessLevel>Read</contactAccessLevel>
+            <opportunityAccessLevel>Read</opportunityAccessLevel>
+        </accountSettings>
+        <description>Share NALA Retail and MFG accounts and deals with appropriate users</description>
+        <label>NALA Retail and MFG Sharing</label>
+        <sharedTo>
+            <group>NALA_Retail_and_MFG_Sharing</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Industry</field>
+            <operation>equals</operation>
+            <value>Manufacturing,Retail and CPG</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>NALA_SDS_Sales_Sharing</fullName>
+        <accessLevel>Read</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>None</caseAccessLevel>
+            <contactAccessLevel>Read</contactAccessLevel>
+            <opportunityAccessLevel>Edit</opportunityAccessLevel>
+        </accountSettings>
+        <label>NALA SDS Sales Sharing</label>
+        <sharedTo>
+            <role>NALA_SDS_Sales_Manager</role>
+        </sharedTo>
+        <booleanFilter>1 AND 2</booleanFilter>
+        <criteriaItems>
+            <field>Billing_Region__c</field>
+            <operation>equals</operation>
+            <value>NALA</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>notEqual</operation>
+            <value>Sold-To Partner Account</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>NALA_Supercomputing_Inside_Sales</fullName>
+        <accessLevel>Edit</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>Read</caseAccessLevel>
+            <contactAccessLevel>Edit</contactAccessLevel>
+            <opportunityAccessLevel>Read</opportunityAccessLevel>
+        </accountSettings>
+        <label>NALA Supercomputing Inside Sales</label>
+        <sharedTo>
+            <group>NALA_Supercomputing_SDS</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Industry</field>
+            <operation>equals</operation>
+            <value>Supercomputing</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Oil_and_Gas</fullName>
+        <accessLevel>Read</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>None</caseAccessLevel>
+            <contactAccessLevel>Read</contactAccessLevel>
+            <opportunityAccessLevel>Read</opportunityAccessLevel>
+        </accountSettings>
+        <label>Oil and Gas</label>
+        <sharedTo>
+            <group>Oil_and_Gas</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Industry</field>
+            <operation>equals</operation>
+            <value>Oil &amp; Gas/Energy</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Public_Sector_Management_Sharing</fullName>
+        <accessLevel>Edit</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>Read</caseAccessLevel>
+            <contactAccessLevel>Edit</contactAccessLevel>
+            <opportunityAccessLevel>Read</opportunityAccessLevel>
+        </accountSettings>
+        <description>Share all public sector Canada/US with Public Sector Manager</description>
+        <label>Public Sector Management Sharing</label>
+        <sharedTo>
+            <role>NALA_Public_Sector_IBD</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>BillingCountry</field>
+            <operation>equals</operation>
+            <value>United States,Canada</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Industry</field>
+            <operation>equals</operation>
+            <value>Defense/Government,Higher Ed/Research</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>NPN Account Registry,New Customer Account</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Service_Cloud_JTP_Accounts</fullName>
+        <accessLevel>Read</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>None</caseAccessLevel>
+            <contactAccessLevel>Read</contactAccessLevel>
+            <opportunityAccessLevel>None</opportunityAccessLevel>
+        </accountSettings>
+        <description>Share JTP Accounts with JTP Sub-Contractors</description>
+        <label>Service Cloud: JTP Accounts</label>
+        <sharedTo>
+            <role>JTP_Agent</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>Billing_Region__c</field>
+            <operation>equals</operation>
+            <value>JAPAN</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Billing_Region__c</field>
+            <operation>notEqual</operation>
+            <value>EMEA,APAC,NALA</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>NPN Account Registry,New Customer Account</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Service_Cloud_L3_Sharing_Rule</fullName>
+        <accessLevel>Edit</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>None</caseAccessLevel>
+            <contactAccessLevel>Edit</contactAccessLevel>
+            <opportunityAccessLevel>None</opportunityAccessLevel>
+        </accountSettings>
+        <label>Service Cloud : L3 Sharing Rule</label>
+        <sharedTo>
+            <role>NV_Agent</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>NPN Account Registry,New Customer Account</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Service_Cloud_NCR_Access</fullName>
+        <accessLevel>Read</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>None</caseAccessLevel>
+            <contactAccessLevel>Read</contactAccessLevel>
+            <opportunityAccessLevel>None</opportunityAccessLevel>
+        </accountSettings>
+        <description>Share NCR Accounts with NCR Agents</description>
+        <label>Service Cloud: NCR Access</label>
+        <sharedTo>
+            <role>NCR_Agent</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>Billing_Region__c</field>
+            <operation>notEqual</operation>
+            <value>JAPAN</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Billing_Region__c</field>
+            <operation>equals</operation>
+            <value>EMEA,APAC,NALA</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>NPN Account Registry,New Customer Account</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Service_Cloud_Share_Account_with_FLS_Team</fullName>
+        <accessLevel>Edit</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>None</caseAccessLevel>
+            <contactAccessLevel>Edit</contactAccessLevel>
+            <opportunityAccessLevel>None</opportunityAccessLevel>
+        </accountSettings>
+        <description>SDS-3049 Service: FLS Support Team Onboarding for Fleet Command</description>
+        <label>Service Cloud Share Account with FLS Team</label>
+        <sharedTo>
+            <role>FLS_Agent</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>NPN Account Registry,New Customer Account</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Service_Cloud_Supp_Mgr_Account_Edit</fullName>
+        <accessLevel>Edit</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>None</caseAccessLevel>
+            <contactAccessLevel>Edit</contactAccessLevel>
+            <opportunityAccessLevel>None</opportunityAccessLevel>
+        </accountSettings>
+        <description>Service Cloud : Allow Support Managers to edit Customer Accounts (They need to manage Service Account Type for Watchlist customers)</description>
+        <label>Service Cloud : Supp Mgr : Account Edit</label>
+        <sharedTo>
+            <group>Service_Cloud_Supp_Mgrs_Account_Edit</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>NPN Account Registry,New Customer Account</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Share_CICN_with_Mark_Williams</fullName>
+        <accessLevel>Read</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>Read</caseAccessLevel>
+            <contactAccessLevel>Read</contactAccessLevel>
+            <opportunityAccessLevel>Read</opportunityAccessLevel>
+        </accountSettings>
+        <description>Shares CICN Accounts and Opportunities with Mark Williams</description>
+        <label>Share CICN with Mark Williams</label>
+        <sharedTo>
+            <group>WW_CICN_Industry_Group</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Industry</field>
+            <operation>equals</operation>
+            <value>CRISP (Consumer Internet Service Providers)</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Share_NPN_Accounts_with_POS_Submission_Admins</fullName>
+        <accessLevel>Edit</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>None</caseAccessLevel>
+            <contactAccessLevel>Edit</contactAccessLevel>
+            <opportunityAccessLevel>None</opportunityAccessLevel>
+        </accountSettings>
+        <description>Share NPN Accounts with POS Submission Admins(Florence Chan, Shaylin Cevering)</description>
+        <label>Share NPN Accounts with POS Submission Admins</label>
+        <sharedTo>
+            <group>POS_Submission_Admin</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>NPN Account Registry</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>POS_Reporter_ID__c</field>
+            <operation>notEqual</operation>
+            <value/>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Share_Non_NV_Developer_Account_with_Sales_Only</fullName>
+        <accessLevel>Edit</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>None</caseAccessLevel>
+            <contactAccessLevel>Edit</contactAccessLevel>
+            <opportunityAccessLevel>Edit</opportunityAccessLevel>
+        </accountSettings>
+        <description>Share Accounts with Sales role only along with Opptys</description>
+        <label>Share Non NV Developer Account with Sales Only</label>
+        <sharedTo>
+            <role>Sales</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>NPN Account Registry,NPN Community Account,New Customer Account</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Share_Non_NV_Developer_Account_with_Sales_and_Below</fullName>
+        <accessLevel>Read</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>None</caseAccessLevel>
+            <contactAccessLevel>Read</contactAccessLevel>
+            <opportunityAccessLevel>None</opportunityAccessLevel>
+        </accountSettings>
+        <description>Share Accounts with all internal users except users with Developer role</description>
+        <label>Share Non NV Developer Account with Sales and Below</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>Sales</roleAndSubordinatesInternal>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>NPN Account Registry,NPN Community Account,New Customer Account</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Share_with_DLI_Team</fullName>
+        <accessLevel>Edit</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>None</caseAccessLevel>
+            <contactAccessLevel>Edit</contactAccessLevel>
+            <opportunityAccessLevel>None</opportunityAccessLevel>
+        </accountSettings>
+        <description>DLI</description>
+        <label>Share with DLI Team</label>
+        <sharedTo>
+            <role>DLI_Sales</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>NPN Account Registry,New Customer Account</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Sold_To_Accounts_Read_Access</fullName>
+        <accessLevel>Read</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>None</caseAccessLevel>
+            <contactAccessLevel>Read</contactAccessLevel>
+            <opportunityAccessLevel>None</opportunityAccessLevel>
+        </accountSettings>
+        <label>Sold To Accounts Read Access</label>
+        <sharedTo>
+            <group>Soldto_Account_View_All</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Sold-To Partner Account</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Strategic_Hyperscale_Sharing</fullName>
+        <accessLevel>Read</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>Read</caseAccessLevel>
+            <contactAccessLevel>Read</contactAccessLevel>
+            <opportunityAccessLevel>Read</opportunityAccessLevel>
+        </accountSettings>
+        <description>Used to share Strategic Hyperscale Account information with Strategic Hyperscale managers</description>
+        <label>Strategic Hyperscale Sharing</label>
+        <sharedTo>
+            <role>NALA_Strategic_Hyperscale_Sales_Manager</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>Industry</field>
+            <operation>equals</operation>
+            <value>Strategic Hyperscale,CRISP (Consumer Internet Service Providers)</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Supercomputing_Account_Shared</fullName>
+        <accessLevel>Edit</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>None</caseAccessLevel>
+            <contactAccessLevel>Edit</contactAccessLevel>
+            <opportunityAccessLevel>Read</opportunityAccessLevel>
+        </accountSettings>
+        <description>Shares Supercomputing accounts globally</description>
+        <label>Supercomputing Account Shared</label>
+        <sharedTo>
+            <group>Supercomputing_Team</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Industry</field>
+            <operation>equals</operation>
+            <value>Supercomputing</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Billing_Region__c</field>
+            <operation>equals</operation>
+            <value>NALA</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>NPN Account Registry,New Customer Account</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Taiwan_Sharing_Rule_II</fullName>
+        <accessLevel>Read</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>Read</caseAccessLevel>
+            <contactAccessLevel>Read</contactAccessLevel>
+            <opportunityAccessLevel>Edit</opportunityAccessLevel>
+        </accountSettings>
+        <description>Taiwan sharing team</description>
+        <label>Taiwan Sharing Rule</label>
+        <sharedTo>
+            <group>Taiwan_Sharing_Team</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>BillingCountry</field>
+            <operation>equals</operation>
+            <value>Taiwan</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>NPN Account Registry,New Customer Account</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Tegra_Partner_Account_Sharing_Rule</fullName>
+        <accessLevel>Edit</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>None</caseAccessLevel>
+            <contactAccessLevel>Edit</contactAccessLevel>
+            <opportunityAccessLevel>Edit</opportunityAccessLevel>
+        </accountSettings>
+        <label>Tegra Partner Account Sharing Rule</label>
+        <sharedTo>
+            <group>Jetson_Channel_Admins</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Partner Account</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Tegra_Super_User</fullName>
+        <accessLevel>Edit</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>None</caseAccessLevel>
+            <contactAccessLevel>Edit</contactAccessLevel>
+            <opportunityAccessLevel>Edit</opportunityAccessLevel>
+        </accountSettings>
+        <label>Tegra Super User</label>
+        <sharedTo>
+            <group>TEGRA_EMBEDDED_SUPER_USER</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>NPN_Active_Program_Competency__c</field>
+            <operation>contains</operation>
+            <value>Tegra Embedded</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Transportation_Logistics_IBD</fullName>
+        <accessLevel>Read</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>Read</caseAccessLevel>
+            <contactAccessLevel>Read</contactAccessLevel>
+            <opportunityAccessLevel>Edit</opportunityAccessLevel>
+        </accountSettings>
+        <label>Transportation/Logistics IBD</label>
+        <sharedTo>
+            <group>Logistics_Transportation_IBD</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Industry</field>
+            <operation>equals</operation>
+            <value>Logistics &amp; Transportation</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>UK_and_Ireland_Visibility</fullName>
+        <accessLevel>Read</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>None</caseAccessLevel>
+            <contactAccessLevel>Read</contactAccessLevel>
+            <opportunityAccessLevel>Edit</opportunityAccessLevel>
+        </accountSettings>
+        <label>UK and Ireland Visibility</label>
+        <sharedTo>
+            <group>UK_and_Ireland_Visibility</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>BillingCountry</field>
+            <operation>equals</operation>
+            <value>United Kingdom,Ireland</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Walt_Disney</fullName>
+        <accessLevel>Read</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>Read</caseAccessLevel>
+            <contactAccessLevel>Read</contactAccessLevel>
+            <opportunityAccessLevel>Read</opportunityAccessLevel>
+        </accountSettings>
+        <label>Walt Disney Access</label>
+        <sharedTo>
+            <group>Walt_Disney_Access</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Name</field>
+            <operation>equals</operation>
+            <value>0014000000YXtFYAA1,0014000000OKIskAAH,0011W00002OuJNZQA3,0014000000VMWbvAAH,0014000000t8PqAAAU,0011W00001yWu0fQAC,0014000000bsxTLAAY,0014000000a43wUAAQ,0014000000OdXdjAAF,0014000000Ofh4OAAR</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Walt_Disney_Access</fullName>
+        <accessLevel>Read</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>None</caseAccessLevel>
+            <contactAccessLevel>Read</contactAccessLevel>
+            <opportunityAccessLevel>Read</opportunityAccessLevel>
+        </accountSettings>
+        <label>Walt Disney Access</label>
+        <sharedTo>
+            <group>Walt_Disney_Access</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Name</field>
+            <operation>equals</operation>
+            <value>ABC TV Network,ESPN Broadcast,Industrial Light and Magic,Lucasfilm (UK) Ltd,Lucasfilm Ltd,Pixar Animation Studios,The Walt Disney Company Europe Middle East and Africa,The Walt Disney Company GmbH,Walt Disney Animation Studios (WDAS)</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Name</field>
+            <operation>equals</operation>
+            <value>Walt Disney Television Animation (DTVA),Walt Disney Parks and Resorts</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingOwnerRules>
+        <fullName>APAC_Sales_Ops_Sharing</fullName>
+        <accessLevel>Edit</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>Read</caseAccessLevel>
+            <contactAccessLevel>Edit</contactAccessLevel>
+            <opportunityAccessLevel>Edit</opportunityAccessLevel>
+        </accountSettings>
+        <description>APAC Sales Ops sharing setup</description>
+        <label>APAC Sales Ops Sharing</label>
+        <sharedTo>
+            <role>APAC_Sales_Ops</role>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>APAC_Sales_VP</roleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>China_OEM_Sharing</fullName>
+        <accessLevel>Edit</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>Read</caseAccessLevel>
+            <contactAccessLevel>Edit</contactAccessLevel>
+            <opportunityAccessLevel>Edit</opportunityAccessLevel>
+        </accountSettings>
+        <description>Share all China and subs with China OEM Manager and subs</description>
+        <label>China OEM Sharing</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>China_OEM_Manager</roleAndSubordinatesInternal>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>China_Country_Manager</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>China_SA_Sharing2</fullName>
+        <accessLevel>Edit</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>Read</caseAccessLevel>
+            <contactAccessLevel>Edit</contactAccessLevel>
+            <opportunityAccessLevel>Edit</opportunityAccessLevel>
+        </accountSettings>
+        <description>Share all China and subs with China SAs</description>
+        <label>China SA Sharing</label>
+        <sharedTo>
+            <role>China_Solutions_Architect</role>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>China_Country_Manager</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Customer_Reference_Team_Account_Sharing</fullName>
+        <accessLevel>Edit</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>None</caseAccessLevel>
+            <contactAccessLevel>Edit</contactAccessLevel>
+            <opportunityAccessLevel>None</opportunityAccessLevel>
+        </accountSettings>
+        <description>Access to relate Customer Reference records to Accounts</description>
+        <label>Customer Reference Team Account Sharing</label>
+        <sharedTo>
+            <group>Customer_Reference</group>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>New_Hierarchy</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Dell_Account_Sharing_with_Collin</fullName>
+        <accessLevel>Edit</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>Read</caseAccessLevel>
+            <contactAccessLevel>Edit</contactAccessLevel>
+            <opportunityAccessLevel>Edit</opportunityAccessLevel>
+        </accountSettings>
+        <label>Dell Account Sharing with Collin</label>
+        <sharedTo>
+            <group>OEM_Sharing_Group_Collin_Tan</group>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>OEM_Sales_Dell</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>EMEAI_SA_Sharing</fullName>
+        <accessLevel>Edit</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>Read</caseAccessLevel>
+            <contactAccessLevel>Edit</contactAccessLevel>
+            <opportunityAccessLevel>Edit</opportunityAccessLevel>
+        </accountSettings>
+        <description>Share all EMEAI and subs with EMEAI SAs</description>
+        <label>EMEAI SA Sharing</label>
+        <sharedTo>
+            <role>EMEA_Solution_Architect</role>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>EMEA_Sales_VP</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>EMEAI_Sales_Ops_Sharing2</fullName>
+        <accessLevel>Edit</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>Read</caseAccessLevel>
+            <contactAccessLevel>Edit</contactAccessLevel>
+            <opportunityAccessLevel>Edit</opportunityAccessLevel>
+        </accountSettings>
+        <description>Share all EMEAI details with EMEAI Sales Ops</description>
+        <label>EMEAI Sales Ops Sharing</label>
+        <sharedTo>
+            <role>EMEA_Sales_Ops</role>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>EMEA_Sales_VP</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>EMEA_Inside_Sales_Sharing</fullName>
+        <accessLevel>Edit</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>None</caseAccessLevel>
+            <contactAccessLevel>Edit</contactAccessLevel>
+            <opportunityAccessLevel>Edit</opportunityAccessLevel>
+        </accountSettings>
+        <description>Sharing with EMEA inside sales</description>
+        <label>EMEA Inside Sales Sharing</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>EMEA_Inside_Sales_Manager</roleAndSubordinatesInternal>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>EMEA_Sales_VP</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>EMEA_PBM_Sharing</fullName>
+        <accessLevel>Read</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>None</caseAccessLevel>
+            <contactAccessLevel>Read</contactAccessLevel>
+            <opportunityAccessLevel>Read</opportunityAccessLevel>
+        </accountSettings>
+        <description>Share all EMEA with channel leaders and distribution</description>
+        <label>EMEA PBM Sharing</label>
+        <sharedTo>
+            <role>EMEA_Channel_Sales_Manager</role>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>EMEA_Sales_VP</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>HQ_Operations_Sharing</fullName>
+        <accessLevel>Edit</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>Read</caseAccessLevel>
+            <contactAccessLevel>Edit</contactAccessLevel>
+            <opportunityAccessLevel>Read</opportunityAccessLevel>
+        </accountSettings>
+        <description>Share all internal and external account and related data with HQ Operations roles</description>
+        <label>HQ Operations Sharing</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>HQ_Operations</roleAndSubordinatesInternal>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>Sales</roleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>HQ_Operations_Sharing_to_Administrator_Accounts</fullName>
+        <accessLevel>Edit</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>None</caseAccessLevel>
+            <contactAccessLevel>Edit</contactAccessLevel>
+            <opportunityAccessLevel>Read</opportunityAccessLevel>
+        </accountSettings>
+        <description>Share all Administrator accounts with HQ Operations and sub roles</description>
+        <label>HQ Operations Sharing to Administrator Accounts</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>HQ_Operations</roleAndSubordinatesInternal>
+        </sharedTo>
+        <sharedFrom>
+            <role>Administrator</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Inside_Sales_GRID_PSS_Acct_Sharing</fullName>
+        <accessLevel>Edit</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>None</caseAccessLevel>
+            <contactAccessLevel>Edit</contactAccessLevel>
+            <opportunityAccessLevel>None</opportunityAccessLevel>
+        </accountSettings>
+        <description>Used to share accounts in an edit fashion to GRID PSS NSC users</description>
+        <label>Inside Sales GRID PSS Acct Sharing</label>
+        <sharedTo>
+            <role>NALA_Inside_Sales_Product_Sales_Specialist_PSS</role>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>NALA_Sales_VP</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Japan_Enterprise_Manager_Sharing</fullName>
+        <accessLevel>Edit</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>Read</caseAccessLevel>
+            <contactAccessLevel>Edit</contactAccessLevel>
+            <opportunityAccessLevel>Edit</opportunityAccessLevel>
+        </accountSettings>
+        <description>Share all of Japan, subs and portal owned items with Japan Enterprise Manager 1</description>
+        <label>Japan Enterprise Manager Sharing</label>
+        <sharedTo>
+            <role>Japan_Enterprise_Sales_Manager_1</role>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>Japan_Sales_VP</roleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>LATAM_SA_Sharing</fullName>
+        <accessLevel>Read</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>Read</caseAccessLevel>
+            <contactAccessLevel>Read</contactAccessLevel>
+            <opportunityAccessLevel>Read</opportunityAccessLevel>
+        </accountSettings>
+        <label>LATAM SA Sharing</label>
+        <sharedTo>
+            <role>LATAM_Solution_Architect</role>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>LATAM_Sales_Manager</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Lenovo_Sharing_Rule_with_Collin</fullName>
+        <accessLevel>Edit</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>Read</caseAccessLevel>
+            <contactAccessLevel>Edit</contactAccessLevel>
+            <opportunityAccessLevel>Edit</opportunityAccessLevel>
+        </accountSettings>
+        <label>Lenovo Sharing Rule with Collin</label>
+        <sharedTo>
+            <group>OEM_Sharing_Group_Collin_Tan</group>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>OEM_Sales_Lenovo</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>MDFUsers</fullName>
+        <accessLevel>Read</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>None</caseAccessLevel>
+            <contactAccessLevel>Read</contactAccessLevel>
+            <opportunityAccessLevel>None</opportunityAccessLevel>
+        </accountSettings>
+        <label>MDF Users</label>
+        <sharedTo>
+            <group>MDFUsers</group>
+        </sharedTo>
+        <sharedFrom>
+            <allPartnerUsers/>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>NALA_Amazon_Sales_Sharing</fullName>
+        <accessLevel>Edit</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>Read</caseAccessLevel>
+            <contactAccessLevel>Edit</contactAccessLevel>
+            <opportunityAccessLevel>Edit</opportunityAccessLevel>
+        </accountSettings>
+        <description>Used to share Amazon records with the Amazon team</description>
+        <label>NALA Amazon Sales Sharing</label>
+        <sharedTo>
+            <role>NALA_Amazon_Sales</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>NALA_Amazon_Sales</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>NALA_CSP_Sharing_to_NALA_Ops1</fullName>
+        <accessLevel>Edit</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>Edit</caseAccessLevel>
+            <contactAccessLevel>Edit</contactAccessLevel>
+            <opportunityAccessLevel>Edit</opportunityAccessLevel>
+        </accountSettings>
+        <description>NALA CSP sharing to NALA Sales Ops</description>
+        <label>NALA CSP Sharing to NALA Ops</label>
+        <sharedTo>
+            <role>NALA_Other_Sales</role>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>NALA_Strategic_Hyperscale_Sales_Manager</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>NALA_CSP_Sharing_to_NALA_VP</fullName>
+        <accessLevel>Edit</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>Read</caseAccessLevel>
+            <contactAccessLevel>Edit</contactAccessLevel>
+            <opportunityAccessLevel>Read</opportunityAccessLevel>
+        </accountSettings>
+        <description>NALA CSP Sharing to NALA VP</description>
+        <label>NALA CSP Sharing to NALA VP</label>
+        <sharedTo>
+            <role>NALA_Sales_VP</role>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>NALA_Strategic_Hyperscale_Sales_Manager</roleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>NALA_HER_Inside_Sales_Sharing</fullName>
+        <accessLevel>Read</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>Read</caseAccessLevel>
+            <contactAccessLevel>Read</contactAccessLevel>
+            <opportunityAccessLevel>Read</opportunityAccessLevel>
+        </accountSettings>
+        <description>NALA HER Inside sales sharing with NALA HER manager</description>
+        <label>NALA HER Inside Sales Sharing</label>
+        <sharedTo>
+            <role>NALA_HER_O_G_Sales_Manager</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>NALA_Inside_Sales_HER</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>NALA_Sales_Tesla_Segment_CA</fullName>
+        <accessLevel>Edit</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>None</caseAccessLevel>
+            <contactAccessLevel>Edit</contactAccessLevel>
+            <opportunityAccessLevel>None</opportunityAccessLevel>
+        </accountSettings>
+        <label>NALA Sales_Tesla Segment CA</label>
+        <sharedTo>
+            <role>NALA_Sales</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>Tesla_Segment_Sales</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Renewal_Sales_Sharing</fullName>
+        <accessLevel>Edit</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>Read</caseAccessLevel>
+            <contactAccessLevel>Edit</contactAccessLevel>
+            <opportunityAccessLevel>Read</opportunityAccessLevel>
+        </accountSettings>
+        <description>Renewal Sales Sharing for Accounts, Contracts, Subscriptions and Assets</description>
+        <label>Renewal Sales Sharing</label>
+        <sharedTo>
+            <role>Renewal_Sales</role>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>Sales</roleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Russia_Team_Sharing</fullName>
+        <accessLevel>Edit</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>Edit</caseAccessLevel>
+            <contactAccessLevel>Edit</contactAccessLevel>
+            <opportunityAccessLevel>Edit</opportunityAccessLevel>
+        </accountSettings>
+        <label>Russia Team Sharing</label>
+        <sharedTo>
+            <group>Russia_Sales_Manager</group>
+        </sharedTo>
+        <sharedFrom>
+            <group>Russia_Sales_Manager</group>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>SA_Manager_Sharing</fullName>
+        <accessLevel>Read</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>Read</caseAccessLevel>
+            <contactAccessLevel>Read</contactAccessLevel>
+            <opportunityAccessLevel>Read</opportunityAccessLevel>
+        </accountSettings>
+        <description>Sharing rule for SA execs/managers</description>
+        <label>SA Manager Sharing</label>
+        <sharedTo>
+            <group>Solution_Architect_WW_Sharing</group>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>New_Hierarchy</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>SaleRepQuadroA723121</fullName>
+        <accessLevel>Edit</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>None</caseAccessLevel>
+            <contactAccessLevel>Edit</contactAccessLevel>
+            <opportunityAccessLevel>Read</opportunityAccessLevel>
+        </accountSettings>
+        <label>Sale Rep - QuadroA</label>
+        <sharedTo>
+            <role>SaleRepQuadro</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>SalesTeamLeadQuadro</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>SalesTeamLeadQuadroA</fullName>
+        <accessLevel>Edit</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>None</caseAccessLevel>
+            <contactAccessLevel>Edit</contactAccessLevel>
+            <opportunityAccessLevel>Edit</opportunityAccessLevel>
+        </accountSettings>
+        <label>Sales Team Lead - QuadroA</label>
+        <sharedTo>
+            <role>SalesTeamLeadQuadro</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>SalesLeadManagerTesla</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Sales_Tegra_Auto_Emb</fullName>
+        <accessLevel>Edit</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>None</caseAccessLevel>
+            <contactAccessLevel>Edit</contactAccessLevel>
+            <opportunityAccessLevel>Edit</opportunityAccessLevel>
+        </accountSettings>
+        <label>Sales - Tegra Auto/Emb</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>Sales_Lead_Manager_Tegra_Auto_Emb</roleAndSubordinatesInternal>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>Sales_Lead_Manager_Tegra_Auto_Emb</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Tegra_Embedded_Account_Sharing</fullName>
+        <accessLevel>Edit</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>None</caseAccessLevel>
+            <contactAccessLevel>Edit</contactAccessLevel>
+            <opportunityAccessLevel>Edit</opportunityAccessLevel>
+        </accountSettings>
+        <label>Tegra Embedded Account Sharing</label>
+        <sharedTo>
+            <role>SalesLeadManagerNotebookTegra</role>
+        </sharedTo>
+        <sharedFrom>
+            <group>Tegra_Embedded_Perm_Set</group>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

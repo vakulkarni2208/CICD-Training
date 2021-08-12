@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Closed_Comments_Automotive__c</fullName>
+    <description>JIRA#SDS-1779: This field is being used by Automotive team on both &apos;Closed Won&apos; and &apos;Closed Lost&apos; status of the Opportunity.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>For Closed Lost, include specific reason for loss.For Closed Won, include specific commentary that the end goal of the engagement is achieved. Signing agreements, shipping DRIVE Platform, or completing a Demo are not reasons to move the opportunity to Won</inlineHelpText>
+    <label>Closed Comments</label>
+    <length>1000</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

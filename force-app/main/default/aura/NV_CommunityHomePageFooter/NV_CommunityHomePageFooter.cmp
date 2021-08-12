@@ -1,0 +1,33 @@
+<aura:component >    
+       
+    <div style="background-color:#000000;">
+        <!--<div style="background-color:#000000; height:60px; width:100%; color: #fff;">-->
+            <div class="slds-p-around_medium" style="float:left; color:#fff; background-color:#000000;padding-left:2.5%;">
+                <div style="float:left;height:40px;width:50px;background-size:cover;background-image: url(/resource/NPN_Community_HomePage_Footer_Image/NPN_Community_HomePage_Footer_Image/FooterImages/EM.PNG);padding-left:2%;"></div>
+                <div style="float:left;height:40px;padding-left:20px;padding-top:10px;text-align:center;">{!$Label.c.SIGN_UP_FOR_NVIDIA_NEWS}</div>
+                <div style="float:left;height:40px;padding-left:20px;padding-top:5px;"><lightning:button class="button" label="SUBSCRIBE" onclick="{!c.openActionWindow}" /></div>
+            </div> 
+            <div class="slds-p-around_medium" style="float:right;background-color:#000000;">
+                <a href="https://www.facebook.com/NVIDIA" target="_blank" > <img style="height: 40px;" src="/resource/NPN_Community_HomePage_Footer_Image/NPN_Community_HomePage_Footer_Image/FooterImages/final/FB.PNG" title="Facebook"/></a>
+                <a href="https://twitter.com/nvidia" target="_blank"> <img style="height: 40px;" src="/resource/NPN_Community_HomePage_Footer_Image/NPN_Community_HomePage_Footer_Image/FooterImages/final/TW.PNG" title="Twitter"/></a>        
+                <a href="https://www.youtube.com/user/nvidia" target="_blank"><img style="height: 40px;" src="/resource/NPN_Community_HomePage_Footer_Image/NPN_Community_HomePage_Footer_Image/FooterImages/final/YT.PNG" title="Youtube"/></a>
+                <!--<a href="https://www.twitch.tv/nvidia" target="_blank"> <img style="height: 40px;" src="/resource/NPN_Community_HomePage_Footer_Image/NPN_Community_HomePage_Footer_Image/FooterImages/final/Twitch.PNG" title="Twitch"/></a> -->
+            </div>
+        <!--</div>    -->
+        <div style="clear:both" />
+        <div style="background-color: #f1f1f1;" class="slds-p-top_x-small" >
+            <!--<div>-->
+            	<div style="float:left;margin-left:3%;height:35px;width:130px;background-size:cover;background-image: url(/resource/NPN_Community_HomePage_Footer_Image/NPN_Community_HomePage_Footer_Image/FooterImages/NVLogo_2D_H_small.jpeg);" />           
+                <div style="float:right;margin-right:2%;">
+                    <a href="https://www.nvidia.com/en-in/about-nvidia/privacy-policy/" target="_blank" style="color: #ccc;">{!$Label.c.Privacy_Policy} &nbsp;&nbsp;|</a>
+                    <a href="https://www.nvidia.com/en-us/about-nvidia/legal-info/" target="_blank" style="color: #ccc">&nbsp;&nbsp;{!$Label.c.Legal_Info} &nbsp;&nbsp;|</a>
+                    <a href="https://www.nvidia.com/en-us/contact/" target="_blank" style="color: #ccc">&nbsp;&nbsp;{!$Label.c.Contact_Us} </a>
+                </div>    
+            <!--</div>-->
+            <div style="clear:both" />
+            <div style="width:100%;color:#ccc;background-color: #f1f1f1;text-align:right" class="slds-p-right_large" >
+                {!$Label.c.Copyright_2019_NVIDIA_Corporation}
+            </div>        
+        </div>  
+    </div>
+</aura:component>

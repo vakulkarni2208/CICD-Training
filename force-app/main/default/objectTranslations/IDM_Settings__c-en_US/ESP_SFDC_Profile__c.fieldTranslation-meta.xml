@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- ESP : Service Cloud profile for external users --></help>
+    <label><!-- ESP_SFDC_Profile --></label>
+    <name>ESP_SFDC_Profile__c</name>
+</CustomFieldTranslation>

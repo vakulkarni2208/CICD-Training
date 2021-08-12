@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product_SKU_must_be_Populated_for_DGX</fullName>
+    <active>true</active>
+    <description>ProductCode</description>
+    <errorConditionFormula>OR (AND(ISBLANK(  StockKeepingUnit  ), IsCPQ__c = True,   ISPICKVAL(Product_Line__c, &apos;DGX&apos;), ISPICKVAL(Product_Type__c, &apos;Hardware&apos;) ),
+
+AND(IF(StockKeepingUnit == ProductCode, True, False) , IsCPQ__c = True,   ISPICKVAL(Product_Line__c, &apos;DGX&apos;), ISPICKVAL(Product_Type__c, &apos;Hardware&apos;) )
+)</errorConditionFormula>
+    <errorDisplayField>StockKeepingUnit</errorDisplayField>
+    <errorMessage>Valid Product SKU must be populated.</errorMessage>
+</ValidationRule>

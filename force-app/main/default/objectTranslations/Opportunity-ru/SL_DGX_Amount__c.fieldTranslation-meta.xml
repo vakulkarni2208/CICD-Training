@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Sales Leaders, this is a view of the DGX opportunity amount. Used to either communicate potential upside or downside. This is not required if you are aligned with the opportunity dollar value. --></help>
+    <label><!-- SL DGX Amount --></label>
+    <name>SL_DGX_Amount__c</name>
+</CustomFieldTranslation>

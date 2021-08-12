@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Prompt xmlns="http://soap.sforce.com/2006/04/metadata">
+    <masterLabel>Account Record Page changes</masterLabel>
+    <promptVersions>
+        <actionButtonLabel>What&apos;s NEW?</actionButtonLabel>
+        <actionButtonLink>https://nvidia.sharepoint.com/:p:/r/sites/WWFONVIDIACRMInstructionalMaterials/_layouts/15/Doc.aspx?sourcedoc=%7B8FE02F9B-B46E-4949-97EA-C1BBA48902F8%7D&amp;file=Account%20Page%20Layout.pptx&amp;action=edit&amp;mobileredirect=true</actionButtonLink>
+        <body>&apos;Simplified Pages!  Enjoy a streamlined experience to find your Account  data.  Check out the Related Quick List Links &amp; the Sub Tabs to quickly navigate your data with ease</body>
+        <customApplication>NVIDIA_Sales_Lightning2</customApplication>
+        <delayDays>1</delayDays>
+        <description>To highlight changes in Account Record Page june 2020</description>
+        <dismissButtonLabel>Not Now</dismissButtonLabel>
+        <displayPosition>TopCenter</displayPosition>
+        <displayType>FloatingPanel</displayType>
+        <endDate>2020-06-12</endDate>
+        <isPublished>true</isPublished>
+        <masterLabel>Account Record Page changes</masterLabel>
+        <publishedDate>2020-06-03</publishedDate>
+        <shouldDisplayActionButton>true</shouldDisplayActionButton>
+        <shouldIgnoreGlobalDelay>true</shouldIgnoreGlobalDelay>
+        <startDate>2020-06-03</startDate>
+        <targetPageKey1>Account</targetPageKey1>
+        <targetPageKey2>view</targetPageKey2>
+        <targetPageType>standard__recordPage</targetPageType>
+        <timesToDisplay>10</timesToDisplay>
+        <title>New Simplified Accounts Record Page!</title>
+        <userAccess>Everyone</userAccess>
+        <userProfileAccess>Everyone</userProfileAccess>
+        <versionNumber>1</versionNumber>
+    </promptVersions>
+</Prompt>

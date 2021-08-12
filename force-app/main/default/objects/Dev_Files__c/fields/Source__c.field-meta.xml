@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Source__c</fullName>
+    <externalId>false</externalId>
+    <label>Source</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Extranet</fullName>
+                <default>false</default>
+                <label>Extranet</label>
+            </value>
+            <value>
+                <fullName>Devzone</fullName>
+                <default>false</default>
+                <label>Devzone</label>
+            </value>
+            <value>
+                <fullName>NGC</fullName>
+                <default>false</default>
+                <label>NGC</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

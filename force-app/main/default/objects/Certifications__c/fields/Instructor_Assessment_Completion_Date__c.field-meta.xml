@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Instructor_Assessment_Completion_Date__c</fullName>
+    <description>SDS-2656: DLI/DMS 2.0 change</description>
+    <externalId>false</externalId>
+    <label>Instructor Assessment Completion Date</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

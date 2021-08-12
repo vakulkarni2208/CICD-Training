@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>In_Progress_Stage_for_SCOPE_Approved_Opp</fullName>
+    <active>true</active>
+    <description>Only the approval mechanism can move the SCOPE Opportunities to In Progress Stage</description>
+    <errorConditionFormula>AND (
+  RecordType.DeveloperName = &quot;OEM_Bid_Opportunity&quot; , 
+  ISPICKVAL ( StageName , &quot;Approved - In Progress&quot; ) , 
+  ( PRIORVALUE (StageName) = &quot;Submitted - Pending Approval&quot; ))</errorConditionFormula>
+    <errorDisplayField>StageName</errorDisplayField>
+    <errorMessage>The In Progress stage will be automatically selected after approval is completed</errorMessage>
+</ValidationRule>

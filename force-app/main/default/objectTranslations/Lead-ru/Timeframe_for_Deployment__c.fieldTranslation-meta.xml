@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Timeframe for Deployment --></label>
+    <name>Timeframe_for_Deployment__c</name>
+    <picklistValues>
+        <masterLabel>Considering Deployment within 1 Year</masterLabel>
+        <translation><!-- Considering Deployment within 1 Year --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Considering Deployment within 6 Months</masterLabel>
+        <translation><!-- Considering Deployment within 6 Months --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Deployed Already</masterLabel>
+        <translation><!-- Deployed Already --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Just Fact Finding Now</masterLabel>
+        <translation><!-- Just Fact Finding Now --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

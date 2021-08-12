@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Issue Type --></label>
+    <name>Issue_Type__c</name>
+    <picklistValues>
+        <masterLabel>Game display</masterLabel>
+        <translation><!-- Game display --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Game rendering</masterLabel>
+        <translation><!-- Game rendering --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Login</masterLabel>
+        <translation><!-- Login --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Session Start</masterLabel>
+        <translation><!-- Session Start --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Uninterrupted Session play</masterLabel>
+        <translation><!-- Uninterrupted Session play --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>User metadata</masterLabel>
+        <translation><!-- User metadata --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Deal_Reg_Reqd_Fields__c</fullName>
+    <description>Fields that are required to have values before the Deal is submitted for Approval</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Fields that are required to have values before the Deal is submitted for Approval</inlineHelpText>
+    <label>Deal Reg Reqd Fields</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

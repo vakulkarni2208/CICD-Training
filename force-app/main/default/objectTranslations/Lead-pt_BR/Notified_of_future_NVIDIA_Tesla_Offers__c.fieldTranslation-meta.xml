@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Check the box if you would like to be notified of future NVIDIA promotional offers and information. --></help>
+    <label><!-- Notify me of future NVIDIA Offers? --></label>
+    <name>Notified_of_future_NVIDIA_Tesla_Offers__c</name>
+</CustomFieldTranslation>

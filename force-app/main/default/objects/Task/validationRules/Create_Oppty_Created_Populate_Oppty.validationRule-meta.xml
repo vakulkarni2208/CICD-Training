@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Create_Oppty_Created_Populate_Oppty</fullName>
+    <active>true</active>
+    <description>If on a sales play a user selects that the Create Opportunity field is Completed require the Opportunity to be linked to</description>
+    <errorConditionFormula>AND ( ISPICKVAL( Create_Opportunity__c , &quot;Completed&quot; ) ,
+  RecordType.Name= &apos;Sales Play&apos;,
+ ISBLANK (Link_to_Customer_Opportunity__c ))</errorConditionFormula>
+    <errorDisplayField>Link_to_Customer_Opportunity__c</errorDisplayField>
+    <errorMessage>To finalize this Sales Play task please make sure an Opportunity has been created and is linked in the Sales Play Opportunity field</errorMessage>
+</ValidationRule>

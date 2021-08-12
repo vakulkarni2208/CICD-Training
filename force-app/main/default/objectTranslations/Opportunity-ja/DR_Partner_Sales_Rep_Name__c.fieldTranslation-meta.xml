@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Partner Sales Rep Name --></label>
+    <name>DR_Partner_Sales_Rep_Name__c</name>
+    <relationshipLabel><!-- Opportunities (Partner Sales Rep Name) --></relationshipLabel>
+</CustomFieldTranslation>

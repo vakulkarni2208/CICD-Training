@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Please use format - - &gt;SL Forecast-Region-YYQQ (fiscal year and quarter) --></help>
+    <label><!-- SL Forecast Name --></label>
+    <name>SL_Forecast_Name__c</name>
+</CustomFieldTranslation>

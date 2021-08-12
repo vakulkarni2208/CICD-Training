@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Leadspace - custom field to track if the LSID is populated or not. Used to help in the mass enrichment of Target List accounts --></help>
+    <label><!-- LSID IsBlank --></label>
+    <name>LSID_IsBlank__c</name>
+</CustomFieldTranslation>

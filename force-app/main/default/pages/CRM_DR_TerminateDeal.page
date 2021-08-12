@@ -1,0 +1,42 @@
+<!--  
+    2017.11.29 - PJENA - Deal Registration - only allow Deal Registration types to be terminated
+-->
+
+<apex:page standardController="Opportunity" extensions="CRM_DR_TerminateDeal_cls">
+    <script>
+        function showConfirmation(textId){
+            var vTxtReasonForTermination = document.getElementById(textId).value;
+            if (vTxtReasonForTermination.length == 0){
+                alert('You must give a reason for terminating this registered opportunity!');
+                return false;
+            }else{
+                var bConfirm = confirm("Are you sure you want to terminate this registered opportunity?");
+                if (bConfirm == false) {
+                    return false;
+                }
+            }
+
+        }
+    </script>
+<apex:form >
+    <apex:pageMessages />
+    <apex:pageBlock id="theBlock" title="Registered Opportunity Termination">
+                
+        <apex:pageBlockSection id="theSection" columns="1" rendered="{!showSaveAction == true}">
+            <apex:panelGrid id="theGrid" columns="2">
+                <apex:outputLabel value="Reason for Termination: " for="txtReasonForTermination"/>
+                <apex:inputTextArea cols="3" id="txtReasonForTermination" value="{!reasonForTermination}" style="margin: 0px; width: 426px; height: 56px;"/>
+            </apex:panelGrid>
+            <apex:panelGrid columns="2">
+                <apex:commandButton value="Terminate" action="{!terminateDeal}" onclick="javascript: return showConfirmation('{!$Component.txtReasonForTermination}');"/>
+                <apex:commandButton value="Cancel" action="{!cancelDealTermination}" />
+            </apex:panelGrid>
+        </apex:pageBlockSection>
+        
+        <apex:pageBlockSection id="onlyCancelSection" columns="1" rendered="{!showSaveAction == false}">
+            <apex:commandButton value="Cancel" action="{!cancelDealTermination}" />
+        </apex:pageBlockSection>
+        
+    </apex:pageBlock>
+</apex:form>
+</apex:page>

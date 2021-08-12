@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Explain how the customer will use their NVIDIA product. What are you looking to achieve using the NVIDIA solution? --></help>
+    <label><!-- How do you plan to use this product? --></label>
+    <name>How_do_you_plan_to_use_this_product__c</name>
+</CustomFieldTranslation>

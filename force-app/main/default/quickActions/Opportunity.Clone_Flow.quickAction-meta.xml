@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>SOQ-58; Clone Opportunity with Products, Quote and Quote Lines.</description>
+    <flowDefinition>SOQ_FL_Clone_opportunity_with_related_record</flowDefinition>
+    <label>Clone with Related</label>
+    <optionsCreateFeedItem>false</optionsCreateFeedItem>
+    <type>Flow</type>
+</QuickAction>

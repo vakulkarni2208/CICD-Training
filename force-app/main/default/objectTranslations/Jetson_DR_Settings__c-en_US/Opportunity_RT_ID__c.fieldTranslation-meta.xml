@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Record type Id for converted Tegra Embedded Partner Opportunity --></help>
+    <label><!-- Opportunity : RT ID --></label>
+    <name>Opportunity_RT_ID__c</name>
+</CustomFieldTranslation>

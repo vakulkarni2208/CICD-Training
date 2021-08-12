@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reason_for_Transfer__c</fullName>
+    <externalId>false</externalId>
+    <label>Reason for Transfer</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>CMT Initiated Account Merges</fullName>
+                <default>false</default>
+                <label>CMT Initiated Account Merges</label>
+            </value>
+            <value>
+                <fullName>Divestiture</fullName>
+                <default>false</default>
+                <label>Divestiture</label>
+            </value>
+            <value>
+                <fullName>M&amp;A</fullName>
+                <default>false</default>
+                <label>M&amp;A</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>PEC/PECC Correction</fullName>
+                <default>false</default>
+                <label>PEC/PECC Correction</label>
+            </value>
+            <value>
+                <fullName>SO Needs</fullName>
+                <default>false</default>
+                <label>SO Needs</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

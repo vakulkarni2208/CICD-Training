@@ -1,0 +1,6 @@
+<design:component label="NVIDIA ESP Community Theme">
+	<design:attribute name="IsHome" label="Is this the Homepage?" />
+    <design:attribute name="showNav" label="Show navigation?" />
+    <design:attribute name="bkgdImg" label="Background Image" 
+                      datasource="Home,Cases,KB,Announcement,Entitlement,Generic" default="Home" />
+</design:component>

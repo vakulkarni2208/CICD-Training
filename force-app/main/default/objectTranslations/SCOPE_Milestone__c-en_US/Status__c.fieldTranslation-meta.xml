@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Update this field to ‘Files Attached - Ready to Submit’ once your milestone documentation has been attached here and your opportunity is in progress. Then select ‘Submit for Approval’ at the top. --></help>
+    <label><!-- Status --></label>
+    <name>Status__c</name>
+    <picklistValues>
+        <masterLabel>Approved</masterLabel>
+        <translation><!-- Approved --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Files Attached – Ready to Submit</masterLabel>
+        <translation><!-- Files Attached – Ready to Submit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waiting on Partner</masterLabel>
+        <translation><!-- Waiting on Partner --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

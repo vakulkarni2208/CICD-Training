@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PageBlock__c</fullName>
+    <externalId>false</externalId>
+    <label>PageBlock</label>
+    <referenceTo>PageBlock__c</referenceTo>
+    <relationshipLabel>Buttons</relationshipLabel>
+    <relationshipName>Buttons</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

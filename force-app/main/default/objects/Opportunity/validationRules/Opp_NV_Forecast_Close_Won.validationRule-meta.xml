@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Opp_NV_Forecast_Close_Won</fullName>
+    <active>true</active>
+    <description>SDS-1474</description>
+    <errorConditionFormula>AND( 
+ NOT($Permission.DEPLOYMENT_USER_SKIP_VALIDATIONS), 
+ ISPICKVAL(NV_Forecast_Category__c, &apos;1-Closed&apos;), 
+ NOT(ISPICKVAL(StageName, &quot;Closed Won&quot;)), 
+ RecordType.Name = &apos;Enterprise Sales Opportunity&apos;
+)</errorConditionFormula>
+    <errorMessage>NV forecast category cannot be 1-Closed when the opportunity stage is not closed won</errorMessage>
+</ValidationRule>

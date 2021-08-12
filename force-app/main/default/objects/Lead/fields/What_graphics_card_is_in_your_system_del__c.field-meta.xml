@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>What_graphics_card_is_in_your_system_del__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Please select one</inlineHelpText>
+    <label>What graphics card is in your system?</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>NVIDIA Quadro</fullName>
+                <default>false</default>
+                <label>NVIDIA Quadro</label>
+            </value>
+            <value>
+                <fullName>NVIDIA Tesla</fullName>
+                <default>false</default>
+                <label>NVIDIA Tesla</label>
+            </value>
+            <value>
+                <fullName>NVIDIA GeForce</fullName>
+                <default>false</default>
+                <label>NVIDIA GeForce</label>
+            </value>
+            <value>
+                <fullName>NVIDIA NVS</fullName>
+                <default>false</default>
+                <label>NVIDIA NVS</label>
+            </value>
+            <value>
+                <fullName>ATI FireGL/FirePro</fullName>
+                <default>false</default>
+                <label>ATI FireGL/FirePro</label>
+            </value>
+            <value>
+                <fullName>ATI Radeon</fullName>
+                <default>false</default>
+                <label>ATI Radeon</label>
+            </value>
+            <value>
+                <fullName>Integrated Graphics</fullName>
+                <default>false</default>
+                <label>Integrated Graphics</label>
+            </value>
+            <value>
+                <fullName>Unknown</fullName>
+                <default>false</default>
+                <label>Unknown</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

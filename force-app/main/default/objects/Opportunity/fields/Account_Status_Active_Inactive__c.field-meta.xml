@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Account_Status_Active_Inactive__c</fullName>
+    <externalId>false</externalId>
+    <formula>IMAGE(IF( Account.Inactive__c = true, &quot;/resource/Account_Status_Flag_InActive&quot;, &quot;/resource/Account_Status_Flag_Active&quot;),  IF(Account.Inactive__c = true, &quot;Inactive&quot;, &quot;Active&quot;) )</formula>
+    <label>Active/Inactive</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,462 @@
+<!--
+    2017.05.19 - VKULK- LOG A SUPPORT REQUEST validations & attachments
+    2018.08.17 - PJENA - Brainshark New UI - Increase iframe height
+    2019.05.26 - PJENA - SDS-889 - PUB: Add Service Cloud to NPN Portal using SSO
+    2019.06.22 - PJENA - add Brainshark iFrame attribute allowfullscreen for full screen
+-->
+<apex:page controller="NV_PartnerCommunityTabs" showHeader="true" sidebar="false" action="{!insertCustomSettings}">
+    <head>
+        <apex:StyleSheet value="{!URLFOR($Resource.Bootstrap, '/bootstrap-3.3.6-dist/css/bootstrap.min.css')}"/>
+        <apex:includeScript value="https://code.jquery.com/jquery-1.9.1.js"  />
+        <apex:includeScript value="{!URLFOR($Resource.AngularJSFlowChart, '/Angular/js/angular.min.js')}"/>
+        <apex:includeScript value="{!URLFOR($Resource.Bootstrap, '/bootstrap-3.3.6-dist/js/bootstrap.min.js')}"/>
+        <style>  
+             html, body {margin:0;padding:0;height:100%;}
+             [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+                display: none !important;
+             }
+             div.boxCardBS {
+                 width: 30%;
+                 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                 text-align: left;
+                 margin-top:10px;
+                 margin-right:3%;
+                 margin-bottom:3%;
+                 float:left;
+                 border-radius: 5px;
+             }
+            
+             div.boxHeaderBS {
+                 background-color: #D3D3D3;
+                 color: #404040;
+                 padding: 10px;
+                 font-size: 14px;
+                 font-weight:bold;
+                 border-radius: 5px 5px 0px 0px;
+             }
+            
+             div.boxContentBS {
+                 padding-top: 10px;
+                 padding-left: 10px;
+                 overflow:auto;
+                 max-height: 160px;
+                 min-height: 160px;
+             }
+            .tabpanal { 
+                font-family: verdana,sans-serif; 
+                font-size: 14px;
+                width: 30%;
+                white-space: nowrap;
+                text-align: center;   
+                border-style: solid;
+                border-color: white;
+                border-left-width: 1px;
+                border-right-width: 1px;
+                border-top-width: 1px;
+                border-bottom-width: 0px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                margin-right: 3%;
+                float: left
+            }
+
+            .cursorPointer {
+                cursor: pointer;
+            }
+            
+            a {
+                cursor: pointer;
+                color: black;
+                font-size:14px;
+            }
+            #panelId {
+                clear:both;
+            }   
+            .tabfocus { 
+                background-color: #76B900;
+                color: white;
+            }
+            .tabfocus123 { 
+                background-color: white;
+                color: white;
+            }
+              
+            ul {   
+                list-style-image:url();      
+            }
+            #content {
+               margin-top:0px;
+               margin-left: auto;
+               margin-right: auto;
+               //text-align:center;
+               position: relative;
+               zoom: 1;
+               padding:8px;
+            }
+            .container {
+                //box-shadow: 0 0 30px black;
+                padding:8px 15px 8px 15px;
+            }
+             .buttonNV {
+                background-color: #76B900;
+                display: inline-block;
+                padding: 6px 12px;
+                margin-top: 2%;
+                margin-bottom: 0;
+                margin-left: 40%;
+                margin-right: 40%;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 1.42857143;
+                text-align: center;
+                white-space: nowrap;
+                vertical-align: middle;
+                -ms-touch-action: manipulation;
+                touch-action: manipulation;
+                cursor: pointer;
+                -webkit-user-select: none;
+                moz-border-radius: 5px;
+                -webkit-border-radius: 5px; /* Safari 5.1+, Chrome 10+ */
+                border-radius: 5px; /* IE */
+            }
+            .button-successNV {
+                color: #fff;
+                background-color: #76B900;
+                border-color: #4cae4c;
+            }
+        </style>    
+    </head>
+    
+    <script>
+       function openinNewTab(url) {       
+             window.open(url,target="_blank");
+       }
+    </script>
+
+
+        <div class="fluid-container" ng-app="CommunityTabsApp">  
+            <div ng-controller="CommunityTabsCtrl">
+                <div class="container ng-cloak">
+                    <div id="content">
+                            <!-- LOG A SUPPORT REQUEST form-->  
+                        <div id="supportRequestModal" class="modal fade" role="dialog">
+                            <div class="modal-dialog modal-lg">
+                                <form name="logASupportRequestForm" ng-submit="logASupportRequestFn()" ng-class="{'has-error': logASupportRequestForm.shortDesc.$error.maxlength}">
+                                <!-- Modal content-->
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h3 class="modal-title"><b> <font color="#393939"><span class="glyphicon glyphicon-envelope"></span> {!$Label.COMM_CP_VF_EMAIL_Log_a_Support_Request}</font> </b> </h3>
+                                  </div>
+                                  <div class="modal-body">                          
+                                        <apex:pageMessages />
+                                      <fieldset class="form-group">
+                                         <label for="contentTypeId"><b>{!$Label.COMM_CP_VF_EMAIL_Competency}&nbsp;<span style="color:red;">*</span></b></label>
+                                         <select class="form-control" name="LSRcompetency" id="contentTypeId" ng-options="contentType.label for contentType in logASupportRequest.portalContentTypes track by contentType.value" ng-model="logASupportRequest.selectedContentType" required="true"> 
+                                             <!--<option ng-repeat="contentType in logASupportRequest.portalContentTypes" value="{{contentType.value}}">{{contentType.label}}</option>-->
+                                         </select>
+                                      </fieldset>
+                                      <fieldset class="form-group">
+                                        <label for="cname"><b>{!$Label.COMM_CP_VF_EMAIL_Company_Name}</b></label>
+                                        <input class="form-control" id="cname" type="text" ng-model="logASupportRequest.contact.AccountName" disabled="true" />
+                                      </fieldset>
+                                      <fieldset class="form-group">
+                                        <label for="conname"><b>{!$Label.COMM_CP_VF_EMAIL_Contact_Name}</b></label> 
+                                        <input class="form-control" id="conname" type="text" ng-model="logASupportRequest.contact.FirstName" disabled="true" />
+                                      </fieldset>
+                                      <fieldset class="form-group">
+                                        <label for="emailid"><b>{!$Label.COMM_CP_VF_EMAIL_Contact_Email_Address}</b></label>
+                                        <input class="form-control" id="emailid" type="text" ng-model="logASupportRequest.contact.Email" disabled="true" />
+                                      </fieldset>
+                                      <fieldset class="form-group">
+                                        <label for="phoneId1"><b>{!$Label.COMM_CP_VF_EMAIL_Contact_Phone_Number}&nbsp;<span style="color:red;">*</span></b></label>
+                                        <input type="text" class="form-control" name="phone" ng-model="logASupportRequest.contact.Phone" required="true" minlength="10" id="phoneId1" ng-if="logASupportRequest.contact.MobilePhone == ''" />
+                                        <input class="form-control" id="phoneId2" type="text" ng-model="logASupportRequest.contact.MobilePhone" ng-if="logASupportRequest.contact.MobilePhone != ''" disabled="true" />
+                                      </fieldset>
+                                      <fieldset class="form-group">
+                                        <label for="shortDescId"><b>{!$Label.COMM_CP_VF_EMAIL_Short_Desc}&nbsp;<span style="color:red;">*</span></b></label>
+                                        <input type="text" class="form-control" name="shortDesc" id="shortDescId" ng-model="logASupportRequest.problemType" required="true" width="80%" maxlength="45" ng-maxlength="45" /> 
+                                      </fieldset>
+                                      <fieldset class="form-group">
+                                        <label for="descId"><b>{!$Label.COMM_CP_VF_EMAIL_Problem_Desc}&nbsp;<span style="color:red;">*</span></b></label>
+                                        <textarea class="form-control" name="problemDesc" ng-model="logASupportRequest.problemDescription" required="true" id="descId" height="100px" width="80%" /> 
+                                      </fieldset>       
+                                      <fieldset class="form-group">
+                                        <label for="stepsId"><b>{!$Label.COMM_CP_VF_EMAIL_Steps_to_Reproduce}&nbsp;<span style="color:red;">*</span></b></label>
+                                        <textarea class="form-control" name="stepsToReproduce" ng-model="logASupportRequest.stepToReproduce" required="true" id="stepsId" height="100px" width="80%" />
+                                      </fieldset>             
+                                      <fieldset class="form-group">
+                                        <label for="supportDocsId"><b>{!$Label.COMM_CP_VF_EMAIL_Attach_Support_Docs}</b></label>
+                                        <input type="file" id="supportDocsId" class="form-control-file" fileread="logASupportRequest.FileBody" />                                 
+                                        <small class="text-muted">{!$Label.COMM_CP_VF_EMAIL_Attach_Support_Docs_Example}</small>
+                                      </fieldset>                                     
+                                  </div>
+                                  <div class="modal-footer">
+                                     <button class="btn pull-left btn-default" ng-disabled="isLSRInvalid()" type="submit">{!$Label.COMM_CP_VF_EMAIL_Send}</button> 
+                                     <button type="button" class="btn btn-danger btn-default" data-dismiss="modal">Close</button>
+                                  </div>
+                                </div>
+                            </form>
+                           </div>
+                        </div>                  
+                        <!-- Giving a report a problem button when selected tab is support and REPORT A PROBLEM BUTTON permission set assigned to user. -->   
+                        <div ng-if="lstPortalContentTypes.length > 1 && tabName != 'Training'">
+                            <div ng-repeat="contentType in lstPortalContentTypes">
+                                <span ng-if="selectedContentType != contentType.strToggleName && lstPortalContentTypes.length != 1">
+                                    <div id="tab1focus" class="tabpanal cursorPointer tabfocus123" style="display:block;">
+                                        <!--  <apex:commandLink style="padding:8px;font-weight:bold" id="btnIdA" action="{!selectContentType}" reRender="panel1Id, panelId" title="{!varTD.strToggleDetail}">{!varTD.strToggleName}
+                                            <apex:param assignTo="{!selectedContentType}" value="{!varTD.strToggleName}" name="selectedContentType"/>
+                                        </apex:commandLink>-->
+                                        <a title="{{contentType.strToggleDetail}}" href="" ng-click="changeCompetencyFn(contentType.strToggleName)">
+                                            {{contentType.strToggleName}}
+                                        </a>
+                                    </div>
+                                </span>
+                                
+                                <!-- Setting white background for the selected content type or only single content type exist for the logged in user. -->  
+                                <span ng-if="selectedContentType == contentType.strToggleName || lstPortalContentTypes.size==1">
+                                     <div id="tab1focus" class="tabpanal tabfocus" style="display:block;">
+                                        <span style="padding:8px;color:white;font-weight:bold">{{contentType.strToggleName}}</span>
+                                     </div>
+                                </span>          
+                            </div>
+                        </div>
+                        <!-- LOG A SUPPORT REQUEST -->
+                        <div ng-if="tabName=='Support' && isReportAProblem && bUnRestricted">
+                            <!-- <div class="buttonNV button-successNV" data-toggle="modal" data-target="#supportRequestModal"><b style="text-transform: uppercase;">{!$Label.COMM_CP_VF_EMAIL_Log_a_Support_Request}</b></div>-->
+                            <div class="buttonNV button-successNV" onclick="window.open('{!$Label.NPNHomePage_ESPCommunity_URL}');"><b style="text-transform: uppercase;">{!$Label.NPNHomePage_Log_a_Support_Request_button_Label}</b></div>
+                        </div>
+                        <div id="panelId"> 
+                            <div ng-repeat="objBoxList in lstBoxListToBeDisplayed">                
+                                <div class="boxCardBS">
+                                    <div class="boxHeaderBS">{{objBoxList.label}}</div>
+                                    <div class="boxContentBS">
+                                        <div ng-repeat="objBoxContent in objBoxList.lstBoxContent">  
+                                            <span ng-if="objBoxContent.displayBullet">                                        
+                                                <img ng-src="{{image_url}}" height="15" width="15"/>                                         
+                                                </span>
+                                               <span ng-if="(objBoxContent.displayPageWindow=='Open in a New Tab' || objBoxContent.displayPageWindow=='') && objBoxContent.IsLink">                            
+                                                   <a id="theLink" onclick="openinNewTab('{{objBoxContent.url}}');return false;" style="text-decoration: none;" target="_blank">
+                                                       <span ng-if="objBoxContent.value.indexOf('resource') > -1 == false">
+                                                        {{objBoxContent.value}}
+                                                       </span> 
+                                                       <span ng-if="objBoxContent.value.indexOf('resource') > -1 == true">
+                                                        <img ng-src="{{objBoxContent.value}}" height="50" width="150"/>
+                                                       </span>
+                                                   </a>                                                                                    
+                                               </span>
+                                            <span ng-if="objBoxContent.displayPageWindow=='Open in a New Window' && objBoxContent.IsLink">
+                                                   <a id="theLink1" onclick="window.open('{{objBoxContent.url}}','_blank','width=1000,height=700');return false;" style="text-decoration: none;">
+                                                       <span ng-if="objBoxContent.value.indexOf('resource') > -1 == false">
+                                                           {{objBoxContent.value}}
+                                                       </span>
+                                                       <span ng-if="objBoxContent.value.indexOf('resource') > -1 == true">
+                                                        <img ng-src="{{objBoxContent.value}}" height="50" width="150"/>
+                                                       </span>
+                                                   </a>
+                                               </span>
+     
+                                               <span ng-if="objBoxContent.displayPageWindow=='Open in existing page' && objBoxContent.IsLink">
+                                                   <a id="theLink1" href="{{objBoxContent.url}}" style="text-decoration: none;">
+                                                       <span ng-if="objBoxContent.value.indexOf('resource') > -1 == false">
+                                                           {{objBoxContent.value}}
+                                                       </span>
+                                                       <span ng-if="objBoxContent.value.indexOf('resource') > -1 == true">
+                                                        <img ng-src="{{objBoxContent.value}}" height="50" width="150"/>
+                                                       </span>
+                                                   </a>
+                                               </span>
+                                               <span ng-if="objBoxContent.IsLink==false">
+                                                    {{objBoxContent.value}}
+                                               </span>     
+                                            <br />
+                                         </div>
+                                     </div>
+                                    </div>                            
+                            </div>
+                        </div>
+                        
+                        <!-- Brainshark -->
+                        <div ng-if="tabName == 'Training'">
+                            <div style="margin-bottom:10px;">
+                                <iframe allowfullscreen="true" ng-src="{!brainshark_url}?username={!$User.Email}&fn={!$User.FirstName}&ln={!$User.LastName}&login_dir=nvidia&cid=32450&gids={!strGGGroups}&dest=%2Fbrainshark%2Fbrainshark.net%2Flearning%2Fhome.aspx%3Fui%3D245761" height="1000px;" frameBorder="0" width="100%" scrolling="true" ng-if="tabName=='Training'"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>    
+
+
+
+    <script> 
+         var lstContentTypes = []; 
+    </script> 
+    <apex:repeat value="{!lstPortalContentTypes}" var="contentType"> 
+        <script> 
+            lstContentTypes.push("{!contentType.strToggleName}"); 
+        </script> 
+    </apex:repeat>  
+    <script>                
+            var contentTypes = [];
+            for(var contentTypeItr=0; contentTypeItr < lstContentTypes.length; contentTypeItr++) {
+                var contentType = {label:'',value:''};
+                contentType.label = lstContentTypes[contentTypeItr];
+                if(lstContentTypes[contentTypeItr] != '--None--') {
+                    contentType.value = lstContentTypes[contentTypeItr];
+                }
+                contentTypes.push(contentType);
+            }
+    </script>
+    <script>                     
+
+        var app = angular.module('CommunityTabsApp', []);
+        app.controller('CommunityTabsCtrl', function($scope) {
+           
+           $scope.lstBoxList = JSON.parse('{!strLstBoxList}');
+           $scope.selectedContentType = "{!selectedContentType}";
+           $scope.image_url = "{!$Resource.ListImage}";
+           $scope.tabName = "{!tabName}";
+           $scope.lstPortalContentTypes = JSON.parse('{!strLstPortalContentTypes}');
+           $scope.isReportAProblem = "{!isReportAProblem}";
+           $scope.bUnRestricted = "{!bUnRestricted}";
+           $scope.lstBoxListToBeDisplayed = new Array();
+            
+            console.log($scope.bUnRestricted);
+            
+           var k=0;
+           for(var i=0; i < $scope.lstBoxList.length; i++) {
+               for(var j=0; j < $scope.lstBoxList[i].lstBox.length; j++) {
+                   if($scope.lstBoxList[i].lstBox[j].competency == $scope.selectedContentType || $scope.lstBoxList[i].lstBox[j].competency == null) {
+                        $scope.lstBoxListToBeDisplayed[k] = $scope.lstBoxList[i].lstBox[j];
+                        k++; 
+                   }
+               }
+           }
+           
+            $scope.isLSRInvalid = function() {
+                var logASupportRequestForm = $scope.logASupportRequestForm;
+                var valid = logASupportRequestForm.$valid;
+                if(logASupportRequestForm.shortDesc.$modelValue != null) {
+                    valid = valid && logASupportRequestForm.shortDesc.$modelValue.trim().length > 0;
+                }
+                if(logASupportRequestForm.problemDesc.$modelValue != null) {
+                    valid = valid && logASupportRequestForm.problemDesc.$modelValue.trim().length > 0;
+                }
+                if(logASupportRequestForm.stepsToReproduce.$modelValue != null) {
+                    valid = valid && logASupportRequestForm.stepsToReproduce.$modelValue.trim().length > 0;
+                }
+                if(logASupportRequestForm.phone.$modelValue != null) {
+                    valid = valid && logASupportRequestForm.phone.$modelValue.trim().length > 0;
+                }
+                if(logASupportRequestForm.LSRcompetency.$modelValue != null) {
+                    valid = valid && logASupportRequestForm.LSRcompetency.$modelValue.value.trim().length > 0;        
+                    valid = valid && !(logASupportRequestForm.LSRcompetency.$modelValue.value.trim().indexOf("?") >= 0);                                                        
+                }
+                return !valid;
+            } 
+           
+           $scope.logASupportRequest = {
+               contact : {
+                   FirstName : '{!JSENCODE(contactDetail.firstName)} {!JSENCODE(contactDetail.lastName)}',
+                   AccountName : '{!JSENCODE(contactDetail.Account.name)}', 
+                   Email : '{!JSENCODE(contactDetail.Email)}',
+                   Phone : '{!JSENCODE(contactDetail.phone)}',
+                   MobilePhone : '{!JSENCODE(contactDetail.MobilePhone)}',
+                   Id : '{!JSENCODE(contactDetail.Id)}',
+                   AccountId : '{!JSENCODE(contactDetail.AccountId)}'
+               },
+               problemType : '{!problemType}',
+               problemDescription : '{!problemDescription}',
+               stepsToReproduce : '{!steptoReproduceProblem}',
+               selectedContentType : '{!selectedContentType}',
+               FileBody : '',
+               FileName: '',
+               portalContentTypes : contentTypes
+           };
+            
+           $scope.logASupportRequestFn = function() {
+               Visualforce.remoting.Manager.invokeAction(
+                       '{!$RemoteAction.NV_PartnerCommunityTabs.sendEmail}',
+                   JSON.stringify($scope.logASupportRequest), 
+                   function(result, event){
+                       if (event.status) {
+                           var emailSuccessString = "{!JSENCODE($Label.COMM_CP_VF_EMAIL_MSG_Send_Success)}".replace(/(\r\n|\n|\r)/gm, "<br>");
+                           alert(emailSuccessString);
+                       } else {
+                           var emailFailureString = "{!JSENCODE($Label.COMM_CP_VF_EMAIL_MSG_Send_Failure)}".replace(/(\r\n|\n|\r)/gm, "<br>");
+                           alert(emailFailureString);
+                       }
+                   }, 
+                   {escape: true}
+               );
+               $('#supportRequestModal').modal('hide');
+               $scope.logASupportRequest = {
+                   contact : {
+                       FirstName : '{!JSENCODE(contactDetail.firstName)} {!JSENCODE(contactDetail.lastName)}',
+                       AccountName : '{!JSENCODE(contactDetail.Account.name)}', 
+                       Email : '{!JSENCODE(contactDetail.Email)}',
+                       Phone : '{!JSENCODE(contactDetail.phone)}',
+                       MobilePhone : '{!JSENCODE(contactDetail.MobilePhone)}',
+                       Id : '{!JSENCODE(contactDetail.Id)}',
+                       AccountId : '{!JSENCODE(contactDetail.AccountId)}'
+                   },
+                   problemType : '{!problemType}',
+                   problemDescription : '{!problemDescription}',
+                   stepsToReproduce : '{!steptoReproduceProblem}',
+                   selectedContentType : contentTypes[0],
+                   FileBody : '',
+                   FileName: '',
+                   portalContentTypes : contentTypes
+                   
+               };
+           }
+           
+           $scope.changeCompetencyFn = function(competency) {
+               $scope.selectedContentType = competency;
+               var k=0;
+               $scope.lstBoxListToBeDisplayed = new Array();
+               for(var i=0; i < $scope.lstBoxList.length; i++) {
+                   for(var j=0; j < $scope.lstBoxList[i].lstBox.length; j++) {
+                       if($scope.lstBoxList[i].lstBox[j].competency == $scope.selectedContentType || $scope.lstBoxList[i].lstBox[j].competency == null) {
+                            $scope.lstBoxListToBeDisplayed[k] = $scope.lstBoxList[i].lstBox[j];
+                            k++; 
+                       }
+                   }
+               }
+           }
+           
+        }).directive("fileread", [function () {
+            return {
+                scope: {
+                    fileread: "="
+                },
+                link: function (scope, element, attributes) {
+                    element.bind("change", function (changeEvent) {
+                        var reader = new FileReader();
+                        reader.onloadend = function (loadEvent) {
+                            scope.$apply(function () {
+                                //scope.fileread = {'body':loadEvent.target.result, 'name':changeEvent.target.files[0].name};
+                                //console.log(scope.fileread);
+                                var bytes = new Uint8Array(loadEvent.target.result);
+                                //console.log(bytes);
+                                var length = bytes.byteLength;
+                                var binary;
+                                for (var i = 0; i < length; i++) 
+                                {
+                                    binary += String.fromCharCode(bytes[i]);
+                                }
+                                //console.log(binary);
+                                var base64value = window.btoa(binary);
+                                //console.log(base64value);
+                                scope.fileread = {'body':base64value, 'name':changeEvent.target.files[0].name};
+                                //console.log(scope.fileread);
+                            });
+                        }
+                        reader.readAsArrayBuffer(changeEvent.target.files[0]);
+                    });
+                }
+            }
+        }]);
+    </script>  
+</apex:page>

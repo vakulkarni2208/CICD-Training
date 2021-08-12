@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Agent_Profile_Names__c</fullName>
+    <defaultValue>&apos;Service Cloud Generic User&apos;</defaultValue>
+    <description>This field value is used as constant to identify Service Cloud Agent profiles.</description>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Agent Profile Names</label>
+    <length>255</length>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

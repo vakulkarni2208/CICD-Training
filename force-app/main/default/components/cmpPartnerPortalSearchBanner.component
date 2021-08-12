@@ -1,0 +1,33 @@
+<apex:component >
+
+ <script>
+	function onenter(cont,evt) {       
+	     if (evt && evt.keyCode == 13){        
+	        //var ele=document.getElementById('{!$Component.btnId}');                
+	        //ele.click(); 
+	        openNewVfpage();               
+	        return false;
+	     }
+	     else{
+	        return true;
+	     }
+	   }
+	   
+	   function openNewVfpage(){   
+	       //alert(document.getElementById('inputFieldId').value);
+	       //var searchText = document.getElementById('inputFieldId').value;       
+	       window.open('/apex/vfPartnerPortalSearch?searchText='+document.getElementById('inputFieldId').value,target="_parent");       
+	       return false;
+	   }
+   </script>
+    
+	<table width="100%" border="0" style="background-color:transparent;white-space:nowrap;color:#393939"> <!-- #FFFFFF --> 
+		<tr>     
+			<td align="right">
+               <input type="text" placeholder="{!$Label.COMM_PP_CMP_Search}" id="inputFieldId" style="height:15px;vertical-align:text-bottom;" onClick="this.placeholder = ''"  onblur="this.placeholder = '{!$Label.COMM_PP_CMP_Search}'"  onkeypress="return onenter(this,event);"/>                 
+                &nbsp;<apex:image value="{!$Resource.SearchIcon}" onclick="return openNewVfpage();" style="cursor:pointer;vertical-align:text-bottom"/>
+    		</td>                       
+		</tr>
+	</table>
+
+</apex:component>

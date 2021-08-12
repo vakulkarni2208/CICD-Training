@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Block_NonAdmins_Create_Restricted_Tags</fullName>
+    <active>true</active>
+    <description>Block Non-Admins create restricted tags e.g., DGX-1 Approved</description>
+    <errorConditionFormula>AND ( 
+(OR( 
+ISPICKVAL(Tag__c, &apos;DGX-1 Approved&apos;), 
+ISPICKVAL(Tag__c, &apos;DGX-1 Proposed&apos;), 
+ISPICKVAL(Tag__c, &apos;Assigned Account&apos;),
+ISPICKVAL(Tag__c, &apos;CPQ Account&apos;),  
+ISPICKVAL(Tag__c, &apos;Super Elite OEM&apos;))), 
+AND ($Profile.Name &lt;&gt; &apos;System Administrator&apos;, $Profile.Name &lt;&gt; &apos;Sales Profile - Partner Admin&apos;,
+$Profile.Name &lt;&gt; &apos;Data Administrator&apos; ,  NOT($Permission.DEPLOYMENT_USER_SKIP_VALIDATIONS) ,
+ NOT( $Permission.CRM_CPQ_ACCOUNT_CONTACT_ALIASING )) 
+)</errorConditionFormula>
+    <errorMessage>You are not authorized to use this tag.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DR_Program_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Program Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>DR_Deal_Type__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>vGPU SW Opp Reg</fullName>
+                <default>false</default>
+                <label>vGPU SW Opp Reg</label>
+            </value>
+            <value>
+                <fullName>vGPU SW Opp Reg EDU</fullName>
+                <default>false</default>
+                <label>vGPU SW Opp Reg EDU</label>
+            </value>
+            <value>
+                <fullName>DGX Opp Reg</fullName>
+                <default>false</default>
+                <label>DGX Opp Reg</label>
+            </value>
+            <value>
+                <fullName>DGX Opp Reg EDU</fullName>
+                <default>false</default>
+                <label>DGX Opp Reg EDU</label>
+            </value>
+            <value>
+                <fullName>DGX Opp Reg Inception</fullName>
+                <default>false</default>
+                <label>DGX Opp Reg Inception</label>
+            </value>
+            <value>
+                <fullName>Evaluation Testing</fullName>
+                <default>false</default>
+                <label>Evaluation Testing</label>
+            </value>
+            <value>
+                <fullName>POC Development</fullName>
+                <default>false</default>
+                <label>POC Development</label>
+            </value>
+            <value>
+                <fullName>Product Development</fullName>
+                <default>false</default>
+                <label>Product Development</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>DLI Opp Reg</fullName>
+                <default>false</default>
+                <label>DLI Opp Reg</label>
+            </value>
+            <value>
+                <fullName>DGX Opp Reg New Logo</fullName>
+                <default>false</default>
+                <label>DGX Opp Reg New Logo</label>
+            </value>
+            <value>
+                <fullName>Parabricks Opp Reg</fullName>
+                <default>false</default>
+                <label>Parabricks Opp Reg</label>
+            </value>
+            <value>
+                <fullName>Parabricks Opp Reg EDU</fullName>
+                <default>false</default>
+                <label>Parabricks Opp Reg EDU</label>
+            </value>
+            <value>
+                <fullName>AI Starter Kit</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>AI Starter Kit</label>
+            </value>
+            <value>
+                <fullName>Both AI Starter Kit and PTWG</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Both AI Starter Kit and PTWG</label>
+            </value>
+            <value>
+                <fullName>DGX Station Jumpstart</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>DGX Station Jumpstart</label>
+            </value>
+            <value>
+                <fullName>Paint the World Gold</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Paint the World Gold</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>DGX</controllingFieldValue>
+            <valueName>DGX Opp Reg</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DGX</controllingFieldValue>
+            <valueName>DGX Opp Reg EDU</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DGX</controllingFieldValue>
+            <valueName>DGX Opp Reg Inception</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DGX</controllingFieldValue>
+            <valueName>DGX Opp Reg New Logo</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>vGPU</controllingFieldValue>
+            <valueName>vGPU SW Opp Reg</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>vGPU</controllingFieldValue>
+            <valueName>vGPU SW Opp Reg EDU</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Jetson</controllingFieldValue>
+            <valueName>Evaluation Testing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Jetson</controllingFieldValue>
+            <valueName>POC Development</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Jetson</controllingFieldValue>
+            <valueName>Product Development</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Jetson</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DLI</controllingFieldValue>
+            <valueName>DLI Opp Reg</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Parabricks</controllingFieldValue>
+            <valueName>Parabricks Opp Reg</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Parabricks</controllingFieldValue>
+            <valueName>Parabricks Opp Reg EDU</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

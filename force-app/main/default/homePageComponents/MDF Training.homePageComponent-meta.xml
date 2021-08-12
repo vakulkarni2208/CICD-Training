@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<HomePageComponent xmlns="http://soap.sforce.com/2006/04/metadata">
+    <links>MDF_Training_Post_April_28_2013</links>
+    <links>MDF_Training_Pre_April_28_2013</links>
+    <pageComponentType>links</pageComponentType>
+</HomePageComponent>

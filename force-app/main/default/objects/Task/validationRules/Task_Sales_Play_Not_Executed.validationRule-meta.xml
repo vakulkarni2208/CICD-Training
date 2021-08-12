@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Task_Sales_Play_Not_Executed</fullName>
+    <active>true</active>
+    <description>Do not all allow all the users to updated this field (SDS-935)</description>
+    <errorConditionFormula>And( $User.Username &lt;&gt; &apos;msebranek@nvidia.com&apos;,
+     $User.Username &lt;&gt; &apos;pkelly@nvidia.com&apos;,
+     $User.Username &lt;&gt; &apos;jdeanda@nvidia.com&apos;,
+     NOT( $Permission.DEPLOYMENT_USER_SKIP_VALIDATIONS),
+     ISPICKVAL( Status , &apos;Not Executed&apos;),
+     RecordType.DeveloperName =&apos;Sales_Play&apos;
+)</errorConditionFormula>
+    <errorMessage>Please use Get Help to have this option selected for you.  &apos;Not Executed&apos; is a special status controlled by Sales Operations</errorMessage>
+</ValidationRule>

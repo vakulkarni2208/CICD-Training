@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BATCHJOB_RECUR__c</fullName>
+    <defaultValue>10</defaultValue>
+    <description>Defines recurring frequency in minutes. The job repeats execution based on this time gap</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Defines recurring frequency in minutes. The job repeats execution based on this time gap</inlineHelpText>
+    <label>BATCHJOB_RECUR</label>
+    <precision>3</precision>
+    <required>true</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

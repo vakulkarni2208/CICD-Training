@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Developing_your_own_Accelerated_Apps__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Select the level of Accelerated Application usage</inlineHelpText>
+    <label>Developing your own Accelerated Apps?</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Yes, I am</fullName>
+                <default>false</default>
+                <label>Yes, I am</label>
+            </value>
+            <value>
+                <fullName>No, but I plan to</fullName>
+                <default>false</default>
+                <label>No, but I plan to</label>
+            </value>
+            <value>
+                <fullName>No, but I use existing applications</fullName>
+                <default>false</default>
+                <label>No, but I use existing applications</label>
+            </value>
+            <value>
+                <fullName>Unsure</fullName>
+                <default>false</default>
+                <label>Unsure</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

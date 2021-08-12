@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Copy_of_DLI_Certified_Instructors</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>CONTACT.TITLE</columns>
+    <columns>Instructor_Type__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>CONTACT.PHONE1</columns>
+    <columns>CONTACT.EMAIL</columns>
+    <columns>CONTACT.ADDRESS2_CITY</columns>
+    <columns>CONTACT.ADDRESS2_STATE_CODE</columns>
+    <columns>CONTACT.ADDRESS2_COUNTRY_CODE</columns>
+    <columns>DLI_Region__c</columns>
+    <columns>isActive_Instructor__c</columns>
+    <columns>of_Active_Certifications__c</columns>
+    <columns>CIP_Workshop__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CONTACT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Contact.SalesContact</value>
+    </filters>
+    <filters>
+        <field>CONTACT.ADDRESS2_COUNTRY_CODE</field>
+        <operation>equals</operation>
+        <value>AR,BZ,BO,BR,CL,CO,CR,CU,CW,DM,DO,EC,SV,GD,GP,GT,HN,MX,NI,PA,PY,PE,PR,UY,VE</value>
+    </filters>
+    <filters>
+        <field>Instructor_Type__c</field>
+        <operation>equals</operation>
+        <value>Ambassador,Ambassador &amp; SDP</value>
+    </filters>
+    <label>LATAM Ambs</label>
+</ListView>

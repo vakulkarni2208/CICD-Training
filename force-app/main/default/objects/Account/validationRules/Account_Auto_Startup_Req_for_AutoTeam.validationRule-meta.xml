@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Account_Auto_Startup_Req_for_AutoTeam</fullName>
+    <active>true</active>
+    <description>The Startup field is required for Automotive and inception team (SDS-827)</description>
+    <errorConditionFormula>And( RecordType.DeveloperName =&apos;New_Customer_Account&apos;,
+        isblank(Text(Automotive_Startup__c )),
+        $Permission.CRM_Automotive_Team_Validation )</errorConditionFormula>
+    <errorDisplayField>Automotive_Startup__c</errorDisplayField>
+    <errorMessage>The Startup field should not be empty on the Account. For assistance, click the &quot;Get Help&quot; button located on the top right of the page.</errorMessage>
+</ValidationRule>

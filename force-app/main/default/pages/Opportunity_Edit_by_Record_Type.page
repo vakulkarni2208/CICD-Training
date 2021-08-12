@@ -1,0 +1,21 @@
+<apex:page >
+<!--
+  -- @Manideep - 5/8/2019 
+  -- This page is not in use so commented out as part of Opportunity RecordType Cleanup.  
+<apex:page standardController="Opportunity" extensions="EditOpportunityRecordType_Extension" action="{!redirect}">
+  ---- This is the VF page that overrides the [Edit] button on Opportunities.  
+    	This page may or may not include the Opportunity record type;
+  		The controller determines the record type, if not provided, and  
+  		passes Notebook Opportunity edits to the Opportunity_And_Products page.
+  		
+  		See the EditOpportunityRecordType_Extension class for the code. ----
+  		
+  		----  Opportunity fields needed by the standard controller: ----
+		<apex:form >
+  		<apex:inputHidden value="{!opportunity.RecordTypeId}" />
+  		<apex:inputHidden value="{!opportunity.AccountId}" />
+  		<apex:inputHidden value="{!opportunity.Name}" />
+  		</apex:form>
+</apex:page>
+-->
+</apex:page>

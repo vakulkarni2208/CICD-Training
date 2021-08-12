@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This Permission set is created for the JIRA #SDS-2126</description>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.Military_Defense__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>CRM : ACCOUNT : Military/Defense Field Edit Permission</label>
+    <license>Salesforce</license>
+</PermissionSet>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Channel_Partners_Associated__c</fullName>
+    <description>The channel route associated to this deal.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Based on how the PO is flowing through the channel, please enter the Channel Partners associated.</inlineHelpText>
+    <label>Channel Partners Associated</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Strategic OEM/Non-NPN VAR/Customer</fullName>
+                <default>false</default>
+                <label>Strategic OEM/Non-NPN VAR/Customer</label>
+            </value>
+            <value>
+                <fullName>Strategic OEM/NPN VAR/Customer</fullName>
+                <default>false</default>
+                <label>Strategic OEM/NPN VAR/Customer</label>
+            </value>
+            <value>
+                <fullName>Strategic OEM/Customer</fullName>
+                <default>false</default>
+                <label>Strategic OEM/Customer</label>
+            </value>
+            <value>
+                <fullName>Disti/NPN VAR/Customer</fullName>
+                <default>false</default>
+                <label>Disti/NPN VAR/Customer</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

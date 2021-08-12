@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LSID_IsBlank__c</fullName>
+    <description>Leadspace - custom field to track if the LSID is populated or not. Used to help in the mass enrichment of Target List accounts</description>
+    <externalId>false</externalId>
+    <formula>IsBlank(LSID__c)</formula>
+    <inlineHelpText>Leadspace - custom field to track if the LSID is populated or not. Used to help in the mass enrichment of Target List accounts</inlineHelpText>
+    <label>LSID IsBlank</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

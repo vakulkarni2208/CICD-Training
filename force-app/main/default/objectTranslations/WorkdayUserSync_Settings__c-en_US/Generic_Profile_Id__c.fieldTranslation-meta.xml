@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Id of the generic profile which all new inactive users will be set with.
+Use the Id of the profile &quot;NVInternalCRMGeneric&quot; --></help>
+    <label><!-- Generic Profile Id --></label>
+    <name>Generic_Profile_Id__c</name>
+</CustomFieldTranslation>

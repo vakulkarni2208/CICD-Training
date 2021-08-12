@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Id of Opp Reg EDU Pricebook --></help>
+    <label><!-- DR : PBID : OPPREG_EDU --></label>
+    <name>DR_PBID_OPPREG_EDU__c</name>
+</CustomFieldTranslation>

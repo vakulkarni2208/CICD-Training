@@ -1,0 +1,110 @@
+<apex:page showHeader="false" sidebar="false" tabStyle="Opportunity" standardStylesheets="true">
+<head>
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+    {font-family:Calibri;
+    panose-1:2 15 5 2 2 2 4 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+    {margin-top:0in;
+    margin-right:0in;
+    margin-bottom:10.0pt;
+    margin-left:0in;
+    line-height:115%;
+    font-size:11.0pt;
+    font-family:"Calibri","sans-serif";}
+.MsoChpDefault
+    {font-family:"Calibri","sans-serif";}
+.MsoPapDefault
+    {margin-bottom:10.0pt;
+    line-height:115%;}
+@page WordSection1
+    {size:8.5in 11.0in;
+    margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+    {page:WordSection1;}
+-->
+</style>
+
+</head>
+
+<center>
+<body>
+
+<div class='WordSection1'>
+
+<p class='MsoNormal' align='center' style='text-align:center'><b><span
+style='font-size:18.0pt;line-height:115%;color:#73B900'>SHAREPOINT LINKS</span></b></p>
+
+
+<p class='MsoNormal'><b>Section Description:  </b>Key design documents are
+maintained at the Automotive BU SharePoint site.  To ensure accessibility of
+specific project related documents, enter the appropriate URLs in the
+designated fields.  Contact Product Marketing with any questions.</p>
+
+<table class='MsoTableGrid' border='1' cellspacing='0' cellpadding='0'
+ style='border-collapse:collapse;border:none'>
+ <tr>
+  <td width='235' valign='top' style='width:2.45in;border:solid windowtext 1.0pt;
+  background:#9BBB59;padding:0in 5.4pt 0in 5.4pt'>
+  <p class='MsoNormal' style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><b>Field Name</b></p>
+  </td>
+  <td width='403' valign='top' style='width:4.2in;border:solid windowtext 1.0pt;
+  border-left:none;background:#9BBB59;padding:0in 5.4pt 0in 5.4pt'>
+  <p class='MsoNormal' style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'><b>Description</b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width='235' valign='top' style='width:2.45in;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class='MsoNormal' style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>General SharePoint Folder (URL)</p>
+  </td>
+  <td width='403' valign='top' style='width:4.2in;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class='MsoNormal' style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>Enter the URL where the main folder for this project is found
+  (copy/paste into field)</p>
+  </td>
+ </tr>
+ <tr>
+  <td width='235' valign='top' style='width:2.45in;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class='MsoNormal' style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>CRD (SharePoint URL)</p>
+  </td>
+  <td width='403' valign='top' style='width:4.2in;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class='MsoNormal' style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>Enter the URL where the CRD document is stored</p>
+  </td>
+ </tr>
+ <tr>
+  <td width='235' valign='top' style='width:2.45in;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class='MsoNormal' style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>Proposal (SharePoint URL)</p>
+  </td>
+  <td width='403' valign='top' style='width:4.2in;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class='MsoNormal' style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal'>Enter the URL where the Proposal document is stored</p>
+  </td>
+ </tr>
+</table>
+
+<p class='MsoNormal'>&nbsp;</p>
+
+</div>
+
+</body>
+</center>
+
+</apex:page>

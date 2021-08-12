@@ -1,0 +1,60 @@
+<apex:component controller="clsPartnerPortalComponentSearch">
+<apex:includeScript value="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" />
+<apex:includeScript value="{!URLFOR($Resource.jquery_news_ticker, '/includes/jquery.ticker.js')}"  />
+<apex:stylesheet value="{!URLFOR($Resource.jquery_news_ticker, '/styles/ticker-style.min.css')}"/> 
+
+
+ <script>
+   function onenter(cont,evt) {       
+     if (evt && evt.keyCode == 13){        
+        var ele=document.getElementById('{!$Component.formId.btnId}');                
+        ele.click();                
+        return false;
+     }
+     else{
+        return true;
+     }
+   }
+   
+   function openNewVfpage(){   
+       //alert(document.getElementById('inputFieldId').value);
+       //var searchText = document.getElementById('inputFieldId').value;       
+       window.open('/apex/vfPartnerPortalSearch?searchText='+document.getElementById('inputFieldId').value,target="_blank");       
+       return false;
+   }
+   function OpenPopupCenter(pageURL, title, w, h) {
+        var left = (screen.width - w) / 2;
+        var top = (screen.height - h) / 4;  // for 25% - devide by 4  |  for 33% - devide by 3
+        var targetWin = window.open(pageURL, title, 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=no, copyhistory=no, width=' + w + ', height=' + h + ', top=' + top + ', left=' + left);
+    }
+    
+   </script>
+   
+   <apex:inputHidden value="{!hiddenValue}" id="hiddenFieldVal"/>      
+   <table width="1110px;" border="0" style="background-color:#FFFFFF;white-space:nowrap;color:#393939"> 
+       
+       <tr>
+       <td style="font-size:15px;padding-right:20px;" width="58%" align="center" valign="middle">
+        <ul id="js-news" class="js-hidden">
+            <!--<li class="news-item"><a href="#">This is the 1st latest news item.</a></li>
+            <li class="news-item"><a href="#">This is the 2nd latest news item.</a></li>
+            <li class="news-item"><a href="#">This is the 3rd latest news item.</a></li>
+            <li class="news-item"><a href="#">This is the 4th latest news item.</a></li>-->
+            <apex:repeat value="{!lstInstantMessage}" var="x">
+            <!--<li class="news-item"><b><font color="#FFFFFF">{!instanceMessage}</font></b></li>-->
+                <li class="news-item"><b><font color="#FFFFFF">{!x.Message__c}</font></b></li>
+            </apex:repeat>
+        </ul>
+       </td>         
+       </tr>
+       
+   </table>
+   
+   <script type="text/javascript">
+    $(function () {
+        //$('#js-news').ticker();
+        $('#js-news').ticker({controls:false,titleText:'Latest Messages:',displayType:'fade'});
+    });
+</script>
+
+</apex:component>

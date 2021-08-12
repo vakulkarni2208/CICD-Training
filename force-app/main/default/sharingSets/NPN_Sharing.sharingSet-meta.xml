@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <accessMappings>
+        <accessLevel>Read</accessLevel>
+        <object>POS_Submission__c</object>
+        <objectField>Account_Id__c</objectField>
+        <userField>Account</userField>
+    </accessMappings>
+    <accessMappings>
+        <accessLevel>Read</accessLevel>
+        <object>QPB_Statement__c</object>
+        <objectField>Account__c</objectField>
+        <userField>Account</userField>
+    </accessMappings>
+    <description>Created for NPN.
+We use sharing sets to grant access to the following objects.
+QPB Statement
+POS Submission</description>
+    <name>NPN Sharing</name>
+    <profiles>npn partner community(login)</profiles>
+</SharingSet>

@@ -1,0 +1,397 @@
+<!--
+   @File Name          : CreateRMAFormLightning.page
+   @Description        : 
+   @Author             : ChangeMeIn@UserSettingsUnder.SFDoc
+   @Group              : 
+   @Last Modified By   : ChangeMeIn@UserSettingsUnder.SFDoc
+   @Last Modified On   : 6/1/2020, 1:17:35 pm
+   @Modification Log   : 
+   Ver       Date            Author                  Modification
+   1.0    6/1/2020   ChangeMeIn@UserSettingsUnder.SFDoc     Initial Version
+   -->
+<apex:page showHeader="false" standardStylesheets="false" sidebar="false" applyHtmlTag="false" applyBodyTag="false" docType="html-5.0" standardController="Case" extensions="createRMALightningController" action="{!init}">
+   <html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <head>
+         <title>Create RMA</title>
+         <apex:stylesheet value="{!URLFOR($Resource.slds, 'assets/styles/salesforce-lightning-design-system-vf.css')}" />
+         <style>
+            .slds-is-required > .slds-form-element__label::before {
+            content: '*';
+            color: #c23934;
+            position: absolute;
+            left: -8px; }
+            .slds-has-error .slds-form-element__control .slds-input {
+            background-color: white;
+            border-color: #c23934;
+            box-shadow: #c23934 0 0 0 1px inset;
+            background-clip: padding-box; }
+            .slds-form-element .slds-form-element__control .slds-form-element__help {
+            font-size: 12px;
+            margin-top: 8px;
+            display: none; }
+            .slds-has-error .slds-form-element__control .slds-form-element__help {
+            font-size: 12px;
+            margin-top: 8px;
+            display: block; }
+            .slds-has-error .slds-form-element__control .slds-form-element__help {
+            color: #c23934; }
+            .slds .slds-hide {
+            display: none; }
+            .slds .slds-show {
+            display: block; }
+            a {
+            border: none !important;
+            }
+            /* The Modal (background) */
+            .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            padding-top: 100px; /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+            }
+            /* Modal Content */
+            .modal-content {
+            background-color: #fefefe;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            }
+            /* The Close Button */
+            .close {
+            color: #aaaaaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            }
+            .close:hover,
+            .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+            }
+            .slds img {
+            max-width: 30px;
+            height: 30px;
+            }
+         </style>
+      </head>
+      <script>
+         function callout() {
+             //alert(isInputError);
+             if(isInputError=='false'){
+                 //alert('Calling RMA');
+                 rmacallout();
+             }
+             
+         }
+      </script>
+      <body>
+         <apex:form id="frm">
+            <apex:inputHidden id="hasErrors" value="{!itemErrors}" />
+            <!-- REQUIRED SLDS WRAPPER -->
+            <div class="slds">
+               <!-- MASTHEAD -->
+               <div style="margin-top:20px;margin-left:5px;">
+                  <div class="slds-card">
+                     <div class="slds-media__body">
+                        <br/>
+                        <h2 class="slds-text-heading--small slds-truncate"> &nbsp;&nbsp;<b>Create RMA</b></h2>
+                        <br/>
+                     </div>
+                  </div>
+               </div>
+               <!-- / MASTHEAD -->    
+               <!-- PRIMARY CONTENT WRAPPER -->
+               <div class="myapp">
+                  <div style="margin-left : 10px ; margin-top :30px; margin-right :30px;">
+                     <apex:pageMessages id="err"/>
+                     <apex:actionStatus id="SearchStatus" stopText="">
+                        <apex:facet name="start" >
+                           Processing..
+                           <div style="position: fixed; top: 0; left: 0; right: 0; bottom: 0; opacity: 0.75; z-index: 1000; background-color: black;">
+                           </div>
+                           <div style="position: fixed; left: 0; top: 0; bottom: 0; right: 0; z-index: 1001; margin: 30% 50%">
+                              <img src="/img/loading.gif" alt="Loading..."  /> 
+                           </div>
+                        </apex:facet>
+                     </apex:actionStatus>
+                     <apex:outputPanel id="btnSectionTop">
+                        <center>
+                           <apex:actionFunction name="resetRows" action="{!resetRMArows}" reRender="pbSection"/>
+                           <apex:actionFunction name="rmacallout" action="{!rmaCallout}"  status="SearchStatus" reRender="frm,err" />
+                           <!-- <apex:commandButton action="{!SaveRMA}" value="Save"  reRender="err"  status="SearchStatus" oncomplete="callout()"/> &nbsp; -->
+                           <apex:commandButton action="{!SaveRMA}" value="Save" onclick="if(!confirm('Are you sure you want to submit this RMA?')){return false};" onkeypress="if(!confirm('Are you sure you want to submit this RMA?')){return false};"  oncomplete="callout()" reRender="script-block,frm,err"  status="SearchStatus" rendered="{!IF(And(sNo != '',ItemErrors=false),true,false)}" />
+                           &nbsp;
+                           <apex:commandButton action="{!validateReturnReshipDates}" value="Save" rendered="{!ItemErrors}" reRender="RmaItemMsgSection" />
+                           &nbsp;   <!-- RMA enhancements 1.0 -->
+                           <apex:commandButton action="{!Cancel}" value="Cancel" immediate="true" html-formnovalidate="formnovalidate" />
+                        </center>
+                     </apex:outputPanel>
+                     <br/>
+                     <apex:actionFunction name="checkInstallDetails" reRender="installAddressBlock" action="{!differentInstallAddress}"  immediate="true" />
+                            <div class="slds-grid">  
+                                <div class="slds-col " >
+                                    <div class="slds-form-element__control"> 
+                                        <div class="slds-form-element">
+                                            <label class="slds-form-element__label" for="inputSample3">Serial Number</label> 
+                                        </div>
+                                            <label class="slds-form-element__label" for="inputSample3">{!sNo}</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <apex:outputpanel id="pbSectiondetails">
+                                <div class="slds-grid">  
+                                    <div class="slds-col " >
+                                        <apex:repeat value="{!$ObjectType.RMA__c.FieldSets.RMA_FieldSetsLeft}" var="f">  
+                                            <div class="{!if(OR(f.required, f.dbrequired)==true,'slds-form-element slds-is-required','slds-form-element')}">
+                                                <label class="slds-form-element__label" for="inputSample3">{!f.Label} </label> 
+                                            </div>
+                                            <div class="slds-form-element__control"> 
+                                                <apex:inputfield value="{!rmaObj[f]}" styleclass="slds-input" style="width:70%;"  required="{!OR(f.required, f.dbrequired)}" label="{!f.label}"/>
+                                            </div>
+                                        </apex:repeat> 
+                                    </div>
+                                    <div class="slds-col " >
+                                        <apex:repeat value="{!$ObjectType.RMA__c.FieldSets.RMA_FieldSetsRight}" var="f">  
+                                            <div class="{!if(OR(f.required, f.dbrequired)==true,'slds-form-element slds-is-required','slds-form-element')}">
+                                                <label class="slds-form-element__label" for="inputSample3">{!f.Label} </label> 
+                                            </div>
+                                            <div class="slds-form-element__control"> 
+                                                <apex:outputpanel rendered="{!IF(And(f.FieldPath == 'Country__c'),false, true)}">
+                                                    <apex:inputfield value="{!rmaObj[f]}" styleclass="slds-input" style="width:70%;"  required="{!OR(f.required, f.dbrequired)}" label="{!f.label}"/>
+                                                </apex:outputpanel>
+                                                <apex:outputpanel rendered="{!IF(f.FieldPath == 'Country__c',true, false)}">
+                                                    <apex:selectList value="{!rmaObj[f]}"  multiselect="false" size="1" label="Country">
+                                                        <apex:selectOptions value="{!countries}" />
+                                                    </apex:selectList>
+                                                    <br/><br/>
+                                                    <apex:inputCheckbox id="chkUpdateShippingInAsset" value="{!isUpdateShippingInAsset}"/>
+                                                    <label class="slds-form-element__label" for="inputSample3">Update Shipping Address</label>
+                                                   <br/><br/>
+                                                </apex:outputpanel>
+                                            </div>
+                                        </apex:repeat>
+                                        <br/>
+                                        <!--<apex:inputCheckbox id="chkUpdateShippingInAsset" value="{!isUpdateShippingInAsset}"/>
+                                         <label class="slds-form-element__label" for="inputSample3">Update Shipping Address</label>
+                                        <br/>-->
+                                        <apex:inputCheckbox id="chkFABug" value="{!rmaObj.Create_FA_Bug__c}"/>
+                                         <label class="slds-form-element__label" for="inputSample3">Create FA NVBug</label>
+                                         <br/>
+                                         <label class="slds-form-element__label" for="inputSample3">Host Name</label>
+                                         <br/>
+                                         <apex:inputfield value="{!rmaObj.Host_Name__c}" styleclass="slds-input" style="width:70%;"/>
+                                        </div>
+                                </div>
+                            </apex:outputpanel>
+                      <apex:pageblock >
+                        <div class="slds-grid">
+                           <div class="slds-col ">
+                              <div class="slds-form-element__control">
+                                 <div class="slds-form-element ">
+                                     <br/>
+                                     <apex:inputCheckbox id="chkInstallDetail" value="{!isInstallDetail}" onchange="checkInstallDetails()"/>
+                                     <label class="slds-form-element__label" for="inputSample3">Installation Contact / Address Details</label>
+                                     <br/>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </apex:pageblock>                            
+                     <apex:pageblock id="installAddressBlock" >
+                        <apex:pageBlockSection columns="2"    rendered="{!isInstallDetail}"  showHeader="false" title="Installation Contact / Address details" collapsible="true">
+                            <apex:outputpanel >
+                                <div class="slds-grid">  
+                                    <div class="slds-col " >
+                                        <br/>
+                                        <apex:inputCheckbox id="chkUpdateInstallInAsset" value="{!isUpdateInstallInAsset}"/>
+                                        <label class="slds-form-element__label" for="inputSample3">Update Installation Address</label>
+                                        <br/><br/>
+                                        <apex:repeat value="{!$ObjectType.RMA__c.FieldSets.RMA_Installation_Contact}" var="f">  
+                                            <div class="{!if(OR(f.required, f.dbrequired)==true,'slds-form-element slds-is-required','slds-form-element')}">
+                                                <label class="slds-form-element__label" for="inputSample3">{!f.Label} </label> 
+                                            </div>
+                                            <div class="slds-form-element__control"> 
+                                                <apex:inputfield value="{!rmaObj[f]}" styleclass="slds-input" style="width:70%;"  required="{!OR(f.required, f.dbrequired)}" label="{!f.label}"/>
+                                            </div>
+                                        </apex:repeat> 
+                                    </div>
+                                    <br/>
+                                    
+                                     <div class="slds-col " >
+                                        <apex:repeat value="{!$ObjectType.RMA__c.FieldSets.RMA_Installation_Address_Details}" var="f">  
+                                            <div class="{!if(OR(f.required, f.dbrequired)==true,'slds-form-element slds-is-required','slds-form-element')}">
+                                                <label class="slds-form-element__label" for="inputSample3">{!f.Label} </label> 
+                                            </div>
+                                            <div class="slds-form-element__control"> 
+                                                <apex:outputpanel rendered="{!IF(And(f.FieldPath == 'Installation_Country__c'),false, true)}">
+                                                    <apex:inputfield value="{!rmaObj[f]}" styleclass="slds-input" style="width:70%;"  required="{!OR(f.required, f.dbrequired)}" label="{!f.label}"/>
+                                                </apex:outputpanel>
+                                                <apex:outputpanel rendered="{!IF(f.FieldPath == 'Installation_Country__c',true, false)}">
+                                                    <apex:selectList value="{!rmaObj[f]}"  multiselect="false" size="1" label="Country">
+                                                        <apex:selectOptions value="{!countries}" />
+                                                    </apex:selectList>
+                                                </apex:outputpanel>
+                                            </div>
+                                        </apex:repeat>
+                                        <br/>
+                                    </div>
+                              </div>      
+                           </apex:outputpanel>         
+                        </apex:pageBlockSection>
+                     </apex:pageblock>
+                     <br/>
+                     <apex:actionRegion >
+                        <apex:commandButton action="{!AddRMArows}" value="Add Part" reRender="dummy" immediate="true" >
+                           <apex:actionSupport event="onclick"  action="{!AddRMArows}" reRender="ProdSection" >
+                           </apex:actionSupport>
+                        </apex:commandButton>
+                     </apex:actionRegion>
+                     <br/>
+                     <br/>
+                     <!--table section -->
+                     <apex:outputPanel id="RmaItemMsgSection" >
+                        <!-- <apex:messages layout="table" style="text-align:center;font-weight:bold;font-size:14px;color:Red;" /> -->
+                        <apex:messages layout="table" style="font-weight:bold;font-size:14px;color:Red;" rendered="{!ItemErrors}"/>
+                     </apex:outputPanel>
+                     <div class="slds-grid slds-grid--vertical-stretch ">
+                        <apex:outputpanel id="ProdSection">
+                           <div id="tableContainer" class="tableContainer">
+                              <apex:outputpanel id="pbSection">
+                                 <apex:variable var="rowNumber" value="{!0}"/>
+                                 <table class="slds-table slds-table--bordered slds-max-medium-table--stacked-horizontal slds-no-row-hover scrollTable" style="border:1pt solid blue;margin-bottom: 1em !important; border-collapse:initial" id="PartNumber">
+                                    <thead style="margin-left : 10px;">
+                                       <th class="slds-text-heading--label slds-size--1-of-4">
+                                          No
+                                       </th>
+                                       <th class="slds-text-heading--label slds-size--1-of-4">
+                                          Description
+                                       </th>
+                                       <!--<th class="slds-text-heading--label slds-size--1-of-4">
+                                          Part Number
+                                       </th> -->
+                                       <th class="slds-text-heading--label slds-size--1-of-4">
+                                          FRU/CRU
+                                       </th>
+                                       <th class="slds-text-heading--label slds-size--1-of-4">
+                                          Override PartNumber 
+                                       </th>
+                                       <th class="slds-text-heading--label slds-size--1-of-4">
+                                          Replacement Type
+                                       </th>
+                                       <th class="slds-text-heading--label slds-size--1-of-4">
+                                          Quantity
+                                       </th>
+                                       <!-- RMA enhancements 1.0 - 'Reship Date' and 'ReturnDate' --> 
+                                       <th class="slds-text-heading--label slds-size--1-of-4">
+                                          Reship Date
+                                       </th>
+                                       <th class="slds-text-heading--label slds-size--1-of-4">
+                                          Return Date
+                                       </th>
+                                       <th class="slds-text-heading--label slds-size--1-of-4">
+                                          Action
+                                       </th>
+                                    </thead>
+                                    <tbody>
+                                       <apex:repeat value="{!lstRMA}" var="rmaWrapper">
+                                          <tr>
+                                             <td class="slds-size--1-of-4">
+                                                <apex:outputText value="{!rowNumber+1}" />
+                                                <apex:variable var="rowNumber" value="{!rowNumber+1}"/>
+                                             </td>
+                                             <apex:actionRegion >
+                                                <td class="slds-size--1-of-4">
+                                                   <apex:selectList value="{!rmaWrapper.selectedPart}" size="1" 
+                                                      rendered="{! IF(rmaWrapper.selectedPart!='Other' && rmaWrapper.manualEntry ==false,true,false)}" >
+                                                      <apex:selectOptions value="{!rmaWrapper.lstPart}"/>
+                                                      <apex:actionSupport event="onchange" reRender="pbSection" action="{!addDescription}"  >
+                                                         <apex:param name="rowIndex" value="{!rmaWrapper.rowNum}"/>
+                                                      </apex:actionSupport>
+                                                   </apex:selectList>
+                                                </td>
+                                                <!--<td class="slds-size--1-of-4">
+                                                   <apex:outputText value="{!rmaWrapper.partNumber}" />
+                                                </td> -->
+                                                <td class="slds-size--1-of-4">
+                                                   <apex:outputText value="{!rmaWrapper.FruCru}" />
+                                                </td>
+                                                <td class="slds-size--1-of-4">
+                                                   <apex:inputText value="{!rmaWrapper.partNumberOverride}" />
+                                                </td>
+                                                <td class="slds-size--1-of-4">
+                                                   <apex:inputField value="{!rmaWrapper.rma.Replacement_Type__c}" />
+                                                </td>
+                                                <td class="slds-size--1-of-4">
+                                                   <apex:selectList value="{!rmaWrapper.quantity}" size="1">
+                                                      <apex:selectOptions value="{!quantity}" >
+                                                      </apex:selectOptions>
+                                                      <apex:actionSupport event="onchange"  action="{!addQuantity}" reRender="pbSection"  >
+                                                         <apex:param name="rowIndex" value="{!rmaWrapper.rowNum}"/>
+                                                         <apex:param name="rowQuantity" value="{!rmaWrapper.rma.Quantity__c}"/>
+                                                      </apex:actionSupport>
+                                                   </apex:selectList>
+                                                </td>
+                                                <!-- RMA enhancements 1.0 - 'Reship Date' and 'ReturnDate' -->                                                                                                                                                                                            
+                                                <td class="slds-size--1-of-4">
+                                                   <apex:input value="{!rmaWrapper.reshipDate}" type="date">
+                                                      <apex:actionSupport event="onchange" action="{!validateReturnReshipDates}" reRender="RmaItemMsgSection,btnSectionTop,btnSecBottom" />
+                                                   </apex:input>
+                                                </td>
+                                                <td class="slds-size--1-of-4">
+                                                   <apex:input value="{!rmaWrapper.returnDate}" type="date">
+                                                      <apex:actionSupport event="onchange" action="{!validateReturnReshipDates}" reRender="RmaItemMsgSection,btnSectionTop,btnSecBottom" />
+                                                   </apex:input>
+                                                </td>
+                                             </apex:actionRegion>
+                                             <td class="slds-size--1-of-4">
+                                                <apex:actionRegion >
+                                                   <apex:commandButton value="Remove" reRender="hi" immediate="true" >
+                                                      <apex:actionSupport event="onclick" action="{!deleteRow}" reRender="pbSection,RmaItemMsgSection,btnSectionTop,btnSecBottom" >
+                                                         <apex:param name="rowIndex" value="{!rmaWrapper.rowNum}"/>
+                                                      </apex:actionSupport>
+                                                   </apex:commandButton>
+                                                </apex:actionRegion>
+                                             </td>
+                                          </tr>
+                                       </apex:repeat>
+                                    </tbody>
+                                 </table>
+                              </apex:outputpanel>
+                           </div>
+                        </apex:outputpanel>
+                     </div>
+                     <br/>
+                     <br/>
+                     <apex:outputPanel id="btnSecBottom">
+                        <center>
+                           <!-- <apex:commandButton action="{!SaveRMA}" value="Save" oncomplete="callout()" status="SearchStatus" />&nbsp; -->
+                           <apex:commandButton action="{!SaveRMA}" onclick="if(!confirm('Are you sure you want to submit this RMA?')){return false};" onkeypress="if(!confirm('Are you sure you want to submit this RMA?')){return false};" value="Save" oncomplete="callout()" status="SearchStatus" reRender="script-block,frm,err" rendered="{!IF(And(sNo != '',ItemErrors=false),true,false)}" />
+                           &nbsp;
+                           <apex:commandButton action="{!validateReturnReshipDates}" value="Save" rendered="{!ItemErrors}" reRender="RmaItemMsgSection" />
+                           &nbsp;    <!-- RMA enhancements 1.0 -->
+                           <apex:commandButton action="{!Cancel}" value="Cancel" immediate="true" html-formnovalidate="formnovalidate" />
+                        </center>
+                     </apex:outputPanel>
+                  </div>
+               </div>
+               <!-- / PRIMARY CONTENT WRAPPER -->    
+            </div>
+            <!-- / REQUIRED SLDS WRAPPER -->    
+         </apex:form>
+         <apex:outPutPanel layout="block" id="script-block">
+            <script>
+               var isInputError= '{!inputError}';
+            </script>
+         </apex:outPutPanel>
+      </body>
+   </html>
+</apex:page>

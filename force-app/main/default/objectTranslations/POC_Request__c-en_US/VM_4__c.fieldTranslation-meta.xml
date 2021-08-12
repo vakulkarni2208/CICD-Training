@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- #VM 4 --></label>
+    <name>VM_4__c</name>
+    <picklistValues>
+        <masterLabel>1 GPU</masterLabel>
+        <translation><!-- 1 GPU --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2 GPU&apos;s</masterLabel>
+        <translation><!-- 2 GPU&apos;s --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>4 GPU&apos;s</masterLabel>
+        <translation><!-- 4 GPU&apos;s --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>8 GPU&apos;s</masterLabel>
+        <translation><!-- 8 GPU&apos;s --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,121 @@
+<apex:page showHeader="false" sidebar="false" tabStyle="Opportunity" standardStylesheets="true">
+<head>
+
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+    {font-family:Wingdings;
+    panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+    {font-family:Wingdings;
+    panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+    {font-family:Calibri;
+    panose-1:2 15 5 2 2 2 4 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+    {margin-top:0in;
+    margin-right:0in;
+    margin-bottom:10.0pt;
+    margin-left:0in;
+    line-height:115%;
+    font-size:11.0pt;
+    font-family:"Calibri","sans-serif";}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+    {margin-top:0in;
+    margin-right:0in;
+    margin-bottom:10.0pt;
+    margin-left:.5in;
+    line-height:115%;
+    font-size:11.0pt;
+    font-family:"Calibri","sans-serif";}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+    {margin-top:0in;
+    margin-right:0in;
+    margin-bottom:0in;
+    margin-left:.5in;
+    margin-bottom:.0001pt;
+    line-height:115%;
+    font-size:11.0pt;
+    font-family:"Calibri","sans-serif";}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+    {margin-top:0in;
+    margin-right:0in;
+    margin-bottom:0in;
+    margin-left:.5in;
+    margin-bottom:.0001pt;
+    line-height:115%;
+    font-size:11.0pt;
+    font-family:"Calibri","sans-serif";}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+    {margin-top:0in;
+    margin-right:0in;
+    margin-bottom:10.0pt;
+    margin-left:.5in;
+    line-height:115%;
+    font-size:11.0pt;
+    font-family:"Calibri","sans-serif";}
+.MsoChpDefault
+    {font-family:"Calibri","sans-serif";}
+.MsoPapDefault
+    {margin-bottom:10.0pt;
+    line-height:115%;}
+@page WordSection1
+    {size:8.5in 11.0in;
+    margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+    {page:WordSection1;}
+ /* List Definitions */
+ ol
+    {margin-bottom:0in;}
+ul
+    {margin-bottom:0in;}
+-->
+</style>
+
+</head>
+<body>
+
+<div class='WordSection1'>
+
+<p class='MsoNormal' align='center' style='text-align:center'><b><span
+style='font-size:18.0pt;line-height:115%;color:#73B900'>GUIDELINES</span></b></p>
+
+<br />
+<ul>
+<li><b>Keep opportunity records CURRENT</b></li>
+
+<br /><br />
+<li><b>All newly created opportunities should be set with Probability of Winning = 10% (Stage = Prospecting)</b></li>
+
+<br />
+<ul><li>Sales Management approval is required before increasing the probability % (see Approvals section on Opportunity template)</li></ul>
+
+<br /><br />
+<li><b>If the customer is OEM, use the OEM template (or if Tier 1, use Tier 1 template)</b></li>
+
+<br /><br />
+<li><b>Revenue report will ONLY capture OEM opportunity records</b></li>
+
+<br />
+<ul><li>Volume should be entered on ALL records</li></ul>
+
+<br /><br />
+<li><b>Opportunity Naming Convention</b></li>
+
+<br />
+<ul><li>In the Opportunity Name field, enter the Project Name</li></ul>
+
+<br /><br />
+<li><b>For Tier 1 opportunities, once OEM(s) have been identified, link the records together (create OEM record if not already there).</b>  This ensures revenue will be appropriately captured</li>
+
+<br /><br />
+<li><b>For OEM opportunities, once Tier 1(s) have been identified, link the records together (create Tier 1 record(s) if not already there).</b></li>
+</ul>
+
+</div>
+
+</body>
+
+</apex:page>

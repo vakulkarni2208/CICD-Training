@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Profile Names allowed to see editable ASP Override field. Semi colon separated. System Administrators are automatically allowed. --></help>
+    <label><!-- ASP Override Admin Profile(s) --></label>
+    <name>ASP_Override_Admin_Profile_s__c</name>
+</CustomFieldTranslation>

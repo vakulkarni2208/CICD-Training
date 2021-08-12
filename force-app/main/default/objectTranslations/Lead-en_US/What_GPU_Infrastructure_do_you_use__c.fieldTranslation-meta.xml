@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- What GPU Infrastructure do you use? --></label>
+    <name>What_GPU_Infrastructure_do_you_use__c</name>
+    <picklistValues>
+        <masterLabel>Embedded/Mobile</masterLabel>
+        <translation><!-- Embedded/Mobile --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GPU Cloud Provider</masterLabel>
+        <translation><!-- GPU Cloud Provider --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>In-house servers</masterLabel>
+        <translation><!-- In-house servers --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>In-house workstations/PCs</masterLabel>
+        <translation><!-- In-house workstations/PCs --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

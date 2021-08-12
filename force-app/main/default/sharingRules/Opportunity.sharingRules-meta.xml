@@ -1,0 +1,2786 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>AI_City_IVA_IBD_Sharing</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>AI-City/IVA sharing to the IBD</description>
+        <label>AI-City/IVA IBD Sharing</label>
+        <sharedTo>
+            <role>AI_City_IVA_IBD</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>Primary_Customer_Use_Case__c</field>
+            <operation>equals</operation>
+            <value>Intelligent Video Analytics (IVA)</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>APAC_Read_Write_Opp_Access</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>APAC Read/Write Opp access for Channel Admins and Sales Ops.</description>
+        <label>APAC Read/Write Opp Access</label>
+        <sharedTo>
+            <group>APAC_Read_Write_Opp_Access</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Region__c</field>
+            <operation>equals</operation>
+            <value>APAC</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Enterprise Sales Opportunity</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>APAC_Tegra_Embedded_Partner</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>APAC Tegra Embedded Partner</label>
+        <sharedTo>
+            <group>APAC_Tegra_Embedded_Partner</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Region__c</field>
+            <operation>equals</operation>
+            <value>APAC</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Tegra Embedded Partner Opportunity</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Automotive_Sharing_to_Auto_Mgmt</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Automotive Sharing to Auto Mgmt</label>
+        <sharedTo>
+            <role>Automotive_IBD</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>Industry__c</field>
+            <operation>equals</operation>
+            <value>Automotive</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Automotive_sharing_to_Auto_Sales_Ops</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Sharing setup for the auto sales operations team to have read/write access</description>
+        <label>Automotive sharing to Auto Sales Ops</label>
+        <sharedTo>
+            <group>Automotive_Sales_Operations</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Automotive Opportunity</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>CPQ_Sales_Rep_Lite_Renewal_Opportunity_Sharing</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Sharing all SW &amp; Service Renewals to CPQ Admin and CPQ Lite Users</description>
+        <label>CPQ Sales Rep Lite Renewal Opportunity Sharing</label>
+        <sharedTo>
+            <group>CPQ_Sales_Rep_Lite</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>SW &amp; Service Renewals</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>China_DGX_Opp_Reg</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>China DGX Opp Reg</label>
+        <sharedTo>
+            <group>China_DGX_Opp_Reg</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Sub_Region__c</field>
+            <operation>equals</operation>
+            <value>CHINA</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Prefered_Partner__c</field>
+            <operation>equals</operation>
+            <value>CEAC International,Leadtek Research (Taiwan),Ingram Micro</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>China_Industries</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>China Industries</label>
+        <sharedTo>
+            <group>China_Industries</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Industry__c</field>
+            <operation>equals</operation>
+            <value>Higher Ed/Research,Automotive,Media/Entertainment,Oil &amp; Gas/Energy,Retail and CPG,Telecommunications,Financial Services Industry (FSI),Logistics &amp; Transportation,IT Services,Healthcare</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Sub_Region__c</field>
+            <operation>equals</operation>
+            <value>CHINA</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>China_NSC_Read_Write</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>China NSC Read/Write</label>
+        <sharedTo>
+            <group>China_Read_Write</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Sub_Region__c</field>
+            <operation>equals</operation>
+            <value>CHINA</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>China_Quadro</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>China Quadro</label>
+        <sharedTo>
+            <group>Quadro_China</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Quadro_Product_Attached__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Region__c</field>
+            <operation>equals</operation>
+            <value>APAC</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Sub_Region__c</field>
+            <operation>equals</operation>
+            <value>CHINA</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>China_Strategic_Hyperscale_CRISP</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>China Strategic Hyperscale &amp; CRISP</label>
+        <sharedTo>
+            <group>Quadro_China</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Industry__c</field>
+            <operation>equals</operation>
+            <value>CRISP (Consumer Internet Service Providers),Strategic Hyperscale</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Sub_Region__c</field>
+            <operation>equals</operation>
+            <value>CHINA</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Cisco_Sharing_Rule</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>Sharing rule to enable Cisco sharing</description>
+        <label>Cisco Sharing Rule</label>
+        <sharedTo>
+            <role>OEM_Sales_Cisco</role>
+        </sharedTo>
+        <booleanFilter>1 OR 2 OR 3</booleanFilter>
+        <criteriaItems>
+            <field>Prefered_Partner__c</field>
+            <operation>equals</operation>
+            <value>Cisco</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Preliminary_OEM_ODM_Disti_List_Text__c</field>
+            <operation>contains</operation>
+            <value>cisco</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Networking_POD_Partner__c</field>
+            <operation>equals</operation>
+            <value>Cisco</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>DGX_Product_Sharing_Group</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>DGX Product Sharing Group</label>
+        <sharedTo>
+            <group>DGX_Product_Sharing_Group</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>DGX_Product_Attached__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Region__c</field>
+            <operation>equals</operation>
+            <value>APAC</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Enterprise Design Wins,Enterprise Sales Opportunity</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Dach_Embedded_Opportunities</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Dach Embedded Opportunities</label>
+        <sharedTo>
+            <group>DACH_Embedded_Opportunities</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Tegra Embedded Opportunity,Tegra Embedded Partner Opportunity</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Region__c</field>
+            <operation>equals</operation>
+            <value>EMEA</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Dell_OEM_Sharing_Rule_with_OEM_Sales_Dell_role</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>Shares deals with Dell in prelim or primary selection with the OEM Sales - Dell role</description>
+        <label>Dell OEM Sharing Rule with OEM Sales - Dell role</label>
+        <sharedTo>
+            <role>OEM_Sales_Dell</role>
+        </sharedTo>
+        <booleanFilter>1 AND (2 OR 3 OR 4 OR 5 OR 7) AND 6</booleanFilter>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Enterprise Design Wins,Enterprise Sales Opportunity</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Primary_NPN_OEM_ODM_Disti_Text__c</field>
+            <operation>contains</operation>
+            <value>dell</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Preliminary_OEM_ODM_Disti_List_Text__c</field>
+            <operation>contains</operation>
+            <value>dell</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>NPN_Solution_Provider_VAR_Text__c</field>
+            <operation>contains</operation>
+            <value>dell</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Prefered_Partner__c</field>
+            <operation>equals</operation>
+            <value>Dell</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Industry__c</field>
+            <operation>notEqual</operation>
+            <value/>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Name</field>
+            <operation>contains</operation>
+            <value>Dell</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>EGX_Segment_Sales_Manager_oppty_access</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>oppty access for EGX Segment Sales Manager role and subordinates. Does not include CRISP or SuperComputing</description>
+        <label>EGX Segment Sales Manager oppty access</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>EGX_Segment_Sales_Manager</roleAndSubordinatesInternal>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Enterprise Sales Opportunity</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Region__c</field>
+            <operation>equals</operation>
+            <value>NALA</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Industry__c</field>
+            <operation>notEqual</operation>
+            <value>Supercomputing</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>EMEA_All_RW_Access</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>EMEA All RW Access</label>
+        <sharedTo>
+            <group>EMEA_RW_Opp_Access</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Region__c</field>
+            <operation>equals</operation>
+            <value>EMEA</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Enterprise Design Wins,Enterprise Sales Opportunity</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>EMEA_Automotive_Sharing</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>Used to share EMEA Automotive Opportunities with a group</description>
+        <label>EMEA Automotive Sharing</label>
+        <sharedTo>
+            <group>EMEA_Automotive_Access</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Industry__c</field>
+            <operation>equals</operation>
+            <value>Automotive</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Region__c</field>
+            <operation>equals</operation>
+            <value>EMEA</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>EMEA_Bull_OSE_Sharing</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>EMEA Bull OSE Sharing</label>
+        <sharedTo>
+            <group>Bull_Atos_GAM</group>
+        </sharedTo>
+        <booleanFilter>1 AND 2</booleanFilter>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Enterprise Sales Opportunity</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Preliminary_OEM_ODM_Disti_List_Text__c</field>
+            <operation>contains</operation>
+            <value>bull</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>EMEA_Dell_OSE_Sharing</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>Used to share EMEA enterprise opps with Dell OSE</description>
+        <label>EMEA Dell OSE Sharing</label>
+        <sharedTo>
+            <role>EMEA_Dell_OSE_Sales</role>
+        </sharedTo>
+        <booleanFilter>1 AND 2 AND (3 OR 4 OR 5)</booleanFilter>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Enterprise Design Wins,Enterprise Sales Opportunity</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Region__c</field>
+            <operation>equals</operation>
+            <value>EMEA</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Primary_NPN_OEM_ODM_Disti_Text__c</field>
+            <operation>contains</operation>
+            <value>dell</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>NPN_Solution_Provider_VAR_Text__c</field>
+            <operation>contains</operation>
+            <value>dell</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Preliminary_OEM_ODM_Disti_List_Text__c</field>
+            <operation>contains</operation>
+            <value>dell</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>EMEA_HPI</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>EMEA HPI</label>
+        <sharedTo>
+            <group>EMEA_HPI</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Region__c</field>
+            <operation>equals</operation>
+            <value>EMEA</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Preliminary_OEM_ODM_Disti_List_Text__c</field>
+            <operation>contains</operation>
+            <value>hpi</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>EMEA_HPI_OSE_Sales_Sharing</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>Used to share EMEA enterprise Opptys with HPI OSE Sales</description>
+        <label>EMEA HPI OSE Sales Sharing</label>
+        <sharedTo>
+            <role>EMEA_HPI_HPE_OSE_Sales</role>
+        </sharedTo>
+        <booleanFilter>1 AND 2 AND (3 OR 4 OR 5 OR 6)</booleanFilter>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Enterprise Design Wins,Enterprise Sales Opportunity</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Region__c</field>
+            <operation>equals</operation>
+            <value>EMEA</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Primary_NPN_OEM_ODM_Disti_Text__c</field>
+            <operation>contains</operation>
+            <value>hpe</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Primary_NPN_OEM_ODM_Disti_Text__c</field>
+            <operation>contains</operation>
+            <value>hpi</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Preliminary_OEM_ODM_Disti_List_Text__c</field>
+            <operation>contains</operation>
+            <value>hpe</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Preliminary_OEM_ODM_Disti_List_Text__c</field>
+            <operation>contains</operation>
+            <value>hpi</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>EMEA_Healthcare</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>EMEA Healthcare</label>
+        <sharedTo>
+            <group>EMEA_Healthcare_Sharing</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Industry__c</field>
+            <operation>equals</operation>
+            <value>Healthcare</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Region__c</field>
+            <operation>equals</operation>
+            <value>EMEA</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>EMEA_IBM_OSE_Sharing</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>EMEA Dell OSE Sharing to enterprise opptys</description>
+        <label>EMEA IBM OSE Sharing</label>
+        <sharedTo>
+            <role>EMEA_OSE_Sales</role>
+        </sharedTo>
+        <booleanFilter>1 AND 2 AND (3 OR 4 OR 5)</booleanFilter>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Enterprise Design Wins,Enterprise Sales Opportunity</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Region__c</field>
+            <operation>equals</operation>
+            <value>EMEA</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Primary_NPN_OEM_ODM_Disti_Text__c</field>
+            <operation>contains</operation>
+            <value>ibm</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Preliminary_OEM_ODM_Disti_List_Text__c</field>
+            <operation>contains</operation>
+            <value>ibm</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Storage_POD_Partner__c</field>
+            <operation>equals</operation>
+            <value>Inspur,Pure Storage,NetApp,DDN,VAST Data,IBM,Dell/EMC/Isilon,Weka.io</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>EMEA_Industries</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>EMEA Industries</label>
+        <sharedTo>
+            <group>EMEA_Industry_Sharing</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Industry__c</field>
+            <operation>equals</operation>
+            <value>Higher Ed/Research,Strategic Hyperscale,Supercomputing,Healthcare,Telecommunications</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Region__c</field>
+            <operation>equals</operation>
+            <value>EMEA</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>EMEA_Non_DC_Sharing</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>EMEA Non-DC Sharing</label>
+        <sharedTo>
+            <group>EMEAI_Read_Only_Sharing_Tegra</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Region__c</field>
+            <operation>equals</operation>
+            <value>EMEA</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Tegra Embedded Opportunity,Tegra Embedded Partner Opportunity</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>EMEA_Read_Only_Access</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>EMEA Read Only Access</label>
+        <sharedTo>
+            <group>EMEA_Read_Only_Access</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Region__c</field>
+            <operation>equals</operation>
+            <value>EMEA</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Enterprise Sales Opportunity</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>EMEA_SuperMicro</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>EMEA SuperMicro</label>
+        <sharedTo>
+            <group>EMEA_SuperMicro</group>
+        </sharedTo>
+        <booleanFilter>1 AND 2</booleanFilter>
+        <criteriaItems>
+            <field>Region__c</field>
+            <operation>equals</operation>
+            <value>EMEA</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Preliminary_OEM_ODM_Disti_List_Text__c</field>
+            <operation>contains</operation>
+            <value>super micro</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>GRID_EMEA_Read_Sharing</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>GRID EMEA Read Sharing</label>
+        <sharedTo>
+            <group>GRID_EMEAI_Read_Sharing</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Enterprise Sales Opportunity</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Region__c</field>
+            <operation>equals</operation>
+            <value>EMEA</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Primary_Customer_Use_Case__c</field>
+            <operation>equals</operation>
+            <value>Graphics Virtualization (vGPU)</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>GRID_Federal_Sharing</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>GRID Federal Sharing</label>
+        <sharedTo>
+            <role>vGPU_Federal_Sales</role>
+        </sharedTo>
+        <booleanFilter>1 AND 2 AND 3 AND (4 OR 5)</booleanFilter>
+        <criteriaItems>
+            <field>Industry__c</field>
+            <operation>equals</operation>
+            <value>Public Sector</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Region__c</field>
+            <operation>equals</operation>
+            <value>NALA</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Enterprise Sales Opportunity</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Quadro_Product_Attached__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>GRID_Product_Attached__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>GRID_WW_Read_Only_Sharing</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>GRID WW Read Only Sharing</description>
+        <label>GRID WW Read Only Sharing</label>
+        <sharedTo>
+            <group>GRID_WW_Read_Only_Sharing</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Enterprise Sales Opportunity</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Primary_Customer_Use_Case__c</field>
+            <operation>equals</operation>
+            <value>Graphics Virtualization (vGPU)</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>GSI_Account_Manager_Enterprise_Sales_Oppty_for_Edit_access</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Share Enterprise Sales Opportunities with GSI Account Managers for edit to NPN SDP - Professional Services field</description>
+        <label>GSI Account Manager - Enterprise Sales Oppty for Edit access</label>
+        <sharedTo>
+            <group>CRM_GSI_Account_Manager</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Enterprise Sales Opportunity</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Global_Opportunity</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Global Opportunity</label>
+        <sharedTo>
+            <group>Global_Opportunity_Access</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Region__c</field>
+            <operation>equals</operation>
+            <value>APAC,NALA,JAPAN,EMEA</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Global_Oppty_Sharing_to_OEM_Lead</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Global Oppty Sharing to OEM Lead</label>
+        <sharedTo>
+            <group>OEM_Sharing_Group</group>
+        </sharedTo>
+        <booleanFilter>1 AND (2 OR 3 OR 4 OR 5 OR 6 OR 7 OR 8 OR 9 OR 10 OR 11 OR 12 OR 13 OR 14 OR 15 OR 16 OR 17 OR 18 OR 19)</booleanFilter>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Enterprise Design Wins,Enterprise Sales Opportunity</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Primary_NPN_OEM_ODM_Disti_Text__c</field>
+            <operation>contains</operation>
+            <value>hpe</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>NPN_Solution_Provider_VAR_Text__c</field>
+            <operation>contains</operation>
+            <value>hpe</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Preliminary_OEM_ODM_Disti_List_Text__c</field>
+            <operation>contains</operation>
+            <value>hpe</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Primary_NPN_OEM_ODM_Disti_Text__c</field>
+            <operation>contains</operation>
+            <value>super micro</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>NPN_Solution_Provider_VAR_Text__c</field>
+            <operation>contains</operation>
+            <value>super micro</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Preliminary_OEM_ODM_Disti_List_Text__c</field>
+            <operation>contains</operation>
+            <value>super micro</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Primary_NPN_OEM_ODM_Disti_Text__c</field>
+            <operation>contains</operation>
+            <value>ibm</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>NPN_Solution_Provider_VAR_Text__c</field>
+            <operation>contains</operation>
+            <value>ibm</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Preliminary_OEM_ODM_Disti_List_Text__c</field>
+            <operation>contains</operation>
+            <value>ibm</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Primary_NPN_OEM_ODM_Disti_Text__c</field>
+            <operation>contains</operation>
+            <value>dell</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>NPN_Solution_Provider_VAR_Text__c</field>
+            <operation>contains</operation>
+            <value>dell</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Preliminary_OEM_ODM_Disti_List_Text__c</field>
+            <operation>contains</operation>
+            <value>dell</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Primary_NPN_OEM_ODM_Disti_Text__c</field>
+            <operation>contains</operation>
+            <value>cisco</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>NPN_Solution_Provider_VAR_Text__c</field>
+            <operation>contains</operation>
+            <value>cisco</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Preliminary_OEM_ODM_Disti_List_Text__c</field>
+            <operation>contains</operation>
+            <value>cisco</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Primary_NPN_OEM_ODM_Disti_Text__c</field>
+            <operation>contains</operation>
+            <value>lenovo</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>NPN_Solution_Provider_VAR_Text__c</field>
+            <operation>contains</operation>
+            <value>lenovo</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Preliminary_OEM_ODM_Disti_List_Text__c</field>
+            <operation>contains</operation>
+            <value>lenovo</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Grid_Quadro_Sharing_Group</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Grid &amp; Quadro Sharing Group</label>
+        <sharedTo>
+            <group>Grid_Quadro_Sharing_Group</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>GRID_Product_Attached__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Quadro_Product_Attached__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>HER_IBD_Sharing</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>Setup to share Higher Ed Opportunities with HER IBD</description>
+        <label>HER IBD Sharing</label>
+        <sharedTo>
+            <role>Higher_Education_and_Research_HER_IBD</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>Industry__c</field>
+            <operation>equals</operation>
+            <value>Higher Ed/Research</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>HPC_China_View_Only</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>HPC China View Only</label>
+        <sharedTo>
+            <group>HP_China_View_Only</group>
+        </sharedTo>
+        <booleanFilter>1 AND 2 AND (3 OR 4)</booleanFilter>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Enterprise Sales Opportunity</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Sub_Region__c</field>
+            <operation>equals</operation>
+            <value>CHINA</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Prefered_Partner__c</field>
+            <operation>equals</operation>
+            <value>H3C</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Preliminary_OEM_ODM_Disti_List_Text__c</field>
+            <operation>equals</operation>
+            <value>h3c</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>HPE_Cray_Opportunity_Sharing</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>HPE Cray Opportunity Sharing</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>OEM_Sales_HPE_Cray</roleAndSubordinatesInternal>
+        </sharedTo>
+        <booleanFilter>1 OR 2 OR 3</booleanFilter>
+        <criteriaItems>
+            <field>Preliminary_OEM_ODM_Disti_List_Text__c</field>
+            <operation>contains</operation>
+            <value>hpe</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Preliminary_OEM_ODM_Disti_List_Text__c</field>
+            <operation>contains</operation>
+            <value>cray</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Prefered_Partner__c</field>
+            <operation>equals</operation>
+            <value>HPE,Cray</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Healthcare_Oppty_Sharing</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>Share all HER/Healthcare opportunities with HC group</description>
+        <label>Healthcare Oppty Sharing</label>
+        <sharedTo>
+            <group>Healthcare_Sharing_Group</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Industry__c</field>
+            <operation>equals</operation>
+            <value>Healthcare</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Enterprise Design Wins,Enterprise Sales Opportunity</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Hybrid_Cloud_Sharing</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Hybrid Cloud Sharing</label>
+        <sharedTo>
+            <group>Hybrid_Cloud_Sharing</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Hybrid_Cloud_Solution__c</field>
+            <operation>notEqual</operation>
+            <value/>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Region__c</field>
+            <operation>equals</operation>
+            <value>APAC,NALA,JAPAN,EMEA</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Enterprise Design Wins,Enterprise Sales Opportunity</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>IBM_DGX_Read_Only</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>IBM DGX Read Only</label>
+        <sharedTo>
+            <group>IBM_DGX_Read_Only</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Storage_POD_Partner__c</field>
+            <operation>equals</operation>
+            <value>IBM</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>DGX_Product_Attached__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Inspur_WW_Sharing</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Inspur WW Sharing</label>
+        <sharedTo>
+            <group>Inspur_GAM</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Preliminary_OEM_ODM_Disti_List_Text__c</field>
+            <operation>contains</operation>
+            <value>inspur</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Japan_Enterprise_Oppty_Sharing</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Japan Enterprise Oppty Sharing</label>
+        <sharedTo>
+            <group>Japan_Enterprise_Oppty_Sharing</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Enterprise Design Wins,Enterprise Sales Opportunity</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Region__c</field>
+            <operation>equals</operation>
+            <value>JAPAN</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Lenovo_Global_Sharing</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Lenovo Global Sharing</label>
+        <sharedTo>
+            <group>Lenovo_OEM</group>
+        </sharedTo>
+        <booleanFilter>1 AND (2 OR 3)</booleanFilter>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Enterprise Design Wins,Enterprise Sales Opportunity</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Primary_NPN_OEM_ODM_Disti_Text__c</field>
+            <operation>contains</operation>
+            <value>Lenovo</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Preliminary_OEM_ODM_Disti_List_Text__c</field>
+            <operation>contains</operation>
+            <value>LENOVO</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Manufacturing_IBD_Sharing</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>Share all Manufacturing Opportunities with MFG IBD team</description>
+        <label>Manufacturing IBD Sharing</label>
+        <sharedTo>
+            <group>Industrial_IVA_IBD_Group</group>
+        </sharedTo>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <criteriaItems>
+            <field>Industry__c</field>
+            <operation>equals</operation>
+            <value>Manufacturing,Automotive,Oil &amp; Gas/Energy,Public Sector,Retail and CPG,Logistics &amp; Transportation,Aerospace</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Primary_Customer_Use_Case__c</field>
+            <operation>equals</operation>
+            <value>Predictive Maintenance,Industrial Inspection</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Media_Telecom_Sharing</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>Used to share media and telecom Opportunities with the media group</description>
+        <label>Media Telecom Sharing</label>
+        <sharedTo>
+            <group>Media_M_E_Group</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Industry__c</field>
+            <operation>equals</operation>
+            <value>Media/Entertainment</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>NALA_Aerospace_Public_Sector</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>NALA Aerospace &amp; Public Sector</label>
+        <sharedTo>
+            <group>NALA_Aerospace_Public_Sector</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Industry__c</field>
+            <operation>equals</operation>
+            <value>Public Sector,Supercomputing,Aerospace</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Region__c</field>
+            <operation>equals</operation>
+            <value>NALA</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>NALA_CIC_Auto_Sharing</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>Used to share NALA CIC and Auto Opportunities with sales manager</description>
+        <label>NALA CIC Auto Sharing</label>
+        <sharedTo>
+            <group>NALA_CIC_Auto_Group</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Enterprise Design Wins,Enterprise Sales Opportunity</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Industry__c</field>
+            <operation>equals</operation>
+            <value>CRISP (Consumer Internet Service Providers),Automotive</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Region__c</field>
+            <operation>equals</operation>
+            <value>NALA</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>NALA_CRISP_Opps</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>NALA CRISP Opps</label>
+        <sharedTo>
+            <group>NALA_CRISP_CSP_Sharing</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Industry__c</field>
+            <operation>equals</operation>
+            <value>CRISP (Consumer Internet Service Providers)</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Region__c</field>
+            <operation>equals</operation>
+            <value>NALA</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>NALA_DGX_Global_Sharing</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>NALA DGX Global Sharing</label>
+        <sharedTo>
+            <group>NALA_DGX_Global</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>DR_Product__c</field>
+            <operation>equals</operation>
+            <value>DGX-1 V100-32GB,DGX A100 40GB HW,vGPU vWS Perp - GRID,DGX Station A100-40G,DGX Station A100-80G,DGX-2 V100-32GB,DGX-2H V100-32GB,DGX A100 80G Full</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Region__c</field>
+            <operation>equals</operation>
+            <value>APAC,NALA,JAPAN,EMEA</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>NALA_Design_Wins</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>NALA Design Wins</label>
+        <sharedTo>
+            <group>NALA_Design_Wins</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Enterprise Design Wins,Enterprise Sales Opportunity</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>NALA_EDU_Special_Pricing</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>Specifically for NALA EDU Special Pricing Request deals</description>
+        <label>NALA EDU Special Pricing</label>
+        <sharedTo>
+            <group>NALA_EDU_Special_Pricing</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Special Pricing Request</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Region__c</field>
+            <operation>equals</operation>
+            <value>NALA</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Special_Pricing_Request_Type__c</field>
+            <operation>equals</operation>
+            <value>EDU</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>NALA_Enterprise_Opp_Sharing_PBMs</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>Share NALA Enterprise Opportunities only with NALA PBM roles</description>
+        <label>NALA Enterprise Opp Sharing PBMs</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>NALA_PBM_Sales_Manager</roleAndSubordinatesInternal>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Enterprise Design Wins,Enterprise Sales Opportunity</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Region__c</field>
+            <operation>equals</operation>
+            <value>NALA</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>NALA_Enterprise_Sales_Opps</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>NALA Enterprise Sales Opps</label>
+        <sharedTo>
+            <group>NALA_Enterprise_Sales_Opps</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Region__c</field>
+            <operation>equals</operation>
+            <value>NALA</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Enterprise Sales Opportunity</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>NALA_FSI_Sharing</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>NALA FSI Sharing to NALA FSI manager</description>
+        <label>NALA FSI Sharing</label>
+        <sharedTo>
+            <role>NALA_Finance_Sales_Manager</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>Region__c</field>
+            <operation>equals</operation>
+            <value>NALA</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Industry__c</field>
+            <operation>equals</operation>
+            <value>Financial Services Industry (FSI)</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Enterprise Design Wins,Enterprise Sales Opportunity</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>NALA_Grid_View</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>NALA Grid View</label>
+        <sharedTo>
+            <group>NALA_Grid_View</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Region__c</field>
+            <operation>equals</operation>
+            <value>NALA</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Enterprise Sales Opportunity,SW &amp; Service Renewals</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>GRID_Product_Attached__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>NALA_Higher_Ed</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Allows access to all NALA Higher Ed Opportunities</description>
+        <label>NALA Higher Ed</label>
+        <sharedTo>
+            <group>NALA_Healthcare_Sharing</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Industry__c</field>
+            <operation>equals</operation>
+            <value>Higher Ed/Research</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Region__c</field>
+            <operation>equals</operation>
+            <value>NALA</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>NALA_Industry_Sharing</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>NALA Industry Sharing</label>
+        <sharedTo>
+            <group>NALA_Industries</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Region__c</field>
+            <operation>equals</operation>
+            <value>NALA</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Enterprise Design Wins,Enterprise Sales Opportunity</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Industry__c</field>
+            <operation>notEqual</operation>
+            <value>Strategic Hyperscale</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>NALA_M_E</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>NALA M&amp;E</label>
+        <sharedTo>
+            <group>NAlA_M_E_Telco</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Region__c</field>
+            <operation>equals</operation>
+            <value>NALA</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Enterprise Design Wins,Enterprise Sales Opportunity</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Industry__c</field>
+            <operation>equals</operation>
+            <value>Media/Entertainment</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>NALA_Manufacturing</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>NALA Manufacturing</label>
+        <sharedTo>
+            <group>NALA_Healthcare</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Region__c</field>
+            <operation>equals</operation>
+            <value>NALA</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Industry__c</field>
+            <operation>equals</operation>
+            <value>Manufacturing</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>NALA_Oppty_Read_Only_NSC_Sharing</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>Used to share NALA Opptys with NSC PSS</description>
+        <label>NALA Oppty Read Only NSC Sharing</label>
+        <sharedTo>
+            <role>NALA_Inside_Sales_Product_Sales_Specialist_PSS</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>Region__c</field>
+            <operation>equals</operation>
+            <value>NALA</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Industry__c</field>
+            <operation>notEqual</operation>
+            <value>Strategic Hyperscale</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Enterprise Design Wins,Enterprise Sales Opportunity</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>NALA_Public_Sector</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>NALA Public Sector</label>
+        <sharedTo>
+            <group>Public_Sector</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Region__c</field>
+            <operation>equals</operation>
+            <value>NALA</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Industry__c</field>
+            <operation>equals</operation>
+            <value>Public Sector</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>NALA_Read_Write_Access</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>NALA Read Right for Sales Ops/Channel Admin</description>
+        <label>NALA Read/Write Access</label>
+        <sharedTo>
+            <group>NALA_Read_Write_Opp_Access</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Region__c</field>
+            <operation>equals</operation>
+            <value>NALA</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Enterprise Sales Opportunity</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>NALA_Retail_Sharing</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>Setup to share NALA Retail Enterprise Opptys with role</description>
+        <label>NALA Retail Sharing</label>
+        <sharedTo>
+            <role>NALA_Retail_Sales</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>Region__c</field>
+            <operation>equals</operation>
+            <value>NALA</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Industry__c</field>
+            <operation>equals</operation>
+            <value>Retail and CPG</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Enterprise Sales Opportunity</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>NALA_SuperMicro</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>NALA SuperMicro</label>
+        <sharedTo>
+            <group>SMC_Visbility</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Prefered_Partner__c</field>
+            <operation>equals</operation>
+            <value>Super Micro</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Region__c</field>
+            <operation>equals</operation>
+            <value>NALA</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>NALA_Telco_MFG_IT_Retail_M_E_Sharing</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>Used to share NALA telco, MFG, Retail, and M&amp;E Opportunities with the proper role</description>
+        <label>NALA Telco MFG IT Retail M&amp;E Sharing</label>
+        <sharedTo>
+            <role>NALA_Telco_MFG_Retail_M_E_Sales_Manager</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>Industry__c</field>
+            <operation>equals</operation>
+            <value>Manufacturing,Media/Entertainment,Retail and CPG,IT Services,Telecommunications</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Region__c</field>
+            <operation>equals</operation>
+            <value>NALA</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Enterprise Design Wins,Enterprise Sales Opportunity</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>NALA_Telco_M_E</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>NALA Telco M&amp;E</label>
+        <sharedTo>
+            <role>NALA_Telco_M_and_E_Sales_Manager</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>Industry__c</field>
+            <operation>equals</operation>
+            <value>Media/Entertainment,Telecommunications</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>NPN_SDP_Read_Access</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>NPN SDP Read Access</label>
+        <sharedTo>
+            <group>SDP_Sharing_Read_Access</group>
+        </sharedTo>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <criteriaItems>
+            <field>NPN_SDP_Professional_Services__c</field>
+            <operation>equals</operation>
+            <value>Cambridge Consulting,Accenture,Ciklum,Deloitte,Data Monsters (aka FlexisUS Inc.),Deepsense.ai (aka CodiLime),Capgemini,Dessa (aka DeepLearni.ng),Cognizant,ElementAI,EverFortuneAI,Berge,Ernst &amp; Young,Booz Allen Hamilton</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>NPN_SDP_Professional_Services__c</field>
+            <operation>equals</operation>
+            <value>SFL Scientific,Sigmoidal,Skymind,McKinsey,Tata Consultancy Services,Quantum Black,Teradata (aka ThinkBig Analytics),Infosys,InstaDeep Ltd,Everis,Lander Analytics,HCL,Tech Mahindra,Mobiliya (aka Agreeya Mobility Inc.),Quantiphi</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>ODM_Opportunity_Sharing1</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>Sharing to ODM GAM team members</description>
+        <label>ODM Opportunity Sharing1</label>
+        <sharedTo>
+            <role>OEM_Sales_ODM</role>
+        </sharedTo>
+        <booleanFilter>1 AND (2 OR 3 OR 4)</booleanFilter>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Enterprise Sales Opportunity</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Prefered_Partner__c</field>
+            <operation>equals</operation>
+            <value>Arrow Electronics,CEAC International,Aptec Distribution FFZ LLC,Carahsoft Technology Corporation,Cray,Acer Incorporated,Adlink,C-Data Computer Ltd.,Advantech,BayNex,Clavis Company (Macnica),ASUS,Daebo Communication &amp; Systems,Cirrascale</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Prefered_Partner__c</field>
+            <operation>equals</operation>
+            <value>Ryoyo Electro Corporation,Gigabyte,Inventec,Ingram Micro,Penguin Computing,PNY,IBM,Other,N/A,ScanSource,Daou Data,Isolin Trade &amp; Invest Limited,Quanta,HPI,Leadtek Research (Taiwan),Foxconn,Lenovo,Rashi Peripherals</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Prefered_Partner__c</field>
+            <operation>equals</operation>
+            <value>Tech Data,Softbank Commerce &amp; Service Corp,Synnex,VSTECS (Singapore) Pte. Ltd.,Tyan,Zero One Tech Co Ltd,Technology Joint Corporation (Elsa),ZT Systems</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>ODM_Opportunity_Sharing2</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>Sharing to ODM GAM team members</description>
+        <label>ODM Opportunity Sharing2</label>
+        <sharedTo>
+            <role>OEM_Sales_ODM</role>
+        </sharedTo>
+        <booleanFilter>1 AND (2 OR 3 OR 4 OR 5 OR 6 OR 7 OR 8 OR 9 OR 10 OR 11 OR 12 OR 13 OR 14 OR 15 OR 16 OR 17 OR 18 OR 19 OR 20 OR 21 OR 22 OR 23 OR 24 OR 25)</booleanFilter>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Enterprise Sales Opportunity</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Preliminary_OEM_ODM_Disti_List_Text__c</field>
+            <operation>equals</operation>
+            <value>acer incorporated</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Preliminary_OEM_ODM_Disti_List_Text__c</field>
+            <operation>equals</operation>
+            <value>adlink</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Preliminary_OEM_ODM_Disti_List_Text__c</field>
+            <operation>contains</operation>
+            <value>advantech</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Preliminary_OEM_ODM_Disti_List_Text__c</field>
+            <operation>contains</operation>
+            <value>aptec distribution ffz llc</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Preliminary_OEM_ODM_Disti_List_Text__c</field>
+            <operation>contains</operation>
+            <value>arrow electronics</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Preliminary_OEM_ODM_Disti_List_Text__c</field>
+            <operation>contains</operation>
+            <value>asus</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Preliminary_OEM_ODM_Disti_List_Text__c</field>
+            <operation>contains</operation>
+            <value>baynex</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Preliminary_OEM_ODM_Disti_List_Text__c</field>
+            <operation>contains</operation>
+            <value>carahsoft technology corporation</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Preliminary_OEM_ODM_Disti_List_Text__c</field>
+            <operation>contains</operation>
+            <value>c-data computer ltd.</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Preliminary_OEM_ODM_Disti_List_Text__c</field>
+            <operation>contains</operation>
+            <value>ceac international</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Preliminary_OEM_ODM_Disti_List_Text__c</field>
+            <operation>contains</operation>
+            <value>cirrascale</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Preliminary_OEM_ODM_Disti_List_Text__c</field>
+            <operation>contains</operation>
+            <value>clavis company (macnica)</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Preliminary_OEM_ODM_Disti_List_Text__c</field>
+            <operation>contains</operation>
+            <value>cray</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Preliminary_OEM_ODM_Disti_List_Text__c</field>
+            <operation>contains</operation>
+            <value>daebo communication &amp; systems</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Preliminary_OEM_ODM_Disti_List_Text__c</field>
+            <operation>contains</operation>
+            <value>daou data</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Preliminary_OEM_ODM_Disti_List_Text__c</field>
+            <operation>contains</operation>
+            <value>foxconn</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Preliminary_OEM_ODM_Disti_List_Text__c</field>
+            <operation>contains</operation>
+            <value>gigabyte</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Preliminary_OEM_ODM_Disti_List_Text__c</field>
+            <operation>contains</operation>
+            <value>hpi</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Preliminary_OEM_ODM_Disti_List_Text__c</field>
+            <operation>contains</operation>
+            <value>ibm</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Preliminary_OEM_ODM_Disti_List_Text__c</field>
+            <operation>contains</operation>
+            <value>ingram micro</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Preliminary_OEM_ODM_Disti_List_Text__c</field>
+            <operation>contains</operation>
+            <value>inventec</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Preliminary_OEM_ODM_Disti_List_Text__c</field>
+            <operation>contains</operation>
+            <value>isolin trade &amp; invest limited</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Preliminary_OEM_ODM_Disti_List_Text__c</field>
+            <operation>contains</operation>
+            <value>leadtek research (taiwan)</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Preliminary_OEM_ODM_Disti_List_Text__c</field>
+            <operation>contains</operation>
+            <value>n/a</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>ODM_Opportunity_Sharing3</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>ODM Opportunity Sharing3</label>
+        <sharedTo>
+            <role>OEM_Sales_ODM</role>
+        </sharedTo>
+        <booleanFilter>1 AND (2 OR 3 OR 4 OR 5 OR 6 OR 7 OR 8 OR 9 OR 10 OR 11 OR 12 OR 13 OR 14 OR 15 OR 16)</booleanFilter>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Enterprise Sales Opportunity</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Preliminary_OEM_ODM_Disti_List_Text__c</field>
+            <operation>contains</operation>
+            <value>other</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Preliminary_OEM_ODM_Disti_List_Text__c</field>
+            <operation>contains</operation>
+            <value>penguin computing</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Preliminary_OEM_ODM_Disti_List_Text__c</field>
+            <operation>contains</operation>
+            <value>pny</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Preliminary_OEM_ODM_Disti_List_Text__c</field>
+            <operation>contains</operation>
+            <value>quanta</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Preliminary_OEM_ODM_Disti_List_Text__c</field>
+            <operation>contains</operation>
+            <value>rashi peripherals</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Preliminary_OEM_ODM_Disti_List_Text__c</field>
+            <operation>contains</operation>
+            <value>ryoyo electro corporation</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Preliminary_OEM_ODM_Disti_List_Text__c</field>
+            <operation>contains</operation>
+            <value>scansource</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Preliminary_OEM_ODM_Disti_List_Text__c</field>
+            <operation>contains</operation>
+            <value>softbank commerce &amp; service corp</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Preliminary_OEM_ODM_Disti_List_Text__c</field>
+            <operation>contains</operation>
+            <value>synnex</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Preliminary_OEM_ODM_Disti_List_Text__c</field>
+            <operation>contains</operation>
+            <value>tech data</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Preliminary_OEM_ODM_Disti_List_Text__c</field>
+            <operation>contains</operation>
+            <value>technology joint corporation (elsa)</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Preliminary_OEM_ODM_Disti_List_Text__c</field>
+            <operation>contains</operation>
+            <value>tyan</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Preliminary_OEM_ODM_Disti_List_Text__c</field>
+            <operation>contains</operation>
+            <value>vstecs (singapore) pte. ltd.</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Preliminary_OEM_ODM_Disti_List_Text__c</field>
+            <operation>contains</operation>
+            <value>zero one tech co ltd</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Preliminary_OEM_ODM_Disti_List_Text__c</field>
+            <operation>contains</operation>
+            <value>zt systems</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>ODM_Opportunity_Sharing4</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>ODM Opportunity Sharing4</label>
+        <sharedTo>
+            <role>OEM_Sales_ODM</role>
+        </sharedTo>
+        <booleanFilter>1 AND (2 OR 3 OR 4 OR 5 OR 6 OR 7 OR 8 OR 9 OR 10 OR 11 OR 12 OR 13 OR 14 OR 15 OR 16 OR 17 OR 18 OR 19 OR 20 OR 21 OR 22 OR 23 OR 24 OR 25)</booleanFilter>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Enterprise Sales Opportunity</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>NPN_Solution_Provider_VAR_Text__c</field>
+            <operation>contains</operation>
+            <value>acer incorporated</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>NPN_Solution_Provider_VAR_Text__c</field>
+            <operation>contains</operation>
+            <value>adlink</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>NPN_Solution_Provider_VAR_Text__c</field>
+            <operation>contains</operation>
+            <value>advantech</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>NPN_Solution_Provider_VAR_Text__c</field>
+            <operation>contains</operation>
+            <value>aptec distribution ffz llc</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>NPN_Solution_Provider_VAR_Text__c</field>
+            <operation>contains</operation>
+            <value>arrow electronics</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>NPN_Solution_Provider_VAR_Text__c</field>
+            <operation>contains</operation>
+            <value>asus</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>NPN_Solution_Provider_VAR_Text__c</field>
+            <operation>contains</operation>
+            <value>baynex</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>NPN_Solution_Provider_VAR_Text__c</field>
+            <operation>contains</operation>
+            <value>carahsoft technology corporation</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>NPN_Solution_Provider_VAR_Text__c</field>
+            <operation>contains</operation>
+            <value>c-data computer ltd.</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>NPN_Solution_Provider_VAR_Text__c</field>
+            <operation>contains</operation>
+            <value>ceac international</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>NPN_Solution_Provider_VAR_Text__c</field>
+            <operation>contains</operation>
+            <value>cirrascale</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>NPN_Solution_Provider_VAR_Text__c</field>
+            <operation>contains</operation>
+            <value>clavis company (macnica)</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>NPN_Solution_Provider_VAR_Text__c</field>
+            <operation>contains</operation>
+            <value>cray</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>NPN_Solution_Provider_VAR_Text__c</field>
+            <operation>contains</operation>
+            <value>daebo communication &amp; systems</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>NPN_Solution_Provider_VAR_Text__c</field>
+            <operation>notContain</operation>
+            <value>daou data</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>NPN_Solution_Provider_VAR_Text__c</field>
+            <operation>contains</operation>
+            <value>foxconn</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>NPN_Solution_Provider_VAR_Text__c</field>
+            <operation>contains</operation>
+            <value>gigabyte</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>NPN_Solution_Provider_VAR_Text__c</field>
+            <operation>contains</operation>
+            <value>hpi</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>NPN_Solution_Provider_VAR_Text__c</field>
+            <operation>contains</operation>
+            <value>ibm</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>NPN_Solution_Provider_VAR_Text__c</field>
+            <operation>contains</operation>
+            <value>ingram micro</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>NPN_Solution_Provider_VAR_Text__c</field>
+            <operation>contains</operation>
+            <value>inventec</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>NPN_Solution_Provider_VAR_Text__c</field>
+            <operation>contains</operation>
+            <value>isolin trade &amp; invest limited</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>NPN_Solution_Provider_VAR_Text__c</field>
+            <operation>contains</operation>
+            <value>leadtek research (taiwan)</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>NPN_Solution_Provider_VAR_Text__c</field>
+            <operation>contains</operation>
+            <value>n/a</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>ODM_Opportunity_Sharing5</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>ODM Opportunity Sharing5</label>
+        <sharedTo>
+            <role>OEM_Sales_ODM</role>
+        </sharedTo>
+        <booleanFilter>1 AND (2 OR 3 OR 4 OR 5 OR 6 OR 7 OR 8 OR 9 OR 10 OR 11 OR 12 OR 13 OR 14 OR 15 OR 16)</booleanFilter>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Enterprise Sales Opportunity</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>NPN_Solution_Provider_VAR_Text__c</field>
+            <operation>contains</operation>
+            <value>other</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>NPN_Solution_Provider_VAR_Text__c</field>
+            <operation>contains</operation>
+            <value>penguin computing</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>NPN_Solution_Provider_VAR_Text__c</field>
+            <operation>contains</operation>
+            <value>pny</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>NPN_Solution_Provider_VAR_Text__c</field>
+            <operation>contains</operation>
+            <value>quanta</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>NPN_Solution_Provider_VAR_Text__c</field>
+            <operation>contains</operation>
+            <value>rashi peripherals</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>NPN_Solution_Provider_VAR_Text__c</field>
+            <operation>contains</operation>
+            <value>ryoyo electro corporation</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>NPN_Solution_Provider_VAR_Text__c</field>
+            <operation>contains</operation>
+            <value>scansource</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>NPN_Solution_Provider_VAR_Text__c</field>
+            <operation>contains</operation>
+            <value>softbank commerce &amp; service corp</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>NPN_Solution_Provider_VAR_Text__c</field>
+            <operation>contains</operation>
+            <value>synnex</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>NPN_Solution_Provider_VAR_Text__c</field>
+            <operation>contains</operation>
+            <value>tech data</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>NPN_Solution_Provider_VAR_Text__c</field>
+            <operation>contains</operation>
+            <value>technology joint corporation (elsa)</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>NPN_Solution_Provider_VAR_Text__c</field>
+            <operation>contains</operation>
+            <value>tyan</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>NPN_Solution_Provider_VAR_Text__c</field>
+            <operation>contains</operation>
+            <value>vstecs (singapore) pte. ltd.</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>NPN_Solution_Provider_VAR_Text__c</field>
+            <operation>contains</operation>
+            <value>zero one tech co ltd</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>NPN_Solution_Provider_VAR_Text__c</field>
+            <operation>contains</operation>
+            <value>zt systems</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>OEM_Sharing</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>OEM Sharing</label>
+        <sharedTo>
+            <group>OEM_Sharing</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Prefered_Partner__c</field>
+            <operation>equals</operation>
+            <value>HPE,Fujitsu,HPI,Cisco</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>O_G_CICN_SA_Sharing_Setup</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>Oil and Gas and CICN for SA sharing setup</description>
+        <label>O&amp;G CICN SA Sharing Setup</label>
+        <sharedTo>
+            <group>Solution_Architect_CICN_O_G_Sharing</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Industry__c</field>
+            <operation>equals</operation>
+            <value>CRISP (Consumer Internet Service Providers),Oil &amp; Gas/Energy</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Oil_Gas_Eastern_Hemisphere</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Oil &amp; Gas - Eastern Hemisphere</label>
+        <sharedTo>
+            <group>Guy_Gueritz_Only</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Industry__c</field>
+            <operation>equals</operation>
+            <value>Oil &amp; Gas/Energy</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Region__c</field>
+            <operation>equals</operation>
+            <value>JAPAN,APAC,EMEA</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Oil_Gas_Sharing_to_Oil_Gas_Manager</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Share worldwide Oil/Gas Opptys with Oil/Gas management</description>
+        <label>Oil/Gas Sharing to Oil/Gas Manager</label>
+        <sharedTo>
+            <role>Oil_Gas_Sales_IBD</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>Industry__c</field>
+            <operation>equals</operation>
+            <value>Oil &amp; Gas/Energy</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Opp_Design_Wins_Enterprise_Sales</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Opp Design Wins &amp; Enterprise Sales</label>
+        <sharedTo>
+            <group>Enterprise_Design_Wins_Sales_Ops</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Enterprise Design Wins,Enterprise Sales Opportunity</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Oppty_Storage_Partner_Sharing</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Oppty Storage Partner Sharing</label>
+        <sharedTo>
+            <group>Oppty_Storage_Sharing_Group</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Enterprise Sales Opportunity</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Storage_POD_Partner__c</field>
+            <operation>notEqual</operation>
+            <value/>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>PNY_Global</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>PNY Global</label>
+        <sharedTo>
+            <group>PNY_Global</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Primary_NPN_OEM_ODM_Disti_Text__c</field>
+            <operation>contains</operation>
+            <value>pny</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>POC_Requests_Opportunities</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>POC Requests Opportunities</label>
+        <sharedTo>
+            <group>POC_Requests_Opportunities</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Region__c</field>
+            <operation>equals</operation>
+            <value>EMEA,NALA</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Enterprise Sales Opportunity</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Industry__c</field>
+            <operation>equals</operation>
+            <value>,Higher Ed/Research,IVA (Security and Safety),Manufacturing,Media/Entertainment,&quot;Architecture, Eng and Construction&quot;,Automotive,Financial Services Industry (FSI),Gaming,IT Services,Logistics &amp; Transportation,Aerospace,Healthcare</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Public_Sector_Management_Opp_Sharing</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Share all US, Canada public sector Opptys with Public Sector Management</description>
+        <label>Public Sector Management Opp Sharing</label>
+        <sharedTo>
+            <role>NALA_Public_Sector_IBD</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>Region__c</field>
+            <operation>equals</operation>
+            <value>NALA</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Industry__c</field>
+            <operation>equals</operation>
+            <value>Higher Ed/Research,Public Sector</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Quadro_Products_China</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Quadro Products China</label>
+        <sharedTo>
+            <group>Quadro_China</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Product_Line__c</field>
+            <operation>equals</operation>
+            <value>QUADRO</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Sub_Region__c</field>
+            <operation>equals</operation>
+            <value>CHINA</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Quadro_Opportunity_Solution__c</field>
+            <operation>equals</operation>
+            <value>Traditional workstation (Quadro),QUADRO VCA</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Quanta_Sharing_Group</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Quanta sharing with Quanta sharing group</description>
+        <label>Quanta Sharing Group</label>
+        <sharedTo>
+            <group>Quanta_Public_Group</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Preliminary_OEM_ODM_Disti_List_Text__c</field>
+            <operation>contains</operation>
+            <value>quanta</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>ROAP_IVA</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>Providing opportunity access to ROAP IVA users</description>
+        <label>ROAP IVA</label>
+        <sharedTo>
+            <group>ROAP_IVA</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Primary_Customer_Use_Case__c</field>
+            <operation>equals</operation>
+            <value>Intelligent Video Analytics (IVA)</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Region__c</field>
+            <operation>equals</operation>
+            <value>APAC</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Sub_Region__c</field>
+            <operation>notEqual</operation>
+            <value>CHINA</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Read_Write_Industries</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Read/Write Industries</label>
+        <sharedTo>
+            <group>All_Industries_Read_Write</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Industry__c</field>
+            <operation>notEqual</operation>
+            <value/>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>SCOPE_Sharing_Rule</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Used to share SCOPE deals with approvers</description>
+        <label>SCOPE Sharing Rule</label>
+        <sharedTo>
+            <role>Tesla_Segment_Sales_Manager_SC_IBD</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>OEM Bid Opportunity</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>SCOPE_Sharing_with_Approvers</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>SCOPE Sharing with Approvers</label>
+        <sharedTo>
+            <group>SCOPE_Approval_View_Group</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>OEM Bid Opportunity</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>SMC_EMEA_Sharing</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>Sharing for SMC in EMEA</description>
+        <label>SMC EMEA Sharing</label>
+        <sharedTo>
+            <group>EMEA_SMC_Sharing_Group</group>
+        </sharedTo>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <criteriaItems>
+            <field>Prefered_Partner__c</field>
+            <operation>equals</operation>
+            <value>Super Micro</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Preliminary_OEM_ODM_Disti_List_Text__c</field>
+            <operation>contains</operation>
+            <value>super micro</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Serge_Team_EMEA_Read_Only</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Serge Team EMEA Read Only</label>
+        <sharedTo>
+            <group>Serge_Palaric_Team</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Region__c</field>
+            <operation>equals</operation>
+            <value>EMEA</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Enterprise Design Wins,Enterprise Sales Opportunity</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Special_Pricing_Oppty_Sharing_All</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Used to share Special Pricing Opportunities with all users</description>
+        <label>Special Pricing Oppty Sharing - All</label>
+        <sharedTo>
+            <group>Special_Pricing_Group_View_All</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Special Pricing Request</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Special_Pricing_Oppty_Sharing_EDU</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Used to share Special Pricing Opportunities EDU only</description>
+        <label>Special Pricing Oppty Sharing - EDU</label>
+        <sharedTo>
+            <group>Special_Pricing_Group_EDU</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Special Pricing Request</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Special_Pricing_Request_Type__c</field>
+            <operation>equals</operation>
+            <value>EDU</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Sumit_Kumar_SA_Access</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Sumit Kumar SA Access</label>
+        <sharedTo>
+            <group>WWT_Opp_Access</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Solution_VAR__c</field>
+            <operation>equals</operation>
+            <value>World Wide Technology</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Enterprise Sales Opportunity</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Supercomputing_Opportunity_Sharing</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Supercomputing Opportunity Sharing</label>
+        <sharedTo>
+            <group>Supercomputing_Group</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Industry__c</field>
+            <operation>equals</operation>
+            <value>Supercomputing</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>TEGRA_EMBEDDED_INTERNAL_TEAM_RW_ACCESS_TO_TE_PARTNER_OPP</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Tegra Embedded Partner Opportunity R/W access to TEGRA EMBEDDED INTERNAL TEAM</description>
+        <label>TEGRA EMBEDDED INTERNAL TEAM RW ACCESS TO TE PARTNER OPP</label>
+        <sharedTo>
+            <group>TEGRA_EMBEDDED_INTERNAL_TEAM</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Tegra Embedded Partner Opportunity</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>TEGRA_EMBEDDED_MANAGEMENT_RW_ACCESS</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Tegra Embedded Opportunity RW Access to TEGRA EMBEDDED MANAGEMENT Public Group</description>
+        <label>TEGRA EMBEDDED MANAGEMENT RW ACCESS</label>
+        <sharedTo>
+            <group>TEGRA_EMBEDDED_MANAGEMENT</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Tegra Embedded Opportunity,Tegra Embedded Partner Opportunity</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Telecom_Sharing</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>Share all worldwide Telecom with Telecom roles and subs</description>
+        <label>Telecom Sharing</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>Telecom_Sales_IBD</roleAndSubordinatesInternal>
+        </sharedTo>
+        <criteriaItems>
+            <field>Industry__c</field>
+            <operation>equals</operation>
+            <value>Telecommunications</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>WW_Read_Write</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>WW Read/Write</label>
+        <sharedTo>
+            <group>WW_Read_Write</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Enterprise Sales Opportunity</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingOwnerRules>
+        <fullName>APAC_Sales_Ops_Oppty_Sharing</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>APAC Sales Ops sharing of Opportunities</description>
+        <label>APAC Sales Ops Oppty Sharing</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>APAC_Sales_Ops</roleAndSubordinatesInternal>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>APAC_Sales_VP</roleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>AdministratorA</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>AdministratorA</label>
+        <sharedTo>
+            <role>Administrator</role>
+        </sharedTo>
+        <sharedFrom>
+            <allInternalUsers/>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Auto_Team_with_EMEA_Auto_Sales</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Auto Team with EMEA Auto Sales</label>
+        <sharedTo>
+            <role>EMEA_Auto_Embedded_Sales</role>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>Sales_Lead_Manager_Auto</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Automotive_team_sharing</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>Share automotive Opportunities with auto team</description>
+        <label>Automotive team sharing</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>Sales_Lead_Manager_Auto</roleAndSubordinatesInternal>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>Sales_Lead_Manager_Auto</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>China_CSP_Sharing_with_NALA_CSP</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Share all China CSP deals with NALA CSP group</description>
+        <label>China CSP Sharing with NALA CSP</label>
+        <sharedTo>
+            <group>NALA_China_CSP_Group</group>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>China_CSP_Sales_Manager</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>DGX_Segment_Sales_Permissions</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>DGX Segment Sales Permissions</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>DGX_Segment_Sales_Manager</roleAndSubordinatesInternal>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>New_Hierarchy</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>DLI_Oppty_Sharing_with_EMEA_Sales_Ops</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>DLI Oppty Sharing with EMEA Sales Ops</label>
+        <sharedTo>
+            <role>EMEA_Sales_Ops</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>DLI_Sales</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>DLI_Sharing</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>DLI</description>
+        <label>DLI Sharing</label>
+        <sharedTo>
+            <role>DLI_Sales</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>DLI_Sales</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Dell_OEM_Sharing_for_Jessy_Huan</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Dell OEM Sharing for Jessy Huan</label>
+        <sharedTo>
+            <group>Dell_OEM_Group</group>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>OEM_Sales_Dell</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Dell_OEM_Sharing_with_Dell_OEM_Role</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Dell OEM Sharing with Dell OEM Role</label>
+        <sharedTo>
+            <role>OEM_Sales_Dell</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>OEM_Sales_Dell</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Dell_Oppty_Sharing_with_Collin</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Dell Oppty Sharing with Collin</label>
+        <sharedTo>
+            <group>OEM_Sharing_Group_Collin_Tan</group>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>OEM_Sales_Dell</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>EGX_Opportunity_Sharing</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>This rule allows the EGX Segment Sales Manager role to read/write all EGX opportunities</description>
+        <label>EGX Opportunity Sharing</label>
+        <sharedTo>
+            <role>EGX_Segment_Sales_Manager</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>EGX_Segment_Sales_Manager</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>EMEAI_Sales_Manager_Existing</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>EMEAI Sales Manager Existing</label>
+        <sharedTo>
+            <role>EMEA_Enterprise_Sales_Manager</role>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>EMEA_Sales_VP</roleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>EMEA_Auto_Oppty_Sharing</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Used to share some EMEA auto Opportunities</description>
+        <label>EMEA Auto Oppty Sharing</label>
+        <sharedTo>
+            <group>EMEA_Auto_Oppty_Sharing</group>
+        </sharedTo>
+        <sharedFrom>
+            <group>EMEA_Auto_Oppty_Sharing</group>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>EMEA_Auto_Sales_with_Auto_Team</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>EMEA Auto Sales with Auto Team</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>Sales_Lead_Manager_Auto</roleAndSubordinatesInternal>
+        </sharedTo>
+        <sharedFrom>
+            <role>EMEA_Auto_Embedded_Sales</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Fleet_Command_Opportunity_Access</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>This rule shares EGX Segment Sales Role opps with others in same role or subbordinate.</description>
+        <label>Fleet Command Opportunity Access</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>EGX_Segment_Sales_Manager</roleAndSubordinatesInternal>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>EGX_Segment_Sales_Manager</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>HPE_Cray_Opportunity_Sharing</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>Sharing setup for OEM users between HPE and Cray</description>
+        <label>HPE Cray Opportunity Sharing</label>
+        <sharedTo>
+            <group>HPE_Cray_Sharing_Group</group>
+        </sharedTo>
+        <sharedFrom>
+            <group>HPE_Cray_Sharing_Group</group>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>India_Opps_Sharing_to_Manager1</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Shares all India Opps with India Manager1</description>
+        <label>India Opps Sharing to Manager1</label>
+        <sharedTo>
+            <role>India_Enterprise_Sales_Manager_1</role>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>India_Country_Manager</roleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Japan_Sharing_Rule</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Share all of Japan with all of Japan and subs</description>
+        <label>Japan Sharing Rule</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>Japan_Sales_VP</roleAndSubordinatesInternal>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>Japan_Sales_VP</roleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>LATAM_Oppty_Sharing</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Used to share LATAM Opptys with the LATAM managers for editing.  NALA Regional Sales Ops requested this rule.</description>
+        <label>LATAM Oppty Sharing</label>
+        <sharedTo>
+            <role>LATAM_Sales_Manager</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>LATAM_Sales_Manager</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Lenovo_GAM_Sharing</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Lenovo GAM Sharing</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>OEM_Sales_Lenovo</roleAndSubordinatesInternal>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>OEM_Sales_Lenovo</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Lenovo_Sharing_Rule_with_Collin</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Lenovo Sharing Rule with Collin</label>
+        <sharedTo>
+            <group>OEM_Sharing_Group_Collin_Tan</group>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>OEM_Sales_Lenovo</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>NALA_HER_Specialist_Sharing_to_Enterprise</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>Sharing NALA HER GRID to Enterprise Sales Manager</description>
+        <label>NALA HER Specialist Sharing to Enterprise</label>
+        <sharedTo>
+            <role>vGPU_Enterprise_Sales_Manager</role>
+        </sharedTo>
+        <sharedFrom>
+            <group>NALA_GRID_HER_Specialist</group>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>NALA_Public_Sector_Sharing</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>For use by NALA Public Sector IBD team to get appropriate visibility</description>
+        <label>NALA Public Sector Sharing</label>
+        <sharedTo>
+            <group>NALA_Public_Sector_IBD_Team</group>
+        </sharedTo>
+        <sharedFrom>
+            <group>NALA_Public_Sector_Sales_Team</group>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>NALA_Sharing_with_SA_Manager</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>NALA Sharing with SA Manager</label>
+        <sharedTo>
+            <group>NALA_Sharing</group>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>NALA_Sales_VP</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Renewal_Sales_Opps_with_Dell_OEM</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>to share Renewal Opportunities with Dell OEM role</description>
+        <label>Renewal Sales Opps with Dell OEM</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>OEM_Sales_Dell</roleAndSubordinatesInternal>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>Renewal_Sales</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Renewal_Sales_Oppty_Sharing</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Renewal Sales Oppty Sharing</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>Renewal_Sales</roleAndSubordinatesInternal>
+        </sharedTo>
+        <sharedFrom>
+            <role>Administrator</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Renwal_Sales_Team_Sharing</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Rule to share opportunities between Renewal Sales team members</description>
+        <label>Renwal Sales Team Sharing</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>Renewal_Sales</roleAndSubordinatesInternal>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>Renewal_Sales</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>SalesTeamLeadQuadroA</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Sales Team Lead - QuadroA</label>
+        <sharedTo>
+            <role>SalesTeamLeadQuadro</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>SalesLeadManagerTesla</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Sales_Tegra_Auto_Emb</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Sales - Tegra Auto/Emb</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>Sales_Lead_Manager_Tegra_Auto_Emb</roleAndSubordinatesInternal>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>Sales_Lead_Manager_Tegra_Auto_Emb</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Share_CPQ_Opportunities_With_CPQ_Users</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>Share CPQ Opportunities With CPQ Users</description>
+        <label>Share CPQ Opportunities With CPQ Users</label>
+        <sharedTo>
+            <group>CPQ_Renewal_Users</group>
+        </sharedTo>
+        <sharedFrom>
+            <group>CPQ_Renewal_Users</group>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Share_svcDataWriter_Opportunities_With_CPQ_Users</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>Share svcDataWriter Opportunities With CPQ Users</description>
+        <label>Share svcDataWriter Opportunities With CPQ Users</label>
+        <sharedTo>
+            <group>CPQ_Renewal_Users</group>
+        </sharedTo>
+        <sharedFrom>
+            <group>svcDataWriter</group>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Sharing_GRID_with_NALA_Sales_Mgmt</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>Sharing rule to share GRID and subs with NALA Sales Management</description>
+        <label>Sharing GRID with NALA Sales Mgmt</label>
+        <sharedTo>
+            <role>NALA_Other_Sales</role>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>vGPU_Segment_Manager</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Tegra_Embedded_Opp_Sharing</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Share Tegra Embedded Opportunities with SalesLeadManagerNotebookTegra role</description>
+        <label>Tegra Embedded Opp Sharing</label>
+        <sharedTo>
+            <role>SalesLeadManagerNotebookTegra</role>
+        </sharedTo>
+        <sharedFrom>
+            <group>Tegra_Embedded_Perm_Set</group>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Tesla_Segment_Sales_Sharing</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>Setting up to share Opportunities with Tesla Segment sales management and subs</description>
+        <label>Tesla Segment Sales Sharing</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>Tesla_Segment_Sales_Manager_SC_IBD</roleAndSubordinatesInternal>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>Sales</roleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>sharing_for_GRID_Segment_Sales</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>Sharing for GRID Segment sales manager role</description>
+        <label>sharing for GRID Segment Sales</label>
+        <sharedTo>
+            <role>vGPU_Segment_Manager</role>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>Sales</roleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>vGPU_Sharing_to_SA_Manager</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>Used to share vGPU deals owned by the Segment Sales team are shared to SA managers</description>
+        <label>vGPU Sharing to SA Manager</label>
+        <sharedTo>
+            <group>NALA_Sharing</group>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>vGPU_Segment_Manager</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

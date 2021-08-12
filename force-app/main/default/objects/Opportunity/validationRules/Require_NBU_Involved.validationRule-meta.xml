@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_NBU_Involved</fullName>
+    <active>true</active>
+    <description>SDS-2892:  for Tesla Product or DGX Product amount Opportunities &gt;=$1M and NV Forecast Category = Best Case OR Commit and Industry is not &apos;Strategic Hyperscale&apos; we&apos;d like to make sure that &apos;NBU Involved&apos; question is answered (not blank)</description>
+    <errorConditionFormula>AND(
+  RecordType.DeveloperName = &apos;Enterprise_Sales_Opportunity&apos;,
+AND($Profile.Name &lt;&gt; &apos;System Administrator&apos;,$Profile.Name &lt;&gt; &apos;SVC SAP Integration&apos;),
+  NOT(ISPICKVAL(Industry__c, &apos;Strategic Hyperscale&apos;)),
+  OR(
+    Tesla_Product_Amount__c &gt;= 1000000,
+    Total_DGX_Product_Amount__c &gt;= 1000000
+  ),
+  OR(
+   ISPICKVAL(NV_Forecast_Category__c, &apos;3-Best Case&apos;),
+   ISPICKVAL(NV_Forecast_Category__c, &apos;2-Commit&apos;)
+  ), 
+  ISPICKVAL(NBU_Involved__c, &apos;&apos;)  
+)</errorConditionFormula>
+    <errorDisplayField>NBU_Involved__c</errorDisplayField>
+    <errorMessage>For Best Case or Commit Opptys &gt;$1M the &apos;NBU Involved&apos; Yes/No selection cannot be blank</errorMessage>
+</ValidationRule>

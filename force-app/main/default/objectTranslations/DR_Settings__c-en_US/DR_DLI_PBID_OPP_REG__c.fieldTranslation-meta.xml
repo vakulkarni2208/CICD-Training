@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- DLI Price Book Id for Opp Reg --></help>
+    <label><!-- DR : DLI : PBID : OPP REG --></label>
+    <name>DR_DLI_PBID_OPP_REG__c</name>
+</CustomFieldTranslation>

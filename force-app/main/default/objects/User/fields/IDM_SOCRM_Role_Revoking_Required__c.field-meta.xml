@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IDM_SOCRM_Role_Revoking_Required__c</fullName>
+    <description>IDM Configuration to revoke SOCRM role needed for this external user?</description>
+    <externalId>false</externalId>
+    <formula>!ISPICKVAL(UserType, &apos;Standard&apos;) &amp;&amp; !IsActive &amp;&amp; !IDM_SOCRM_Role_Revoked__c &amp;&amp;  !ISBLANK(FederationIdentifier) &amp;&amp; CONTAINS( $Setup.IDM_Settings__c.SOCRM_SFDC_Profiles__c, Profile.Name )</formula>
+    <inlineHelpText>IDM Configuration to revoke SOCRM role needed for this external user?</inlineHelpText>
+    <label>IDM - SOCRM Role Revoking Required?</label>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Job Role --></label>
+    <name>Job_Role__c</name>
+    <picklistValues>
+        <masterLabel>Channel/Partners</masterLabel>
+        <translation><!-- Channel/Partners --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chief Executive Officer (CEO)</masterLabel>
+        <translation><!-- Chief Executive Officer (CEO) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chief Information Officer (CIO)</masterLabel>
+        <translation><!-- Chief Information Officer (CIO) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chief Technology Officer (CTO)</masterLabel>
+        <translation><!-- Chief Technology Officer (CTO) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Consultant</masterLabel>
+        <translation><!-- Consultant --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Data Scientist</masterLabel>
+        <translation><!-- Data Scientist --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Developer/Programmer</masterLabel>
+        <translation><!-- Developer/Programmer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Director</masterLabel>
+        <translation><!-- Director --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Engineer</masterLabel>
+        <translation><!-- Engineer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Executive/Management</masterLabel>
+        <translation><!-- Executive/Management --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Film/Video Editor</masterLabel>
+        <translation><!-- Film/Video Editor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Graphic Designer/Animator</masterLabel>
+        <translation><!-- Graphic Designer/Animator --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IT Administrator/Systems Administrator</masterLabel>
+        <translation><!-- IT Administrator/Systems Administrator --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IT Manager/Director of IT/VP of IT</masterLabel>
+        <translation><!-- IT Manager/Director of IT/VP of IT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Industrial Designer/Product Designer</masterLabel>
+        <translation><!-- Industrial Designer/Product Designer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Marketing Manager</masterLabel>
+        <translation><!-- Marketing Manager --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Marketing/Communications</masterLabel>
+        <translation><!-- Marketing/Communications --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Product Design/Engineering</masterLabel>
+        <translation><!-- Product Design/Engineering --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Product Management/Technical Marketing</masterLabel>
+        <translation><!-- Product Management/Technical Marketing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Professor/Department Advisor</masterLabel>
+        <translation><!-- Professor/Department Advisor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Purchasing Manager</masterLabel>
+        <translation><!-- Purchasing Manager --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Renewal Contact</masterLabel>
+        <translation><!-- Renewal Contact --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Research Scientist</masterLabel>
+        <translation><!-- Research Scientist --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sales Engineer</masterLabel>
+        <translation><!-- Sales Engineer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sales Rep/Sales Manager</masterLabel>
+        <translation><!-- Sales Rep/Sales Manager --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sales/Business Development</masterLabel>
+        <translation><!-- Sales/Business Development --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Senior Vice President (SVP)</masterLabel>
+        <translation><!-- Senior Vice President (SVP) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Student/Post Grad</masterLabel>
+        <translation><!-- Student/Post Grad --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Support/Services</masterLabel>
+        <translation><!-- Support/Services --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Vice President (VP)</masterLabel>
+        <translation><!-- Vice President (VP) --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

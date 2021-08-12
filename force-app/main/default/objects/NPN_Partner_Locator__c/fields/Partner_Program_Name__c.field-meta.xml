@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Partner_Program_Name__c</fullName>
+    <externalId>false</externalId>
+    <label>Partner Program Name</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Solution Provider</fullName>
+                <default>false</default>
+                <label>Solution Provider</label>
+            </value>
+            <value>
+                <fullName>OEM</fullName>
+                <default>false</default>
+                <label>OEM</label>
+            </value>
+            <value>
+                <fullName>Distributor</fullName>
+                <default>false</default>
+                <label>Distributor</label>
+            </value>
+            <value>
+                <fullName>Cloud Service Provider</fullName>
+                <default>false</default>
+                <label>Cloud Service Provider</label>
+            </value>
+            <value>
+                <fullName>Solutions Integration Partner</fullName>
+                <default>false</default>
+                <label>Solutions Integration Partner</label>
+            </value>
+            <value>
+                <fullName>Education Services</fullName>
+                <default>false</default>
+                <label>Education Services</label>
+            </value>
+            <value>
+                <fullName>Professional Services</fullName>
+                <default>false</default>
+                <label>Professional Services</label>
+            </value>
+            <value>
+                <fullName>Solution Advisor - Storage Partner</fullName>
+                <default>false</default>
+                <label>Solution Advisor - Storage Partner</label>
+            </value>
+            <value>
+                <fullName>Global Systems Integrator</fullName>
+                <default>false</default>
+                <label>Global Systems Integrator</label>
+            </value>
+            <value>
+                <fullName>Solution Advisor - Data Center Provider</fullName>
+                <default>false</default>
+                <label>Solution Advisor - Data Center Provider</label>
+            </value>
+            <value>
+                <fullName>Federal Systems Integrator</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Federal Systems Integrator</label>
+            </value>
+            <value>
+                <fullName>Service Delivery Partner</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Service Delivery Partner</label>
+            </value>
+            <value>
+                <fullName>Services Subcontractor</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Services Subcontractor</label>
+            </value>
+            <value>
+                <fullName>Solution Advisor</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Solution Advisor</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

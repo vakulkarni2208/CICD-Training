@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Partner_PortalName__c</fullName>
+    <externalId>false</externalId>
+    <label>Partner_PortalName</label>
+    <referenceTo>Partner_Portal__c</referenceTo>
+    <relationshipLabel>Partner_Portal_Tabs</relationshipLabel>
+    <relationshipName>Partner_Portal_Tabs</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

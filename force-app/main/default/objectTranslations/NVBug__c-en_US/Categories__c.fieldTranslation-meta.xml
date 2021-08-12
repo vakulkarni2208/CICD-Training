@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Categories --></label>
+    <name>Categories__c</name>
+    <picklistValues>
+        <masterLabel>Bugs Test TWO</masterLabel>
+        <translation><!-- Bugs Test TWO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wistron - VoW001</masterLabel>
+        <translation><!-- Wistron - VoW001 --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

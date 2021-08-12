@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- NVIDIA Frameworks and SDKs --></label>
+    <name>NVIDIA_Frameworks_and_SDKs__c</name>
+    <picklistValues>
+        <masterLabel>Aerial</masterLabel>
+        <translation><!-- Aerial --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Clara</masterLabel>
+        <translation><!-- Clara --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ISAAC</masterLabel>
+        <translation><!-- ISAAC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Jarvis</masterLabel>
+        <translation><!-- Jarvis --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Maxine</masterLabel>
+        <translation><!-- Maxine --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Merlin</masterLabel>
+        <translation><!-- Merlin --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Metropolis</masterLabel>
+        <translation><!-- Metropolis --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Morpheus</masterLabel>
+        <translation><!-- Morpheus --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Nemo</masterLabel>
+        <translation><!-- Nemo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RAPIDS</masterLabel>
+        <translation><!-- RAPIDS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Spark 3.0</masterLabel>
+        <translation><!-- Spark 3.0 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TAO</masterLabel>
+        <translation><!-- TAO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Triton</masterLabel>
+        <translation><!-- Triton --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BusinessProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CPQ Renewal Sales Process</fullName>
+    <isActive>true</isActive>
+    <values>
+        <fullName>Approval Process</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Awaiting Renewal PO</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Closed Lost</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Dead</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Inactive%2FDuplicate</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>NPN%2FCustomer Responded</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Notification Sent</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Opportunity Review</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Order Submitted</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>PO Received</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Renewal Closed Won</fullName>
+        <default>false</default>
+    </values>
+</BusinessProcess>

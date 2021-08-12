@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Select the NPN CSP that applies to this specific opportunity. 
+If not sure, state &quot;Other&quot;. However, this field should be updated from &quot;Other&quot; to an NPN CSP
+when the opportunity moves to &quot;Closed Won&quot; stage. --></help>
+    <label><!-- Cloud Service Providers --></label>
+    <name>Cloud_Service_Providers__c</name>
+    <picklistValues>
+        <masterLabel>Advance2000</masterLabel>
+        <translation><!-- Advance2000 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Alibaba (Aliyun)</masterLabel>
+        <translation><!-- Alibaba (Aliyun) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Amazon (AWS)</masterLabel>
+        <translation><!-- Amazon (AWS) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Approach Technology</masterLabel>
+        <translation><!-- Approach Technology --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Blue Sky Systems</masterLabel>
+        <translation><!-- Blue Sky Systems --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Carolinas IT</masterLabel>
+        <translation><!-- Carolinas IT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cloudalize</masterLabel>
+        <translation><!-- Cloudalize --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Epigrid</masterLabel>
+        <translation><!-- Epigrid --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FNW</masterLabel>
+        <translation><!-- FNW --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Google Cloud</masterLabel>
+        <translation><!-- Google Cloud --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IBM (Bluemix)</masterLabel>
+        <translation><!-- IBM (Bluemix) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Komplett Group</masterLabel>
+        <translation><!-- Komplett Group --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LightEdge Solutions</masterLabel>
+        <translation><!-- LightEdge Solutions --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Magic Cloud</masterLabel>
+        <translation><!-- Magic Cloud --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Microsoft (Azure)</masterLabel>
+        <translation><!-- Microsoft (Azure) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Nimbix</masterLabel>
+        <translation><!-- Nimbix --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PlayKey</masterLabel>
+        <translation><!-- PlayKey --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SCC UK</masterLabel>
+        <translation><!-- SCC UK --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tencent</masterLabel>
+        <translation><!-- Tencent --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

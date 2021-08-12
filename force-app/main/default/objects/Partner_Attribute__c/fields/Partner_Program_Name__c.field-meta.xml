@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Partner_Program_Name__c</fullName>
+    <externalId>false</externalId>
+    <label>Partner Program Name</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Solution Provider</fullName>
+                <default>false</default>
+                <label>Solution Provider</label>
+            </value>
+            <value>
+                <fullName>OEM</fullName>
+                <default>false</default>
+                <label>OEM</label>
+            </value>
+            <value>
+                <fullName>Distributor</fullName>
+                <default>false</default>
+                <label>Distributor</label>
+            </value>
+            <value>
+                <fullName>Tegra Embedded</fullName>
+                <default>false</default>
+                <label>Tegra Embedded</label>
+            </value>
+            <value>
+                <fullName>Services Subcontractor</fullName>
+                <default>false</default>
+                <label>Services Subcontractor</label>
+            </value>
+            <value>
+                <fullName>Cloud Service Provider</fullName>
+                <default>false</default>
+                <label>Cloud Service Provider</label>
+            </value>
+            <value>
+                <fullName>Service Delivery Partner</fullName>
+                <default>false</default>
+                <label>Service Delivery Partner</label>
+            </value>
+            <value>
+                <fullName>Solution Advisor</fullName>
+                <default>false</default>
+                <label>Solution Advisor</label>
+            </value>
+            <value>
+                <fullName>Solutions Integration Partner</fullName>
+                <default>false</default>
+                <label>Solutions Integration Partner</label>
+            </value>
+            <value>
+                <fullName>Industry Focus</fullName>
+                <default>false</default>
+                <label>Industry Focus</label>
+            </value>
+            <value>
+                <fullName>Federal Systems Integrator</fullName>
+                <default>false</default>
+                <label>Federal Systems Integrator</label>
+            </value>
+            <value>
+                <fullName>Global Systems Integrator</fullName>
+                <default>false</default>
+                <label>Global Systems Integrator</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

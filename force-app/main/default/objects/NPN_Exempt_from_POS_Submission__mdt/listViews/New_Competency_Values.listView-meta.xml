@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>New_Competency_Values</fullName>
+    <columns>MasterLabel</columns>
+    <columns>DeveloperName</columns>
+    <columns>Partner_Program_Name__c</columns>
+    <columns>Partner_Sub_Program__c</columns>
+    <columns>Partner_Competency__c</columns>
+    <columns>Program_Level__c</columns>
+    <columns>Exempted_from_POS_Submission__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Partner_Competency__c</field>
+        <operation>notEqual</operation>
+        <value>vGPU,Tesla,Quadro,Jetson</value>
+    </filters>
+    <label>New Competency Values</label>
+    <language>en_US</language>
+</ListView>

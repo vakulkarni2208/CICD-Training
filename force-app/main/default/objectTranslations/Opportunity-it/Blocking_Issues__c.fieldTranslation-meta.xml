@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Be as descriptive as possible for any issues that could potentially block this deal.  If the deal is at risk, fill out &quot;At Risk&quot; field above --></help>
+    <label><!-- Blocking Issues / Help Needed --></label>
+    <name>Blocking_Issues__c</name>
+</CustomFieldTranslation>

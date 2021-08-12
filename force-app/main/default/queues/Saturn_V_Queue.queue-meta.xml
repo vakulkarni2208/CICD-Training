@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>Saturn V Queue</name>
+    <queueMembers>
+        <publicGroups>
+            <publicGroup>Service_Cloud_NCR_L1</publicGroup>
+        </publicGroups>
+        <users>
+            <user>chrijones@nvidia.com</user>
+            <user>dcurley@nvidia.com</user>
+            <user>dk250372@ncr.com.nvcrm</user>
+            <user>ecabaluna@nvidia.com</user>
+            <user>im250293@ncr.com.nvcrm</user>
+            <user>iyokosuka@nvidia.com</user>
+            <user>mdamian@nvidia.com</user>
+            <user>snadarajan@nvidia.com</user>
+            <user>simony@nvidia.com</user>
+            <user>zhenyih@nvidia.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

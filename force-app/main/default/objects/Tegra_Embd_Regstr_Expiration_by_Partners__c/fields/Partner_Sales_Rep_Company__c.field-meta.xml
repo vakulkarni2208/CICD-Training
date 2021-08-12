@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Partner_Sales_Rep_Company__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <description>This field contains the Partner Account of the Tegra Embedded Partner Opportunity being expired. This field represents the &apos;DR_Partner_Sales_Rep_Company__c&apos; field on the Opportunity.</description>
+    <externalId>false</externalId>
+    <label>Partner Sales Rep Company</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>Account.RecordType.DeveloperName</field>
+            <operation>equals</operation>
+            <value>NPN_Account_Registry</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Tegra Embd Regstr Expiration by Partners</relationshipLabel>
+    <relationshipName>Tegra_Embd_Regstr_Expiration_by_Partners</relationshipName>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

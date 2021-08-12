@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Channel_Program_3__c</fullName>
+    <description>Partner Channel Program</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select a Channel Program.</inlineHelpText>
+    <label>Channel Program 3</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Adobe Solution Provider</fullName>
+                <default>false</default>
+                <label>Adobe Solution Provider</label>
+            </value>
+            <value>
+                <fullName>Autodesk Solution Provider</fullName>
+                <default>false</default>
+                <label>Autodesk Solution Provider</label>
+            </value>
+            <value>
+                <fullName>Cisco Solution Provider</fullName>
+                <default>false</default>
+                <label>Cisco Solution Provider</label>
+            </value>
+            <value>
+                <fullName>Citrix Solution Provider</fullName>
+                <default>false</default>
+                <label>Citrix Solution Provider</label>
+            </value>
+            <value>
+                <fullName>Dassault Systemes</fullName>
+                <default>false</default>
+                <label>Dassault Systemes</label>
+            </value>
+            <value>
+                <fullName>Dell Technology Partner Program</fullName>
+                <default>false</default>
+                <label>Dell Technology Partner Program</label>
+            </value>
+            <value>
+                <fullName>HP Partner One Program</fullName>
+                <default>false</default>
+                <label>HP Partner One Program</label>
+            </value>
+            <value>
+                <fullName>IBM PartnerWorld</fullName>
+                <default>false</default>
+                <label>IBM PartnerWorld</label>
+            </value>
+            <value>
+                <fullName>Lenovo</fullName>
+                <default>false</default>
+                <label>Lenovo</label>
+            </value>
+            <value>
+                <fullName>Microsoft</fullName>
+                <default>false</default>
+                <label>Microsoft</label>
+            </value>
+            <value>
+                <fullName>VMware Solution Provider</fullName>
+                <default>false</default>
+                <label>VMware Solution Provider</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

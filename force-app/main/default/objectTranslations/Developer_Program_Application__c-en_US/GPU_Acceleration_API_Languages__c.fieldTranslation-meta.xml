@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- GPU Acceleration API / Languages --></label>
+    <name>GPU_Acceleration_API_Languages__c</name>
+    <picklistValues>
+        <masterLabel>Anaconda</masterLabel>
+        <translation><!-- Anaconda --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>C++ AMP</masterLabel>
+        <translation><!-- C++ AMP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CUDA C</masterLabel>
+        <translation><!-- CUDA C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CUDA C++</masterLabel>
+        <translation><!-- CUDA C++ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CUDA Fortran</masterLabel>
+        <translation><!-- CUDA Fortran --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cg</masterLabel>
+        <translation><!-- Cg --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Direct3D / HLSL</masterLabel>
+        <translation><!-- Direct3D / HLSL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DirectCompute</masterLabel>
+        <translation><!-- DirectCompute --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MPI</masterLabel>
+        <translation><!-- MPI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OpenACC</masterLabel>
+        <translation><!-- OpenACC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OpenCL</masterLabel>
+        <translation><!-- OpenCL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OpenGL / GLSL</masterLabel>
+        <translation><!-- OpenGL / GLSL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OpenGL-Compute</masterLabel>
+        <translation><!-- OpenGL-Compute --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OpenMP</masterLabel>
+        <translation><!-- OpenMP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other (please explain)</masterLabel>
+        <translation><!-- Other (please explain) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PTX</masterLabel>
+        <translation><!-- PTX --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>R+CUDA</masterLabel>
+        <translation><!-- R+CUDA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Vulkan</masterLabel>
+        <translation><!-- Vulkan --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>jCUDA</masterLabel>
+        <translation><!-- jCUDA --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

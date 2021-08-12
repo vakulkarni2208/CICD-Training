@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <processMetadataValues>
+            <name>emailAlertSelection</name>
+            <value>
+                <stringValue>Onsite_RMA_Install_JTP</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>myRule_1_A1</name>
+        <label>Send notification to JTP</label>
+        <locationX>100</locationX>
+        <locationY>200</locationY>
+        <actionName>Case.Onsite_RMA_Install_JTP</actionName>
+        <actionType>emailAlert</actionType>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <processMetadataValues>
+            <name>emailAlertSelection</name>
+            <value>
+                <stringValue>Onsite_RMA_Install_NCR</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>myRule_3_A1</name>
+        <label>Send notification to NCR</label>
+        <locationX>300</locationX>
+        <locationY>200</locationY>
+        <actionName>Case.Onsite_RMA_Install_NCR</actionName>
+        <actionType>emailAlert</actionType>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <decisions>
+        <processMetadataValues>
+            <name>index</name>
+            <value>
+                <numberValue>0.0</numberValue>
+            </value>
+        </processMetadataValues>
+        <name>myDecision</name>
+        <label>myDecision</label>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>myDecision2</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>myRule_1</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_1</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_1_A1</targetReference>
+            </connector>
+            <label>JTP - Incident Status is Onsite RMA Install</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <processMetadataValues>
+            <name>index</name>
+            <value>
+                <numberValue>1.0</numberValue>
+            </value>
+        </processMetadataValues>
+        <name>myDecision2</name>
+        <label>myDecision2</label>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>myRule_3</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_3</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_3_A1</targetReference>
+            </connector>
+            <label>NCR - Incident Status is Onsite RMA Install</label>
+        </rules>
+    </decisions>
+    <description>Sends a notification when an onsite RMA Installation is required</description>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>[Case].EntitlementId &lt;&gt; null &amp;&amp;
+UPPER([Case].Entitlement.Country__c ) = &apos;JAPAN&apos; &amp;&amp;
+ISPICKVAL([Case].Incident_Status__c , &quot;On-Site RMA Install&quot;) &amp;&amp;
+ISCHANGED([Case].Incident_Status__c) &amp;&amp;
+[Case].RecordType.Name = &quot;Community User Record Type&quot;</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_1</name>
+        <dataType>Boolean</dataType>
+        <expression>{!myVariable_current.EntitlementId} &lt;&gt; null &amp;&amp;
+UPPER({!myVariable_current.Entitlement.Country__c} ) = &apos;JAPAN&apos; &amp;&amp;
+ISPICKVAL({!myVariable_current.Incident_Status__c} , &quot;On-Site RMA Install&quot;) &amp;&amp;
+ISCHANGED({!myVariable_current.Incident_Status__c}) &amp;&amp;
+{!myVariable_current.RecordType.Name} = &quot;Community User Record Type&quot;</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>[Case].EntitlementId &lt;&gt; null &amp;&amp;
+UPPER([Case].Entitlement.Country__c ) &lt;&gt; &apos;JAPAN&apos; &amp;&amp;
+ISPICKVAL([Case].Incident_Status__c , &quot;On-Site RMA Install&quot;) &amp;&amp;
+ISCHANGED([Case].Incident_Status__c) &amp;&amp;
+[Case].RecordType.Name = &quot;Community User Record Type&quot;</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_3</name>
+        <dataType>Boolean</dataType>
+        <expression>{!myVariable_current.EntitlementId} &lt;&gt; null &amp;&amp;
+UPPER({!myVariable_current.Entitlement.Country__c} ) &lt;&gt; &apos;JAPAN&apos; &amp;&amp;
+ISPICKVAL({!myVariable_current.Incident_Status__c} , &quot;On-Site RMA Install&quot;) &amp;&amp;
+ISCHANGED({!myVariable_current.Incident_Status__c}) &amp;&amp;
+{!myVariable_current.RecordType.Name} = &quot;Community User Record Type&quot;</expression>
+    </formulas>
+    <interviewLabel>Service_Cloud_Onsite_RMA_Install_Notification-2_InterviewLabel</interviewLabel>
+    <label>Service Cloud : Onsite RMA Install Notification</label>
+    <processMetadataValues>
+        <name>ObjectType</name>
+        <value>
+            <stringValue>Case</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>ObjectVariable</name>
+        <value>
+            <elementReference>myVariable_current</elementReference>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OldObjectVariable</name>
+        <value>
+            <elementReference>myVariable_old</elementReference>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>TriggerType</name>
+        <value>
+            <stringValue>onAllChanges</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Workflow</processType>
+    <startElementReference>myDecision</startElementReference>
+    <status>Active</status>
+    <variables>
+        <name>myVariable_current</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <objectType>Case</objectType>
+    </variables>
+    <variables>
+        <name>myVariable_old</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Case</objectType>
+    </variables>
+</Flow>

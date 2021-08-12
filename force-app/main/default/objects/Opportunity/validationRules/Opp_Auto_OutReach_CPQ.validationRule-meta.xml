@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Opp_Auto_OutReach_CPQ</fullName>
+    <active>true</active>
+    <description>Please choose Renewal Product as DGX for DGX Automated Outreach and vGPU for vGPU Automated Outreach (SDS-1330)</description>
+    <errorConditionFormula>AND(OR( 
+AND(Activate_DGX_Automated_Outreach__c = true, 
+NOT(CONTAINS(TEXT(Renewal_Product_Type__c), &quot;DGX&quot;))), 
+AND(Activate_Automated_Outreach__c = true, 
+NOT(CONTAINS(TEXT(Renewal_Product_Type__c), &quot;vGPU&quot;)))), RecordType.DeveloperName =&apos;SW_Service_Renewals&apos;)</errorConditionFormula>
+    <errorMessage>Please choose Renewal Product as DGX for DGX Automated Outreach and vGPU for vGPU Automated Outreach</errorMessage>
+</ValidationRule>

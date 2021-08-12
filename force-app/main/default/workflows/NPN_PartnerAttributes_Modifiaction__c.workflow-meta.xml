@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Email_To_check_Termination</fullName>
+        <description>Email To check Termination</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>apardeshi@nvidia.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>spurthir@nvidia.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>sudhkumar@nvidia.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>All_Templates/Account_Competency_Termination_DocuSign</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>TerminationFlagTrue30days</fullName>
+        <field>Competency_Termination_30_days_Complete__c</field>
+        <literalValue>1</literalValue>
+        <name>30daysTerminationFlagTrue</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>NPNTermination</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>NPN_PartnerAttributes_Modifiaction__c.Termination_Initiated__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <description>Used for Termination of Account using DocuSign</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Email_To_check_Termination</name>
+                <type>Alert</type>
+            </actions>
+            <actions>
+                <name>TerminationFlagTrue30days</name>
+                <type>FieldUpdate</type>
+            </actions>
+            <timeLength>30</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+</Workflow>

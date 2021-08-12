@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>ssoUrl_Stage</label>
+    <protected>false</protected>
+    <values>
+        <field>Value__c</field>
+        <value xsi:type="xsd:string">https://myapps.microsoft.com/signin/wwfo-nvcrm-stg/94118c8f-7636-492c-8311-771ca116c387?relayState=</value>
+    </values>
+</CustomMetadata>

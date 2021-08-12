@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>My_Robotaxi_Opportunities</fullName>
+    <columns>Region__c</columns>
+    <columns>Auto_BU_Priority__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>Auto_Status__c</columns>
+    <columns>OPPORTUNITY.NEXT_STEP</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>OPPORTUNITY.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Opportunity.Automotive_Opportunity</value>
+    </filters>
+    <filters>
+        <field>Company_Type__c</field>
+        <operation>equals</operation>
+        <value>Robotaxi</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>equals</operation>
+        <value>Engaged,DRIVE Platform,DRIVE Platform Demo,DRIVE Software,Pre-Sales,NPI,In Production,Inactive/Duplicate</value>
+    </filters>
+    <label>My Robotaxi Opportunities</label>
+</ListView>

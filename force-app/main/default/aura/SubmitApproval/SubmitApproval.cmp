@@ -1,0 +1,10 @@
+<aura:component controller="QuickQuoteCont" implements="flexipage:availableForAllPageTypes,force:lightningQuickAction,force:hasRecordId" access="global" >
+	
+    
+    <aura:attribute  name="isOpen" type="boolean" default="false"/>
+    <aura:attribute name="recordId" type="Id"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+   			<center><h1 style="font-weight: bold; color: Green; font-size: 20px;" >Quote Successfully Submitted for Approval.</h1></center>
+       
+
+</aura:component>

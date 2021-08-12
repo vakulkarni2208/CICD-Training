@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- New EC Contact Lookup for Order Fulfillment --></help>
+    <label><!-- EC Contact Name (Entitlement Org) --></label>
+    <lookupFilter>
+        <errorMessage><!-- End Customer Contact is required to be related to the Quote End Customer Account --></errorMessage>
+        <informationalMessage><!-- End Customer Contact is required to be related to the Quote End Customer Account. --></informationalMessage>
+    </lookupFilter>
+    <name>New_EC_Contact_Lookup__c</name>
+    <relationshipLabel><!-- Orders --></relationshipLabel>
+</CustomFieldTranslation>

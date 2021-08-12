@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Type --></label>
+    <name>Type__c</name>
+    <picklistValues>
+        <masterLabel>3rd Party Case</masterLabel>
+        <translation><!-- 3rd Party Case --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Failure Analysis NVBug</masterLabel>
+        <translation><!-- Failure Analysis NVBug --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>JIRA</masterLabel>
+        <translation><!-- JIRA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NVBug</masterLabel>
+        <translation><!-- NVBug --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PagerDuty</masterLabel>
+        <translation><!-- PagerDuty --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ServiceNow</masterLabel>
+        <translation><!-- ServiceNow --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

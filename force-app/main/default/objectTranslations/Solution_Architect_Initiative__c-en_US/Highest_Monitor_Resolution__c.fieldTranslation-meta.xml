@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Highest Monitor Resolution --></label>
+    <name>Highest_Monitor_Resolution__c</name>
+    <picklistValues>
+        <masterLabel>1080p</masterLabel>
+        <translation><!-- 1080p --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>4k</masterLabel>
+        <translation><!-- 4k --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>5k</masterLabel>
+        <translation><!-- 5k --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>720p</masterLabel>
+        <translation><!-- 720p --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>8k</masterLabel>
+        <translation><!-- 8k --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

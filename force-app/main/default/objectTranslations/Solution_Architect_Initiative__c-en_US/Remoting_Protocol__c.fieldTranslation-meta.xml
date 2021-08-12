@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Remoting Protocol --></label>
+    <name>Remoting_Protocol__c</name>
+    <picklistValues>
+        <masterLabel>Blast</masterLabel>
+        <translation><!-- Blast --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HDX</masterLabel>
+        <translation><!-- HDX --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other (RDS/TGX/SPICE)</masterLabel>
+        <translation><!-- Other (RDS/TGX/SPICE) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PCoIP (VMware)</masterLabel>
+        <translation><!-- PCoIP (VMware) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PCoIP Ultra (Teradici)</masterLabel>
+        <translation><!-- PCoIP Ultra (Teradici) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RDP</masterLabel>
+        <translation><!-- RDP --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

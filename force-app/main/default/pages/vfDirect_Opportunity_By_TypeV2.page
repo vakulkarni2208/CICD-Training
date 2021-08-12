@@ -1,0 +1,6 @@
+<apex:page standardController="Opportunity" extensions="clsSelectOppRecordType_ExtensionV2" action="{!redirect}">
+  <apex:form >
+            <apex:inputHidden value="{!opportunity.RecordTypeId}" />
+            <apex:inputHidden value="{!opportunity.AccountId}" />
+        </apex:form>
+</apex:page>

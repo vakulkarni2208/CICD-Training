@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Renewal_Product_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Renewal Product Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>vGPU SUMS</fullName>
+                <default>false</default>
+                <label>vGPU SUMS</label>
+            </value>
+            <value>
+                <fullName>vGPU Subscription</fullName>
+                <default>false</default>
+                <label>vGPU Subscription</label>
+            </value>
+            <value>
+                <fullName>vGPU CSP</fullName>
+                <default>false</default>
+                <label>vGPU CSP</label>
+            </value>
+            <value>
+                <fullName>DGX Station Support Services</fullName>
+                <default>false</default>
+                <label>DGX Station Support Services</label>
+            </value>
+            <value>
+                <fullName>DGX-1 Support Services</fullName>
+                <default>false</default>
+                <label>DGX-1 Support Services</label>
+            </value>
+            <value>
+                <fullName>DGX-2 Support Services</fullName>
+                <default>false</default>
+                <label>DGX-2 Support Services</label>
+            </value>
+            <value>
+                <fullName>RTX Blade Server Support</fullName>
+                <default>false</default>
+                <label>RTX Blade Server Support</label>
+            </value>
+            <value>
+                <fullName>Drive Constellation Support</fullName>
+                <default>false</default>
+                <label>Drive Constellation Support</label>
+            </value>
+            <value>
+                <fullName>CUDA Support</fullName>
+                <default>false</default>
+                <label>CUDA Support</label>
+            </value>
+            <value>
+                <fullName>Technical Account Manager (TAM)</fullName>
+                <default>false</default>
+                <label>Technical Account Manager (TAM)</label>
+            </value>
+            <value>
+                <fullName>NGC Support</fullName>
+                <default>false</default>
+                <label>NGC Support</label>
+            </value>
+            <value>
+                <fullName>DGX A100 Support Services</fullName>
+                <default>false</default>
+                <label>DGX A100 Support Services</label>
+            </value>
+            <value>
+                <fullName>Cloud Gaming</fullName>
+                <default>false</default>
+                <label>Cloud Gaming</label>
+            </value>
+            <value>
+                <fullName>HPC Compiler</fullName>
+                <default>false</default>
+                <label>HPC Compiler</label>
+            </value>
+            <value>
+                <fullName>Parabricks</fullName>
+                <default>false</default>
+                <label>Parabricks</label>
+            </value>
+            <value>
+                <fullName>Fleet Command</fullName>
+                <default>false</default>
+                <label>Fleet Command</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

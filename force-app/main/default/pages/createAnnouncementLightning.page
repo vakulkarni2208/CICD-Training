@@ -1,0 +1,173 @@
+<apex:page showHeader="false" standardStylesheets="false" sidebar="false" applyHtmlTag="false" applyBodyTag="false" docType="html-5.0" standardController="Announcement__c" extensions="CreateCustomerAnnouncementController">    
+    <script src="/soap/ajax/39.0/connection.js" type="text/javascript"></script>
+    <script src="/soap/ajax/39.0/apex.js" type="text/javascript"></script>
+    <apex:includescript value="//code.jquery.com/jquery-1.11.1.min.js" />
+    <apex:includescript value="//cdn.datatables.net/1.10.4/js/jquery.dataTables.min.js" />
+    <apex:stylesheet value="//cdn.datatables.net/1.10.4/css/jquery.dataTables.css" />
+    <html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">    
+        
+        <head>
+            <title>Create Customer Announcement</title>
+            <apex:stylesheet value="{!URLFOR($Resource.slds, 'assets/styles/salesforce-lightning-design-system-vf.css')}" />
+            <script type="text/javascript">
+            
+            j$ = jQuery.noConflict();
+            j$(document).ready( function () {
+                j$('[id$="PartNumber"]').DataTable({
+                    "scrollX" : true,
+                    "searching" : false,
+                    "lengthChange": false,
+                    "bInfo" : false,
+                    "bPaginate": false,
+                    "ordering": false,
+                    "language": {
+                        "emptyTable": "No Accounts available"
+                    }                    
+                });
+            });    
+            function reload(){
+                j$('[id$="PartNumber"]').DataTable({
+                    "destroy": true,
+                    "scrollX": true,
+                    "searching" : false,
+                    "lengthChange": false,
+                    "bInfo" : false,
+                    "bPaginate": false,
+                    "ordering": false,
+                    "language": {
+                        "emptyTable": "No Accounts available"
+                    }                    
+                });
+            }
+            function  SaveSelection() {
+                var inputVal = document.getElementById('username').value;
+                ActionFunc(inputVal);
+            }
+            </script>
+            <style>
+            	.radioB td:nth-child(odd) { width: 100%;text-align:center;padding-right: 10px; }
+                .pickClass {width: 220px}
+            </style>
+        </head>    
+        
+        <body>    
+            <apex:form >
+                <!-- REQUIRED SLDS WRAPPER -->
+                <div class="slds">    
+                    
+                    <!-- MASTHEAD -->
+                    <div style="margin-top:20px;margin-left:5px;">
+                        <div class="slds-card">
+                            <div class="slds-media__body">
+                                <br/>
+                                <h2 class="slds-text-heading--small slds-truncate"> &nbsp;&nbsp;<b>Create Customer Announcement</b></h2>
+                                <br/>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- / MASTHEAD -->    
+                    
+                    <!-- PRIMARY CONTENT WRAPPER -->
+                    <apex:outputPanel id="CustomerAnnouncementForm">
+                    <div class="myapp">  
+                        <div style="margin-left : 10px ; margin-top :30px; margin-right :30px;" >   
+                            <apex:pageMessages id="err"/>
+                            <center>
+                                <apex:actionFunction name="refreshAccounts" action="{!fetchAccounts}" reRender="CustomerAnnouncementForm,PartNumber" oncomplete="reload();"/>
+                                <apex:commandButton value="Create Customer Announcements" action="{!CreateCustomerAnnouncement}"/>
+                                &nbsp;
+                                <apex:commandButton value="Cancel" action="{!Cancel}"/>
+                            </center>
+                            <br/><br/>
+                            <center>
+                            <apex:selectRadio value="{!radioSelection}" onchange="refreshAccounts()" styleClass="radioB">
+                                <apex:selectOption itemValue="accountSearch" itemlabel="Search by Account" />
+                            <!--SDS-2462 This code is commented to remove dependency on ESP_Asset object  
+								<apex:selectOption itemValue="assetSearch" itemlabel="Search by Product" itemDisabled="true" rendered="false"/>
+                            -->    
+                            </apex:selectRadio>
+                            </center>
+                            <br/>
+                            <apex:outputPanel rendered="{! IF(radioSelection ='accountSearch',true,false)}">
+                                <div class="slds-form-element__control"> 
+                                    <div class="slds-form-element">
+                                        <label class="slds-form-element__label" for="inputSample3">Account Name</label>
+                                    </div>
+                                    <div>
+                                        <apex:inputText styleclass="slds-input" value="{!searchText}" rendered="{! IF(radioSelection ='accountSearch',true,false)}"/>
+                                    </div>
+                                </div> 
+                            </apex:outputPanel>
+                            <apex:outputPanel rendered="{! IF(radioSelection ='assetSearch',true,false)}">
+                                <div style="text-align: center;">
+                                    <div>
+                                        <label class="slds-form-element__label">Product Family :  </label>
+                                        <apex:selectList value="{!selectedProductFamily}"  size="1"
+                                                         rendered="{! IF(radioSelection ='assetSearch',true,false)}" styleClass="pickClass">
+                                            <apex:selectOptions value="{!lstProductFamily}"/>
+                                            <apex:actionSupport event="onchange" reRender="CustomerAnnouncementForm,PartNumber"/>
+                                        </apex:selectList>    
+                                    </div>
+                                    <br/>
+                                    <div>
+                                        <label class="slds-form-element__label">Product Name :  </label>
+                                        <apex:selectList value="{!selectedProduct}" label="Product Name " size="1"
+                                                         rendered="{! IF(radioSelection ='assetSearch',true,false)}" styleClass="pickClass">
+                                            <apex:selectOptions value="{!lstProduct}"/>
+                                        </apex:selectList>    
+                                    </div>
+                                </div>
+                            </apex:outputPanel>
+                        	<br/>
+                            <center>
+                            	<apex:commandButton value="Search" onclick="refreshAccounts(); return false;"/>
+                            </center>
+                            <br/><br/><br/>
+                            <!--table section -->
+                                    <apex:outputpanel id="pbSection">
+                                        <apex:variable var="rowNumber" value="{!0}"/>
+                                        <table id="PartNumber">
+                                            <thead style="margin-left : 10px;">
+                                                <tr>
+                                                    <th>Select Account</th>
+                                                    <th>Account Name</th>
+                                                    <th>Recordtype Name</th>
+                                                </tr>    
+                                            </thead>
+                                            <tbody>
+                                                <apex:repeat value="{!Account}" var="wrap">
+                                                    <tr>
+                                                        <td><apex:inputCheckbox value="{!wrap.bool}"/></td>
+                                                        <td><span> {!wrap.acc.Name}</span></td>
+                                                        <td><span> {!wrap.acc.Recordtype.Name}</span></td>
+                                                    </tr>
+                                                </apex:repeat>
+                                            </tbody>
+                                        </table>
+                                    </apex:outputpanel>
+                            <br/>
+                            <br/>
+                            <center>
+                                <apex:commandButton value="First" action="{!setAcc.First}" reRender="CustomerAnnouncementForm"
+                                                    disabled="{!!setAcc.hasPrevious}"/>
+                                <apex:commandButton value="Previous" action="{!setAcc.Previous}" reRender="CustomerAnnouncementForm"
+                                                    disabled="{!!setAcc.hasPrevious}"/>&nbsp;
+                                <apex:commandButton value="Select all" action="{!SelectAll}"/>
+                                <apex:commandButton value="Deselect all" action="{!DeSelectAll}"/>&nbsp;
+                                <apex:commandButton value="Next" action="{!setAcc.Next}" reRender="CustomerAnnouncementForm"
+                                                    disabled="{!!setAcc.hasNext}"/>
+                                <apex:commandButton value="Last" action="{!setAcc.Last}" reRender="CustomerAnnouncementForm"
+                                                    disabled="{!!setAcc.hasNext}"/>
+                            </center>
+                        </div>
+                    </div>
+                    </apex:outputPanel>
+                    
+                    <!-- / PRIMARY CONTENT WRAPPER -->    
+                    
+                </div>
+                <!-- / REQUIRED SLDS WRAPPER -->    
+            </apex:form>
+        </body>
+    </html>
+</apex:page>

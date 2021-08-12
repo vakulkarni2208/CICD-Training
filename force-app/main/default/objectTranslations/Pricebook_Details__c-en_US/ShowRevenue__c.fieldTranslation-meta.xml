@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- This is a check box field which will tells enabling and disabling of Revenue field  for a record type --></help>
+    <label><!-- ShowRevenue --></label>
+    <name>ShowRevenue__c</name>
+</CustomFieldTranslation>

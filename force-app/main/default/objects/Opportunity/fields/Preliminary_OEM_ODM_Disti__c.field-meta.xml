@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Preliminary_OEM_ODM_Disti__c</fullName>
+    <description>SOQ-120 (Defect) - Renamed the label from Preliminary to Additional</description>
+    <externalId>false</externalId>
+    <inlineHelpText>If there are multiple OEM/ODM or Distis competing for this business please detail here</inlineHelpText>
+    <label>Additional OEM/ODM/Disti List</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ADLINK</fullName>
+                <default>false</default>
+                <label>ADLINK</label>
+            </value>
+            <value>
+                <fullName>ADVANTECH</fullName>
+                <default>false</default>
+                <label>ADVANTECH</label>
+            </value>
+            <value>
+                <fullName>ARROW</fullName>
+                <default>false</default>
+                <label>ARROW</label>
+            </value>
+            <value>
+                <fullName>ASUS</fullName>
+                <default>false</default>
+                <label>ASUS</label>
+            </value>
+            <value>
+                <fullName>ATOS</fullName>
+                <default>false</default>
+                <label>ATOS</label>
+            </value>
+            <value>
+                <fullName>BULL</fullName>
+                <default>false</default>
+                <label>BULL</label>
+            </value>
+            <value>
+                <fullName>CARAHSOFT</fullName>
+                <default>false</default>
+                <label>CARAHSOFT</label>
+            </value>
+            <value>
+                <fullName>CEAC International</fullName>
+                <default>false</default>
+                <label>CEAC International</label>
+            </value>
+            <value>
+                <fullName>CIRRASCALE</fullName>
+                <default>false</default>
+                <label>CIRRASCALE</label>
+            </value>
+            <value>
+                <fullName>CISCO</fullName>
+                <default>false</default>
+                <label>CISCO</label>
+            </value>
+            <value>
+                <fullName>CRAY</fullName>
+                <default>false</default>
+                <label>CRAY</label>
+            </value>
+            <value>
+                <fullName>CUBIX</fullName>
+                <default>false</default>
+                <label>CUBIX</label>
+            </value>
+            <value>
+                <fullName>DAWNING (SUGON)</fullName>
+                <default>false</default>
+                <label>DAWNING (SUGON)</label>
+            </value>
+            <value>
+                <fullName>DELL</fullName>
+                <default>false</default>
+                <label>DELL</label>
+            </value>
+            <value>
+                <fullName>EURO TECH</fullName>
+                <default>false</default>
+                <label>EURO TECH</label>
+            </value>
+            <value>
+                <fullName>FOXCONN</fullName>
+                <default>false</default>
+                <label>FOXCONN</label>
+            </value>
+            <value>
+                <fullName>FUJITSU</fullName>
+                <default>false</default>
+                <label>FUJITSU</label>
+            </value>
+            <value>
+                <fullName>GERMANE SYSTEMS</fullName>
+                <default>false</default>
+                <label>GERMANE SYSTEMS</label>
+            </value>
+            <value>
+                <fullName>GIGABYTE</fullName>
+                <default>false</default>
+                <label>GIGABYTE</label>
+            </value>
+            <value>
+                <fullName>H3C</fullName>
+                <default>false</default>
+                <label>H3C</label>
+            </value>
+            <value>
+                <fullName>HPE</fullName>
+                <default>false</default>
+                <label>HPE</label>
+            </value>
+            <value>
+                <fullName>HPI</fullName>
+                <default>false</default>
+                <label>HPI</label>
+            </value>
+            <value>
+                <fullName>HUAWEI</fullName>
+                <default>false</default>
+                <label>HUAWEI</label>
+            </value>
+            <value>
+                <fullName>IBM</fullName>
+                <default>false</default>
+                <label>IBM</label>
+            </value>
+            <value>
+                <fullName>INGRAM MICRO</fullName>
+                <default>false</default>
+                <label>INGRAM MICRO</label>
+            </value>
+            <value>
+                <fullName>INSPUR</fullName>
+                <default>false</default>
+                <label>INSPUR</label>
+            </value>
+            <value>
+                <fullName>INVENTEC</fullName>
+                <default>false</default>
+                <label>INVENTEC</label>
+            </value>
+            <value>
+                <fullName>ISOLIN TRADE &amp; INVEST LIMITED</fullName>
+                <default>false</default>
+                <label>ISOLIN TRADE &amp; INVEST LIMITED</label>
+            </value>
+            <value>
+                <fullName>LEADTEK</fullName>
+                <default>false</default>
+                <label>LEADTEK</label>
+            </value>
+            <value>
+                <fullName>LENOVO</fullName>
+                <default>false</default>
+                <label>LENOVO</label>
+            </value>
+            <value>
+                <fullName>MICROSOFT</fullName>
+                <default>false</default>
+                <label>MICROSOFT</label>
+            </value>
+            <value>
+                <fullName>NETTRIX</fullName>
+                <default>false</default>
+                <label>NETTRIX</label>
+            </value>
+            <value>
+                <fullName>ONE STOP SYSTEMS</fullName>
+                <default>false</default>
+                <label>ONE STOP SYSTEMS</label>
+            </value>
+            <value>
+                <fullName>ORACLE</fullName>
+                <default>false</default>
+                <label>ORACLE</label>
+            </value>
+            <value>
+                <fullName>PENGUIN COMPUTING</fullName>
+                <default>false</default>
+                <label>PENGUIN COMPUTING</label>
+            </value>
+            <value>
+                <fullName>PNY</fullName>
+                <default>false</default>
+                <label>PNY</label>
+            </value>
+            <value>
+                <fullName>QUANTA</fullName>
+                <default>false</default>
+                <label>QUANTA</label>
+            </value>
+            <value>
+                <fullName>SGI</fullName>
+                <default>false</default>
+                <label>SGI</label>
+            </value>
+            <value>
+                <fullName>SUPER MICRO</fullName>
+                <default>false</default>
+                <label>SUPER MICRO</label>
+            </value>
+            <value>
+                <fullName>SYNNEX</fullName>
+                <default>false</default>
+                <label>SYNNEX</label>
+            </value>
+            <value>
+                <fullName>SYSTEL</fullName>
+                <default>false</default>
+                <label>SYSTEL</label>
+            </value>
+            <value>
+                <fullName>THEMIS COMPUTER</fullName>
+                <default>false</default>
+                <label>THEMIS COMPUTER</label>
+            </value>
+            <value>
+                <fullName>T-PLATFORMS</fullName>
+                <default>false</default>
+                <label>T-PLATFORMS</label>
+            </value>
+            <value>
+                <fullName>TYAN</fullName>
+                <default>false</default>
+                <label>TYAN</label>
+            </value>
+            <value>
+                <fullName>WiWynn</fullName>
+                <default>false</default>
+                <label>WiWynn</label>
+            </value>
+            <value>
+                <fullName>ZT SYSTEMS</fullName>
+                <default>false</default>
+                <label>ZT SYSTEMS</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>None at this time</fullName>
+                <default>false</default>
+                <label>None at this time</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

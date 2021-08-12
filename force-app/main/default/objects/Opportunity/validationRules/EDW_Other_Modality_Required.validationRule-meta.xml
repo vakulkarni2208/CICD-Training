@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EDW_Other_Modality_Required</fullName>
+    <active>true</active>
+    <description>SDS-2531: Ent Design Win (EDW) Sales Process</description>
+    <errorConditionFormula>AND(
+ RecordType.DeveloperName = &quot;Enterprise_Design_Wins&quot;,
+ ISPICKVAL(Modality__c, &quot;Other&quot;),
+ ISBLANK(Other_Modality__c)
+)</errorConditionFormula>
+    <errorDisplayField>Other_Modality__c</errorDisplayField>
+    <errorMessage>Please fill-in Other Modality.</errorMessage>
+</ValidationRule>

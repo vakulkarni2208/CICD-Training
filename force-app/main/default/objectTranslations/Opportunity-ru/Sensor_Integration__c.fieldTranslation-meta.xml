@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Sensor Integration --></label>
+    <name>Sensor_Integration__c</name>
+    <picklistValues>
+        <masterLabel>DW Native</masterLabel>
+        <translation><!-- DW Native --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DW-SAL</masterLabel>
+        <translation><!-- DW-SAL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>None</masterLabel>
+        <translation><!-- None --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ROS Drivers</masterLabel>
+        <translation><!-- ROS Drivers --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>nvMedia</masterLabel>
+        <translation><!-- nvMedia --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

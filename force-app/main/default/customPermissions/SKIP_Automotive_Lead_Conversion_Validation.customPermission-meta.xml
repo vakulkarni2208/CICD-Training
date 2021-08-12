@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomPermission xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>All the Users in this Permission Set will be skipped through the Automotive Lead Conversion Validation Rules. This Permission is assigned to the Permisison Set &apos;CRM : ACCOUNT MODIFY ALL&apos;.</description>
+    <label>SKIP Automotive Lead Conversion Validation</label>
+</CustomPermission>

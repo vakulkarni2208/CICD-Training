@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Engagement Model --></label>
+    <name>Support_Status__c</name>
+    <picklistValues>
+        <masterLabel>Direct Customer</masterLabel>
+        <translation><!-- Direct Customer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Scaling Partner Support</masterLabel>
+        <translation><!-- Scaling Partner Support --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Self Help</masterLabel>
+        <translation><!-- Self Help --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

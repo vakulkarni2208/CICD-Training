@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Enter the % of other services as they apply --></help>
+    <label><!-- Other Revenue --></label>
+    <name>Other_Revenue__c</name>
+</CustomFieldTranslation>

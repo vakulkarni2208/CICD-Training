@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Last attempted date/time to call API via job/adhoc code --></help>
+    <label><!-- IDM - Last Attempted Date via API --></label>
+    <name>IDM_Last_Attempted_Date_via_API__c</name>
+</CustomFieldTranslation>

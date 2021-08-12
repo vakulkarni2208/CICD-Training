@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Sales Leaders, use this field to state if there are any risks to current quarter revenue on this opp. This includes potential inventory use or PO delays. This is not related to sales credit. --></help>
+    <label><!-- Revenue Risk? --></label>
+    <name>At_Risk_for_CQ_Revenue__c</name>
+    <picklistValues>
+        <masterLabel>No</masterLabel>
+        <translation><!-- No --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Yes</masterLabel>
+        <translation><!-- Yes --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

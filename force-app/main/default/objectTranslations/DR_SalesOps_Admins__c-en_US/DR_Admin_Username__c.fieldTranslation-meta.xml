@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- SFDC Username of the SalesOps Deal Reg Admin. Put the comma separated Country Names in the Billing Country(s) field. Create a separate row with name = &apos;OTHERS&apos; and the default username that will be used in case there is no match --></help>
+    <label><!-- DR Admin Username --></label>
+    <name>DR_Admin_Username__c</name>
+</CustomFieldTranslation>

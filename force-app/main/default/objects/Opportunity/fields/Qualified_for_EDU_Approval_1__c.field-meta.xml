@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Qualified_for_EDU_Approval_1__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>SDS-2323, SDS-2823: This field is updated to TRUE basing on the process Builder &apos;Opp Prod: Update &apos;Qualified for EDU Approval&apos; on Opportunity basing on the Formula where the no of GPU&apos;s at the OLI level is &gt; 64 and &lt;= 128</description>
+    <externalId>false</externalId>
+    <label>Qualified for EDU Approval (GPUs &gt; 64)</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

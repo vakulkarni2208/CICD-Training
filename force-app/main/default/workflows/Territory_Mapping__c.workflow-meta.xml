@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>TAM_Copy_all_fields_into_Unique_Check</fullName>
+        <field>Unique_Check__c</field>
+        <formula>All_fields__c</formula>
+        <name>TAM: Copy all fields into Unique Check</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <rules>
+        <fullName>TAM%3A Copy all fields into Unique Check</fullName>
+        <actions>
+            <name>TAM_Copy_all_fields_into_Unique_Check</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>This workflow will copy the value from formula field &quot;All fields&quot; into a text field &quot;Unique Check&quot; to maintain Unique data in the Territory mapping object.</description>
+        <formula>OR(     AND(ISNEW(), NOT(ISBLANK(All_fields__c))),    AND(NOT(ISNEW()), All_fields__c &lt;&gt;  Unique_Check__c) )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

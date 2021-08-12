@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leadspacesync__Leadspace_enrich_Contact</fullName>
+    <availability>online</availability>
+    <description>This button will enrich the current record using an API call. The user will choose whether to update or not</description>
+    <displayType>button</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>Leadspace Enrich</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <url>var width = 600;
+var title = &quot;Update Salesforce Record&quot;;
+var box = new SimpleDialog(&quot;EnrichContact&quot;, true);
+box.setTitle(title);
+box.isMovable = false;
+box.displayX = false;
+box.createDialog();
+box.setWidth(width);
+box.setContentInnerHTML(&apos;&lt;img src=&quot;/resource/1504896311011/leadspacesync__newSpinner&quot; id=&quot;spinner&quot; style=&quot;margin:0 auto;display:block;&quot;/&gt;&apos;+
+                        &apos;&lt;iframe src=&quot;/apex/leadspacesync__VF_EnrichContact?id={!Contact.Id}&quot; id=&quot;enrichIframe&quot; style=&quot;border:none;&quot; width=&quot;100%&quot; onload=&quot;iframeLoaded()&quot;/&gt;&apos;);
+
+window.iframeLoaded = function(){
+    document.getElementById(&apos;spinner&apos;).style.display= &apos;none&apos;;
+}
+
+box.show();
+document.getElementById(&quot;EnrichContact&quot;).style.top = 10 + &apos;%&apos;;
+
+window.addEventListener(&apos;message&apos;, function(event){
+    if (event.data === &apos;close&apos;){
+        box.hide();
+        location.reload();
+    } else {
+        console.log(&quot;event&quot;, event);
+        box.dialog.children[1].style.height = event.data + 130 + &apos;px&apos;;
+        document.getElementById(&quot;enrichIframe&quot;).height = event.data + 165 + &apos;px&apos;;
+    }
+
+});</url>
+</WebLink>

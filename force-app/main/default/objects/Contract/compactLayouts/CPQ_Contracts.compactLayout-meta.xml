@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CPQ_Contracts</fullName>
+    <fields>ContractNumber</fields>
+    <fields>AccountId</fields>
+    <fields>Nvidia_Status__c</fields>
+    <fields>StartDate</fields>
+    <fields>EndDate</fields>
+    <fields>SBQQ__RenewalForecast__c</fields>
+    <fields>SBQQ__RenewalQuoted__c</fields>
+    <label>CPQ Contracts</label>
+</CompactLayout>

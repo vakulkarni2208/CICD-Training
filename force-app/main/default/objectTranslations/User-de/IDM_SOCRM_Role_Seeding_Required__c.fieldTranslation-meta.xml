@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- IDM Configuration to add SOCRM role needed for this external user? --></help>
+    <label><!-- IDM - SOCRM Role Seeding Required? --></label>
+    <name>IDM_SOCRM_Role_Seeding_Required__c</name>
+</CustomFieldTranslation>

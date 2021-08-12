@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Country__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <description>Lookup to Country List custom object</description>
+    <externalId>false</externalId>
+    <label>Country</label>
+    <referenceTo>Country_List__c</referenceTo>
+    <relationshipLabel>NPN Revenue Commitment Master</relationshipLabel>
+    <relationshipName>NPN_Revenue_Commitment_Master</relationshipName>
+    <required>true</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Check flag if End Customer on Quote and PO are the same. If not, populate PO End Customer Information. --></help>
+    <label><!-- Use Quote EC Account Info --></label>
+    <name>Use_Quote_EC_Account_Info__c</name>
+</CustomFieldTranslation>

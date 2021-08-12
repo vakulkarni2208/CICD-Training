@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AccountTags__c</fullName>
+    <description>ReadOnly Copy of Tags from the related Account Tags records. Filled from the Account Tags trigger</description>
+    <externalId>false</externalId>
+    <inlineHelpText>ReadOnly Copy of Tags from the related Account Tags records. Filled from the Account Tags trigger</inlineHelpText>
+    <label>AccountTags</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Sample Tag</fullName>
+                <default>false</default>
+                <label>Sample Tag</label>
+            </value>
+            <value>
+                <fullName>Strategic OEM</fullName>
+                <default>false</default>
+                <label>Strategic OEM</label>
+            </value>
+            <value>
+                <fullName>Enterprise Customer</fullName>
+                <default>false</default>
+                <label>Enterprise Customer</label>
+            </value>
+            <value>
+                <fullName>Consumer Customer</fullName>
+                <default>false</default>
+                <label>Consumer Customer</label>
+            </value>
+            <value>
+                <fullName>GFNA Partner</fullName>
+                <default>false</default>
+                <label>GFNA Partner</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

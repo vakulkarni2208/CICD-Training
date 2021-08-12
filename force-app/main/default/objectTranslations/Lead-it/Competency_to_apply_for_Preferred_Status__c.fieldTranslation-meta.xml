@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- What competency would you like to apply for Preferred Status? --></help>
+    <label><!-- Competency to apply for Preferred Status --></label>
+    <name>Competency_to_apply_for_Preferred_Status__c</name>
+    <picklistValues>
+        <masterLabel>Compute</masterLabel>
+        <translation><!-- Compute --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Compute DGX</masterLabel>
+        <translation><!-- Compute DGX --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DGX</masterLabel>
+        <translation><!-- DGX --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Embedded Edge</masterLabel>
+        <translation><!-- Embedded Edge --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gaming</masterLabel>
+        <translation><!-- Gaming --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Virtualization</masterLabel>
+        <translation><!-- Virtualization --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Visualization</masterLabel>
+        <translation><!-- Visualization --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

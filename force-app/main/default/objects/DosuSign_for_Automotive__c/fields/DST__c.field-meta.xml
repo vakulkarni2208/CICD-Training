@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DST__c</fullName>
+    <description>DocuSignTemplate(DST). This field will have the DocuSign Template Id which is in the DocuSign. This may differ between DocuSign PROD and Demo.</description>
+    <externalId>false</externalId>
+    <label>DST</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

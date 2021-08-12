@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Inactive__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Inactive Account. Prevents editing the Account except Sys Admin, Data Admin, Sales Profile - Partner Admin</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Inactive/Terminated Account. Do not add/edit Contacts.</inlineHelpText>
+    <label>Inactive</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

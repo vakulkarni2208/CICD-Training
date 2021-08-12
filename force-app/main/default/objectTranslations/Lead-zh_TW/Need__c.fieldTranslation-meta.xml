@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Need --></label>
+    <name>Need__c</name>
+    <picklistValues>
+        <masterLabel>Customer has need, however NV solution is not a fit</masterLabel>
+        <translation><!-- Customer has need, however NV solution is not a fit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer has not declared need, however NV solution could make significant impact</masterLabel>
+        <translation><!-- Customer has not declared need, however NV solution could make significant impact --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No need</masterLabel>
+        <translation><!-- No need --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Yes, customer has a declared need</masterLabel>
+        <translation><!-- Yes, customer has a declared need --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Certifications</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Certifications</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Please Enter Valid Certification Start Date --></errorMessage>
+        <name>Certification_start_date_null</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select an active Training Service Catalog --></errorMessage>
+        <name>TrainingServiceCatalog_should_be_Active</name>
+    </validationRules>
+</CustomObjectTranslation>

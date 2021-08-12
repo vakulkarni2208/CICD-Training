@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Reason for Transfer --></label>
+    <name>Reason_for_Transfer__c</name>
+    <picklistValues>
+        <masterLabel>CMT Initiated Account Merges</masterLabel>
+        <translation><!-- CMT Initiated Account Merges --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Divestiture</masterLabel>
+        <translation><!-- Divestiture --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>M&amp;A</masterLabel>
+        <translation><!-- M&amp;A --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PEC/PECC Correction</masterLabel>
+        <translation><!-- PEC/PECC Correction --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SO Needs</masterLabel>
+        <translation><!-- SO Needs --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

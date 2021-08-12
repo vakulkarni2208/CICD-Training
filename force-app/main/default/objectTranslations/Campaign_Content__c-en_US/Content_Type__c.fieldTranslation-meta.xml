@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Content Type --></label>
+    <name>Content_Type__c</name>
+    <picklistValues>
+        <masterLabel>Article</masterLabel>
+        <translation><!-- Article --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Blog post</masterLabel>
+        <translation><!-- Blog post --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Datasheet</masterLabel>
+        <translation><!-- Datasheet --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Demo</masterLabel>
+        <translation><!-- Demo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Design Guide</masterLabel>
+        <translation><!-- Design Guide --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Email</masterLabel>
+        <translation><!-- Email --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Infographic</masterLabel>
+        <translation><!-- Infographic --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Podcast</masterLabel>
+        <translation><!-- Podcast --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SDK</masterLabel>
+        <translation><!-- SDK --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Social Kit</masterLabel>
+        <translation><!-- Social Kit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Solution Overview</masterLabel>
+        <translation><!-- Solution Overview --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Video</masterLabel>
+        <translation><!-- Video --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Web page</masterLabel>
+        <translation><!-- Web page --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Webinar</masterLabel>
+        <translation><!-- Webinar --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>White Paper</masterLabel>
+        <translation><!-- White Paper --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>eBook</masterLabel>
+        <translation><!-- eBook --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

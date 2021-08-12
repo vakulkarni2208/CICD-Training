@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Company_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Company Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Agriculture</fullName>
+                <default>false</default>
+                <label>Agriculture</label>
+            </value>
+            <value>
+                <fullName>Algorithm</fullName>
+                <default>false</default>
+                <label>Algorithm</label>
+            </value>
+            <value>
+                <fullName>eVTOL</fullName>
+                <default>false</default>
+                <label>Electric Vertical Takeoff &amp; Landing</label>
+            </value>
+            <value>
+                <fullName>Engineering Service Vendor: Service Providers</fullName>
+                <default>false</default>
+                <label>Engineering Service Vendor: Service Providers</label>
+            </value>
+            <value>
+                <fullName>ESV</fullName>
+                <default>false</default>
+                <label>ESV</label>
+            </value>
+            <value>
+                <fullName>HER</fullName>
+                <default>false</default>
+                <label>HER</label>
+            </value>
+            <value>
+                <fullName>Higher Education &amp; Research: Research Labs</fullName>
+                <default>false</default>
+                <label>Higher Education &amp; Research: Research Labs</label>
+            </value>
+            <value>
+                <fullName>Higher Education &amp; Research: University</fullName>
+                <default>false</default>
+                <label>Higher Education &amp; Research: University</label>
+            </value>
+            <value>
+                <fullName>IHV</fullName>
+                <default>false</default>
+                <label>IHV</label>
+            </value>
+            <value>
+                <fullName>Independent Hardware Vendor: Hardware</fullName>
+                <default>false</default>
+                <label>Independent Hardware Vendor: Hardware</label>
+            </value>
+            <value>
+                <fullName>Independent Hardware Vendor: Sensors</fullName>
+                <default>false</default>
+                <label>Independent Hardware Vendor: Sensors</label>
+            </value>
+            <value>
+                <fullName>Independent Software Vendor: AV Algorithm</fullName>
+                <default>false</default>
+                <label>Independent Software Vendor: AV Algorithm</label>
+            </value>
+            <value>
+                <fullName>Independent Software Vendor: Software &amp; Simulation</fullName>
+                <default>false</default>
+                <label>Independent Software Vendor: Software &amp; Simulation</label>
+            </value>
+            <value>
+                <fullName>Independent Software Vendor: Trucking</fullName>
+                <default>false</default>
+                <label>Independent Software Vendor: Trucking</label>
+            </value>
+            <value>
+                <fullName>ISV</fullName>
+                <default>false</default>
+                <label>ISV</label>
+            </value>
+            <value>
+                <fullName>Mapping</fullName>
+                <default>false</default>
+                <label>Mapping</label>
+            </value>
+            <value>
+                <fullName>OEM</fullName>
+                <default>false</default>
+                <label>OEM</label>
+            </value>
+            <value>
+                <fullName>OEM: Commercial Vehicles</fullName>
+                <default>false</default>
+                <label>OEM: Commercial Vehicles</label>
+            </value>
+            <value>
+                <fullName>OEM: Passenger Cars</fullName>
+                <default>false</default>
+                <label>OEM: Passenger Cars</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>R &amp; D Labs</fullName>
+                <default>false</default>
+                <label>R &amp; D Labs</label>
+            </value>
+            <value>
+                <fullName>Robo-taxi</fullName>
+                <default>false</default>
+                <label>Robo-taxi</label>
+            </value>
+            <value>
+                <fullName>Sensors</fullName>
+                <default>false</default>
+                <label>Sensors</label>
+            </value>
+            <value>
+                <fullName>TAAS</fullName>
+                <default>false</default>
+                <label>TAAS</label>
+            </value>
+            <value>
+                <fullName>Tier 1</fullName>
+                <default>false</default>
+                <label>Tier 1</label>
+            </value>
+            <value>
+                <fullName>Truck / Bus / Shuttle</fullName>
+                <default>false</default>
+                <label>Truck / Bus / Shuttle</label>
+            </value>
+            <value>
+                <fullName>Trucking</fullName>
+                <default>false</default>
+                <label>Trucking</label>
+            </value>
+            <value>
+                <fullName>University</fullName>
+                <default>false</default>
+                <label>University</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

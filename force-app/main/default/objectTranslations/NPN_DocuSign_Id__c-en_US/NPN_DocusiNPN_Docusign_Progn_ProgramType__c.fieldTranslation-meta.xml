@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- NPN_Docusign_ProgramType --></label>
+    <name>NPN_DocusiNPN_Docusign_Progn_ProgramType__c</name>
+    <relationshipLabel><!-- NPN_DocuSign_Ids --></relationshipLabel>
+</CustomFieldTranslation>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Onboarding team is going to be taking over updating the field &apos;Special Reg Enabled&apos; on accounts object, so Partners can register DGX A100&apos;s.</description>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.Special_Reg_Enabled__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>CRM : Edit on Special Reg Enabled</label>
+    <license>Salesforce</license>
+</PermissionSet>

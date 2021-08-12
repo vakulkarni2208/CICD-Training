@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NPN_Program_Deal_NoConversionAllowed</fullName>
+    <active>true</active>
+    <description>NPN Program Deals are now allowed to be converted.</description>
+    <errorConditionFormula>AND(
+IsConverted = true,
+RecordType.Name = &apos;NPN Program Deal&apos;
+)</errorConditionFormula>
+    <errorMessage>NPN Program Deals are now allowed to be converted.</errorMessage>
+</ValidationRule>

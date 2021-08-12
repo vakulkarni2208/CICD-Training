@@ -1,0 +1,1366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NBU_Case</fullName>
+    <active>true</active>
+    <businessProcess>Enterprise Support</businessProcess>
+    <description>This Record type is to create NBU cases which are shared with NBU team via S2S connection.</description>
+    <label>NBU Case</label>
+    <picklistValues>
+        <picklist>Choose_OS__c</picklist>
+        <values>
+            <fullName>Android</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Apple Mac OS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Linux%2FOther Unix</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Microsoft Vista 32-bit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Microsoft Vista 64-bit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Microsoft Windows 10 32-bit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Microsoft Windows 10 64-bit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Microsoft Windows 7 32-bit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Microsoft Windows 7 64-bit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Microsoft Windows 8 32-bit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Microsoft Windows 8 64-bit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Microsoft XP 32-bit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Microsoft XP 64-bit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Microsoft</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Customer_System_Status__c</picklist>
+        <values>
+            <fullName>Dead on Arrival %28DOA%29 - Not Installed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Full Production</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Installed but Not Working at All</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>System has Intermittent Issues</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Work-Around in Place</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>How_would_you_like_to_be_contacted__c</picklist>
+        <values>
+            <fullName>Email</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Phone</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Incident_Status__c</picklist>
+        <values>
+            <fullName>Awaiting Agent Assignment</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Enterprise Support</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Installation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On-Site RMA Install</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resolved %28No Customer Response%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resolved %28Permanently%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resolved %28Temp Workaround%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Troubleshooting-Sub</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>With 3rd Party Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>With Engineering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>With Engineering %2B RMA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>With NVIDIA non-engineering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>With RMA</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Incident_Substatus__c</picklist>
+        <values>
+            <fullName>3rd party software issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>At Customer Site</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Change</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Complete</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Configuration Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contained</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Closure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Custom Configuration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Education</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Question</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer request to escalate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deep Learning SW Defect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Design Flaw</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Docker%2FContainer Software or DL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Documentation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Documentation Provided</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DriveAV SW Defect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DriveSIM SW Defect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Enhancement Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Entitlement Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Environment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Escalated Account</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fully Operational</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GFNA Escalation to Incident Managers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HW Replacement %28RMA%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hardware</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Installation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Known Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>License Server Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>License validation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NGC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NGC Account Agreements</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NVES Agent Direct Support</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Network</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Problem Found</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Response from Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Operational</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On Route</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Out of scope</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partially Operational</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Performance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Platform SW Defect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Portal%2FLogin Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Process</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RMA needs NVES approval</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Redirected to 3rd Party Support</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resolved by Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resolved w%2Fo Action</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Restart Service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Restart System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Scheduled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Software</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Software Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Submitted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unable to Solve the Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>User Error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>User Requested</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vendor%2FPartner%2F3rd Party Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Waiting for Stock</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Last_Activity_Type__c</picklist>
+        <values>
+            <fullName>Attachment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Case Comment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email Message</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Last_Activity_User_Type__c</picklist>
+        <values>
+            <fullName>Agent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internal</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NBU_State__c</picklist>
+        <values>
+            <fullName>Assigned</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Assigned AE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Confirmed Vendor Delivery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Delivered</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Golden Setup Delivered</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Move to OEM RMA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Need More Information</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On Hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Open</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PO Submitted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PR Issued</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending PM approval</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending Vendor 8D</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending Vendor Delivery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending Vendor RMA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending Vendor Shipment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quote Provided</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RMA Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RMA Assigned</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RMA Canceled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Soft Close - Pending Approval</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Updated Request Arrived</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vendor Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wait for Implementation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wait for Release</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Waiting for Customer Approval</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Waiting for Customer Info</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Waiting for Customer to apply Patch</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Notification_Type__c</picklist>
+        <values>
+            <fullName>Case Closer Email</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Origin</picklist>
+        <values>
+            <fullName>Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web Form</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Other_Support_Programs__c</picklist>
+        <values>
+            <fullName>GRID Eval</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MagLev</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NGC Registry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tesla</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Upgrades</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PagerDuty_Service__c</picklist>
+        <values>
+            <fullName>NVES-TEST-SERVICE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>egx-cloud-incidents</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Priority</picklist>
+        <values>
+            <fullName>Fatal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medium</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Problem_Code__c</picklist>
+        <values>
+            <fullName>Configuration Assistance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DCS HW</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DCS SW</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DCV HW</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deep Learning</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Drive AV%2FOS SW</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DriveSim SW</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Error Message%2C Logs%2C Debugs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hardware Failure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inference</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Install%2C Uninstall or Upgrade</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Licensing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Machine Learning</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pegasus HW</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product Feature%2FFunction Question</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SW Download Assistance</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Product_Category__c</picklist>
+        <values>
+            <fullName>CUDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DGX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DRIVE Constellation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GFN Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GRID</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HPC SDK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NGC-Ready Service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Parabricks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RTX Blade Server</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Product_Family__c</picklist>
+        <values>
+            <fullName>Automotive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CPU Products</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CUDA Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DGX A100</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DGX Station A100</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DGX Station Product Family</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DGX-1 Pascal Product Family</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DGX-1 Volta Product Family</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DGX-2 Volta Product Family</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DRIVE Constellation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DRIVE Sim</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Embedded Entertainment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GFN Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GRID Hardware</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GRID SW PERPETUAL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GRID SW RENEWAL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GRID SW SUBSCRIPTION</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GRID SW SUMS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HPC Compiler</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NGC Support Service - DSWS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NGC Support Service - T4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NGC Support Service - V100</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NVIDIA Professional Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Notebook</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Parabricks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quadro Desktop - EP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quadro Desktop - HE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quadro Desktop - MR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quadro Desktop - NVS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quadro Desktop - UHE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quadro Industry Solution</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quadro K20%2FK40</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quadro Mobile - HE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quadro Mobile - MR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quadro Mobile - NVS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quadro Mobile - PE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quadro Plex Visual Computing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quadro Products - Old</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quadro VCA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RTX Blade Server Product Family</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tegra Auto%2FEmb</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tegra Embedded</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tegra Tablets</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tesla HW Family</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tesla SW Family</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>vGaming</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Product__c</picklist>
+        <values>
+            <fullName>DGX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>vGPU Solutions</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reason</picklist>
+        <values>
+            <fullName>Complex functionality</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Existing problem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Instructions not clear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New problem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>User didn%27t attend training</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reason_for_Transfer__c</picklist>
+        <values>
+            <fullName>CMT Initiated Account Merges</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Divestiture</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>M%26A</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PEC%2FPECC Correction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SO Needs</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Severity__c</picklist>
+        <values>
+            <fullName>S1%3A_Catastrophic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S2%3A_Severe</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S3%3A_Moderate</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>S4%3A_Minor%2FCosmetic_Defects</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S5%3A_Enhancement_Request</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Site_Survey_Status__c</picklist>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In-Progress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Submitted</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Source_of_Request__c</picklist>
+        <values>
+            <fullName>External %28Customer or Partner%29</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Internal %28CMT%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Sub_Type__c</picklist>
+        <values>
+            <fullName>Account Approval Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Account Teams</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Account Updates</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cloud Consumption Oppty %28CCO%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Conga %28Mail Merge%29 Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contact Conversion issues</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contracts Packet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dashboard Assistance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deal Registration Lead</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Docusign</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EBC Assistance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Existing Opp Merge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Existing Report %2F Dashboard update</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GPU Genius Training</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>General User Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Help with Contacts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jetson Embedded Opportunities</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lead routing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Locator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MDF%2F Rebates</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MLNX Data</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mass Email Assistance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Modify</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NFR SW Licence Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NPN Compliance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NVDA Data</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Email Template Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Report Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Online App Form</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Opp Reg Extension</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Opportunity Update</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>POS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partner Contacts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Portal Issues</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pre MQL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pricebook Change Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Program Related Questions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reinstate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reporting%2FDashboard</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sharing Question</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Special Pricing Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SuRF Assistance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>System Assistance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Training Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>User Assistance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Weekly Commit</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>System_Access__c</picklist>
+        <values>
+            <fullName>NVIDIA CRM %28Salesforce%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SuRF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Weekly Commit</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Account Assistance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>General User Question</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Account Approval</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OppReg Assistance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Opportunity Assistance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product%2FPricebook Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Report%2FDashboard Assistance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Salesforce User Account Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sharing Question</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>System Idea</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Training Request</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>X3rd_Party_Cases__c</picklist>
+        <values>
+            <fullName>Atos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Canonical</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cisco</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Citrix</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Flexera</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HPE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HPI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lenovo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Linux reference Architecture Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nutanix</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RHEL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Teradici</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VMware</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Windows</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

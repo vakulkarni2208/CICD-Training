@@ -1,0 +1,47 @@
+.THIS {
+}
+
+.THIS .check {
+    text-align: center;
+    width:30px;
+    height:30px;
+    border: 1px solid #76b900;
+    /*color: green !important;
+    border: 1px solid green;
+    font-weight: bold;
+    font-size: 20px;
+    text-shadow: #000 0px 0px 1px;
+    -webkit-font-smoothing: antialiased; */
+}
+
+.THIS .x {
+    text-align: center;
+    width:30px;
+    height:30px;
+    border: 1px solid red;
+    /*color: red !important;
+    border: 1px solid red;
+    font-size: 20px;
+    text-shadow: #000 0px 0px 1px;
+    -webkit-font-smoothing: antialiased;*/
+}
+
+.THIS .caution {
+    text-align: center;
+    width:30px;
+    height:30px;
+    border: 1px solid #FFDB58;
+}
+
+.THIS .complianceText {
+    text-align: center;
+    font-size: 15px;
+    height:30px;
+    text-shadow: #000 0px 0px 1px;
+    -webkit-font-smoothing: antialiased;
+}
+
+.THIS .left {
+    float:left;
+    
+}

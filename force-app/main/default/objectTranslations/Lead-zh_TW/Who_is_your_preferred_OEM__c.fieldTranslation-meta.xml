@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Please select your preferred solution provider --></help>
+    <label><!-- Who is your preferred OEM? --></label>
+    <name>Who_is_your_preferred_OEM__c</name>
+    <picklistValues>
+        <masterLabel>Appro</masterLabel>
+        <translation><!-- Appro --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dell</masterLabel>
+        <translation><!-- Dell --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HP</masterLabel>
+        <translation><!-- HP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IBM</masterLabel>
+        <translation><!-- IBM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lenovo</masterLabel>
+        <translation><!-- Lenovo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SGI</masterLabel>
+        <translation><!-- SGI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sun</masterLabel>
+        <translation><!-- Sun --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

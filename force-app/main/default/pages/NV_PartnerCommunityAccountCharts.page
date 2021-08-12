@@ -1,0 +1,170 @@
+<!--
+ Change List:
+ 2019.04.24 - Added Report "Company Opportunities - All" hyperlinked to Company Opportunities header
+
+-->
+
+<apex:page controller="clsPartnerPortalChartGoogle" showHeader="false" sidebar="false">
+    <!-- Google API inclusion -->
+    <apex:includeScript id="a" value="https://www.google.com/jsapi" />
+
+    <table align="left" width="100%" border="0" cellpadding="5" cellspacing="40" style="background-color:#FFFFFF;"> 
+        <tr height="240px;">
+            <td width="50%" align="left" valign="top" class="cellBorder" nowrap="true">
+                <div style="padding-left:25px;"><font color="#393939" size="3" align="left"><b>{!$Label.COMM_PP_CMP_Comp_Leads}</b></font></div>
+                <div id="AccountLeadChartBlockNoLeads"/>
+                <!--<apex:outputLink value="/00Q/o" target="_blank">-->
+                <div id="AccountLeadChartBlock"/>          
+                <!--</apex:outputLink>-->
+            </td>   
+            
+            <td width="50%" align="left" valign="top" class="cellBorder" nowrap="true">
+                <a target="_blank" href="/00O1W000005GNyoUAG"><div style="padding-left:25px;"><font color="#393939" size="3">  <b>{!$Label.COMM_PP_CMP_Comp_Opptys}</b>   </font></div></a>
+                <div id="AccountOpportunityChartBlockNoLeads"/>
+                <!--<apex:outputLink value="/00O?rt=20" target="_blank">-->
+                <div id="AccountOpportunityChartBlock"/>
+                <!--</apex:outputLink>-->
+            </td>  
+        </tr>
+        
+    </table>
+
+    <script src="/soap/ajax/9.0/connection.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        // Load the Visualization API and the piechart package.
+        google.load('visualization', '1.0', {'packages':['corechart']});
+       
+        // Set a callback to run when the Google Visualization API is loaded.
+        google.setOnLoadCallback(initCharts);
+   
+        function initCharts() {         
+          // Following the usual Remoting syntax
+          // [<namespace>.]<controller>.<method>([params...,] <callbackFunction>(result, event) {...}
+          // controller : clsPartnerPortalChartGoogle
+          // method : loadOpps
+          sforce.connection.sessionId = '{!$Api.Session_ID}';
+          clsPartnerPortalChartGoogle.loadLeadsByOwner( 
+                 function(result, event){  
+                     
+                     // Prepare table model for chart with columns
+                     var leadsData = new google.visualization.DataTable();
+                     leadsData.addColumn('string', 'OwnerName');
+                     leadsData.addColumn('number', 'Total');
+
+                     // add rows from the remoting results
+                     var totalLeads = 0;
+                     for(var i =0; i<result.length;i++){
+                        var r = result[i];
+                        leadsData.addRow([r.OwnerName, r.Total]); 
+                        totalLeads = totalLeads + r.Total;
+                      }
+                    
+                    var options = {
+                      chartArea: {left: 20, right: 2, width: 300, height: 250},
+                      legend : {position: 'right', alignment: 'center', textStyle: {color: 'black', fontSize: 10}}, 
+                      is3D:true,
+                      //width:350,
+                      vAxis:{textStyle:{fontSize: 10}},
+                      hAxis:{textStyle:{fontSize: 10},showTextEvery:1,slantedText:false}
+                    };
+                    // all done, lets draw the chart with some options to make it look nice.
+                    var accountLeadChart=new google.visualization.PieChart(document.getElementById('AccountLeadChartBlock'));
+                    if (totalLeads > 0) {
+                        google.visualization.events.addListener(accountLeadChart, 'select', function(){
+                            var qr = sforce.connection.query("select Report_ID__c from Partner_Portal_Reports__c Where Report_Name__c = 'Company Leads by Owner'");
+                            var records = qr.getArray("records");
+                            var reportID;
+                            if (records.length > 0) {
+                                for (var i=0;i<records.length;i++){
+                                     reportID = records[i].Report_ID__c;
+                                }
+                            }
+                            var selectedLeadItem = accountLeadChart.getSelection()[0];
+                            if (selectedLeadItem) {
+                                var slice = leadsData.getValue(selectedLeadItem.row, 0);
+                                window.parent.location = '/' + reportID + '?pv0=' + slice;
+                                //window.parent.location = '/00OV0000000ZYWE?pv0=' + slice;
+                            }
+                        });
+                        accountLeadChart.draw(leadsData, options);
+                    }
+                    else {
+                        document.getElementById('AccountLeadChartBlockNoLeads').innerHTML = '<br/><br/><br/><font color="red" size="3" align="left" valign="middle">{!$Label.COMM_PP_CMP_MSG_No_Leads}</font>';
+                    }
+                    
+              }, {escape:true});
+              
+              clsPartnerPortalChartGoogle.loadOpportunitiesByOwner( 
+                 function(result, event){  
+                     // Prepare table model for chart with columns
+                     var oppsData = new google.visualization.DataTable();
+                     oppsData.addColumn('string', 'OwnerName');
+                     oppsData.addColumn('number', 'Total');
+
+                     var totalOpps = 0;
+                     // add rows from the remoting results
+                     for(var i =0; i<result.length;i++){
+                        var r = result[i];
+                        oppsData.addRow([r.OwnerName, r.Total]); 
+                        totalOpps = totalOpps + r.Total;
+                      }
+                    
+                    var options = {
+                      chartArea: {left: 20, right: 2, width: 300, height: 250},
+                      legend : {position: 'right', alignment: 'center', textStyle: {color: 'black', fontSize: 10}}, 
+                      is3D:true,
+                      //width:350,
+                      vAxis:{textStyle:{fontSize: 10}},
+                      hAxis:{textStyle:{fontSize: 10},showTextEvery:1,slantedText:false}
+                    };
+                    // all done, lets draw the chart with some options to make it look nice.
+                    var accountOppsChart= new google.visualization.PieChart(document.getElementById('AccountOpportunityChartBlock'));
+                    if (totalOpps > 0) {
+                        google.visualization.events.addListener(accountOppsChart, 'select', function() {
+                          var qr = sforce.connection.query("select Report_ID__c from Partner_Portal_Reports__c Where Report_Name__c = 'Company Opportunities by Owner'");
+                            var records = qr.getArray("records");
+                            var reportID;
+                            if (records.length > 0) {
+                                for (var i=0;i<records.length;i++){
+                                     reportID = records[i].Report_ID__c;
+                                }
+                            }
+                          var selectedOppsItem = accountOppsChart.getSelection()[0];
+                          if (selectedOppsItem) {
+                            var slice = oppsData.getValue(selectedOppsItem.row, 0);
+                            window.parent.location = '/' + reportID + '?pv0=' + slice;
+                            //window.parent.location = '/00OV0000000ZYWJ?pv0=' + slice;
+                            //window.open('/00OV0000000ZYWJ?pv0=' + slice);
+                          }
+                        });
+                        accountOppsChart.draw(oppsData, options);
+                    }
+                    else {
+                        document.getElementById('AccountOpportunityChartBlockNoLeads').innerHTML = '<br/><br/><br/><font color="red" size="3" align="left" valign="middle">{!$Label.COMM_PP_CMP_MSG_No_Opptys}</font>';
+                    }
+              }, {escape:true});
+          } 
+          
+    </script>
+    
+    <style type="text/css">
+        .cellBorder {
+            border: 1px solid #76B900;
+            //box-shadow:         6px 6px 5px #ccc;
+        }
+    
+        .seperator {
+            height: 15px;
+            background: #4e9231 url(images/green_divider_perspective.jpg) no-repeat center top;
+            margin: 0;
+            width: 940px;
+        }
+    
+        .rev {
+            background-color: #929292;
+            color: #fffeff;
+            padding: 2px;
+        }
+    </style> 
+
+</apex:page>

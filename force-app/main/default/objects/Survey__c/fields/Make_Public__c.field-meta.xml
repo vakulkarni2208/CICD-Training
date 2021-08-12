@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Make_Public__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>This checkbox is used in sharing rules to share Survey to Guest User profile.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Check it to make survey accessible to Customer/partners.</inlineHelpText>
+    <label>Make Public</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

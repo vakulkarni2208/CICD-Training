@@ -1,0 +1,81 @@
+<apex:page standardController="Opportunity">
+<apex:pageMessages />
+
+<apex:sectionHeader subtitle="{!opportunity.name}" title="Opportunity Data" />
+<apex:form >
+<!--<apex:pageBlock >
+
+<apex:pageBlockSection title="Q3-FY2010" columns="1">
+    <apex:outputField value="{!opportunity.PSC_Card_Units_FY10_Q3__c}" />
+    <apex:outputField value="{!opportunity.X1U_units_FY10_Q3__c}" />
+    <apex:outputField value="{!opportunity.X1U_Card_Units_Q3__c}" />
+    <apex:outputField value="{!opportunity.Revenue_Q3__c}" />
+</apex:pageBlockSection>
+
+<apex:pageBlockSection title="Q4-FY2010" columns="1">
+    <apex:outputField value="{!opportunity.PSC_Card_Units_FY10_Q4__c}" />
+    <apex:outputField value="{!opportunity.X1U_units_FY10_Q4__c}" />
+    <apex:outputField value="{!opportunity.X1U_Card_Units_Q4__c}" />
+    <apex:outputField value="{!opportunity.Revenue_Q4__c}" />
+</apex:pageBlockSection>
+
+<apex:pageBlockSection title="Q1-FY2011" columns="1">
+    <apex:outputField value="{!opportunity.PSC_Card_Units_FY_11_Q1__c}" />
+    <apex:outputField value="{!opportunity.X1U_Units_FY_11_Q1__c}" />
+    <apex:outputField value="{!opportunity.Tesla_Unit_Type_Q1_11__c}" />
+    <apex:outputField value="{!opportunity.Revenue_FY_11_Q1__c}" />
+</apex:pageBlockSection>
+
+<apex:pageBlockSection title="Q2-FY2011" columns="1">
+    <apex:outputField value="{!opportunity.PSC_Card_Units_FY_11_Q2__c}" />
+    <apex:outputField value="{!opportunity.X1U_Units_FY_11_Q2__c}" />
+    <apex:outputField value="{!opportunity.Tesla_Unit_Type_FY11_Q2__c}" />
+    <apex:outputField value="{!opportunity.Revenue_FY_11_Q2__c}" />
+</apex:pageBlockSection>
+
+<apex:pageBlockSection title="Q3-FY2011" columns="1">
+    <apex:outputField value="{!opportunity.PSC_Card_Units_FY_11_Q3__c}" />
+    <apex:outputField value="{!opportunity.X1U_Units_FY_11_Q3__c}" />
+    <apex:outputField value="{!opportunity.Tesla_Unit_Type_FY11_Q3__c}" />
+    <apex:outputField value="{!opportunity.Revenue_FY11_Q3__c}" />
+</apex:pageBlockSection>
+
+<apex:pageBlockSection title="Q4-FY2011" columns="1">
+    <apex:outputField value="{!opportunity.PSC_Card_Units_FY_11_Q4__c}" />
+    <apex:outputField value="{!opportunity.X1U_Units_FY_11_Q4__c}" />
+    <apex:outputField value="{!opportunity.Tesla_Unit_Type_FY11_Q4__c}" />
+    <apex:outputField value="{!opportunity.Tesla_Revenue_FY_11_Q4__c}" />
+</apex:pageBlockSection>
+
+<apex:pageBlockSection title="Q1-FY2012" columns="1">
+    <apex:outputField value="{!opportunity.Tesla_Unit_Type_FY12_Q1__c}" />
+    <apex:outputField value="{!opportunity.Tesla_ASPs_FY12_Q1__c}" />
+    <apex:outputField value="{!opportunity.Tesla_Quarterly_Units_FY12_Q1__c}" />
+    <apex:outputField value="{!opportunity.Tesla_Revenue_FY12_Q1__c}" />
+</apex:pageBlockSection>
+
+<apex:pageBlockSection title="Q2-FY2012" columns="1">
+    <apex:outputField value="{!opportunity.Tesla_Unit_Type_FY12_Q2__c}" />
+    <apex:outputField value="{!opportunity.Tesla_ASPs__c}" />
+    <apex:outputField value="{!opportunity.Tesla_Quarterly_Units_FY12_Q2__c}" />
+    <apex:outputField value="{!opportunity.Tesla_Revenue_FY12_Q2__c}" />
+</apex:pageBlockSection>
+
+<apex:pageBlockSection title="Q3-FY2012" columns="1">
+    <apex:outputField value="{!opportunity.Tesla_Unit_Type_FY12_Q3__c}" />
+    <apex:outputField value="{!opportunity.Tesla_ASPs_FY12_Q3__c}" />
+    <apex:outputField value="{!opportunity.Tesla_Quarterly_Units_FY12_Q3__c}" />
+    <apex:outputField value="{!opportunity.Tesla_Revenue_FY12_Q3__c}" />
+</apex:pageBlockSection>
+
+<apex:pageBlockSection title="Q4-FY2012" columns="1">
+    <apex:outputField value="{!opportunity.Tesla_Unit_Type_FY12_Q4__c}" />
+    <apex:outputField value="{!opportunity.Tesla_ASPs_FY12_Q4__c}" />
+    <apex:outputField value="{!opportunity.Tesla_Quarterly_Units_FY12_Q4__c}" />
+    <apex:outputField value="{!opportunity.Tesla_Revenue_FY12_Q4__c}" />
+</apex:pageBlockSection>
+
+
+</apex:pageBlock>-->
+</apex:form>
+</apex:page>

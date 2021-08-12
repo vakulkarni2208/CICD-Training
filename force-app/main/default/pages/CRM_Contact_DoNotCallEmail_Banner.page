@@ -1,0 +1,30 @@
+<apex:page standardController="Contact" extensions="CRM_Contact_DoNotCallEmail_Banner_cls">
+	<style>
+		.alert-warning {
+	    	color: #8a6d3b;
+	    	background-color: #fcf8e3;
+	    	border-color: #faebcc;
+			}
+		.alert-danger {
+    		color: #a94442;
+    		font-size: 100%;
+    		font-weight: 700;
+    		//background-color: #fcf8e3;
+    		background-color: #f2dede;
+    		//background-color: #f0ad4e;
+   			border-color: #ebccd1;
+		}
+		.alert {
+	   	 	padding: 10px;
+	    	margin-bottom: 20px;
+	    	border: 1px solid transparent;
+	    	border-radius: 4px;
+		}
+	</style>
+	
+	<apex:outputPanel rendered="{!showMessage}">
+		<div class="alert alert-danger">
+	  		{! message }
+		</div>
+	</apex:outputPanel>
+</apex:page>

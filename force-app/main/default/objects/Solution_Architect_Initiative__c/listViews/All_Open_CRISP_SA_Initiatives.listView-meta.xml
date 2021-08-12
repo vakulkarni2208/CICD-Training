@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Open_CRISP_SA_Initiatives</fullName>
+    <columns>NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Solution_Architect_Initiative__c.CRISP_Initiative</value>
+    </filters>
+    <label>All Open CRISP SA Initiatives</label>
+</ListView>

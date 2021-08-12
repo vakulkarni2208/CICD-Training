@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Engineering_Support_Hours__c</fullName>
+    <description>SDS-1232 : Service: CUDA Support Services. 
+Service Agent should be able to specify consumed Engineering hours on a support case.</description>
+    <externalId>false</externalId>
+    <label>Engineering Support Hours</label>
+    <precision>7</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

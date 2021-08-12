@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SamlSsoConfig xmlns="http://soap.sforce.com/2006/04/metadata">
+    <identityLocation>SubjectNameId</identityLocation>
+    <identityMapping>FederationId</identityMapping>
+    <issuer>nvid_IDP</issuer>
+    <loginUrl>https://nvid.nvidia.com/affwebservices/public/saml2sso</loginUrl>
+    <logoutUrl>https://nvid.nvidia.com/NvidiaUtilities/logout.html</logoutUrl>
+    <name>nvid_IDP</name>
+    <oauthTokenEndpoint>https://nvcrm--trprod.my.salesforce.com/services/oauth2/token?so=00D030000004bhs</oauthTokenEndpoint>
+    <redirectBinding>true</redirectBinding>
+    <requestSignatureMethod>1</requestSignatureMethod>
+    <requestSigningCertId>0P11W000000PBIq</requestSigningCertId>
+    <salesforceLoginUrl>https://nvcrm--trprod.my.salesforce.com?so=00D030000004bhs</salesforceLoginUrl>
+    <samlEntityId>https://espcommunity.salesforce.com.old</samlEntityId>
+    <samlVersion>SAML2_0</samlVersion>
+    <useConfigRequestMethod>true</useConfigRequestMethod>
+    <userProvisioning>false</userProvisioning>
+    <validationCert>MIIB6TCCAVKgAwIBAgIQhJ+Vt/lP5flekWpUJg48WjANBgkqhkiG9w0BAQsFADAzMQ8wDQYDVQQKDAZudmlkaWExDzANBgNVBAsMBm52aWRpYTEPMA0GA1UEAwwGbnZpZGlhMB4XDTIxMDMxNDAyMDY0MloXDTMxMDMxMjAxMDY0MlowMzEPMA0GA1UECgwGbnZpZGlhMQ8wDQYDVQQLDAZudmlkaWExDzANBgNVBAMMBm52aWRpYTCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEA36SxreO/z41dtAZx8DNwHw6J6oI4FRfp1Zbcf4Pv8AnyyF4DFnA/lbBxltd0Sv//Y6nJzpW/e1WTNv4hUAT0NMwr4v7seAOz/4LtKovaSM5gL3URrreZpQZC1RNVp14ICD4ETOI7WVSyLrJqV1K9JV1ZsKdSz7k0KpvHUtrpSGcCAwEAATANBgkqhkiG9w0BAQsFAAOBgQBrXBBVtkoMgxxkyDEYJ6uos4Lx7M19KRXpV7Kh3EVETkTaN/WxFcmeVOYvFtEMWh8dEgE/dlb/vsIfMWroO9gvhDIwxgSFOhZPJoPMF0g0IgxLlhpDVeT9051bw82zrw3Qj7uxiPLpoMZWwtw87gZAX3egCC/8YMIYPcbmej7mwg==</validationCert>
+</SamlSsoConfig>

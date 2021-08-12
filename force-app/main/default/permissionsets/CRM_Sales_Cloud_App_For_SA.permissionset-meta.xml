@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Provide access to Sales Cloud App for SA&apos;s when assigning Service Cloud Generic user Profile</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>CRM : Sales Cloud App For SA</label>
+</PermissionSet>

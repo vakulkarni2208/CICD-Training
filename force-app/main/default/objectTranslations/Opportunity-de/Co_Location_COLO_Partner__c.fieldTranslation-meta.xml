@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Co-Location (COLO) Partner --></label>
+    <name>Co_Location_COLO_Partner__c</name>
+    <picklistValues>
+        <masterLabel>Aligned Energy</masterLabel>
+        <translation><!-- Aligned Energy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Colovore</masterLabel>
+        <translation><!-- Colovore --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Core Scientific</masterLabel>
+        <translation><!-- Core Scientific --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cyrus One</masterLabel>
+        <translation><!-- Cyrus One --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cyxtera</masterLabel>
+        <translation><!-- Cyxtera --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Data Dock</masterLabel>
+        <translation><!-- Data Dock --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Digital Realty</masterLabel>
+        <translation><!-- Digital Realty --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EdgeConneX</masterLabel>
+        <translation><!-- EdgeConneX --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Equinix</masterLabel>
+        <translation><!-- Equinix --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Flexential</masterLabel>
+        <translation><!-- Flexential --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fujitsu</masterLabel>
+        <translation><!-- Fujitsu --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IDCF</masterLabel>
+        <translation><!-- IDCF --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Interxion</masterLabel>
+        <translation><!-- Interxion --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NTT Communications</masterLabel>
+        <translation><!-- NTT Communications --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NTT Data</masterLabel>
+        <translation><!-- NTT Data --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Scalematrix</masterLabel>
+        <translation><!-- Scalematrix --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Switch</masterLabel>
+        <translation><!-- Switch --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Vantage</masterLabel>
+        <translation><!-- Vantage --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Verne Global</masterLabel>
+        <translation><!-- Verne Global --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

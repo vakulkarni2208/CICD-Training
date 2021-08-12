@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Asset_Type__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Select the category that best describes this file</inlineHelpText>
+    <label>Asset Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Box Templates</fullName>
+                <default>false</default>
+                <label>Box Templates</label>
+            </value>
+            <value>
+                <fullName>Case Studies</fullName>
+                <default>false</default>
+                <label>Case Studies</label>
+            </value>
+            <value>
+                <fullName>Copy &amp; Messaging</fullName>
+                <default>false</default>
+                <label>Copy &amp; Messaging</label>
+            </value>
+            <value>
+                <fullName>Demo</fullName>
+                <default>false</default>
+                <label>Demo</label>
+            </value>
+            <value>
+                <fullName>Game Specific</fullName>
+                <default>false</default>
+                <label>Game Specific</label>
+            </value>
+            <value>
+                <fullName>Logo &amp; Branding Guidelines</fullName>
+                <default>false</default>
+                <label>Logo &amp; Branding Guidelines</label>
+            </value>
+            <value>
+                <fullName>Policies and Guidelines</fullName>
+                <default>false</default>
+                <label>Policies and Guidelines</label>
+            </value>
+            <value>
+                <fullName>Print</fullName>
+                <default>false</default>
+                <label>Print</label>
+            </value>
+            <value>
+                <fullName>Product Imagery</fullName>
+                <default>false</default>
+                <label>Product Imagery</label>
+            </value>
+            <value>
+                <fullName>Product Literature</fullName>
+                <default>false</default>
+                <label>Product Literature</label>
+            </value>
+            <value>
+                <fullName>Product Presentations</fullName>
+                <default>false</default>
+                <label>Product Presentations</label>
+            </value>
+            <value>
+                <fullName>Product Specifications</fullName>
+                <default>false</default>
+                <label>Product Specifications</label>
+            </value>
+            <value>
+                <fullName>Sales Tools</fullName>
+                <default>false</default>
+                <label>Sales Tools</label>
+            </value>
+            <value>
+                <fullName>System Test Documentation</fullName>
+                <default>false</default>
+                <label>System Test Documentation</label>
+            </value>
+            <value>
+                <fullName>Technical Presentations</fullName>
+                <default>false</default>
+                <label>Technical Presentations</label>
+            </value>
+            <value>
+                <fullName>Technical Resources</fullName>
+                <default>false</default>
+                <label>Technical Resources</label>
+            </value>
+            <value>
+                <fullName>Templates</fullName>
+                <default>false</default>
+                <label>Templates</label>
+            </value>
+            <value>
+                <fullName>Training Resources</fullName>
+                <default>false</default>
+                <label>Training Resources</label>
+            </value>
+            <value>
+                <fullName>Vertical Presentations</fullName>
+                <default>false</default>
+                <label>Vertical Presentations</label>
+            </value>
+            <value>
+                <fullName>Video</fullName>
+                <default>false</default>
+                <label>Video</label>
+            </value>
+            <value>
+                <fullName>Wallpaper</fullName>
+                <default>false</default>
+                <label>Wallpaper</label>
+            </value>
+            <value>
+                <fullName>Web</fullName>
+                <default>false</default>
+                <label>Web</label>
+            </value>
+            <value>
+                <fullName>Webinar Replay</fullName>
+                <default>false</default>
+                <label>Webinar Replay</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

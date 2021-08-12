@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Product Name used in Opp Reg form --></help>
+    <label><!-- OppReg Product Name --></label>
+    <name>OppReg_Product_Name__c</name>
+</CustomFieldTranslation>

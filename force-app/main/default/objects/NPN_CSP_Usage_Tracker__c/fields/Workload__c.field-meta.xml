@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Workload__c</fullName>
+    <externalId>false</externalId>
+    <label>Workload</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Autonomous vehicle</fullName>
+                <default>false</default>
+                <label>Autonomous vehicle</label>
+            </value>
+            <value>
+                <fullName>Data Analytics (Not ML or DL)</fullName>
+                <default>false</default>
+                <label>Data Analytics (Not ML or DL)</label>
+            </value>
+            <value>
+                <fullName>Deep Learning – Inferencing</fullName>
+                <default>false</default>
+                <label>Deep Learning – Inferencing</label>
+            </value>
+            <value>
+                <fullName>Deep Learning – Training</fullName>
+                <default>false</default>
+                <label>Deep Learning – Training</label>
+            </value>
+            <value>
+                <fullName>Game Streaming</fullName>
+                <default>false</default>
+                <label>Game Streaming</label>
+            </value>
+            <value>
+                <fullName>GPU/vGPU as a Service</fullName>
+                <default>false</default>
+                <label>GPU/vGPU as a Service</label>
+            </value>
+            <value>
+                <fullName>Graphics Virtualization (vGPU)</fullName>
+                <default>false</default>
+                <label>Graphics Virtualization (vGPU)</label>
+            </value>
+            <value>
+                <fullName>High Performance Computing (HPC)</fullName>
+                <default>false</default>
+                <label>High Performance Computing (HPC)</label>
+            </value>
+            <value>
+                <fullName>Intelligent Video Analytics (IVA)</fullName>
+                <default>false</default>
+                <label>Intelligent Video Analytics (IVA)</label>
+            </value>
+            <value>
+                <fullName>Machine Learning (Not DL)</fullName>
+                <default>false</default>
+                <label>Machine Learning (Not DL)</label>
+            </value>
+            <value>
+                <fullName>Medical Imaging</fullName>
+                <default>false</default>
+                <label>Medical Imaging</label>
+            </value>
+            <value>
+                <fullName>Rendering</fullName>
+                <default>false</default>
+                <label>Rendering</label>
+            </value>
+            <value>
+                <fullName>Scalable Visualization Solutions (SVS)</fullName>
+                <default>false</default>
+                <label>Scalable Visualization Solutions (SVS)</label>
+            </value>
+            <value>
+                <fullName>Virtual &amp; Augmented Reality (VR/AR)</fullName>
+                <default>false</default>
+                <label>Virtual &amp; Augmented Reality (VR/AR)</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

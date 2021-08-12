@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Portal xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <admin>!svcdeploy@nvidia.com.crmprod</admin>
+    <description>NVIDIA : Marketing Applications</description>
+    <emailSenderAddress>nvidia-partnerforce-isv@nvidia.com</emailSenderAddress>
+    <emailSenderName>NVIDIA PartnerForce ISV</emailSenderName>
+    <enableSelfCloseCase>false</enableSelfCloseCase>
+    <forgotPassTemplate>Customer_Portal/Customer_Portal_ISV_Lost_Password_Template</forgotPassTemplate>
+    <isSelfRegistrationActivated>false</isSelfRegistrationActivated>
+    <logoutUrl>http://nvidia.force.com/isv</logoutUrl>
+    <newPassTemplate>Customer_Portal/Customer_Portal_ISV_New_Password_Template</newPassTemplate>
+    <newUserTemplate>Customer_Portal/Customer_Portal_ISV_New_User_Template</newUserTemplate>
+    <showActionConfirmation>false</showActionConfirmation>
+    <type>CustomerSuccess</type>
+</Portal>

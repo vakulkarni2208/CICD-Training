@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Course Type --></label>
+    <name>Course_Type__c</name>
+    <picklistValues>
+        <masterLabel>Instructor-Led</masterLabel>
+        <translation><!-- Instructor-Led --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Instructor-Led Remote</masterLabel>
+        <translation><!-- Instructor-Led Remote --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Self-Paced Online</masterLabel>
+        <translation><!-- Self-Paced Online --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Third party</masterLabel>
+        <translation><!-- Third party --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

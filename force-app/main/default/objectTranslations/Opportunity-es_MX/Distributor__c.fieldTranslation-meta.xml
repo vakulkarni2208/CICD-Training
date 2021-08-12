@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Distributor --></label>
+    <name>Distributor__c</name>
+    <picklistValues>
+        <masterLabel>&lt;N/A&gt;</masterLabel>
+        <translation><!-- &lt;N/A&gt; --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Arrow - North America</masterLabel>
+        <translation><!-- Arrow - North America --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Avnet</masterLabel>
+        <translation><!-- Avnet --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CRG - Israel</masterLabel>
+        <translation><!-- CRG - Israel --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EDOM - Taiwan</masterLabel>
+        <translation><!-- EDOM - Taiwan --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Eltech - Russia</masterLabel>
+        <translation><!-- Eltech - Russia --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Leadtech - TWN/SEA</masterLabel>
+        <translation><!-- Leadtech - TWN/SEA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MDS - Korea</masterLabel>
+        <translation><!-- MDS - Korea --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Macnica - Japan</masterLabel>
+        <translation><!-- Macnica - Japan --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Open Zeka - Turkey</masterLabel>
+        <translation><!-- Open Zeka - Turkey --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rashi Peripherals - India</masterLabel>
+        <translation><!-- Rashi Peripherals - India --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ryoyo - Japan</masterLabel>
+        <translation><!-- Ryoyo - Japan --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Silicon Highway - EU/UK</masterLabel>
+        <translation><!-- Silicon Highway - EU/UK --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Synnex - China</masterLabel>
+        <translation><!-- Synnex - China --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TET Industrial - Turkey</masterLabel>
+        <translation><!-- TET Industrial - Turkey --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Enter the Solution Provider/VAR for this Opportunity.  This could be a GRID VAR, TTP or QPP.  If &apos;none&quot;, this please state. --></help>
+    <label><!-- Solution Provider/VAR --></label>
+    <name>Solution_VAR__c</name>
+</CustomFieldTranslation>

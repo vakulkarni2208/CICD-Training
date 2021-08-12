@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Training_Service__c</fullName>
+    <businessOwnerUser>swagner@nvidia.com.trprod</businessOwnerUser>
+    <businessStatus>Active</businessStatus>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <label>Training Service</label>
+    <lookupFilter>
+        <active>false</active>
+        <filterItems>
+            <field>Training_Service_Catalog__c.Active__c</field>
+            <operation>equals</operation>
+            <value>Active</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Training_Service_Catalog__c</referenceTo>
+    <relationshipLabel>Service Deliveries (Training Service)</relationshipLabel>
+    <relationshipName>Service_Deliveries1</relationshipName>
+    <required>false</required>
+    <securityClassification>Internal</securityClassification>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

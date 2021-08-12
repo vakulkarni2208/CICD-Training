@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Case_Closer_Check</fullName>
+    <active>true</active>
+    <description>Validate is all required fields are populated when a case is closed</description>
+    <errorConditionFormula>ISPICKVAL(Incident_Status__c, &apos;Closed&apos;) &amp;&amp; ISBLANK(Learnings__c) &amp;&amp; ISPICKVAL(Other_Support_Programs__c, &apos;Tesla&apos;)</errorConditionFormula>
+    <errorMessage>Please enter Learnings before closing the Case.</errorMessage>
+</ValidationRule>

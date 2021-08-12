@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Design_Win_Support_Request</fullName>
+    <availability>online</availability>
+    <description>SDS-2592
+Service: Create Design Win Case from Opportunity with NVBug Number</description>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>Design Win Support Request</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <url>/lightning/cmp/c__CreateWinDesignSupportRequest?c__oppId={!Opportunity.Id}</url>
+</WebLink>

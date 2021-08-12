@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lead_Origin_Contact__c</fullName>
+    <externalId>false</externalId>
+    <label>Lead Origin (Contact)</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Citrix Servtech</fullName>
+                <default>false</default>
+                <label>Citrix Servtech</label>
+            </value>
+            <value>
+                <fullName>EMEAI Training Web Form</fullName>
+                <default>false</default>
+                <label>EMEAI Training Web Form</label>
+            </value>
+            <value>
+                <fullName>NPN Application</fullName>
+                <default>false</default>
+                <label>NPN Application</label>
+            </value>
+            <value>
+                <fullName>NPN Community Web Form</fullName>
+                <default>false</default>
+                <label>NPN Community Web Form</label>
+            </value>
+            <value>
+                <fullName>NPN SOEM Web Form</fullName>
+                <default>false</default>
+                <label>NPN SOEM Web Form</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <decisions>
+        <description>The Patner User (Creator of the Lead) is an active user</description>
+        <name>Is_Partner_User_Creator_of_this_Lead_is_Active</name>
+        <label>Is Partner User (Creator of this Lead) is Active</label>
+        <locationX>566</locationX>
+        <locationY>191</locationY>
+        <defaultConnectorLabel>[Default Outcome]</defaultConnectorLabel>
+        <rules>
+            <name>Partner_User_is_Active</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>IsLeadCreatorActive</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Check_Sharing_for_Lead_Creator</targetReference>
+            </connector>
+            <label>Partner User is Active</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Is_there_Existing_Lead_Shares_for_Lead_Creator</name>
+        <label>Is there Existing Lead Shares for Lead Creator</label>
+        <locationX>570</locationX>
+        <locationY>427</locationY>
+        <defaultConnectorLabel>[Default Outcome]</defaultConnectorLabel>
+        <rules>
+            <name>Create_New_Share_for_Lead_Creator</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Existing_LeadShare_Id_For_Creator</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Create_Lead_Share_For_Lead_Creator_with_Read_Access</targetReference>
+            </connector>
+            <label>Create New Share for Lead Creator</label>
+        </rules>
+    </decisions>
+    <description>Jetson Registration : Apex Sharing flow to give read access to Jetson Registration Lead Creator</description>
+    <interviewLabel>JetsonDR : FL : Share Lead with Partner User {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>JetsonDR : FL : Share Lead with Partner User</label>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <name>Create_Lead_Share_For_Lead_Creator_with_Read_Access</name>
+        <label>Create Lead Share For Lead Creator with Read Access</label>
+        <locationX>574</locationX>
+        <locationY>562</locationY>
+        <inputAssignments>
+            <field>LeadAccessLevel</field>
+            <value>
+                <stringValue>Edit</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>LeadId</field>
+            <value>
+                <elementReference>Lead_Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>UserOrGroupId</field>
+            <value>
+                <elementReference>Lead_CreatedById</elementReference>
+            </value>
+        </inputAssignments>
+        <object>LeadShare</object>
+    </recordCreates>
+    <recordLookups>
+        <description>If the Lead Creator is active then only share the record with the partner user</description>
+        <name>Check_if_Lead_Creator_Partner_User_is_Active</name>
+        <label>Check if Lead Creator (Partner User is Active)</label>
+        <locationX>565</locationX>
+        <locationY>81</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Is_Partner_User_Creator_of_this_Lead_is_Active</targetReference>
+        </connector>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Lead_CreatedById</elementReference>
+            </value>
+        </filters>
+        <object>User</object>
+        <outputAssignments>
+            <assignToReference>IsLeadCreatorActive</assignToReference>
+            <field>IsActive</field>
+        </outputAssignments>
+    </recordLookups>
+    <recordLookups>
+        <description>Check if there is already an Apex sharing for Lead Creator (partner)</description>
+        <name>Check_Sharing_for_Lead_Creator</name>
+        <label>Check Sharing for Lead Creator</label>
+        <locationX>568</locationX>
+        <locationY>313</locationY>
+        <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Is_there_Existing_Lead_Shares_for_Lead_Creator</targetReference>
+        </connector>
+        <filters>
+            <field>LeadId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Lead_Id</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>RowCause</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Manual</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>UserOrGroupId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Lead_CreatedById</elementReference>
+            </value>
+        </filters>
+        <object>LeadShare</object>
+        <outputAssignments>
+            <assignToReference>Existing_LeadShare_Id_For_Creator</assignToReference>
+            <field>Id</field>
+        </outputAssignments>
+    </recordLookups>
+    <startElementReference>Check_if_Lead_Creator_Partner_User_is_Active</startElementReference>
+    <status>Active</status>
+    <variables>
+        <description>Existing LeadShare Id for Lead Creator</description>
+        <name>Existing_LeadShare_Id_For_Creator</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Is the User (Lead Creator) active?</description>
+        <name>IsLeadCreatorActive</name>
+        <dataType>Boolean</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <booleanValue>false</booleanValue>
+        </value>
+    </variables>
+    <variables>
+        <description>Lead Creator</description>
+        <name>Lead_CreatedById</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Lead Id</description>
+        <name>Lead_Id</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

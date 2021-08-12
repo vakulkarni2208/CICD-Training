@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- NPN SDP - Professional Services --></label>
+    <name>NPN_SDP_Professional_Services__c</name>
+    <picklistValues>
+        <masterLabel>Accenture</masterLabel>
+        <translation><!-- Accenture --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Berge</masterLabel>
+        <translation><!-- Berge --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Booz Allen Hamilton</masterLabel>
+        <translation><!-- Booz Allen Hamilton --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cambridge Consulting</masterLabel>
+        <translation><!-- Cambridge Consulting --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Capgemini</masterLabel>
+        <translation><!-- Capgemini --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ciklum</masterLabel>
+        <translation><!-- Ciklum --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cognizant</masterLabel>
+        <translation><!-- Cognizant --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DXC</masterLabel>
+        <translation><!-- DXC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Data Monsters (aka FlexisUS Inc.)</masterLabel>
+        <translation><!-- Data Monsters (aka FlexisUS Inc.) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Deepsense.ai (aka CodiLime)</masterLabel>
+        <translation><!-- Deepsense.ai (aka CodiLime) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Deloitte</masterLabel>
+        <translation><!-- Deloitte --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dessa (aka DeepLearni.ng)</masterLabel>
+        <translation><!-- Dessa (aka DeepLearni.ng) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ElementAI</masterLabel>
+        <translation><!-- ElementAI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ernst &amp; Young</masterLabel>
+        <translation><!-- Ernst &amp; Young --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EverFortuneAI</masterLabel>
+        <translation><!-- EverFortuneAI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Everis</masterLabel>
+        <translation><!-- Everis --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HCL</masterLabel>
+        <translation><!-- HCL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Infosys</masterLabel>
+        <translation><!-- Infosys --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>InstaDeep Ltd</masterLabel>
+        <translation><!-- InstaDeep Ltd --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lander Analytics</masterLabel>
+        <translation><!-- Lander Analytics --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>McKinsey</masterLabel>
+        <translation><!-- McKinsey --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Neovision</masterLabel>
+        <translation><!-- Neovision --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Project Lucy</masterLabel>
+        <translation><!-- Project Lucy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>QuEST</masterLabel>
+        <translation><!-- QuEST --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Quantiphi</masterLabel>
+        <translation><!-- Quantiphi --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Quantum Black</masterLabel>
+        <translation><!-- Quantum Black --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Razor Labs</masterLabel>
+        <translation><!-- Razor Labs --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SFL Scientific</masterLabel>
+        <translation><!-- SFL Scientific --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sigmoidal</masterLabel>
+        <translation><!-- Sigmoidal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Skymind</masterLabel>
+        <translation><!-- Skymind --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tata Consultancy Services</masterLabel>
+        <translation><!-- Tata Consultancy Services --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tech Mahindra</masterLabel>
+        <translation><!-- Tech Mahindra --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Teradata (aka ThinkBig Analytics)</masterLabel>
+        <translation><!-- Teradata (aka ThinkBig Analytics) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Trace3</masterLabel>
+        <translation><!-- Trace3 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wipro</masterLabel>
+        <translation><!-- Wipro --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

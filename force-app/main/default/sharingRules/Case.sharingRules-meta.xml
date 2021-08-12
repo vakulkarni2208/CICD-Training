@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>Installation_Case_Sharing_Rule</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Installation Case Sharing Rule</label>
+        <sharedTo>
+            <group>DGX_Installation_Group</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Installation Case</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>NPN_Onboarding_Team_RW_for_Internal_Cases</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>SDS-2654: RW share Internal Cases with NPN Onboarding Team</description>
+        <label>NPN Onboarding Team - RW for Internal Cases</label>
+        <sharedTo>
+            <group>NPN_Onboarding_Team</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>NVIDIA Internal Case</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Type</field>
+            <operation>equals</operation>
+            <value>NPN Assistance</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Service_Cloud_Share_Customer_Case_with_FLS_Team</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>SDS-3030 Service: FLS Support Team Onboarding for Fleet Command</description>
+        <label>Service Cloud Share Customer Case with FLS Team</label>
+        <sharedTo>
+            <role>FLS_Agent</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>Subject</field>
+            <operation>equals</operation>
+            <value>Community User Record Type1</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Service_Cloud_Share_Install_Case_with_FLS_Team</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>SDS-3030 Service: FLS Support Team Onboarding for Fleet Command</description>
+        <label>Service Cloud Share Install Case with FLS Team</label>
+        <sharedTo>
+            <role>FLS_Agent</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>Subject</field>
+            <operation>equals</operation>
+            <value>Installation Case1</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Share_All_Customer_Cases_with_NVES_team</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>NVES team and NVES Manager should be able to see all Customer Cases.</description>
+        <label>Share All Customer Cases with NVES team</label>
+        <sharedTo>
+            <role>NV_Agent</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Community User Record Type</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Share_All_Installation_Cases_with_NVES_team_ReadOnly</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>NVES team and NVES Manager should be able to view all Installation 
+ Cases.</description>
+        <label>Share All Installation Cases with NVES team - ReadOnly</label>
+        <sharedTo>
+            <role>NV_Agent</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Installation Case</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Share_Entitlement_Modification_Request</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Sharing settings to provide access to Entitlement Modification Request cases</description>
+        <label>Share Entitlement Modification Request</label>
+        <sharedTo>
+            <group>Entitlement_Modification_Group</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Entitlement Modification Request</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Share_Fleed_Command_and_Omniverse_Cases_with_FLS_Team</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Share Fleed Command and Omniverse Cases with FLS Team</label>
+        <sharedTo>
+            <group>Service_FLS_Support_Team</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Product_Category__c</field>
+            <operation>equals</operation>
+            <value>Omniverse,Fleet Command</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Share_Internal_Cases_with_JTP_Team</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Share Internal Cases with JTP Team</label>
+        <sharedTo>
+            <role>JTP_Agent</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>Submitted_By_User_Role__c</field>
+            <operation>contains</operation>
+            <value>JTP</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>NVIDIA Internal Case</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Share_Internal_Cases_with_NCR_Team</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Share Internal Cases with NCR Team</label>
+        <sharedTo>
+            <role>NCR_Agent</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>Submitted_By_User_Role__c</field>
+            <operation>contains</operation>
+            <value>NCR</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>NVIDIA Internal Case</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Share_JAPAN_Cases_with_JTP_Team</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Share JAPAN Cases with JTP Team</label>
+        <sharedTo>
+            <role>JTP_Agent</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>Account_Region__c</field>
+            <operation>equals</operation>
+            <value>JAPAN</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Community User Record Type,Installation Case</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Share_non_JAPAN_Cases_with_NCR_Team</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>.</description>
+        <label>Share non-JAPAN Cases with NCR Team</label>
+        <sharedTo>
+            <role>NCR_Agent</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>Account_Region__c</field>
+            <operation>equals</operation>
+            <value>EMEA,APAC,NALA</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Community User Record Type,Installation Case</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingOwnerRules>
+        <fullName>Service_Cloud_Share_Support_Manager_Cases_with_FLS_Team</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>SDS-3030 Service: FLS Support Team Onboarding for Fleet Command</description>
+        <label>Service Cloud Share Support Manager Cases with FLS Team</label>
+        <sharedTo>
+            <role>FLS_Agent</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>Support_Manager</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Share_ESP_L3_Queue_Cases_with_NCR_Agents</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>NCR Agents Should be able to See cases assigned to ESP L3 Queue</description>
+        <label>Share ESP_L3 Queue Cases with NCR Agents</label>
+        <sharedTo>
+            <role>NCR_Agent</role>
+        </sharedTo>
+        <sharedFrom>
+            <queue>ESP_L3</queue>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Share_FLS_Cases_with_FLS_Team_Members</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Share FLS Cases with FLS Team Members</label>
+        <sharedTo>
+            <group>Service_FLS_Support_Team</group>
+        </sharedTo>
+        <sharedFrom>
+            <group>Service_FLS_Support_Team</group>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Share_JTP_Cases_with_JTP_Team</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>All JTP Agent and Manager should be able to view cases owned by JTP user.</description>
+        <label>Share JTP Cases with JTP Team</label>
+        <sharedTo>
+            <role>JTP_Agent</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>JTP_Agent</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Share_JTP_Mgr_Cases_with_JTP_Agents</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Share JTP Mgr Cases with JTP Agents</label>
+        <sharedTo>
+            <role>JTP_Agent</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>JTP_Manager</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Share_NCR_Cases_with_NCR_Team</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>All NCR Agent and Manager should be able to view cases owned by NCR user.</description>
+        <label>Share NCR Cases with NCR Team</label>
+        <sharedTo>
+            <role>NCR_Agent</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>NCR_Agent</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Share_NCR_L1_Cases_with_NCR_L2</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>SDS-1734:Agents in NCR-L2 Queue should be able to take cases from NCR-L1 queue</description>
+        <label>Share NCR L1 Cases with NCR L2</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>NCR_Agent</roleAndSubordinatesInternal>
+        </sharedTo>
+        <sharedFrom>
+            <queue>NCR_L1</queue>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Share_NCR_Mgr_Cases_with_Agents</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Share NCR Mgr Cases with Agents</label>
+        <sharedTo>
+            <role>NCR_Agent</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>NCR_Manager</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Share_NVES_Mgr_Cases_with_Agents</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Share NVES Mgr Cases with Agents</label>
+        <sharedTo>
+            <role>NV_Agent</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>Support_Manager</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

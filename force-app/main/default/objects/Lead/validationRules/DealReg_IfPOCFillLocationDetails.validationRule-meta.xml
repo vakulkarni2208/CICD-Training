@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DealReg_IfPOCFillLocationDetails</fullName>
+    <active>true</active>
+    <description>If Is Customer Doing POC set to true, sk the POC location and POC Details to be filled</description>
+    <errorConditionFormula>AND(
+  RecordType.Name = &quot;Deal Registration&quot;,
+  ISPICKVAL(DR_Is_Customer_Doing_POC__c, &quot;Yes&quot;),
+  OR (
+     ISBLANK(DR_POC_Location__c),
+     ISBLANK(DR_POC_Details__c)  
+  )
+)</errorConditionFormula>
+    <errorMessage>Please fill-in POC Location and POC Details if you select True for &quot;Is Customer Doing POC?&quot;</errorMessage>
+</ValidationRule>

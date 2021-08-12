@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Analyst</fullName>
+        <default>false</default>
+        <label>Analyst</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Channel Partner</fullName>
+        <default>false</default>
+        <label>Channel Partner</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Competitor</fullName>
+        <default>false</default>
+        <label>Competitor</label>
+    </standardValue>
+    <standardValue>
+        <fullName>CUDA Consultant</fullName>
+        <default>false</default>
+        <label>CUDA Consultant</label>
+    </standardValue>
+    <standardValue>
+        <fullName>CUDA Developer</fullName>
+        <default>false</default>
+        <label>CUDA Developer</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Customer</fullName>
+        <default>false</default>
+        <label>Customer</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Enterprise End Customer</fullName>
+        <default>false</default>
+        <label>Enterprise End Customer</label>
+    </standardValue>
+    <standardValue>
+        <fullName>HPC</fullName>
+        <default>false</default>
+        <label>HPC</label>
+    </standardValue>
+    <standardValue>
+        <fullName>HPC Qualified Reseller</fullName>
+        <default>false</default>
+        <label>HPC Qualified Reseller</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Integrator</fullName>
+        <default>false</default>
+        <label>Integrator</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Investor</fullName>
+        <default>false</default>
+        <label>Investor</label>
+    </standardValue>
+    <standardValue>
+        <fullName>ISV</fullName>
+        <default>false</default>
+        <label>ISV</label>
+    </standardValue>
+    <standardValue>
+        <fullName>NSC T50 Type</fullName>
+        <default>false</default>
+        <label>NSC T50 Type</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Partner</fullName>
+        <default>false</default>
+        <label>Partner</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Press</fullName>
+        <default>false</default>
+        <label>Press</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Prospect</fullName>
+        <default>false</default>
+        <label>Prospect</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Quadro Top 200</fullName>
+        <default>false</default>
+        <label>Quadro Top 200</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Reseller</fullName>
+        <default>false</default>
+        <label>Reseller</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Software Reseller</fullName>
+        <default>false</default>
+        <label>Software Reseller</label>
+    </standardValue>
+    <standardValue>
+        <fullName>System Builder</fullName>
+        <default>false</default>
+        <label>System Builder</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Tesla Named Account</fullName>
+        <default>false</default>
+        <label>Tesla Named Account</label>
+    </standardValue>
+</StandardValueSet>

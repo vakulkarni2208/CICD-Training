@@ -1,0 +1,16 @@
+<apex:page >
+  SOQL query:<br/> 
+  <textarea id="soql" rows="2" cols="100">select count() from Contact</textarea>
+  <br/>
+  <button id="go">Run query</button>
+  <p><h4>Results:</h4></p>
+  <pre id="results"></pre>
+  <script type="text/javascript">
+    var __sfdcSessionId = '{!GETSESSIONID()}';
+    document.getElementById ("go").onclick = function () {
+        var queryStr = document.getElementById ("soql").value;
+        document.getElementById ("results").innerHTML = JSON.stringify (sforce.connection.query (queryStr), null, 4);
+    }
+  </script>
+  <script src="/soap/ajax/25.0/connection.js" type="text/javascript"></script>
+</apex:page>

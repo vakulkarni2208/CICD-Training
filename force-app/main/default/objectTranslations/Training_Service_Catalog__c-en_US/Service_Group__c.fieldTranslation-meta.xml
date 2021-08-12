@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Service Group --></label>
+    <name>Service_Group__c</name>
+    <picklistValues>
+        <masterLabel>Accelerating Data Science Workflows for Cybersecurity</masterLabel>
+        <translation><!-- Accelerating Data Science Workflows for Cybersecurity --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Building Autonomous Vehicles with NVIDIA DRIVE</masterLabel>
+        <translation><!-- Building Autonomous Vehicles with NVIDIA DRIVE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Deep Learning for Anomaly Detection</masterLabel>
+        <translation><!-- Deep Learning for Anomaly Detection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Deep Learning for Autonomous Vehicles - Perception</masterLabel>
+        <translation><!-- Deep Learning for Autonomous Vehicles - Perception --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Deep Learning for Digital Content Creation Using GANs</masterLabel>
+        <translation><!-- Deep Learning for Digital Content Creation Using GANs --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Deep Learning for Digital Content Creation using AutoEncoders</masterLabel>
+        <translation><!-- Deep Learning for Digital Content Creation using AutoEncoders --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Deep Learning for Finance Trading Strategy</masterLabel>
+        <translation><!-- Deep Learning for Finance Trading Strategy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Deep Learning for Full-Motion Video Analytics</masterLabel>
+        <translation><!-- Deep Learning for Full-Motion Video Analytics --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Deep Learning for Game Development</masterLabel>
+        <translation><!-- Deep Learning for Game Development --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Deep Learning for Healthcare Genomics</masterLabel>
+        <translation><!-- Deep Learning for Healthcare Genomics --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Deep Learning for Healthcare Image Analysis</masterLabel>
+        <translation><!-- Deep Learning for Healthcare Image Analysis --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Deep Learning for Industrial Inspection</masterLabel>
+        <translation><!-- Deep Learning for Industrial Inspection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Deep Learning for Intelligent Video Analytics</masterLabel>
+        <translation><!-- Deep Learning for Intelligent Video Analytics --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Deep Learning for Predictive Maintenance</masterLabel>
+        <translation><!-- Deep Learning for Predictive Maintenance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Deep Learning for Robotics</masterLabel>
+        <translation><!-- Deep Learning for Robotics --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fundamentals of Accelerated Computing using OpenACC</masterLabel>
+        <translation><!-- Fundamentals of Accelerated Computing using OpenACC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fundamentals of Accelerated Computing with CUDA C/C++</masterLabel>
+        <translation><!-- Fundamentals of Accelerated Computing with CUDA C/C++ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fundamentals of Accelerated Computing with CUDA Python</masterLabel>
+        <translation><!-- Fundamentals of Accelerated Computing with CUDA Python --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fundamentals of Accelerating Data Science with RAPIDS</masterLabel>
+        <translation><!-- Fundamentals of Accelerating Data Science with RAPIDS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fundamentals of Deep Learning for Computer Vision</masterLabel>
+        <translation><!-- Fundamentals of Deep Learning for Computer Vision --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fundamentals of Deep Learning for Multi-GPUs</masterLabel>
+        <translation><!-- Fundamentals of Deep Learning for Multi-GPUs --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fundamentals of Deep Learning for Multiple Data Types</masterLabel>
+        <translation><!-- Fundamentals of Deep Learning for Multiple Data Types --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fundamentals of Deep Learning for Natural Language Processing</masterLabel>
+        <translation><!-- Fundamentals of Deep Learning for Natural Language Processing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Healthcare &quot;Flex&quot;</masterLabel>
+        <translation><!-- Healthcare &quot;Flex&quot; --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>N/A</masterLabel>
+        <translation><!-- N/A --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

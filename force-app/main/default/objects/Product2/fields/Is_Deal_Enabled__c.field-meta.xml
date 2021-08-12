@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Is_Deal_Enabled__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Deal Registration: This flag is enabled for products that is enabled for Deal Registration. If this is active, any opportunity that contains this product is a potential Deal Reg opportunity</description>
+    <externalId>false</externalId>
+    <label>Is Deal Enabled</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

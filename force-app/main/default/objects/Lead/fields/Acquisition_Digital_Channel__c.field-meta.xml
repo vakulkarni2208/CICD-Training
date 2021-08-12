@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Acquisition_Digital_Channel__c</fullName>
+    <businessOwnerUser>dersun@nvidia.com.trprod</businessOwnerUser>
+    <description>As per Jira #SDS-2898</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Where the lead came from</inlineHelpText>
+    <label>Acquisition Digital Channel</label>
+    <length>100</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

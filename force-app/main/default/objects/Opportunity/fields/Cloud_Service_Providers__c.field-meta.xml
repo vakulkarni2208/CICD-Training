@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cloud_Service_Providers__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Select the NPN CSP that applies to this specific opportunity. 
+If not sure, state &quot;Other&quot;. However, this field should be updated from &quot;Other&quot; to an NPN CSP
+when the opportunity moves to &quot;Closed Won&quot; stage.</inlineHelpText>
+    <label>Cloud Service Providers</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Sold_thru_Cloud_Svc_Provider__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Amazon (AWS)</fullName>
+                <default>false</default>
+                <label>Amazon (AWS)</label>
+            </value>
+            <value>
+                <fullName>Alibaba (Aliyun)</fullName>
+                <default>false</default>
+                <label>Alibaba (Aliyun)</label>
+            </value>
+            <value>
+                <fullName>Google Cloud</fullName>
+                <default>false</default>
+                <label>Google Cloud</label>
+            </value>
+            <value>
+                <fullName>IBM (Bluemix)</fullName>
+                <default>false</default>
+                <label>IBM (Bluemix)</label>
+            </value>
+            <value>
+                <fullName>Microsoft (Azure)</fullName>
+                <default>false</default>
+                <label>Microsoft (Azure)</label>
+            </value>
+            <value>
+                <fullName>Tencent</fullName>
+                <default>false</default>
+                <label>Tencent</label>
+            </value>
+            <value>
+                <fullName>Blue Sky Systems</fullName>
+                <default>false</default>
+                <label>Blue Sky Systems</label>
+            </value>
+            <value>
+                <fullName>Carolinas IT</fullName>
+                <default>false</default>
+                <label>Carolinas IT</label>
+            </value>
+            <value>
+                <fullName>Cloudalize</fullName>
+                <default>false</default>
+                <label>Cloudalize</label>
+            </value>
+            <value>
+                <fullName>PlayKey</fullName>
+                <default>false</default>
+                <label>PlayKey</label>
+            </value>
+            <value>
+                <fullName>Advance2000</fullName>
+                <default>false</default>
+                <label>Advance2000</label>
+            </value>
+            <value>
+                <fullName>Approach Technology</fullName>
+                <default>false</default>
+                <label>Approach Technology</label>
+            </value>
+            <value>
+                <fullName>Epigrid</fullName>
+                <default>false</default>
+                <label>Epigrid</label>
+            </value>
+            <value>
+                <fullName>FNW</fullName>
+                <default>false</default>
+                <label>FNW</label>
+            </value>
+            <value>
+                <fullName>Komplett Group</fullName>
+                <default>false</default>
+                <label>Komplett Group</label>
+            </value>
+            <value>
+                <fullName>LightEdge Solutions</fullName>
+                <default>false</default>
+                <label>LightEdge Solutions</label>
+            </value>
+            <value>
+                <fullName>Magic Cloud</fullName>
+                <default>false</default>
+                <label>Magic Cloud</label>
+            </value>
+            <value>
+                <fullName>Nimbix</fullName>
+                <default>false</default>
+                <label>Nimbix</label>
+            </value>
+            <value>
+                <fullName>SCC UK</fullName>
+                <default>false</default>
+                <label>SCC UK</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Yes</controllingFieldValue>
+            <valueName>Amazon (AWS)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Yes</controllingFieldValue>
+            <valueName>Alibaba (Aliyun)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Yes</controllingFieldValue>
+            <valueName>Google Cloud</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Yes</controllingFieldValue>
+            <valueName>IBM (Bluemix)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Yes</controllingFieldValue>
+            <valueName>Microsoft (Azure)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Yes</controllingFieldValue>
+            <valueName>Tencent</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Yes</controllingFieldValue>
+            <valueName>Blue Sky Systems</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Yes</controllingFieldValue>
+            <valueName>Carolinas IT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Yes</controllingFieldValue>
+            <valueName>Cloudalize</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Yes</controllingFieldValue>
+            <valueName>PlayKey</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Yes</controllingFieldValue>
+            <valueName>Advance2000</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Yes</controllingFieldValue>
+            <valueName>Approach Technology</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Yes</controllingFieldValue>
+            <valueName>Epigrid</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Yes</controllingFieldValue>
+            <valueName>FNW</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Yes</controllingFieldValue>
+            <valueName>Komplett Group</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Yes</controllingFieldValue>
+            <valueName>LightEdge Solutions</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Yes</controllingFieldValue>
+            <valueName>Magic Cloud</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Yes</controllingFieldValue>
+            <valueName>Nimbix</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Yes</controllingFieldValue>
+            <valueName>SCC UK</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Yes</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

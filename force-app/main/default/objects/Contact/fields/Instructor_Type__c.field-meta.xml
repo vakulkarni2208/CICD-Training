@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Instructor_Type__c</fullName>
+    <description>SDS-2141 - Sales: Contact pick list for DLI team</description>
+    <externalId>false</externalId>
+    <label>Instructor Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>NVIDIA - SA</fullName>
+                <default>false</default>
+                <label>NVIDIA - SA</label>
+            </value>
+            <value>
+                <fullName>NVIDIA - Other</fullName>
+                <default>false</default>
+                <label>NVIDIA - Other</label>
+            </value>
+            <value>
+                <fullName>Ambassador</fullName>
+                <default>false</default>
+                <label>Ambassador</label>
+            </value>
+            <value>
+                <fullName>SDP</fullName>
+                <default>false</default>
+                <label>SDP</label>
+            </value>
+            <value>
+                <fullName>Ambassador &amp; SDP</fullName>
+                <default>false</default>
+                <label>Ambassador &amp; SDP</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

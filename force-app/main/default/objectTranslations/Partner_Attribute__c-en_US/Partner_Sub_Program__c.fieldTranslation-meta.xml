@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Partner Sub Program --></label>
+    <name>Partner_Sub_Program__c</name>
+    <picklistValues>
+        <masterLabel>Consultant</masterLabel>
+        <translation><!-- Consultant --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Data Center Provider</masterLabel>
+        <translation><!-- Data Center Provider --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EDU Services</masterLabel>
+        <translation><!-- EDU Services --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Professional Services</masterLabel>
+        <translation><!-- Professional Services --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Storage</masterLabel>
+        <translation><!-- Storage --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Support Services</masterLabel>
+        <translation><!-- Support Services --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

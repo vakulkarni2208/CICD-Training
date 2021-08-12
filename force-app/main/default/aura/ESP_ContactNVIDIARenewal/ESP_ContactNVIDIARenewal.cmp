@@ -1,0 +1,13 @@
+<aura:component controller="TriggerEntitlementHelper" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction,lightning:isUrlAddressable" access="global" >
+    <lightning:workspaceAPI aura:id="workspace"/>
+    <aura:attribute name="Subject" type="String"/>
+    <aura:attribute name="Description" type="String" />
+    <aura:attribute name="message" type="string" />
+    <aura:attribute name="title" type="string" />
+
+    <div class="slds-box slds-theme_default">
+        <lightning:input name="input2" label="Subject" value="{!v.Subject}"/>
+        <lightning:textarea value="{!v.Description}" label="Description" maxlength="1000" />
+	    <lightning:button variant="brand" class="slds-float--center" label="Submit" title="Submit Query" onclick="{! c.submitQuery}" />    
+    </div> 
+</aura:component>

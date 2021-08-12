@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sales_Inhibitors__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Use the pull-down option to list any Sales Inhibitors</inlineHelpText>
+    <label>Sales Inhibitors</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Budget</fullName>
+                <default>false</default>
+                <label>Budget</label>
+            </value>
+            <value>
+                <fullName>Technology is too new</fullName>
+                <default>false</default>
+                <label>Technology is too new</label>
+            </value>
+            <value>
+                <fullName>Lack of information on how to deploy</fullName>
+                <default>false</default>
+                <label>Lack of information on how to deploy</label>
+            </value>
+            <value>
+                <fullName>Need end user buy in</fullName>
+                <default>false</default>
+                <label>Need end user buy in</label>
+            </value>
+            <value>
+                <fullName>IT Resource limitations</fullName>
+                <default>false</default>
+                <label>IT Resource limitations</label>
+            </value>
+            <value>
+                <fullName>Hardware limitations</fullName>
+                <default>false</default>
+                <label>Hardware limitations</label>
+            </value>
+            <value>
+                <fullName>Need benchmark data</fullName>
+                <default>false</default>
+                <label>Need benchmark data</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Cost</fullName>
+                <default>false</default>
+                <label>Cost</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

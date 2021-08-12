@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>If_other_use_case_require_details</fullName>
+    <active>true</active>
+    <description>If Primary Customer workload is Other then require text entry</description>
+    <errorConditionFormula>AND (
+ $RecordType.Name = &quot;Enterprise Sales Opportunity&quot;,
+AND($Profile.Name &lt;&gt; &apos;System Administrator&apos;,$Profile.Name &lt;&gt; &apos;SVC SAP Integration&apos;),
+ISPICKVAL (  Primary_Customer_Use_Case__c , &quot;Other&quot; ), 
+Probability &gt;=0.4 ,
+ISBLANK (  If_Other_Use_Case_Please_Describe__c ))</errorConditionFormula>
+    <errorDisplayField>If_Other_Use_Case_Please_Describe__c</errorDisplayField>
+    <errorMessage>If Primary workload is Other please describe here</errorMessage>
+</ValidationRule>

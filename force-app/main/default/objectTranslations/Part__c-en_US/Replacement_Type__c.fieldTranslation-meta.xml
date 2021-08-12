@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Replacement Type --></label>
+    <name>Replacement_Type__c</name>
+    <picklistValues>
+        <masterLabel>Advanced Replacement</masterLabel>
+        <translation><!-- Advanced Replacement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reship Only ( Free of Charge )</masterLabel>
+        <translation><!-- Reship Only ( Free of Charge ) --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

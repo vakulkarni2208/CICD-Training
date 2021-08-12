@@ -1,0 +1,679 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Marketing_Assets</fullName>
+    <active>true</active>
+    <label>Product Content</label>
+    <picklistValues>
+        <picklist>Asset_Type__c</picklist>
+        <values>
+            <fullName>Box Templates</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Case Studies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Copy %26 Messaging</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Demo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Game Specific</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Logo %26 Branding Guidelines</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Policies and Guidelines</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Print</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product Imagery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product Literature</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product Presentations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product Specifications</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sales Tools</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>System Test Documentation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Technical Presentations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Technical Resources</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Templates</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Training Resources</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vertical Presentations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Video</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wallpaper</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Webinar Replay</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Campaigns__c</picklist>
+        <values>
+            <fullName>AI for Business %28DL04%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AI for Developers %28DL13%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AI for Enterprise %28DL14%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Applications Awareness %28HPC08%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CRISP Campaign %28IX07%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CSP Campaign %28IX13%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cryo-EM %28IX10%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DGX Systems%3A Solving the World%27s AI Challenges %28DL09%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Data Science Workstation %28AN03%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EGX Campaign %28HPC09%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Energy Campaign %28IX14%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Financial Services %28IX06%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GPU Rendering %28PV04%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GPU for Public Cloud %28RW05%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GRID for Healthcare %28IX12%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Genomics %28IX09%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HER Campaign %28IX01%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HPC Campaign %28HPC06%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HPC Platform %28HPC07%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HPC for Developers %28HPC03%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Healthcare Campaign %28IX03%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>I am AI %28DL01%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inception %28IN01%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industrial Manufacturing %28IX08%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Instruments Campaign %28IX18%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jetson Ecosystem %26 Community %28EM16%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jetson Nano %28EM06%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jetson Xavier NX %28EM15%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Laptops %28RW02%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mainstream GPU Infrastructure %28HPC05%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medical Imaging %28IX11%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mellanox Launch %28MX01%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NGC %28NGC01%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NV Research Activations %28NR 01%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NV Research%C2%A0%28NR 02%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NVIDIA Accelerated Data Science %28AN01%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NVIDIA Studio %28PV13%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pro Vis Always On %28PV11%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pro Vis for Developers %28PV05%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public Sector %28DL12%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RAPIDS Open Source %28AN02%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RTX Everywhere %28PV10%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RTX Server %28PV14%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RTX Server %28RW03%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RTX for AEC %28PV02%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RTX for M%26E %28PV03%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RTX for MFG %28PV01%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Remote Work with NVIDIA %28RW01%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Research %28NR01%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail %28IX04%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Scaling AI Infrastructure %28DGX RA PODs%29 %28DL07%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Spark Campaign %28AN04%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Supercomputing %28HPC02%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Telco %28IX05%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Win Inference %28DL05%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>vGPU for Every Workload %28PV12%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>vGPU for Healthcare %28IX12%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>vGPU for Virtualized Workloads %28RW04%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Competency__c</picklist>
+        <values>
+            <fullName>Compute</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Compute DGX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Embedded Edge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gaming</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Virtualization</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Visualization</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Industry__c</picklist>
+        <values>
+            <fullName>Architecture%2C Engineering%2C and Construction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Automotive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Embedded%2FEdge Computing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Energy%2FOil %26 Gas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Financial Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Healthcare</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Higher Education and Research</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industrial Manufacturing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Media %26 Entertainment</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Language_Region__c</picklist>
+        <values>
+            <fullName>Chinese Simplified %28zh_CN%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chinese Traditional %28zh_TW%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Czech %28CZ%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>English European %28en_GB%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>English North American %28en_US%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>French %28FR%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>German %28DE%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Italian %28IT%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Japanese %28JA%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Korean %28KO%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Polish %28PL%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Portuguese Brazilian %28pt_BR%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Portuguese European %28pt_PT%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Russian %28RU%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Spanish %28ES%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Spanish Mexican %28cs_MX%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Turkish %28TR%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Product_Family__c</picklist>
+        <values>
+            <fullName>3D Vision</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>All Products</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DGX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DLI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DRIVE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GeForce Desktop</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GeForce Notebook</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jetson</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NGC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quadro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tegra</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tesla</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Titan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>vGPU Solutions</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Products__c</picklist>
+        <values>
+            <fullName>Tesla C2050%2FC2070</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tesla M2090</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tesla Personal Super Computers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tesla S1070</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tesla S2050</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Programs__c</picklist>
+        <values>
+            <fullName>Awareness Campaign</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manufacturing Campaign</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TPP Jacket%2FCULA Promotion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tesla Bio Workbench</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>The GPU Test Drive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Top 500</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Region__c</picklist>
+        <values>
+            <fullName>APAC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EMEA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Global</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NALA</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Technologies__c</picklist>
+        <values>
+            <fullName>Advanced Rendering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deep Learning</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Virtual Reality</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Tegra_Asset_Type__c</picklist>
+        <values>
+            <fullName>Copy %26 Messaging</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email Templates</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Game Assets</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Logos %26 Branding Guidelines</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Print Ad Templates</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product Imagery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product Literature</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product Presentations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product Specifications</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sales Tools</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Training</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Videos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wallpapers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web Banners</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web Page Templates</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

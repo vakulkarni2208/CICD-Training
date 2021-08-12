@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Announcement</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Announcements</value>
+    </caseValues>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <errorMessage><!-- For Customer Specific Announcement, please remove the Products assignment on the Announcement or Change the Access level value to Product Specific --></errorMessage>
+        <name>Product_NOT_Blank_For_CustomerSpecific</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- For Product Specific announcement, please enter the product on the Announcement. --></errorMessage>
+        <name>Product_Required_For_ProductSpecific</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- New_Customer_Announcement --></label>
+        <name>New_Customer_Announcement</name>
+    </webLinks>
+</CustomObjectTranslation>

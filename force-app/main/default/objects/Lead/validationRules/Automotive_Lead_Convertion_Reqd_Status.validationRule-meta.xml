@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Automotive_Lead_Convertion_Reqd_Status</fullName>
+    <active>true</active>
+    <description>This Validation Rule forces Status field value to be &quot;Convert to Account&quot; while Automotive Lead Conversion.</description>
+    <errorConditionFormula>AND(
+ NOT($Permission.DEPLOYMENT_USER_SKIP_VALIDATIONS),
+ IsConverted, 
+ RecordType.Name = &apos;Automotive Lead&apos;, 
+ /*NOT(ISBLANK(ConvertedOpportunityId)),*/ 
+ NOT(ISPICKVAL(Status, &quot;Convert to Account&quot;))
+)</errorConditionFormula>
+    <errorDisplayField>Lifecycle_Status__c</errorDisplayField>
+    <errorMessage>Lead Status should be &apos;Convert to Account&apos; in order to Convert the Lead</errorMessage>
+</ValidationRule>

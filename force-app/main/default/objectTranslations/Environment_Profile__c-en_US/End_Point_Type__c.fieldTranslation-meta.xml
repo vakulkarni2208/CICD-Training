@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- End Point Type --></label>
+    <name>End_Point_Type__c</name>
+    <picklistValues>
+        <masterLabel>Thick Client</masterLabel>
+        <translation><!-- Thick Client --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Thin Client</masterLabel>
+        <translation><!-- Thin Client --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

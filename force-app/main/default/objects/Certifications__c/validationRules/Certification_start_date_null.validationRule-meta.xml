@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Certification_start_date_null</fullName>
+    <active>true</active>
+    <description>If the Certification Status is set as &quot;Certified&quot;, then a valid Certification Start Date should be entered</description>
+    <errorConditionFormula>AND(
+ ISPICKVAL(Certification_Status__c, &quot;Certified&quot;),
+ ISNULL( Certification_Date__c )
+)</errorConditionFormula>
+    <errorDisplayField>Certification_Date__c</errorDisplayField>
+    <errorMessage>Please Enter Valid Certification Start Date</errorMessage>
+</ValidationRule>

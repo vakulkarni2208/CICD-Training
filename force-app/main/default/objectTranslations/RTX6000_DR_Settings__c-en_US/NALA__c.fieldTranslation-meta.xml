@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Channel Approver for NALA --></help>
+    <label><!-- NALA --></label>
+    <name>NALA__c</name>
+</CustomFieldTranslation>

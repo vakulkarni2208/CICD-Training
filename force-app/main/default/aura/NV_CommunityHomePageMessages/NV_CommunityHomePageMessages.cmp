@@ -1,0 +1,34 @@
+<aura:component >
+    <aura:attribute name="SlideIndex" type="Integer" />
+    <!--<aura:handler name="init" action="{!c.doInit}" value="{!this}"/>-->
+	<!-- Slideshow container -->
+    <div class="slideshow-container">
+    
+      <!-- Full-width slides/quotes -->
+      <div class="mySlides">
+        <q>{!$Label.c.NPNHomePage_John_Keats_Quotes}</q>
+        <p class="author">{!$Label.c.NPNHomePage_John_Keats}</p>
+      </div>
+    
+      <div class="mySlides">
+        <q>{!$Label.c.NPNHomePage_Ernest_Hemingway_Quotes}</q>
+        <p class="author">{!$Label.c.NPNHomePage_Ernest_Hemingway}</p>
+      </div>
+    
+      <div class="mySlides">
+        <q>{!$Label.c.NPNHomePage_Thomas_A_Edison_Quotes}</q>
+        <p class="author">{!$Label.c.NPNHomePage_Thomas_A_Edison}</p>
+      </div>
+    
+      <!-- Next/prev buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    
+    <!-- Dots/bullets/indicators -->
+    <div class="dot-container">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
+</aura:component>

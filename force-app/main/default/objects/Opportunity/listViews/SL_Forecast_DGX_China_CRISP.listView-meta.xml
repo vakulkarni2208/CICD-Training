@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SL_Forecast_DGX_China_CRISP</fullName>
+    <columns>Close_Date_Fiscal_Quarter__c</columns>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Sales_Leader_Commentary__c</columns>
+    <columns>At_Risk_for_CQ_Revenue__c</columns>
+    <columns>SL_DGX_Amount__c</columns>
+    <columns>Sales_Leader_Forecast_Category__c</columns>
+    <columns>Sales_Leader_Close_Date__c</columns>
+    <columns>OPPORTUNITY.NEXT_STEP</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>Opportunity_Number__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>OPPORTUNITY.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Opportunity.Enterprise_Sales_Opportunity</value>
+    </filters>
+    <filters>
+        <field>Total_DGX_Product_Amount__c</field>
+        <operation>greaterOrEqual</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>Industry__c</field>
+        <operation>notEqual</operation>
+        <value>Strategic Hyperscale</value>
+    </filters>
+    <filters>
+        <field>Sales_Leader_Forecast_Category__c</field>
+        <operation>equals</operation>
+        <value>5-Other,4-Pipeline,3-Best Case,2-Commit</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.CLOSED</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>Close_Date_Fiscal_Quarter__c</field>
+        <operation>equals</operation>
+        <value>2021-Q4,2022-Q1,2022-Q2,2022-Q3</value>
+    </filters>
+    <filters>
+        <field>Opportunity_Owner_Full_Name__c</field>
+        <operation>equals</operation>
+        <value>Bin He,Derek Chen,Jie Zhou,Steven Jin,Bing Liu,Jackson Chen,Kai Zhou,Tracy Hou</value>
+    </filters>
+    <label>SL Forecast _ DGX (China CRISP)</label>
+</ListView>

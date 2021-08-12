@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Service_Agents_cannot_edit_Account_field</fullName>
+    <active>true</active>
+    <errorConditionFormula>(ISCHANGED( Name ) ||  ISCHANGED(   RecordTypeId   ) || ISCHANGED(  OwnerId  )) &amp;&amp;  $Profile.Name = &quot;Service Cloud Generic User&quot;</errorConditionFormula>
+    <errorMessage>You cannot edit any Account related information except Service Account Type.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X3_0_SL_FCST_Tesla_Grid_CQ_100K</fullName>
+    <booleanFilter>1 AND 2 AND 3 AND 5 AND 6 AND 8 AND 9 AND (4 OR 7)</booleanFilter>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>OPPORTUNITY.PROBABILITY</columns>
+    <columns>Tesla_Product_Amount__c</columns>
+    <columns>SL_Tesla_Amount__c</columns>
+    <columns>NPN_Solution_Provider_VAR__c</columns>
+    <columns>OPPORTUNITY.CLOSE_DATE</columns>
+    <columns>Sales_Leader_Close_Date__c</columns>
+    <columns>NV_Forecast_Category__c</columns>
+    <columns>Sales_Leader_Forecast_Category__c</columns>
+    <columns>OPPORTUNITY.NEXT_STEP</columns>
+    <columns>Sales_Leader_Commentary__c</columns>
+    <columns>At_Risk_for_CQ_Revenue__c</columns>
+    <columns>Agree_with_Opportunity_Values__c</columns>
+    <columns>Close_Date_Fiscal_Quarter__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Region__c</field>
+        <operation>equals</operation>
+        <value>JAPAN</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Opportunity.Enterprise_Sales_Opportunity</value>
+    </filters>
+    <filters>
+        <field>Tesla_Product_Amount__c</field>
+        <operation>greaterOrEqual</operation>
+        <value>100000</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.CLOSE_DATE</field>
+        <operation>equals</operation>
+        <value>THIS_FISCAL_QUARTER</value>
+    </filters>
+    <filters>
+        <field>Industry__c</field>
+        <operation>notEqual</operation>
+        <value>Strategic Hyperscale</value>
+    </filters>
+    <filters>
+        <field>Sales_Leader_Forecast_Category__c</field>
+        <operation>equals</operation>
+        <value>5-Other,4-Pipeline,3-Best Case,2-Commit</value>
+    </filters>
+    <filters>
+        <field>Sales_Leader_Close_Date__c</field>
+        <operation>equals</operation>
+        <value>THIS_FISCAL_QUARTER</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.NAME</field>
+        <operation>notContain</operation>
+        <value>w_</value>
+    </filters>
+    <filters>
+        <field>GRID_Product_Amount__c</field>
+        <operation>greaterThan</operation>
+        <value>0</value>
+    </filters>
+    <label>3.0【作業用 】SL FCST- Tesla(Grid) CQ(100K+)</label>
+    <sharedTo>
+        <role>Japan_Enterprise_Sales_3</role>
+        <role>Japan_Enterprise_Sales_Manager_1</role>
+        <role>Japan_PBM_Sales</role>
+    </sharedTo>
+</ListView>

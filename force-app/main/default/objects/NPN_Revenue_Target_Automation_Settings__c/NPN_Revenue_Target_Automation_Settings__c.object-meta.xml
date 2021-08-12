@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <description>Used in NPN Revenue Target Automation related trigger and batch job.
+If the field &quot;No Match - No Revenue Target&quot; is true, then do not add a revenue target if there is no matching master data lookup in NPN Revenue Commitment Master (for Program Type, Competency, Level, Account Billing Country)</description>
+    <enableFeeds>false</enableFeeds>
+    <label>NPN Revenue Target Automation Settings</label>
+    <visibility>Protected</visibility>
+</CustomObject>

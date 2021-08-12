@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NGC_Container_Publishing_Agreement__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>NGC field to capture HPC Partner Container Agreement</description>
+    <externalId>false</externalId>
+    <label>NGC Container Publishing Agreement</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

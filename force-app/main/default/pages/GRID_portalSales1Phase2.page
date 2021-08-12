@@ -1,0 +1,327 @@
+<apex:page controller="portalSales1Phase2" showHeader="true" sidebar="false">
+  <head>
+<style>   
+ul 
+{   
+list-style-image:url();      
+}   
+.custPopup{     
+            background-color: white;
+            border-width: 2px;
+            border-style: solid;   
+            z-index: 9999;       
+            left: 35%;         
+            padding:10px;   
+            position: absolute;
+            /* These are the 3 css properties you will need to change so the popup 
+            displays in the center of the screen. First set the width. Then set 
+            margin-left to negative half of what the width is. You can add 
+            the height property for a fixed size pop up if you want.*/
+            width: 1000px;
+            margin-left: -250px;
+            top:100px;
+        }
+ .popupBackground{      
+     background-color:black;  
+     opacity: 0.20;
+     filter: alpha(opacity = 20);
+     position: absolute;   
+     width: 100%;   
+     height: 100%;   
+     top: 0;       
+     left: 0;  
+     z-index: 9998;
+ }
+  
+</style>    
+</head>
+<script>
+   function openinNewTab(url) {       
+         window.open(url,target="_blank");
+   }
+   
+   function  checkValidation(){       
+       var contactEmail = document.getElementById('pageId:formId:emailid').value;       
+       //alert(contactEmail);
+       //alert(contactEmail.indexOf('@'));
+       if(contactEmail.indexOf('@') == -1){               
+           alert('Email id is invalid !');
+           document.getElementById('pageId:formId:hiddenId').value = false;                 
+       }else {  
+            document.getElementById('pageId:formId:hiddenId').value = true;
+       }       
+       var contactPhone = document.getElementById('pageId:formId:phoneId').value;   
+       //alert(contactPhone);
+       if(!(contactPhone.length ==10)){               
+           alert('Phone must contain 10 digits !');   
+           document.getElementById('pageId:formId:hiddenId').value = false;
+       }else{
+            document.getElementById('pageId:formId:hiddenId').value = true;
+       }
+       //alert('Finallly'+document.getElementById('pageId:formId:hiddenId').value);    
+       if(document.getElementById('pageId:formId:hiddenId').value == true){
+              return true;
+       }else {
+              return false;  
+       }
+       
+   }
+</script>
+    
+<table width="100%" border="0">  
+<tr>           
+<td>   
+    <c:PortalGrid_SearchComponent ></c:PortalGrid_SearchComponent>
+</td>
+</tr>  
+  
+</table>
+ <apex:form id="formId">   
+      <apex:inputHidden Id="hiddenId"/>                    
+      <apex:outputPanel id="displayEmailPopup">           
+         <apex:outputPanel styleClass="popupBackground" layout="block" rendered="{!displayPopUp}"/>
+            <apex:outputPanel styleClass="custPopup" layout="block" rendered="{!displayPopUp}">
+                <apex:pageMessages />
+                <table width="80%" style="padding:20px;" border="0">              
+                <tr>
+                  <td align="right"><b>VAR Company Name</b></td>
+                  <td><apex:inputText value="{!companyName}" id="cname"/></td>
+                  <td>&nbsp;</td>
+                </tr>                             
+               <tr>
+                    <td align="right"><b>VAR Contact Name</b></td>
+                    <td><apex:inputText value="{!contactName}" id="conname"/></td>
+                    <td>&nbsp;</td>
+                </tr>   
+                <tr>
+                    <td align="right"><b>VAR Contact Email Address</b></td>
+                    <td><apex:inputText value="{!email}" id="emailid"/></td>
+                    <td>&nbsp;</td>    
+                </tr>
+                <tr>   
+                    <td align="right"><b>VAR Contact Phone Number</b></td>
+                    <td><apex:inputText value="{!phoneNumber}" id="phoneId"/></td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                     <td align="right"><b>Time and Date</b></td>
+                     <td><apex:inputtext value="{!timeandDate}" id="timdate"/></td>
+                     <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td align="right"><b>Short Description</b></td>
+                    <td><apex:inputText style="height:25px;width:500px;" value="{!problemType}" maxlength="45" id="protype"/></td>
+                    <td>&nbsp;</td>
+                </tr> 
+                
+                <tr>
+                    <td align="right" valign="top"><b>Problem Description</b></td>
+                    <td><apex:inputTextArea style="height:100px;width:500px;" value="{!problemDescription}" id="descId"/></td>
+                    <td>&nbsp;</td>
+                </tr>
+                 <tr>
+                    <td align="right" valign="top"><b>Steps to Reproduce Problem</b></td>
+                    <td><apex:inputTextArea style="height:100px;width:500px;" value="{!steptoReproduceProblem}" id="stpesId"/></td>
+                    <td>&nbsp;</td>
+                </tr>
+                <!-- 
+                <tr>  
+                    <td><b>Body</b></td>
+                    <td><apex:inputTextArea style="height:100px;width:500px;" value="{!body}"/></td>
+                    <td>&nbsp;</td>
+                </tr>
+                 -->
+                <tr>
+                    <td><b>Attach Supporting Documentation</b></td>
+                    <td><apex:inputFile value="{!Attach}" fileName="{!FileName_Upload}"></apex:inputFile>(eg:Screenshot, logs from operator console (max 2MB))</td>
+                    
+                </tr>                    
+                <tr>
+                    <td colspan="2" align="center"><apex:commandButton value="Send" action="{!sendEmail}"/>&nbsp;&nbsp;<apex:commandButton value="Cancel" action="{!closePopup}"/></td>
+                    <td>&nbsp;</td><!--action="{!sendEmail}"-->
+                </tr>               
+            </table>
+       </apex:outputPanel>
+      </apex:outputPanel>   
+              
+      <br/><br/><br/>  
+      <table width="1300px;" border="0" style="font-size:13.7px;" cellspacing="2" cellpadding="2" align="center">
+          
+          <!-- <apex:outputPanel rendered="{!if(tabName=='Support' && $Profile.Name =='GRID_VCA_Support',true,false)}"> -->
+          <!--<tr><td colspan="3"><apex:commandButton action="{!showPopup}" value="Report a Problem" style="margin-left:600px;height:20px;width:150px;" rendered="{!if(tabName=='Support',true,false)}"></apex:commandButton></td></tr>-->
+          <tr><td colspan="3" align="center">
+                    
+          <!--&& isReportAProblem==true-->
+          <!--  <apex:commandLink action="{!showPopup}" rendered="{!if(tabName=='Support' && isReportAProblem,true,false)}">
+
+                 <apex:image value="{!$Resource.Report_A_Problem_Button}" width="350" height="60"></apex:image>
+
+            </apex:commandLink>   -->       
+          </td></tr>
+          <br/>
+          <tr>
+                <td width="100%" colspan="3" align="center"> 
+                &nbsp;
+                </td>
+            </tr> 
+          <!-- <apex:outputPanel rendered="{!if(tabName=='Support' && isLogATicket,true,false)}">
+            <tr>
+                <td width="100%" colspan="3" align="center"> 
+                <apex:outputLink value="http://nvidia.custhelp.com/app/utils/login_form/redirect/account%252Foverview" target="_blank">
+                <apex:image url="{!$Resource.New_Log_A_Ticket_Image}" height="60" width="350"/>
+                </apex:outputLink>
+                </td>
+            </tr> 
+            <tr>
+                <td width="100%" colspan="3" align="center"> 
+                &nbsp;
+                </td>
+            </tr>  
+            </apex:outputPanel>-->
+              
+          <apex:repeat value="{!lst_CustomWrap}" var="v">          
+          <tr height="100%"> 
+             <apex:repeat value="{!v.lst_wrapper}" var="x">                   
+                 <td width="33%" align="left" style="vertical-align:top;padding-right:0px; padding-bottom:15px;">
+                 <table border="0" width="100%" cellpadding="0" cellspacing="0">   
+                 <tr><td><div class="boxTitle">{!x.label}</div></td></tr>
+                 <tr><td><div class="boxContent">
+                 <apex:repeat value="{!x.lstwrapperData}" var="y">                                          
+                         <table border="0" style="padding-left:5px;padding-right:5px;" width="100%">
+                         <tr>
+                         <td align="{!y.contentJustification}" width="100%" valign="top">
+                             
+                             <apex:outputPanel rendered="{!y.displayBullet}">
+                                <apex:image url="{!$Resource.ListImage}" height="15" width="15"/>
+                             </apex:outputPanel>    
+                          <!-- </td> -->
+                       <!--  <td align="{!y.contentJustification}" width="95%">  -->
+                        <!--
+                         <apex:outputPanel rendered="{!y.displayBullet}">
+                                <apex:image url="{!$Resource.ListImage}" height="15" width="15"/>
+                         </apex:outputPanel>
+                              -->           
+                         <apex:outputPanel rendered="{!if((y.displayPageWindow=='Open in a New Tab' || y.displayPageWindow=='') && y.IsLink,true,false)}">                            
+                            <apex:outputLink id="theLink" onclick="openinNewTab('{!y.url}');return false;" style="text-decoration: none;" target="_blank">
+                                <apex:outputPanel rendered="{!!IF(CONTAINS(y.value, 'resource'),True, False)}">
+                                     {!y.Value}
+                                </apex:outputPanel>
+                                <apex:image url="{!y.value}" height="50" width="150" rendered="{!IF(CONTAINS(y.value, 'resource'),True, False)}"/>
+                            </apex:outputLink>                                                                                    
+                         </apex:outputPanel>
+                         
+                         <apex:outputPanel rendered="{!if(y.displayPageWindow=='Open in a New Window' && y.IsLink,true,false)}">
+                            <apex:outputLink id="theLink1" onclick="window.open('{!y.url}','_blank','width=1000,height=700');return false;" style="text-decoration: none;">
+                                 <apex:outputPanel rendered="{!!IF(CONTAINS(y.value, 'resource'),True, False)}">
+                                     {!y.Value}
+                                </apex:outputPanel>
+                                <apex:image url="{!y.value}" height="50" width="150" rendered="{!IF(CONTAINS(y.value, 'resource'),True, False)}"/>
+                             </apex:outputLink>
+                         </apex:outputPanel>
+                         
+                         <apex:outputPanel rendered="{!if(y.displayPageWindow=='Open in existing page' && y.IsLink,true,false)}">                           
+                                       <a href="{!y.url}" style="text-decoration: none;">
+                                      <apex:outputPanel rendered="{!!IF(CONTAINS(y.value, 'resource'),True, False)}">
+                                                 {!y.Value}
+                                      </apex:outputPanel>
+                                      <apex:image url="{!y.value}" height="50" width="150" rendered="{!IF(CONTAINS(y.value, 'resource'),True, False)}"/>
+                                      </a>                                        
+                         </apex:outputPanel>                         
+                        
+                          <apex:outputPanel rendered="{!!y.IsLink}">
+                                 {!y.Value}
+                          </apex:outputPanel>
+                        
+                         <br/>
+                         </td>
+                         </tr>
+                         </table>
+                 </apex:repeat>
+                </div></td></tr>
+                </table>                                    
+             </td>                                      
+             </apex:repeat>
+             <!-- 
+              <apex:outputPanel rendered="{!if(v.lst_wrapper==2,true,false)}">
+                 <td width="33%">&nbsp;csdcds</td>
+             </apex:outputPanel>
+             <apex:outputPanel rendered="{!if(v.lst_wrapper==1,true,false)}">
+                 <td width="33%">&nbsp;sds</td>
+                 <td width="33%">&nbsp;dss</td>
+             </apex:outputPanel>
+             -->
+            </tr>                            
+            <!--  <tr><td colspan="2">&nbsp;</td></tr>  -->
+            </apex:repeat>
+            
+            
+      </table>
+      
+  </apex:form>
+
+<style type="text/css">
+     
+       
+      .boxTitle {
+        border: 1px solid #505050;
+        background-color:#505050;
+        /*width:349px;*/
+        width:90%;
+        height: 100%;          
+        float:left;
+        color:white;
+        font-size:14px;
+        font-weight:bold;
+        padding:8px;
+        padding-right:22px;
+        border-left: 2px solid #505050;
+        border-top: 2px solid #505050;
+        overflow: hidden;
+        display: inline-block;
+        white-space: nowrap;
+        max-width:352px;
+        min-width:352px;
+        margin-right:6px; /* Set to 0 if you don't want shadow at the right side */
+        margin-left:0px; /* Set to 20px if you want shadow at the left side */
+        margin-top:0px; /* Set to 20px if you want shadow at the top side */
+        margin-bottom:0px; /* Set to 20px if you want shadow at the bottom side */
+        
+        -moz-box-shadow:    3px 3px 5px 6px #ccc;
+        -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+        box-shadow:         6px 0px 5px #ccc;
+
+      }
+
+      .boxContent {
+         border: 1px solid #F3F3F3;
+         background-color: #F3F3F3;
+          /*width: 350px;*/
+          width:90%;
+          max-width:350px;
+          min-width:350px;
+          height: 160px;
+          padding-top:15px;
+          padding-left:15px;
+          padding-right:15px;
+                    overflow:auto;
+          -moz-box-shadow:    3px 3px 5px 6px #ccc;
+          -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+          box-shadow:         6px 6px 5px #ccc;
+      }
+
+       .boxContentShort {
+          border: 1px solid #F3F3F3;
+          background-color: #F3F3F3;
+          width: 100%;
+          height: 130px;
+          padding-top:15px;
+          padding-left:15px;
+          padding-right:15px;
+          overflow:auto;
+          -moz-box-shadow:    3px 3px 5px 6px #ccc;
+           -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+           box-shadow:         10px 10px 5px #ccc;
+      }
+
+    </style>
+</apex:page>

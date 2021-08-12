@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Opportunity_Expired__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>This field acts as a flag to identify inactive Tegra Embedded Partner Opportunities by checking the Opportunities Owner has not updated in 60 days. If so, then re-assign ownership to the NVIDIA Account Manager (PBM).</description>
+    <externalId>false</externalId>
+    <label>Opportunity Expired</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

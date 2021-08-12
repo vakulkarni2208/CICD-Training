@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Check this box to display the contents of the Html field on the PRM homepage. --></help>
+    <label><!-- Use Html --></label>
+    <name>Use_Html__c</name>
+</CustomFieldTranslation>

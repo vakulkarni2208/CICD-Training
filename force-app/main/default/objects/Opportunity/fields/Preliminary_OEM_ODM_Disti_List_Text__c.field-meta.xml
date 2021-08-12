@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Preliminary_OEM_ODM_Disti_List_Text__c</fullName>
+    <description>SDS-2075-Sales: Enable partner sharing when Opptys are prelim with Partners. Auto set from Preliminary OEM/ODM/Disti List (multi-picklist) to be used in sharing rules</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Auto set from Preliminary OEM/ODM/Disti List (multi-picklist) to be used in sharing rules</inlineHelpText>
+    <label>Additional OEM/ODM/Disti List(Text)</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

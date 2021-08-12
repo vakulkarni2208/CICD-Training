@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<HomePageComponent xmlns="http://soap.sforce.com/2006/04/metadata">
+    <body>&lt;table id=&quot;table1&quot; border=&quot;0&quot; width=&quot;100%&quot;&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&quot;font-family: Arial; font-size: 14px;&quot; width=&quot;100%&quot;&gt;
+&lt;p&gt;&lt;span style=&quot;color: rgb(118, 185, 0); font-family: Arial; font-size: 18px; font-weight: bold;&quot;&gt;Welcome to the NVIDIA PartnerForce ISV Alliance Portal&lt;/span&gt; &lt;br&gt;&lt;br&gt;This portal contains Information and tools to help you market, sell, and support NVIDIA Quadro solutions. &lt;br&gt;&lt;br&gt;Click on the NVIDIA logo to access corporate marketing assets including logos, product shots and branding guidelines.&amp;nbsp; &lt;/p&gt;
+&lt;p&gt;Click on the appropriate logo below to access marketing materials for the specific ISV solutions you sell. &lt;br&gt;&lt;br&gt;All sales training and materials can be accessed via the GPU Genius link: &lt;/p&gt;
+&lt;table border=&quot;0&quot; width=&quot;700&quot; align=&quot;left&quot; height=&quot;100&quot; padding=&quot;5px&quot;&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td vAlign=&quot;middle&quot; width=&quot;25%&quot; align=&quot;center&quot;&gt;&lt;a href=&quot;https://na2.salesforce.com/sfc/#search?searchWorkspaceIds=%5B%22058400000004IOH%22%5D&quot;&gt;&lt;img src=&quot;https://na2.salesforce.com/servlet/servlet.ImageServer?id=01540000000yWfY&amp;amp;oid=00D400000009E3I&quot;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td vAlign=&quot;middle&quot; width=&quot;25%&quot; align=&quot;center&quot;&gt;&lt;a href=&quot;https://na2.salesforce.com/sfc/#search?searchWorkspaceIds=%5B%22058400000004IO7%22%5D&quot;&gt;&lt;img src=&quot;https://na2.salesforce.com/servlet/servlet.ImageServer?id=01540000000yWf9&amp;amp;oid=00D400000009E3I&quot;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td vAlign=&quot;middle&quot; width=&quot;25%&quot; align=&quot;center&quot;&gt;&lt;a href=&quot;https://na2.salesforce.com/sfc/#search?searchWorkspaceIds=%5B%22058400000004IOC%22%5D&quot;&gt;&lt;img src=&quot;https://na2.salesforce.com/servlet/servlet.ImageServer?id=01540000000yWfE&amp;amp;oid=00D400000009E3I&quot;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td vAlign=&quot;middle&quot; width=&quot;25%&quot; align=&quot;center&quot;&gt;&lt;a href=&quot;https://na2.salesforce.com/sfc/#search?searchWorkspaceIds=%5B%22058400000004IOM%22%5D&quot;&gt;&lt;img src=&quot;https://na2.salesforce.com/servlet/servlet.ImageServer?id=01540000000yWfO&amp;amp;oid=00D400000009E3I&quot;&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;</body>
+    <pageComponentType>htmlArea</pageComponentType>
+    <width>wide</width>
+</HomePageComponent>

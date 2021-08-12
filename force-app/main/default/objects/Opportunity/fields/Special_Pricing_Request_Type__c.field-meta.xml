@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Special_Pricing_Request_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Special Pricing Request Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Back-end Rebate</fullName>
+                <default>false</default>
+                <label>Back-end Rebate</label>
+            </value>
+            <value>
+                <fullName>EDU</fullName>
+                <default>false</default>
+                <label>EDU</label>
+            </value>
+            <value>
+                <fullName>Engineering Qual</fullName>
+                <default>false</default>
+                <label>Engineering Qual</label>
+            </value>
+            <value>
+                <fullName>Inception</fullName>
+                <default>false</default>
+                <label>Inception</label>
+            </value>
+            <value>
+                <fullName>Not for Resale (NFR)</fullName>
+                <default>false</default>
+                <label>Not for Resale (NFR)</label>
+            </value>
+            <value>
+                <fullName>Samples</fullName>
+                <default>false</default>
+                <label>Samples</label>
+            </value>
+            <value>
+                <fullName>TOP EDU</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>TOP EDU</label>
+            </value>
+            <value>
+                <fullName>TOP EDU Back-end Rebate</fullName>
+                <default>false</default>
+                <label>TOP EDU Back-end Rebate</label>
+            </value>
+            <value>
+                <fullName>Upfront Discount</fullName>
+                <default>false</default>
+                <label>Upfront Discount</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

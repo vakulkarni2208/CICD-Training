@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Defail Probability of Tegra Embedded Opportunity created by Jetson Deal Reg --></help>
+    <label><!-- Opportunity : Probability --></label>
+    <name>Opportunity_Probability__c</name>
+</CustomFieldTranslation>

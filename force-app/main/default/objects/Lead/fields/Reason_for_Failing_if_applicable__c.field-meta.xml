@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reason_for_Failing_if_applicable__c</fullName>
+    <description>For DLI Instructor Lead process (SDS-2586)</description>
+    <externalId>false</externalId>
+    <label>Reason for Failing (if applicable)</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <controllingField>Status</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Lack of subject knowledge</fullName>
+                <default>false</default>
+                <label>Lack of subject knowledge</label>
+            </value>
+            <value>
+                <fullName>Requires better presentation skills</fullName>
+                <default>false</default>
+                <label>Requires better presentation skills</label>
+            </value>
+            <value>
+                <fullName>Confusing explanations (i.e. students would find it hard to follow the instructor)</fullName>
+                <default>false</default>
+                <label>Confusing explanations (i.e. students would find it hard to follow the instructor)</label>
+            </value>
+            <value>
+                <fullName>Needs more confidence presenting</fullName>
+                <default>false</default>
+                <label>Needs more confidence presenting</label>
+            </value>
+            <value>
+                <fullName>Too advanced for workshop / better suited for other workshops</fullName>
+                <default>false</default>
+                <label>Too advanced for workshop / better suited for other workshops</label>
+            </value>
+            <value>
+                <fullName>Inaccurate / imprecise / cursory responses</fullName>
+                <default>false</default>
+                <label>Inaccurate / imprecise / cursory responses</label>
+            </value>
+            <value>
+                <fullName>Abandoned / incomplete application</fullName>
+                <default>false</default>
+                <label>Abandoned / incomplete application</label>
+            </value>
+            <value>
+                <fullName>Withdrew application – medical / professional / personal reasons</fullName>
+                <default>false</default>
+                <label>Withdrew application – medical / professional / personal reasons</label>
+            </value>
+            <value>
+                <fullName>Changed employment to an unaffiliated organization</fullName>
+                <default>false</default>
+                <label>Changed employment to an unaffiliated organization</label>
+            </value>
+            <value>
+                <fullName>No NVIDIA relationship</fullName>
+                <default>false</default>
+                <label>No NVIDIA relationship</label>
+            </value>
+            <value>
+                <fullName>Duplicate record</fullName>
+                <default>false</default>
+                <label>Duplicate record</label>
+            </value>
+            <value>
+                <fullName>No show to interview, no response to follow-up</fullName>
+                <default>false</default>
+                <label>No show to interview, no response to follow-up</label>
+            </value>
+            <value>
+                <fullName>Suspicious credentials (e.g. 10 Ph.D.s – this is a real example)</fullName>
+                <default>false</default>
+                <label>Suspicious credentials (e.g. 10 Ph.D.s – this is a real example)</label>
+            </value>
+            <value>
+                <fullName>Invalid email address – no way to contact</fullName>
+                <default>false</default>
+                <label>Invalid email address – no way to contact</label>
+            </value>
+            <value>
+                <fullName>Application responses reflect someone that is not serious about carrying out DLI mission</fullName>
+                <default>false</default>
+                <label>Application responses reflect someone that is not serious about carrying out DLI mission</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Declined</controllingFieldValue>
+            <valueName>Lack of subject knowledge</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Declined</controllingFieldValue>
+            <valueName>Requires better presentation skills</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Declined</controllingFieldValue>
+            <valueName>Confusing explanations (i.e. students would find it hard to follow the instructor)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Declined</controllingFieldValue>
+            <valueName>Needs more confidence presenting</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Declined</controllingFieldValue>
+            <valueName>Too advanced for workshop / better suited for other workshops</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Declined</controllingFieldValue>
+            <valueName>Inaccurate / imprecise / cursory responses</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Declined</controllingFieldValue>
+            <valueName>Abandoned / incomplete application</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Declined</controllingFieldValue>
+            <valueName>Withdrew application – medical / professional / personal reasons</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Declined</controllingFieldValue>
+            <valueName>Changed employment to an unaffiliated organization</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Declined</controllingFieldValue>
+            <valueName>No NVIDIA relationship</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Declined</controllingFieldValue>
+            <valueName>Duplicate record</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Declined</controllingFieldValue>
+            <valueName>No show to interview, no response to follow-up</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Declined</controllingFieldValue>
+            <valueName>Suspicious credentials (e.g. 10 Ph.D.s – this is a real example)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Declined</controllingFieldValue>
+            <valueName>Invalid email address – no way to contact</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Declined</controllingFieldValue>
+            <valueName>Application responses reflect someone that is not serious about carrying out DLI mission</valueName>
+        </valueSettings>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

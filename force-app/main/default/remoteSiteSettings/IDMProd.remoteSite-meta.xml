@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RemoteSiteSetting xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>IDM Prod Server:
+For SC, https://nvidm1.nvidia.com
+For HK, https://hknvidm1.nvidia.com</description>
+    <disableProtocolSecurity>false</disableProtocolSecurity>
+    <isActive>true</isActive>
+    <url>https://nvidm1.nvidia.com</url>
+</RemoteSiteSetting>

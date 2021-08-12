@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Deal Reg Record type names used in Deal Reg Status --></help>
+    <label><!-- Deal Reg Record Types --></label>
+    <name>Deal_Reg_Record_Types__c</name>
+</CustomFieldTranslation>

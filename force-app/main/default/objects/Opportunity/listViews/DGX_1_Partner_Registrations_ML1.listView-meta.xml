@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DGX_1_Partner_Registrations_ML1</fullName>
+    <columns>DR_Deal_Status__c</columns>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Opportunity_Owner_Full_Name__c</columns>
+    <columns>CORE.USERS.FULL_NAME</columns>
+    <columns>OPPORTUNITY.CREATED_DATE</columns>
+    <columns>OPPORTUNITY.AMOUNT</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>OPPORTUNITY.LAST_UPDATE</field>
+        <operation>greaterOrEqual</operation>
+        <value>2/1/2017 12:00 AM</value>
+    </filters>
+    <filters>
+        <field>GEO_Area__c</field>
+        <operation>equals</operation>
+        <value>NALA</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>012400000009KDQ,012400000009n30,01240000000QLz4</value>
+    </filters>
+    <label>DGX-1 Deal Desk</label>
+    <language>en_US</language>
+    <sharedTo/>
+</ListView>

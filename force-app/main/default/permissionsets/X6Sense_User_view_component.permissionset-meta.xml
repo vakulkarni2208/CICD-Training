@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customPermissions>
+        <enabled>true</enabled>
+        <name>X6Sense_User_view_component</name>
+    </customPermissions>
+    <description>SDS-2818 - Show 6Sense tab or components to 6Sense users</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>6Sense User - view component</label>
+</PermissionSet>

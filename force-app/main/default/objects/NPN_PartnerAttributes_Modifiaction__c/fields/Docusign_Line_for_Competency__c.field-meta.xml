@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Docusign_Line_for_Competency__c</fullName>
+    <externalId>false</externalId>
+    <formula>&quot;Competency Exhibit for: &quot;
+&amp;
+lEFT((
+IF (INCLUDES( Competency__c ,&quot;Compute&quot; ),&quot; Compute,&quot;,null) &amp;
+IF (INCLUDES(Competency__c ,&quot;Visualization&quot;), &quot; Visualization,&quot;,null) &amp;
+IF (INCLUDES(Competency__c ,&quot;Compute DGX&quot;), &quot; Compute DGX,&quot;,null) &amp;
+IF (INCLUDES(Competency__c ,&quot;DGX&quot;), &quot; DGX,&quot;,null) &amp;
+IF (INCLUDES(Competency__c ,&quot;Virtualization&quot; ), &quot; Virtualization ,&quot;,null) &amp;
+IF (INCLUDES(Competency__c ,&quot;Embedded Edge&quot; ), &quot; Embedded Edge ,&quot;,null) &amp;
+IF (INCLUDES(Competency__c ,&quot;Healthcare&quot; ), &quot; Healthcare ,&quot;,null) &amp; &quot; Exhibit &quot;
+),LEN(
+IF (INCLUDES(Competency__c ,&quot;Compute&quot; ),&quot; Compute,&quot;,null) &amp;
+IF (INCLUDES(Competency__c ,&quot;Visualization&quot;), &quot; Visualization,&quot;,null) &amp;
+IF (INCLUDES(Competency__c ,&quot;Compute DGX&quot;), &quot; Compute DGX,&quot;,null) &amp;
+IF (INCLUDES(Competency__c ,&quot;DGX&quot;), &quot; DGX,&quot;,null) &amp;
+IF (INCLUDES(Competency__c ,&quot;Virtualization&quot; ), &quot; Virtualization ,&quot;,null) &amp;
+IF (INCLUDES(Competency__c ,&quot;Embedded Edge&quot; ), &quot; Embedded Edge ,&quot;,null) &amp;
+IF (INCLUDES(Competency__c ,&quot;Healthcare&quot; ), &quot; Healthcare ,&quot;,null)
+)-1)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Docusign_Line for Competency</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

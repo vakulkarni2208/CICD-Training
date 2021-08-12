@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Is_Target_List_Customer__c</fullName>
+    <description>For LSID mass enrichment of Target List Customers</description>
+    <externalId>false</externalId>
+    <formula>NOT(ISBLANK(Target_List__c))</formula>
+    <inlineHelpText>For LSID mass enrichment of Target List Customers</inlineHelpText>
+    <label>Is Target List Customer</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

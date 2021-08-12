@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sales_Leader_Forecast_DGX_JAPAN</fullName>
+    <booleanFilter>1 AND 2 AND 3 AND 4 AND 6 AND 7 AND (5 OR 8)</booleanFilter>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>OPPORTUNITY.AMOUNT</columns>
+    <columns>OPPORTUNITY.CLOSE_DATE</columns>
+    <columns>Agree_with_Opportunity_Values__c</columns>
+    <columns>Sales_Leader_Close_Date__c</columns>
+    <columns>Sales_Leader_Commentary__c</columns>
+    <columns>Sales_Leader_Forecast_Category__c</columns>
+    <columns>SL_DGX_Amount__c</columns>
+    <columns>At_Risk_for_CQ_Revenue__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Region__c</field>
+        <operation>equals</operation>
+        <value>JAPAN</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Opportunity.Enterprise_Sales_Opportunity</value>
+    </filters>
+    <filters>
+        <field>Total_DGX_Product_Amount__c</field>
+        <operation>greaterOrEqual</operation>
+        <value>50000</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.CLOSED</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.CLOSE_DATE</field>
+        <operation>equals</operation>
+        <value>THIS_FISCAL_QUARTER,NEXT_FISCAL_QUARTER</value>
+    </filters>
+    <filters>
+        <field>Industry__c</field>
+        <operation>notEqual</operation>
+        <value>Strategic Hyperscale</value>
+    </filters>
+    <filters>
+        <field>Sales_Leader_Forecast_Category__c</field>
+        <operation>equals</operation>
+        <value>5-Other,4-Pipeline,3-Best Case,2-Commit</value>
+    </filters>
+    <filters>
+        <field>Sales_Leader_Close_Date__c</field>
+        <operation>equals</operation>
+        <value>THIS_FISCAL_QUARTER,NEXT_FISCAL_QUARTER</value>
+    </filters>
+    <label>Sales Leader Forecast - DGX - JAPAN</label>
+    <sharedTo>
+        <role>Japan_Enterprise_Sales_Manager_1</role>
+        <role>Japan_Sales_Ops</role>
+        <role>Japan_Sales_Ops_Manager</role>
+        <role>Japan_Sales_VP</role>
+    </sharedTo>
+</ListView>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DoNotUse_OppReg_Edu_Pricebook_for_Clone</fullName>
+    <active>true</active>
+    <description>Do not allow Opportunities with &apos;OppReg Edu Pricebook&apos; while Cloning</description>
+    <errorConditionFormula>AND(
+ ISNEW(),
+ ISCLONE(),  
+ RecordType.Name = &apos;Enterprise Sales Opportunity&apos;,
+ NOT(ISBLANK(Pricebook2.Name)),
+ Pricebook2.Name = &apos;OppReg EDU Price Book&apos; 
+)</errorConditionFormula>
+    <errorMessage>Clone with Products is not available for Opportunities using OppReg Edu Pricebook. Please use standard clone then add the pricebook and products</errorMessage>
+</ValidationRule>

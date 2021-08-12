@@ -1,0 +1,204 @@
+<apex:page standardController="NPN_NFR_Software_Request__c" extensions="NPN_NFR_DemoUnitsApprovalCtrl" sidebar="false" tabStyle="NPN_NFR_Software_Request__c"
+    docType="html-5.0">
+
+    <apex:form id="approvalForm">
+        <apex:pageBlock title="NFR SW License Request Approval">
+            <apex:pageMessages rendered="{!NOT(displayPopUp)}"></apex:pageMessages>
+            <div style="float:left;width:40%;">
+                <div>
+                    <b>Name :</b> {!reqstrName}</div>
+                <br />
+                <div class="subtitle">
+                    <b>Account Name :</b> {!accountName}</div>
+                <br />
+                <div class="subtitle">
+                    <b>Status :</b> {!status}</div>
+                <br />
+            </div>
+            <div style="float:left;text-align:left;width:50%;">
+                <div class="subtitle">
+                    <b>Email :</b> {!rqstrEmail}</div>
+                <br />
+                <div class="subtitle">
+                    <b>Billing Address :</b> {!billingAddress}</div>
+                <br />
+            </div>
+            <div id="theTable">
+                <br/>
+                <table class="customTable">
+                    <colgroup>
+                        <col style="width: 5%;" />
+                        <col style="width: 12%;" />
+                        <col style="width: 35%;" />
+                        <col style="width: 12%;" />
+                        <col style="width: 100%;" />
+                    </colgroup>
+                    <tr>
+                        <th class="tdthStyle">
+                            <b>#</b>
+                        </th>
+                        <th class="tdthStyle">
+                            <b>Licenses</b>
+                        </th>
+                        <th class="tdthStyle">
+                            <b>Description</b>
+                        </th>
+                        <th class="tdthStyle">
+                            <b>Quantity</b>
+                        </th>
+                        <th class="tdthStyle">
+                            <b>Justification/Comments</b>
+                        </th>
+                    </tr>
+                    <apex:repeat value="{!softwareList}" var="eachRecord">
+                        <tr>
+                            <td class="tdthStyle">{!eachRecord.serialNum}</td>
+                            <td class="tdthStyle">{!eachRecord.softwareName}</td>
+                            <td class="tdthStyle">{!eachRecord.description}</td>
+                            <td class="tdthStyle">{!eachRecord.quantity}</td>
+                            <td class="tdthStyle" escape="false">{!eachRecord.comments}</td>
+                        </tr>
+                    </apex:repeat>
+                </table>
+            </div>
+            <div align="center" draggable="false">
+                <br/>
+                <br/>
+                <apex:commandButton value="Approve" action="{!approveRequest}" />&nbsp;&nbsp;&nbsp;
+                <apex:commandButton value="Reject" action="{!rejectReason}" />
+            </div>
+        </apex:pageBlock>
+        <apex:outputPanel id="tstpopup">
+            <apex:outputPanel styleClass="popupBackground" layout="block" rendered="{!displayPopUp}" />
+            <apex:outputPanel styleClass="custPopup" layout="block" rendered="{!displayPopUp}">
+                <apex:pageBlock >
+                    <apex:pageMessages ></apex:pageMessages>
+                    <apex:pageBlockSection >
+                        Please provide the reason for rejection.
+                        <apex:inputTextarea id="reasonForRejection" value="{!reasonForRejection}" rows="3" cols="50" onchange="ShowCharCount(this, 255, '{!$Component.myTASize12}');"
+                            onmousedown="ShowCharCount(this, 255, '{!$Component.myTASize12}');" onkeyup="ShowCharCount(this, 255, '{!$Component.myTASize12}');"
+                            onkeydown="ShowCharCount(this, 255, '{!$Component.myTASize12}');" onclick="ShowCharCount(this, 255, '{!$Component.myTASize12}');"
+                        />
+                    </apex:pageBlockSection>
+                    <apex:outputPanel id="myTASize12" styleClass="ermsg">{!LEN(reasonForRejection)} / 255</apex:outputPanel>
+                    <!--<apex:inputText value="{!reasonForRejection}" id="reasonForRejection" maxlength="255"  />-->
+                    <br/>
+                    <apex:pageBlockButtons location="bottom">
+                        <apex:commandButton value="Cancel" action="{!closePopup}" immediate="true" />
+                        <apex:commandButton value="Submit" action="{!rejectRequest}" />
+                    </apex:pageBlockButtons>
+                </apex:pageBlock>
+            </apex:outputPanel>
+        </apex:outputPanel>
+        <apex:outputPanel id="successPopup">
+            <apex:outputPanel styleClass="popupBackground" layout="block" rendered="{!successPopup}" />
+            <apex:outputPanel styleClass="custPopup" layout="block" rendered="{!successPopup}">
+                <p>Thank you for your NFR SW License Request action. You will be redirected to the NVIDIA CRM homepage.</p>
+                <div align="center" draggable="false">
+                    <apex:commandButton style="float:center" value="Close" action="{!redirectHome}" immediate="true" />
+                </div>
+            </apex:outputPanel>
+        </apex:outputPanel>
+    </apex:form>
+    <script>
+        function ShowCharCount(myTA, maxSize, SizeLabel) {
+            if (myTA.value.length > maxSize)
+                myTA.value = myTA.value.substring(0, maxSize);
+            document.getElementById(SizeLabel).innerHTML = myTA.value.length + ' / 255';
+        }
+    </script>
+    <style>
+        .ermsg {
+            float: left;
+            text-align: right;
+            width: 35%;
+            font-size: 10px;
+            position: relative;
+            left: 50%;
+        }
+
+        .customTable {
+            width: 80%;
+            table-layout: fixed;
+            border: 1px solid black;
+            border-collapse: collapse;
+            table-layout: fixed;
+        }
+
+        .one {
+            width: 0.3%;
+        }
+
+        .two {
+            width: 1%;
+        }
+
+        .three {
+            width: 2.5%;
+        }
+
+
+        .twenty {
+            width: 20%;
+        }
+
+        .tdthStyle {
+            padding: 15px;
+            border: 1px solid black;
+        }
+
+        .subtitle {
+            text-align: left;
+            font-size: 13px;
+            line-height: 1.25;
+            height: 12.25px;
+        }
+
+        .subtitleBold {
+            font-weight: bold;
+            text-align: left;
+            font-size: 13px;
+            line-height: 1.25;
+            height: 12.25px;
+        }
+
+        .requestBox {
+            background-color: #F8F8F8;
+            border: 1px solid #EAEAEA;
+            border-radius: 4px 4px 4px 4px;
+            color: #333333;
+            font-size: 12px;
+            padding: 6px;
+            width: 100%;
+        }
+
+        .custPopup {
+            background-color: white;
+            border-width: 2px;
+            border-style: solid;
+            z-index: 9999;
+            left: 50%;
+            padding: 10px;
+            position: absolute;
+            width: 500px;
+            margin-left: -250px;
+            top: 100px;
+        }
+
+        .popupBackground {
+            background-color: black;
+            opacity: 0.20;
+            filter: alpha(opacity=20);
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 9998;
+        }
+
+        .centerTable {
+            align: center;
+        }
+    </style>
+</apex:page>

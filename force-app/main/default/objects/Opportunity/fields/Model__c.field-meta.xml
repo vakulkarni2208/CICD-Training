@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Model__c</fullName>
+    <externalId>false</externalId>
+    <label>Model</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>NV Driven</fullName>
+                <default>false</default>
+                <label>NV Driven</label>
+            </value>
+            <value>
+                <fullName>Partner_OEM_Driven</fullName>
+                <default>false</default>
+                <label>Partner/OEM Driven</label>
+            </value>
+            <value>
+                <fullName>Ambassador</fullName>
+                <default>false</default>
+                <label>Ambassador</label>
+            </value>
+            <value>
+                <fullName>Public</fullName>
+                <default>false</default>
+                <label>Public</label>
+            </value>
+            <value>
+                <fullName>Conference</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Conference</label>
+            </value>
+            <value>
+                <fullName>MDF</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>MDF</label>
+            </value>
+            <value>
+                <fullName>Not Paid</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Not Paid</label>
+            </value>
+            <value>
+                <fullName>SA Ambassador</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>SA Ambassador</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

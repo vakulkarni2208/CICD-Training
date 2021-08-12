@@ -1,0 +1,12 @@
+<apex:page >
+<!-- 
+  -- @Manideep - 5/8/2019
+  -- This page is not being used, so commented out as part of Opportunity Record Type Cleanup process.
+
+<apex:page standardController="OpportunityLineItem" extensions="clsEditOpportunityProduct_ExtensionV2" action="{!redirect}">
+  <--- This is the VF page that overrides the [Edit] link and button on Opportunity Line Items.     --
+    <apex:form >
+        <apex:inputHidden value="{!opportunitylineitem.OpportunityId}" />
+        </apex:form>   
+-->         
+</apex:page>

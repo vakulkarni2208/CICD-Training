@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Check this box to Identify products that can be sold directly to the End Customer --></help>
+    <label><!-- Available for Direct Selling --></label>
+    <name>Available_for_Direct_Selling__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- ESP : tracks if the Case Contact does not belong to the Case Account --></help>
+    <label><!-- Case - Account Mismatch --></label>
+    <name>ESP_Case_Account_Mismatch__c</name>
+</CustomFieldTranslation>

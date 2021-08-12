@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Promotion_Description_Last_Line__c</fullName>
+    <externalId>false</externalId>
+    <formula>&apos;On behalf of NVIDIA, we appreciate your partnership and thank you for your continued participation in the NVIDIA Partner Network Program and look forward to continuing to partner with your organization.&apos;</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Promotion_Description_Last_Line</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

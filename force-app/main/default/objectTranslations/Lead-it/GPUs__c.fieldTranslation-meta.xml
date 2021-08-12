@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- GPUs --></label>
+    <name>GPUs__c</name>
+    <picklistValues>
+        <masterLabel>2x Tesla K80</masterLabel>
+        <translation><!-- 2x Tesla K80 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2x Tesla P100</masterLabel>
+        <translation><!-- 2x Tesla P100 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>4x Tesla K80</masterLabel>
+        <translation><!-- 4x Tesla K80 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>4x Tesla P100</masterLabel>
+        <translation><!-- 4x Tesla P100 --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

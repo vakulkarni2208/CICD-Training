@@ -1,0 +1,18 @@
+<apex:page >
+<!-- 
+  -- @Manideep - 5/8/2019
+  -- This Page is not being used and commented out as part of Opportunity RecordType Cleanup.
+<apex:page standardController="Opportunity" extensions="SelectOppRecordType_Extension" action="{!redirect}">
+  ---- This is the VF page that overrides the [New] button on Opportunities.  
+  		This page may be called with an Account Id, and may or may not include the Opportunity record type;
+  		The controller determines the record type, if not provided, and passes  
+  		Notebook Opportunities to the Opportunity_And_Products page.
+  		
+  		See the SelectOppRecordType_Extension class for the code. ----
+  		<apex:form >
+	  		<apex:inputHidden value="{!opportunity.RecordTypeId}" />
+	  		<apex:inputHidden value="{!opportunity.AccountId}" />
+  		</apex:form>
+</apex:page>
+-->
+</apex:page>

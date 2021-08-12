@@ -1,0 +1,18 @@
+<soapenv:Envelope xsi:schemaLocation="http://schemas.xmlsoap.org/soap/envelope/ http://schemas.xmlsoap.org/soap/envelope/" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tews="http://tews6/wsdl" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <soapenv:Body>
+      <soapenv:Fault>
+         <faultcode>soapenv:Client</faultcode>
+         <faultstring>Error performing operation.</faultstring>
+         <detail>
+            <tews:ImsException version="6.0">
+               <tews:exception>
+                  <tews:name/>
+                  <tews:code>500</tews:code>
+                  <tews:description>State value should be NA , if country is not US/CA ProcessStep::DataValidate TabName:  ERRORLEVEL::Error</tews:description>
+                  <tews:transaction>9e7ae43f-deaac5da-e06c8e98-c9c2a3</tews:transaction>
+               </tews:exception>
+            </tews:ImsException>
+         </detail>
+      </soapenv:Fault>
+   </soapenv:Body>
+</soapenv:Envelope>

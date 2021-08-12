@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tegra_Asset_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Tegra Asset Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Copy &amp; Messaging</fullName>
+                <default>false</default>
+                <label>Copy &amp; Messaging</label>
+            </value>
+            <value>
+                <fullName>Email Templates</fullName>
+                <default>false</default>
+                <label>Email Templates</label>
+            </value>
+            <value>
+                <fullName>Game Assets</fullName>
+                <default>false</default>
+                <label>Game Assets</label>
+            </value>
+            <value>
+                <fullName>Logos &amp; Branding Guidelines</fullName>
+                <default>false</default>
+                <label>Logos &amp; Branding Guidelines</label>
+            </value>
+            <value>
+                <fullName>Print Ad Templates</fullName>
+                <default>false</default>
+                <label>Print Ad Templates</label>
+            </value>
+            <value>
+                <fullName>Product Imagery</fullName>
+                <default>false</default>
+                <label>Product Imagery</label>
+            </value>
+            <value>
+                <fullName>Product Literature</fullName>
+                <default>false</default>
+                <label>Product Literature</label>
+            </value>
+            <value>
+                <fullName>Product Presentations</fullName>
+                <default>false</default>
+                <label>Product Presentations</label>
+            </value>
+            <value>
+                <fullName>Product Specifications</fullName>
+                <default>false</default>
+                <label>Product Specifications</label>
+            </value>
+            <value>
+                <fullName>Sales Tools</fullName>
+                <default>false</default>
+                <label>Sales Tools</label>
+            </value>
+            <value>
+                <fullName>Training</fullName>
+                <default>false</default>
+                <label>Training</label>
+            </value>
+            <value>
+                <fullName>Videos</fullName>
+                <default>false</default>
+                <label>Videos</label>
+            </value>
+            <value>
+                <fullName>Wallpapers</fullName>
+                <default>false</default>
+                <label>Wallpapers</label>
+            </value>
+            <value>
+                <fullName>Web Banners</fullName>
+                <default>false</default>
+                <label>Web Banners</label>
+            </value>
+            <value>
+                <fullName>Web Page Templates</fullName>
+                <default>false</default>
+                <label>Web Page Templates</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>5</visibleLines>
+</CustomField>

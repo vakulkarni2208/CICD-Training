@@ -1,0 +1,797 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Critical_Priority_1_Software_Apps__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Select all key software applications included in this opportunity.  If none, select &quot;Not Applicable.”</inlineHelpText>
+    <label>ISV Software Apps:</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Not Applicable</fullName>
+                <default>false</default>
+                <label>Not Applicable</label>
+            </value>
+            <value>
+                <fullName>Acceleware RTM</fullName>
+                <default>false</default>
+                <label>Acceleware RTM</label>
+            </value>
+            <value>
+                <fullName>Adobe Creative Suite</fullName>
+                <default>false</default>
+                <label>Adobe Creative Suite</label>
+            </value>
+            <value>
+                <fullName>Agilent Technologies ADS</fullName>
+                <default>false</default>
+                <label>Agilent Technologies ADS</label>
+            </value>
+            <value>
+                <fullName>Allegorithmic Substance Designer</fullName>
+                <default>false</default>
+                <label>Allegorithmic Substance Designer</label>
+            </value>
+            <value>
+                <fullName>Allegorithmic Substance Painter</fullName>
+                <default>false</default>
+                <label>Allegorithmic Substance Painter</label>
+            </value>
+            <value>
+                <fullName>Altair HyperWorks</fullName>
+                <default>false</default>
+                <label>Altair HyperWorks</label>
+            </value>
+            <value>
+                <fullName>AMBER</fullName>
+                <default>false</default>
+                <label>AMBER</label>
+            </value>
+            <value>
+                <fullName>Amira5</fullName>
+                <default>false</default>
+                <label>Amira5</label>
+            </value>
+            <value>
+                <fullName>AMR</fullName>
+                <default>false</default>
+                <label>AMR</label>
+            </value>
+            <value>
+                <fullName>ANSYS</fullName>
+                <default>false</default>
+                <label>ANSYS</label>
+            </value>
+            <value>
+                <fullName>ANSYS AIM</fullName>
+                <default>false</default>
+                <label>ANSYS AIM</label>
+            </value>
+            <value>
+                <fullName>ANSYS FLUENT</fullName>
+                <default>false</default>
+                <label>ANSYS FLUENT</label>
+            </value>
+            <value>
+                <fullName>ANSYS HFSS</fullName>
+                <default>false</default>
+                <label>ANSYS HFSS</label>
+            </value>
+            <value>
+                <fullName>ANSYS HFSS SBR+</fullName>
+                <default>false</default>
+                <label>ANSYS HFSS SBR+</label>
+            </value>
+            <value>
+                <fullName>ANSYS Mechanical</fullName>
+                <default>false</default>
+                <label>ANSYS Mechanical</label>
+            </value>
+            <value>
+                <fullName>ANSYS Nexxim</fullName>
+                <default>false</default>
+                <label>ANSYS Nexxim</label>
+            </value>
+            <value>
+                <fullName>ANSYS Polyflow</fullName>
+                <default>false</default>
+                <label>ANSYS Polyflow</label>
+            </value>
+            <value>
+                <fullName>ANSYS Workbench</fullName>
+                <default>false</default>
+                <label>ANSYS Workbench</label>
+            </value>
+            <value>
+                <fullName>ASUCA</fullName>
+                <default>false</default>
+                <label>ASUCA</label>
+            </value>
+            <value>
+                <fullName>Autodesk 3DS Max</fullName>
+                <default>false</default>
+                <label>Autodesk 3DS Max</label>
+            </value>
+            <value>
+                <fullName>Autodesk AutoCAD</fullName>
+                <default>false</default>
+                <label>Autodesk AutoCAD</label>
+            </value>
+            <value>
+                <fullName>Autodesk Inventor 2012</fullName>
+                <default>false</default>
+                <label>Autodesk Inventor 2012</label>
+            </value>
+            <value>
+                <fullName>Autodesk Maya</fullName>
+                <default>false</default>
+                <label>Autodesk Maya</label>
+            </value>
+            <value>
+                <fullName>Autodesk Revit.</fullName>
+                <default>false</default>
+                <label>Autodesk Revit.</label>
+            </value>
+            <value>
+                <fullName>Autodesk vRed</fullName>
+                <default>false</default>
+                <label>Autodesk vRed</label>
+            </value>
+            <value>
+                <fullName>AVBP</fullName>
+                <default>false</default>
+                <label>AVBP</label>
+            </value>
+            <value>
+                <fullName>BEST</fullName>
+                <default>false</default>
+                <label>BEST</label>
+            </value>
+            <value>
+                <fullName>BetaCAE ANSA</fullName>
+                <default>false</default>
+                <label>BetaCAE ANSA</label>
+            </value>
+            <value>
+                <fullName>BLAST</fullName>
+                <default>false</default>
+                <label>BLAST</label>
+            </value>
+            <value>
+                <fullName>BSC-DREAM8B</fullName>
+                <default>false</default>
+                <label>BSC-DREAM8B</label>
+            </value>
+            <value>
+                <fullName>CACTUS</fullName>
+                <default>false</default>
+                <label>CACTUS</label>
+            </value>
+            <value>
+                <fullName>Café</fullName>
+                <default>false</default>
+                <label>Café</label>
+            </value>
+            <value>
+                <fullName>CCMS</fullName>
+                <default>false</default>
+                <label>CCMS</label>
+            </value>
+            <value>
+                <fullName>CEI EnSight</fullName>
+                <default>false</default>
+                <label>CEI EnSight</label>
+            </value>
+            <value>
+                <fullName>Chainer</fullName>
+                <default>false</default>
+                <label>Chainer</label>
+            </value>
+            <value>
+                <fullName>CHARMM</fullName>
+                <default>false</default>
+                <label>CHARMM</label>
+            </value>
+            <value>
+                <fullName>CNTK</fullName>
+                <default>false</default>
+                <label>CNTK</label>
+            </value>
+            <value>
+                <fullName>CODE_SATURNE</fullName>
+                <default>false</default>
+                <label>CODE_SATURNE</label>
+            </value>
+            <value>
+                <fullName>COMSOL COMSOL</fullName>
+                <default>false</default>
+                <label>COMSOL COMSOL</label>
+            </value>
+            <value>
+                <fullName>COSMO</fullName>
+                <default>false</default>
+                <label>COSMO</label>
+            </value>
+            <value>
+                <fullName>CP2K</fullName>
+                <default>false</default>
+                <label>CP2K</label>
+            </value>
+            <value>
+                <fullName>CPMD</fullName>
+                <default>false</default>
+                <label>CPMD</label>
+            </value>
+            <value>
+                <fullName>CST STUDIO SUITE</fullName>
+                <default>false</default>
+                <label>CST STUDIO SUITE</label>
+            </value>
+            <value>
+                <fullName>D2S TrueMask</fullName>
+                <default>false</default>
+                <label>D2S TrueMask</label>
+            </value>
+            <value>
+                <fullName>Dassault Systèmes 3DEXCITE Deltagen</fullName>
+                <default>false</default>
+                <label>Dassault Systèmes 3DEXCITE Deltagen</label>
+            </value>
+            <value>
+                <fullName>Dassault Systèmes CATIA</fullName>
+                <default>false</default>
+                <label>Dassault Systèmes CATIA</label>
+            </value>
+            <value>
+                <fullName>Dassault Systèmes Enovia</fullName>
+                <default>false</default>
+                <label>Dassault Systèmes Enovia</label>
+            </value>
+            <value>
+                <fullName>Dassault Systèmes SIMULIA Abaqus</fullName>
+                <default>false</default>
+                <label>Dassault Systèmes SIMULIA Abaqus</label>
+            </value>
+            <value>
+                <fullName>Dassault Systèmes SIMULIA Abaqus/CAE</fullName>
+                <default>false</default>
+                <label>Dassault Systèmes SIMULIA Abaqus/CAE</label>
+            </value>
+            <value>
+                <fullName>Dassault Systèmes SOLIDWORKS</fullName>
+                <default>false</default>
+                <label>Dassault Systèmes SOLIDWORKS</label>
+            </value>
+            <value>
+                <fullName>Dassault Systèmes SOLIDWORKS Visualize</fullName>
+                <default>false</default>
+                <label>Dassault Systèmes SOLIDWORKS Visualize</label>
+            </value>
+            <value>
+                <fullName>DENOVO</fullName>
+                <default>false</default>
+                <label>DENOVO</label>
+            </value>
+            <value>
+                <fullName>DESMOND</fullName>
+                <default>false</default>
+                <label>DESMOND</label>
+            </value>
+            <value>
+                <fullName>Digits</fullName>
+                <default>false</default>
+                <label>Digits</label>
+            </value>
+            <value>
+                <fullName>DL_POLY</fullName>
+                <default>false</default>
+                <label>DL_POLY</label>
+            </value>
+            <value>
+                <fullName>EC EARTH</fullName>
+                <default>false</default>
+                <label>EC EARTH</label>
+            </value>
+            <value>
+                <fullName>ECHAM5</fullName>
+                <default>false</default>
+                <label>ECHAM5</label>
+            </value>
+            <value>
+                <fullName>ESI OPENFOAM</fullName>
+                <default>false</default>
+                <label>ESI OPENFOAM</label>
+            </value>
+            <value>
+                <fullName>ESPRESSO</fullName>
+                <default>false</default>
+                <label>ESPRESSO</label>
+            </value>
+            <value>
+                <fullName>ESRI – ArcGIS</fullName>
+                <default>false</default>
+                <label>ESRI – ArcGIS</label>
+            </value>
+            <value>
+                <fullName>ESSS/GDI RockyDEM</fullName>
+                <default>false</default>
+                <label>ESSS/GDI RockyDEM</label>
+            </value>
+            <value>
+                <fullName>EXA PowerViz</fullName>
+                <default>false</default>
+                <label>EXA PowerViz</label>
+            </value>
+            <value>
+                <fullName>FEFLO</fullName>
+                <default>false</default>
+                <label>FEFLO</label>
+            </value>
+            <value>
+                <fullName>FFT Actran</fullName>
+                <default>false</default>
+                <label>FFT Actran</label>
+            </value>
+            <value>
+                <fullName>Fluent</fullName>
+                <default>false</default>
+                <label>Fluent</label>
+            </value>
+            <value>
+                <fullName>FluiDyna aeroFluidX</fullName>
+                <default>false</default>
+                <label>FluiDyna aeroFluidX</label>
+            </value>
+            <value>
+                <fullName>FluiDyna culises</fullName>
+                <default>false</default>
+                <label>FluiDyna culises</label>
+            </value>
+            <value>
+                <fullName>FluiDyna nanoFluidX</fullName>
+                <default>false</default>
+                <label>FluiDyna nanoFluidX</label>
+            </value>
+            <value>
+                <fullName>FluiDyna ultraFluidX</fullName>
+                <default>false</default>
+                <label>FluiDyna ultraFluidX</label>
+            </value>
+            <value>
+                <fullName>GADGET2</fullName>
+                <default>false</default>
+                <label>GADGET2</label>
+            </value>
+            <value>
+                <fullName>GAMESS</fullName>
+                <default>false</default>
+                <label>GAMESS</label>
+            </value>
+            <value>
+                <fullName>GAUSSIAN</fullName>
+                <default>false</default>
+                <label>GAUSSIAN</label>
+            </value>
+            <value>
+                <fullName>GEOS-5</fullName>
+                <default>false</default>
+                <label>GEOS-5</label>
+            </value>
+            <value>
+                <fullName>GROMACS</fullName>
+                <default>false</default>
+                <label>GROMACS</label>
+            </value>
+            <value>
+                <fullName>GTC</fullName>
+                <default>false</default>
+                <label>GTC</label>
+            </value>
+            <value>
+                <fullName>gWL-LSMS</fullName>
+                <default>false</default>
+                <label>gWL-LSMS</label>
+            </value>
+            <value>
+                <fullName>HELIUM</fullName>
+                <default>false</default>
+                <label>HELIUM</label>
+            </value>
+            <value>
+                <fullName>HMMER</fullName>
+                <default>false</default>
+                <label>HMMER</label>
+            </value>
+            <value>
+                <fullName>HOMME</fullName>
+                <default>false</default>
+                <label>HOMME</label>
+            </value>
+            <value>
+                <fullName>HOOMD</fullName>
+                <default>false</default>
+                <label>HOOMD</label>
+            </value>
+            <value>
+                <fullName>HYCOM</fullName>
+                <default>false</default>
+                <label>HYCOM</label>
+            </value>
+            <value>
+                <fullName>Image Processing (Defense)</fullName>
+                <default>false</default>
+                <label>Image Processing (Defense)</label>
+            </value>
+            <value>
+                <fullName>Impetus Afea Impetus Afea</fullName>
+                <default>false</default>
+                <label>Impetus Afea Impetus Afea</label>
+            </value>
+            <value>
+                <fullName>Intergraph – ERDAS Imagine</fullName>
+                <default>false</default>
+                <label>Intergraph – ERDAS Imagine</label>
+            </value>
+            <value>
+                <fullName>IRAY</fullName>
+                <default>false</default>
+                <label>IRAY</label>
+            </value>
+            <value>
+                <fullName>JSOL JMAG</fullName>
+                <default>false</default>
+                <label>JSOL JMAG</label>
+            </value>
+            <value>
+                <fullName>Kinetica - GPUdb</fullName>
+                <default>false</default>
+                <label>Kinetica - GPUdb</label>
+            </value>
+            <value>
+                <fullName>LAMMPS</fullName>
+                <default>false</default>
+                <label>LAMMPS</label>
+            </value>
+            <value>
+                <fullName>LSMS</fullName>
+                <default>false</default>
+                <label>LSMS</label>
+            </value>
+            <value>
+                <fullName>LSTC LS-Dyna Implicit</fullName>
+                <default>false</default>
+                <label>LSTC LS-Dyna Implicit</label>
+            </value>
+            <value>
+                <fullName>LSTC LS-PrePost</fullName>
+                <default>false</default>
+                <label>LSTC LS-PrePost</label>
+            </value>
+            <value>
+                <fullName>M3D</fullName>
+                <default>false</default>
+                <label>M3D</label>
+            </value>
+            <value>
+                <fullName>MapD</fullName>
+                <default>false</default>
+                <label>MapD</label>
+            </value>
+            <value>
+                <fullName>Mathematica</fullName>
+                <default>false</default>
+                <label>Mathematica</label>
+            </value>
+            <value>
+                <fullName>MATLAB</fullName>
+                <default>false</default>
+                <label>MATLAB</label>
+            </value>
+            <value>
+                <fullName>Mentor Graphics Mentor Graphics</fullName>
+                <default>false</default>
+                <label>Mentor Graphics Mentor Graphics</label>
+            </value>
+            <value>
+                <fullName>midas IT midas</fullName>
+                <default>false</default>
+                <label>midas IT midas</label>
+            </value>
+            <value>
+                <fullName>MILC</fullName>
+                <default>false</default>
+                <label>MILC</label>
+            </value>
+            <value>
+                <fullName>MOLPRO</fullName>
+                <default>false</default>
+                <label>MOLPRO</label>
+            </value>
+            <value>
+                <fullName>MSC ADAMS</fullName>
+                <default>false</default>
+                <label>MSC ADAMS</label>
+            </value>
+            <value>
+                <fullName>MSC Apex</fullName>
+                <default>false</default>
+                <label>MSC Apex</label>
+            </value>
+            <value>
+                <fullName>MSC Marc</fullName>
+                <default>false</default>
+                <label>MSC Marc</label>
+            </value>
+            <value>
+                <fullName>MSC Nastran</fullName>
+                <default>false</default>
+                <label>MSC Nastran</label>
+            </value>
+            <value>
+                <fullName>MSC Patran</fullName>
+                <default>false</default>
+                <label>MSC Patran</label>
+            </value>
+            <value>
+                <fullName>MS Office</fullName>
+                <default>false</default>
+                <label>MS Office</label>
+            </value>
+            <value>
+                <fullName>Murex MACS</fullName>
+                <default>false</default>
+                <label>Murex MACS</label>
+            </value>
+            <value>
+                <fullName>Mxnet</fullName>
+                <default>false</default>
+                <label>Mxnet</label>
+            </value>
+            <value>
+                <fullName>NAMD</fullName>
+                <default>false</default>
+                <label>NAMD</label>
+            </value>
+            <value>
+                <fullName>Name</fullName>
+                <default>false</default>
+                <label>Name</label>
+            </value>
+            <value>
+                <fullName>Navisworks</fullName>
+                <default>false</default>
+                <label>Navisworks</label>
+            </value>
+            <value>
+                <fullName>NEMO</fullName>
+                <default>false</default>
+                <label>NEMO</label>
+            </value>
+            <value>
+                <fullName>NIM</fullName>
+                <default>false</default>
+                <label>NIM</label>
+            </value>
+            <value>
+                <fullName>NSU3D</fullName>
+                <default>false</default>
+                <label>NSU3D</label>
+            </value>
+            <value>
+                <fullName>OptiX</fullName>
+                <default>false</default>
+                <label>OptiX</label>
+            </value>
+            <value>
+                <fullName>Overwatch RemoteView</fullName>
+                <default>false</default>
+                <label>Overwatch RemoteView</label>
+            </value>
+            <value>
+                <fullName>PARATEC</fullName>
+                <default>false</default>
+                <label>PARATEC</label>
+            </value>
+            <value>
+                <fullName>PFLOTRAN</fullName>
+                <default>false</default>
+                <label>PFLOTRAN</label>
+            </value>
+            <value>
+                <fullName>PTC Creo</fullName>
+                <default>false</default>
+                <label>PTC Creo</label>
+            </value>
+            <value>
+                <fullName>PTC IoT</fullName>
+                <default>false</default>
+                <label>PTC IoT</label>
+            </value>
+            <value>
+                <fullName>PTC Windchill</fullName>
+                <default>false</default>
+                <label>PTC Windchill</label>
+            </value>
+            <value>
+                <fullName>PWscf</fullName>
+                <default>false</default>
+                <label>PWscf</label>
+            </value>
+            <value>
+                <fullName>PyTorch</fullName>
+                <default>false</default>
+                <label>PyTorch</label>
+            </value>
+            <value>
+                <fullName>QCD BENCH</fullName>
+                <default>false</default>
+                <label>QCD BENCH</label>
+            </value>
+            <value>
+                <fullName>QMCPACK</fullName>
+                <default>false</default>
+                <label>QMCPACK</label>
+            </value>
+            <value>
+                <fullName>REMCOM REMCOM XFdtd</fullName>
+                <default>false</default>
+                <label>REMCOM REMCOM XFdtd</label>
+            </value>
+            <value>
+                <fullName>RHINO</fullName>
+                <default>false</default>
+                <label>RHINO</label>
+            </value>
+            <value>
+                <fullName>RTT DeltaPix</fullName>
+                <default>false</default>
+                <label>RTT DeltaPix</label>
+            </value>
+            <value>
+                <fullName>S3D</fullName>
+                <default>false</default>
+                <label>S3D</label>
+            </value>
+            <value>
+                <fullName>SEQUEST</fullName>
+                <default>false</default>
+                <label>SEQUEST</label>
+            </value>
+            <value>
+                <fullName>Siemens CD-adapco STAR-CCM+</fullName>
+                <default>false</default>
+                <label>Siemens CD-adapco STAR-CCM+</label>
+            </value>
+            <value>
+                <fullName>Siemens PLM FEMAP</fullName>
+                <default>false</default>
+                <label>Siemens PLM FEMAP</label>
+            </value>
+            <value>
+                <fullName>Siemens PLM LMS Virtual.lab</fullName>
+                <default>false</default>
+                <label>Siemens PLM LMS Virtual.lab</label>
+            </value>
+            <value>
+                <fullName>Siemens PLM NX</fullName>
+                <default>false</default>
+                <label>Siemens PLM NX</label>
+            </value>
+            <value>
+                <fullName>Siemens PLM NX Nastran</fullName>
+                <default>false</default>
+                <label>Siemens PLM NX Nastran</label>
+            </value>
+            <value>
+                <fullName>Siemens PLM SimCenter 3D</fullName>
+                <default>false</default>
+                <label>Siemens PLM SimCenter 3D</label>
+            </value>
+            <value>
+                <fullName>Siemens PLM TeamCenter</fullName>
+                <default>false</default>
+                <label>Siemens PLM TeamCenter</label>
+            </value>
+            <value>
+                <fullName>Signal Processing (Defense)</fullName>
+                <default>false</default>
+                <label>Signal Processing (Defense)</label>
+            </value>
+            <value>
+                <fullName>SMMP</fullName>
+                <default>false</default>
+                <label>SMMP</label>
+            </value>
+            <value>
+                <fullName>SPEAG SEMCAD-X</fullName>
+                <default>false</default>
+                <label>SPEAG SEMCAD-X</label>
+            </value>
+            <value>
+                <fullName>Tableau</fullName>
+                <default>false</default>
+                <label>Tableau</label>
+            </value>
+            <value>
+                <fullName>Tensor Flow</fullName>
+                <default>false</default>
+                <label>Tensor Flow</label>
+            </value>
+            <value>
+                <fullName>TeraChem</fullName>
+                <default>false</default>
+                <label>TeraChem</label>
+            </value>
+            <value>
+                <fullName>Theano</fullName>
+                <default>false</default>
+                <label>Theano</label>
+            </value>
+            <value>
+                <fullName>Torch</fullName>
+                <default>false</default>
+                <label>Torch</label>
+            </value>
+            <value>
+                <fullName>TurboStream</fullName>
+                <default>false</default>
+                <label>TurboStream</label>
+            </value>
+            <value>
+                <fullName>Unreal Engine</fullName>
+                <default>false</default>
+                <label>Unreal Engine</label>
+            </value>
+            <value>
+                <fullName>USM3D</fullName>
+                <default>false</default>
+                <label>USM3D</label>
+            </value>
+            <value>
+                <fullName>VASP</fullName>
+                <default>false</default>
+                <label>VASP</label>
+            </value>
+            <value>
+                <fullName>Vismockup</fullName>
+                <default>false</default>
+                <label>Vismockup</label>
+            </value>
+            <value>
+                <fullName>VMD</fullName>
+                <default>false</default>
+                <label>VMD</label>
+            </value>
+            <value>
+                <fullName>Vratis Speed IT Flow</fullName>
+                <default>false</default>
+                <label>Vratis Speed IT Flow</label>
+            </value>
+            <value>
+                <fullName>Vray-RT</fullName>
+                <default>false</default>
+                <label>Vray-RT</label>
+            </value>
+            <value>
+                <fullName>WRF</fullName>
+                <default>false</default>
+                <label>WRF</label>
+            </value>
+            <value>
+                <fullName>ZeroLight</fullName>
+                <default>false</default>
+                <label>ZeroLight</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>5</visibleLines>
+</CustomField>

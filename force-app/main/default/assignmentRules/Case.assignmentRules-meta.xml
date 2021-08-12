@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssignmentRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignmentRule>
+        <fullName>Nvidia Case Assignment Rules</fullName>
+        <active>true</active>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Case.Is_Skip_Assignment_Rule__c</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Entitlement_Modification_Request_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.Type</field>
+                <operation>equals</operation>
+                <value>Entitlement Transfer</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Entitlement Transfer</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>New_NVIDIA_CRM_User_Request_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>RecordType.Name = &apos;NVIDIA Internal Case&apos;  &amp;&amp; 
+ISPICKVAL(Type, &apos;WWFO Systems Access&apos;) &amp;&amp; 
+ISPICKVAL(Origin, &apos;Web Form&apos;) &amp;&amp;
+Submitted_By__c = Manager_to_Approve_New_user_Setup__c &amp;&amp;
+ISPICKVAL(Sub_Type__c, &apos;New&apos;)</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>MLNX_Data_Request</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>RecordType.Name = &apos;NVIDIA Internal Case&apos; &amp;&amp;
+ISPICKVAL(Origin, &apos;Web Form&apos;) &amp;&amp;
+ISPICKVAL(Type, &apos;Data Request&apos;) &amp;&amp;
+ISPICKVAL ( Sub_Type__c , &apos;MLNX Data&apos;)</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>NVDA_Data_Request</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>RecordType.Name = &apos;NVIDIA Internal Case&apos; &amp;&amp;
+ISPICKVAL(Origin, &apos;Web Form&apos;) &amp;&amp;
+ISPICKVAL(Type, &apos;Data Request&apos;) &amp;&amp;
+ISPICKVAL ( Sub_Type__c , &apos;NVDA Data&apos;)</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Customer_Master_Request_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>1 AND 2 AND 3</booleanFilter>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>NVIDIA Internal Case</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>equals</operation>
+                <value>Web Form</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Type</field>
+                <operation>contains</operation>
+                <value>End Customer,Reseller</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>HQ_Internal_Case_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>NVIDIA Internal Case</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Saturn_V_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Community User Record Type</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>equals</operation>
+                <value>System</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <formula>AND (RecordType.DeveloperName = &apos;Community_User_Record_Type&apos;, Owner:Queue.QueueName  = &apos;Tesla Support Queue&apos;)</formula>
+            <team>Tesla Support Team</team>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>JTP_L1</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND( RecordType.DeveloperName =&apos;Community_User_Record_Type&apos;, OR (Account.RecordType.DeveloperName = &apos;New_Customer_Account&apos;, Account.RecordType.DeveloperName = &apos;NPN_Account_Registry&apos;), ISPICKVAL(Account.Billing_Region__c , &apos;JAPAN&apos;) )</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>NCR_L1</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND( RecordType.DeveloperName =&apos;Community_User_Record_Type&apos;,  OR (Account.RecordType.DeveloperName = &apos;New_Customer_Account&apos;, Account.RecordType.DeveloperName = &apos;NPN_Account_Registry&apos;),  NOT( ISPICKVAL( Account.Billing_Region__c , &apos;JAPAN&apos;)) )</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Generic_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>RecordType.DeveloperName =&apos;Community_User_Record_Type&apos;</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Installation Case</value>
+            </criteriaItems>
+        </ruleEntry>
+    </assignmentRule>
+</AssignmentRules>

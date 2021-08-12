@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Application Source --></label>
+    <name>Application_Source__c</name>
+    <picklistValues>
+        <masterLabel>Ambassador</masterLabel>
+        <translation><!-- Ambassador --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ambassador &amp; SDP</masterLabel>
+        <translation><!-- Ambassador &amp; SDP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NVIDIA - Other</masterLabel>
+        <translation><!-- NVIDIA - Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NVIDIA - SA</masterLabel>
+        <translation><!-- NVIDIA - SA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SDP</masterLabel>
+        <translation><!-- SDP --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

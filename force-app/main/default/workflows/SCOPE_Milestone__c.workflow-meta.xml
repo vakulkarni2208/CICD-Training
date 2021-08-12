@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>SCOPE_Approved_Notice</fullName>
+        <description>SCOPE Approved Notice</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <recipient>jjosephakis@nvidia.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderAddress>wwsalesops@nvidia.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Opportunity_Email_Alerts/SCOPE_Milestone_Approved_Notice</template>
+    </alerts>
+    <alerts>
+        <fullName>SCOPE_Rejected_Notice</fullName>
+        <description>SCOPE Rejected Notice</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <recipient>jjosephakis@nvidia.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderAddress>wwsalesops@nvidia.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Opportunity_Email_Alerts/SCOPE_Milestone_Rejected_Notice</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>SCOPE_Milestone_1_5_Field_Update</fullName>
+        <description>Used to update SCOPE Milestone rebate amount to 1.5%</description>
+        <field>Approved_Rebate__c</field>
+        <formula>0.015</formula>
+        <name>SCOPE Milestone 1.5% Field Update</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>SCOPE_Milestone_5_Field_Update</fullName>
+        <description>Used to update SCOPE Milestone rebate to .5%</description>
+        <field>Approved_Rebate__c</field>
+        <formula>0.005</formula>
+        <name>SCOPE Milestone .5% Field Update</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Approval_Date_for_Milestone</fullName>
+        <field>Approved_Date__c</field>
+        <formula>TODAY ()</formula>
+        <name>Update Approval Date for Milestone</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Milestone_status_for_rejection</fullName>
+        <field>Status__c</field>
+        <name>Update Milestone status for rejection</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Milestone_to_Approved</fullName>
+        <field>Status__c</field>
+        <literalValue>Approved</literalValue>
+        <name>Update Milestone to Approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Rebate_Amount_to_3_5</fullName>
+        <field>Approved_Rebate__c</field>
+        <formula>0.035</formula>
+        <name>Update Rebate Amount to 3.5</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Rebate_amount_to_2_5</fullName>
+        <field>Approved_Rebate__c</field>
+        <formula>0.025</formula>
+        <name>Update Rebate amount to 2.5%</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+</Workflow>

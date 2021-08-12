@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Distribution_Relationships__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Select the Distribution Relationships that apply.</inlineHelpText>
+    <label>Distribution Relationships</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Arrow</fullName>
+                <default>false</default>
+                <label>Arrow</label>
+            </value>
+            <value>
+                <fullName>ASI Corporation</fullName>
+                <default>false</default>
+                <label>ASI Corporation</label>
+            </value>
+            <value>
+                <fullName>D&amp;H Distributing</fullName>
+                <default>false</default>
+                <label>D&amp;H Distributing</label>
+            </value>
+            <value>
+                <fullName>Ingram Micro</fullName>
+                <default>false</default>
+                <label>Ingram Micro</label>
+            </value>
+            <value>
+                <fullName>Ma Labs</fullName>
+                <default>false</default>
+                <label>Ma Labs</label>
+            </value>
+            <value>
+                <fullName>None</fullName>
+                <default>false</default>
+                <label>None</label>
+            </value>
+            <value>
+                <fullName>SED</fullName>
+                <default>false</default>
+                <label>SED</label>
+            </value>
+            <value>
+                <fullName>SuperMicro</fullName>
+                <default>false</default>
+                <label>SuperMicro</label>
+            </value>
+            <value>
+                <fullName>Synnex</fullName>
+                <default>false</default>
+                <label>Synnex</label>
+            </value>
+            <value>
+                <fullName>Tech Data</fullName>
+                <default>false</default>
+                <label>Tech Data</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

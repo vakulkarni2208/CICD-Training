@@ -1,0 +1,284 @@
+<apex:page >
+
+<html>
+<head>
+<title>Dropdowns - Page</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<style type="text/css">
+/*BODY styles  */
+body {
+    font-size: 78%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#mainnav {
+    width: 600px;
+    height: 35px;
+    color: #666;
+    background: #ccc url(bg_menu.jpg) repeat-x;
+}
+/* -------------------------- */
+/* Styling the main navigation on the page... */
+/* ------------------------- */
+/* Overall main navigation styles */
+#nav, #nav ul {
+    float: left;
+    list-style: none;
+    line-height: 1em;
+    color: #999;
+    background-color: transparent;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+}
+/* -------------------------- */
+/* The top main navigation links */
+#nav a {
+    display: block;
+    padding: 5px 20px;
+    color: #242424; 
+    background-color:#ccc;
+    background: url(line.jpg) no-repeat top right; /* puts a "bar" on right of the main nav links */
+    text-decoration: none;
+}
+/* Last main navigation link to have no "bar" on the right side */
+#nav a.last {
+    background-image: none;
+}
+#nav a.one, #nav a.two, #nav a.three {
+    text-align: left;
+    font-size: 1em;
+}
+#nav li {
+    float: left;
+    padding: 0;
+}
+/* -------------------------- */
+/* The dropdown links lists */
+#nav li ul {
+    position: absolute;
+    left: -999em;
+    height: auto;
+    width: 140px; 
+    font-weight: normal;
+    border: 1px solid #999;
+    background-color: #ccc;
+    margin: 0;
+}
+#nav li li {
+    padding: 0;
+    width: 140px; 
+}
+#nav li ul a {
+    padding: 5px 10px;
+    width: 120px;
+    * html width: 100px;
+}
+/* This controls the flyout location of the second level dropdowns */
+#nav li ul ul {
+    margin: -2em 0 0 140px;
+}
+#nav li:hover ul ul, #nav li:hover ul ul ul, #nav li.sfhover ul ul, #nav li.sfhover ul ul ul {
+    left: -999em;
+}
+#nav li:hover ul, #nav li li:hover ul, #nav li li li:hover ul, #nav li.sfhover ul, #nav li li.sfhover ul, #nav li li li.sfhover ul {
+    left: auto;
+}
+/* -------------------------- */
+/* Background of the main nav link while looking at the dropdown */
+#nav li:hover, #nav li.sfhover {
+    background-color: #ccc;
+}
+/* -------------------------- */
+/* The dropdown links list colors */
+#nav li ul.under a {
+    color: #000;
+    background-image: none;
+}
+#nav li ul.under a:hover {
+    background: #f00;
+    color: #fff;
+}
+/* -------------------------- */
+/* The background of the second level links while looking at the dropdown under it... */
+#nav li ul.under li:hover a.secondlist, #nav li ul.under li.sfhover a.secondlist {
+    color: #fff;
+}
+#nav li ul.under li:hover, #nav li ul.under li.sfhover {
+    color: #fff;
+    background-color: #f00;
+}
+/* -------------------------- */
+
+
+
+/* Secondary drop list navigation styles */
+#header {
+    width: 600px;
+    height: 23px;
+    color: #999;
+    background-color: #ccc;
+}
+#secnav, #secnav ul {
+    float: left;
+    list-style: none;
+    line-height: 1em;
+    color: #000;
+    background-color: transparent;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+}
+/* -------------------------- */
+/* Here are the top secondary navigation links */
+#secnav a {
+    display: block;
+    padding: 5px 20px;
+    color: #000;    
+    background-color: #ccc;
+    text-decoration: none;
+}
+#secnav a.one, #secnav a.two, #secnav a.three {
+    text-align: left;
+    font-size: 1em;
+}
+#secnav li {
+    float: left;
+    padding: 0;
+}
+/* -------------------------- */
+/* The dropdown links lists */
+#secnav li ul {
+    position: absolute;
+    left: -999em;
+    height: auto;
+    width: 140px; 
+    font-weight: normal;
+    border: 1px solid #999;
+    background-color: #ccc;
+    margin: 0;
+}
+#secnav li li {
+    padding: 0;
+    width: 140px; 
+}
+#secnav li ul a {
+    padding: 5px 10px;
+    width: 120px;
+    * html width: 100px;
+}
+#secnav li:hover ul ul, #secnav li:hover ul ul ul, #secnav li.sfhover1 ul ul, #secnav li.sfhover1 ul ul ul {
+    left: -999em;
+}
+#secnav li:hover ul, #secnav li li:hover ul, #secnav li li li:hover ul, #secnav li.sfhover1 ul, #secnav li li.sfhover1 ul, #secnav li li li.sfhover1 ul {
+    left: auto;
+}
+/* -------------------------- */
+/* The background and color of the main nav link while looking at the dropdown
+   (a little different than the method used on the main nav...) */
+#secnav li:hover a.one, #secnav li.sfhover1 a.one,
+#secnav li:hover a.two, #secnav li.sfhover1 a.two,
+#secnav li:hover a.three, #secnav li.sfhover1 a.three {
+    color: #fff;
+    background-color: #6CC417;
+}
+/* -------------------------- */
+/* The dropdown links list colors */
+#secnav li ul.under a {
+    color: #000;
+}
+#secnav li ul.under a:hover {
+    background: #6CC417;
+    color: #fff;
+}
+/* -------------------------- */
+#content {
+    clear: left;
+}
+/* -------------------------- */
+</style>
+
+
+<script type="text/javascript">
+<!--
+sfHover = function() {
+    if (!document.getElementsByTagName) return false;
+    var sfEls = document.getElementById("nav").getElementsByTagName("li");
+    // if you only have one main menu - delete the line below //
+    var sfEls1 = document.getElementById("secnav").getElementsByTagName("li");
+    //
+    for (var i=0; i<sfEls.length; i++) {
+        sfEls[i].onmouseover=function() {
+            this.className+=" sfhover";
+        }
+        sfEls[i].onmouseout=function() {
+            this.className=this.className.replace(new RegExp(" sfhover\\b"), "");
+        }
+    }
+    // if you only have one main menu - delete the "for" loop below //
+    for (var i=0; i<sfEls1.length; i++) {
+        sfEls1[i].onmouseover=function() {
+            this.className+=" sfhover1";
+        }
+        sfEls1[i].onmouseout=function() {
+            this.className=this.className.replace(new RegExp(" sfhover1\\b"), "");
+        }
+    }
+    //
+}
+if (window.attachEvent) window.attachEvent("onload", sfHover);
+//-->
+</script>   
+
+</head>
+<body>
+<div id="container">
+<h1>WELCOME!</h1>
+<p>Introducing the NVIDIA <strong>Sales Source</strong></p>
+
+   
+
+<div id="content">
+
+<div id="header">
+<ul id="secnav">
+    <li><a href="http://www.nvidia.com/page/workstation.html" class="one">Workstations</a>
+        <ul class="under">
+            <li><a href="http://www.nvidia.com/object/tesla_computing_solutions.html">Tesla</a></li>
+            <li><a href="#">Sub 2</a></li>
+            <li><a href="#">Sub 3</a></li>           
+            <li><a href="#">Sub 4</a></li>
+            <li><a href="#">Sub More Info</a></li>
+                     <li><a href="#" class="secondlist">SubSet>></a>
+                     <ul>
+                        <li><a href="#">Sub1</a></li>
+                        <li><a href="#">Sub2</a></li>
+                        <li><a href="#">Sub3</a></li>
+                    </ul>    
+            </li> 
+        </ul>
+    </li>
+    
+   
+    <li><a href="#" class="two">Link 2</a>
+        <ul class="under">
+            <li><a href="#">Sub 1</a></li>
+            <li><a href="#">Sub 2</a></li>
+            <li><a href="#">Sub 3</a></li>
+        </ul>
+    </li>
+    <li><a href="#" class="three last">And Still More</a>
+        <ul class="under">
+            <li><a href="#">Sub 1</a></li>
+            <li><a href="#">Sub 2</a></li>
+            <li><a href="http://www.nvidia.com/object/tesla_computing_solutions.html">Tesla Computing</a></li>
+        </ul>
+    </li>
+</ul>
+</div>
+</div>
+</div>
+
+</body>
+</html>
+</apex:page>

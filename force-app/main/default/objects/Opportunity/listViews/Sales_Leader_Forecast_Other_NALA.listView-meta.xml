@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sales_Leader_Forecast_Other_NALA</fullName>
+    <booleanFilter>1 AND 2 AND 3 AND 5 AND 6 AND 4 AND 7</booleanFilter>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>MCO_Eligible_Product_Amount_Other__c</columns>
+    <columns>OPPORTUNITY.CLOSE_DATE</columns>
+    <columns>NV_Forecast_Category__c</columns>
+    <columns>At_Risk_for_CQ_Revenue__c</columns>
+    <columns>OPPORTUNITY.NEXT_STEP</columns>
+    <filterScope>Team</filterScope>
+    <filters>
+        <field>Region__c</field>
+        <operation>equals</operation>
+        <value>NALA</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Opportunity.Enterprise_Sales_Opportunity</value>
+    </filters>
+    <filters>
+        <field>MCO_Eligible_Product_Amount_Other__c</field>
+        <operation>greaterOrEqual</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.CLOSE_DATE</field>
+        <operation>equals</operation>
+        <value>THIS_FISCAL_QUARTER,NEXT_FISCAL_QUARTER</value>
+    </filters>
+    <filters>
+        <field>Industry__c</field>
+        <operation>notEqual</operation>
+        <value>Strategic Hyperscale</value>
+    </filters>
+    <filters>
+        <field>NV_Forecast_Category__c</field>
+        <operation>equals</operation>
+        <value>2-Commit</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.PROBABILITY</field>
+        <operation>lessThan</operation>
+        <value>90</value>
+    </filters>
+    <label>Sales Leader Commit- Other - NALA</label>
+    <sharedTo>
+        <group>SL_Revenue_Risk</group>
+        <role>NALA_Other_Sales</role>
+        <role>NALA_Sales_VP</role>
+        <role>New_Hierarchy</role>
+    </sharedTo>
+</ListView>

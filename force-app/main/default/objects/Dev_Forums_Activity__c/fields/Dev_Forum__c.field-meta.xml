@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Dev_Forum__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <externalId>false</externalId>
+    <label>Dev Forum</label>
+    <referenceTo>Dev_Forum__c</referenceTo>
+    <relationshipLabel>Dev Forums Activities</relationshipLabel>
+    <relationshipName>Dev_Forums_Activities</relationshipName>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

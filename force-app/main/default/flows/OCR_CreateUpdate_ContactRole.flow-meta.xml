@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <decisions>
+        <name>Check_Contact_Id_and_Contact_Role</name>
+        <label>Check Contact Id and Contact Role</label>
+        <locationX>464</locationX>
+        <locationY>382</locationY>
+        <defaultConnectorLabel>[Default Outcome]</defaultConnectorLabel>
+        <rules>
+            <name>Create_OCR</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>varOCR_ContactId</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue/>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>varOCR_RoleName</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue/>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>OCR_Create_OCR</targetReference>
+            </connector>
+            <label>Create OCR</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Check the OCR Id, if found then we need update it otherwise we need to create one</description>
+        <name>OCR_Check_OCR_Id</name>
+        <label>OCR : Check OCR Id</label>
+        <locationX>542</locationX>
+        <locationY>273</locationY>
+        <defaultConnector>
+            <targetReference>OCR_Update_OCR</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>[Default Outcome]</defaultConnectorLabel>
+        <rules>
+            <name>OCR_Id_is_null</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>varOCR_OppContactRoleId</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Check_Contact_Id_and_Contact_Role</targetReference>
+            </connector>
+            <label>OCR Id is null</label>
+        </rules>
+    </decisions>
+    <description>Opportunity Contact Role - create/update</description>
+    <interviewLabel>OCR_CreateUpdate_ContactRole {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>OCR_CreateUpdate_ContactRole</label>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <name>OCR_Create_OCR</name>
+        <label>OCR : Create OCR</label>
+        <locationX>400</locationX>
+        <locationY>521</locationY>
+        <assignRecordIdToReference>varOCR_OppContactRoleId</assignRecordIdToReference>
+        <inputAssignments>
+            <field>ContactId</field>
+            <value>
+                <elementReference>varOCR_ContactId</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>IsPrimary</field>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>OpportunityId</field>
+            <value>
+                <elementReference>varOCR_OpportunityId</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Role</field>
+            <value>
+                <elementReference>varOCR_RoleName</elementReference>
+            </value>
+        </inputAssignments>
+        <object>OpportunityContactRole</object>
+    </recordCreates>
+    <recordLookups>
+        <name>OCR_Find_Primary_Opportunity_Contact_Role_Id</name>
+        <label>OCR : Find Primary Opportunity Contact Role Id</label>
+        <locationX>543</locationX>
+        <locationY>143</locationY>
+        <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>OCR_Check_OCR_Id</targetReference>
+        </connector>
+        <filters>
+            <field>ContactId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>varOCR_ContactId</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>OpportunityId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>varOCR_OpportunityId</elementReference>
+            </value>
+        </filters>
+        <object>OpportunityContactRole</object>
+        <outputAssignments>
+            <assignToReference>varOCR_OppContactRoleId</assignToReference>
+            <field>Id</field>
+        </outputAssignments>
+    </recordLookups>
+    <recordUpdates>
+        <description>Update the existing Opportunity Contact Role</description>
+        <name>OCR_Update_OCR</name>
+        <label>OCR : Update OCR</label>
+        <locationX>634</locationX>
+        <locationY>440</locationY>
+        <filters>
+            <field>ContactId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>varOCR_ContactId</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>OpportunityId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>varOCR_OpportunityId</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>IsPrimary</field>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Role</field>
+            <value>
+                <elementReference>varOCR_RoleName</elementReference>
+            </value>
+        </inputAssignments>
+        <object>OpportunityContactRole</object>
+    </recordUpdates>
+    <startElementReference>OCR_Find_Primary_Opportunity_Contact_Role_Id</startElementReference>
+    <status>Active</status>
+    <variables>
+        <description>Opportunity Contact Role - variable used to capture Contact Id</description>
+        <name>varOCR_ContactId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <description>Opportunity Contact Role - variable used to capture existing primary Opportunity Contact Role Id</description>
+        <name>varOCR_OppContactRoleId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <description>Opportunity Contact Role - variable used to capture Opportunity Id</description>
+        <name>varOCR_OpportunityId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <description>Opportunity Contact Role - variable used to capture Primary Role</description>
+        <name>varOCR_RoleName</name>
+        <dataType>Picklist</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+</Flow>

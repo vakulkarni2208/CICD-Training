@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Order Type --></label>
+    <name>Order_Type__c</name>
+    <picklistValues>
+        <masterLabel>DGX</masterLabel>
+        <translation><!-- DGX --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DGX-2</masterLabel>
+        <translation><!-- DGX-2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DLI</masterLabel>
+        <translation><!-- DLI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Drive</masterLabel>
+        <translation><!-- Drive --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GRID</masterLabel>
+        <translation><!-- GRID --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RTX Blade</masterLabel>
+        <translation><!-- RTX Blade --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

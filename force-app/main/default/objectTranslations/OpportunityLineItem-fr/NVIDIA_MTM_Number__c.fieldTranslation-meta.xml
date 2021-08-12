@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- NVIDIA MTM Number from the Price Book Entry Object --></help>
+    <label><!-- NVIDIA MTM Number --></label>
+    <name>NVIDIA_MTM_Number__c</name>
+</CustomFieldTranslation>

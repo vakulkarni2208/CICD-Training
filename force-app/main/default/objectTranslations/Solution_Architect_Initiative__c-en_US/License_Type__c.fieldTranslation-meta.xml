@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- License Type --></label>
+    <name>License_Type__c</name>
+    <picklistValues>
+        <masterLabel>QvDWS</masterLabel>
+        <translation><!-- QvDWS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>vAPPs</masterLabel>
+        <translation><!-- vAPPs --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>vCS</masterLabel>
+        <translation><!-- vCS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>vPC</masterLabel>
+        <translation><!-- vPC --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

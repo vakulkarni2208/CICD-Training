@@ -1,0 +1,6 @@
+<apex:page standardController="Opportunity" showQuickActionVfHeader="false">
+ <flow:interview name="Deal_Registration_FL_Convert_DR_Products" finishLocation="/{!Opportunity.Id}">
+   <apex:param name="OpportunityId" value="{!Opportunity.Id}"/>
+   <apex:param name="DR_Program_Type" value="{!Opportunity.Program_Type__c}"/> 
+ </flow:interview>
+</apex:page>

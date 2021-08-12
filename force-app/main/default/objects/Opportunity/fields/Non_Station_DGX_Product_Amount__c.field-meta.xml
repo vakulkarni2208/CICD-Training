@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Non_Station_DGX_Product_Amount__c</fullName>
+    <description>Roll up of DGX Product amounts from line items excluding DGX Station amounts</description>
+    <externalId>false</externalId>
+    <label>Non-Station DGX Product Amount</label>
+    <summarizedField>OpportunityLineItem.Line_Item_Total_Cost__c</summarizedField>
+    <summaryFilterItems>
+        <field>OpportunityLineItem.Product_Name__c</field>
+        <operation>contains</operation>
+        <value>DGX</value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>OpportunityLineItem.Product_Name__c</field>
+        <operation>notContain</operation>
+        <value>Station</value>
+    </summaryFilterItems>
+    <summaryForeignKey>OpportunityLineItem.OpportunityId</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

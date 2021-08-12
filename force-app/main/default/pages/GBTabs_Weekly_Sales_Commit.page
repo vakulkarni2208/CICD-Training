@@ -1,0 +1,41 @@
+<apex:page showHeader="true" sidebar="false" title="Weekly Sales Commit">
+	<GBLite:TabbedPageComponent pageAPIName="GBTabs_Weekly_Sales_Commit" customJsIds="" customCssIds="">
+	<GBLite:EmbedComponent baseGridUrl="{!$Page.GBLite__Grid}" />
+		<script>
+			var pageDefinition = {
+	"name": "Weekly Sales Commit",
+	"tabs": [
+		{
+			"name": "Rep View",
+			"content": "{!gridPage}gname=Weekly Sales Commit&sh=0&sfname=admin_Rep+View",
+			"id": 1535575520563
+		},
+		{
+			"name": "Grouped",
+			"content": "{!gridPage}gname=Weekly Sales Commit&sh=0&sfname=admin_Grouped",
+			"id": 1535575686769
+		},
+		{
+			"name": "Default",
+			"content": "{!gridPage}gname=Weekly Sales Commit&sh=0&sfname=default",
+			"id": 1535575724354
+		},
+		{
+			"name": "Manager View",
+			"content": "{!gridPage}gname=Weekly Sales Commit&sh=0&sfname=default&fpf=Owner.ManagerId&fpv={!$User.Id}",
+			"id": 1535575739776
+		}
+	],
+	"id": 1535575520563,
+	"selectedCustomCSSIds": [],
+	"selectedCustomJSIds": [],
+	"description": "",
+	"globalButtons": false,
+	"object": "0",
+	"height": "700",
+	"showHeader": true,
+	"showSidebar": false
+};
+		</script>
+	</GBLite:TabbedPageComponent>
+</apex:page>

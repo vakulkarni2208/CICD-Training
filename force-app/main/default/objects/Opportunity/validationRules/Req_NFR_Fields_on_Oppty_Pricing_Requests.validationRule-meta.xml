@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Req_NFR_Fields_on_Oppty_Pricing_Requests</fullName>
+    <active>true</active>
+    <description>JIRA #SDS-2699 : Require NFR/Sample workflow fields on Pricing Requests</description>
+    <errorConditionFormula>AND(
+ RecordType.DeveloperName = &quot;Special_Pricing_Request&quot;,
+ OR(
+  ISPICKVAL(Special_Pricing_Request_Type__c, &quot;Not for Resale (NFR)&quot;),
+  ISPICKVAL(Special_Pricing_Request_Type__c, &quot;Engineering Qual&quot;),
+  ISPICKVAL(Special_Pricing_Request_Type__c, &quot;Samples&quot;)
+ ),
+ OR(
+  ISBLANK(Customer_Program_Name__c),
+  ISBLANK(Program_Description__c),
+  ISBLANK(Scheduled_Milestones__c),
+  ISPICKVAL(Benefit_Tracking_Metric__c, &quot;&quot;),
+  ISBLANK(Customer_Segment__c) 
+ )
+)</errorConditionFormula>
+    <errorMessage>The fields &apos;Customer Program Name&apos;, &apos;Program Description&apos;, &apos;Scheduled Milestones&apos;, &apos;Benefit Tracking Metric&apos; and &apos;Customer Segment&apos; cannot be blank</errorMessage>
+</ValidationRule>

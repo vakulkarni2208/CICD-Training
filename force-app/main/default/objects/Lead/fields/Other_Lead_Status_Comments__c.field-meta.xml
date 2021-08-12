@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Other_Lead_Status_Comments__c</fullName>
+    <description>SDS-1625 - MKTG: Lead Status Validations for ECL and pre-MQL Leads</description>
+    <externalId>false</externalId>
+    <label>Other Lead Status (Comments)</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>TextArea</type>
+</CustomField>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Functionality_Name__c</fullName>
+    <externalId>false</externalId>
+    <label>Functionality Name</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Service: SAP RMA Callout</fullName>
+                <default>false</default>
+                <label>Service: SAP RMA Callout</label>
+            </value>
+            <value>
+                <fullName>IDM: User Sync</fullName>
+                <default>false</default>
+                <label>IDM: User Sync</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

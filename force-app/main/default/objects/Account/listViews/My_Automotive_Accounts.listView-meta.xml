@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>My_Automotive_Accounts</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ACCOUNT.ADDRESS1_STATE_CODE</columns>
+    <columns>ACCOUNT.PHONE1</columns>
+    <columns>What_Do_They_Do__c</columns>
+    <columns>Automotive_Inception__c</columns>
+    <columns>Automotive_Startup__c</columns>
+    <columns>ACCOUNT.URL</columns>
+    <columns>Account_Number__c</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>ACCOUNT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Account.New_Customer_Account</value>
+    </filters>
+    <label>My Automotive Accounts</label>
+</ListView>

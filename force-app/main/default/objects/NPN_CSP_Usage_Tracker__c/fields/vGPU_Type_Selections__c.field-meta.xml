@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>vGPU_Type_Selections__c</fullName>
+    <description>What type of service access has your partner signed up for?  
+Named user access or concurrent user access?</description>
+    <externalId>false</externalId>
+    <label>vGPU Type Selections</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Workload__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Named Users</fullName>
+                <default>false</default>
+                <label>Named Users</label>
+            </value>
+            <value>
+                <fullName>Concurrent Users</fullName>
+                <default>false</default>
+                <label>Concurrent Users</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Graphics Virtualization (vGPU)</controllingFieldValue>
+            <valueName>Named Users</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Graphics Virtualization (vGPU)</controllingFieldValue>
+            <valueName>Concurrent Users</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

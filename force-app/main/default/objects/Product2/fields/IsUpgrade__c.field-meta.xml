@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IsUpgrade__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Upgrade Product</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Upgrade Product</inlineHelpText>
+    <label>IsUpgrade</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

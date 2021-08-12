@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- IDM - Revoke SOCRM Role - API Call Response --></help>
+    <label><!-- IDM - Revoke SOCRM Role - Call Response --></label>
+    <name>IDM_Revoke_SOCRM_Role_Call_Response__c</name>
+</CustomFieldTranslation>

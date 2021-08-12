@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<HomePageLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <narrowComponents>HP_Logo_6_22</narrowComponents>
+    <narrowComponents>standard-StandardSearch</narrowComponents>
+    <narrowComponents>Guidelines</narrowComponents>
+    <narrowComponents>Portal Training</narrowComponents>
+    <narrowComponents>standard-MessagesAndAlerts</narrowComponents>
+    <narrowComponents>standard-RecentItems</narrowComponents>
+    <wideComponents>Quick View Reports</wideComponents>
+    <wideComponents>NVIDIA HP Sales Resource Center</wideComponents>
+</HomePageLayout>

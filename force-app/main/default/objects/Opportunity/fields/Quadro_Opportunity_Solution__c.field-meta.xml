@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Quadro_Opportunity_Solution__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Choose the GRID or Quadro product solution that applies to this Opportunity.  If you choose GRID VGX product, there are additional required fields.</inlineHelpText>
+    <label>Product Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>GRID (VGX) Opportunity</fullName>
+                <default>false</default>
+                <label>GRID (VGX) Opportunity</label>
+            </value>
+            <value>
+                <fullName>Traditional workstation (Quadro)</fullName>
+                <default>false</default>
+                <label>Traditional workstation (Quadro)</label>
+            </value>
+            <value>
+                <fullName>QUADRO VCA</fullName>
+                <default>false</default>
+                <label>QUADRO VCA</label>
+            </value>
+            <value>
+                <fullName>SVS (Scalable Visualization Solutions)</fullName>
+                <default>false</default>
+                <label>SVS (Scalable Visualization Solutions)</label>
+            </value>
+            <value>
+                <fullName>DVP (Digital Video Pipeline)</fullName>
+                <default>false</default>
+                <label>DVP (Digital Video Pipeline)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

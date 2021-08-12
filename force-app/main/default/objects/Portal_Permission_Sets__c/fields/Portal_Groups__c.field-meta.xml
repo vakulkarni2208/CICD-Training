@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Portal_Groups__c</fullName>
+    <externalId>false</externalId>
+    <label>Permissions &amp; Group Assignments</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Community</fullName>
+                <default>false</default>
+                <label>Community</label>
+            </value>
+            <value>
+                <fullName>Compute DGX Portal Full</fullName>
+                <default>false</default>
+                <label>Compute DGX Portal Full</label>
+            </value>
+            <value>
+                <fullName>Compute Portal Full</fullName>
+                <default>false</default>
+                <label>Compute Portal Full</label>
+            </value>
+            <value>
+                <fullName>DISTI Compute DGX Elite</fullName>
+                <default>false</default>
+                <label>DISTI Compute DGX Elite</label>
+            </value>
+            <value>
+                <fullName>DISTI Compute DGX Preferred</fullName>
+                <default>false</default>
+                <label>DISTI Compute DGX Preferred</label>
+            </value>
+            <value>
+                <fullName>DISTI Compute Elite</fullName>
+                <default>false</default>
+                <label>DISTI Compute Elite</label>
+            </value>
+            <value>
+                <fullName>DISTI Compute Preferred</fullName>
+                <default>false</default>
+                <label>DISTI Compute Preferred</label>
+            </value>
+            <value>
+                <fullName>DISTI Virtualization Elite</fullName>
+                <default>false</default>
+                <label>DISTI Virtualization Elite</label>
+            </value>
+            <value>
+                <fullName>DISTI Virtualization Preferred</fullName>
+                <default>false</default>
+                <label>DISTI Virtualization Preferred</label>
+            </value>
+            <value>
+                <fullName>DISTI Visualization Elite</fullName>
+                <default>false</default>
+                <label>DISTI Visualization Elite</label>
+            </value>
+            <value>
+                <fullName>DISTI Visualization Preferred</fullName>
+                <default>false</default>
+                <label>DISTI Visualization Preferred</label>
+            </value>
+            <value>
+                <fullName>EDU Lead Registration</fullName>
+                <default>false</default>
+                <label>EDU Lead Registration</label>
+            </value>
+            <value>
+                <fullName>Elite</fullName>
+                <default>false</default>
+                <label>Elite</label>
+            </value>
+            <value>
+                <fullName>Embedded Edge Portal Full</fullName>
+                <default>false</default>
+                <label>Embedded Edge Portal Full</label>
+            </value>
+            <value>
+                <fullName>Entitlements</fullName>
+                <default>false</default>
+                <label>Entitlements</label>
+            </value>
+            <value>
+                <fullName>GRID VCA Legacy</fullName>
+                <default>false</default>
+                <label>GRID VCA Legacy</label>
+            </value>
+            <value>
+                <fullName>GRID VGX Legacy</fullName>
+                <default>false</default>
+                <label>GRID VGX Legacy</label>
+            </value>
+            <value>
+                <fullName>IP Portal Lite</fullName>
+                <default>false</default>
+                <label>IP Portal Lite</label>
+            </value>
+            <value>
+                <fullName>Leads &amp; Opportunities</fullName>
+                <default>false</default>
+                <label>Leads &amp; Opportunities</label>
+            </value>
+            <value>
+                <fullName>Manage Contacts</fullName>
+                <default>false</default>
+                <label>Manage Contacts</label>
+            </value>
+            <value>
+                <fullName>Manager</fullName>
+                <default>false</default>
+                <label>Manager</label>
+            </value>
+            <value>
+                <fullName>Marketing Hub</fullName>
+                <default>false</default>
+                <label>Marketing Hub</label>
+            </value>
+            <value>
+                <fullName>MDF</fullName>
+                <default>false</default>
+                <label>MDF</label>
+            </value>
+            <value>
+                <fullName>MDFV3</fullName>
+                <default>false</default>
+                <label>MDFV3</label>
+            </value>
+            <value>
+                <fullName>NFR SW License Request</fullName>
+                <default>false</default>
+                <label>NFR SW License Request</label>
+            </value>
+            <value>
+                <fullName>NPN Compliance(SFDC)</fullName>
+                <default>false</default>
+                <label>NPN Compliance(SFDC)</label>
+            </value>
+            <value>
+                <fullName>NPN Compliance(Tableau)</fullName>
+                <default>false</default>
+                <label>NPN Compliance(Tableau)</label>
+            </value>
+            <value>
+                <fullName>NPN QPB Statement</fullName>
+                <default>false</default>
+                <label>NPN QPB Statement</label>
+            </value>
+            <value>
+                <fullName>NPN Submit POS</fullName>
+                <default>false</default>
+                <label>NPN Submit POS</label>
+            </value>
+            <value>
+                <fullName>OEM Compute Elite</fullName>
+                <default>false</default>
+                <label>OEM Compute Elite</label>
+            </value>
+            <value>
+                <fullName>Opportunity Registration</fullName>
+                <default>false</default>
+                <label>Opportunity Registration</label>
+            </value>
+            <value>
+                <fullName>Portal</fullName>
+                <default>false</default>
+                <label>Portal</label>
+            </value>
+            <value>
+                <fullName>Portal Lite</fullName>
+                <default>false</default>
+                <label>Portal Lite</label>
+            </value>
+            <value>
+                <fullName>Renewals</fullName>
+                <default>false</default>
+                <label>Renewals</label>
+            </value>
+            <value>
+                <fullName>RTX6000 Refresh Promotion</fullName>
+                <default>false</default>
+                <label>RTX6000 Refresh Promotion</label>
+            </value>
+            <value>
+                <fullName>SDP Edu Compute DGX Preferred</fullName>
+                <default>false</default>
+                <label>SDP Edu Compute DGX Preferred</label>
+            </value>
+            <value>
+                <fullName>SDP PS Embedded Edge Preferred</fullName>
+                <default>false</default>
+                <label>SDP PS Embedded Edge Preferred</label>
+            </value>
+            <value>
+                <fullName>Service Cloud Access</fullName>
+                <default>false</default>
+                <label>Service Cloud Access</label>
+            </value>
+            <value>
+                <fullName>Services Subcontractor</fullName>
+                <default>false</default>
+                <label>Services Subcontractor</label>
+            </value>
+            <value>
+                <fullName>SIP Embedded Edge Elite</fullName>
+                <default>false</default>
+                <label>SIP Embedded Edge Elite</label>
+            </value>
+            <value>
+                <fullName>SIP Embedded Edge Preferred</fullName>
+                <default>false</default>
+                <label>SIP Embedded Edge Preferred</label>
+            </value>
+            <value>
+                <fullName>SOEM Portal Lite</fullName>
+                <default>false</default>
+                <label>SOEM Portal Lite</label>
+            </value>
+            <value>
+                <fullName>SP Compute DGX Elite</fullName>
+                <default>false</default>
+                <label>SP Compute DGX Elite</label>
+            </value>
+            <value>
+                <fullName>SP Compute DGX Preferred</fullName>
+                <default>false</default>
+                <label>SP Compute DGX Preferred</label>
+            </value>
+            <value>
+                <fullName>SP Compute Elite</fullName>
+                <default>false</default>
+                <label>SP Compute Elite</label>
+            </value>
+            <value>
+                <fullName>SP Compute Preferred</fullName>
+                <default>false</default>
+                <label>SP Compute Preferred</label>
+            </value>
+            <value>
+                <fullName>SP Virtualization Elite</fullName>
+                <default>false</default>
+                <label>SP Virtualization Elite</label>
+            </value>
+            <value>
+                <fullName>SP Virtualization Preferred</fullName>
+                <default>false</default>
+                <label>SP Virtualization Preferred</label>
+            </value>
+            <value>
+                <fullName>SP Visualization Elite</fullName>
+                <default>false</default>
+                <label>SP Visualization Elite</label>
+            </value>
+            <value>
+                <fullName>SP Visualization Preferred</fullName>
+                <default>false</default>
+                <label>SP Visualization Preferred</label>
+            </value>
+            <value>
+                <fullName>TE Leads &amp; Opportunities</fullName>
+                <default>false</default>
+                <label>TE Leads &amp; Opportunities</label>
+            </value>
+            <value>
+                <fullName>TPP Legacy</fullName>
+                <default>false</default>
+                <label>TPP Legacy</label>
+            </value>
+            <value>
+                <fullName>Virtualization Portal Full</fullName>
+                <default>false</default>
+                <label>Virtualization Portal Full</label>
+            </value>
+            <value>
+                <fullName>Visualization Portal Full</fullName>
+                <default>false</default>
+                <label>Visualization Portal Full</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>5</visibleLines>
+</CustomField>

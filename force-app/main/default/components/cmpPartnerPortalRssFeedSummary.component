@@ -1,0 +1,135 @@
+<apex:component controller="clsPartnerPortalRssFeed" >
+    <apex:stylesheet value="{!URLFOR($Resource.GRIDStyles, 'grid.css')}"/> 
+
+	<style>
+		.horz-divider{
+			border-top: 1px solid #64a739;
+			margin-bottom: 1em;
+			margin-top: 1em;
+			width:795px;
+		}
+		.wideBoxTitle {
+  			background-color: #76B900;
+  			width: 795px;
+  			max-width: 795px;
+  			min-width: 795px;
+  			position: relative;
+  			display: inline-block;
+  			zoom: 1;
+  			overflow-x: hidden;
+  			font-weight: bold;
+  			font-size: 16px;
+ 			text-transform: uppercase;
+  			text-align: left;
+  			line-height: 30px;
+  			color: #fff;
+		}
+	
+		.wideBoxTitle--divider {
+			position: relative;
+			height:13px;
+			background-color:#76b900;
+		    background-image: -moz-linear-gradient(bottom, #277220, black); /* FF3.6 */
+		    background-image: -webkit-linear-gradient(bottom, #277220, black); /* Safari 5.1+, Chrome 10+ */
+		    background-image: -o-linear-gradient(bottom, #277220, black); /* Opera 11.1+ */
+		    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='black', endColorstr='#277220')"; /* IE8+ */
+		    background-image: linear-gradient(to top, #277220, black);
+		}
+		.wideBoxTitle--divider:before {
+			content: "";
+		  	width: 0px;
+		  	height: 0px;
+		  	border-style: solid;
+		  	border-width: 13px 13px 0 0;
+		  	border-color: #ffffff transparent transparent transparent;
+		  	position: absolute;
+		  	top: 0px;
+		  	left: 0px;
+		}
+		.wideBoxTitle--divider:after {
+		  	content: "";
+		  	width: 0px;
+		  	height: 0px;
+		  	border-style: solid;
+		  	border-width: 0 13px 13px 0;
+		  	border-color: transparent #ffffff transparent transparent;
+		  	position: absolute;
+		  	right: 0px;
+		  	top: 0px;
+		}
+	</style>
+
+
+	<apex:attribute name="title" description="Title to display at the top of the feed." type="String" required="false" />
+	<apex:attribute name="debug" description="debug DIV is turned on" type="Boolean" />
+	<apex:attribute name="feedURL" description="Where to fetch the RSS feed." type="String" required="true" assignTo="{!compFeedURL}" />
+	<apex:attribute name="entriesCount" description="Number of feed entries to present."  type="Integer"    required="false" assignTo="{!entriesToShow}"  />
+	<apex:attribute name="headline" description="headline only display mode" type="Boolean" />
+	 
+	<table border="0" width="100%" align="center">
+		<tr>
+			<td>
+    			<apex:outputPanel layout="block" rendered="{!debug}" > 
+        			<br />
+        			rssFeed component debug output, 
+        			feedURL: {!feedURL}<br />
+        			entriesCount: {!entriesCount} entries<br />
+	       			<apex:repeat value="{!feedContent}" var="entry">
+	            		<apex:outputText value="{!entry.title}" />
+	            		<br />  
+	        		</apex:repeat>          
+    			</apex:outputPanel>
+
+    			<apex:outputPanel layout="block" rendered="{!NOT(headline)}">
+					<table align="left" width="795px" border="0" cellpadding="0" cellspacing="0" style="background-color:#FFFFFF;"> 
+						<tr>
+							<td nowrap="true" valign="top">
+								<div class="wideBoxTitle--divider"></div>
+								<div class="wideBoxTitle">&nbsp;&nbsp;{!$Label.COMM_PP_CMP_Latest_NV_News}</div>
+       						</td>
+						</tr>
+					</table>
+
+    				<div class="main mainwide">
+        				<a name="gravy"></a>    
+						<div class="one_col">
+    						<div class="colLeft">
+    							<div class="colContent1">
+    								<div class="results">
+										<div id="ctl00_body_ctl00_ctlLatestSocialMediaBlog_pnlContainer">
+        									<apex:repeat value="{!feedContent}" var="entry">
+												<div class="horz-divider">
+													<br /><h3><a href="{!entry.href}" >{!entry.title}</a></h3>
+             
+													<table border="0" width="100%">
+														<tr>
+															<td class="content" width="30%"><a href="{!entry.href}"><img src='{!entry.summaryImage}' height="115" width="179"/></a></td>
+															<td class="content">
+																<b><i><apex:outputText value="By {!entry.author} on {!entry.date}</i>" escape="false"/></i></b><br /><br />
+																<apex:outputText value="{!entry.summary}" escape="false"/>
+															</td>
+														</tr>
+													</table>
+												</div>
+											</apex:repeat>
+    
+    									</div><!--ctl00_body_ctl00_ctlLatestSocialMediaBlog_pnlContainer-->
+    								</div><!-- close results-->
+								</div><!-- close colContent-->
+							</div><!-- close col -->
+							<div class="clr"></div>
+						</div><!-- close mainWide -->
+					</div><!-- close content -->
+   				</apex:outputPanel>
+   			
+   			
+				<apex:outputPanel layout="block" rendered="{!headline}"><h3>{!title}</h3>
+        			<apex:repeat value="{!feedContent}" var="entry">
+						<a href="{!entry.href}"><img src="http://www.salesforce.com/site/us/assets/developer/date{!entry.index}.gif" class="date"/><p class="adnindent">{!entry.title}</p></a>
+        			</apex:repeat>
+    			</apex:outputPanel>
+			</td>
+		</tr>
+	</table>
+
+</apex:component>

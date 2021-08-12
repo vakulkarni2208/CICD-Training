@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Record_ID__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Record Id or list of record Ids or Batch Job Id etc which can help to locate the exact record.</inlineHelpText>
+    <label>Record Id(s)</label>
+    <length>32768</length>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>2</visibleLines>
+</CustomField>

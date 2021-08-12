@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- TAM Primary --></label>
+    <lookupFilter>
+        <errorMessage><!-- Only Internal Users can be selected for this field. --></errorMessage>
+    </lookupFilter>
+    <name>Regional_TAM__c</name>
+    <relationshipLabel><!-- Accounts (TAM Primary) --></relationshipLabel>
+</CustomFieldTranslation>

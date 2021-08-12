@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Controlled by IBD team for reporting purposes --></help>
+    <label><!-- Industry Segment --></label>
+    <name>Industry_Segment__c</name>
+    <picklistValues>
+        <masterLabel>Asset Management</masterLabel>
+        <translation><!-- Asset Management --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Delivery</masterLabel>
+        <translation><!-- Delivery --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Downstream</masterLabel>
+        <translation><!-- Downstream --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Electronics</masterLabel>
+        <translation><!-- Electronics --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Exchanges and Clearinghouses</masterLabel>
+        <translation><!-- Exchanges and Clearinghouses --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fintech</masterLabel>
+        <translation><!-- Fintech --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hedge Funds and Proprietary Traders</masterLabel>
+        <translation><!-- Hedge Funds and Proprietary Traders --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Instruments</masterLabel>
+        <translation><!-- Instruments --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Investment Banking</masterLabel>
+        <translation><!-- Investment Banking --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MaaS</masterLabel>
+        <translation><!-- MaaS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mapping</masterLabel>
+        <translation><!-- Mapping --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Market Data Providers</masterLabel>
+        <translation><!-- Market Data Providers --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Media Streaming</masterLabel>
+        <translation><!-- Media Streaming --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Midstream</masterLabel>
+        <translation><!-- Midstream --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mining</masterLabel>
+        <translation><!-- Mining --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OEM</masterLabel>
+        <translation><!-- OEM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Oilfield Service Provider</masterLabel>
+        <translation><!-- Oilfield Service Provider --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Payers</masterLabel>
+        <translation><!-- Payers --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pharma</masterLabel>
+        <translation><!-- Pharma --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Provider</masterLabel>
+        <translation><!-- Provider --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Regulators</masterLabel>
+        <translation><!-- Regulators --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Research &amp; Government</masterLabel>
+        <translation><!-- Research &amp; Government --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Retail Banking</masterLabel>
+        <translation><!-- Retail Banking --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Retail Insurance (Casualty &amp; Property)</masterLabel>
+        <translation><!-- Retail Insurance (Casualty &amp; Property) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Semiconductor</masterLabel>
+        <translation><!-- Semiconductor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Services</masterLabel>
+        <translation><!-- Services --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Social Media</masterLabel>
+        <translation><!-- Social Media --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Startup</masterLabel>
+        <translation><!-- Startup --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Startups AI</masterLabel>
+        <translation><!-- Startups AI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Startups OEM</masterLabel>
+        <translation><!-- Startups OEM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tier 1</masterLabel>
+        <translation><!-- Tier 1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Truck</masterLabel>
+        <translation><!-- Truck --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Upstream</masterLabel>
+        <translation><!-- Upstream --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Utilities - Distribution (GRID)</masterLabel>
+        <translation><!-- Utilities - Distribution (GRID) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Utilities - Power Generation</masterLabel>
+        <translation><!-- Utilities - Power Generation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Utilities - Retail</masterLabel>
+        <translation><!-- Utilities - Retail --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>eCommerce</masterLabel>
+        <translation><!-- eCommerce --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

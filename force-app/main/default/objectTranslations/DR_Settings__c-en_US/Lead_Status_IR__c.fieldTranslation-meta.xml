@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Opp Reg 3.0 field to set the Lead Status to  &quot;In Review&quot; --></help>
+    <label><!-- Lead Status : IR --></label>
+    <name>Lead_Status_IR__c</name>
+</CustomFieldTranslation>

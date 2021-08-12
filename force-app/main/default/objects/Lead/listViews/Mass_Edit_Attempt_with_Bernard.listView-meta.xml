@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mass_Edit_Attempt_with_Bernard</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>LEAD.EMAIL</columns>
+    <columns>LEAD.COMPANY</columns>
+    <columns>LEAD.STATE_CODE</columns>
+    <columns>LEAD.STATUS</columns>
+    <columns>LEAD.UNREAD</columns>
+    <columns>LEAD.CREATED_DATE</columns>
+    <columns>GRID_Software_Evaluation__c</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>LEAD.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Lead.Enterprise_Customer_Lead</value>
+    </filters>
+    <filters>
+        <field>Lead_Orgin__c</field>
+        <operation>contains</operation>
+        <value>GRID_Software Evaluation_Web Form_NALA_2015_Oct</value>
+    </filters>
+    <label>vGPU Software Evaluations</label>
+</ListView>

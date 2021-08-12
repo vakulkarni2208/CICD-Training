@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Deal Registration 3.0 : set Opportunity Probability to 20% during Deal Registration lead conversion --></help>
+    <label><!-- DR : Opportunity : Probability --></label>
+    <name>DR_Opportunity_Probability__c</name>
+</CustomFieldTranslation>

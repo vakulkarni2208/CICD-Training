@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>Read</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>NALA Public Sector Sales 2</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>NALA Public Sector Sales 2</name>
+    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <parentRole>NALA_Public_Sector_Sales_Manager</parentRole>
+</Role>

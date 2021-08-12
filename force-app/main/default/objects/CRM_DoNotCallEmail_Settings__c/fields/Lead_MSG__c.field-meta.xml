@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lead_MSG__c</fullName>
+    <description>Message shown on the Lead detail page when one of the field No Sales Call or No Sales Email is checked</description>
+    <externalId>false</externalId>
+    <label>Lead MSG</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

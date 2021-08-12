@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Closed_Comments_for_SCOPE_Opp</fullName>
+    <active>true</active>
+    <description>For Closed Won Opportunities in SCOPE require Closed Comments</description>
+    <errorConditionFormula>AND(
+ RecordType.DeveloperName = &quot;OEM_Bid_Opportunity&quot; , 
+ IsClosed = TRUE,
+ ISBLANK(Closed_Comments__c)
+)</errorConditionFormula>
+    <errorDisplayField>Closed_Comments__c</errorDisplayField>
+    <errorMessage>For a Closed deal please enter comments</errorMessage>
+</ValidationRule>

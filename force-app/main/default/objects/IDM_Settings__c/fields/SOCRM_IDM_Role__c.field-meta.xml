@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SOCRM_IDM_Role__c</fullName>
+    <description>Role name for IDM Users who needs to access SOCRM
+Used from the batch job</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Role name for IDM Users who needs to access SOCRM</inlineHelpText>
+    <label>SOCRM_IDM_Role</label>
+    <length>25</length>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

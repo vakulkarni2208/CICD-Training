@@ -1,0 +1,717 @@
+﻿/* Layout */
+html{
+background:none;
+}
+
+body{
+background:url(../images/background_gradient.gif) repeat-x;
+font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+font-size:13px;
+line-height:18px;
+background-color:#fff;
+margin-top:20px;
+}
+.mainBody{ /* Set common style on main elements */
+float:left;
+width:1125px;
+//border: 2px solid #76B900 
+}
+#container{
+background:url(../images/background_gradient.gif) repeat-x;
+font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+position: relative;
+left: 0;
+width: 100%;
+//background-color:#FFFFFF;
+height: 1300px;  
+}
+#content {
+   max-width: 1100px;
+   min-width: 1100px;
+   margin-top:3px;
+   margin-left: auto;
+   margin-right: auto;
+   text-align:center;
+   position: relative;
+   zoom: 1;
+   //padding:8px;
+   height: 1200px;
+   background-color: #FFFFFF;
+/*   border-left: 1px solid #76B900;
+   border-top: 1px solid #76B900;
+    -moz-box-shadow:    6px 6px 5px #ccc;
+    -webkit-box-shadow: 6px 6px 5px #ccc;
+    box-shadow:         6px 6px 5px #ccc;*/
+}
+
+
+#box{
+width:1100px;
+margin:auto;
+background-color:#fff;
+}
+#nvidiaHeader{
+max-width: 1100px;
+min-width: 1100px;
+position: relative;
+//width:1075px;
+height:100px;
+//padding:30px 30px 0;
+//padding: 8px;
+background-color:#000;
+//z-index:100;
+z-index:1;
+}
+#nvidiaLogo{
+float:left;	
+align-content:flex-start;
+}
+#navBar{
+float:left;
+position:relative;
+width:100%;
+height:40px;
+z-index:10;
+font-size:0;
+}
+.navBarContent{
+float:left;
+position:relative;
+background-color:#000;
+}
+.navBarHomePage{
+background:url(../images/transparency_navbar.png) repeat-x;
+/*position:absolute;*/
+}
+#newsTicker{
+height:35px;
+background-color:#494949;
+background:url(../images/newsticker_background.jpg) repeat;
+position:relative;
+top:-120px;
+z-index:5;
+}
+#newsTickerHeadline a{
+color:#76b900;
+text-decoration:none;
+}
+#newsTickerHeadline a:hover{
+color:#FFFFFF;
+text-decoration:none;
+}
+#mainContent{
+width:960px;
+background-color:#fff;
+padding:0 10px;
+}
+#subFeatures{
+width:980px;
+background-color:#fff;
+position:relative;
+top:-120px;
+}
+#footer{
+position:relative;
+top:-120px;
+/*width:700px; - any reason this is only 700px? */
+width:940px;
+margin:20px auto 0 auto !important;
+}
+#socialNetworks{
+float:left;
+width:100px;
+text-align:right;
+margin: 20px 0 0 100px;
+}
+
+
+
+/* Basic Styling */
+h1{ /* in breadcrumbs */
+font-size:11px;
+color:#76b900;
+}
+.pageTitle{ /* old h1 */
+font-size:24px;
+line-height:24px;
+width:100%;
+color:#76b900;
+margin: 0 0 10px 0;
+padding-bottom:5px;
+border-bottom:2px solid #eee;
+}
+h2,h4{
+font-size:14px;
+color:#76b900;
+font-weight:bold;
+text-transform:uppercase;
+}
+h3{
+background-image:url(../images/bg_silverbar_2009.gif);
+background-repeat:repeat-x;
+border-left:1px solid #D0D0D0;
+border-right:1px solid #D0D0D0;
+font-size:12px;
+font-weight:bold;
+height:21px;
+/*margin-top:20px;*/
+padding-left:10px;
+padding-top:5px;
+text-transform:uppercase;
+width:auto;
+}
+h4{
+font-size:13px;
+}
+/*this bit modified*/
+#mainContent p, #mainContent input:not([type="submit"])/*, #mainContent label commented out */{ 
+margin:0 0 5px 0;
+font-size:13px;
+line-height:18px;
+color:#000;
+}
+input, label{
+margin-bottom:5px 0;
+}
+a{
+color:#76b900;
+text-decoration:underline;
+}
+a:hover{
+/*text-decoration:none;*/
+color:#333;
+}
+acronym,abbr{
+border-bottom:1px dotted #666;
+cursor:help;
+}
+label{
+clear:left;
+float:left;
+width:100px;
+margin:3px;
+}
+sup{
+line-height:10px;
+vertical-align:top;
+font-size:9px;
+}
+textarea{
+width:690px;
+}
+b, strong{
+font-weight:bold;
+}
+i, em, address, blockquote{
+font-style:italic;
+}
+u{
+text-decoration:underline;
+}
+ol li{
+margin:5px 0 0 25px;
+list-style:decimal outside none;
+}
+/* input:not([type=checkbox]){
+	border:1px solid #bababa;
+	padding:2px;
+} 
+input:focus,textarea:focus{
+	border:1px solid #76b900;
+}
+*/
+
+/* Class Specific */
+.hidden{
+display:none;
+}
+.visible{
+display:block !important;
+}
+.clear{
+clear:both;
+}
+.clearFloats{
+clear:both;
+line-height:0;
+font-size:0;
+height:0;
+}
+.clearLeft{
+clear:left;
+}
+.clearRight{
+clear:right;
+}
+.greyLinks a{
+color:#333;
+text-decoration:none;
+}
+.greyLinks a:hover{
+color:#76b900;
+text-decoration:underline;
+}
+.smallText{
+font-size:10px !important;
+line-height:12px !important;
+color:#999;
+}
+.paddingTop5px{
+padding-top:5px;
+}
+.smallPaddingTop{
+padding-top:10px;
+}
+.smallMarginTop{
+padding-top:10px;
+}
+.noMarginTop{
+padding-top:0;
+margin-top:0;
+}
+.resetMargin{
+margin:0 !important;
+}
+.resetPadding{
+padding:0 !important;
+}
+.noBorder{
+border:0 !important;
+}
+.submit{
+float:right;
+width:auto;
+}
+
+
+/* Footer */
+#footer p{
+color:#9e9e9e;
+font-size:11px;
+width:761px; /* 750px for a reason (rate this page widget) */
+}
+#footer a{
+color:#9e9e9e;
+}
+#footer a:hover{
+color:#76b900;
+}
+/* Footer 'Rate This Page' Widget */
+#rateThisPage .rtpWidget{
+	display:none;
+	float:right;
+	width:125px;
+	color:#fff;
+	font-size:11px;
+	background-color:#76b900;
+	padding:0 2px;
+	text-align:center;
+	cursor:pointer;
+}
+#rateThisPage .rtpBox{
+	display:none;
+	position:absolute;
+	width:550px;
+	left:346px;
+	height:0;
+	top:-44px;
+	border:2px solid #76b900;
+	padding:20px;
+	background-color:#fff;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	z-index:100;
+}
+#rateThisPage .rtpBox label,
+#rateThisPage .rtpBox textarea,
+#rateThisPage .rtpBox input,
+#rateThisPage .rtpBox p,
+#rateThisPage .rtpBox div{
+	/*display:none;*/ /* initially hidden then fades in, HAHAHA DISREGARD THAT DOESN'T WORK RIGHT */
+}
+#rateThisPage .rtpBox textarea{
+	padding:3px;
+}
+#rateThisPage p.rtpHeader{
+	float:left;
+	margin-bottom:10px;
+	color:#76b900;
+	width:400px;
+	padding-bottom:0;
+	font-size:16px;
+	font-weight:bold;
+}
+#rtpClose{
+	cursor:pointer;
+	float:right;
+}
+#rtpSubmit{
+	clear:left;
+}
+#rateThisPage .rtpBoxCol{
+	float:left;
+	/*margin-right:10px;*/
+}
+#rateThisPage .rtpComments{
+	width:350px;
+	height:170px;
+}
+#rateThisPage .ratesSelector{
+	margin-bottom:10px;
+}
+#rateThisPage #formMessages{
+	display:none !important;
+}
+
+/* Navigation Bar Top */
+.overlayGradient{
+	background:url(../images/menuItemGradient.png) repeat-x bottom;
+	width:100%;
+	position:absolute;
+	left:0;
+	top:0;
+	z-index:1;
+	opacity:0;
+	filter:alpha(opacity=0);
+}
+#navBar ul{
+	clear:left;
+	float:right;
+	position:relative;
+	right:50%;
+	color:#fff;
+	z-index:10;
+	text-align:center;
+}
+#navBar ul li{ /* Main Menu Option */
+	display:inline;
+	float:left;
+	position:relative;
+	left:50%;
+	margin:0;
+	top:10px;
+	line-height:30px;
+	padding-left:10px;
+	padding-right:10px;
+	text-transform:uppercase;
+	white-space:nowrap;
+	cursor:pointer;
+	z-index:100;
+	font-size:13px;
+}
+.navBarHover#navBar ul li:hover{
+	background-color:#313131;
+}
+.navBarHover#navBar ul li ul li:hover{
+	background-color:transparent;
+}
+#navBar ul li:hover a{
+	color:#76b900;
+}
+#navBar li a{
+	display:inline;
+	position:relative;
+	z-index:99;
+	color:#fff;
+	text-decoration:none;
+}
+#navBar li a:hover{
+	color:#76b900;
+}
+#navBar ul li ul li a{ /* SubMenu A */
+	padding:8px 12px;
+	float:left;
+	font-size:11px;
+}
+#navBar ul li:hover li a{ /* Stop submenu a from being green, but keep navbar a green when open */
+color:#fff;
+}
+#navBar li ul li:hover{ /* Hover for SubMenu Options */
+	color:#76b900;
+	background:none;
+}
+#navBar ul li ul{ /* SubMenu */
+	position:absolute;
+	left:0;
+	right:auto;
+	height:auto;
+	width:auto;
+	top:30px;
+	padding:1px;
+	min-width:110px;
+	background:url('../images/transparency_333333_90percent.png') repeat;
+	z-index:1000;
+	display:none;
+}
+#navBar ul li ul li{
+	position:relative;
+	float:left;
+	clear:left;
+	display:block;
+	height:auto;
+	padding:0;
+	top:0;
+	left:0;
+	right:0;
+	text-transform:none;
+	line-height:10px;
+}
+#navBar ul li ul li a:hover{ /* SubMenu Option A:HOVER */
+	background:none;
+	color:#76b900;
+}
+.navBarHover#navBar ul li:hover ul{ /* Opens SubMenu on Hover */
+	display:block;
+	color:#76b900;
+}
+
+
+/* Masthead */
+#search input{
+width:150px;
+color:#333;
+font-size:11px;
+padding:2px;
+margin:0;
+line-height:normal !important;
+border-radius : 0 !important;
+}
+#search{
+position:absolute;
+left:630px;
+top:40px;
+z-index:3;
+width:150px;
+}
+#globalSelector{
+background-color:#333;
+height:18px;
+left:800px;
+line-height:14px;
+margin:0;
+padding-left:3px;
+padding-top:2px;
+position:absolute;
+text-align:left;
+top:40px;
+width:150px;
+}
+
+/* New Style Global Selector */
+#globalSelector .currentTitle, #globalSelectorOpen .currentTitle{
+font-size:12px;
+color:#fff;
+margin-bottom:5px;
+overflow:hidden;
+white-space:nowrap;
+margin:0;
+text-transform:none !important;
+line-height:14px !important;
+}
+#globalSelectorOpen .currentTitle{
+width:auto;
+margin-bottom:10px;
+}
+#globalSelector .currentTitle a{
+color:#fff;
+text-decoration:none;
+}
+#globalSelector img{
+position:absolute;
+left:133px;
+padding:6px;
+}
+#globalSelectorOpen{
+background-color: #333;
+display: none;
+left: -7px;
+padding: 10px;
+position: absolute;
+top: -8px;
+width: 140px;
+z-index: 500;
+-moz-box-shadow: 0px 0px 10px #333;
+-webkit-box-shadow: 0px 0px 10px #333;
+box-shadow: 0px 0px 10px #333;
+}
+#globalSelectorOpen p{
+line-height:16px;
+margin:0;
+}
+#globalSelectorOpen img{
+position:absolute;
+top:8px;
+left:140px;
+}
+#globalSelectorOpen .changeDefault{
+font-size:11px;
+margin-top:10px;
+margin-bottom:0;
+}
+#globalSelectorOpen  .changeDefault a{
+color:#fff;
+text-decoration:none;
+}
+#globalSelectorOpen a{
+color:#B5B4B4;
+text-decoration:none;
+font-size:11px;
+}
+#globalSelectorOpen a:hover{
+color:#76b900;
+}
+
+
+
+
+
+/* Error Reporting */
+#errorReport{
+display:none;
+position:fixed;
+right:20px;
+bottom:20px;
+width:40px;
+height:40px;
+z-index:100;
+padding:10px;
+}
+#errorReportBox{
+cursor:pointer;
+width:40px;
+height:40px;
+background:url(/content/includes/redesign2010/images/redesign10/feedback_icon.png) no-repeat;
+}
+#errorReportBox:hover{
+cursor:pointer;
+background-position: 0 -40px;
+}
+#errorReport textarea{
+width:480px;
+}
+#errorReport select{
+float:none;
+}
+#errorReport #errorReportContent{
+display:none;
+}
+#errorReport #closeButton{
+position:relative;
+top:0;
+left:390px;
+}
+
+
+/* Form Processor Forms */
+input.error,
+select.error,
+textarea.error
+{
+	border:1px solid #76b900 !important;
+}
+
+
+
+/* Buttons */
+.button{
+	height:24px;
+	padding:0 !important;
+}
+.button a,
+.button a:hover{
+	text-decoration:none;
+}
+.button.square{
+	background:url('../images/square.png') repeat-x;
+	border:1px solid #ccc;
+	text-align:center;
+	width:150px;
+}
+.button.square:hover{
+	background:url('../images/square-hover.png') repeat-x;
+}
+.button.square a{
+	display:inline-block;
+	height:100%;
+	width:100%;
+	line-height:24px;
+	font-size:12px;
+	font-weight:bold;
+	color:#fff;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+/* Rating Bars */
+/* RATING STYLES */
+.ratesSelector {
+	width:130px;
+	height:12px;
+	background-color:#eee;
+	border-top:1px solid #ccc;
+	border-left:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+	cursor:pointer;
+}
+.ratesSelector div{
+	display:inline !important; /* override any div hides */
+}
+	.ratesSelector .optionOff {
+		height:12px;
+		width:12px;
+		border-right:1px solid #ccc;
+		float:left;
+	}
+	.ratesSelector .optionOn {
+		background-image:url(../images/ratesSelector_background_green.png);
+		border-right:1px solid #3d7909;
+	}
+	.ratesSelector .optionHover {
+		background-image:url(../images/ratesSelector_background_gray.png);
+		border-right:1px solid #2d3338;	
+	}
+
+/* Green Bar */
+#greenBar{
+float:left;
+background:url(../images/bg_green_bar_revised.gif) repeat-x;
+width:1100px;
+height:40px;
+
+}
+#greenBarTitle{
+float:left;
+width:340px;
+margin:10px 20px;
+}
+#greenBarTitle h2{
+background:none;
+border:0;
+color:#fff;
+font-size:22px;
+font-weight:bold;
+padding:3px 0;
+margin:0;
+text-transform:uppercase;
+text-shadow:#3C5900 0 0 2px;
+}
+#greenBarTabs{
+float:right;
+width:580px;
+height:49px;
+margin-right:10px;
+}
+#greenBarTabs ul{
+text-align:right;
+}
+#greenBarTabs li{
+display:inline;
+width:auto;
+height:49px;
+}
+#greenBarTabs a{
+text-decoration:none;
+}

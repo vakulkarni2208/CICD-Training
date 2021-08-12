@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Used for Duplicate Rule as AccountId is not available in the matcher rule --></help>
+    <label><!-- AccountId(ReadOnly) --></label>
+    <name>AccountId_ReadOnly__c</name>
+</CustomFieldTranslation>

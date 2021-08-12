@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>NON_MQL_Lead_Sharing</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Only Non Pre-MSL Leads shared with all internal users (Pre-MQL Leads are seen by Marketo Sync User with ownership. Sys Admin, Data Admin, Partner Admin get it by either View All in Leads or role hierarchy)</description>
+        <label>NON MQL Lead Sharing</label>
+        <sharedTo>
+            <allInternalUsers/>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>notEqual</operation>
+            <value>Pre-MQL Lead</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Share_Pre_MQL_Leads_with_MKTO_Sync_User_for_Edit</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Share Pre-MQL Leads with MKTO Sync User for Edit</description>
+        <label>Share Pre-MQL Leads with MKTO Sync User for Edit</label>
+        <sharedTo>
+            <group>Pre_MQL_Leads_Editor</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Pre-MQL Lead</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Share_Pre_MQL_Leads_with_Selective_Users</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>Removed access to selective user as part of SDS-1971
+(SDS-2048 - Sales: Pre-MQL View Access - rolled back this one as it is waiting on Oliver to approve)</description>
+        <label>Share Pre-MQL Leads with Selective Users</label>
+        <sharedTo>
+            <group>Pre_MQL_Leads_Reader</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Pre-MQL Lead</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingOwnerRules>
+        <fullName>DLI_Sharing</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>DLI</description>
+        <label>DLI Sharing</label>
+        <sharedTo>
+            <role>DLI_Sales</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>DLI_Sales</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

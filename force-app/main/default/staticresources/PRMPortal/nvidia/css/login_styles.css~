@@ -1,0 +1,9 @@
+noscript
+{
+    width:100%;
+    padding:20px;
+    background-color:red;
+    color:white;
+    font-weight:bold;
+}
+    

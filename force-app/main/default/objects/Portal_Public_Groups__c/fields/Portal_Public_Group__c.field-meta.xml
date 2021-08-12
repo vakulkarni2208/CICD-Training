@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Portal_Public_Group__c</fullName>
+    <externalId>false</externalId>
+    <label>SFDC Public Group</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Arrow Embedded Edge</fullName>
+                <default>false</default>
+                <label>Arrow Embedded Edge</label>
+            </value>
+            <value>
+                <fullName>Community Content</fullName>
+                <default>false</default>
+                <label>Community Content</label>
+            </value>
+            <value>
+                <fullName>CSP Compute DGX Elite</fullName>
+                <default>false</default>
+                <label>CSP Compute DGX Elite</label>
+            </value>
+            <value>
+                <fullName>CSP Compute DGX Preferred</fullName>
+                <default>false</default>
+                <label>CSP Compute DGX Preferred</label>
+            </value>
+            <value>
+                <fullName>CSP Compute Elite</fullName>
+                <default>false</default>
+                <label>CSP Compute Elite</label>
+            </value>
+            <value>
+                <fullName>CSP Compute Preferred</fullName>
+                <default>false</default>
+                <label>CSP Compute Preferred</label>
+            </value>
+            <value>
+                <fullName>CSP Virtualization Elite</fullName>
+                <default>false</default>
+                <label>CSP Virtualization Elite</label>
+            </value>
+            <value>
+                <fullName>CSP Virtualization Preferred</fullName>
+                <default>false</default>
+                <label>CSP Virtualization Preferred</label>
+            </value>
+            <value>
+                <fullName>CSP Visualization Elite</fullName>
+                <default>false</default>
+                <label>CSP Visualization Elite</label>
+            </value>
+            <value>
+                <fullName>CSP Visualization Preferred</fullName>
+                <default>false</default>
+                <label>CSP Visualization Preferred</label>
+            </value>
+            <value>
+                <fullName>DISTI Compute DGX Preferred</fullName>
+                <default>false</default>
+                <label>DISTI Compute DGX Preferred</label>
+            </value>
+            <value>
+                <fullName>DISTI Compute Preferred</fullName>
+                <default>false</default>
+                <label>DISTI Compute Preferred</label>
+            </value>
+            <value>
+                <fullName>DISTI Virtualization Preferred</fullName>
+                <default>false</default>
+                <label>DISTI Virtualization Preferred</label>
+            </value>
+            <value>
+                <fullName>DISTI Visualization Preferred</fullName>
+                <default>false</default>
+                <label>DISTI Visualization Preferred</label>
+            </value>
+            <value>
+                <fullName>Embedded Edge Elite</fullName>
+                <default>false</default>
+                <label>Embedded Edge Elite</label>
+            </value>
+            <value>
+                <fullName>Embedded Edge Preferred</fullName>
+                <default>false</default>
+                <label>Embedded Edge Preferred</label>
+            </value>
+            <value>
+                <fullName>EMEAI Training Users</fullName>
+                <default>false</default>
+                <label>EMEAI Training Users</label>
+            </value>
+            <value>
+                <fullName>Fed SI Compute Elite</fullName>
+                <default>false</default>
+                <label>Fed SI Compute Elite</label>
+            </value>
+            <value>
+                <fullName>Fed SI Compute Preferred</fullName>
+                <default>false</default>
+                <label>Fed SI Compute Preferred</label>
+            </value>
+            <value>
+                <fullName>Fed SI Embedded Edge Elite</fullName>
+                <default>false</default>
+                <label>Fed SI Embedded Edge Elite</label>
+            </value>
+            <value>
+                <fullName>Fed SI Embedded Edge Preferred</fullName>
+                <default>false</default>
+                <label>Fed SI Embedded Edge Preferred</label>
+            </value>
+            <value>
+                <fullName>Fed SI Virtualization Elite</fullName>
+                <default>false</default>
+                <label>Fed SI Virtualization Elite</label>
+            </value>
+            <value>
+                <fullName>Fed SI Virtualization Preferred</fullName>
+                <default>false</default>
+                <label>Fed SI Virtualization Preferred</label>
+            </value>
+            <value>
+                <fullName>Fed SI Visualization Elite</fullName>
+                <default>false</default>
+                <label>Fed SI Visualization Elite</label>
+            </value>
+            <value>
+                <fullName>Fed SI Visualization Preferred</fullName>
+                <default>false</default>
+                <label>Fed SI Visualization Preferred</label>
+            </value>
+            <value>
+                <fullName>GRID VCA Partner Users</fullName>
+                <default>false</default>
+                <label>GRID VCA Partner Users</label>
+            </value>
+            <value>
+                <fullName>GRID VGX Partner Users</fullName>
+                <default>false</default>
+                <label>GRID VGX Partner Users</label>
+            </value>
+            <value>
+                <fullName>Industry Focus AEC</fullName>
+                <default>false</default>
+                <label>Industry Focus AEC</label>
+            </value>
+            <value>
+                <fullName>Industry Focus Automotive</fullName>
+                <default>false</default>
+                <label>Industry Focus Automotive</label>
+            </value>
+            <value>
+                <fullName>Industry Focus Financial Services</fullName>
+                <default>false</default>
+                <label>Industry Focus Financial Services</label>
+            </value>
+            <value>
+                <fullName>Industry Focus Healthcare</fullName>
+                <default>false</default>
+                <label>Industry Focus Healthcare</label>
+            </value>
+            <value>
+                <fullName>Industry Focus HER</fullName>
+                <default>false</default>
+                <label>Industry Focus HER</label>
+            </value>
+            <value>
+                <fullName>Industry Focus Industrial Manufacturing</fullName>
+                <default>false</default>
+                <label>Industry Focus Industrial Manufacturing</label>
+            </value>
+            <value>
+                <fullName>Industry Focus Media &amp; Entertainment</fullName>
+                <default>false</default>
+                <label>Industry Focus Media &amp; Entertainment</label>
+            </value>
+            <value>
+                <fullName>Industry Focus Oil &amp; Gas/Energy</fullName>
+                <default>false</default>
+                <label>Industry Focus Oil &amp; Gas/Energy</label>
+            </value>
+            <value>
+                <fullName>IP Community</fullName>
+                <default>false</default>
+                <label>IP Community</label>
+            </value>
+            <value>
+                <fullName>IP Compute Elite</fullName>
+                <default>false</default>
+                <label>IP Compute Elite</label>
+            </value>
+            <value>
+                <fullName>IP Compute Preferred</fullName>
+                <default>false</default>
+                <label>IP Compute Preferred</label>
+            </value>
+            <value>
+                <fullName>Marketing Partners: GeForce Content(R)</fullName>
+                <default>false</default>
+                <label>Marketing Partners: GeForce Content(R)</label>
+            </value>
+            <value>
+                <fullName>NFR SW License Request</fullName>
+                <default>false</default>
+                <label>NFR SW License Request</label>
+            </value>
+            <value>
+                <fullName>OEM Compute DGX Elite</fullName>
+                <default>false</default>
+                <label>OEM Compute DGX Elite</label>
+            </value>
+            <value>
+                <fullName>OEM Compute DGX Preferred</fullName>
+                <default>false</default>
+                <label>OEM Compute DGX Preferred</label>
+            </value>
+            <value>
+                <fullName>OEM Compute Elite</fullName>
+                <default>false</default>
+                <label>OEM Compute Elite</label>
+            </value>
+            <value>
+                <fullName>OEM Compute Preferred</fullName>
+                <default>false</default>
+                <label>OEM Compute Preferred</label>
+            </value>
+            <value>
+                <fullName>OEM Virtualization Elite</fullName>
+                <default>false</default>
+                <label>OEM Virtualization Elite</label>
+            </value>
+            <value>
+                <fullName>OEM Virtualization Preferred</fullName>
+                <default>false</default>
+                <label>OEM Virtualization Preferred</label>
+            </value>
+            <value>
+                <fullName>OEM Visualization Elite</fullName>
+                <default>false</default>
+                <label>OEM Visualization Elite</label>
+            </value>
+            <value>
+                <fullName>OEM Visualization Preferred</fullName>
+                <default>false</default>
+                <label>OEM Visualization Preferred</label>
+            </value>
+            <value>
+                <fullName>SA Consultant Compute DGX Preferred</fullName>
+                <default>false</default>
+                <label>SA Consultant Compute DGX Preferred</label>
+            </value>
+            <value>
+                <fullName>SA Consultant Compute Preferred</fullName>
+                <default>false</default>
+                <label>SA Consultant Compute Preferred</label>
+            </value>
+            <value>
+                <fullName>SA Consultant Virtualization Preferred</fullName>
+                <default>false</default>
+                <label>SA Consultant Virtualization Preferred</label>
+            </value>
+            <value>
+                <fullName>SA Consultant Visualization Preferred</fullName>
+                <default>false</default>
+                <label>SA Consultant Visualization Preferred</label>
+            </value>
+            <value>
+                <fullName>SA Storage Compute DGX Elite</fullName>
+                <default>false</default>
+                <label>SA Storage Compute DGX Elite</label>
+            </value>
+            <value>
+                <fullName>SA Storage Compute DGX Preferred</fullName>
+                <default>false</default>
+                <label>SA Storage Compute DGX Preferred</label>
+            </value>
+            <value>
+                <fullName>SA Storage Compute Elite</fullName>
+                <default>false</default>
+                <label>SA Storage Compute Elite</label>
+            </value>
+            <value>
+                <fullName>SA Storage Compute Preferred</fullName>
+                <default>false</default>
+                <label>SA Storage Compute Preferred</label>
+            </value>
+            <value>
+                <fullName>SDP Edu Compute DGX Preferred</fullName>
+                <default>false</default>
+                <label>SDP Edu Compute DGX Preferred</label>
+            </value>
+            <value>
+                <fullName>SDP PS Compute DGX Elite</fullName>
+                <default>false</default>
+                <label>SDP PS Compute DGX Elite</label>
+            </value>
+            <value>
+                <fullName>SDP PS Compute DGX Preferred</fullName>
+                <default>false</default>
+                <label>SDP PS Compute DGX Preferred</label>
+            </value>
+            <value>
+                <fullName>SDP PS Embedded Edge Preferred</fullName>
+                <default>false</default>
+                <label>SDP PS Embedded Edge Preferred</label>
+            </value>
+            <value>
+                <fullName>SIP Compute Elite</fullName>
+                <default>false</default>
+                <label>SIP Compute Elite</label>
+            </value>
+            <value>
+                <fullName>SIP Compute Preferred</fullName>
+                <default>false</default>
+                <label>SIP Compute Preferred</label>
+            </value>
+            <value>
+                <fullName>SIP Embedded Edge Elite</fullName>
+                <default>false</default>
+                <label>SIP Embedded Edge Elite</label>
+            </value>
+            <value>
+                <fullName>SIP Embedded Edge Preferred</fullName>
+                <default>false</default>
+                <label>SIP Embedded Edge Preferred</label>
+            </value>
+            <value>
+                <fullName>SIP Visualization Elite</fullName>
+                <default>false</default>
+                <label>SIP Visualization Elite</label>
+            </value>
+            <value>
+                <fullName>SIP Visualization Preferred</fullName>
+                <default>false</default>
+                <label>SIP Visualization Preferred</label>
+            </value>
+            <value>
+                <fullName>SOEM Cisco Elite</fullName>
+                <default>false</default>
+                <label>SOEM Cisco Elite</label>
+            </value>
+            <value>
+                <fullName>SOEM Dell Datacenter Elite</fullName>
+                <default>false</default>
+                <label>SOEM Dell Datacenter Elite</label>
+            </value>
+            <value>
+                <fullName>SOEM Dell Workstation Elite</fullName>
+                <default>false</default>
+                <label>SOEM Dell Workstation Elite</label>
+            </value>
+            <value>
+                <fullName>SOEM HP Enterprise Elite</fullName>
+                <default>false</default>
+                <label>SOEM HP Enterprise Elite</label>
+            </value>
+            <value>
+                <fullName>SOEM HP Inc Elite</fullName>
+                <default>false</default>
+                <label>SOEM HP Inc Elite</label>
+            </value>
+            <value>
+                <fullName>SOEM IBM Cloud Elite</fullName>
+                <default>false</default>
+                <label>SOEM IBM Cloud Elite</label>
+            </value>
+            <value>
+                <fullName>SOEM IBM Power Elite</fullName>
+                <default>false</default>
+                <label>SOEM IBM Power Elite</label>
+            </value>
+            <value>
+                <fullName>SOEM Lenovo DCG Elite</fullName>
+                <default>false</default>
+                <label>SOEM Lenovo DCG Elite</label>
+            </value>
+            <value>
+                <fullName>SOEM Lenovo Workstation Elite</fullName>
+                <default>false</default>
+                <label>SOEM Lenovo Workstation Elite</label>
+            </value>
+            <value>
+                <fullName>SP Compute DGX Elite</fullName>
+                <default>false</default>
+                <label>SP Compute DGX Elite</label>
+            </value>
+            <value>
+                <fullName>SP Compute DGX Preferred</fullName>
+                <default>false</default>
+                <label>SP Compute DGX Preferred</label>
+            </value>
+            <value>
+                <fullName>SP Compute Elite</fullName>
+                <default>false</default>
+                <label>SP Compute Elite</label>
+            </value>
+            <value>
+                <fullName>SP Compute Preferred</fullName>
+                <default>false</default>
+                <label>SP Compute Preferred</label>
+            </value>
+            <value>
+                <fullName>SP Virtualization Elite</fullName>
+                <default>false</default>
+                <label>SP Virtualization Elite</label>
+            </value>
+            <value>
+                <fullName>SP Virtualization Preferred</fullName>
+                <default>false</default>
+                <label>SP Virtualization Preferred</label>
+            </value>
+            <value>
+                <fullName>SP Visualization Elite</fullName>
+                <default>false</default>
+                <label>SP Visualization Elite</label>
+            </value>
+            <value>
+                <fullName>SP Visualization Preferred</fullName>
+                <default>false</default>
+                <label>SP Visualization Preferred</label>
+            </value>
+            <value>
+                <fullName>Tesla Content Group</fullName>
+                <default>false</default>
+                <label>Tesla Content Group</label>
+            </value>
+            <value>
+                <fullName>Titan RTX</fullName>
+                <default>false</default>
+                <label>Titan RTX</label>
+            </value>
+            <value>
+                <fullName>TPP Portal Users</fullName>
+                <default>false</default>
+                <label>TPP Portal Users</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>5</visibleLines>
+</CustomField>

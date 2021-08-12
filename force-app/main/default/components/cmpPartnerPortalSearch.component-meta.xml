@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApexComponent xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>28.0</apiVersion>
+    <description>This Component is used to display only Search and Subscribe buttons on remaining pages in Portal.</description>
+    <label>cmpPartnerPortalSearch</label>
+</ApexComponent>

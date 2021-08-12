@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Hardware_Serial_Number_PAK_Id__c</fullName>
+    <description>SDS-1415 : User should be able to see all related NGC Registry records under an Account</description>
+    <externalId>false</externalId>
+    <label>Hardware Serial Number / PAK Id</label>
+    <length>100</length>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

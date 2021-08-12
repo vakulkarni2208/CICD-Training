@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Lead Origin (Contact) --></label>
+    <name>Lead_Origin_Contact__c</name>
+    <picklistValues>
+        <masterLabel>Citrix Servtech</masterLabel>
+        <translation><!-- Citrix Servtech --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EMEAI Training Web Form</masterLabel>
+        <translation><!-- EMEAI Training Web Form --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN Application</masterLabel>
+        <translation><!-- NPN Application --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN Community Web Form</masterLabel>
+        <translation><!-- NPN Community Web Form --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NPN SOEM Web Form</masterLabel>
+        <translation><!-- NPN SOEM Web Form --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

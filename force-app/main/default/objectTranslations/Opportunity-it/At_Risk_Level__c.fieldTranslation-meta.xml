@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Risk of losing deal.   Low = no issues.  Med = some issues that could block deal.  High = critical issues that could lose deal.  Must fill-out &quot;Blocking / Help Needed&quot; field.
+Medium or High will trigger email notification to management. --></help>
+    <label><!-- At Risk Level --></label>
+    <name>At_Risk_Level__c</name>
+    <picklistValues>
+        <masterLabel>High</masterLabel>
+        <translation><!-- High --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Low</masterLabel>
+        <translation><!-- Low --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Medium</masterLabel>
+        <translation><!-- Medium --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

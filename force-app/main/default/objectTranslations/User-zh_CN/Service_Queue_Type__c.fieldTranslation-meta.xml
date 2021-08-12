@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Service Queue Type --></label>
+    <name>Service_Queue_Type__c</name>
+    <picklistValues>
+        <masterLabel>JTP L1</masterLabel>
+        <translation><!-- JTP L1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>JTP L2</masterLabel>
+        <translation><!-- JTP L2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>L3</masterLabel>
+        <translation><!-- L3 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NCR L1</masterLabel>
+        <translation><!-- NCR L1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NCR L2</masterLabel>
+        <translation><!-- NCR L2 --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

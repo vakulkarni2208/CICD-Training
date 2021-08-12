@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- NVIDIA Hardware Used (Vehicle Inference) --></label>
+    <name>NVIDIA_Hardware_Used_Vehicle_Inference__c</name>
+    <picklistValues>
+        <masterLabel>DRIVE Platform</masterLabel>
+        <translation><!-- DRIVE Platform --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Drive PX2-G3</masterLabel>
+        <translation><!-- Drive PX2-G3 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GeForce GTX</masterLabel>
+        <translation><!-- GeForce GTX --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Jetson Platform</masterLabel>
+        <translation><!-- Jetson Platform --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Jetson TX1/TX2</masterLabel>
+        <translation><!-- Jetson TX1/TX2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No vehicles</masterLabel>
+        <translation><!-- No vehicles --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>None</masterLabel>
+        <translation><!-- None --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Quadro</masterLabel>
+        <translation><!-- Quadro --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tesla</masterLabel>
+        <translation><!-- Tesla --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unknown</masterLabel>
+        <translation><!-- Unknown --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

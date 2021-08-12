@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Program Type --></label>
+    <name>Program_Type__c</name>
+    <picklistValues>
+        <masterLabel>Cloud Service Provider</masterLabel>
+        <translation><!-- Cloud Service Provider --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Federal Systems Integrator</masterLabel>
+        <translation><!-- Federal Systems Integrator --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Global Systems Integrator</masterLabel>
+        <translation><!-- Global Systems Integrator --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Industry Focus</masterLabel>
+        <translation><!-- Industry Focus --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OEM</masterLabel>
+        <translation><!-- OEM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Service Delivery Partner</masterLabel>
+        <translation><!-- Service Delivery Partner --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Solution Advisor</masterLabel>
+        <translation><!-- Solution Advisor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Solution Provider</masterLabel>
+        <translation><!-- Solution Provider --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Solutions Integration Partner</masterLabel>
+        <translation><!-- Solutions Integration Partner --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

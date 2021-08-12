@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Used to denote the reason why the Opportunity Industry is different from the Account Industry --></help>
+    <label><!-- Account Industry Override Reason --></label>
+    <name>Account_Industry_Override_Reason__c</name>
+</CustomFieldTranslation>

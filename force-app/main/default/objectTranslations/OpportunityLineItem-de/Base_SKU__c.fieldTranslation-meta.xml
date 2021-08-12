@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Opp Reg &gt; SAP integration; shows the Base SKU from the underlying Product --></help>
+    <label><!-- Base SKU --></label>
+    <name>Base_SKU__c</name>
+</CustomFieldTranslation>

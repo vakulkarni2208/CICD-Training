@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sensor_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Sensor Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Thermal Camera</fullName>
+                <default>false</default>
+                <label>Thermal Camera</label>
+            </value>
+            <value>
+                <fullName>TOF Camera</fullName>
+                <default>false</default>
+                <label>TOF Camera</label>
+            </value>
+            <value>
+                <fullName>Camera</fullName>
+                <default>false</default>
+                <label>Camera</label>
+            </value>
+            <value>
+                <fullName>Lidar</fullName>
+                <default>false</default>
+                <label>Lidar</label>
+            </value>
+            <value>
+                <fullName>Radar</fullName>
+                <default>false</default>
+                <label>Radar</label>
+            </value>
+            <value>
+                <fullName>V2X</fullName>
+                <default>false</default>
+                <label>V2X</label>
+            </value>
+            <value>
+                <fullName>GNSS + IMU</fullName>
+                <default>false</default>
+                <label>GNSS + IMU</label>
+            </value>
+            <value>
+                <fullName>Ultrasound</fullName>
+                <default>false</default>
+                <label>Ultrasound</label>
+            </value>
+            <value>
+                <fullName>Heads-Up Display (HUD)</fullName>
+                <default>false</default>
+                <label>Heads-Up Display (HUD)</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

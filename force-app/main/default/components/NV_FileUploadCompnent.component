@@ -1,0 +1,825 @@
+<apex:component controller="NV_FileUploadController">
+    <apex:attribute name="parentId" description="The ID of the record uploaded documents will be attached to." type="String"
+        required="true" />
+
+    <!--<link rel="stylesheet" type="text/css" href="{!$Resource.FileUploadCSS}"/>-->
+
+    <div class="uploadBox">
+        <br />
+        <div id="pageBlockHeader" class="pageBlockHeader" style="text-align:center">{!$Label.CRM_SURF_SubmitPOS_Submit_Your_POS}</div>
+        <div class="subTitle" style="text-align:center">
+            <!--(Note: Please email August 2018 and earlier POS to )-->
+        </div>
+        <br />
+        <div class="title" style="background-color:silver;">
+            <label>{!$Label.CRM_SURF_REFERENCE_MATERIAL}</label>
+        </div>
+        <div style="float:left;width:50%">
+            <br />
+            <div style="text-align:left">
+                <apex:outputPanel rendered="{!isOtherThanCSP}">
+                  <!--  <apex:outputLink value="{!$Resource.NV_POS_Template}">{!$Label.CRM_SURF_SubmitPOS_Download_the_latest_Standard_POS_Template} </apex:outputLink> -->
+                    <!--<b style="color:red;">{!$Label.CRM_SURF_SubmitPOS_NEW_VERSION}</b>-->
+                   <!-- <div class="tooltip" style="float:left width:20px; padding-left:5px;padding-top:10px;">
+                        <apex:image url="{!$Resource.ExclamationImage}" height="13px;" />
+                        <span class="tooltiptext">{!$Label.CRM_SURF_SubmitPOS_Programs}</span>
+                    </div>-->
+                    <!--<apex:outputText >&nbsp;|&nbsp;</apex:outputText><apex:outputLink value="/sfc/#version?selectedDocumentId=06940000001zM3V">View POS Instructions</apex:outputLink>--></apex:outputPanel>
+            </div>
+            <div style="text-align:left">
+                <apex:outputPanel rendered="{!isCSP}">
+                   <!-- <apex:outputLink value="{!$Resource.NV_CSP_POS_Template}">{!$Label.CRM_SURF_SubmitPOS_Download_the_latest_CSP_POS_Template} </apex:outputLink> -->
+                    <!--<b style="color:red;">{!$Label.CRM_SURF_SubmitPOS_NEW_VERSION}</b>-->
+                  <!--  <div class="tooltip" style="float:left width:20px; padding-left:5px;padding-top:10px;">
+                        <apex:image rendered="{!isCSP}" url="{!$Resource.ExclamationImage}" height="13px;" />
+                        <span class="tooltiptext">{!$Label.CRM_SURF_SubmitPOS_For_Cloud_Service_Provider_program_only}</span>
+                    </div> -->
+                    <!--<apex:outputText rendered="{!isCSP}">&nbsp;|&nbsp;</apex:outputText><apex:outputLink rendered="{!isCSP}" value="/sfc/#version?selectedDocumentId=06940000001zM3V">View POS Instructions</apex:outputLink>--></apex:outputPanel>
+            </div>
+            <br />
+            <br />
+            <!--<div class="title">Company Name: {!strCompanyName}</div>
+            <br /><br /> -->
+            <div class="subtitle">{!$Label.CRM_SURF_SubmitPOS_Reporter_ID} : {!strPOSReporterId}</div>
+            <br />
+            <div class="subtitle">{!$Label.CRM_SURF_SubmitPOS_PartnerCode} : {!strPOSPartnerCode}</div>
+            <br />
+            <br />
+        </div>
+        <!-- Rajat commented below section for SDS-2637 START -->
+        <!--<div style="float:left;text-align:center;width:50%">
+            <br />
+            <div style="text-align:left;">
+                <b>{!$Label.CRM_SURF_SubmitPOS_NEED_HELP}</b>
+            </div>
+            <div style="text-align:left;">
+                <apex:outputPanel >
+                    <apex:outputLink target="_blank" value="{!$Label.NPN_POS_Portal_Submission_Instructions}">{!$Label.CRM_SURF_SubmitPOS_How_to_submit_your_POS}</apex:outputLink>
+                </apex:outputPanel>
+            </div>
+            <div style="text-align:left;">
+                <apex:outputPanel rendered="{!isOtherThanCSP}">
+                    <apex:outputLink target="_blank" value="{!$Label.POS_Standard_POS_Instructions}">{!$Label.CRM_SURF_SubmitPOS_How_to_complete_the_Standard_POS_Template}</apex:outputLink>
+                </apex:outputPanel>
+            </div>
+            <div style="text-align:left;">
+                <apex:outputLink target="_blank" rendered="{!isCSP}" value="{!$Label.NPN_CSP_POS_Instructions}">{!$Label.CRM_SURF_SubmitPOS_How_to_complete_the_CSP_POS_Template}</apex:outputLink>
+            </div>
+            <div style="text-align:left;">
+                <apex:outputLink target="_blank" value="{!$Label.NPN_POS_FAQ}">{!$Label.CRM_SURF_SubmitPOS_POSFAQ}</apex:outputLink>
+            </div>
+            <div style="text-align:left;">
+                <apex:outputLink target="_blank" value="{!$Label.CRM_SURF_SubmitPOS_POSTutorial_URL}">{!$Label.CRM_SURF_SubmitPOS_POSTutorial}</apex:outputLink>
+            </div>
+            <div style="text-align:left;">
+                <apex:outputLink target="_blank" value="{!$Label.CRM_SURF_SubmitPOS_POS_Submission_Overview_URL}">
+                    <h1 style="color:red;">{!$Label.CRM_SURF_SubmitPOS_New}</h1>
+                    <b>{!$Label.CRM_SURF_SubmitPOS_POS_Submission_Overview}</b>
+                </apex:outputLink>
+            </div>
+            <!-<div style="text-align:left;"><apex:outputLink target="_blank" value="https://www.brainshark.com/nvidia/npn_portal_pos">Recorded Training:  POS Submission Tab (9/2018)</apex:outputLink></div>- ->
+        </div>-->
+        <!-- Rajat commented above section for SDS-2637 END -->
+        <!-- Rajat added below section for SDS-2637 START -->
+        <div style="float:left;text-align:center;width:50%">
+            <br />
+            <div style="text-align:left;">
+                <apex:outputPanel >
+                    <b>
+                        <apex:outputLink target="_blank" value="{!$Label.NPN_POS_Get_Help_Link}">{!$Label.NPN_POS_Get_Help}</apex:outputLink>
+                    </b>
+                </apex:outputPanel>
+            </div>
+        </div>
+        <!-- Rajat added above section for SDS-2637 END -->
+        <div style="clear:both">
+            <table cellpadding="0" cellspacing="0" class="uploadTable">
+                <div class="title" style="background-color: silver;">
+                    <label>{!$Label.CRM_SURF_SUBMISSION}</label>
+                </div>
+                <br/>
+                <tr>
+                    <td class="attfile">
+                        <label for="month_start">{!$Label.CRM_SURF_SubmitPOS_Month}</label>
+                        <select id="month_start" name="month_start">
+                            <option>Select</option>
+                            <option>January</option>
+                            <option>February</option>
+                            <option>March</option>
+                            <option>April</option>
+                            <option>May</option>
+                            <option>June</option>
+                            <option>July</option>
+                            <option>August</option>
+                            <option>September</option>
+                            <option>October</option>
+                            <option>November</option>
+                            <option>December</option>
+                        </select>
+                        <label for="year_start">{!$Label.CRM_SURF_SubmitPOS_Year}</label>
+                        <select id="year_start" name="year_start">
+                            <option>Select</option>
+                            <option>2018</option>
+                            <option>2019</option>
+                            <option>2020</option>
+                            <option>2021</option>
+                            <option>2022</option>
+                            <option>2023</option>
+                            <option>2024</option>
+                            <option>2025</option>
+                            <option>2026</option>
+                            <option>2027</option>
+                        </select>
+                    </td>
+                    <td class="attfile" style="padding-left:0px;">
+                        <div>
+                            <div style="float:left;padding-top:5px;">{!$Label.CRM_SURF_SubmitPOS_Attach_POS_File}:</div>
+                            <div class="tooltip" style="float:left; width:20px; padding-left:5px;padding-top:5px;">
+                                <apex:image url="{!$Resource.ExclamationImage}" height="13px;" />
+                                <span class="tooltiptext">{!$Label.CRM_SURF_SubmitPOS_Required_file_naming_format}:
+                                    <br /> {!$Label.CRM_SURF_SubmitPOS_Standard_NPN_NVD}
+                                    <span style="color:red;display:inline;">{!$Label.CRM_SURF_SubmitPOS_PartnerCode}</span>-POS-
+                                    <span style="color:red;display:inline;">{!$Label.CRM_SURF_SubmitPOS_MonthName}</span>
+                                    <br /> CSP: CSP_NVD_
+                                    <span style="color:red;display:inline;">{!$Label.CRM_SURF_SubmitPOS_PartnerCode}</span>-POS-
+                                    <span style="color:red;display:inline;">{!$Label.CRM_SURF_SubmitPOS_MonthName}</span>
+                                </span>
+                            </div>
+                            <div style="float:left">
+                                <input type="file" multiple="false" id="filesInput" name="file" />
+                            </div>
+                        </div>
+                    </td>
+                    <td class="attfile" style="padding-left:150px;">{!$Label.CRM_SURF_SubmitPOS_No_POS_Data_for_this_Month}
+                        <input type="checkbox" id="noPOS" />
+                    </td>
+                </tr>
+            </table>
+            <br />
+            <apex:outputPanel rendered="{!isCSP && isOtherThanCSP}">
+                <div style="text:align-left;float:left;">{!$Label.CRM_SURF_SubmitPOS_POS_Template}
+                    <div class="tooltip" style="float:left width:20px; padding-left:3px;padding-top:3px;">
+                        <apex:image url="{!$Resource.ExclamationImage}" height="13px;" />
+                        <span class="tooltiptext">{!$Label.CRM_SURF_SubmitPOS_You_must_select_either_Standard_or_CSP_before_submitting}</span>
+                    </div>:</div>
+                <div style="text:align-left;">
+                    <select id="programType">
+                        <option value="">Select</option>
+                        <option value="Standard">Standard</option>
+                        <option value="CSP">CSP</option>
+                    </select>
+                </div>
+            </apex:outputPanel>
+            <br />
+            <br />
+            <div style="clear:both">
+                <table cellpadding="0" cellspacing="0" width="80%">
+                    <tr>
+                        <td class="submissionCls">
+                            <label for="submission_type">Submission Type</label>
+                            <select id="submission_type" name="submission_type" onchange="submissionChange()">
+                                <option>Initial</option>
+                                <option>Revision</option>
+                            </select>
+                        </td>
+                        <td class="submissionCls">
+                            <label for="reason_for_revision">Reason For Revision</label>
+                            <select id="reason_for_revision" name="reason_for_revision">
+                                <option></option>
+                                <option>File Rejected</option>
+                                <option>Additional POS Data</option>
+                                <option>Revising previously submitted POS Data</option>
+                                <option>Other (Enter details in the Notes field)</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <br />
+            <br />
+            <div class="subtitle">{!$Label.CRM_SURF_SubmitPOS_Notes}:</div>
+            <br />
+            <textarea style="align:center" id="notes" rows="8" cols="100" />
+            <div style="text-align:center" class="buttonTD">
+                <!--  <input id="uploadButton" type="button" title="Upload" class="btn" value="{!$Label.CRM_SURF_SubmitPOS_SUBMIT}"/> -->
+                <input id="uploadButton" type="button" title="Upload" class="btnSubmit" value="{!$Label.CRM_SURF_SubmitPOS_SUBMIT}" />
+                <br />
+                <br />
+                <input id="clear" style="display:none;" type="button" title="Clear" class="btn" value=" Clear " />
+            </div>
+        </div>
+        <div class="title" style="background-color: silver;">{!$Label.CRM_SURF_SubmitPOSSubmission_History_Note_POS_files_may_take_2_3_business_day}</div>
+        <div style="overflow: scroll; height: 420px;">
+            <br/>
+            <table width="100%" style="border:1px solid black;border-collapse: collapse;">
+                <tr>
+                    <th class="tdthStyle">
+                        <b>{!$Label.CRM_SURF_SubmitPOS_POS_Template}</b>
+                    </th>
+                    <th class="tdthStyle">
+                        <b>{!$Label.CRM_SURF_SubmitPOS_Month_Year}</b>
+                    </th>
+                    <th class="tdthStyle">
+                        <b>Submission Type</b>
+                    </th>
+                    <th class="tdthStyle">
+                        <b>Reason For Revision</b>
+                    </th>
+                    <th class="tdthStyle">
+                        <b>{!$Label.CRM_SURF_SubmitPOS_Submission_DateTime}</b>
+                    </th>
+                    <th class="tdthStyle">
+                        <b>{!$Label.CRM_SURF_SubmitPOS_POS_File_Link}</b>
+                    </th>
+                    <th class="tdthStyle">
+                        <b>{!$Label.CRM_SURF_SubmitPOS_No_POS}</b>
+                    </th>
+                    <th class="tdthStyle" width="20%">
+                        <b>{!$Label.CRM_SURF_SubmitPOS_Notes}</b>
+                    </th>
+                </tr>
+                <apex:repeat value="{!lstLastSixPOSSubmission}" var="objPOSSubmission">
+                    <tr>
+                        <td class="tdthStyle">{!objPOSSubmission.Program_Type__c}</td>
+                        <td class="tdthStyle">{!objPOSSubmission.Month_Year__c}</td>
+                        <td class="tdthStyle">{!objPOSSubmission.Submission_Type__c}</td>
+                        <td class="tdthStyle">{!objPOSSubmission.Reason_For_Revision__c}</td>
+                        <!-- <td class="tdthStyle">{!objPOSSubmission.Upload_Date_Time__c}</td> 
+                        <td class="tdthStyle">{!objPOSSubmission.Upload_Date_Time__c}</td>-->
+                        <td class="tdthStyle">
+                            <apex:outputText value="{0,date,EEE MMM dd HH:mm:ss 'PST' yyyy}">
+                                <apex:param value="{!objPOSSubmission.Upload_Date_Time__c}" /></apex:outputText>
+                        </td>
+                        <td class="tdthStyle">
+                            <apex:outputLink rendered="{!!objPOSSubmission.No_POS__c}" value="{!objPOSSubmission.Attachment_Link__c}">Click Here</apex:outputLink>
+                        </td>
+                        <td class="tdthStyle">
+                            <apex:form >
+                                <apex:inputCheckbox value="{!objPOSSubmission.No_POS__c}" disabled="true" /></apex:form>
+                        </td>
+                        <td class="tdthStyle">{!objPOSSubmission.Notes__c}</td>
+                    </tr>
+                </apex:repeat>
+            </table>
+        </div>
+    </div>
+    <style>
+        td.attfile {
+            width: 33%;
+        }
+
+        td.submissionCls {
+            width: 30%;
+        }
+
+        .tdthStyle {
+            padding: 15px;
+            border: 1px solid black;
+        }
+
+        .btn {
+            width: 100px;
+        }
+
+        .btnSubmit {
+            width: 100px;
+            background-color: rgb(118, 185, 0);
+            color: White;
+            font-weight: bold;
+        }
+
+        .pageBlockHeader {
+            font-size: 21px;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-family: 'Trebuchet MS';
+            text-align: left;
+        }
+
+        .secTitle {
+            font-size: 21px;
+            font-weight: bold;
+            text-transform: uppercase;
+            line-height: 2.5;
+            font-family: 'Trebuchet MS';
+            color: rgb(59, 93, 0);
+        }
+
+        .sectionTitle {
+            font-size: 19px;
+            font-weight: bold;
+            text-transform: uppercase;
+            line-height: 2.5;
+            font-family: 'Trebuchet MS';
+        }
+
+        .title {
+            text-align: left;
+            font-size: 17px;
+            line-height: 1.25;
+            font-weight: bold;
+            font-family: 'Trebuchet MS';
+        }
+
+        .subtitle {
+            text-align: left;
+            font-size: 13px;
+            line-height: 1.25;
+            font-family: 'Trebuchet MS';
+            height: 12.25px;
+        }
+
+        .errorText {
+            font-family: Trebuchet MS;
+            text-align: center;
+            font-size: 16px;
+            display: none;
+        }
+
+        .buttonTD {
+            padding-left: 6px;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        .fileName {
+            float: left;
+            max-width: 235px;
+            overflow: hidden;
+            position: absolute;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .percentComplete {
+            float: right;
+        }
+
+        .statusBar {
+            background: none repeat scroll 0 0 #FFFFFF;
+            border: 1px solid #EAEAEA;
+            height: 11px;
+            padding: 0 2px 0 0;
+        }
+
+        .statusBarPercent {
+            background-color: #1797C0;
+            float: left;
+            height: 9px;
+            margin: 1px;
+            max-width: 100%;
+        }
+
+        .statusBarPercentError {
+            background-color: #CE0000;
+        }
+
+        .upload {
+            background-color: white;
+            border: 1px solid #CACACA;
+            border-radius: 3px 3px 3px 3px;
+            margin-top: 6px;
+            padding: 4px;
+        }
+
+        .uploadBox {
+            background-color: #F8F8F8;
+            border: 1px solid #EAEAEA;
+            border-radius: 4px 4px 4px 4px;
+            color: #333333;
+            font-size: 12px;
+            padding: 6px;
+            width: 100%;
+        }
+
+        .uploadError {
+            border-color: #CE0000;
+        }
+
+        .uploadTable {
+            margin-left: 0px;
+            margin-right: auto;
+        }
+
+        .left {
+            float: left;
+        }
+
+        textarea {
+            display: block; //margin-left: auto;
+            //margin-right: auto;
+            resize: none;
+        }
+
+        /* Tooltip container */
+
+        .tooltip {
+            position: relative;
+            display: inline-block;
+        }
+
+        /* Tooltip text */
+
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 330px;
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            padding: 5px 0;
+            border-radius: 6px;
+
+            /* Position the tooltip text - see examples below! */
+            position: absolute;
+            z-index: 1;
+        }
+
+        /* Show the tooltip text when you mouse over the tooltip container */
+
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+        }
+    </style>
+    <!--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"/>
+    <script type="text/javascript" src="{!$Resource.FileUploadJS}"/>-->
+    <script type="text/javascript" src="{!$Resource.jQueryMinJs}" />
+
+    <script type="text/javascript">
+        var parentId = '{!parentId}'; //Will be used by FileUploadJS.js but must be declared here. Static resources don't support dynamic values.        
+    </script>
+    <script>
+
+        function submissionChange() {
+            if (document.getElementById("submission_type").value == 'Initial') {
+                document.getElementById("reason_for_revision").disabled = true;
+            }
+            if (document.getElementById("submission_type").value == 'Revision') {
+                document.getElementById("reason_for_revision").disabled = false;
+            }
+        }
+
+        function submissionAllow() {
+            if ('{!strPOSReporterId}' == '' || '{!strPOSPartnerCode}' == '') {
+                document.getElementById("uploadButton").disabled = true;
+                var myElement = document.createElement('div');
+                myElement.setAttribute("style", "text-align:left; text-transform:none; color:red; font-size:0.6em;");
+                myElement.innerHTML = '*PLEASE STOP AND READ* Your "Reporter ID" and "Partner Code" are missing and as such, you cannot submit a POS file. If you recently joined the NPN Partner Program, please allow at least two weeks for set up.  Otherwise, please use the "Contact Us" link on the Homepage for questions.';
+                document.getElementById('pageBlockHeader').appendChild(myElement);
+            }
+        }
+
+        var j$ = jQuery.noConflict();
+        j$(document).ready(function () {
+            submissionChange();
+            submissionAllow();
+            //Event listener for click of Upload button
+            j$("#uploadButton").click(function () {
+                prepareFileUploads();
+            });
+            j$("#reSubmitButton").click(function () {
+                prepareFileUploads();
+            });
+            //Event listener to clear upload details/status bars once upload is complete
+            j$("#clear").on('click', function () {
+                j$(".upload").remove();
+            });
+        });
+
+        var selectedMonth, selectedYear, selectedMonthIndex;
+        var strProgramType, strSubmissionType, strReasonForRevision;
+        var maxFileSize = 3500000;
+        var byteChunkArray;
+        var files;
+        var currentFile;
+        var $upload;
+        var CHUNK_SIZE = 180000; //Must be evenly divisible by 3, if not, data corruption will occur
+        var VIEW_URL = '/servlet/servlet.FileDownload?file=';
+        var noPOS = document.getElementById("noPOS");
+        //var parentId, you will see this variable used below but it is set in the component as this is a dynamic value passed in by component attribute
+
+        //Executes when start Upload button is selected
+        function prepareFileUploads() {
+            var d = new Date();
+            var month = new Array();
+            month[0] = "January";
+            month[1] = "February";
+            month[2] = "March";
+            month[3] = "April";
+            month[4] = "May";
+            month[5] = "June";
+            month[6] = "July";
+            month[7] = "August";
+            month[8] = "September";
+            month[9] = "October";
+            month[10] = "November";
+            month[11] = "December";
+            var currentMonth = month[d.getMonth()];
+            if ("{!isCSP}" == "true" && "{!isOtherThanCSP}" == "true") {
+                var x = document.getElementById("programType").selectedIndex;
+                var y = document.getElementById("programType").options;
+                strProgramType = y[x].text;
+
+            } else if ("{!isCSP}" == "false") {
+                strProgramType = "Standard";
+            } else {
+                strProgramType = "CSP";
+            }
+            //Get the file(s) from the input field
+            files = document.getElementById('filesInput').files;
+            //Only proceed if there are files selected
+            if (files.length == 0 && noPOS.checked == false) {
+                alert('Please select a file!');
+                return; //end function
+            }
+
+            if (strProgramType == '' || strProgramType == 'Select' || strProgramType == null) {
+                alert('Please select from the "POS Template" field');
+                return;
+            }
+
+            if (files.length != 0 && noPOS.checked == true) {
+                alert('Please uncheck the "No POS" checkbox');
+                return; //end function
+            }
+
+
+            var x1 = document.getElementById("month_start").selectedIndex;
+            var y1 = document.getElementById("month_start").options;
+            selectedMonth = y1[x1].text;
+
+            for (var i = 0; i <= 11; i++) {
+                if (month[i] == selectedMonth) {
+                    selectedMonthIndex = i;
+                }
+            }
+
+            var x2 = document.getElementById("year_start").selectedIndex;
+            var y2 = document.getElementById("year_start").options;
+            selectedYear = y2[x2].text;
+
+            if (selectedYear == 'Select' || selectedMonth == 'Select') {
+                alert('Please select a month and year');
+                return; //end function
+            }
+
+            var x3 = document.getElementById("submission_type").selectedIndex;
+            var y3 = document.getElementById("submission_type").options;
+            strSubmissionType = y3[x3].text;
+
+            var x4 = document.getElementById("reason_for_revision").selectedIndex;
+            var y4 = document.getElementById("reason_for_revision").options;
+            strReasonForRevision = y4[x4].text;
+
+            if (strSubmissionType == 'Initial' && strReasonForRevision != '') {
+                //alert('Please do not select from the Reason for Revision field before submitting an Initial submission.');
+                //return; //end function
+                //y4[x4].text = '';
+                strReasonForRevision = '';
+            }
+
+            if ((strSubmissionType == 'Revision' && strReasonForRevision == '')) {
+                alert('Please select from the Reason for Revision field before submitting');
+                return; //end function
+            }
+
+            var posLst = JSON.parse('{!JSENCODE(strLstPOSSubmission)}');
+
+            for (var j = 0; j < posLst.length; j++) {
+                if (posLst[j].Month_Year__c == selectedMonth + ' ' + selectedYear && posLst[j].Program_Type__c == strProgramType && strSubmissionType == 'Initial') {
+                    alert("You have already submitted a POS file for the selected Month/Year.  Please either update the Month/Year field or update the Submission Type to Revision and select the Reason for Revision.");
+                    return;
+                    /*var r = confirm("Our records indicate you have already submitted a POS file for the same Month/Year indicated. Are you sure you want to resubmit ?");
+                    if (r != true) {
+                        return;
+                    } else {
+                        break;
+                    }*/
+                }
+            }
+
+            if (strSubmissionType == 'Revision') {
+                for (var j = 0; j < posLst.length; j++) {
+                    if (posLst[j].Month_Year__c == selectedMonth + ' ' + selectedYear && posLst[j].Program_Type__c == strProgramType) {
+                        break;
+                    }
+                }
+                if (j == posLst.length) {
+                    alert('As this is your first submission for the selected Month & Year, please select "Initial" as the Submission Type');
+                    return; //end function
+                }
+            }
+
+            if (selectedYear > new Date().getFullYear() || (selectedYear == new Date().getFullYear() && selectedMonthIndex > new Date().getMonth())) {
+                alert('Please select a month and a year that is not in the future');
+                return; //end function
+            }
+
+            if (selectedYear == '2018' && selectedMonthIndex < 7) {
+                alert('Only September 2018 or later is accepted.  Please reset the date fields.');
+                return; //end function
+            }
+
+            if (noPOS.checked == true) {
+                NV_FileUploadController.sendEmail(null, selectedMonth, selectedYear, "{!strPOSReporterID}", document.getElementById("notes").value, "{!strPOSPartnerCode}", strProgramType, strSubmissionType, strReasonForRevision, "{!strBillingRegion}", function (result, event) {
+                    if (event.status == true) {
+                        alert("Your POS file has been submitted for processing");
+                        location.reload();
+                    }
+                });
+
+                //Call the checkForUploads to find the next upload div that has data-status="incomplete" and start the upload process. 
+                checkForUploads();
+            }
+
+            for (i = 0; i < files.length; i++) {
+                if (files[i].size >= maxFileSize) {
+                    alert('File size too large. Please upload a file less than 3.5 MB.');
+                    return; //end function
+                }
+            }
+
+            //Disable inputs and buttons during the upload process
+            j$(".uploadBox input").attr("disabled", "disabled");
+            j$(".uploadBox button").attr({
+                disabled: "disabled",
+                class: "btnDisabled"
+            });
+
+            //Build out the upload divs for each file selected
+            var uploadMarkup = '';
+            for (i = 0; i < files.length; i++) {
+                //Determine file display size
+                if (files[i].size < 1000000) {
+                    var displaySize = Math.floor(files[i].size / 1000) + 'K';
+                } else {
+                    var displaySize = Math.round((files[i].size / 1000000) * 10) / 10 + 'MB';
+                }
+
+                //For each file being uploaded create a div to represent that file, includes file size, status bar, etc. data-Status tracks status of upload
+                uploadMarkup += '<div class="upload" data-status="pending" data-index="' + i + '">'; //index used to correspond these upload boxes to records in the files array
+                uploadMarkup += '<div class="fileName"><span class="name">' + files[i].name + '</span> - ' + displaySize + '</div>';
+                uploadMarkup += '<div class="percentComplete">0%</div>'
+                uploadMarkup += '<div class="clear"/>';
+                uploadMarkup += '<div class="statusBar">';
+                uploadMarkup += '<div class="statusBarPercent"/>';
+                uploadMarkup += '</div>';
+                uploadMarkup += '</div>';
+            }
+
+            //Add markup to the upload box
+            j$('.uploadBox').append(uploadMarkup);
+
+            //Once elements have been added to the page representing the uploads, start the actual upload process
+            checkForUploads();
+        }
+
+        function checkForUploads() {
+            //Get div of the first matching upload element that is 'pending', if none, all uploads are complete
+            $upload = j$(".upload:first[data-status='pending']");
+
+            if ($upload.length != 0) {
+                //Based on index of the div, get correct file from files array
+                currentFile = files[$upload.attr('data-index')];
+
+                /*Build the byteChunkArray array for the current file we are processing. This array is formatted as:
+                ['0-179999','180000-359999',etc] and represents the chunks of bytes that will be uploaded individually.*/
+                byteChunkArray = new Array();
+
+                //First check to see if file size is less than the chunk size, if so first and only chunk is entire size of file
+                if (currentFile.size <= CHUNK_SIZE) {
+                    byteChunkArray[0] = '0-' + (currentFile.size - 1);
+                } else {
+                    //Determine how many whole byte chunks make up the file,
+                    var numOfFullChunks = Math.floor(currentFile.size / CHUNK_SIZE); //i.e. 1.2MB file would be 1000000 / CHUNK_SIZE
+                    var remainderBytes = currentFile.size % CHUNK_SIZE; // would determine remainder of 1200000 bytes that is not a full chunk
+                    var startByte = 0;
+                    var endByte = CHUNK_SIZE - 1;
+
+                    //Loop through the number of full chunks and build the byteChunkArray array
+                    for (i = 0; i < numOfFullChunks; i++) {
+                        byteChunkArray[i] = startByte + '-' + endByte;
+
+                        //Set new start and stop bytes for next iteration of loop
+                        startByte = endByte + 1;
+                        endByte += CHUNK_SIZE;
+                    }
+
+                    //Add the last chunk of remaining bytes to the byteChunkArray
+                    startByte = currentFile.size - remainderBytes;
+                    endByte = currentFile.size;
+                    byteChunkArray.push(startByte + '-' + endByte);
+                }
+
+                //Start processing the byteChunkArray for the current file, parameter is '' because this is the first chunk being uploaded and there is no attachment Id
+                processByteChunkArray('');
+
+            } else {
+                //All uploads completed, enable the input and buttons
+                j$(".uploadBox input").removeAttr("disabled");
+                j$(".uploadBox button").removeAttr("disabled").attr("class", "btn");
+
+                /*Remove the browse input element and replace it, this essentially removes
+                the selected files and helps prevent duplicate uploads*/
+                j$("#filesInput").replaceWith('<input type="file" name="file" multiple="true" id="filesInput">');
+            }
+        }
+
+        //Uploads a chunk of bytes, if attachmentId is passed in it will attach the bytes to an existing attachment record
+        function processByteChunkArray(attachmentId) {
+            //Proceed if there are still values in the byteChunkArray, if none, all piece of the file have been uploaded
+            if (byteChunkArray.length > 0) {
+                //Determine the byte range that needs to uploaded, if byteChunkArray is like... ['0-179999','180000-359999']
+                var indexes = byteChunkArray[0].split('-'); //... get the first index range '0-179999' -> ['0','179999']
+                var startByte = parseInt(indexes[0]); //0
+                var stopByte = parseInt(indexes[1]); //179999
+                var blobChunk;
+                //Slice the part of the file we want to upload, currentFile variable is set in checkForUploads() method that is called before this method
+                if (currentFile.webkitSlice) {
+                    blobChunk = currentFile.webkitSlice(startByte, stopByte + 1);
+                } else if (currentFile.mozSlice) {
+                    blobChunk = currentFile.mozSlice(startByte, stopByte + 1);
+                } else {
+                    blobChunk = currentFile.slice(startByte, stopByte + 1);
+                }
+                //Create a new reader object, part of HTML5 File API
+                var reader = new FileReader();
+
+                //Read the blobChunk as a binary string, reader.onloadend function below is automatically called after this line
+                //reader.readAsBinaryString(blobChunk);
+                reader.readAsArrayBuffer(blobChunk);
+
+                //Create a reader.onload function, this will execute immediately after reader.readAsBinaryString() function above;
+                reader.onloadend = function (evt) {
+                    if (evt.target.readyState == FileReader.DONE) { //Make sure read was successful, DONE == 2
+                        //Base 64 encode the data for transmission to the server with JS remoting, window.btoa currently on support by some browsers
+                        //var base64value = window.btoa(evt.target.result);
+
+                        var binary = "";
+                        var bytes = new Uint8Array(evt.target.result);
+                        var length = bytes.byteLength;
+
+                        for (var i = 0; i < length; i++) {
+                            binary += String.fromCharCode(bytes[i]);
+                        }
+                        var base64value = window.btoa(binary);
+
+                        //Use js remoting to send the base64 encoded chunk for uploading
+                        NV_FileUploadController.attachBlob(parentId, attachmentId, currentFile.name, currentFile.type, base64value, function (result, event) {
+
+                            //Proceed if there were no errors with the remoting call
+                            if (event.status == true) {
+                                //Update the percent of the status bar and percent, first determine percent complete
+                                var percentComplete = Math.round((stopByte / currentFile.size) * 100);
+                                $upload.find(".percentComplete").text(percentComplete + '%');
+                                $upload.find(".statusBarPercent").css('width', percentComplete + '%');
+
+                                //Remove the index information from the byteChunkArray array for the piece just uploaded.
+                                byteChunkArray.shift(); //removes 0 index
+
+                                //Set the attachmentId of the file we are now processing
+                                attachmentId = result;
+
+                                //Call process byteChunkArray to upload the next piece of the file
+                                processByteChunkArray(attachmentId);
+
+                            } else {
+                                //If script is here something broke on the JavasSript remoting call
+                                //Add classes to reflect error
+                                $upload.attr('data-status', 'complete');
+                                $upload.addClass('uploadError');
+                                $upload.find(".statusPercent").addClass('statusPercentError');
+                                $upload.attr('title', event.message);
+
+                                //Check and continue the next file to upload
+                                checkForUploads();
+                            }
+                        });
+                    } else {
+                        //Error handling for bad read
+                        alert('Could not read file');
+                    }
+                };
+
+            } else {
+                //This file has completed, all byte chunks have been uploaded, set status on the div to complete
+                $upload.attr('data-status', 'complete');
+
+                //Change name of file to link of uploaded attachment
+                $upload.find(".name").html('<a href="' + VIEW_URL + attachmentId + '" target="_blank">' + currentFile.name + '</a>');
+
+                NV_FileUploadController.sendEmail(attachmentId, selectedMonth, selectedYear, "{!strPOSReporterID}", document.getElementById("notes").value, "{!strPOSPartnerCode}", strProgramType, strSubmissionType, strReasonForRevision, "{!strBillingRegion}", function (result, event) {
+                    if (event.status == true) {
+                        alert("Your POS file has been submitted for processing");
+                        location.reload();
+                    }
+                });
+
+                //Call the checkForUploads to find the next upload div that has data-status="incomplete" and start the upload process. 
+                checkForUploads();
+            }
+        }
+    </script>
+
+</apex:component>

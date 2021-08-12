@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- ELA0 is default 
+ELA1 represents a $250K initial order 
+ELA2 represents a $500k initial order 
+ELA3 represents a $750k initial order 
+ELA4 represents a $1000k initial order --></help>
+    <label><!-- GRID ELA Level --></label>
+    <name>GRID_ELA_Level__c</name>
+    <picklistValues>
+        <masterLabel>ELA0</masterLabel>
+        <translation><!-- ELA0 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ELA1</masterLabel>
+        <translation><!-- ELA1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ELA2</masterLabel>
+        <translation><!-- ELA2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ELA3</masterLabel>
+        <translation><!-- ELA3 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ELA4</masterLabel>
+        <translation><!-- ELA4 --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

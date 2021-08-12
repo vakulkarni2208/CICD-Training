@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DGX_OM_wo_SAP_SO</fullName>
+    <active>true</active>
+    <description>DGX OM w/o SAP SO</description>
+    <errorConditionFormula>AND( 
+ $UserRole.Name &lt;&gt; &quot;Administrator&quot;, 
+ RecordType.Name = &quot;Enterprise Sales Opportunity&quot;, 
+ OR(
+  Number_of_DGX_Hardware_Products__c &gt; 0, 
+  Tesla_Product_Amount__c &gt; 450000, 
+  GRID_Product_Amount__c &gt; 0
+ ), 
+ ISPICKVAL(StageName,&quot;Closed Won&quot;), 
+ ISBLANK(SAP_Sales_Order_Number__c)
+)</errorConditionFormula>
+    <errorMessage>If you believe NVIDIA has the PO, move this deal to Paperwork Finalization. Sales Ops will work close out this deal when booked in SAP. Contact your regional Sales Operations team if you require any further assistance.</errorMessage>
+</ValidationRule>

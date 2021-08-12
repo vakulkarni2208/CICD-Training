@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>My_Recently_Completed_Tasks_Last_60D</fullName>
+    <columns>TASK.SUBJECT</columns>
+    <columns>TASK.WHO_NAME</columns>
+    <columns>TASK.WHAT_NAME</columns>
+    <columns>TASK.DUE_DATE</columns>
+    <columns>TASK.STATUS</columns>
+    <columns>CORE.USERS.FULL_NAME</columns>
+    <columns>Customer_Presentation_Status__c</columns>
+    <columns>Demo__c</columns>
+    <columns>Create_Opportunity__c</columns>
+    <columns>Link_to_Customer_Opportunity__c</columns>
+    <columns>Sales_Play__c</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>TASK.DUE_DATE</field>
+        <operation>equals</operation>
+        <value>LAST_N_DAYS:60</value>
+    </filters>
+    <filters>
+        <field>TASK.CLOSED</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>My Recently Completed Tasks (Last 60D)</label>
+    <language>en_US</language>
+</ListView>

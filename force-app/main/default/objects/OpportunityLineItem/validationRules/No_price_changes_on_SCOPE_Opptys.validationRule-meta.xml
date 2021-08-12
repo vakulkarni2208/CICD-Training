@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>No_price_changes_on_SCOPE_Opptys</fullName>
+    <active>true</active>
+    <description>Do not allow the sales price to be changed on SCOPE deals</description>
+    <errorConditionFormula>AND(
+	Opportunity.RecordType.DeveloperName  = &quot;OEM_Bid_Opportunity&quot;,
+	ISCHANGED ( UnitPrice )
+)</errorConditionFormula>
+    <errorMessage>Sales Price cannot be changed on SCOPE deals</errorMessage>
+</ValidationRule>

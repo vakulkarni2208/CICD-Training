@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- 3rd Party/Partner Software Used --></label>
+    <name>X3rd_Party_Partner_Software_Used__c</name>
+    <picklistValues>
+        <masterLabel>3rd Party Supplier</masterLabel>
+        <translation><!-- 3rd Party Supplier --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Homegrown (Partner)</masterLabel>
+        <translation><!-- Homegrown (Partner) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ROS</masterLabel>
+        <translation><!-- ROS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unknown</masterLabel>
+        <translation><!-- Unknown --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

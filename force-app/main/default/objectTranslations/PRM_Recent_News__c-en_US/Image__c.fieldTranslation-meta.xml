@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Enter a URL of an image to display in the Recent News section of the PRM homepage.  This image will float to the left.  If a banner image is required, choose one that is an appropriate size (TBD). --></help>
+    <label><!-- Image --></label>
+    <name>Image__c</name>
+</CustomFieldTranslation>

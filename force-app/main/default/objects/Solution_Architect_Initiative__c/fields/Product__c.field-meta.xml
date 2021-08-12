@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product__c</fullName>
+    <description>Associated Product</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Choose the product associated</inlineHelpText>
+    <label>Product</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>OV</fullName>
+                <default>false</default>
+                <label>OV</label>
+            </value>
+            <value>
+                <fullName>Quadro</fullName>
+                <default>false</default>
+                <label>Quadro</label>
+            </value>
+            <value>
+                <fullName>RTX Server</fullName>
+                <default>false</default>
+                <label>RTX Server</label>
+            </value>
+            <value>
+                <fullName>VGaming</fullName>
+                <default>false</default>
+                <label>VGaming</label>
+            </value>
+            <value>
+                <fullName>vGPU</fullName>
+                <default>false</default>
+                <label>vGPU</label>
+            </value>
+            <value>
+                <fullName>DGX</fullName>
+                <default>false</default>
+                <label>DGX</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

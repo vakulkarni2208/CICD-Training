@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NPN_Solution_Provider_VAR__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>NPN Solution Provider/VAR that applies to this specific opportunity.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select the NPN Solution Provider/VAR that applies to this specific opportunity.  This should represent the tier 2 partner involved with the deal.</inlineHelpText>
+    <label>NPN Solution Provider/VAR</label>
+    <lookupFilter>
+        <active>true</active>
+        <booleanFilter>(1 AND 2) OR 3</booleanFilter>
+        <filterItems>
+            <field>Account.NPN_Active_Program_Competency__c</field>
+            <operation>contains</operation>
+            <value>Solution Provider, Solutions Integration Partner</value>
+        </filterItems>
+        <filterItems>
+            <field>$Source.RecordTypeId</field>
+            <operation>notEqual</operation>
+            <value>SW &amp; Service Renewals</value>
+        </filterItems>
+        <filterItems>
+            <field>$Source.Type</field>
+            <operation>equals</operation>
+            <value>Deal Registration</value>
+        </filterItems>
+        <isOptional>true</isOptional>
+    </lookupFilter>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Opportunities (NPN Solution Provider (VAR))</relationshipLabel>
+    <relationshipName>Opportunities2</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>true</trackTrending>
+    <type>Lookup</type>
+</CustomField>

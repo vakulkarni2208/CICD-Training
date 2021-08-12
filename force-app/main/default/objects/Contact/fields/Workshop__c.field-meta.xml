@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Workshop__c</fullName>
+    <description>For DLI/DMS 2.0 Project - SDS-2586</description>
+    <externalId>false</externalId>
+    <label>Workshop</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Accelerating CUDA C++ Applications with Multiple GPUs, Chinese</fullName>
+                <default>false</default>
+                <label>Accelerating CUDA C++ Applications with Multiple GPUs, Chinese</label>
+            </value>
+            <value>
+                <fullName>Accelerating CUDA C++ Applications with Multiple GPUs, English</fullName>
+                <default>false</default>
+                <label>Accelerating CUDA C++ Applications with Multiple GPUs, English</label>
+            </value>
+            <value>
+                <fullName>Applications of AI for Anomaly Detection</fullName>
+                <default>false</default>
+                <label>Applications of AI for Anomaly Detection</label>
+            </value>
+            <value>
+                <fullName>Applications of AI for Anomaly Detection, English</fullName>
+                <default>false</default>
+                <label>Applications of AI for Anomaly Detection, English</label>
+            </value>
+            <value>
+                <fullName>Applications of AI for Predictive Maintenance</fullName>
+                <default>false</default>
+                <label>Applications of AI for Predictive Maintenance</label>
+            </value>
+            <value>
+                <fullName>Applications of AI for Predictive Maintenance, English</fullName>
+                <default>false</default>
+                <label>Applications of AI for Predictive Maintenance, English</label>
+            </value>
+            <value>
+                <fullName>Building Intelligent Recommender Systems, English</fullName>
+                <default>false</default>
+                <label>Building Intelligent Recommender Systems, English</label>
+            </value>
+            <value>
+                <fullName>Building Transformer Based Natural Language Processing, English</fullName>
+                <default>false</default>
+                <label>Building Transformer Based Natural Language Processing, English</label>
+            </value>
+            <value>
+                <fullName>Deep Learning for Autonomous Vehicles - Perception</fullName>
+                <default>false</default>
+                <label>Deep Learning for Autonomous Vehicles - Perception</label>
+            </value>
+            <value>
+                <fullName>Deep Learning for Autonomous Vehicles - Perception, Chinese</fullName>
+                <default>false</default>
+                <label>Deep Learning for Autonomous Vehicles - Perception, Chinese</label>
+            </value>
+            <value>
+                <fullName>Deep Learning for Autonomous Vehicles - Perception, English</fullName>
+                <default>false</default>
+                <label>Deep Learning for Autonomous Vehicles - Perception, English</label>
+            </value>
+            <value>
+                <fullName>Deep Learning for Digital Content Creation using AutoEncoders</fullName>
+                <default>false</default>
+                <label>Deep Learning for Digital Content Creation using AutoEncoders</label>
+            </value>
+            <value>
+                <fullName>Deep Learning for Healthcare Image Analysis</fullName>
+                <default>false</default>
+                <label>Deep Learning for Healthcare Image Analysis</label>
+            </value>
+            <value>
+                <fullName>Deep Learning for HealthCare Image Analysis, Chinese</fullName>
+                <default>false</default>
+                <label>Deep Learning for HealthCare Image Analysis, Chinese</label>
+            </value>
+            <value>
+                <fullName>Deep Learning for Healthcare Image Analysis, English</fullName>
+                <default>false</default>
+                <label>Deep Learning for Healthcare Image Analysis, English</label>
+            </value>
+            <value>
+                <fullName>Deep Learning for Healthcare Image Analysis, Japanese</fullName>
+                <default>false</default>
+                <label>Deep Learning for Healthcare Image Analysis, Japanese</label>
+            </value>
+            <value>
+                <fullName>Deep Learning for Industrial Inspection</fullName>
+                <default>false</default>
+                <label>Deep Learning for Industrial Inspection</label>
+            </value>
+            <value>
+                <fullName>Deep Learning for Industrial Inspection, Chinese</fullName>
+                <default>false</default>
+                <label>Deep Learning for Industrial Inspection, Chinese</label>
+            </value>
+            <value>
+                <fullName>Deep Learning for Industrial Inspection, English</fullName>
+                <default>false</default>
+                <label>Deep Learning for Industrial Inspection, English</label>
+            </value>
+            <value>
+                <fullName>Deep Learning for Industrial Inspection, Taiwanese</fullName>
+                <default>false</default>
+                <label>Deep Learning for Industrial Inspection, Taiwanese</label>
+            </value>
+            <value>
+                <fullName>Deep Learning for Intelligent Video Analytics</fullName>
+                <default>false</default>
+                <label>Deep Learning for Intelligent Video Analytics</label>
+            </value>
+            <value>
+                <fullName>Deep Learning for Intelligent Video Analytics, English</fullName>
+                <default>false</default>
+                <label>Deep Learning for Intelligent Video Analytics, English</label>
+            </value>
+            <value>
+                <fullName>Deep Learning for Intelligent Video Analytics, Korean</fullName>
+                <default>false</default>
+                <label>Deep Learning for Intelligent Video Analytics, Korean</label>
+            </value>
+            <value>
+                <fullName>Deep Learning for Intelligent Video Analytics, Taiwan</fullName>
+                <default>false</default>
+                <label>Deep Learning for Intelligent Video Analytics, Taiwan</label>
+            </value>
+            <value>
+                <fullName>Deep Learning for Robotics</fullName>
+                <default>false</default>
+                <label>Deep Learning for Robotics</label>
+            </value>
+            <value>
+                <fullName>Deep Learning for Robotics, English</fullName>
+                <default>false</default>
+                <label>Deep Learning for Robotics, English</label>
+            </value>
+            <value>
+                <fullName>Fundamentals of Accelerated Computing using Open, Japanese</fullName>
+                <default>false</default>
+                <label>Fundamentals of Accelerated Computing using Open, Japanese</label>
+            </value>
+            <value>
+                <fullName>Fundamentals of Accelerated Computing using OpenACC, English</fullName>
+                <default>false</default>
+                <label>Fundamentals of Accelerated Computing using OpenACC, English</label>
+            </value>
+            <value>
+                <fullName>Fundamentals of Accelerated Computing with CUDA C/C++</fullName>
+                <default>false</default>
+                <label>Fundamentals of Accelerated Computing with CUDA C/C++</label>
+            </value>
+            <value>
+                <fullName>Fundamentals of Accelerated Computing with CUDA C/C++, Chinese</fullName>
+                <default>false</default>
+                <label>Fundamentals of Accelerated Computing with CUDA C/C++, Chinese</label>
+            </value>
+            <value>
+                <fullName>Fundamentals of Accelerated Computing with CUDA C/C++, English</fullName>
+                <default>false</default>
+                <label>Fundamentals of Accelerated Computing with CUDA C/C++, English</label>
+            </value>
+            <value>
+                <fullName>Fundamentals of Accelerated Computing with CUDA C/C++, Japanese</fullName>
+                <default>false</default>
+                <label>Fundamentals of Accelerated Computing with CUDA C/C++, Japanese</label>
+            </value>
+            <value>
+                <fullName>Fundamentals of Accelerated Computing with CUDA C/C++, Korean</fullName>
+                <default>false</default>
+                <label>Fundamentals of Accelerated Computing with CUDA C/C++, Korean</label>
+            </value>
+            <value>
+                <fullName>Fundamentals of Accelerated Computing with CUDA C/C++, Taiwanese</fullName>
+                <default>false</default>
+                <label>Fundamentals of Accelerated Computing with CUDA C/C++, Taiwanese</label>
+            </value>
+            <value>
+                <fullName>Fundamentals of Accelerated Computing with CUDA Python</fullName>
+                <default>false</default>
+                <label>Fundamentals of Accelerated Computing with CUDA Python</label>
+            </value>
+            <value>
+                <fullName>Fundamentals of Accelerated Computing with CUDA Python, Chinese</fullName>
+                <default>false</default>
+                <label>Fundamentals of Accelerated Computing with CUDA Python, Chinese</label>
+            </value>
+            <value>
+                <fullName>Fundamentals of Accelerated Computing with CUDA Python, English</fullName>
+                <default>false</default>
+                <label>Fundamentals of Accelerated Computing with CUDA Python, English</label>
+            </value>
+            <value>
+                <fullName>Fundamentals of Accelerated Computing with OpenACC</fullName>
+                <default>false</default>
+                <label>Fundamentals of Accelerated Computing with OpenACC</label>
+            </value>
+            <value>
+                <fullName>Fundamentals of Accelerated Data Science with RAPIDS , Taiwanese</fullName>
+                <default>false</default>
+                <label>Fundamentals of Accelerated Data Science with RAPIDS , Taiwanese</label>
+            </value>
+            <value>
+                <fullName>Fundamentals of Accelerating Data Science with RAPIDS, English</fullName>
+                <default>false</default>
+                <label>Fundamentals of Accelerating Data Science with RAPIDS, English</label>
+            </value>
+            <value>
+                <fullName>Fundamentals of Deep Learning, Chinese</fullName>
+                <default>false</default>
+                <label>Fundamentals of Deep Learning, Chinese</label>
+            </value>
+            <value>
+                <fullName>Fundamentals of Deep Learning, English</fullName>
+                <default>false</default>
+                <label>Fundamentals of Deep Learning, English</label>
+            </value>
+            <value>
+                <fullName>Fundamentals of Deep Learning, Japanese</fullName>
+                <default>false</default>
+                <label>Fundamentals of Deep Learning, Japanese</label>
+            </value>
+            <value>
+                <fullName>Fundamentals of Deep Learning, Korean</fullName>
+                <default>false</default>
+                <label>Fundamentals of Deep Learning, Korean</label>
+            </value>
+            <value>
+                <fullName>Fundamentals of Deep Learning, Taiwanese</fullName>
+                <default>false</default>
+                <label>Fundamentals of Deep Learning, Taiwanese</label>
+            </value>
+            <value>
+                <fullName>Fundamentals of Deep Learning for Computer Vision</fullName>
+                <default>false</default>
+                <label>Fundamentals of Deep Learning for Computer Vision</label>
+            </value>
+            <value>
+                <fullName>Fundamentals of Deep Learning for Computer Vision, Chinese</fullName>
+                <default>false</default>
+                <label>Fundamentals of Deep Learning for Computer Vision, Chinese</label>
+            </value>
+            <value>
+                <fullName>Fundamentals of Deep Learning for Computer Vision, English</fullName>
+                <default>false</default>
+                <label>Fundamentals of Deep Learning for Computer Vision, English</label>
+            </value>
+            <value>
+                <fullName>Fundamentals of Deep Learning for Computer Vision, Japanese</fullName>
+                <default>false</default>
+                <label>Fundamentals of Deep Learning for Computer Vision, Japanese</label>
+            </value>
+            <value>
+                <fullName>Fundamentals of Deep Learning for Computer Vision, Korean</fullName>
+                <default>false</default>
+                <label>Fundamentals of Deep Learning for Computer Vision, Korean</label>
+            </value>
+            <value>
+                <fullName>Fundamentals of Deep Learning for Computer Vision, Taiwanese</fullName>
+                <default>false</default>
+                <label>Fundamentals of Deep Learning for Computer Vision, Taiwanese</label>
+            </value>
+            <value>
+                <fullName>Fundamentals of Deep Learning for Multi-GPU, Chinese</fullName>
+                <default>false</default>
+                <label>Fundamentals of Deep Learning for Multi-GPU, Chinese</label>
+            </value>
+            <value>
+                <fullName>Fundamentals of Deep Learning for Multi-GPU, English</fullName>
+                <default>false</default>
+                <label>Fundamentals of Deep Learning for Multi-GPU, English</label>
+            </value>
+            <value>
+                <fullName>Fundamentals of Deep Learning for Multi-GPUs</fullName>
+                <default>false</default>
+                <label>Fundamentals of Deep Learning for Multi-GPUs</label>
+            </value>
+            <value>
+                <fullName>Fundamentals of Deep Learning for Multi-GPUs, Korean</fullName>
+                <default>false</default>
+                <label>Fundamentals of Deep Learning for Multi-GPUs, Korean</label>
+            </value>
+            <value>
+                <fullName>Fundamentals of Deep Learning for Multiple Data Types</fullName>
+                <default>false</default>
+                <label>Fundamentals of Deep Learning for Multiple Data Types</label>
+            </value>
+            <value>
+                <fullName>Fundamentals of Deep Learning for Multiple Data Types, Chinese</fullName>
+                <default>false</default>
+                <label>Fundamentals of Deep Learning for Multiple Data Types, Chinese</label>
+            </value>
+            <value>
+                <fullName>Fundamentals of Deep Learning for Multiple Data Types, English</fullName>
+                <default>false</default>
+                <label>Fundamentals of Deep Learning for Multiple Data Types, English</label>
+            </value>
+            <value>
+                <fullName>Fundamentals of Deep Learning for Multiple Data Types, Japanese</fullName>
+                <default>false</default>
+                <label>Fundamentals of Deep Learning for Multiple Data Types, Japanese</label>
+            </value>
+            <value>
+                <fullName>Fundamentals of Deep Learning for Multiple Data Types, Korean</fullName>
+                <default>false</default>
+                <label>Fundamentals of Deep Learning for Multiple Data Types, Korean</label>
+            </value>
+            <value>
+                <fullName>Fundamentals of Deep Learning for Multiple Data Types, Taiwanese</fullName>
+                <default>false</default>
+                <label>Fundamentals of Deep Learning for Multiple Data Types, Taiwanese</label>
+            </value>
+            <value>
+                <fullName>Fundamentals of Deep Learning for Natural Language Processing</fullName>
+                <default>false</default>
+                <label>Fundamentals of Deep Learning for Natural Language Processing</label>
+            </value>
+            <value>
+                <fullName>Fundamentals of Deep Learning for Natural Language Processing, Chinese</fullName>
+                <default>false</default>
+                <label>Fundamentals of Deep Learning for Natural Language Processing, Chinese</label>
+            </value>
+            <value>
+                <fullName>Fundamentals of Deep Learning for Natural Language Processing, English</fullName>
+                <default>false</default>
+                <label>Fundamentals of Deep Learning for Natural Language Processing, English</label>
+            </value>
+            <value>
+                <fullName>Fundamentals of Deep Learning for Natural Language Processing, Korean</fullName>
+                <default>false</default>
+                <label>Fundamentals of Deep Learning for Natural Language Processing, Korean</label>
+            </value>
+            <value>
+                <fullName>Fundamentals of Deep Learning for Natural Language Processing, Taiwanese</fullName>
+                <default>false</default>
+                <label>Fundamentals of Deep Learning for Natural Language Processing, Taiwanese</label>
+            </value>
+            <value>
+                <fullName>Getting Started with AI on Jetson Nano</fullName>
+                <default>false</default>
+                <label>Getting Started with AI on Jetson Nano</label>
+            </value>
+            <value>
+                <fullName>Getting Started with AI on Jetson Nano, Chinese</fullName>
+                <default>false</default>
+                <label>Getting Started with AI on Jetson Nano, Chinese</label>
+            </value>
+            <value>
+                <fullName>Getting Started with AI on Jetson Nano, English</fullName>
+                <default>false</default>
+                <label>Getting Started with AI on Jetson Nano, English</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

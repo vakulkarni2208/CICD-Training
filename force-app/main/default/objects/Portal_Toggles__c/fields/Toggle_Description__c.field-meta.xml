@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Toggle_Description__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>This will be a short description of each competency</inlineHelpText>
+    <label>Toggle Description</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

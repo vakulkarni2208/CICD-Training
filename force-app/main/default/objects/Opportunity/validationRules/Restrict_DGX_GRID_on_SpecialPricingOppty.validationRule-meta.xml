@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Restrict_DGX_GRID_on_SpecialPricingOppty</fullName>
+    <active>true</active>
+    <description>SDS-2931: Disallow DGX or Grid products to be added to a Special Pricing Request Opportunity basing on fields Grid Product Amount and DGX Product Amount.  If either is &gt;0 and the restrict the User.</description>
+    <errorConditionFormula>AND(
+AND($Profile.Name &lt;&gt; &apos;System Administrator&apos;,$Profile.Name &lt;&gt; &apos;SVC SAP Integration&apos;),
+ RecordType.DeveloperName = &apos;Special_Pricing_Request&apos;,
+ OR(
+  Total_DGX_Product_Amount__c &gt; 0,
+  GRID_Product_Amount__c &gt; 0 
+ )
+)</errorConditionFormula>
+    <errorMessage>DGX and vGPU Products are not currently allowed on Special Pricing request Opportunities</errorMessage>
+</ValidationRule>

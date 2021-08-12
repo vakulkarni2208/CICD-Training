@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Solution Architect Initiative</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Solution Architect Initiatives</value>
+    </caseValues>
+    <recordTypes>
+        <description><!-- Solution Architect Initiatives for the CRISP Industry --></description>
+        <label><!-- CRISP SA Initiative --></label>
+        <name>CRISP_Initiative</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Solution Architect Initiatives for vGPU POC --></description>
+        <label><!-- vGPU POC SA Initiative --></label>
+        <name>GRID_POC_Initiative</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Solution Architect Initiative for General Use --></description>
+        <label><!-- Generic SA Initiative --></label>
+        <name>Generic_SA_Initiatives</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Solution Architect Initiatives for the Telecommunications Industry --></description>
+        <label><!-- Telco SA Initiative --></label>
+        <name>Telco_SA_Initiatives</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

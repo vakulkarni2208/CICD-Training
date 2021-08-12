@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignments>
+        <name>Set_the_CSP_Tracker_Owner</name>
+        <label>Set the CSP Tracker Owner</label>
+        <locationX>799</locationX>
+        <locationY>93</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Owner__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Get_Account_Owner_Record.OwnerId</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <decisions>
+        <description>Check if CSP Tracker Owner field is blank</description>
+        <name>Is_CSP_Tracker_Owner_is_Blank</name>
+        <label>Is CSP Tracker Owner is Blank</label>
+        <locationX>387</locationX>
+        <locationY>95</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Owner_field_is_blank</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Owner__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Account_Owner_Record</targetReference>
+            </connector>
+            <label>Owner field is blank</label>
+        </rules>
+    </decisions>
+    <description>NPN CSP Usage Tracker : Copy Account Owner if not set by the user</description>
+    <interviewLabel>NPN CSP Usage Tracker : Copy Account Owner if not set {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>NPN CSP Usage Tracker : Copy Account Owner if not set</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Get_Account_Owner_Record</name>
+        <label>Get Account Owner Record</label>
+        <locationX>610</locationX>
+        <locationY>93</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Set_the_CSP_Tracker_Owner</targetReference>
+        </connector>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Account__c</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Account</object>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>OwnerId</queriedFields>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <start>
+        <locationX>228</locationX>
+        <locationY>93</locationY>
+        <connector>
+            <targetReference>Is_CSP_Tracker_Owner_is_Blank</targetReference>
+        </connector>
+        <object>NPN_CSP_Usage_Tracker__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+    <variables>
+        <description>NPN CSP Usage Tracker &apos;s Account Owner Id</description>
+        <name>CSPTrackerAccountOwnerId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+</Flow>

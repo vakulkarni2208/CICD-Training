@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Semi-colon separated e.g, Marketing Customer Community; Prof2; Prof3 --></help>
+    <label><!-- BATCHJOB_PS_PG_ESCAPE_USER_SETTINGS_PROF --></label>
+    <name>BATCHJOB_PS_PG_ESCAPE_USER_SETTINGS_PROF__c</name>
+</CustomFieldTranslation>

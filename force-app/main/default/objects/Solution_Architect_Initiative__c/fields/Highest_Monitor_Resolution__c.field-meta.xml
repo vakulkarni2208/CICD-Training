@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Highest_Monitor_Resolution__c</fullName>
+    <externalId>false</externalId>
+    <label>Highest Monitor Resolution</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>720p</fullName>
+                <default>false</default>
+                <label>720p</label>
+            </value>
+            <value>
+                <fullName>1080p</fullName>
+                <default>false</default>
+                <label>1080p</label>
+            </value>
+            <value>
+                <fullName>4k</fullName>
+                <default>false</default>
+                <label>4k</label>
+            </value>
+            <value>
+                <fullName>5k</fullName>
+                <default>false</default>
+                <label>5k</label>
+            </value>
+            <value>
+                <fullName>8k</fullName>
+                <default>false</default>
+                <label>8k</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

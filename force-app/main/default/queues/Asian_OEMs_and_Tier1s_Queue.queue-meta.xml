@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>Asian OEMs and Tier1s Queue</name>
+    <queueMembers>
+        <users>
+            <user>dberman@nvidia.com</user>
+            <user>ekaruppiah@nvidia.com</user>
+            <user>fdong@nvidia.com</user>
+            <user>hao@nvidia.com</user>
+            <user>hohde@nvidia.com</user>
+            <user>hugow@nvidia.com</user>
+            <user>khuynh@nvidia.com</user>
+            <user>kkishi@nvidia.com</user>
+            <user>mhamada@nvidia.com</user>
+            <user>nyura@nvidia.com</user>
+            <user>thuynh@nvidia.com</user>
+            <user>vizou@nvidia.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Lead</sobjectType>
+    </queueSobject>
+</Queue>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Secondary_POC_Objectives__c</fullName>
+    <externalId>false</externalId>
+    <label>Secondary POC Objectives</label>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Increase Customer Value</fullName>
+                <default>false</default>
+                <label>Increase Customer Value</label>
+            </value>
+            <value>
+                <fullName>Increase Opportunity Value</fullName>
+                <default>false</default>
+                <label>Increase Opportunity Value</label>
+            </value>
+            <value>
+                <fullName>Increasing Key Learnings</fullName>
+                <default>false</default>
+                <label>Increasing Key Learnings</label>
+            </value>
+            <value>
+                <fullName>Increasing Purchase Commitment</fullName>
+                <default>false</default>
+                <label>Increasing Purchase Commitment</label>
+            </value>
+            <value>
+                <fullName>Referenceability</fullName>
+                <default>false</default>
+                <label>Referenceability</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

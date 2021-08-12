@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- This field contains Help URL on the right side of page for each record type. --></help>
+    <label><!-- Help Url --></label>
+    <name>Help_Url__c</name>
+</CustomFieldTranslation>

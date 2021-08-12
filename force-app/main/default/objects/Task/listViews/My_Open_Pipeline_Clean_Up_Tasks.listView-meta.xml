@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>My_Open_Pipeline_Clean_Up_Tasks</fullName>
+    <columns>SUBJECT</columns>
+    <columns>WHAT_NAME</columns>
+    <columns>DUE_DATE</columns>
+    <columns>STATUS</columns>
+    <columns>Help_Needed_from_Sales_Leadership__c</columns>
+    <columns>Next_Decision_Point_Sales_Milestone__c</columns>
+    <columns>Next_Decision_Sales_Milestone_Date__c</columns>
+    <columns>Current_Status_of_Project__c</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Task.Pipeline_Clean_Up</value>
+    </filters>
+    <filters>
+        <field>STATUS</field>
+        <operation>notEqual</operation>
+        <value>Completed</value>
+    </filters>
+    <label>My Open Pipeline Clean Up Tasks</label>
+</ListView>

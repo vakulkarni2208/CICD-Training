@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- All profiles that needs to have access to NPN Community semicolon separated e.g., NPN Partner Community(LOGIN); NPN Partner Community(NAMED); Marketing Customer Community; Community Lite Profile --></help>
+    <label><!-- SOCRM_SFDC_Profiles --></label>
+    <name>SOCRM_SFDC_Profiles__c</name>
+</CustomFieldTranslation>

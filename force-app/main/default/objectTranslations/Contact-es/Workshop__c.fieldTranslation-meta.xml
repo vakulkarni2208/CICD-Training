@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Workshop --></label>
+    <name>Workshop__c</name>
+    <picklistValues>
+        <masterLabel>Accelerating CUDA C++ Applications with Multiple GPUs, Chinese</masterLabel>
+        <translation><!-- Accelerating CUDA C++ Applications with Multiple GPUs, Chinese --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Accelerating CUDA C++ Applications with Multiple GPUs, English</masterLabel>
+        <translation><!-- Accelerating CUDA C++ Applications with Multiple GPUs, English --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Applications of AI for Anomaly Detection</masterLabel>
+        <translation><!-- Applications of AI for Anomaly Detection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Applications of AI for Anomaly Detection, English</masterLabel>
+        <translation><!-- Applications of AI for Anomaly Detection, English --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Applications of AI for Predictive Maintenance</masterLabel>
+        <translation><!-- Applications of AI for Predictive Maintenance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Applications of AI for Predictive Maintenance, English</masterLabel>
+        <translation><!-- Applications of AI for Predictive Maintenance, English --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Building Intelligent Recommender Systems, English</masterLabel>
+        <translation><!-- Building Intelligent Recommender Systems, English --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Building Transformer Based Natural Language Processing, English</masterLabel>
+        <translation><!-- Building Transformer Based Natural Language Processing, English --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Deep Learning for Autonomous Vehicles - Perception</masterLabel>
+        <translation><!-- Deep Learning for Autonomous Vehicles - Perception --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Deep Learning for Autonomous Vehicles - Perception, Chinese</masterLabel>
+        <translation><!-- Deep Learning for Autonomous Vehicles - Perception, Chinese --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Deep Learning for Autonomous Vehicles - Perception, English</masterLabel>
+        <translation><!-- Deep Learning for Autonomous Vehicles - Perception, English --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Deep Learning for Digital Content Creation using AutoEncoders</masterLabel>
+        <translation><!-- Deep Learning for Digital Content Creation using AutoEncoders --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Deep Learning for HealthCare Image Analysis, Chinese</masterLabel>
+        <translation><!-- Deep Learning for HealthCare Image Analysis, Chinese --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Deep Learning for Healthcare Image Analysis</masterLabel>
+        <translation><!-- Deep Learning for Healthcare Image Analysis --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Deep Learning for Healthcare Image Analysis, English</masterLabel>
+        <translation><!-- Deep Learning for Healthcare Image Analysis, English --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Deep Learning for Healthcare Image Analysis, Japanese</masterLabel>
+        <translation><!-- Deep Learning for Healthcare Image Analysis, Japanese --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Deep Learning for Industrial Inspection</masterLabel>
+        <translation><!-- Deep Learning for Industrial Inspection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Deep Learning for Industrial Inspection, Chinese</masterLabel>
+        <translation><!-- Deep Learning for Industrial Inspection, Chinese --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Deep Learning for Industrial Inspection, English</masterLabel>
+        <translation><!-- Deep Learning for Industrial Inspection, English --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Deep Learning for Industrial Inspection, Taiwanese</masterLabel>
+        <translation><!-- Deep Learning for Industrial Inspection, Taiwanese --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Deep Learning for Intelligent Video Analytics</masterLabel>
+        <translation><!-- Deep Learning for Intelligent Video Analytics --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Deep Learning for Intelligent Video Analytics, English</masterLabel>
+        <translation><!-- Deep Learning for Intelligent Video Analytics, English --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Deep Learning for Intelligent Video Analytics, Korean</masterLabel>
+        <translation><!-- Deep Learning for Intelligent Video Analytics, Korean --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Deep Learning for Intelligent Video Analytics, Taiwan</masterLabel>
+        <translation><!-- Deep Learning for Intelligent Video Analytics, Taiwan --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Deep Learning for Robotics</masterLabel>
+        <translation><!-- Deep Learning for Robotics --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Deep Learning for Robotics, English</masterLabel>
+        <translation><!-- Deep Learning for Robotics, English --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fundamentals of Accelerated Computing using Open, Japanese</masterLabel>
+        <translation><!-- Fundamentals of Accelerated Computing using Open, Japanese --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fundamentals of Accelerated Computing using OpenACC, English</masterLabel>
+        <translation><!-- Fundamentals of Accelerated Computing using OpenACC, English --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fundamentals of Accelerated Computing with CUDA C/C++</masterLabel>
+        <translation><!-- Fundamentals of Accelerated Computing with CUDA C/C++ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fundamentals of Accelerated Computing with CUDA C/C++, Chinese</masterLabel>
+        <translation><!-- Fundamentals of Accelerated Computing with CUDA C/C++, Chinese --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fundamentals of Accelerated Computing with CUDA C/C++, English</masterLabel>
+        <translation><!-- Fundamentals of Accelerated Computing with CUDA C/C++, English --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fundamentals of Accelerated Computing with CUDA C/C++, Japanese</masterLabel>
+        <translation><!-- Fundamentals of Accelerated Computing with CUDA C/C++, Japanese --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fundamentals of Accelerated Computing with CUDA C/C++, Korean</masterLabel>
+        <translation><!-- Fundamentals of Accelerated Computing with CUDA C/C++, Korean --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fundamentals of Accelerated Computing with CUDA C/C++, Taiwanese</masterLabel>
+        <translation><!-- Fundamentals of Accelerated Computing with CUDA C/C++, Taiwanese --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fundamentals of Accelerated Computing with CUDA Python</masterLabel>
+        <translation><!-- Fundamentals of Accelerated Computing with CUDA Python --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fundamentals of Accelerated Computing with CUDA Python, Chinese</masterLabel>
+        <translation><!-- Fundamentals of Accelerated Computing with CUDA Python, Chinese --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fundamentals of Accelerated Computing with CUDA Python, English</masterLabel>
+        <translation><!-- Fundamentals of Accelerated Computing with CUDA Python, English --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fundamentals of Accelerated Computing with OpenACC</masterLabel>
+        <translation><!-- Fundamentals of Accelerated Computing with OpenACC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fundamentals of Accelerated Data Science with RAPIDS , Taiwanese</masterLabel>
+        <translation><!-- Fundamentals of Accelerated Data Science with RAPIDS , Taiwanese --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fundamentals of Accelerating Data Science with RAPIDS, English</masterLabel>
+        <translation><!-- Fundamentals of Accelerating Data Science with RAPIDS, English --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fundamentals of Deep Learning for Computer Vision</masterLabel>
+        <translation><!-- Fundamentals of Deep Learning for Computer Vision --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fundamentals of Deep Learning for Computer Vision, Chinese</masterLabel>
+        <translation><!-- Fundamentals of Deep Learning for Computer Vision, Chinese --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fundamentals of Deep Learning for Computer Vision, English</masterLabel>
+        <translation><!-- Fundamentals of Deep Learning for Computer Vision, English --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fundamentals of Deep Learning for Computer Vision, Japanese</masterLabel>
+        <translation><!-- Fundamentals of Deep Learning for Computer Vision, Japanese --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fundamentals of Deep Learning for Computer Vision, Korean</masterLabel>
+        <translation><!-- Fundamentals of Deep Learning for Computer Vision, Korean --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fundamentals of Deep Learning for Computer Vision, Taiwanese</masterLabel>
+        <translation><!-- Fundamentals of Deep Learning for Computer Vision, Taiwanese --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fundamentals of Deep Learning for Multi-GPU, Chinese</masterLabel>
+        <translation><!-- Fundamentals of Deep Learning for Multi-GPU, Chinese --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fundamentals of Deep Learning for Multi-GPU, English</masterLabel>
+        <translation><!-- Fundamentals of Deep Learning for Multi-GPU, English --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fundamentals of Deep Learning for Multi-GPUs</masterLabel>
+        <translation><!-- Fundamentals of Deep Learning for Multi-GPUs --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fundamentals of Deep Learning for Multi-GPUs, Korean</masterLabel>
+        <translation><!-- Fundamentals of Deep Learning for Multi-GPUs, Korean --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fundamentals of Deep Learning for Multiple Data Types</masterLabel>
+        <translation><!-- Fundamentals of Deep Learning for Multiple Data Types --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fundamentals of Deep Learning for Multiple Data Types, Chinese</masterLabel>
+        <translation><!-- Fundamentals of Deep Learning for Multiple Data Types, Chinese --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fundamentals of Deep Learning for Multiple Data Types, English</masterLabel>
+        <translation><!-- Fundamentals of Deep Learning for Multiple Data Types, English --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fundamentals of Deep Learning for Multiple Data Types, Japanese</masterLabel>
+        <translation><!-- Fundamentals of Deep Learning for Multiple Data Types, Japanese --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fundamentals of Deep Learning for Multiple Data Types, Korean</masterLabel>
+        <translation><!-- Fundamentals of Deep Learning for Multiple Data Types, Korean --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fundamentals of Deep Learning for Multiple Data Types, Taiwanese</masterLabel>
+        <translation><!-- Fundamentals of Deep Learning for Multiple Data Types, Taiwanese --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fundamentals of Deep Learning for Natural Language Processing</masterLabel>
+        <translation><!-- Fundamentals of Deep Learning for Natural Language Processing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fundamentals of Deep Learning for Natural Language Processing, Chinese</masterLabel>
+        <translation><!-- Fundamentals of Deep Learning for Natural Language Processing, Chinese --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fundamentals of Deep Learning for Natural Language Processing, English</masterLabel>
+        <translation><!-- Fundamentals of Deep Learning for Natural Language Processing, English --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fundamentals of Deep Learning for Natural Language Processing, Korean</masterLabel>
+        <translation><!-- Fundamentals of Deep Learning for Natural Language Processing, Korean --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fundamentals of Deep Learning for Natural Language Processing, Taiwanese</masterLabel>
+        <translation><!-- Fundamentals of Deep Learning for Natural Language Processing, Taiwanese --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fundamentals of Deep Learning, Chinese</masterLabel>
+        <translation><!-- Fundamentals of Deep Learning, Chinese --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fundamentals of Deep Learning, English</masterLabel>
+        <translation><!-- Fundamentals of Deep Learning, English --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fundamentals of Deep Learning, Japanese</masterLabel>
+        <translation><!-- Fundamentals of Deep Learning, Japanese --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fundamentals of Deep Learning, Korean</masterLabel>
+        <translation><!-- Fundamentals of Deep Learning, Korean --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fundamentals of Deep Learning, Taiwanese</masterLabel>
+        <translation><!-- Fundamentals of Deep Learning, Taiwanese --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Getting Started with AI on Jetson Nano</masterLabel>
+        <translation><!-- Getting Started with AI on Jetson Nano --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Getting Started with AI on Jetson Nano, Chinese</masterLabel>
+        <translation><!-- Getting Started with AI on Jetson Nano, Chinese --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Getting Started with AI on Jetson Nano, English</masterLabel>
+        <translation><!-- Getting Started with AI on Jetson Nano, English --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

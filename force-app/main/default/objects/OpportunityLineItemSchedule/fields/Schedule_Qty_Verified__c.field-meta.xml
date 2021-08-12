@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Schedule_Qty_Verified__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>SDS-2719
+Sales: Create verification field for Sales Ops to validate the Rev Schedule QTY against the actuals</description>
+    <externalId>false</externalId>
+    <label>Schedule Qty Verified?</label>
+    <type>Checkbox</type>
+</CustomField>

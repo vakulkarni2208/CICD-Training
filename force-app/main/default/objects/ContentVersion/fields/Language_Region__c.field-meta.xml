@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Language_Region__c</fullName>
+    <description>Language field assigned to localized marketing content. Do not reorder the pick list options as it will break the EMEA Lite Portal auto content filtering.</description>
+    <externalId>false</externalId>
+    <label>Language (Region)</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Region__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Czech (CZ)</fullName>
+                <default>false</default>
+                <label>Czech (CZ)</label>
+            </value>
+            <value>
+                <fullName>English North American (en_US)</fullName>
+                <default>false</default>
+                <label>English North American (en_US)</label>
+            </value>
+            <value>
+                <fullName>English European (en_GB)</fullName>
+                <default>false</default>
+                <label>English European (en_GB)</label>
+            </value>
+            <value>
+                <fullName>French (FR)</fullName>
+                <default>false</default>
+                <label>French (FR)</label>
+            </value>
+            <value>
+                <fullName>German (DE)</fullName>
+                <default>false</default>
+                <label>German (DE)</label>
+            </value>
+            <value>
+                <fullName>Italian (IT)</fullName>
+                <default>false</default>
+                <label>Italian (IT)</label>
+            </value>
+            <value>
+                <fullName>Japanese (JA)</fullName>
+                <default>false</default>
+                <label>Japanese (JA)</label>
+            </value>
+            <value>
+                <fullName>Korean (KO)</fullName>
+                <default>false</default>
+                <label>Korean (KO)</label>
+            </value>
+            <value>
+                <fullName>Polish (PL)</fullName>
+                <default>false</default>
+                <label>Polish (PL)</label>
+            </value>
+            <value>
+                <fullName>Portuguese Brazilian (pt_BR)</fullName>
+                <default>false</default>
+                <label>Portuguese Brazilian (pt_BR)</label>
+            </value>
+            <value>
+                <fullName>Russian (RU)</fullName>
+                <default>false</default>
+                <label>Russian (RU)</label>
+            </value>
+            <value>
+                <fullName>Chinese Simplified (zh_CN)</fullName>
+                <default>false</default>
+                <label>Chinese Simplified (zh_CN)</label>
+            </value>
+            <value>
+                <fullName>Spanish (ES)</fullName>
+                <default>false</default>
+                <label>Spanish (ES)</label>
+            </value>
+            <value>
+                <fullName>Chinese Traditional (zh_TW)</fullName>
+                <default>false</default>
+                <label>Chinese Traditional (zh_TW)</label>
+            </value>
+            <value>
+                <fullName>Turkish (TR)</fullName>
+                <default>false</default>
+                <label>Turkish (TR)</label>
+            </value>
+            <value>
+                <fullName>Portuguese European (pt_PT)</fullName>
+                <default>false</default>
+                <label>Portuguese European (pt_PT)</label>
+            </value>
+            <value>
+                <fullName>Spanish Mexican (cs_MX)</fullName>
+                <default>false</default>
+                <label>Spanish Mexican (cs_MX)</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>APAC</controllingFieldValue>
+            <valueName>Japanese (JA)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>APAC</controllingFieldValue>
+            <valueName>Korean (KO)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>APAC</controllingFieldValue>
+            <valueName>Chinese Simplified (zh_CN)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>APAC</controllingFieldValue>
+            <valueName>Chinese Traditional (zh_TW)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>EMEA</controllingFieldValue>
+            <valueName>Czech (CZ)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>EMEA</controllingFieldValue>
+            <valueName>English European (en_GB)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>EMEA</controllingFieldValue>
+            <valueName>French (FR)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>EMEA</controllingFieldValue>
+            <valueName>German (DE)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>EMEA</controllingFieldValue>
+            <valueName>Italian (IT)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>EMEA</controllingFieldValue>
+            <valueName>Polish (PL)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>EMEA</controllingFieldValue>
+            <controllingFieldValue>NALA</controllingFieldValue>
+            <valueName>Portuguese Brazilian (pt_BR)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>EMEA</controllingFieldValue>
+            <valueName>Russian (RU)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>EMEA</controllingFieldValue>
+            <controllingFieldValue>NALA</controllingFieldValue>
+            <valueName>Spanish (ES)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>EMEA</controllingFieldValue>
+            <valueName>Turkish (TR)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NALA</controllingFieldValue>
+            <controllingFieldValue>Global</controllingFieldValue>
+            <valueName>English North American (en_US)</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

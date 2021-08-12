@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OWD_Sender_Email_Address__c</fullName>
+    <description>This field have the OWD Email Address, which will be used as a Sender</description>
+    <externalId>false</externalId>
+    <label>OWD - Sender Email Address</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

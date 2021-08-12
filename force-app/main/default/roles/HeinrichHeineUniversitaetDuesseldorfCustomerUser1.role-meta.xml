@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>None</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>Heinrich Heine Universitaet Duesseldorf Customer User</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>Heinrich Heine Universitaet Duesseldorf Customer User</name>
+    <opportunityAccessLevel>None</opportunityAccessLevel>
+    <parentRole>EMEA_Supercomputing_Sales</parentRole>
+</Role>

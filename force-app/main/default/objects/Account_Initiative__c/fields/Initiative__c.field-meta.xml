@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Initiative__c</fullName>
+    <externalId>false</externalId>
+    <label>Initiative</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>DGX for Auto</fullName>
+                <default>false</default>
+                <label>DGX for Auto</label>
+            </value>
+            <value>
+                <fullName>Constellation</fullName>
+                <default>false</default>
+                <label>Constellation</label>
+            </value>
+            <value>
+                <fullName>Auto Datacenter</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Auto Datacenter</label>
+            </value>
+            <value>
+                <fullName>CICN</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>CICN</label>
+            </value>
+            <value>
+                <fullName>Cryo-EM</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Cryo-EM</label>
+            </value>
+            <value>
+                <fullName>Data Science</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Data Science</label>
+            </value>
+            <value>
+                <fullName>Financial Services (FSI)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Financial Services (FSI)</label>
+            </value>
+            <value>
+                <fullName>Genomics</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Genomics</label>
+            </value>
+            <value>
+                <fullName>HER Target</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>HER Target</label>
+            </value>
+            <value>
+                <fullName>Retail</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Retail</label>
+            </value>
+            <value>
+                <fullName>SuperPOD</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>SuperPOD</label>
+            </value>
+            <value>
+                <fullName>Supercomputing</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Supercomputing</label>
+            </value>
+            <value>
+                <fullName>Telecommunications</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Telecommunications</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

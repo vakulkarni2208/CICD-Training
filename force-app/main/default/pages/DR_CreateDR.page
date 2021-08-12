@@ -1,0 +1,354 @@
+<!-- 
+    2017.11.29 - PJENA - Deal Registration - VF Page for Deal Registration
+    2018.05.25 - PJENA - Add Program Type selection Alert in Deal Registration form (SDS-466) 
+    2018.10.23 - PJENA - Add Closed Date and NPN Disti
+    2019.01.25 - PJENA - NPN 3.0 - Renaming GRID to vGPU
+    2020.04.20 - PJENA - SDS-2060 - DLI for Opp Reg
+    2021.01.26 - PJENA - SDS-2864-Updates to the NPN OppReg Application Form
+ -->
+ 
+<apex:page id="drpage"  controller="DR_CreateDR_cls" showHeader="false" sidebar="false">
+     <!-- Style Panel Satrts---> 
+     <style type="text/css">   
+        .imgclass:hover{   
+            background-image: url(/img/help/helpOrbs.gif);   
+            background-repeat: no-repeat;   
+            width: 16px;   
+            height: 15px;
+            background-position: right;
+        }   
+        .imgclass{   
+            background-image: url(/img/help/helpOrbs.gif);   
+            background-repeat: no-repeat;   
+            width: 16px;   
+            height: 15px;   
+        }   
+    </style>   
+    <!-- Style Panel Ends---> 
+    <script>
+        function showConfirmation(){
+            var bConfirm = confirm("Are you sure you want to cancel this registration?");
+            if (bConfirm == false) {
+                return false;
+            }
+        }
+    </script>
+    <apex:form >
+        <apex:pageMessages id="pgMsg" escape="false" rendered="{!showError == true}"/>
+        
+        <apex:pageBlock title="NVIDIA Opportunity Registration" mode="edit" id="pb1">
+            
+            <apex:pageBlockButtons location="both">
+                <apex:commandButton action="{!saveDR}" value="Save" rendered="{!isError == false}"/>
+                <apex:commandButton action="{!cancelDR}" value="Cancel" onclick="javascript: return showConfirmation();" immediate="true"/>
+            </apex:pageBlockButtons>
+            
+            
+            <apex:pageBlockSection title="End User Information" columns="1">
+                <apex:pageBlockSectionItem >
+                    <apex:outputPanel >
+                        <apex:outputLabel >End User Company Name</apex:outputLabel>
+                        <img src="/s.gif" class="imgclass" title="{!$Label.CRM_DR_VF_HT_EndCustomerName}"/>
+                    </apex:outputPanel>
+                    <apex:inputField value="{!oDealReg.Company}" required="true"/>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputPanel >
+                        <apex:outputLabel >End User Address</apex:outputLabel>
+                        <img src="/s.gif" class="imgclass" title="{!$Label.CRM_DR_VF_HT_EndCustomerAddress}"/>
+                    </apex:outputPanel>
+                    <apex:inputField value="{!oDealReg.Street}" required="true"/>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputPanel >
+                        <apex:outputLabel >End User City</apex:outputLabel>
+                        <img src="/s.gif" class="imgclass" title="{!$Label.CRM_DR_VF_HT_EndCustomerCity}"/>
+                    </apex:outputPanel>
+                    <apex:inputField value="{!oDealReg.City}" required="true"/>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputPanel >
+                        <apex:outputLabel >End User Country</apex:outputLabel>
+                        <img src="/s.gif" class="imgclass" title="{!$Label.CRM_DR_VF_HT_EndCustomerCountry}"/>
+                    </apex:outputPanel>
+                    <apex:inputField value="{!oDealReg.CountryCode}" required="true"/>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputPanel >
+                        <apex:outputLabel >End User State</apex:outputLabel>
+                        <img src="/s.gif" class="imgclass" title="{!$Label.CRM_DR_VF_HT_EndCustomerState}"/>
+                    </apex:outputPanel>
+                    <apex:inputField value="{!oDealReg.StateCode}" required="true"/>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputPanel >
+                        <apex:outputLabel >End User Zip Code</apex:outputLabel>
+                        <img src="/s.gif" class="imgclass" title="{!$Label.CRM_DR_VF_HT_EndCustomerZipCode}"/>
+                    </apex:outputPanel>
+                    <apex:inputField value="{!oDealReg.PostalCode}" required="true"/>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputPanel >
+                        <apex:outputLabel >End User First Name</apex:outputLabel>
+                        <img src="/s.gif" class="imgclass" title="{!$Label.CRM_DR_VF_HT_EndUserFirstName}"/>
+                    </apex:outputPanel>
+                    <apex:inputField value="{!oDealReg.FirstName}" required="true"/>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputPanel >
+                        <apex:outputLabel >End User Last Name</apex:outputLabel>
+                        <img src="/s.gif" class="imgclass" title="{!$Label.CRM_DR_VF_HT_EndUserLastName}"/>
+                    </apex:outputPanel>
+                    <apex:inputField value="{!oDealReg.LastName}" required="true"/>
+                </apex:pageBlockSectionItem>
+                
+                
+                 <apex:pageBlockSectionItem >
+                    <apex:outputPanel >
+                        <apex:outputLabel >End User Title</apex:outputLabel>
+                        <img src="/s.gif" class="imgclass" title="{!$Label.CRM_DR_VF_HT_EndUserTitle}"/>
+                    </apex:outputPanel>
+                    <apex:inputField value="{!oDealReg.Title}" required="true"/>
+                 </apex:pageBlockSectionItem>
+                 
+                 <apex:pageBlockSectionItem >
+                    <apex:outputPanel >
+                        <apex:outputLabel >End User Email</apex:outputLabel>
+                        <img src="/s.gif" class="imgclass" title="{!$Label.CRM_DR_VF_HT_EndUserEmail}"/>
+                    </apex:outputPanel>
+                    <apex:inputField value="{!oDealReg.Email}" required="true"/>
+                 </apex:pageBlockSectionItem>
+                 
+                 <apex:pageBlockSectionItem >
+                    <apex:outputPanel >
+                        <apex:outputLabel >End User Phone Number</apex:outputLabel>
+                        <img src="/s.gif" class="imgclass" title="{!$Label.CRM_DR_VF_HT_EndUserPhone}"/>
+                    </apex:outputPanel>
+                    <apex:inputField value="{!oDealReg.Phone}" required="true"/>
+                 </apex:pageBlockSectionItem>
+
+            </apex:pageBlockSection>
+            
+             <apex:pageBlockSection title="Product Information" columns="2">
+             
+                <apex:pageBlockSectionItem dataTitle="">
+                    <apex:outputLabel title="" style="color:red;">
+                    Please utilize the program type field to declare the proper registration type. 
+                    For EDU registrations, please select the applicable DGX or vGPU EDU option. 
+                    For DGX Inception Deals, please select the DGX Opp Reg Inception option. 
+                    For all other registrations please select the standard DGX, DLI, or vGPU Opp Reg option.
+                    </apex:outputLabel>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem dataTitle="">
+                    <apex:outputLabel title=""></apex:outputLabel>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputPanel >
+                        <apex:outputLabel >Deal Type</apex:outputLabel>
+                        <img src="/s.gif" class="imgclass" title="{!$Label.CRM_DR_VF_HT_DealType}"/>
+                    </apex:outputPanel>
+                    <apex:inputField value="{!oDealReg.DR_Deal_Type__c}" required="true"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputPanel >
+                        <apex:outputLabel >Secondary Product</apex:outputLabel>
+                        <img src="/s.gif" class="imgclass" title="{!$Label.CRM_DR_VF_HT_Product}"/>
+                    </apex:outputPanel>
+                    <apex:inputField value="{!oDealReg.DR_Secondary_Product__c}" required="false"/>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Program Type</apex:outputLabel>
+                    <apex:inputField value="{!oDealReg.DR_Program_Type__c}" required="true"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputPanel >
+                        <apex:outputLabel >Secondary vGPU SUMS/DGX Support</apex:outputLabel>
+                        <img src="/s.gif" class="imgclass" title="{!$Label.CRM_DR_VF_HT_SKU}"/>
+                    </apex:outputPanel>
+                    <apex:inputField value="{!oDealReg.DR_Secondary_SKU__c}" required="false"/>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputPanel >
+                        <apex:outputLabel >Primary Product</apex:outputLabel>
+                        <img src="/s.gif" class="imgclass" title="{!$Label.CRM_DR_VF_HT_Product}"/>
+                    </apex:outputPanel>
+                    <apex:inputField value="{!oDealReg.DR_Product__c}" required="true"/>
+                </apex:pageBlockSectionItem>
+                 <apex:pageBlockSectionItem >
+                    <apex:outputPanel >
+                        <apex:outputLabel >Secondary Product Quantity</apex:outputLabel>
+                        <img src="/s.gif" class="imgclass" title="{!$Label.CRM_DR_VF_HT_SKUQuantity}"/>
+                    </apex:outputPanel>
+                    <apex:inputField value="{!oDealReg.DR_Secondary_SKU_Quantity__c}" required="false"/>
+                </apex:pageBlockSectionItem>
+                
+                
+                 <apex:pageBlockSectionItem >
+                    <apex:outputPanel >
+                        <apex:outputLabel >Primary vGPU SUMS/DGX Support</apex:outputLabel>
+                        <img src="/s.gif" class="imgclass" title="{!$Label.CRM_DR_VF_HT_SKU}"/>
+                    </apex:outputPanel>
+                    <apex:inputField value="{!oDealReg.DR_SKU__c}" required="true"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem dataTitle="">
+                    <apex:outputLabel title=""></apex:outputLabel>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputPanel >
+                        <apex:outputLabel >Primary Product Quantity</apex:outputLabel>
+                        <img src="/s.gif" class="imgclass" title="{!$Label.CRM_DR_VF_HT_SKUQuantity}"/>
+                    </apex:outputPanel>
+                    <apex:inputField value="{!oDealReg.DR_SKU_Quantity__c}" required="true"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem dataTitle="">
+                    <apex:outputLabel title=""></apex:outputLabel>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputPanel >
+                        <apex:outputLabel >Product Description</apex:outputLabel>
+                        <img src="/s.gif" class="imgclass" title="{!$Label.CRM_DR_VF_HT_ProdDesc}"/>
+                    </apex:outputPanel>
+                    <apex:inputField value="{!oDealReg.DR_Product_Description__c}" required="false" style="width: 360px" />
+                </apex:pageBlockSectionItem>
+               
+                
+            </apex:pageBlockSection>
+            
+            <apex:pageBlockSection title="Deal Information" columns="2" id="pgs1">
+                <apex:pageBlockSectionItem >
+                    <apex:outputPanel >
+                        <apex:outputLabel >Industry</apex:outputLabel>
+                        <img src="/s.gif" class="imgclass" title="{!$Label.CRM_DR_VF_HT_EndCustomerIndustry}"/>
+                    </apex:outputPanel>
+                    <apex:inputField value="{!oDealReg.Industry}" required="true"/>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputPanel >
+                        <apex:outputLabel >Date Deal Qualified</apex:outputLabel>
+                        <img src="/s.gif" class="imgclass" title="{!$Label.CRM_DR_VF_HT_DateDealQualified}"/>
+                    </apex:outputPanel>
+                    <apex:inputField value="{!oDealReg.DR_Deal_Qualified_Date__c}" required="true"/>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Opportunity Network Partner</apex:outputLabel>
+                    <apex:inputField value="{!oDealReg.Opportunity_Network_Partner__c}"/>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Opportunity Storage Partner</apex:outputLabel>
+                    <apex:inputField value="{!oDealReg.Opportunity_Storage_Partner__c}"/>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputPanel >
+                        <apex:outputLabel >Is Customer Doing POC?</apex:outputLabel>
+                        <img src="/s.gif" class="imgclass" title="{!$Label.CRM_DR_VF_HT_IsCustDoingPOC}"/>
+                    </apex:outputPanel>
+                    <apex:inputField value="{!oDealReg.DR_Is_Customer_Doing_POC__c}" required="true"/>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputPanel >
+                        <apex:outputLabel >POC Location</apex:outputLabel>
+                        <img src="/s.gif" class="imgclass" title="{!$Label.CRM_DR_VF_HT_POCLocation}"/>
+                    </apex:outputPanel>
+                    <apex:inputField value="{!oDealReg.DR_POC_Location__c}" required="false"/>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputPanel >
+                        <apex:outputLabel >POC Details</apex:outputLabel>
+                        <img src="/s.gif" class="imgclass" title="{!$Label.CRM_DR_VF_HT_POCDetails}"/>
+                    </apex:outputPanel>
+                    <apex:inputField value="{!oDealReg.DR_POC_Details__c}" required="false" style="width: 360px" />
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputPanel >
+                        <apex:outputLabel >Customer Use Case</apex:outputLabel>
+                        <img src="/s.gif" class="imgclass" title="{!$Label.CRM_DR_VF_HT_CustUseCase}"/>
+                    </apex:outputPanel>
+                    <apex:inputField value="{!oDealReg.DR_POC_Customer_Use_Case__c}" required="true" style="width: 360px" />
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputPanel >
+                        <apex:outputLabel >Alternative Solutions/Competitors</apex:outputLabel>
+                        <img src="/s.gif" class="imgclass" title="{!$Label.CRM_DR_VF_HT_AltSolnCustConsidering}"/>
+                    </apex:outputPanel>
+                    <apex:inputField value="{!oDealReg.DR_POC_Alt_Soln_Customer_Considering__c}" required="true" style="width: 360px" />
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+            <apex:outputPanel >
+                        <apex:outputLabel >NVIDIA Applications Customer Utilizing</apex:outputLabel>
+                        <img src="/s.gif" class="imgclass" title="{!$Label.CRM_DR_VF_HT_NVAppsCustUtlizing}"/>
+                     </apex:outputPanel>
+                    <apex:inputField value="{!oDealReg.DR_POC_NVIDIA_Apps_Customer_Utilizing__c}" required="true" style="width: 360px" />
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Registration Close Date</apex:outputLabel>
+                    <apex:inputField value="{!oDealReg.DR_Registration_Close_Date__c}" required="true"/>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Program Name</apex:outputLabel>
+                    <apex:inputField value="{!oDealReg.DR_Program_Name__c}" required="false"/>
+                </apex:pageBlockSectionItem>
+                
+            </apex:pageBlockSection>
+            
+            <apex:pageBlockSection title="NPN Partner Information" columns="2">
+                <apex:pageBlockSectionItem >
+                      <apex:outputPanel >
+                          <apex:outputLabel >NPN Distributor</apex:outputLabel>
+                          <img src="/s.gif" class="imgclass" title="{!$Label.CRM_DR_VF_HT_NPNDistributor}"/>
+                      </apex:outputPanel>
+                    <apex:inputField value="{!oDealReg.DR_NPN_Distributor__c}" required="true"/>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputPanel >
+                        <apex:outputLabel >Partner Sales/Account Manager Email</apex:outputLabel>
+                        <img src="/s.gif" class="imgclass" title="{!$Label.CRM_DR_VF_HT_TeamMemberEmail}"/>
+                    </apex:outputPanel>
+                    <apex:inputField value="{!oDealReg.DR_Additional_Team_Member_Email__c}" required="false"/>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputPanel >
+                        <apex:outputLabel >Partner Sales/Account Manager Name</apex:outputLabel>
+                        <img src="/s.gif" class="imgclass" title="{!$Label.CRM_DR_VF_HT_PtnrSalesAcMgrName}"/>
+                    </apex:outputPanel>
+                    <apex:inputField value="{!oDealReg.DR_Partner_Sales_Account_Manager_Name__c}" required="false"/>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputPanel >
+                        <apex:outputLabel >Partner Sales/Account Manager Phone</apex:outputLabel>
+                        <img src="/s.gif" class="imgclass" title="{!$Label.CRM_DR_VF_HT_PtnrSalesAcMgrPhone}"/>
+                    </apex:outputPanel>
+                    <apex:inputField value="{!oDealReg.DR_Partner_Sales_Account_Manager_Phone__c}" required="false"/>
+                </apex:pageBlockSectionItem>
+                
+            </apex:pageBlockSection>
+            
+        </apex:pageBlock>
+        
+    </apex:form>
+</apex:page>

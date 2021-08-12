@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Initial_Order_CRD_Validation</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(ISPICKVAL(Type, &apos;New&apos;), IF(RecordTypeId==&apos;0127i000001rdgp&apos;, TRUE, FALSE) ,  NOT(ISNEW())  , NOT(ISNULL(SBQQ__Quote__r.SBQQ__ExpirationDate__c)) ,  IF(  PO_Date__c  &lt;=  SBQQ__Quote__r.SBQQ__ExpirationDate__c  , FALSE, TRUE))</errorConditionFormula>
+    <errorMessage>Customer Requested Date on the PO is greater than the Quote Expiration Date</errorMessage>
+</ValidationRule>

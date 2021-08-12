@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Computational Languages --></label>
+    <name>Computational_Languages__c</name>
+    <picklistValues>
+        <masterLabel>C</masterLabel>
+        <translation><!-- C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>C#</masterLabel>
+        <translation><!-- C# --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>C++</masterLabel>
+        <translation><!-- C++ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>F#</masterLabel>
+        <translation><!-- F# --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fortran</masterLabel>
+        <translation><!-- Fortran --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Java</masterLabel>
+        <translation><!-- Java --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LabVIEW</masterLabel>
+        <translation><!-- LabVIEW --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Matlab</masterLabel>
+        <translation><!-- Matlab --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other (please explain)</masterLabel>
+        <translation><!-- Other (please explain) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Perl</masterLabel>
+        <translation><!-- Perl --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Python</masterLabel>
+        <translation><!-- Python --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>R</masterLabel>
+        <translation><!-- R --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Visual Basic</masterLabel>
+        <translation><!-- Visual Basic --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

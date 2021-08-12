@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Do_not_Expire_Registration__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>This field let the Opportunity to not expired if it is child of this Partner (Account)</description>
+    <externalId>false</externalId>
+    <label>Do not Expire Registration</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

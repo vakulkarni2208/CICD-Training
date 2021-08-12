@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RAPIDS_Required_for_DA_and_ML</fullName>
+    <active>false</active>
+    <description>SDS-1605 - Sales: Additional RAPIDS details 
+RAPIDS field is required if Primary Customer Workload or Additional Customer Workload contains Data Analytics (Not ML or DL), Machine Learning (Not DL)
+SDS-2639: Update the RAPIDS on Opportunities</description>
+    <errorConditionFormula>AND(
+ $UserRole.Name &lt;&gt; &quot;Administrator&quot;,   
+ RecordType.DeveloperName = &quot;Enterprise_Sales_Opportunity&quot;,
+ ISBLANK(TEXT(RAPIDS__c)),
+ OR(
+   ISPICKVAL(Primary_Customer_Use_Case__c, &quot;Data Analytics (Not ML or DL)&quot;),
+   ISPICKVAL(Primary_Customer_Use_Case__c, &quot;Machine Learning (Not DL)&quot;),
+   INCLUDES(Additional_Customer_Use_Cases__c, &quot;Data Analytics (Not ML or DL)&quot;),
+   INCLUDES(Additional_Customer_Use_Cases__c, &quot;Machine Learning (Not DL)&quot;)
+ )
+)</errorConditionFormula>
+    <errorMessage>For Data Analytics or Machine Learning Primary/Additional Workload please update ML/Data Analytics Details</errorMessage>
+</ValidationRule>

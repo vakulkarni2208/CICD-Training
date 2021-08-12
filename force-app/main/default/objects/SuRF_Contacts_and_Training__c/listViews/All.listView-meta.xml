@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>Account_ID__c</columns>
+    <columns>Competency__c</columns>
+    <columns>Contact_Name__c</columns>
+    <columns>Curriculum_Course_Title__c</columns>
+    <columns>Curriculum_Title__c</columns>
+    <columns>Training_Record_Type__c</columns>
+    <columns>Email__c</columns>
+    <columns>Partner_Program__c</columns>
+    <columns>Partner_Training_Compliance__c</columns>
+    <columns>Partner_Training_Required__c</columns>
+    <columns>Phone_Number__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All</label>
+    <language>en_US</language>
+</ListView>

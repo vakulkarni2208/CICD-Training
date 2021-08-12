@@ -1,0 +1,33 @@
+<aura:component>
+    <!--<aura:attribute name="lstHPMessages" type="NV_LightningCommunityHomePageController.InitializationData.HomePageMessage[]" />    -->    
+    <aura:handler name="init" action="{!c.checkBrowser}" value="{!this}"/>
+    <aura:attribute name="objID" type="NV_LightningCommunityHomePageController.InitializationData" />
+    <lightning:carousel disableAutoRefresh="false" disableAutoScroll="false" class="carousel" scrollDuration="7">
+        <aura:iteration items="{!v.objID.lstHomePageMessages}" var="objHPMessages">
+            <lightning:carouselImage
+            	href="{!objHPMessages.strURL}"
+                description = "{!objHPMessages.strMessage}">
+            </lightning:carouselImage>
+        </aura:iteration>
+    </lightning:carousel>    
+   <!-- <lightning:carousel disableAutoRefresh="false" disableAutoScroll="false">
+        <lightning:carouselImage
+            src = "{!$Resource.NV_PartnerHomePageHeader}"
+            header = "First Card"
+            description = "First card description."
+            alternativeText = "First card accessible description.">
+        </lightning:carouselImage>
+        <lightning:carouselImage
+            src = "{!$Resource.NV_New_Logo}"
+            header = "Second Card"
+            description = "Second card description."
+            alternativeText = "Second card accessible description.">
+        </lightning:carouselImage>
+        <lightning:carouselImage
+            src = "{!$Resource.NV_PartnerHomePageHeader}"
+            header = "Third Card"
+            description = "Third card description."
+            alternativeText = "Third card accessible description.">
+        </lightning:carouselImage>
+    </lightning:carousel>-->
+</aura:component>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Challenges_why_the_client_i_interest_del__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>List which areas the customer has challenges and would like to purchase VCA to solve these challenges.</inlineHelpText>
+    <label>GRID VCA Customer Challenges</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>MAC environment</fullName>
+                <default>false</default>
+                <label>MAC environment</label>
+            </value>
+            <value>
+                <fullName>IT admin</fullName>
+                <default>false</default>
+                <label>IT admin</label>
+            </value>
+            <value>
+                <fullName>HW costs</fullName>
+                <default>false</default>
+                <label>HW costs</label>
+            </value>
+            <value>
+                <fullName>Need Remote capability-multi locations</fullName>
+                <default>false</default>
+                <label>Need Remote capability-multi locations</label>
+            </value>
+            <value>
+                <fullName>Need Virtualization</fullName>
+                <default>false</default>
+                <label>Need Virtualization</label>
+            </value>
+            <value>
+                <fullName>Concerned with Data Security</fullName>
+                <default>false</default>
+                <label>Concerned with Data Security</label>
+            </value>
+            <value>
+                <fullName>Staff Augmentation-seasonal/contractors</fullName>
+                <default>false</default>
+                <label>Staff Augmentation-seasonal/contractors</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

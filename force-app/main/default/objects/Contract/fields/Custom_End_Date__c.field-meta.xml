@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Custom_End_Date__c</fullName>
+    <externalId>false</externalId>
+    <formula>TEXT(MONTH(EndDate)) + &quot;-&quot; + TEXT(DAY(EndDate))+ &quot;-&quot; + TEXT(YEAR(EndDate))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Custom End Date</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

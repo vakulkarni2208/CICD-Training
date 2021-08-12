@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DR_Constant_Others__c</fullName>
+    <description>Constant used for deriving SalesOps admin in case no matching billing country found. It can be defaulted to &quot;Others&quot; or match with the value in DR : SalesOps : Admins</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Constant used for deriving SalesOps admin in case no matching billing country found. It can be defaulted to &quot;Others&quot; or match with the value in DR : SalesOps : Admins or remain blank</inlineHelpText>
+    <label>DR Constant Others</label>
+    <length>80</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

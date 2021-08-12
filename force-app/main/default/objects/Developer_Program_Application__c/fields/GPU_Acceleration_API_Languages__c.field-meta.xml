@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GPU_Acceleration_API_Languages__c</fullName>
+    <externalId>false</externalId>
+    <label>GPU Acceleration API / Languages</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Anaconda</fullName>
+                <default>false</default>
+                <label>Anaconda</label>
+            </value>
+            <value>
+                <fullName>CUDA C</fullName>
+                <default>false</default>
+                <label>CUDA C</label>
+            </value>
+            <value>
+                <fullName>CUDA C++</fullName>
+                <default>false</default>
+                <label>CUDA C++</label>
+            </value>
+            <value>
+                <fullName>CUDA Fortran</fullName>
+                <default>false</default>
+                <label>CUDA Fortran</label>
+            </value>
+            <value>
+                <fullName>C++ AMP</fullName>
+                <default>false</default>
+                <label>C++ AMP</label>
+            </value>
+            <value>
+                <fullName>Cg</fullName>
+                <default>false</default>
+                <label>Cg</label>
+            </value>
+            <value>
+                <fullName>Direct3D / HLSL</fullName>
+                <default>false</default>
+                <label>Direct3D / HLSL</label>
+            </value>
+            <value>
+                <fullName>DirectCompute</fullName>
+                <default>false</default>
+                <label>DirectCompute</label>
+            </value>
+            <value>
+                <fullName>jCUDA</fullName>
+                <default>false</default>
+                <label>jCUDA</label>
+            </value>
+            <value>
+                <fullName>MPI</fullName>
+                <default>false</default>
+                <label>MPI</label>
+            </value>
+            <value>
+                <fullName>OpenACC</fullName>
+                <default>false</default>
+                <label>OpenACC</label>
+            </value>
+            <value>
+                <fullName>OpenCL</fullName>
+                <default>false</default>
+                <label>OpenCL</label>
+            </value>
+            <value>
+                <fullName>OpenGL / GLSL</fullName>
+                <default>false</default>
+                <label>OpenGL / GLSL</label>
+            </value>
+            <value>
+                <fullName>OpenGL-Compute</fullName>
+                <default>false</default>
+                <label>OpenGL-Compute</label>
+            </value>
+            <value>
+                <fullName>OpenMP</fullName>
+                <default>false</default>
+                <label>OpenMP</label>
+            </value>
+            <value>
+                <fullName>PTX</fullName>
+                <default>false</default>
+                <label>PTX</label>
+            </value>
+            <value>
+                <fullName>R+CUDA</fullName>
+                <default>false</default>
+                <label>R+CUDA</label>
+            </value>
+            <value>
+                <fullName>Vulkan</fullName>
+                <default>false</default>
+                <label>Vulkan</label>
+            </value>
+            <value>
+                <fullName>Other (please explain)</fullName>
+                <default>false</default>
+                <label>Other (please explain)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>10</visibleLines>
+</CustomField>

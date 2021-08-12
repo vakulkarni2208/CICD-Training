@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Primary Customer Workload data from the Opportunity Object --></help>
+    <label><!-- Opportunity Primary Customer Workload --></label>
+    <name>Opportunity_Primary_Customer_Workload__c</name>
+</CustomFieldTranslation>

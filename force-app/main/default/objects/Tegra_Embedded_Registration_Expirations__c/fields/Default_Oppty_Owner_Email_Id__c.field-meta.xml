@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Default_Oppty_Owner_Email_Id__c</fullName>
+    <description>This field will have the Email address of the User who will be the Default replaced owner in case of any inActive PBM.</description>
+    <externalId>false</externalId>
+    <label>Default Oppty Owner Email Id</label>
+    <length>100</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

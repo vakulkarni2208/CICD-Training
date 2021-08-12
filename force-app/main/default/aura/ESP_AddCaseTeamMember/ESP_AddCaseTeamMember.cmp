@@ -1,0 +1,19 @@
+<aura:component controller="Aura_Case_Operations" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction,lightning:isUrlAddressable" access="global" >
+   	<aura:attribute name="newCase" type="Case"/>
+    <aura:attribute name="recordId" type="Id" />
+    <aura:attribute name="caseId" type="Id" />
+    <aura:attribute name="caseTeamMembers" type="List" />
+    <aura:attribute name="message" type="string" />
+    <aura:attribute name="title" type="string" />
+    <aura:handler name="init" value="{! this }" action="{! c.init }"/>
+
+    <div class="slds-box slds-theme_default">
+    	<div class="slds-col slds-size_1-of-2">
+            <lightning:recordEditForm objectApiName="Case" aura:id="recordEditForm" onsubmit="{!c.saveBug1}" >
+            	<lightning:inputField fieldName="Community_Contact__c" value="{!v.newCase.Community_Contact__c}" label="Search Contact" fieldLevelHelp="Help text goes here"/>
+            </lightning:recordEditForm>        
+            <lightning:button variant="brand" class="slds-float--center" label="Add to Case Team" title="Add to Case Team" onclick="{!c.submitQuery}" />    
+        </div><br/>
+        <p><lightning:pillContainer items="{!v.caseTeamMembers}" onitemremove="{!c.handleItemRemove}"/></p>
+    </div>        
+</aura:component>

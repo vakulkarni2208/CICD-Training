@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Program_ID__c</fullName>
+    <caseSensitive>true</caseSensitive>
+    <description>Program ID obtained from the DevZone API to be used for comparison by Mulesoft in order to reference a developer program</description>
+    <externalId>false</externalId>
+    <label>Program ID</label>
+    <length>16</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>true</unique>
+</CustomField>

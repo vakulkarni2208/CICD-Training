@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Please select the pull-down area which started this opportunity (e.g. qualified lead, call, etc.).  This will help us track how Opportunities get started. --></help>
+    <label><!-- What started this Opportunity? --></label>
+    <name>What_generated_this_Opportunity__c</name>
+    <picklistValues>
+        <masterLabel>Inbound Call</masterLabel>
+        <translation><!-- Inbound Call --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ongoing Business</masterLabel>
+        <translation><!-- Ongoing Business --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Partner called me for support</masterLabel>
+        <translation><!-- Partner called me for support --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Personal Contact</masterLabel>
+        <translation><!-- Personal Contact --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Qualified Lead</masterLabel>
+        <translation><!-- Qualified Lead --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RFP</masterLabel>
+        <translation><!-- RFP --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

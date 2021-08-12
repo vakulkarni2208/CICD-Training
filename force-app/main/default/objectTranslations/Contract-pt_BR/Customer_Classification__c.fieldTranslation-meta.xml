@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Customer Classification --></label>
+    <name>Customer_Classification__c</name>
+    <picklistValues>
+        <masterLabel>CSP</masterLabel>
+        <translation><!-- CSP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Commercial</masterLabel>
+        <translation><!-- Commercial --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Education</masterLabel>
+        <translation><!-- Education --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Inception</masterLabel>
+        <translation><!-- Inception --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

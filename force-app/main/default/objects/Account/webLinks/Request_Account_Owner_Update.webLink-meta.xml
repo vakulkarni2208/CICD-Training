@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Request_Account_Owner_Update</fullName>
+    <availability>online</availability>
+    <description>Log a case to request account owner update</description>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>Request Account Owner Update</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <url>/500/e?cas4_lkid={!Account.Id}&amp;cas4={!Account.Name}&amp;CF00Ne0000001h6OZ_lkid={!$User.Id}&amp;CF00Ne0000001h6OZ={!User.Full_Name__c}&amp;CF00Ne0000001h6Oe_lkid={!User.ManagerId}&amp;CF00Ne0000001h6Oe={!User.Manager}&amp;CF00Ne0000001h6PI_lkid={!Account.OwnerId}&amp;CF00Ne0000001h6PI={!Account.OwnerFullName}&amp;cas21=1</url>
+</WebLink>

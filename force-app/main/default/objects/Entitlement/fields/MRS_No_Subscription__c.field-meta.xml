@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MRS_No_Subscription__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>MRS (Saturn V) field</description>
+    <externalId>false</externalId>
+    <label>MRS (No Subscription)</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Enterprise_Opportunity_Primary_Workload__c</fullName>
+    <externalId>false</externalId>
+    <formula>TEXT (  Parent_Enterprise_Opportunity__r.Primary_Customer_Use_Case__c  )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Auto-populated field from Parent Enterprise Opportunity. For questions, please reach out to Parent Enterprise Opportunity owner or use the ‘Get Help’ button at the top.</inlineHelpText>
+    <label>Enterprise Opportunity Primary Workload</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

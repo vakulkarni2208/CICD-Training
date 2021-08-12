@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>L1_L2_Owner__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>This field holds the name of Most recent L1/L2 Owner (user) name.</description>
+    <externalId>false</externalId>
+    <label>L1/L2 Owner User</label>
+    <referenceTo>User</referenceTo>
+    <relationshipName>Cases2</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Lookup</type>
+</CustomField>

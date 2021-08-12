@@ -1,0 +1,620 @@
+<apex:page controller="GRID_portalHome" standardStylesheets="false" showHeader="true" sidebar="false">
+<!--
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.js"></script>
+<script>
+jQuery(function ($) {                
+                     
+            jQuery(".menu").find("td").each(function () {
+            
+            if (jQuery('#menuH').hasClass('home')) {
+                          jQuery(this).find("#home").addClass("selected");
+                    }   
+                   
+            else if (jQuery('#menuH').hasClass('sales')) {
+                            jQuery(this).find("#sales").addClass("selected");
+                    }          
+                   
+           else if (jQuery('#menuH').hasClass('marketing')) {
+                            jQuery(this).find("#marketing").addClass("selected");
+                    }                       
+           else if (jQuery('#menuH').hasClass('training')) {
+                            jQuery(this).find("#training").addClass("selected");
+                    }                    
+          else if (jQuery('#menuH').hasClass('support')) {
+                            jQuery(this).find("#support").addClass("selected");
+                    }
+          else if (jQuery('#menuH').hasClass('news')) {
+                            jQuery(this).find("#news").addClass("selected");
+                    }
+          else {                  
+                            jQuery(this).find("a").removeClass("selected");
+                    }     
+            });
+       
+});                    
+ 
+    function OpenPopupCenter(pageURL, title, w, h) {
+        var left = (screen.width - w) / 2;
+        var top = (screen.height - h) / 4;  // for 25% - devide by 4  |  for 33% - devide by 3
+        var targetWin = window.open(pageURL, title, 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width=' + w + ', height=' + h + ', top=' + top + ', left=' + left);                
+    } 
+
+</script>   
+<script>
+   function openinNewTab(url) {       
+         window.open(url,target="_blank");
+   }
+   
+   function  checkValidation(){       
+       var contactEmail = document.getElementById('pageId:formId:emailid').value;       
+       //alert(contactEmail);
+       //alert(contactEmail.indexOf('@'));
+       if(contactEmail.indexOf('@') == -1){           
+           alert('Email id is invalid !');
+           document.getElementById('pageId:formId:hiddenId').value = false;                 
+       }else {
+            document.getElementById('pageId:formId:hiddenId').value = true;
+       }       
+       var contactPhone = document.getElementById('pageId:formId:phoneId').value;
+       //alert(contactPhone);
+       if(!(contactPhone.length ==10)){            
+           alert('Phone must contain 10 digits !');
+           document.getElementById('pageId:formId:hiddenId').value = false;
+       }else{
+            document.getElementById('pageId:formId:hiddenId').value = true;
+       }
+       //alert('Finallly'+document.getElementById('pageId:formId:hiddenId').value);    
+       if(document.getElementById('pageId:formId:hiddenId').value == true){
+              return true;
+       }else {
+              return false;
+       }
+       
+   }
+</script>
+
+
+<table border="0" align="center" width="100%" style="background-color:#FFFFFF;color: #393939">
+<tr><td width="100%" valign="top">
+
+ <c:PortalGrid_MessageComponent />
+ <!--<c:PortalGrid_MessageTicker /> ->
+  <apex:form id="formId">
+
+
+<apex:inputHidden Id="hiddenId"/>                 
+      <apex:outputPanel id="displayEmailPopup1">        
+         <apex:outputPanel styleClass="popupBackground" layout="block" rendered="{!displayPopUp}"/>
+            <apex:outputPanel styleClass="custPopup" layout="block" rendered="{!displayPopUp}">
+                <apex:pageMessages />
+                <table width="80%" style="padding:20px;" border="0">              
+                <tr>
+                  <td align="right"><b>VAR Company Name</b></td>
+                  <td><apex:inputText value="{!companyName}" id="cname"/></td>
+                  <td>&nbsp;</td>
+                </tr>                             
+               <tr>
+                    <td align="right"><b>VAR Contact Name</b></td>
+                    <td><apex:inputText value="{!contactName}" id="conname"/></td>
+                    <td>&nbsp;</td>
+                </tr>   
+                <tr>
+                    <td align="right"><b>VAR Contact Email Address</b></td>
+                    <td><apex:inputText value="{!emailReportAProblem}" id="emailid"/></td>
+                    <td>&nbsp;</td>    
+                </tr>
+                <tr>   
+                    <td align="right"><b>VAR Contact Phone Number</b></td>
+                    <td><apex:inputText value="{!phoneNumber}" id="phoneId"/></td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                     <td align="right"><b>Time and Date</b></td>
+                     <td><apex:inputtext value="{!timeandDate}" id="timdate"/></td>
+                     <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td align="right"><b>Short Description</b></td>
+                    <td><apex:inputText style="height:25px;width:500px;" value="{!problemType}" maxlength="45" id="protype"/></td>
+                    <td>&nbsp;</td>
+                </tr> 
+                
+                <tr>
+                    <td align="right" valign="top"><b>Problem Description</b></td>
+                    <td><apex:inputTextArea style="height:100px;width:500px;" value="{!problemDescription}" id="descId"/></td>
+                    <td>&nbsp;</td>
+                </tr>
+                 <tr>
+                    <td align="right" valign="top"><b>Steps to Reproduce Problem</b></td>
+                    <td><apex:inputTextArea style="height:100px;width:500px;" value="{!steptoReproduceProblem}" id="stpesId"/></td>
+                    <td>&nbsp;</td>
+                </tr>
+                <!-- 
+                <tr>  
+                    <td><b>Body</b></td>
+                    <td><apex:inputTextArea style="height:100px;width:500px;" value="{!body}"/></td>
+                    <td>&nbsp;</td>
+                </tr>
+                 -->
+              <!--  <tr>
+                    <td><b>Attach Supporting Documentation</b></td>
+                    <td><apex:inputFile value="{!Attach}" fileName="{!FileName_Upload}"></apex:inputFile>(eg:Screenshot, logs from operator console (max 2MB))</td>
+                    
+                </tr>      ->              
+                <tr>
+                    <td colspan="2" align="center"><apex:commandButton value="Send" action="{!sendEmail1}"/>&nbsp;&nbsp;<apex:commandButton value="Cancel" action="{!closePopup}"/></td>
+                    <td>&nbsp;</td><!--action="{!sendEmail}"->
+                </tr>               
+            </table>
+       </apex:outputPanel>
+      </apex:outputPanel>   
+    
+        
+        <apex:outputPanel id="displayEmailPopup">        
+                <apex:outputPanel styleClass="popupBackground" layout="block" rendered="{!displayPopUp}"/>
+                    <apex:outputPanel styleClass="custPopup" layout="block" rendered="{!displayPopUp}">
+                <table width="50%" style="padding:20px;" border="0">
+                <tr>
+                    <td><b>Subject</b></td>
+                    <td><apex:inputText style="height:20px;width:600px;" value="{!subject}"/></td>
+                    <td>&nbsp;</td>
+                </tr>
+                
+                <tr>
+                    <td><b>Body</b></td>
+                    <td><apex:inputTextArea style="height:200px;width:600px;" value="{!body}"/></td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center"><apex:commandButton value="Send" action="{!sendEmail}"/>&nbsp;&nbsp;<apex:commandButton value="Cancel" action="{!closePopup}"/></td>
+                    <td>&nbsp;</td>
+                </tr>
+                
+            </table>
+            </apex:outputPanel>
+       </apex:outputPanel> 
+            
+   <!--   <table width="100%" border="0"> ->
+      <table width="100%" border="0" style="background-color:#FFFFFF;">
+         <tr height="180px;">
+            <td width="80%" valign="top">
+                <table width="100%" border="0" style="background-color:#FFFFFF;">
+                    <!--<tr><td width="100%" valign="top"><c:PortalGrid_MessageTicker /></td></tr>->
+                    <apex:outputPanel rendered="{!isOwnerCharts}">
+                    <tr height="180px;">
+                        <td width="100%" valign="top">
+                          <!--<apex:iframe src="/apex/LeadsByStatusPieChart" height="400px;" width="80%" scrolling="false"/>->
+                          <apex:iframe src="/apex/OwnerCharts" height="420px;" width="1090px;" scrolling="false" rendered="{!isOwnerCharts}"/> 
+                      <!--    <apex:iframe src="/apex/AccountCharts" height="350px;" width="80%" scrolling="false" rendered="{!if($Profile.Name =='GRID_VCA_Manager',TRUE, FALSE)}"/>   ->
+                              <br/><apex:iframe src="/apex/AccountCharts" height="350px;" width="1090px;" scrolling="false" rendered="{!isAccountCharts}"/>
+                        </td>
+                    </tr>    
+                    </apex:outputPanel>  
+                     
+                     <!--<tr rowspan="2"><td>&nbsp;</td></tr>->
+                    
+                     <tr>
+                         <td width="1090px;" style="max-width:1090px;min-width:1090px;" valign="top">
+                            <c:rssFeedSummary title="" debug="false" feedURL="http://feeds.feedburner.com/nvidiablog" entriesCount="4" />    
+                         </td>    
+                    </tr>
+               </table>
+            </td>
+            <td width="20%" align="left" style="vertical-align:top;padding-right:10px;">
+               <br />
+                       
+               <apex:commandLink action="{!showPopup1}" rendered="{!isReportAProblem}">
+
+                 <apex:image value="{!$Resource.Report_A_Problem_Button}" width="350" height="60"></apex:image>
+
+            </apex:commandLink>    
+              
+               
+         <!--   <apex:outputPanel rendered="{!if($Profile.Name =='GRID_VCA_Sales' || $Profile.Name =='GRID_VCA_Marketing' || $Profile.Name =='GRID_VCA_Manager',TRUE, FALSE)}">     ->       
+              <apex:outputPanel rendered="{!isGettingStarted}"> 
+               <table border="0" width="100%" cellpadding="0" cellspacing="0">
+               <tr><td><div class="boxTitle">GETTING STARTED</div></td></tr>
+               <tr><td><div class="boxContentShort" style="font-size:18px;">
+                   <br/><a id="home" href="#" onclick="OpenPopupCenter('https://na2.salesforce.com/sfc/#version?selectedDocumentId=06940000000FuGK','',1000,700);"><font color="#393939">How to navigate this portal</font></a><br/><br/><br/>
+                   
+                 <table width="100%" border="0">
+                    <tr>
+                    <td width="8%"><apex:image value="{!$Resource.Green_Ask_Question}" width="25" height="25"/></td>
+                    <td width="92%"><b><apex:commandLink value="Ask a Question" action="{!showPopup}" rerender="displayEmailPopup"/></b></td>
+                    </tr>                   
+                 </table>
+                  <!-- 
+                  <apex:image value="{!$Resource.Ask_A_Question_Icon}" width="25" height="25"/>
+                  <apex:commandLink value="Ask a Question" action="{!showPopup}" rerender="displayEmailPopup"/>
+                    ->
+                </div><br/><br />
+                </td></tr></table>
+                </apex:outputPanel> 
+                
+             
+                <table border="0" width="100%" cellpadding="0" cellspacing="0">
+               <tr><td><div class="boxTitle">NVIDIA CONTACTS</div></td></tr>
+               <tr><td><div class="boxContentShort" style="font-size:12px;">
+                    <b><font color="#393939">{!contactDetail.Account.Owner.Name} - Sales Manager</font></b><br/>
+                    <a href="mailto:{!contactDetail.Account.Owner.email}">{!contactDetail.Account.Owner.email}</a>&nbsp;|&nbsp;
+                    {!contactDetail.Account.Owner.Phone}<br/><br/>
+                         
+                    <apex:outputText rendered="{!if(contactDetail.Account.Marketing_Manager_Name__c!=null,true,false)}">
+                        <b><font color="#393939">{!contactDetail.Account.Marketing_Manager_Name__c} - Marketing Manager</font></b><br/>
+                        <a href="mailto:{!contactDetail.Account.Marketing_Manager_Email__c}">{!contactDetail.Account.Marketing_Manager_Email__c}</a>&nbsp;|&nbsp;
+                        {!contactDetail.Account.Marketing_Manager_Contact_Number__c}<br/><br/>                          
+                    </apex:outputText>
+                      
+                    <apex:outputText rendered="{!if(contactDetail.Account.Support_Manager_Name__c!=null,true,false)}">
+                        <b><font color="#393939">{!contactDetail.Account.Support_Manager_Name__c} - Support Manager</font></b><br/>
+                        <a href="mailto:{!contactDetail.Account.Support_Manager_Email__c}">{!contactDetail.Account.Support_Manager_Email__c}</a>&nbsp;|&nbsp;
+                        {!contactDetail.Account.Support_Manager_Contact_Number__c}<br/><br/><br/>                           
+                    </apex:outputText>
+                  </div><br /><br /></td></tr>
+                  </table>
+                                       
+                  <!-- Use main wrapper class list to repeat these blocks using repeater->
+                 
+                         
+                 <apex:repeat value="{!lstMainWrapper}" var="x">
+                    <apex:outputPanel rendered="{!If(isNewPresentations && x.presentation_Type=='NEW PRESENTATIONS',true,false)}">
+                    <table border="0" width="100%" cellpadding="0" cellspacing="0">
+                        <tr><td><div class="boxTitle">{!x.presentation_Type}</div></td></tr>
+                        <tr>
+                            <td>
+                                 <div class="boxContent" style="font-size:14px;overflow:hidden;">                            
+                                 <apex:repeat value="{!x.lstW}" var="y">                                 
+                                 <!--   <apex:outputLink value="{!y.presentation_URL}" target="_blank"> ->
+                                        <apex:outputText value="{!y.presentation_Name}" style="color:#393939;"/>
+                                  <!--  </apex:outputLink>->
+                                    <br/> <br/>
+                                    <table border="0" width="100%">
+                                      <tr>
+                                        <td align="center">
+                                            <apex:outputLink value="{!y.presentation_URL}" target="_blank">
+                                                <apex:image url="{!y.image_URL}" height="90" width="160"/>
+                                            </apex:outputLink>
+                                        </td> 
+                                      </tr>
+                                      </table>
+                                    <br/><br/>                                  
+                                  </apex:repeat>           
+                                                                               
+                              </div><br/><br/>
+                            </td>
+                        </tr>
+                    </table>    
+                     <!-- <div  class="boxTitle">{!x.presentation_Type}</div> ->
+                   </apex:outputPanel>         
+                 </apex:repeat>
+               
+               <apex:repeat value="{!lstMainWrapper}" var="x">
+                    <apex:outputPanel rendered="{!If(isNewTechnicalPresentations && x.presentation_Type=='NEW TECHNICAL PRESENTATIONS',true,false)}">
+                     <table border="0" width="100%" cellpadding="0" cellspacing="0">
+                        <tr><td><div class="boxTitle">{!x.presentation_Type}</div></td></tr>
+                        <tr>
+                            <td>
+                                 <div class="boxContent" style="font-size:14px;overflow:hidden;">                            
+                                 <apex:repeat value="{!x.lstW}" var="y">                                 
+                                 <!--   <apex:outputLink value="{!y.presentation_URL}" target="_blank">  ->
+                                        <apex:outputText value="{!y.presentation_Name}" style="color:#393939;"/>
+                                  <!--  </apex:outputLink>  ->
+                                    <br/> <br/>
+                                    <table border="0" width="100%">
+                                      <tr>
+                                        <td align="center">
+                                            <apex:outputLink value="{!y.presentation_URL}" target="_blank">
+                                                <apex:image url="{!y.image_URL}" height="90" width="160"/>
+                                            </apex:outputLink>
+                                        </td> 
+                                      </tr>
+                                      </table>
+                                    <br/><br/>                                  
+                                  </apex:repeat>           
+                                                                               
+                              </div><br/><br/>
+                            </td>
+                        </tr>
+                    </table>    
+                     <!-- <div  class="boxTitle">{!x.presentation_Type}</div> ->
+                   </apex:outputPanel>         
+                 </apex:repeat>
+               
+               <apex:repeat value="{!lstMainWrapper}" var="x">
+                    <apex:outputPanel rendered="{!If(isNewCustomerPresentations && x.presentation_Type=='NEW CUSTOMER PRESENTATIONS',true,false)}">
+                    <table border="0" width="100%" cellpadding="0" cellspacing="0">
+                        <tr><td><div class="boxTitle">{!x.presentation_Type}</div></td></tr>
+                        <tr>
+                            <td>
+                                 <div class="boxContent" style="font-size:14px;overflow:hidden;">                            
+                                 <apex:repeat value="{!x.lstW}" var="y">                                 
+                                  <!--  <apex:outputLink value="{!y.presentation_URL}" target="_blank">  ->
+                                        <apex:outputText value="{!y.presentation_Name}" style="color:#393939;"/>
+                                <!--    </apex:outputLink>  ->
+                                    <br/> <br/>
+                                    <table border="0" width="100%">
+                                      <tr>
+                                        <td align="center">
+                                            <apex:outputLink value="{!y.presentation_URL}" target="_blank">
+                                                <apex:image url="{!y.image_URL}" height="90" width="160"/>
+                                            </apex:outputLink>
+                                        </td> 
+                                      </tr>
+                                      </table>
+                                    <br/><br/>                                  
+                                  </apex:repeat>           
+                                                                               
+                              </div><br/><br/>
+                            </td>
+                        </tr>
+                    </table>    
+                     <!-- <div  class="boxTitle">{!x.presentation_Type}</div> ->
+                   </apex:outputPanel>         
+                 </apex:repeat>
+               
+              <apex:repeat value="{!lstMainWrapper}" var="x">
+                    <apex:outputPanel rendered="{!If(isNewTrainingPresentations && x.presentation_Type=='NEW TRAINING PRESENTATIONS',true,false)}">
+                     <table border="0" width="100%" cellpadding="0" cellspacing="0">
+                        <tr><td><div class="boxTitle">{!x.presentation_Type}</div></td></tr>
+                        <tr>
+                            <td>
+                                 <div class="boxContent" style="font-size:14px;overflow:hidden;">                            
+                                 <apex:repeat value="{!x.lstW}" var="y">                                 
+                                <!--    <apex:outputLink value="{!y.presentation_URL}" target="_blank"> ->
+                                       <apex:outputText value="{!y.presentation_Name}" style="color:#393939;"/>  
+                               <!--     </apex:outputLink> ->
+                                    <br/> <br/>
+                                    <table border="0" width="100%">
+                                      <tr>
+                                        <td align="center">
+                                            <apex:outputLink value="{!y.presentation_URL}" target="_blank">
+                                                <apex:image url="{!y.image_URL}" height="90" width="160"/>
+                                            </apex:outputLink>
+                                        </td> 
+                                      </tr>
+                                      </table>
+                                    <br/><br/>                                  
+                                  </apex:repeat>           
+                                                                               
+                              </div><br/><br/>
+                            </td>
+                        </tr>
+                    </table>    
+                     <!-- <div  class="boxTitle">{!x.presentation_Type}</div> ->
+                   </apex:outputPanel>         
+                 </apex:repeat>
+               
+               <apex:repeat value="{!lstMainWrapper}" var="x">
+                    <apex:outputPanel rendered="{!If(isNewTechnicalTraining && x.presentation_Type=='NEW TECHNICAL TRAINING',true,false)}">
+                    <table border="0" width="100%" cellpadding="0" cellspacing="0">
+                        <tr><td><div class="boxTitle">{!x.presentation_Type}</div></td></tr>
+                        <tr>
+                            <td>
+                                 <div class="boxContent" style="font-size:14px;overflow:hidden;">                            
+                                 <apex:repeat value="{!x.lstW}" var="y">                                 
+                                  <!--  <apex:outputLink value="{!y.presentation_URL}" target="_blank">  ->
+                                        <apex:outputText value="{!y.presentation_Name}" style="color:#393939;"/>
+                                <!--    </apex:outputLink> ->
+                                    <br/> <br/>
+                                    <table border="0" width="100%">
+                                      <tr>
+                                        <td align="center">
+                                            <apex:outputLink value="{!y.presentation_URL}" target="_blank">
+                                                <apex:image url="{!y.image_URL}" height="90" width="160"/>
+                                            </apex:outputLink>
+                                        </td> 
+                                      </tr>
+                                      </table>
+                                    <br/><br/>                                  
+                                  </apex:repeat>           
+                                                                               
+                              </div><br/><br/>
+                            </td>
+                        </tr>
+                    </table>    
+                     <!-- <div  class="boxTitle">{!x.presentation_Type}</div> ->
+                   </apex:outputPanel>         
+                 </apex:repeat>
+               
+               <apex:repeat value="{!lstMainWrapper}" var="x">
+                    <apex:outputPanel rendered="{!If(isNewMarketingPresentations && x.presentation_Type=='NEW MARKETING PRESENTATIONS',true,false)}">
+                     <table border="0" width="100%" cellpadding="0" cellspacing="0">
+                        <tr><td><div class="boxTitle">{!x.presentation_Type}</div></td></tr>
+                        <tr>
+                            <td>
+                                 <div class="boxContent" style="font-size:14px;overflow:hidden;">                            
+                                 <apex:repeat value="{!x.lstW}" var="y">                                 
+                                 <!--   <apex:outputLink value="{!y.presentation_URL}" target="_blank">  ->
+                                        <apex:outputText value="{!y.presentation_Name}" style="color:#393939;"/>
+                               <!--     </apex:outputLink>  ->
+                                    <br/> <br/>
+                                    <table border="0" width="100%">
+                                      <tr>
+                                        <td align="center">
+                                            <apex:outputLink value="{!y.presentation_URL}" target="_blank">
+                                                <apex:image url="{!y.image_URL}" height="90" width="160"/>
+                                            </apex:outputLink>
+                                        </td> 
+                                      </tr>
+                                      </table>
+                                    <br/><br/>                                  
+                                  </apex:repeat>           
+                                                                               
+                              </div><br/><br/>
+                            </td>
+                        </tr>
+                    </table>    
+                     <!-- <div  class="boxTitle">{!x.presentation_Type}</div> ->
+                   </apex:outputPanel>         
+                 </apex:repeat>
+               
+               
+               
+                     
+             </td>                                                
+          </tr> 
+          
+       </table>
+
+  </apex:form>
+</td></tr></table>
+<style type="text/css">
+        .custPopup{   
+            background-color: white;
+            border-width: 2px;
+            border-style: solid;
+            z-index: 9999;       
+            left: 35%;       
+            padding:10px;   
+            position: absolute;
+            /* These are the 3 css properties you will need to change so the popup 
+            displays in the center of the screen. First set the width. Then set 
+            margin-left to negative half of what the width is. You can add 
+            the height property for a fixed size pop up if you want.*/
+            width: 1000px;
+            margin-left: -250px;
+            top:100px;
+        }
+
+        .popupBackground{   
+         background-color:black;
+         opacity: 0.20;
+         filter: alpha(opacity = 20);
+         position: absolute;
+         width: 100%;
+         height: 100%;   
+         top: 0;
+         left: 0;
+         z-index: 9998;
+     }
+       
+      .boxTitle1 {
+         border: 1px solid #76B900;
+         background-color:#76B900;
+          /%width: 349px;%/
+          width: 100%;
+          height: 100%;
+          color:white;
+          font-size:13.5px;
+          font-weight:bold;
+          padding:8px;
+          border-left: 2px solid #76B900;
+          border-top: 2px solid #76B900;
+           -moz-box-shadow:    6px 6px 5px #ccc;
+           -webkit-box-shadow: 6px 6px 5px #ccc;
+           box-shadow:         6px 6px 5px #ccc;
+           overflow:hidden;
+      }
+
+      .boxContent1 {
+         border: 1px solid #76B900;
+         background-color:white;
+          /*width: 350px;*/
+          height: 160px;
+          width: 100%;
+          font-weight:none;
+          padding-top:15px;
+          padding-left:15px;
+          overflow:auto;
+           -moz-box-shadow:    3px 3px 5px 6px #ccc;
+          -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+          box-shadow:         6px 6px 5px #ccc;
+      }
+      
+      
+      .boxContentNewP {
+         border: 1px solid #76B900;
+         background-color:white;
+          width: 90%;
+          height: 250px;
+          padding-top:15px;
+          padding-left:15px;
+          overflow:auto;
+          align:center;
+      }
+        
+       .boxContentShort1 {
+         border: 1px solid #76B900;
+         background-color:white;
+          /%width: 350px;*/
+          width: 100%;
+          height: 130px;
+          padding-top:15px;
+          padding-left:15px;
+          overflow:auto;
+          -moz-box-shadow:    3px 3px 5px 6px #ccc;
+         -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+         box-shadow:         6px 6px 5px #ccc;
+      }
+      
+      .button {
+         width:100%;
+         height: 100%;          
+/*         float:left;
+         padding:8px;
+         overflow: hidden;
+         white-space: nowrap;*/
+      }
+      
+      .boxTitle {
+         border: 1px solid #76B900;
+         background-color:#76B900;
+         /*width:349px;*/
+         width:95%;
+         height: 8%;          
+         float:left;
+          color:white;
+          font-size:14px;
+          font-weight:bold;
+          padding:8px;
+          border-left: 2px solid #76B900;
+          border-top: 2px solid #76B900;
+          overflow: hidden;
+          display: inline-block;
+          white-space: nowrap;
+          max-width:350px;
+          min-width:350px;
+          margin-right:6px; /* Set to 0 if you don't want shadow at the right side */
+         margin-left:0px; /* Set to 20px if you want shadow at the left side */
+         margin-top:0px; /* Set to 20px if you want shadow at the top side */
+         margin-bottom:0px; /* Set to 20px if you want shadow at the bottom side */
+        
+           -moz-box-shadow:    6px 6px 5px #ccc;
+           -webkit-box-shadow: 6px 6px 5px #ccc;
+           box-shadow:         6px 0px 5px #ccc;
+
+      }
+
+      .boxContent {
+         border: 1px solid #F3F3F3;
+         background-color: #FFFFFF;
+          /*width: 350px;*/
+          width:95%;
+          height: 160px;
+          padding-top:15px;
+          padding-left:15px;
+          max-width:350px;
+          min-width:350px;
+          overflow:auto;
+          -moz-box-shadow:    6px 6px 5px #ccc;
+          -webkit-box-shadow: 6px 6px 5px #ccc;
+          box-shadow:         6px 6px 5px #ccc;
+      }
+
+       .boxContentShort {
+          border: 1px solid #F3F3F3;
+         background-color: #FFFFFF;
+          width: 95%;
+          height: 135px;   
+          padding-top:5px;
+          padding-left:15px;
+          max-width:350px;
+          min-width:350px;
+          overflow:auto;
+          -moz-box-shadow:    6px 6px 5px  #ccc;
+           -webkit-box-shadow: 6px 6px 5px #ccc;
+           box-shadow:         6px 6px 5px #ccc;
+      }
+
+    </style> -->
+</apex:page>

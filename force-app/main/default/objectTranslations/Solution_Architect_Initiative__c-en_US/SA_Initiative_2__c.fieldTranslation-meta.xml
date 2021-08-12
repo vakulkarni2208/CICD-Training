@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- 2nd Solution Architect Initiative --></help>
+    <label><!-- SA Initiative 2 --></label>
+    <name>SA_Initiative_2__c</name>
+    <relationshipLabel><!-- Solution Architect Initiatives (SA Initiative 2) --></relationshipLabel>
+</CustomFieldTranslation>

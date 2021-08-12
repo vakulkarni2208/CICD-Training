@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>My_Accounts</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ACCOUNT.ADDRESS1_CITY</columns>
+    <columns>ACCOUNT.ADDRESS1_STATE</columns>
+    <columns>ACCOUNT.INDUSTRY</columns>
+    <columns>ACCOUNT.ADDRESS1_COUNTRY</columns>
+    <columns>ACCOUNT.CREATED_DATE</columns>
+    <columns>PARENT_NAME</columns>
+    <columns>CORE.USERS.FIRST_NAME</columns>
+    <columns>CORE.USERS.LAST_NAME</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>Inactive__c</field>
+        <operation>notEqual</operation>
+        <value>1</value>
+    </filters>
+    <label>My Accounts</label>
+    <sharedTo>
+        <roleAndSubordinatesInternal>Administrator</roleAndSubordinatesInternal>
+        <roleAndSubordinatesInternal>SaleRepQuadro</roleAndSubordinatesInternal>
+        <roleAndSubordinatesInternal>SalesLeadManagerTesla</roleAndSubordinatesInternal>
+        <roleAndSubordinatesInternal>SalesRepTesla</roleAndSubordinatesInternal>
+        <roleAndSubordinatesInternal>SalesTeamLeadQuadro</roleAndSubordinatesInternal>
+        <roleAndSubordinatesInternal>Sales_Rep_GeForce</roleAndSubordinatesInternal>
+        <roleAndSubordinatesInternal>Sales_Team_Lead_GeForce</roleAndSubordinatesInternal>
+    </sharedTo>
+</ListView>

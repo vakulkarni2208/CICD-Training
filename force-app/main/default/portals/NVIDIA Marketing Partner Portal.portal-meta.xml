@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Portal xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <defaultLanguage>en_US</defaultLanguage>
+    <description>NVIDIA Marketing Partner Portal</description>
+    <emailSenderAddress>channelmarketingportal@nvidia.com</emailSenderAddress>
+    <emailSenderName>NVIDIA Channel Marketing Portal</emailSenderName>
+    <enableSelfCloseCase>false</enableSelfCloseCase>
+    <forgotPassTemplate>unfiled$public/MPPPasswordReset</forgotPassTemplate>
+    <isSelfRegistrationActivated>false</isSelfRegistrationActivated>
+    <newPassTemplate>unfiled$public/MPPPasswordReset</newPassTemplate>
+    <newUserTemplate>unfiled$public/MarketingPartnerPortal</newUserTemplate>
+    <showActionConfirmation>false</showActionConfirmation>
+    <type>Partner</type>
+</Portal>

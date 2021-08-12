@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NPNCreated__c</fullName>
+    <description>NPN Infra - Deal Regs</description>
+    <externalId>false</externalId>
+    <formula>ISPICKVAL(CreatedBy.UserType, &apos;PowerPartner&apos;)</formula>
+    <inlineHelpText>NPN Infra - Deal Regs</inlineHelpText>
+    <label>NPNCreated</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

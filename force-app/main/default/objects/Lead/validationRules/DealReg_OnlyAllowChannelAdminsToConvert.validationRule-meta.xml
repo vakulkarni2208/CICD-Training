@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DealReg_OnlyAllowChannelAdminsToConvert</fullName>
+    <active>true</active>
+    <description>Only Channel Admins can convert Opp Reg Leads. (SDS-984)
+SDS-890 : Jetson Opp Reg Process</description>
+    <errorConditionFormula>AND(
+Not( $Permission.CRM_PARTNER_DEAL_ADMIN ),
+IsConverted = true,
+OR(RecordType.DeveloperName = &apos;Deal_Registration&apos;, RecordType.DeveloperName = &apos;Jetson_Deal_Registration&apos;)
+)</errorConditionFormula>
+    <errorMessage>Only Channel Admins can convert Opp Reg Leads.</errorMessage>
+</ValidationRule>

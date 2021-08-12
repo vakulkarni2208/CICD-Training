@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- vGPU Type Selections --></label>
+    <name>vGPU_Type_Selections__c</name>
+    <picklistValues>
+        <masterLabel>Concurrent Users</masterLabel>
+        <translation><!-- Concurrent Users --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Named Users</masterLabel>
+        <translation><!-- Named Users --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EnforceECLLeadConversionStatus</fullName>
+    <active>true</active>
+    <description>Convert to an Opportunity - Lead Status = Sales Qualified
+Convert to an Account - Lead Status = Converted to Account
+SDS-1625 - MKTG: Lead Status Validations for ECL and pre-MQL Leads</description>
+    <errorConditionFormula>AND(
+    NOT($Permission.DEPLOYMENT_USER_SKIP_VALIDATIONS),
+    OR (
+		RecordType.DeveloperName = &apos;Enterprise_Customer_Lead&apos;,
+		RecordType.DeveloperName = &apos;Pre_MQL_Lead&apos;
+	),
+	IsConverted = true,
+	
+	OR (
+		AND (
+			NOT(ISBLANK(ConvertedOpportunityId)),
+			ISPICKVAL(Status, &apos;Convert to Account&apos;)
+		),
+		AND (
+			ISBLANK(ConvertedOpportunityId),
+			ISPICKVAL(Status, &apos;Sales Qualified&apos;)
+		)
+	
+	)
+)</errorConditionFormula>
+    <errorDisplayField>Status</errorDisplayField>
+    <errorMessage>Select Sales Qualified” to convert to an account with opportunity.  Select “Converted to Account” if not creating an opportunity at this time.</errorMessage>
+</ValidationRule>

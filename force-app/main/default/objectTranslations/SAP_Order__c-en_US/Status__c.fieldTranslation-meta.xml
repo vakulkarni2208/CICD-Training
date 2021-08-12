@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Processed is for Quote Line/Renewals to avoid record locks, Synced means record has been successfully completed, Error is error --></help>
+    <label><!-- Status --></label>
+    <name>Status__c</name>
+    <picklistValues>
+        <masterLabel>Error</masterLabel>
+        <translation><!-- Error --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Processed</masterLabel>
+        <translation><!-- Processed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Synced</masterLabel>
+        <translation><!-- Synced --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

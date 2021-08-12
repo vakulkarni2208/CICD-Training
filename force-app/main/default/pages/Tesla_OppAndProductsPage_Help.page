@@ -1,0 +1,71 @@
+<apex:page showHeader="false" sidebar="false" tabStyle="Opportunity" standardStylesheets="true">
+<div style="padding:10px;">
+
+<style>
+h1.help {font-size:12pt;}
+p.help {font-weight:bold;}
+</style>
+
+<h1 class="help">Help Instructions for Tesla</h1>
+
+<p class="help"> 
+How do I add a new product, units, and revenue for my Opportunity?
+</p>
+<ul class="help">
+  <li class="help">In the Tesla Products area, select "Add Product"  to add a product of your choice</li>
+  <li class="help">Select the Tesla product (e.g., M2050) in the pull-down menu that applies to your Opportunity</li>
+  <li class="help">The Product name ASP for the product you select will automatically be calculated</li>
+  <li class="help">Now go to the "Tesla Revenue by Quarter" section</li>
+  <li class="help">Enter the units for the quarter you plan to sell (e.g., 20 - M2050 units).</li>
+  <li class="help">Then select "Save"</li>
+  <li class="help">You should now see a summary of the Product Name, Quarter, Units, and Revenue</li>
+</ul> 
+<p class="help">
+Can I add more than one Tesla product to my Opportunity for the same quarter?    
+</p>
+<ul class="help">
+  <li class="help">Yes, this is now an option</li>
+  <li class="help">To add another product, select the "Add Product" button</li>
+  <li class="help">You can then add the units and select "Save"</li>
+  <li class="help">Your additional product selected will show up in the Tesla Product Revenue by Quarter section</li>
+</ul> 
+<p class="help">
+Can I delete a product if I made a mistake?    
+</p>
+<ul class="help">
+  <li class="help">Yes, this is an option</li>
+  <li class="help">In the Tesla Product section, use the "Delete" button to remove any product you from your opportunity</li>
+</ul> 
+<p class="help">
+How do I add an additional quarter (e.g. FY12 - Q2)?    
+</p>
+<ul class="help">
+  <li class="help">Use the "Add Next Quarter" button to add a new quarter</li>
+  <li class="help">Or use the "Add Previous Quarter" button to add a previous quarter</li>
+  <li class="help">Make sure you enter the units and select "Save" to view your updates</li>
+</ul> 
+<p class="help">
+What if I want Quarters Q1 and Q3 only?  Can I skip a quarter? 
+</p>
+<ul class="help">
+  <li class="help">Yes, this is an option</li>
+  <li class="help">Add the Quarters you would like setup consecutively (e.g. Q1, Q2, Q3, Q4)</li>
+  <li class="help">Enter the quantity of units for each quarter</li>
+  <li class="help">If there are no units know for a quarter at this time, then just enter "0"</li>
+  <li class="help">Remember to select "Save"</li>
+</ul> 
+<p class="help">
+Once I Save changes, can I go back in and Edit?
+</p>
+<ul class="help">
+  <li class="help">Yes, this is an option</li>
+  <li class="help">You can edit or delete any update by choosing the "edit" or "delete" button in the Product Schedule area</li>
+  <li class="help">Ensure you save any changes</li>
+</ul> 
+<p class="help">
+If you have any suggestions or additional changes, please contact your Administrator.
+</p>
+ 
+ 
+</div>
+</apex:page>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Data</fullName>
+    <columns>Deal_Registration__c</columns>
+    <columns>GPU_Genius__c</columns>
+    <columns>MDF_No_MDF__c</columns>
+    <columns>Program_Name__c</columns>
+    <columns>Partner_Competency__c</columns>
+    <columns>Permissions_and_Group_Assignment__c</columns>
+    <columns>NAME</columns>
+    <filterScope>Everything</filterScope>
+    <label>All Data</label>
+    <language>en_US</language>
+</ListView>

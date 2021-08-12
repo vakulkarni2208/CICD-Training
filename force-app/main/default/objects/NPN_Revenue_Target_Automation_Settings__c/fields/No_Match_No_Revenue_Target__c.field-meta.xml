@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>No_Match_No_Revenue_Target__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>If the field &quot;No Match - No Revenue Target&quot; is true, then do not add a revenue target if there is no matching master data lookup in NPN Revenue Commitment Master (for Program Type, Competency, Level, Account Billing Country)</description>
+    <externalId>false</externalId>
+    <inlineHelpText>If the field &quot;No Match - No Revenue Target&quot; is true, then do not add a revenue target if there is no matching master data lookup in NPN Revenue Commitment Master(for Program Type, Competency, Level, Account Billing Country)</inlineHelpText>
+    <label>No Match - No Revenue Target</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

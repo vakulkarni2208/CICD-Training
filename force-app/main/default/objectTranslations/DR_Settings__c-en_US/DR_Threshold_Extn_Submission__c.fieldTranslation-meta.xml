@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Minimum Opportunity Probability (%) to be eligible for extn. submission (eg., if probability &gt; 40% are allowed for extn. submission then set this field to 40) --></help>
+    <label><!-- DR Threshold : Extn. Submission --></label>
+    <name>DR_Threshold_Extn_Submission__c</name>
+</CustomFieldTranslation>

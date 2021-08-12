@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Life_Science_ww_strategic_Opps</fullName>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Industry__c</columns>
+    <columns>OPPORTUNITY.AMOUNT</columns>
+    <columns>OPPORTUNITY.CLOSE_DATE</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>CORE.USERS.LAST_NAME</columns>
+    <columns>OPPORTUNITY.LAST_UPDATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>OPPORTUNITY.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>012400000009KDQ</value>
+    </filters>
+    <filters>
+        <field>Industry__c</field>
+        <operation>equals</operation>
+        <value>Life Sciences: Hi-Ed/Research/Pharma</value>
+    </filters>
+    <filters>
+        <field>Opportunity_Class__c</field>
+        <operation>equals</operation>
+        <value>Strategic Opportunity</value>
+    </filters>
+    <label>Tesla Life Science ww - strategic Opps</label>
+    <sharedTo>
+        <role>Administrator</role>
+    </sharedTo>
+</ListView>

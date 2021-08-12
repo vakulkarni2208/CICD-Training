@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Please Select One --></help>
+    <label><!-- NVIDIA Financing Solutions Status --></label>
+    <name>NVIDIA_Financing_Solutions_Status__c</name>
+    <picklistValues>
+        <masterLabel>Create Master Lease agreement</masterLabel>
+        <translation><!-- Create Master Lease agreement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NVFS proposal Finalized</masterLabel>
+        <translation><!-- NVFS proposal Finalized --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not applicable</masterLabel>
+        <translation><!-- Not applicable --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Price and Credit evaluation</masterLabel>
+        <translation><!-- Price and Credit evaluation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Review Opportunity with NVFS Resource</masterLabel>
+        <translation><!-- Review Opportunity with NVFS Resource --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Term Sheet sent to customer</masterLabel>
+        <translation><!-- Term Sheet sent to customer --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

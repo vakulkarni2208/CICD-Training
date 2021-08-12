@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SL_Forecast_Compact_Layout</fullName>
+    <fields>Name</fields>
+    <fields>Account__c</fields>
+    <fields>Account_Region__c</fields>
+    <fields>Sales_Leader_SL_close_date__c</fields>
+    <fields>Sales_Leader_SL_Total_Amount__c</fields>
+    <label>SL Forecast Compact Layout</label>
+</CompactLayout>

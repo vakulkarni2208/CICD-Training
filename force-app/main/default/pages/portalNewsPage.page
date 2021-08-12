@@ -1,0 +1,30 @@
+<apex:page id="pageId" controller="portalSales1" showheader="true" sidebar="false">
+<head>
+<style>
+ul 
+{
+list-style-image:url();
+}
+</style>
+</head>
+<c:PortalGrid_SearchComponent ></c:PortalGrid_SearchComponent> 
+ <apex:form id="formId">   
+      <table width="100%" border="0">
+          <tr>
+           <!--   <td style="font-size:18px;" align="center" valign="bottom"><b>{!instanceMessage}</b></td>
+              <td align="right" style="">                 
+                  <a href="" onclick="window.open('http://www.nvidia.com/object/newsletter.html', null, 'width=1000,height=700,scrollbars=yes,resizable=yes');return false;" style="cursor:pointer;">
+                      <apex:image value="{!$Resource.SubscribeImage}"/>
+                  </a>
+                                   
+                  <input type="text" placeholder="Search:" id="inputFieldId" onClick="this.placeholder = ''" onblur="this.placeholder = 'Search:'"/><br/>
+                              
+              </td> -->
+          </tr> 
+      </table>       
+  <br />
+
+      <!-- <c:rssFeedSummary title="" debug="false" headline="false" feedURL="http://feeds.feedburner.com/nvidiablog" entriesCount="10" /> -->    
+      <c:rssFeedSummary title="" debug="false" feedURL="http://feeds.feedburner.com/nvidiablog" entriesCount="10" /> 
+  </apex:form>
+</apex:page>

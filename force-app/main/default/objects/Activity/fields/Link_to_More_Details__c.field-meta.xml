@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Link_to_More_Details__c</fullName>
+    <description>This is a URL to more details</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This is a URL to more details</inlineHelpText>
+    <label>Link to More Details</label>
+    <required>false</required>
+    <type>Url</type>
+</CustomField>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MDF_Amount_cannot_exceed_guidance</fullName>
+    <active>true</active>
+    <description>MDF Amount on Opportunity product cannot exceed the amount outlined in the Pricebook</description>
+    <errorConditionFormula>Deal_MDF__c  &gt;  PricebookEntry.MDF_Max_Amount__c</errorConditionFormula>
+    <errorDisplayField>Deal_MDF__c</errorDisplayField>
+    <errorMessage>The Deal MDF outlined is greater than the amount outlined in the Pricebook for this product</errorMessage>
+</ValidationRule>

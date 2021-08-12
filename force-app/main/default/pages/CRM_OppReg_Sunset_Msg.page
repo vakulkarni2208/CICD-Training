@@ -1,0 +1,34 @@
+<!-- 
+    2018.01.23 - Banner to be shown in the Legacy Opportunity Registration (Tesla Partner Deal, GRID Partner Deal) page layouts
+    2018.03.26 - PJENA - Verbiage change
+ -->
+<apex:page standardController="Opportunity">
+<style>
+        .alert-warning {
+            color: #8a6d3b;
+            background-color: #fcf8e3;
+            border-color: #faebcc;
+            }
+        .alert-danger {
+            color: #a94442;
+            font-size: 100%;
+            font-weight: 700;
+            background-color: #f2dede;
+            border-color: #ebccd1;
+        }
+        .alert {
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid transparent;
+            border-radius: 4px;
+        }
+    </style>
+    
+    <apex:outputPanel >
+        <div class="alert alert-danger">
+            As of February 5th, NVIDIA has updated the Registration process.
+            This opportunity cannot be submitted for Deal Registration.
+            To submit a Registration, please utilize the link on the home page titled, "Register a Deal".        
+        </div>
+    </apex:outputPanel>
+</apex:page>

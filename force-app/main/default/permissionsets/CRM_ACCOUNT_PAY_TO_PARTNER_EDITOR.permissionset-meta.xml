@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Users with this Permission Set will be able to edit &quot;MDF Pay To Partner&quot; custom field of Accounts object.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>CRM : ACCOUNT : PAY TO PARTNER: EDITOR</label>
+</PermissionSet>

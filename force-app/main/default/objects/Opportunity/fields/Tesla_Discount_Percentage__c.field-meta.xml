@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tesla_Discount_Percentage__c</fullName>
+    <description>Details the max discount percentage on Tesla products
+SDS-2737: Updated the field name from &apos;Tesla Discount Percentage&apos; to &apos;DC GPU Discount Percentage&apos;</description>
+    <externalId>false</externalId>
+    <label>DC GPU Discount Percentage</label>
+    <summarizedField>OpportunityLineItem.Discount_Percentage__c</summarizedField>
+    <summaryFilterItems>
+        <field>OpportunityLineItem.Product_Line__c</field>
+        <operation>equals</operation>
+        <value>DC GPU</value>
+    </summaryFilterItems>
+    <summaryForeignKey>OpportunityLineItem.OpportunityId</summaryForeignKey>
+    <summaryOperation>max</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

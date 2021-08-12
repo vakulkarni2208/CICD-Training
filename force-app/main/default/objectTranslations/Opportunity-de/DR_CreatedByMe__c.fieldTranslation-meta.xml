@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- This field is used for Opportunity Registration related Report (Owner Opportunities by Stage) and List View (My Opportunities). --></help>
+    <label><!-- CreatedByMe --></label>
+    <name>DR_CreatedByMe__c</name>
+</CustomFieldTranslation>

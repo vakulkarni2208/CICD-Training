@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Value of Timeout for the API call (90000) --></help>
+    <label><!-- CalloutTimeout --></label>
+    <name>CalloutTimeout__c</name>
+</CustomFieldTranslation>

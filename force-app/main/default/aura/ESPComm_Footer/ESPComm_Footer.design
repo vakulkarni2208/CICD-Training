@@ -1,0 +1,79 @@
+<design:component label="ESP Community Footer">
+    
+	<design:attribute name="Col1Header" label="Col 1: Header" />
+    <design:attribute name="Col1Link1URL" label="Col 1: Link 1 URL" />
+    <design:attribute name="Col1Link1" label="Col 1: Link 1 Text" />
+    <design:attribute name="Col1Link2URL" label="Col 1: Link 2 URL" />
+    <design:attribute name="Col1Link2" label="Col 1: Link 2 Text" />
+    <design:attribute name="Col1Link3URL" label="Col 1: Link 3 URL" />
+    <design:attribute name="Col1Link3" label="Col 1: Link 3 Text" />
+    <design:attribute name="Col1Link4URL" label="Col 1: Link 4 URL" />
+    <design:attribute name="Col1Link4" label="Col 1: Link 4 Text" />
+    <design:attribute name="Col1Link5URL" label="Col 1: Link 5 URL" />
+    <design:attribute name="Col1Link5" label="Col 1: Link 5 Text" />
+    <design:attribute name="Col1Link6URL" label="Col 1: Link 6 URL" />
+    <design:attribute name="Col1Link6" label="Col 1: Link 6 Text" />
+    <design:attribute name="Col1Link7URL" label="Col 1: Link 7 URL" />
+    <design:attribute name="Col1Link7" label="Col 1: Link 7 Text" />
+    <design:attribute name="Col1Link8URL" label="Col 1: Link 8 URL" />
+    <design:attribute name="Col1Link8" label="Col 1: Link 8 Text" />
+    <design:attribute name="Col1Link9URL" label="Col 1: Link 9 URL" />
+    <design:attribute name="Col1Link9" label="Col 1: Link 9 Text" />
+    <design:attribute name="Col1Link10URL" label="Col 1: Link 10 URL" />
+    <design:attribute name="Col1Link10" label="Col 1: Link 10 Text" />
+
+    <design:attribute name="Col2Header" label="Col 2: Header" />
+    <design:attribute name="Col2Link1URL" label="Col 2: Link 1 URL" />
+    <design:attribute name="Col2Link1" label="Col 2: Link 1 Text" />
+    <design:attribute name="Col2Link2URL" label="Col 2: Link 2 URL" />
+    <design:attribute name="Col2Link2" label="Col 2: Link 2 Text" />
+    <design:attribute name="Col2Link3URL" label="Col 2: Link 3 URL" />
+    <design:attribute name="Col2Link3" label="Col 2: Link 3 Text" />
+    <design:attribute name="Col2Link4URL" label="Col 2: Link 4 URL" />
+    <design:attribute name="Col2Link4" label="Col 2: Link 4 Text" />
+    <design:attribute name="Col2Link5URL" label="Col 2: Link 5 URL" />
+    <design:attribute name="Col2Link5" label="Col 2: Link 5 Text" />
+    <design:attribute name="Col2Link6URL" label="Col 2: Link 6 URL" />
+    <design:attribute name="Col2Link6" label="Col 2: Link 6 Text" />
+    <design:attribute name="Col2Link7URL" label="Col 2: Link 7 URL" />
+    <design:attribute name="Col2Link7" label="Col 2: Link 7 Text" />
+    <design:attribute name="Col2Link8URL" label="Col 2: Link 8 URL" />
+    <design:attribute name="Col2Link8" label="Col 2: Link 8 Text" />
+    <design:attribute name="Col2Link9URL" label="Col 2: Link 9 URL" />
+    <design:attribute name="Col2Link9" label="Col 2: Link 9 Text" />
+    <design:attribute name="Col2Link10URL" label="Col 2: Link 10 URL" />
+    <design:attribute name="Col2Link10" label="Col 2: Link 10 Text" />
+
+    <design:attribute name="Col3Header" label="Col 3: Header" />
+    <design:attribute name="Col3Link1URL" label="Col 3: Link 1 URL" />
+    <design:attribute name="Col3Link1" label="Col 3: Link 1 Text" />
+    <design:attribute name="Col3Link2URL" label="Col 3: Link 2 URL" />
+    <design:attribute name="Col3Link2" label="Col 3: Link 2 Text" />
+    <design:attribute name="Col3Link3URL" label="Col 3: Link 3 URL" />
+    <design:attribute name="Col3Link3" label="Col 3: Link 3 Text" />
+    <design:attribute name="Col3Link4URL" label="Col 3: Link 4 URL" />
+    <design:attribute name="Col3Link4" label="Col 3: Link 4 Text" />
+    <design:attribute name="Col3Link5URL" label="Col 3: Link 5 URL" />
+    <design:attribute name="Col3Link5" label="Col 3: Link 5 Text" />
+    <design:attribute name="Col3Link6URL" label="Col 3: Link 6 URL" />
+    <design:attribute name="Col3Link6" label="Col 3: Link 6 Text" />
+    <design:attribute name="Col3Link7URL" label="Col 3: Link 7 URL" />
+    <design:attribute name="Col3Link7" label="Col 3: Link 7 Text" />
+    <design:attribute name="Col3Link8URL" label="Col 3: Link 8 URL" />
+    <design:attribute name="Col3Link8" label="Col 3: Link 8 Text" />
+    <design:attribute name="Col3Link9URL" label="Col 3: Link 9 URL" />
+    <design:attribute name="Col3Link9" label="Col 3: Link 9 Text" />
+    <design:attribute name="Col3Link10URL" label="Col 3: Link 10 URL" />
+    <design:attribute name="Col3Link10" label="Col 3: Link 10 Text" />
+
+    <design:attribute name="SubscribeTitle" label="Subscribe Text" />
+    <design:attribute name="SubscribeBtnURL" label="Subscribe Button URL"  />
+    <design:attribute name="SubscribeBtnText" label="Subscribe Button Text"  />
+
+    <design:attribute name="SocialTitle" label="Social Text" />
+    <design:attribute name="Social1URL" label="1. Social URL" />
+    <design:attribute name="Social2URL" label="2. Social URL" />
+    <design:attribute name="Social3URL" label="3. Social URL" />
+    <design:attribute name="Social4URL" label="4. Social URL" />
+    <design:attribute name="Social5URL" label="5. Social URL" />
+</design:component>

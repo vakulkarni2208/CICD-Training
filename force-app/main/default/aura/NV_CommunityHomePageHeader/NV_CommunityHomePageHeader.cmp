@@ -1,0 +1,284 @@
+<aura:component controller="NV_LightningCommunityHomePageController" implements="flexipage:availableForAllPageTypes" access="global">
+	<aura:attribute name="objID" type="NV_LightningCommunityHomePageController.InitializationData" />  
+    <aura:handler name="init" action="{!c.doInit}" value="{!this}"/>
+    <aura:attribute name="isOpen" type="boolean" default="false"/>
+    <aura:attribute name="searchText" type="String" />
+    <aura:attribute name="isSearchResultPopUpOpen" type="boolean" default="false"/>
+    <aura:handler name="cmpEvent" event="c:CloseContactUsPopUp" action="{!c.handleComponentEvent}"/>  
+	<lightning:navigation aura:id="navLink"/>
+    <aura:attribute name="complianceHeaderTitle" type="Aura.Component[]">
+        <h1 style="color:#76b900; font-size:20px;">
+            {!$Label.c.NPNHomePage_NPN_COMPLIANCE}
+        </h1>
+    </aura:attribute>
+    <aura:attribute name="dashboardHeaderTitle" type="Aura.Component[]">
+        <h1 style="color:#76b900; font-size:20px;">
+            {!$Label.c.NPNHomePage_MY_DASHBOARD}
+        </h1>
+    </aura:attribute>
+    <div>
+        <div class="mainOuterDiv">
+            <div class="headerRow">
+                <div class="logoImage left" style="margin-left:3%" />
+                <div style="float:right;padding:0.3rem;padding-right:0;margin-right:2%" id="headerRightCorner" >
+                    <!--<input type="search" placeholder="Search" value="{!v.searchText}" onkeypress="{!c.handleSearch}" aura:id="searchText" />-->
+                    <div class="left" onkeyup="{! c.handleSearch }">
+                        <lightning:input aura:id="enter-search" name="enter-search" type="search" variant="label-hidden"/>
+                    </div>
+                    <div class="left">
+                        <lightning:buttonMenu iconName="utility:user" iconSize="large" onselect="{!c.logout}">
+                            <lightning:menuItem label="{!v.objID.strUserName}" value="{!v.objID.strUserName}"/>
+                            <lightning:menuItem label="Logout" value="logout" />
+                        </lightning:buttonMenu>
+                    </div>
+                </div>
+            </div>
+            <div class="headerImage">
+                <div class="NPNText left" style="padding-left:2%">
+                   <b> <ui:outputText value="NVIDIA PARTNER NETWORK" /></b>
+                </div>
+                <div style="float:right;width:50%;margin-top:0.5%;margin-right:2%;text-align:right;">
+                    <aura:if isTrue="{!!$Browser.isPhone}">
+                        <aura:iteration items="{!v.objID.lstHomePageLinks}" var="objHP">
+                            <aura:if isTrue="{!objHP.strLinkType=='Header'}">
+                                <div class="headerLink right">
+                                   <b> <a class="headerLinks" target="_blank" href="{!objHP.strLinkURL}">{!objHP.strLinkLabel}</a></b>
+                                </div>
+                            </aura:if>
+                        </aura:iteration>
+                    </aura:if>
+                    <aura:if isTrue="{!$Browser.isPhone}">
+                            <!--<button class="slds-button slds-button_icon slds-button_icon-border-filled" aria-haspopup="true" title="Show More">
+                                <lightning:icon iconName="utility:rows" size="small" alternativeText="Menu"/>
+                            </button>
+                            <div class="slds-dropdown slds-dropdown_left">
+                                <ul class="slds-dropdown__list" role="menu" aria-label="Show More">                                  
+                                    <aura:iteration items="{!v.objID.lstHomePageLinks}" var="objHP">
+                                        <aura:if isTrue="{!objHP.strLinkType=='Header'}">                                                
+                                            <li class="slds-dropdown__item" role="presentation">
+                                                <a href="{!objHP.strLinkURL}" role="menuitem">
+                                                    <span class="slds-truncate" title="{!objHP.strLinkLabel}">{!objHP.strLinkLabel}</span>
+                                                </a>
+                                            </li>
+                                        </aura:if>
+                                    </aura:iteration>
+                                </ul>
+                            </div>-->
+                        <div>
+                            <lightning:buttonMenu menuAlignment="right" iconName="utility:rows" iconSize="small" onselect="{!c.headerSelection}">
+                                <aura:iteration items="{!v.objID.lstHomePageLinks}" var="objHP">
+                                    <aura:if isTrue="{!objHP.strLinkType=='Header'}">       
+                                		<lightning:menuItem label="{!objHP.strLinkLabel}" value="{!objHP.strLinkURL}"/>
+                                    </aura:if>
+                                </aura:iteration>
+                            </lightning:buttonMenu>  
+                        </div>
+                    </aura:if>
+                </div>
+                <div style="margin-left:1%;padding-left:2%;padding-top:7%;padding-bottom:7%;">
+                    <ui:outputText class="headerLargeText" value="{!v.objID.objHeaderInfo.strHeaderText}" /> <br />
+                    <ui:outputText class="headerSmallText" value="{!v.objID.objHeaderInfo.strSubheaderText}" /> <br /><br />
+                    <aura:if isTrue="{!v.objID.objHeaderInfo.strButtonText!=''}">
+                    	<lightning:button class="button" label="{!v.objID.objHeaderInfo.strButtonText}" onclick="{! c.headerButtonClick }" name="{!v.objID.objHeaderInfo.strButtonLink}" />
+                    </aura:if>
+                </div>
+            </div>
+            <div style="clear:both;" />
+            <div class="left bodyDiv">
+                <div class="slds-grid slds-wrap">
+                    <!--<div class="left" style="overflow-wrap: break-word;width:80%;padding:2%;min-width:500px;">-->
+                    <div id="CarouselDiv" style="font-weight:bold;font-size:15px;width:100%">
+                        <aura:if isTrue="{!and(not(empty(v.objID.lstHomePageMessages)), v.objID.bUnRestricted)}">
+                            <!--<c:LightningCarouselDemo lstHPMessages="{!v.objID.lstHomePageMessages}"/>-->
+                            <c:LightningCarouselDemo objID="{!v.objID}"/>
+                        </aura:if>
+                    </div>
+                    <div id="IEMessages" class="slds-p-around_x-small" style="color:white;width:100%;display:none;max-height:100px;min-height:50px;background-color:#76b900;text-align:center;font-weight:bold;font-size:15px;overflow-y:auto">
+                        <aura:if isTrue="{!not(empty(v.objID.lstHomePageMessages))}">
+                            <!--<c:LightningCarouselDemo lstHPMessages="{!v.objID.lstHomePageMessages}"/>-->
+                            <ul>
+                            	<aura:iteration items="{!v.objID.lstHomePageMessages}" var="objHPMessages">
+                                	<li>
+                                    	<a class="hover" style="color:white;" target="_blank" href="{!objHPMessages.strURL}">{!objHPMessages.strMessage}</a><br />
+                                    </li>
+                            	</aura:iteration>
+                            </ul>
+                        </aura:if>
+                    </div>
+                    <div class="slds-col slds-size_1-of-1 slds-large-size_9-of-12" style="padding:2%" >
+                        <!--<div class="slds-p-around_x-small">
+                            <aura:if isTrue="{!not(empty(v.objID.lstHomePageMessages))}">
+                                <c:LightningCarouselDemo lstHPMessages="{!v.objID.lstHomePageMessages}"/>
+                            </aura:if>
+                        </div>-->
+                        <div class="slds-size_1-of-1 slds-p-around_x-small">
+                            <p class="competencyHeader">{!$Label.c.NPNHomePage_Product_Competencies} </p> <br />
+                            <div class="slds-grid slds-wrap slds-gutters_xx-small">
+                                <aura:iteration items="{!v.objID.lstCompetencyData}" var="objCD">
+                                    <aura:if isTrue="{!!objCD.Vertical_Competency__c}"> 
+                                        <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-2 slds-large-size_1-of-3" style="padding-top: .5rem;padding-bottom: .5rem;">
+                                            <article class="slds-card">
+                                                <!--<header class="slds-media slds-media_center slds-has-flexi-truncate">
+                                                    <div aura:id="output" style="{!'overflow-wrap:break-word;min-width:100%;background-size:contain;background-repeat:no-repeat;background-position: center center;padding:10px;min-height:150px;color:white;background-image: url(/resource/NPN_Community_Home_Page_Competency_Image/CompetencyDataImage/'+objCD.Static_Resource_Image_Path__c+'/box-image-portal-homepage-refresh.png)'}" />                                                    
+                                                </header> -->
+                                                <header class="slds-media slds-media_center slds-has-flexi-truncate">
+                                                    <div aura:id="output" style="overflow-wrap:break-word;min-width:100%;background-size:cover;color:white;">
+                                                        <img style="width:100%;height:100%;left:0" src="{!'/resource/NPN_Community_Home_Page_Competency_Image/CompetencyDataImage/'+objCD.Static_Resource_Image_Path__c+'/box-image-portal-homepage-refresh.png'}" />
+                                                    </div>
+                                                </header>
+                                                <footer>                                                
+                                                    <div class="slds-grid slds-wrap slds-p-around_x-small">
+                                                        <div class="slds-col slds-size_1-of-1" >
+                                                            <p class="competencyNameText"> {!objCD.Name} </p>
+                                                        </div>
+                                                        <aura:iteration items="{!objCD.Competency_Data_Links__r}" var="objCDLnk" indexVar="objCDLnkIndex">                                            
+                                                            <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-1 slds-large-size_1-of-2" >
+                                                                <!--<aura:if isTrue="{!objCDLnk.Default_Competency__c}"> -->
+                                                                    <a class="slds-text-body_small competencyLink" target="_blank" href="{!objCDLnk.Link_Url_Text__c}">{!objCDLnk.Link_Label__c} ></a>
+                                                                <!--</aura:if>-->
+                                                            </div>
+                                                        </aura:iteration>
+                                                    </div>
+                                              </footer>
+                                            </article>
+                                        </div>
+                                    </aura:if>
+                                </aura:iteration>
+                            </div>
+                        </div>                     
+                       <!-- <aura:if isTrue="{!v.objID.bIndustryCompetency}"> -->
+                            <div class="slds-size_1-of-1 slds-p-around_xx-small">
+                                <br /><p class="competencyHeader">{!$Label.c.NPNHomePage_INDUSTRY_SOLUTIONS} </p> <br />
+                                <div class="slds-grid slds-wrap slds-gutters_xx-small">
+                                    <aura:iteration items="{!v.objID.lstCompetencyData}" var="objCD">
+                                        <aura:if isTrue="{!objCD.Vertical_Competency__c}"> 
+                                            <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-2 slds-large-size_1-of-3" style="padding-top: .5rem;padding-bottom: .5rem;">
+                                                <!--style="padding-bottom: .5rem;"-->
+                                                <article class="slds-card">
+                                                    <!--<header class="slds-media slds-media_center slds-has-flexi-truncate">
+                                                        <div aura:id="output" style="{!'overflow-wrap:break-word;min-width:100%;background-size:contain;background-repeat:no-repeat;background-position: center center;padding:10px;min-height:150px;color:white;background-image: url(/resource/NPN_Community_Home_Page_Competency_Image/CompetencyDataImage/'+objCD.Static_Resource_Image_Path__c+'/box-image-portal-homepage-refresh.png)'}" />                                                    
+                                                    </header>-->
+                                                    <header class="slds-media slds-media_center slds-has-flexi-truncate">
+                                                        <div aura:id="output" style="overflow-wrap:break-word;min-width:100%;background-size:cover;color:white;">
+                                                            <img style="width:100%;height:100%;left:0" src="{!'/resource/NPN_Community_Home_Page_Competency_Image/CompetencyDataImage/'+objCD.Static_Resource_Image_Path__c+'/box-image-portal-homepage-refresh.png'}" />
+                                                        </div>
+                                                    </header>
+                                                    <footer>                                                
+                                                        <div class="slds-grid slds-wrap slds-p-around_x-small">
+                                                            <div class="slds-col slds-size_1-of-1" >
+                                                                <p class="competencyNameText"> {!objCD.Name} </p>
+                                                            </div>
+                                                            <aura:iteration items="{!objCD.Competency_Data_Links__r}" var="objCDLnk" indexVar="objCDLnkIndex">                                            
+                                                                <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-1 slds-large-size_1-of-2" >
+                                                                    <a class="slds-text-body_small competencyLink" target="_blank" href="{!objCDLnk.Link_Url_Text__c}">{!objCDLnk.Link_Label__c} ></a>
+                                                                </div>
+                                                            </aura:iteration>
+                                                        </div>
+                                                  </footer>
+                                                </article>
+                                            </div>
+                                        </aura:if>
+                                    </aura:iteration>
+                                </div>
+                            </div>
+                        <!--</aura:if>-->
+                        <!--<div class="slds-size_1-of-1 slds-p-around_x-small">
+                            <aura:iteration items="{!v.objID.lstCompetencyData}" var="objCD">
+                                <aura:if isTrue="{!objCD.Name==v.objID.objPartnerPerformanceScorecard.defaultCompetency}">                     
+                                    <div aura:id="output">                        
+                                        <p class="headerLargeText"> {!objCD.Name} </p> <br />
+                                        <b> {!objCD.Competency_Long_Description__c} </b> <br />
+                                        <div class="slds-p-around_xx-small;"> 
+                                            <div style="width:50%" class="slds-grid slds-wrap">
+                                                <aura:iteration items="{!objCD.Competency_Data_Links__r}" var="objCDLnk" indexVar="objCDLnkIndex">                                            
+                                                    <div class="slds-size_1-of-2" >
+                                                        <aura:if isTrue="{!objCDLnk.Default_Competency__c}"> 
+                                                            <a class="competencyLink" href="{!objCDLnk.Link_URL__c}">{!objCDLnk.Link_Label__c} ></a>
+                                                        </aura:if>
+                                                    </div>
+                                                </aura:iteration>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </aura:if>
+                            </aura:iteration>
+                        </div>
+                        <div class="slds-grid slds-wrap">
+                            <aura:iteration items="{!v.objID.lstCompetencyData}" var="objCD">
+                                <aura:if isTrue="{!objCD.Name!=v.objID.objPartnerPerformanceScorecard.defaultCompetency}">                     
+                                    <div class="slds-col slds-small-size_1-of-1 slds-medium-size_1-of-2 slds-large-size_1-of-2 left slds-p-around_x-small">
+                                        <div aura:id="output" style="{!'overflow-wrap:break-word;background-size:cover;padding:10px;min-height:170px;color:white;background-image: url(/resource/NPN_Community_Home_Page_Competency_Image/CompetencyDataImage/'+objCD.Static_Resource_Image_Path__c+'/box-image-portal-homepage-refresh.png)'}">                                                                
+                                            <p class="competencyNameText"> {!objCD.Name} </p> <br />
+                                            <b> {!objCD.Competency_Short_Description__c} </b>
+                                        </div>
+                                        <aura:iteration items="{!objCD.Competency_Data_Links__r}" var="objCDLnk" indexVar="objCDLnkIndex">                                
+                                            <aura:if isTrue="{!objCDLnk.Default_Competency__c!=True}"> 
+                                                <a class="competencyLink" href="{!objCDLnk.Link_URL__c}">{!objCDLnk.Link_Label__c} ></a> <br />
+                                            </aura:if>
+                                        </aura:iteration>
+                                    </div>
+                                </aura:if>
+                            </aura:iteration>
+                        </div>-->
+                    </div>            
+                    <!--<div class="left" style="width:20%;min-width:200px;padding:2%;">-->
+                    <div class="slds-col slds-size_1-of-1 slds-large-size_3-of-12" style="padding:2%;">
+                        <aura:iteration items="{!v.objID.lstHomePageLinks}" var="objHP">
+                            <aura:if isTrue="{!objHP.strLinkLabel=='NPN Compliance(SFDC)'}">
+                                <div class="compliance">
+                                    <div class="slds-box slds-theme_shade" style="background-color:#FFFFFF;padding:30px;">
+                                        {!v.complianceHeaderTitle}
+                                        <div style="height:1px;background-color:#CCCCCC;width:100%;">
+                                        </div>
+                                        <br />
+                                        <p class="slds-p-horizontal--small">                                        
+                                            <c:NV_CommunityHomePageNPNCompliance bPPS="{!v.objID.objPartnerPerformanceScorecard.overallCompliant}" bInProgressCompliance="{!v.objID.objPartnerPerformanceScorecard.isInProgress}" />
+                                        </p> 
+                                        <br /> 
+                                        <aura:if isTrue="{!v.objID.bIsComplianceOnTableau}">
+                                        	<a style="color:#76B900;" href="{!$Label.c.NPNHomePage_Tableau_URL}">{!$Label.c.NPNHomePage_See_details}</a>
+                                             <aura:set attribute="else">
+                                                 <a style="color:#76B900;" href="/apex/NPN_Surf">{!$Label.c.NPNHomePage_See_details}</a>
+                                            </aura:set>
+                                        </aura:if>
+                                    </div>
+                                </div>
+                            </aura:if>
+                        </aura:iteration>
+                        <div>                   
+                            <div class="slds-box slds-theme_shade dashboard" style="background-color:#666666;padding:30px;">
+                                {!v.dashboardHeaderTitle} 
+                                <div style="height:1px;background-color:#999999;width:100%;">
+                                </div>
+                                <br />
+                                <aura:iteration items="{!v.objID.lstHomePageLinks}" var="objHP">
+                                    <aura:if isTrue="{!objHP.strLinkType=='Dashboard'}">
+                                        <a class="dashboardLink" target="_blank" href="{!objHP.strLinkURL}">{!objHP.strLinkLabel} ></a> 
+                                        <aura:if isTrue="{!objHP.hasButton}"> 
+                                            <!--<button type="button" class="customButton" style="margin-left:5px;" onclick="{! c.dashboardButtonClick }" id="{!objHP.strButtonLink}" >{!objHP.strButtonLabel}</button>-->
+                                            <lightning:button class="customButton" label="{!objHP.strButtonLabel}" onclick="{! c.dashboardButtonClick }" name="{!objHP.strButtonLink}" />
+                                        </aura:if>
+                                        <br /> 
+                                    </aura:if>
+                                </aura:iteration>
+                            </div>
+                        </div>
+                        <!--<div class="newsMessages">
+                        </div>-->
+                        <div class="contactUs">
+                            <a onclick="{! c.openModel }" class="contactUsLink"> <div class="left" style="height:20px;width:30px;"><img src="{!$Resource.NPN_Community_Home_Page_Competency_Image + '/CompetencyDataImage/icon-contact-us.svg'}" /></div><div class="left" style="padding-left:10px;font-size:20px;"> {!$Label.c.Contact_Us} </div></a>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+            <div class="footer">
+                <c:NV_CommunityHomePageFooter />
+            </div>                
+        </div>
+    </div>
+    <div style="clear:both;" />
+    <c:NV_CommunityHomePageContactUs isOpen="{!v.isOpen}" />
+    <aura:if isTrue="{!v.isSearchResultPopUpOpen}">
+    	<c:NV_CommunityHomePageSearchResultsPage searchText="{!v.searchText}" isSearchResultPopUpOpen="{!v.isSearchResultPopUpOpen}" />
+    </aura:if>
+</aura:component>

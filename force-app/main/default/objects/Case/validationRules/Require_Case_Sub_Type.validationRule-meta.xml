@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Case_Sub_Type</fullName>
+    <active>true</active>
+    <description>Ensure case sub-type is entered</description>
+    <errorConditionFormula>AND (
+ISPICKVAL ( Type , &apos;OppReg Assistance&apos; ),
+RecordType.Name =&apos;NVIDIA Internal Case&apos;,
+ISBLANK (TEXT(( Sub_Type__c ))
+))</errorConditionFormula>
+    <errorDisplayField>Sub_Type__c</errorDisplayField>
+    <errorMessage>Please confirm the case Sub-Type.</errorMessage>
+</ValidationRule>

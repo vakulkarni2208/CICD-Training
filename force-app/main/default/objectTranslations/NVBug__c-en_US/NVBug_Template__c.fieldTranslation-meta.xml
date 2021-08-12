@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- NVBug Template --></label>
+    <name>NVBug_Template__c</name>
+    <picklistValues>
+        <masterLabel>CUDA Software Bug Template (2869667)</masterLabel>
+        <translation><!-- CUDA Software Bug Template (2869667) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DGX A100 Hardware Bug Template (2846468)</masterLabel>
+        <translation><!-- DGX A100 Hardware Bug Template (2846468) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DGX A100 Software Bug Template (2846467)</masterLabel>
+        <translation><!-- DGX A100 Software Bug Template (2846467) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DGX Station A100 Hardware Bug Template (3306178)</masterLabel>
+        <translation><!-- DGX Station A100 Hardware Bug Template (3306178) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DGX Station A100 Software Bug Template (3306176)</masterLabel>
+        <translation><!-- DGX Station A100 Software Bug Template (3306176) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DGX-1 Hardware Bug Template (2016600)</masterLabel>
+        <translation><!-- DGX-1 Hardware Bug Template (2016600) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DGX-1 Software Bug Template (2048868)</masterLabel>
+        <translation><!-- DGX-1 Software Bug Template (2048868) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DGX-1V Hardware Bug Template (2678239)</masterLabel>
+        <translation><!-- DGX-1V Hardware Bug Template (2678239) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DGX-1V Software Bug Template (2706314)</masterLabel>
+        <translation><!-- DGX-1V Software Bug Template (2706314) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DGX-2 Hardware Bug Template (2419160)</masterLabel>
+        <translation><!-- DGX-2 Hardware Bug Template (2419160) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DGX-2 Software Bug Template (2419164)</masterLabel>
+        <translation><!-- DGX-2 Software Bug Template (2419164) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DGX-Station Hardware Bug Template (2017211)</masterLabel>
+        <translation><!-- DGX-Station Hardware Bug Template (2017211) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Drive Constellation Bug Template (2555861)</masterLabel>
+        <translation><!-- Drive Constellation Bug Template (2555861) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fleet Command Bug Template (3264042)</masterLabel>
+        <translation><!-- Fleet Command Bug Template (3264042) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GFN Services (1962402)</masterLabel>
+        <translation><!-- GFN Services (1962402) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GFN Services (200531155)</masterLabel>
+        <translation><!-- GFN Services (200531155) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GRID (2071819)</masterLabel>
+        <translation><!-- GRID (2071819) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Maglev (2715122)</masterLabel>
+        <translation><!-- Maglev (2715122) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NGC Bug Template (2078324)</masterLabel>
+        <translation><!-- NGC Bug Template (2078324) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NGC-Ready template (2869886)</masterLabel>
+        <translation><!-- NGC-Ready template (2869886) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NVHeath Software Bug Template (2049396)</masterLabel>
+        <translation><!-- NVHeath Software Bug Template (2049396) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Parabricks Bug Template (3145706)</masterLabel>
+        <translation><!-- Parabricks Bug Template (3145706) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RMA EFFA Bug (2974386)</masterLabel>
+        <translation><!-- RMA EFFA Bug (2974386) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RTX Blade Server (2585486)</masterLabel>
+        <translation><!-- RTX Blade Server (2585486) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RTX Blade Server EMERGENCY Software Template (200531155)</masterLabel>
+        <translation><!-- RTX Blade Server EMERGENCY Software Template (200531155) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RTX Blade Server Hardware (2585486)</masterLabel>
+        <translation><!-- RTX Blade Server Hardware (2585486) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RTX Blade Server Software Template (2732184)</masterLabel>
+        <translation><!-- RTX Blade Server Software Template (2732184) --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

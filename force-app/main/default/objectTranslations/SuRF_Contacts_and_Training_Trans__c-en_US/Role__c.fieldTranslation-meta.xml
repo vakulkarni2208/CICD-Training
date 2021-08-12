@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Role --></label>
+    <name>Role__c</name>
+    <picklistValues>
+        <masterLabel>MDF</masterLabel>
+        <translation><!-- MDF --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Marketing</masterLabel>
+        <translation><!-- Marketing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Marketing;MDF</masterLabel>
+        <translation><!-- Marketing;MDF --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Marketing;POS</masterLabel>
+        <translation><!-- Marketing;POS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Marketing;POS;MDF</masterLabel>
+        <translation><!-- Marketing;POS;MDF --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Marketing;POS;Partner Primary Contact</masterLabel>
+        <translation><!-- Marketing;POS;Partner Primary Contact --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Marketing;POS;Partner Primary Contact;MDF</masterLabel>
+        <translation><!-- Marketing;POS;Partner Primary Contact;MDF --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Marketing;Partner Primary Contact</masterLabel>
+        <translation><!-- Marketing;Partner Primary Contact --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Marketing;Partner Primary Contact;MDF</masterLabel>
+        <translation><!-- Marketing;Partner Primary Contact;MDF --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Marketing;RMA</masterLabel>
+        <translation><!-- Marketing;RMA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Marketing;RMA;POS</masterLabel>
+        <translation><!-- Marketing;RMA;POS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Marketing;Service and Support;Partner Primary Contact;MDF</masterLabel>
+        <translation><!-- Marketing;Service and Support;Partner Primary Contact;MDF --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Marketing;Technical</masterLabel>
+        <translation><!-- Marketing;Technical --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Marketing;Technical;POS;Partner Primary Contact;MDF</masterLabel>
+        <translation><!-- Marketing;Technical;POS;Partner Primary Contact;MDF --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Marketing;Technical;Service and Support</masterLabel>
+        <translation><!-- Marketing;Technical;Service and Support --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Marketing;Technical;Service and Support;POS</masterLabel>
+        <translation><!-- Marketing;Technical;Service and Support;POS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NA</masterLabel>
+        <translation><!-- NA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>POS</masterLabel>
+        <translation><!-- POS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>POS;MDF</masterLabel>
+        <translation><!-- POS;MDF --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>POS;Partner Primary Contact</masterLabel>
+        <translation><!-- POS;Partner Primary Contact --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>POS;Partner Primary Contact;MDF</masterLabel>
+        <translation><!-- POS;Partner Primary Contact;MDF --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Partner Primary Contact</masterLabel>
+        <translation><!-- Partner Primary Contact --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Partner Primary Contact;MDF</masterLabel>
+        <translation><!-- Partner Primary Contact;MDF --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RMA</masterLabel>
+        <translation><!-- RMA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RMA;POS;Partner Primary Contact</masterLabel>
+        <translation><!-- RMA;POS;Partner Primary Contact --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RMA;POS;Partner Primary Contact;MDF</masterLabel>
+        <translation><!-- RMA;POS;Partner Primary Contact;MDF --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RMA;Partner Primary Contact;MDF</masterLabel>
+        <translation><!-- RMA;Partner Primary Contact;MDF --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sales</masterLabel>
+        <translation><!-- Sales --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sales;MDF</masterLabel>
+        <translation><!-- Sales;MDF --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sales;Marketing</masterLabel>
+        <translation><!-- Sales;Marketing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sales;Marketing;MDF</masterLabel>
+        <translation><!-- Sales;Marketing;MDF --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sales;Marketing;POS</masterLabel>
+        <translation><!-- Sales;Marketing;POS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sales;Marketing;POS;MDF</masterLabel>
+        <translation><!-- Sales;Marketing;POS;MDF --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sales;Marketing;POS;Partner Primary Contact</masterLabel>
+        <translation><!-- Sales;Marketing;POS;Partner Primary Contact --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sales;Marketing;POS;Partner Primary Contact;MDF</masterLabel>
+        <translation><!-- Sales;Marketing;POS;Partner Primary Contact;MDF --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sales;Marketing;Partner Primary Contact</masterLabel>
+        <translation><!-- Sales;Marketing;Partner Primary Contact --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sales;Marketing;Partner Primary Contact;MDF</masterLabel>
+        <translation><!-- Sales;Marketing;Partner Primary Contact;MDF --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sales;Marketing;RMA;POS;MDF</masterLabel>
+        <translation><!-- Sales;Marketing;RMA;POS;MDF --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sales;Marketing;RMA;POS;Partner Primary Contact</masterLabel>
+        <translation><!-- Sales;Marketing;RMA;POS;Partner Primary Contact --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sales;Marketing;RMA;POS;Partner Primary Contact;MDF</masterLabel>
+        <translation><!-- Sales;Marketing;RMA;POS;Partner Primary Contact;MDF --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sales;Marketing;Service and Support</masterLabel>
+        <translation><!-- Sales;Marketing;Service and Support --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sales;Marketing;Service and Support;POS;Partner Primary Contact;MDF</masterLabel>
+        <translation><!-- Sales;Marketing;Service and Support;POS;Partner Primary Contact;MDF --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sales;Marketing;Technical</masterLabel>
+        <translation><!-- Sales;Marketing;Technical --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sales;Marketing;Technical;MDF</masterLabel>
+        <translation><!-- Sales;Marketing;Technical;MDF --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sales;Marketing;Technical;POS</masterLabel>
+        <translation><!-- Sales;Marketing;Technical;POS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sales;Marketing;Technical;POS;MDF</masterLabel>
+        <translation><!-- Sales;Marketing;Technical;POS;MDF --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sales;Marketing;Technical;POS;Partner Primary Contact</masterLabel>
+        <translation><!-- Sales;Marketing;Technical;POS;Partner Primary Contact --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sales;Marketing;Technical;Partner Primary Contact</masterLabel>
+        <translation><!-- Sales;Marketing;Technical;Partner Primary Contact --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sales;Marketing;Technical;Partner Primary Contact;MDF</masterLabel>
+        <translation><!-- Sales;Marketing;Technical;Partner Primary Contact;MDF --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sales;Marketing;Technical;RMA;Partner Primary Contact;MDF</masterLabel>
+        <translation><!-- Sales;Marketing;Technical;RMA;Partner Primary Contact;MDF --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sales;Marketing;Technical;Service and Support</masterLabel>
+        <translation><!-- Sales;Marketing;Technical;Service and Support --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sales;Marketing;Technical;Service and Support;MDF</masterLabel>
+        <translation><!-- Sales;Marketing;Technical;Service and Support;MDF --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sales;Marketing;Technical;Service and Support;POS;Partner Primary Contact</masterLabel>
+        <translation><!-- Sales;Marketing;Technical;Service and Support;POS;Partner Primary Contact --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sales;Marketing;Technical;Service and Support;RMA;POS;Partner Primary Contact</masterLabel>
+        <translation><!-- Sales;Marketing;Technical;Service and Support;RMA;POS;Partner Primary Contact --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sales;Marketing;Technical;Service and Support;RMA;POS;Partner Primary Contact;MDF</masterLabel>
+        <translation><!-- Sales;Marketing;Technical;Service and Support;RMA;POS;Partner Primary Contact;MDF --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sales;POS</masterLabel>
+        <translation><!-- Sales;POS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sales;POS;MDF</masterLabel>
+        <translation><!-- Sales;POS;MDF --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sales;POS;Partner Primary Contact</masterLabel>
+        <translation><!-- Sales;POS;Partner Primary Contact --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sales;POS;Partner Primary Contact;MDF</masterLabel>
+        <translation><!-- Sales;POS;Partner Primary Contact;MDF --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sales;Partner Primary Contact</masterLabel>
+        <translation><!-- Sales;Partner Primary Contact --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sales;Partner Primary Contact;MDF</masterLabel>
+        <translation><!-- Sales;Partner Primary Contact;MDF --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sales;RMA</masterLabel>
+        <translation><!-- Sales;RMA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sales;RMA;MDF</masterLabel>
+        <translation><!-- Sales;RMA;MDF --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sales;RMA;POS</masterLabel>
+        <translation><!-- Sales;RMA;POS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sales;RMA;POS;MDF</masterLabel>
+        <translation><!-- Sales;RMA;POS;MDF --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sales;Service and Support</masterLabel>
+        <translation><!-- Sales;Service and Support --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sales;Service and Support;Partner Primary Contact;MDF</masterLabel>
+        <translation><!-- Sales;Service and Support;Partner Primary Contact;MDF --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sales;Service and Support;RMA;MDF</masterLabel>
+        <translation><!-- Sales;Service and Support;RMA;MDF --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sales;Service and Support;RMA;POS;Partner Primary Contact</masterLabel>
+        <translation><!-- Sales;Service and Support;RMA;POS;Partner Primary Contact --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sales;Service and Support;RMA;Partner Primary Contact</masterLabel>
+        <translation><!-- Sales;Service and Support;RMA;Partner Primary Contact --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sales;Technical</masterLabel>
+        <translation><!-- Sales;Technical --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sales;Technical;MDF</masterLabel>
+        <translation><!-- Sales;Technical;MDF --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sales;Technical;POS</masterLabel>
+        <translation><!-- Sales;Technical;POS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sales;Technical;POS;MDF</masterLabel>
+        <translation><!-- Sales;Technical;POS;MDF --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sales;Technical;POS;Partner Primary Contact</masterLabel>
+        <translation><!-- Sales;Technical;POS;Partner Primary Contact --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sales;Technical;POS;Partner Primary Contact;MDF</masterLabel>
+        <translation><!-- Sales;Technical;POS;Partner Primary Contact;MDF --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sales;Technical;Partner Primary Contact</masterLabel>
+        <translation><!-- Sales;Technical;Partner Primary Contact --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sales;Technical;Partner Primary Contact;MDF</masterLabel>
+        <translation><!-- Sales;Technical;Partner Primary Contact;MDF --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sales;Technical;RMA;POS;Partner Primary Contact;MDF</masterLabel>
+        <translation><!-- Sales;Technical;RMA;POS;Partner Primary Contact;MDF --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sales;Technical;Service and Support</masterLabel>
+        <translation><!-- Sales;Technical;Service and Support --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sales;Technical;Service and Support;POS;MDF</masterLabel>
+        <translation><!-- Sales;Technical;Service and Support;POS;MDF --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sales;Technical;Service and Support;POS;Partner Primary Contact</masterLabel>
+        <translation><!-- Sales;Technical;Service and Support;POS;Partner Primary Contact --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sales;Technical;Service and Support;Partner Primary Contact;MDF</masterLabel>
+        <translation><!-- Sales;Technical;Service and Support;Partner Primary Contact;MDF --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Service &amp; Support</masterLabel>
+        <translation><!-- Service &amp; Support --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Service and Support</masterLabel>
+        <translation><!-- Service and Support --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Service and Support;MDF</masterLabel>
+        <translation><!-- Service and Support;MDF --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Service and Support;POS</masterLabel>
+        <translation><!-- Service and Support;POS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Service and Support;Partner Primary Contact</masterLabel>
+        <translation><!-- Service and Support;Partner Primary Contact --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Service and Support;Partner Primary Contact;MDF</masterLabel>
+        <translation><!-- Service and Support;Partner Primary Contact;MDF --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Service and Support;RMA</masterLabel>
+        <translation><!-- Service and Support;RMA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Service and Support;RMA;POS</masterLabel>
+        <translation><!-- Service and Support;RMA;POS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Service and Support;RMA;POS;MDF</masterLabel>
+        <translation><!-- Service and Support;RMA;POS;MDF --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Service and Support;RMA;Partner Primary Contact</masterLabel>
+        <translation><!-- Service and Support;RMA;Partner Primary Contact --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Technical</masterLabel>
+        <translation><!-- Technical --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Technical,Sales</masterLabel>
+        <translation><!-- Technical,Sales --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Technical;MDF</masterLabel>
+        <translation><!-- Technical;MDF --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Technical;POS</masterLabel>
+        <translation><!-- Technical;POS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Technical;POS;Partner Primary Contact</masterLabel>
+        <translation><!-- Technical;POS;Partner Primary Contact --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Technical;POS;Partner Primary Contact;MDF</masterLabel>
+        <translation><!-- Technical;POS;Partner Primary Contact;MDF --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Technical;Partner Primary Contact</masterLabel>
+        <translation><!-- Technical;Partner Primary Contact --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Technical;Partner Primary Contact;MDF</masterLabel>
+        <translation><!-- Technical;Partner Primary Contact;MDF --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Technical;RMA</masterLabel>
+        <translation><!-- Technical;RMA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Technical;Service and Support</masterLabel>
+        <translation><!-- Technical;Service and Support --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Technical;Service and Support;POS;Partner Primary Contact;MDF</masterLabel>
+        <translation><!-- Technical;Service and Support;POS;Partner Primary Contact;MDF --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Technical;Service and Support;Partner Primary Contact</masterLabel>
+        <translation><!-- Technical;Service and Support;Partner Primary Contact --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Technical;Service and Support;RMA</masterLabel>
+        <translation><!-- Technical;Service and Support;RMA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Technical;Service and Support;RMA;Partner Primary Contact</masterLabel>
+        <translation><!-- Technical;Service and Support;RMA;Partner Primary Contact --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

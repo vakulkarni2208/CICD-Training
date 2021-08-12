@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PrimaryWorkLoadOther_BlankOtherWorkLoad</fullName>
+    <active>false</active>
+    <description>If Primary Customer Workload is not &quot;Other&quot; then ask to blank out Other Work Load 
+SDS-1619 - Sales: new Oppty validation on &apos;Other workload&apos; needed</description>
+    <errorConditionFormula>AND( 
+$RecordType.Name = &quot;Enterprise Sales Opportunity&quot;, 
+AND($Profile.Name &lt;&gt; &apos;System Administrator&apos;,$Profile.Name &lt;&gt; &apos;SVC SAP Integration&apos;),
+Probability &gt; 0.1, 
+NOT(ISPICKVAL(Primary_Customer_Use_Case__c , &quot;Other&quot;)), 
+NOT(ISBLANK(If_Other_Use_Case_Please_Describe__c)) 
+)</errorConditionFormula>
+    <errorDisplayField>If_Other_Use_Case_Please_Describe__c</errorDisplayField>
+    <errorMessage>Please leave “If Other Workload Please Describe” field blank unless you selected “Other” in the “Primary Customer Workload&quot; field</errorMessage>
+</ValidationRule>

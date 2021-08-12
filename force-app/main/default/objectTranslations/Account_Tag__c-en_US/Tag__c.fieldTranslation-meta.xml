@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Tag --></label>
+    <name>Tag__c</name>
+    <picklistValues>
+        <masterLabel>Assigned Account</masterLabel>
+        <translation><!-- Assigned Account --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Automotive Customer</masterLabel>
+        <translation><!-- Automotive Customer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CPQ Account</masterLabel>
+        <translation><!-- CPQ Account --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Consumer Customer</masterLabel>
+        <translation><!-- Consumer Customer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DGX-1 Approved</masterLabel>
+        <translation><!-- DGX-1 Approved --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DGX-1 Proposed</masterLabel>
+        <translation><!-- DGX-1 Proposed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Enterprise Customer</masterLabel>
+        <translation><!-- Enterprise Customer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GFNA Partner</masterLabel>
+        <translation><!-- GFNA Partner --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Strategic OEM</masterLabel>
+        <translation><!-- Strategic OEM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tegra Embedded Customer</masterLabel>
+        <translation><!-- Tegra Embedded Customer --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

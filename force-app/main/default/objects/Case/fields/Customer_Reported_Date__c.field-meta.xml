@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Customer_Reported_Date__c</fullName>
+    <description>Original date when issue was reported by the customer to the Partner or NVIDIA</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Original date when issue was reported by the customer to the Partner or NVIDIA</inlineHelpText>
+    <label>Customer Reported Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

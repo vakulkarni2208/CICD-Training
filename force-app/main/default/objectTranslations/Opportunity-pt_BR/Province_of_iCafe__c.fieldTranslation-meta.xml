@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Province of iCafe --></label>
+    <name>Province_of_iCafe__c</name>
+    <picklistValues>
+        <masterLabel>Anhui</masterLabel>
+        <translation><!-- Anhui --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Beijing</masterLabel>
+        <translation><!-- Beijing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chongqing</masterLabel>
+        <translation><!-- Chongqing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fujian</masterLabel>
+        <translation><!-- Fujian --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gansu</masterLabel>
+        <translation><!-- Gansu --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Guangdong</masterLabel>
+        <translation><!-- Guangdong --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Guangxi</masterLabel>
+        <translation><!-- Guangxi --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Guizhou</masterLabel>
+        <translation><!-- Guizhou --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hainan</masterLabel>
+        <translation><!-- Hainan --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hebei</masterLabel>
+        <translation><!-- Hebei --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Heilongjiang</masterLabel>
+        <translation><!-- Heilongjiang --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Henan</masterLabel>
+        <translation><!-- Henan --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hubei</masterLabel>
+        <translation><!-- Hubei --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hunan</masterLabel>
+        <translation><!-- Hunan --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Jiangsu</masterLabel>
+        <translation><!-- Jiangsu --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Jiangxi</masterLabel>
+        <translation><!-- Jiangxi --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Jilin</masterLabel>
+        <translation><!-- Jilin --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Liaoning</masterLabel>
+        <translation><!-- Liaoning --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>N/A</masterLabel>
+        <translation><!-- N/A --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Nei Mongol(inner Mangolia)</masterLabel>
+        <translation><!-- Nei Mongol(inner Mangolia) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ningxia</masterLabel>
+        <translation><!-- Ningxia --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Qinghai</masterLabel>
+        <translation><!-- Qinghai --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Shaanxi</masterLabel>
+        <translation><!-- Shaanxi --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Shandong</masterLabel>
+        <translation><!-- Shandong --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Shanghai</masterLabel>
+        <translation><!-- Shanghai --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Shanxi</masterLabel>
+        <translation><!-- Shanxi --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sichuan</masterLabel>
+        <translation><!-- Sichuan --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tianjin</masterLabel>
+        <translation><!-- Tianjin --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Xinjiang</masterLabel>
+        <translation><!-- Xinjiang --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Xizang(Tibet)</masterLabel>
+        <translation><!-- Xizang(Tibet) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Yunnan</masterLabel>
+        <translation><!-- Yunnan --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Zhejiang</masterLabel>
+        <translation><!-- Zhejiang --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

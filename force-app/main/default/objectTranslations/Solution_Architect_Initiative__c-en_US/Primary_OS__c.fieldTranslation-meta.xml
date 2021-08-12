@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Primary OS --></label>
+    <name>Primary_OS__c</name>
+    <picklistValues>
+        <masterLabel>Linux (CentOS)</masterLabel>
+        <translation><!-- Linux (CentOS) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Linux (Red Hat)</masterLabel>
+        <translation><!-- Linux (Red Hat) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Linux (SUSE)</masterLabel>
+        <translation><!-- Linux (SUSE) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Linux (Ubuntu)</masterLabel>
+        <translation><!-- Linux (Ubuntu) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Windows 10</masterLabel>
+        <translation><!-- Windows 10 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Windows Server</masterLabel>
+        <translation><!-- Windows Server --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

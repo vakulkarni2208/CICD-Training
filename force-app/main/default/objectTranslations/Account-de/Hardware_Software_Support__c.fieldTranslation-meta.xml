@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Select the % of Hardware and Software Support --></help>
+    <label><!-- Hardware &amp; Software Support --></label>
+    <name>Hardware_Software_Support__c</name>
+</CustomFieldTranslation>

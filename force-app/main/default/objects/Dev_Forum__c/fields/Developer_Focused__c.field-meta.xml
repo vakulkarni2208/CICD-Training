@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Developer_Focused__c</fullName>
+    <defaultValue>true</defaultValue>
+    <description>Captures details about whether a forum is developer focused or not</description>
+    <externalId>false</externalId>
+    <label>Developer Focused</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

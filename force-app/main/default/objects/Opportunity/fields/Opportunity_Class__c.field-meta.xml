@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Opportunity_Class__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Select the type of Opportunity Class.   &quot;Strategic&quot; means an Opportunity where you spend much of your focus to drive this opportunity to Closed Won. OEM/VAR Enablement means an opportunity that you hand off to the OEM to drive to closure.</inlineHelpText>
+    <label>Opportunity Class</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Deep Learning Opportunity</fullName>
+                <default>false</default>
+                <label>Deep Learning Opportunity</label>
+            </value>
+            <value>
+                <fullName>Strategic Opportunity</fullName>
+                <default>false</default>
+                <label>Strategic Opportunity</label>
+            </value>
+            <value>
+                <fullName>OEM/VAR Enablement Opportunity</fullName>
+                <default>false</default>
+                <label>OEM/VAR Enablement Opportunity</label>
+            </value>
+            <value>
+                <fullName>Proof of Concept Opportunity (PoC) / Trial</fullName>
+                <default>false</default>
+                <label>Proof of Concept Opportunity (PoC) / Trial</label>
+            </value>
+            <value>
+                <fullName>North America GRID Incentive Program</fullName>
+                <default>false</default>
+                <label>North America GRID Incentive Program</label>
+            </value>
+            <value>
+                <fullName>Other Opportunity</fullName>
+                <default>false</default>
+                <label>Other Opportunity</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

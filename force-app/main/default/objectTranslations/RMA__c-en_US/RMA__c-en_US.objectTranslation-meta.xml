@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>RMA</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>RMA</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- RMA_FieldSetsLeft --></label>
+        <name>RMA_FieldSetsLeft</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- RMA_FieldSetsRight --></label>
+        <name>RMA_FieldSetsRight</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- RMA Installation Address Details --></label>
+        <name>RMA_Installation_Address_Details</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- RMA_Installation Contact --></label>
+        <name>RMA_Installation_Contact</name>
+    </fieldSets>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- NVBug ID should be Numeric --></errorMessage>
+        <name>NVBug_ID_should_be_Numeric</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- RMA_CE_Dispatch --></label>
+        <name>RMA_CE_Dispatch</name>
+    </webLinks>
+</CustomObjectTranslation>

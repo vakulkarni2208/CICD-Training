@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- What renderer will you be using? --></label>
+    <name>What_renderer_will_you_be_using__c</name>
+    <picklistValues>
+        <masterLabel>Arion</masterLabel>
+        <translation><!-- Arion --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Arnold</masterLabel>
+        <translation><!-- Arnold --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Custom Renderer using OpenCL</masterLabel>
+        <translation><!-- Custom Renderer using OpenCL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Custom renderer using CUDA</masterLabel>
+        <translation><!-- Custom renderer using CUDA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Custom renderer using NVIDIA OptiX</masterLabel>
+        <translation><!-- Custom renderer using NVIDIA OptiX --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DeltaGen</masterLabel>
+        <translation><!-- DeltaGen --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FurryBall</masterLabel>
+        <translation><!-- FurryBall --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MoskitoRender</masterLabel>
+        <translation><!-- MoskitoRender --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NVIDIA Iray</masterLabel>
+        <translation><!-- NVIDIA Iray --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NVIDIA Mental Ray</masterLabel>
+        <translation><!-- NVIDIA Mental Ray --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Octane</masterLabel>
+        <translation><!-- Octane --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Redshift</masterLabel>
+        <translation><!-- Redshift --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V-Ray RT</masterLabel>
+        <translation><!-- V-Ray RT --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Paperwork_Finalization_Approved_Quote</fullName>
+    <active>true</active>
+    <description>Requires Approved Quote to move an opportunity to Paperwork Finalization Stage</description>
+    <errorConditionFormula>AND (
+$UserRole.Name &lt;&gt; &quot;Administrator&quot;,
+NOT(ISPICKVAL ( Industry__c , &apos;Strategic Hyperscale&apos; )),
+RecordType.Name = &quot;Enterprise Sales Opportunity&quot;,
+NOT(ISPICKVAL(SBQQ__PrimaryQuote__r.SBQQ__Status__c, &quot;Approved&quot;)),
+
+OR(
+Number_of_DGX_Hardware_Products__c &gt; 0,
+Tesla_Product_Amount__c &gt; 450000,
+GRID_Product_Amount__c &gt; 0
+),
+
+ISPICKVAL(StageName,&quot;Paperwork Finalization&quot;)
+)</errorConditionFormula>
+    <errorDisplayField>SBQQ__PrimaryQuote__c</errorDisplayField>
+    <errorMessage>To move your deal to Paperwork Finalization, Primary Quote should be in approved Status</errorMessage>
+</ValidationRule>

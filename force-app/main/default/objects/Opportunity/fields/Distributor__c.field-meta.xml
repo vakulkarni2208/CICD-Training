@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Distributor__c</fullName>
+    <externalId>false</externalId>
+    <label>Distributor</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>&lt;N/A&gt;</fullName>
+                <default>false</default>
+                <label>&lt;N/A&gt;</label>
+            </value>
+            <value>
+                <fullName>Arrow - North America</fullName>
+                <default>false</default>
+                <label>Arrow - North America</label>
+            </value>
+            <value>
+                <fullName>Avnet</fullName>
+                <default>false</default>
+                <label>Avnet</label>
+            </value>
+            <value>
+                <fullName>CRG - Israel</fullName>
+                <default>false</default>
+                <label>CRG - Israel</label>
+            </value>
+            <value>
+                <fullName>EDOM - Taiwan</fullName>
+                <default>false</default>
+                <label>EDOM - Taiwan</label>
+            </value>
+            <value>
+                <fullName>Eltech - Russia</fullName>
+                <default>false</default>
+                <label>Eltech - Russia</label>
+            </value>
+            <value>
+                <fullName>Leadtech - TWN/SEA</fullName>
+                <default>false</default>
+                <label>Leadtech - TWN/SEA</label>
+            </value>
+            <value>
+                <fullName>Macnica - Japan</fullName>
+                <default>false</default>
+                <label>Macnica - Japan</label>
+            </value>
+            <value>
+                <fullName>MDS - Korea</fullName>
+                <default>false</default>
+                <label>MDS - Korea</label>
+            </value>
+            <value>
+                <fullName>Open Zeka - Turkey</fullName>
+                <default>false</default>
+                <label>Open Zeka - Turkey</label>
+            </value>
+            <value>
+                <fullName>Rashi Peripherals - India</fullName>
+                <default>false</default>
+                <label>Rashi Peripherals - India</label>
+            </value>
+            <value>
+                <fullName>Ryoyo - Japan</fullName>
+                <default>false</default>
+                <label>Ryoyo - Japan</label>
+            </value>
+            <value>
+                <fullName>Silicon Highway - EU/UK</fullName>
+                <default>false</default>
+                <label>Silicon Highway - EU/UK</label>
+            </value>
+            <value>
+                <fullName>Synnex - China</fullName>
+                <default>false</default>
+                <label>Synnex - China</label>
+            </value>
+            <value>
+                <fullName>TET Industrial - Turkey</fullName>
+                <default>false</default>
+                <label>TET Industrial - Turkey</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

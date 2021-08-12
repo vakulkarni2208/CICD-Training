@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LD_USE_DnB_Optimize__c</fullName>
+    <defaultValue>true</defaultValue>
+    <description>Allows or prevents account match and enrich from D&amp;B Optimizer</description>
+    <externalId>false</externalId>
+    <inlineHelpText>When checked match and enrich from D&amp;B Optimizer will process</inlineHelpText>
+    <label>Allow D&amp;B Optimizer</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

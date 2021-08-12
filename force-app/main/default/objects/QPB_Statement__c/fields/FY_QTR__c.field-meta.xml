@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FY_QTR__c</fullName>
+    <externalId>false</externalId>
+    <formula>RIGHT(TEXT(Fiscal_Year__c), 2) + RIGHT(TEXT(Quarter__c), 1) + IF(ISPICKVAL(Type__c, &apos;Progress&apos;),&apos;1&apos;,&apos;2&apos;)</formula>
+    <label>FY_QTR</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

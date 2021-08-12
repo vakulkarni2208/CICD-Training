@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reference_Type__c</fullName>
+    <description>In what ways is NVIDIA permitted to reference this customer?</description>
+    <externalId>false</externalId>
+    <inlineHelpText>In what ways is NVIDIA permitted to reference this customer?</inlineHelpText>
+    <label>Reference Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Keynote Logo Use</fullName>
+                <default>false</default>
+                <label>Keynote Logo Use</label>
+            </value>
+            <value>
+                <fullName>Blog/ Press Release</fullName>
+                <default>false</default>
+                <label>Blog/ Press Release</label>
+            </value>
+            <value>
+                <fullName>Customer Story Development</fullName>
+                <default>false</default>
+                <label>Customer Story Development</label>
+            </value>
+            <value>
+                <fullName>Speaker/Session Promotion</fullName>
+                <default>false</default>
+                <label>Speaker/Session Promotion</label>
+            </value>
+            <value>
+                <fullName>Available for RFP</fullName>
+                <default>false</default>
+                <label>Available for RFP</label>
+            </value>
+            <value>
+                <fullName>Customer Success Story</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Customer Success Story</label>
+            </value>
+            <value>
+                <fullName>Logo</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Logo</label>
+            </value>
+            <value>
+                <fullName>Mention or Name Drop</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Mention or Name Drop</label>
+            </value>
+            <value>
+                <fullName>Quote or Citation</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Quote or Citation</label>
+            </value>
+            <value>
+                <fullName>Sales Win</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Sales Win</label>
+            </value>
+            <value>
+                <fullName>Speak at Event</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Speak at Event</label>
+            </value>
+            <value>
+                <fullName>Spotlight Slide</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Spotlight Slide</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>6</visibleLines>
+</CustomField>

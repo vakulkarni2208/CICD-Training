@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Applications --></label>
+    <name>Which_code_do_you_use__c</name>
+    <picklistValues>
+        <masterLabel>AMBER</masterLabel>
+        <translation><!-- AMBER --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GROMACS</masterLabel>
+        <translation><!-- GROMACS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LAMMPS</masterLabel>
+        <translation><!-- LAMMPS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>M.DYNAMICS</masterLabel>
+        <translation><!-- M.DYNAMICS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NAMD</masterLabel>
+        <translation><!-- NAMD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Quantum Espresso</masterLabel>
+        <translation><!-- Quantum Espresso --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TeraChem</masterLabel>
+        <translation><!-- TeraChem --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

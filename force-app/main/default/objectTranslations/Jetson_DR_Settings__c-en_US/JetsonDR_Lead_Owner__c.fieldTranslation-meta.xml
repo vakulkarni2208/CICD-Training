@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- All Jetsonson Deal Registration Lead Owners are owned by this user --></help>
+    <label><!-- JetsonDR Lead - Owner --></label>
+    <name>JetsonDR_Lead_Owner__c</name>
+</CustomFieldTranslation>

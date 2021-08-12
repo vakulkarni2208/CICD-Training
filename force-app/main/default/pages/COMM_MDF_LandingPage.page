@@ -1,0 +1,24 @@
+<apex:page >
+                <style type="text/css">
+                                               body {background-color:white; font-size:14px;}
+                                                div a {color:#76b900; text-decoration: none; outline: none; font-weight: bold;}
+                                                span a {color:#76b900; font-size:14px; text-decoration: none; outline: none;}
+                </style>
+                
+                <div>
+                                <!--<span>
+                                                For MDF projects created after July 28th, 2015 please click on the LOGIN link below. 
+                                </span> -->
+                                
+                                <div>
+                                                <br/>
+                                                <apex:outputPanel rendered="{!$Profile.Name == 'Community Lite Profile'}">
+                                                                <span><a href="{!$Label.COMM_CP_MDFV3_COMMUNITY_URL}">LOGIN</a></span>
+                                                </apex:outputPanel>
+                                                <apex:outputPanel rendered="{!$Profile.Name != 'Community Lite Profile'}">
+                                                                <a id="idamdf" href="{!$Label.COMM_PP_MDFV3_COMMUNITY_URL}" onclick="window.open(this.href,'_blank'); return false;">LOGIN</a>
+                                                </apex:outputPanel>
+                                </div>
+                </div>
+
+</apex:page>

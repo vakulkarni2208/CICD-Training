@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Modality --></label>
+    <name>Modality__c</name>
+    <picklistValues>
+        <masterLabel>3D Printing</masterLabel>
+        <translation><!-- 3D Printing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Advanced Vis</masterLabel>
+        <translation><!-- Advanced Vis --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Blood Testing</masterLabel>
+        <translation><!-- Blood Testing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CAD</masterLabel>
+        <translation><!-- CAD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CT</masterLabel>
+        <translation><!-- CT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cryo-EM</masterLabel>
+        <translation><!-- Cryo-EM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dental</masterLabel>
+        <translation><!-- Dental --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Diagnostic, Surgical Displays</masterLabel>
+        <translation><!-- Diagnostic, Surgical Displays --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Digital Pathology</masterLabel>
+        <translation><!-- Digital Pathology --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EHR</masterLabel>
+        <translation><!-- EHR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Edge AI Platforms</masterLabel>
+        <translation><!-- Edge AI Platforms --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Endoscopy</masterLabel>
+        <translation><!-- Endoscopy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ICAR</masterLabel>
+        <translation><!-- ICAR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IGT</masterLabel>
+        <translation><!-- IGT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Intravascular Ultrasound</masterLabel>
+        <translation><!-- Intravascular Ultrasound --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MRI</masterLabel>
+        <translation><!-- MRI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mammo</masterLabel>
+        <translation><!-- Mammo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Microscopy</masterLabel>
+        <translation><!-- Microscopy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NGS</masterLabel>
+        <translation><!-- NGS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NLP, Reporting</masterLabel>
+        <translation><!-- NLP, Reporting --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OR Integration</masterLabel>
+        <translation><!-- OR Integration --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ophthalmic</masterLabel>
+        <translation><!-- Ophthalmic --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PACS</masterLabel>
+        <translation><!-- PACS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PET, Molecular</masterLabel>
+        <translation><!-- PET, Molecular --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Patient Monitoring</masterLabel>
+        <translation><!-- Patient Monitoring --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Radiotherapy</masterLabel>
+        <translation><!-- Radiotherapy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Robotic Surgery</masterLabel>
+        <translation><!-- Robotic Surgery --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Smart Cameras</masterLabel>
+        <translation><!-- Smart Cameras --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Surgical Navigation, AR/VR</masterLabel>
+        <translation><!-- Surgical Navigation, AR/VR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ultrasound</masterLabel>
+        <translation><!-- Ultrasound --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>X-Ray</masterLabel>
+        <translation><!-- X-Ray --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

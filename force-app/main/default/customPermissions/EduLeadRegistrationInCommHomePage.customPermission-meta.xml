@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomPermission xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>SDS-2748-Shows Edu Lead Registration in Partner Community Home Page. Added to permission set PP : EDU Lead Registration</description>
+    <label>EduLeadRegistrationInCommHomePage</label>
+</CustomPermission>

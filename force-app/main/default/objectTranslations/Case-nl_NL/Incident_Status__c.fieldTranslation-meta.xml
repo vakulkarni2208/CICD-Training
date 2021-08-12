@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Incident Status --></label>
+    <name>Incident_Status__c</name>
+    <picklistValues>
+        <masterLabel>Awaiting Agent Assignment</masterLabel>
+        <translation><!-- Awaiting Agent Assignment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Closed</masterLabel>
+        <translation><!-- Closed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Enterprise Support</masterLabel>
+        <translation><!-- Enterprise Support --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New Installation</masterLabel>
+        <translation><!-- New Installation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>On-Site RMA Install</masterLabel>
+        <translation><!-- On-Site RMA Install --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resolved (No Customer Response)</masterLabel>
+        <translation><!-- Resolved (No Customer Response) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resolved (Permanently)</masterLabel>
+        <translation><!-- Resolved (Permanently) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resolved (Temp Workaround)</masterLabel>
+        <translation><!-- Resolved (Temp Workaround) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Troubleshooting-Sub</masterLabel>
+        <translation><!-- Troubleshooting-Sub --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>With 3rd Party Partner</masterLabel>
+        <translation><!-- With 3rd Party Partner --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>With Engineering</masterLabel>
+        <translation><!-- With Engineering --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>With Engineering + RMA</masterLabel>
+        <translation><!-- With Engineering + RMA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>With NVIDIA non-engineering</masterLabel>
+        <translation><!-- With NVIDIA non-engineering --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>With RMA</masterLabel>
+        <translation><!-- With RMA --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

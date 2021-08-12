@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Primary_NPN_OEM_ODM_Disti_Text__c</fullName>
+    <description>SOQ-79: Copy NPN/OEM/ODM/DIST Name to be used in the sharing rules - lookup field is not supported in Criteria based sharing rules</description>
+    <externalId>false</externalId>
+    <label>Primary NPN OEM/ODM/Disti(Text)</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

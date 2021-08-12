@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Special Pricing Request Type --></label>
+    <name>Special_Pricing_Request_Type__c</name>
+    <picklistValues>
+        <masterLabel>Back-end Rebate</masterLabel>
+        <translation><!-- Back-end Rebate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EDU</masterLabel>
+        <translation><!-- EDU --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Engineering Qual</masterLabel>
+        <translation><!-- Engineering Qual --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Inception</masterLabel>
+        <translation><!-- Inception --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not for Resale (NFR)</masterLabel>
+        <translation><!-- Not for Resale (NFR) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Samples</masterLabel>
+        <translation><!-- Samples --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TOP EDU Back-end Rebate</masterLabel>
+        <translation><!-- TOP EDU Back-end Rebate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Upfront Discount</masterLabel>
+        <translation><!-- Upfront Discount --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

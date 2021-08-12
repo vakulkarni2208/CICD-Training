@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Extension duration in days --></help>
+    <label><!-- Days to Extend --></label>
+    <name>DR_Extn_Duration__c</name>
+    <picklistValues>
+        <masterLabel>90</masterLabel>
+        <translation><!-- 90 --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Original date when issue was reported by the customer to the Partner or NVIDIA --></help>
+    <label><!-- Customer Reported Date --></label>
+    <name>Customer_Reported_Date__c</name>
+</CustomFieldTranslation>

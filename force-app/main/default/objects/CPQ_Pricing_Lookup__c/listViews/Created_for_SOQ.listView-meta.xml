@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Created_for_SOQ</fullName>
+    <columns>NAME</columns>
+    <columns>Condition_Pricing_Unit__c</columns>
+    <columns>Condition_Rate__c</columns>
+    <columns>Condition_Record_Number__c</columns>
+    <columns>Condition_Type__c</columns>
+    <columns>Condition_Unit__c</columns>
+    <columns>Customer_Number__c</columns>
+    <columns>End_Customer_Type__c</columns>
+    <columns>Inactive__c</columns>
+    <columns>Inactive_To_String__c</columns>
+    <columns>Lookup_Customer_Number__c</columns>
+    <columns>LAST_UPDATE</columns>
+    <columns>Valid_To__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>LAST_UPDATE</field>
+        <operation>greaterOrEqual</operation>
+        <value>TODAY</value>
+    </filters>
+    <label>Created for SOQ</label>
+    <language>en_US</language>
+</ListView>

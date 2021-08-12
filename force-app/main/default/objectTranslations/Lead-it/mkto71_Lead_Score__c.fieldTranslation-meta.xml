@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Lead Score 1.0 --></help>
+    <label><!-- Score --></label>
+    <name>mkto71_Lead_Score__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,39 @@
+<apex:page showHeader="false" sidebar="false" tabStyle="Opportunity" standardStylesheets="true">
+<div style="padding:10px;">
+
+<style>
+h1.help {font-size:12pt;}
+p.help {font-weight:bold;}
+</style>
+
+<h1 class="help">Help Instructions for Tegra Auto/Emb</h1>
+
+<p class="help"> 
+How do I add a Product?
+</p>
+<ul class="help">
+<li class="help">In the “Tegra Auto/Emb Products” section, select from the list of options in the Tegra Auto/Emb Products pull-down menu.</li>
+<li class="help">If more than one Product is associated to this Opportunity, click on the "Add Product" button.</li>
+<li class="help">To delete a Product that was previously selected in error, click on "Delete" to the left of the Product.  Products can only be deleted in the Edit page of the Opportunity record.</li>
+<li class="help">The Product(s) selected will auto-populate in the "Tegra Auto/Emb Product Revenue by Quarter" section, directly below the "Tegra Auto/Emb Products" section.</li>
+</ul>
+
+<p class="help"> 
+How do I enter ASP and Units?
+</p>
+<ul class="help">
+<li class="help">The "Tegra Auto/Emb Product Revenue by Quarter" section will appear pre-populated with the Starting Quarter selected in the previous screen, and with the Product(s) selected in the “Tegra Auto/Emb Products” section above.</li>
+<li class="help">Enter ASP and Units in the designated fields found in the “Tegra Auto/Emb Product Revenue by Quarter” section.</li>
+</ul>
+
+<p class="help"> 
+How do I add additional quarters? 
+</p>
+<ul class="help">
+<li class="help">Click on the "Add Next Quarter" button. ASP and Units will default to those just entered in the previous quarter. Override any changes.</li>
+<li class="help">"Add Previous Quarter" is also available if you need to pull-in earlier quarters. ASP and Units will default to the values entered in the quarter after the one being added.</li>
+</ul>
+
+ 
+</div>
+</apex:page>

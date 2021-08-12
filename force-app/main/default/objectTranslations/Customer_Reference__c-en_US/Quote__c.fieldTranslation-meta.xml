@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Quote from customer. Please include name, title, and source. --></help>
+    <label><!-- Quote --></label>
+    <name>Quote__c</name>
+</CustomFieldTranslation>

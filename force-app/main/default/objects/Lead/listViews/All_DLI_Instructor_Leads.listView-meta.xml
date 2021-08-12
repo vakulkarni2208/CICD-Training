@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_DLI_Instructor_Leads</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>LEAD.COMPANY</columns>
+    <columns>LEAD.EMAIL</columns>
+    <columns>CIP_Workshop__c</columns>
+    <columns>LEAD.STATUS</columns>
+    <columns>DLI_Region__c</columns>
+    <columns>Application_Submission_Date__c</columns>
+    <columns>LEAD.CREATED_DATE</columns>
+    <columns>Resume_CV_link__c</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>LEAD.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Lead.DLI_Instructor_Lead</value>
+    </filters>
+    <filters>
+        <field>CORE.USERS.ALIAS</field>
+        <operation>equals</operation>
+        <value>Joseph</value>
+    </filters>
+    <label>All DLI Instructor Leads</label>
+    <sharedTo>
+        <roleAndSubordinatesInternal>APAC_Sales_Ops</roleAndSubordinatesInternal>
+        <roleAndSubordinatesInternal>DLI_Sales</roleAndSubordinatesInternal>
+    </sharedTo>
+</ListView>

@@ -1,0 +1,86 @@
+.THIS {
+}
+
+.THIS a {
+    color: #76B900;
+}
+
+.THIS img {
+    max-width:150px;
+}
+
+.THIS .contactUsButtons {
+    background-color: #76B900;
+    border-color: #76B900;
+    color:white;
+    
+}
+
+.THIS .contactUsButtons:hover {
+    background-color: #76B900;
+    border-color: #76B900;
+    color:white;
+}
+
+.THIS .contactUsButtons:active {
+    background-color: #76B900;
+    border-color: #76B900;
+    color:white;
+}
+
+.THIS .slds-button:active {
+    background-color: #76B900;
+    border-color: #76B900;
+    color:white;
+}
+
+.THIS .block {
+    float: left;
+    margin-left:1%;
+    width:32%;
+    min-width:280px;
+    /*flex:1;
+    padding:1em;
+    border:solid;
+    position:relative;*/
+}
+
+.THIS .NVblock {
+    float: left;
+    margin-left:2%;
+    width:17%;
+    height:400px;
+    overflow:auto;
+    min-width:240px;
+}
+
+.THIS .clear {
+    clear: both;
+}
+
+.THIS .outerDiv {
+    padding: 1%;
+    background-color: #ffffff;
+    height:100%;    
+    float:left;
+    width:75%;
+    /*display:flex;
+    overflow: auto;
+    */
+}
+
+.THIS .hide {
+    display:none;
+}
+
+.THIS .hidden {
+    display:none;
+}
+
+.THIS .show {
+    display:block;
+}
+
+.THIS .headerLgText {
+    color:#76B900; font-size:15px; 
+}

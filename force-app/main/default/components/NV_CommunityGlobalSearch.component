@@ -1,0 +1,24 @@
+<apex:component >
+    <apex:includeScript value="https://code.jquery.com/jquery-1.9.1.js"  />
+    <apex:includeScript value="{!URLFOR($Resource.AngularJSFlowChart, '/Angular/js/angular.min.js')}"/>
+    <apex:includeScript value="{!URLFOR($Resource.Bootstrap, '/bootstrap-3.3.6-dist/js/bootstrap.min.js')}"/>
+    <apex:StyleSheet value="{!URLFOR($Resource.Bootstrap, '/bootstrap-3.3.6-dist/css/bootstrap.min.css')}"/>
+    <script>
+        function onenter(cont,evt) {       
+            if (evt && evt.keyCode == 13){         
+                openNewVfpage();               
+                return false;
+            }
+            else{
+                return true;
+            }
+         }
+       
+         function openNewVfpage(){     
+             window.open('/apex/NV_CommunitySearch?searchText='+document.getElementById('inputFieldId').value,target="_parent");       
+             return false;
+         }
+      </script>
+      <input type="text" placeholder="{!$Label.COMM_PP_CMP_Search}" id="inputFieldId" style="vertical-align:text-bottom;" onClick="this.placeholder = ''"  onblur="this.placeholder = '{!$Label.COMM_PP_CMP_Search}'"  onkeypress="return onenter(this,event);"/>                 
+       &nbsp;<apex:image value="{!$Resource.SearchIcon}" onclick="return openNewVfpage();" style="cursor:pointer;vertical-align:text-bottom;margin-right:10px;"/>
+</apex:component>

@@ -1,0 +1,62 @@
+.THIS {
+    
+}
+
+.THIS .slds-carousel__stage {
+    background-color: #76B900;
+}
+
+.THIS .slds-carousel__content {
+    background-color: #76B900;
+    font-size:14px;
+    color:white;
+}
+
+.THIS .slds-carousel__indicator-action {
+    width: 0.4rem;
+    height: 0.4rem;
+}
+
+.THIS .slds-carousel__autoplay {
+	display:none;
+}
+
+.THIS .slds-carousel__indicator-action {
+    background-color:#CCCCCC;
+    border-color:#CCCCCC;
+}
+
+.THIS .slds-carousel__indicator-action:hover {
+    background-color:#CCCCCC;
+    border-color:#CCCCCC;
+}
+
+.THIS .slds-carousel__indicator-action.slds-is-active {
+    background-color:#FFFFFF;
+    border-color:#FFFFFF
+}
+
+.THIS .slds-scope a {
+	color: #000000
+}
+
+.THIS .slds-carousel__content {
+	height: auto ;
+}
+
+.THIS .slds-carousel__panel-action {
+	border: 0 ;
+}
+
+.THIS .slds-scope a:active {
+    color: #000000
+}
+
+.THIS .slds-carousel__indicator-action.slds-is-active:hover {
+    background-color:#FFFFFF;
+    border-color:#FFFFFF
+}
+
+.THIS .slds-carousel__content:hover {
+	color: #008564;
+}

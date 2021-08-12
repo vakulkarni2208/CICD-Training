@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Enterprise Data Center Priority --></label>
+    <name>Enterprise_Data_Center_Priority__c</name>
+    <picklistValues>
+        <masterLabel>Not a Priority</masterLabel>
+        <translation><!-- Not a Priority --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>P1</masterLabel>
+        <translation><!-- P1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>P2</masterLabel>
+        <translation><!-- P2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>P3</masterLabel>
+        <translation><!-- P3 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>P4</masterLabel>
+        <translation><!-- P4 --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DGX</fullName>
+    <active>true</active>
+    <label>DGX</label>
+    <picklistValues>
+        <picklist>Drive_Partitioning__c</picklist>
+        <values>
+            <fullName>Custom</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Standard</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>End_Point_Type__c</picklist>
+        <values>
+            <fullName>Thick Client</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Thin Client</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>GRID_Card_Model_s__c</picklist>
+        <values>
+            <fullName>M6</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Graphics_Virtualization_Type__c</picklist>
+        <values>
+            <fullName>Bare Metal or Pass-through</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HDX 3D Pro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RemoteFX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>vGPU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>vSGA</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>License_Server_Host_Type__c</picklist>
+        <values>
+            <fullName>Physical PC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VM</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OS__c</picklist>
+        <values>
+            <fullName>BaseOS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CentOS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Custom</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DGX OS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RHEL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RedHat</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Remoting_Protocol__c</picklist>
+        <values>
+            <fullName>Citrix HDX 3D PRO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VMware Blast</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VMware PCoIP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VNC</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Remoting_Solution__c</picklist>
+        <values>
+            <fullName>Citrix XenApp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Citrix XenDesktop</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RDP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VMware Horizon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VNC</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Scope__c</picklist>
+        <values>
+            <fullName>Cluster</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Datacenter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Site</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solution</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Security_Restrictions__c</picklist>
+        <values>
+            <fullName>No Entry by Service Personnel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Logs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Photos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No USB Drives</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Virtualization_Platform__c</picklist>
+        <values>
+            <fullName>Citrix Hypervisor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Linux with KVM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Microsoft Windows Server</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nutanix AHV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Red Hat Enterprise Linux with KVM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VMware vSphere</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>
