@@ -1,6 +1,6 @@
 /*
     Apex Class for Account_tgr.trigger
-    Changelist:
+    Changelist: test
     2018.08.09 - PJENA          - SDS-757 - Move Account/Contact Region, Sub-Region, Territory setup from Future method to direct synchronous process
     2018.12.04 - Akhilesh Gupta - SDS-1037: Update Entitlement Process on Entitlements.
     2020.02.01 - Akhilesh Gupta - SDS-1944: Added function updateCases.
@@ -11,10 +11,10 @@
     2020.02.01 - Akhilesh Gupta - SDS-2055: Update function updateCases.
     2020.08.28 - Extending SAP Integration
     2021.02.15 - Akhilesh Gupta - SDS-2901: Updated logic for 24x7 Business Critical.
-									Updated Function: updateEntiltments
-									- Remove logic to update all Entitlements from Account Trigger and only kept logic for Placeholder Entitlement.
-									Introduced new static variable "UPDATE_ALL_ENTITLEMENTS" to bypass PEC logic.
-									
+                                    Updated Function: updateEntiltments
+                                    - Remove logic to update all Entitlements from Account Trigger and only kept logic for Placeholder Entitlement.
+                                    Introduced new static variable "UPDATE_ALL_ENTITLEMENTS" to bypass PEC logic.
+                                    
 */
 
 public class Account_tgr_cls extends NV_TriggerHandler {
