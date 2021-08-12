@@ -1793,6 +1793,7 @@
         <members>Autorabit_Test__c.AutoPicklist__c</members>
         <members>Autorabit_Test__c.Date__c</members>
         <members>Autorabit_Test__c.Employee_Name__c</members>
+        <members>Autorabit_Test__c.Salesforce__c</members>
         <members>Briefing_sent_by_EBC__c.Briefing_ID__c</members>
         <members>Briefing_sent_by_EBC__c.JSON_Body__c</members>
         <members>Button__c.Custom__c</members>
