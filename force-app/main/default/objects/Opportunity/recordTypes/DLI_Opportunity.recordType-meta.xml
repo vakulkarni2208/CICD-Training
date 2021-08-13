@@ -2940,6 +2940,10 @@
             <default>false</default>
         </values>
         <values>
+            <fullName>AutoRabit Test</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>Content Syndication</fullName>
             <default>false</default>
         </values>
