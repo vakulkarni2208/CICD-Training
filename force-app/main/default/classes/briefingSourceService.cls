@@ -24,7 +24,9 @@
  * Changes:
    02/07/2019 - @Manideep - Changed the maximum field length of 'Name' from '255' to '80' as it was set to '80' by default. 
    02/07/2019 - @Manideep - Store the JSON response from the EBC in the custom object 'Briefing sent by EBC', so that if any record doesn't insert/update in Salesforce due to some error then we can verify the call in this object.
-          
+
+ * 08/11/2021 - @Manideep - test Changes AutoRabit
+       
 */        
 @RestResource(urlMapping='/invokeServiceBriefingSourcetoSFDC/*')
 global class briefingSourceService {
@@ -32,7 +34,6 @@ global class briefingSourceService {
   //Briefing Source webhook is sending briefingId Successfully  
   @HttpGet
   global static void getBriefingintoSF() {  
-    system.debug('Came Here 1---->');
     RestRequest req = RestContext.request;
     RestResponse res = RestContext.response;
     res.addHeader('Content-Type', 'applicationjson');
@@ -53,7 +54,6 @@ global class briefingSourceService {
     reqt.setMethod('GET'); 
     reqt.setHeader('Content-Type', 'application/json');
     reqt.setHeader('Accept', 'application/json');  
-    system.debug('Came Here 2---->');  
     Http http = new Http();
     HTTPResponse resp = http.send(reqt);  
     string jsonFullBody = resp.getBody();
@@ -123,18 +123,7 @@ global class briefingSourceService {
            // Collect the 'industry' object's data for the briefing in a Map
            map<String, object> industryMap = (map<String, object>) briefingMap.get('industry'); 
           
-           // object maps - Debug Logs
-           system.debug('briefingMetaMap------>'+briefingMetaMap);
-           system.debug('briefingMap----->'+briefingMap);
-           system.debug('attendeeListMap---->'+attendeeListMap); 
-           system.debug('briefingRoomListMap---->'+briefingRoomListMap); 
-           system.debug('briefingCenterMap----->'+briefingCenterMap);
-           system.debug('briefingStatusMap----->'+briefingStatusMap);
-           system.debug('briefingTypeMap----->'+briefingTypeMap);   
-           system.debug('briefingTimezoneMap----->'+briefingTimezoneMap); 
-           system.debug('salesRegionMap----->'+salesRegionMap);
-           system.debug('industryMap----->'+industryMap);
-                                      
+                                                 
            // Create new or Update existing BriefingSource record in Salesforce.
            bsource__BS_Deal_Support_Request__c bSrc;                                                     
                                                                    
@@ -158,7 +147,7 @@ global class briefingSourceService {
            // assign field values from EBC to Salesforce.                   
            bSrc.bsource__BriefingID__c = bId;
            
-           bSrc.bsource__Briefing_Doc_Link__c = 'https://nvidia.briefingsource.com/briefing/view?id='+bId;
+           bSrc.bsource__Briefing_Doc_Link__c = 'https://nvidia.briefingsource.com/briefings?id='+bId;
                      
            if(string.isNotBlank(string.valueOf(briefingMap.get('title'))))
               bSrc.Name = string.valueOf(briefingMap.get('title')).left(80);
@@ -328,45 +317,7 @@ global class briefingSourceService {
               bSrc.bsource__Confirmed_Date__c = date.newInstance(strYear, strMonth, strDate);
            }
            
-           /*
-           Field - Debug Logs
-           */
-           system.debug('bSrc.Name---->'+bSrc.Name); 
-           system.debug('bSrc.Briefing_Center__c----->'+bSrc.Briefing_Center__c);
-           system.debug('bSrc.bsource__Status__c----->'+bSrc.bsource__Status__c);
-           system.debug('bSrc.bsource__Visit_Type__c------>'+bSrc.bsource__Visit_Type__c);
-           system.debug('bSrc.Customer_Meeting_Type__c----->'+bSrc.Customer_Meeting_Type__c);
-           system.debug('bSrc.bsource__RequestorName__c----->'+bSrc.bsource__RequestorName__c);
-           system.debug('bSrc.bsource__RequestorEmail__c---->'+bSrc.bsource__RequestorEmail__c);
-           system.debug('bSrc.bsource__RequestorPhone__c---->'+bSrc.bsource__RequestorPhone__c);  
-           system.debug('bSrc.Region_Department__c----->'+bSrc.Region_Department__c);
-           system.debug('bSrc.Customer_Industry__c----->'+bSrc.Customer_Industry__c);
-           system.debug('bSrc.Meeting_Type__c----->'+bSrc.Meeting_Type__c); 
-           system.debug('bSrc.Nvidia_Host1__c----->'+bSrc.Nvidia_Host1__c);
-           system.debug('bSrc.Is_this_meeting_Confidential__c----->'+bSrc.Is_this_meeting_Confidential__c); 
-           system.debug('bSrc.Is_Jensen_scheduled_to_attend__c----->'+bSrc.Is_Jensen_scheduled_to_attend__c); 
-           system.debug('bSrc.Does_this_Account_exist_in_Salesforce__c----->'+bSrc.Does_this_Account_exist_in_Salesforce__c);
-           system.debug('bSrc.Opportunity_Associated_with_EBC_meeting__c------>'+bSrc.Opportunity_Associated_with_EBC_meeting__c);
-           system.debug('bSrc.X4_Quarter_Projected_Revenue__c----->'+bSrc.X4_Quarter_Projected_Revenue__c);
-           system.debug('bSrc.Customer_Industry__c----->'+bSrc.Customer_Industry__c);
-           system.debug('bSrc.NVIDIA_Brochure_Sent_Reviewed_Customer__c----->'+bSrc.NVIDIA_Brochure_Sent_Reviewed_Customer__c);
-           system.debug('bSrc.Purpose_of_Meeting__c----->'+bSrc.Purpose_of_Meeting__c);
-           system.debug('bSrc.Customer_Objective_Success_look_like__c------>'+bSrc.Customer_Objective_Success_look_like__c);
-           system.debug('bSrc.First_time_Visit_at_NVIDIA__c----->'+bSrc.First_time_Visit_at_NVIDIA__c);
-           system.debug('bSrc.Highest_Level_of_Attendee__c----->'+bSrc.Highest_Level_of_Attendee__c);
-           system.debug('bSrc.Customer_met_NVIDIA_Executives_in_past__c------>'+bSrc.Customer_met_NVIDIA_Executives_in_past__c);
-           system.debug('bSrc.if_Yes_provide_meeting_outcome_status__c------>'+bSrc.if_Yes_provide_meeting_outcome_status__c);
-           system.debug('bSrc.Meeting_require_assistance_with_agenda__c------>'+bSrc.Meeting_require_assistance_with_agenda__c);
-           system.debug('bSrc.bsource__OutstandingIssues__c------>'+bSrc.bsource__OutstandingIssues__c);
-           system.debug('bSrc.bsource__EstimatedAttendees__c------>'+bSrc.bsource__EstimatedAttendees__c); 
-           system.debug('bSrc.Meeting_Time_Zone__c----->'+bSrc.Meeting_Time_Zone__c);        
-           system.debug('bSrc.Notes__c------>'+bSrc.Notes__c);
-           system.debug('bSrc.Demo_Tour_Needed__c----->'+bSrc.Demo_Tour_Needed__c);
-           system.debug('bSrc.Product_Interest_Focus__c----->'+bSrc.Product_Interest_Focus__c);
-           system.debug('bSrc.Internal_Attendees__c---->'+bSrc.Internal_Attendees__c);
-           system.debug('bSrc.External_Attendees__c---->'+bSrc.External_Attendees__c); 
-           system.debug('bSrc.Briefing_Date__c------>'+bSrc.Briefing_Date__c);
-           system.debug('bSrc.bsource__Confirmed_Date__c------>'+bSrc.bsource__Confirmed_Date__c);                     
+                                      
            
            system.debug('bSrc------>'+bSrc);           
            upsert bSrc;  //DML                                                       

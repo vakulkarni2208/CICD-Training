@@ -76,6 +76,10 @@
     <picklistValues>
         <picklist>Agreement_Type__c</picklist>
         <values>
+            <fullName>AutoRabit Testing</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>LTB</fullName>
             <default>false</default>
         </values>

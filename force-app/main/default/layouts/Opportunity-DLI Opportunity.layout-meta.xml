@@ -38,6 +38,10 @@
                 <behavior>Edit</behavior>
                 <field>Is_this_a_Public_DLI__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Test_AutoRabit_Field_1__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
