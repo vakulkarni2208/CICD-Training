@@ -5638,6 +5638,7 @@
         <members>Opportunity.Tesla_Product_Amount__c</members>
         <members>Opportunity.Tesla_Product_Attached__c</members>
         <members>Opportunity.Tesla_Product_Count_HW__c</members>
+        <members>Opportunity.Test_AutoRabit_Field_1__c</members>
         <members>Opportunity.This_Fiscal_Quarter_Number__c</members>
         <members>Opportunity.Tier__c</members>
         <members>Opportunity.Times_Pushed_Months__c</members>
